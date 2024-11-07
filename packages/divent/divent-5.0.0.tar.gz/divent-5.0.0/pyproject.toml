@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "divent"
+version = "5.0.0"
+description = "The discord scheduled event calendar generator"
+authors = ["Xéfir Destiny <xefir@crystalyx.net>"]
+license = "WTFPL"
+readme = "README.md"
+homepage = "https://divent.crystalyx.net/"
+repository = "https://git.crystalyx.net/Xefir/Divent"
+
+[tool.poetry.scripts]
+divent = 'divent.bot:run'
+
+[tool.poetry.dependencies]
+python = ">=3.13,<4.0"
+disnake = "^2.9.2"
+audioop-lts = "^0.2.1"
+ics = "0.8.0.dev0"
+python-dotenv = "^1.0.1"
+quart = "^0.19.8"
+requests-oauthlib = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+djlint = "^1.36.0"
+mypy = "^1.13.0"
+ruff = "^0.7.2"
+types-oauthlib = "^3.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.djlint]
+extension = "j2"
+profile = "jinja"
