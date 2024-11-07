@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: ayy
+Version: 0.1.2
+Summary: Add your description here
+Author-email: Hamza Farhan <thehamza96@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: anthropic>=0.39.0
+Requires-Dist: burr[graphviz,hamilton,opentelemetry,start,tracking-client,tracking-server]>=0.32.0
+Requires-Dist: google-generativeai>=0.8.3
+Requires-Dist: instructor>=1.6.3
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: moviepy>=1.0.3
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: python-dotenv>=1.0.1
