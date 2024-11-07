@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ansar-connect
+Version: 1.1.49
+Summary: Tools and runtime for network messaging
+Author: Scott Woods
+Author-email: Scott Woods <ansar.library.management@gmail.com>
+Project-URL: Documentation, https://ansar-connect-manual.s3.ap-southeast-2.amazonaws.com/1.0.0/index.html
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: System
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cffi>=1.16.0
+Requires-Dist: PyNaCl>=1.5.0
+Requires-Dist: ansar-create>=1.0.49
+
+
+ansar-connect
+=============
+
+The **ansar-connect** library implements clear and concise network messaging for a wide range
+of networking requirements. From multi-processing within a single host through to messaging
+beween different LANs on the Internet. There is a single send method that does it all.
+
+Features
+--------
+
+- Implements bi-directional, asynchronous network messaging,
+- Provides a synchronous request-response layer,
+- Inherits the data sophistication of **ansar.encode**,
+- Seamlessly extends the asynchronous runtime from **ansar.create**, to span local and wide-area networks.
+
+
+Changelog
+=========
+
+1.1.21 (2024-09-09)
+-------------------
+
+- Better data entry around update procedures.
+
+- Clean org of api into crud groups.
+
+- Finalize behaviour of overlay function.
+
+- Support for refactor of cloud to use GroupTable.
+
+1.1.3 (2024-09-22)
+------------------
+
+- Add HTTP integration
+
+- Fix the teardown and reconnect of pub-sub sessions after keep-alive close
+
+1.0.6 (2024-06-19)
+------------------
+
+- Fix handling of --main-role in abort scenarios
+
+- Additions to docs - Odds And Ends, Dining Philosphers
+
+- Implement self-checking of transports - directories and peers
+
+- Fix/remove typos in comments
+
+1.0 (2024-05-27)
+----------------
+
+- Implement standard listen and connect
+
+- Implement publish and subscribe
+
+- Create **ansar-host** and **ansar-lan** services
+
+- Launch **ansar-wan** cloud service
+
+- Complete **ansar-connect** docs
