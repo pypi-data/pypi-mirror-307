@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ts-scan
+Version: 1.0.0
+Summary: TrustSource PM scanner
+Home-page: https://github.com/trustsource/ts-scan.git
+Download-URL: 
+Author: EACG GmbH
+License: Apache-2.0
+Keywords: scanning,dependencies,modules,compliance,TrustSource
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: defusedxml
+Requires-Dist: semanticversion
+Requires-Dist: build
+Requires-Dist: importlib-metadata
+Requires-Dist: alive-progress
+Requires-Dist: requests==2.32.0
+Requires-Dist: numpy
+Requires-Dist: wasabi
+Requires-Dist: ts-python-client==2.0.6
+Requires-Dist: ts-deepscan==2.1.1
+Requires-Dist: license-expression
+Requires-Dist: packageurl-python
+Requires-Dist: spdx-tools==0.7.0rc0
+
