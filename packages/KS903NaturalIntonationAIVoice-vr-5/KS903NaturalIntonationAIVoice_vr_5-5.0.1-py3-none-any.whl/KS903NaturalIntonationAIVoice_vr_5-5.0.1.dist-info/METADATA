@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: KS903NaturalIntonationAIVoice-vr-5
+Version: 5.0.1
+Summary: say's speech NaturalIntonation AI Voice library for KS903 __Vershons_5.0.1__
+Home-page: https://github.com/NPO_KS903_KATUYOSHI/say's_speech_NaturalIntonation_AI_Voice_library_for_KS903__Vershons_5.0.1__
+Author: NPO_KS_903.lnc(President: Takeshi Kumura, Director: Takuma Ozawa)
+Author-email: xksxkatuyoshi0009@gmail.com
+License: MIT
+Keywords: say's speech NaturalIntonation AI Voice KS903
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyttsx3
+Requires-Dist: pandas
+Requires-Dist: python-docx
+Requires-Dist: PyPDF2
+Requires-Dist: pillow
+Requires-Dist: pytesseract
+Requires-Dist: deep-translator
+
+# README.md
+
+# KS903NaturalIntonationAIVoice_vr_5
+
+## 概要
+
+`KS903NaturalIntonationAIVoice_vr_5` は、自然なイントネーションでテキストを音声化するための音声合成AIライブラリです。このライブラリを使用することで、PDF、DOCX、画像、CSV、およびTXTファイルからテキストを抽出し、日本語および英語で音声とともに表示する機能を提供します。
+
+KS903NaturalIntonationAIVoice_vr_4.以降のバージョンから使用可能ですがに新機能自然的リアルタイム翻訳スピーチを搭載いたしました。
+
+さらに、KS903NaturalIntonationAIVoice_vr_4 は、deep-translator 機能も組み込んでおり、リアルタイムで瞬時に翻訳しながらの読み上げが可能です。これにより、事前に設定した言語に応じてテキストを自動的に翻訳し、スムーズに読み上げることができます。例えば、日本語から英語、あるいはその逆へのリアルタイムな翻訳を行いながら音声合成を実行するため、より多言語での活用がしやすくなっています。
+
+。これにより、事前に設定した言語に応じてテキストを自動的に翻訳し、スムーズに読み上げることができます。例えば、日本語から英語、あるいはその逆へのリアルタイムな翻訳を行いながら音声合成することで、より多言語での活用がしやすくなっています。
+
+これにより、異なる言語を同時に処理しながら、リアルタイムでの読み上げが可能となり、さまざまな状況での多言語サポートを実現します。
+
+
+この機能により、異なる言語を同時に処理しながらリアルタイムで読み上げを行うことが可能となり、まるで通訳に慣れている人間がスムーズに話しているかのような体験を提供します。例えば、日本語のテキストが入力されれば、指定された言語に即時で翻訳し、通訳風に即座に読み上げを行うことで、違和感のない自然なイントネーションでの音声を届けることができます。
+
+活用シーン
+この機能により、さまざまな状況で多言語サポートを簡単に実現でき、リアルタイムの通訳サポートを必要とするビジネス、教育、旅行などのシーンにおいて、言語の壁を越えたスムーズなコミュニケーションが可能になります。
+
+まさにKS903NaturalIntonationAIVoice_vr_４ は、リアルタイムで翻訳しながらの読み上げが可能なため、まるで通訳に慣れている人間が話しているかのようなスムーズな体験を提供できます。これにより、異なる言語のテキストを瞬時に翻訳しつつ、自然なイントネーションで読み上げることで、ユーザーに違和感のない通訳風の音声を届けることが可能です。
+
+例えば、日本語のテキストが入力されれば、指定された言語に自動で翻訳し、まるで通訳がその場で話しているかのように即時で読み上げが行われます。この機能により、言語の壁を越えたコミュニケーションが一層容易になります。
+
+
+また、KS903NaturalIntonationAIVoice_vr_4 は、自然なイントネーションでテキストを音声化するための高度な音声合成AIライブラリです。このライブラリを使用すると、PDF、DOCX、画像、CSV、TXTファイルからテキストを抽出し、日本語および英語での音声読み上げと表示が可能だけではありません。PDF、DOCX、画像、CSV、TXTファイルの翻訳も可能であり、さまざまな形式のテキストを簡単に処理することができます。
+
+さらに、deep-translator 機能も組み込まれており、リアルタイムでテキストを翻訳しながら、まるで通訳者が話しているかのようにスムーズに音声を出力します。この機能により、会話やファイル内のテキストを瞬時に翻訳し、自然なイントネーションで読み上げることができ、多言語での即時対応も対応できます。ただし全８か国の音声合成
+を対応させるにはWindowsの既存の音声ライブラリーインストール対応が必要であるためあらかじめ環境が整っているかご確認ください。
+
+また翻訳の使い方については自動で文字に応じて翻訳判別するためこちらで設定しなくともそのままご利用いただけます。
+
+
+
+## インストール
+
+このライブラリは`pip`を使用してインストールできます。また、動作確認としてWindodosの音声合成適用バージョンが必要です。これにより、音声合成機能が実装されています。
+使用方法？使い方の例として！
+コマンドラインで以下のように実行します。
+このライブラリは、`pip` を使用してインストールできます。
+
+以下のコマンドで依存関係をインストールしてください。
+```bash
+pip install KS903NaturalIntonationAIVoice_vr_5
+
+これで、KS903NaturalIntonationAIVoice_vr_5 を簡単にインストールして利用できるようになります。
+
+使用方法？使い方の例として！
+以下のコマンドで KS903NaturalIntonationAIVoice_vr_5 を実行し、指定したファイルからテキストを読み取り、音声出力します。
+
+bash
+コードをコピーする
+
+python ks903_say_voice5.py <file_path>
+
+
+例として、example.pdf というPDFファイルからテキストを抽出して音声合成する場合は次のように実行します：
+
+
+例として、example.pdf というPDFファイルからテキストを抽出して音声合成する場合は次のように実行します：
+
+bash
+コードをコピーする
+python ks903_say_voice5.py example.pdf
+ファイルを指定せずに起動した場合は、標準入力から直接テキストを入力し、音声合成を行います。
+
+クラスとメソッドの概要
+KS903NaturalIntonationAIVoice_vr_4
+このクラスは、テキスト抽出と音声合成機能を提供します。
+
+__init__(self)
+音声エンジンの初期設定を行います。
+
+extract_text_from_pdf(pdf_path)
+PDFファイルからテキストを抽出します。
+
+extract_text_from_docx(docx_path)
+DOCXファイルからテキストを抽出します。
+
+extract_text_from_image(image_path)
+画像ファイル（JPGまたはPNG）からテキストを抽出します。
+
+extract_text_from_csv(csv_path)
+CSVファイルからテキストを抽出します。
+
+extract_text_from_txt(txt_path)
+TXTファイルからテキストを抽出します。
+
+extract_text(file_path)
+ファイルの種類に応じて適切な抽出メソッドを呼び出し、テキストを取得します。
+
+speech_text(text, lang, times)
+指定された言語でテキストを音声合成します。
+
+print_text(text, speech_duration)
+テキストを一文字ずつ表示します。
+
+process_text(text)
+テキストを処理し、日本語または英語で音声合成と表示を行います。
+
+process_file(file_path)
+指定されたファイルからテキストを抽出し、process_text メソッドを使用して音声合成と表示を行います。
+
+ks903_aivoice_vr0_run()
+スクリプトのエントリーポイントです。ファイルが指定されていればそれを読み込み、指定がなければ標準入力からテキストを読み取ります。
+
+
+一括の開発ライブとして
+
+一括Pythonファイル単体でまとめるときは以下の書き方で行います。
+
+# ks903_aivoice_vr4_run.py
+
+from KS903_Natural_Voice_0005 import  KS903NaturalIntonationAIVoice_vr_5
+
+# クラスのインスタンスを生成
+instance = KS903NaturalIntonationAIVoice_vr_5()
+
+# ks903_aivoice_vr4_run() メソッドを明示的に呼び出す
+instance.ks903_aivoice_vr5_run()
+
+（警告）翻訳については何も設定しなくともそのままご利用いただけます。
+
+
+以上のような書き方をすればPYTHONファイルも単体て書き込むことができます。ぜひほかの開発環境にもお試しください。
+
+以上、これでご説明を終わりとします。
+
+Creator/Inventor: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Developer: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Designer/Architect: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Founder: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+
+

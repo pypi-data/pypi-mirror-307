@@ -1,0 +1,2 @@
+# __init__.py
+from KS903_Natural_Voice_0005.ks_903_Natural_voice_sei05.ks903_say_voice5 import KS903NaturalIntonationAIVoice_vr_5
