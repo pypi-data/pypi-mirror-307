@@ -1,0 +1,203 @@
+Metadata-Version: 2.3
+Name: dacapo-ml
+Version: 0.3.2
+Summary: Framework for deployment of volumetric machine learning models, and easy composition of training jobs.
+Project-URL: homepage, https://github.io/janelia-cellmap/dacapo
+Project-URL: repository, https://github.com/janelia-cellmap/dacapo
+Author-email: Will Patton <pattonw@janelia.hhmi.org>, Jeff Rhoades <rhoadesj@hhmi.org>, Marwan Zouinkhi <zouinkhim@hhmi.org>, Jan Funke <funkej@janelia.hhmi.org>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: attrs
+Requires-Dist: bokeh
+Requires-Dist: boto3
+Requires-Dist: cattrs
+Requires-Dist: cellmap-models
+Requires-Dist: click
+Requires-Dist: daisy
+Requires-Dist: fibsem-tools<=6.3,>=6.0
+Requires-Dist: funlib-geometry>=0.2
+Requires-Dist: funlib-math>=0.1
+Requires-Dist: funlib-persistence>=0.5.3
+Requires-Dist: gunpowder>=1.4
+Requires-Dist: lazy-property
+Requires-Dist: lsds
+Requires-Dist: matplotlib
+Requires-Dist: mwatershed>=0.1
+Requires-Dist: neuroglancer
+Requires-Dist: numpy-indexed
+Requires-Dist: numpy-indexed>=0.3.7
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: pymongo
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: simpleitk
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: universal-pathlib<1.0.0,>=0.2.2
+Requires-Dist: upath
+Requires-Dist: xarray
+Requires-Dist: zarr
+Provides-Extra: all
+Requires-Dist: black; extra == 'all'
+Requires-Dist: cellmap-models; extra == 'all'
+Requires-Dist: empanada-napari; extra == 'all'
+Requires-Dist: ipykernel; extra == 'all'
+Requires-Dist: ipython; extra == 'all'
+Requires-Dist: jupyter; extra == 'all'
+Requires-Dist: jupytext; extra == 'all'
+Requires-Dist: matplotlib; extra == 'all'
+Requires-Dist: mypy; extra == 'all'
+Requires-Dist: myst-nb; extra == 'all'
+Requires-Dist: myst-parser; extra == 'all'
+Requires-Dist: nbsphinx; extra == 'all'
+Requires-Dist: pdbpp; extra == 'all'
+Requires-Dist: pooch; extra == 'all'
+Requires-Dist: pre-commit; extra == 'all'
+Requires-Dist: pyqt5; extra == 'all'
+Requires-Dist: pytest; extra == 'all'
+Requires-Dist: pytest-cov; extra == 'all'
+Requires-Dist: pytest-lazy-fixtures; extra == 'all'
+Requires-Dist: rich; extra == 'all'
+Requires-Dist: ruff; extra == 'all'
+Requires-Dist: sphinx; extra == 'all'
+Requires-Dist: sphinx-autoapi; extra == 'all'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'all'
+Requires-Dist: sphinx-click; extra == 'all'
+Requires-Dist: sphinx-rtd-theme; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pdbpp; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: rich; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: ipykernel; extra == 'docs'
+Requires-Dist: jupytext; extra == 'docs'
+Requires-Dist: matplotlib; extra == 'docs'
+Requires-Dist: myst-nb; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: nbsphinx; extra == 'docs'
+Requires-Dist: pooch; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autoapi; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-click; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: ipykernel; extra == 'examples'
+Requires-Dist: ipython; extra == 'examples'
+Requires-Dist: jupyter; extra == 'examples'
+Provides-Extra: pretrained
+Requires-Dist: cellmap-models; extra == 'pretrained'
+Requires-Dist: empanada-napari; extra == 'pretrained'
+Requires-Dist: pyqt5; extra == 'pretrained'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-lazy-fixtures; extra == 'test'
+Description-Content-Type: text/markdown
+
+<img src="https://raw.githubusercontent.com/janelia-cellmap/dacapo/main/docs/source/_static/CellMapLogo.png" alt="CellMap logo" width="85%">
+
+# DaCapo ![DaCapo](https://raw.githubusercontent.com/janelia-cellmap/dacapo/main/docs/source/_static/icon_dacapo.png) ![GitHub Org's stars](https://img.shields.io/github/stars/Janelia-cellmap/dacapo)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/dacapo-ml)
+[![Documentation Status](https://readthedocs.org/projects/dacapo/badge/?version=stable)](https://dacapo.readthedocs.io/en/stable/?badge=stable)
+![Github Created At](https://img.shields.io/github/created-at/funkelab/dacapo)
+![GitHub License](https://img.shields.io/github/license/janelia-cellmap/dacapo)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fjanelia-cellmap%2Fdacapo%2Fmain%2Fpyproject.toml)
+
+[![tests](https://github.com/janelia-cellmap/dacapo/actions/workflows/tests.yaml/badge.svg)](https://github.com/janelia-cellmap/dacapo/actions/workflows/tests.yaml)
+[![black](https://github.com/janelia-cellmap/dacapo/actions/workflows/black.yaml/badge.svg)](https://github.com/janelia-cellmap/dacapo/actions/workflows/black.yaml)
+[![mypy](https://github.com/janelia-cellmap/dacapo/actions/workflows/mypy.yaml/badge.svg)](https://github.com/janelia-cellmap/dacapo/actions/workflows/mypy.yaml)
+[![docs](https://github.com/janelia-cellmap/dacapo/actions/workflows/docs.yaml/badge.svg)](https://janelia-cellmap.github.io/dacapo/)
+[![codecov](https://codecov.io/gh/janelia-cellmap/dacapo/branch/main/graph/badge.svg)](https://codecov.io/gh/janelia-cellmap/dacapo)
+
+A framework for easy application of established machine learning techniques on large, multi-dimensional images.
+
+`dacapo` allows you to configure machine learning jobs as combinations of
+[DataSplits](https://janelia-cellmap.github.io/dacapo/autoapi/dacapo/experiments/datasplits/index.html),
+[Architectures](https://janelia-cellmap.github.io/dacapo/autoapi/dacapo/experiments/architectures/index.html),
+[Tasks](https://janelia-cellmap.github.io/dacapo/autoapi/dacapo/experiments/tasks/index.html),
+[Trainers](https://janelia-cellmap.github.io/dacapo/autoapi/dacapo/experiments/trainers/index.html),
+on arbitrarily large volumes of
+multi-dimensional images. `dacapo` is not tied to a particular learning
+framework, but currently only supports [`torch`](https://pytorch.org/) with
+plans to support [`tensorflow`](https://www.tensorflow.org/).
+
+
+![DaCapo Diagram](https://raw.githubusercontent.com/janelia-cellmap/dacapo/main/docs/source/_static/dacapo_diagram.png)
+
+
+
+## Installation and Setup
+Currently, python>=3.10 is supported. We recommend creating a new conda environment for dacapo with python 3.10.
+```
+conda create -n dacapo python=3.10
+conda activate dacapo
+```
+
+Then install DaCapo using pip with the following command:
+```
+pip install dacapo-ml
+```
+This will install the minimum required dependencies. 
+
+You may additionally utilize a MongoDB server for storing outputs. To install and run MongoDB locally, refer to the MongoDB documentation [here](https://www.mongodb.com/docs/manual/installation/).
+
+The use of MongoDB, as well as specifying the compute context (on cluster or not) should be specified in the ```dacapo.yaml``` in the main directory.
+
+## Functionality Overview
+
+Tasks we support and approaches for those tasks:
+ - Instance Segmentation
+    - Affinities
+    - Local Shape Descriptors
+ - Semantic segmentation
+    - Signed distances
+    - One-hot encoding of different types of objects
+
+## Example Tutorial
+A minimal example tutorial can be found in the examples directory and opened in colab here: <a target="_blank" href="https://colab.research.google.com/github/janelia-cellmap/dacapo/blob/main/examples/starter_tutorial/minimal_tutorial.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+## Helpful Resources & Tools
+ - Chunked data, zarr, and n5
+    - OME-Zarr: a cloud-optimized bioimaging file format with international community support (doi: [10.1101/2023.02.17.528834](https://pubmed.ncbi.nlm.nih.gov/36865282/))
+    - Videos about N5 and Fiji can be found in [this playlist](https://www.youtube.com/playlist?list=PLmZHHIZ9Gz-IJA7HtW8quZcuLViz9Em6e). For other questions, join the discussion on the [Image.sc forum](https://forum.image.sc/tag/n5).
+    - Read about chunked storage plugins in Fiji in this blog: [N5 plugins for Fiji](https://openorganelle.janelia.org/news/2023-02-06-n5-plugins-for-fiji)
+    - Script for converting tif to zarr can be found [here](https://github.com/yuriyzubov/tif-to-zarr) 
+ - Segmentations
+    - A description of local shape descriptors used for affinities task. Read the blog [here](https://localshapedescriptors.github.io/). Example image from the blog showing the difference between segmentations:
+    - ![](https://localshapedescriptors.github.io/assets/img/detection_vs_segmentation_neurons.jpeg)
+ - CellMap Models
+    - [GitHub Repo](https://github.com/janelia-cellmap/cellmap-models) of published models
+    - For example, the COSEM trained pytorch networks are located [here](https://github.com/janelia-cellmap/cellmap-models/tree/main/src/cellmap_models/pytorch/cosem).
+ - [OpenOrganelle.org](https://openorganelle.janelia.org)
+    - ![](https://raw.githubusercontent.com/janelia-cellmap/dacapo/main/docs/source/_static/mito_pred-seg.gif)
+    - Example of [unprocessed distance predictions](https://tinyurl.com/3kw2tuab)
+    - Example of [refined segmentations](https://tinyurl.com/k59pba98) that have undergone post-processing (e.g., thresholding, masking, smoothing)
+    - Example of [groundtruth data](https://tinyurl.com/pu8mespz)
+ - Visualization
+    - [Neuroglancer GitHub Repo](https://github.com/google/neuroglancer)
+
+# Citing this repo
+If you use our code, please cite us and spread the news!
+```
+@article{Patton_DaCapo_a_modular_2024,
+author = {Patton, William and Rhoades, Jeff L. and Zouinkhi, Marwan and Ackerman, David G. and Malin-Mayor, Caroline and Adjavon, Diane and Heinrich, Larissa and Bennett, Davis and Zubov, Yurii and Project Team, CellMap and Weigel, Aubrey V. and Funke, Jan},
+doi = {10.48550/arXiv.2408.02834},
+journal = {arXiv-cs.CV},
+title = {{DaCapo: a modular deep learning framework for scalable 3D image segmentation}},
+year = {2024}
+}
+```
