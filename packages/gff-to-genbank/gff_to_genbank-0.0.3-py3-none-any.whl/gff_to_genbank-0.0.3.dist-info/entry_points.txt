@@ -1,0 +1,2 @@
+[console_scripts]
+gff-to-genbank = gff_to_genbank.gff_to_genbank:main
