@@ -1,0 +1,13 @@
+README.rst
+setup.py
+src/Xray/ListenerV2.py
+src/Xray/__init__.py
+src/Xray/attributes.py
+src/Xray/config.py
+src/Xray/report.py
+src/Xray/xray.py
+src/robotframework_xray.egg-info/PKG-INFO
+src/robotframework_xray.egg-info/SOURCES.txt
+src/robotframework_xray.egg-info/dependency_links.txt
+src/robotframework_xray.egg-info/requires.txt
+src/robotframework_xray.egg-info/top_level.txt
