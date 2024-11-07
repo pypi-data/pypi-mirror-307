@@ -1,0 +1,306 @@
+Building the package...
+* Getting build dependencies for sdist...
+<string>:2: DeprecationWarning: 
+
+  `numpy.distutils` is deprecated since NumPy 1.23.0, as a result
+  of the deprecation of `distutils` itself. It will be removed for
+  Python >= 3.12. For older Python versions it will remain present.
+  It is recommended to use `setuptools < 60.0` for those Python versions.
+  For more details, see:
+    https://numpy.org/devdocs/reference/distutils_status_migration.html 
+
+
+running egg_info
+running build_src
+INFO: build_src
+INFO: building extension "pyspecdata._nnls" sources
+INFO: f2py options: []
+INFO:   adding 'build/src.linux-x86_64-3.11/build/src.linux-x86_64-3.11/nnls/fortranobject.c' to sources.
+INFO:   adding 'build/src.linux-x86_64-3.11/build/src.linux-x86_64-3.11/nnls' to include_dirs.
+INFO:   adding 'build/src.linux-x86_64-3.11/nnls/_nnls-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/jmfranck/base/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+writing pySpecData.egg-info/PKG-INFO
+writing dependency_links to pySpecData.egg-info/dependency_links.txt
+writing entry points to pySpecData.egg-info/entry_points.txt
+writing requirements to pySpecData.egg-info/requires.txt
+writing top-level names to pySpecData.egg-info/top_level.txt
+/home/jmfranck/base/lib/python3.11/site-packages/setuptools/command/egg_info.py:655: SetuptoolsDeprecationWarning: Custom 'build_py' does not implement 'get_data_files_without_manifest'.
+Please extend command classes from setuptools instead of distutils.
+  warnings.warn(
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+reading manifest file 'pySpecData.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.f90'
+warning: no files found matching '*.pdf' under directory 'docs'
+adding license file 'LICENSE.md'
+writing manifest file 'pySpecData.egg-info/SOURCES.txt'
+You can now run pyspecdata_dataconfig to generate a template configuration file (which will show up in your home directory).
+* Building sdist...
+<string>:2: DeprecationWarning: 
+
+  `numpy.distutils` is deprecated since NumPy 1.23.0, as a result
+  of the deprecation of `distutils` itself. It will be removed for
+  Python >= 3.12. For older Python versions it will remain present.
+  It is recommended to use `setuptools < 60.0` for those Python versions.
+  For more details, see:
+    https://numpy.org/devdocs/reference/distutils_status_migration.html 
+
+
+running sdist
+running egg_info
+/usr/lib/python3.11/distutils/dist.py:985: UserWarning: 
+`build_src` is being run, this may lead to missing
+files in your sdist!  You want to use distutils.sdist
+instead of the setuptools version:
+
+    from distutils.command.sdist import sdist
+    cmdclass={'sdist': sdist}"
+
+See numpy's setup.py or gh-7131 for details.
+  cmd_obj.run()
+running build_src
+INFO: build_src
+INFO: building extension "pyspecdata._nnls" sources
+INFO: f2py options: []
+INFO:   adding 'build/src.linux-x86_64-3.11/build/src.linux-x86_64-3.11/nnls/fortranobject.c' to sources.
+INFO:   adding 'build/src.linux-x86_64-3.11/build/src.linux-x86_64-3.11/nnls' to include_dirs.
+INFO:   adding 'build/src.linux-x86_64-3.11/nnls/_nnls-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/home/jmfranck/base/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+writing pySpecData.egg-info/PKG-INFO
+writing dependency_links to pySpecData.egg-info/dependency_links.txt
+writing entry points to pySpecData.egg-info/entry_points.txt
+writing requirements to pySpecData.egg-info/requires.txt
+writing top-level names to pySpecData.egg-info/top_level.txt
+/home/jmfranck/base/lib/python3.11/site-packages/setuptools/command/egg_info.py:655: SetuptoolsDeprecationWarning: Custom 'build_py' does not implement 'get_data_files_without_manifest'.
+Please extend command classes from setuptools instead of distutils.
+  warnings.warn(
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+reading manifest file 'pySpecData.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.f90'
+warning: no files found matching '*.pdf' under directory 'docs'
+adding license file 'LICENSE.md'
+writing manifest file 'pySpecData.egg-info/SOURCES.txt'
+running check
+creating pySpecData-0.9.5.4
+creating pySpecData-0.9.5.4/docs
+creating pySpecData-0.9.5.4/docs/_sources
+creating pySpecData-0.9.5.4/docs/_sources/auto_api
+creating pySpecData-0.9.5.4/docs/_sources/auto_examples
+creating pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+creating pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+creating pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+creating pySpecData-0.9.5.4/docs/_sources/generated
+creating pySpecData-0.9.5.4/nnls
+creating pySpecData-0.9.5.4/pySpecData.egg-info
+creating pySpecData-0.9.5.4/pyspecdata
+creating pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+creating pySpecData-0.9.5.4/pyspecdata/fourier
+creating pySpecData-0.9.5.4/pyspecdata/load_files
+creating pySpecData-0.9.5.4/pyspecdata/matrix_math
+creating pySpecData-0.9.5.4/pyspecdata/plot_funcs
+copying files to pySpecData-0.9.5.4...
+copying CHANGES.txt -> pySpecData-0.9.5.4
+copying LICENSE.md -> pySpecData-0.9.5.4
+copying MANIFEST.in -> pySpecData-0.9.5.4
+copying README.rst -> pySpecData-0.9.5.4
+copying as-jmfrancklab1_files.txt -> pySpecData-0.9.5.4
+copying changelog.rst -> pySpecData-0.9.5.4
+copying conda_list_info.txt -> pySpecData-0.9.5.4
+copying conda_upgrade.md -> pySpecData-0.9.5.4
+copying jacobian_edits.txt -> pySpecData-0.9.5.4
+copying log.txt -> pySpecData-0.9.5.4
+copying output.txt -> pySpecData-0.9.5.4
+copying setup.py -> pySpecData-0.9.5.4
+copying docs/_sources/axis_manipulation.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/axis_object_plan.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/figlist.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/find_files.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/fitdata.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/fitdata_old.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/fourier.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/index.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/latexscripts.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/modules.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/nddata.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/notebook.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/pyspecdata.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/sg_execution_times.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/temp_stubs.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/units.rst.txt -> pySpecData-0.9.5.4/docs/_sources
+copying docs/_sources/auto_api/modules.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_api/pyspecdata.axis_manipulation.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_api/pyspecdata.fourier.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_api/pyspecdata.load_files.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_api/pyspecdata.plot_funcs.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_api/pyspecdata.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_api
+copying docs/_sources/auto_examples/BRD_test.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/BSA_calibration.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/Cary_simple.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/DCCT_function.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/PR_first_example.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/QESR.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/basic_example.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/calculate_covariance.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/convolution.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/ellmans.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/esr_example.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/fit_complex.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/fit_complex_with_transform.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/fit_fake_data.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/fit_with_bounds.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/image_plot.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/index.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/ksigmasmax.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/nddata_NNLS_Tikhonov_190104.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/pcolor_example.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/plot_container.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/polyfit.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/ppm_2D.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/ppm_example.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/sg_execution_times.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples
+copying docs/_sources/auto_examples/indiv_funcs/convolve.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/extend.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/hdf_test.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/index.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/sg_execution_times.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/test_colormatch.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/indiv_funcs/unitary_ft.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/indiv_funcs
+copying docs/_sources/auto_examples/matplotlib/artist_tests.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/matplotlib/draw_span.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/matplotlib/index.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/matplotlib/matplotlib_test.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/matplotlib/sg_execution_times.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/matplotlib/transf_math.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/matplotlib
+copying docs/_sources/auto_examples/text_only/basic_units.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/hdf5_error.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/index.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/log_test.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/phase_cycling_labels.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/plot_container.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/save_hdf.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/auto_examples/text_only/sg_execution_times.rst.txt -> pySpecData-0.9.5.4/docs/_sources/auto_examples/text_only
+copying docs/_sources/generated/pyspecdata.axis_manipulation.inhomog_coords.inhomog_coords.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.axis_manipulation.register_axis.register_axis.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.axis_manipulation.secsy.secsy_transform_manual.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.axis_manipulation.shear.linear_shear.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.core.fitdata.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.core.nddata.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.datadir.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.latexscripts.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying docs/_sources/generated/pyspecdata.lmfitdata.lmfitdata.rst.txt -> pySpecData-0.9.5.4/docs/_sources/generated
+copying nnls/_nnls-f2pywrappers.f -> pySpecData-0.9.5.4/nnls
+copying nnls/_nnlsmodule.c -> pySpecData-0.9.5.4/nnls
+copying nnls/nnls.f -> pySpecData-0.9.5.4/nnls
+copying nnls/nnls_regularized.f90 -> pySpecData-0.9.5.4/nnls
+copying nnls/nnls_regularized_loop.f90 -> pySpecData-0.9.5.4/nnls
+copying pySpecData.egg-info/PKG-INFO -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pySpecData.egg-info/SOURCES.txt -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pySpecData.egg-info/dependency_links.txt -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pySpecData.egg-info/entry_points.txt -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pySpecData.egg-info/requires.txt -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pySpecData.egg-info/top_level.txt -> pySpecData-0.9.5.4/pySpecData.egg-info
+copying pyspecdata/DCCT_function.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/__init__.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/anothertest.f90 -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/axis_class.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/core.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/datadir.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/dict_utils.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/figlist.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/fl_dummy.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/fornotebook.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/general_functions.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/generate_fake_data.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/hdf_utils.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/ipy.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/latexscripts.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/lmfitdata.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/mpl_utils.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/ndshape.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/nnls.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/placeholder.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/propagator.f90 -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/test_f90.f90 -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/units.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/version.py -> pySpecData-0.9.5.4/pyspecdata
+copying pyspecdata/axis_manipulation/__init__.py -> pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+copying pyspecdata/axis_manipulation/inhomog_coords.py -> pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+copying pyspecdata/axis_manipulation/register_axis.py -> pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+copying pyspecdata/axis_manipulation/secsy.py -> pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+copying pyspecdata/axis_manipulation/shear.py -> pySpecData-0.9.5.4/pyspecdata/axis_manipulation
+copying pyspecdata/fourier/__init__.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/_ft_conj.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/convolve.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/ft.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/ft_shift.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/ftshift.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/ift.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/fourier/shear.py -> pySpecData-0.9.5.4/pyspecdata/fourier
+copying pyspecdata/load_files/__init__.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/acert.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/bruker_esr.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/bruker_nmr.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/load_cary.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/open_subpath.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/load_files/prospa.py -> pySpecData-0.9.5.4/pyspecdata/load_files
+copying pyspecdata/matrix_math/__init__.py -> pySpecData-0.9.5.4/pyspecdata/matrix_math
+copying pyspecdata/matrix_math/dot.py -> pySpecData-0.9.5.4/pyspecdata/matrix_math
+copying pyspecdata/matrix_math/nnls.py -> pySpecData-0.9.5.4/pyspecdata/matrix_math
+copying pyspecdata/matrix_math/svd.py -> pySpecData-0.9.5.4/pyspecdata/matrix_math
+copying pyspecdata/plot_funcs/__init__.py -> pySpecData-0.9.5.4/pyspecdata/plot_funcs
+copying pyspecdata/plot_funcs/image.py -> pySpecData-0.9.5.4/pyspecdata/plot_funcs
+copying pyspecdata/plot_funcs/pcolormesh.py -> pySpecData-0.9.5.4/pyspecdata/plot_funcs
+Writing pySpecData-0.9.5.4/setup.cfg
+Creating tar archive
+removing 'pySpecData-0.9.5.4' (and everything under it)
+You can now run pyspecdata_dataconfig to generate a template configuration file (which will show up in your home directory).
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+<string>:2: DeprecationWarning: 
+
+  `numpy.distutils` is deprecated since NumPy 1.23.0, as a result
+  of the deprecation of `distutils` itself. It will be removed for
+  Python >= 3.12. For older Python versions it will remain present.
+  It is recommended to use `setuptools < 60.0` for those Python versions.
+  For more details, see:
+    https://numpy.org/devdocs/reference/distutils_status_migration.html 
+
+
+Traceback (most recent call last):
+  File "/home/jmfranck/base/lib/python3.11/site-packages/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+    main()
+  File "/home/jmfranck/base/lib/python3.11/site-packages/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+    json_out["return_val"] = hook(**hook_input["kwargs"])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmfranck/base/lib/python3.11/site-packages/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+    return hook(config_settings)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmfranck/base/lib/python3.11/site-packages/setuptools/build_meta.py", line 338, in get_requires_for_build_wheel
+    return self._get_build_requires(config_settings, requirements=['wheel'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmfranck/base/lib/python3.11/site-packages/setuptools/build_meta.py", line 320, in _get_build_requires
+    self.run_setup()
+  File "/home/jmfranck/base/lib/python3.11/site-packages/setuptools/build_meta.py", line 485, in run_setup
+    self).run_setup(setup_script=setup_script)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmfranck/base/lib/python3.11/site-packages/setuptools/build_meta.py", line 335, in run_setup
+    exec(code, locals())
+  File "<string>", line 3, in <module>
+  File "/tmp/build-via-sdist-flx02h82/pySpecData-0.9.5.4/pyspecdata/__init__.py", line 2, in <module>
+    from .core import *
+  File "/tmp/build-via-sdist-flx02h82/pySpecData-0.9.5.4/pyspecdata/core.py", line 39, in <module>
+    from .matrix_math.nnls import nnls as MM_nnls
+  File "/tmp/build-via-sdist-flx02h82/pySpecData-0.9.5.4/pyspecdata/matrix_math/nnls.py", line 5, in <module>
+    from .. import nnls as this_nnls
+  File "/tmp/build-via-sdist-flx02h82/pySpecData-0.9.5.4/pyspecdata/nnls.py", line 4, in <module>
+    from . import _nnls
+ImportError: cannot import name '_nnls' from partially initialized module 'pyspecdata' (most likely due to a circular import) (/tmp/build-via-sdist-flx02h82/pySpecData-0.9.5.4/pyspecdata/__init__.py)
+
+ERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel

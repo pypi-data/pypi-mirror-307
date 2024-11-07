@@ -1,0 +1,8 @@
+h5py
+lmfit>=1.1
+matplotlib>=3.8.0
+numpy
+pillow
+pint
+scipy
+sympy
