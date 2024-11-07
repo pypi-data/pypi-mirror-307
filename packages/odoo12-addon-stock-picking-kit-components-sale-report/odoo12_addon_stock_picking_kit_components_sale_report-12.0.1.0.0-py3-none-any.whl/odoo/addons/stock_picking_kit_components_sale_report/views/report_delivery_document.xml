@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="kit_report_delivery_document" inherit_id="stock.report_delivery_document">
+        <!-- global variables-->
+        <xpath expr="//table" position="before">
+            <t t-set="past_sol" t-value="None"/>
+            <t t-set="first_component" t-value="None"/>
+        </xpath>
+
+        <!-- First table // o.state!='done' model: stock.move-->
+        <!-- Stock moves are sorted by the sale order line -->
+        <xpath expr="//tr[@t-as='move']" position="attributes">
+            <attribute name="t-foreach">lines.sorted(key=lambda m: m.sale_line_id)</attribute>
+        </xpath>
+        <xpath expr="//tr[@t-as='move']/td" position="before">
+            <!-- It is calculated if the line is the first component, if so, the main product that comes from the sale is shown -->
+            <t t-set="first_component" t-value="past_sol!='None' and past_sol != move.sale_line_id.id and not move_last and move.sale_line_id.id == lines.sorted(key=lambda m: m.sale_line_id)[move_index+1].sale_line_id.id"/>
+            <t t-if="first_component">
+                <t t-set="so_line_tmlp" t-value="move.sale_line_id"/>
+                <tr class="bg-200 font-weight-bold o_line_section">
+                    <td><span t-field="so_line_tmlp.product_id.display_name"/></td>
+                    <td>
+                        <span t-field="so_line_tmlp.product_uom_qty"/>
+                        <span t-field="so_line_tmlp.product_uom" groups="uom.group_uom"/>
+                    </td>
+                </tr>
+            </t>
+        </xpath>
+        <!-- If the product is one component add one tab int the line -->
+        <xpath expr="//tr[@t-as='move']//span[@t-field='move.product_id']" position="before">
+            <span t-if="(past_sol!='None' and past_sol == move.sale_line_id.id) or first_component">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>
+        </xpath>
+        <!-- The value of the variable is set -->
+        <xpath expr="//tr[@t-as='move']" position="inside">
+            <t t-set="past_sol" t-value="move.sale_line_id.id if move.sale_line_id else 'None'"/>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move']/td[1]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move.sale_line_id.id else ''</attribute>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move']/td[last()]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move.sale_line_id.id else ''</attribute>
+        </xpath>
+
+
+        <!-- Last table // o.state=='done' model: stock.move.line-->
+
+        <!-- Stock moves lines are sorted by the sale order line -->
+        <xpath expr="//tr[@t-as='move_line']" position="attributes">
+            <attribute name="t-foreach">o.move_line_ids.sorted(key=lambda m: m.move_id.sale_line_id)</attribute>
+        </xpath>
+
+        <xpath expr="//tr[@t-as='move_line']/td" position="before">
+            <!-- AQUI debera de ir el tema del calculo de first_component -->
+            <t t-set="first_component" t-value="past_sol!='None' and past_sol != move_line.move_id.sale_line_id.id and not move_last and move_line.move_id.sale_line_id.id == o.move_line_ids.sorted(key=lambda m: m.move_id.sale_line_id)[move_line_index+1].move_id.sale_line_id.id"/>
+            <t t-if="first_component">
+                <t t-set="so_line_tmlp" t-value="move_line.move_id.sale_line_id"/>
+                <tr class="bg-200 font-weight-bold o_line_section">
+                    <td><span t-field="so_line_tmlp.product_id.display_name"/></td>
+                    <td t-if="has_serial_number and move_line.lot_name" groups="stock.group_lot_on_delivery_slip">
+                    </td>
+                    <td t-elif="has_serial_number" groups="stock.group_lot_on_delivery_slip">
+                    </td>
+                    <td class="text-center">
+                        <span t-field="so_line_tmlp.product_uom_qty"/>
+                        <span t-field="so_line_tmlp.product_uom" groups="uom.group_uom"/>
+                    </td>
+                </tr>
+            </t>
+        </xpath>
+
+        <!-- If the product is one component add one tab int the line -->
+        <xpath expr="//tr[@t-as='move_line']//span[@t-field='move_line.product_id']" position="before">
+            <span t-if="(past_sol!='None' and past_sol == move_line.move_id.sale_line_id.id) or first_component">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>
+        </xpath>
+        <!-- The value of the variable is set -->
+        <xpath expr="//tr[@t-as='move_line']" position="inside">
+            <t t-set="past_sol" t-value="move_line.move_id.sale_line_id.id if move_line.move_id.sale_line_id else 'None'"/>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move_line']/td[1]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move_line.move_id.sale_line_id.id else ''</attribute>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move_line']/td[2]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move_line.move_id.sale_line_id.id else ''</attribute>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move_line']/td[3]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move_line.move_id.sale_line_id.id else ''</attribute>
+        </xpath>
+        <!-- If the product is one component, the style of the line is changed. -->
+        <xpath expr="//tr[@t-as='move_line']/td[last()]" position="attributes">
+            <attribute name="t-att-class">'font-italic o_line_note' if past_sol!='None' and past_sol == move_line.move_id.sale_line_id.id else ''</attribute>
+        </xpath>
+
+    </template>
+</odoo>
