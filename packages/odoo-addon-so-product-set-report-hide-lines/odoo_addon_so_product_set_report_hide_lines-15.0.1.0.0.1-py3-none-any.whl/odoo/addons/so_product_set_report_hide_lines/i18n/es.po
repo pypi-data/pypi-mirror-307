@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* so_product_set_report_hide_lines
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 08:21+0000\n"
+"PO-Revision-Date: 2023-09-21 08:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields,help:so_product_set_report_hide_lines.field_product_set_add__hide_set_lines
+msgid ""
+"'Depending on the set configuration': All lines that have been configured in the product set will be displayed in the sales report.\n"
+"'Hide all lines': all lines of the product set will be hidden in the sales report.\n"
+"'Show all lines': all lines of the product set will be displayed in the sales report.\n"
+"You can also modify the product set lines displayed in the sales report from the sales order."
+msgstr ""
+"'En función de la configuración del conjunto': Se mostrarán en el informe de ventas todas las líneas que se hayan configurado en el conjunto de productos.\n" 
+"'Ocultar todas las líneas': se ocultaran todas las líneas del conjunto de productos en el informe de ventas.\n"
+"'Mostrar todas las líneas': se mostrarán todas las líneas del conjunto de productos en el informe de ventas.\n"
+"También se pueden modificar las líneas del conjunto de productos que aparecen en el informe de ventas desde la orden de venta."
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields.selection,name:so_product_set_report_hide_lines.selection__product_set_add__hide_set_lines__by_set_config
+msgid "Depending on the set configuration"
+msgstr "En función de la configuración del conjunto"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields.selection,name:so_product_set_report_hide_lines.selection__product_set_add__hide_set_lines__hide_lines
+msgid "Hide All Lines"
+msgstr "Ocultar todas las líneas"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields,field_description:so_product_set_report_hide_lines.field_product_set_line__show_line_report
+msgid "Line in Report"
+msgstr "Línea en Impreso"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model,name:so_product_set_report_hide_lines.model_product_set_line
+msgid "Product set line"
+msgstr "Línea de conjunto de productos"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields.selection,name:so_product_set_report_hide_lines.selection__product_set_add__hide_set_lines__show_lines
+msgid "Show All Lines"
+msgstr "Mostrar todas las líneas"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model.fields,field_description:so_product_set_report_hide_lines.field_product_set_add__hide_set_lines
+msgid "Show Lines in Sales Report"
+msgstr "Mostrar las líneas en los impresos de ventas"
+
+#. module: so_product_set_report_hide_lines
+#: model:ir.model,name:so_product_set_report_hide_lines.model_product_set_add
+msgid "Wizard model to add product set into a quotation"
+msgstr "Asistente para añadir un conjunto de productos en un presupuesto"
