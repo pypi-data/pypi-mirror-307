@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "promptia"
+version = "0.5.0"
+description = "Promptia is a Python library designed to streamline the management and generation of prompts for Large Language Models (LLMs)."
+authors = ["tamuto <tamuto@infodb.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.4"
+pydantic = "^2.9.1"
+sentence-transformers = {version = "^3.1.0", optional = true}
+faiss-cpu = {version = "^1.8.0.post1", optional = true}
+boto3 = {version = "^1.35.20", optional = true}
+openai = {version = "^1.46.0", optional = true}
+
+
+[tool.poetry.extras]
+local-index = ["faiss-cpu", "sentence-transformers"]
+aws = ["boto3"]
+openai = ["openai"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "dotenv run python3 -m unittest discover"
