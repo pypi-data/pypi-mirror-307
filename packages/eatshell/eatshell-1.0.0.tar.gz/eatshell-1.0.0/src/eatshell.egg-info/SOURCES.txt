@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/eatshell.py
+src/eatshell.egg-info/PKG-INFO
+src/eatshell.egg-info/SOURCES.txt
+src/eatshell.egg-info/dependency_links.txt
+src/eatshell.egg-info/entry_points.txt
+src/eatshell.egg-info/requires.txt
+src/eatshell.egg-info/top_level.txt
