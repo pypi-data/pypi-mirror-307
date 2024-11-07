@@ -1,0 +1,18 @@
+{
+    "momentum": 0.9,
+    "optim_metric": "MSE",
+    "val_check_interval": 10,
+    "hex_geometry": true,
+    "batch_size": 256,
+    "num_workers": 0,
+    "shuffle": true,
+    "masking_method": "mask_prob",
+    "mask_prob": 0.3,
+    "scale_factor": 0.8,
+    "num_neighs": 18,
+    "transformer_heads": 1,
+    "transformer_encoder_layers": 2,
+    "use_visual_features": false,
+    "img_backbone": "ViT",
+    "include_genes": true
+}

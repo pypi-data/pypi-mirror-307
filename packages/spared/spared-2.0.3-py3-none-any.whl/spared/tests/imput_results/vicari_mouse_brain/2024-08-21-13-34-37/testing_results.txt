@@ -1,0 +1,30 @@
+Gene imputation through SpaCKLE.
+Checkpoints restored from /media/SSD4/dvegaa/SpaRED/spared/spared/tests/imput_results/vicari_mouse_brain/2024-08-21-13-34-37/epoch=10-step=970.ckpt{
+    "train_spackle_results": {
+        "testing_train_PCC-Gene": 0.4862518310546875,
+        "testing_train_PCC-Patch": 0.8678833246231079,
+        "testing_train_R2-Gene": 0.24412444233894348,
+        "testing_train_R2-Patch": -0.471500039100647,
+        "testing_train_MSE": 0.8028542399406433,
+        "testing_train_MAE": 0.7075744271278381,
+        "testing_train_Global": -0.3836691081523895
+    },
+    "val_spackle_results": {
+        "testing_val_PCC-Gene": 0.3705291748046875,
+        "testing_val_PCC-Patch": 0.8581206202507019,
+        "testing_val_R2-Gene": 0.1361737996339798,
+        "testing_val_R2-Patch": -34.921653747558594,
+        "testing_val_MSE": 0.8550766706466675,
+        "testing_val_MAE": 0.7274993658065796,
+        "testing_val_Global": -35.139404296875
+    },
+    "test_spackle_results": {
+        "testing_test_PCC-Gene": 0.37392348051071167,
+        "testing_test_PCC-Patch": 0.8395691514015198,
+        "testing_test_R2-Gene": 0.11475080251693726,
+        "testing_test_R2-Patch": 0.2289268523454666,
+        "testing_test_MSE": 0.9584539532661438,
+        "testing_test_MAE": 0.7793235778808594,
+        "testing_test_Global": -0.18060724437236786
+    }
+}

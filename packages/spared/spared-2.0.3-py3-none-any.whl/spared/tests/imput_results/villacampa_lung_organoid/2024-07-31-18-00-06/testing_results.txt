@@ -1,0 +1,30 @@
+Gene imputation through SpaCKLE.
+Checkpoints restored from /media/SSD4/dvegaa/SpaRED/spared/tests/imput_results/villacampa_lung_organoid/2024-07-31-18-00-06/epoch=236-step=710.ckpt{
+    "train_spackle_results": {
+        "testing_train_PCC-Gene": 0.9624005556106567,
+        "testing_train_PCC-Patch": 0.967846155166626,
+        "testing_train_R2-Gene": 0.8886507749557495,
+        "testing_train_R2-Patch": 0.8834955096244812,
+        "testing_train_MSE": 0.07939476519823074,
+        "testing_train_MAE": 0.21825627982616425,
+        "testing_train_Global": 3.4047420024871826
+    },
+    "val_spackle_results": {
+        "testing_val_PCC-Gene": 0.3284681439399719,
+        "testing_val_PCC-Patch": 0.2512364387512207,
+        "testing_val_R2-Gene": 0.017923612147569656,
+        "testing_val_R2-Patch": -0.26679688692092896,
+        "testing_val_MSE": 0.8526996374130249,
+        "testing_val_MAE": 0.7287932634353638,
+        "testing_val_Global": -1.2506616115570068
+    },
+    "test_spackle_results": {
+        "testing_test_PCC-Gene": 0.33798012137413025,
+        "testing_test_PCC-Patch": 0.24712048470973969,
+        "testing_test_R2-Gene": 0.0605960451066494,
+        "testing_test_R2-Patch": -0.5296234488487244,
+        "testing_test_MSE": 0.8317897319793701,
+        "testing_test_MAE": 0.7186874747276306,
+        "testing_test_Global": -1.4344040155410767
+    }
+}
