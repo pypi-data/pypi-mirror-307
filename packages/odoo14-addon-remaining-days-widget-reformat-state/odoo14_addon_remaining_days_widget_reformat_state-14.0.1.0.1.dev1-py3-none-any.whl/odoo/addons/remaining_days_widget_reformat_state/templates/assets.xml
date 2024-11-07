@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor - Sygel
+    License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html). -->
+<odoo>
+    <template
+        id="assets_backend"
+        name="remaining_days_widget_reformat_state_assets"
+        inherit_id="web.assets_backend"
+    >
+        <xpath expr="." position="inside">
+            <script
+                type="text/javascript"
+                src="/remaining_days_widget_reformat_state/static/src/js/remaining_days_widget_reformat_state.js"
+            />
+        </xpath>
+    </template>
+</odoo>
