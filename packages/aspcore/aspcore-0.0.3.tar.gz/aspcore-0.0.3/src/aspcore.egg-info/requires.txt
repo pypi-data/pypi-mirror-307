@@ -1,0 +1,12 @@
+numpy
+scipy
+numba
+numexpr
+matplotlib
+tensorly
+samplerate
+
+[test]
+pytest
+hypothesis
+aspsim
