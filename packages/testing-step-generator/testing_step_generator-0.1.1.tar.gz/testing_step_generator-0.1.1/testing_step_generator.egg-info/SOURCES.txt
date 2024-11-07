@@ -1,0 +1,11 @@
+README.md
+setup.py
+testing_step_generator.egg-info/PKG-INFO
+testing_step_generator.egg-info/SOURCES.txt
+testing_step_generator.egg-info/dependency_links.txt
+testing_step_generator.egg-info/entry_points.txt
+testing_step_generator.egg-info/requires.txt
+testing_step_generator.egg-info/top_level.txt
+tsg/__init__.py
+tsg/cli.py
+tsg/generate_script.py

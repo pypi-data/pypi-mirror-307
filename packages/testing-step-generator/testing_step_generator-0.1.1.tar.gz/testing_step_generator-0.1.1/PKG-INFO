@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: testing_step_generator
+Version: 0.1.1
+Summary: A CLI tool for initializing and generating output.
+Home-page: https://github.com/kel89
+Author: Your Name
+Author-email: kel89@cornell.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+
+# Kenny's Testing Step Generate
+
+This is a CLI that should generate testing steps
