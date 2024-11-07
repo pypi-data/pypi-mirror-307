@@ -1,0 +1,11 @@
+name: test-name-from-file
+image_uri: docker.io/library/test:latest
+compute_config: test-compute-config
+working_dir: test-working-dir
+env_vars:
+  ENV_KEY: ENV_VAL
+excludes: [test]
+requirements: [pip-install-test]
+entrypoint: python test.py
+max_retries: 5
+timeout_s: 60
