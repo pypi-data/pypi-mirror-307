@@ -1,0 +1,4 @@
+[console_scripts]
+commitzilla=commitzilla.main:app
+czilla=commitzilla.main:app
+
