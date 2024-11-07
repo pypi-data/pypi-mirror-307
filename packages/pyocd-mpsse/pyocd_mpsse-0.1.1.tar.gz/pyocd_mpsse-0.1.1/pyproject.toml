@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyocd-mpsse"
+version = "0.1.1"
+description = "PyOCD debug probe plugin for the MPSSE mode of FTDI chips"
+authors = ["Andreas Fritiofson <andreas@fritiofson.net>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "pyocd_mpsse"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyocd = "^0.36.0"
+
+[tool.poetry.plugins."pyocd.probe"]
+mpsse = "pyocd_mpsse.mpsse_probe:MPSSEProbePlugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
