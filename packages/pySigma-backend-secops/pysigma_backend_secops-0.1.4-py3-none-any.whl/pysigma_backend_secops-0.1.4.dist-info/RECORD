@@ -1,0 +1,16 @@
+sigma/backends/secops/__init__.py,sha256=RC5EU6CiTuKFKNPmCtUXzUXKEUrQHHRxZrXQeBGNsrI,34
+sigma/backends/secops/secops.py,sha256=2AzfjnUxh6ZLwtHj8Zwsk8AlXgQgW2FzgpITsZqvxs8,25375
+sigma/pipelines/secops/__init__.py,sha256=eE8I_i7BEdtZW5L9Zop7u70UDBJUXiXi5tCdezPuwqY,40
+sigma/pipelines/secops/errors.py,sha256=9pG2tQacEfUPwJdCM9saYP0pqvogLUvqn_uoBhEaLk4,256
+sigma/pipelines/secops/mappings.py,sha256=A7oIwc4SIkax19NZRUKIyXo7OHuhUQvFaEno99Or_6g,5831
+sigma/pipelines/secops/postprocessing.py,sha256=o9EUzKCVN0mDTlU4eA7zwDyVInfen86skwg9OqlWh_c,1889
+sigma/pipelines/secops/secops.py,sha256=lPRn42BivIxF8Fh14gUrjdpweUq1ED8ZkVk_ljLzy_o,4486
+sigma/pipelines/secops/transformations.py,sha256=Tu-JegGOGRCEra3aNB4dRID30pNHQUef14Z8vTOlBXM,8594
+sigma/pipelines/secops/udm_field_schema.json,sha256=YKUkpHqzesjXvwJn24GBOAPvcZ-kwbedDBc67FmyqTY,45860
+sigma/pipelines/secops/utils.py,sha256=e9yvdkB5dqavSCPNSve7quh6Ywwzu6DxkFpYF8U7RQE,5629
+sigma/pipelines/secops/validators.py,sha256=P6fI9G8dHpMYqFuFDguj0HA9ksEiCBguv--bJyEaA_s,4678
+sigma/pipelines/secops/yara_l.py,sha256=RMrRWo1T3BVuN5ccdEErifrNb5dUepkjRK8e38uInBI,1063
+pysigma_backend_secops-0.1.4.dist-info/LICENSE,sha256=3IXI3x1RN4jDR2PonpWF1guc33zagcTgpq_VnboE3UU,7653
+pysigma_backend_secops-0.1.4.dist-info/METADATA,sha256=v2LidMdc58P_385TPBoYTzLaQ1jN42QdnwhUw6T1BG8,818
+pysigma_backend_secops-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pysigma_backend_secops-0.1.4.dist-info/RECORD,,

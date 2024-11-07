@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pySigma-backend-secops
+Version: 0.1.4
+Summary: pySigma Google SecOps Backend
+Home-page: https://github.com/AttackIQ/pySigma-backend-secops
+License: LGPL-3.0-only
+Author: Stephen Lincoln
+Author-email: stephen.lincoln@attackiq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: importlib-resources
+Requires-Dist: pysigma (>=0.11.17)
+Project-URL: Repository, https://github.com/AttackIQ/pySigma-backend-secops
