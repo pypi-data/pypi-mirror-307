@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: terrajinja-deploy
+Version: 0.4.0
+Summary: Terrajinja extension for automation using cdktf
+Home-page: https://gitlab/terrajinja
+Author: Terrajinja Team
+Author-email: int-terrajinja@schubergphilis.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cdktf >=0.20.3
+
+# terrajinja-deploy
+
+This accepts a python dict as input and use cdktf to generate terraform based data
+
+TODO: add proper documentation
+
+History
+-------
+
+0.0.1 (14-03-2024)
+---------------------
+
+* First code creation
