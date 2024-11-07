@@ -1,0 +1,3 @@
+[console_scripts]
+exit_notifier=ExitNotifier.exit_notifier:main
+
