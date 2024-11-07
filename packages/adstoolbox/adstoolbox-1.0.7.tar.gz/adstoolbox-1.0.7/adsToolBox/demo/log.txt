@@ -1,0 +1,287 @@
+2024-11-06 14:39:56,527 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:39:56,527 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:40:40,045 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:40:40,045 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:40:40,562 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:41:15,499 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:41:15,499 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:41:16,005 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:42:40,934 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:42:40,940 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:42:41,464 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:42:41,512 - EnvLogger - ERROR - **************************************************
+2024-11-06 14:42:41,512 - EnvLogger - ERROR - Échec de l'exécution de la requête: (208, b"Invalid object name 'LOGS'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-06 14:42:41,512 - EnvLogger - ERROR - **************************************************
+2024-11-06 14:44:27,859 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:44:27,859 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:44:28,349 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:44:28,399 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:44:59,113 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:44:59,113 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:44:59,624 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:44:59,674 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:47:26,190 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:47:26,190 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:47:26,685 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:47:26,736 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:47:26,737 - EnvLogger - ERROR - **************************************************
+2024-11-06 14:47:26,737 - EnvLogger - ERROR - Échec de l'exécution de la requête: 'NoneType' object has no attribute 'cursor'
+2024-11-06 14:47:26,738 - EnvLogger - ERROR - **************************************************
+2024-11-06 14:47:39,323 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:47:39,324 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:47:39,799 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:47:39,848 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:47:39,848 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:47:40,245 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:47:40,334 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:49:22,308 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 14:49:22,309 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:49:22,781 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:49:22,829 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 14:49:22,831 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 14:49:23,234 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 14:49:23,344 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:32:35,059 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:32:35,059 - EnvLogger - INFO - Message d'info
+2024-11-06 15:32:35,059 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:32:35,060 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:48:50,284 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:48:50,284 - EnvLogger - INFO - Message d'info
+2024-11-06 15:48:50,284 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:48:50,284 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:48:50,284 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:48:50,631 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:48:50,749 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:48:50,794 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:48:50,795 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: Logger._insert_logs_table_details() takes 3 positional arguments but 7 were given
+2024-11-06 15:48:50,795 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:48:50,795 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:48:50,795 - EnvLogger - ERROR - Échec de l'exécution de la requête: Logger._insert_logs_table_details() takes 3 positional arguments but 7 were given
+2024-11-06 15:48:50,795 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:15,701 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:49:15,701 - EnvLogger - INFO - Message d'info
+2024-11-06 15:49:15,701 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:49:15,701 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:49:15,701 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:49:16,029 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:49:16,128 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: Logger._insert_logs_table_details() takes 3 positional arguments but 7 were given
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - Échec de l'exécution de la requête: Logger._insert_logs_table_details() takes 3 positional arguments but 7 were given
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: Logger._insert_logs_table_details() takes 3 positional arguments but 7 were given
+2024-11-06 15:49:16,178 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:49:41,920 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:49:41,920 - EnvLogger - INFO - Message d'info
+2024-11-06 15:49:41,920 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:49:41,920 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:49:41,920 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:49:42,275 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:49:42,359 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:49:42,535 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:49:42,635 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:49:42,808 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:49:42,934 - EnvLogger - INFO - 1 ligne insérée avec succès dans la table insert_test.
+2024-11-06 15:49:43,059 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:49:43,141 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:49:43,227 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:49:43,227 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-06 15:50:13,459 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:50:13,459 - EnvLogger - INFO - Message d'info
+2024-11-06 15:50:13,459 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:50:13,459 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:50:13,459 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:50:13,840 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:50:13,937 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:50:14,133 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:50:14,247 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:50:14,442 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:50:14,588 - EnvLogger - INFO - 1 ligne insérée avec succès dans la table insert_test.
+2024-11-06 15:50:14,728 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:50:14,823 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:50:14,920 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:50:14,920 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-06 15:50:15,069 - EnvLogger - INFO - Logs insérés dans la table de LOGS.
+2024-11-06 15:55:53,616 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:55:53,617 - EnvLogger - INFO - Message d'info
+2024-11-06 15:55:53,617 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:55:53,617 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:55:53,617 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:55:54,032 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:55:54,141 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:55:54,361 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:55:54,486 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:55:54,707 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:55:54,869 - EnvLogger - INFO - 1 ligne insérée avec succès dans la table insert_test.
+2024-11-06 15:55:55,031 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:55:55,138 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:55:55,247 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 15:55:55,254 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-06 15:55:55,413 - EnvLogger - INFO - Logs insérés dans la table de LOGS.
+2024-11-06 15:57:43,283 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 15:57:43,283 - EnvLogger - INFO - Message d'info
+2024-11-06 15:57:43,283 - EnvLogger - DEBUG - Message de debug
+2024-11-06 15:57:43,283 - EnvLogger - WARNING - Message de warning
+2024-11-06 15:57:43,283 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 15:57:43,753 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 15:57:43,807 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:57:43,959 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 15:57:44,214 - EnvLogger - INFO - 1 lignes insérées avec succès dans la table insert_test.
+2024-11-06 15:57:44,215 - EnvLogger - ERROR - **************************************************
+2024-11-06 15:57:44,215 - EnvLogger - ERROR - Échec de l'insertion des données: Logger.log_to_db() got an unexpected keyword argument 'status'
+2024-11-06 15:57:44,215 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,072 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 16:03:08,072 - EnvLogger - INFO - Message d'info
+2024-11-06 16:03:08,072 - EnvLogger - DEBUG - Message de debug
+2024-11-06 16:03:08,072 - EnvLogger - WARNING - Message de warning
+2024-11-06 16:03:08,072 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 16:03:08,543 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 16:03:08,597 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 16:03:08,756 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,756 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: (208, b"Invalid object name 'LOGS_details'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-06 16:03:08,757 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,856 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,856 - EnvLogger - ERROR - Échec de l'exécution de la requête: (208, b"Invalid object name 'LOGS_details'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-06 16:03:08,856 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,908 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:08,908 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: (208, b"Invalid object name 'LOGS_details'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-06 16:03:08,908 - EnvLogger - ERROR - **************************************************
+2024-11-06 16:03:41,331 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 16:03:41,331 - EnvLogger - INFO - Message d'info
+2024-11-06 16:03:41,331 - EnvLogger - DEBUG - Message de debug
+2024-11-06 16:03:41,331 - EnvLogger - WARNING - Message de warning
+2024-11-06 16:03:41,331 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 16:03:41,816 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 16:03:42,019 - EnvLogger - INFO - Table LOGS et LOGS_details créées.
+2024-11-06 16:03:42,068 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 16:03:42,319 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:03:42,370 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 16:03:42,616 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:03:42,770 - EnvLogger - INFO - 1 lignes insérées avec succès dans la table insert_test.
+2024-11-06 16:03:42,920 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:03:42,977 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-06 16:03:43,179 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:03:43,179 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-06 16:03:43,329 - EnvLogger - INFO - Logs insérés dans la table de LOGS.
+2024-11-06 16:07:41,714 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 16:07:42,060 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 16:08:03,133 - AdsLogger - ERROR - **************************************************
+2024-11-06 16:08:03,133 - AdsLogger - ERROR - Échec de la connexion à la base de données: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (192.168.10.109)\nNet-Lib error during Unknown error (10060)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (192.168.10.109)\nNet-Lib error during Unknown error (10060)\n')
+2024-11-06 16:08:03,133 - AdsLogger - ERROR - **************************************************
+2024-11-06 16:08:09,708 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 16:09:03,412 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-06 16:09:03,810 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-06 16:09:04,313 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-11-06 16:09:04,314 - AdsLogger - INFO - Temps d'exécution de connect: 0.5045 secondes.
+2024-11-06 16:09:04,370 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-11-06 16:09:04,613 - AdsLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:09:04,613 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.2995 secondes.
+2024-11-06 16:09:05,078 - AdsLogger - INFO - Connexion à test réussie.
+2024-11-06 16:09:05,078 - AdsLogger - INFO - Chargement des données depuis la source...
+2024-11-06 16:09:05,483 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-11-06 16:09:05,649 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table insert_test_2.
+2024-11-06 16:09:05,790 - AdsLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:09:05,790 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2927 secondes.
+2024-11-06 16:09:05,840 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-11-06 16:09:05,848 - AdsLogger - INFO - 1 lignes lues.
+2024-11-06 16:09:05,998 - AdsLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:09:05,998 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.2075 secondes
+2024-11-06 16:09:06,044 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-11-06 16:09:06,044 - AdsLogger - INFO - 1 lignes lues.
+2024-11-06 16:09:06,188 - AdsLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:09:06,189 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1915 secondes
+2024-11-06 16:09:06,208 - AdsLogger - INFO - Les données insérées correspondent bien à la source.
+2024-11-06 16:09:06,208 - AdsLogger - INFO - 1 ligne(s) lue(s).
+2024-11-06 16:09:06,353 - AdsLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-06 16:09:06,353 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.9690 secondes
+2024-11-06 16:09:06,358 - AdsLogger - INFO - Temps d'exécution de run: 1.7447 secondes.
+2024-11-06 16:09:06,358 - AdsLogger - INFO - Fin de la démonstration
+2024-11-07 10:35:46,062 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:35:46,062 - EnvLogger - INFO - Message d'info
+2024-11-07 10:35:46,062 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:35:46,062 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:35:46,062 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:36:01,106 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:01,106 - EnvLogger - ERROR - Échec de la connexion à la base de données: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (130.180.215.217)\nNet-Lib error during Unknown error (10053)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (130.180.215.217)\nNet-Lib error during Unknown error (10053)\n')
+2024-11-07 10:36:01,106 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:04,214 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:36:04,215 - EnvLogger - INFO - Message d'info
+2024-11-07 10:36:04,215 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:36:04,215 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:36:04,215 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:36:04,705 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-07 10:36:04,757 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:04,757 - EnvLogger - ERROR - Erreur lors de la création des tables de logs: (2714, b"There is already an object named 'LOGS' in the database.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-07 10:36:04,757 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:43,298 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:36:43,299 - EnvLogger - INFO - Message d'info
+2024-11-07 10:36:43,299 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:36:43,299 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:36:43,299 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:36:43,778 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-07 10:36:43,829 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:43,829 - EnvLogger - ERROR - Erreur lors de la création des tables de logs: (2714, b"There is already an object named 'LOGS' in the database.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-07 10:36:43,829 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:43,886 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:36:43,935 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:43,935 - EnvLogger - ERROR - Échec de l'exécution de la requête: Cannot commit transaction: (3902, b'The COMMIT TRANSACTION request has no corresponding BEGIN TRANSACTION.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n')
+2024-11-07 10:36:43,935 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:44,039 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:36:44,039 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: Cannot commit transaction: (3902, b'The COMMIT TRANSACTION request has no corresponding BEGIN TRANSACTION.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n')
+2024-11-07 10:36:44,039 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:40:19,593 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:40:19,593 - EnvLogger - INFO - Message d'info
+2024-11-07 10:40:19,593 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:40:19,593 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:40:19,593 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:40:20,076 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-07 10:40:20,223 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:40:20,224 - EnvLogger - ERROR - Erreur lors de la création des tables de logs: (2714, b"There is already an object named 'LOGS' in the database.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-11-07 10:40:20,224 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:40:20,274 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:40:20,517 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:40:20,569 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:40:20,814 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:40:20,964 - EnvLogger - INFO - 1 lignes insérées avec succès dans la table insert_test.
+2024-11-07 10:40:21,106 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:40:21,155 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:40:21,347 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:40:21,347 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-07 10:40:21,496 - EnvLogger - INFO - Logs insérés dans la table de LOGS.
+2024-11-07 10:41:47,193 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:41:47,193 - EnvLogger - INFO - Message d'info
+2024-11-07 10:41:47,193 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:41:47,193 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:41:47,193 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:41:47,563 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-07 10:41:47,723 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:41:47,724 - EnvLogger - ERROR - Erreur lors de la création des tables de logs: relation "logs" already exists 
+2024-11-07 10:41:47,724 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:41:47,821 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:41:47,822 - EnvLogger - ERROR - Échec de l'exécution de la requête: syntax error at or near "IF" LINE 2: IF OBJECT_ID('dbo.insert_test', 'U') IS NOT NULL          ^ 
+2024-11-07 10:41:47,822 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:41:47,872 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:41:47,872 - EnvLogger - ERROR - Erreur lors des insertions dans les table de logs: current transaction is aborted, commands ignored until end of transaction block 
+2024-11-07 10:41:47,872 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:45:06,332 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-11-07 10:45:06,332 - EnvLogger - INFO - Message d'info
+2024-11-07 10:45:06,332 - EnvLogger - DEBUG - Message de debug
+2024-11-07 10:45:06,332 - EnvLogger - WARNING - Message de warning
+2024-11-07 10:45:06,332 - EnvLogger - INFO - Tentative de connexion avec la base de données.
+2024-11-07 10:45:06,692 - EnvLogger - INFO - Connexion établie avec la base de données.
+2024-11-07 10:45:06,838 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:45:06,839 - EnvLogger - ERROR - Erreur lors de la création des tables de logs: relation "logs" already exists 
+2024-11-07 10:45:06,839 - EnvLogger - ERROR - **************************************************
+2024-11-07 10:45:06,949 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:45:07,158 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:45:07,274 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:45:07,464 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:45:07,612 - EnvLogger - INFO - 1 ligne insérée avec succès dans la table insert_test.
+2024-11-07 10:45:07,755 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:45:07,853 - EnvLogger - INFO - Requête exécutée avec succès.
+2024-11-07 10:45:07,951 - EnvLogger - INFO - Logs inséré dans la table de détails LOGS_details.
+2024-11-07 10:45:07,951 - EnvLogger - INFO - Fermeture des logs en cours...
+2024-11-07 10:45:08,096 - EnvLogger - INFO - Logs insérés dans la table de LOGS.
