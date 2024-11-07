@@ -1,0 +1,3 @@
+[console_scripts]
+neojelll-url-shortener-service=service.main:run
+
