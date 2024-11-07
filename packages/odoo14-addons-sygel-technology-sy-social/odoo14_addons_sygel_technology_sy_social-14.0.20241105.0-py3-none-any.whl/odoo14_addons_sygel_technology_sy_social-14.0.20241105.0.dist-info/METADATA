@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-sygel-technology-sy-social
+Version: 14.0.20241105.0
+Summary: Meta package for sygel-technology-sy-social Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-disabled-mail-follower-invitation
+
+UNKNOWN
