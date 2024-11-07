@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: first-django-generator
+Version: 0.1.1
+Summary: A Django management command to generate views and serializers based on models.
+Home-page: https://github.com/yourusername/my_django_generator
+Author: Saurabh Shinde
+Author-email: saurabh004shinde@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown
+License-File: LICENSE
