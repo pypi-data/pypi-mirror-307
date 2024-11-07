@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "orign"
+version = "0.1.7"
+description = "A Python client for Orign"
+authors = ["Patrick Barker <patrickbarkerco@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+websockets = "^13.1"
+pydantic = "^2.9.2"
+pyyaml = "^6.0.2"
+websocket-client = "^1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
