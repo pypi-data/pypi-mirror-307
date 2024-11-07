@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Assets for backend -->
+    <template id="web_company_logo.assets_backend" name="wcl_assets_back" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/web_company_logo/static/src/css/menu.css"/>
+            <script type="text/javascript" src="/web_company_logo/static/src/js/menu.js"></script>
+        </xpath>
+    </template>
+</odoo>

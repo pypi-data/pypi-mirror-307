@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-extend="Menu">
+        <t t-jquery=".o_menu_systray" t-operation="after">
+            <a id="company-logo-link" href="/web" role="menu" style="float: right">
+                <img id="company-logo" alt="Logo"/>
+            </a>
+        </t>
+    </t>
+</templates>
