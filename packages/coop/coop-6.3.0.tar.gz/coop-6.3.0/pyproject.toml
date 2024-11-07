@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "coop"
+version = "6.3.0"
+description = "Standard base to build Wagtail sites from"
+authors = ["Neon Jungle <developers@neonjungle.studio>"]
+readme = "README.rst"
+include = [
+    "coop/jinja2/**/*.html",
+    "coop/utils/test_images/*",
+    "coop/utils/test_documents/*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wagtail = ">=6.3.0,<6.4.0"
+django = ">=4.2,<=5.0"
+psycopg = {version = "~3.1.0", extras = ["binary"]}
+pytz = "*"
+Jinja2 = "~3.1.0"
+django-htmx = ">=1.21.0,<1.22.0"
+django-honeypot = "~1.1.0"
+wagtail-metadata = "5.0.0"
+wagtail-icomoon = "*"
+wagtail-cache = ">=2.5.0,<2.6.0"
+wagtail-factories = "~4.2.0"
+sentry-sdk = "^2.13.0"
+diskcache = {version = "~5.2.0", optional = true}
+mailchimp3 = {version = "~3.0.0", optional = true}
+django-vite = {version = ">=3.0.0,<3.1.0", optional = true}
+django-webpack-loader = {version = "~1.8.0", optional = true}
+
+
+[tool.poetry.extras]
+all = ["mailchimp3", "diskcache"]
+cache = ["diskcache"]
+mailchimp = ["mailchimp3"]
+vite = ["django-vite"]
+webpack = ["django-webpack-loader"]
+
+
+[tool.ruff]
+line-length = 100
+exclude = ["migrations"]
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
