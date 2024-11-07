@@ -1,0 +1,2 @@
+[console_scripts]
+toycode-cli = toycode.main:main
