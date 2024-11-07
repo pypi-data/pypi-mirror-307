@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: opencv-ffmpeg-gstreamer
+Version: 4.5.2
+Summary: Custom OpenCV build with FFmpeg and GStreamer support
+Home-page: https://github.com/herambgvd/opencv-ffmpeg-gstreamer
+Author: Heramb Mishra
+Author-email: heramb1008@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Let's generate the README.md file based on the detailed content provided
+
+# Content for the README.md
+readme_content = """
+# OpenCV with FFmpeg and GStreamer Support
+
+This project provides a custom build of OpenCV with support for FFmpeg and GStreamer, enabling enhanced video and image processing capabilities. It’s packaged as a Python wheel for easy installation and compatibility across different projects.
+
+## Features
+- **FFmpeg Integration**: Enables advanced video processing, encoding, and decoding.
+- **GStreamer Integration**: Provides support for flexible multimedia pipelines and video processing tasks.
+- **Python Bindings**: Easily installable as a Python package, making OpenCV available for use in your Python projects.
+
+## Installation
+
+Ensure that you have `FFmpeg` and `GStreamer` installed on your system. You can install them on Ubuntu using:
+
+```bash
+sudo apt update
+sudo apt install -y libavcodec-dev libavformat-dev libswscale-dev \\
+                    gstreamer1.0-tools libgstreamer-plugins-base1.0-dev \\
+                    libgstreamer1.0-dev
+
+Installing the Package
+You can install the custom OpenCV package directly using pip:
+
+pip install opencv-ffmpeg-gstreamer
+
+
+System Requirements
+Python: Version 3.6 or higher
+Linux: Compatible with many manylinux-compatible distributions
+Libraries: FFmpeg and GStreamer libraries must be installed on the system for full functionality
+
+
+Usage
+After installation, you can use OpenCV with Python just like the standard OpenCV package. Here is an example to get you started:
+
+import cv2
+
+# Print OpenCV version
+print("OpenCV Version:", cv2.__version__)
+
+# Load and display an image using OpenCV
+image = cv2.imread('sample.jpg')
+if image is not None:
+    cv2.imshow('Sample Image', image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+else:
+    print("Image not found. Make sure 'sample.jpg' is in the current directory.")
+
+
+Verifying FFmpeg and GStreamer Support
+To confirm that FFmpeg and GStreamer are enabled in your OpenCV build, run the following:
+
+import cv2
+print(cv2.getBuildInformation())
+
+In the output, look for the following entries:
+
+FFMPEG: YES - Confirms that FFmpeg support is enabled.
+GStreamer: YES - Confirms that GStreamer support is enabled.
+
+Example: Capturing Video from a Webcam
+Here’s a quick example of using OpenCV to capture video from a webcam:
+
+import cv2
+
+# Open a connection to the webcam (0 is the default camera)
+cap = cv2.VideoCapture(0)
+
+if not cap.isOpened():
+    print("Error: Could not open video device.")
+    exit()
+
+while True:
+    # Capture frame-by-frame
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Display the resulting frame
+    cv2.imshow('Webcam Feed', frame)
+
+    # Press 'q' to exit the loop
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release the capture and close the windows
+cap.release()
+cv2.destroyAllWindows()
+
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+Author
+Heramb Mishra
+
+For any questions or feedback, you can reach me at heramb1008@gmail.com. """
