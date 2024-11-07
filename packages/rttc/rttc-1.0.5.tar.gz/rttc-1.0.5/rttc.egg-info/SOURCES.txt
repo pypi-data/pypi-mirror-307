@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rttc.egg-info/PKG-INFO
+rttc.egg-info/SOURCES.txt
+rttc.egg-info/dependency_links.txt
+rttc.egg-info/top_level.txt
+type_check/__init__.py
+type_check/builtin_checks.py
+type_check/core.py
+type_check/primitives.py
+type_check/transparent.py
