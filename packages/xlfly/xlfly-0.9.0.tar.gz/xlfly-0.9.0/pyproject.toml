@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "xlfly"
+version = "0.9.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+include = [
+    "xlfly/icon.ico",
+    "xlfly/python.png",
+    "doc/error_msg.png",
+    "doc/usage_demo.png",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+xlwings = ">=0.28.0"
+pandas = ">=1.5.2"
+pywin32 = ">=300"
+pillow = ">=9.4.0"
+setuptools = ">=70.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+xly = "xlfly.scripts:main"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
