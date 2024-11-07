@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pureff
+Version: 0.1
+Summary: f2 without log
+Description-Content-Type: text/markdown
+Requires-Dist: click==8.1.7
+Requires-Dist: rich==13.7.1
+Requires-Dist: httpx==0.27.0
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: aiosqlite==0.20.0
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: jsonpath-ng==1.6.1
+Requires-Dist: importlib_resources==6.4.0
+Requires-Dist: m3u8==3.6.0
+Requires-Dist: pytest==8.2.2
+Requires-Dist: pytest-asyncio==0.21.1
+Requires-Dist: browser_cookie3==0.19.1
+Requires-Dist: pydantic==2.6.4
+Requires-Dist: qrcode==7.4.2
+Requires-Dist: websockets>=11.0
+Requires-Dist: PyExecJS==1.5.1
+Requires-Dist: protobuf==5.27.2
+Requires-Dist: gmssl==3.2.2
