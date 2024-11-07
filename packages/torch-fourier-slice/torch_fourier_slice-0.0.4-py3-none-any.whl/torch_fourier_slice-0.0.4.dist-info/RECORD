@@ -1,0 +1,14 @@
+torch_fourier_slice/__init__.py,sha256=s-1riXoIp-0YklUVvtepG9nk_0ejM4wTWJfTF_GsoaI,542
+torch_fourier_slice/backproject.py,sha256=9oFfjOL8nNKpto7AOagjdBNq17DxE7BMIc7amZoFTDk,2486
+torch_fourier_slice/dft_utils.py,sha256=T_qjVBZdje_SCFchLOwkDhIzgVp9t0Ks5599SFF8BZc,3138
+torch_fourier_slice/project.py,sha256=0gChGNEtrdLgxUCe6dUTDhBMiWRYw5uo-W63MyHx14I,2324
+torch_fourier_slice/grids/__init__.py,sha256=8nKIJa4LCvv0Vf7J6riYHnOv6Zc_n0doJYFM3CIk8Pc,66
+torch_fourier_slice/grids/central_slice_fftfreq_grid.py,sha256=OFmwSUUhaFGR1wbW2BhHdjE6afS3VaEo9y8yIEJWgvk,1188
+torch_fourier_slice/slice_extraction/__init__.py,sha256=Toxlk0xNAG89ycSV7sFhzolWIVg5IkIiJgHsryaHg6U,76
+torch_fourier_slice/slice_extraction/_extract_central_slices_rfft_3d.py,sha256=ZTd7KFKOLikUt2pIQAuIz_cFM6TV2w-d2LI02Tkd7_0,3134
+torch_fourier_slice/slice_insertion/__init__.py,sha256=9bcXwI9vqaU1Z3nfGcUvugC5U8g5iQBT-YUsfnEWGUI,73
+torch_fourier_slice/slice_insertion/_insert_central_slices_rfft_3d.py,sha256=zXLHXQ5J-xsaybKXfQ0RL92ntCf3tV1_aENVkn00NVQ,3097
+torch_fourier_slice-0.0.4.dist-info/METADATA,sha256=yHbZLKNAqQfLPdnBuz3pCMAoy23hkzc8-gbtj-gmCwM,2194
+torch_fourier_slice-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+torch_fourier_slice-0.0.4.dist-info/licenses/LICENSE,sha256=Kbo_h3sPum8rDAhMerH9fl4hzFn-QUCekJf05zk2epY,1499
+torch_fourier_slice-0.0.4.dist-info/RECORD,,
