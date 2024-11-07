@@ -1,0 +1,12 @@
+memento/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memento/cli.py,sha256=pV17-Nvdw52MYrhg3K102TtLuLQ3JGCV4deuXxw1CR8,1266
+memento/crud.py,sha256=ijDM-UhlfrsodSVHZVhBXu5qNJ5fImvPQrelNml40UU,4223
+memento/migrations/downgrade.sql,sha256=jIz5d0RfpkoHSR6Fn3bhSgnTfLD37dt26hwL27KacY0,141
+memento/migrations/upgrade.sql,sha256=tAFsUVBYgCnBi18J5-AppKUIRe1xeSAUuknWCTO_cu0,877
+memento/models.py,sha256=btbRFDavm4Rr-A0W9L9fN28yDWtnlcHh78HhksvqAkA,1902
+memento/recorder.py,sha256=8bJTKAu7TXcoJot0scamWh09BRzbZn9pEjKiaDJmdag,2331
+memento_llm-0.2.1.dist-info/LICENSE,sha256=rNXVp3Rju9JwIOz-krnjsRAERDD6q73ECj8HxdoVZoQ,1070
+memento_llm-0.2.1.dist-info/METADATA,sha256=lgP2QBxPqTLTjlfiLbdrf2w3swE2S00WRf_O7I0LFLc,2982
+memento_llm-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+memento_llm-0.2.1.dist-info/entry_points.txt,sha256=61ARmAb0Eq1SM63daaXDvlhM7unJXeOrZZWUVZu7fxI,43
+memento_llm-0.2.1.dist-info/RECORD,,
