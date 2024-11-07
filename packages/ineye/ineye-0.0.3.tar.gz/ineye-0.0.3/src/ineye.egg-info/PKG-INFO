@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ineye
+Version: 0.0.3
+Summary: Vision data exploration and frame sampling toolkit for videos
+Author-email: Rahul Vishwakarma <vishwakarma.rhl@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Rahul Vishwakarma
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/karmarv/ineye
+Keywords: vision,video,processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: ffmpeg-python
+Requires-Dist: tomli; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# INEYE
+Vision data exploration and frame sampling toolkit for videos
+- Visualize video streams and run basic detections
+  ``` python viz.py --video data/VIRAT_S_050201_05_000890_000944.mp4 ```
+- Sample frames at fixed frequency (save-frames=0.1 for FPS/0.1 or 10xFPS rate) or based on detections 
+  ``` python viz.py --output-path "./data/output" --save-frames 0.1 --video-ext "mp4" --video data/```
+- Tool for video description
+  - Exif Tool [https://exiftool.org/index.html]
+  - FFMPEG [https://ffmpeg.org/]
+
+##### Future Functions:
+- Multi Camera Capture (10 FPS at an interval-period of 1 Second)
+- Detect object on a configured part/zone of an image 
+- Detect trajectory on the detected object
+- Send and archive event notifications (email or ifttt)
+

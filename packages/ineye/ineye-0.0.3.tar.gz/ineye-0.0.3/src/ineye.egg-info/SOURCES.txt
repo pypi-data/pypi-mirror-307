@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/ineye/__init__.py
+src/ineye/detect.py
+src/ineye/viz.py
+src/ineye.egg-info/PKG-INFO
+src/ineye.egg-info/SOURCES.txt
+src/ineye.egg-info/dependency_links.txt
+src/ineye.egg-info/entry_points.txt
+src/ineye.egg-info/requires.txt
+src/ineye.egg-info/top_level.txt
