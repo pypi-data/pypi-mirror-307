@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nero_cli"
+authors = [
+    {name = "Regi Ellis",email = "regi@bynine.io"}
+]
+keywords = ["cli", "ai", "generative-ai", "invokeai", "image", "training", "tool"]
+dynamic = ["version"]
+description = "nero-cli is a simple CLI tool that streamlines the process of downloading Official InvokeAI release from github and running it on your local machine. It is designed to be a simple allow you to quickly and easily pull the latest version, specify version, or rollback if you need to."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+classifiers = [
+   "Programming Language :: Python :: 3.10",
+   "License :: OSI Approved :: Apache Software License",
+   "Operating System :: OS Independent"
+]
+dependencies = [
+    "packaging"
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "nero_cli/__version__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nero_cli"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/nero_cli",
+]
+
+[tool.hatch.build]
+include = [
+    "nero_cli/tests/*",
+]
+
+[project.urls]
+Repository = "https://github.com/regiellis/nero_cli"
+Documentation = "https://github.com/regiellis/nero_cli/blob/main/README.md"
+"Bug Tracker" = "https://github.com/regiellis/nero_cli/issues"
+
+[project.scripts]
+nero = "nero_cli:__main__.main"
