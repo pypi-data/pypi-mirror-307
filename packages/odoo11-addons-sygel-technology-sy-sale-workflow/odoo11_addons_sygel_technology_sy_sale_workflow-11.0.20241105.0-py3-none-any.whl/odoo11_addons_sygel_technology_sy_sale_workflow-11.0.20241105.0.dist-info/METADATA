@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: odoo11-addons-sygel-technology-sy-sale-workflow
+Version: 11.0.20241105.0
+Summary: Meta package for sygel-technology-sy-sale-workflow Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 11.0
+Requires-Dist: odoo11-addon-product-data-sheet
+Requires-Dist: odoo11-addon-sale-document-condition
+
+UNKNOWN
