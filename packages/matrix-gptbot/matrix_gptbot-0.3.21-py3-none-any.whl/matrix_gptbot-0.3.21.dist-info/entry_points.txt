@@ -1,0 +1,2 @@
+[console_scripts]
+gptbot = gptbot.__main__:main_sync
