@@ -1,0 +1,16 @@
+twisted>=21.2.0
+autobahn>=21.3.1
+
+[:sys_platform=="win32"]
+pypiwin32
+
+[dev]
+mock
+tox
+pyflakes
+
+[release]
+dulwich
+docutils
+gpg
+wheel
