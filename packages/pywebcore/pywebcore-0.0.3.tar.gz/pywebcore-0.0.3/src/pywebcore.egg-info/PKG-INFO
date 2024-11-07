@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pywebcore
+Version: 0.0.3
+Summary: A package for the design and analysis of FRP webcore sandwich sections (i.e. for bridge design)
+Author-email: Ronald Grefhorst <ronald@rgde.be>
+Project-URL: Homepage, https://github.com/Grefron/pywebcore
+Project-URL: Issues, https://github.com/Grefron/pywebcore/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sectionproperties
+Requires-Dist: shapely
+
+# pywebcore
+
+This package allows for a simple and advanced (sectionproperties based) analysis of a typical FRP webcore sandwich (i.e. as used in bridge design)
+
+
