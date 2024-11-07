@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "mkslides"
+version = "0.1.32"
+description = "MkSlides - Slides with Markdown using the power of Reveal.js."
+authors = ["MartenBE"]
+homepage = "https://martenbe.github.io/mkslides"
+repository = "https://github.com/MartenBE/mkslides"
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mkslides", from = "src" },
+]
+include = [{ path = "assets", format = ["sdist", "wheel"] }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Jinja2 = "^3.1.4"
+python-frontmatter = "^1.1.0"
+PyYAML = "^6.0.2"
+rich = "^13.8.0"
+click = "^8.1.7"
+jsonschema = "^4.23.0"
+natsort = "^8.4.0"
+emoji = "^2.12.1"
+livereload = "^2.7.0"
+
+[tool.poetry.group.dev.dependencies]
+bumpver = "^2023.1129"
+mypy = "^1.11.2"
+types-pyyaml = "^6.0.12.20240808"
+ruff = "^0.6.4"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[tool.poetry.scripts]
+mkslides = "mkslides.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "0.1.32"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message = "Bump version {old_version} to {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"src/mkslides/__init__.py" = ['^__version__ = "{version}"']
+"pyproject.toml" = ['^version = "{version}"', '^current_version = "{version}"']
+
+[tool.ruff.lint]
+ignore = [
+    "ANN401",  # Dynamically typed expressions (typing.Any) are disallowed
+    "D100",    # Missing docstring in public module
+    "D101",    # Missing docstring in public class
+    "D103",    # Missing docstring in public function
+    "D102",    # Missing docstring in public method
+    "D104",    # Missing docstring in public package"
+    "D107",    # Missing docstring in `__init__`
+    "E501",    # Line too long
+    "FA102",   # Missing `from __future__ import annotations`, but uses PEP 585 collection
+    "G004",    # Logging statement uses f-string"
+    "PLR0913", #  Too many arguments in function definition
+    "RET504",  # Unnecessary assignment to `...` before `return` statement
+    "S101",    # Use of `assert` detected
+    "TD002",   # Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`
+    "TD003",   # Missing issue link on the line following this TODO
+
+]
+select = ["ALL"]
