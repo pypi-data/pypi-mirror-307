@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/casting.cpp
+src/dithering.hxx
+src/geometry.hxx
+src/light.hxx
+src/surface.hxx
+src/vector3.hxx
+src/pysidocast.egg-info/PKG-INFO
+src/pysidocast.egg-info/SOURCES.txt
+src/pysidocast.egg-info/dependency_links.txt
+src/pysidocast.egg-info/top_level.txt
