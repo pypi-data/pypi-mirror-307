@@ -1,0 +1,7 @@
+aeb43
+trytond_account_statement<7.3,>=7.2
+trytond_bank<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
