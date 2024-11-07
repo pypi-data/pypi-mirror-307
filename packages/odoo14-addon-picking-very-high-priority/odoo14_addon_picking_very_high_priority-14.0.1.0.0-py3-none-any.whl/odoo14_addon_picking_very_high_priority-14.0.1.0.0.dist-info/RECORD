@@ -1,0 +1,12 @@
+odoo/addons/picking_very_high_priority/README.rst,sha256=a59nEM25xZ8dtx-ViSMeQw0xXRn4wRs4E2DOHhFtOZo,1768
+odoo/addons/picking_very_high_priority/__init__.py,sha256=5hkCdGjo04vmZlLxpUKJpIvBYnWEsPz_JgKVdaKRzTg,145
+odoo/addons/picking_very_high_priority/__manifest__.py,sha256=30eCIAcatrLb3WoPMt93sZLu3Z1kMkB0SluPiksBreo,483
+odoo/addons/picking_very_high_priority/i18n/es.po,sha256=rB3iRQVcynrdAWRDIu0gDm134IjMV9j3suF2cERFIBo,1701
+odoo/addons/picking_very_high_priority/models/__init__.py,sha256=kS35GSh5BAGgO82eCcRo8fFkb2-xppzr5-OEZQTeKc0,177
+odoo/addons/picking_very_high_priority/models/stock_move.py,sha256=lRmL0SiRwU74AxXpncvhBbKXxEuHptrQglNX3FGV3Kg,892
+odoo/addons/picking_very_high_priority/models/stock_picking.py,sha256=VaFga5els1HLhcqbRVorJGEQC_GsvXpz3EStJHJcVV0,331
+odoo/addons/picking_very_high_priority/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo14_addon_picking_very_high_priority-14.0.1.0.0.dist-info/METADATA,sha256=4vXHJPz94RPuO9IqN8iriNzF-V-LVNDDc53lXvpOmsc,2276
+odoo14_addon_picking_very_high_priority-14.0.1.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+odoo14_addon_picking_very_high_priority-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_picking_very_high_priority-14.0.1.0.0.dist-info/RECORD,,
