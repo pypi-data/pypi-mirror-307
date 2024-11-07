@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: flightctl
+Version: 1.0.0.post2
+Summary: Rocket Monitoring reimagined
+Project-URL: Homepage, https://nathansamuell.github.io/FlightControl/
+Project-URL: Issues, https://github.com/nathansamuell/FlightControl/issues
+Author-email: Nathan Samuell <nathansamuell@duck.com>
+License: MIT License
+        
+        Copyright (c) 2024 Nathan Samuell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyserial
+Requires-Dist: pytest
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+# FlightControl
+
+FlightControl is an open-source rocket monitoring/management tool created by [Nathan Samuell](https://github.com/nathansamuell) in conjunction with [AIAA-UH](https://aiaa-uh.com/) and Space City Rocketry for collegiate competition!
+
+FlightControl is:
+- A monitoring tool
+- configurable!
+- batteries included
+
+FlightControl is not:
+- A tool to steer or control flying objects
+- Extensible (yet)
+- A drop-in tool for everyone's system
+
+Check the documentation site for more information!
+
+## Contributing
+
+Team members of AIAA UH should inquire in the Discord. If you are not a member of the team but would like to contribute, feel free to email [Nathan](www.github.com/nathansamuell) at nathansamuell@duck.com!
