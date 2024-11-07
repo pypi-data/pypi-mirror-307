@@ -1,0 +1,581 @@
+Metadata-Version: 2.3
+Name: fastagency
+Version: 0.3.3
+Summary: The fastest way to bring multi-agent workflows to production
+Project-URL: Homepage, https://github.com/airtai/fastagency
+Project-URL: Documentation, https://fastagency.ai/latest/
+Project-URL: Tracker, https://github.com/airtai/fastagency/issues
+Project-URL: Source, https://github.com/airtai/fastagency
+Project-URL: Discord, https://discord.gg/kJjSGWrknU
+Author-email: airt <info@airt.ai>
+License-File: LICENSE
+Keywords: AI,LLM,autogen,autonomous agents,multi-agent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: pydantic<3,>=2.2.0
+Requires-Dist: typer>=0.9
+Requires-Dist: typing-extensions<5,>=4.8.0
+Provides-Extra: autogen
+Requires-Dist: autogen[anthropic,together]<0.4,>=0.3.0; extra == 'autogen'
+Requires-Dist: markdownify==0.13.1; extra == 'autogen'
+Requires-Dist: together<1.3,>=1.2.11; extra == 'autogen'
+Provides-Extra: dev
+Requires-Dist: asyncer==0.0.8; extra == 'dev'
+Requires-Dist: autogen[anthropic,together]<0.4,>=0.3.0; extra == 'dev'
+Requires-Dist: bandit==1.7.10; extra == 'dev'
+Requires-Dist: cairosvg==2.7.1; extra == 'dev'
+Requires-Dist: codespell==2.3.0; extra == 'dev'
+Requires-Dist: cookiecutter==2.6.0; extra == 'dev'
+Requires-Dist: coverage[toml]==7.6.4; extra == 'dev'
+Requires-Dist: detect-secrets==1.5.0; extra == 'dev'
+Requires-Dist: dirty-equals==0.8.0; extra == 'dev'
+Requires-Dist: email-validator==2.2.0; extra == 'dev'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'dev'
+Requires-Dist: fastapi<1,>=0.112; extra == 'dev'
+Requires-Dist: faststream[nats]<0.6,>=0.5.27; extra == 'dev'
+Requires-Dist: firebase-admin>=6.5.0; extra == 'dev'
+Requires-Dist: gunicorn>=23.0.0; (platform_system != 'Windows') and extra == 'dev'
+Requires-Dist: jsondiff==2.2.1; extra == 'dev'
+Requires-Dist: markdownify==0.13.1; extra == 'dev'
+Requires-Dist: mdx-include==1.4.2; extra == 'dev'
+Requires-Dist: mesop<1,>=0.12.7; (python_version >= '3.10') and extra == 'dev'
+Requires-Dist: mike==2.1.3; extra == 'dev'
+Requires-Dist: mkdocs-autorefs==1.2.0; extra == 'dev'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.3.0; extra == 'dev'
+Requires-Dist: mkdocs-glightbox==0.4.0; extra == 'dev'
+Requires-Dist: mkdocs-literate-nav==0.6.1; extra == 'dev'
+Requires-Dist: mkdocs-macros-plugin==1.3.7; extra == 'dev'
+Requires-Dist: mkdocs-material==9.5.42; extra == 'dev'
+Requires-Dist: mkdocs-minify-plugin==0.8.0; extra == 'dev'
+Requires-Dist: mkdocs-static-i18n==1.2.3; extra == 'dev'
+Requires-Dist: mkdocs==1.6.1; extra == 'dev'
+Requires-Dist: mkdocstrings[python]==0.26.2; extra == 'dev'
+Requires-Dist: mypy==1.12.1; extra == 'dev'
+Requires-Dist: passlib[bcrypt]==1.7.4; extra == 'dev'
+Requires-Dist: pillow<11,==10.4.0; extra == 'dev'
+Requires-Dist: pre-commit==4.0.1; extra == 'dev'
+Requires-Dist: pydantic-settings==2.6.1; extra == 'dev'
+Requires-Dist: pyjwt==2.9.0; extra == 'dev'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'dev'
+Requires-Dist: pytest-mypy-plugins==3.1.2; extra == 'dev'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'dev'
+Requires-Dist: pytest==8.3.3; extra == 'dev'
+Requires-Dist: python-multipart>=0.0.12; extra == 'dev'
+Requires-Dist: pyupgrade-directories==0.3.0; extra == 'dev'
+Requires-Dist: pyyaml==6.0.2; extra == 'dev'
+Requires-Dist: requests; extra == 'dev'
+Requires-Dist: ruff==0.7.2; extra == 'dev'
+Requires-Dist: semgrep==1.95.0; extra == 'dev'
+Requires-Dist: together<1.3,>=1.2.11; extra == 'dev'
+Requires-Dist: types-docutils; extra == 'dev'
+Requires-Dist: types-pygments; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Requires-Dist: types-setuptools; extra == 'dev'
+Requires-Dist: types-ujson; extra == 'dev'
+Requires-Dist: uvicorn>=0.31.0; extra == 'dev'
+Requires-Dist: waitress>=3.0.0; (platform_system == 'Windows') and extra == 'dev'
+Requires-Dist: watchfiles==0.24.0; extra == 'dev'
+Requires-Dist: websockets<14,>=13; extra == 'dev'
+Provides-Extra: devdocs
+Requires-Dist: cairosvg==2.7.1; extra == 'devdocs'
+Requires-Dist: cookiecutter==2.6.0; extra == 'devdocs'
+Requires-Dist: mdx-include==1.4.2; extra == 'devdocs'
+Requires-Dist: mike==2.1.3; extra == 'devdocs'
+Requires-Dist: mkdocs-autorefs==1.2.0; extra == 'devdocs'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.3.0; extra == 'devdocs'
+Requires-Dist: mkdocs-glightbox==0.4.0; extra == 'devdocs'
+Requires-Dist: mkdocs-literate-nav==0.6.1; extra == 'devdocs'
+Requires-Dist: mkdocs-macros-plugin==1.3.7; extra == 'devdocs'
+Requires-Dist: mkdocs-material==9.5.42; extra == 'devdocs'
+Requires-Dist: mkdocs-minify-plugin==0.8.0; extra == 'devdocs'
+Requires-Dist: mkdocs-static-i18n==1.2.3; extra == 'devdocs'
+Requires-Dist: mkdocs==1.6.1; extra == 'devdocs'
+Requires-Dist: mkdocstrings[python]==0.26.2; extra == 'devdocs'
+Requires-Dist: pillow<11,==10.4.0; extra == 'devdocs'
+Provides-Extra: fastapi
+Requires-Dist: asyncer==0.0.8; extra == 'fastapi'
+Requires-Dist: fastapi<1,>=0.112; extra == 'fastapi'
+Requires-Dist: websockets<14,>=13; extra == 'fastapi'
+Provides-Extra: firebase
+Requires-Dist: firebase-admin>=6.5.0; extra == 'firebase'
+Provides-Extra: lint
+Requires-Dist: bandit==1.7.10; extra == 'lint'
+Requires-Dist: codespell==2.3.0; extra == 'lint'
+Requires-Dist: mypy==1.12.1; extra == 'lint'
+Requires-Dist: pytest-mypy-plugins==3.1.2; extra == 'lint'
+Requires-Dist: pyupgrade-directories==0.3.0; extra == 'lint'
+Requires-Dist: ruff==0.7.2; extra == 'lint'
+Requires-Dist: semgrep==1.95.0; extra == 'lint'
+Requires-Dist: types-docutils; extra == 'lint'
+Requires-Dist: types-pygments; extra == 'lint'
+Requires-Dist: types-pyyaml; extra == 'lint'
+Requires-Dist: types-setuptools; extra == 'lint'
+Requires-Dist: types-ujson; extra == 'lint'
+Provides-Extra: mesop
+Requires-Dist: mesop<1,>=0.12.7; (python_version >= '3.10') and extra == 'mesop'
+Provides-Extra: nats
+Requires-Dist: asyncer==0.0.8; extra == 'nats'
+Requires-Dist: fastapi<1,>=0.112; extra == 'nats'
+Requires-Dist: faststream[nats]<0.6,>=0.5.27; extra == 'nats'
+Requires-Dist: websockets<14,>=13; extra == 'nats'
+Provides-Extra: openapi
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'openapi'
+Requires-Dist: fastapi<1,>=0.112; extra == 'openapi'
+Requires-Dist: requests; extra == 'openapi'
+Provides-Extra: server
+Requires-Dist: gunicorn>=23.0.0; (platform_system != 'Windows') and extra == 'server'
+Requires-Dist: uvicorn>=0.31.0; extra == 'server'
+Requires-Dist: waitress>=3.0.0; (platform_system == 'Windows') and extra == 'server'
+Provides-Extra: submodules
+Requires-Dist: asyncer==0.0.8; extra == 'submodules'
+Requires-Dist: autogen[anthropic,together]<0.4,>=0.3.0; extra == 'submodules'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'submodules'
+Requires-Dist: fastapi<1,>=0.112; extra == 'submodules'
+Requires-Dist: faststream[nats]<0.6,>=0.5.27; extra == 'submodules'
+Requires-Dist: firebase-admin>=6.5.0; extra == 'submodules'
+Requires-Dist: gunicorn>=23.0.0; (platform_system != 'Windows') and extra == 'submodules'
+Requires-Dist: markdownify==0.13.1; extra == 'submodules'
+Requires-Dist: mesop<1,>=0.12.7; (python_version >= '3.10') and extra == 'submodules'
+Requires-Dist: requests; extra == 'submodules'
+Requires-Dist: together<1.3,>=1.2.11; extra == 'submodules'
+Requires-Dist: uvicorn>=0.31.0; extra == 'submodules'
+Requires-Dist: waitress>=3.0.0; (platform_system == 'Windows') and extra == 'submodules'
+Requires-Dist: websockets<14,>=13; extra == 'submodules'
+Provides-Extra: test-core
+Requires-Dist: coverage[toml]==7.6.4; extra == 'test-core'
+Requires-Dist: dirty-equals==0.8.0; extra == 'test-core'
+Requires-Dist: jsondiff==2.2.1; extra == 'test-core'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'test-core'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'test-core'
+Requires-Dist: pytest==8.3.3; extra == 'test-core'
+Provides-Extra: testing
+Requires-Dist: asyncer==0.0.8; extra == 'testing'
+Requires-Dist: autogen[anthropic,together]<0.4,>=0.3.0; extra == 'testing'
+Requires-Dist: coverage[toml]==7.6.4; extra == 'testing'
+Requires-Dist: dirty-equals==0.8.0; extra == 'testing'
+Requires-Dist: email-validator==2.2.0; extra == 'testing'
+Requires-Dist: fastapi-code-generator==0.5.1; extra == 'testing'
+Requires-Dist: fastapi<1,>=0.112; extra == 'testing'
+Requires-Dist: faststream[nats]<0.6,>=0.5.27; extra == 'testing'
+Requires-Dist: firebase-admin>=6.5.0; extra == 'testing'
+Requires-Dist: gunicorn>=23.0.0; (platform_system != 'Windows') and extra == 'testing'
+Requires-Dist: jsondiff==2.2.1; extra == 'testing'
+Requires-Dist: markdownify==0.13.1; extra == 'testing'
+Requires-Dist: mesop<1,>=0.12.7; (python_version >= '3.10') and extra == 'testing'
+Requires-Dist: passlib[bcrypt]==1.7.4; extra == 'testing'
+Requires-Dist: pydantic-settings==2.6.1; extra == 'testing'
+Requires-Dist: pyjwt==2.9.0; extra == 'testing'
+Requires-Dist: pytest-asyncio==0.24.0; extra == 'testing'
+Requires-Dist: pytest-rerunfailures==14.0; extra == 'testing'
+Requires-Dist: pytest==8.3.3; extra == 'testing'
+Requires-Dist: python-multipart>=0.0.12; extra == 'testing'
+Requires-Dist: pyyaml==6.0.2; extra == 'testing'
+Requires-Dist: requests; extra == 'testing'
+Requires-Dist: together<1.3,>=1.2.11; extra == 'testing'
+Requires-Dist: uvicorn>=0.31.0; extra == 'testing'
+Requires-Dist: waitress>=3.0.0; (platform_system == 'Windows') and extra == 'testing'
+Requires-Dist: watchfiles==0.24.0; extra == 'testing'
+Requires-Dist: websockets<14,>=13; extra == 'testing'
+Description-Content-Type: text/markdown
+
+![alt text](https://github.com/airtai/fastagency/blob/main/docs/docs/assets/img/FA-Secondary-LOGO.jpg?raw=true)
+
+
+# FastAgency
+
+<b>The fastest way to bring multi-agent workflows to production.</b>
+
+---
+
+<p align="center">
+  <a href="https://github.com/airtai/fastagency/actions/workflows/pipeline.yaml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/pipeline.yaml/badge.svg?branch=main" alt="Test Passing"/>
+  </a>
+
+  <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/airtai/fastagency" target="_blank">
+      <img src="https://coverage-badge.samuelcolvin.workers.dev/airtai/fastagency.svg" alt="Coverage">
+  </a>
+
+  <a href="https://www.pepy.tech/projects/fastagency" target="_blank">
+    <img src="https://static.pepy.tech/personalized-badge/fastagency?period=month&units=international_system&left_color=grey&right_color=green&left_text=downloads/month" alt="Downloads"/>
+  </a>
+
+  <a href="https://pypi.org/project/fastagency" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastagency?label=PyPI" alt="Package version">
+  </a>
+
+  <a href="https://pypi.org/project/fastagency" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/fastagency.svg" alt="Supported Python versions">
+  </a>
+
+  <br/>
+
+  <a href="https://github.com/airtai/fastagency/actions/workflows/codeql.yml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/codeql.yml/badge.svg" alt="CodeQL">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/actions/workflows/dependency-review.yaml" target="_blank">
+    <img src="https://github.com/airtai/fastagency/actions/workflows/dependency-review.yaml/badge.svg" alt="Dependency Review">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/github/license/airtai/fastagency.png" alt="License">
+  </a>
+
+  <a href="https://github.com/airtai/fastagency/blob/main/CODE_OF_CONDUCT.md" target="_blank">
+    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Code of Conduct">
+  </a>
+
+  <a href="https://discord.gg/kJjSGWrknU" target="_blank">
+      <img alt="Discord" src="https://img.shields.io/discord/1247409549158121512?logo=discord">
+  </a>
+</p>
+
+---
+
+## What is FastAgency?
+
+For start, FastAgency is not yet another agentic AI framework. There are many such
+frameworks available today, the most popular open-source ones being [**AutoGen**](https://github.com/microsoft/autogen), [**CrewAI**](https://www.crewai.com/), [**Swarm**](https://github.com/openai/swarm) and [**LangGraph**](https://github.com/langchain-ai/langgraph). FastAgency provides you with a unified programming interface for deploying agentic workflows written in above agentic frameworks in both development and productional settings (current version supports [**AutoGen**](https://github.com/microsoft/autogen) only, but other frameworks will be supported very soon). With only a few lines of code, you can create a web chat application or REST API service interacting with agents of your choice. If you need to scale-up your workloads, FastAgency can help you deploy a fully distributed system using internal message brokers coordinating multiple machines in multiple datacenters with just a few lines of code changed from your local development setup.
+
+In the rest of this guide, we will walk you through the initial setup and usage of FastAgency, using both development and production environments.
+
+### Supported Runtimes
+
+Currently, the only supported runtime is [**AutoGen**](https://github.com/microsoft/autogen), with support for [**CrewAI**](https://www.crewai.com/), [**Swarm**](https://github.com/openai/swarm) and [**LangGraph**](https://github.com/langchain-ai/langgraph) coming soon.
+
+### Supported User Interfaces
+
+FastAgency currently supports workflows defined using AutoGen and provides options for different types of applications:
+
+- **Console**: Use the [**`ConsoleUI`**](https://fastagency.ai/0.3/api/fastagency/ui/console/ConsoleUI/) interface for command-line based interaction. This is ideal for developing and testing workflows in a text-based environment.
+
+- [**Mesop**](https://google.github.io/mesop/): Utilize [**`MesopUI`**](https://fastagency.ai/0.3/api/fastagency/ui/mesop/MesopUI/) for web-based applications. This interface is suitable for creating web applications with a user-friendly interface.
+
+### Supported Network Adapters
+
+FastAgency can use chainable network adapters that can be used to easily create
+scalable, production ready architectures for serving your workflows. Currently, we
+support the following network adapters:
+
+- [**REST API**](https://en.wikipedia.org/wiki/REST) via [**FastAPI**](https://fastapi.tiangolo.com/): Use the [**`FastAPIAdapter`**](https://fastagency.ai/0.3/api/fastagency/adapters/fastapi/FastAPIAdapter/) to serve your workflow using [**FastAPI**](https://fastapi.tiangolo.com/) server. This setup allows you to work your workflows in multiple workers and serve them using the highly extensible and stable ASGI server.
+
+- [**NATS.io**](https://nats.io/) via [**FastStream**](https://github.com/airtai/faststream): Utilize the [**`NatsAdapter`**](https://fastagency.ai/0.3/api/fastagency/adapters/nats/NatsAdapter/) to use [**NATS.io MQ**](https://nats.io/) message broker for highly-scalable, production-ready setup. This interface is suitable for setups in VPN-s or, in combination with the [**`FastAPIAdapter`**](https://fastagency.ai/0.3/api/fastagency/adapters/fastapi/FastAPIAdapter/) to serve public workflows in an authenticated, secure manner.
+
+## Quick start
+
+There are four different setups, two for development and two for production workloads:
+
+- Development setups
+
+    - **Console**: This setup uses console for interactively executing your workflow.
+        It is also very useful for automating testing and integration with CI/CD.
+
+
+    - **Mesop**: This setup uses [**Mesop**](https://google.github.io/mesop/)
+        to build a web application for interacting with our workflow. It supports
+        a single-worker deployments only, limiting its scalability. However, it
+        is the fastest way to debug your application.
+
+- Production setups
+
+    - **FastAPI + Mesop**: This is fairly scalable setup using [**FastAPI**](https://fastapi.tiangolo.com/)
+         to execute your workflows and [**Mesop**](https://google.github.io/mesop/) for interactive web application. [**FastAPI**](https://fastapi.tiangolo.com/) supports execution with multiple workers with each workflowe being executed in the context of a websocket connection. [**Mesop**](https://google.github.io/mesop/) is still limited to a single worker, although there is much less load of it due to workflows being executed in the [**FastAPI**](https://fastapi.tiangolo.com/) workers.
+
+    - **NATS + FastAPI + Mesop**: This is the most scalable setup using a distributed message broker
+        [**NATS.io MQ**](https://nats.io/). Workflows are being executed with
+        multiple workers that attach to the MQ waiting for initiate workflow messages. Such workers
+        can be running on different machines or even different data centers/cloud providers.
+        Message queues are highly scalable, but more difficult to integrate with end-clients.
+        In order to make such integrations easier, we will connect our [**NATS**](https://nats.io/)-based message queue with the [**FastAPI**](https://fastapi.tiangolo.com/)
+         application.
+
+We will show you how to deploy your workflow using the **FastAPI + Mesop** combination below.
+
+### Install
+
+To get started, you need to install FastAgency. You can do this using `pip`, Python's package installer. Choose the installation command based on the interface you want to use:
+
+```console
+pip install "fastagency[autogen,mesop,fastapi,server]"
+```
+
+This command installs FastAgency with support for both the Console and Mesop
+interfaces for AutoGen workflows, but with FastAPI both serving input requests
+and running workflows.
+
+
+### Imports
+Depending on the interface you choose, you'll need to import different modules. These imports set up the necessary components for your application:
+
+```python
+import os
+from typing import Any
+
+from autogen.agentchat import ConversableAgent
+from fastapi import FastAPI
+
+from fastagency import UI
+from fastagency.adapters.fastapi import FastAPIAdapter
+from fastagency.runtimes.autogen import AutoGenWorkflows
+```
+
+For FastAPI applications, import `FastAPIAdapter` to expose your workflows as REST API.
+
+### Define Workflow
+
+You need to define the workflow that your application will use. This is where you specify how the agents interact and what they do. Here's a simple example of a workflow definition:
+
+```python
+llm_config = {
+    "config_list": [
+        {
+            "model": "gpt-4o-mini",
+            "api_key": os.getenv("OPENAI_API_KEY"),
+        }
+    ],
+    "temperature": 0.8,
+}
+
+wf = AutoGenWorkflows()
+
+
+@wf.register(name="simple_learning", description="Student and teacher learning chat")
+def simple_workflow(
+    ui: UI, params: dict[str, Any]
+) -> str:
+    initial_message = ui.text_input(
+        sender="Workflow",
+        recipient="User",
+        prompt="I can help you learn about mathematics. What subject you would like to explore?",
+    )
+
+    student_agent = ConversableAgent(
+        name="Student_Agent",
+        system_message="You are a student willing to learn.",
+        llm_config=llm_config,
+    )
+    teacher_agent = ConversableAgent(
+        name="Teacher_Agent",
+        system_message="You are a math teacher.",
+        llm_config=llm_config,
+    )
+
+    chat_result = student_agent.initiate_chat(
+        teacher_agent,
+        message=initial_message,
+        summary_method="reflection_with_llm",
+        max_turns=3,
+    )
+
+    return chat_result.summary
+```
+
+This code snippet sets up a simple learning chat between a student and a teacher. You define the agents and how they should interact, specifying how the conversation should be summarized.
+
+### Define FastAgency Application
+
+
+In the case of FastAPI application, we will create an `FastAPIAdapter` and then include a router to the `FastAPI` application.
+The adapter will have all REST and Websocket routes for communicating with a client.
+
+```python
+adapter = FastAPIAdapter(provider=wf)
+
+app = FastAPI()
+app.include_router(adapter.router)
+```
+
+### Adapter Chaining
+
+There is an additional specification file for an application using `MesopUI`
+to connect to the `FastAPIAdapter`
+
+#### `main_2_mesop.py`
+```python
+from fastagency.adapters.fastapi import FastAPIAdapter
+from fastagency.app import FastAgency
+from fastagency.ui.mesop import MesopUI
+
+fastapi_url = "http://localhost:8008"
+
+provider = FastAPIAdapter.create_provider(
+    fastapi_url=fastapi_url,
+)
+
+app = FastAgency(provider=provider, ui=MesopUI())
+```
+
+
+### Complete Application Code
+
+#### `main_1_fastapi.py`
+
+```python
+import os
+from typing import Any
+
+from autogen.agentchat import ConversableAgent
+from fastapi import FastAPI
+
+from fastagency import UI
+from fastagency.adapters.fastapi import FastAPIAdapter
+from fastagency.runtimes.autogen import AutoGenWorkflows
+
+llm_config = {
+    "config_list": [
+        {
+            "model": "gpt-4o-mini",
+            "api_key": os.getenv("OPENAI_API_KEY"),
+        }
+    ],
+    "temperature": 0.8,
+}
+
+wf = AutoGenWorkflows()
+
+
+@wf.register(name="simple_learning", description="Student and teacher learning chat")
+def simple_workflow(ui: UI, params: dict[str, Any]) -> str:
+    initial_message = ui.text_input(
+        sender="Workflow",
+        recipient="User",
+        prompt="I can help you learn about mathematics. What subject you would like to explore?",
+    )
+
+    student_agent = ConversableAgent(
+        name="Student_Agent",
+        system_message="You are a student willing to learn.",
+        llm_config=llm_config,
+        # human_input_mode="ALWAYS",
+    )
+    teacher_agent = ConversableAgent(
+        name="Teacher_Agent",
+        system_message="You are a math teacher.",
+        llm_config=llm_config,
+        # human_input_mode="ALWAYS",
+    )
+
+    chat_result = student_agent.initiate_chat(
+        teacher_agent,
+        message=initial_message,
+        summary_method="reflection_with_llm",
+        max_turns=5,
+    )
+
+    return chat_result.summary  # type: ignore[no-any-return]
+
+
+adapter = FastAPIAdapter(provider=wf)
+
+app = FastAPI()
+app.include_router(adapter.router)
+
+
+# this is optional, but we would like to see the list of available workflows
+@app.get("/")
+def read_root() -> dict[str, dict[str, str]]:
+    return {"Workflows": {name: wf.get_description(name) for name in wf.names}}
+
+
+# start the provider with the following command
+# uvicorn main_1_fastapi:app --host 0.0.0.0 --port 8008 --reload
+```
+
+#### `main_2_mesop.py`
+
+```python
+from fastagency.adapters.fastapi import FastAPIAdapter
+from fastagency.app import FastAgency
+from fastagency.ui.mesop import MesopUI
+
+fastapi_url = "http://localhost:8008"
+
+provider = FastAPIAdapter.create_provider(
+    fastapi_url=fastapi_url,
+)
+
+app = FastAgency(provider=provider, ui=MesopUI())
+
+# start the provider with the following command
+# gunicorn main_2_mesop:app -b 0.0.0.0:8888 --reload
+```
+
+### Run Application
+
+In this setup, we need to run **two** commands in **separate** terminal windows:
+
+**Terminal 1** - Start **FastAPI** application using uvicorn
+```
+uvicorn main_1_fastapi:app --host 0.0.0.0 --port 8008 --reload
+```
+
+**Terminal 2** - Start **Mesop** web interface using gunicorn
+```
+gunicorn main_2_mesop:app -b 0.0.0.0:8888 --reload
+```
+
+### Output
+
+The outputs will vary based on the interface, here is the output of the last terminal starting UI:
+
+```console
+[2024-10-10 13:19:18 +0530] [23635] [INFO] Starting gunicorn 23.0.0
+[2024-10-10 13:19:18 +0530] [23635] [INFO] Listening at: http://127.0.0.1:8888 (23635)
+[2024-10-10 13:19:18 +0530] [23635] [INFO] Using worker: sync
+[2024-10-10 13:19:18 +0530] [23645] [INFO] Booting worker with pid: 23645
+```
+
+![Initial message](https://fastagency.ai/0.3/getting-started/images/chat.png?v20241015)
+
+
+## Future Plans
+
+We are actively working on expanding FastAgency’s capabilities. In addition to supporting AutoGen, we plan to integrate support for other frameworks, other network provider and other UI frameworks.
+
+---
+
+## Stay in touch
+
+Please show your support and stay in touch by:
+
+- giving our [GitHub repository](https://github.com/airtai/fastagency/) a star, and
+
+- joining our [Discord server](https://discord.gg/kJjSGWrknU)
+
+Your support helps us to stay in touch with you and encourages us to
+continue developing and improving the framework. Thank you for your
+support!
+
+---
+
+## Contributors
+
+Thanks to all of these amazing people who made the project better!
+
+<a href="https://github.com/airtai/fastagency/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=airtai/fastagency"/>
+</a>
