@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: fossbill
+Version: 1.8.2
+Summary: A simple billing tool
+Project-URL: Homepage, https://sr.ht/~stacyharper/fossbill/
+Author-email: Willow Barraco <contact@willowbarraco.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: alembic
+Requires-Dist: babel
+Requires-Dist: flask-weasyprint
+Requires-Dist: sqlalchemy>=2.0.0rc3
+Requires-Dist: stripe
+Requires-Dist: toml
+Description-Content-Type: text/markdown
+
+# FossBill
+
+The code source behind [fossbill.org](https://fossbill.org).
+
+## Development
+
+```sh
+make instance/config.toml # Prepare the config, you may edit it
+make venv-dev # Will prepare and install dependencies in venv
+venv/bin/flask --app fossbill db upgrade head # Prepare and migrate the database
+make run # Run the server
+```
+
+## Production
+
+```sh
+python -m venv venv
+venv/bin/python3 -m pip install fossbill waitress
+venv/bin/python3 -m pip install psycopg2-binary # if you use postgres
+```
+
+Configure the instance
+
+```sh
+mkdir -p venv/var/fossbill-instance/
+curl -o venv/var/fossbill-instance/config.toml https://git.sr.ht/~stacyharper/fossbill/blob/main/config.example.toml
+```
+
+Then edit this config.toml and setup the secret and database string.
+
+Then migrate using:
+
+```sh
+venv/bin/flask --app fossbill db upgrade head
+```
+
+Running the server is as simple as:
+
+```sh
+venv/bin/flask --app fossbill run
+# or
+venv/bin/waitress-serve --listen=127.0.0.1:5554 --call 'fossbill:create_app'
+```
+
+But you should rather setup a system daemon, and a proxy using nginx. Have a look at the contrib/ folder.
+
+## Contribute
+
+Send patches to the mailing list: [Development mailing list](https://lists.sr.ht/~stacyharper/fossbill-devel).
+
+To learn how to use git send-email, please see [git-send-email.io](https://git-send-email.io/).
+
+```sh
+git config format.subjectPrefix 'PATCH fossbill'
+git config sendemail.to '~stacyharper/fossbill-devel@lists.sr.ht'
+```
