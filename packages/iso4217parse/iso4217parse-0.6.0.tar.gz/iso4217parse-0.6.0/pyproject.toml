@@ -1,0 +1,41 @@
+[tool.poetry]
+
+name = "iso4217parse"
+version = "0.6.0"
+description = "Parse currencies (symbols and codes) from and to ISO4217."
+authors = ["Tammo Ippen <tammo.ippen@posteo.de>"]
+license = "MIT"
+
+readme = "README.md"
+
+repository = "https://github.com/tammoippen/iso4217parse"
+homepage = "https://github.com/tammoippen/iso4217parse"
+
+include = ["tests/*.py", "iso4217parse/*.json", "iso4217parse/*.py", "setup.cfg"]
+
+keywords=['iso4217', 'currency', 'parse', 'symbol']
+
+classifiers=[
+    # Trove classifiers
+    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python :: Implementation :: PyPy'
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+
+coveralls = "*"
+iso3166 = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
