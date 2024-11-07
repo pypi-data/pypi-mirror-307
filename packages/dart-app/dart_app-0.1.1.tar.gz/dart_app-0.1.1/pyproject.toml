@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dart-app"
+description = ""
+requires-python = ">=3.7"
+authors = [
+    { name = "Yasin Abdulkadir", email = "YasinAAbdulkadir@gmail.com" }
+]
+license = { text = "LGPL-3.0-only" }
+
+dynamic = ["readme", "dependencies", "version"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+readme = {file = ["README.md"]}
+version = {attr = "dart_app.__version__"}
+
+[project.scripts]
+dart = "dart_app.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"dart" = ["resources/*"]
+
+[tool.setuptools]
+include-package-data = true
