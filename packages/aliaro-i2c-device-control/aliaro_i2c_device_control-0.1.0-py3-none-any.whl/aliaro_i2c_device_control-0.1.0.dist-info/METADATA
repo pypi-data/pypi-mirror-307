@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aliaro-i2c-device-control
+Version: 0.1.0
+Summary: I2C control for ALIARO devices.
+License: MIT
+Author: ALIARO AB
+Author-email: support@aliaro.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: i2cdriver (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# ALIARO I2C Device Control
+
+`aliaro_i2c_device_control` allows interfacing with supported ALIARO devices over I2C.
+
