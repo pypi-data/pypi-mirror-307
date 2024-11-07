@@ -1,0 +1,5 @@
+numpy
+protfasta
+
+[test]
+pytest>=6.1.2
