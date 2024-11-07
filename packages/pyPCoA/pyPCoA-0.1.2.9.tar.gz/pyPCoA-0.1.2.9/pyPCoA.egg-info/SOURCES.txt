@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyPCoA/core.py
+pyPCoA.egg-info/PKG-INFO
+pyPCoA.egg-info/SOURCES.txt
+pyPCoA.egg-info/dependency_links.txt
+pyPCoA.egg-info/entry_points.txt
+pyPCoA.egg-info/requires.txt
+pyPCoA.egg-info/top_level.txt
