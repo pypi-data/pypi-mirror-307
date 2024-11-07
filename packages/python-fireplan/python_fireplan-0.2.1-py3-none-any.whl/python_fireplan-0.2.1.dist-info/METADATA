@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: python-fireplan
+Version: 0.2.1
+Summary: A python package for the public fireplan API.
+Author-email: bouni <bouni-github@owee.de>
+License: MIT License
+        
+        Copyright (c) 2021 bouni
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Bouni/python-fireplan
+Project-URL: Repository, https://github.com/Bouni/python-fireplan.git
+Project-URL: Issues, https://github.com/Bouni/python-fireplan/issues
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic >=2.9.2
+Requires-Dist: requests >=2.32.3
+
+# fireplan
+
+![Status](https://github.com/Bouni/python-fireplan/actions/workflows/run-tests.yml/badge.svg)
+
+A python package around the public [fireplan](https://www.fireplan.de/) API.
+
+## Installation
+
+`pip install python-fireplan`
+
+## Usage
+
+### Alarm
+
+```python
+from fireplan import Fireplan
+
+# Fireplan Registration ID
+secret = "B75C394B-624526A5"
+# Your Division
+division = "Musterhausen"
+
+fp = Fireplan(secret, division)
+
+alarmdata =  {
+    "alarmtext": "",
+    "einsatznrlst": "",
+    "strasse": "",
+    "hausnummer": "",
+    "ort": "",
+    "ortsteil": "",
+    "objektname": "",
+    "koordinaten": "",
+    "einsatzstichwort": "",
+    "zusatzinfo": "",
+    "sonstiges1": "",
+    "sonstiges2": "",
+    "RIC": "",
+    "SubRIC": ""
+}
+
+fp.alarm(alarmdata)
+```
+
+### Status
+
+```python
+from fireplan import Fireplan
+
+secret = "B75C394B-624526A5"
+# Your Division
+division = "Musterhausen"
+
+fp = Fireplan(secret, division)
+
+statusdata = {
+    "FZKennung": "40225588996", 
+    "Status": "3"
+}
+
+fp.status(statusdata)
+```
+
+## Testing
+
+```sh
+source .venv/bin/activate # activate venv
+
+python -m pytest # run tests
+```
