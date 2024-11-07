@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "zebende"
+version = "0.1.5"
+description = "DFA, DCCA, Pdcca and Dmcx2 calculations in python"
+license = "MIT"
+authors = ["Fernando Ferraz Ribeiro <ffribeiro@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "./zebende"},
+    # { include = "zebende/**" },
+
+]
+
+classifiers =[
+    "Development Status :: 5 - Production/Stable",
+    # "Programming Language :: Zig",
+    "Programming Language :: Python"
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.0.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-coverage = "^0.0"
+taskipy = "^1.13.0"
+ruff = "^0.4.10"
+ipykernel = "^6.29.5"
+pandas = "^2.2.2"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.27"
+mkdocstrings = "^0.25.1"
+mkdocstrings-python = "^1.10.5"
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+
+[tool.taskipy.tasks]
+lint = 'ruff check . && ruff check . --diff'
+format = 'ruff check . --fix && ruff format .'
+docs = 'mkdocs serve'
+site = 'mkdocs gh-deploy'
+pre_test = 'task lint'
+test = 'pytest -s -x --cov=fast_zero -vv'
+post_test = 'coverage html'
+zrs = {cmd = "zig build -Doptimize=ReleaseSafe", echo=true}
+zrf = {cmd = "zig build -Doptimize=ReleaseFast", echo=true}
+zrsl = {cmd = "zig build -Doptimize=ReleaseSafe -Dtarget=x86_64-linux", echo=true}
+zrsm = {cmd = "zig build -Doptimize=ReleaseSafe -Dtarget=aarch64-macos", echo=true}
+zrsmi = {cmd = "zig build -Doptimize=ReleaseSafe -Dtarget=x86_64-macos -", echo=true}
+zcl = {cmd = "python ./dev_utils/clean_zig_out.py"}
+pbld = {cmd = "poetry build", echo=true}
+ppub = {cmd = "poetry publish", echo=true}
+pypi ={cmd = "task pbld && task ppub", echo=true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
