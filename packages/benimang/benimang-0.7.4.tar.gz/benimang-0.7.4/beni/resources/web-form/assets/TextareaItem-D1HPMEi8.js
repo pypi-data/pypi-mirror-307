@@ -1,0 +1,3 @@
+import{q as p,r as m,w as f,V as i,d,x as _,y as x,C as t,F as v,a1 as w}from"./index-ChIvyT7m.js";import{E as k}from"./el-input-Dr6Xt2Ym.js";import"./index-BUgqy5fo.js";const I=p({__name:"TextareaItem",props:{k:{}},setup(n){const e=m("");f(e,()=>o.value.value=e.value.split(`
+`));const r=i(),l=n,o=d(()=>{for(let a of r.data.itemList)if(a.key===l.k)return e.value=a.value.join(`
+`),a});return(a,s)=>{const u=k;return _(),x(u,{type:"textarea",autosize:{minRows:t(o).rows||3,maxRows:t(o).rows||3},placeholder:t(o).placeholder,modelValue:t(e),"onUpdate:modelValue":s[0]||(s[0]=c=>v(e)?e.value=c:null),autofocus:t(o).autofocus},null,8,["autosize","placeholder","modelValue","autofocus"])}}}),E=w(I,[["__scopeId","data-v-accf606a"]]);export{E as default};

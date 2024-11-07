@@ -1,0 +1,43 @@
+# https://peps.python.org/pep-0621/#example
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+
+[project]
+name = "benimang"
+version = "0.7.4"
+description = "Utils library for Beni"
+requires-python = ">=3.10"
+keywords = ["benimang", "beni"]
+authors = [{ name = 'Beni Mang', email = 'benimang@126.com' }]
+maintainers = [{ name = 'Beni Mang', email = 'benimang@126.com' }]
+
+dependencies = [
+  'aioconsole',
+  'aiofiles',
+  'aiohttp',
+  'aiomysql',
+  'async_timeout',
+  'chardet',
+  'colorama',
+  'httpx',
+  'nest-asyncio',
+  'orjson',
+  'pyperclip',
+  'python-box',
+  'tzdata',
+  # 'build',
+  # 'cryptography',
+  # 'pillow',
+  # 'playwright',
+  # 'prettytable',
+  # 'pydantic',
+  # 'pytest',
+  # 'pytest-asyncio',
+  # 'pytest-order',
+  # 'pywebview',
+  # 'qiniu==7.13.2',
+  # 'rich',
+  # 'setuptools',
+  # 'tqdm',
+  # 'twine',
+  # 'typer',
+]
