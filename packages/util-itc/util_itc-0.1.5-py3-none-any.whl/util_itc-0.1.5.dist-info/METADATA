@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: util_itc
+Version: 0.1.5
+Summary: A package for fitting intertemporal choice data to models
+Author-email: Chanyoung Chung <chanyoungchung@berkeley.edu>
+Project-URL: Homepage, https://github.com/chany03/util_itc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: scipy >=1.12.0
+
+A package for fitting intertemporal choice data to models. 
+
+Available models for fitting are exponential, hyperbolic, generalized hyperbolic, and quasi-hyperbolic. 
+
+The constructor takes a model type and data (choices, payoffs, and delays) for two options and instantiates a util-itc object, fitting the data during instantiation. 
+
+The resulting object stores the fitted parameters (k, inverse temperature, and an extra parameter s or b for generalized hyperbolic or quasi-hyperbolic models, respectively) in an instance variable, output.
+
+Dependencies: numpy version >= 1.26.4, scipy version >= 1.12.0
