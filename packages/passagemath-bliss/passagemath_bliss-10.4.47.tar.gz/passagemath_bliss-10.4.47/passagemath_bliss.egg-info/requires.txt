@@ -1,0 +1,5 @@
+cysignals>=1.10.2
+
+[test]
+passagemath-repl~=10.4.47.0
+passagemath-graphs~=10.4.47.0
