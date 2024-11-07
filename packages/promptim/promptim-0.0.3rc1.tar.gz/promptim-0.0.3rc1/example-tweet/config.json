@@ -1,0 +1,22 @@
+{
+  "name": "example-tweet",
+  "dataset": null,
+  "description": "idk",
+  "evaluators": "./task.py:evaluators",
+  "evaluator_descriptions": {
+    "my_example_criterion": "CHANGEME: This is a description of what the example criterion is testing. It is provided to the metaprompt to improve how it responds to different results."
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens_to_sample": 8192
+    }
+  },
+  "initial_prompt": {
+    "identifier": "tweet-generator-example-with-tools",
+    "model_config": {
+      "model": "claude-3-5-haiku-20241022"
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/hinthornw/promptimizer/refs/heads/main/config-schema.json"
+}
