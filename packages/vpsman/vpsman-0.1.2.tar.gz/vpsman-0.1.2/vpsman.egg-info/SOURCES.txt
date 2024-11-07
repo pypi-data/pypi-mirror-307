@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vpsman/__init__.py
+vpsman/cli.py
+vpsman.egg-info/PKG-INFO
+vpsman.egg-info/SOURCES.txt
+vpsman.egg-info/dependency_links.txt
+vpsman.egg-info/entry_points.txt
+vpsman.egg-info/requires.txt
+vpsman.egg-info/top_level.txt
+vpsman/core/__init__.py
+vpsman/core/users.py
