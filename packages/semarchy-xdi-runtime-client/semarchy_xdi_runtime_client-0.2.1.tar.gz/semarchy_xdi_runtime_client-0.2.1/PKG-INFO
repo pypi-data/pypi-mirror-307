@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: semarchy-xdi-runtime-client
+Version: 0.2.1
+Summary: A client to interact with the Semarchy XDI runtime
+Author-email: Vincent Chantreau <contact@vincentchantreau.fr>
+Maintainer-email: Vincent Chantreau <contact@vincentchantreau.fr>
+Project-URL: Homepage, https://gitlab.com/chantreau-v/semarchy-xdi-runtime-client
+Project-URL: Bug Reports, https://gitlab.com/chantreau-v/semarchy-xdi-runtime-client/-/issues
+Project-URL: Source, https://gitlab.com/chantreau-v/semarchy-xdi-runtime-client/-/tree/main
+Keywords: xdi,client,runtime,api,data,stambia
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: click
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: doc
+Requires-Dist: mkdocs>=1.5.3; extra == "doc"
+Requires-Dist: mkdocs-material>=9.4.7; extra == "doc"
+Requires-Dist: mkdocstrings[python]>=0.18; extra == "doc"
+Requires-Dist: mkdocs-gen-files>=0.4; extra == "doc"
+Requires-Dist: mkdocs-literate-nav>=0.6.1; extra == "doc"
+Requires-Dist: mkdocs-section-index; extra == "doc"
+Requires-Dist: mkdocs-click; extra == "doc"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+
+# semarchy-xdi-runtime-client
+
+The documentation is available **[here](https://chantreau-v.gitlab.io/semarchy-xdi-runtime-client/)**

@@ -1,0 +1,247 @@
+stages:
+  - test
+  - codequality
+  - security
+  - doc
+  - build
+  - publish
+  - release
+
+variables:
+  MODULE_NAME: semarchy_xdi_runtime_client # use by coverage to include the package
+
+.create-diff:
+  variables:
+    GIT_DEPTH: 1000
+  before_script:
+    - git -c http.sslVerify=false fetch
+    - DIFF_FILES=$(git diff -M --name-only $CI_MERGE_REQUEST_DIFF_BASE_SHA $CI_COMMIT_SHA -- *.py **/*.py)
+    - FILES_TO_SCAN=()
+    - |
+      for FILE in $DIFF_FILES
+      do
+        if [ -e $FILE ]; then
+          FILES_TO_SCAN+=$FILE
+          FILES_TO_SCAN+=" "
+        fi
+      done
+    - echo $FILES_TO_SCAN
+    - echo ${FILES_TO_SCAN[@]}
+    - |
+      if [ -z "$FILES_TO_SCAN" ];then
+        echo "No file to scan, exiting"
+        exit 0
+      else
+        echo "The following files will be scanned:"
+        echo $FILES_TO_SCAN
+      fi
+
+.lint:
+  variables:
+    USER_MIN_SCORE: "6.0"
+    ERRORS_TO_IGNORE: "E0401,C0116"
+  stage: codequality
+  image: vincentchantreau/codequality:v1.0
+  script:
+    - pip install .[dev]
+    - echo $CI_PIPELINE_SOURCE
+    - pylint --exit-zero --load-plugins=pylint_gitlab --output-format=pylint_gitlab.GitlabCodeClimateReporter --disable $ERRORS_TO_IGNORE $FILES_TO_SCAN > codeclimate.json
+    - |
+      if [[ $USER_MIN_SCORE < "6.0" ]]; then
+        COMPUTED_MIN_SCORE="6.0"
+        echo "Minimum score required" $COMPUTED_MIN_SCORE
+      else
+        COMPUTED_MIN_SCORE=$USER_MIN_SCORE
+        echo "Minimum score required" $COMPUTED_MIN_SCORE
+      fi
+
+      pylint --disable $ERRORS_TO_IGNORE $FILES_TO_SCAN > res_pylint || true
+      cat res_pylint
+
+      score=`sed -n "s/^.*been\srated\sat\s\(\S*\)\/.*$/\1/p" < res_pylint`
+      result=$(awk '{print $1-$2}' <<<"${score} ${COMPUTED_MIN_SCORE}")
+
+      if [[ "$result" == "-"* ]]; then
+      echo "The score doesn't reach the requirement of $COMPUTED_MIN_SCORE"
+      exit 1
+      fi
+      echo "Your code passed the test !"
+
+.security:
+  stage: security
+  image: vincentchantreau/codequality:v1.0
+  script:
+    - bandit $FILES_TO_SCAN -n 2 -lll
+
+.test-setup:
+  variables:
+    SETUP_SCRIPT: tests/setup_test_env.sh
+  before_script:
+    - pip install .[test]
+    - |
+      if [ -e "$SETUP_SCRIPT" ]; then
+        bash $SETUP_SCRIPT > /dev/null
+      fi
+
+tests:units:
+  stage: test
+  image: python:3.13
+  before_script:
+    - !reference [.test-setup, before_script]
+  script:
+    - pytest --junitxml=report.xml tests/
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+tests:coverage:
+  stage: test
+  image: python:3.13
+  before_script:
+    - !reference [.test-setup, before_script]
+  script:
+    - coverage run -m --source=$MODULE_NAME pytest
+    - coverage report -m
+    - coverage xml
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    paths:
+      - coverage.xml
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+codequality:lint:merge-request:
+  extends: .lint
+  before_script:
+    - !reference [.create-diff, before_script]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+security:bandit:merge-request:
+  extends: .security
+  before_script:
+    - !reference [.create-diff, before_script]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+codequality:lint:
+  extends: .lint
+  variables:
+    FILES_TO_SCAN: "--recursive=y ."
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+security:bandit:
+  extends: .security
+  variables:
+    FILES_TO_SCAN: "-r /src"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+pages:
+  stage: doc
+  image: python:3.13
+  script:
+    - pip install .[doc]
+    - mkdocs build -d public
+  artifacts:
+    when: on_success
+    expire_in: "10 minutes"
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+
+build-package:
+  stage: build
+  image: python:3.13
+  script:
+    - pip install build twine
+    - python3 -m build
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+  artifacts:
+    when: on_success
+    expire_in: "3 days"
+    paths:
+      - dist/*
+
+publish-gitlab-package-repo:
+  stage: publish
+  image: python:3.13
+  script:
+    - pip install twine
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+
+publish-test-pypi:
+  stage: publish
+  image: python:3.13
+  id_tokens:
+    PYPI_ID_TOKEN:
+      aud: testpypi
+  script:
+    - apt update && apt install -y jq
+    - python -m pip install -U twine id
+    - oidc_token=$(python -m id PYPI)
+    - resp=$(curl -X POST https://test.pypi.org/_/oidc/mint-token -d "{\"token\":\"${oidc_token}\"}")
+    - api_token=$(jq --raw-output '.token' <<< "${resp}")
+    - twine upload -u "__token__" -p "${api_token}" --verbose --repository testpypi dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
+  environment:
+   name: testing
+
+
+publish-pypi:
+  stage: publish
+  image: python:3.13
+  id_tokens:
+    PYPI_ID_TOKEN:
+      aud: pypi
+  needs: ["publish-test-pypi","build-package"]
+  dependencies:
+    - build-package
+  script:
+    - apt update && apt install -y jq
+    - python -m pip install -U twine id
+    - oidc_token=$(python -m id PYPI)
+    - resp=$(curl -X POST https://pypi.org/_/oidc/mint-token -d "{\"token\":\"${oidc_token}\"}")
+    - api_token=$(jq --raw-output '.token' <<< "${resp}")
+
+    - twine upload -u "__token__" -p "${api_token}" --verbose dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
+  environment:
+   name: production
+  
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                 # Run this job when a tag is created
+  script:
+    - echo "running release job"
+  release:
+    name: 'Release $CI_COMMIT_TAG'                               # See https://docs.gitlab.com/ee/ci/yaml/#release for available properties
+    tag_name: '$CI_COMMIT_TAG'
+    description: '$CI_COMMIT_TAG'
+    assets:
+      links:
+        - name: 'Pypi package page'
+          url: 'https://pypi.org/project/semarchy-xdi-runtime-client/'
