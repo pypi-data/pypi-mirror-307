@@ -1,0 +1,124 @@
+=============
+ Pyarmor Man
+=============
+
+A help system to learn Pyarmor, find solution quickly and report issues by standard form
+
+Installing
+==========
+
+Pyarmor Man is available on PyPI. For example::
+
+    $ python -m pip install pyarmor.man
+
+Start
+=====
+
+Start Pyarmor Man by command `pyarmor-man` which is installed by `pip`::
+
+    $ pyarmor-man
+
+    Welcome to Pyarmor Man.   Type Enter list commands.
+
+    Type command or partial command to Enter command context
+
+    Tab       Complete command
+    Ctrl+D    Back
+    Ctrl+C    Quit
+
+    What can I do for you?
+
+    issue    Solve the issue when using Pyarmor
+    learn    Understand Pyarmor and learn how to use Pyarmor
+
+    Please type command:
+
+Learn Pyarmor
+=============
+
+Type ``learn`` then press `Enter` to learn Pyarmor::
+
+    Please type command: learn
+
+Then select learning method::
+
+    How to learn Pyarmor
+
+    example    Learn Pyarmor from examples
+    command    Learn Pyarmor commands and options
+    feature    Browse Pyarmor features
+
+    Ctrl+D     Back
+
+    Please type command:
+
+Type `c` and `Enter` to open man page in default web browser::
+
+    Please type command: c
+
+Type `Ctrl+D` to leave learning context and return man context::
+
+    What can I do for you?
+
+    issue    Solve the issue when using Pyarmor
+    learn    Understand Pyarmor and learn how to use Pyarmor
+
+    Ctrl+D   Quit
+
+    Please type command:
+
+Find Solution
+=============
+
+Pyarmor Man could solve most of issues when using Pyarmor.
+
+Type `i` or ``issue`` then press `Enter` to enter issue context::
+
+    Please type command: i
+
+    When did this error occur?
+
+    register    When register Pyarmor
+    build       When generate the obfuscated scripts
+    runtime     When execute the obfuscated scripts
+
+    Ctrl+D      Back
+
+    Please type command:
+
+Follwing the guide to solve the issue. For example, type `reg` to fix registration issue::
+
+    Please type command: reg
+
+    Which License Type is used:
+
+    1. Basic
+    2. Pro
+    3. Group
+    4. CI
+
+    Please type number or choice:
+
+.. note::
+
+   Please run Pyarmor Man in build machine, even for runtime issues
+
+Report Issue
+------------
+
+If Pyarmor Man can't solve this issue, it may prompt like this::
+
+    No found solution for this error:
+
+    Would you like to report this issue to Pyarmor?
+
+    Please type Y or N:
+
+Type `y` to open one issue form in web browser, the title and body has been filled by Pyarmor Man.
+
+If necessay, add some additional content in the body, then select one way to submit issue
+
+- Click button `Send Email` to Pyarmor Team
+- Click button `Submit to GitHub`__
+
+__ https://github.com/dashingsoft.com/pyarmor/issues

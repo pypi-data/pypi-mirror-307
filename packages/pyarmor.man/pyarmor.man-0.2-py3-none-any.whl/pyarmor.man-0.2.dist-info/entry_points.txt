@@ -1,0 +1,2 @@
+[console_scripts]
+pyarmor-man = pyarmor.man.shell:main
