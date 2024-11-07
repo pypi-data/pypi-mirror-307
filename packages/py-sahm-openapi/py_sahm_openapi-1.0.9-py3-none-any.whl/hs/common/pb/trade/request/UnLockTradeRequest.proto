@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "UnLockTradeRequestProto";
+message UnLockTradeRequest {
+    string password = 1;			//交易密码
+    string unlock = 2;			//0-锁定，1-解锁(默认为1)
+}

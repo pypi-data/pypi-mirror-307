@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.common.constant";
+option java_outer_classname = "NotifyMsgTypeProto";
+enum NotifyMsgType {
+
+  CommonNotifyMsgType = 0;
+  
+  //行情推送中台一套代码 消息类型兼容主站类型
+  StatisticsAllMktTmMsgType= 10017;
+  TradeTickerAllMktTmMsgType= 10018;
+  OrderBookerFullMsgType = 10001;
+  StatisticsMsgType = 10003;
+  TradeTickerMsgType = 10004;
+  StatisticsBfAfMsgType = 10006;
+  TradeTickerBfMsgType = 10007;
+  TradeTickerAfMsgType = 10008;
+  OrderDepthBookerFullMsgType = 10009;
+  
+  //交易推送消息类型 320000-329999
+  TransactionCallBackNotifyMsgType = 320000 ;
+}

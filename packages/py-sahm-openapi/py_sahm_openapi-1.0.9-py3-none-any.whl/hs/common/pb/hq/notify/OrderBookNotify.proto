@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.notify";
+option java_outer_classname = "OrderBookNotifyProto";
+message OrderBookNotify {
+	string stockCode = 1;
+	string price = 2;
+	int64 volume = 3;//委托数量（不包含单位）
+	int32 side = 4; //0是买，1是卖
+	int32 priceLevel = 5;
+	int32 numberOfOrders = 6;
+	int32 mktTmType = 7;//1:盘中 -1:盘前 -2:盘后 包含负数 int32 序列化直接数比较大 -1 占用了11个字节
+	int64 sourceTime = 8;//供应商时间戳
+	int64 sourceRecvTime = 9;//接收端收到时间戳
+	int64 sourcePushTime = 10;//推送端推送时间戳
+}

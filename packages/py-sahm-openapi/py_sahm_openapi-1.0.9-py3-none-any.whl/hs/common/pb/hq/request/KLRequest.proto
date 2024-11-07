@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.request";
+option java_outer_classname = "KLRequestProto";
+
+import "hq/dto/Security.proto";
+
+message KLRequest {
+  Security security = 1;
+  int64 startDate = 2; //yyyyMMdd
+  int32 direction = 3; // 方向
+  int32 exRightFlag = 4;  // 复权
+  int32 cycType = 5;  // k线类型
+  int32 limit = 6;  // 天数/数量
+}

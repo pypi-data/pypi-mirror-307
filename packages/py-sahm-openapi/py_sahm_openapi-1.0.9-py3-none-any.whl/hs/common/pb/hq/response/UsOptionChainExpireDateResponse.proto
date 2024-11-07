@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.response";
+option java_outer_classname = "UsOptionChainExpireDateResponseProto";
+
+message UsOptionChainExpireDateResponse {
+  repeated string expireDate = 1;  //到期日 yyyy/MM/dd
+}

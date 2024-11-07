@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.vo";
+option java_outer_classname = "PortfolioProto";
+message Portfolio {
+	string marketType = 1; //市场类型
+	string portfolio = 2; //资金账号
+	string portfolioType = 3; //1-现金,2-孖展
+}

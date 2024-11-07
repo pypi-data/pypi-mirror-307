@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.request";
+option java_outer_classname = "UsOptionChainCodeRequestProto";
+
+message UsOptionChainCodeRequest {
+  //正股代码
+  string securityCode = 1;
+  //到期日 yyyy/MM/dd
+  string expireDate =2;
+  // 价内=1 价外=2
+  int32 flagInOut = 3;
+  // 期权类型 看涨=C 看跌P
+  string optionType = 4;
+}

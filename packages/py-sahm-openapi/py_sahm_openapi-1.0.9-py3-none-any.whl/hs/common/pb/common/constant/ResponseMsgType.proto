@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.common.constant";
+option java_outer_classname = "ResponseMsgTypeProto";
+enum ResponseMsgType {
+
+    //交易响应类型 310000-319999
+    CommonResponseMsgType = 0;
+    InitConnectResponseMsgType = 310000;
+    ErrorResponseMsgType = 310001;
+    TradeKeepLoginResponseMsgType = 310002;
+	QueryPortfolioListResponseMsgType = 310003;
+    UnLockTradeResponseMsgType = 310004;
+    QueryFundInfoResponseMsgType = 310005;
+    QueryPositionListResponseMsgType = 310006;
+    QueryMaxBuyingPowerResponseMsgType = 310007;
+    PlaceOrderResponseMsgType = 310008;
+    ModifyOrderResponseMsgType = 310009;
+    CancelOrderResponseMsgType = 310010;
+    TransactionPushSubscribeResponseMsgType = 310011;
+    QueryTodayOrderListResponseMsgType = 310012;
+    QueryHistoryOrderListResponseMsgType = 310013;
+    QueryCashStatementListResponseMsgType = 310014;
+    QueryOrderDetailResponseMsgType = 310015;
+    CommonIntResponseMsgType = 8;
+    CommonStringResponseMsgType = 9;
+    CommonBoolResponseMsgType = 56;
+
+    //行情响应类型 沙股响应 210000 - 210999
+	QuoteSaudiBasicQotResponseMsgType = 210000;
+	QuoteSaudiOrderBookResponseMsgType = 210001;
+	QuoteSaudiTickerResponseMsgType = 210002;
+	QuoteSaudiKLResponseMsgType = 210003;
+	QuoteSaudiTimeShareResponseMsgType = 210004;
+	//行情量化 美股响应 211000 - 211999
+	QuoteUsBasicQotResponseMsgType = 211000;
+	QuoteUsOrderBookResponseMsgType = 211001;
+	QuoteUsTickerResponseMsgType = 211002;
+	QuoteUsKLResponseMsgType = 211003;
+	QuoteUsTimeShareResponseMsgType = 211004;
+	QuoteUsOptionChainExpireDateResponseMsgType = 211005;
+	QuoteUsOptionChainCodeResponseMsgType = 211006;
+
+
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.notify";
+option java_outer_classname = "TradeTickerItemNotifyProto";
+message TradeTickerItemNotify {
+	int64 tradeTime = 1;
+	string price = 2;
+	int64 volume = 3;//成交量（不包含单位）
+	string side = 4; // A：买盘，V：卖盘，O：平盘
+	string trdType = 5; // 交易类型
+	int64 timestamp = 6; // 时间戳（取代tradeTime）
+	int64 sourceTime = 7;//供应商时间戳
+	int64 sourceRecvTime = 8;//接收端收到时间戳
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.response";
+option java_outer_classname = "BasicQotResponseProto";
+
+import "hq/dto/BasicQot.proto";
+
+message BasicQotResponse {
+  // 基础行情返回
+  repeated BasicQot basicQot=1;
+}

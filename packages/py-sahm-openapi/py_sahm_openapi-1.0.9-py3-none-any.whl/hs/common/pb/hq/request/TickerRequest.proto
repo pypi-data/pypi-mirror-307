@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.request";
+option java_outer_classname = "TickerRequestProto";
+import "hq/dto/Security.proto";
+
+message TickerRequest {
+  Security security = 1;
+  int32 limit = 2; //返回的逐笔个数,实际返回数量可能少于该值,最多返回1000个	
+}

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-sahm-openapi
+Version: 1.0.9
+Summary: Sham Quantitative Trading/Quote API
+Home-page: 
+Author: Sham, Inc.
+Author-email: 
+License: Apache License 2.0
+Keywords: Sham SA/US Stock Quant Trading/Quote API
+License-File: LICENSE
+Requires-Dist: protobuf==3.13.0
+Requires-Dist: PyCryptodome==3.10.1
+Requires-Dist: netifaces==0.11.0
+Requires-Dist: psutil==5.9.0
+Requires-Dist: python-snappy==0.6.1
+

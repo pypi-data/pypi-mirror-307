@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.dto";
+option java_outer_classname = "TickerProto";
+
+//逐笔
+message Ticker {
+  int64 tradeTime = 1; //交易时间  yyyyMMddHHmmss
+  string side = 2; // A：买盘，V：卖盘，O：平盘
+  string price = 3; // 价格
+  int64  volume = 4; //成交量
+  double turnOver = 5; //成交额
+}

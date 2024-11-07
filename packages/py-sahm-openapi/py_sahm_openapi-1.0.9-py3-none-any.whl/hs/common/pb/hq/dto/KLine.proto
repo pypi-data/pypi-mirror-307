@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.dto";
+option java_outer_classname = "KLineProto";
+
+message KLine {
+  string date = 1; //日期 yyyy-MM-dd
+  string highPrice = 2; //最高价
+  string openPrice = 3; //开盘价
+  string lowPrice = 4; //最低价
+  string closePrice = 5; //收盘价
+  string preClose = 6; //昨收价
+  int64 volume = 7; //成交量
+  double turnover = 8; //成交额
+  int64 timestamp = 9; // 时间戳
+  string time = 10; // 时间字符串 HH:mm
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "CancelOrderRequestProto";
+message CancelOrderRequest {
+    string marketType = 1;			//市场类型
+    string portfolio = 2;			//资金账号
+    string orderId = 3;			//订单编号
+}

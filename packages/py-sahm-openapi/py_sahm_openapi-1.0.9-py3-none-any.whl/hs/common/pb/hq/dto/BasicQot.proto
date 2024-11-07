@@ -1,0 +1,26 @@
+syntax = "proto3";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.dto";
+option java_outer_classname = "BasicQotProto";
+
+import "hq/dto/Security.proto";
+import "hq/dto/OptionBasicQotExData.proto";
+
+//基础行情
+message BasicQot {
+  Security security = 1;
+  string open = 2; // 开盘价
+  string high = 3; //最高价
+  string low = 4; //最低价
+  string lastPrice = 5; //最新价	
+  string preClose = 6; //昨收价
+  string priceSpread = 7; //价差  沙股有
+  string volume = 8; //成交量
+  string turnOver = 9; //成交额
+  string turnOverRatio = 10; //换手率
+  string amplitude = 11; //振幅
+  string status = 12; //股票状态
+  OptionBasicQotExData optionExData = 13; //期权特有字段
+  int32 lotSize = 14; //每手
+  string tradeTime = 15;//交易时间  yyyyMMddHHmmss
+  string listDate = 16; //上市日期 yyyyMMdd
+}

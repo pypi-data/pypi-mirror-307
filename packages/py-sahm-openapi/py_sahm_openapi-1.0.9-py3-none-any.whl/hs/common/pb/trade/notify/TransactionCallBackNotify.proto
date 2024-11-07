@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.notify";
+option java_outer_classname = "TransactionCallBackNotifyProto";
+message TransactionCallBackNotify {
+    string portfolio = 1; //资金账号
+    string orderId = 2; //订单编号
+    string marketType = 3;  //市场类型
+    string stockCode = 4;   //股票代码
+    string stockName = 5;   //股票名称
+    string orderSide = 6;   //委托方向
+    string orderQty = 7;    //委托数量
+    string orderPrice = 8;  //委托价格
+    string orderStatus = 9; //委托状态
+    string executedPrice = 10;  //成交价格
+    string executedQty = 11;    //成交数量
+    string executedTime = 12;   //成交时间
+    string sumBusinessQty = 13;	//累计成交数量
+    string leftAmount = 14; //剩余挂单数量
+}

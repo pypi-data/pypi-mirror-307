@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "trade/vo/Portfolio.proto";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryPortfolioListResponseProto";
+message QueryPortfolioListResponse {
+	repeated Portfolio portfolioList = 1;   //资金账号列表
+}

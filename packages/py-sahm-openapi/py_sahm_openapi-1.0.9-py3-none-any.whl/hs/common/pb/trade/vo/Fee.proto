@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.vo";
+option java_outer_classname = "FeeProto";
+message Fee {
+    string feeType = 1; //费用类型
+    string feeName = 2; //费用名称
+    string feeAmount = 3; //费用金额
+}

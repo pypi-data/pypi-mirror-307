@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "trade/vo/Position.proto";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryPositionListResponseProto";
+message QueryPositionListResponse {
+    repeated Position positionList = 1; //持仓列表
+}

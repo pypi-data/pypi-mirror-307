@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.request";
+option java_outer_classname = "TimeShareRequestProto";
+import "hq/dto/Security.proto";
+
+message TimeShareRequest {
+  Security security = 1;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.vo";
+option java_outer_classname = "PositionProto";
+message Position {
+	string stockCode = 1; //股票代码
+	string stockName = 2; //股票名称
+	string securityType = 3; //证券类型
+	string positionStatus = 4; //持仓头寸状态 0:未建仓 1:做多 2:做空
+	string positionQty = 5; //持仓数量
+	string enableQty = 6; //可用数量
+	string averageCost = 7; //平均买入价
+	string dilutedCost = 8; //摊薄成本价
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.dto";
+option java_outer_classname = "OrderBookProto";
+
+//买卖档
+message OrderBook {
+  int32 priceLevel = 1; // 档位
+  string price = 2; //委托价格
+  int64 volume = 3; //委托数量
+  int32 numberOfOrders = 4; //委托订单个数
+  string mpId = 5; //深度摆盘Market Participants ID
+}

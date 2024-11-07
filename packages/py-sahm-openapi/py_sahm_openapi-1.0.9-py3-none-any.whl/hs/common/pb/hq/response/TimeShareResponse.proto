@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.response";
+option java_outer_classname = "TimeShareResponseProto";
+
+import "hq/dto/Security.proto";
+import "hq/dto/TimeShare.proto";
+
+message TimeShareResponse {   
+  Security security = 1; //股票定义
+  repeated TimeShare timeShare = 2;
+}
