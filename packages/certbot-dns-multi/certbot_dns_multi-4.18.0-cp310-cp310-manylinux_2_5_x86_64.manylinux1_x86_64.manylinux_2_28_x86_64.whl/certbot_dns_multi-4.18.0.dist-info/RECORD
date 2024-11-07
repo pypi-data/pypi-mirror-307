@@ -1,0 +1,15 @@
+lego_bridge.cpython-310-x86_64-linux-gnu.h,sha256=DTKtZFBhTtfpMXufnf4twciwv94_rUAjZVExnmHbdfs,1904
+lego_bridge.cpython-310-x86_64-linux-gnu.so,sha256=-4NSkcrhHVFRY9a66UytqjnL8p_jfNoSJHFKJWTKtjk,140586616
+certbot_dns_multi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_multi/_version.py,sha256=bgUSSzK5_PfjktOYk2TzVgsLwwmKnS-Qc3i_LhBT3qw,413
+certbot_dns_multi/_internal/dns_multi.py,sha256=qele5OIyAs9iURlQ1dMAcd9tU8Et8gZ4m2VELcJieXQ,6535
+certbot_dns_multi/_internal/bridge/go.mod,sha256=DA188h1zr63umYjefaDVL63AkNBW8eOztjIiRdlQEok,9537
+certbot_dns_multi/_internal/bridge/main.go,sha256=cm52EPqVLZGITBKipH3_IyuG7VnWf2yETukMDOoDiAY,3103
+certbot_dns_multi/_internal/bridge/main.c,sha256=LYBXKFu1Ufflul2u_P7edoMkv4tuWO6zyt3aCqm8UJY,480
+certbot_dns_multi/_internal/bridge/go.sum,sha256=HpR7HGB2ICojeKlw4xYXn_Q2dwUv1oS8GuYPTBXrk9I,98044
+certbot_dns_multi-4.18.0.dist-info/top_level.txt,sha256=GhWCoYBv-pWtxiRGF3JWpjT2cFgeUkPX1K0XRFpwVec,30
+certbot_dns_multi-4.18.0.dist-info/RECORD,,
+certbot_dns_multi-4.18.0.dist-info/LICENSE.txt,sha256=vKT4KA4nW_OV1bedNC5uyNlj6ItQrHEKN-LJukcXKrA,1085
+certbot_dns_multi-4.18.0.dist-info/entry_points.txt,sha256=19pj9X-Qag1XnROZvR2T7qsSHR16AlR-PyFcwPfe8F4,82
+certbot_dns_multi-4.18.0.dist-info/METADATA,sha256=w1sJYgV_9F_l28tty50jFJfW1t1FIHCZkjVDsnaKyjA,5443
+certbot_dns_multi-4.18.0.dist-info/WHEEL,sha256=vi5yBEw96hhvFh0gkDjT9KS_CiYXalACUx4jaHh5B5E,186
