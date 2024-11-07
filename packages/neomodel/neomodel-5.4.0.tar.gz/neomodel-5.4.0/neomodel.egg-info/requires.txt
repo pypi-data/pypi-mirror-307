@@ -1,0 +1,17 @@
+neo4j~=5.26.0
+
+[dev]
+unasync
+pytest>=7.1
+pytest-asyncio
+pytest-cov>=4.0
+pre-commit
+black
+isort
+Shapely>=2.0.0
+
+[numpy]
+numpy
+
+[pandas]
+pandas
