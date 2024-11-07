@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: keytopCache
+Version: 0.1
+Summary: A simple Redis client wrapper for Sentinel and Cluster modes
+Home-page: 
+Author: zhangjukai
+Author-email: zhangjukai@keytop.com.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: redis
+
+# keytop cache Client
+
+A simple Redis client wrapper for Python, supporting both Sentinel and Cluster modes.
+
+## Installation
+
+```shell
+pip install .
+```
