@@ -1,0 +1,7 @@
+trytond_account<7.3,>=7.2
+trytond_company<7.3,>=7.2
+trytond_party<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+trytond_account_dunning<7.3,>=7.2
