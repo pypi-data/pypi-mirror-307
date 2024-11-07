@@ -1,0 +1,40 @@
+[tool.ruff]
+exclude = ["__init__.py"]
+
+[tool.pytest.ini_options]
+markers = [
+    "chart_dict",
+    "entry",
+    "ledger",
+    "report",
+    "mixed",
+    "regression: something was wrong and got fixed",
+    "cli: command line interfaces"
+]
+
+[tool.poetry]
+name = "abacus-minimal"
+version = "0.11.1"
+description = "Ledger in Python that follows corporate accounting rules."
+authors = ["Evgeny Pogrebnyak <e.pogrebnyak@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "abacus"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.9.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+ruff = "^0.7.0"
+# must add black 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
