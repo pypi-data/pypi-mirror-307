@@ -1,0 +1,13 @@
+pyproject.toml
+readme.md
+py_service_client/__init__.py
+py_service_client/zmp3_db_service.py
+py_service_client.egg-info/PKG-INFO
+py_service_client.egg-info/SOURCES.txt
+py_service_client.egg-info/dependency_links.txt
+py_service_client.egg-info/top_level.txt
+py_service_client/common/__init__.py
+py_service_client/common/base_client.py
+py_service_client/common/hooks.py
+py_service_client/common/thrift_client.py
+py_service_client/common/thrift_connection_pool.py
