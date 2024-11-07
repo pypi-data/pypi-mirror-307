@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flightctl"
+dynamic = ["version"]
+dependencies = ["python-dotenv", "pyserial", "pytest"]
+authors = [{ name = "Nathan Samuell", email = "nathansamuell@duck.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 2 - Pre-Alpha",
+]
+description = "Rocket Monitoring reimagined"
+
+[tool.hatch.envs]
+test = {inherit = true, dependencies = ["pytest", "PyQt5"]}
+
+[tool.hatch.envs.dev]
+inherit = true
+dependencies = ["PyQt5", "black", "isort"]
+
+[tool.hatch.envs.dev.scripts]
+flightctl = "python3 -m flightctl"
+# cleanup = "isort . && black ."
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+include-package-data = true
+
+[tool.setuptools.package-data]
+aiaa_logo = ["cropped-aiaaweblogo-2.png"]
+
+
+[tool.hatch.version]
+path = "src/flightctl/__init__.py"
+
+[tool.isort]
+profile = "black"
+line_length = 88 
+known_third_party = ["pytest", "PyQt5"]
+default_section = "THIRDPARTY"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+
+[project.urls]
+Homepage = "https://nathansamuell.github.io/FlightControl/"
+Issues = "https://github.com/nathansamuell/FlightControl/issues"
