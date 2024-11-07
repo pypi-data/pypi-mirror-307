@@ -1,0 +1,12 @@
+websockets
+websocket-client
+numpy
+flatbuffers==23.5.26
+fastapi
+uvicorn
+asyncio
+requests
+psutil
+dash
+plotly
+colorama
