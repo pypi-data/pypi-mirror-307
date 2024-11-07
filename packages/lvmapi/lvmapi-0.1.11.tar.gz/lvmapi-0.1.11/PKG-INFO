@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: lvmapi
+Version: 0.1.11
+Summary: REST API for LVM operations
+Project-URL: Homepage, https://github.com/sdss/lvmapi
+Project-URL: Repository, https://github.com/sdss/lvmapi
+Project-URL: Documentation, https://lvmapi.readthedocs.org
+Author-email: José Sánchez-Gallego <gallegoj@uw.edu>
+License: BSD-3-Clause
+License-File: LICENSE.md
+Requires-Python: <4,>=3.11
+Requires-Dist: adbc-driver-postgresql>=1.1.0
+Requires-Dist: aiocache>=0.12.2
+Requires-Dist: astroplan>=0.9.1
+Requires-Dist: astropy>=6.0.0
+Requires-Dist: cachetools>=5.4.0
+Requires-Dist: fastapi[standard]>=0.112.0
+Requires-Dist: gunicorn>=22.0.0
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: influxdb-client[async]>=1.38.0
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: kubernetes>=31.0.0
+Requires-Dist: lvmgort>=1.0.0
+Requires-Dist: lvmopstools>=0.3.9
+Requires-Dist: passlib[bcrypt]>=1.7.4
+Requires-Dist: polars>=1.7.1
+Requires-Dist: psycopg[binary]>=3.2.2
+Requires-Dist: pyarrow>=17.0.0
+Requires-Dist: python-jose[cryptography]>=3.3.0
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: redis[hiredis]>=5.0.3
+Requires-Dist: sdss-clu>=2.2.1
+Requires-Dist: sdsstools>=1.8.1
+Requires-Dist: slack-sdk>=3.23.0
+Requires-Dist: taskiq-aio-pika>=0.4.1
+Requires-Dist: taskiq-fastapi>=0.3.2
+Requires-Dist: taskiq-redis>=1.0.0
+Requires-Dist: taskiq>=0.11.7; sys_platform == 'darwin'
+Requires-Dist: taskiq[reload]>=0.11.7; sys_platform != 'darwin'
+Requires-Dist: uvicorn[standard]>=0.24.0
+Description-Content-Type: text/markdown
+
+# LVM REST API
+
+REST API for LVM operations.
