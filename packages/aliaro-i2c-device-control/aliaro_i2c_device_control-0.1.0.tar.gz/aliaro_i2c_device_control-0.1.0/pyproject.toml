@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aliaro-i2c-device-control"
+version = "0.1.0"
+description = "I2C control for ALIARO devices."
+authors = ["ALIARO AB <support@aliaro.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+i2cdriver = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ruff = "^0.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
