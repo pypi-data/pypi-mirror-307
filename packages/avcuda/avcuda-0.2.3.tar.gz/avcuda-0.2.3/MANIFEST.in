@@ -1,0 +1,3 @@
+include *.md
+recursive-include avcuda *.pyx *.pxd
+recursive-include avcuda *.h *.cu

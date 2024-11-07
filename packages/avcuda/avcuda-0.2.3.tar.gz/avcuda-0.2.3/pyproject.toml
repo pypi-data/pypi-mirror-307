@@ -1,0 +1,32 @@
+[project]
+name = "avcuda"
+version = "0.2.3"
+description = "PyAV extension with hardware encoding/decoding support on Nvidia GPUs."
+authors = [{name = "Matteo Destro"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["av", "cuda", "torch", "ffmpeg", "libav", "video"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "av>=12.3.0",
+  "torch",
+]
+
+[project.urls]
+Homepage = "https://github.com/materight/PyAV-CUDA.git"
+Repository = "https://github.com/materight/PyAV-CUDA.git"
+
+[build-system]
+requires = [
+  "setuptools",
+  "cython",
+  "av==12.3.0", # Minimum supported av version
+  "nvidia-npp-cu12",
+  "nvidia-cuda-nvcc-cu12",
+  "nvidia-cuda-runtime-cu12",
+]
+build-backend = "setuptools.build_meta"
