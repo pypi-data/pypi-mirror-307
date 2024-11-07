@@ -1,0 +1,13 @@
+README.md
+setup.py
+pipui/__init__.py
+pipui/__main__.py
+pipui/server.py
+pipui/utils.py
+pipui.egg-info/PKG-INFO
+pipui.egg-info/SOURCES.txt
+pipui.egg-info/dependency_links.txt
+pipui.egg-info/entry_points.txt
+pipui.egg-info/requires.txt
+pipui.egg-info/top_level.txt
+pipui/templates/index.html
