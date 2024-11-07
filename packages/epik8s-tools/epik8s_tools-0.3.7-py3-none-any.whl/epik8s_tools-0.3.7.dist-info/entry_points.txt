@@ -1,0 +1,4 @@
+[console_scripts]
+epik8s-gen = epik8s_tools:main
+epik8s-opigen = epik8s_tools:main_opigen
+
