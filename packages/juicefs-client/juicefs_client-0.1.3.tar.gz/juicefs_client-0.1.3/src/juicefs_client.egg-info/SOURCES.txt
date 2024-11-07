@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/juicefs_client/__init__.py
+src/juicefs_client/__main__.py
+src/juicefs_client/client.py
+src/juicefs_client.egg-info/PKG-INFO
+src/juicefs_client.egg-info/SOURCES.txt
+src/juicefs_client.egg-info/dependency_links.txt
+src/juicefs_client.egg-info/top_level.txt
