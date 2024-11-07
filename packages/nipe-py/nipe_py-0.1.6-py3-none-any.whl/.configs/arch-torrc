@@ -1,0 +1,4 @@
+RunAsDaemon 1
+
+DNSPort   9061
+DNSListenAddress 127.0.0.1

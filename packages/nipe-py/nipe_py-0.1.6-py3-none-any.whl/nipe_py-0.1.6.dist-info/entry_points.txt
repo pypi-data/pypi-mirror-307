@@ -1,0 +1,2 @@
+[console_scripts]
+nipe = nipe_py.main:cli
