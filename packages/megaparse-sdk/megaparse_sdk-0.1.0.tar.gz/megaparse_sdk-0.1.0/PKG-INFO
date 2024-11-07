@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: megaparse-sdk
+Version: 0.1.0
+Summary: Megaparse SDK
+Requires-Python: <3.12
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: llama-parse>=0.4.0
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: pycryptodome>=3.21.0
+Requires-Dist: python-dotenv>=1.0.0
+Description-Content-Type: text/markdown
+
+## MegaParse SDK
+
+What if you just don't care about the code and just want to call a service that does everythink for you ? 
+We thought of that (since we do to), just use our SDK.
