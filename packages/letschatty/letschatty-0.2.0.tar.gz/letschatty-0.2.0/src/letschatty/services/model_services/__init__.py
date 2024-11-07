@@ -1,0 +1,1 @@
+from .update_model_interface import UpdateableMixin
