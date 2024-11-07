@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+even_glasses/__init__.py
+even_glasses/ble_manager.py
+even_glasses/bluetooth_manager.py
+even_glasses/commands.py
+even_glasses/models.py
+even_glasses/service_identifiers.py
+even_glasses/utils.py
+even_glasses.egg-info/PKG-INFO
+even_glasses.egg-info/SOURCES.txt
+even_glasses.egg-info/dependency_links.txt
+even_glasses.egg-info/requires.txt
+even_glasses.egg-info/top_level.txt
