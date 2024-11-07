@@ -1,0 +1,15 @@
+pydantic
+numpy
+pyyaml
+
+[dev]
+botorch<0.11
+pre-commit
+ruff
+pytest
+
+[docs]
+mkdocs
+mkdocstrings
+mkdocstrings-python
+mkdocs-material
