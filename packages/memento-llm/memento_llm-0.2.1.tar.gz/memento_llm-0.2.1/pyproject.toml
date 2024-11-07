@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "memento-llm"
+version = "0.2.1"
+description = "Simple LLM Memory"
+authors = ["Anibal Angulo <ajcardoza2000@gmail.com>"]
+packages = [{ include = "memento" }]
+readme = "README.md"
+
+[tool.poetry.scripts]
+memento = "memento.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlalchemy = { extras = ["asyncio"], version = "^2.0.36" }
+alembic = "^1.13.1"
+click = "^8.1.7"
+rich = "^13.9.4"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.2"
+pytest = "^8.1.1"
+pytest-asyncio = "^0.23.5.post1"
+openai = "^1.13.3"
+mkdocs = "^1.5.3"
+aiosqlite = "^0.20.0"
+psycopg2-binary = "^2.9.10"
+
+[tool.ruff.lint]
+select = ["I"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
