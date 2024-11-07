@@ -1,0 +1,13 @@
+numpy>=1.21.5
+einops>=0.7.0
+seaborn>=0.12.1
+pooch>=1.6.0
+mne>=1.6
+scipy>=1.11.1
+scikit-learn>=1.0.2
+tqdm>=4.64.1
+torchmetrics>=1.0.0
+torchinfo>=1.5.0
+tensorboard
+pandas>=1.5.2
+openpyxl
