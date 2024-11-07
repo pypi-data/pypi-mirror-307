@@ -1,0 +1,15 @@
+odoo/addons/mail_show_follower/README.rst,sha256=5gg6_JppDnXAP_4apje_SfNV-mHKCcS-8IqgLGPdD5c,1881
+odoo/addons/mail_show_follower/__init__.py,sha256=TwEATPBMEoYshRY-1zM7Xvu413DBKBwqAnPTUUrwDGs,149
+odoo/addons/mail_show_follower/__manifest__.py,sha256=TJc85L10xet-52H4Ww_RHD501iQdB3Ig7hJohQgrwj0,593
+odoo/addons/mail_show_follower/models/__init__.py,sha256=sDSyYuNk1UujQdCO20hf20f55cW4OzURNAeAbIxrp_Y,236
+odoo/addons/mail_show_follower/models/mail_mail.py,sha256=gvVR5PXaeqY8I1IhlUqIg3QiT__BpL6f3nsfL6B5z0Q,4445
+odoo/addons/mail_show_follower/models/res_company.py,sha256=mplbPL6BzGwPj4zLen_LcwDuC5sT88Luhx-SPf7Ek7k,453
+odoo/addons/mail_show_follower/models/res_config_settings.py,sha256=cUXGABsF_KBm9GnrBEMPtvrNCjnq-PohOBbTxi5Ibdc,604
+odoo/addons/mail_show_follower/models/res_users.py,sha256=TW0ewXVUMUDjmz3fH_OgqOTrk8KN4UTm7mF91zdOZV4,308
+odoo/addons/mail_show_follower/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/mail_show_follower/views/res_config_settings.xml,sha256=JNFnyiwyJry1SR3Jm2kvJgGcrN7Evhjtky5KE1qdqzY,2009
+odoo/addons/mail_show_follower/views/res_users.xml,sha256=8sAPcZ2kqgBfg5OQIL02nLwVuskr7LJKDoJZKXkRhoA,510
+odoo13_addon_mail_show_follower-13.0.1.0.1.dev2.dist-info/METADATA,sha256=xIn7X0Y0ZrBqTn3BVc-lFWrNDBvAvULdjU7QpEbhY7E,2396
+odoo13_addon_mail_show_follower-13.0.1.0.1.dev2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+odoo13_addon_mail_show_follower-13.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_mail_show_follower-13.0.1.0.1.dev2.dist-info/RECORD,,
