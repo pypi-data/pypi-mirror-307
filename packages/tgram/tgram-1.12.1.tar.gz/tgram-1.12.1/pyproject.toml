@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tgram"
+version = "1.12.1"
+description = "Very friendly BOT API library for Python developers."
+authors = ["Zaid <me@zaid.pro>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+aiohttp = "3.10.2"
+
+[tool.poetry.scripts]
+tgram = "tgram.cli.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
