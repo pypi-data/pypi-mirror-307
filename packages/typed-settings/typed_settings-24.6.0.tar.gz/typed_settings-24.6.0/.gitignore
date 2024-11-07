@@ -1,0 +1,13 @@
+*.egg-info/
+.DS_Store
+.coverage
+.coverage.*
+.hypothesis/
+.mypy_cache/
+.nox/
+.pytest_cache/
+__pycache__/
+build/
+coverage.xml
+dist/
+docs/_build
