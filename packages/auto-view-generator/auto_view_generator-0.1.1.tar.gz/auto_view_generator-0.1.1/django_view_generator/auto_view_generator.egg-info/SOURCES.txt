@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+django_view_generator/auto_view_generator.egg-info/PKG-INFO
+django_view_generator/auto_view_generator.egg-info/SOURCES.txt
+django_view_generator/auto_view_generator.egg-info/dependency_links.txt
+django_view_generator/auto_view_generator.egg-info/entry_points.txt
+django_view_generator/auto_view_generator.egg-info/requires.txt
+django_view_generator/auto_view_generator.egg-info/top_level.txt
+django_view_generator/management/__init__.py
+django_view_generator/management/commands/__init__.py
+django_view_generator/management/commands/generate_views_and_serializers.py
