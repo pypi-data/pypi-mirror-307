@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: concentric
+Version: 1.2
+Summary: a simple connection manager for connecting to various rdbms (mostly legacy)
+Home-page: https://bitbucket.org/dbuy/concentric
+Author: Preetam Shingavi
+Author-email: p.shingavi@yahoo.com
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: waddle
+Requires-Dist: raft
+Requires-Dist: sqlalchemy
+Provides-Extra: db2i
+Requires-Dist: pyodbc; extra == "db2i"
+Requires-Dist: crazy_ibmi>=0.9.4; extra == "db2i"
+Provides-Extra: hp3000
+Requires-Dist: jaydebeapi; extra == "hp3000"
+Provides-Extra: mssql
+Requires-Dist: pyodbc; extra == "mssql"
+Provides-Extra: mysql
+Requires-Dist: mysqlclient; extra == "mysql"
+Provides-Extra: netsuite
+Requires-Dist: pyodbc; extra == "netsuite"
+Provides-Extra: oracle
+Requires-Dist: cx_oracle; extra == "oracle"
+Requires-Dist: oracledb; extra == "oracle"
+Provides-Extra: postgres
+Requires-Dist: psycopg2; extra == "postgres"
+Provides-Extra: redshift
+Requires-Dist: redshift_connector==2.1.3; extra == "redshift"
+Requires-Dist: sqlalchemy_redshift; extra == "redshift"
+Provides-Extra: snowflake
+Requires-Dist: snowflake-connector-python; extra == "snowflake"
+Requires-Dist: snowflake-sqlalchemy; extra == "snowflake"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pytest-pspec; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: bumpversion; extra == "dev"
+Provides-Extra: db2i-native
+Requires-Dist: ibm_db; extra == "db2i-native"
+Requires-Dist: ibm_db_sa; extra == "db2i-native"
+Provides-Extra: vertica
+Requires-Dist: vertica-python; extra == "vertica"
+Requires-Dist: sqlalchemy-vertica-python; extra == "vertica"
+Provides-Extra: bigquery
+Requires-Dist: google-cloud-bigquery; extra == "bigquery"
+Requires-Dist: google-cloud-bigquery-storage; extra == "bigquery"
+Requires-Dist: sqlalchemy-bigquery; extra == "bigquery"
+Provides-Extra: all
+Requires-Dist: crazy_ibmi>=0.9.4; extra == "all"
+Requires-Dist: cx_oracle; extra == "all"
+Requires-Dist: google-cloud-bigquery; extra == "all"
+Requires-Dist: google-cloud-bigquery-storage; extra == "all"
+Requires-Dist: ibm_db; extra == "all"
+Requires-Dist: ibm_db_sa; extra == "all"
+Requires-Dist: jaydebeapi; extra == "all"
+Requires-Dist: mysqlclient; extra == "all"
+Requires-Dist: oracledb; extra == "all"
+Requires-Dist: psycopg2; extra == "all"
+Requires-Dist: pyodbc; extra == "all"
+Requires-Dist: redshift_connector==2.1.3; extra == "all"
+Requires-Dist: snowflake-connector-python; extra == "all"
+Requires-Dist: snowflake-sqlalchemy; extra == "all"
+Requires-Dist: sqlalchemy-bigquery; extra == "all"
+Requires-Dist: sqlalchemy-vertica-python; extra == "all"
+Requires-Dist: sqlalchemy_redshift; extra == "all"
+Requires-Dist: vertica-python; extra == "all"
+
+concentric
+==========
+
+a connection manager for python for connecting to various databases.
+
+supported databases:
+
+* oracle
+* netsuite
+* mssql
+* mysql
+* vertica
+* redshift
+* postgres
+* db2 i-series
+
+overview
+--------
+
+concentric is based off of `waddle <https://pypi.org/project/waddle/>`_ for secrets
+management, which means it is strongly coupled to aws kms for its key management.
+
+
+quick start
+-----------
+
+#. create a waddle configuration file
+
+  .. code-block::
+
+         oracle:
+           host: localhost
+           user: scott
+           password: tiger
+           sid: xe
+
+#. waddle in the password for security
+
+  .. code-block::
+
+         waddle add-secret -f /path/to/config.yml oracle.password
+
+#. use it
+
+  .. code-block::
+
+         from concentric.managers import setup_concentric
+         from concentric.managers import CachingConnectionManager as ccm
+
+         setup_concentric('/path/to/waddle_config.yml', '/path/to/another_config.yml')
+         conn = ccm.connect('oracle')
+         with conn.cursor() as cursor:
+             cursor.execute('select sysdate as dt from dual')
+             results = cursor.fetchall()
+
+
+contributing
+------------
+
+Sample configuration files:
+
+#. `db2 <./concentric/example_config/db2.yml>`_
+#. `hp3000 <./concentric/example_config/hp3000.yml>`_
+#. `mysql <./concentric/example_config/mysql.yml>`_
+#. `netsuite <./concentric/example_config/netsuite.yml>`_
+#. `oracle <./concentric/example_config/oracle_sid.yml>`_
+#. `postgres <./concentric/example_config/postgres.yml>`_
+#. `redshift <./concentric/example_config/redshift.yml>`_
+#. `snowflake <./concentric/example_config/snowflake.yml>`_
+#. `sql server <./concentric/example_config/sql_server.yml>`_
+#. `vertica <./concentric/example_config/vertica.yml>`_
