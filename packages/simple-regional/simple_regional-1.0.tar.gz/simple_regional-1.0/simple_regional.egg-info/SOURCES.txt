@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+simple_regional/__init__.py
+simple_regional/one_spatial_scale.py
+simple_regional/utils.py
+simple_regional.egg-info/PKG-INFO
+simple_regional.egg-info/SOURCES.txt
+simple_regional.egg-info/dependency_links.txt
+simple_regional.egg-info/requires.txt
+simple_regional.egg-info/top_level.txt
+tests/test_one_spatial_scale.py
