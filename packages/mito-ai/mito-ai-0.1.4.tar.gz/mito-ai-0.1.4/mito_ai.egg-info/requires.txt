@@ -1,0 +1,7 @@
+jupyterlab<5,>=4.0.0
+openai>=1.0.0
+
+[deploy]
+wheel==0.42.0
+twine==5.1.1
+setuptools==56.0.0
