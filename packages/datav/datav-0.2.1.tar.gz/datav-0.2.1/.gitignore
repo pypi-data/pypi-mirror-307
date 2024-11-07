@@ -1,0 +1,7 @@
+datav.egg-info
+dist/
+.python-version
+__pycache__/
+.coverage
+.venv/
+renv/library/
