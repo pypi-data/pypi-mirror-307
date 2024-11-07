@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "dria"
+version = "0.0.65"
+description = "Dria SDK - A Python library for interacting with the Dria AI Network"
+authors = ["andthattoo <omer@firstbatch.xyz>", "Anil <anil@firstbatch.xyz>"]
+readme = "README.md"
+homepage = "https://github.com/firstbatchxyz/dria-sdk"
+repository = "https://github.com/firstbatchxyz/dria-sdk"
+documentation = "https://github.com/firstbatchxyz/dria-sdk"
+keywords = ["dria", "decentralized-ai", "ai", "agentic"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+coincurve = "^18.0.0"
+pydantic = "2.9.1"
+python-dotenv = "^1.0.1"
+dria-workflows = "^0.3.1"
+aiohttp = "^3.10.9"
+eciespy = "0.4.1"
+fastbloom-rs = "0.5.9"
+tqdm = "4.66.5"
+json-repair = "0.30.0"
+outlines-core = "0.1.14"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/firstbatchxyz/dria-sdk/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
