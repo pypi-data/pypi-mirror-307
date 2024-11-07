@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: vision-architectures
+Version: 0.4
+Summary: Vision architectures
+Home-page: https://github.com/arjunagarwal899/vision_architectures
+Author: Arjun Agarwal
+Author-email: arjunagarwal899@gmail.com
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+This repository contains implementations of various architectures used in `Computer Vision`.
+
+Most implementations that are provided alongside research papers are with keeping 2D natural images in mind. However, there are many use cases where the same architectures are desired for a 3D space, for eg. in medical imaging, video games, environment reconstruction etc. For this reason, most (but not all) of the architectures in this repository are 3D implementations of popular research papers.
