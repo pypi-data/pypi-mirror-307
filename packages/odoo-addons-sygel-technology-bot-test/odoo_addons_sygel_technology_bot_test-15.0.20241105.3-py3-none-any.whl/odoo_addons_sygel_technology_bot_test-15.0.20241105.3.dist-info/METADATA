@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo-addons-sygel-technology-bot-test
+Version: 15.0.20241105.3
+Summary: Meta package for sygel-technology-bot-test Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-l10n-es-aeat-mod303-print<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-l10n-es-aeat-mod303-print-copy<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-l10n-es-aeat-mod303-print-copy-copy<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-l10n-es-facturae-custom-rounding<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-l10n-es-facturae-custom-rounding-copy<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-l10n-es-facturae-custom-rounding-copy-copy<15.1dev,>=15.0dev
+
+UNKNOWN
