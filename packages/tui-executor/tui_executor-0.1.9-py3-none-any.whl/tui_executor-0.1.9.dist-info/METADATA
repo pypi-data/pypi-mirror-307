@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: tui-executor
+Version: 0.1.9
+Summary: Execute Python code in an automatically generated TUI App.
+Author-email: Rik Huygen <rik.huygen@kuleuven.be>
+License: MIT
+Project-URL: documentation, https://rhuygen.github.io/tui-executor/
+Project-URL: repository, https://github.com/rhuygen/tui-executor
+Keywords: TUI,execute,task
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: textual
+Requires-Dist: rich >=13
+Requires-Dist: executor
+Requires-Dist: PyYAML
+Requires-Dist: distro
+Requires-Dist: ipython >=8
+Requires-Dist: ipykernel >=6.15
+Requires-Dist: jupyter-client >=8.6
+Requires-Dist: jupyter-console >=6.6
+Requires-Dist: jupyter-core >=5.7
+Provides-Extra: dev
+Requires-Dist: textual-dev ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-order ; extra == 'test'
+Requires-Dist: faker ; extra == 'test'
+Requires-Dist: lorem-text ; extra == 'test'
+
+
+# TUI Executor
+
+You ever wanted to execute your Python code from a simple TUI without the need to use a REPL or commandline? Look no further, use TUI Executor.
+
+
+## Installation
+
+Install this package in your virtual environment:
+
+```
+$ python3 -m pip install [--upgrade] tui-executor 
+```
+
+## Documentation
+
+You can find the documentation at https://ivs-kuleuven.github.io/tui-executor/.
+
+
+## Running the Tests
+
+From the project folder, run the following command:
+
+```
+$ PYTHONPATH=tests tui-executor --module-path tasks.shared --module-path tasks.specific --debug
+```
