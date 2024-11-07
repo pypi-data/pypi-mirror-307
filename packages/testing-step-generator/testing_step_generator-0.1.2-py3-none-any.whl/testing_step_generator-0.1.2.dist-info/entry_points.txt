@@ -1,0 +1,2 @@
+[console_scripts]
+tsg = tsg.cli:main
