@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ion-python
+Version: 3.2.5
+Summary: Python Binding for ion-kit
+Home-page: https://github.com/fixstars/ion-kit
+Author: Takuro Iizuka
+Author-email: t_iizuka@fixstars.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.24
+
+# ionpy - Python binding for ion-kit
+
+```
+pip3 install "git+https://github.com/fixstars/ion-kit.git#egg=ionpy&subdirectory=python"
+```
+
+## Test
+
+```
+LD_LIBRARY_PATH=<path-to-ion-libs> PYTHONPATH=. pytest ./tests/
+```
