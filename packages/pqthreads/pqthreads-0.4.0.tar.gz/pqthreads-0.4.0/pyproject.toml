@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqthreads"
+version = "0.4.0"
+description = "Expose class interfaces from the main GUI Thread in another QThread in Qt for Python"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Sietze van Buuren", email = "s.van.buuren@gmail.com" }
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+urls = { Homepage = "https://github.com/swvanbuuren/pqthreads" }
+dependencies = [
+    "PySide6",
+    "wrapt",
+]
+
+[tool.setuptools.packages.find]
+include = ["pqthreads", "pqthreads.*"]
+
+[tool.semantic_release]
+version_variables = ["pqthreads/__init__.py:__version__"]
+version_toml = ["pyproject.toml:project.version"]
