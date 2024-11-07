@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: benimang
+Version: 0.7.4
+Summary: Utils library for Beni
+Author-email: Beni Mang <benimang@126.com>
+Maintainer-email: Beni Mang <benimang@126.com>
+Keywords: benimang,beni
+Requires-Python: >=3.10
+Requires-Dist: aioconsole
+Requires-Dist: aiofiles
+Requires-Dist: aiohttp
+Requires-Dist: aiomysql
+Requires-Dist: async-timeout
+Requires-Dist: chardet
+Requires-Dist: colorama
+Requires-Dist: httpx
+Requires-Dist: nest-asyncio
+Requires-Dist: orjson
+Requires-Dist: pyperclip
+Requires-Dist: python-box
+Requires-Dist: tzdata
+
