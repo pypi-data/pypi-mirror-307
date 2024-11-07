@@ -1,0 +1,2 @@
+[console_scripts]
+pip-viz = pip_viz:parse_args_and_call_main
