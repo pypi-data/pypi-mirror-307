@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cerc-co2-emission
+Version: 0.1.0.5
+Summary: CERC co2 emission contains the basic co2 emission calculation per CERC-Hub building
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: cerc-hub
+Requires-Dist: setuptools
+
+CERC co2 emission contains the basic co2 emission calculation per CERC-Hub building
