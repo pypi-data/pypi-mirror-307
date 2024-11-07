@@ -1,0 +1,13 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+pyrfc3339-stubs/METADATA.toml
+pyrfc3339-stubs/__init__.pyi
+pyrfc3339-stubs/generator.pyi
+pyrfc3339-stubs/parser.pyi
+pyrfc3339-stubs/py.typed
+pyrfc3339-stubs/utils.pyi
+types_pyRFC3339.egg-info/PKG-INFO
+types_pyRFC3339.egg-info/SOURCES.txt
+types_pyRFC3339.egg-info/dependency_links.txt
+types_pyRFC3339.egg-info/top_level.txt
