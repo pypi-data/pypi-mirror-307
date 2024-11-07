@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: port-calibration
+Version: 0.12
+Summary: SIS calibration
+Home-page: https://github.com/yarvod/port-calibration
+Author: yarvod
+Author-email: ya.vodzyanovskiy@lebedev.ru
+Keywords: port calibration vna
+Description-Content-Type: text/markdown
+
+## Simple realisation of one-port (OSM) and two-port (TOSM) calibration
+__Links__:
+- http://anlage.umd.edu/Agilent_Advanced_VNA_calibration.pdf
