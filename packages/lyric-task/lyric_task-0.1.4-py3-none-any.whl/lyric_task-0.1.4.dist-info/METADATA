@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: lyric-task
+Version: 0.1.4
+Summary: Add your description here
+Author-email: Fangyin Cheng <staneyffer@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# lyric-task
+
+Base lyric task utilities for lyric python workers.
