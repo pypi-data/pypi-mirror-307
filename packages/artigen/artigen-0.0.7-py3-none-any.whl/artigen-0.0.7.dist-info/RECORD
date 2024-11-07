@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/Chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/Copilot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/PublishInference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/Registry/BaseRegistry.py,sha256=-Vc8FVQNEtbL7Jwv6LVZtMTkmlawF1sVJk_sA43dJR8,373
+artigen/Registry/Darn.py,sha256=vrUs5WfrqAiONj795xZKtqzgMgAyHlBGoEUyaXF_wgc,3048
+artigen/Registry/Embedding.py,sha256=ibFFyTtHdrI3cuqLK1-AJ5fRIWUf1mGmuU6eyt7DRfQ,451
+artigen/Registry/TrainingDataset.py,sha256=QULHRt77UWhSAb3aRmCxXEM4jyYXgJVrN-W-d1ik_As,425
+artigen/Registry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen/Training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artigen-0.0.7.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+artigen-0.0.7.dist-info/METADATA,sha256=11oPU4wEE_aF019dDv8_9IgxkQz9ME-uuEgQsmonmT4,685
+artigen-0.0.7.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+artigen-0.0.7.dist-info/top_level.txt,sha256=Ifdspbk0Rjr_MXEimSkbkdpCEVAgPw1I6wG7zwLkH_0,17
+artigen-0.0.7.dist-info/RECORD,,
