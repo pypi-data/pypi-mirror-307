@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/findeasy/__init__.py
+src/findeasy/__main__.py
+src/findeasy.egg-info/PKG-INFO
+src/findeasy.egg-info/SOURCES.txt
+src/findeasy.egg-info/dependency_links.txt
+src/findeasy.egg-info/top_level.txt
+src/findeasy/tests/__init__.py
+src/findeasy/tests/test_1984.py
