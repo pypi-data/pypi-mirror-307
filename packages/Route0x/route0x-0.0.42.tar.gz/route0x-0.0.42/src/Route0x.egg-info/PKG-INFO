@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Route0x
+Version: 0.0.42
+Summary: Low latency, High Accuracy, Custom Query routers for Humans and Agents
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Provides-Extra: build
+Requires-Dist: pandas; extra == "build"
+Requires-Dist: datasets; extra == "build"
+Requires-Dist: sentence-transformers; extra == "build"
+Requires-Dist: setfit==1.0.2; extra == "build"
+Requires-Dist: onnx==1.14.0; extra == "build"
+Requires-Dist: onnxruntime==1.15.1; extra == "build"
+Requires-Dist: tqdm; extra == "build"
+Requires-Dist: scikit-learn; extra == "build"
+Requires-Dist: huggingface_hub==0.23.5; extra == "build"
+Requires-Dist: accelerate; extra == "build"
+Requires-Dist: ollama; extra == "build"
+Requires-Dist: matplotlib; extra == "build"
+Requires-Dist: chardet; extra == "build"
+Requires-Dist: openai==1.37.1; extra == "build"
+Requires-Dist: anthropic; extra == "build"
+Requires-Dist: onnxconverter-common; extra == "build"
+Requires-Dist: faiss-cpu; extra == "build"
+Requires-Dist: nlpaug; extra == "build"
+Provides-Extra: route
+Requires-Dist: numpy==1.24.4; extra == "route"
+Requires-Dist: tokenizers==0.19.1; extra == "route"
+Requires-Dist: onnxruntime==1.15.1; extra == "route"
+Requires-Dist: joblib==1.4.2; extra == "route"
+Requires-Dist: faiss-cpu; extra == "route"
+Requires-Dist: seaborn; extra == "route"
