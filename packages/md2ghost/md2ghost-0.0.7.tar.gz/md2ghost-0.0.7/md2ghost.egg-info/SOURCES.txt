@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+md2ghost/__init__.py
+md2ghost/__main__.py
+md2ghost.egg-info/PKG-INFO
+md2ghost.egg-info/SOURCES.txt
+md2ghost.egg-info/dependency_links.txt
+md2ghost.egg-info/not-zip-safe
+md2ghost.egg-info/requires.txt
+md2ghost.egg-info/top_level.txt

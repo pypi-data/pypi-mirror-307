@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: md2ghost
+Version: 0.0.7
+Summary: Create and update posts in Ghost sourced by markdown files
+Home-page: https://github.com/mstingl/md2ghost
+Author: Manuel Stingl
+Author-email: contact@stingl.st
+License: GNU LGPLv2.1
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: md2weasypdf>=0.0.37
+Requires-Dist: requests>=2.32.3
+Requires-Dist: python-jose>=3.3.0
