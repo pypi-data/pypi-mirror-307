@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Alaea
+Version: 1.0.0
+Summary: Some simple tools for Christmas
+Author: Christmas
+Author-email: 273519355@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# This Package is a collection of Christmas related packages.
+## Authors : Christmas
+## Maintainer : Christmas
+
+To install this package, run:
+
+    pip install Alaea
+or
+
+    pip3 install Alaea
+
