@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data noupdate="1">
+        <template
+            id="mail_notification_confirm_hide_button"
+            inherit_id="mail.mail_notification_paynow"
+        >
+            <xpath expr="//t[@t-set='access_name']" position="after">
+                <t
+                    t-set="hidden_button_models"
+                    t-value="record.env['ir.model'].get_hidden_mail_portal_access_models()"
+                />
+            </xpath>
+            <xpath expr="//tr[2]/td[1]/div[1]" position="attributes">
+                <attribute
+                    name="t-if"
+                    add="and record._name not in hidden_button_models"
+                    separator=" "
+                />
+            </xpath>
+        </template>
+    </data>
+</odoo>
