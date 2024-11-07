@@ -1,0 +1,2 @@
+[console_scripts]
+ecko = ecko_cli.__main__:main
