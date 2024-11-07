@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Python 包管理工具</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header, .footer {
+            background-color: #1e1e1e;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            margin: 10px;
+        }
+
+        .sidebar-right, .sidebar-left {
+            flex: 1; /* 让边栏在水平方向上均分空间 */
+            background-color: rgba(34, 34, 34, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* 改为 100% 以填充剩余空间 */
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            margin: 0 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+
+        input, select, textarea {
+            width: 100%; /* 确保所有输入框的宽度一致 */
+            padding: 4px 8px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background-color: #333;
+            color: #f5f5f5;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 18px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 400px;
+            max-height: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            height: 30px;
+            line-height: 18px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-container input {
+            width: 80%;
+            padding: 8px 12px;
+        }
+
+        .search-container button {
+            margin-left: 10px;
+        }
+
+        #interpreter-info {
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        /* 美化文件选择框 */
+        #file-input {
+            padding: 6px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background-color: #333;
+            color: #f5f5f5;
+            box-sizing: border-box;
+            height: 44px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%; /* 使用100%宽度 */
+            margin-top: 15px;
+        }
+
+        #file-input::file-selector-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            height: 30px;
+            width: auto; /* 按钮宽度自动适应内容 */
+        }
+
+        #file-input::file-selector-button:hover {
+            background-color: #0056b3;
+        }
+
+        #install-input::placeholder {
+            color: #aaa;
+        }
+
+        .install-controls {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .install-controls button {
+            margin-left: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #444;
+            cursor: pointer;
+        }
+
+        tr:hover {
+            background-color: #555;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div class="header">
+    <h1>Python 包管理工具</h1>
+</div>
+
+<div class="main">
+    <div class="sidebar-left">
+        <h2>在线搜索</h2>
+        <div class="search-container">
+            <input type="text" id="search-filter" placeholder="按名称搜索...">
+            <button id="search-button" onclick="searchPackages()">搜索</button>
+        </div>
+
+        <div id="search-results"></div> <!-- 搜索结果展示区域 -->
+    </div>
+
+    <div class="content">
+        <h2>已安装的包</h2>
+        <input type="text" id="filter" placeholder="按名称过滤..." oninput="filterPackages()">
+        <table>
+            <thead>
+            <tr>
+                <th onclick="sortTable(0)">名称</th>
+                <th onclick="sortTable(1)">版本</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody id="package-table">
+            <!--            {% for package in packages %}-->
+            <!--            <tr>-->
+            <!--                <td>{{ package.name }}</td>-->
+            <!--                <td>{{ package.version }}</td>-->
+            <!--                <td>-->
+            <!--                    <button onclick="uninstall('{{ package.name }}')">卸载</button>-->
+            <!--                </td>-->
+            <!--            </tr>-->
+            <!--            {% endfor %}-->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="sidebar-right">
+        <h2>当前解释器</h2>
+        <div id="interpreter-info"></div>
+        <h2>在线安装</h2>
+        <div class="install-controls">
+            <select id="install-mirror-source">
+                <option value="https://pypi.python.org/simple">默认镜像</option>
+                <option value="https://mirrors.aliyun.com/pypi/simple/">阿里云</option>
+                <option value="https://pypi.tuna.tsinghua.edu.cn/simple">清华大学</option>
+                <option value="https://pypi.hust.edu.cn/simple">华中科技大学</option>
+                <option value="https://pypi.mirrors.ustc.edu.cn/simple/">中国科学技术大学</option>
+                <option value="https://pypi.douban.com/simple/">豆瓣</option>
+            </select>
+
+            <input type="file" id="file-input" accept=".txt"/>
+            <textarea id="install-input" placeholder="请输入库名和版本，例如：pandas==2.0" rows="4"></textarea>
+
+            <button onclick="installPackages()">安装</button>
+        </div>
+    </div>
+</div>
+
+<div class="footer"></div>
+
+<script>
+    let sortOrder = {name: 1, version: 1}; // 1 为正序，-1 为倒序
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('/installed')
+            .then(response => response.json())
+            .then(responseData => {
+                if (responseData.code === 200) {  // 检查响应的code
+                    const packages = responseData.data;
+                    const tableBody = document.getElementById('package-table');
+                    tableBody.innerHTML = ''; // 清空现有内容
+                    packages.forEach(package => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                    <td>${package.name}</td>
+                    <td>${package.version}</td>
+                    <td>
+                        <button onclick="uninstall('${package.name}')">卸载</button>
+                    </td>
+                `;
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    alert(responseData.msg);  // 如果code不为200，显示msg
+                }
+            })
+            .catch(error => console.error('加载已安装包失败:', error));
+
+    });
+
+    function filterPackages() {
+        const filter = document.getElementById('filter').value.toLowerCase();
+        const rows = document.querySelectorAll('#package-table tr');
+        rows.forEach(row => {
+            const name = row.cells[0].textContent.toLowerCase();
+            row.style.display = name.includes(filter) ? '' : 'none';
+        });
+    }
+
+    function sortTable(columnIndex) {
+        const table = document.getElementById('package-table');
+        const rows = Array.from(table.rows);
+        const columnNames = ['name', 'version'];
+
+        // 切换排序顺序
+        sortOrder[columnNames[columnIndex]] *= -1;
+
+        rows.sort((a, b) => {
+            const aText = a.cells[columnIndex].textContent;
+            const bText = b.cells[columnIndex].textContent;
+            return sortOrder[columnNames[columnIndex]] * aText.localeCompare(bText);
+        });
+
+        rows.forEach(row => table.appendChild(row)); // 移动行到表格
+    }
+
+    function uninstall(packageName) {
+        fetch(`/uninstall/${packageName}`, {
+            method: 'DELETE'
+        })
+            .then(response => response.json())  // 解析返回的 JSON 数据
+            .then(responseData => {
+                if (responseData.code === 200) {  // 如果卸载成功，code 为 200
+                    alert(responseData.msg);  // 显示成功信息
+                    location.reload(); // 刷新页面
+                } else {
+                    alert(responseData.msg);  // 如果卸载失败，显示错误信息
+                }
+            })
+            .catch(error => {
+                console.error('卸载请求失败:', error);
+                alert('卸载失败，请稍后重试');
+            });
+    }
+
+
+    function searchPackages() {
+        const filter = document.getElementById('search-filter').value.trim(); // 获取输入的包名
+        if (filter === "") {
+            alert('请输入包名');
+            return;
+        }
+
+        // 使用 fetch 从后台获取数据
+        fetch(`/search/?q=${filter}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('网络响应不是 OK');
+                }
+                return response.json(); // 解析为 JSON
+            })
+            .then(responseData => {
+                if (responseData.code === 200) {  // 如果 code 为 200
+                    renderSearchResults(responseData.data);  // 渲染搜索结果
+                } else {
+                    alert(responseData.msg);  // 如果 code 不为 200，显示 msg
+                }
+            })
+            .catch(error => {
+                console.error('获取数据失败:', error);
+            });
+    }
+
+
+    function renderSearchResults(data) {
+        const resultsContainer = document.getElementById('search-results');
+        resultsContainer.innerHTML = ''; // 清空之前的结果
+
+        if (data.length === 0) {
+            resultsContainer.innerHTML = '<p>未找到结果。</p>';
+            return;
+        }
+
+        const resultTable = document.createElement('table');
+        resultTable.innerHTML = `
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>版本</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+    `;
+
+        data.forEach(package => {
+            resultTable.innerHTML += `
+        <tr>
+            <td>${package.name}</td>
+            <td>
+                <select id="version-select-${package.name}">
+                    ${package.versions.map(version => `
+                        <option value="${version}" ${version === package.version ? 'selected' : ''}>${version}</option>
+                    `).join('')}
+                </select>
+            </td>
+            <td>
+                <button onclick="addToTextarea('${package.name}')">添加</button>
+            </td>
+        </tr>
+        `;
+        });
+
+        resultTable.innerHTML += `</tbody></table>`;
+        resultsContainer.appendChild(resultTable);
+    }
+
+    function addToTextarea(packageName) {
+        // 获取当前选中的版本号
+        const versionSelect = document.getElementById(`version-select-${packageName}`);
+        const selectedVersion = versionSelect.value;
+
+        // 拼接成 "name==version" 格式
+        const packageString = `${packageName}==${selectedVersion}`;
+
+        const installInput = document.getElementById('install-input'); // 获取右侧的文本框
+
+        // 追加到文本框内容末尾，换行显示
+        installInput.value += (installInput.value ? '\n' : '') + packageString;
+    }
+
+    // 获取并发送安装数据的函数
+    function installPackages() {
+        const packageDetails = document.getElementById('install-input').value; // 获取输入框内容
+        const mirrorSource = document.getElementById('install-mirror-source').value; // 获取镜像源
+
+        if (!packageDetails.trim()) {
+            alert('请输入有效的包名和版本');
+            return;
+        }
+
+        const data = {
+            packageDetails: packageDetails,
+            mirrorSource: mirrorSource
+        };
+
+        fetch('/install', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('网络请求失败');
+                }
+                return response.json();  // 解析返回的数据
+            })
+            .then(responseData => {
+                if (responseData.code === 200) {  // 如果成功
+                    alert('安装成功');
+                    location.reload(); // 刷新页面
+                } else {
+                    alert(responseData.msg);  // 显示错误消息
+                }
+            })
+            .catch(error => {
+                console.error('安装请求失败:', error);
+                alert('请求失败，请稍后重试');
+            });
+    }
+
+
+    // 监听文件选择事件
+    document.getElementById('file-input').addEventListener('change', function (event) {
+        const file = event.target.files[0];  // 获取用户选择的文件
+        if (file) {
+            const reader = new FileReader();  // 创建 FileReader 实例
+            reader.onload = function (e) {
+                // 将文件内容填充到文本框中
+                document.getElementById('install-input').value = e.target.result;
+            };
+            reader.readAsText(file);  // 读取文件内容为文本
+        }
+    });
+ document.addEventListener("DOMContentLoaded", function () {
+    const infoDiv = document.getElementById('interpreter-info');
+
+    // 显示加载提示
+    infoDiv.innerHTML = '<span>加载中...</span>';
+
+    fetch('/interpreter-info')
+        .then(response => response.json())  // 解析返回的 JSON 数据
+        .then(responseData => {
+            // 判断后台返回的 code 是否为 200
+            if (responseData.code === 200) {
+                // 从 responseData 中提取 Python 版本和路径
+                const { version, path } = responseData.data;
+
+                // 更新页面显示 Python 版本和路径
+                infoDiv.innerHTML = `
+                    <span>版本: ${version}</span><br>
+                    <span>路径: ${path}</span>
+                `;
+            } else {
+                // 如果返回的 code 不是 200，显示 msg
+                infoDiv.innerHTML = `<span>错误: ${responseData.msg}</span>`;
+            }
+        })
+        .catch(error => {
+            // 捕获任何请求失败的错误
+            console.error('获取解释器信息失败:', error);
+
+            // 显示错误信息
+            infoDiv.innerHTML = `<span>无法获取解释器信息: ${error.message}</span>`;
+        });
+});
+
+
+
+</script>
+</body>
+</html>
