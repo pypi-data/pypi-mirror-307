@@ -1,0 +1,14 @@
+[project]
+name = "py_service_client"
+version = "0.0.5"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "Testing"
+readme = "readme.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
