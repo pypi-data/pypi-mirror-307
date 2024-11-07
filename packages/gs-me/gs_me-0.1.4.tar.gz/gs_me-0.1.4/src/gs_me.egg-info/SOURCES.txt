@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/gs_me/__init__.py
+src/gs_me/run.py
+src/gs_me.egg-info/PKG-INFO
+src/gs_me.egg-info/SOURCES.txt
+src/gs_me.egg-info/dependency_links.txt
+src/gs_me.egg-info/entry_points.txt
+src/gs_me.egg-info/top_level.txt
+src/gs_me/genomespy/index.html
