@@ -1,0 +1,36 @@
+{
+    "dataset": "villacampa_lung_organoid",
+    "hex_geometry": false,
+    "param_dict": {
+        "cell_max_counts": 1000000,
+        "cell_min_counts": 10,
+        "combat_key": "slide_id",
+        "gene_max_counts": 1000000,
+        "gene_min_counts": 10,
+        "hex_geometry": true,
+        "min_exp_frac": -1.0,
+        "min_glob_exp_frac": -1.0,
+        "organism": "human",
+        "plotting_genes": "None",
+        "plotting_slides": "None",
+        "random_samples": -1,
+        "real_data_percentage": 0.7,
+        "top_moran_genes": 128,
+        "wildcard_genes": "None"
+    },
+    "patch_scale": 1.0,
+    "patch_size": 224,
+    "split_names": {
+        "test": [
+            "V19D02-088_D1"
+        ],
+        "train": [
+            "V19D02-088_A1",
+            "V19D02-088_B1"
+        ],
+        "val": [
+            "V19D02-088_C1"
+        ]
+    },
+    "tissue": "lungorganoid"
+}

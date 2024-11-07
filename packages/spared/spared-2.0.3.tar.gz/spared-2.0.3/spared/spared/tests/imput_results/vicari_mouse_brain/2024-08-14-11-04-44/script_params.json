@@ -1,0 +1,60 @@
+{
+    "hex_geometry": true,
+    "masking_method": "mask_prob",
+    "mask_prob": 0.3,
+    "scale_factor": 0.8,
+    "neighborhood_type": "nn_distance",
+    "num_neighs": 18,
+    "num_hops": 1,
+    "base_arch": "transformer_encoder",
+    "transformer_dim": 128,
+    "transformer_heads": 1,
+    "transformer_encoder_layers": 2,
+    "transformer_decoder_layers": 1,
+    "include_genes": true,
+    "use_visual_features": false,
+    "use_double_branch_archit": false,
+    "sota": "pretrain",
+    "img_backbone": "ViT",
+    "use_pretrained_ie": true,
+    "freeze_img_encoder": false,
+    "matrix_union_method": "concatenate",
+    "num_mlp_layers": 5,
+    "ae_layer_dims": [
+        512,
+        384,
+        256,
+        128,
+        64,
+        128,
+        256,
+        384,
+        512
+    ],
+    "mlp_act": "ReLU",
+    "mlp_dim": 512,
+    "graph_operator": "None",
+    "pos_emb_sum": false,
+    "h_global": [
+        [
+            -1
+        ],
+        [
+            -1
+        ],
+        [
+            -1
+        ]
+    ],
+    "pooling": "None",
+    "dropout": 0.0,
+    "num_workers": 0,
+    "num_assays": 1,
+    "optim_metric": "MSE",
+    "val_check_interval": 10,
+    "batch_size": 256,
+    "shuffle": true,
+    "momentum": 0.9,
+    "average_test": false,
+    "cuda": "0"
+}

@@ -1,0 +1,46 @@
+{
+    "dataset": "vicari_mouse_brain",
+    "dataset_path": "/media/SSD4/dvegaa/SpaRED/spared/spared/tests/processed_data/vicari_data/vicari_mouse_brain/2024-08-11-18-40-39",
+    "hex_geometry": true,
+    "param_dict": {
+        "cell_max_counts": 1000000,
+        "cell_min_counts": 10,
+        "combat_key": "patient",
+        "gene_max_counts": 1000000,
+        "gene_min_counts": 10,
+        "hex_geometry": true,
+        "min_exp_frac": -1.0,
+        "min_glob_exp_frac": -1.0,
+        "organism": "mouse",
+        "plotting_genes": "None",
+        "plotting_slides": "None",
+        "random_samples": -1,
+        "real_data_percentage": 0.7,
+        "top_moran_genes": 128,
+        "wildcard_genes": "None"
+    },
+    "patch_scale": 1.0,
+    "patch_size": 224,
+    "split_names": {
+        "test": [
+            "V11T17-101_A1",
+            "V11T17-101_B1"
+        ],
+        "train": [
+            "V11L12-038_A1",
+            "V11L12-038_B1",
+            "V11L12-038_C1",
+            "V11L12-038_D1",
+            "V11L12-109_A1",
+            "V11L12-109_B1",
+            "V11L12-109_C1",
+            "V11L12-109_D1"
+        ],
+        "val": [
+            "V11T16-085_A1",
+            "V11T16-085_B1",
+            "V11T16-085_C1",
+            "V11T16-085_D1"
+        ]
+    }
+}
