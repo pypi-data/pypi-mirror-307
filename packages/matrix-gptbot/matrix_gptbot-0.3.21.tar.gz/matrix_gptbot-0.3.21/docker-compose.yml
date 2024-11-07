@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  gptbot:
+    image: kumitterer/matrix-gptbot
+    volumes:
+      - ./config.ini:/app/config.ini
+      - ./database.db:/app/database.db
+
+  pantalaimon:
+    image: matrixdotorg/pantalaimon
+    volumes:
+      - ./pantalaimon.conf:/etc/pantalaimon/pantalaimon.conf
+    ports:
+      - "8009:8009"
