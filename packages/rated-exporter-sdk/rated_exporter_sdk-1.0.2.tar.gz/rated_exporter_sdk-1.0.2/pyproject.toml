@@ -1,0 +1,28 @@
+[main]
+max-branches=20
+
+[tool.ruff]
+src = ["rated_exporter_sdk", "tests"]
+ignore = ["PLR2004", "E722", "PLR0913", "G004", "C901", "PLR0912", "PLR0915"]
+line-length = 125
+
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "PL",
+    "N",
+    "RUF",
+    "C90",
+    "TD",
+    "G",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+no_implicit_optional = true
