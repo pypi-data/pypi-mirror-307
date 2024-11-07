@@ -1,0 +1,19 @@
+   [project]
+   name = "artigen"
+   version = "0.0.3"
+   authors = [
+     { name="Dev Attentions", email="dev@attentions.ai" },
+     { name="sharky_19", email="suraj.singh@attentions.ai"},
+   ]
+   description = "A small example package"
+   readme = "README.md"
+   requires-python = ">=3.8"
+   classifiers = [
+       "Programming Language :: Python :: 3",
+       "License :: OSI Approved :: MIT License",
+       "Operating System :: OS Independent",
+   ]
+
+   [project.urls]
+   Homepage = "https://github.com/pypa/sampleproject"
+   Issues = "https://github.com/pypa/sampleproject/issues"
