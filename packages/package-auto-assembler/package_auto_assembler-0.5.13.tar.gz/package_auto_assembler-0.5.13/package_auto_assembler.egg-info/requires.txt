@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+numpy==1.26.0
+attrs>=22.2.0
+pyyaml
+nbformat
+stdlib-list
+mkdocs-material==9.5.30
+requests
+streamlit>=1.39.0
+packaging
+click==8.1.7
+nbconvert==7.16.4
+pip_audit==2.7.3
+mkdocs==1.6.0
