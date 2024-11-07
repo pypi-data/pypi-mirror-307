@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eatshell"
+version = "1.0.1"
+authors = [
+  { name="sapphicart", email="shrutipriya44@gmail.com" },
+]
+description = "Automate the process of extracting, loading and assembling shellcode."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "click",
+    "colorama",
+    "pwntools",
+    "python-dotenv",
+]
+keywords= ["python", "shellcode-extractor", "shellcode-loader", "shellcode-assembler", "shellcode"]
+
+[project.urls]
+Homepage = "https://github.com/sapphicart/eatshell"
+Issues = "https://github.com/sapphicart/eatshell/issues"
+
+[project.scripts]
+eatshell = "eatshell:cli"
