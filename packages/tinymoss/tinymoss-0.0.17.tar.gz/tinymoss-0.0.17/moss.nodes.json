@@ -1,0 +1,23 @@
+{
+  "amqp": "amqp://admin:123456@localhost:5672/%2F",
+  "nodes": [
+    {
+      "id": "urn:sensor:id:5cf3ed19-571d-4631-9bb0-e62de70bedea",
+      "pacakge": "nodes_sample/lidar_node",
+      "name": "激光雷达节点",
+      "nodeData": {},
+      "services":[],
+      "config": {}
+    },
+    {
+      "id": "urn:device:id:6a56ddde-0c63-4a7f-88f3-56243eed611d",
+      "pacakge": "nodes_sample/warning_node",
+      "name": "报警设备节点",
+      "nodeData": {},
+      "config": {},
+      "services":[
+        "urn:sensor:id:5cf3ed19-571d-4631-9bb0-e62de70bedea:service:alert"
+      ]
+    }
+  ]
+}
