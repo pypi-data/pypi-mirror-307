@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "itch-majordomo"
+version = "0.1.0"
+description = "Automation tools for itch.io game management"
+authors = ["Ben Rog-Wilhelm <zorba-github@pavlovian.net>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/zorbathut/itch-majordomo"
+packages = [{include = "itch_majordomo", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selenium = "^4.26.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.0.0"
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
