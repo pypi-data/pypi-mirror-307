@@ -1,0 +1,13 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+src/dpkit/__init__.py
+src/dpkit/client.py
+src/dpkit/models.py
+src/dpkit/version.py
+src/dpkit_client.egg-info/PKG-INFO
+src/dpkit_client.egg-info/SOURCES.txt
+src/dpkit_client.egg-info/dependency_links.txt
+src/dpkit_client.egg-info/requires.txt
+src/dpkit_client.egg-info/top_level.txt

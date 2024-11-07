@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpkit-client"
+description = "Digital Pathology Development Kit Client"
+readme = "README.md"
+authors = [
+    {name = "Paige AI", email = "eric.robert@paige.ai"}
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic",
+    "requests",
+    "requests-toolbelt",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "dpkit.version.__version__"}
+
+[project.optional-dependencies]
+all = [
+    "dpkit-client[test]",
+]
+test = [
+    "black",
+    "flake8",
+    "flake8-pyproject",
+    "isort",
+    "pytest",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+extend-ignore = [
+    "E501", # line too long
+]
