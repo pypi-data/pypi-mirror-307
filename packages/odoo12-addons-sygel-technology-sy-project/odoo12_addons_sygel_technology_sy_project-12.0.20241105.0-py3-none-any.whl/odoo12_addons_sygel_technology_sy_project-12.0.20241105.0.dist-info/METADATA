@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-sygel-technology-sy-project
+Version: 12.0.20241105.0
+Summary: Meta package for sygel-technology-sy-project Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Requires-Dist: odoo12-addon-easy-search-task-ticket
+Requires-Dist: odoo12-addon-project-task-restrict-stage-changes
+Requires-Dist: odoo12-addon-project-task-restrict-stage-timesheets
+
+UNKNOWN
