@@ -1,0 +1,10 @@
+tensorflow<=2.17.0,>=2.5.0
+tensorboard<=2.17.0,>=2.5.0
+keras
+matplotlib
+matplotlib
+opencv-python
+json5
+pandas
+mediapipe
+yt_dlp
