@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyscratchauth
+Version: 1.0.0b0
+Summary: PyAuthScratch is a scratch auth program
+Home-page: https://github.com/G1ad0s/pyauthscratch
+Author: G1ad0s
+Author-email: on67703@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: pyperclip
+Requires-Dist: colorama
+
