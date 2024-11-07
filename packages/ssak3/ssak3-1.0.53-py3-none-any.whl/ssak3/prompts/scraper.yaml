@@ -1,0 +1,145 @@
+- version: 1
+  name: 'bts'
+  fix: ''
+  query: '방탄소년단 | bts'
+  prompt: |
+    bts(kpop 그룹)
+  keywords:
+    - '방탄소년단'
+    - 'bts'
+  description: |
+    2013년 6월 13일에 데뷔한 빅히트 뮤직 소속의 7인조 대한민국 국적 kpop 보이그룹이다.
+
+- version: 1
+  name: 'god'
+  fix: ''
+  query: '지오디 | god'
+  prompt: |
+    지오디(보이그룹)
+  keywords:
+    - '지오디'
+    - 'god'
+  description: |
+    1999년 1월 13일에 데뷔한 대한민국의 5인조 보이그룹이다.
+
+- version: 1
+  name: '룰라'
+  fix: ''
+  query: '이상민 | 룰라'
+  prompt: |
+    이상민(가수: 그룹 룰라의 멤버)
+  keywords:
+    - '이상민'
+    - '룰라'
+  description: |
+    1994년 5월 11일 데뷔한 대한민국의 혼성그룹이다. 그룹 리더는 이상민이다.
+
+- version: 1
+  name: '임창정'
+  fix: ''
+  query: '임창정'
+  prompt: |
+    임창정(가수)
+  keywords:
+    - '임창정'
+  description: |
+    1990년대에 데뷔한 대한민국의 멀티 엔터테이너.
+    가수로서 슬픈 발라드를 주로 부르고, 영화나 예능에서는 코믹한 캐릭터를 선보이는 양면적 이미지의 연예인이다.
+
+- version: 1
+  name: '윤종신'
+  fix: ''
+  query: '윤종신'
+  prompt: |
+    윤종신(가수)
+  keywords:
+    - '윤종신'
+  description: |
+    1990년대 015B 객원보컬로 데뷔한 대한민국의 싱어송라이터.
+
+- version: 1
+  name: '진민호'
+  fix: ''
+  query: '진민호'
+  prompt: |
+    진민호(가수)
+  keywords:
+    - '진민호'
+  description: |
+    2011년 MBC 대학가요제 대상 출신인 대한민국의 가수이자 싱어송라이터.
+
+- version: 1
+  name: '휘성'
+  fix: ''
+  query: '휘성'
+  prompt: |
+    휘성(가수)
+  keywords:
+    - '휘성'
+  description: |
+    2002년 데뷔한, 대한민국의 가수이자 싱어송라이터.
+
+- version: 1
+  name: '박정운'
+  fix: ''
+  query: '박정운'
+  prompt: |
+    박정운(가수)
+  keywords:
+    - '박정운'
+  description: |
+    1989년에 데뷔한 대한민국의 싱어송라이터이자 프로듀서.
+    1991년 발표한 2집 앨범의 '오늘같은 밤이면'이 이듬해인 1992년 공전의 히트를 거두며 일약 스타덤에 오르게 된다.
+
+- version: 1
+  name: '이루'
+  fix: ''
+  query: >
+    가수 이루 -"이루 다" -"이루 말할" -"이루 말로" -"이루 다할" -"이루 셀" -"이루 헤아릴" -"이루 형언할"
+  # -"이루어진"
+  # -"이루얼질지니"
+  # -"이루어질지니"
+  # -'이루졌다"
+  prompt: |
+    이루(가수)
+  keywords:
+    - '이루'
+  description: |
+    2005년 9월에 가수로 정식 데뷔한, 대한민국의 남성 솔로 가수이자 배우. 태진아의 아들이기도 하다.
+    이루는 한창 대한민국에서 인기를 끌 무렵, 인도네시아로 눈을 돌려 최고의 인기를 구가하고 있다.
+
+- version: 1
+  name: '삼성생명'
+  fix: ''
+  query:  >
+    "삼성생명"
+  prompt: |
+    삼성생명
+  keywords:
+    - '삼성생명'
+  description: |
+    삼성생명
+
+- version: 1
+  name: '교보생명'
+  fix: ''
+  query:  >
+    "교보생명"
+  prompt: |
+    교보생명
+  keywords:
+    - '교보생명'
+  description: |
+    교보생명
+
+- version: 1
+  name: '한화생명'
+  fix: ''
+  query:  >
+    "한화생명"
+  prompt: |
+    한화생명
+  keywords:
+    - '한화생명'
+  description: |
+    한화생명
