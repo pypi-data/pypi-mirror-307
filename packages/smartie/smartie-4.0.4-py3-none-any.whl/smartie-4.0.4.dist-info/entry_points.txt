@@ -1,0 +1,2 @@
+[console_scripts]
+smartie = smartie.cli:cli
