@@ -1,0 +1,101 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import TypeVar
+
+from categories.type import typeclass
+
+__all__ = (
+    'Num',
+    'NumFloat',
+    'NumInt',
+)
+
+
+a = TypeVar('a')
+
+
+@dataclass(frozen=True)
+class Num(typeclass[a]):
+    '''
+    Minimal complete definition
+        add, mul, abs, sign, int, (neg | sub)
+    '''
+
+    def add(self, x : a, y : a, /) -> a: ...
+
+    def sub(self, x : a, y : a, /) -> a:
+        return self.add(x, self.neg(y))
+
+    def mul(self, x : a, y : a, /) -> a: ...
+
+    def neg(self, x : a, /) -> a:
+        return self.sub(self.int(0), x)
+
+    def abs(self, x : a, /) -> a: ...
+
+    def sign(self, x : a, /) -> a: ...
+
+    def int(self, x : int, /) -> a: ...
+
+
+@dataclass(frozen=True)
+class NumFloat(Num[float]):
+    def add(self, x : float, y : float, /) -> float:
+        return x + y
+
+    def sub(self, x : float, y : float, /) -> float:
+        return x - y
+
+    def mul(self, x : float, y : float, /) -> float:
+        return x * y
+
+    def neg(self, x : float, /) -> float:
+        return -x
+
+    def abs(self, x : float, /) -> float:
+        return abs(x)
+
+    def sign(self, x : float, /) -> float:
+        match x:
+            case x if x < 0:
+                return -1
+            case 0:
+                return 0
+            case x if x > 0:
+                return 1
+        assert None
+
+    def int(self, x : int, /) -> float:
+        return x
+
+
+@dataclass(frozen=True)
+class NumInt(Num[int]):
+    def add(self, x : int, y : int, /) -> int:
+        return x + y
+
+    def sub(self, x : int, y : int, /) -> int:
+        return x - y
+
+    def mul(self, x : int, y : int, /) -> int:
+        return x * y
+
+    def neg(self, x : int, /) -> int:
+        return -x
+
+    def abs(self, x : int, /) -> int:
+        return abs(x)
+
+    def sign(self, x : int, /) -> int:
+        match x:
+            case x if x < 0:
+                return -1
+            case 0:
+                return 0
+            case x if x > 0:
+                return 1
+        assert None
+
+    def int(self, x : int, /) -> int:
+        return x
