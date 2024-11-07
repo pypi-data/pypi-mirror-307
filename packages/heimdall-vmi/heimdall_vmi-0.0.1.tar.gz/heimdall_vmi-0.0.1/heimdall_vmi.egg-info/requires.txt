@@ -1,0 +1,14 @@
+click
+coloredlogs
+inquirer3
+requests
+tqdm
+ipython
+heimdall
+libvmi
+traitlets
+humanfriendly
+capstone
+
+[test]
+pytest
