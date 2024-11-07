@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: connor_nlp
+Version: 0.1.8
+Summary: Fast and fully local NLP file organizer that organizes files based on their content.
+Home-page: https://github.com/ycatsh/connor
+Author: Ycatsh
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docx==0.2.4
+Requires-Dist: python_pptx==1.0.2
+Requires-Dist: python_docx==0.8.11
+Requires-Dist: nltk==3.9.1
+Requires-Dist: numpy==2.1.2
+Requires-Dist: odfpy==1.4.1
+Requires-Dist: openpyxl==3.1.5
+Requires-Dist: PyPDF2==3.0.1
+Requires-Dist: PyQt6==6.7.1
+Requires-Dist: scikit_learn==1.5.2
+Requires-Dist: sentence_transformers==3.2.0
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/2987085a-2e8c-4185-9b02-672ba687ca4b" alt="Connor">
+
+![releases](https://img.shields.io/github/v/release/ycatsh/connor?color=507591&labelColor=1d1e1f&style=flat)
+![issues-open](https://img.shields.io/github/issues/ycatsh/connor?color=507591&labelColor=1d1e1f&style=flat)
+![commits](https://img.shields.io/github/downloads/ycatsh/connor/latest?color=507591&labelColor=1d1e1f&style=flat)
+![downloads](https://img.shields.io/github/stars/ycatsh/connor?color=507591&labelColor=1d1e1f&style=flat)
+
+</div>
+
+Connor is a file organizer written in [python](https://www.python.org/). It makes use of the [sentence-transformers](https://sbert.net/) framework for the main organization process. It features a fast and fully local file organizer that uses natural language processing to organize computer files based on their textual content.
+
+## Installation
+Before installing Connor, check that Python and pip are installed on your computer:
+```bash
+python --version
+```
+If a message dispalying python's verson appears, it means that Python is correctly installed. If an error message appears then go to the Python [website](https://www.python.org/downloads/) to download it.  
+After installing python you can use pip to install connor, type the following command:
+```bash
+pip install connor-nlp
+```
+If something doesnt work or you are running into problems, head to the official GitHub repository for [detailed instructions](https://github.com/ycatsh/connor#installation) or [open an issue](https://github.com/ycatsh/connor/issues).
+
+<br>
+
+## Features
+Connor works locally on your computer, using a pre-trained NLP model, `sentence-transformers/paraphrase-MiniLM-L6-v2`, to understand the meaning of the data and calculate cosine similarity between files. The files are organized into groups, and the corresponding folders are appropriately named using topic modeling through the Latent Dirichlet Allocation (LDA) technique. Subsequently, the files are moved to their respective folders.
+
+<br>
+
+### File Organization Summary
+1. Organize files within a selected folder or manually uploaded files (uploading files is only supported for GUI).
+2. Organize text-based files (`.docx`, `.txt`, `.pdf`, etc.) using NLP.
+3. Creates a separate folder named "Miscellaneous" for dissimilar or unprocessable files based on extension.
+4. Provide a summary (tree structure) of the organization process upon completion.
+
+### Customization Options
+1. Similarity Threshold: Allows you to choose a similarity percentage threshold for grouping similar files.
+2. Reading Word Limit: You can set a limit on the number of words to read from the file content.
+3. Folder Name Word Limit: You can specify the maximum number of words allowed in the created folder names.
+4. Default Parameters: You can modify these three parameters and save them for future sessions.
+
+<br>
+
+## Building From Source
+It is useful if you want to use features that are currently in development. To build Connor locally from source read the instructions [here](https://github.com/ycatsh/connor#source).
+
+<br>
+
+## Dependencies
+| docx         | >=0.2.4  |
+|--------------|----------|
+| nltk         | >=3.9.1  |
+| numpy        | >=2.1.1  |
+| odfpy        | >=1.4.1  |
+| openpyxl     | >=3.1.5  |
+| PyPDF2       | >=3.0.1  |
+| scikit_learn | >=1.5.2  |
+| sentence_transformers | >=3.1.1  |
