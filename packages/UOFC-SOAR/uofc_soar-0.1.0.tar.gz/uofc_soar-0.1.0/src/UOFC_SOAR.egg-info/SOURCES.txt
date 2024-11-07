@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/UOFC_SOAR.egg-info/PKG-INFO
+src/UOFC_SOAR.egg-info/SOURCES.txt
+src/UOFC_SOAR.egg-info/dependency_links.txt
+src/UOFC_SOAR.egg-info/requires.txt
+src/UOFC_SOAR.egg-info/top_level.txt
+src/soar/__init__.py
+src/soar/body_forces.py
+src/soar/module2.py
