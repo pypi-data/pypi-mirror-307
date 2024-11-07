@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: transsmart_connector
+Version: 0.1.4
+Summary: TranssmartConnector is a Python package for connecting to the Transsmart API.
+Home-page: https://github.com/rhengeveldbordex/transsmart-connector
+Author: Robert Hengeveld
+Author-email: rhengeveld@bordex.nl
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Requires-Dist: requests >=2.31.0
+Requires-Dist: python-dotenv >=1.0.1
+
+Transsmart Connector is a Python package to connect to the Transsmart API. It provides a simple interface to interact with the Transsmart API. The package is built on top of the requests library. The package is designed to be used in a business environment to automate the process of creating shipments, labels, and documents.
