@@ -1,0 +1,16 @@
+torch>=2.1.0
+accelerate>=0.33.0
+diffusers>=0.31
+transformers>=4.39.1
+sentencepiece>=0.1.99
+beautifulsoup4>=4.12.3
+distvae
+yunchang>=0.3.0
+pytest
+flask
+opencv-python
+imageio
+imageio-ffmpeg
+
+[flash_attn]
+flash_attn>=2.6.3
