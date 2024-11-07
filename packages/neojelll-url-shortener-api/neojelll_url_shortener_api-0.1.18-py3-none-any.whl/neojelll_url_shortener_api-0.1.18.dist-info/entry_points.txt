@@ -1,0 +1,3 @@
+[console_scripts]
+neojelll-url-shortener-api=api.main:run
+
