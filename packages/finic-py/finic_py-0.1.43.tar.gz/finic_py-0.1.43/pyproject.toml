@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "finic-py"
+version = "0.1.43"
+description = "Finic.ai is a platform for building and deploying browser automations. This is the Python client for Finic"
+authors = ["Ayan Bandyopadhyay <ayan@finic.ai>", "jasonwcfan <jason@finic.ai>"]
+readme = "README.md"
+packages = [
+    { include = "finic_py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+pydantic = "^2.9.1"
+requests = "^2.32.3"
+datetime = "^5.5"
+playwright = "1.47.0"
+openai = "^1.47.0"
+beautifulsoup4 = "^4.12.3"
+pyyaml = "^6.0.2"
+
+[tool.poetry.scripts]
+finic = "finic_py.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
