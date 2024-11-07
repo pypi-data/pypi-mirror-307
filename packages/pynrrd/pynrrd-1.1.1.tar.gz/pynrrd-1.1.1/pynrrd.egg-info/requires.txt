@@ -1,0 +1,7 @@
+numpy>=1.21
+typing_extensions
+
+[dev]
+build
+pre-commit
+pytest
