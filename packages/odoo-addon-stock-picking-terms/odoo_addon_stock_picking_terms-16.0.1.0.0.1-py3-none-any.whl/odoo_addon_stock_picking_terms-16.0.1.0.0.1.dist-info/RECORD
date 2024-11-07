@@ -1,0 +1,17 @@
+odoo/addons/stock_picking_terms/README.rst,sha256=EudiIOhEWkv0M3kMzAB-3bS6Hpps2VzxEtWDJrJGTGE,2018
+odoo/addons/stock_picking_terms/__init__.py,sha256=JC_RBZQQfnie8b3c-5xHUk_pjA-wRsnw74_BHfCglRw,162
+odoo/addons/stock_picking_terms/__manifest__.py,sha256=6O7xW1hTwe1R7mniWnxFf6mHV2-danW5n-dJ6lXDQUY,742
+odoo/addons/stock_picking_terms/i18n/es.po,sha256=IEB6n8gISpfYucCE7SfWke8kWsq-xE5N7Sa97XQGIRM,3414
+odoo/addons/stock_picking_terms/models/__init__.py,sha256=hu2piDLlwhg9XLFvEIN3rHkOGYCjTu5KBpJ3Q_co6n4,226
+odoo/addons/stock_picking_terms/models/company.py,sha256=H2Vpz66lA0Z5nm-L07kl2sufKfbXa0IIYp6cxZnoepI,349
+odoo/addons/stock_picking_terms/models/res_config_settings.py,sha256=wsCEg5FDcZdpDQOLWZyyehHyf6uZUZUSk0ibXcZHeFc,432
+odoo/addons/stock_picking_terms/models/stock_picking.py,sha256=hGTO9lC6QekFQC0RrE6npknfSKk4EimylWX4PSpE_co,1202
+odoo/addons/stock_picking_terms/reports/report_deliveryslip.xml,sha256=awQ4rVcFnkEIfprrKFMyWWy3UexFwOyyxpIDmcmimxM,777
+odoo/addons/stock_picking_terms/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/stock_picking_terms/views/res_config_settings_views.xml,sha256=N3Rl9-ASzyLnI06yKWIDiuboJgDUafKTqXg6T6n-N9I,2267
+odoo/addons/stock_picking_terms/views/stock_picking_type_views.xml,sha256=m-19YySSrQn9UQK1wHVGQb_4lJ5kww8rQ_0wlab2xRE,698
+odoo/addons/stock_picking_terms/views/stock_picking_views.xml,sha256=1D7-C2UuqRkpn-CxukBf84dJdrZDkrlu5EKBTDUckdk,1123
+odoo_addon_stock_picking_terms-16.0.1.0.0.1.dist-info/METADATA,sha256=3X3QdtmzI8lWpE7S3IVMFDrbMtm0oT1gnMn0rz88i8M,2571
+odoo_addon_stock_picking_terms-16.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_stock_picking_terms-16.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_stock_picking_terms-16.0.1.0.0.1.dist-info/RECORD,,
