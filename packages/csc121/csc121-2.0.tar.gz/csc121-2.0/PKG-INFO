@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: csc121
+Version: 2.0
+Summary: Library for CSC 121 at Davidson College
+Project-URL: Homepage, https://www.davidson.edu/academics/mathematics-and-computer-science
+Author-email: Raghuram Ramanujan <raramanujan@davidson.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.11
+Requires-Dist: numpy>=2.1.3
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: praw>=7.8.1
+Requires-Dist: py-getch>=1.0.1
+Requires-Dist: ratelimit>=2.2.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scipy>=1.14.1
+Description-Content-Type: text/markdown
+
+
+A package containing modules used in teaching introductory programming (CSC 121) at Davidson College, Davidson, NC. It includes:
+* a simple interface to read and write audio and image data (to facilitate the use of [media computation](https://web.eecs.umich.edu/~mjguz/mediacomp/mediaComp-teach/) methods),
+* a C-style `getch` function, and
+* a wrapper for the [Reddit API](https://www.reddit.com/dev/api/).
+* a deprecated wrapper for the [Twitter/X API](https://developer.x.com/en/docs/x-api).

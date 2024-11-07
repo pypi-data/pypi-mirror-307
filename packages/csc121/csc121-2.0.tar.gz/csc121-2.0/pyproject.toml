@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "csc121"
+version = "2.0"
+authors = [
+  { name="Raghuram Ramanujan", email="raramanujan@davidson.edu" },
+]
+description = "Library for CSC 121 at Davidson College"
+readme = "README.md"
+requires-python = ">=3.10.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'numpy>=2.1.3',
+    'scipy>=1.14.1',
+    'Pillow>=11.0.0',
+    'requests>=2.32.3',
+    'py-getch>=1.0.1',
+    'praw>=7.8.1',
+    'ratelimit>=2.2.1'
+]
+
+[project.urls]
+Homepage = "https://www.davidson.edu/academics/mathematics-and-computer-science"
