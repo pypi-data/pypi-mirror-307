@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: start-manager
+Version: 0.7.1
+Summary: A python package manager based on pip and venv
+Author-email: Dragon-GCS <87817321@qq.com>
+Project-URL: HOMEPAGE, https://github.com/Dragon-GCS/start
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: rtoml
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mkdocs; extra == "doc"
+Requires-Dist: mkdocs-material; extra == "doc"
+
+# Start
+
+> Full documentation visit [document](https://dragonz.us.kg/Start/).
+
+A python package manager based on pip and venv, use `pyproject.toml` instead of `requirements.txt`
+
+
+## install
+
+Install from pypi
+
+```shell
+>>> pip install start-manager
+```
+
+Install from source
+
+```shell
+>>> pip install start@git+https://github.com/Dragon-GCS/Start
+```
+
+> `start` is a default alias in **powershell**, use **`Remove-Item alias:start -Force`** to remove alias before use `start`
+>
+> **Optional:** Add `Remove-Item alias:start -Force` in powershell profile

@@ -1,0 +1,10 @@
+colorama
+rtoml
+typer
+
+[dev]
+ruff
+
+[doc]
+mkdocs
+mkdocs-material
