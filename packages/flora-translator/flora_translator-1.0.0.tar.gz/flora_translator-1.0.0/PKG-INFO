@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flora_translator
+Version: 1.0.0
+Summary: A package that help flet developers to make their apps support multiple languages
+Home-page: https://floraplant.ir
+Author: Flora
+Author-email: floraplantprocessing@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flet
+Requires-Dist: sacremoses
+Requires-Dist: deep-translator
+
+# flora_translator
+
+**flora_tranlator**, a package for ui translation
