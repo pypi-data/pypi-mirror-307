@@ -1,0 +1,176 @@
+{
+  "__macros": {
+    "__group_macro": {
+      "__collapse": true,
+      "borderWidth": {
+        "__description": "Border width",
+        "__widget": "IntSlider"
+      },
+      "color": {
+        "background": {
+          "__description": "Bg color",
+          "__widget": "ColorPicker"
+        },
+        "border": {
+          "__description": "Border color",
+          "__widget": "ColorPicker"
+        }
+      },
+      "shape": {
+        "__description": "Shape",
+        "__widget": "Dropdown",
+        "__kwargs": {
+          "options": [
+            "ellipse",
+            "circle",
+            "database",
+            "box",
+            "text",
+            "diamond",
+            "dot",
+            "star",
+            "triangle",
+            "triangleDown",
+            "square"
+          ]
+        }
+      },
+      "mass": {
+        "__html": "<p>Mass controls degree of repulsion of nodes.</p>",
+        "__description": "Mass",
+        "__widget": "IntSlider"
+      },
+      "font": {
+        "__html": "<h4>Font</h4>",
+        "color": {
+          "__description": "Color",
+          "__widget": "ColorPicker"
+        },
+        "size": {
+          "__description": "Size",
+          "__widget": "IntSlider"
+        }
+      }
+    }
+  },
+  "groups": {
+    "states": {
+      "__use_macro": "__group_macro"
+    },
+    "actions": {
+      "__use_macro": "__group_macro"
+    },
+    "scheduled_actions": {
+      "__use_macro": "__group_macro",
+      "schedColor": {
+        "__description": "Scheduled edge color",
+        "__widget": "Checkbox"
+      }
+    }
+  },
+  "edges": {
+    "__collapse": true,
+    "color": {
+      "color": {
+        "__description": "Color",
+        "__widget": "ColorPicker"
+      }
+    },
+    "font": {
+      "__html": "<p>Font</p>",
+      "color": {
+        "__description": "Color",
+        "__widget": "ColorPicker"
+      },
+      "size": {
+        "__description": "Size",
+        "__widget": "IntSlider"
+      }
+    }
+  },
+  "numbers": {
+    "__collapse": true,
+    "fractions": {
+      "__description": "Fractions",
+      "__widget": "Checkbox"
+    },
+    "digits": {
+      "__description": "Round digits",
+      "__widget": "IntSlider"
+    }
+  },
+  "results_and_rewards": {
+    "__collapse": true,
+    "show_results": {
+      "__description": "Show results",
+      "__widget": "Checkbox"
+    },
+    "resultSymbol": {
+      "__description": "Result symbol",
+      "__widget": "Text"
+    },
+    "show_rewards": {
+      "__description": "Show rewards",
+      "__widget": "Checkbox"
+    }
+  },
+  "misc": {
+    "__collapse": true,
+    "enable_physics": {
+      "__description": "enable physics",
+      "__widget": "Checkbox"
+    },
+    "width": {
+      "__description": "Width",
+      "__widget": "IntSlider",
+      "__kwargs": {
+        "min": 0,
+        "max": 2000
+      }
+    },
+    "height": {
+      "__description": "Height",
+      "__widget": "IntSlider",
+      "__kwargs": {
+        "min": 0,
+        "max": 2000
+      }
+    },
+    "explore": {
+      "__description": "explore",
+      "__widget": "Checkbox"
+    }
+  },
+  "saving": {
+    "__collapse": true,
+    "relative_path": {
+      "__description": "Relative path",
+      "__widget": "Checkbox"
+    },
+    "filename": {
+      "__description": "File name",
+      "__widget": "Text"
+    },
+    "save_button": {
+      "__description": "Save",
+      "__widget": "Button",
+      "__kwargs": {
+        "button_style": "success"
+      }
+    },
+    "load_button": {
+      "__description": "Load",
+      "__widget": "Button",
+      "__kwargs": {
+        "button_style": "warning"
+      }
+    }
+  },
+  "reload_button": {
+    "__description": "Reload",
+    "__widget": "Button",
+    "__kwargs": {
+      "button_style": "info"
+    }
+  }
+}
