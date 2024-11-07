@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+NEWS.rst
+README.rst
+pyproject.toml
+.github/workflows/unittests.yml
+src/dlister/__init__.py
+src/dlister/dlister.py
+src/dlister/py.typed
+src/dlister.egg-info/PKG-INFO
+src/dlister.egg-info/SOURCES.txt
+src/dlister.egg-info/dependency_links.txt
+src/dlister.egg-info/entry_points.txt
+src/dlister.egg-info/requires.txt
+src/dlister.egg-info/top_level.txt
+test/dlister/test_dlister.py
