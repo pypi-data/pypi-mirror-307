@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-sygel-technology-sy-server-tools
+Version: 14.0.20241105.0
+Summary: Meta package for sygel-technology-sy-server-tools Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-avoid-assignation-notification
+Requires-Dist: odoo14-addon-avoid-exception-activity-notification
+
+UNKNOWN
