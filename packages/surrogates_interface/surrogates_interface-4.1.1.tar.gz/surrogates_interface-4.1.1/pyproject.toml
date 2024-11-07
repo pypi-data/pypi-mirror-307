@@ -1,0 +1,112 @@
+[tool.poetry]
+name = "surrogates_interface"
+version = "4.1.1"
+description = "Interface for surrogate models."
+authors = ["DTU Wind and Energy Systems"]
+maintainers = [
+    "Riccardo Riva <ricriv@dtu.dk>",
+	"Mads Mølgaard Pedersen <mmpe@dtu.dk>",
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface"
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+
+python = ">=3.9,<3.12"
+numpy = ">=1.10.0"
+h5py = "*"
+black = {version="*", optional=true}
+flake8 = {version="*", optional=true}
+isort = {version="*", optional=true}
+codespell = {version="*", optional=true}
+pytest = {version="*", optional=true}
+pytest-cov = {version="*", optional=true}
+pytest-testmon = {version="*", optional=true}
+tomli = {version="^2.0.1", python="<3.11", optional=true}
+sphinx = {version="*", optional=true}
+pydata-sphinx-theme = {version="*", optional=true}
+sphinx-copybutton = {version="*", optional=true}
+sphinx-sitemap = {version="*", optional=true}
+sphinx_design = {version="*", optional=true}
+numpydoc = {version="*", optional=true}
+matplotlib = {version="*", optional=true}
+scikit-learn = {version="*", optional=true}
+# The following configuration for TensorFlow seems to work on Windows and linux, as tested at
+# https://gitlab.windenergy.dtu.dk/surrogate-models/test-poetry-and-tensorflow
+tensorflow = {version = "^2.10.0", optional=true }
+tensorflow-io-gcs-filesystem = [
+    {version = ">= 0.23.1", markers = "platform_machine!='arm64' or platform_system!='Darwin'", python=">=3.9,<3.12", optional=true},
+    {version = "< 0.32.0", markers = "platform_system == 'Windows'", python=">=3.9,<3.12", optional=true}
+]
+tensorflow-intel = {version="^2.10.0", platform = "win32", optional=true}
+smt = {version="^2.0.1", optional=true}
+openmdao = {version="^3.25", optional=true}
+torch = { version = "^2.0.0", optional=true }
+
+[tool.poetry.extras]
+
+docs = ["sphinx",
+	    "pydata-sphinx-theme",
+		"sphinx-copybutton",
+	    "sphinx-sitemap",
+		"sphinx_design",
+	    "numpydoc",
+		"openmdao",
+	    ]
+
+code_style = ["black",
+              "flake8",
+	          "isort",
+	          "codespell",
+			  ]
+
+test = ["matplotlib",  # Needed by SMT.
+	    "pytest",
+	    "pytest-cov",
+	    "pytest-testmon",
+	    "tomli",
+	    "scikit-learn",
+	    "smt",
+	    "tensorflow",
+	    "tensorflow-io-gcs-filesystem",
+	    "tensorflow-intel",
+	    "openmdao",
+		"torch",
+	    ]
+
+smt = ["matplotlib",  # Needed by SMT.
+       "scikit-learn",
+       "smt",
+	   ]
+
+tf = ["scikit-learn",
+	  "tensorflow",
+	  "tensorflow-io-gcs-filesystem",
+	  "tensorflow-intel",
+	  ]
+
+om = ["openmdao"]
+
+torch = ["torch"]
+
+
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core", "numpy"]
+
+[tool.coverage.run]
+omit = ["surrogates_interface/test/*", ]
+
+[tool.coverage.report]
+fail_under = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.codespell]
+ignore-words-list = "coo"

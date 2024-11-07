@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: surrogates_interface
+Version: 4.1.1
+Summary: Interface for surrogate models.
+Home-page: https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface
+License: MIT
+Author: DTU Wind and Energy Systems
+Maintainer: Riccardo Riva
+Maintainer-email: ricriv@dtu.dk
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: code-style
+Provides-Extra: docs
+Provides-Extra: om
+Provides-Extra: smt
+Provides-Extra: test
+Provides-Extra: tf
+Provides-Extra: torch
+Requires-Dist: black ; extra == "code-style"
+Requires-Dist: codespell ; extra == "code-style"
+Requires-Dist: flake8 ; extra == "code-style"
+Requires-Dist: h5py
+Requires-Dist: isort ; extra == "code-style"
+Requires-Dist: matplotlib ; extra == "test" or extra == "smt"
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: numpydoc ; extra == "docs"
+Requires-Dist: openmdao (>=3.25,<4.0) ; extra == "docs" or extra == "test" or extra == "om"
+Requires-Dist: pydata-sphinx-theme ; extra == "docs"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-testmon ; extra == "test"
+Requires-Dist: scikit-learn ; extra == "test" or extra == "smt" or extra == "tf"
+Requires-Dist: smt (>=2.0.1,<3.0.0) ; extra == "test" or extra == "smt"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-copybutton ; extra == "docs"
+Requires-Dist: sphinx-sitemap ; extra == "docs"
+Requires-Dist: sphinx_design ; extra == "docs"
+Requires-Dist: tensorflow (>=2.10.0,<3.0.0) ; extra == "test" or extra == "tf"
+Requires-Dist: tensorflow-intel (>=2.10.0,<3.0.0) ; (sys_platform == "win32") and (extra == "test" or extra == "tf")
+Requires-Dist: tensorflow-io-gcs-filesystem (<0.32.0) ; (python_version >= "3.9" and python_version < "3.12" and platform_system == "Windows") and (extra == "test" or extra == "tf")
+Requires-Dist: tensorflow-io-gcs-filesystem (>=0.23.1) ; (platform_machine != "arm64" and python_version >= "3.9" and python_version < "3.12" or platform_system != "Darwin" and python_version >= "3.9" and python_version < "3.12") and (extra == "test" or extra == "tf")
+Requires-Dist: tomli (>=2.0.1,<3.0.0) ; (python_version < "3.11") and (extra == "test")
+Requires-Dist: torch (>=2.0.0,<3.0.0) ; extra == "test" or extra == "torch"
+Project-URL: Repository, https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface
+Description-Content-Type: text/markdown
+
+# Surrogate Models Interface
+
+[![pipeline status](https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface/badges/main/pipeline.svg)](https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface/-/commits/main)
+[![coverage report](https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface/badges/main/coverage.svg)](https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface/-/commits/main)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8282614.svg)](https://doi.org/10.5281/10.5281/zenodo.8282614)
+
+Provides a common interface to several surrogate models, including an OpenMDAO wrapper.
+
+The documentation is available at: https://surrogate-models.pages.windenergy.dtu.dk/surrogate-models-interface
+
