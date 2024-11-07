@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/quran_search_in_text/__init__.py
+src/quran_search_in_text/ayeh_yab.py
+src/quran_search_in_text.egg-info/PKG-INFO
+src/quran_search_in_text.egg-info/SOURCES.txt
+src/quran_search_in_text.egg-info/dependency_links.txt
+src/quran_search_in_text.egg-info/top_level.txt
+src/quran_search_in_text/packages/ayat.txt
+src/quran_search_in_text/packages/surehname_ayehnumber.txt
+src/quran_search_in_text/packages/surehnumber_ayehnumber.txt
