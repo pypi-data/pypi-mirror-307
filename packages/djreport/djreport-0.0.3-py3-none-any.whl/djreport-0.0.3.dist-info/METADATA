@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: djreport
+Version: 0.0.3
+Summary: A Django app powered by Stimulsoft to make reporting easy
+Author-email: Kaveh Mehrbanian <mehrbaniankaveh@gmail.com>
+Project-URL: Homepage, https://github.com/kavehkm/DJReport
+Project-URL: Documentation, https://github.com/kavehkm/DJReport
+Project-URL: Issues, https://github.com/kavehkm/DJReport/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django >=5.1.1
+
+# DJReport
+Django reporting with Stimulsoft
