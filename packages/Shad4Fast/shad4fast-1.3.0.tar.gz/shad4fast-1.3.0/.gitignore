@@ -1,0 +1,15 @@
+.venv
+__pycache__
+.sesskey
+favicon.ico
+.git
+tailwindcss
+cursor_docs/
+ruff.toml
+.gitignore
+.cursorignore
+shad4fast/dist/
+dist/
+.vscode
+settings.ini
+
