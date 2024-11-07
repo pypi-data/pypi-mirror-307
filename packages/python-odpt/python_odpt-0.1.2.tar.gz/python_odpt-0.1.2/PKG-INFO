@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: python-odpt
+Version: 0.1.2
+Summary: Python client for ODPT(Open Data of Public Transportation) API
+Home-page: https://github.com/maru0123-2004/python-odpt/
+License: MIT
+Author: Maruo.S
+Author-email: raspi-maru2004@outlook.jp
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
+Requires-Dist: attrs (>=24.2.0,<25.0.0)
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Project-URL: Documentation, https://maru0123-2004.github.io/python-odpt/
+Description-Content-Type: text/markdown
+
+# python-odpt
+Python client for ODPT(Open Data of Public Transportation) API
+
+Generated with OpenAPI spec on https://github.com/sophie-app/odpt-openapi using https://github.com/openapi-generators/openapi-python-client
+
+Thanks for great works!
+
+[Docs](https://maru0123-2004.github.io/python-odpt/) [PyPI](https://pypi.org/project/python-odpt/)
+
+## Installation
+```python
+pip install python-odpt
+```
+
+## Usage
+WIP
+
