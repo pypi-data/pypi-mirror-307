@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: FeatherPy
+Version: 0.0.0a0
+Summary: A python package to combine radio as
+Project-URL: Homepage, https://github.com/AlecThomson/FeatherPy
+Project-URL: Bug Tracker, https://github.com/AlecThomson/FeatherPy/issues
+Project-URL: Discussions, https://github.com/AlecThomson/FeatherPy/discussions
+Project-URL: Changelog, https://github.com/AlecThomson/FeatherPy/releases
+Author-email: Alec Thomson <alec.thomson@csiro.au>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: astropy>=6.0
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: radio-beam>=0.3.8
+Requires-Dist: reproject
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest-cov>=3; extra == 'dev'
+Requires-Dist: pytest>=6; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo>=2023.08.17; extra == 'docs'
+Requires-Dist: myst-parser>=0.13; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx>=7.0; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-cov>=3; extra == 'test'
+Requires-Dist: pytest>=6; extra == 'test'
+Description-Content-Type: text/markdown
+
+# FeatherPy
+
+[![Actions Status][actions-badge]][actions-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+[![Conda-Forge][conda-badge]][conda-link]
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+[![GitHub Discussion][github-discussions-badge]][github-discussions-link]
+
+<!-- SPHINX-START -->
+
+<!-- prettier-ignore-start -->
+[actions-badge]:            https://github.com/AlecThomson/FeatherPy/workflows/CI/badge.svg
+[actions-link]:             https://github.com/AlecThomson/FeatherPy/actions
+[conda-badge]:              https://img.shields.io/conda/vn/conda-forge/FeatherPy
+[conda-link]:               https://github.com/conda-forge/FeatherPy-feedstock
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/AlecThomson/FeatherPy/discussions
+[pypi-link]:                https://pypi.org/project/FeatherPy/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/FeatherPy
+[pypi-version]:             https://img.shields.io/pypi/v/FeatherPy
+[rtd-badge]:                https://readthedocs.org/projects/FeatherPy/badge/?version=latest
+[rtd-link]:                 https://FeatherPy.readthedocs.io/en/latest/?badge=latest
+
+<!-- prettier-ignore-end -->
+
+Docs - coming soon.
