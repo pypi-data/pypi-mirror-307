@@ -1,0 +1,18 @@
+name: Publish to QuEra's JFrog PyPI
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup-rye
+        uses: eifinger/setup-rye@v4
+        with:
+            enable-cache: true
+            cache-prefix: "rye-cache-publish"
+      - run: rye sync
+      - run: rye build
+      - run: rye publish --token ${{ secrets.PYPI_TOKEN_FULLACCESS }} --yes
