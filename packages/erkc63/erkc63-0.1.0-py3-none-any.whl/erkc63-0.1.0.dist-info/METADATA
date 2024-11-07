@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: erkc63
+Version: 0.1.0
+Summary: 
+Author: Sergey V. DUDANOV
+Author-email: sergey.dudanov@gmail.com
+Requires-Python: >=3.11,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.10.0)
+Requires-Dist: beautifulsoup4 (>=4.12.0)
+Requires-Dist: pypdf[image] (>=4.2.0)
+Description-Content-Type: text/markdown
+
+# ERKC
+
