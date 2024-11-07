@@ -1,0 +1,164 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2024-08-08T16:20:09",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"code\": \"bc2eccc58366655352582970d3f81bf46f15a48cf0cb98d74e21463f1dc4dcb9\", \"component\": \"abcdef0123456789abcdef0123456789\"}"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Bearer <ACCESS_TOKEN>"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "125"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "itkdb/0.6.8.dev2"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://itkpd-test.unicorncollege.cz/getComponentAttachment"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/getBinaryFailed\":{\"id\":\"d10492120285d26cdb5004c42ab4a8cc\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Get binary with attachment failed.\",\"cause\":{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/componentDoesNotExist\":{\"id\":\"bc177975a44a49c3bf4de29ca31f20bf\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Component does not exist.\",\"paramMap\":{\"dtoIn.component\":\"abcdef0123456789abcdef0123456789\"}}}}}}}"
+        },
+        "headers": {
+          "Connection": [
+            "close"
+          ],
+          "Date": [
+            "Thu, 08 Aug 2024 16:20:09 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Set-Cookie": [
+            "uu.app.bpl=0;path=",
+            "uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c;path="
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubDomains"
+          ],
+          "content-length": [
+            "508"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "vary": [
+            "Accept,Accept-Encoding,User-Agent,Origin"
+          ]
+        },
+        "status": {
+          "code": 400,
+          "message": "Bad Request"
+        },
+        "url": "https://itkpd-test.unicorncollege.cz/getComponentAttachment"
+      }
+    },
+    {
+      "recorded_at": "2024-08-08T16:20:12",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"code\": \"bc2eccc58366655352582970d3f81bf46f15a48cf0cb98d74e21463f1dc4dcb9\"}"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Bearer <ACCESS_TOKEN>"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "76"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Cookie": [
+            "uu.app.bpl=0; uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c"
+          ],
+          "User-Agent": [
+            "itkdb/0.6.8.dev2"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://itkpd-test.unicorncollege.cz/uu-app-binarystore/getBinaryData"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "II*\u0000\u0010\u0000\u0000\u0000CR\u0002\u0000\f\ufffd\u0000\u0000\u0013\u0000\u0000\u0001\u0003\u0000\u0001\u0000\u0000\u0000p\u0017\u0000\u0000\u0001\u0001\u0003\u0000\u0001\u0000\u0000\u0000\ufffd\u000f\u0000\u0000\u0002\u0001\u0003\u0000\u0003\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0003\u0001\u0003\u0000\u0001\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u000e\u0001\u0002\u0000 \u0000\u0000\u0000\u0000\u0001\u0000\u0000\u000f\u0001\u0002\u0000\u0006\u0000\u0000\u0000 \u0001\u0000\u0000\u0010\u0001\u0002\u0000\r\u0000\u0000\u0000&\u0001\u0000\u0000\u0011\u0001\u0004\u0000\u0001\u0000\u0000\u0000\u0000 \u0001\u0000\u0012\u0001\u0003\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0017\u0001\u0004\u0000\u0001\u0000\u0000\u0000\ufffd\ufffd_\u0000\u001a\u0001\u0005\u0000\u0001\u0000\u0000\u00004\u0001\u0000\u0000\u001b\u0001\u0005\u0000\u0001\u0000\u0000\u0000<\u0001\u0000\u0000(\u0001\u0003\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u00002\u0001\u0002\u0000\u0014\u0000\u0000\u0000D\u0001\u0000\u0000;\u0001\u0002\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0002\u0001\u0000\u0000 \u0000\u0000\u0000\ufffd\u0000\u0000\ufffd\ufffd\u0002\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000i\ufffd\u0004\u0000\u0001\u0000\u0000\u0000\ufffd\u0001\u0000\u0000%\ufffd\u0004\u0000\u0001\u0000\u0000\u00006\ufffd\u0000\u00006\ufffd\u0000\u0000\b\u0000\b\u0000\b\u0000                               \u0000Canon\u0000Canon EOS M6\u0000\ufffd\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0001\u0000\u0000\u00002019:02:19 15:44:57\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000*\u0000\ufffd\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\ufffd\u0003\u0000\u0000\ufffd\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\ufffd\u0003\u0000\u0000\"\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000'\ufffd\u0003\u0000\u0001\u0000\u0000\u0000d\u0000\u0000\u00000\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u00002\ufffd\u0004\u0000\u0001\u0000\u0000\u0000d\u0000\u0000\u0000\u0000\ufffd\u0007\u0000\u0004\u0000\u0000\u00000230\u0003\ufffd\u0002\u0000\u0014\u0000\u0000\u0000\ufffd\u0003\u0000\u0000\u0004\ufffd\u0002\u0000\u0014\u0000\u0000\u0000\ufffd\u0003\u0000\u0000\u0001\ufffd\u0007\u0000\u0004\u0000\u0000\u0000\u0001\u0002\u0003\u0000\u0002\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\u000e\u0004\u0000\u0000\u0001\ufffd\n\u0000\u0001\u0000\u0000\u0000\u0016\u0004\u0000\u0000\u0002\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\u001e\u0004\u0000\u0000\u0004\ufffd\n\u0000\u0001\u0000\u0000\u0000&\u0004\u0000\u0000\u0007\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0005\u0000\u0000\u0000\t\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0010\u0000\u0000\u0000\n\ufffd\u0005\u0000\u0001\u0000\u0000\u0000.\u0004\u0000\u0000|\ufffd\u0007\u0000\u0006\ufffd\u0000\u00006\u0004\u0000\u0000\ufffd\ufffd\u0007\u0000\b\u0001\u0000\u0000<\ufffd\u0000\u0000\ufffd\ufffd\u0002\u0000\u0003\u0000\u0000\u000018\u0000\u0000\ufffd\ufffd\u0002\u0000\u0003\u0000\u0000\u000018\u0000\u0000\ufffd\ufffd\u0002\u0000\u0003\u0000\u0000\u000018\u0000\u0000\u0000\ufffd\u0007\u0000\u0004\u0000\u0000\u00000100\u0001\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\ufffd\u0003\u0000\u0001\u0000\u0000\u0000p\u0017\u0000\u0000\u0003\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\ufffd\u000f\u0000\u0000\u0005\ufffd\u0004\u0000\u0001\u0000\u0000\u0000D\ufffd\u0000\u0000\u000e\ufffd\u0005\u0000\u0001\u0000\u0000\u0000z\ufffd\u0000\u0000\u000f\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0010\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0017\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\ufffd\u0007\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\ufffd\u0005\u0000\u0001\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0006\ufffd\u0003\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u00000\ufffd\u0002\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u00001\ufffd\u0002\u0000\r\u0000\u0000\u0000\ufffd\ufffd\u0000\u00002\ufffd\u0005\u0000\u0004\u0000\u0000\u0000\ufffd\ufffd\u0000\u00004\ufffd\u0002\u0000\u001c\u0000\u0000\u0000\ufffd\u0000\u00005\ufffd\u0002\u0000\u000b\u0000\u0000\u0000*\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0019\u0000\u0000\u0000\n\u0000\u0000\u0000n\u0000\u0000\u0000\n\u0000\u0000\u00002019"
+        },
+        "headers": {
+          "Connection": [
+            "Keep-Alive"
+          ],
+          "Date": [
+            "Thu, 08 Aug 2024 16:20:10 GMT"
+          ],
+          "Keep-Alive": [
+            "timeout=5, max=100"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Set-Cookie": [
+            "uu.app.bpl=0;path=",
+            "uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c;path="
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubDomains"
+          ],
+          "Vary": [
+            "User-Agent,Origin"
+          ],
+          "cache-control": [
+            "max-age=60, private"
+          ],
+          "content-disposition": [
+            "inline; filename=\"PB6.CR2\""
+          ],
+          "content-length": [
+            "35819362"
+          ],
+          "content-type": [
+            "image/x-canon-cr2"
+          ],
+          "etag": [
+            "\"5dc78491b70f2927092e663de98ab957.d5d4cd07616a542891b7ec2d0257b3a24b69856e\""
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://itkpd-test.unicorncollege.cz/uu-app-binarystore/getBinaryData"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.9.0"
+}
