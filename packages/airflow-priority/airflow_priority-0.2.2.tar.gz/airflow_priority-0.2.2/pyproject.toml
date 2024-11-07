@@ -1,0 +1,171 @@
+[build-system]
+requires = ["hatchling"]
+build-backend="hatchling.build"
+
+[project]
+name = "airflow-priority"
+authors = [{name = "the airflow-priority authors", email = "3105306+timkpaine@users.noreply.github.com"}]
+description="Priority Tags for Airflow Dags"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+version = "0.2.2"
+requires-python = ">=3.9"
+keywords = []
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "apache-airflow>=2,<3",
+]
+
+[project.urls]
+Repository = "https://github.com/airflow-laminar/airflow-priority"
+Homepage = "https://github.com/airflow-laminar/airflow-priority"
+
+[project.optional-dependencies]
+develop = [
+    "build",
+    "bump-my-version",
+    "check-manifest",
+    "hatchling",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "twine",
+    "wheel",
+    # Plugins
+    "boto3",
+    "botocore",
+    "datadog-api-client",
+    "discord.py",
+    "httpx",
+    "newrelic-telemetry-sdk",
+    "slack-sdk",
+    # Config
+    "airflow-config>=0.1.2",
+]
+aws = [
+    "boto3",
+    "botocore",
+]
+config = [
+    "airflow-config>=0.1.2",
+]
+datadog = [
+    "datadog-api-client",
+]
+discord = [
+    "discord.py",
+]
+newrelic = [
+    "newrelic-telemetry-sdk",
+]
+slack = [
+    "slack-sdk",
+]
+symphony = [
+    "httpx",
+]
+
+[project.scripts]
+
+[project.entry-points."airflow.plugins"]
+airflow_priority_aws_cloudwatch = "airflow_priority.plugins.aws:AWSCloudWatchPriorityPlugin"
+airflow_priority_datadog = "airflow_priority.plugins.datadog:DatadogPriorityPlugin"
+airflow_priority_discord = "airflow_priority.plugins.discord:DiscordPriorityPlugin"
+airflow_priority_newrelic = "airflow_priority.plugins.newrelic:NewRelicPriorityPlugin"
+airflow_priority_slack = "airflow_priority.plugins.slack:SlackPriorityPlugin"
+airflow_priority_symphony = "airflow_priority.plugins.symphony:SymphonyPriorityPlugin"
+
+[tool.bumpversion]
+current_version = "0.2.2"
+commit = true
+tag = false
+
+[[tool.bumpversion.files]]
+filename = "airflow_priority/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[tool.check-manifest]
+ignore = [
+    ".copier-answers.yml",
+    "Makefile",
+    "setup.py",
+    "docs/*/*",
+]
+
+[tool.hatch.build]
+artifacts = []
+
+[tool.hatch.build.sources]
+src = "/"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/airflow_priority",
+    "LICENSE",
+    "README.md",
+]
+exclude = [
+    ".copier-answers.yml",
+    "/.github",
+    "/.gitattributes",
+    "/.gitignore",
+    "/docs",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/airflow_priority",
+]
+exclude = [
+    ".copier-answers.yml",
+    "/.github",
+    "/.gitattributes",
+    "/.gitignore",
+    "/pyproject.toml",
+    "/docs",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+testpaths = "airflow_priority/tests"
+
+[tool.ruff]
+line-length = 150
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+default-section = "third-party"
+known-first-party = ["airflow_priority"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "F403"]
+
+[tool.yardang]
+title = "airflow-priority"
+root = "README.md"
+pages = ["docs/src/API.md"]
+use-autoapi = false
