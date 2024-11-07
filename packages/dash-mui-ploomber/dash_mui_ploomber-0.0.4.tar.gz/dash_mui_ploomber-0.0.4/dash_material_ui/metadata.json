@@ -1,0 +1,2083 @@
+{
+  "src/lib/components/Accordion.react.js": {
+    "description": "",
+    "displayName": "CustomAccordion",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "panels": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "id": {
+                "name": "string",
+                "required": true
+              },
+              "summary": {
+                "name": "string",
+                "required": true
+              },
+              "details": {
+                "name": "string",
+                "required": true
+              },
+              "expanded": {
+                "name": "bool",
+                "required": false
+              },
+              "defaultExpanded": {
+                "name": "bool",
+                "required": false
+              },
+              "actions": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "shape",
+                  "value": {
+                    "label": {
+                      "name": "string",
+                      "required": true
+                    },
+                    "onClick": {
+                      "name": "func",
+                      "required": false
+                    }
+                  }
+                },
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "An array of panel objects to be rendered in the accordion.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Alert.react.js": {
+    "description": "",
+    "displayName": "Alert",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The main content displayed in the alert."
+      },
+      "severity": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'info'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The severity of the alert.",
+        "defaultValue": {
+          "value": "'success'",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'standard'",
+              "computed": false
+            },
+            {
+              "value": "'filled'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use.",
+        "defaultValue": {
+          "value": "'standard'",
+          "computed": false
+        }
+      },
+      "onClose": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when the component requests to be closed."
+      },
+      "action": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The action to display. It renders after the message, at the end of the alert."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the alert is displayed.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/App.react.js": {
+    "description": "",
+    "displayName": "App",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AppBar.react.js": {
+    "description": "AppBar component using Material-UI.\nIt provides a header with customizable title, menu button, and navigation sections.",
+    "displayName": "AppBar",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The title to be displayed in the AppBar.",
+        "defaultValue": {
+          "value": "'App Bar'",
+          "computed": false
+        }
+      },
+      "showMenuButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to show the menu button.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "position": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'fixed'",
+              "computed": false
+            },
+            {
+              "value": "'absolute'",
+              "computed": false
+            },
+            {
+              "value": "'sticky'",
+              "computed": false
+            },
+            {
+              "value": "'static'",
+              "computed": false
+            },
+            {
+              "value": "'relative'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The position of the AppBar.",
+        "defaultValue": {
+          "value": "'static'",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "'transparent'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the AppBar.",
+        "defaultValue": {
+          "value": "'primary'",
+          "computed": false
+        }
+      },
+      "sections": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "A dictionary of sections to be displayed in the AppBar.\nThe keys are the section names and the values are the section paths."
+      }
+    }
+  },
+  "src/lib/components/Backdrop.react.js": {
+    "description": "Backdrop component using Material-UI.\nIt shows an overlay backdrop, useful for loading or other UI feedback.",
+    "displayName": "Backdrop",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the backdrop is open.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "invisible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the backdrop is invisible.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Button.react.js": {
+    "description": "Button component using Material-UI.\nIt can be customized with various optional props to change its appearance and behavior.\nThe 'id' prop is required.",
+    "displayName": "Button",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the button."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'text'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            },
+            {
+              "value": "'contained'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use."
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'info'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component."
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the component."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the button will be disabled."
+      },
+      "fullWidth": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the button will take up the full width of its container."
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The URL to link to when the button is clicked."
+      },
+      "startIcon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon placed before the children. Should be a string matching an icon name from @mui/icons-material."
+      },
+      "endIcon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon placed after the children. Should be a string matching an icon name from @mui/icons-material."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "n_clicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of times the button has been clicked.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "onClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when the button is clicked."
+      }
+    }
+  },
+  "src/lib/components/ButtonGroup.react.js": {
+    "description": "ButtonGroup component using Material-UI.\nIt provides a group of buttons with customizable variant, size, color, orientation, and aria-label.\nThe component updates a property with the ID of the last clicked button.",
+    "displayName": "ButtonGroup",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'text'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            },
+            {
+              "value": "'contained'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use for the ButtonGroup.",
+        "defaultValue": {
+          "value": "'contained'",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the ButtonGroup.",
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'info'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the ButtonGroup.",
+        "defaultValue": {
+          "value": "'primary'",
+          "computed": false
+        }
+      },
+      "orientation": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The orientation of the ButtonGroup.",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "ariaLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The aria-label for the ButtonGroup.",
+        "defaultValue": {
+          "value": "'button group'",
+          "computed": false
+        }
+      },
+      "buttons": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "id": {
+                "name": "string",
+                "required": true
+              },
+              "label": {
+                "name": "string",
+                "required": true
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "A list of button objects to be rendered in the ButtonGroup.\nEach object should have 'id' and 'label' properties.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "lastClicked": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of the last clicked button."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Card.react.js": {
+    "description": "",
+    "displayName": "CustomCard",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "topic": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The topic of the card."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The title of the card."
+      },
+      "subtitle": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The subtitle of the card."
+      },
+      "content": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The content of the card."
+      },
+      "buttonText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The text for the button."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "n_clicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of times the button has been clicked.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/CheckBoxTable.react.js": {
+    "description": "",
+    "displayName": "CheckBoxTable",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "data": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "columns": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "field": {
+                "name": "string",
+                "required": true
+              },
+              "headerName": {
+                "name": "string",
+                "required": true
+              },
+              "width": {
+                "name": "number",
+                "required": false
+              },
+              "numeric": {
+                "name": "bool",
+                "required": false
+              },
+              "disablePadding": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "selected": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "union",
+            "value": [
+              {
+                "name": "string"
+              },
+              {
+                "name": "number"
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src/lib/components/CustomSpeedDial.react.js": {
+    "description": "Custom SpeedDial component using Material-UI.",
+    "displayName": "CustomSpeedDial",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "ariaLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'up'",
+              "computed": false
+            },
+            {
+              "value": "'down'",
+              "computed": false
+            },
+            {
+              "value": "'left'",
+              "computed": false
+            },
+            {
+              "value": "'right'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"up\"",
+          "computed": false
+        }
+      },
+      "actions": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "id": {
+                "name": "string",
+                "required": true
+              },
+              "icon": {
+                "name": "string",
+                "required": true
+              },
+              "tooltip": {
+                "name": "string",
+                "required": true
+              }
+            }
+          }
+        },
+        "required": true,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "n_clicks": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Form.react.js": {
+    "description": "Form component using Material-UI.\nIt creates a form with text fields and select fields based on the provided configuration.",
+    "displayName": "Form",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "fields": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "id": {
+                "name": "string",
+                "required": true
+              },
+              "label": {
+                "name": "string",
+                "required": true
+              },
+              "type": {
+                "name": "string",
+                "required": false
+              },
+              "required": {
+                "name": "bool",
+                "required": false
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              },
+              "defaultValue": {
+                "name": "string",
+                "required": false
+              },
+              "helperText": {
+                "name": "string",
+                "required": false
+              },
+              "variant": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'outlined'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'filled'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'standard'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "readOnly": {
+                "name": "bool",
+                "required": false
+              },
+              "shrinkLabel": {
+                "name": "bool",
+                "required": false
+              },
+              "options": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "shape",
+                  "value": {
+                    "value": {
+                      "name": "string",
+                      "required": true
+                    },
+                    "label": {
+                      "name": "string",
+                      "required": true
+                    }
+                  }
+                },
+                "required": false
+              },
+              "native": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "A list of field objects to be rendered in the Form.\nEach object should have properties like 'id', 'label', 'type', etc.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "values": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "An object containing the current values of the form fields.\nKeys are field IDs and values are the current values.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Grid.react.js": {
+    "description": "",
+    "displayName": "MuiGrid",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the layout."
+      },
+      "spacing": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Defines the space between the type `item` components.",
+        "defaultValue": {
+          "value": "3",
+          "computed": false
+        }
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'row'",
+              "computed": false
+            },
+            {
+              "value": "'row-reverse'",
+              "computed": false
+            },
+            {
+              "value": "'column'",
+              "computed": false
+            },
+            {
+              "value": "'column-reverse'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Defines the `flex-direction` style property.",
+        "defaultValue": {
+          "value": "'row'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Item.react.js": {
+    "description": "",
+    "displayName": "Item",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the item."
+      },
+      "size": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the item.",
+        "defaultValue": {
+          "value": "'auto'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Menu.react.js": {
+    "description": "",
+    "displayName": "Menu",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "buttonText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The text displayed on the button that opens the menu.",
+        "defaultValue": {
+          "value": "'Open Menu'",
+          "computed": false
+        }
+      },
+      "menuItems": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "union",
+            "value": [
+              {
+                "name": "string"
+              },
+              {
+                "name": "shape",
+                "value": {
+                  "label": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "disabled": {
+                    "name": "bool",
+                    "required": false
+                  },
+                  "icon": {
+                    "name": "string",
+                    "required": false
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Array of menu item labels or objects.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "onItemClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when a menu item is clicked."
+      },
+      "selectedIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Index of the selected menu item."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Pagination.react.js": {
+    "description": "",
+    "displayName": "Pagination",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "count": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The total number of pages.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "page": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The current page number.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "defaultPage": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The default page number (uncontrolled component).",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "siblingCount": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of always visible pages before and after the current page.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "boundaryCount": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of always visible pages at the beginning and end.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'text'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use.",
+        "defaultValue": {
+          "value": "'text'",
+          "computed": false
+        }
+      },
+      "shape": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The shape of the pagination items.",
+        "defaultValue": {
+          "value": "'circular'",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the pagination component.",
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'standard'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component.",
+        "defaultValue": {
+          "value": "'standard'",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the pagination component will be disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "showFirstButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, show the first-page button.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "showLastButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, show the last-page button.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "hidePrevButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, hide the previous-page button.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "hideNextButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, hide the next-page button.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when the page is changed."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Paper.react.js": {
+    "description": "Paper component using Material-UI.\nIt can be customized with various optional props like elevation and variant.\nThe 'id' prop is required for Dash callbacks.",
+    "displayName": "Paper",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the Paper component."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "elevation": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The elevation of the Paper component.\nAccepts values from 0 to 24.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'elevation'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use.\nEither 'elevation' or 'outlined'.",
+        "defaultValue": {
+          "value": "'elevation'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Popover.react.js": {
+    "description": "Popover component using Material-UI.\nA customizable popover with a button to control its visibility.",
+    "displayName": "Popover",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "content": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The content to display within the Popover."
+      },
+      "anchorOrigin": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "vertical": {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "'top'",
+                  "computed": false
+                },
+                {
+                  "value": "'center'",
+                  "computed": false
+                },
+                {
+                  "value": "'bottom'",
+                  "computed": false
+                }
+              ],
+              "required": false
+            },
+            "horizontal": {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "'left'",
+                  "computed": false
+                },
+                {
+                  "value": "'center'",
+                  "computed": false
+                },
+                {
+                  "value": "'right'",
+                  "computed": false
+                }
+              ],
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Anchor origin for the popover positioning.",
+        "defaultValue": {
+          "value": "{ vertical: 'bottom', horizontal: 'left' }",
+          "computed": false
+        }
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Controls the open state of the Popover."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/RadioGroup.react.js": {
+    "description": "RadioGroup component using Material-UI.\nIt allows users to select one option from a set of mutually exclusive choices.",
+    "displayName": "RadioGroup",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The label for the radio group."
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "value": {
+                "name": "string",
+                "required": true
+              },
+              "label": {
+                "name": "string",
+                "required": true
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": true,
+        "description": "An array of objects, each containing a value and a label for the radio options."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The currently selected value."
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when the value changes."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'row'",
+              "computed": false
+            },
+            {
+              "value": "'column'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The direction of the radio group. Can be 'row' or 'column'.",
+        "defaultValue": {
+          "value": "'column'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Select.react.js": {
+    "description": "Select component using Material-UI.\nIt allows selecting from multiple options.\nThe 'id' prop is required.",
+    "displayName": "Select",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The label for the select input."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The currently selected value.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "value": {
+                "name": "string",
+                "required": true
+              },
+              "label": {
+                "name": "string",
+                "required": true
+              }
+            }
+          }
+        },
+        "required": true,
+        "description": "The available options for the select."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the select is disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "error": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the select displays an error.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the select is read-only.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "required": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the select input is required.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "helperText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Optional helper text to display below the select.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when an option is selected."
+      }
+    }
+  },
+  "src/lib/components/Slider.react.js": {
+    "description": "",
+    "displayName": "Slider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "defaultValue": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The default value of the slider.",
+        "defaultValue": {
+          "value": "30",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the slider will be disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "ariaLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The aria-label for the slider.",
+        "defaultValue": {
+          "value": "'Slider'",
+          "computed": false
+        }
+      },
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The minimum allowed value of the slider.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The maximum allowed value of the slider.",
+        "defaultValue": {
+          "value": "100",
+          "computed": false
+        }
+      },
+      "step": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The step interval of the slider.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The current value of the slider.",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
+        "defaultValue": {
+          "value": "() => { }",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/Switch.react.js": {
+    "description": "",
+    "displayName": "Switch",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "checked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the switch is checked.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the switch will be disabled."
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'info'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component."
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the component."
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Callback fired when the state is changed."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Table.react.js": {
+    "description": "Table is a component that displays data in a tabular format.\nIt takes a property `data` which is an array of objects representing the table rows.",
+    "displayName": "MUITable",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "data": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "The data to be displayed in the table.\nIt should be an array of objects, where each object represents a row.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "dense": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the table will be rendered in a dense layout.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "stickyHeader": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the table header will be sticky.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
