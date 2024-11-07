@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: pyroll-hill-spreading
+Version: 3.0.0
+Summary: Plugin for PyRolL providing the Hill spreading model.
+Author-email: Christoph Renzing <christoph.renzing@imf.tu-freiberg.de>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Requires-Python: <4.0,>=3.9
+Requires-Dist: pyroll-core~=3.0
