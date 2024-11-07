@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: CAETomo
+Version: 0.2.1
+Summary: 1D-CAE embedded EELS tomography
+Home-page: https://github.com/jinseuk56
+Author: Jinseok Ryu
+Author-email: jinseuk56@gmail.com
+Requires-Dist: drca
+
