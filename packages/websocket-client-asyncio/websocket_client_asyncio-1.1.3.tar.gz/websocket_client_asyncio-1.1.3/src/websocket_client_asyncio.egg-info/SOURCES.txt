@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+src/async_websocket_client/__init__.py
+src/async_websocket_client/apps.py
+src/async_websocket_client/dispatchers.py
+src/websocket_client_asyncio.egg-info/PKG-INFO
+src/websocket_client_asyncio.egg-info/SOURCES.txt
+src/websocket_client_asyncio.egg-info/dependency_links.txt
+src/websocket_client_asyncio.egg-info/requires.txt
+src/websocket_client_asyncio.egg-info/top_level.txt
