@@ -1,0 +1,306 @@
+Metadata-Version: 2.3
+Name: datav
+Version: 0.2.1
+Summary: Data visualization tools for Python.
+Author-email: Tang Ziya <tcztzy@gmail.com>
+License:                    GNU LESSER GENERAL PUBLIC LICENSE
+                               Version 3, 29 June 2007
+        
+         Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+         Everyone is permitted to copy and distribute verbatim copies
+         of this license document, but changing it is not allowed.
+        
+        
+          This version of the GNU Lesser General Public License incorporates
+        the terms and conditions of version 3 of the GNU General Public
+        License, supplemented by the additional permissions listed below.
+        
+          0. Additional Definitions.
+        
+          As used herein, "this License" refers to version 3 of the GNU Lesser
+        General Public License, and the "GNU GPL" refers to version 3 of the GNU
+        General Public License.
+        
+          "The Library" refers to a covered work governed by this License,
+        other than an Application or a Combined Work as defined below.
+        
+          An "Application" is any work that makes use of an interface provided
+        by the Library, but which is not otherwise based on the Library.
+        Defining a subclass of a class defined by the Library is deemed a mode
+        of using an interface provided by the Library.
+        
+          A "Combined Work" is a work produced by combining or linking an
+        Application with the Library.  The particular version of the Library
+        with which the Combined Work was made is also called the "Linked
+        Version".
+        
+          The "Minimal Corresponding Source" for a Combined Work means the
+        Corresponding Source for the Combined Work, excluding any source code
+        for portions of the Combined Work that, considered in isolation, are
+        based on the Application, and not on the Linked Version.
+        
+          The "Corresponding Application Code" for a Combined Work means the
+        object code and/or source code for the Application, including any data
+        and utility programs needed for reproducing the Combined Work from the
+        Application, but excluding the System Libraries of the Combined Work.
+        
+          1. Exception to Section 3 of the GNU GPL.
+        
+          You may convey a covered work under sections 3 and 4 of this License
+        without being bound by section 3 of the GNU GPL.
+        
+          2. Conveying Modified Versions.
+        
+          If you modify a copy of the Library, and, in your modifications, a
+        facility refers to a function or data to be supplied by an Application
+        that uses the facility (other than as an argument passed when the
+        facility is invoked), then you may convey a copy of the modified
+        version:
+        
+           a) under this License, provided that you make a good faith effort to
+           ensure that, in the event an Application does not supply the
+           function or data, the facility still operates, and performs
+           whatever part of its purpose remains meaningful, or
+        
+           b) under the GNU GPL, with none of the additional permissions of
+           this License applicable to that copy.
+        
+          3. Object Code Incorporating Material from Library Header Files.
+        
+          The object code form of an Application may incorporate material from
+        a header file that is part of the Library.  You may convey such object
+        code under terms of your choice, provided that, if the incorporated
+        material is not limited to numerical parameters, data structure
+        layouts and accessors, or small macros, inline functions and templates
+        (ten or fewer lines in length), you do both of the following:
+        
+           a) Give prominent notice with each copy of the object code that the
+           Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the object code with a copy of the GNU GPL and this license
+           document.
+        
+          4. Combined Works.
+        
+          You may convey a Combined Work under terms of your choice that,
+        taken together, effectively do not restrict modification of the
+        portions of the Library contained in the Combined Work and reverse
+        engineering for debugging such modifications, if you also do each of
+        the following:
+        
+           a) Give prominent notice with each copy of the Combined Work that
+           the Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the Combined Work with a copy of the GNU GPL and this license
+           document.
+        
+           c) For a Combined Work that displays copyright notices during
+           execution, include the copyright notice for the Library among
+           these notices, as well as a reference directing the user to the
+           copies of the GNU GPL and this license document.
+        
+           d) Do one of the following:
+        
+               0) Convey the Minimal Corresponding Source under the terms of this
+               License, and the Corresponding Application Code in a form
+               suitable for, and under terms that permit, the user to
+               recombine or relink the Application with a modified version of
+               the Linked Version to produce a modified Combined Work, in the
+               manner specified by section 6 of the GNU GPL for conveying
+               Corresponding Source.
+        
+               1) Use a suitable shared library mechanism for linking with the
+               Library.  A suitable mechanism is one that (a) uses at run time
+               a copy of the Library already present on the user's computer
+               system, and (b) will operate properly with a modified version
+               of the Library that is interface-compatible with the Linked
+               Version.
+        
+           e) Provide Installation Information, but only if you would otherwise
+           be required to provide such information under section 6 of the
+           GNU GPL, and only to the extent that such information is
+           necessary to install and execute a modified version of the
+           Combined Work produced by recombining or relinking the
+           Application with a modified version of the Linked Version. (If
+           you use option 4d0, the Installation Information must accompany
+           the Minimal Corresponding Source and Corresponding Application
+           Code. If you use option 4d1, you must provide the Installation
+           Information in the manner specified by section 6 of the GNU GPL
+           for conveying Corresponding Source.)
+        
+          5. Combined Libraries.
+        
+          You may place library facilities that are a work based on the
+        Library side by side in a single library together with other library
+        facilities that are not Applications and are not covered by this
+        License, and convey such a combined library under terms of your
+        choice, if you do both of the following:
+        
+           a) Accompany the combined library with a copy of the same work based
+           on the Library, uncombined with any other library facilities,
+           conveyed under the terms of this License.
+        
+           b) Give prominent notice with the combined library that part of it
+           is a work based on the Library, and explaining where to find the
+           accompanying uncombined form of the same work.
+        
+          6. Revised Versions of the GNU Lesser General Public License.
+        
+          The Free Software Foundation may publish revised and/or new versions
+        of the GNU Lesser General Public License from time to time. Such new
+        versions will be similar in spirit to the present version, but may
+        differ in detail to address new problems or concerns.
+        
+          Each version is given a distinguishing version number. If the
+        Library as you received it specifies that a certain numbered version
+        of the GNU Lesser General Public License "or any later version"
+        applies to it, you have the option of following the terms and
+        conditions either of that published version or of any later version
+        published by the Free Software Foundation. If the Library as you
+        received it does not specify a version number of the GNU Lesser
+        General Public License, you may choose any version of the GNU Lesser
+        General Public License ever published by the Free Software Foundation.
+        
+          If the Library as you received it specifies that a proxy can decide
+        whether future versions of the GNU Lesser General Public License shall
+        apply, that proxy's public statement of acceptance of any version is
+        permanent authorization for you to choose that version for the
+        Library.
+License-File: LICENSE
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free For Educational Use
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Requires-Dist: cartopy>=0.23
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy>=2
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: xarray>=2024.7.0
+Description-Content-Type: text/markdown
+
+DataV
+-----
+![PyPI](https://img.shields.io/pypi/v/datav)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datav)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/datav)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/datav)
+![License](https://img.shields.io/github/license/tcztzy/datav)
+
+This is an unofficial solution to draw map using Aliyun's DataV.GeoAtlas.
+
+这是一个非官方的使用阿里云 DataV.GeoAtlas 绘制地图的解决方案。
+
+
+## Examples
+
+See [examples](examples) for more.
+
+```python
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+import matplotlib.pyplot as plt
+import numpy as np
+from cartopy.mpl.gridliner import LATITUDE_FORMATTER, LONGITUDE_FORMATTER
+from matplotlib.transforms import offset_copy
+from matplotlib.font_manager import FontProperties
+
+from datav import DataVGeoAtlasFeature
+
+# Windows 下字体可以不用这么麻烦，直接 rc 设置 SimSun 即可
+simsun = FontProperties(fname="/mnt/c/Windows/Fonts/simsun.ttc")
+
+proj = ccrs.PlateCarree()
+fig = plt.figure(figsize=(14, 7))
+main_box = (80.5, 82, 40.25, 41)
+ax_main = plt.subplot(1, 1, 1, projection=proj)
+ax_main.set_extent(main_box, crs=ccrs.PlateCarree())
+ax_main.add_feature(DataVGeoAtlasFeature(659002, facecolor="darkgreen", alpha=0.2))  # 阿拉尔
+ax_main.add_feature(cfeature.LAKES)
+ax_main.add_feature(cfeature.RIVERS)
+site = (81.196, 40.624)
+ax_main.plot(
+    *site,
+    marker="o",
+    color="green",
+    markersize=10,
+    transform=ccrs.Geodetic(),
+)
+geodetic_transform = ccrs.Geodetic()._as_mpl_transform(ax_main)
+text_transform = offset_copy(geodetic_transform, units="dots", x=-25)
+ax_main.text(
+    site[0],
+    site[1] + 0.03,
+    "试验站",
+    transform=text_transform,
+    fontproperties=simsun,
+)
+xmain = np.linspace(*main_box[:2], 4)
+ymain = np.linspace(*main_box[2:], 4)
+ax_main.gridlines(xlocs=xmain, ylocs=ymain, linestyle=":")
+# set custom formatting for the tick labels
+ax_main.xaxis.set_major_formatter(LONGITUDE_FORMATTER)
+ax_main.yaxis.set_major_formatter(LATITUDE_FORMATTER)
+ax_main.yaxis.tick_right()
+ax_main.set_xticks(xmain, crs=ccrs.PlateCarree())
+ax_main.set_yticks(ymain, crs=ccrs.PlateCarree())
+
+ax_inset = fig.add_axes([0, 0.6, 0.3, 0.35], projection=proj)
+ax_inset.set_extent((73, 136, 2, 51))
+ax_inset.add_feature(
+    DataVGeoAtlasFeature(100000, full=True, facecolor="lightgreen", edgecolor="gray")
+)
+ax_inset.add_feature(DataVGeoAtlasFeature(650000, facecolor="limegreen"))
+ax_inset.add_feature(DataVGeoAtlasFeature(652900, facecolor="green", edgecolor="none"))
+ax_inset.add_feature(
+    DataVGeoAtlasFeature(659002, facecolor="darkgreen", edgecolor="black")
+)
+xinset = np.linspace(73, 136, 5)
+yinset = np.linspace(2, 51, 5)
+ax_inset.gridlines(xlocs=xinset, ylocs=yinset, linestyle=":")
+ax_inset.xaxis.set_major_formatter(LONGITUDE_FORMATTER)
+ax_inset.yaxis.set_major_formatter(LATITUDE_FORMATTER)
+ax_inset.xaxis.tick_top()
+# set inset tick labels
+ax_inset.set_xticks(xinset, crs=ccrs.PlateCarree())
+ax_inset.set_yticks(yinset, crs=ccrs.PlateCarree())
+
+plt.savefig("research_site.png", dpi=800)
+```
+
+![Research site](research_site.png)
+
+## Requirements
+
+1. Cartopy (for ploting)
+2. Geopandas (for parsing geojson)
+
+## NOTE
+
+Free For Educational Use. Respect Aliyun's license. 
+
+仅供学习使用。遵守阿里云的协议。请合理使用地图数据。数据内容和本人无关。数据具体用途也和本人无关。请遵守相关法律规定。
+
+## TODO
+
+1. respect the HTTP header last-modified
+
+   尊重 HTTP 请求头 last-modified
+
+2. Chinese name alias for adcode
+
+   使用中文名替代 adcode 查询
+
+3. More features such as line
+
+   从 GeoJSON 中提取更多可定制的 feature。
