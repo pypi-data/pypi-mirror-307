@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: pyzrpc
+Version: 2.1
+Summary: pyzrpc
+Home-page: https://gitee.com/ZYPH/zerorpc
+Author: YanPing
+Author-email: zyphhxx@foxmail.com
+Maintainer: YanPing
+Maintainer-email: zyphhxx@foxmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+PyZrpc Description Document
+===========================
+
+PyZrpc: zero config rpc framework
++++++++++++++++++++++++++++++++++
+
+1. introduction
+
+    1. PyZrpc is a distributed task framework with extremely simple configuration.
+    Enable users to quickly build distributed task systems with minimal
+    configuration and learning costs
+
+    2. The framework has functions such as service management, work management,
+    and task management, which can meet most usage scenarios
+
+
+2. start using
+
+    Python Code::
+
+        from PyZrpc import PyZrpc
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        config = {
+            "RABBITMQ_CONFIG": "amqp://admin:passwd@127.0.0.1:5672",
+            "MONGODB_CONFIG": "mongodb://admin:passwd@127.0.0.1:27017",
+            'ROOT_PATH': current_dir
+        }
+        zrpc = PyZrpc(config=config)
+        zrpc.service_registry(services=[test])
+        zrpc.service_start()
+
+3. testing
+
+    Python Code::
+
+        import os
+        from PyZrpc import PyZrpc
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        config = {
+            "RABBITMQ_CONFIG": "amqp://admin:Rabbit*ads12@127.0.0.1:5672",
+            "MONGODB_CONFIG": "mongodb://admin:123456@127.0.0.1:27017",
+            'ROOT_PATH': current_dir
+        }
+        zrpc = PyZrpc(config=config)
+
+        zrpc.remote_call('zerorpc_test', 'get_service_name')
+
+        zrpc.send_message(queue='test', message={'task_id': 01, 'data': 'hello PyZrpc'})
+
+
+A distributed task scheduling system was completed in just a few steps
+======================================================================
+
+Disclaimers
+===========
+
+
++   Before using the PyZrpc framework, please carefully read and fully understand this statement.
+    You can choose not to use the PyZrpc framework, but once you use the PyZrpc framework,
+    Your usage behavior is deemed to be recognition and acceptance of the entire content of this statement.
+
++   You promise to use the PyZrpc framework in a legal and reasonable manner,
+    Do not use the PyZrpc board framework to engage in any illegal or malicious behavior that infringes
+    on the legitimate interests of others,
+    We will not apply the PyZrpc framework to any platform that violates Chinese laws and regulations.
+
++   Any accident, negligence, contract damage, defamation
+    This project does not assume any legal responsibility for copyright or intellectual property
+    infringement and any losses caused (including but not limited to direct,
+    indirect, incidental or derivative losses).
+
++   The user clearly and agrees to all the contents listed in the terms of this statement,
+    The potential risks and related consequences of using the PyZrpc framework will be entirely borne by the user,
+    and this project will not bear any legal responsibility.
+
++   After reading this disclaimer, any unit or individual should obtain the MIT Open Source License
+    Conduct legitimate publishing, dissemination, and use of the PyZrpc framework within the permitted scope,
+    If the breach of this disclaimer clause or the violation of laws and regulations results in legal
+    liability (including but not limited to civil compensation and criminal liability),
+    the defaulter shall bear the responsibility on their own.
+
++   The author owns intellectual property rights (including but not limited to trademark rights, patents, Copyrights,
+    trade secrets, etc.) of PyZrpc framework, and the above products are protected by relevant laws and regulations
+
++   No entity or individual shall apply for intellectual property rights related to
+    the PyZrpc Framework itself without the written authorization of the Author.
+
++   If any part of this statement is deemed invalid or unenforceable,
+    the remaining parts shall remain in full force and effect.
+    An unenforceable partial declaration does not constitute a waiver of our
+    right to enforce the declaration.
+
++   This project has the right to make unilateral changes to the terms and attachments of this statement at any time,
+    and publish them through message push, webpage announcement, and other means. Once published,
+    it will automatically take effect without the need for separate notice;
+    If you continue to use this statement after the announcement of changes,
+    it means that you have fully read, understood, and accepted the revised statement.
+
+
