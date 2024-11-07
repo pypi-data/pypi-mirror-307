@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-sygel-technology-sy-purchase-workflow
+Version: 12.0.20241105.0
+Summary: Meta package for sygel-technology-sy-purchase-workflow Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Requires-Dist: odoo12-addon-stock-rule-mto-vendor-purchase-type
+
+UNKNOWN
