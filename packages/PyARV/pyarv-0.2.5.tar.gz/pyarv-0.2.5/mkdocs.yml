@@ -1,0 +1,88 @@
+site_name: pyarv
+
+docs_dir: .
+site_dir: site
+site_url: https://oliversheridanmethven.github.io/pyarv
+site_description: The pyarv suite.
+site_author: Dr Oliver Sheridan-Methven
+repo_name: pyarv
+repo_url: https://github.com/oliversheridanmethven/pyarv
+
+use_directory_urls: false
+# Because we use the `README.md` convention rather than
+# the `index.md` convention, this ensures hyperlinks resolve
+# correctly.
+
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.footer
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: custom
+
+extra_css:
+  - mkdoc_scripts/colour_scheme.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oliversheridanmethven/pyarv
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/oliver-sheridan-methven/
+    - icon: fontawesome/solid/envelope
+      link: mailto:oliver.sheridan-methven@hotmail.co.uk
+  version:
+    provider: mike
+
+plugins:
+  - search
+  - social
+  - gen-files:
+      scripts:
+        - mkdoc_scripts/generate_user_documentation.py
+        - mkdoc_scripts/generate_developer_documentation.py
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src/pyarv]
+          options:
+            docstring_style: numpy
+            inherited_members: true
+            merge_init_into_class: true
+  - exclude:
+      glob:
+        - venv/*
+        - lib/*
+        - src/*
+        - bin/*
+        - "*license.html"
+        - "*LICENSE.html"
+        - .pytest_cache/*
+        - _skbuild/*
+        - .cache/*
+        - pyarv.egg-info/*
+
+  - same-dir # Allows us to operate from the root directory.
+  - awesome-pages:
+      collapse_single_pages: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - section-index
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - mdx_math
+  - admonition # Gives nice highlight fields.
