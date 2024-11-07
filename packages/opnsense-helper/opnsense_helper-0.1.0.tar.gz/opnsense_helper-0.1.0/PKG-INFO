@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: opnsense-helper
+Version: 0.1.0
+Summary: assign lan interfaces, create vlans, vlan-interfaces and setup dhcp in a single script.
+Home-page: https://github.com/the-pod-shop/opnsense-helper/
+Author: ji-podhdead
+Author-email: ji.podhdead@proton.me
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: paramiko
