@@ -1,0 +1,11 @@
+.codebox
+.env
+.DS_Store
+.pytest_cache
+*.pyc
+*.whl
+*.tar.gz
+site
+.python-version
+requirements-dev.lock
+.aider*
