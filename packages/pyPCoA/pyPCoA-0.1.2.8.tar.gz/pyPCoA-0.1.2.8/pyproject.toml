@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyPCoA"
+version = "0.1.2.8"
+description = "A Python package for performing PCoA analysis using Jaccard and Bray-Curtis distances."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Yuki Hamaguchi", email = "Yuki_Hamaguchi@suntory.co.jp"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+keywords = ["PCoA", "Jaccard", "Bray-Curtis", "Bioinformatics"]
+
+[project.scripts]
+pyPCoA = "pyPCoA.core:main"
