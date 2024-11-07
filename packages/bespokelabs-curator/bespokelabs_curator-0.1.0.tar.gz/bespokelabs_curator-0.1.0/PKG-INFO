@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: bespokelabs-curator
+Version: 0.1.0
+Summary: Bespoke Labs Curator
+Home-page: https://github.com/bespokelabsai/curator
+License: Apache-2.0
+Keywords: ai,curator,bespoke
+Author: Bespoke Labs
+Author-email: company@bespokelabs.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datasets (>=3.0.2,<4.0.0)
+Requires-Dist: instructor (>=1.6.3,<2.0.0)
+Requires-Dist: ipython (>=8.29.0,<9.0.0)
+Requires-Dist: litellm
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pydantic (>=2.9.2)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.24.0,<0.25.0)
+Requires-Dist: xxhash (>=3.5.0,<4.0.0)
+Project-URL: Repository, https://github.com/bespokelabsai/curator
+Description-Content-Type: text/markdown
+
+# Bella
+
+Bespoke Labs Synthetic Data Generation Library
+
+### Installation
+
+```bash
+poetry install
+```
+
+### Usage
+
+To run the camel example:
+
+```bash
+poetry run python examples/camel.py
+poetry run python examples/openhermesv3.py
+```
+
+Run the tests:
+
+```bash
+poetry run pytest
+```
+
