@@ -1,0 +1,1 @@
+from rarego_kge.data.utils import list_csv_filesfrom rarego_kge.data.utils import read_csv_filec = list_csv_files()b= read_csv_file()
