@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: electrox
+Version: 1.24.7
+Summary: Electrox is a Python framework for 2D game development with Gen Z and Gen Alpha vibes for some reason... nvm enjoy electrox.
+Author: Hussain Luai
+Author-email: hxolotl15@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pygame
+
