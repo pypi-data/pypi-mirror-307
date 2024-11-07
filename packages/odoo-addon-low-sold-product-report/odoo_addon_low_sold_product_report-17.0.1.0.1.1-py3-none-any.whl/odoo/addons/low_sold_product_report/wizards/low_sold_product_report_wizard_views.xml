@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="low_sold_product_report_wizard_form" model="ir.ui.view">
+        <field name="name">low.sold.product.report.wizard.form</field>
+        <field name="model">low_sold_product_report_wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="product_type" />
+                            <field name="date_start" />
+                            <field name="date_end" />
+                            <field name="sold_quantity_limit" />
+                            <field name="sold_amount_limit" />
+                        </group>
+                        <group string="Other filters">
+                            <field name="team_ids" widget="many2many_tags" />
+                            <field name="country_ids" widget="many2many_tags" />
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button
+                        name="action_accept"
+                        type="object"
+                        string="Accept"
+                        class="oe_highlight"
+                    />
+                    or
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="low_sold_product_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">Low sold products report</field>
+        <field name="res_model">low_sold_product_report_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field
+            name="view_id"
+            ref="low_sold_product_report.low_sold_product_report_wizard_form"
+        />
+    </record>
+
+    <menuitem
+        id="menu_low_sold_product_report"
+        name="Low Sold Products Report"
+        action="low_sold_product_report_wizard_action"
+        parent="sale.menu_sale_report"
+        sequence="100"
+        groups="low_sold_product_report.low_sold_product_report_manager"
+    />
+
+</odoo>

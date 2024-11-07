@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.low.sales.report</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='connectors_setting_container']" position="after">
+                <block title="Low Sales Report" id="low_sales_report_setting_container">
+                    <setting
+                        id="low_sales_report_default_product_type"
+                        help="Define default product model type for low sales report"
+                    >
+                        <field name="low_sales_report_default_product_type" />
+                    </setting>
+                    <setting
+                        id="low_sales_report_default_period"
+                        help="Define which time period should be analysed by default"
+                    >
+                        <field name="low_sales_report_default_period" />
+                    </setting>
+                    <setting
+                        id="low_sales_report_default_sold_quantity_limit"
+                        help="Define which sales level consider to be low in default units of measure"
+                    >
+                        <field name="low_sales_report_default_sold_quantity_limit" />
+                    </setting>
+                    <setting
+                        id="low_sales_report_default_sold_amount_limit"
+                        help="Define which sales level consider to be low in default currency before taxes"
+                    >
+                        <field name="low_sales_report_default_sold_amount_limit" />
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

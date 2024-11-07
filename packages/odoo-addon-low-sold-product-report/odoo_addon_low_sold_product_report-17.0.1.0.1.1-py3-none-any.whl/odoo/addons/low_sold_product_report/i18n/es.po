@@ -1,0 +1,330 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* low_sold_product_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-15 09:05+0000\n"
+"PO-Revision-Date: 2024-10-15 09:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_wizard_form
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report__query_type__product_template
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report_wizard__product_type__product_template
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_product_type__product_template
+msgid "By product templates"
+msgstr "Por plantillas de producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report__query_type__product_product
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report_wizard__product_type__product_product
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_product_type__product_product
+msgid "By product variants"
+msgstr "Por variantes de producto"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: low_sold_product_report
+#: model:ir.model,name:low_sold_product_report.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: low_sold_product_report
+#: model:ir.model,name:low_sold_product_report.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report__detailed_type__consu
+msgid "Consumable"
+msgstr "Consumible"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__date_end
+msgid "Date End"
+msgstr "Fecha de fin"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__date_start
+msgid "Date Start"
+msgstr "Fecha de inicio"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_company__low_sales_report_default_period
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_config_settings__low_sales_report_default_period
+msgid "Default analyzed period"
+msgstr "Periodo de analizado por defecto"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.res_config_settings_view_form
+msgid "Define default product model type for low sales report"
+msgstr ""
+"Define el tipo de modelo de producto por defecto para el informe de "
+"procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.res_config_settings_view_form
+msgid ""
+"Define which sales level consider to be low in default currency before taxes"
+msgstr ""
+"Define que nivel de ventas es considerado bajo antes de impuestos en la "
+"moneda por defecto"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.res_config_settings_view_form
+msgid ""
+"Define which sales level consider to be low in default units of measure"
+msgstr ""
+"Define que nivel de ventas es considerado bajo en la moneda por defecto"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.res_config_settings_view_form
+msgid "Define which time period should be analysed by default"
+msgstr "Define que periodo de tiempo debe ser analizado por defecto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__display_name
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Group By"
+msgstr ""
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__id
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,help:low_sold_product_report.field_low_sold_product_report_wizard__team_ids
+msgid "If not chosen, all sales teams would be analyzed"
+msgstr "Si no se escoge, todos los equipos de ventas serán analizados"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,help:low_sold_product_report.field_low_sold_product_report_wizard__country_ids
+msgid "If not selected all countries would be taken into account"
+msgstr "Si no se escoge, todos los países se tendran en cuenta"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_period__12
+msgid "Last 12 Month"
+msgstr "Últimos 12 meses"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_period__3
+msgid "Last 3 Months"
+msgstr "Últimos 3 meses"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_period__6
+msgid "Last 6 Months"
+msgstr "Últimos 6 meses"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__res_company__low_sales_report_default_period__1
+msgid "Last Month"
+msgstr "Último mes"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Low Sales"
+msgstr "Ventas bajas"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.res_config_settings_view_form
+msgid "Low Sales Report"
+msgstr "Informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_company__low_sales_report_default_product_type
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_config_settings__low_sales_report_default_product_type
+msgid "Low Sales Report Default Product Type"
+msgstr "Tipo de producto por defecto en informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_company__low_sales_report_default_sold_amount_limit
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_config_settings__low_sales_report_default_sold_amount_limit
+msgid "Low Sales Report Default Sold Amount Limit"
+msgstr "Limite de importe vendida en informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_company__low_sales_report_default_sold_quantity_limit
+#: model:ir.model.fields,field_description:low_sold_product_report.field_res_config_settings__low_sales_report_default_sold_quantity_limit
+msgid "Low Sales Report Default Sold Quantity Limit"
+msgstr "Limite de cantidad vendida en informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.model,name:low_sold_product_report.model_low_sold_product_report
+#: model:ir.ui.menu,name:low_sold_product_report.menu_low_sold_product_report
+msgid "Low Sold Products Report"
+msgstr "Informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:res.groups,name:low_sold_product_report.low_sold_product_report_manager
+msgid "Low Sold Products Report Access"
+msgstr "Acceso a informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.actions.act_window,name:low_sold_product_report.low_sold_product_report_wizard_action
+msgid "Low sold products report"
+msgstr "Informe de procuctos poco vendidos"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "No Sales"
+msgstr "Sin ventas"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_wizard_form
+msgid "Other filters"
+msgstr "Otros filtros"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__country_ids
+msgid "Partner Country"
+msgstr "País del contacto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__categ_id
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__product_tmpl_id
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__detailed_type
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__product_type
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Product Type"
+msgstr "Tipo de producto"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_search
+msgid "Product Uom"
+msgstr "Unidad de medida del producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__product_id
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__query_type
+msgid "Query Type"
+msgstr "Tipo de consulta"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_pivot
+msgid "Sales Analysis"
+msgstr "Análisis de ventas"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__team_ids
+msgid "Sales Teams"
+msgstr "Equipos de ventas"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields.selection,name:low_sold_product_report.selection__low_sold_product_report__detailed_type__service
+msgid "Service"
+msgstr "Servicio"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__sold_amount_limit
+msgid "Sold Amount Limit"
+msgstr "Límite de importe ventido"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__product_uom_qty
+msgid "Sold Qty"
+msgstr "Cantidad ventida"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report_wizard__sold_quantity_limit
+msgid "Sold Quantity Limit"
+msgstr "Límite de cantidad vendida"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__price_subtotal
+msgid "Sold Untaxed Amount"
+msgstr "Candidad antes de impuestos vendida"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,field_description:low_sold_product_report.field_low_sold_product_report__product_uom
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_tree
+msgid "View product"
+msgstr "Ver producto"
+
+#. module: low_sold_product_report
+#: model:ir.model.fields,help:low_sold_product_report.field_low_sold_product_report__price_subtotal
+#: model:ir.model.fields,help:low_sold_product_report.field_low_sold_product_report__product_uom_qty
+msgid "Which sales level consider to be low in default units of measure"
+msgstr ""
+"Que nivel de ventas se considera bajo en la unidad de medida por defecto"
+
+#. module: low_sold_product_report
+#: model:ir.model,name:low_sold_product_report.model_low_sold_product_report_wizard
+msgid "Wizard to query low sold products"
+msgstr "Asistente para consultar productos poco vendidos"
+
+#. module: low_sold_product_report
+#: model_terms:ir.ui.view,arch_db:low_sold_product_report.low_sold_product_report_wizard_form
+msgid "or"
+msgstr ""

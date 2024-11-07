@@ -1,0 +1,1 @@
+This module adds a report to query your least sold products, configurable from a wizard.
