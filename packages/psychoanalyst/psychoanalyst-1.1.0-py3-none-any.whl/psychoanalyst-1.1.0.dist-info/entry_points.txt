@@ -1,0 +1,3 @@
+[gui_scripts]
+psychoanalyst=psychoanalyst.__main__:main
+

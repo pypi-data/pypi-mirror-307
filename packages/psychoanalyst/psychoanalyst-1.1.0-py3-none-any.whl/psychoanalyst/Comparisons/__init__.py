@@ -1,0 +1,3 @@
+from psychoanalyst.Comparisons.categoria_interpretativa import CategoriaInterpretativaComparison
+from psychoanalyst.Comparisons.estres import EstresComparison
+from psychoanalyst.Comparisons.ryff import RyffComparison

@@ -1,0 +1,5 @@
+from psychoanalyst.Exams.categoria_interpretativa import CategoriaInterpretativaAnalysis
+from psychoanalyst.Exams.disc import DiscAnalysis
+from psychoanalyst.Exams.estres import EstresAnalysis
+from psychoanalyst.Exams.intereses_aptitude import InteresesAptitudesAnalysis
+from psychoanalyst.Exams.ryff import RyffAnalysis
