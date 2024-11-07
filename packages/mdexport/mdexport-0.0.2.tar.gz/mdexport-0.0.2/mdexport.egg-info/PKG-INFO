@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mdexport
+Version: 0.0.2
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: markdown2
+Requires-Dist: weasyprint
+Requires-Dist: jinja2
+Requires-Dist: python-frontmatter
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
