@@ -1,0 +1,5 @@
+[console_scripts]
+activate-promise = cadnaPromise.install:initCADNA
+promise = cadnaPromise.run:runPromise_custom
+runPromise = cadnaPromise.run:runPromise
+test-promise = cadnaPromise.run:runPromise_custom_test
