@@ -1,0 +1,15 @@
+jupyter_server
+jupyterlab-pygments==0.2.2
+notebook
+boto3
+s3fs>=2021.10.1
+singleton-decorator
+jupyterlab<4.0.0,>=3.1.0
+colorlog
+
+[test]
+coverage
+pytest
+pytest-asyncio
+pytest-cov
+pytest-tornasync
