@@ -1,0 +1,12 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# venv
+.venv
+python_task_fat.wasm
+src/lyric_py_task
