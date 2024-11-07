@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: pyroll-wusatowski-spreading
+Version: 3.0.0
+Summary: Plugin for PyRolL providing spread modelling Wusatowski's spread equation.
+Author-email: Max Weiner <max.weiner@imf.tu-freiberg.de>, Christoph Renzing <christoph.renzing@imf.tu-freiberg.de>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: pyroll-core~=3.0
+Provides-Extra: pillar-model
+Requires-Dist: pyroll-pillar-model~=3.0; extra == 'pillar-model'

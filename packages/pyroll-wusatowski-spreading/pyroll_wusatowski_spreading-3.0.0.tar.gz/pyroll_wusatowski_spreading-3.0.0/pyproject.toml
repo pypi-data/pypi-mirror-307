@@ -1,0 +1,23 @@
+[project]
+name = "pyroll-wusatowski-spreading"
+description = "Plugin for PyRolL providing spread modelling Wusatowski's spread equation."
+authors = [
+    { name = "Max Weiner", email = "max.weiner@imf.tu-freiberg.de" },
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" }
+]
+license = "BSD-3-Clause"
+requires-python = ">=3.9"
+dependencies = [
+    "pyroll-core ~= 3.0",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+pillar-model = [
+    "pyroll-pillar-model ~= 3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
