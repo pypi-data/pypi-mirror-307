@@ -1,0 +1,28 @@
+[project]
+name = "izmiran"
+version = "0.1.1"
+description = "IZMIRAN module for common tasks"
+requires-python = ">= 3.7"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Danil Borchevkin", email = "danil.borchevkin@gmail.com"},
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+]
+
+# pyproject.toml
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "test/unit_py/",
+    "test/integration_py/",
+]
