@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: nproan
+Version: 0.0.4
+Summary: Tools for analysis of data from the DANAE experiment on HEPHY
+Project-URL: Homepage, https://github.com/shakamaran/nproan
+Project-URL: Issues, https://github.com/shakamaran/nproan/issues
+Author-email: Florian Heinrich <florianheinrich@gmx.at>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+TODO:
+- write wiki
+
+new features/bugs/requests:
+https://github.com/shakamaran/nproan/issues
+
+COL vs ROW Convention:
+
+In ROOT its (col, row), but:
+data is represented as (frame,row,nreps,col), so i will use (row, col) here
+
+Steps to upload package:
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
