@@ -1,0 +1,1037 @@
+{
+    "distmat": [
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "lh",
+            "format": "dense",
+            "fname": "space-fsaverage_den-10k_hemi-lh_geodist.txt",
+            "rel_path": "distmat/",
+            "checksum": "3e59671f9bf0d9d24fa6f249b3816bfa",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65668211a7a4834d7f714286"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "rh",
+            "format": "dense",
+            "fname": "space-fsaverage_den-10k_hemi-rh_geodist.txt",
+            "rel_path": "distmat/",
+            "checksum": "",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                ""
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "res": "400",
+            "hemi": "lh",
+            "tags": "schaefer",
+            "format": "parc",
+            "fname": "space-fsaverage_res-400_hemi-lh_parc.txt",
+            "rel_path": "distmat/",
+            "checksum": "c53ba4f45d1ac59d3c867c30b78330ac",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65668164932b9f48ad7607c6"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "res": "400",
+            "hemi": "rh",
+            "tags": "schaefer",
+            "format": "parc",
+            "fname": "space-fsaverage_res-400_hemi-rh_parc.txt",
+            "rel_path": "distmat/",
+            "checksum": "",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                ""
+            ]
+        }
+    ],
+    "eigenmodes": [
+        {
+            "space": "fsaverage",
+            "den": "3k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-3k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b864d"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "3k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-3k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf024"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "3k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-3k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8649"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "3k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-3k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf022"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-10k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b865f"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-10k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf030"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-10k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b865c"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-10k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf02e"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "41k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-41k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8658"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "41k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-41k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf02c"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "41k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-41k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8656"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "41k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-41k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf02a"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-164k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8652"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-164k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf028"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsaverage_den-164k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b864f"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsaverage_den-164k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf026"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "4k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-4k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8646"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "4k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsLR_den-4k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf020"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "4k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-4k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8644"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "4k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsLR_den-4k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf01e"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "8k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-8k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8640"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "8k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsLR_den-8k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf01c"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "8k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-8k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b863d"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "8k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsLR_den-8k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf01a"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-32k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b863a"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsLR_den-32k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf018"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-32k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8638"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsLR_den-32k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf016"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-164k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8635"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-fsLR_den-164k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf014"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-fsLR_den-164k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8631"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-fsLR_den-164k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf012"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "41k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-civet_den-41k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8628"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "41k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-civet_den-41k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf00c"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "41k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-civet_den-41k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b8625"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "41k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-civet_den-41k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf00a"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "emodes",
+            "fname": "space-civet_den-164k_hemi-lh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b862e"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "164k",
+            "hemi": "lh",
+            "format": "evals",
+            "fname": "space-civet_den-164k_hemi-lh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf010"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "emodes",
+            "fname": "space-civet_den-164k_hemi-rh_emodes.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "668ded7cc727f8001c5b862b"
+            ]
+        },
+        {
+            "space": "civet",
+            "den": "164k",
+            "hemi": "rh",
+            "format": "evals",
+            "fname": "space-civet_den-164k_hemi-rh_evals.txt",
+            "rel_path": "eigenmodes/",
+            "checksum": null,
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "googledrive",
+                "6684c5b36f01f301812cf00e"
+            ]
+        }
+    ],
+    "surfaces": [
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "lh",
+            "format": "pial",
+            "fname": "space-fsaverage_den-10k_hemi-lh_pial.surf.gii",
+            "rel_path": "surfaces/",
+            "checksum": "c41d1e7c93c3db81e14c7b17eb58604a",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65668144aa3a762736d6ab2b"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "rh",
+            "format": "pial",
+            "fname": "space-fsaverage_den-10k_hemi-rh_pial.surf.gii",
+            "rel_path": "surfaces/",
+            "checksum": "033a26517a5ee915b15633a88df7fc0e",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65668144932b9f48b2760891"
+            ]
+        },
+        {
+            "space": "native",
+            "fname": "100206_space-native_hemi-lh_pial.surf.gii",
+            "rel_path": "surfaces/",
+            "checksum": "5d4aa3b42ba32ae5cf54fa90fe1db3d0",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c28879d4282a903e8365"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "lh",
+            "format": "pial",
+            "fname": "space-fsLR_den-32k_hemi-lh_pial.surf.gii",
+            "rel_path": "surfaces/",
+            "checksum": "5d4aa3b42ba32ae5cf54fa90fe1db3d0",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c28879d4282a903e8365"
+            ]
+        },
+        {
+            "space": "fsLR",
+            "den": "32k",
+            "hemi": "rh",
+            "format": "pial",
+            "fname": "space-fsLR_den-32k_hemi-rh_pial.surf.gii",
+            "rel_path": "surfaces/",
+            "checksum": "5e9e380eb84e1cd45832743e2ef8d50b",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65692b63a0121a0190317a60"
+            ]
+        }
+    ],
+    "brainmaps": [
+        {
+            "space": "native",
+            "hemi": "lh",
+            "fname": "100206_space-native_hemi-lh_corrThickness.shape.gii",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "thalamus",
+            "fname": "space-MNI152_res-2mm_hemi-lh_thalamus.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "thalamus",
+            "fname": "space-MNI152_res-2mm_hemi-rh_thalamus.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "hippocampus",
+            "fname": "space-MNI152_res-2mm_hemi-lh_hippocampus.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "hippocampus",
+            "fname": "space-MNI152_res-2mm_hemi-rh_hippocampus.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "striatum",
+            "fname": "space-MNI152_res-2mm_hemi-lh_striatum.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "striatum",
+            "fname": "space-MNI152_res-2mm_hemi-rh_striatum.nii.gz",
+            "rel_path": "brainmaps/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        }
+    ],
+    "masks": [
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "thalamus",
+            "fname": "space-MNI152_res-2mm_hemi-lh_thalamus.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "thalamus",
+            "fname": "space-MNI152_res-2mm_hemi-rh_thalamus.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "hippocampus",
+            "fname": "space-MNI152_res-2mm_hemi-lh_hippocampus.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "hippocampus",
+            "fname": "space-MNI152_res-2mm_hemi-rh_hippocampus.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "lh",
+            "format": "striatum",
+            "fname": "space-MNI152_res-2mm_hemi-lh_striatum.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        },
+        {
+            "space": "MNI152",
+            "res": "2mm",
+            "hemi": "rh",
+            "format": "striatum",
+            "fname": "space-MNI152_res-2mm_hemi-rh_striatum.nii.gz",
+            "rel_path": "masks/",
+            "checksum": "8cbd7736e82f70ab450720ff541afc02",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "6566c25caa3a7627e8d6aabb"
+            ]
+        }   
+    
+    ],
+    "mediallabel": [
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "lh",
+            "fname": "space-fsaverage_den-10k_hemi-lh.txt",
+            "rel_path": "mediallabel/",
+            "checksum": "fcd7de42d1a19d82f591b9935cac42fb",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65e92b1385203706eb8802c3"
+            ]
+        },
+        {
+            "space": "fsaverage",
+            "den": "10k",
+            "hemi": "rh",
+            "fname": "space-fsaverage_den-10k_hemi-rh.txt",
+            "rel_path": "mediallabel/",
+            "checksum": "04189b7cc4459f1fe23c551ac5092409",
+            "title": null,
+            "redir": null,
+            "url": [
+                "mabr9",
+                "osfstorage",
+                "65e92b13e5e51c06dfbc54c7"
+            ]
+        }
+    
+    
+    
+    ]
+}
