@@ -1,0 +1,20 @@
+[console_scripts]
+gars2geojson = vgrid.geocode.geocode2geojson:gars2geojson_cli
+geohash2geojson = vgrid.geocode.geocode2geojson:geohash2geojson_cli
+geohashgrid = vgrid.grid.geohashgrid:main
+georef2geojson = vgrid.geocode.geocode2geojson:georef2geojson_cli
+gzd = vgrid.grid.gzd:main
+h32geojson = vgrid.geocode.geocode2geojson:h32geojson_cli
+h3grid = vgrid.grid.h3grid:main
+maidenhead2geojson = vgrid.geocode.geocode2geojson:maidenhead2geojson_cli
+maidenheadgrid = vgrid.grid.maidenheadgrid:main
+mgrs2geojson = vgrid.geocode.geocode2geojson:mgrs2geojson_cli
+mgrsgrid = vgrid.grid.mgrsgrid:main
+olc2geojson = vgrid.geocode.geocode2geojson:olc2geojson_cli
+olcgrid = vgrid.grid.olcgrid:main
+s22geojson = vgrid.geocode.geocode2geojson:s22geojson_cli
+s2grid = vgrid.grid.s2grid:main
+vcode2geojson = vgrid.geocode.vcode:vcode2geojson_cli
+vdecode = vgrid.geocode.vcode:vdecode_cli
+vencode = vgrid.geocode.vcode:vencode_cli
+vgrid = vgrid.grid.vgrid:main
