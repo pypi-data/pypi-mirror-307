@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: odoo11-addons-sygel-technology-sy-server-backend
+Version: 11.0.20241105.0
+Summary: Meta package for sygel-technology-sy-server-backend Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 11.0
+Requires-Dist: odoo11-addon-add-external-id
+
+UNKNOWN
