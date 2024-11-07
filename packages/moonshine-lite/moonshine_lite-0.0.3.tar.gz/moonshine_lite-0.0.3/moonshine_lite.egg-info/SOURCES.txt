@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+moonshine_lite/__init__.py
+moonshine_lite/cli.py
+moonshine_lite/moonshine.py
+moonshine_lite.egg-info/PKG-INFO
+moonshine_lite.egg-info/SOURCES.txt
+moonshine_lite.egg-info/dependency_links.txt
+moonshine_lite.egg-info/entry_points.txt
+moonshine_lite.egg-info/requires.txt
+moonshine_lite.egg-info/top_level.txt
+moonshine_lite/data/__init__.py
+moonshine_lite/data/tokenizer.json
+tests/test_cli.py
+tests/test_moonshine.py

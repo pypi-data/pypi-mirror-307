@@ -1,0 +1,2 @@
+[console_scripts]
+moonshine = moonshine_lite.cli:main
