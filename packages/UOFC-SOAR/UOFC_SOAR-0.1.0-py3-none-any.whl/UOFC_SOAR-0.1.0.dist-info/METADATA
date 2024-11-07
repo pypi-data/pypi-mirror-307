@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: UOFC-SOAR
+Version: 0.1.0
+Summary: A simulation package for aerospace research
+Home-page: https://github.com/aneeshox/SOAR
+Author: Aneeshox
+Author-email: aneesh@aneesh.ca
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.16.3
+Requires-Dist: matplotlib ==3.2.2
+Requires-Dist: scipy >=1.3.0
+Requires-Dist: pandas >=1.0.3
+Requires-Dist: pyserial >=3.4
+Requires-Dist: tqdm >=4.0
+Requires-Dist: cython
+Requires-Dist: pyswarms
+Requires-Dist: pyyaml
+Requires-Dist: CoolProp
+Requires-Dist: requests
+Requires-Dist: PySimpleGUI
+Requires-Dist: MAPLEAF
+Provides-Extra: dev
+Requires-Dist: snakeviz >=2.1.0 ; extra == 'dev'
+Requires-Dist: coverage >=5.0 ; extra == 'dev'
+Requires-Dist: pylint >=2.5 ; extra == 'dev'
+Requires-Dist: pdoc3 ; extra == 'dev'
+Requires-Dist: pyinstrument ; extra == 'dev'
+Requires-Dist: asv ; extra == 'dev'
+Requires-Dist: ray ; extra == 'dev'
+Requires-Dist: PyQt5 ; extra == 'dev'
+Requires-Dist: mayavi ==4.7.4 ; extra == 'dev'
+Requires-Dist: traits ; extra == 'dev'
+Requires-Dist: traitsui ; extra == 'dev'
+
+# SOAR
+
+**SOAR** is a testing package designed for aerospace research simulations. This is currently a test version to verify the setup, dependencies, and installation process.
+
+## Project Description
+
+This package includes core functionalities for scientific computations and visualization used in aerospace research, leveraging libraries like `MAPLEAF`, `CoolProp`, `pyswarms`, and more. The `src` layout is used to organize code and dependencies effectively.
+
+## Installation
+
+To install the SOAR package and its dependencies, run the following command:
+
+```bash
+pip install .
+```
