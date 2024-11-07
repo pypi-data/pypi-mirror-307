@@ -1,0 +1,11 @@
+[console_scripts]
+annotaTR=trtools.annotaTR:run
+associaTR=trtools.associaTR:run
+compareSTR=trtools.compareSTR:run
+dumpSTR=trtools.dumpSTR:run
+mergeSTR=trtools.mergeSTR:run
+prancSTR=trtools.prancSTR:run
+qcSTR=trtools.qcSTR:run
+simTR=trtools.simTR:run
+statSTR=trtools.statSTR:run
+
