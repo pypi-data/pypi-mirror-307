@@ -1,0 +1,8 @@
+cysignals>=1.10.2
+passagemath-categories~=10.4.47.0
+passagemath-cddlib~=10.4.47.0
+
+[test]
+passagemath-polyhedra~=10.4.47.0
+passagemath-linbox~=10.4.47.0
+passagemath-repl~=10.4.47.0
