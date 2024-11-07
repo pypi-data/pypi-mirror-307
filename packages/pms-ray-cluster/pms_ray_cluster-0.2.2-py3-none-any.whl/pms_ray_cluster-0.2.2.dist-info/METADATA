@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pms-ray-cluster
+Version: 0.2.2
+Summary: repos for pms ray cluster
+Author: HyeongSeok Kim
+Author-email: tiryul@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: boto3 (>=1.34.133,<2.0.0)
+Requires-Dist: loguru
+Requires-Dist: ray[serve] (==2.24)
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# pms-ray-cluster
+repos for pms-ray-cluster
+
