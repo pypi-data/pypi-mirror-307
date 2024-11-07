@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: commonutil-email-messenger
+Version: 0.0.2
+Summary: Routines to support sending email messages
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# commonutil-email-messenger
+
+Routines to support sending email messages.
