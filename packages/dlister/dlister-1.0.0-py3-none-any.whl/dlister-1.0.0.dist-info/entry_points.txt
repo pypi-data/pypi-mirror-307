@@ -1,0 +1,2 @@
+[console_scripts]
+dlister = dlister.dlister:main_cli
