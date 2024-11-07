@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Inter|Space+Grotesk');
+
+html {
+  --pst-font-family-base-system: "Inter";
+  --pst-font-family-heading: "Space Grotesk";
+  --ctao-galaxy-blue: rgb(0, 0, 74);
+  --ctao-cherenkov-blue: rgb(0, 228, 216);
+  --ctao-moon-gray: rgb(245, 245, 245);
+  --ctao-cosmic-azure: rgb(0, 122, 255);
+  --ctao-interstellar-indigo: rgb(0, 0, 156);
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: var(--ctao-cosmic-azure);
+  --pst-color-secondary: var(--ctao-cherenkov-blue);
+  --pst-color-accent: var(--ctao-interstellar-indigo);
+  --pst-color-inline-code: var(--ctao-interstellar-indigo);
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: var(--ctao-cherenkov-blue);
+  --pst-color-background: var(--ctao-galaxy-blue);
+  --pst-color-secondary: var(--ctao-cosmic-azure);
+  --pst-color-accent: var(--ctao-moon-gray);
+  --pst-color-inline-code: var(--ctao-moon-gray);
+}
