@@ -1,0 +1,5 @@
+grpcio-tools==1.62.3
+betterproto==2.0.0b7
+
+[dev]
+betterproto[compiler]==2.0.0b7
