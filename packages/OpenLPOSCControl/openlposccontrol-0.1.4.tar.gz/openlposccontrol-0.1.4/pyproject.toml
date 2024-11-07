@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >= 3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+version = "0.1.4"
+name = "OpenLPOSCControl"
+authors = [{name = "Frederick Price", email = "fprice@pricemail.ca"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: System :: Networking"
+]
+dynamic = ["description"]
+requires-python = "~=3.8"
+dependencies = [ "python-osc", "requests", "typing"]
+
+[project.urls]
+Home = "https://github.com/rickprice/openlp-OSC-control"
+Issues = "https://github.com/rickprice/openlp-OSC-control/issues"
+
+[project.scripts]
+openLPOSCControl = "OpenLPOSCControl.openLPOSCControl:main"
+
+[tool.flit.sdist]
+exclude = [".gitignore"]
