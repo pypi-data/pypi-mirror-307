@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xrdpattern
+Version: 0.8.1
+Summary: Python library for XrdPatterns including file import, file export and postprocessing functionalities
+Home-page: https://github.com/aimat-lab/xrdpattern
+Author: Daniel Hollarek
+Author-email: daniel.hollarek@googlemail.com
+License: LGPL2.1
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+Python library for XrdPatterns including import from data files, export as json file and postprocessing functionalities. The data file import functionalities are built on C++ library xylib so beyond a standard python install, this library also requires: 
+- A C++ compiler and standard library 
+- A C++ to python bridge (Swig)
+
