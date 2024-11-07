@@ -1,0 +1,2 @@
+# __init__.py
+from KS903_Ntural_Voice_bata_005.ks_903_Ntural_voice_sei_vbeta05.voic_nturl_intnatins_Base_aiks_903_5 import KS903NaturalIntonationAIVoice_Bate_vr_5

@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: KS903NaturalIntonationAIVoice-Bate-vr-5
+Version: 5.0.1
+Summary: say's speech NaturalIntonation AI_Sample_Bates_Voice_Base_library for KS903:AI_Sample_Bates_Voice_Base__Versions_5.0.1__
+Home-page: https://github.com/NPO_KS903_KATUYOSHI/say's_speech_NaturalIntonation_AI_Sample_Bates_Voice_Base_library_for_KS903:AI_Sample_Bates_Voice_Base__Versions_5.0.1__
+Author: NPO_KS_903.lnc(President: Takeshi Kumura, Director: Takuma Ozawa)
+Author-email: xksxkatuyoshi0009@gmail.com
+License: MIT
+Keywords: say's speech NaturalIntonation AI Sample Bates Voice_Base_library for KS903
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyttsx3
+
+# README.md
+
+# KS903NaturalIntonationAIVoice_Bate_vr_5(テスト及びベータ版です)
+
+## 概要
+
+KS903NaturalIntonationAIVoice_Bate_vr_5 は、自然なイントネーションでテキストを音声化するための音声合成AIライブラリです。このライブラリは、日本語と英語のテキストを音声合成し、それに合わせてテキストを表示する機能を提供します。以下に、主な機能と構成要素について説明します。
+
+今後の趣旨の本作[KS903NaturalIntonationAIVoice]シリーズのサンプルテスト版です。
+
+主な機能
+音声合成:
+
+指定された言語（日本語または英語）でテキストを音声化します。
+使用する音声は、システムにインストールされている音声エンジンの中から自動的に選択されます。
+テキストの逐次表示:
+
+音声合成に合わせて、テキストを一文字ずつ表示します。
+各文字の表示速度は、音声再生時間に基づいて計算されます。
+言語処理:
+
+テキストを「、」や「。」で分割し、それぞれの部分を言語に応じて音声合成します。
+分割された部分が日本語または英語であることを認識し、適切な音声合成を行います。
+ファイルからのテキスト読み込み:
+
+コマンドライン引数から指定されたテキストファイルを読み込み、その内容を処理します。
+クラスの構成
+1. __init__メソッド
+pyttsx3ライブラリを用いて音声エンジンを初期化し、使用可能な音声のリストを取得します。
+2. speech_textメソッド
+与えられたテキストを指定された言語で音声合成し、音声再生の開始および終了時間を記録します。
+3. print_textメソッド
+テキストを一文字ずつ表示するためのメソッドです。音声合成の再生時間に基づいて、各文字の表示間隔を計算します。
+4. process_textメソッド
+テキストを言語に応じて処理し、音声合成とテキスト表示をスレッドで実行します。テキストを分割し、言語を判断して音声合成を行います。
+5. ks903_aivoice_vr1_Beta_Sample_test_runメソッド
+コマンドラインから指定されたテキストファイルを読み込み、行ごとにprocess_textメソッドを呼び出して音声合成と表示を行います。
+6. メインブロック
+スクリプトが直接実行された場合に、KS903NaturalIntonationAIVoice_Bate_vr_5クラスのインスタンスを作成し、ファイルパスを引数にしてメソッドを呼び出します。
+インストール方法
+このライブラリはpipを使用してインストールできます。依存関係としてpyttsx3が必要です。これにより、音声合成機能が実装されています。
+
+使用方法？使い方の例として！
+コマンドラインで以下のように実行します。
+このライブラリは、`pip` を使用してインストールできます。
+
+pip install KS903NaturalIntonationAIVoice_Bate_vr_5
+
+とする。
+
+bash
+コードをコピーする
+python script.py <テキストファイルパス>＝文字で直接入力することです。
+
+pythonファイル単一で書く場合は以下の通りです。
+
+# v_bate_test01.py
+
+from KS903_Natural_Voice_bata_005 import KS903NaturalIntonationAIVoice_Bate_vr_5
+
+
+
+# クラスのインスタンスを生成
+instance = KS903NaturalIntonationAIVoice_Bate_vr_5()
+
+# run() メソッドを明示的に呼び出す
+instance.ks903_aivoice_vr5_Beta_Sample_test_run()
+
+
+これにより、指定されたテキストファイルの内容が音声で再生され、その内容がコンソールに逐次表示されます。
+
+このライブラリは、音声合成とテキスト表示を組み合わせたインタラクティブな体験を提供し、教育や情報提示のための強力なツールとなることを趣旨としています。
+
+実験段階ですので未完成部分多いですがご了承ください。
+
+追加性能状況報告として（2023/11/1/2:14）完成時点にて
+本ライブラリーはKS903NaturalIntonationAIVoice_Bate_vr_1比べ格段に認識が早くなったがあり違う性質があります。
+
+以上これでご説明を終了とします。
+
+Creator/Inventor: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Developer: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Designer/Architect: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+Founder: NPO_KS_903.lnc (President: Takeshi Kumura, Director: Takuma Ozawa)
+
+
