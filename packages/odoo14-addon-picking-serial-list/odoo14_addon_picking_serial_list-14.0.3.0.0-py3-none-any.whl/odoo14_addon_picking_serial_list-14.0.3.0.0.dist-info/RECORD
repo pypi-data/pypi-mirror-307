@@ -1,0 +1,15 @@
+odoo/addons/picking_serial_list/README.rst,sha256=PEjD5DiBQEiNXCialSvnO1fmxfdyIOYAimRSmbgfHnE,2031
+odoo/addons/picking_serial_list/__init__.py,sha256=5hkCdGjo04vmZlLxpUKJpIvBYnWEsPz_JgKVdaKRzTg,145
+odoo/addons/picking_serial_list/__manifest__.py,sha256=B2fusGB0q8cAwOi1-MMz6aD6NxplvFI8Vnr8LGmDD8g,498
+odoo/addons/picking_serial_list/i18n/es.po,sha256=8UaBun8sRLwQmB9Lg8M9dfd61ZN-dqpClJbHf-SmbO0,3566
+odoo/addons/picking_serial_list/models/__init__.py,sha256=jugAQYq7zdPLckhu-IFgS01DGmH4h3HuTxFp1WcKeVk,240
+odoo/addons/picking_serial_list/models/stock_move.py,sha256=Ia0D2YuTsZM0QQYxZPjMMfHcaLrNeFj28Qz_K7dRbGs,7524
+odoo/addons/picking_serial_list/models/stock_move_line.py,sha256=Emo75bkK9vWFcA9VbK401Pfdq8FQjwLMK-5HK0cYuc4,805
+odoo/addons/picking_serial_list/models/stock_picking.py,sha256=iWLaPvDNd4og3oXQLtrUfzIhg_Stkx71_bmITddo53A,2478
+odoo/addons/picking_serial_list/models/stock_picking_type.py,sha256=bFW28ZakXOLwaPt6jRK27wIcEpE2rlqnJwQTNDNw17Y,1263
+odoo/addons/picking_serial_list/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/picking_serial_list/views/stock_picking_views.xml,sha256=w9RzcJpG2A9Btqd8tJ7bfRGSsOX0sPXlVmIN2jr7v_k,2031
+odoo14_addon_picking_serial_list-14.0.3.0.0.dist-info/METADATA,sha256=C1MunJHNO4YD-8PJXUehlMoLyDvHmw6H_JtYr__Nvkc,2531
+odoo14_addon_picking_serial_list-14.0.3.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+odoo14_addon_picking_serial_list-14.0.3.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_picking_serial_list-14.0.3.0.0.dist-info/RECORD,,
