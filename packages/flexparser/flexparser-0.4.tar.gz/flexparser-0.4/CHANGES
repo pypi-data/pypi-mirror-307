@@ -1,0 +1,43 @@
+flexparser Changelog
+====================
+
+0.4 (2024-11-06)
+----------------
+
+- Exceptions are not longer dataclasses.
+
+
+0.3.1 (2024-06-05)
+------------------
+
+- Fix flexparser FIPS mode.
+
+
+0.3 (2024-03-08)
+----------------
+
+- export multiple symbols.
+- improve typing support.
+
+
+0.2.1 (2024-03-08)
+-----------------
+
+- fix when FIPS mode enabled.
+  (Issue #7, thanks MattTheCuber)
+
+
+0.2 (2023-11-26)
+----------------
+
+- UnexpectedEOF has been renamed UnexpectedEOS.
+- Typing related improvements
+- flexparser now requires Python 3.9+
+- Dropped class variables for types in favour of introspecting the
+  generic hierarchy.
+
+
+0.1 (2022-06-04)
+----------------
+
+- first public release.
