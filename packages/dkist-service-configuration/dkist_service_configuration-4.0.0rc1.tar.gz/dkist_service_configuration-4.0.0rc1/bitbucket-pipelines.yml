@@ -1,0 +1,69 @@
+image: python:3.11
+
+definitions:
+  steps:
+    - step: &lint
+        caches:
+          - pip
+        name: Lint
+        script:
+          - pip install pre-commit
+          - pre-commit install
+          - pre-commit run --all-files
+    - step: &test-311
+        caches:
+          - pip
+        name: Test Python 3.11
+        script:
+          - pip install -U pip
+          - pip install tox
+          - tox -e py311
+    - step: &test311-min
+        image: python:3.11
+        caches:
+          - pip
+        name: Test Python 3.11 - Minimum
+        script:
+          - pip install -U pip
+          - pip install tox
+          - tox run -e py311-min
+    - step: &scan
+        caches:
+          - pip
+        name: Scan
+        script:
+          - pip install .
+          - pip freeze | grep -v @ > requirements.txt
+          - cat requirements.txt
+          - echo $SNYK_VERSION
+          - curl -L -o snyk https://github.com/snyk/snyk/releases/download/$SNYK_VERSION/snyk-linux
+          - chmod 755 snyk
+          - ./snyk -d auth $SNYK_TOKEN
+          - echo $SNYK_CLI_COMMAND
+          - $SNYK_CLI_COMMAND
+    - step: &publish
+        caches:
+          - pip
+        name: Publish
+        script:
+          - pip install -U pip
+          - pip install twine build
+          - python -m build --outdir wheelhouse .
+          - python -m twine upload --skip-existing wheelhouse/*
+
+
+pipelines:
+  default:
+    - step: *lint
+    - parallel:
+      - step: *test-311
+      - step: *test311-min
+    - step: *scan
+  tags:
+    'v*':
+      - parallel:
+          - step: *lint
+          - step: *test-311
+          - step: *test311-min
+          - step: *scan
+      - step: *publish
