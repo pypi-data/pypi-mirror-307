@@ -1,0 +1,128 @@
+[tool.poetry]
+name = "pepperpy"
+description = "A modern Python utility library"
+authors = ["Felipe Pimentel <fpimentel88@gmail.com>"]
+readme = "README.md"
+version = "1.2.5"
+repository = "https://github.com/felipepimentel/pepperpy"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+pyyaml = "^6.0"
+SQLAlchemy = {extras = ["asyncio"], version = "^2.0.36"}
+greenlet = { version = "^3.1.1", optional = true }
+asyncpg = { version = "^0.30.0", optional = true }
+psycopg = { version = "^3.2.3", optional = true }
+alembic = { version = "^1.14.0", optional = true }
+pymysql = { version = "^1.1.0", optional = true }
+aiomysql = { version = "^0.2.0", optional = true }
+aiosqlite = { version = "0.20.0", optional = true }
+duckdb = { version = "1.1.3", optional = true }
+redis = { version = "^5.0.1", optional = true }
+msgpack = { version = "^1.0.7", optional = true }
+prometheus-client = { version = "0.21.0", optional = true }
+opentelemetry-api = { version = "^1.28.0", optional = true }
+opentelemetry-sdk = { version = "^1.28.0", optional = true }
+opentelemetry-instrumentation-sqlalchemy = { version = "^0.49b0", optional = true }
+numpy = { version = "^2.1.3", optional = true }
+tokenizers = { version = "^0.20.1", optional = true }
+torch = { version = "^2.0.0", optional = true }
+sentence-transformers = { version = "3.2.1", optional = true }
+scikit-learn = { version = "^1.3.0", optional = true }
+wandb = { version = "0.18.5", optional = true }
+faiss-cpu = { version = "^1.7.4", optional = true }
+qdrant-client = { version = "^1.1.0", optional = true }
+plotext = { version = "^5.2.8", optional = true }
+typer = { version = "^0.12.5", optional = true }
+rich = { version = "^13.9.3", optional = true }
+textual = { version = "^0.85.2", optional = true }
+questionary = { version = "^2.0.0", optional = true }
+sqlalchemy-stubs = { version = "^0.4", optional = true }
+types-redis = { version = "^4.6.0.20240311", optional = true }
+bitsandbytes = { version = "0.44.1", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+black = "^24.10.0"
+ruff = "^0.7.2"
+mypy = "^1.13.0"
+python-semantic-release = "^9.12.1"
+
+[tool.poetry.extras]
+postgresql = ["SQLAlchemy", "greenlet", "asyncpg", "psycopg", "alembic", "sqlalchemy-stubs"]
+sqlite = ["SQLAlchemy", "greenlet", "aiosqlite", "alembic", "sqlalchemy-stubs"]
+duckdb = ["duckdb"]
+redis_cache = ["redis", "msgpack", "types-redis"]
+monitoring = ["prometheus-client", "opentelemetry-api", "opentelemetry-sdk", "opentelemetry-instrumentation-sqlalchemy"]
+ai = ["numpy", "tokenizers", "torch", "sentence-transformers", "scikit-learn", "wandb", "faiss-cpu", "qdrant-client", "bitsandbytes"]
+ui = ["plotext", "typer", "rich", "textual", "questionary"]
+
+all = [
+    "SQLAlchemy", "greenlet", "asyncpg", "psycopg", "alembic", "sqlalchemy-stubs", "aiosqlite", "duckdb",
+    "redis", "msgpack", "types-redis", "prometheus-client", "opentelemetry-api", "opentelemetry-sdk",
+    "opentelemetry-instrumentation-sqlalchemy", "numpy", "tokenizers", "torch", "sentence-transformers",
+    "scikit-learn", "wandb", "faiss-cpu", "qdrant-client", "plotext", "typer", "rich", "textual",
+    "questionary", "bitsandbytes"
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E", "F", "B", "I", "N",
+    "ANN",
+]
+ignore = [
+    "E501",
+    "N812",
+    "B006",
+    "ANN101",
+    "ANN102",
+    "ANN401",
+    "ANN204",
+    "ANN003",
+    "ANN001",
+    "ANN202",
+    "ANN205",
+    "ANN002"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"pepperpy/ai/optimization/*.py" = ["N803"]
+"tests/*" = ["ANN"]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_default_fixture_loop_scope = "function"
+addopts = "--cov=pepperpy --cov-report=term-missing"
+
+[tool.semantic_release]
+version_variable = [
+    "pepperpy/__init__.py:__version__",
+    "pyproject.toml:tool.poetry.version"
+]
+branch = "main"
+upload_to_pypi = true
+build_command = "poetry build"
