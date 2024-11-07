@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Project      : AI.  @by PyCharm
+# @File         : openai_siliconflow
+# @Time         : 2024/6/26 10:42
+# @Author       : betterme
+# @WeChat       : meutils
+# @Software     : PyCharm
+# @Description  :
+import os
+
+from meutils.pipe import *
+from openai import OpenAI
+
+client = OpenAI(
+    api_key='sk-'
+
+    # api_key=os.getenv("SILICONFLOW_API_KEY"),
+    # # api_key="sk-gcxjtocodgggxwnhqqsaqznpkpxndktwlgmgkmzljyajjsfp",
+    # base_url="https://api.siliconflow.cn/v1",
+)
+
+model = "BAAI/bge-large-zh-v1.5"
+model = "bge-large-zh-v1.5"
+#
+# model = "BAAI/bge-m3"
+
+with timer("bs1"):
+    response = client.embeddings.create(
+        input=["查"*100] * 1,
+        model=model
+    )
