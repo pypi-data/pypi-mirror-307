@@ -1,0 +1,48 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from __future__ import annotations
+
+from typing_extensions import TypedDict, Annotated, Literal
+
+from typing import Union, Optional, List
+
+from datetime import datetime
+
+from .._utils import PropertyInfo
+
+from typing import List, Union, Dict, Optional
+from typing_extensions import Literal, TypedDict, Required, Annotated
+from .._types import FileTypes
+from .._utils import PropertyInfo
+
+__all__ = ["SubscriptionListParams"]
+
+
+class SubscriptionListParams(TypedDict, total=False):
+    created_at_gt: Annotated[Union[str, datetime, None], PropertyInfo(alias="created_at[gt]", format="iso8601")]
+
+    created_at_gte: Annotated[Union[str, datetime, None], PropertyInfo(alias="created_at[gte]", format="iso8601")]
+
+    created_at_lt: Annotated[Union[str, datetime, None], PropertyInfo(alias="created_at[lt]", format="iso8601")]
+
+    created_at_lte: Annotated[Union[str, datetime, None], PropertyInfo(alias="created_at[lte]", format="iso8601")]
+
+    cursor: Optional[str]
+    """Cursor for pagination.
+
+    This can be populated by the `next_cursor` value returned from the initial
+    request.
+    """
+
+    query_customer_id: Annotated[Optional[str], PropertyInfo(alias="customer_id")]
+
+    query_customer_id: Annotated[Optional[List[str]], PropertyInfo(alias="customer_id")]
+
+    query_external_customer_id: Annotated[Optional[str], PropertyInfo(alias="external_customer_id")]
+
+    query_external_customer_id: Annotated[Optional[List[str]], PropertyInfo(alias="external_customer_id")]
+
+    limit: int
+    """The number of items to fetch. Defaults to 20."""
+
+    status: Optional[Literal["active", "ended", "upcoming"]]
