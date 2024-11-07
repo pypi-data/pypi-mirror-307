@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-sygel-technology-sy-stock-logistics-workflow
+Version: 14.0.20241105.0
+Summary: Meta package for sygel-technology-sy-stock-logistics-workflow Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-picking-serial-list
+Requires-Dist: odoo14-addon-picking-very-high-priority
+Requires-Dist: odoo14-addon-stock-manual-shipping-weight
+
+UNKNOWN
