@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_base_wizard_test_response" model="ir.ui.view">
+        <field name="name">message_connector_base_wizard_test_response</field>
+        <field name="model">wizard.test.response</field>
+        <field name="arch" type="xml">
+            <form string="Test Connection">
+                <field name="message" />
+                <footer>
+                    <button special="cancel" class="btn-primary" string="Accept" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

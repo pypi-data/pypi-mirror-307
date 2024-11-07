@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_base_view_server_action_form" model="ir.ui.view">
+        <field name="name">message.connector.base.view.server.action.form</field>
+        <field name="model">ir.actions.server</field>
+        <field name="inherit_id" ref="base.view_server_action_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='model_id']" position='before'>
+                <field name="message_template_id" invisible="1" />
+            </xpath>
+            <xpath expr="//field[@name='name']" position='attributes'>
+                <attribute
+                    name="attrs"
+                >{'readonly': [('message_template_id', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='model_id']" position='attributes'>
+                <attribute
+                    name="attrs"
+                >{'readonly': [('message_template_id', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state']" position='attributes'>
+                <attribute
+                    name="attrs"
+                >{'readonly': [('message_template_id', '!=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='code']" position='attributes'>
+                <attribute
+                    name="attrs"
+                >{'readonly': [('message_template_id', '!=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

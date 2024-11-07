@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+   <record model="ir.actions.server" id="action_resend_message">
+       <field name="name">Resend Failed Messages</field>
+       <field
+            name="model_id"
+            ref="message_connector_base.model_message_connector_connection"
+        />
+       <field
+            name="binding_model_id"
+            ref="message_connector_base.model_message_connector_connection"
+        />
+       <field name="binding_view_types">list</field>
+       <field name="state">code</field>
+       <field name="code">
+           action = records.action_resend_messages()
+       </field>
+   </record>
+</odoo>

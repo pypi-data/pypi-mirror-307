@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="message_connector_base_res_config_settings_view_form"
+        model="ir.ui.view"
+    >
+        <field name="name">message.connector.base.res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="15" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field
+            name="groups_id"
+            eval="[(6, 0, [ref ('message_connector_base.group_message_connector_manager')])]"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div
+                    class="app_settings_block"
+                    data-string="Message Connector"
+                    data-key="message_connector_base"
+                >
+                    <h2>Message Connector</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        id="message_connector_base_general_settings"
+                    >
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="message_connector_active"
+                                    widget="boolean_toggle"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="message_connector_active" />
+                                <div class="text-muted">
+                                    Enable/Disable Messages Connector.<br />
+                                    If you disable it, all messages will go to draft status. And you will not be able to send any messages to the any chat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span
+                                    class="o_form_label"
+                                >General Frequency of Log Message Deletion (days)</span>
+                                <div class="text-muted">
+                                    <field
+                                        name="log_msg_deletion_freq"
+                                        class="text-left oe_inline"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record
+        id="action_message_connector_base_general_config"
+        model="ir.actions.act_window"
+    >
+        <field name="name">Message Connector Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field
+            name="groups_id"
+            eval="[(4, ref('message_connector_base.group_message_connector_manager'))]"
+        />
+        <field name="context">{'module' : 'message_connector_base'}</field>
+    </record>
+
+    <menuitem
+        id="message_connector_base_config_menu"
+        parent="message_connector_base.message_connector_base_root_menu"
+        name="Configuration"
+        action="message_connector_base.action_message_connector_base_general_config"
+        groups="message_connector_base.group_message_connector_manager"
+        sequence="10"
+    />
+</odoo>

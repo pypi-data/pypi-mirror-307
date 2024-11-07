@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_base_channel_tree" model="ir.ui.view">
+        <field name="name">message.connector.base.channel.tree</field>
+        <field name="model">message.connector.channel</field>
+        <field name="arch" type="xml">
+            <tree string="Channels">
+                <field name="name" />
+                <field name="messaging_service" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="message_connector_base_channel_form" model="ir.ui.view">
+        <field name="name">message.connector.base.channel.form</field>
+        <field name="model">message.connector.channel</field>
+        <field name="arch" type="xml">
+            <form string="Channel">
+                <header>
+                    <field name="message_connector_active" invisible="1" />
+                    <button
+                        name="action_draft"
+                        type="object"
+                        string="Return to Draft"
+                        class="oe_highlight"
+                        attrs="{'invisible': ['|', ('state', '=', 'draft'), ('message_connector_active', '=', False)]}"
+                    />
+                    <button
+                        name="action_validate"
+                        type="object"
+                        string="Validate"
+                        class="oe_highlight"
+                        attrs="{'invisible': [('state', 'in', ['validated', 'canceled'])]}"
+                    />
+                    <button
+                        name="action_cancel"
+                        type="object"
+                        string="Cancel"
+                        attrs="{'invisible': ['|', ('state', '=', 'canceled'), ('message_connector_active', '=', False)]}"
+                        confirm="This action will cancel all messages in the channel and delete the automatic action of each message in the channel. Are you sure you want to cancel the channel?"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,validated"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field
+                                name="messaging_service"
+                                attrs="{'readonly': [('message_template_ids','!=', [])]}"
+                            />
+                        </group>
+                        <group>
+                            <field name="description" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Channel Messages" name="messages">
+                            <field
+                                name="message_template_ids"
+                                widget="one2many"
+                                readonly="1"
+                            >
+                                <tree string="Messages">
+                                    <field name="name" />
+                                    <field name="model_id" />
+                                    <field name="state" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="message_connector_base_channel_filter" model="ir.ui.view">
+        <field name="name">message.connector.base.channel.filter</field>
+        <field name="model">message.connector.channel</field>
+        <field name="arch" type="xml">
+            <search string="Search Message Channels">
+                <filter
+                    string="Draft"
+                    name="channel_draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    string="Active"
+                    name="channel_active"
+                    domain="[('state', '=', 'validated')]"
+                />
+                <filter
+                    string="Canceled"
+                    name="channel_canceled"
+                    domain="[('state', '=', 'canceled')]"
+                />
+                <separator name="messaging_service_separator" />
+                <group expand="0" string="Group By">
+                    <filter
+                        string="Messaging Service"
+                        name="messaging_service"
+                        domain="[]"
+                        context="{'group_by': 'messaging_service'}"
+                    />
+                    <filter
+                        string="State"
+                        name="state"
+                        domain="[]"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record id="message_connector_base_channel_kanban" model="ir.ui.view">
+        <field name="name">message.connector.base.channel.kanban</field>
+        <field name="model">message.connector.channel</field>
+        <field name="arch" type="xml">
+            <kanban
+                default_group_by="state"
+                class="o_res_partner_kanban"
+                quick_create="false"
+                group_create="false"
+            >
+                <field name="id" />
+                <field name="name" />
+                <field name="messaging_service" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image" id="messaging_service_logo">
+                            </div>
+                            <div class="oe_kanban_details" id='details'>
+                                <strong class="o_kanban_record_title" id="channel_name">
+                                    <field name="name" />
+                                </strong>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_message_connector_base_channel">
+        <field name="name">Channels</field>
+        <field name="res_model">message.connector.channel</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="usage">menu</field>
+        <field name="view_id" ref="message_connector_base_channel_kanban" />
+    </record>
+
+    <menuitem
+        id="message_connector_base_root_menu"
+        name="Message Connector"
+        web_icon="message_connector_base,static/src/img/icon.png"
+        groups="message_connector_base.group_message_connector_manager"
+    />
+
+    <menuitem
+        id="message_connector_base_channel_menu"
+        parent="message_connector_base_root_menu"
+        name="Channels"
+        action="action_message_connector_base_channel"
+        sequence="1"
+        groups="message_connector_base.group_message_connector_manager"
+    />
+</odoo>

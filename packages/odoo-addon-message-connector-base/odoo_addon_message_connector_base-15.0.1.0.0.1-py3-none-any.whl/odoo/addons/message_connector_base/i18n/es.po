@@ -1,0 +1,913 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* message_connector_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-05 18:40+0000\n"
+"PO-Revision-Date: 2023-09-05 18:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">General Frequency of Log Message Deletion "
+"(days)</span>"
+msgstr ""
+"<span class=\"o_form_label\">Frecuencia general de eliminación de registro de mensajes "
+"(días)</span>"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__api_response
+msgid "API Response"
+msgstr "Respuesta de la API"
+
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_wizard_test_response
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Activate"
+msgstr "Activar"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_message_builder__state__active
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Active"
+msgstr "Activo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__message_connector_active
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__message_connector_active
+msgid "Active Message Connector"
+msgstr "Activar conector de mensajes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__add_report
+msgid "Add Report to Message"
+msgstr "Añadir impreso al mensaje"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_base_automation
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__automation_id
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Automated Action"
+msgstr "Acción automatizada"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_wizard_send_test_message_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Cancel sending"
+msgstr "Cancelar envío"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_channel__state__canceled
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_message_builder__state__canceled
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_queue_job__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Cambios de conjunto de cambios"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_queue_job__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__changeset_ids
+msgid "Changesets"
+msgstr "Conjunto de cambios"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__channel
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__channel_id
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Channel"
+msgstr "Canal"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+msgid "Channel Messages"
+msgstr "Mensajes del canal"
+
+#. module: message_connector_base
+#: model:ir.actions.act_window,name:message_connector_base.action_message_connector_base_channel
+#: model:ir.ui.menu,name:message_connector_base.message_connector_base_channel_menu
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_tree
+msgid "Channels"
+msgstr "Canales"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__company_id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: message_connector_base
+#: model:ir.ui.menu,name:message_connector_base.message_connector_base_config_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/res_config_settings.py:0
+#, python-format
+msgid "Connection Test"
+msgstr "Conexión de prueba"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/res_config_settings.py:0
+#, python-format
+msgid "Connection Test Succeeded!"
+msgstr "¡Prueba de conexión realizada con éxito!"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_queue_job__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Contar cambios de conjunto de cambios pendientes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_queue_job__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Contar conjuntos de cambios pendientes"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Create Automated Action"
+msgstr "Crear Acción Automática"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__create_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__create_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__create_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__create_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__create_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__create_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__create_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__create_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__create_date
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__create_date
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__creation_delay
+msgid "Creation delay (seconds)"
+msgstr "Retraso en la creación del mensaje (segundos)"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__data_file
+msgid "Data PDF Report"
+msgstr "Datos Informe PDF"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__default_value
+msgid "Default Value"
+msgstr "Valor por defecto"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__display_name
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__display_name
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__display_name
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__display_name
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__display_name
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__subfield_domain_ids
+msgid "Domain subfield"
+msgstr "Dominio del subcampo"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_channel__state__draft
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_message_builder__state__draft
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: message_connector_base
+#: model:ir.model.fields,help:message_connector_base.field_message_connector_channel__state
+msgid ""
+"Draft: If the channel has messages, all messages will go to draft status and their automatic actions will be disabled.\n"
+"Validated: The channel can be selected in the messages.\n"
+"Canceled: If the channel has messages, all messages will be canceled and their automatic actions will be deleted."
+msgstr ""
+"Borrador: Si el canal tiene mensajes, todos los mensajes pasarán a estado borrador y se desactivarán sus acciones automáticas.\n"
+"Validado: El canal puede ser seleccionado en los mensajes.\n"
+"Cancelado: Si el canal tiene mensajes, todos los mensajes serán cancelados y sus acciones automáticas serán eliminadas."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_field_builder.py:0
+#, python-format
+msgid "ERROR when evaluating the message. Check if the {} field exists."
+msgstr "ERROR al evaluar el mensaje. Compruebe si el campo {} existe."
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_res_config_settings_view_form
+msgid ""
+"Enable/Disable Messages Connector.<br/>\n"
+"                                    If you disable it, all messages will go to draft status. And you will not be able to send any messages to the any chat."
+msgstr ""
+"Activar/Desactivar Conector de Mensajes.<br/>\n"
+"                                    Si se desactiva, todos los mensajes pasaran al estado borrador y no se podrá enviar ningún mensaje a ningún chat."
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__error
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_connection__state__error
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+msgid "Error"
+msgstr ""
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__eval_expression
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_field_builder_form
+msgid "Evaluate Expression"
+msgstr "Evaluar expresión"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_field_builder.py:0
+#, python-format
+msgid "False"
+msgstr "Falso"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_id
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_field_builder__field_origin__field
+msgid "Field"
+msgstr "Campo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_domain_ids
+msgid "Field Domain"
+msgstr "Dominio del campo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_expression
+msgid "Field Expression"
+msgstr "Expresión del campo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_origin
+msgid "Field Origin"
+msgstr "Origen del campo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_type
+msgid "Field Type"
+msgstr "Tipo de campo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__message_field_ids
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Fields"
+msgstr "Campos"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__message_report
+msgid "File Introduction Message"
+msgstr "Mensaje de introducción del archivo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__log_msg_deletion_freq
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__log_msg_deletion_freq
+msgid "General Frequency of Log Message Deletion (days)"
+msgstr "Frecuencia general de eliminación de registro de mensajes (días)"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Go to Message Template"
+msgstr "Ir a la plantilla del mensaje"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Go to record"
+msgstr "Ir al registro"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Help"
+msgstr "Ayuda"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Help with Message Fields"
+msgstr "Ayuda con los campos de los mensajes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__id
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__id
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__id
+msgid "ID"
+msgstr ""
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_connection__state__progress
+msgid "In progress"
+msgstr "En progreso"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid ""
+"It is necessary to create an automatic action before activating the message."
+msgstr ""
+"Es necesario crear una acción automática antes de activar el mensaje."
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel____last_update
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection____last_update
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder____last_update
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder____last_update
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message____last_update
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response____last_update
+msgid "Last Modified on"
+msgstr "ültima modificación el"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__write_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__write_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__write_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__write_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__write_uid
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__write_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__write_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__write_date
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__write_date
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__write_date
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Log"
+msgstr "Registro"
+
+#. module: message_connector_base
+#: model:ir.actions.act_window,name:message_connector_base.action_message_connector_base_connection
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_tree
+msgid "Logs"
+msgstr "Registros"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: message_connector_base
+#: model:ir.ui.menu,name:message_connector_base.message_connector_base_message_builder_menu
+msgid "Message Builder"
+msgstr "Constructor de mensajes"
+
+#. module: message_connector_base
+#: model:ir.ui.menu,name:message_connector_base.message_connector_base_root_menu
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_res_config_settings_view_form
+msgid "Message Connector"
+msgstr "Conector de mensajes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__message_connector_active
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__message_connector_active
+msgid "Message Connector Active"
+msgstr "Conector de mensajes activo"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_message_connector_channel
+msgid "Message Connector Channel"
+msgstr "Canal del conector de mensajes"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_message_connector_connection
+msgid "Message Connector Connection"
+msgstr "Conexión del conector de mensajes"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_message_connector_field_builder
+msgid "Message Connector Field Builder"
+msgstr "Constructor de campos del conector de mensajes"
+
+#. module: message_connector_base
+#: model:res.groups,name:message_connector_base.group_message_connector_manager
+msgid "Message Connector Manager"
+msgstr "Administrador del conector de mensajes"
+
+#. module: message_connector_base
+#: model:ir.actions.act_window,name:message_connector_base.action_message_connector_base_general_config
+msgid "Message Connector Settings"
+msgstr "Configuración del conector de mensajes"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Message Details"
+msgstr "Detalles del mensaje"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_field_builder_form
+msgid "Message Field"
+msgstr "Campo del mensaje"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__message_report
+msgid "Message PDF Report"
+msgstr "Documento PDF del mensaje"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__messaging_service
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__messaging_service
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__messaging_service
+msgid "Message Service"
+msgstr "Servicio de mensajería"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__message_template_id
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__message_template_id
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_cron__message_template_id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__message_template_id
+msgid "Message Template"
+msgstr "Plantilla del mensaje"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_message_connector_message_builder
+msgid "Message Template Builder"
+msgstr "Constructor de la plantilla del mensaje"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__message_template
+msgid "Message Template ID"
+msgstr "ID de la plantilla del mensaje"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__message_template_ids
+msgid "Message Templates"
+msgstr "Plantillas de mensajes"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/wizard/wizard_send_test_message.py:0
+#, python-format
+msgid "Message Test"
+msgstr "Mensaje de prueba"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/wizard/wizard_send_test_message.py:0
+#, python-format
+msgid "Message sent successfully"
+msgstr "Mensaje enviado correctamente"
+
+#. module: message_connector_base
+#: model:ir.actions.act_window,name:message_connector_base.action_message_connector_base_message_builder
+#: model:ir.ui.menu,name:message_connector_base.message_connector_base_log_menu
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_tree
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Messaging Service"
+msgstr "Servicio de mensajería"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__model
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__model_id
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__model_id
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__model_id
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+msgid "Model"
+msgstr "Modelo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__name
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__name
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_connection__state__new
+msgid "New"
+msgstr "Nuevo"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_decimals
+msgid "Number of Decimals"
+msgstr "Numero de decimales"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "PDF Report"
+msgstr "Impreso PDF"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__field_python
+msgid "Python Expression"
+msgstr "Expresión Python"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_field_builder__field_origin__python
+msgid "Python Relation"
+msgstr "Relación Python"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_queue_job
+msgid "Queue Job"
+msgstr "Cola de trabajos"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__message_queue_job_ids
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Queue Jobs"
+msgstr "Cola de trabajos"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__record_selection
+msgid "Record"
+msgstr "Registro"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__res_id
+msgid "Record id"
+msgstr "id del registro"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_field_builder__field_origin__rel_field
+msgid "Relational Field"
+msgstr "Campo relacional"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__report_id
+msgid "Report"
+msgstr "Informe"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Requeue"
+msgstr "Reintentar"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_form
+msgid "Resend"
+msgstr "Reenviar"
+
+#. module: message_connector_base
+#: model:ir.actions.server,name:message_connector_base.action_resend_message
+msgid "Resend Failed Messages"
+msgstr "Reenviar mensajes fallidos"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_tree
+msgid "Resend Message"
+msgstr "Reenviar mensaje"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Return to Draft"
+msgstr "Volver a borrador"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "Search Message Channels"
+msgstr "Buscar canal de mensajes"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+msgid "Search Message Logs"
+msgstr "Buscar registros de mensajes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__select_several_fields
+msgid "Select Several Subfields"
+msgstr "Seleccionar varios subcampos"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_wizard_send_test_message_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: message_connector_base
+#: model:ir.actions.act_window,name:message_connector_base.action_message_connector_base_wizard_send_test_message
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_wizard_send_test_message_form
+msgid "Send Test Message"
+msgstr "Enviar mensaje de prueba"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__send_delay
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__send_delay
+msgid "Send delay (seconds)"
+msgstr "Retraso en el envio del mensaje (segundos)"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_connection__state__sent
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_connection_filter
+msgid "Sent"
+msgstr "Enviado"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__sequence
+msgid "Sequence"
+msgstr "Sequencia"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_ir_actions_server
+msgid "Server Action"
+msgstr "Acción de servidor"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__state
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__state
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__state
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_filter
+msgid "State"
+msgstr "Estado"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__subfield_ids
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_field_builder_form
+msgid "Subfields"
+msgstr "Subcampos"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Test"
+msgstr "Enviar mensaje de prueba"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_wizard_test_response
+msgid "Test Connection"
+msgstr "Prueba de conexión"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__message
+msgid "Test Message Result"
+msgstr "Resultado del mensaje de prueba"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__add_report
+msgid "The Meessage Includes a PDF Report"
+msgstr "El mensaje incluye un documento PDF"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/res_config_settings.py:0
+#, python-format
+msgid "The frequency of message log deletion must be greater than zero."
+msgstr "La frecuencia de borrado del registro de mensajes debe ser superior a cero."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid ""
+"The model cannot be changed once the auto action is created. If you want to change the model, first remove the automatic action.\n"
+"Automatic Action Model: '{}'\n"
+"Message Model: '{}'"
+msgstr ""
+"No se puede cambiar el modelo una vez creada la acción automática. Si desea cambiar el modelo, elimine primero la acción automática.\n"
+"Modelo de acción automática: '{}'\n"
+"Modelo de Mensaje: '{}'"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid ""
+"The selected channel is not validated. To activate the message, first "
+"validate the channel or select another validated channel."
+msgstr ""
+"El canal seleccionado no está validado. Para activar el mensaje, primero "
+"valide el canal o seleccione otro canal validado."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid ""
+"The selected channel is not validated. To move the message to draft state, "
+"first validate the channel or select another validated channel."
+msgstr ""
+"El canal seleccionado no está validado. Para pasar el mensaje a estado borrador, "
+"primero valide el canal o seleccione otro canal validado."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_channel.py:0
+#, python-format
+msgid "There cannot be two Channels with the same name: '{}'."
+msgstr "No puede haber dos Canales con el mismo nombre: '{}'."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid "There cannot be two Messages with the same name: '{}'."
+msgstr "No puede haber dos Mensajes con el mismo nombre: '{}'."
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/res_config_settings.py:0
+#: code:addons/message_connector_base/wizard/wizard_send_test_message.py:0
+#, python-format
+msgid ""
+"There was an error sending the message. See the message log for more information.\n"
+"Api response: {} \n"
+msgstr ""
+"Se ha producido un error al enviar el mensaje. Consulte el registro de mensajes para obtener más información.\n"
+"Respuesta de la API: {} \n"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+msgid ""
+"This action will cancel all messages in the channel and delete the automatic"
+" action of each message in the channel. Are you sure you want to cancel the "
+"channel?"
+msgstr ""
+"Esta acción cancelará todos los mensajes del canal y borrará la acción automática"
+" de cada mensaje del canal. ¿Estás seguro de que quieres cancelar el "
+"canal?"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid ""
+"This action will delete the automatic action of the message if it exists. "
+"Are you sure you want to cancel the channel?"
+msgstr ""
+" Esta acción borrará la acción automática del mensaje si existe. "
+"¿Está seguro de que desea cancelar el canal?"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_message_builder_form
+msgid "Time Delays"
+msgstr "Tiempos de retraso"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_field_builder.py:0
+#, python-format
+msgid "True"
+msgstr "Verdadero"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__truncate
+msgid "Truncate"
+msgstr "Truncar"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__user_id
+msgid "User"
+msgstr "Usuario"
+
+#. module: message_connector_base
+#: model:ir.model.fields,field_description:message_connector_base.field_base_automation__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_ir_actions_server__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_channel__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_connection__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_field_builder__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_message_connector_message_builder__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_queue_job__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_res_company__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_send_test_message__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_base.field_wizard_test_response__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "El usuario puede ver los cambios"
+
+#. module: message_connector_base
+#: model_terms:ir.ui.view,arch_db:message_connector_base.message_connector_base_channel_form
+msgid "Validate"
+msgstr "Validar"
+
+#. module: message_connector_base
+#: model:ir.model.fields.selection,name:message_connector_base.selection__message_connector_channel__state__validated
+msgid "Validated"
+msgstr "Validado"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_wizard_send_test_message
+msgid "Wizard Send Test Message"
+msgstr "Asistente de envío de mensajes de prueba"
+
+#. module: message_connector_base
+#: model:ir.model,name:message_connector_base.model_wizard_test_response
+msgid "Wizard Test Response"
+msgstr "Respuesta de la prueba"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_message_builder.py:0
+#, python-format
+msgid "{} (copy)"
+msgstr "{} (copia)"
+
+#. module: message_connector_base
+#: code:addons/message_connector_base/models/message_connector_connection.py:0
+#, python-format
+msgid "{} message {:%d%m%Y-%H:%M} from {}"
+msgstr "{} mensaje {:%d%m%Y-%H:%M} de {}"
