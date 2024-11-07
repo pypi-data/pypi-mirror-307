@@ -1,0 +1,2 @@
+recursive-include djreport/templates *.html
+recursive-include djreport/static *.js
