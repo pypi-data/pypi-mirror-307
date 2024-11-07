@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Django_generate_serializers_views.egg-info/PKG-INFO
+Django_generate_serializers_views.egg-info/SOURCES.txt
+Django_generate_serializers_views.egg-info/__init__.py
+Django_generate_serializers_views.egg-info/dependency_links.txt
+Django_generate_serializers_views.egg-info/top_level.txt
+src/__init__.py
+src/Django_generate_serializers_views/__init__.py
+src/Django_generate_serializers_views/apps.py
+src/Django_generate_serializers_views/management/__init__.py
+src/Django_generate_serializers_views/management/commands/__init__.py
+src/Django_generate_serializers_views/management/commands/generate_serializers_views.py
