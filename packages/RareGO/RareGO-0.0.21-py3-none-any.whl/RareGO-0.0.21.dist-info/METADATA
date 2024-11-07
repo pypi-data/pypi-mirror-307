@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: RareGO
+Version: 0.0.21
+Summary: A link prediction biomedical discovery package
+Author-email: Bradford Patton <bradfordpatton72@gmail.com>
+Project-URL: Homepage, https://github.com/baseballtrout/RareGO-Capestone
+Project-URL: Issues, https://github.com/baseballtrout/RareGO-Capestone/issues
+Keywords: snekpack,cookiecutter,Knowledge Graph Embeddings,Machine Learning,Data Mining,Linked Data
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: dataclasses-json
+Requires-Dist: numpy
+Requires-Dist: pykeen
+Requires-Dist: pykeen>=1.10.1
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: click
+Requires-Dist: click-default-group
+Requires-Dist: scikit-learn
+Requires-Dist: torch<2.4,>=2.0
+Requires-Dist: torchvision<0.17.0,>=0.15.0
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: optuna>=2.0.0
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: tabulate
+Requires-Dist: more-click
+Requires-Dist: more-itertools
+Requires-Dist: pystow>=0.4.3
+Requires-Dist: docdata
+Requires-Dist: class-resolver>0.4.2
+Requires-Dist: pyyaml
+Requires-Dist: torch-max-mem>=0.1.1
+Requires-Dist: torch-ppr>=0.0.7
+Requires-Dist: typing-extensions
+Requires-Dist: numpy<2.0.0; sys_platform == "win32"
+
+"RareGO Package" 
+>The latest stable version of RareGO requires Python 3.8+. It can be downloaded and installed from PyPI with:
+
+```
+pip install RareGO
