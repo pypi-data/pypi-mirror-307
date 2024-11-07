@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "cloud_not_connected": "Neprisijungta prie \u201eHome Assistant Cloud\u201c.",
+            "single_instance_allowed": "Jau sukonfig\u016bruota. Galima tik viena konfig\u016bracija."
+        },
+        "create_entry": {
+            "default": "\u201eAndroid\u201c atidarykite [program\u0105 \u201eOwnTracks\u201c] ( {android_url} ), eikite \u012f Nuostatos > Ry\u0161ys. Pakeiskite \u0161iuos nustatymus: - Re\u017eimas: HTTP - Priegloba: {webhook_url} - Identifikacija: - Vartotojo vardas: `'(J\u016bs\u0173 vardas)'` - Prietaiso ID: `'(J\u016bs\u0173 prietaiso pavadinimas)'` iOS atidarykite [program\u0117l\u0119 OwnTracks ]( {ios_url} ), bakstel\u0117kite (i) piktogram\u0105 vir\u0161uje kair\u0117je > Nustatymai. Pakeiskite \u0161iuos nustatymus: - Re\u017eimas: HTTP - URL: {webhook_url} - \u012ejunkite autentifikavim\u0105 - Vartotojo ID: `'(J\u016bs\u0173 vardas)'` {secret} Daugiau informacijos rasite [dokumentacijoje]( {docs_url} )."
+        },
+        "step": {
+            "user": {
+                "description": "Ar tikrai norite nustatyti \u201eOwnTracks\u201c?",
+                "title": "Nustatykite \u201eOwnTracks\u201c."
+            }
+        }
+    }
+}

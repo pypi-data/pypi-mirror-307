@@ -1,0 +1,46 @@
+{
+    "config": {
+        "error": {
+            "api_error": "Hiba t\u00f6rt\u00e9nt a pyemoncms API-ban: {details}"
+        },
+        "step": {
+            "choose_feeds": {
+                "data": {
+                    "include_only_feed_id": "V\u00e1lassza ki a felvenni k\u00edv\u00e1nt h\u00edrcsatorn\u00e1kat"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API kulcs",
+                    "url": "URL"
+                },
+                "data_description": {
+                    "api_key": "A 32 bites API-kulcsa",
+                    "url": "A szerver URL-c\u00edme, amely a protokollal (http vagy https) kezd\u0151dik"
+                }
+            }
+        }
+    },
+    "issues": {
+        "missing_include_only_feed_id": {
+            "description": "A(z) {domain} YAML-alap\u00fa konfigur\u00e1l\u00e1sa megsz\u0171nik.\n\nK\u00e9rj\u00fck, manu\u00e1lisan adja hozz\u00e1 a szinkroniz\u00e1lni k\u00edv\u00e1nt adatfolyamokat az integr\u00e1ci\u00f3 `konfigur\u00e1l\u00e1s` gombj\u00e1val.",
+            "title": "Nincs h\u00edrcsatorna szinkroniz\u00e1lva a(z) {domain} \u00e9rz\u00e9kel\u0151vel"
+        },
+        "remove_value_template": {
+            "description": "A(z) {domain} YAML-alap\u00fa konfigur\u00e1l\u00e1sa megsz\u0171nik \u00e9s a(z) `{parameter}` param\u00e9ter nem import\u00e1lhat\u00f3.\n\nK\u00e9rj\u00fck, t\u00e1vol\u00edtsa el a(z) `{parameter}` param\u00e9tert a(z) {domain} YAML konfigur\u00e1ci\u00f3j\u00e1b\u00f3l, majd ind\u00edtsa \u00fajra a Home Assistantot.\n\nAlternat\u00edv megold\u00e1sk\u00e9nt teljesen elt\u00e1vol\u00edthatja a(z) {domain} konfigur\u00e1ci\u00f3t a configuration.yaml f\u00e1jlb\u00f3l, ind\u00edtsa \u00fajra a Home Assistantot \u00e9s manu\u00e1lisan adja hozz\u00e1 a(z) {domain} integr\u00e1ci\u00f3t.",
+            "title": "A(z) {domain} integr\u00e1ci\u00f3 nem tud elindulni"
+        }
+    },
+    "options": {
+        "error": {
+            "api_error": "Hiba t\u00f6rt\u00e9nt a pyemoncms API-ban: {details}"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "include_only_feed_id": "V\u00e1lassza ki a felvenni k\u00edv\u00e1nt h\u00edrcsatorn\u00e1kat"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "U\u017e je nakonfigurovan\u00fd. Mo\u017en\u00e1 je len jedna konfigur\u00e1cia."
+        },
+        "error": {
+            "invalid_auth": "Neplatn\u00e9 overenie",
+            "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Heslo",
+                    "username": "Pou\u017e\u00edvate\u013esk\u00e9 meno"
+                },
+                "title": "Prihl\u00e1ste sa pomocou \u00fa\u010dtu mijn.ithodaalderop.nl"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "power_consumption": {
+                "name": "Spotreba energie"
+            },
+            "total_energy_today": {
+                "name": "Celkov\u00e1 energia dnes"
+            }
+        }
+    },
+    "issues": {
+        "integration_removed": {
+            "description": "Integr\u00e1cia Spider bola odstr\u00e1nen\u00e1 z Home Assistant.\n\nItho daalderop [ukon\u010den\u00fd]({link}) syst\u00e9m Spider Connect.\n\nAk chcete tento probl\u00e9m vyrie\u0161i\u0165, odstr\u00e1\u0148te (teraz u\u017e nefunk\u010dn\u00e9) polo\u017eky integr\u00e1cie z nastavenia Asistenta dom\u00e1cnosti. [Kliknut\u00edm sem zobraz\u00edte existuj\u00face polo\u017eky integr\u00e1cie Spider] ({entries}).",
+            "title": "Integr\u00e1cia Spider bola odstr\u00e1nen\u00e1"
+        }
+    }
+}

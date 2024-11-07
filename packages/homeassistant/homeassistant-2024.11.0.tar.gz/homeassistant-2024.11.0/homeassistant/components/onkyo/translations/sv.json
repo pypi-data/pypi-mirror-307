@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad",
+            "no_devices_found": "Inga enheter hittades i n\u00e4tverket",
+            "reconfigure_successful": "Omkonfigurationen lyckades",
+            "unique_id_mismatch": "Enhetens serienummer st\u00e4mmer inte \u00f6verens med det tidigare serienumret",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "error": {
+            "cannot_connect": "Det gick inte att ansluta.",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "step": {
+            "configure_receiver": {
+                "description": "Konfigurera {name}"
+            },
+            "eiscp_discovery": {
+                "data": {
+                    "device": "Enhet"
+                }
+            },
+            "manual": {
+                "data": {
+                    "host": "V\u00e4rd"
+                }
+            }
+        }
+    }
+}

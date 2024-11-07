@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Us\u0142uga jest ju\u017c skonfigurowana"
+        },
+        "error": {
+            "already_configured": "Us\u0142uga jest ju\u017c skonfigurowana"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "zip_code": "Kod pocztowy"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "title": "Import konfiguracji YAML dla Rova nie powi\u00f3d\u0142 si\u0119"
+        },
+        "deprecated_yaml_import_issue_invalid_rova_area": {
+            "title": "Import konfiguracji YAML dla Rova nie powi\u00f3d\u0142 si\u0119"
+        }
+    }
+}

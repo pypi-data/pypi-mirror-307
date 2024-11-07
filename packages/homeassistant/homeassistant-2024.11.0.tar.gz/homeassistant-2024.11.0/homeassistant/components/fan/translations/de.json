@@ -1,0 +1,159 @@
+{
+    "device_automation": {
+        "action_type": {
+            "toggle": "Schalte {entity_name} um",
+            "turn_off": "Schalte {entity_name} aus",
+            "turn_on": "Schalte {entity_name} ein"
+        },
+        "condition_type": {
+            "is_off": "Wenn {entity_name} ausgeschaltet ist",
+            "is_on": "Wenn {entity_name} eingeschaltet ist"
+        },
+        "trigger_type": {
+            "changed_states": "Sobald {entity_name} ein- oder ausgeschaltet wird",
+            "turned_off": "Sobald {entity_name} ausgeschaltet ist",
+            "turned_on": "Sobald {entity_name} eingeschaltet ist"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "L\u00fcfter",
+            "state": {
+                "off": "Aus",
+                "on": "An"
+            },
+            "state_attributes": {
+                "direction": {
+                    "name": "Richtung",
+                    "state": {
+                        "forward": "Vorw\u00e4rts",
+                        "reverse": "R\u00fcckw\u00e4rts"
+                    }
+                },
+                "oscillating": {
+                    "name": "Oszillierend",
+                    "state": {
+                        "false": "Nein",
+                        "true": "Ja"
+                    }
+                },
+                "percentage": {
+                    "name": "Geschwindigkeit"
+                },
+                "percentage_step": {
+                    "name": "Geschwindigkeitsstufe"
+                },
+                "preset_mode": {
+                    "name": "Voreinstellungsmodus"
+                },
+                "preset_modes": {
+                    "name": "Verf\u00fcgbare Voreinstellungsmodi"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "not_valid_preset_mode": {
+            "message": "Der Voreinstellungsmodus {preset_mode} ist ung\u00fcltig. G\u00fcltige Modi sind: {preset_modes}."
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "Die {platform}-Plattform f\u00fcr die {domain}-Integration unterst\u00fctzt die Plattform-Einrichtung nicht. \n\nBitte entferne es aus deiner Konfiguration und starte Home Assistant neu, um dieses Problem zu beheben.",
+            "title": "Plattform-Unterst\u00fctzung nicht unterst\u00fctzt"
+        }
+    },
+    "selector": {
+        "direction": {
+            "options": {
+                "forward": "Vorw\u00e4rts",
+                "reverse": "R\u00fcckw\u00e4rts"
+            }
+        }
+    },
+    "services": {
+        "decrease_speed": {
+            "description": "Verringert die Geschwindigkeit eines L\u00fcfters.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Verringert die Geschwindigkeit um eine Prozentstufe.",
+                    "name": "Verringerung"
+                }
+            },
+            "name": "Geschwindigkeit verringern"
+        },
+        "increase_speed": {
+            "description": "Erh\u00f6ht die Geschwindigkeit eines L\u00fcfters.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Erh\u00f6ht die Geschwindigkeit um eine Prozentstufe.",
+                    "name": "Erh\u00f6hung"
+                }
+            },
+            "name": "Geschwindigkeit erh\u00f6hen"
+        },
+        "oscillate": {
+            "description": "Steuert die Oszillation eines L\u00fcfters.",
+            "fields": {
+                "oscillating": {
+                    "description": "Oszillation ein-/ausschalten.",
+                    "name": "Oszillierend"
+                }
+            },
+            "name": "Oszillieren"
+        },
+        "set_direction": {
+            "description": "Legt die Drehrichtung eines L\u00fcfters fest.",
+            "fields": {
+                "direction": {
+                    "description": "Drehrichtung.",
+                    "name": "Richtung"
+                }
+            },
+            "name": "Richtung festlegen"
+        },
+        "set_percentage": {
+            "description": "Legt die L\u00fcftergeschwindigkeit fest.",
+            "fields": {
+                "percentage": {
+                    "description": "Geschwindigkeit des L\u00fcfters.",
+                    "name": "Prozentsatz"
+                }
+            },
+            "name": "Geschwindigkeit einstellen"
+        },
+        "set_preset_mode": {
+            "description": "Aktiviert einen voreingestellten L\u00fcftermodus.",
+            "fields": {
+                "preset_mode": {
+                    "description": "Voreingestellter L\u00fcftermodus.",
+                    "name": "Voreinstellungsmodus"
+                }
+            },
+            "name": "Voreinstellungsmodus aktivieren"
+        },
+        "toggle": {
+            "description": "Schaltet einen L\u00fcfter zwischen ein und aus um.",
+            "name": "Umschalten"
+        },
+        "turn_off": {
+            "description": "Schaltet einen L\u00fcfter aus.",
+            "name": "Ausschalten"
+        },
+        "turn_on": {
+            "description": "Schaltet einen L\u00fcfter ein.",
+            "fields": {
+                "percentage": {
+                    "description": "Geschwindigkeit des L\u00fcfters.",
+                    "name": "Prozentsatz"
+                },
+                "preset_mode": {
+                    "description": "Voreingestellter L\u00fcftermodus.",
+                    "name": "Voreinstellungsmodus"
+                }
+            },
+            "name": "Einschalten"
+        }
+    },
+    "title": "L\u00fcfter"
+}

@@ -1,0 +1,82 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Le compte est d\u00e9j\u00e0 configur\u00e9"
+        },
+        "error": {
+            "invalid_credentials": "Authentification non valide",
+            "unknown": "Erreur inattendue"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Cl\u00e9 d'API",
+                    "api_user": "ID utilisateur de l'API d'Habitica",
+                    "name": "Remplace le nom d\u2019utilisateur d\u2019Habitica. Sera utilis\u00e9 pour les actions",
+                    "url": "URL"
+                },
+                "description": "Connectez votre profil Habitica pour permettre la surveillance du profil et des t\u00e2ches de votre utilisateur."
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "brightness": {
+                "name": "\u00c9clat br\u00fblant"
+            },
+            "defensive_stance": {
+                "name": "Posture d\u00e9fensive"
+            },
+            "earth": {
+                "name": "S\u00e9isme"
+            },
+            "frost": {
+                "name": "Givre glacial"
+            },
+            "heal": {
+                "name": "Lumi\u00e8re de gu\u00e9rison"
+            },
+            "heal_all": {
+                "name": "B\u00e9n\u00e9diction"
+            },
+            "intimidate": {
+                "name": "Regard intimidant"
+            },
+            "mpheal": {
+                "name": "Pouss\u00e9e \u00e9th\u00e9r\u00e9e"
+            },
+            "protect_aura": {
+                "name": "Aura protectrice"
+            },
+            "stealth": {
+                "name": "Furtivit\u00e9"
+            },
+            "tools_of_trade": {
+                "name": "Ficelles du m\u00e9tier"
+            },
+            "valorous_presence": {
+                "name": "Pr\u00e9sence valeureuse"
+            }
+        },
+        "sensor": {
+            "trinkets": {
+                "name": "Sabliers mystiques"
+            }
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "Voleur: Attaque sournoise",
+                "fireball": "Mage: Explosion de flammes",
+                "pickpocket": "Voleur: Pickpocket",
+                "smash": "Guerrier: Frappe brutale"
+            }
+        }
+    },
+    "services": {
+        "api_call": {
+            "name": "Nom de l'API"
+        }
+    }
+}

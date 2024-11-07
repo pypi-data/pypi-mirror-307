@@ -1,0 +1,297 @@
+{
+    "common": {
+        "dailies": "Tagesaufgaben",
+        "todos": "To-dos"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Konto wurde bereits konfiguriert"
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ung\u00fcltige Authentifizierung",
+            "invalid_credentials": "Ung\u00fcltige Authentifizierung",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "advanced": {
+                "data": {
+                    "api_key": "API-Token",
+                    "api_user": "Benutzer-ID",
+                    "url": "URL",
+                    "verify_ssl": "SSL-Zertifikat \u00fcberpr\u00fcfen"
+                },
+                "description": "Du kannst deine `Benutzer-ID` und deinen `API-Token` unter **Einstellungen -> Site-Daten** auf Habitica oder der Instanz abrufen, mit der du dich verbinden m\u00f6chtest"
+            },
+            "login": {
+                "data": {
+                    "password": "Passwort",
+                    "username": "E-Mail oder Benutzername (Gro\u00df-/Kleinschreibung beachten)"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-Schl\u00fcssel",
+                    "api_user": "Habitica API-Benutzer-ID",
+                    "name": "\u00dcberschreibt Habiticas Benutzernamen. Wird f\u00fcr Aktionen verwendet",
+                    "url": "URL"
+                },
+                "description": "Verbinde dein Habitica Profil, um das Profil und die Aufgaben deines Benutzers zu verfolgen.",
+                "menu_options": {
+                    "advanced": "Bei anderen Instanzen anmelden",
+                    "login": "Bei Habitica anmelden"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "pending_quest": {
+                "name": "Ausstehende Quest-Einladung"
+            }
+        },
+        "button": {
+            "allocate_all_stat_points": {
+                "name": "Alle Attributpunkte verteilen"
+            },
+            "brightness": {
+                "name": "Brennende Helle"
+            },
+            "buy_health_potion": {
+                "name": "Kaufe einen Heiltrank"
+            },
+            "defensive_stance": {
+                "name": "Verteidigungshaltung"
+            },
+            "earth": {
+                "name": "Erdbeben"
+            },
+            "frost": {
+                "name": "Klirrender Frost"
+            },
+            "heal": {
+                "name": "Heilendes Licht"
+            },
+            "heal_all": {
+                "name": "Segnung"
+            },
+            "intimidate": {
+                "name": "Einsch\u00fcchternder Blick"
+            },
+            "mpheal": {
+                "name": "\u00c4therischer Schwall"
+            },
+            "protect_aura": {
+                "name": "Schutzaura"
+            },
+            "revive": {
+                "name": "Wiederbeleben"
+            },
+            "run_cron": {
+                "name": "Beginne meinen Tag"
+            },
+            "stealth": {
+                "name": "Schleichen"
+            },
+            "tools_of_trade": {
+                "name": "Handwerkszeug"
+            },
+            "valorous_presence": {
+                "name": "Heldenhafte Pr\u00e4senz"
+            }
+        },
+        "calendar": {
+            "dailys": {
+                "name": "Tagesaufgaben",
+                "state_attributes": {
+                    "yesterdaily": {
+                        "name": "Yester-Daily",
+                        "state": {
+                            "false": "Nein",
+                            "true": "Ja"
+                        }
+                    }
+                }
+            },
+            "todos": {
+                "name": "To-dos"
+            }
+        },
+        "sensor": {
+            "class": {
+                "name": "Klasse",
+                "state": {
+                    "healer": "Heiler",
+                    "rogue": "Schurke",
+                    "warrior": "Krieger",
+                    "wizard": "Magier"
+                }
+            },
+            "dailys": {
+                "name": "Tagesaufgaben"
+            },
+            "display_name": {
+                "name": "Anzeigename"
+            },
+            "experience": {
+                "name": "Erfahrung"
+            },
+            "experience_max": {
+                "name": "N\u00e4chstes Level"
+            },
+            "gems": {
+                "name": "Edelsteine"
+            },
+            "gold": {
+                "name": "Gold"
+            },
+            "habits": {
+                "name": "Gewohnheiten"
+            },
+            "health": {
+                "name": "Lebenspunkte"
+            },
+            "health_max": {
+                "name": "Max. Lebenspunkte"
+            },
+            "level": {
+                "name": "Level"
+            },
+            "mana": {
+                "name": "Mana"
+            },
+            "mana_max": {
+                "name": "Max. Mana"
+            },
+            "rewards": {
+                "name": "Belohnungen"
+            },
+            "todos": {
+                "name": "To-dos"
+            },
+            "trinkets": {
+                "name": "Mystische Sanduhren"
+            }
+        },
+        "switch": {
+            "sleep": {
+                "name": "In der Taverne erholen"
+            }
+        },
+        "todo": {
+            "dailys": {
+                "name": "Tagesaufgaben"
+            },
+            "todos": {
+                "name": "To-dos"
+            }
+        }
+    },
+    "exceptions": {
+        "create_todos_item_failed": {
+            "message": "Es konnte kein To-do `{name}` f\u00fcr Habitica erstellt werden. Bitte versuche es erneut."
+        },
+        "delete_completed_todos_failed": {
+            "message": "Erledigte To-dos konnten nicht aus der Habitica To-do-Liste gel\u00f6scht werden. Bitte versuche es erneut."
+        },
+        "delete_todos_failed": {
+            "message": "Element konnte nicht aus der Habitica To-do-Liste gel\u00f6scht werden. Bitte versuche es erneut."
+        },
+        "entry_not_found": {
+            "message": "Der ausgew\u00e4hlte Charakter ist momentan in Home Assistant nicht konfiguriert."
+        },
+        "entry_not_loaded": {
+            "message": "Der ausgew\u00e4hlte Charakter ist momentan in Home Assistant nicht geladen oder deaktiviert."
+        },
+        "move_dailys_item_failed": {
+            "message": "Die Habitica Tagesaufgabe kann nicht auf die Position {pos} verschoben werden, bitte versuche es erneut."
+        },
+        "move_todos_item_failed": {
+            "message": "Das Habitica To-do konnte nicht an die Position {pos} verschoben werden. Bitte versuche es erneut."
+        },
+        "not_enough_mana": {
+            "message": "F\u00e4higkeit kann nicht gewirkt werden, nicht genug Mana. Dein Charakter hat {mana}, aber die F\u00e4higkeit kostet {cost}."
+        },
+        "score_dailys_item_failed": {
+            "message": "Der Punktestand f\u00fcr die Tagesaufgabe `{name}` von Habitica konnte nicht aktualisiert werden. Bitte versuche es erneut."
+        },
+        "score_todos_item_failed": {
+            "message": "Der Punktestand f\u00fcr dein Habitica To-do `{name}` konnte nicht aktualisiert werden. Bitte versuche es erneut."
+        },
+        "service_call_exception": {
+            "message": "Verbindung zu Habitica nicht m\u00f6glich. Versuche es sp\u00e4ter erneut."
+        },
+        "service_call_unallowed": {
+            "message": "Die Aktion kann nicht abgeschlossen werden, die erforderlichen Bedingungen sind nicht erf\u00fcllt"
+        },
+        "setup_rate_limit_exception": {
+            "message": "Ratenlimit \u00fcberschritten, versuche es sp\u00e4ter erneut"
+        },
+        "skill_not_found": {
+            "message": "Die Fertigkeit kann nicht eingesetzt werden, dein Charakter verf\u00fcgt nicht \u00fcber die Fertigkeit oder den Zauber {skill}."
+        },
+        "task_not_found": {
+            "message": "F\u00e4higkeit kann nicht eingesetzt werden, Aufgabe {task} konnte nicht gefunden werden"
+        },
+        "update_dailys_item_failed": {
+            "message": "Die Habitica Tagesaufgabe `{name}` konnte nicht aktualisiert werden, bitte versuche es erneut"
+        },
+        "update_todos_item_failed": {
+            "message": "Das Habitica To-do `{name}` konnte nicht aktualisiert werden. Bitte versuche es erneut."
+        }
+    },
+    "issues": {
+        "deprecated_task_entity": {
+            "description": "Die Habitica Entit\u00e4t `{entity}` ist veraltet und wird in einer zuk\u00fcnftigen Version entfernt.\nBitte aktualisiere deine Automatisierungen und Skripte, um die Sensor-Entit\u00e4t durch die neu hinzugef\u00fcgte To-do-Entit\u00e4t zu ersetzen.\nSobald du mit der Migration fertig bist, kannst du `{entity}` deaktivieren.",
+            "title": "Der Habitica-Sensor {task_name} ist veraltet"
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "Schurke: \u00dcberraschungsangriff",
+                "fireball": "Magier: Flammensto\u00df",
+                "pickpocket": "Schurke: Taschendiebstahl",
+                "smash": "Krieger: Gewaltschlag"
+            }
+        }
+    },
+    "services": {
+        "api_call": {
+            "description": "Ruft die Habitica-API auf.",
+            "fields": {
+                "args": {
+                    "description": "Alle zus\u00e4tzlichen JSON- oder URL-Parameterargumente. Den Pfad findest du im erw\u00e4hnten Apidoc. Beispiel verwendet denselben API-Endpunkt.",
+                    "name": "Argumente"
+                },
+                "name": {
+                    "description": "Der Habitica Benutzername, der f\u00fcr die Abfrage verwendet werden soll.",
+                    "name": "Name"
+                },
+                "path": {
+                    "description": "Elemente aus der API-URL in Form eines Arrays mit angeh\u00e4ngter Methode am Ende. Konsultiere https://habitica.com/apidoc/. Beispiel verwendet https://habitica.com/apidoc/#api-Task-CreateUserTasks.",
+                    "name": "Pfad"
+                }
+            },
+            "name": "API-Name"
+        },
+        "cast_skill": {
+            "description": "Wende eine F\u00e4higkeit oder einen Zauber deines Habitica Charakters auf eine bestimmte Aufgabe an, um deren Fortschritt oder Status zu beeinflussen.",
+            "fields": {
+                "config_entry": {
+                    "description": "W\u00e4hle den Habitica Charakter aus, der die Fertigkeit einsetzen soll.",
+                    "name": "Charakter ausw\u00e4hlen"
+                },
+                "skill": {
+                    "description": "W\u00e4hle die Fertigkeit oder den Zauber aus, den du auf die Aufgabe wirken m\u00f6chtest. Nur f\u00fcr die Klasse deines Charakters verf\u00fcgbare Fertigkeiten k\u00f6nnen verwendet werden.",
+                    "name": "F\u00e4higkeit"
+                },
+                "task": {
+                    "description": "Der Name (oder die Task ID) der mit der F\u00e4higkeit oder dem Zauber anzuvisierenden Aufgabe.",
+                    "name": "Aufgabenbezeichnung"
+                }
+            },
+            "name": "F\u00e4higkeit anwenden"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Jau sukonfig\u016bruota. Galima tik viena konfig\u016bracija."
+        },
+        "error": {
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "Prisijungimos vardas"
+                },
+                "title": "Prisijunkite naudodami mijn.ithodaalderop.nl paskyr\u0105"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "power_consumption": {
+                "name": "Energijos s\u0105naudos"
+            },
+            "total_energy_today": {
+                "name": "Bendra energija \u0161iandien"
+            }
+        }
+    },
+    "issues": {
+        "integration_removed": {
+            "description": "\u201eSpider\u201c integracija pa\u0161alinta i\u0161 \u201eHome Assistant\u201c. Itho daalderop [nutrauk\u0117]( {link} ) Spider Connect sistem\u0105. Nor\u0117dami i\u0161spr\u0119sti \u0161i\u0105 problem\u0105, pa\u0161alinkite (dabar nebeveikian\u010dius) integravimo \u012fra\u0161us i\u0161 nam\u0173 asistento s\u0105rankos. [Spustel\u0117kite \u010dia, kad pamatytum\u0117te esamus \u201eSpider\u201c integravimo \u012fra\u0161us]( {entries} ).",
+            "title": "\u201eSpider\u201c integracija buvo pa\u0161alinta"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "already_in_progress": "Konfigurationsablauf wird bereits ausgef\u00fchrt"
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "discovery_confirm": {
+                "description": "M\u00f6chtest du {name} einrichten?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Der Hostname oder die IP-Adresse des LinkPlay-Ger\u00e4ts."
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_grouping_entity": {
+            "message": "Entit\u00e4t mit der ID {entity_id} kann nicht zum LinkPlay-Multiroom hinzugef\u00fcgt werden. Ist die Entit\u00e4t ein LinkPlay-Mediaplayer?"
+        }
+    },
+    "services": {
+        "play_preset": {
+            "description": "Spiele die Voreinstellungsnummer auf dem Ger\u00e4t ab.",
+            "fields": {
+                "preset_number": {
+                    "description": "Die Voreinstellungsnummer auf dem abzuspielenden Ger\u00e4t.",
+                    "name": "Voreinstellungsnummer"
+                }
+            },
+            "name": "Voreinstellung abspielen"
+        }
+    }
+}

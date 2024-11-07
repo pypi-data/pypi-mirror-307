@@ -1,0 +1,516 @@
+{
+    "common": {
+        "confirmed": "Potvrzeno",
+        "present": "P\u0159\u00edtomn\u00fd"
+    },
+    "config": {
+        "abort": {
+            "missing_configuration": "Komponenta nen\u00ed nastavena. Postupujte podle dokumentace.",
+            "no_url_available": "Nen\u00ed k dispozici \u017e\u00e1dn\u00e1 URL. Informace o t\u00e9to chyb\u011b naleznete [v sekci n\u00e1pov\u011bdy]({docs_url})",
+            "oauth_error": "P\u0159ijata neplatn\u00e1 data tokenu.",
+            "oauth_failed": "Chyba p\u0159i z\u00edsk\u00e1v\u00e1n\u00ed p\u0159\u00edstupov\u00e9ho tokenu.",
+            "oauth_timeout": "P\u0159i \u0159e\u0161en\u00ed tokenu OAuth vypr\u0161el \u010dasov\u00fd limit.",
+            "oauth_unauthorized": "Chyba autorizace OAuth p\u0159i z\u00edsk\u00e1v\u00e1n\u00ed p\u0159\u00edstupov\u00e9ho tokenu."
+        },
+        "create_entry": {
+            "default": "\u00dasp\u011b\u0161n\u011b ov\u011b\u0159eno"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Vybrat metodu ov\u011b\u0159en\u00ed"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "battery_charging_state": {
+                "name": "Stav nab\u00edjen\u00ed baterie"
+            },
+            "charging_connection": {
+                "name": "P\u0159ipojen\u00ed nab\u00edjen\u00ed"
+            },
+            "chiller_door": {
+                "name": "Dve\u0159e chladi\u010de"
+            },
+            "dust_box_inserted": {
+                "name": "N\u00e1doba na prach",
+                "state": {
+                    "off": "Nevlo\u017eeno",
+                    "on": "Vlo\u017eeno"
+                }
+            },
+            "freezer_door": {
+                "name": "Dve\u0159e mrazni\u010dky"
+            },
+            "lifted": {
+                "name": "Zvednuto"
+            },
+            "local_control": {
+                "name": "M\u00edstn\u00ed ovl\u00e1d\u00e1n\u00ed"
+            },
+            "lost": {
+                "name": "Ztraceno"
+            },
+            "refrigerator_door": {
+                "name": "Dve\u0159e chladni\u010dky"
+            },
+            "remote_control": {
+                "name": "D\u00e1lkov\u00e9 ovl\u00e1d\u00e1n\u00ed"
+            },
+            "remote_start": {
+                "name": "Vzd\u00e1len\u00fd start"
+            }
+        },
+        "light": {
+            "ambient_light": {
+                "name": "Okoln\u00ed sv\u011btlo"
+            },
+            "cooking_lighting": {
+                "name": "Funk\u010dn\u00ed sv\u011btlo"
+            },
+            "external_light": {
+                "name": "Vn\u011bj\u0161\u00ed sv\u011btlo"
+            },
+            "internal_light": {
+                "name": "Vnit\u0159n\u00ed sv\u011btlo"
+            }
+        },
+        "number": {
+            "bottle_cooler_setpoint_temperature": {
+                "name": "Teplota chladi\u010de lahv\u00ed"
+            },
+            "chiller_left_setpoint_temperature": {
+                "name": "Lev\u00e1 teplota chladi\u010de"
+            },
+            "chiller_right_setpoint_temperature": {
+                "name": "Prav\u00e1 teplota chladi\u010de"
+            },
+            "chiller_setpoint_temperature": {
+                "name": "Teplota chladi\u010de"
+            },
+            "freezer_setpoint_temperature": {
+                "name": "Teplota mraz\u00e1ku"
+            },
+            "refrigerator_setpoint_temperature": {
+                "name": "Teplota v chladni\u010dce"
+            },
+            "wine_compartment_2_setpoint_temperature": {
+                "name": "Teplota p\u0159ihr\u00e1dky na v\u00edno 2"
+            },
+            "wine_compartment_3_setpoint_temperature": {
+                "name": "Teplota p\u0159ihr\u00e1dky na v\u00edno 3"
+            },
+            "wine_compartment_setpoint_temperature": {
+                "name": "Teplota p\u0159ihr\u00e1dky na v\u00edno"
+            }
+        },
+        "sensor": {
+            "alarm_sensor_coffee_bean_container": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "alarm_sensor_coffee_drip_tray": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "alarm_sensor_coffee_water_tank": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "alarm_sensor_freezer": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "alarm_sensor_fridge": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "alarm_sensor_temp": {
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "battery_level": {
+                "name": "\u00darove\u0148 baterie"
+            },
+            "bean_container_empty": {
+                "name": "Pr\u00e1zdn\u00e1 n\u00e1doba na k\u00e1vov\u00e1 zrna",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "camera_state": {
+                "name": "Stav kamery",
+                "state": {
+                    "disabled": "Zak\u00e1z\u00e1no",
+                    "error": "Chyba",
+                    "ready": "P\u0159ipraveno",
+                    "sleeping": "Ve sp\u00e1nku",
+                    "streamingcloud": "Streamov\u00e1n\u00ed do cloudu",
+                    "streaminglocal": "M\u00edstn\u00ed streamov\u00e1n\u00ed",
+                    "streaminglocal_and_cloud": "M\u00edstn\u00ed streamov\u00e1n\u00ed a streamov\u00e1n\u00ed do cloudu"
+                }
+            },
+            "coffee_and_milk_counter": {
+                "name": "\u0160\u00e1lky na k\u00e1vu a ml\u00e9ko"
+            },
+            "coffee_counter": {
+                "name": "K\u00e1vy"
+            },
+            "door": {
+                "name": "Dve\u0159e",
+                "state": {
+                    "closed": "Zav\u0159eno",
+                    "locked": "Zam\u010deno",
+                    "open": "Otev\u0159eno"
+                }
+            },
+            "drip_tray_full": {
+                "name": "Odkap\u00e1vac\u00ed miska pln\u00e1",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "freezer_door_alarm": {
+                "name": "Alarm dve\u0159\u00ed mraz\u00e1ku",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "Alarm teploty mraz\u00e1ku",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "frothy_milk_counter": {
+                "name": "\u0160\u00e1lky s nap\u011bn\u011bn\u00fdm ml\u00e9kem"
+            },
+            "hot_milk_counter": {
+                "name": "\u0160\u00e1lky s hork\u00fdm ml\u00e9kem"
+            },
+            "hot_water_counter": {
+                "name": "Hork\u00e1 voda"
+            },
+            "hot_water_cups_counter": {
+                "name": "\u0160\u00e1lky s horkou vodou"
+            },
+            "last_selected_map": {
+                "name": "Posledn\u00ed vybran\u00e1 mapa",
+                "state": {
+                    "map1": "Mapa 1",
+                    "map2": "Mapa 2",
+                    "map3": "Mapa 3",
+                    "tempmap": "Do\u010dasn\u00e1 mapa"
+                }
+            },
+            "milk_counter": {
+                "name": "\u0160\u00e1lky s ml\u00e9kem"
+            },
+            "operation_state": {
+                "name": "Provozn\u00ed stav",
+                "state": {
+                    "aborting": "Ru\u0161en\u00ed",
+                    "actionrequired": "Je vy\u017eadov\u00e1na akce",
+                    "delayedstart": "Odlo\u017een\u00fd start",
+                    "error": "Chyba",
+                    "finished": "Dokon\u010deno",
+                    "inactive": "Neaktivn\u00ed",
+                    "pause": "Pozastaveno",
+                    "ready": "P\u0159ipraveno",
+                    "run": "Spustit"
+                }
+            },
+            "powder_coffee_counter": {
+                "name": "Pr\u00e1\u0161kov\u00e9 k\u00e1vy"
+            },
+            "program_finish_time": {
+                "name": "\u010cas ukon\u010den\u00ed programu"
+            },
+            "program_progress": {
+                "name": "Pr\u016fb\u011bh programu"
+            },
+            "refrigerator_door_alarm": {
+                "name": "Alarm dve\u0159\u00ed chladni\u010dky",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "name": "Le\u0161t\u00edc\u00ed prost\u0159edek je t\u00e9m\u011b\u0159 pr\u00e1zdn\u00fd",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "ristretto_espresso_counter": {
+                "name": "\u0160\u00e1lky na espresso Ristretto"
+            },
+            "salt_nearly_empty": {
+                "name": "N\u00e1dr\u017e na s\u016fl je t\u00e9m\u011b\u0159 pr\u00e1zdn\u00e1",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Pr\u00e1zdn\u00e1 n\u00e1dr\u017e na vodu",
+                "state": {
+                    "confirmed": "Potvrzeno",
+                    "off": "Vypnuto",
+                    "present": "P\u0159\u00edtomn\u00fd"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "D\u011btsk\u00fd z\u00e1mek"
+            },
+            "cup_warmer": {
+                "name": "Oh\u0159\u00edva\u010d \u0161\u00e1lk\u016f"
+            },
+            "dispenser_enabled": {
+                "name": "D\u00e1vkova\u010d",
+                "state": {
+                    "off": "Zak\u00e1z\u00e1no",
+                    "on": "Povoleno"
+                }
+            },
+            "door_assistant_freezer": {
+                "name": "Asistent dve\u0159\u00ed mraz\u00e1ku"
+            },
+            "door_assistant_fridge": {
+                "name": "Asistent dve\u0159\u00ed chladni\u010dky"
+            },
+            "eco_mode": {
+                "name": "Ekonomick\u00fd re\u017eim"
+            },
+            "freezer_super_mode": {
+                "name": "Super re\u017eim mrazni\u010dky"
+            },
+            "fresh_mode": {
+                "name": "Re\u017eim Fresh"
+            },
+            "power": {
+                "name": "V\u00fdkon"
+            },
+            "refrigerator_super_mode": {
+                "name": "Super re\u017eim chladni\u010dky"
+            },
+            "sabbath_mode": {
+                "name": "Re\u017eim Sabbath"
+            },
+            "vacation_mode": {
+                "name": "Re\u017eim dovolen\u00e9"
+            }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "Bud\u00edk"
+            }
+        }
+    },
+    "exceptions": {
+        "power_off": {
+            "message": "Chyba p\u0159i pokusu o vypnut\u00ed {appliance_name} s hodnotou \"{value}\": {description}"
+        },
+        "power_on": {
+            "message": "Chyba p\u0159i pokusu o zapnut\u00ed za\u0159\u00edzen\u00ed {appliance_name}: {description}"
+        },
+        "select_light_custom_color": {
+            "message": "Chyba p\u0159i pokusu o v\u00fdb\u011br vlastn\u00ed barvy {entity_id}: {description}"
+        },
+        "set_light_brightness": {
+            "message": "Chyba p\u0159i pokusu o nastaven\u00ed jasu {entity_id}: {description}"
+        },
+        "set_light_color": {
+            "message": "Chyba p\u0159i pokusu o nastaven\u00ed barvy {entity_id}: {description}"
+        },
+        "set_light_effect": {
+            "message": "Chyba p\u0159i pokusu o nastaven\u00ed efektu {entity_id}: {description}"
+        },
+        "set_setting": {
+            "message": "Chyba p\u0159i pokusu o p\u0159i\u0159azen\u00ed hodnoty \"{value}\" k nastaven\u00ed \"{key}\" pro {entity_id}:\n{description}"
+        },
+        "start_program": {
+            "message": "Chyba p\u0159i pokusu o spu\u0161t\u011bn\u00ed programu {program}: {description}"
+        },
+        "stop_program": {
+            "message": "Chyba p\u0159i pokusu o zastaven\u00ed programu {program}: {description}"
+        },
+        "turn_off": {
+            "message": "Chyba p\u0159i pokusu o vypnut\u00ed {entity_id} ({key}): {description}"
+        },
+        "turn_off_light": {
+            "message": "Chyba p\u0159i pokusu o vypnut\u00ed {entity_id}: {description}"
+        },
+        "turn_off_not_supported": {
+            "message": "{appliance_name} nepodporuje vypnut\u00ed nebo p\u0159echod do pohotovostn\u00edho re\u017eimu."
+        },
+        "turn_on": {
+            "message": "Chyba p\u0159i pokusu o zapnut\u00ed {entity_id} ({key}): {description}"
+        },
+        "turn_on_light": {
+            "message": "Chyba p\u0159i pokusu o zapnut\u00ed {entity_id}: {description}"
+        },
+        "unable_to_retrieve_turn_off": {
+            "message": "Nelze vypnout {appliance_name}, proto\u017ee nebylo mo\u017en\u00e9 ur\u010dit jeho podporu pro vypnut\u00ed nebo p\u0159echod do pohotovostn\u00edho re\u017eimu."
+        }
+    },
+    "issues": {
+        "deprecated_binary_common_door_sensor": {
+            "description": "Bin\u00e1rn\u00ed dve\u0159n\u00ed senzor \"{entity}\", kter\u00fd je zastaral\u00fd, se pou\u017e\u00edv\u00e1 v n\u00e1sleduj\u00edc\u00edch automatizac\u00edch nebo skriptech:\n{items}\n\nEntita senzoru s dal\u0161\u00edmi mo\u017en\u00fdmi stavy je k dispozici a m\u011bla by b\u00fdt d\u00e1le pou\u017e\u00edv\u00e1na; chcete-li tento probl\u00e9m vy\u0159e\u0161it, pou\u017eijte jej ve v\u00fd\u0161e uveden\u00fdch automatizac\u00edch nebo skriptech.",
+            "title": "V n\u011bkter\u00fdch automatizac\u00edch nebo skriptech byl zji\u0161t\u011bn zastaral\u00fd bin\u00e1rn\u00ed dve\u0159n\u00ed senzor"
+        }
+    },
+    "services": {
+        "change_setting": {
+            "description": "Zm\u011bn\u00ed nastaven\u00ed.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                },
+                "key": {
+                    "description": "Kl\u00ed\u010d nastaven\u00ed.",
+                    "name": "Kl\u00ed\u010d"
+                },
+                "value": {
+                    "description": "Hodnota nastaven\u00ed.",
+                    "name": "Hodnota"
+                }
+            },
+            "name": "Zm\u011bnit nastaven\u00ed"
+        },
+        "pause_program": {
+            "description": "Pozastav\u00ed aktu\u00e1ln\u011b b\u011b\u017e\u00edc\u00ed program.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                }
+            },
+            "name": "Pozastavit program"
+        },
+        "resume_program": {
+            "description": "Obnov\u00ed pozastaven\u00fd program.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                }
+            },
+            "name": "Obnovit program"
+        },
+        "select_program": {
+            "description": "Vybere program bez jeho spu\u0161t\u011bn\u00ed.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                },
+                "key": {
+                    "description": "Kl\u00ed\u010d volby.",
+                    "name": "Kl\u00ed\u010d volby"
+                },
+                "program": {
+                    "description": "Program k v\u00fdb\u011bru.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Jednotka pro volbu.",
+                    "name": "Jednotka pro volbu"
+                },
+                "value": {
+                    "description": "Hodnota volby.",
+                    "name": "Hodnota volby"
+                }
+            },
+            "name": "Vybrat program"
+        },
+        "set_option_active": {
+            "description": "Nastav\u00ed volbu pro aktivn\u00ed program.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                },
+                "key": {
+                    "description": "Kl\u00ed\u010d volby.",
+                    "name": "Kl\u00ed\u010d"
+                },
+                "value": {
+                    "description": "Hodnota volby.",
+                    "name": "Hodnota"
+                }
+            },
+            "name": "Nastavit volbu aktivn\u00edho programu"
+        },
+        "set_option_selected": {
+            "description": "Nastav\u00ed volbu pro vybran\u00fd program.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                },
+                "key": {
+                    "description": "Kl\u00ed\u010d volby.",
+                    "name": "Kl\u00ed\u010d"
+                },
+                "value": {
+                    "description": "Hodnota volby.",
+                    "name": "Hodnota"
+                }
+            },
+            "name": "Nastavit vybranou volbu programu"
+        },
+        "start_program": {
+            "description": "Vybere program a spust\u00ed jej.",
+            "fields": {
+                "device_id": {
+                    "description": "ID za\u0159\u00edzen\u00ed.",
+                    "name": "ID za\u0159\u00edzen\u00ed"
+                },
+                "key": {
+                    "description": "Kl\u00ed\u010d volby.",
+                    "name": "Kl\u00ed\u010d volby"
+                },
+                "program": {
+                    "description": "Program k v\u00fdb\u011bru.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Jednotka pro volbu.",
+                    "name": "Jednotka pro volbu"
+                },
+                "value": {
+                    "description": "Hodnota volby.",
+                    "name": "Hodnota volby"
+                }
+            },
+            "name": "Spustit program"
+        }
+    }
+}

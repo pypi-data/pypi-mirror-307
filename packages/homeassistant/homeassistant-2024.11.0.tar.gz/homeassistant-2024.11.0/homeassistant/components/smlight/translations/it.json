@@ -1,0 +1,77 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Il dispositivo \u00e8 gi\u00e0 configurato",
+            "cannot_connect": "Impossibile connettersi",
+            "reauth_failed": "Autenticazione non valida",
+            "reauth_successful": "La riautenticazione ha avuto successo"
+        },
+        "error": {
+            "cannot_connect": "Impossibile connettersi",
+            "invalid_auth": "Autenticazione non valida",
+            "unknown": "Errore imprevisto"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Password",
+                    "username": "Nome utente"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Nome utente"
+                },
+                "title": "Autenticazione scaduta per {name}"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "vpn": {
+                "name": "VPN"
+            }
+        },
+        "button": {
+            "reconnect_zigbee_router": {
+                "name": "Riconnetti il router Zigbee"
+            }
+        },
+        "sensor": {
+            "device_mode": {
+                "name": "Modalit\u00e0 di connessione",
+                "state": {
+                    "eth": "Ethernet",
+                    "usb": "USB",
+                    "wifi": "Wi-Fi"
+                }
+            },
+            "firmware_channel": {
+                "name": "Canale del firmware",
+                "state": {
+                    "dev": "Sviluppo",
+                    "release": "Stabile"
+                }
+            },
+            "zigbee_type": {
+                "name": "Tipo di zigbee",
+                "state": {
+                    "coordinator": "Coordinatore",
+                    "router": "Router",
+                    "thread": "Argomento"
+                }
+            }
+        },
+        "switch": {
+            "vpn_enabled": {
+                "name": "VPN abilitata"
+            }
+        }
+    }
+}

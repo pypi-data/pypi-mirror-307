@@ -1,0 +1,287 @@
+{
+    "config": {
+        "abort": {
+            "missing_configuration": "Integratie niet geconfigureerd. Raadpleeg de documentatie.",
+            "no_url_available": "Geen URL beschikbaar. Voor informatie over deze fout, [raadpleeg de documentatie]({docs_url})",
+            "oauth_error": "Ongeldige tokengegevens ontvangen.",
+            "oauth_failed": "Fout bij het verkrijgen van toegangstoken.",
+            "oauth_timeout": "Time-out bij het verkrijgen OAuth token.",
+            "oauth_unauthorized": "OAuth autorisatiefout tijdens het verkrijgen van een toegangstoken."
+        },
+        "create_entry": {
+            "default": "Authenticatie geslaagd"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Kies een authenticatie methode"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "freezer_door": {
+                "name": "Vriezerdeur"
+            },
+            "lost": {
+                "name": "Verloren"
+            }
+        },
+        "number": {
+            "freezer_setpoint_temperature": {
+                "name": "Vriezer temperatuur"
+            }
+        },
+        "sensor": {
+            "battery_level": {
+                "name": "Batterijniveau"
+            },
+            "bean_container_empty": {
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "camera_state": {
+                "state": {
+                    "disabled": "Uitgeschakeld",
+                    "error": "Fout",
+                    "ready": "Gereed",
+                    "sleeping": "Slapen"
+                }
+            },
+            "coffee_counter": {
+                "name": "Koffies"
+            },
+            "door": {
+                "name": "Deur",
+                "state": {
+                    "closed": "Gesloten",
+                    "locked": "Vergrendeld",
+                    "open": "Open"
+                }
+            },
+            "drip_tray_full": {
+                "name": "Lekbak vol",
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "Vriezer temperatuur alarm",
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "hot_milk_counter": {
+                "name": "Hete melkbekers"
+            },
+            "hot_water_counter": {
+                "name": "Heet water"
+            },
+            "hot_water_cups_counter": {
+                "name": "Heet water kopjes"
+            },
+            "last_selected_map": {
+                "name": "Laatst geselecteerde kaart",
+                "state": {
+                    "map1": "Kaart 1",
+                    "map2": "Kaart 2",
+                    "map3": "Kaart 3"
+                }
+            },
+            "milk_counter": {
+                "name": "Melk bekers"
+            },
+            "operation_state": {
+                "state": {
+                    "error": "Fout",
+                    "finished": "Voltooid",
+                    "inactive": "Inactief",
+                    "pause": "Gepauzeerd",
+                    "ready": "Klaar"
+                }
+            },
+            "powder_coffee_counter": {
+                "name": "Poederkoffies"
+            },
+            "refrigerator_door_alarm": {
+                "name": "Koelkastdeur alarm",
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "ristretto_espresso_counter": {
+                "name": "Ristretto espresso kopjes"
+            },
+            "salt_nearly_empty": {
+                "state": {
+                    "off": "Uit"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Watertank leeg",
+                "state": {
+                    "off": "Uit"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Kinderslot"
+            },
+            "cup_warmer": {
+                "name": "Kopjeswarmer"
+            },
+            "dispenser_enabled": {
+                "state": {
+                    "off": "Uitgeschakeld",
+                    "on": "Ingeschakeld"
+                }
+            },
+            "eco_mode": {
+                "name": "Eco modus"
+            },
+            "fresh_mode": {
+                "name": "Vers modus"
+            },
+            "sabbath_mode": {
+                "name": "Sabbatmodus"
+            },
+            "vacation_mode": {
+                "name": "Vakantiemodus"
+            }
+        }
+    },
+    "services": {
+        "change_setting": {
+            "description": "Wijzigt een instelling.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                },
+                "key": {
+                    "description": "Sleutel van de instelling.",
+                    "name": "Sleutel"
+                },
+                "value": {
+                    "description": "Waarde van de instelling.",
+                    "name": "Waarde"
+                }
+            },
+            "name": "Wijzig instelling"
+        },
+        "pause_program": {
+            "description": "Pauzeert het huidig uigevoerd programma.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                }
+            },
+            "name": "Pauzeer programma"
+        },
+        "resume_program": {
+            "description": "Hervat een gepauzeerd programma.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                }
+            },
+            "name": "Hervat programma"
+        },
+        "select_program": {
+            "description": "Selecteert een programma zonder het te starten.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                },
+                "key": {
+                    "description": "Sleutel van de optie.",
+                    "name": "Optiesleutel"
+                },
+                "program": {
+                    "description": "Programma om te selecteren.",
+                    "name": "Programma"
+                },
+                "unit": {
+                    "description": "Eenheid van de optie.",
+                    "name": "Optie eenheid"
+                },
+                "value": {
+                    "description": "Waarde van de optie.",
+                    "name": "Optiewaarde"
+                }
+            },
+            "name": "Selecteer programma"
+        },
+        "set_option_active": {
+            "description": "Stelt een optie in voor het actieve programma.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                },
+                "key": {
+                    "description": "Sleutel van de optie.",
+                    "name": "Sleutel"
+                },
+                "value": {
+                    "description": "Waarde van de optie.",
+                    "name": "Waarde"
+                }
+            },
+            "name": "Actief programma optie instellen"
+        },
+        "set_option_selected": {
+            "description": "Instellen optie voor het geselecteerde programma.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                },
+                "key": {
+                    "description": "Sleutel van de optie.",
+                    "name": "Sleutel"
+                },
+                "value": {
+                    "description": "Waarde van de optie.",
+                    "name": "Waarde"
+                }
+            },
+            "name": "Stel de geselecteerde programma optie in."
+        },
+        "start_program": {
+            "description": "Selecteert een programma en start het.",
+            "fields": {
+                "device_id": {
+                    "description": "ID van het apparaat.",
+                    "name": "Apparaat ID"
+                },
+                "key": {
+                    "description": "Sleutel van de optie.",
+                    "name": "Optiesleutel"
+                },
+                "program": {
+                    "description": "Programma om te selecteren.",
+                    "name": "Programma"
+                },
+                "unit": {
+                    "description": "Eenheid van de optie.",
+                    "name": "Optie eenheid"
+                },
+                "value": {
+                    "description": "Waarde van de optie.",
+                    "name": "Optiewaarde"
+                }
+            },
+            "name": "Start een programma"
+        }
+    }
+}

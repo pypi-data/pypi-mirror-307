@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_url": "Ung\u00fcltige URL",
+            "invalid_url_schema": "Ung\u00fcltiges URL-Schema.\nDie URL sollte mit 'http://' oder 'https://' beginnen."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "Die URL deiner go2rtc-Instanz."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "Die URL deiner go2rtc-Instanz."
+                }
+            }
+        }
+    }
+}
