@@ -1,0 +1,3 @@
+[console_scripts]
+tgram=tgram.cli.main:main
+
