@@ -1,0 +1,12 @@
+numpy
+scipy
+aspcore
+numba
+wigners
+jax
+
+[test]
+pytest
+hypothesis
+cvxpy
+aspsim
