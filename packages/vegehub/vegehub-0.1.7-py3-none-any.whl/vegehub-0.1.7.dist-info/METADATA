@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vegehub
+Version: 0.1.7
+Summary: A basic package for simplifying interactions with the Vegetronix VegeHub
+Home-page: https://www.vegetronix.com/Products/VG-HUB-RELAY/
+License: GPL-3.0-or-later
+Author: GhoweVege
+Author-email: 85890024+GhoweVege@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.10.8,<4.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Project-URL: Repository, https://github.com/GhoweVege/VegeHubPyPiLib
+Description-Content-Type: text/markdown
+
+# Vegetronix VegeHub
+
+This package is intended to simplify interactions with the [Vegetronix VegeHub](https://www.vegetronix.com/Products/VG-HUB-RELAY/). It allows remote setup of the API key and target server address, as well as simplifying retrieval of information about the Hub, including its MAC address.
+
+This package was written for use with the VegeHub integration for [Home Assistant](https://www.home-assistant.io/), but may be used in other projects as well.
+
