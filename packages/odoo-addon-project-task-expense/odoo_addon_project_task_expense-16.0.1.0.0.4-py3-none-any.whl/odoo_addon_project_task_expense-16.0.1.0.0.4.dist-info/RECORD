@@ -1,0 +1,16 @@
+odoo/addons/project_task_expense/README.rst,sha256=ADxD8qqVsSLrWOa_epIfqoDSBhO1VvkPB3QNPNfTD5E,1962
+odoo/addons/project_task_expense/__init__.py,sha256=7RYlQT-3X1qRHdrZi8PBBRsE8mw2STmQaTccYSFfVQw,145
+odoo/addons/project_task_expense/__manifest__.py,sha256=YnW790I_qTwwfxLPTehhhJBHIURY0lNiseKppfUtW_g,605
+odoo/addons/project_task_expense/i18n/es.po,sha256=61cr5ujPv5aBpC6o08EB1GXJC5JwJ-_HVSlVspuufnM,1988
+odoo/addons/project_task_expense/models/__init__.py,sha256=1vnOpAqgUW5HzuPKo3EedueS-_XSLdvCGyjfTiBzsks,242
+odoo/addons/project_task_expense/models/account_analytic_line.py,sha256=sPAJh60XHggqoh5_J1btb3mKffXIZQgJA3cINZq6TIY,641
+odoo/addons/project_task_expense/models/hr_expense.py,sha256=hmFc4rBqWTOrD3GCTDKrOxPHDyS9G47tL2rxeOLhKPU,1306
+odoo/addons/project_task_expense/models/project_project.py,sha256=phExTk5TjLcOgx-mCnqhxSCOGpEkDxy5F8pLOVwzxmY,1238
+odoo/addons/project_task_expense/models/project_task.py,sha256=_7aeXc45CCXR3U0DZCjenT6raCoqcwh-I3sGz2O7Vsg,1113
+odoo/addons/project_task_expense/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/project_task_expense/views/hr_expense_view.xml,sha256=F4w_biw5-JSECHv5PiuJNB9Q-82cvy9vBUuqlUFEqHg,686
+odoo/addons/project_task_expense/views/project_views.xml,sha256=8PBgKmNH3ZrfV8wC7oaXIAqiGX_9VvGdHfBAXISZ_uE,4300
+odoo_addon_project_task_expense-16.0.1.0.0.4.dist-info/METADATA,sha256=xD3wlFmLdG67lq5-TAOTT0inbvK0iIb4VqY08yBuINE,2505
+odoo_addon_project_task_expense-16.0.1.0.0.4.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_project_task_expense-16.0.1.0.0.4.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_project_task_expense-16.0.1.0.0.4.dist-info/RECORD,,
