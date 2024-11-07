@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling >= 1.13.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "utask"
+description = "utask - next generation task scheduling meta framework"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Xulin Zhou (voidZXL)", email = "zxl@utilmeta.com" },
+]
+keywords = ["task", "cron", "schedule", "backend", "meta", "declarative", "utype"]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "utype>=0.5.6",
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://utilmeta.com/utask"
+Documentation = "https://docs.utilmeta.com/utask/en"
+Repository = "https://github.com/utilmeta/utask"
+
+[project.optional-dependencies]
+all = [
+    "utilmeta >= 2.6.0",
+]
+
+[tool.hatch.version]
+path = "utask/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/docs",
+    "/tests"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["utask"]
+
+# [project.scripts]
+# meta = "utilmeta.bin.meta:main"
+# utilmeta = "utilmeta.bin.meta:main"

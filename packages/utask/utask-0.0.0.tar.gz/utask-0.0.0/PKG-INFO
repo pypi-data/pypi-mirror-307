@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: utask
+Version: 0.0.0
+Summary: utask - next generation task scheduling meta framework
+Project-URL: Homepage, https://utilmeta.com/utask
+Project-URL: Documentation, https://docs.utilmeta.com/utask/en
+Project-URL: Repository, https://github.com/utilmeta/utask
+Author-email: "Xulin Zhou (voidZXL)" <zxl@utilmeta.com>
+License: Copyright (c) 2021-present Xulin Zhou (周煦林)
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+License-File: LICENSE
+Keywords: backend,cron,declarative,meta,schedule,task,utype
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: utype>=0.5.6
+Provides-Extra: all
+Requires-Dist: utilmeta>=2.6.0; extra == 'all'
+Description-Content-Type: text/markdown
+
+# uTask
+
+Next generation python task scheduling meta framework
