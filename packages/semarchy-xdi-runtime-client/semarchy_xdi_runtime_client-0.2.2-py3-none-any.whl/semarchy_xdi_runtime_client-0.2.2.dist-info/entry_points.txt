@@ -1,0 +1,2 @@
+[console_scripts]
+semarchy-xdi-runtime-client = semarchy_xdi_runtime_client.cli.main:cli
