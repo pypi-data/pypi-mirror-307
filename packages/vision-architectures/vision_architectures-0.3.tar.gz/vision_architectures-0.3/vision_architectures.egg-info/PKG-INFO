@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vision-architectures
+Version: 0.3
+Summary: Vision architectures
+Home-page: https://github.com/arjunagarwal899/vision_architectures
+Author: Arjun Agarwal
+Author-email: arjunagarwal899@gmail.com
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
