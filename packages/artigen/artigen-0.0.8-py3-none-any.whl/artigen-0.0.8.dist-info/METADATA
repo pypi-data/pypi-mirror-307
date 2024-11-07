@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: artigen
+Version: 0.0.8
+Summary: A small example package
+Author-email: Dev Attentions <dev@attentions.ai>, sharky_19 <suraj.singh@attentions.ai>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Here , you can give a description of your project.
+
+## Installation
+
+You can install the package using pip: 
+pip install -i https://test.pypi.org/simple/
