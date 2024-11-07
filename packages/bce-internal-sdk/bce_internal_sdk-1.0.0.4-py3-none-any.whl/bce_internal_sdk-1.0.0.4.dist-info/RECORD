@@ -1,0 +1,17 @@
+client/__init__.py,sha256=UOxkYstEJWQur5jC5ESJsWezmsXajZ-QeUoH_hS7AMU,212
+client/base_model.py,sha256=SBy0tZtVB3OMC174IjZj2RFv8s-PIiBxmN_0zhW4_Gk,895
+client/bce_internal_client.py,sha256=pUfZGzC3cmoOYbtbowNsDnQid6lmHeyNfWaRN1gFQxY,4035
+client/decorator.py,sha256=WLk5es4wMUxL_lfnwVCWt9qwsi1H0qEreykh5lX32WM,859
+client/paging.py,sha256=lCEp1oi-tMOe3YjH0H4KaMFYShCTAatAcMnbdpykC9c,1752
+client/validator.py,sha256=QgaRZgPJcBIpsMp10g9x-hRBlx3U45B7e0ApdNYQD8w,4374
+output/__init__.py,sha256=8sFyX-QcznYAf__G6oPw1KXnKwNEP6iWX_bJE1sdZNY,212
+output/client/__init__.py,sha256=UOxkYstEJWQur5jC5ESJsWezmsXajZ-QeUoH_hS7AMU,212
+output/client/base_model.py,sha256=SBy0tZtVB3OMC174IjZj2RFv8s-PIiBxmN_0zhW4_Gk,895
+output/client/bce_internal_client.py,sha256=pUfZGzC3cmoOYbtbowNsDnQid6lmHeyNfWaRN1gFQxY,4035
+output/client/decorator.py,sha256=WLk5es4wMUxL_lfnwVCWt9qwsi1H0qEreykh5lX32WM,859
+output/client/paging.py,sha256=lCEp1oi-tMOe3YjH0H4KaMFYShCTAatAcMnbdpykC9c,1752
+output/client/validator.py,sha256=QgaRZgPJcBIpsMp10g9x-hRBlx3U45B7e0ApdNYQD8w,4374
+bce_internal_sdk-1.0.0.4.dist-info/METADATA,sha256=bjsSLG5WdeKXuJrMZ1Ie-HV56eQp_S8TuShQBJ28LR4,611
+bce_internal_sdk-1.0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bce_internal_sdk-1.0.0.4.dist-info/top_level.txt,sha256=9UGGsSnrnxKCE8hiBu1hxRZ8SZK9Soz2JkN03aY3qiY,14
+bce_internal_sdk-1.0.0.4.dist-info/RECORD,,
