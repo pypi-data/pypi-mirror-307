@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "async-tasks-python"
+version = "1.0.0"
+description = "Async tasks made simple—multi-threaded, stoppable, and timeout-ready."
+authors = ["Del Wang <hello@xbox.work>"]
+maintainers = ["Del Wang <hello@xbox.work>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://del.wang"
+repository = "https://github.com/idootop/async-tasks"
+documentation = "https://github.com/idootop/async-tasks/README.md"
+keywords = ["async", "tasks", "threading", 'stoppable']
+
+
+packages = [{ include = "async_tasks" }]
+
+
+[tool.poetry.urls]
+Changelog = "https://github.com/idootop/async-tasks/blob/main/CHANGELOG.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
