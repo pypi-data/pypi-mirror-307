@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: magic-wormhole-transit-relay
+Version: 0.4.0
+Summary: Transit Relay server for Magic-Wormhole
+Home-page: https://github.com/warner/magic-wormhole-transit-relay
+Author: Brian Warner
+Author-email: warner-magic-wormhole@lothar.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: twisted>=21.2.0
+Requires-Dist: autobahn>=21.3.1
+Requires-Dist: pypiwin32; sys_platform == "win32"
+Provides-Extra: dev
+Requires-Dist: mock; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: pyflakes; extra == "dev"
+Provides-Extra: release
+Requires-Dist: dulwich; extra == "release"
+Requires-Dist: docutils; extra == "release"
+Requires-Dist: gpg; extra == "release"
+Requires-Dist: wheel; extra == "release"
+
