@@ -1,0 +1,504 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: GET
+    uri: http://127.0.0.1:3000/api/v4/projects/gitlabracadabra%2Ftest-group%2Fprotected-branches
+  response:
+    body:
+      string: '{"id":62841443,"description":null,"name":"Protected Branches","name_with_namespace":"GitLabracadabra
+        / Test group / Protected Branches","path":"protected-branches","path_with_namespace":"gitlabracadabra/test-group/protected-branches","created_at":"2024-10-21T19:57:37.401Z","default_branch":"main","tag_list":[],"topics":[],"ssh_url_to_repo":"git@gitlab.com:gitlabracadabra/test-group/protected-branches.git","http_url_to_repo":"http://127.0.0.1:3000/gitlabracadabra/test-group/protected-branches.git","web_url":"http://127.0.0.1:3000/gitlabracadabra/test-group/protected-branches","readme_url":"http://127.0.0.1:3000/gitlabracadabra/test-group/protected-branches/-/blob/main/README.md","forks_count":0,"avatar_url":null,"star_count":0,"last_activity_at":"2024-10-21T19:57:37.338Z","namespace":{"id":95178156,"name":"Test
+        group","path":"test-group","kind":"group","full_path":"gitlabracadabra/test-group","parent_id":4754669,"avatar_url":null,"web_url":"http://127.0.0.1:3000/groups/gitlabracadabra/test-group"},"container_registry_image_prefix":"registry.gitlab.com/gitlabracadabra/test-group/protected-branches","_links":{"self":"http://127.0.0.1:3000/api/v4/projects/62841443","issues":"http://127.0.0.1:3000/api/v4/projects/62841443/issues","merge_requests":"http://127.0.0.1:3000/api/v4/projects/62841443/merge_requests","repo_branches":"http://127.0.0.1:3000/api/v4/projects/62841443/repository/branches","labels":"http://127.0.0.1:3000/api/v4/projects/62841443/labels","events":"http://127.0.0.1:3000/api/v4/projects/62841443/events","members":"http://127.0.0.1:3000/api/v4/projects/62841443/members","cluster_agents":"http://127.0.0.1:3000/api/v4/projects/62841443/cluster_agents"},"packages_enabled":true,"empty_repo":false,"archived":false,"visibility":"private","resolve_outdated_diff_discussions":false,"container_expiration_policy":{"cadence":"1d","enabled":false,"keep_n":10,"older_than":"90d","name_regex":".*","name_regex_keep":null,"next_run_at":"2024-10-22T19:57:37.416Z"},"repository_object_format":"sha1","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"jobs_enabled":true,"snippets_enabled":true,"container_registry_enabled":true,"service_desk_enabled":true,"service_desk_address":"contact-project+gitlabracadabra-test-group-protected-branches-62841443-issue-@incoming.gitlab.com","can_create_merge_request_in":true,"issues_access_level":"enabled","repository_access_level":"enabled","merge_requests_access_level":"enabled","forking_access_level":"enabled","wiki_access_level":"enabled","builds_access_level":"enabled","snippets_access_level":"enabled","pages_access_level":"private","analytics_access_level":"enabled","container_registry_access_level":"enabled","security_and_compliance_access_level":"private","releases_access_level":"enabled","environments_access_level":"enabled","feature_flags_access_level":"enabled","infrastructure_access_level":"enabled","monitor_access_level":"enabled","model_experiments_access_level":"enabled","model_registry_access_level":"enabled","emails_disabled":false,"emails_enabled":true,"shared_runners_enabled":true,"lfs_enabled":true,"creator_id":1238069,"import_url":null,"import_type":null,"import_status":"none","import_error":null,"open_issues_count":0,"description_html":"","updated_at":"2024-10-21T19:57:39.286Z","ci_default_git_depth":20,"ci_forward_deployment_enabled":true,"ci_forward_deployment_rollback_allowed":true,"ci_job_token_scope_enabled":false,"ci_separated_caches":true,"ci_allow_fork_pipelines_to_run_in_parent_project":true,"ci_id_token_sub_claim_components":["project_path","ref_type","ref"],"build_git_strategy":"fetch","keep_latest_artifact":true,"restrict_user_defined_variables":false,"ci_pipeline_variables_minimum_override_role":"maintainer","runners_token":null,"runner_token_expiration_interval":null,"group_runners_enabled":true,"auto_cancel_pending_pipelines":"enabled","build_timeout":3600,"auto_devops_enabled":false,"auto_devops_deploy_strategy":"continuous","ci_push_repository_for_job_token_allowed":false,"ci_config_path":"","public_jobs":true,"shared_with_groups":[],"only_allow_merge_if_pipeline_succeeds":false,"allow_merge_on_skipped_pipeline":null,"request_access_enabled":true,"only_allow_merge_if_all_discussions_are_resolved":false,"remove_source_branch_after_merge":true,"printing_merge_request_link_enabled":true,"merge_method":"merge","squash_option":"default_off","enforce_auth_checks_on_uploads":true,"suggestion_commit_message":null,"merge_commit_template":null,"squash_commit_template":null,"issue_branch_template":null,"warn_about_potentially_unwanted_characters":true,"autoclose_referenced_issues":true,"approvals_before_merge":0,"mirror":false,"external_authorization_classification_label":"","marked_for_deletion_at":null,"marked_for_deletion_on":null,"requirements_enabled":true,"requirements_access_level":"enabled","security_and_compliance_enabled":true,"pre_receive_secret_detection_enabled":false,"compliance_frameworks":[],"issues_template":null,"merge_requests_template":null,"ci_restrict_pipeline_cancellation_role":"developer","merge_pipelines_enabled":false,"merge_trains_enabled":false,"merge_trains_skip_train_allowed":false,"only_allow_merge_if_all_status_checks_passed":false,"allow_pipeline_trigger_approve_deployment":false,"prevent_merge_without_jira_issue":false,"permissions":{"project_access":{"access_level":50,"notification_level":3},"group_access":null}}'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8d63d98dbd087786-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:14 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bd5k6J1WGfIhp3mIPm0RG0DdXo7qq6G9%2F%2BmxmzZ0wkktKWweZsb%2FART0BdHk2Ert6Atlu7793ldHR7vRXy50fRZt3KfkAzZUPSiMVCtG%2BhB0UrmDxzoJJfFBgOqrzeLgFlfyHI%2F3Jo8%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000;
+        path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-length:
+      - '5384'
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"28bfb01abf8789d8765b185631bec532"
+      gitlab-lb:
+      - haproxy-main-04-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-c
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin, Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"d806a398a90154cc9428277f686841ea","version":"1"}'
+      x-request-id:
+      - d806a398a90154cc9428277f686841ea
+      x-runtime:
+      - '0.244832'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: GET
+    uri: http://127.0.0.1:3000/api/v4/projects/62841443/protected_branches
+  response:
+    body:
+      string: '[{"id":126748477,"name":"main","push_access_levels":[{"id":152052173,"access_level":40,"access_level_description":"Maintainers","deploy_key_id":null,"user_id":null,"group_id":null}],"merge_access_levels":[{"id":133535206,"access_level":40,"access_level_description":"Maintainers","user_id":null,"group_id":null}],"allow_force_push":false,"unprotect_access_levels":[],"code_owner_approval_required":false,"inherited":false}]'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8d63d991996ccd25-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:15 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=YPp3WkCwAVckbSPa6TNqF9ubjyw0QLJvkwldlejYHGPp4x5CzD6CPm0Sq%2Fw4VFD04P5%2F9gaVgS%2BsCKnYIE1MGzy%2BoPXob%2BNOpNbXXfHl3doHqwT900HEmOjnfuD0t5VwCzfK38lzFrw%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-length:
+      - '423'
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"e1aed0f6cec295a3cdebfcb6060ef9de"
+      gitlab-lb:
+      - haproxy-main-13-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-c
+      link:
+      - <http://127.0.0.1:3000/api/v4/projects/62841443/protected_branches?id=62841443&page=1&per_page=20>;
+        rel="first", <http://127.0.0.1:3000/api/v4/projects/62841443/protected_branches?id=62841443&page=1&per_page=20>;
+        rel="last"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin, Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"4ac67b0f6abe9ac33cbd2c41122cca21","version":"1"}'
+      x-next-page:
+      - ''
+      x-page:
+      - '1'
+      x-per-page:
+      - '20'
+      x-prev-page:
+      - ''
+      x-request-id:
+      - 4ac67b0f6abe9ac33cbd2c41122cca21
+      x-runtime:
+      - '0.135495'
+      x-total:
+      - '1'
+      x-total-pages:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: GET
+    uri: http://127.0.0.1:3000/api/v4/users?username=kubitus-bot
+  response:
+    body:
+      string: '[{"id":9280824,"username":"kubitus-bot","name":"Kubitus Bot","state":"active","locked":false,"avatar_url":"http://127.0.0.1:3000/uploads/-/system/user/avatar/9280824/avatar.png","web_url":"http://127.0.0.1:3000/kubitus-bot"}]'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8d63d995da7d63b8-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:15 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kfTJDOtnGXIg78KHn%2FZAN8CT3aqi5FSh3O2jMf6ICByq6a1q7W4DsFJVpCocBNoNoqn7xtOTNNXRYrOttHYL%2FyC25ROlm8n6n0f1N8pnLIJY7U43EwXu8HHKuEekSBkyWxJKVX%2B8v6c%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-length:
+      - '219'
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"f30156248a9fd63d80fa7ab52bdc5499"
+      gitlab-lb:
+      - haproxy-main-46-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-c
+      link:
+      - <http://127.0.0.1:3000/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_active=false&exclude_external=false&exclude_humans=false&exclude_internal=false&external=false&humans=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&username=kubitus-bot&with_custom_attributes=false&without_project_bots=false&without_projects=false>;
+        rel="first", <http://127.0.0.1:3000/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_active=false&exclude_external=false&exclude_humans=false&exclude_internal=false&external=false&humans=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&username=kubitus-bot&with_custom_attributes=false&without_project_bots=false&without_projects=false>;
+        rel="last"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin, Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"1f891c4e675d8f7864ff53631e5a0646","version":"1"}'
+      x-next-page:
+      - ''
+      x-page:
+      - '1'
+      x-per-page:
+      - '20'
+      x-prev-page:
+      - ''
+      x-request-id:
+      - 1f891c4e675d8f7864ff53631e5a0646
+      x-runtime:
+      - '0.078278'
+      x-total:
+      - '1'
+      x-total-pages:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-type:
+      - application/json
+      Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: GET
+    uri: http://127.0.0.1:3000/api/v4/projects/62841443/deploy_keys
+  response:
+    body:
+      string: '[{"id":15407951,"title":"My Key","created_at":"2024-10-21T20:02:37.483Z","expires_at":null,"key":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAABgQCdhwnXwER9QkOqdP/s21hTKtKdi832z08Ep25dE0BvOLkkRaRfu+QIJ6yMRqha+L2TejuXDzrp9zaBlF042rrj58W+blq78Vk/LLg5fdAEPgh/7H7VVjRQwVrU6gYx1nF1R2sC+3HWNHk4Rnf1f+6m90duhI0Pzo1SEPN24pYg2MEBlZofnzh0UYcTNwqWpckRai8dRSxkAehIbAwoJRCmipixvGkQyjHKPNYRlqLoMpZ5F77y0zfsM8AAh+k/wRsAWGvEXW5hnljesqMFJlBEqqHfdkxtKjFISdqSRGYAUpR9fcL8m6hklyTRiwg124o8f8s9yrgWw4V5OEeaBvjHRhuuEIvhuIj19DY8/Bx3StEYIXKbnhTcdQct/+swJJW8VkkJK/xwewkSSI9y56OaAVfh8ypzd7N4IXzw8qgSZOx7z1HRyPOh8KzkrkOJi+BkyLoAFO9QoSxqgqx+yxPpRvkRowyALRA5QYCUMZc+IzOAh3JIO1hIkx5zCayHwxs=
+        camille@camille","usage_type":"auth_and_signing","fingerprint":"bd:f6:92:a3:e2:67:68:5a:cc:02:22:42:a2:bd:78:c4","fingerprint_sha256":"Epje0BgsLD4g2c5srJUSKKN0B9DZ51DEN8/cLbYWvkg","can_push":true}]'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8d63d99978cdcd6f-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:16 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9IlyXHc04L8%2FFEVk1olHOaXEY0k278Mivkz0h7QIeqcr20iA3rP6Os5XvWJkRM40CMWzIuGkUKY%2F2uS51se8IZ%2BwsKTCgPWI1kRbG8S7gK%2FVeD5ioc9Z8Qnjquz%2FGluBGwX5MkBoKRQ%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-length:
+      - '848'
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"9a1edfd73332343cee6dde4b75e17e43"
+      gitlab-lb:
+      - haproxy-main-27-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-b
+      link:
+      - <http://127.0.0.1:3000/api/v4/projects/62841443/deploy_keys?id=62841443&page=1&per_page=20>;
+        rel="first", <http://127.0.0.1:3000/api/v4/projects/62841443/deploy_keys?id=62841443&page=1&per_page=20>;
+        rel="last"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin, Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"55045369a2545ceb1a7d582d29f260db","version":"1"}'
+      x-next-page:
+      - ''
+      x-page:
+      - '1'
+      x-per-page:
+      - '20'
+      x-prev-page:
+      - ''
+      x-request-id:
+      - 55045369a2545ceb1a7d582d29f260db
+      x-runtime:
+      - '0.060509'
+      x-total:
+      - '1'
+      x-total-pages:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "develop", "allowed_to_merge": [{"access_level": 30}, {"user_id":
+      9280824}], "allowed_to_push": [{"access_level": 30}, {"user_id": 9280824}, {"deploy_key_id":
+      15407951}], "allow_force_push": true, "code_owner_approval_required": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '243'
+      Content-type:
+      - application/json
+      Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: POST
+    uri: http://127.0.0.1:3000/api/v4/projects/62841443/protected_branches
+  response:
+    body:
+      string: '{"id":126748601,"name":"develop","push_access_levels":[{"id":152052304,"access_level":30,"access_level_description":"Developers
+        + Maintainers","deploy_key_id":null,"user_id":null,"group_id":null},{"id":152052305,"access_level":40,"access_level_description":"Kubitus
+        Bot","deploy_key_id":null,"user_id":9280824,"group_id":null},{"id":152052306,"access_level":40,"access_level_description":"My
+        Key","deploy_key_id":15407951,"user_id":null,"group_id":null}],"merge_access_levels":[{"id":133535334,"access_level":30,"access_level_description":"Developers
+        + Maintainers","user_id":null,"group_id":null},{"id":133535335,"access_level":40,"access_level_description":"Kubitus
+        Bot","user_id":9280824,"group_id":null}],"allow_force_push":true,"unprotect_access_levels":[{"id":72397508,"access_level":40,"access_level_description":"Maintainers","user_id":null,"group_id":null}],"code_owner_approval_required":true,"inherited":false}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8d63d99c7f186101-LHR
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '921'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:16 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tR2wnmNsmJWOGetWNqZHwk3tg27Cz1qh85YEr9Ce2CYKorrHZwJHEdnhcNuZcr8W3SyYHcMbkA2i%2Fphn2PJyA%2BVBIWBPlJ%2BTq45ZJmYvQ%2FN2B3FubReuDfSULgb%2Fku%2FLn0PKTY4SxnM%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"4fe18c11f9f98d540f9db57bdbbe73ea"
+      gitlab-lb:
+      - haproxy-main-11-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-d
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"5ee1458185503ee0aadf09f10c775692","version":"1"}'
+      x-request-id:
+      - 5ee1458185503ee0aadf09f10c775692
+      x-runtime:
+      - '0.218259'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"merge_access_levels": [{"id": 133535206, "access_level": 40, "access_level_description":
+      "Maintainers", "user_id": null, "group_id": null}], "allowed_to_merge": [{"user_id":
+      9280824}], "push_access_levels": [{"id": 152052173, "access_level": 40, "access_level_description":
+      "Maintainers", "deploy_key_id": null, "user_id": null, "group_id": null}], "allowed_to_push":
+      [{"access_level": 0}, {"user_id": 9280824}, {"id": 152052173, "_destroy": true}],
+      "allow_force_push": true, "code_owner_approval_required": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '515'
+      Content-type:
+      - application/json
+      Cookie:
+      - _cfuvid=ChH7w8PNvA.a7DUWKotzD8Z.Frz1GiDsmseA03ZhK5s-1729540994570-0.0.1.1-604800000
+      PRIVATE-TOKEN:
+      - glpat-Dbz-av_nCfkCoYVyvsuj
+      User-Agent:
+      - gitlabracadabra/2.3.0
+    method: PATCH
+    uri: http://127.0.0.1:3000/api/v4/projects/62841443/protected_branches/main
+  response:
+    body:
+      string: '{"id":126748477,"name":"main","push_access_levels":[{"id":152052308,"access_level":0,"access_level_description":"No
+        one","deploy_key_id":null,"user_id":null,"group_id":null},{"id":152052309,"access_level":40,"access_level_description":"Kubitus
+        Bot","deploy_key_id":null,"user_id":9280824,"group_id":null}],"merge_access_levels":[{"id":133535206,"access_level":40,"access_level_description":"Maintainers","user_id":null,"group_id":null},{"id":133535337,"access_level":40,"access_level_description":"Kubitus
+        Bot","user_id":9280824,"group_id":null}],"allow_force_push":true,"unprotect_access_levels":[],"code_owner_approval_required":true,"inherited":false}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8d63d9a02fdc9400-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Oct 2024 20:03:17 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=a8rGkCrtJNUN80eQsLbsX3%2FC8%2F24zokOUP%2BuAaFp65Cp44cAVPr7TCJIt5%2Bc%2FMibYnOm2sNvv7RevhDEWb%2FL3ieJz%2Ff%2FNAAx9oJ%2B%2FmT9bnvgzjZedzXXT1Y3Gnw%2F5W2ORJSRFDwyMvk%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-length:
+      - '654'
+      content-security-policy:
+      - default-src 'none'
+      etag:
+      - W/"9d95869ae70e02fa7a089e99ff1a5527"
+      gitlab-lb:
+      - haproxy-main-22-lb-gprd
+      gitlab-sv:
+      - api-gke-us-east1-c
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Origin
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-gitlab-meta:
+      - '{"correlation_id":"8fc808bba1737685c3393f0e4a42c3bc","version":"1"}'
+      x-request-id:
+      - 8fc808bba1737685c3393f0e4a42c3bc
+      x-runtime:
+      - '0.278625'
+    status:
+      code: 200
+      message: OK
+version: 1
