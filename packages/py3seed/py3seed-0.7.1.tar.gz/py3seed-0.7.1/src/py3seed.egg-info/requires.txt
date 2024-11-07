@@ -1,0 +1,4 @@
+importlib_metadata>=4.4
+pymongo<4.9
+werkzeug
+Flask
