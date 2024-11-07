@@ -1,0 +1,15 @@
+pandoc
+pypandoc
+sphinx
+sphinx-autodoc-typehints
+pydata-sphinx-theme
+sphinx-design
+readthedocs-sphinx-search
+sphinxcontrib-napoleon
+ipykernel # For tutorials
+ipywidgets # For the tutorials
+nbconvert # For tutorials
+nbsphinx # For tutorials
+plantweb
+optuna
+seaborn
