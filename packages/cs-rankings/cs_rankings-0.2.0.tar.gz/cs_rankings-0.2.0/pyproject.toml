@@ -1,0 +1,27 @@
+[project]
+name = "cs-rankings"
+version = "0.2.0"
+authors = [
+  { name="Bert de Bruijn", email="lpdebruijn@gmail.com" },
+]
+dependencies = [
+    "beautifulsoup4",
+    "selenium"
+]
+description = "Pull competitive Counterstrike rankings from HLTV.org, ESL and Valve."
+readme = "README.md"
+license = { file="LICENCE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/debruijn/cs_rankings"
+"Bug Tracker" = "https://github.com/debruijn/cs_rankings/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
