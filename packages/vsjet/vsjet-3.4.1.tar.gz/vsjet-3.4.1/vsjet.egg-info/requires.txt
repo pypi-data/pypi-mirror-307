@@ -1,0 +1,16 @@
+VapourSynth>=68
+stgpytools>=1.2.0
+vstools==3.3.1
+vspyplugin==1.4.3
+vskernels==3.3.0
+vsexprtools==1.7.0
+vsrgtools==1.8.0
+vsmasktools==1.3.1
+vsaa==1.11.0
+vsscale==2.2.0
+vsdenoise==2.7.0
+vsdehalo==1.9.1
+vsdeband==1.2.1
+vsdeinterlace==0.8.0
+vssource==0.11.1
+vspreview==0.10.0
