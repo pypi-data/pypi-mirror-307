@@ -1,0 +1,5 @@
+A python package for risky choice modeling for Expected Utility Theory, Risk-Return,  Coefficient of Variation, and Hyperbolic models.
+
+The package takes risky choice data (probability, payoffs, and decisions) of 2 options as inputs and returns a util-rc object that stores the estimated parameters, inverse temperature, fit metrics, model type, and number of observations.
+
+Dependencies: numpy version >= 1.26.4, scipy version >= 1.12.0
