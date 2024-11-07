@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrismStudio Documentation</title>
+    <script type="module" src="_static/js/login.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico">
+    <link rel="stylesheet" href="_static/loginstyle.css">
+    <style>
+        body { padding: 0px; margin: 0px;  height: 100vh;}
+
+    </style>
+</head>
+<body>
+    <div class="jb-box">
+        <video muted autoplay loop>
+          <source src="_static/login.mov" type="video/mp4">
+          <strong>Your browser does not support the video tag.</strong>
+        </video>
+        <div class="jb-text">
+            <div class="main-box">
+                <div>
+                    <img src="_static/doclogo.svg" />
+                    <div class="title">
+                        SIGN IN
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 80px;">
+                        <input id="username" class="input-id" placeholder="Username" autofocus="" />
+                        <div id="pwtg" class="toggle-button" >
+                            <img id="tgimg" class="inline-icon" src="_static/toggle.svg" />
+                        </div>
+                        <input id="password" class="input-pw" placeholder="Password" type="password" required="" />
+                    </div>
+                    <div id="error-box" class="error-box">
+                        Incorrect username or password.
+                    </div>
+                    <button id="login_fn" class="signin" > Sign In </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script>
+</body>
+</html>

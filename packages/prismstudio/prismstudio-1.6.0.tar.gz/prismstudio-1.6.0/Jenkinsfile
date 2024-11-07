@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone repository...') {
+            steps{
+                checkout scm
+            }
+        }
+
+        stage('Remove previous working files & Add config...') {
+            steps {
+                script {
+                    sh "rm -rf dist"
+                    configFileProvider([configFile(fileId: 'ea4dc506-b856-4af6-9db0-055fdeaf3b07', variable: 'EXTENSION_CONFIG')]) {
+                            sh 'cat $EXTENSION_CONFIG > prism/_common/config.py'
+                        }
+                }
+            }
+        }
+
+
+        stage('Obfuscate source files...') {
+            steps {
+                script {
+                    sh "python3 -m venv .env"
+                    sh "source .env/bin/activate"
+                    sh "python3 -m pip install -r requirements.txt"
+                    sh "which python3"
+                    sh "python3 -m pyarmor obfuscate -r prism/__init__.py  --output=dist/prism/"
+                    sh "cp setup.py dist/"
+                }
+            }
+        }
+
+        stage('Packing to wheel...') {
+            steps {
+                script {
+                    dir('dist') {
+                        sh "source .env/bin/activate"
+                        sh "python3 setup.py sdist bdist_wheel"
+                    }
+                }
+            }
+        }
+
+        stage('Upload wheel...') {
+            steps {
+                script {
+                    configFileProvider([configFile(fileId: 'bdff0f66-c062-4645-b493-c4ff251a84e8', variable: 'TWINE_CRED')]) {
+                        def username = TWINE_CRED.username;
+                        def password = TWINE_CRED.password;
+                        sh "source .env/bin/activate"
+                        sh 'twine upload dist/dist/* -u $username -p $password'
+                    }
+                }
+            }
+        }
+    }
+}

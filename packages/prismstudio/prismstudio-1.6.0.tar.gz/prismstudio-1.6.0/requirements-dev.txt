@@ -1,0 +1,9 @@
+## TEST PURPOSE ##
+pytest==7.1.1
+pytest-mock==3.11.1
+
+## PACKAGING PURPOSE ##
+build
+twine
+setuptools-scm
+

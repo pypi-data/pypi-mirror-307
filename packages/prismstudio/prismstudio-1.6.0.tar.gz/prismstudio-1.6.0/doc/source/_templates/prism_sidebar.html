@@ -1,0 +1,5 @@
+{% set page_toc = generate_toc_html() %} {%- if page_toc | length >= 1 %}
+<div class="prism-primary-sidebar">
+    <nav class="bd-toc-nav page-toc">{{ page_toc }}</nav>
+</div>
+{%- endif %}

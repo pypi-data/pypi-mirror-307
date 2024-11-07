@@ -1,0 +1,55 @@
+pipeline {
+    agent any
+
+
+    stages {
+        stage('Clone repository...') {
+            steps{
+                checkout scm
+            }
+        }
+
+        stage('Clean previous build ...') {
+            steps {
+                script {
+                    dir("doc") {
+                        sh "pip3 install -r requirements.txt"
+                        sh "make clean"
+                    }
+                }
+            }
+        }
+
+        stage('Create new build ...') {
+            steps {
+                script {
+                    dir("doc") {
+
+                        configFileProvider([configFile(fileId: '5a5580e2-f458-482d-8061-62926611f560', variable: 'EXT_DOC')]) {
+                            sh 'cat $EXT_DOC > source/_static/js/config.js'
+                        }
+                        configFileProvider([configFile(fileId: '74a78aab-787c-4c52-830b-980c317bb1ba', variable: 'EXT_CONFIG')]) {
+                            sh 'cat $EXT_CONFIG > ../prism/_common/config.py'
+                        }
+                        configFileProvider([configFile(fileId: 'b4ad06a9-a2e7-4dbe-a31b-3a339157c5d0', variable: 'EXT_ENV')]) {
+                            sh 'cat $EXT_ENV > ../prism/_common/.env'
+                        }
+                        sh "make mult-deploy"
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to AWS S3 ...') {
+            steps {
+                script {
+                    dir("doc") {
+                        sh "aws s3 sync build/versions/ s3://help.prism39.com/"
+                        sh "aws cloudfront create-invalidation --distribution-id E2NWCMJX5Q8UDG --paths \"/*\""
+                    }
+                }
+            }
+        }
+
+    }
+}

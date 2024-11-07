@@ -1,0 +1,9 @@
+pandas
+pyarrow>=7.0.0
+tqdm>=4.10.0
+orjson
+requests
+ipywidgets
+pydantic
+pydantic-settings
+sqlalchemy

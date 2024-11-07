@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prismstudio"
+authors = [
+    { name = "Prism39 Inc.", email = "info@prism39.com" },
+]
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.8"
+readme = "README.md"
+description = "PrismStudio by Prism39"
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { file = ["VERSION"] }
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+exclude = ["doc*", "tests*", "conda-receipe", "asset", "build"]
+
+[tool.setuptools.package-data]
+"prismstudio._common" = ["*.env"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]

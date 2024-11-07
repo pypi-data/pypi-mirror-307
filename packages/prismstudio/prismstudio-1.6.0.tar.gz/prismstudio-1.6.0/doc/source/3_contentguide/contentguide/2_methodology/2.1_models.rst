@@ -1,0 +1,94 @@
+Models
+======
+
+Risk Models
+-----------
+
+QIS Shrinkage Risk Model
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+PrismStudio’s implementation of QIS Shrinkage Risk Model enhances data
+usage by establishing a pairwise covariance matrix, diverging from
+conventional methods that calculate returns and then use linear algebra
+((X^TX)) to compute covariance. This approach necessitates no-missing
+data, causing to discarding any date with missing values.
+
+However, the PrismStudio’s QIS Shinkage Risk Model adopts pair-wise method for
+obtaining sample covariance matrix, initially filtering out any dates
+with missing pricing data for each asset pair. This process ensures that
+return calculations and the subsequent computation of covariance only
+include dates with available pricing data for both assets, offering a
+more precise depiction of the true covariance grounded in actual data
+co-occurrence. This method mitigates the risk of inaccuracies that could
+result from comparing returns of pairs over mismatched time periods.
+
+In instances where an asset pair has no overlapping data dates, one of
+the assets is removed from the analysis. This decision is based on which
+asset contributes the most missing values across all pairs, thereby
+reducing the overall data loss for the model. The specific criteria used
+to determine which listing to remove are proprietary and not publicly
+shared. Furthermore, any listings that do not meet a certain minimum
+sample size, as set by the user, are excluded from the model. The model
+also provides comprehensive rationales for each exclusion and the
+resulting impacts.
+
+Upon calculating the sample covariance, the model applies QIS nonlinear
+shrinkage, a technique rooted in quadratic-inverse shrinkage (QIS). This
+method fine-tunes the covariance matrix to optimize performance across
+various metrics, including Frobenius loss and its derivatives, Inverse
+Stein’s loss, and Minimum Variance loss. This sophisticated technique,
+elaborated in the research by Ledoit and Wolf (2022, Section 4.5),
+represents an effective strategy for managing large covariance matrices.
+
+Reference: Ledoit, O., & Wolf, M. (2022). Quadratic shrinkage for large
+covariance matrices. Bernoulli, 28, 1519-1547.
+
+Transaction Cost Models
+-----------------------
+
+Bid-Ask Spread Model
+^^^^^^^^^^^^^^^^^^^^
+
+PrismStudio provides implementation of Bid-Ask Spread Model is a simple
+yet effective proxy used to determine the transaction cost attributed to
+trading a specific security. the spread is calculated by taking the
+difference between the asking price and the bid price, relative to their
+average.
+
+.. math::  C = \frac{ask - bid}{\frac{ask+bid}{2}}
+
+.. math::
+
+
+   \begin{aligned}
+   ask & \equiv \text{Asking price} \\
+   bid & \equiv \text{Bid price} \\
+   \end{aligned}
+
+Almgren Model
+^^^^^^^^^^^^^
+
+PrismStudio provides implementation of Almgren Model, which calculates
+the impact of trade execution on the market. It integrates trade
+duration and the transactions in shares with the average daily volume
+and shares outstanding to calculate transaction cost, (C), associated
+with a trade.
+
+.. math::  C = \frac{I}{2} + \text{sign}(X) \eta \sigma \left| \frac{X}{V^{T}} \right|^{3/5}
+
+.. math::  I = \sigma \gamma \frac{X}{V} \left( \frac{\Theta}{V} \right)^{1/4}
+
+.. math::
+
+
+   \begin{aligned}
+   X & \equiv \text{Transactions in shares} \\
+   T & \equiv \text{Trade Duration} \\
+   V & \equiv \text{Average Daily Volume} \\
+   \Theta & \equiv \text{Shares Outstanding} \\
+   \gamma & = 0.314 \\
+   \eta & = 0.142
+   \end{aligned}
+
+Reference: Almgren, R. & Thum, C. & Hauptmann, E. & Li, H. (2005).
+Direct Estimation of Equity Market Impact. RISK. 18.

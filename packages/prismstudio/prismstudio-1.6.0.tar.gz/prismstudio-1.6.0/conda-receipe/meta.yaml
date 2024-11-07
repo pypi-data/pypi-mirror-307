@@ -1,0 +1,41 @@
+{% set name = "prismstudio" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: {{ VERSION }}
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ VERSION }}.tar.gz"
+
+
+requirements:
+  host:
+    - ipywidgets
+    - orjson
+    - pandas
+    - pip
+    - pyarrow
+    - pydantic
+    - pydantic-settings
+    - python
+    - requests
+    - tqdm >4.10.0
+  run:
+    - ipywidgets
+    - orjson
+    - pandas
+    - pyarrow >7.0.0
+    - pydantic
+    - pydantic-settings
+    - python
+    - requests
+    - tqdm >4.10.0
+
+
+about:
+  home: "https://www.prism39.com"
+  license: Prism39 End User
+  license_family: OTHER
+  license_file: ../LICENSE.txt
+  summary: "Python Extension for PrismStudio"
+

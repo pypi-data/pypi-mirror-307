@@ -1,0 +1,200 @@
+.sd-card {
+    align-items: center;
+    /* filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25)); */
+}
+
+html[data-theme="dark"] {
+
+    --sd-color-muted: #535B68;
+    --pst-color-border: #535B68;
+    --pst-color-text-base: #CECECE;
+    --sd-color-muted-text: #CECECE;
+}
+
+html[data-theme="light"] {
+    --sd-color-muted: #555555;
+    --pst-color-border: #CECECE;
+    --pst-color-text-base: #2D2D2D;
+    --sd-color-muted-text: #FFFFFF;
+}
+
+html[data-theme="light"] .sd-shadow-sm {
+    box-shadow: none !important;
+}
+
+.sd-shadow-sm {
+    border-radius: 4px;
+}
+
+.sd-btn-muted {
+    border-radius: 4px;
+    border: none ;
+    filter: none;
+}
+
+
+.sd-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    align-items: center;
+    width: 80%;
+    /* padding: 16px 16px 0 16px; */
+}
+
+.sd-card-header > .sd-card-text {
+    margin-bottom: 16px;
+}
+
+.sd-card-header {
+    width: 80%;
+    border-bottom:1px solid;
+    /* border-color: #535B68 !important; */
+}
+
+.sd-card-header.docutils {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    align-items: center;
+    padding: 0px;
+}
+
+.sd-card-footer.docutils {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    align-items: center;
+    padding: 16px 16px;
+}
+
+.sd-btn-muted {
+    /* background-color: #535B68 !important; */
+    border-color: transparent !important;
+}
+
+.main-background {
+    background: none;
+    margin: 16px 0;
+}
+
+.theme-version {
+    display: none;
+}
+
+.sphinx-version {
+    display: none;
+}
+
+
+/* Custom One-Line Note CSS */
+.prism-one-line-note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: rgba(59, 144, 171, 0.1) !important;
+    padding: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Hide the default admonition icon */
+.prism-one-line-note > p:nth-child(1) {
+    display: none;
+}
+
+/* One-Line Note Icon CSS */
+.prism-one-line-note > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px !important;
+    margin-right: -8px !important;
+    margin-left: 15px !important;
+}
+
+/* One-Line Note Text Margin Reset*/
+.prism-one-line-note > p {
+    margin-top: unset !important;
+}
+
+/* Code Snippet `>>>` color setup*/
+span.gp {
+    color: #ac8851;
+}
+
+
+/* globla config */
+html[data-theme="light"] {
+    --pst-font-size-h1: 35px;
+    --pst-font-size-h3: 16px;
+    --pst-color-primary: #2D2D2D;
+    --pst-color-link: #4299CC;
+}
+
+/* [figma] default css */
+h1, h2, h3, h4, h5, h6, p, a, aside {
+    --pst-color-link: #4299CC;
+    /* color: #2D2D2D; */
+    /* font-family: 'Apple SD Gothic Neo'; */
+    /* font-style: normal; */
+    line-height: 20px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    word-wrap: break-word;
+    color: var(--pst-color-link);
+    text-decoration: none;
+}
+
+/* center navbar to middle */
+@media (min-width: 960px) {
+    .bd-header .navbar-header-items {
+        flex-grow: 0 !important;
+    }
+}
+
+dd > .line-block {
+    margin-bottom: 0;
+}
+
+dd > .simple {
+    margin-left: 1rem;
+}
+
+dd > .admonition.danger {
+    margin: 5px auto;
+}
+
+.bd-links__title {
+    display: none !important;
+}
+

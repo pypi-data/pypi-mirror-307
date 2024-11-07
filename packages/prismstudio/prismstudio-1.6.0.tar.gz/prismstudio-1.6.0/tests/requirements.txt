@@ -1,0 +1,6 @@
+SQLAlchemy==1.4.45
+pytest==7.2.0
+pytest-asyncio==0.20.2
+boto3==1.26.124
+psycopg2==2.9.5
+pytest-mock==3.11.1
