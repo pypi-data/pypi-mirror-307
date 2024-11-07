@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ethernity-cloud-sdk-py-dev
+Version: 0.1.18
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: tqdm
+Requires-Dist: pyopenssl
+Requires-Dist: requests_toolbelt
+Requires-Dist: cryptography
+Requires-Dist: typing-extensions==4.12
+Requires-Dist: ethernity-cloud-runner-py-dev
