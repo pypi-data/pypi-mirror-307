@@ -1,0 +1,6 @@
+passagemath-environment~=10.4.47.0
+cysignals>=1.10.2
+passagemath-repl~=10.4.47.0
+
+[test]
+passagemath-symbolics~=10.4.47.0
