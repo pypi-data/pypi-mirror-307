@@ -1,0 +1,2 @@
+[console_scripts]
+dvc-utils = dvc_utils.main:cli
