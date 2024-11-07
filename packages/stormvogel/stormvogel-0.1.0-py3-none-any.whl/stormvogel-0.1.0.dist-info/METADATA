@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: stormvogel
+Version: 0.1.0
+Summary: User-friendly frontend to the Storm model checker
+License: GPLv3
+Author: The stormvogel team
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anyio (>=4.6.0,<5.0.0)
+Requires-Dist: ipywidgets (>=8.1.3,<9.0.0)
+Requires-Dist: jupyter (>=1.1.1,<2.0.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: mock (>=5.1.0,<6.0.0)
+Requires-Dist: nbmake (>=1.5.4,<2.0.0)
+Requires-Dist: nbval (>=0.11.0,<0.12.0)
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pytest-mock (>=3.14.0,<4.0.0)
+Requires-Dist: pyvis (>=0.3.2,<0.4.0)
+Requires-Dist: sphinx-autoapi (>=3.3.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# stormvogel 🐦
+
+An interactive approach to probabilistic model checking
+
+Take a look at [the stormvogel documentation!](https://moves-rwth.github.io/stormvogel/)
+
+## Setup
+
+Install `poetry`. Install dependencies:
+```
+poetry install
+poetry shell
+pip install <path to stormpy> # TODO: Package stormpy nicely
+pip install .
+```
+## Testing
+
+Run
+```
+pytest
+```
+
+## Development
+
+Install `pre-commit` hook:
+```
+pre-commit install
+```
+
