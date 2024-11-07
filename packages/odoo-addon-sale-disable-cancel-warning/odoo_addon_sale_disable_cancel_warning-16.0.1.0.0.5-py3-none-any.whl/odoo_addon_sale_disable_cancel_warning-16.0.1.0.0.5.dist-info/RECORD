@@ -1,0 +1,14 @@
+odoo/addons/sale_disable_cancel_warning/README.rst,sha256=5nWM95ad-Au3W98xxjH8h2DAuVgF4NgbnG6EPvc6IJE,1631
+odoo/addons/sale_disable_cancel_warning/__init__.py,sha256=vjC7oVOHhST0bMtkabfH6FeMaqB-PHV4o8HQvIB_5NM,86
+odoo/addons/sale_disable_cancel_warning/__manifest__.py,sha256=uMvkIfRwcovB_Q9EOPG92xfd_q4lh0mvfnbosCArCNg,637
+odoo/addons/sale_disable_cancel_warning/i18n/es.po,sha256=Ii5nQxTbt_qVzighYVAfbHyekcNHgq4NHQ2VRW61hMM,1299
+odoo/addons/sale_disable_cancel_warning/models/__init__.py,sha256=cRiGcMfFT-_NcADt0X13O9u2BvJ8xmSlHXTeOmSXKNs,150
+odoo/addons/sale_disable_cancel_warning/models/res_company.py,sha256=S7OUtJngqUiT2pJVJiCgYMXu9iAKttAUAaF3mtYH2pw,298
+odoo/addons/sale_disable_cancel_warning/models/res_config_settings.py,sha256=Xr-8IaNHGgvT2MvF9secocKgNAvXpSn-cI40Eom9EaI,418
+odoo/addons/sale_disable_cancel_warning/models/sale_order.py,sha256=Dx_s3EJYijI818e_zy-ytdOknQ1IuL-ahN3KeVLJCZU,418
+odoo/addons/sale_disable_cancel_warning/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/sale_disable_cancel_warning/views/res_config_settings.xml,sha256=QGdVNpOa03hrIvJroyG1xtyeTw-pg6h6jp_VbpqQqRg,1311
+odoo_addon_sale_disable_cancel_warning-16.0.1.0.0.5.dist-info/METADATA,sha256=3zqpMOpVtI-Hdt1s2b97jpQ5KLmgc43ubDf2dhamYKs,2237
+odoo_addon_sale_disable_cancel_warning-16.0.1.0.0.5.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_sale_disable_cancel_warning-16.0.1.0.0.5.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_sale_disable_cancel_warning-16.0.1.0.0.5.dist-info/RECORD,,
