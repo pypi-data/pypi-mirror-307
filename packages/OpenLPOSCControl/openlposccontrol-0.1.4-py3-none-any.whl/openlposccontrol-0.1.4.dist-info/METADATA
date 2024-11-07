@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: OpenLPOSCControl
+Version: 0.1.4
+Summary: Module to control OpenLP using OSC commands
+Author-email: Frederick Price <fprice@pricemail.ca>
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: System :: Networking
+Requires-Dist: python-osc
+Requires-Dist: requests
+Requires-Dist: typing
+Project-URL: Home, https://github.com/rickprice/openlp-OSC-control
+Project-URL: Issues, https://github.com/rickprice/openlp-OSC-control/issues
+
+# openlp-OSC-control
+Control OpenLP using OSC, or use the library to control it with Midi
+
