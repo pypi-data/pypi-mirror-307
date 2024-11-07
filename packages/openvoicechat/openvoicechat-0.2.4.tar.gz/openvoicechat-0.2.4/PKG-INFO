@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: openvoicechat
+Version: 0.2.4
+Summary: OpenVoiceChat is an opensource library that allows you to have a natural voice conversation with your LLM agent.
+Home-page: https://www.finityalpha.com/OpenVoiceChat/
+Author: Fakhir Ali
+Author-email: fakhir.ali@finityalpha.com
+License-File: LICENSE
+Requires-Dist: sounddevice
+Requires-Dist: pyaudio
+Requires-Dist: librosa
+Requires-Dist: pydub
+Requires-Dist: python-dotenv
+Requires-Dist: websockets
+Requires-Dist: fastapi
+Requires-Dist: pandas
+Requires-Dist: pysbd
+Provides-Extra: transformers
+Requires-Dist: transformers; extra == "transformers"
+Provides-Extra: piper
+Requires-Dist: piper-tts; extra == "piper"
+Requires-Dist: piper-phonemize; extra == "piper"
+Provides-Extra: vosk
+Requires-Dist: vosk; extra == "vosk"
+Provides-Extra: openai
+Requires-Dist: openai; extra == "openai"
+Provides-Extra: tortoise
+Requires-Dist: tortoise-tts; extra == "tortoise"
+Provides-Extra: xtts
+Requires-Dist: TTS; extra == "xtts"
+Requires-Dist: phonemizer; extra == "xtts"
+
+If you plan on making an LLM agent and want to have your users be able to talk to it like a person (low latency, handles interruptions), this library is for you. It aims to be the opensource, highly extensible and easy to use alternative to the proprietary solutions.
