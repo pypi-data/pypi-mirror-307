@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: whyis
+Version: 2.3.13
+Summary: Whyis is a nano-scale knowledge graph publishing, management, and analysis framework.
+Home-page: http://tetherless-world.github.io/whyis
+Author: Jamie McCusker
+Author-email: mccusj@cs.rpi.edu
+License: Apache License 2.0
+Keywords: rdf semantic knowledge graph
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.7.1
+Requires-Dist: bibtexparser==1.1.0
+Requires-Dist: celery<6.0.0
+Requires-Dist: celery_once==3.0.1
+Requires-Dist: cookiecutter==1.7.3
+Requires-Dist: email_validator==1.1.3
+Requires-Dist: eventlet==0.33.0
+Requires-Dist: dnspython==2.2.1
+Requires-Dist: filedepot==0.10.0
+Requires-Dist: Flask<2.0
+Requires-Dist: Flask-Login==0.5.0
+Requires-Dist: Flask-Script==2.0.6
+Requires-Dist: Flask-Security==3.0.0
+Requires-Dist: itsdangerous<2.0,>=0.24
+Requires-Dist: Flask-PluginEngine==0.5
+Requires-Dist: Flask-WTF<0.15
+Requires-Dist: html5lib==1.1
+Requires-Dist: ijson==2.4
+Requires-Dist: itsdangerous<2.0,>=0.24
+Requires-Dist: jinja2-time
+Requires-Dist: Jinja2==2.11.3
+Requires-Dist: lxml
+Requires-Dist: Markdown
+Requires-Dist: markupsafe==2.0.1
+Requires-Dist: nltk==3.6.5
+Requires-Dist: nose
+Requires-Dist: numpy
+Requires-Dist: oxrdflib==0.3.1
+Requires-Dist: pandas
+Requires-Dist: PyJWT
+Requires-Dist: pyparsing
+Requires-Dist: pyshp
+Requires-Dist: python-dateutil
+Requires-Dist: puremagic==1.14
+Requires-Dist: python-slugify
+Requires-Dist: rdflib==6.3.2
+Requires-Dist: rdflib-jsonld==0.6.2
+Requires-Dist: redislite>=6
+Requires-Dist: requests[security]
+Requires-Dist: sadi
+Requires-Dist: scipy
+Requires-Dist: setlr>=1.0.1
+Requires-Dist: sdd2rdf>=1.1.0
+Requires-Dist: xlrd==2.0.1
+Requires-Dist: werkzeug==2.0.3
+Requires-Dist: Flask-Caching==1.10.1
+
+Whyis is a nano-scale knowledge graph publishing,
+management, and analysis framework. Whyis aims to support domain-aware management
+and curation of knowledge from many different sources. Its primary goal is to enable
+creation of useful domain- and data-driven knowledge graphs. Knowledge can be
+contributed and managed through direct user interaction, statistical analysis,
+or data ingestion from many different kinds of data sources. Every contribution to
+the knowledge graph is managed as a separate entity so that its provenance
+(publication status, attribution, and justification) is transparent and can
+be managed and used.
