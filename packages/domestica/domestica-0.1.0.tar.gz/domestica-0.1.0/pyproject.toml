@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "domestica"
+version = "0.1.0"
+description = "A simple Python script for scraping domestica.com"
+authors = ["ivansaul"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ivansaul/Domestica-Downloader"
+repository = "https://github.com/ivansaul/Domestica-Downloader"
+keywords = ["script", "domestica", "download", "video", "audio"]
+include = ["LICENSE"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.scripts]
+domestica = "domestica.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12.5"
+pydantic = "^2.9.2"
+aiohttp = "^3.10.10"
+pytest-playwright = "^0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ruff = "^0.6.8"
+pytest-mock = "^3.14.0"
+python-semantic-release = "^9.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+preview = true
+select = ['E', 'F', 'W', 'I']
+ignore = ["E501"]
+
+[tool.semantic_release]
+version_source = "tag"
+version_variable = ["src/domestica/version.py:__version__"]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+branch = "master"
+build_command = "pip install poetry && poetry build"
+major_on_zero = true
+allow_zero_version = true
+upload_to_pypi = true
+upload_to_release = true
+commit_version_number = true

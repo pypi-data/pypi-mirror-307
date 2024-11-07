@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: domestica
+Version: 0.1.0
+Summary: A simple Python script for scraping domestica.com
+Home-page: https://github.com/ivansaul/Domestica-Downloader
+License: MIT
+Keywords: script,domestica,download,video,audio
+Author: ivansaul
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Utilities
+Requires-Dist: aiohttp (>=3.10.10,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pytest-playwright (>=0.5.2,<0.6.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Project-URL: Repository, https://github.com/ivansaul/Domestica-Downloader
+Description-Content-Type: text/markdown
+
+# Domestica Downloader
+
+A simple Python script for scraping domestica.com
+
