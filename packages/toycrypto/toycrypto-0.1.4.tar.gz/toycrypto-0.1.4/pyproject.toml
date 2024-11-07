@@ -1,0 +1,105 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "toycrypto"
+dynamic = ["version"]
+description = 'Some toy cryptographic modules and related tools that should never, ever be used for anything other than demonstation purposes.'
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Jeffrey Goldberg", email = "jeffrey@goldmark.org" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Security :: Cryptography",
+  "Typing :: Typed",
+]
+dependencies = [
+  "primefac >= 2.0.12",
+  "bitarray >= 2.9.2"
+]
+
+[project.urls]
+Documentation = "https://jpgoldberg.github.io/toy-crypto-math/"
+Issues = "https://github.com/unknown/toy-crypto-math/issues"
+Source = "https://github.com/unknown/toy-crypto-math"
+
+[tool.hatch.version]
+path = "src/toy_crypto/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/toy_crypto"]
+
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "ruff",
+  "mypy>=1.11",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "ruff",
+  "mypy>=1.11",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.11", "3.12", "3.13"]
+
+[tool.hatch.envs.test.scripts]
+types = "mypy --install-types --non-interactive {args:src/toy_crypto tests}"
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+lint = "ruff check {args:src/toy_crypto tests}"
+
+[tool.coverage.run]
+source_pkgs = ["toy_crypto", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/toy_crypto/__about__.py",
+]
+
+[tool.coverage.paths]
+toy_crypto = ["src/toy_crypto", "*/toy-crypto-math/src/toy_crypto"]
+tests = ["tests", "*/toy-crypto-math/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "statistical: marks tests of a statistical nature (deselect with '-m \"not statistical\"')",
+]
