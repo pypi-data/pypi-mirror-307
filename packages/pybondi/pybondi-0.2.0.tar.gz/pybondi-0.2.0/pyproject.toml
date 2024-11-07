@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pybondi"
+version = "0.2.0"
+description = "A lightweight library for creating event driven systems using domain driven design."
+authors = ["Eric Cardozo <eric.m.cardozo@mi.unc.edu.ar>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
