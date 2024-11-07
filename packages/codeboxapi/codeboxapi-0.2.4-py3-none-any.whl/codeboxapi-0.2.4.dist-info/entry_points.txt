@@ -1,0 +1,2 @@
+[console_scripts]
+codeboxapi-serve = codeboxapi.api:serve
