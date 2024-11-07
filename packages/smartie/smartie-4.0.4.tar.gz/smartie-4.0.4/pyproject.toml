@@ -1,0 +1,51 @@
+[project]
+name = "smartie"
+version = "4.0.4"
+description = "A pure-python S.M.A.R.T library."
+authors = [
+    { name = "Tyler Kennedy", email = "tk@tkte.ch" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["sensors", "smart", "hardware", "monitor"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[project.urls]
+Repository = "https://github.com/tktech/smartie"
+
+[project.optional-dependencies]
+cli = [
+    "click>=8.1.7",
+    "rich>=13.9.4",
+]
+
+[project.scripts]
+smartie = "smartie.cli:cli"
+
+[dependency-groups]
+dev = [
+    "bump2version>=1.0.1",
+    "furo>=2024.8.6",
+    "pytest>=8.3.3",
+    "pytest-mock>=3.14.0",
+    "sphinx>=7.1.2",
+    "ghp-import>=2.1.0",
+]
+
+[tool.ruff]
+line-length = 80
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
