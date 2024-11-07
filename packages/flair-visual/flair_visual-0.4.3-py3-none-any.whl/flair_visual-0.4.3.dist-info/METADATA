@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: flair-visual
+Version: 0.4.3
+Summary: A library for visualizing and simulating quantum circuits compiled for QuEra neutral atom quantum computers.
+Author-email: "QuEra Computing Inc." <info@quera.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.9
+Requires-Dist: cirq-core>=1.3.0
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: scipy>=1.13.1
+Provides-Extra: vis
+Requires-Dist: ffmpeg>=1.4; extra == 'vis'
+Requires-Dist: matplotlib>=3.9.2; extra == 'vis'
+Requires-Dist: pyqt5>=5.15.11; extra == 'vis'
+Requires-Dist: tqdm>=4.66.5; extra == 'vis'
+Description-Content-Type: text/markdown
+
+# flair-visual
