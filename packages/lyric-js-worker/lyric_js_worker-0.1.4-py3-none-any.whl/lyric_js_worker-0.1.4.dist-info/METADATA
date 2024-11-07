@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: lyric-js-worker
+Version: 0.1.4
+Summary: Add your description here
+Author-email: Fangyin Cheng <staneyffer@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# lyric-js-worker
+
+A python binding for the [lyric-js-worker](../../javascript/lyric-js-worker/README.md) library.
+
+## Installation
+
+```bash
+pip install lyric-js-worker
+```
