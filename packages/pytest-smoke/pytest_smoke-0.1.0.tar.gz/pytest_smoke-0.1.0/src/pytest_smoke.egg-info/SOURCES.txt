@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+tox.ini
+.github/workflows/test.yml
+src/pytest_smoke/__init__.py
+src/pytest_smoke/plugin.py
+src/pytest_smoke.egg-info/PKG-INFO
+src/pytest_smoke.egg-info/SOURCES.txt
+src/pytest_smoke.egg-info/dependency_links.txt
+src/pytest_smoke.egg-info/entry_points.txt
+src/pytest_smoke.egg-info/requires.txt
+src/pytest_smoke.egg-info/top_level.txt
+tests/conftest.py
+tests/test_smoke.py
