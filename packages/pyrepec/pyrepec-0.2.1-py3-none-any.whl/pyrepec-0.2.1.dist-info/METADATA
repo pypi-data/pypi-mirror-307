@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pyrepec
+Version: 0.2.1
+Summary: Python client for RePec API
+License: MIT
+Author: Giuseppe Acito
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# PyRepec
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyrepec)
+
+
+A python client for [RePEc API](https://ideas.repec.org/api.html).
+
+Current Version: 0.2.1
+
+Report any bugs by opening an issue here: (https://github.com/TBD)
+
+
+### Usage
+
+```python
+from pyrepec import Repec
+
+repec = Repec("TOKEN")
+
+res = repec.get_org_authors("RePEc:edi:bdigvit")
+```
+
+
+### Installation
+
+1. Installation using pip:
+
+```bash
+pip install pyrepec
+```
+
+
+### Methods
+
+Featured methods:
+
+- get_org_authors(org_id: str)
+- get_author_data(author_id: str)
+- get_authors_for_item(item_id: str)
+- get_jel_codes(item_id: str)
+- get_error(err_code: int)
+- get_ref(item_id: str)
+
