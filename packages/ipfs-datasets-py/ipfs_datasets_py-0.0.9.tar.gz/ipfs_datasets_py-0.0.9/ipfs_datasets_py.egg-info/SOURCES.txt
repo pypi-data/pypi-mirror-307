@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ipfs_datasets_py/__init__.py
+ipfs_datasets_py/config.py
+ipfs_datasets_py/ipfs_datasets.py
+ipfs_datasets_py/ipfs_knn_index.py
+ipfs_datasets_py/ipfs_multiformats.py
+ipfs_datasets_py/ipfs_parquet_to_car.py
+ipfs_datasets_py/s3_kit.py
+ipfs_datasets_py/test_fio.py
+ipfs_datasets_py.egg-info/PKG-INFO
+ipfs_datasets_py.egg-info/SOURCES.txt
+ipfs_datasets_py.egg-info/dependency_links.txt
+ipfs_datasets_py.egg-info/top_level.txt
+test/test.py
