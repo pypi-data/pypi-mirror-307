@@ -1,0 +1,4 @@
+[console_scripts]
+format-code=poetry_scripts:format_code
+qat_comexe=qat_rpc.zmq.qat_commands:qat_run
+
