@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nonebot-plugin-calc-game"
+version = "0.2.1"
+description = "这是利用 QQ 机器人复刻 计算器：游戏 的一个插件。通过给出的操作方式由当前数字达到计算目标。"
+authors = ["Yurchiu"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Yurchiu/nonebot-plugin-calc-game"
+repository = "https://github.com/Yurchiu/nonebot-plugin-calc-game"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nonebot2 = ">=2.3.2"
+nonebot-adapter-onebot = ">=2.3.1"
+nonebot-plugin-txt2img = ">=0.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
