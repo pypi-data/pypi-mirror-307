@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: cifar10-client
+Version: 0.1.6
+Summary: Client for CIFAR-10 image classification API
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=10.0.0
+
+# CIFAR-10 Client
+
+A Python client for interacting with the CIFAR-10 image classification API.
+
+## Installation
+
+```bash
+pip install cifar10-client
+```
+
+## Quick Start
+
+```python
+from cifar10_client import CIFAR10Client
+
+# Initialize client
+client = CIFAR10Client("http://your-api-url:5000")
+
+# Single prediction
+result = client.predict_single("path/to/image.jpg")
+print(f"Prediction: {result['prediction']} ({result['confidence']}%)")
+
+# Top 3 predictions
+result = client.predict_top3("path/to/image.jpg")
+for pred, conf in zip(result['predictions'], result['confidences']):
+    print(f"{pred}: {conf}%")
+
+# Batch prediction
+results = client.predict_batch(["image1.jpg", "image2.jpg"])
+for item in results['results']:
+    print(f"\nFile: {item['filename']}")
+    for pred, conf in zip(item['predictions'], item['confidences']):
+        print(f"{pred}: {conf}%")
+```
+
+## CLI Usage
+
+```bash
+# Single prediction
+cifar10-predict image.jpg
+
+# Top 3 predictions
+cifar10-predict --top3 image.jpg
+
+# Batch prediction
+cifar10-predict --batch image1.jpg image2.jpg image3.jpg
+```
