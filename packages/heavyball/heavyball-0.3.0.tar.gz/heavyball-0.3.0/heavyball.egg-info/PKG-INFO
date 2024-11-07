@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: heavyball
+Version: 0.3.0
+Summary: Implementations of various optimizers; mostly focussing on fast _foreach and PaLM versions
+Home-page: https://github.com/clashluke/heavyball
+Author: Lucas Nestler
+Author-email: github.heavyball@nestler.sh
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HeavyBall
+
+A simple package of many optimizers
+
+The goal is not to thrive for completeness, full maintenance or abstraction, but instead to provide a simple
+largely static alternative to `torch.optim` with more and better optimizers.
+
+The code is permissively licensed under the BSD-2-Clause license, so you may copy the individual files into your
+repository instead of depending on this package.
