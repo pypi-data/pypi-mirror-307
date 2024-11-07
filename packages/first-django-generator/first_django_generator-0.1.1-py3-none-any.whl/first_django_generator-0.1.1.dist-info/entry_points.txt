@@ -1,0 +1,2 @@
+[django.manage]
+generate_views_and_serializers = my_django_generator.management.commands.generate_views_and_serializers:Command
