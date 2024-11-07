@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+online_store/__init__.py
+online_store/main.py
+online_store/order_manager.py
+online_store/user_manager.py
+online_store_alexKhar.egg-info/PKG-INFO
+online_store_alexKhar.egg-info/SOURCES.txt
+online_store_alexKhar.egg-info/dependency_links.txt
+online_store_alexKhar.egg-info/requires.txt
+online_store_alexKhar.egg-info/top_level.txt
+tests/test.py

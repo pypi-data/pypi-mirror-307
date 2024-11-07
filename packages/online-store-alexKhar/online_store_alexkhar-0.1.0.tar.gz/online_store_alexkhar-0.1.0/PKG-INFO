@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: online-store-alexKhar
+Version: 0.1.0
+Summary: Исполняемый пакет для управления пользователями и заказами в онлайн-магазине
+Author-email: Alx Khr <normttacc15@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.19.2
+Provides-Extra: dev
+Requires-Dist: pytest>=6.2.1; extra == "dev"
+Requires-Dist: flake8>=3.8.4; extra == "dev"
+
+**Launch me** <br> Do everything you want <br> You want to analyze financial data with me? __Yes, please__
