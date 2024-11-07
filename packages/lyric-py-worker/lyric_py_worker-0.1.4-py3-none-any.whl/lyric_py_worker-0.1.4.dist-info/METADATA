@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: lyric-py-worker
+Version: 0.1.4
+Summary: Add your description here
+Author-email: Fangyin Cheng <staneyffer@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: lyric-task
+Description-Content-Type: text/markdown
+
+# lyric-py-worker
+
+A Python worker implementation for the lyric.
+
+It allows you to run your python code in a wasm environment.
+
+## Installation
+
+```bash
+pip install lyric-py-worker
+```
