@@ -1,0 +1,2 @@
+[console_scripts]
+tree-disk-segmentation = treedisksegmentation.cli:main
