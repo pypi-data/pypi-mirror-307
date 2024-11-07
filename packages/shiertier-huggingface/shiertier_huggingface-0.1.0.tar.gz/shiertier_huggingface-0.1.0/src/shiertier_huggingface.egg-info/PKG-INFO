@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: shiertier_huggingface
+Version: 0.1.0
+Summary: A simple huggingface client for Python.
+Author-email: shiertier <junjie.text@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 shiertier
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: huggingface_hub
+Requires-Dist: shiertier_tar
+Requires-Dist: shiertier_i18n
+
+# shiertier_huggingface
+
+English | [中文](https://github.com/shiertier-utils/shiertier_huggingface/blob/main/README_zh.md)
+
+## Introduction
+
+`shiertier_huggingface` is a Python library designed to simplify interactions with the Hugging Face Hub. It provides a set of utility functions to download models, upload datasets, and manage Hugging Face repositories. This library is particularly useful for managing machine learning models and datasets on the Hugging Face platform.
+
+## Installation
+
+You can install `shiertier_huggingface` via `pip`:
+
+```bash
+pip install shiertier_huggingface
+```
+
+Please note that this project is still under development.
+
+## Environment Variables and Direct Usage of `easy_huggingface_client`
+
+### Environment Variables
+
+- `HUGGINGFACE_TOKEN`: The token used for authentication with the Hugging Face Hub. If not provided during initialization, the client will attempt to retrieve it from this environment variable.
+
+### Direct Usage of `easy_huggingface_client`
+
+You can directly use the `easy_huggingface_client` object without manually initializing the `HuggingfaceClient`. This object will automatically retrieve the token from the environment variable.
+
+```python
+from shiertier_huggingface import easy_huggingface_client
+
+# Download a model
+easy_huggingface_client.download_model(url_or_repo='https://huggingface.co/bert-base-uncased', repo_type='repo', local_dir='./huggingface_models')
+
+# Upload a dataset
+easy_huggingface_client.upload_dataset(local_dir='path/to/local_dataset', repo_name='my_dataset_repo', tmp_dir='/root/.tmp')
+```
+
+## Usage
+
+### Initialization
+
+To use the `HuggingfaceClient`, you need to initialize it with your Hugging Face token. If the token is not provided during initialization, it will attempt to retrieve it from the `HUGGINGFACE_TOKEN` environment variable.
+
+```python
+from shiertier_huggingface import HuggingfaceClient
+
+# Initialize with a token
+client = HuggingfaceClient(token='your_huggingface_token')
+```
+
+### Downloading a Model
+
+You can download a model from the Hugging Face Hub using the `download_model` method. This method allows you to specify the URL or repository name, the repository type, and the local directory where the model will be saved.
+
+```python
+# Download a model
+client.download_model(url_or_repo='https://huggingface.co/bert-base-uncased', repo_type='repo', local_dir='./huggingface_models')
+```
+
+### Uploading a Dataset
+
+You can upload a dataset to the Hugging Face Hub using the `upload_dataset` method. This method allows you to specify the local directory containing the dataset, the repository name, and an optional temporary directory.
+
+```python
+# Upload a dataset
+client.upload_dataset(local_dir='path/to/local_dataset', repo_name='my_dataset_repo', tmp_dir='/root/.tmp')
+```
+
+## Dependencies
+
+- `huggingface_hub`
+- `shiertier_i18n`
+- `shiertier_tar`
+
+## License
+
+This project is released under the MIT License. See the [LICENSE](LICENSE) file for details.
