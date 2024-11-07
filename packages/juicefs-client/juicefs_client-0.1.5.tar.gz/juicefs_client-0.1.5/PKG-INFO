@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: juicefs-client
+Version: 0.1.5
+Summary: A Python client for JuiceFS operations
+Home-page: https://github.com/yourusername/juicefs-client
+Author: Luke
+Author-email: Luke <pypi@luke.archi>
+License: MIT License
+        
+        Copyright (c) 2024 Jinyuan Lu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/yourusername/juicefs-client
+Keywords: juicefs,storage,cloud
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JuiceFS Client
+
+A Python client for JuiceFS operations with easy-to-use interfaces and AWS credentials support.
+
+## Installation
+
+```bash
+pip install juicefs-client
+```
+
+## Quick Start
+
+### Initialize Client
+
+```python
+from juicefs_client import JuiceFSClient
+
+# Using environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+client = JuiceFSClient(volume="myvolume", token="mytoken")
+
+# Or with explicit credentials
+client = JuiceFSClient(
+    volume="myvolume",
+    token="mytoken",
+    access_key="your-aws-access-key",
+    secret_key="your-aws-secret-key"
+)
+```
+
+### Basic File Operations
+
+```python
+# Write and read text files
+client.write_file("/path/to/file.txt", "Hello World")
+content = client.read_file("/path/to/file.txt")
+
+# Binary files (e.g., PyTorch models)
+client.save_torch_model("/models/model.pt", model.state_dict())
+state_dict = client.load_torch_model("/models/model.pt")
+
+# List directory contents
+files = client.list_dir("/path/to/directory")
+
+# Delete files
+client.delete_file("/path/to/file.txt")
+
+# Copy files
+client.copy_file("/source/path", "/destination/path")
+```
+
+## Features
+
+- Simple and intuitive API for JuiceFS operations
+- AWS credentials support (both environment variables and explicit)
+- Built-in support for PyTorch model serialization
+- File operations: read, write, delete, copy, list
+- Directory operations: create, list, delete
+
+## Configuration
+
+| Parameter | Description | Required | Default |
+|-----------|-------------|----------|----------|
+| volume | JuiceFS volume name | Yes | None |
+| token | Authentication token | Yes | None |
+| access_key | AWS access key | No | None |
+| secret_key | AWS secret key | No | None |
+| endpoint | Custom endpoint URL | No | None |
+| region | AWS region | No | 'us-east-1' |
+
+## Error Handling
+
+```python
+from juicefs_client.exceptions import JuiceFSError
+
+try:
+    client.read_file("/nonexistent/file.txt")
+except JuiceFSError as e:
+    print(f"Error: {e}")
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
