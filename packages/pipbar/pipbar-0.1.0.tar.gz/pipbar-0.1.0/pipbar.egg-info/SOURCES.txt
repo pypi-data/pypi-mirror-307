@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pipbar/__init__.py
+pipbar/installer.py
+pipbar.egg-info/PKG-INFO
+pipbar.egg-info/SOURCES.txt
+pipbar.egg-info/dependency_links.txt
+pipbar.egg-info/requires.txt
+pipbar.egg-info/top_level.txt
