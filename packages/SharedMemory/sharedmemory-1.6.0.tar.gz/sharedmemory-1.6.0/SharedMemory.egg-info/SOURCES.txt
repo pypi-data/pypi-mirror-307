@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SharedMemory/SMError.py
+SharedMemory/SharedMemory.py
+SharedMemory/__init__.py
+SharedMemory.egg-info/PKG-INFO
+SharedMemory.egg-info/SOURCES.txt
+SharedMemory.egg-info/dependency_links.txt
+SharedMemory.egg-info/requires.txt
+SharedMemory.egg-info/top_level.txt
+tests/test_client.py
+tests/test_server.py
