@@ -1,0 +1,10 @@
+supervision==0.22.0
+numpy==1.26.4
+pydantic==2.8.2
+typing==3.7.4.3
+scipy==1.14.0
+open-clip-torch==2.26.1
+timm==1.0.8
+torch==2.4.0
+mediapipe==0.10.14
+super-image==0.1.7

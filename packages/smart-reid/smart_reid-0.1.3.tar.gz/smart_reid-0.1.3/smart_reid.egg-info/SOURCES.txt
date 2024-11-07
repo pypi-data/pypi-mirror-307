@@ -1,0 +1,14 @@
+README.md
+setup.py
+smart_reid/__init__.py
+smart_reid/basetrack.py
+smart_reid/core.py
+smart_reid/kalman_filter.py
+smart_reid/matching.py
+smart_reid/sam_cost.py
+smart_reid/strack.py
+smart_reid.egg-info/PKG-INFO
+smart_reid.egg-info/SOURCES.txt
+smart_reid.egg-info/dependency_links.txt
+smart_reid.egg-info/requires.txt
+smart_reid.egg-info/top_level.txt
