@@ -1,0 +1,15 @@
+src/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+src/main.py,sha256=Coxo7s-XLrb3Uo6GjT4cRObhqzTg3bsG4K8Rm2_NRM4,13837
+src/prompts/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+src/prompts/appunti.py,sha256=4pX3GysQj9Y43kcgeMxdb09GedZptIBbNj6zG5B-A94,4388
+src/prompts/hacker.py,sha256=YObcmesCwfUwxYAv054umYQIhkFii1MvpPIdaAEiCYk,5365
+src/prompts/math.py,sha256=dV4O-V21xUdhYD1_My9sxwNdzhsIEYy7YXaJYANeSis,6691
+src/prompts/python_coder.py,sha256=7v3Dug9juJcXI8YtVYJfuic9EVL3ZRyqfjonPI60vtY,5164
+src/prompts/rust_coder.py,sha256=qvh_HDNUD-70bTETqc-Lbs_jfWcg0FkLHSkDbypAW6c,5134
+src/prompts/summerizer.py,sha256=320GHIobqb2wTtFlTNre-RkMT23FhqyRvopBpPbwFMc,4469
+src/prompts/uncensored_assistant.py,sha256=kcPGrJLzn7EqmIzWY4okgrbXzJmc2ds3Ot4wBsMWsic,8579
+orchestrator.ai-2.0.dist-info/METADATA,sha256=qQeqLIQoDT-BAeAstC25deJ9l2P_Vz0wacBzgclT3Bs,3926
+orchestrator.ai-2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+orchestrator.ai-2.0.dist-info/entry_points.txt,sha256=PkPcXzeJ9NOIJKEWS0ekOMFQka3lwH2fy9UbQ-Og5zg,50
+orchestrator.ai-2.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+orchestrator.ai-2.0.dist-info/RECORD,,
