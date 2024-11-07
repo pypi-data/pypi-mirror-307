@@ -1,0 +1,46 @@
+name: CI and Coverage
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+  - cron: '00 01 * * *'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9","3.10", "3.11", "3.12"]
+
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up rye
+        uses: eifinger/setup-rye@v3
+      - name: Setup JFrog credentials
+        run: |
+          rye self update
+          CfgPATH=$(rye config --show-path)
+          cat << EOF > $CfgPATH
+          [[sources]]
+          name = "default"
+          url = "https://${{ secrets.JFROG_USER}}:${{ secrets.JFROG_TOKEN }}@quera.jfrog.io/artifactory/api/pypi/quera-pypi-algo/simple/"
+          EOF
+          cat $CfgPATH
+        env:
+          JFROG_USER: $${{ secrets.JFROG_USER }}
+          JFROG_TOKEN: $${{ secrets.JFROG_TOKEN }}
+      - name: Sync dependencies using rye
+        run: |
+          rye pin ${{ matrix.python-version }}
+          rye sync
+
+      - name: Run tests and coverage
+        run: |
+          rye run coverage:github
