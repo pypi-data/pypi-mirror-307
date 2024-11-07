@@ -1,0 +1,155 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "argparse-tui"
+authors = [
+    {name = "Donald Mellenbruch", email = "hello@f2dv.com"},
+]
+description = "Present your Argparse CLI as a Textual UI (TUI)."
+readme = "README.pypi.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+dependencies = [
+    "typing-extensions; python_version<'3.10'",
+    "textual>=0.61.0,<1",
+]
+
+[project.optional-dependencies]
+
+[dependency-groups]
+dev = [
+    "pdbp",
+    # python -m ipykernel install --user --name argparse-tui
+    "ipykernel",
+    "ipywidgets",
+    "ipython",
+]
+tests = [
+    "pytest==8.*",
+    "pytest-env==1.*",
+    "pytest-cov==5.*",
+    "pytest-asyncio==0.24.*",
+    "pytest-html==4.*",
+    "pytest-sugar==1.*",
+    "pytest-markdown-docs==0.6.*",
+    "pytest-custom-exit-code==0.3.*",
+    "packaging==23.*",
+    "mockish>=0.1.1,<2",
+]
+
+[tool.uv]
+default-groups = ["dev", "tests"]
+
+[tool.uv.sources]
+mockish = { path = "../mockish", editable = true }
+
+[project.urls]
+Homepage = "https://www.f2dv.com/r/argparse-tui"
+Repository = "https://www.github.com/fresh2dev/argparse-tui"
+# Funding = "https://www.f2dv.com/fund"
+
+[tool.pytest.ini_options]
+minversion = 8.0
+testpaths = ["tests"]
+env = [
+    "PYTHONBREAKPOINT=pdbp.set_trace",
+]
+
+[tool.pyright]
+include = ["src", "tests"]
+typeCheckingMode = "standard"
+reportUnusedImport = "none"
+reportPrivateUsage = "none"
+reportImplicitOverride = "none"
+reportAttributeAccessIssue = "none"
+reportImportCycles = "error"
+reportUnnecessaryIsInstance = "warning"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportUnnecessaryContains = "warning"
+reportUnnecessaryTypeIgnoreComment = "warning"
+reportShadowedImports = "warning"
+
+[tool.ruff]
+preview = true
+unsafe-fixes = true
+
+[tool.ruff.format]
+# Enable reformatting of code snippets in docstrings.
+docstring-code-format = true
+docstring-code-line-length = 'dynamic'
+
+[tool.ruff.lint]
+select = [
+    "A",       # flake8-builtins
+    "ARG",     # flake8-unused-arguments
+    "ASYNC",   # flake8-unused-arguments
+    "B",       # flake8-bugbear
+    "BLE",     # flake8-blind-except
+    "C4",      # flake8-comprehensions
+    "COM",     # flake8-commas
+    "DTZ",     # flake8-datetimez
+    "E",       # pycodestyle errors
+    "EM",      # flake8-errmsg
+    "F",       # pyflakes
+    "FIX",     # pyflakes
+    "FLY",     # pyflakes
+    "G",       # flake8-logging-format
+    "I",       # flake8-logging-format
+    "ISC",     # flake8-implicit-str-concat
+    "PERF",    # flake8-pie
+    "PIE",     # flake8-pie
+    "PLC",     # pylint-specific conventions
+    "PLE",     # pylint-specific errors
+    "PLR",     # pylint-specific refactors
+    "PLW",     # pylint-specific warnings
+    "PT",      # flake8-pytest-style
+    "PTH",     # flake8-use-pathlib
+    "Q",       # flake8-quotes
+    "RET",     # flake8-return
+    "RSE",     # flake8-raise
+    "RUF",     # ruff-specific
+    "SIM",     # flake8-simplify
+    "TRY",     # tryceratops
+    "UP",      # pyupgrade
+    "W",       # pycodestyle warnings
+    # "ANN",   # flake8-annotations
+    # "D",     # pydocstyle
+    # "ERA",   # eradicate
+    # "I",     # isort (missing-required-import)
+]
+ignore = [
+    "E501",    # line too long, handled by black
+    "PLR0912", # too many branches
+    "PLR0913", # too many arguments
+    "PLR0915", # too many statements
+    "PLR0917", # too many positional arguments
+    "PLR2004", # magic value used in comparison
+]
+fixable = [
+    "E",       # pycodestyle errors
+    "W",       # pycodestyle warnings
+    "COM",     # commas
+    "F401",    # unused-imports
+    "I001",    # unsorted-imports
+]
+unfixable = []
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+minversion = 4.0
+[testenv]
+passenv = *
+recreate = true
+dependency_groups = tests
+commands =
+    python -m pytest {posargs} --cov=./src --cov-report=term
+    python -m pytest {posargs} --markdown-docs -m markdown-docs --suppress-no-test-exit-code ./src
+"""

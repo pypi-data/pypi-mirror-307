@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: argparse-tui
+Version: 0.3.0
+Summary: Present your Argparse CLI as a Textual UI (TUI).
+Author-email: Donald Mellenbruch <hello@f2dv.com>
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: typing-extensions; python_version<'3.10'
+Requires-Dist: textual>=0.61.0,<1
+Project-URL: Homepage, https://www.f2dv.com/r/argparse-tui
+Project-URL: Repository, https://www.github.com/fresh2dev/argparse-tui
+
+[https://www.f2dv.com/r/argparse-tui](https://www.f2dv.com/r/argparse-tui)
+
