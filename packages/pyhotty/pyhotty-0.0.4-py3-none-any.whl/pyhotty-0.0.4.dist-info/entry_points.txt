@@ -1,0 +1,3 @@
+[console_scripts]
+pyhotty=pyhotty.__main__:main
+
