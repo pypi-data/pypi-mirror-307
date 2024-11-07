@@ -1,0 +1,38 @@
+{
+  "active": "default",
+  "default": {
+    "ios": {
+      "app": {},
+      "device": {},
+      "element": {},
+      "page": {}
+    },
+    "android": {
+      "app": {},
+      "device": {},
+      "element": {},
+      "page": {}
+    },
+    "web": {
+      "app": {},
+      "device": {},
+      "element": {},
+      "page": {}
+    }
+  },
+  "uitrace": {
+    "ios": {
+      "app": {},
+      "device": {},
+      "element": {},
+      "page": {}
+    },
+    "android": {
+      "app": {},
+      "device": {},
+      "element": {},
+      "page": {}
+    }
+  }
+}
+  
