@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "trade/vo/Order.proto";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryHistoryOrderListResponseProto";
+
+message QueryHistoryOrderListResponse {
+    repeated Order orderList = 1;   //当日订单列表
+    string pageQueryKey = 2; //分页查询参数, 下一次请求的pageQueryKey
+    bool hasNext=3; //是否还有下一页(false-没有, true-有)
+}

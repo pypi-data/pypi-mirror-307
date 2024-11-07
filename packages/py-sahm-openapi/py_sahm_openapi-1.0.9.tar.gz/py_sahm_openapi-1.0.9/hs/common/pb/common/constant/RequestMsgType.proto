@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.common.constant";
+option java_outer_classname = "RequestMsgTypeProto";
+enum RequestMsgType {
+
+	CommonRequestMsgType = 0;
+	//网关初始化
+    SocketInitRequestMsgType = 5;
+
+	//行情推送订阅
+	PushsubscribeRequestMsgType = 9;
+	PushunsubscribeRequestMsgType = 10;
+	/** ========================= 行情量化api的msgType定义 沙股: 200000-200999 ==================================== */
+	QuoteSaudiBasicQotRequestMsgType = 200000;
+	QuoteSaudiOrderBookRequestMsgType = 200001;
+	QuoteSaudiTickerRequestMsgType = 200002;
+	QuoteSaudiKLRequestMsgType = 200003;
+	QuoteSaudiTimeShareRequestMsgType = 200004;
+	/** ========================= 行情量化api的msgType定义 美股: 201000-201999 ==================================== */
+	QuoteUsBasicQotRequestMsgType = 201000;
+	QuoteUsOrderBookRequestMsgType = 201001;
+	QuoteUsTickerRequestMsgType = 201002;
+	QuoteUsKLRequestMsgType = 201003;
+	QuoteUsTimeShareRequestMsgType = 201004;
+	QuoteUsOptionChainExpireDateRequestMsgType = 201005;
+	QuoteUsOptionChainCodeRequestMsgType = 201006;
+
+
+	//交易拉取请求类型300000-309999
+	//特殊消息，保持交易登录态
+	InitConnectRequestMsgType = 300000;
+	TradeKeepLoginRequestMsgType = 300001;
+	QueryPortfolioListRequestMsgType = 300002;
+	UnLockTradeRequestMsgType = 300003;
+	QueryFundInfoRequestMsgType = 300004;
+	QueryPositionListRequestMsgType = 300005;
+	QueryMaxBuyingPowerRequestMsgType = 300006;
+	PlaceOrderRequestMsgType = 300007;
+	ModifyOrderRequestMsgType = 300008;
+	CancelOrderRequestMsgType = 300009;
+	TransactionPushSubscribeRequestMsgType = 300010;
+	QueryTodayOrderListRequestMsgType = 300011;
+	QueryHistoryOrderListRequestMsgType = 300012;
+	QueryCashStatementListRequestMsgType = 300013;
+    QueryOrderDetailRequestMsgType = 300014;
+
+}

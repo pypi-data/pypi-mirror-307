@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.notify";
+option java_outer_classname = "OrderBookItemNotifyProto";
+message OrderBookItemNotify {
+	string price = 1;
+	int64 volume = 2;//委托数量（不包含单位）
+	int32 priceLevel = 3;
+	int32 numberOfOrders = 4;
+	string mpId = 5; //深度摆盘Market Participants ID
+	int32 trades = 6;// 交易笔数
+}

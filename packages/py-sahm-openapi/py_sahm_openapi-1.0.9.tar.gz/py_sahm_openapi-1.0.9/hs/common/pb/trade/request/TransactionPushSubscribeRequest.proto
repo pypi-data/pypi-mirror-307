@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "TransactionPushSubscribeRequestProto";
+message TransactionPushSubscribeRequest {
+    string topicId  = 1;    //订阅类型（21-交易推送）
+    string subscribe = 2;   //1-订阅，0-取消订阅（默认为0）
+}

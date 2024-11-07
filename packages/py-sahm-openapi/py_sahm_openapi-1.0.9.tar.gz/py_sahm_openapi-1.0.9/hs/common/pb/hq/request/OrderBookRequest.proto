@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.request";
+option java_outer_classname = "OrderBookRequestProto";
+import "hq/dto/Security.proto";
+
+message OrderBookRequest {
+  Security security = 1;   // 股票定义
+  int32 mktTmType = 2; // 盘时类型, 美股查询时使用，-1:盘前 1:盘中 -2:盘后
+  string saudiOrderBookType = 3;  //沙股买卖档类型 MBO, MBP  (查询沙特买卖档时必填)
+  int32 usDepthBookType = 4; // 美股深度摆盘类型 2:totalview 3:arcabook （仅当查询美股深度摆盘时必填）
+}

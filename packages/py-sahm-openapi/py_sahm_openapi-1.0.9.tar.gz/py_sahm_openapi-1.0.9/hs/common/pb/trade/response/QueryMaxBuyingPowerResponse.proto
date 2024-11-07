@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryMaxBuyingPowerResponseProto";
+message QueryMaxBuyingPowerResponse {
+	string positionQty = 1; //持仓数量
+	string positionStatus = 2; //持仓头寸状态：0未建仓，1做多，2做空
+	string longSellQty = 3; //做多可卖数量
+	string longBuyQty = 4; //做多可买数量
+	string longBuyBycashQty = 5; //现金可买数量
+	string longBuyMaxQty = 6; //最大做多可买数量
+	string cashAvailable = 7; //可用现金
+	string longBuyingpower = 8; //做多最大购买力
+	string shortSellQty = 9; //做空可卖数量
+	string shortBuyQty = 10; //做空可买数量，可平仓数量
+	string shortBuyingPower = 11; //做空购买力
+	string shortSellingPool = 12; //卖空池
+}

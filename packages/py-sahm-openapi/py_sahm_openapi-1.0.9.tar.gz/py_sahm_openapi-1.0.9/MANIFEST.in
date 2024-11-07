@@ -1,0 +1,15 @@
+include README.md
+include MANIFEST.in
+
+include *.txt
+include LICENSE
+include setup.cfg
+include *.py
+recursive-include hs *.*
+
+include requirements.txt
+include hs/VERSION.txt
+recursive-include doc_maker *
+
+
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryFundInfoResponseProto";
+message QueryFundInfoResponse {
+	string portfolio = 1; //资金账号
+	string cashWithdrawable = 2; //可取资金
+	string cashAvailable = 3; //可用资金
+	string cash = 4; //账面余额，即现金
+	string amtFrozenTrading = 5; //交易冻结金额
+	string penalty = 6; //预计罚息，仅美股计息
+	string shortPenalty = 7; //沽空罚息
+}

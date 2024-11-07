@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "hq/notify/OrderBookItemNotify.proto";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.hq.notify";
+option java_outer_classname = "OrderBookFullNotifyProto";
+message OrderBookFullNotify {
+	string stockCode = 1;
+	int32 side = 2; //0是买，1是卖
+	repeated OrderBookItemNotify OrderBookItemNotifyList = 3;
+	int32 mktTmType = 4;//1:盘中 -1:盘前 -2:盘后 包含负数 int32 序列化直接数比较大 -1 占用了11个字节
+	string depthOrderBookType = 5; //"ARCA", "NSDQ"
+	int32 topicId = 6; //订阅的topicId
+	bool mergeFlag = 7; //是否合并数据
+	int64 sourceTime = 8;//供应商时间戳
+	int64 sourceRecvTime = 9;//接收端收到时间戳
+	int64 sourcePushTime = 10;//推送端推送时间戳
+}

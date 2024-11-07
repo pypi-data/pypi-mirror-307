@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "QueryCashStatementListRequestProto";
+message QueryCashStatementListRequest {
+    string marketType = 1;  //市场类型
+    string portfolio = 2;   //资金账号
+    string startDate = 3;   //开始日期（默认为endDate-90天）
+    string endDate = 4;     //结束日期（默认为昨日，startDate和endDate之间不可超过90天）
+    string flowDirection = 5;   //资金流向（0:全部、1:流入、2:流出），默认为0
+    string pageQueryKey = 6;    //分页查询参数，首次请求不用传值，下一次请求取上一次响应返回的pageQueryKey
+    string limit = 7;   //获取一页的数量（默认:20）
+    repeated string flowTypeCategoryList = 8;   //业务分类(1:股票交易、2:存取资金、3:公司行动、4:新股IPO、5:融资融券、6:内部转账、7:转股业务、8:其他)
+}

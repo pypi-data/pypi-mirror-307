@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "ModifyOrderRequestProto";
+message ModifyOrderRequest {
+    string marketType = 1;			//市场类型
+    string portfolio = 2;			//资金账号
+    string stockCode = 3;			//股票代码
+    string orderPrice = 4;			//委托价格
+    string orderQty = 5;			//委托数量
+    string validity = 6;			//订单有效期，美股为空
+    string expiryDate = 7;			//有效期(yyyyMMdd)，validity为4时，才需传该字段
+    string displaySize = 8;			//披露数量，冰山单必填，数量不得低于委托数量的5%
+    string orderId = 9;			//订单编号
+}

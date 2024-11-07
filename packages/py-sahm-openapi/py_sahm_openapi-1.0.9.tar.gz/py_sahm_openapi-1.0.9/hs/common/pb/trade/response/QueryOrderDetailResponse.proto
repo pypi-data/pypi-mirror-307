@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "trade/vo/Fee.proto";
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.response";
+option java_outer_classname = "QueryOrderDetailResponseProto";
+message QueryOrderDetailResponse {
+	string orderId = 1; //订单编号
+	string marketType = 2; //交易市场
+	string stockCode = 3; //股票代码
+	string orderQty = 4; //委托数量
+	string orderSide = 5; //委托方向1:买入,2:卖出
+	string orderPrice = 6; //委托价格
+	string orderType = 7; //委托类型
+	string entrustTime = 8; //委托时间
+	string validity = 9; //有效期类型
+	string expiryDate = 10; //有效期
+	string displaySize = 11; //披露数量，冰山订单特有
+	string executedAmount = 12; //成交金额
+	string executedPrice = 13; //成交价格
+	string cancelable = 14; //可撤销（1:是,2:否）
+	string updateable = 15; //可修改（1:是,2:否）
+	string executedQty = 16; //成交数量
+	string outstandingQty = 17; //未成交数量
+	string securityType = 18; //证券类型
+	string sessionType = 19; //交易阶段标识（0-正常订单交易（默认），1-盘前盘后交易），仅美股会有
+	string orderStatus = 20; //委托状态或者成交状态
+	string statusDesc = 21; //委托状态或者成交状态描述
+	string stockNameEn = 22; //公司名称（英文）
+	string stockNameAr = 23; //公司名称（阿拉伯语）
+	string stockName2Ar = 24; //交易名称（阿拉伯语），沙股交易所官网名称
+	string stockName2En = 25; //交易名称（英文），沙股交易所官网名称
+	string portfolio = 26; //资金账号
+	string rejectDesc = 27;  //订单拒绝-原因描述
+	string tradeDate = 28;    //交易日期
+	string vat = 29;          //税收
+	repeated Fee feeList = 30;   //费用明细列表(清算后的订单费用)
+}

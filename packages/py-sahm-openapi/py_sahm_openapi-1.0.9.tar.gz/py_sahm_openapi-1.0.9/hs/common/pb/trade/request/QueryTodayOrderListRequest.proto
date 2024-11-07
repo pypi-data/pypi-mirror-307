@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "QueryTodayOrderListRequestProto";
+message QueryTodayOrderListRequest {
+    string marketType = 1;  //市场类型
+    string portfolio = 2;   //资金账号
+    string pageQueryKey = 3;    //分页查询参数，首次请求不用传值，下一次请求取上一次响应返回的pageQueryKey
+    string limit = 4;   //每页数量
+    repeated string orderStatusList = 5;    //订单状态
+}

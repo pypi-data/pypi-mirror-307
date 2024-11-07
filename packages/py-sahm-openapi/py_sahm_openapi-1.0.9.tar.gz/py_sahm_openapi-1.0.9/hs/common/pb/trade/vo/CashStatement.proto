@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.vo";
+option java_outer_classname = "CashStatementProto";
+message CashStatement {
+	string typeDesc = 1; //业务描述
+	string flowAmount = 2; //流水金额
+	string flowDirection = 3; //资金流向(1:流入、2:流出)
+	string occurrenceTime = 4; //发生时间
+	string flowType = 5; //业务类型
+	string flowTypeCategory = 6; //业务分类(1:股票交易、2:存取资金、3:公司行动、4:新股IPO、5:融资融券、6:内部转账、7:转股业务、8:其他)
+}

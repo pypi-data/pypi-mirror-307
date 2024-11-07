@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "PlaceOrderRequestProto";
+message PlaceOrderRequest {
+    string marketType = 1;			//市场类型
+    string portfolio = 2;			//资金账号
+    string stockCode = 3;			//股票代码(APPL)
+    string orderPrice = 4;			//委托价格
+    string orderQty = 5;			//委托数量
+    string orderSide = 6;			//买卖方向
+    string orderType = 7;			//订单类型
+    string validity = 8;			//订单有效期，美股为空
+    string expiryDate = 9;			//有效期(yyyyMMdd)，validity为4时，才需传该字段
+    string sessionType = 10;			//盘前盘后交易（0:否、1:是），美股需填入，未填入默认为0，市价单选择无效，仅可盘中交易
+    string displaySize = 11;			//披露数量，冰山单必填，数量不得低于委托数量的5%
+}

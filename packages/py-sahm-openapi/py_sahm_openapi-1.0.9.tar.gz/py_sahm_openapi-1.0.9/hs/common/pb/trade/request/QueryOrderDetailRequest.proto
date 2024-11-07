@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "QueryOrderDetailRequestProto";
+message QueryOrderDetailRequest {
+    string marketType = 1;  //市场类型
+    string orderId = 2;     //订单编号
+}

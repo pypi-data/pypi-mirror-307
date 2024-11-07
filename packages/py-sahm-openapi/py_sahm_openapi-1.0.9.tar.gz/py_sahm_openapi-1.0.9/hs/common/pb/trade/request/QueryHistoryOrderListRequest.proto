@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.huasheng.sa.quant.open.sdk.protobuf.trade.request";
+option java_outer_classname = "QueryHistoryOrderListRequestProto";
+message QueryHistoryOrderListRequest {
+    string marketType = 1;  //市场类型
+    string portfolio = 2;   //资金账号
+    string startDate = 3;   //开始日期(yyyymmdd,默认为endDate-90天)
+    string endDate = 4; //结束日期(默认为昨日)
+    string pageQueryKey = 5;    //分页查询参数，首次请求不用传值，下一次请求取上一次响应返回的pageQueryKey
+    string limit = 6;   //每页数量
+    repeated string orderStatusList = 7;    //订单状态
+    string stockCode = 8;    //股票代码
+}
