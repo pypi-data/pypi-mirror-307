@@ -1,0 +1,2 @@
+[console_scripts]
+tree-disk-pith-detector = treediskpithdetector.cli:main
