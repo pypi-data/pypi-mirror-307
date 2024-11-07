@@ -1,0 +1,31 @@
+[project]
+name = "pyroll-marini-spreading"
+description = "Plugin for PyRoll providing the Marini spreading model."
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" }
+]
+
+license = "BSD-3-Clause"
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 3.0",
+    "pyroll-interface-friction~= 3.0"
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://pyroll-project.github.io"
+Repository = "https://github.com/pyroll-project/pyroll-marini-spreading"
+Documentation = "https://github.com/pyroll-project/pyroll-marini-spreading/blob/main/docs/docs.pdf"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
