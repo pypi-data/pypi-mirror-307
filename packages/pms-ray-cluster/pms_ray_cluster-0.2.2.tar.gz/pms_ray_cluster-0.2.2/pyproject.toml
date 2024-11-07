@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pms-ray-cluster"
+version = "0.2.2"
+description = "repos for pms ray cluster"
+authors = ["HyeongSeok Kim <tiryul@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "*"
+loguru = "*"
+ray = {version = "2.24", extras = ["serve"]}
+boto3 = "^1.34.133"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
