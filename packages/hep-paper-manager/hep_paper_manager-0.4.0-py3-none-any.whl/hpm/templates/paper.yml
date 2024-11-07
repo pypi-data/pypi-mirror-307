@@ -1,0 +1,16 @@
+database_id: <database_id>
+properties:
+  id: null
+  url: URL
+  type: null
+  source: null
+  title: Title
+  authors.name: Authors
+  created_date: Date
+  published_place: Published in
+  published_date: Published
+  eprint: ArXiv ID
+  citation_count: Citations
+  abstract: Abstract
+  doi: DOI
+  bibtex: BibTeX
