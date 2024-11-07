@@ -1,0 +1,26 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Kan geen verbinding maken",
+            "invalid_url": "Ongeldige URL"
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "De URL van je go2rtc instantie."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "De URL van je go2rtc instantie."
+                }
+            }
+        }
+    }
+}

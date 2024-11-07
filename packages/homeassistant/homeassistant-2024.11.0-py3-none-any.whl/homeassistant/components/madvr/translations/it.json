@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "La riconfigurazione \u00e8 stata completata con successo"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "description": "Il tuo dispositivo deve essere acceso per riconfigurare l'integrazione."
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host",
+                    "port": "Porta"
+                },
+                "data_description": {
+                    "host": "Il nome host o l'indirizzo IP del tuo dispositivo madVR Envy.",
+                    "port": "La porta su cui \u00e8 in ascolto il tuo madVR Envy. Nel 99% dei casi, lasciala come predefinita."
+                },
+                "description": "Il tuo dispositivo deve essere acceso per riconfigurare l'integrazione.",
+                "title": "Riconfigurare madVR Envy"
+            },
+            "user": {
+                "description": "Il tuo dispositivo deve essere acceso per aggiungere l'integrazione."
+            }
+        }
+    }
+}

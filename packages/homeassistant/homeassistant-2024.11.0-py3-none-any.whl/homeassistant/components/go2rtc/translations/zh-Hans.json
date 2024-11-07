@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "\u8fde\u63a5\u5931\u8d25",
+            "invalid_url": "\u7f51\u5740\u65e0\u6548",
+            "invalid_url_schema": "\u7f51\u5740\u65b9\u6848\u65e0\u6548\u3002\n\u7f51\u5740\u5e94\u4ee5 http:// \u6216 https:// \u5f00\u5934\u3002"
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "\u7f51\u5740"
+                },
+                "data_description": {
+                    "host": "\u60a8\u7684 go2rtc \u5b9e\u4f8b\u7684\u7f51\u5740\u3002"
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "\u7f51\u5740"
+                },
+                "data_description": {
+                    "url": "\u60a8\u7684 go2rtc \u5b9e\u4f8b\u7684\u7f51\u5740\u3002"
+                }
+            }
+        }
+    }
+}

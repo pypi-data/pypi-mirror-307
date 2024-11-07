@@ -1,0 +1,286 @@
+{
+    "common": {
+        "dailies": "Dienra\u0161\u010diai",
+        "todos": "To-Do's"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Paskyra jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "invalid_credentials": "Neteisingas autentifikavimas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "step": {
+            "advanced": {
+                "data": {
+                    "api_key": "API prieigos raktas",
+                    "api_user": "Vartotojo ID",
+                    "url": "URL",
+                    "verify_ssl": "Patikrinkite SSL sertifikat\u0105"
+                },
+                "description": "Galite gauti savo vartotojo ID ir API prieigos rakt\u0105 i\u0161 **Nustatymai -> Svetain\u0117s duomenys** Habitica arba egzemplioriaus, prie kurio norite prisijungti."
+            },
+            "login": {
+                "data": {
+                    "password": "Slapta\u017eodis",
+                    "username": "El. pa\u0161to adresas arba naudotojo vardas (skiriamos did\u017eiosios ir ma\u017eosios raid\u0117s)"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "API raktas",
+                    "api_user": "Habitica API vartotojo ID",
+                    "name": "Habitica vartotojo vardo nepaisymas. Bus naudojamas veiksmams",
+                    "url": "URL"
+                },
+                "description": "Prijunkite savo Habitica profil\u012f, kad gal\u0117tum\u0117te steb\u0117ti savo vartotojo profil\u012f ir u\u017eduotis.",
+                "menu_options": {
+                    "advanced": "Prisijunkite prie kit\u0173 atvej\u0173",
+                    "login": "Prisijunkite prie Habitica"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "allocate_all_stat_points": {
+                "name": "Paskirstykite visus statistinius ta\u0161kus"
+            },
+            "brightness": {
+                "name": "Degantis ry\u0161kumas"
+            },
+            "buy_health_potion": {
+                "name": "Pirkite sveikatos g\u0117rim\u0105"
+            },
+            "defensive_stance": {
+                "name": "Gynybin\u0117 pozicija"
+            },
+            "earth": {
+                "name": "\u017dem\u0117s dreb\u0117jimas"
+            },
+            "frost": {
+                "name": "Stingdantis \u0161erk\u0161nas"
+            },
+            "heal": {
+                "name": "Gydomoji \u0161viesa"
+            },
+            "heal_all": {
+                "name": "Palaiminimas"
+            },
+            "intimidate": {
+                "name": "Bauginantis \u017evilgsnis"
+            },
+            "mpheal": {
+                "name": "Eterinis bangavimas"
+            },
+            "protect_aura": {
+                "name": "Apsaugin\u0117 aura"
+            },
+            "revive": {
+                "name": "Atgaivinti i\u0161 mirties"
+            },
+            "run_cron": {
+                "name": "Prad\u0117kite mano dien\u0105"
+            },
+            "stealth": {
+                "name": "Stealth"
+            },
+            "tools_of_trade": {
+                "name": "Prekybos \u012frankiai"
+            },
+            "valorous_presence": {
+                "name": "Galingas buvimas"
+            }
+        },
+        "calendar": {
+            "dailys": {
+                "name": "Dienra\u0161\u010diai",
+                "state_attributes": {
+                    "yesterdaily": {
+                        "name": "Vakar-Kasdien",
+                        "state": {
+                            "false": "Ne",
+                            "true": "Taip"
+                        }
+                    }
+                }
+            },
+            "todos": {
+                "name": "To-Do's"
+            }
+        },
+        "sensor": {
+            "class": {
+                "name": "Klas\u0117",
+                "state": {
+                    "healer": "Gydytojas",
+                    "rogue": "Nes\u0105\u017einingas",
+                    "warrior": "Karys",
+                    "wizard": "Magas"
+                }
+            },
+            "dailys": {
+                "name": "Dienra\u0161\u010diai"
+            },
+            "display_name": {
+                "name": "Rodomas pavadinimas"
+            },
+            "experience": {
+                "name": "Patirtis"
+            },
+            "experience_max": {
+                "name": "Kitas lygis"
+            },
+            "gems": {
+                "name": "Brangakmeniai"
+            },
+            "gold": {
+                "name": "Auksas"
+            },
+            "habits": {
+                "name": "\u012epro\u010diai"
+            },
+            "health": {
+                "name": "Sveikata"
+            },
+            "health_max": {
+                "name": "Maks. sveikata"
+            },
+            "level": {
+                "name": "Lygis"
+            },
+            "mana": {
+                "name": "Mana"
+            },
+            "mana_max": {
+                "name": "Maks. mana"
+            },
+            "rewards": {
+                "name": "Apdovanojimai"
+            },
+            "todos": {
+                "name": "To-Do's"
+            },
+            "trinkets": {
+                "name": "Misti\u0161ki sm\u0117lio laikrod\u017eiai"
+            }
+        },
+        "switch": {
+            "sleep": {
+                "name": "Poilsis u\u017eeigoje"
+            }
+        },
+        "todo": {
+            "dailys": {
+                "name": "Dienra\u0161\u010diai"
+            },
+            "todos": {
+                "name": "To-Do's"
+            }
+        }
+    },
+    "exceptions": {
+        "create_todos_item_failed": {
+            "message": "Nepavyko sukurti naujo Habitica u\u017eduo\u010di\u0173 ` {name} `, bandykite dar kart\u0105"
+        },
+        "delete_completed_todos_failed": {
+            "message": "Nepavyko i\u0161trinti u\u017ebaigt\u0173 darb\u0173 element\u0173 i\u0161 Habitica darb\u0173 s\u0105ra\u0161o, bandykite dar kart\u0105"
+        },
+        "delete_todos_failed": {
+            "message": "Nepavyko i\u0161trinti elemento i\u0161 Habitica darb\u0173 s\u0105ra\u0161o, bandykite dar kart\u0105"
+        },
+        "entry_not_found": {
+            "message": "Pasirinktas simbolis nesukonfig\u016bruotas \u201eHome Assistant\u201c."
+        },
+        "entry_not_loaded": {
+            "message": "Pasirinktas simbolis \u0161iuo metu n\u0117ra \u012fkeltas arba i\u0161jungtas nam\u0173 asistente."
+        },
+        "move_dailys_item_failed": {
+            "message": "Ne\u012fmanoma kasdien perkelti Habitica \u012f pad\u0117t\u012f {pos} , bandykite dar kart\u0105"
+        },
+        "move_todos_item_failed": {
+            "message": "Ne\u012fmanoma perkelti Habitica u\u017eduoties \u012f {pos} pad\u0117t\u012f, bandykite dar kart\u0105"
+        },
+        "not_enough_mana": {
+            "message": "Nepavyko panaudoti \u012fg\u016bd\u017ei\u0173, nepakanka manos. J\u016bs\u0173 veik\u0117jas turi {mana} , bet \u012fg\u016bdis kainuoja {cost} ."
+        },
+        "score_dailys_item_failed": {
+            "message": "Ne\u012fmanoma atnaujinti j\u016bs\u0173 Habitica daily ` {name} ` balo, bandykite dar kart\u0105"
+        },
+        "score_todos_item_failed": {
+            "message": "Nepavyko atnaujinti j\u016bs\u0173 Habitica u\u017eduoties ` {name} ` balo, bandykite dar kart\u0105"
+        },
+        "service_call_exception": {
+            "message": "Nepavyko prisijungti prie Habitica, bandykite dar kart\u0105 v\u0117liau"
+        },
+        "skill_not_found": {
+            "message": "Negalite atskleisti \u012fg\u016bd\u017ei\u0173, j\u016bs\u0173 veik\u0117jas neturi \u012fg\u016bd\u017ei\u0173 ar ra\u0161ybos {skill} ."
+        },
+        "task_not_found": {
+            "message": "Nepavyko perduoti \u012fg\u016bd\u017ei\u0173, nepavyko rasti u\u017eduoties {task}"
+        },
+        "update_dailys_item_failed": {
+            "message": "Nepavyksta atnaujinti \"Habitica\" dienora\u0161\u010dio `{name}`, pabandykite dar kart\u0105"
+        },
+        "update_todos_item_failed": {
+            "message": "Nepavyko atnaujinti Habitica u\u017eduoties ` {name} `, bandykite dar kart\u0105"
+        }
+    },
+    "issues": {
+        "deprecated_task_entity": {
+            "description": "\u201eHabitica\u201c subjektas \u201e {entity} \u201c nebenaudojamas ir bus pa\u0161alintas b\u016bsimame leidime.\n Atnaujinkite savo automatizavim\u0105 ir scenarijus, kad pakeistum\u0117te jutiklio objekt\u0105 naujai prid\u0117tu todo objektu.\n Kai baigsite perk\u0117lim\u0105, galite i\u0161jungti \u201e {entity} \u201c.",
+            "title": "Habitica {task_name} jutiklis nebenaudojamas"
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "Klaj\u016bnas : Ki\u0161envagyst\u0117",
+                "fireball": "Magas: Liepsnos pli\u016bpsnis",
+                "pickpocket": "Suk\u010dius: Ki\u0161envagis",
+                "smash": "Karys: \u017eiaurus sumu\u0161imas"
+            }
+        }
+    },
+    "services": {
+        "api_call": {
+            "description": "Skambina Habitica API.",
+            "fields": {
+                "args": {
+                    "description": "Bet kokie papildomi JSON arba URL parametro argumentai. \u017dr. apidoc nurodyt\u0105 keli\u0105. Pavyzdyje naudojamas tas pats API galutinis ta\u0161kas.",
+                    "name": "Args"
+                },
+                "name": {
+                    "description": "Habitica vartotojo vardas skambinti.",
+                    "name": "Vardas"
+                },
+                "path": {
+                    "description": "Elementai i\u0161 API URL masyvo forma, kurio pabaigoje pridedamas metodas. Kreipkit\u0117s \u012f https://habitica.com/apidoc/. Pavyzdys naudoja https://habitica.com/apidoc/#api-Task-CreateUserTasks.",
+                    "name": "Kelias"
+                }
+            },
+            "name": "API pavadinimas"
+        },
+        "cast_skill": {
+            "description": "Atlikdami konkre\u010di\u0105 u\u017eduot\u012f naudokite savo Habitica veik\u0117jo \u012fg\u016bd\u017eius ar burtus, kad paveiktum\u0117te jos eig\u0105 ar b\u016bsen\u0105.",
+            "fields": {
+                "config_entry": {
+                    "description": "Pasirinkite Habitica persona\u017e\u0105, kad atskleistum\u0117te \u012fg\u016bd\u012f.",
+                    "name": "Pasirinkite simbol\u012f"
+                },
+                "skill": {
+                    "description": "Pasirinkite \u012fg\u016bd\u017eius ar burtus, kuriuos norite atlikti atliekant u\u017eduot\u012f. Gali b\u016bti naudojami tik j\u016bs\u0173 persona\u017eo klas\u0119 atitinkantys \u012fg\u016bd\u017eiai.",
+                    "name": "\u012eg\u016bdis"
+                },
+                "task": {
+                    "description": "U\u017eduoties, kuriai norite taikyti \u012fg\u016bd\u012f ar burt\u0105, pavadinimas (arba u\u017eduoties ID).",
+                    "name": "U\u017eduoties pavadinimas"
+                }
+            },
+            "name": "Suteik \u012fg\u016bd\u012f"
+        }
+    }
+}

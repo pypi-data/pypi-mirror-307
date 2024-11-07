@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Seade on juba h\u00e4\u00e4lestatud"
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Palazzetti CBoxi hostinimi v\u00f5i IP-aadress"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Automaatne",
+                            "high": "K\u00f5rge",
+                            "silent": "Vaikne"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Seadmega ei saanud \u00fchendust luua."
+        },
+        "invalid_fan_mode": {
+            "message": "Ventilaatori re\u017eiim {value} on kehtetu."
+        },
+        "invalid_target_temperatures": {
+            "message": "Sihttemperatuur {value} on sobimatu."
+        },
+        "on_off_not_available": {
+            "message": "Seadet ei saa sisse ega v\u00e4lja l\u00fclitada."
+        }
+    }
+}

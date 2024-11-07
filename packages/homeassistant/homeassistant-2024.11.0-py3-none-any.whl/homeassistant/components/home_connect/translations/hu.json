@@ -1,0 +1,516 @@
+{
+    "common": {
+        "confirmed": "Meger\u0151s\u00edtve",
+        "present": "Jelen van"
+    },
+    "config": {
+        "abort": {
+            "missing_configuration": "A komponens nincs konfigur\u00e1lva. K\u00e9rem, k\u00f6vesse a dokument\u00e1ci\u00f3t.",
+            "no_url_available": "Nincs el\u00e9rhet\u0151 URL. A hib\u00e1val kapcsolatos inform\u00e1ci\u00f3k\u00e9rt n\u00e9zze meg a [s\u00fag\u00f3]({docs_url}) le\u00edr\u00e1s\u00e1t.",
+            "oauth_error": "\u00c9rv\u00e9nytelen token adatok \u00e9rkeztek.",
+            "oauth_failed": "Hiba a hozz\u00e1f\u00e9r\u00e9si token megszerz\u00e9se k\u00f6zben.",
+            "oauth_timeout": "Id\u0151t\u00fall\u00e9p\u00e9s az OAuth-token felold\u00e1sakor.",
+            "oauth_unauthorized": "OAuth enged\u00e9lyez\u00e9si hiba a hozz\u00e1f\u00e9r\u00e9si token megszerz\u00e9se sor\u00e1n."
+        },
+        "create_entry": {
+            "default": "Sikeres hiteles\u00edt\u00e9s"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "V\u00e1lasszon egy hiteles\u00edt\u00e9si m\u00f3dszert"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "battery_charging_state": {
+                "name": "Akkumul\u00e1tor t\u00f6lt\u00e9si \u00e1llapota"
+            },
+            "charging_connection": {
+                "name": "T\u00f6lt\u00e9si kapcsolat"
+            },
+            "chiller_door": {
+                "name": "H\u0171t\u0151rekesz ajt\u00f3"
+            },
+            "dust_box_inserted": {
+                "name": "Porgy\u0171jt\u0151",
+                "state": {
+                    "off": "Nincs behelyezve",
+                    "on": "Behelyezve"
+                }
+            },
+            "freezer_door": {
+                "name": "Fagyaszt\u00f3 ajt\u00f3"
+            },
+            "lifted": {
+                "name": "Megemelve"
+            },
+            "local_control": {
+                "name": "Helyi vez\u00e9rl\u00e9s"
+            },
+            "lost": {
+                "name": "Elveszett"
+            },
+            "refrigerator_door": {
+                "name": "H\u0171t\u0151szekr\u00e9ny ajt\u00f3"
+            },
+            "remote_control": {
+                "name": "T\u00e1voli vez\u00e9rl\u00e9s"
+            },
+            "remote_start": {
+                "name": "T\u00e1voli ind\u00edt\u00e1s"
+            }
+        },
+        "light": {
+            "ambient_light": {
+                "name": "Hangulatvil\u00e1g\u00edt\u00e1s"
+            },
+            "cooking_lighting": {
+                "name": "Munkater\u00fclet vil\u00e1g\u00edt\u00e1s"
+            },
+            "external_light": {
+                "name": "K\u00fcls\u0151 vil\u00e1g\u00edt\u00e1s"
+            },
+            "internal_light": {
+                "name": "Bels\u0151 vil\u00e1g\u00edt\u00e1s"
+            }
+        },
+        "number": {
+            "bottle_cooler_setpoint_temperature": {
+                "name": "Palackh\u0171t\u0151 h\u0151m\u00e9rs\u00e9klete"
+            },
+            "chiller_left_setpoint_temperature": {
+                "name": "Bal oldali h\u0171t\u0151rekesz h\u0151m\u00e9rs\u00e9klete"
+            },
+            "chiller_right_setpoint_temperature": {
+                "name": "Jobb oldali h\u0171t\u0151rekesz h\u0151m\u00e9rs\u00e9klete"
+            },
+            "chiller_setpoint_temperature": {
+                "name": "H\u0171t\u0151rekesz h\u0151m\u00e9rs\u00e9klete"
+            },
+            "freezer_setpoint_temperature": {
+                "name": "Fagyaszt\u00f3 h\u0151m\u00e9rs\u00e9klete"
+            },
+            "refrigerator_setpoint_temperature": {
+                "name": "H\u0171t\u0151szekr\u00e9ny h\u0151m\u00e9rs\u00e9klete"
+            },
+            "wine_compartment_2_setpoint_temperature": {
+                "name": "2. bort\u00e1rol\u00f3 h\u0151m\u00e9rs\u00e9klete"
+            },
+            "wine_compartment_3_setpoint_temperature": {
+                "name": "3. bort\u00e1rol\u00f3 h\u0151m\u00e9rs\u00e9klete"
+            },
+            "wine_compartment_setpoint_temperature": {
+                "name": "Bort\u00e1rol\u00f3 h\u0151m\u00e9rs\u00e9klete"
+            }
+        },
+        "sensor": {
+            "alarm_sensor_coffee_bean_container": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "alarm_sensor_coffee_drip_tray": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "alarm_sensor_coffee_water_tank": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "alarm_sensor_freezer": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "alarm_sensor_fridge": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "alarm_sensor_temp": {
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "battery_level": {
+                "name": "Akkumul\u00e1tor szint"
+            },
+            "bean_container_empty": {
+                "name": "Babtart\u00e1ly \u00fcres",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "camera_state": {
+                "name": "Kamera \u00e1llapot",
+                "state": {
+                    "disabled": "Letiltva",
+                    "error": "Hiba",
+                    "ready": "K\u00e9sz",
+                    "sleeping": "Alv\u00f3 \u00e1llapotban",
+                    "streamingcloud": "Felh\u0151be k\u00f6zvet\u00edt\u00e9s",
+                    "streaminglocal": "Helyi k\u00f6zvet\u00edt\u00e9s",
+                    "streaminglocal_and_cloud": "Helyi \u00e9s felh\u0151be k\u00f6zvet\u00edt\u00e9s"
+                }
+            },
+            "coffee_and_milk_counter": {
+                "name": "K\u00e1v\u00e9- \u00e9s tejescs\u00e9sze"
+            },
+            "coffee_counter": {
+                "name": "K\u00e1v\u00e9"
+            },
+            "door": {
+                "name": "Ajt\u00f3",
+                "state": {
+                    "closed": "Z\u00e1rva",
+                    "locked": "Z\u00e1rolt",
+                    "open": "Nyitva"
+                }
+            },
+            "drip_tray_full": {
+                "name": "Cseppt\u00e1lca tele",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "freezer_door_alarm": {
+                "name": "Fagyaszt\u00f3 ajt\u00f3riaszt\u00e1s",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "present": "Jelen van"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "Fagyaszt\u00f3 h\u0151m\u00e9rs\u00e9klet riaszt\u00e1s",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "frothy_milk_counter": {
+                "name": "Habos tejes cs\u00e9sze"
+            },
+            "hot_milk_counter": {
+                "name": "Forr\u00f3 tejes cs\u00e9sze"
+            },
+            "hot_water_counter": {
+                "name": "Melegv\u00edz"
+            },
+            "hot_water_cups_counter": {
+                "name": "Melegvizes poh\u00e1r"
+            },
+            "last_selected_map": {
+                "name": "Utolj\u00e1ra kiv\u00e1lasztott t\u00e9rk\u00e9p",
+                "state": {
+                    "map1": "T\u00e9rk\u00e9p 1",
+                    "map2": "T\u00e9rk\u00e9p 2",
+                    "map3": "T\u00e9rk\u00e9p 3",
+                    "tempmap": "Ideiglenes t\u00e9rk\u00e9p"
+                }
+            },
+            "milk_counter": {
+                "name": "Tejes cs\u00e9sze"
+            },
+            "operation_state": {
+                "name": "M\u0171k\u00f6d\u00e9si \u00e1llapot",
+                "state": {
+                    "aborting": "Megszak\u00edt\u00e1s alatt",
+                    "actionrequired": "Beavatkoz\u00e1s sz\u00fcks\u00e9ges",
+                    "delayedstart": "K\u00e9sleltetett ind\u00edt\u00e1s",
+                    "error": "Hiba",
+                    "finished": "Befejezve",
+                    "inactive": "Inakt\u00edv",
+                    "pause": "Sz\u00fcnetel",
+                    "ready": "K\u00e9sz",
+                    "run": "M\u0171k\u00f6d\u00e9s"
+                }
+            },
+            "powder_coffee_counter": {
+                "name": "\u0150r\u00f6lt k\u00e1v\u00e9"
+            },
+            "program_finish_time": {
+                "name": "Program befejez\u00e9si ideje"
+            },
+            "program_progress": {
+                "name": "Program el\u0151rehalad\u00e1sa"
+            },
+            "refrigerator_door_alarm": {
+                "name": "H\u0171t\u0151szekr\u00e9ny ajt\u00f3riaszt\u00e1s",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "name": "\u00d6bl\u00edt\u0151szer majdnem elfogyott",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "ristretto_espresso_counter": {
+                "name": "Ristretto eszpressz\u00f3 cs\u00e9sze"
+            },
+            "salt_nearly_empty": {
+                "name": "S\u00f3 majdnem elfogyott",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            },
+            "water_tank_empty": {
+                "name": "V\u00edztart\u00e1ly \u00fcres",
+                "state": {
+                    "confirmed": "Meger\u0151s\u00edtve",
+                    "off": "Ki",
+                    "present": "Jelen van"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Gyerekz\u00e1r"
+            },
+            "cup_warmer": {
+                "name": "Cs\u00e9szemeleg\u00edt\u0151"
+            },
+            "dispenser_enabled": {
+                "name": "Adagol\u00f3",
+                "state": {
+                    "off": "Letiltva",
+                    "on": "Enged\u00e9lyezve"
+                }
+            },
+            "door_assistant_freezer": {
+                "name": "Fagyaszt\u00f3ajt\u00f3 asszisztens"
+            },
+            "door_assistant_fridge": {
+                "name": "H\u0171t\u0151ajt\u00f3 asszisztens"
+            },
+            "eco_mode": {
+                "name": "Eco m\u00f3d"
+            },
+            "freezer_super_mode": {
+                "name": "Fagyaszt\u00f3 szuper m\u00f3d"
+            },
+            "fresh_mode": {
+                "name": "Friss m\u00f3d"
+            },
+            "power": {
+                "name": "\u00c1ramell\u00e1t\u00e1s"
+            },
+            "refrigerator_super_mode": {
+                "name": "H\u0171t\u0151szekr\u00e9ny szuper m\u00f3d"
+            },
+            "sabbath_mode": {
+                "name": "Sabbath m\u00f3d"
+            },
+            "vacation_mode": {
+                "name": "Vak\u00e1ci\u00f3 m\u00f3d"
+            }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "\u00c9breszt\u0151\u00f3ra"
+            }
+        }
+    },
+    "exceptions": {
+        "power_off": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {appliance_name} kikapcsol\u00e1sa sor\u00e1n, a(z) \"{value}\" \u00e9rt\u00e9kkel: {description}"
+        },
+        "power_on": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {appliance_name} bekapcsol\u00e1sa sor\u00e1n: {description}"
+        },
+        "select_light_custom_color": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} egy\u00e9ni sz\u00edn\u00e9nek kiv\u00e1laszt\u00e1sa sor\u00e1n: {description}"
+        },
+        "set_light_brightness": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} f\u00e9nyerej\u00e9nek be\u00e1ll\u00edt\u00e1sa sor\u00e1n: {description}"
+        },
+        "set_light_color": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} sz\u00edn\u00e9nek be\u00e1ll\u00edt\u00e1sa sor\u00e1n: {description}"
+        },
+        "set_light_effect": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} effektus\u00e1nak be\u00e1ll\u00edt\u00e1sa sor\u00e1n: {description}"
+        },
+        "set_setting": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) \"{key}\" be\u00e1ll\u00edt\u00e1s\u00e1nak \"{value}\" \u00e9rt\u00e9kre t\u00f6rt\u00e9n\u0151 m\u00f3dos\u00edt\u00e1sa k\u00f6zben a(z) {entity_id} eszk\u00f6zn\u00e9l: {description}"
+        },
+        "start_program": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {program} program ind\u00edt\u00e1sa sor\u00e1n: {description}"
+        },
+        "stop_program": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {program} program le\u00e1ll\u00edt\u00e1sa sor\u00e1n: {description}"
+        },
+        "turn_off": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} ({key}) kikapcsol\u00e1sa sor\u00e1n: {description}"
+        },
+        "turn_off_light": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} kikapcsol\u00e1sa sor\u00e1n: {description}"
+        },
+        "turn_off_not_supported": {
+            "message": "A(z) {appliance_name} nem t\u00e1mogatja a kikapcsol\u00e1st vagy a k\u00e9szenl\u00e9ti m\u00f3dba l\u00e9p\u00e9st."
+        },
+        "turn_on": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} ({key}) bekapcsol\u00e1sa sor\u00e1n: {description}"
+        },
+        "turn_on_light": {
+            "message": "Hiba t\u00f6rt\u00e9nt a(z) {entity_id} bekapcsol\u00e1sa sor\u00e1n: {description}"
+        },
+        "unable_to_retrieve_turn_off": {
+            "message": "Nem siker\u00fclt kikapcsolni a(z) {appliance_name} eszk\u00f6zt, mert nem lehetett meghat\u00e1rozni, hogy t\u00e1mogatja-e a kikapcsol\u00e1st vagy a k\u00e9szenl\u00e9ti m\u00f3dot."
+        }
+    },
+    "issues": {
+        "deprecated_binary_common_door_sensor": {
+            "description": "A(z) `{entity}` bin\u00e1ris ajt\u00f3\u00e9rz\u00e9kel\u0151, amely elavult, a k\u00f6vetkez\u0151 automatiz\u00e1l\u00e1sokban vagy szkriptekben van haszn\u00e1latban:\n{items}\n\nEgy tov\u00e1bbi \u00e1llapotokkal rendelkez\u0151 \u00e9rz\u00e9kel\u0151 entit\u00e1s \u00e9rhet\u0151 el, amelyet a j\u00f6v\u0151ben haszn\u00e1lni kell; k\u00e9rj\u00fck, alkalmazza azt a fenti automatiz\u00e1l\u00e1sokban vagy szkriptekben a probl\u00e9ma megold\u00e1sa \u00e9rdek\u00e9ben.",
+            "title": "Elavult bin\u00e1ris ajt\u00f3\u00e9rz\u00e9kel\u0151t \u00e9szlelve n\u00e9h\u00e1ny automatiz\u00e1l\u00e1sban vagy szkriptben"
+        }
+    },
+    "services": {
+        "change_setting": {
+            "description": "Megv\u00e1ltoztat egy be\u00e1ll\u00edt\u00e1st.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                },
+                "key": {
+                    "description": "A be\u00e1ll\u00edt\u00e1s kulcsa.",
+                    "name": "Kulcs"
+                },
+                "value": {
+                    "description": "A be\u00e1ll\u00edt\u00e1s \u00e9rt\u00e9ke.",
+                    "name": "\u00c9rt\u00e9k"
+                }
+            },
+            "name": "Be\u00e1ll\u00edt\u00e1s m\u00f3dos\u00edt\u00e1sa"
+        },
+        "pause_program": {
+            "description": "Sz\u00fcnetelteti az \u00e9ppen fut\u00f3 programot.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                }
+            },
+            "name": "Program sz\u00fcneteltet\u00e9se"
+        },
+        "resume_program": {
+            "description": "Folytatja a sz\u00fcneteltetett programot.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                }
+            },
+            "name": "Program folytat\u00e1sa"
+        },
+        "select_program": {
+            "description": "Kiv\u00e1laszt egy programot an\u00e9lk\u00fcl, hogy elind\u00edtan\u00e1.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                },
+                "key": {
+                    "description": "Az opci\u00f3 kulcsa.",
+                    "name": "Opci\u00f3 kulcs"
+                },
+                "program": {
+                    "description": "Program kiv\u00e1laszt\u00e1sa.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Egys\u00e9g az opci\u00f3hoz.",
+                    "name": "Opci\u00f3 egys\u00e9g"
+                },
+                "value": {
+                    "description": "Az opci\u00f3 \u00e9rt\u00e9ke.",
+                    "name": "Opci\u00f3 \u00e9rt\u00e9k"
+                }
+            },
+            "name": "Program kiv\u00e1laszt\u00e1sa"
+        },
+        "set_option_active": {
+            "description": "Be\u00e1ll\u00edt egy opci\u00f3t az akt\u00edv programhoz.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                },
+                "key": {
+                    "description": "Az opci\u00f3 kulcsa.",
+                    "name": "Kulcs"
+                },
+                "value": {
+                    "description": "Az opci\u00f3 \u00e9rt\u00e9ke.",
+                    "name": "\u00c9rt\u00e9k"
+                }
+            },
+            "name": "Akt\u00edv program opci\u00f3j\u00e1nak be\u00e1ll\u00edt\u00e1sa"
+        },
+        "set_option_selected": {
+            "description": "Be\u00e1ll\u00edt egy opci\u00f3t a kiv\u00e1lasztott programhoz.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                },
+                "key": {
+                    "description": "Az opci\u00f3 kulcsa.",
+                    "name": "Kulcs"
+                },
+                "value": {
+                    "description": "Az opci\u00f3 \u00e9rt\u00e9ke.",
+                    "name": "\u00c9rt\u00e9k"
+                }
+            },
+            "name": "Kiv\u00e1lasztott program opci\u00f3j\u00e1nak be\u00e1ll\u00edt\u00e1sa"
+        },
+        "start_program": {
+            "description": "Kiv\u00e1laszt egy programot \u00e9s elind\u00edtja.",
+            "fields": {
+                "device_id": {
+                    "description": "Az eszk\u00f6z azonos\u00edt\u00f3ja.",
+                    "name": "Eszk\u00f6z azonos\u00edt\u00f3"
+                },
+                "key": {
+                    "description": "Az opci\u00f3 kulcsa.",
+                    "name": "Opci\u00f3 kulcs"
+                },
+                "program": {
+                    "description": "Program kiv\u00e1laszt\u00e1sa.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Egys\u00e9g az opci\u00f3hoz.",
+                    "name": "Opci\u00f3 egys\u00e9g"
+                },
+                "value": {
+                    "description": "Az opci\u00f3 \u00e9rt\u00e9ke.",
+                    "name": "Opci\u00f3 \u00e9rt\u00e9k"
+                }
+            },
+            "name": "Program ind\u00edt\u00e1sa"
+        }
+    }
+}

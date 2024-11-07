@@ -1,0 +1,19 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Yhteys ep\u00e4onnistui",
+            "invalid_url": "Virheellinen URL-osoite",
+            "invalid_url_schema": "Virheellinen URL-osoite. URL-osoitteen alussa tulee olla \"http://\" tai \"https://\"."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "go2rtc-instanssisi URL-osoite."
+                }
+            }
+        }
+    }
+}

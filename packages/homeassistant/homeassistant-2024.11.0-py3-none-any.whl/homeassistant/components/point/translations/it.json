@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "L'account \u00e8 gi\u00e0 configurato",
+            "already_in_progress": "Il flusso di configurazione \u00e8 gi\u00e0 in corso",
+            "already_setup": "Gi\u00e0 configurato. \u00c8 possibile una sola configurazione.",
+            "authorize_url_timeout": "Tempo scaduto nel generare l'URL di autorizzazione.",
+            "external_setup": "Point configurato correttamente da un altro flusso.",
+            "missing_configuration": "Il componente non \u00e8 configurato. Segui la documentazione.",
+            "no_flows": "Il componente non \u00e8 configurato. Segui la documentazione.",
+            "no_url_available": "Nessun URL disponibile. Per informazioni su questo errore, [controlla la sezione della guida]({docs_url})",
+            "oauth_error": "Ricevuti dati token non validi.",
+            "oauth_failed": "Errore durante l'ottenimento del token di accesso.",
+            "oauth_timeout": "Tempo scaduto durante la risoluzione del token OAuth.",
+            "oauth_unauthorized": "Errore di autorizzazione OAuth durante l'ottenimento del token di accesso.",
+            "reauth_successful": "La riautenticazione ha avuto successo",
+            "unknown": "Errore imprevisto",
+            "unknown_authorize_url_generation": "Errore sconosciuto durante la generazione di un URL di autorizzazione.",
+            "user_rejected_authorize": "Collegamento account rifiutato: {error}",
+            "wrong_account": "Puoi ri-autenticare questo account solo con lo stesso utente."
+        },
+        "create_entry": {
+            "default": "Autenticazione riuscita"
+        },
+        "error": {
+            "follow_link": "Segui il link e autenticati prima di premere Invio",
+            "no_token": "Token di accesso non valido"
+        },
+        "step": {
+            "auth": {
+                "description": "Segui il collegamento qui sotto e **Accetta** l'accesso al tuo account Minut, quindi torna indietro e premi **Invia** qui sotto. \n\n [Collegamento]({authorization_url})",
+                "title": "Autenticate Point"
+            },
+            "pick_implementation": {
+                "title": "Scegli il metodo di autenticazione"
+            },
+            "reauth_confirm": {
+                "description": "L'integrazione Point deve ri-autenticare il tuo account",
+                "title": "Autenticazione scaduta per {name}"
+            },
+            "user": {
+                "data": {
+                    "flow_impl": "Provider"
+                },
+                "description": "Vuoi avviare la configurazione?",
+                "title": "Scegli il metodo di autenticazione"
+            }
+        }
+    }
+}

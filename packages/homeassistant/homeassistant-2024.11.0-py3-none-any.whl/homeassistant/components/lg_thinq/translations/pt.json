@@ -1,0 +1,137 @@
+{
+    "entity": {
+        "select": {
+            "display_light": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "fresh_air_filter": {
+                "state": {
+                    "off": "Desligado",
+                    "smart_off": "Desligado"
+                }
+            },
+            "hygiene_dry_mode": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "operation_mode": {
+                "state": {
+                    "power_off": "Desligado"
+                }
+            },
+            "operation_mode_for_location": {
+                "state": {
+                    "power_off": "Desligado"
+                }
+            },
+            "wind_angle": {
+                "state": {
+                    "off": "Desligado"
+                }
+            }
+        },
+        "sensor": {
+            "current_job_mode": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "current_job_mode_stick_cleaner": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "current_state": {
+                "state": {
+                    "power_off": "Desligado",
+                    "stay": "Atualizar",
+                    "steam": "Atualizar"
+                }
+            },
+            "current_state_for_location": {
+                "state": {
+                    "power_off": "Desligado",
+                    "stay": "Atualizar",
+                    "steam": "Atualizar"
+                }
+            },
+            "fresh_air_filter": {
+                "state": {
+                    "off": "Desligado",
+                    "smart_off": "Desligado"
+                }
+            },
+            "growth_mode": {
+                "state": {
+                    "ext_flower": "Flores",
+                    "ext_herb": "Ervas",
+                    "ext_leaf": "Vegetais",
+                    "standard": "Auto"
+                }
+            },
+            "growth_mode_for_location": {
+                "state": {
+                    "ext_flower": "Flores",
+                    "ext_herb": "Ervas",
+                    "ext_leaf": "Vegetais",
+                    "standard": "Auto"
+                }
+            },
+            "odor_level": {
+                "name": "Odor"
+            },
+            "recipe_name": {
+                "state": {
+                    "ipa": "IPA",
+                    "wheat": "Trigo"
+                }
+            },
+            "sterilizing_state": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "target_temperature": {
+                "state": {
+                    "freezer": "Congelador",
+                    "fridge": "Frigor\u00edfico",
+                    "off": "Desligado",
+                    "rice_grain": "Arroz/Gr\u00e3os",
+                    "storage": "Armazenamento",
+                    "temperature_number": "N\u00famero"
+                }
+            },
+            "target_temperature_for_location": {
+                "state": {
+                    "freezer": "Congelador",
+                    "fridge": "Frigor\u00edfico",
+                    "off": "Desligado",
+                    "rice_grain": "Arroz/Gr\u00e3os",
+                    "storage": "Armazenamento",
+                    "temperature_number": "N\u00famero"
+                }
+            },
+            "temperature": {
+                "name": "Temperatura"
+            },
+            "temperature_state": {
+                "name": "Temperatura",
+                "state": {
+                    "high": "Alto",
+                    "low": "Baixo",
+                    "normal": "Bom"
+                }
+            },
+            "temperature_state_for_location": {
+                "state": {
+                    "high": "Alto",
+                    "low": "Baixo",
+                    "normal": "Bom"
+                }
+            }
+        }
+    }
+}

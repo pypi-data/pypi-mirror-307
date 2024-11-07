@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_url": "Invalid URL",
+            "invalid_url_schema": "Netinkama URL schema. URL turi prasid\u0117ti \u201ehttp://\u201c arba \u201ehttps://\u201c."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "J\u016bs\u0173 go2rtc egzemplioriaus URL."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "J\u016bs\u0173 go2rtc egzemplioriaus URL."
+                }
+            }
+        }
+    }
+}
