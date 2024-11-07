@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-sygel-technology-sy-web
+Version: 14.0.20241105.0
+Summary: Meta package for sygel-technology-sy-web Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-remaining-days-widget-reformat-state
+Requires-Dist: odoo14-addon-web-company-logo
+
+UNKNOWN
