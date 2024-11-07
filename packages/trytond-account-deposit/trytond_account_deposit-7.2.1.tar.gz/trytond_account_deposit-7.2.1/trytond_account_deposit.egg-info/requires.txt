@@ -1,0 +1,11 @@
+python-dateutil
+python-sql>=0.4
+trytond_account<7.3,>=7.2
+trytond_account_invoice<7.3,>=7.2
+trytond_company<7.3,>=7.2
+trytond_party<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
+trytond_account_payment_clearing<7.3,>=7.2
