@@ -1,0 +1,2 @@
+[console_scripts]
+nero = nero_cli:__main__.main
