@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "crllm"
+version = "0.4.0"
+description = "Provides AI-powered code reviews using local or cloud-based Large Language Models (LLMs) to help developers improve code quality and catch bugs efficiently."
+authors = ["Lukas Rump"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/lukasrump/crllm"
+homepage = "https://lukasrump.github.io/crllm/"
+keywords = ["code review", "AI", "LLM", "static analysis", "cli"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.3.1"
+rich = "^13.8.1"
+gitpython = "^3.1.43"
+langchain-ollama = "^0.2.0"
+argparse = "^1.4.0"
+toml = "^0.10.2"
+deepmerge = "^2.0"
+langchain-openai = "^0.2.1"
+langchain-huggingface = "^0.1.0"
+coverage = "^7.6.1"
+inquirer = "^3.4.0"
+langchain-community = "^0.3.3"
+faiss-cpu = "^1.9.0"
+tree-sitter = "^0.21.3"
+tree-sitter-languages = "^1.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.8.0"
+pylint = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+crllm = "crllm.cli:cli"
