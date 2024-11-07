@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: promptia
+Version: 0.4.1
+Summary: Promptia is a Python library designed to streamline the management and generation of prompts for Large Language Models (LLMs).
+Author: tamuto
+Author-email: tamuto@infodb.jp
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: aws
+Provides-Extra: local-index
+Provides-Extra: openai
+Requires-Dist: boto3 (>=1.35.20,<2.0.0) ; extra == "aws"
+Requires-Dist: faiss-cpu (>=1.8.0.post1,<2.0.0) ; extra == "local-index"
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: openai (>=1.46.0,<2.0.0) ; extra == "openai"
+Requires-Dist: pydantic (>=2.9.1,<3.0.0)
+Requires-Dist: sentence-transformers (>=3.1.0,<4.0.0) ; extra == "local-index"
+Description-Content-Type: text/markdown
+
+# Promptia
+
+Promptia is a Python library designed to streamline the management and generation of prompts for Large Language Models (LLMs).
+
+## Features
+
+- Manage prompt templates for various LLMs and APIs
+- Convert abstract templates to specific API formats
+- Support for function calling with detailed configurations
+- Version control for templates
+- Dynamic information embedding using Retrieval-Augmented Generation (RAG)
+- Modular design for flexibility and extensibility
+
+## Installation
+
+```
+pip install promptia[openai]
+```
+
+## Quick Start
+
+```python
+from promptia import Promptia
+from promptia import PromptTemplate
+from promptia import Message
+from promptia.llm.openai import OpenAIGPT4oMini
+
+template = PromptTemplate(
+    name='greeting',
+    description='greeting template',
+    system="Your name is {{name}}. You have wandered into {{place}}. Please act.",
+    messages=[
+        Message(role='user', content='Who are you?'),
+    ],
+    parameters={
+        'name': 'string',
+        'place': 'string'
+    },
+    function_calling_config=None
+)
+tia = Promptia()
+prompt = tia.build(template, {"name": "Alice", "place": "Wonderland"})
+
+llm = OpenAIGPT4oMini()
+result = llm.call_llm(prompt)
+print(result)
+```
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
