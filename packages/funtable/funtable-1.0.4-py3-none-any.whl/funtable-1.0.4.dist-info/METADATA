@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: funtable
+Version: 1.0.4
+Summary: Add your description here
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fundrive >=1.2.18
+Requires-Dist: funutil >=1.0.5
+
+# funtable
