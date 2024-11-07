@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: catbench
+Version: 0.1.13
+Summary: MLP benchmarking workflow for catalysis
+Home-page: https://github.com/JinukMoon/catbench
+Author: Jinuk Moon
+Author-email: jumooon@snu.ac.kr
+License: MIT
+Keywords: MLP benchmarking for catalysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ase >=3.22.1
+Requires-Dist: xlsxwriter >=3.2.0
+Requires-Dist: numpy ==1.26
+
+# catbench
+MLP benchmarking workflow for catalysis
