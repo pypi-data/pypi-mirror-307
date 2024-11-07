@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+agent/__init__.py
+agent/a.py
+agent/device.py
+agent/exceptions.py
+agent_py.egg-info/PKG-INFO
+agent_py.egg-info/SOURCES.txt
+agent_py.egg-info/dependency_links.txt
+agent_py.egg-info/not-zip-safe
+agent_py.egg-info/requires.txt
+agent_py.egg-info/top_level.txt
