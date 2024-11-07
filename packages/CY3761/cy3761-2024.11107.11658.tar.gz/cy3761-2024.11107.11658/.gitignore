@@ -1,0 +1,12 @@
+*.md
+.*
+.gitignore
+.idea
+bak
+dist
+main.py
+md
+pyproject.toml
+README.md
+upload
+__pycache__
