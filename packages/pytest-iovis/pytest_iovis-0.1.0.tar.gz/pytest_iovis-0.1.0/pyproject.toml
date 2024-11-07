@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-iovis"
+version = "0.1.0"
+authors = []
+readme = "README.md"
+urls.Source = "https://github.com/kdestin/pytest-iovis"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Testing",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+description = "A Pytest plugin to enable Jupyter Notebook testing with Papermill"
+requires-python = ">=3.9"
+dependencies = ["pytest>=7.1.0", "typing_extensions>=4.0"]
+
+[project.optional-dependencies]
+dev = ["tox~=4.0", "pre-commit", "mypy~=1.0", "pytest-iovis[papermill]", "ipykernel>=6"]
+papermill = ["papermill ~= 2.0"]
+
+[project.entry-points.pytest11]
+iovis = "pytest_iovis.plugin"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+console_output_style = "count"
+addopts = "--strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-select = [
+  "B",
+  "C4",
+  "T20",
+  "PT",
+  "RET",
+  "SIM",
+  "ARG",
+  "PTH",
+  "RUF",
+  "PLE",
+  "ANN",
+  "RUF",
+  "D",
+]
+ignore = [
+  "ANN101", # missing-type-self
+  "ANN102", # missing-type-cls
+  "D1",     # missing docstring in ...
+  "D203",   # one-blank-line-before-class
+  "D213",   # multi-line-summary-second-line
+]
+
+line-length = 120
+
+[tool.mypy]
+disallow_untyped_calls = true
+strict = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+disallow_untyped_defs = true
+check_untyped_defs = true
