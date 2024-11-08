@@ -1,0 +1,10 @@
+*.pyc
+*.pyw
+doc/_*/*
+.idea/*
+testdata/*
+*/*egg-info/*
+.vscode
+
+# sympy_to_c-generated files
+sp2c_lib.*
