@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: PyVarTools
+Version: 1.11
+Author: oddshellnick
+Author-email: oddshellnick.programming@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
