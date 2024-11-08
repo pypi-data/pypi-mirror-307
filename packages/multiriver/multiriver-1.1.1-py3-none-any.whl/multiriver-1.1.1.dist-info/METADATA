@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: multiriver
+Version: 1.1.1
+Summary: A tool for bulk river reation
+Home-page: https://github.com/yourusername/mypackage
+Author: Oleksandr Baranov
+Author-email: oleksandr.baranov@rivery.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-storage (==0.36.0)
+Requires-Dist: azure-storage-blob (==12.23.1)
+Requires-Dist: azure.identity (==1.19.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: pymongo (==3.13.0)
+Requires-Dist: Requests (==2.32.3)
+Requires-Dist: rich (==13.9.4)
+Requires-Dist: simplejson (==3.19.2)
+
+# rivery-solutions
+Rivery tools and solutions for extending Rivery features.
