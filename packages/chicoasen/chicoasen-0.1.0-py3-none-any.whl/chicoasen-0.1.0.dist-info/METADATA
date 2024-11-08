@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: chicoasen
+Version: 0.1.0
+Summary: Una librería Python para manejo de archivos y bases de datos PostgreSQL
+Project-URL: Homepage, https://github.com/CIDETECSI/chicoasen
+Author-email: MArco <mhernandezg2204@alumno.ipn.mx>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: ipython>=7.0.0
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: psycopg2-binary>=2.9.0
+Description-Content-Type: text/markdown
+
+# Chicoasen
+
+Chicoasen es una librería Python para el manejo de archivos y bases de datos PostgreSQL. Proporciona utilidades para análisis de datos, manejo de archivos y operaciones de base de datos.
+
+## Instalación
+
+```bash
+pip install chicoasen
+```
+
+## Uso
+
+```python
+from chicoasen import archivos, PostgresDB
+
+# Ejemplo de manejo de archivos
+config = archivos.config()
+path = "ruta/a/tu/archivo.csv"
+archivos.validar_carga_muestra(path, config)
+
+# Ejemplo de base de datos
+db = PostgresDB(
+    host='localhost',
+    port=5432,
+    dbname='tu_base_datos',
+    user='tu_usuario',
+    password='tu_contraseña'
+)
+bases_datos = db.obtener_bases_de_datos()
+print(bases_datos)
+```
