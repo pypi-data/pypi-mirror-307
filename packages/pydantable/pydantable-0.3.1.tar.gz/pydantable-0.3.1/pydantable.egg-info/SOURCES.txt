@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+pydantable/__init__.py
+pydantable/base.py
+pydantable/csv.py
+pydantable/edit_model.py
+pydantable/errors.py
+pydantable/strict_table.py
+pydantable/table.py
+pydantable/validate.py
+pydantable.egg-info/PKG-INFO
+pydantable.egg-info/SOURCES.txt
+pydantable.egg-info/dependency_links.txt
+pydantable.egg-info/requires.txt
+pydantable.egg-info/top_level.txt
+tests/test_read_csv.py
