@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wmain
+Version: 1.2.8
+Summary: None
+Home-page: UNKNOWN
+Author: weiyn
+Author-email: 2259819653@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: lxml
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+Requires-Dist: PyExecJS
+Requires-Dist: requests
+Requires-Dist: selenium
+
+UNKNOWN
+
+
