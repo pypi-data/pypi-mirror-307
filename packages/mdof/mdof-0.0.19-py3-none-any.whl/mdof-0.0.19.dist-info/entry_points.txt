@@ -1,0 +1,2 @@
+[console_scripts]
+mdof = mdof.__main__:main
