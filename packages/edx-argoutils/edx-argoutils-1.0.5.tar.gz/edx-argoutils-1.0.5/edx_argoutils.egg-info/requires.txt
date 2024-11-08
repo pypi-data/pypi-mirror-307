@@ -1,0 +1,10 @@
+mysql-connector-python==8.0.21
+prefect[aws,google,snowflake,viz]==1.4.1
+paramiko
+boto3
+hvac
+botocore
+backoff
+ciso8601
+edx-opaque-keys
+importlib-metadata==8.4.0
