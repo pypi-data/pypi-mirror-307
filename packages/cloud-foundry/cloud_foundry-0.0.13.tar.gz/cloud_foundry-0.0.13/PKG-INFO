@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: cloud-foundry
+Version: 0.0.13
+Summary: cloud-foundry is a curated set of cloud components that can be used to assemble cloud based applications.
+Project-URL: Documentation, https://github.com/DanRepik/cloud-foundry
+Project-URL: Source, https://github.com/DanRepik/cloud-foundry
+Author-email: Daniel Repik <danrepik@icloud.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: pulumi
+Requires-Dist: pulumi-aws
