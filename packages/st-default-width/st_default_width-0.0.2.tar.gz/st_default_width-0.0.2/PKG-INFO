@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: st_default_width
+Version: 0.0.2
+Summary: Make use_container_width always True
+Project-URL: Homepage, https://github.com/edsaac/st_default_width
+Project-URL: Issues, https://github.com/edsaac/st_default_width/issues
+Author-email: "Edwin Saavedra C." <esaavedrac@u.northwestern.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# st_default_width
+Make `use_container_width = True` for all widgets
