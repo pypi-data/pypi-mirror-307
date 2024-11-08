@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: artifact-lab-3-package-02f73e0e
+Version: 1.0.3
+Summary: Fake package to exfiltrate environment variables
+Requires-Dist: requests
