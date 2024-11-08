@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: openProduction
+Version: 0.0.33
+Summary: A framework to model device production
+Home-page: https://github.com/Coimbra1984/openProduction
+Author: Markus Proeller
+Author-email: markus.proeller@pieye.org
+License: GPLv3
+License-File: LICENSE
+Requires-Dist: appdirs
+Requires-Dist: yapsy
+Requires-Dist: PyMySQL
+Requires-Dist: cmd2
+Requires-Dist: GitPython
+Requires-Dist: PyQtChart
+Requires-Dist: pysmb
+Requires-Dist: pandas
+Requires-Dist: colorama
+
+A framework to model device production
