@@ -1,0 +1,163 @@
+# This template collects a lot of potential xpaths for a set of mandatory and optional attributes
+#
+# **Specifix Syntax:**
+#   The xpaths follow basically the standard xpath-syntax
+#   BUT there are some additional syntactical elements:
+#   ^ defines, whether to choose text or key as return value:
+#       - by default the value is the text element
+#       - but one can set a key, which will than be chosen as return value
+#           e.g.:
+#               xml-element: <author ref="wikidata:Q43444">Flaubert, Gustave</author>
+#               xpath: //fileDesc//titleStmt//author
+#                   --return_value--> "Flaubert, Gustave"
+#               xpath: //fileDesc//titleStmt//author^ref
+#                   --return_value--> "wikidata:Q43444"
+#   ~ defines, whether to look for a key and add it to the return value
+#       e.g.:
+#           xml-element: <idno type="gnd">118641573</idno>
+#           xpath: //sourceDesc//author//idno[@type='gnd']~type
+#              --return_value--> "gnd:118641573"
+#   {} set an additional (maybe element-sprecific) namespace
+#       e.g.:
+#           xml-element: <reprintCount xmlns="http://distantreading.net/eltec/ns" key="low"/>
+#           xpath: //profileDesc//@{http://distantreading.net/eltec/ns}:reprintCount
+collection:
+    title:
+        short:
+        long:
+    rights_holder:
+        #  examples:
+        # - fullname: Lanegan, Mark
+        #   url: https://en.wikipedia.org/wiki/Mark_Lanegan
+        # - fullname: Gossard, Stone
+        #   url: https://en.wikipedia.org/wiki/Stone_Gossard
+    collector:
+        #  examples:
+        # - fullname: Vedder, Eddie
+        #   url: https://en.wikipedia.org/wiki/Eddie_Vedder
+        # - fullname: Cornell, Chris
+        #   url: https://en.wikipedia.org/wiki/Chris_Cornell
+    elements: []
+    basic_classifications:
+        # examples:
+        # - id: 17.97
+        #   url: http://uri.gbv.de/terminology/bk
+        #   value: Texte eines einzelnen Autors
+        # - id: IP 7460
+        #   url: https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/
+        #   value: Gesammelte Werke und Einzelwerke
+    gnd_subjects:
+        # examples:
+        # - id: 4050479-7
+        #   url: https://d-nb.info/gnd/
+        #   value: novel
+
+    # define an xpath for each attribute within TEI file
+    attributes:
+        mandatory:
+            id:
+            format:
+        optional:
+            title:
+                xpath:
+                proposals:
+                    - //fileDesc//titleStmt//title
+                    - //fileDesc//titleStmt//name
+            author:
+                id:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//author//idno[@type='gnd']~type
+                        - //fileDesc//titleStmt//author^ref
+                fullname:
+                    xpath:
+                    proposals:
+                        - //fileDesc/titleStmt//author//name[@type="full"]
+                        - //fileDesc/titleStmt//author
+                firstname:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//author//forename
+                        - //sourceDesc//author//firstname
+                        - //fileDesc/titleStmt//author//persName//forename
+                lastname:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//author//surname
+                        - //sourceDesc//author//lastname
+            genre:
+                xpath:
+                proposals:
+                    - //profileDesc//term[@type='text.form']
+                    - //profileDesc//term[@type='text.genre']
+            wordcount:
+                xpath:
+                proposals:
+                    - //fileDesc/extent/measure[@unit='ws']
+                    - //fileDesc/extent/measure[@unit='words']
+            language:
+                xpath:
+                proposals:
+                    - //profileDesc//term[@type='text.language']
+                    - //profileDesc//term[@type='text.lang']
+                    - //profileDesc/languageUsage/language
+                    - //profileDesc/langUsage/language
+            work:
+                publication:
+                    date:
+                        xpath:
+                        proposals:
+                            - //listBibl//bibl[@type="print-source"]//date
+                            - //sourceDesc//biblFull//publicationStmt//date
+                            - //sourceDesc//bibl[@type="printSource"]//date
+                    place:
+                        xpath:
+                        proposals:
+                            - //listBibl//bibl[@type="print-source"]//pubPlace
+                            - //sourceDesc//biblFull//publicationStmt//pubPlace
+                            - //sourceDesc//bibl[@type="printSource"]//pubPlace
+
+            edition:
+                title:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//bibl[@type="firstEdition"]//title
+                publication:
+                    date:
+                        xpath:
+                        proposals:
+                            - //sourceDesc//bibl[@type="firstEdition"]//date
+                    place:
+                        xpath:
+                        proposals:
+                            - //sourceDesc//bibl[@type="firstEdition"]//pubPlace
+                author:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//bibl[@type="firstEdition"]//author
+                author_id:
+                    xpath:
+                    proposals:
+                        - //sourceDesc//bibl[@type="firstEdition"]//author^ref
+
+            eltec_specs:
+                time_slot:
+                    xpath:
+                    proposals:
+                        # - //profileDesc//@{http://distantreading.net/eltec/ns}:timeSlot^key
+                author_gender:
+                    xpath:
+                    proposals:
+                        - //profileDesc//term[@type='author.gender']
+                        - //profileDesc//term[@type='author.sex']
+                        - //fileDesc//notesStmt/note[@type='author-gender']
+                        # - //profileDesc//@{http://distantreading.net/eltec/ns}:authorGender^key
+                size:
+                    xpath:
+                    proposals:
+                        # - //profileDesc//@{http://distantreading.net/eltec/ns}:size^key
+                reprintCount:
+                    xpath:
+                    proposals:
+                        # - //profileDesc//@{http://distantreading.net/eltec/ns}:reprintCount^key
+
