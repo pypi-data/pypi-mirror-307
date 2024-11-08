@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ElliShape"  # 项目的名称
+version = "0.1.0"  # 项目的版本
+description = "A morphological tool"  # 项目的简短描述
+authors = [
+    { name = "Sally yang", email = "2500876951@qq.com" }
+]
+
+# 其他可选字段
+# readme = "README.md"  # 说明文件
+requires-python = ">=3.7"  # Python 版本要求
+keywords = ["example", "packaging", "tutorial"]  # 关键字
+license = {text = "MIT"}  # 授权协议
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.plantplus.cn/ElliShape/"
+#"Documentation" = "https://your_project_docs.com"
+#"Source" = "https://github.com/your_username/your_project"
+#"Tracker" = "https://github.com/your_username/your_project/issues"
