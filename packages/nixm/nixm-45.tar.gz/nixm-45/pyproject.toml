@@ -1,0 +1,52 @@
+# This file is placed in the Public Domain.
+ 
+[build-system]
+requires = [
+    'setuptools>=43.0.0',
+    'wheel'
+]
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'nixm'
+version = '45'
+authors = [
+    {name = 'Bart Thate', email = 'record11719@gmail.com' },
+]
+description = 'NIXM'
+readme = 'README.rst'
+license = { text='Public Domain'}
+classifiers=[
+    'Development Status :: 4 - Beta',
+    'License :: Public Domain',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3',
+    'Topic :: Utilities'
+]
+
+
+[project.urls]
+'home'   = 'https://pypi.org/project/nixm'
+'bugs'   = 'https://github.com/otpcr/nixm/issues'
+'source' = 'https://github.com/otpcr/nixm'
+
+
+[tool.setuptools]
+script-files = [
+    'bin/nixm',
+    'bin/nixmctl',
+    'bin/nixmd',
+    'bin/nixms'
+]
+packages = [
+    'nixm',
+    'nixm.modules'
+]
+
+
+[tool.setuptools.data-files]
+"share/doc/nixm/" = [
+    'files/MANUAL.rst',
+    'README.rst'
+]
