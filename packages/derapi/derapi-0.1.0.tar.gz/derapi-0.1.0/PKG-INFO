@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: derapi
+Version: 0.1.0
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: attrs>=21.3.0
+Requires-Dist: httpx<0.28.0,>=0.20.0
+Requires-Dist: python-dateutil==2.8.0
+Provides-Extra: dev
+Requires-Dist: pyright==v1.1.388; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# derapi
+
+The `derapi` Python SDK provides access to the Derapi API for Python
+applications -- fully typed with async support.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/derapi.svg)](https://pypi.org/project/derapi)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/derapi.svg)](https://pypi.org/project/derapi)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```shell
+pip install derapi
+```
+
+## Usage
+
+Client initialization:
+
+```python
+import os
+
+import httpx
+from derapi import AuthenticatedClient
+
+def init_client() -> AuthenticatedClient:
+    token_resp = httpx.post(
+        "https://auth.derapi.com/oauth2/token",
+        auth=(os.environ["DERAPI_CLIENT_ID"], os.environ["DERAPI_CLIENT_SECRET"]),
+        data={"grant_type": "client_credentials"},
+    )
+    token_resp.raise_for_status()
+    token = token_resp.json()["access_token"]
+    return AuthenticatedClient(
+        base_url="https//api.derapi.com",
+        raise_on_unexpected_status=True,
+        token=token,
+    )
+```
+
+Usage:
+
+```python
+...
+
+from derapi.api import list_sites
+
+client = init_client()
+
+for site in list_sites.sync_depaginated(client=client):
+    print(site.id)
+```
+
+## License
+
+`derapi` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
