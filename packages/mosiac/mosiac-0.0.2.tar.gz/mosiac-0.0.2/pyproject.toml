@@ -1,0 +1,11 @@
+[project]
+name = "mosiac"
+authors = [
+    {name = "quincr"}
+]
+version = "0.0.2"
+description = "Coming soon"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/quincr/mosiac"
