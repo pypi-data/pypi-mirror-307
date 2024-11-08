@@ -1,0 +1,91 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ matrix.platform.runner }} ${{ matrix.platform.target }} ${{ matrix.platform.manylinux }}
+    runs-on: ${{ matrix.platform.runner }}
+    strategy:
+      fail-fast: true
+      matrix:
+        platform:
+          - runner: ubuntu-latest
+            target: x86_64
+            before: 'yum install --assumeyes perl-core'
+            manylinux: 'auto'
+          - runner: ubuntu-latest
+            target: x86_64
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'musllinux_1_2'
+          - runner: ubuntu-latest
+            target: x64
+            before: 'yum install --assumeyes perl-core'
+            manylinux: 'auto'
+          - runner: ubuntu-latest
+            target: x86
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'musllinux_1_2'
+          - runner: ubuntu-latest
+            target: aarch64
+            before: 'apt update && apt install -y libssl-dev'
+          - runner: ubuntu-latest
+            target: aarch64
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'auto'
+          - runner: ubuntu-latest
+            target: aarch64
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'musllinux_1_2'
+          - runner: ubuntu-latest
+            target: armv7
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'auto'
+          - runner: ubuntu-latest
+            target: armv7
+            before: 'apt update && apt install -y libssl-dev'
+            manylinux: 'musllinux_1_2'
+          - runner: windows-latest
+            target: x64
+          - runner: windows-latest
+            target: x86
+          - runner: macos-latest
+            target: x86_64
+          - runner: macos-latest
+            target: aarch64
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        if: runner.os == 'Windows'
+        with:
+          python-version: 3.*
+          architecture: ${{ matrix.platform.target }}
+      - uses: actions/setup-python@v5
+        if: runner.os != 'Windows'
+        with:
+          python-version: 3.*
+      - name: Build wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.platform.target }}
+          args: --release --out dist --find-interpreter
+          sccache: 'true'
+          manylinux: ${{ matrix.platform.manylinux }}
+          before-script-linux: ${{ matrix.platform.before }}
+
+  sdist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build sdist
+        uses: PyO3/maturin-action@v1
+        with:
+          command: sdist
+          args: --out dist
