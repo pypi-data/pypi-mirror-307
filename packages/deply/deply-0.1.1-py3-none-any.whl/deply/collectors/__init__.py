@@ -1,0 +1,3 @@
+from .base_collector import BaseCollector
+from .file_regex_collector import FileRegexCollector
+from .class_inherits_collector import ClassInheritsCollector
