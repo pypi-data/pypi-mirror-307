@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+nameisok/__init__.py
+nameisok/cli.py
+nameisok/core.py
+nameisok.egg-info/PKG-INFO
+nameisok.egg-info/SOURCES.txt
+nameisok.egg-info/dependency_links.txt
+nameisok.egg-info/entry_points.txt
+nameisok.egg-info/requires.txt
+nameisok.egg-info/top_level.txt
