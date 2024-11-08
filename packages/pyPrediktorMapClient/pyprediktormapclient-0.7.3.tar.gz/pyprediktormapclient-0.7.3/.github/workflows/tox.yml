@@ -1,0 +1,97 @@
+name: Python package
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+    defaults:
+      run:
+        working-directory: /home/runner/work/pyPrediktorMapClient/pyPrediktorMapClient
+
+    steps:
+
+    - name: Check initial setup
+      run: |
+        echo '*** echo $PATH'
+        echo "$PATH"
+        echo "*** odbcinst -j"
+        odbcinst -j
+        echo '*** ls -l /etc/odbc*.ini'
+        ls -l /etc/odbc*.ini || true
+        echo "*** cat /etc/odbcinst.ini"
+        cat /etc/odbcinst.ini
+        echo "*** cat /etc/odbc.ini"
+        cat /etc/odbc.ini
+
+    - name: Install ODBC driver for SQL Server
+      run: |
+        echo "*** apt-get install the driver"
+        sudo ACCEPT_EULA=Y apt-get install --yes msodbcsql18
+        echo '*** ls -l /usr/lib/x86_64-linux-gnu/odbc'
+        ls -l /opt/microsoft/msodbcsql18/lib64 || true
+
+    - name: Check ODBC setup
+      run: |
+        echo "*** odbcinst -j"
+        odbcinst -j
+        echo "*** cat /etc/odbcinst.ini"
+        cat /etc/odbcinst.ini
+        echo "*** cat /etc/odbc.ini"
+        cat /etc/odbc.ini
+        echo '*** ls -l /opt/microsoft/msodbcsql18/lib64'
+        ls -l /opt/microsoft/msodbcsql18/lib64 || true
+        echo '*** ls -l /usr/lib/x86_64-linux-gnu/odbc'
+        ls -l /usr/lib/x86_64-linux-gnu/odbc || true
+        sudo apt-get install -y unixodbc-dev
+
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        cd "$GITHUB_WORKSPACE"
+        echo "*** current python version"
+        python -VV
+        python -m pip install --upgrade pip
+        python -m pip install tox tox-gh-actions pytest
+        python -m pip install -r requirements.txt
+        python -m pip install -e .
+        echo "*** pyodbc version"
+        python -c "import pyodbc; print(pyodbc.version)"
+        echo "*** pyodbc drivers"
+        python -c "import pyodbc; print('\n'.join(sorted(pyodbc.drivers())))"
+
+    - name: Test with pytest
+      run: |
+        pytest
+
+    - name: Test with tox
+      run: |
+        tox>>summary.txt
+        cat summary.txt
+        echo ${{ github.ref }}
+
+    - name: 'Log coverage to Slack'
+      if: ${{ github.ref == 'refs/heads/main' && matrix.python-version == '3.9' }}
+      run: |
+        summary_file=summary.txt
+        coverage_line=$(grep 'TOTAL' $summary_file)
+        line_coverage=$(echo $coverage_line | awk '{print $2}')
+        missing_line_coverage=$(echo $coverage_line | awk '{print $3}')
+        line_percentage=$(printf "%.2f%%" $( echo "($line_coverage - $missing_line_coverage) / $line_coverage * 100" | bc -l))
+        echo "Line coverage: $line_percentage"
+        branch_coverage=$(echo $coverage_line | awk '{print $4}')
+        pr_branch_coverage=$(echo $coverage_line | awk '{print $5}')
+        branch_percentage=$(printf "%.2f%%" $( echo "($branch_coverage - $pr_branch_coverage) / $branch_coverage * 100" | bc -l))
+        echo "Branch coverage: $branch_percentage"
+        curl -X POST -H 'Content-type: application/json' --data "{\"appName\":\"pyPredictorMapClient\", \"linePercentage\":\"$line_percentage\", \"branchPercentage\":\"$branch_percentage\", \"methodPercentage\":\"unavailable\"}" ${{ secrets.SLACK_COVERAGE_REPORTER_WORKFLOW_URL }}
