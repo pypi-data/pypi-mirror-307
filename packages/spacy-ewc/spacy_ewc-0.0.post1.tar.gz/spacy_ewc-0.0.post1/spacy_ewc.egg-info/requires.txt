@@ -1,0 +1,12 @@
+spacy>=3.0.0
+numpy>=2.0.2
+
+[dev]
+pytest
+pytest-cov
+spacy-lookups-data
+flake8
+black
+
+[docs]
+sphinx
