@@ -1,0 +1,2 @@
+[console_scripts]
+gfp = gfp.__main__:main
