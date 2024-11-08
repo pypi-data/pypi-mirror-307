@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spacetower_maneuver_planning_python_client
+Version: 1.2.0
+Summary: Maneuver Planning API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Exotrail
+Keywords: OpenAPI,OpenAPI-Generator,Maneuver Planning API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+
+    Maneuver Planning API
+    
