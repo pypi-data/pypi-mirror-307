@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/bytewax/duckdb/__init__.py
+src/bytewax/duckdb/operators.py
+src/bytewax/duckdb/py.typed
+src/bytewax_duckdb.egg-info/PKG-INFO
+src/bytewax_duckdb.egg-info/SOURCES.txt
+src/bytewax_duckdb.egg-info/dependency_links.txt
+src/bytewax_duckdb.egg-info/requires.txt
+src/bytewax_duckdb.egg-info/top_level.txt
