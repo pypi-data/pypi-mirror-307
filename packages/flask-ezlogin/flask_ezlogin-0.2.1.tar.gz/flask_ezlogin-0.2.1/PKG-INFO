@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: flask-ezlogin
+Version: 0.2.1
+Summary: Easy login setup with Flask and Flask-Login
+Home-page: https://github.com/arturads/flask-ezlogin
+Author: Artur Arantes Santos da Silva
+Author-email: arturarantesads@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: Flask-Login
+
+# flask-ezlogin
+
+**flask-ezlogin** Ã© um pacote que facilita a configuraÃ§Ã£o de sistemas de login no Flask usando Flask-Login.
+
+## InstalaÃ§Ã£o
+
+VocÃª pode instalar diretamente do PyPI com:
+
+```bash
+pip install flask-ezlogin
+```
+
+### Funcionalidades
+
+login_required: Um wrapper para o decorator login_required do Flask-Login, que restringe o acesso a rotas protegidas para usuÃ¡rios autenticados.
+check_authentication: Redireciona o usuÃ¡rio autenticado para uma rota protegida se ele jÃ¡ estiver logado.
+prevent_cache: Adiciona cabeÃ§alhos para evitar cache em pÃ¡ginas sensÃ­veis, como as pÃ¡ginas de login e cadastro.
+login_user: Um wrapper para a funÃ§Ã£o login_user do Flask-Login, que permite autenticar o usuÃ¡rio no sistema.
+logout_user: Um wrapper para a funÃ§Ã£o logout_user do Flask-Login, que permite deslogar o usuÃ¡rio.
+
+Aqui estÃ£o alguns exemplos prÃ¡ticos de como usar os decorators e funÃ§Ãµes oferecidos pelo flask-ezlogin.
+
+1. Proteger uma Rota com login_required
+   Use login_required para restringir o acesso a uma rota apenas para usuÃ¡rios autenticados.
+
+```
+from flask import Flask, redirect, url_for
+from flask_ezlogin import login_required, logout_user
+
+app = Flask(**name**)
+
+@app.route("/protected")
+@login_required
+def protected():
+return "Esta Ã© uma rota protegida."
+
+@app.route("/logout")
+@login_required
+def logout():
+logout_user()
+return redirect(url_for("index"))
+```
+
+2. Redirecionar UsuÃ¡rios Autenticados com check_authentication
+   Use check_authentication para redirecionar usuÃ¡rios jÃ¡ autenticados para uma rota protegida. Isso Ã© Ãºtil, por exemplo, na pÃ¡gina de login.
+
+from flask import Flask, render_template
+from flask_ezlogin import check_authentication, prevent_cache
+
+app = Flask(**name**)
+
+@app.route("/login")
+@check_authentication("protected") # Redireciona para /protected se o usuÃ¡rio jÃ¡ estiver logado
+@prevent_cache # Evita cache para essa pÃ¡gina
+def login():
+return render_template("login.html")
+
+3. Evitar Cache com prevent_cache
+   O decorator prevent_cache adiciona cabeÃ§alhos para garantir que o navegador nÃ£o armazene a pÃ¡gina em cache.
+
+@app.route("/register")
+@prevent_cache
+def register():
+return render_template("register.html")
+
+4. Fazer Login com login_user
+   Use login_user para autenticar um usuÃ¡rio no sistema. Esse mÃ©todo Ã© um wrapper para a funÃ§Ã£o login_user do Flask-Login, com os mesmos parÃ¢metros, facilitando o uso direto a partir do pacote.
+
+from flask_ezlogin import login_user
+from flask_login import UserMixin
+
+# Suponha que `user` seja uma instÃ¢ncia de uma classe de usuÃ¡rio autenticÃ¡vel
+
+login_user(user, remember=True) # Realiza o login e mantÃ©m a sessÃ£o apÃ³s o fechamento do navegador
+
+5. Fazer Logout com logout_user
+   Use logout_user para deslogar o usuÃ¡rio autenticado. Esse mÃ©todo Ã© um wrapper para a funÃ§Ã£o logout_user do Flask-Login.
+
+from flask_ezlogin import logout_user
+
+@app.route("/logout")
+def logout():
+logout_user()
+return redirect(url_for("index"))
+
+### ContribuiÃ§Ã£o
+
+ContribuiÃ§Ãµes sÃ£o bem-vindas! Se vocÃª encontrar problemas, tiver ideias para novas funcionalidades ou melhorias, sinta-se Ã  vontade para abrir um pull request ou relatar problemas no repositÃ³rio GitHub.
+
+### LicenÃ§a
+
+Este projeto Ã© licenciado sob a licenÃ§a MIT. Consulte o arquivo LICENSE para mais detalhes.
