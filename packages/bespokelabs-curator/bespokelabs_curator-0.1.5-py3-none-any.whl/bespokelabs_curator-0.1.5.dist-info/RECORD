@@ -1,0 +1,17 @@
+bespokelabs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bespokelabs/curator/__init__.py,sha256=oCDVHomTJZD6Z4wRTTnu1ajzuVORZYZ5rytpkW8cF0k,69
+bespokelabs/curator/dataset.py,sha256=ceyYVbYoIGjRN3qFXWT2de2qQrbK6fOKl4HzEmagmbQ,5191
+bespokelabs/curator/db.py,sha256=LexaXX0BUiHNPObJP3KpoAMvGbQUEwru1V_kXBNSn4U,2823
+bespokelabs/curator/prompter/prompt_formatter.py,sha256=n0-OzHU_d3kdKJsecHq234nbfGfe7Y5za8lEYkIRm7I,2340
+bespokelabs/curator/prompter/prompter.py,sha256=_ra-cGFxXZ2wHFUU7OorK5K_P2EZ1aTu2gFdAC5rhnA,7279
+bespokelabs/curator/request_processor/base_request_processor.py,sha256=B9mhUowz0DD-GypSW6m4Hqx55Wc0dVY-Afv4lVTvfaQ,5494
+bespokelabs/curator/request_processor/generic_request.py,sha256=yNATJl_eIkqJekbyd6q2jyeYCsrXpYTWvCsOdlLZW6s,269
+bespokelabs/curator/request_processor/generic_response.py,sha256=oUqi7cT7XIfRVnNLoCMfy604KktNX_9YOW9n7Q_kVwI,340
+bespokelabs/curator/request_processor/openai_request_processor.py,sha256=fI3R-bHcfQ_edT6ZzzanKFpZLvHdVJHIlIINiUK8W0M,30212
+bespokelabs/curator/viewer/__main__.py,sha256=fLfkRN-S55_petbYNzvgmESmmmOlo2MQZUwZxS0LAIs,3643
+bespokelabs/curator/viewer/server.js,sha256=W2ymJcIhqNpPpprVQMBICTVqqLAaJDvgUSloAcuZdOY,1314
+bespokelabs_curator-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bespokelabs_curator-0.1.5.dist-info/METADATA,sha256=fPujWzZrM3LVoo9NTsLxZN0gvmQ_9I3G6C8tisHL4nI,1523
+bespokelabs_curator-0.1.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bespokelabs_curator-0.1.5.dist-info/entry_points.txt,sha256=TVCbJMmDyKnCDXh1e7aQonEZD5ytAXfhj-pXEoF5e6U,75
+bespokelabs_curator-0.1.5.dist-info/RECORD,,
