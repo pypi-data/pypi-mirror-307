@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-git-env=poetry_git_branch_plugin.plugin:PoetryGitBranchPlugin
+
