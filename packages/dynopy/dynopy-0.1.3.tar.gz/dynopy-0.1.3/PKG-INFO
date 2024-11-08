@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dynopy
+Version: 0.1.3
+Summary: 
+Author: Pablo Winant
+Author-email: pablo.winant@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dolang (>=0.0.21,<0.0.22)
+Requires-Dist: mkapi (>=3.0.22,<4.0.0)
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# dyno.py
+
+Very empty README file.
+
