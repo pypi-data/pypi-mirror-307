@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+info.html
+setup.py
+bkt.egg-info/PKG-INFO
+bkt.egg-info/SOURCES.txt
+bkt.egg-info/dependency_links.txt
+bkt.egg-info/entry_points.txt
+bkt.egg-info/top_level.txt
+bucket/__init__.py
+bucket/__main__.py
+bucket/cli.py
+bucket/core.py
