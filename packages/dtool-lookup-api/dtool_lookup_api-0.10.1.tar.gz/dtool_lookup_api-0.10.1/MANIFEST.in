@@ -1,0 +1,4 @@
+prune docs
+prune .git
+prune .github
+exclude .gitignore .gitattributes

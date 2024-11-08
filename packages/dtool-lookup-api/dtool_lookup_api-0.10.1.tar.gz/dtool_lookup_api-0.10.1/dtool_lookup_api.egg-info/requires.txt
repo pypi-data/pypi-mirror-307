@@ -1,0 +1,14 @@
+asgiref
+aiohttp
+dtoolcore>=3.9.0
+certifi
+PyYAML
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-spelling
+
+[test]
+pytest
+pytest-cov
