@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quantio
+Version: 0.1.0b0
+Summary: Type hinting and safe unit conversion for physical quantities in Python.
+Home-page: https://github.com/unexcellent/quantio
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/unexcellent/quantio
+Description-Content-Type: text/markdown
+
+# quantio
+Type hinting and safe unit conversion for physical quantities in Python.
+
