@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+scaffie/__init__.py
+scaffie/config.py
+scaffie/extensions.py
+scaffie/input.py
+scaffie/renderer.py
+scaffie/template.py
+scaffie/utils.py
+scaffie.egg-info/PKG-INFO
+scaffie.egg-info/SOURCES.txt
+scaffie.egg-info/dependency_links.txt
+scaffie.egg-info/top_level.txt
