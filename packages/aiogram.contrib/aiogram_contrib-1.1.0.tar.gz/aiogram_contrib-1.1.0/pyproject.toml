@@ -1,0 +1,107 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiogram.contrib"
+description = "A collection of useless (or maybe not) junk for aiogram"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "wakaree", email = "nullmatawasoradesu@gmail.com" },
+]
+maintainers = [
+    { name = "wakaree", email = "nullmatawasoradesu@gmail.com" },
+]
+keywords = [
+    "aiogram",
+    "telegram",
+    "bot",
+]
+dependencies = [
+    "aiogram>=3.0,<4.0"
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "src/aiogram/contrib/__meta__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aiogram"]
+
+[project.optional-dependencies]
+dev = [
+    "black~=24.8.0",
+    "ruff~=0.6.1",
+    "mypy~=1.11.1",
+    "pre-commit~=3.8.0"
+]
+[project.urls]
+Repository = "https://github.com/wakaree/aiogram-contrib"
+
+[tool.black]
+line-length = 99
+target-version = ["py39"]
+exclude = '''
+(
+    \.eggs
+  | \.git
+  | \.tox
+  | \.?venv
+  | build
+  | dist
+)
+'''
+
+[tool.ruff]
+target-version = "py39"
+line-length = 99
+lint.select = [
+    "C",
+    "DTZ",
+    "E",
+    "F",
+    "I",
+    "ICN",
+    "ISC",
+    "N",
+    "PLC",
+    "PLE",
+    "Q",
+    "S",
+    "T",
+    "W",
+    "YTT",
+    "RET",
+    "SIM",
+    "ASYNC",
+]
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    "docs",
+    "tests",
+    "dev",
+    "scripts",
+    "*.egg-info",
+]
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+exclude = [".venv", ".idea"]
