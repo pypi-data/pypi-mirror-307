@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: disk-monitor-aureldevops
+Version: 1.0.1
+Summary: Module de surveillance d'espace disque
+Home-page: 
+Author: Aurélien D
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+Module python pour surveiller l'espace disque en fonction d'un chemin et d'un seuil
