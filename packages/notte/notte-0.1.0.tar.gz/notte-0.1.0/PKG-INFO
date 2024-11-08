@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: notte
+Version: 0.1.0
+Summary: notte-python-sdk
+License: CC BY-NC
+Author: Andrea Pinto
+Author-email: andrea@notte.cc
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# notte-python-sdk
+
