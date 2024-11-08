@@ -1,0 +1,37 @@
+[project]
+name = "pysleep"
+dynamic = []
+readme = "README.md"
+authors = [
+    { name = "Hankyeol Kyung", email = "kghnkl0103@gmail.com" },
+]
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "parameterized",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "file"
+path = "src/pysleep/__init__.py"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "B",
+    "SIM",
+    "I",
+]
