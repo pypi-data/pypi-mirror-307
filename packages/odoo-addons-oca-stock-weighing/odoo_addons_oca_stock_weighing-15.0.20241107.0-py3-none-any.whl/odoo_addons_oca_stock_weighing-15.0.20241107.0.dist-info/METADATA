@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-stock-weighing
+Version: 15.0.20241107.0
+Summary: Meta package for oca-stock-weighing Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-mrp-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-partner-delivery-zone-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-sale-elaboration-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-sale-stock-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-picking-batch-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-secondary-unit-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-weighing<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-weighing-auto-create-lot<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-weighing-auto-package<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-weighing-remote-measure<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-stock-weighing-threaded-print<15.1dev,>=15.0dev
+Requires-Dist: odoo-addon-web-widget-remote-measure<15.1dev,>=15.0dev
+
+UNKNOWN
