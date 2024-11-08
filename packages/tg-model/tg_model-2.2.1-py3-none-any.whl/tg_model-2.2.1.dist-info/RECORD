@@ -1,0 +1,24 @@
+tg_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tg_model/cli.py,sha256=4O9R71c1h_3v9kEyi3XLWfORlke0RKLjmbWm0P1jIu4,8246
+tg_model/collection.py,sha256=IduVXpOWCFFi6-fv_17ErFDoZYOmCZiFOjH3vFvfB8o,5392
+tg_model/tei.py,sha256=0xYYaib0tNUC_inRDxPc0jTKDhW-1iecSlpeoX0EbWM,27407
+tg_model/util.py,sha256=z1L3Qny8osj0i3hUiv60QVHuMFB1YypX9HQ99OxyppQ,5707
+tg_model/util_eltec.py,sha256=a8uwAhBerGk1EtmZ7oBzt7ZbTjEt5a6Yw292mlb9hGc,2689
+tg_model/xml.py,sha256=t8UN4uyx963JOfUcbKC0RAx3ulTfiUTMX3XAr0Zqwys,4679
+tg_model/yaml.py,sha256=1rEKfJSyuRHcOSBd5qRMwKU7F1Og2oScIWk837BlWFw,18160
+tg_model/templates/collection.yaml,sha256=u-ECz3TF2M3_6KOs0hCgJGzbdySxX0dm7Cll2hbh-bM,6729
+tg_model/templates/main.yaml,sha256=MbfOlVGWdCBbwGBgqNoI5tjFajXz-FE7uBrEokEXweQ,38
+tg_model/templates/synergy.yaml,sha256=Ns7AKMCaew5Q9h2D7oyNfQarT4yEDwBPY0T4bbtsW8A,1005
+tg_model/templates/{{ collection }}.collection,sha256=qvcdbpvaP_uXwOjaqeuUrwgPHq-UyN97mQm6kwahxLg,627
+tg_model/templates/{{ collection }}.collection.meta,sha256=5Ag6p9sc0B4vxwLze1NMJ9baVWSitteSO38y26gc7Lw,912
+tg_model/templates/{{ id }}.edition,sha256=78lYT-feZdnNT_TkdoBKU4bMgLYY7xcf8SW3UQxtRQU,536
+tg_model/templates/{{ id }}.edition.meta,sha256=gQM-Q0UVBj7pslcs0Tu9LDM0yYOYwrLI7UWZUDDQUJc,1730
+tg_model/templates/{{ id }}.work,sha256=MToDEQtq_lPTOlRmDedFt3rJgBbx-bdvUVkzUjprQUk,40
+tg_model/templates/{{ id }}.work.meta,sha256=e1Te82x4jopXvUlCCaJraECjtgBkE4dh1P9Z9ygD-D8,2253
+tg_model/templates/{{ id }}.xml.meta,sha256=UtFbhEgVbgKsXT3ija9yDVGZSlboAmUOKvMuWVOxfMM,894
+tg_model-2.2.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tg_model-2.2.1.dist-info/METADATA,sha256=cZRLNLPv0erMB5fHgy-ch-dArbaCF6IodZe4_NJkqV0,9095
+tg_model-2.2.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+tg_model-2.2.1.dist-info/entry_points.txt,sha256=Vfs9D4Y45cRjYb99LOxTUkZSbW08oXjzHCV0VSDLh8c,125
+tg_model-2.2.1.dist-info/top_level.txt,sha256=4DJ4QZuW1lfNw3VCLswbfpXN0m7DOgVhE60_THObfRY,9
+tg_model-2.2.1.dist-info/RECORD,,
