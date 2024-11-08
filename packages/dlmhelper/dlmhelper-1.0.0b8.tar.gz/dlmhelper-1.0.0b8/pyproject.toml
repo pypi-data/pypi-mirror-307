@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dlmhelper"
+version = "1.0.0b8"
+authors = [
+  { name="Jonas Hachmeister", email="jonas.hachmeister@posteo.de" },
+]
+description = "This package includes functions and custom data types to help with performing dynamic linear model fits and analyzing the results."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+"numpy>=1.22",
+"statsmodels>=0.13",
+"matplotlib>=3.5",
+"tabulate>=0.9"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JonasHach/dlmhelper"
+"Bug Tracker" = "https://github.com/JonasHach/dlmhelper/issues"
+
