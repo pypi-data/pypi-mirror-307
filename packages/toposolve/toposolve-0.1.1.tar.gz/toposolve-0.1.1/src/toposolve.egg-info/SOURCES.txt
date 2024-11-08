@@ -1,0 +1,15 @@
+CMakeLists.txt
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/toposolve/__init__.py
+src/toposolve/_toposolve.cpp
+src/toposolve.egg-info/PKG-INFO
+src/toposolve.egg-info/SOURCES.txt
+src/toposolve.egg-info/dependency_links.txt
+src/toposolve.egg-info/not-zip-safe
+src/toposolve.egg-info/requires.txt
+src/toposolve.egg-info/top_level.txt
+tests/test_tsp_solver.py
