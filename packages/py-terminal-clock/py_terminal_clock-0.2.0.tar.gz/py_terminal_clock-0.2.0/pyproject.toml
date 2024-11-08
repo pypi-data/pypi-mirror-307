@@ -1,0 +1,26 @@
+[project]
+name = "py-terminal-clock"
+version = "0.2.0"
+description = "A simple clock display for the terminal"
+authors = [
+    { name = "ffalcon31415", email = "77492177+ffalcon31415@users.noreply.github.com" }
+]
+dependencies = [
+    "pyfiglet>=1.0.2",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/py_terminal_clock/main.py"]
