@@ -1,0 +1,8 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_main.ipynb
+      - 01_constants.ipynb
+      - 02_datatypes.ipynb
+      - 03_attrs.ipynb

@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>API para relato no Fiscaliza da Anatel – fiscaliza</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="API para relato no Fiscaliza da Anatel – fiscaliza">
+<meta property="og:description" content="Implementação de API python a instância do Redmine da Anatel: Fiscaliza">
+<meta property="og:site_name" content="fiscaliza">
+<meta name="twitter:title" content="API para relato no Fiscaliza da Anatel – fiscaliza">
+<meta name="twitter:description" content="Implementação de API python a instância do Redmine da Anatel: Fiscaliza">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">fiscaliza</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">API para relato no Fiscaliza da Anatel</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">API para relato no Fiscaliza da Anatel</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./main.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./constants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Constants</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datatypes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datatypes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./attrs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Attributes</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#autenticação-e-conexão-com-o-servidor-do-redmine" id="toc-autenticação-e-conexão-com-o-servidor-do-redmine" class="nav-link active" data-scroll-target="#autenticação-e-conexão-com-o-servidor-do-redmine">Autenticação e Conexão com o servidor do Redmine</a></li>
+  <li><a href="#conexão-com-dada-inspeção" id="toc-conexão-com-dada-inspeção" class="nav-link" data-scroll-target="#conexão-com-dada-inspeção">Conexão com dada inspeção</a></li>
+  <li><a href="#informações-da-inspeção" id="toc-informações-da-inspeção" class="nav-link" data-scroll-target="#informações-da-inspeção">Informações da Inspeção</a></li>
+  <li><a href="#campos-editáveis" id="toc-campos-editáveis" class="nav-link" data-scroll-target="#campos-editáveis">Campos editáveis</a>
+  <ul class="collapse">
+  <li><a href="#campos-obrigatórios-e-condicionais" id="toc-campos-obrigatórios-e-condicionais" class="nav-link" data-scroll-target="#campos-obrigatórios-e-condicionais">Campos Obrigatórios e Condicionais</a></li>
+  </ul></li>
+  <li><a href="#atualizando-os-campos-editáveis-da-inspeção" id="toc-atualizando-os-campos-editáveis-da-inspeção" class="nav-link" data-scroll-target="#atualizando-os-campos-editáveis-da-inspeção">Atualizando os campos editáveis da Inspeção</a></li>
+  <li><a href="#exemplo-completo" id="toc-exemplo-completo" class="nav-link" data-scroll-target="#exemplo-completo">Exemplo completo</a></li>
+  <li><a href="#gerar-relatório-de-atividades" id="toc-gerar-relatório-de-atividades" class="nav-link" data-scroll-target="#gerar-relatório-de-atividades">Gerar Relatório de Atividades</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/InovaFiscaliza/fiscaliza/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">API para relato no Fiscaliza da Anatel</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<div id="cell-2" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> randint</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fiscaliza.main <span class="im">import</span> Fiscaliza</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fiscaliza.constants <span class="im">import</span> MUNICIPIOS, SERVICOS</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fiscaliza.attrs <span class="im">import</span> FIELDS</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>load_dotenv(override<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>True</code></pre>
+</div>
+</div>
+<section id="autenticação-e-conexão-com-o-servidor-do-redmine" class="level2">
+<h2 class="anchored" data-anchor-id="autenticação-e-conexão-com-o-servidor-do-redmine">Autenticação e Conexão com o servidor do Redmine</h2>
+<p>A classe <code>Fiscaliza</code> é somente para efetuar a conexão e autenticação com o servidor do Redmine.</p>
+<div id="cell-4" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>issue_id <span class="op">=</span> <span class="st">"124182"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fiscaliza <span class="op">=</span> Fiscaliza(os.environ[<span class="st">"USERNAME"</span>], os.environ[<span class="st">"PASSWORD"</span>], teste<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>issue <span class="op">=</span> fiscaliza.get_issue(issue_id)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="conexão-com-dada-inspeção" class="level2">
+<h2 class="anchored" data-anchor-id="conexão-com-dada-inspeção">Conexão com dada inspeção</h2>
+<p>O método <code>get_issue</code> instancia e retorna um objeto do tipo <code>Issue</code>, este que encapsula a funcionalidade principal de resgate de informações, validação e formatação de informações e atualização de inspeção. O mesmo objeto pode ser instanciado diretamente passando o <code>client</code> do objeto <code>Fiscaliza</code> após autenticado e o <code>id</code> da inspeção.</p>
+<pre><code>issue = Issue(fiscaliza.client, issue_id)</code></pre>
+</section>
+<section id="informações-da-inspeção" class="level2">
+<h2 class="anchored" data-anchor-id="informações-da-inspeção">Informações da Inspeção</h2>
+<p>Todas as informações principais da Inspeção estão disponíveis através do atributo <code>attrs</code></p>
+<div id="cell-7" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>issue.attrs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>{'acao': {'type': 'acao_de_inspecao',
+  'status': 'Em andamento',
+  'name': 'ACAO_GR08_2024_0014',
+  'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n'},
+ 'agrupamento': '',
+ 'allowed_statuses': '',
+ 'anexos': ['https://sistemasnethm/fiscaliza/attachments/download/9190/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9191/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9192/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9196/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9197/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9202/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9207/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9208/Info.json'],
+ 'ano_de_execucao': '2024',
+ 'app_fiscaliza': '0',
+ 'area_do_pacp': '4-Aduana',
+ 'assigned_to': 'Eric Magalhães Delgado',
+ 'atualizacao': 'Atualizada por Ronaldo da Silva Alves Batista em 27/07/2024 às 23:37:59',
+ 'author': 'Eric Magalhães Delgado',
+ 'changesets': '',
+ 'children': '',
+ 'classe_da_inspecao': 'Técnica',
+ 'closed_on': '',
+ 'cnpjcpf_da_entidade': '27865757000102',
+ 'coordenacao_responsavel': 'FI2',
+ 'created_on': '2024-04-18T12:38:03Z',
+ 'dadospacp': '',
+ 'data_de_inicio_efetivo': '2024-07-25',
+ 'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n',
+ 'documento_instaurador_do_pado': '0201235\n0201239\n0201237',
+ 'done_ratio': 0,
+ 'due_date': '2024-05-30',
+ 'endereco_da_inspecao': 'Rua Machado de Assis, 27 - Morro Grande, Rio de Janeiro - RJ',
+ 'entidade_com_cadastro_stel': 'Não',
+ 'estimated_hours': '',
+ 'horas_de_conclusao': '6',
+ 'horas_de_deslocamento': '2',
+ 'horas_de_execucao': '38',
+ 'horas_de_preparacao': '3',
+ 'houve_obice': '1',
+ 'id': 124182,
+ 'identificada_a_origem': '1',
+ 'irregularidade': [],
+ 'is_private': False,
+ 'latitude_coordenadas': '-16.0',
+ 'longitude_coordenadas': '-45.0',
+ 'no_fiscaliza_issue': {'numero': '124182',
+  'link_acesso': 'https://sistemasnethm/fiscaliza/issues/124182'},
+ 'no_pcdp': '',
+ 'no_sav': 'Teste de Quebra\n de linha',
+ 'no_sei_do_oficio_ao_mctic': '',
+ 'no_sei_processo_fiscalizacao': "{'numero': '53554.000005/2024-18', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134'}",
+ 'no_sei_relatorio_de_atividades': "{'numero': '0207709', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134&amp;id_documento=1984091'}",
+ 'nome_da_entidade': 'Globo S/A',
+ 'observacao_tecnica_amostral': 'Simulação com o HTZ',
+ 'precisa_reservar_instrumentos': '0',
+ 'priority': 'Normal',
+ 'procedimentos': ['Monitorado alterado', 'Não Lacrado - Impedimento'],
+ 'project': 'GR08',
+ 'qnt_produt_lacradosapreend': '0',
+ 'sanada_ou_mitigada': '',
+ 'servicos_da_inspecao': ['000 - Não Aplicável',
+  '167 - COLETIVO - ESPECIAL DE TELEVISAO POR ASSINATURA'],
+ 'situacao_constatada': 'Irregular',
+ 'spent_hours': 0.0,
+ 'start_date': '2024-03-01',
+ 'status': 'Relatando',
+ 'subject': 'INSP_GR08_2024_0147',
+ 'subtema': ['Radiomonitoração Terrestre'],
+ 'tema': ['Uso do Espectro'],
+ 'time_entries': '',
+ 'tipo_de_inspecao': 'Certificação',
+ 'total_de_horas': '49.0',
+ 'total_estimated_hours': '',
+ 'total_spent_hours': 0.0,
+ 'tracker': 'Atividade de Inspeção',
+ 'ufmunicipio': ['PR/Pérola', 'PR/Santa Fé'],
+ 'updated_on': '2024-07-28T02:37:59Z',
+ 'utilizou_algum_instrumento': '0',
+ 'utilizou_tecnicas_amostrais': 'Não usou técnicas amostrais',
+ 'watchers': ''}</code></pre>
+</div>
+</div>
+<p>O atributo acima retorna um dicionário com atributos atuais da Inspeção no Fiscaliza. Existem campos editáveis através da API ou da interface Web e outros meramente informativos, além de alguns campos presentes no <code>Redmine</code> mas sem uso na instância Fiscaliza da Anatel. Um exemplo desses é o atributo <code>children</code>, sempre vazio.</p>
+</section>
+<section id="campos-editáveis" class="level2">
+<h2 class="anchored" data-anchor-id="campos-editáveis">Campos editáveis</h2>
+<p>Os dados que são editáveis, tanto pela API quanto pela interface web aparecem em <code>minúsculo</code> no dicionário. Para estes dados temos um outro método mais informativo:</p>
+<div id="cell-10" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>issue.editable_fields</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>{'agrupamento': (value: ),
+ 'area_do_pacp': (value: 4-Aduana), &lt;options&gt;,
+ 'cnpjcpf_da_entidade': (value: 27865757000102),
+ 'coordenacao_responsavel': (value: FI2), &lt;options&gt;,
+ 'description': (value: [PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.
+ ) | &lt;mandatory&gt;,
+ 'documento_instaurador_do_pado': (value: 0201235
+ 0201239
+ 0201237),
+ 'due_date': (value: 2024-05-30) | &lt;mandatory&gt;,
+ 'endereco_da_inspecao': (value: Rua Machado de Assis, 27 - Morro Grande, Rio de Janeiro - RJ) | &lt;mandatory&gt;,
+ 'entidade_com_cadastro_stel': (value: Não) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'fiscais': (value: ['Eric Magalhães Delgado', 'Ronaldo da Silva Alves Batista']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'fiscal_responsavel': (value: Eric Magalhães Delgado) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'horas_de_conclusao': (value: 6) | &lt;mandatory&gt;,
+ 'horas_de_deslocamento': (value: 2) | &lt;mandatory&gt;,
+ 'horas_de_execucao': (value: 38) | &lt;mandatory&gt;,
+ 'horas_de_preparacao': (value: 3) | &lt;mandatory&gt;,
+ 'houve_obice': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'identificada_a_origem': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'irregularidade': (value: []), &lt;multiple&gt;, &lt;options&gt;,
+ 'latitude_coordenadas': (value: -16.0) | &lt;mandatory&gt;,
+ 'longitude_coordenadas': (value: -45.0) | &lt;mandatory&gt;,
+ 'no_pcdp': (value: ),
+ 'no_sav': (value: Teste de Quebra
+  de linha),
+ 'no_sei_do_oficio_ao_mctic': (value: ),
+ 'no_sei_processo_fiscalizacao': (value: {'numero': '53554.000005/2024-18', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134'}),
+ 'no_sei_relatorio_de_atividades': (value: {'numero': '0207709', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134&amp;id_documento=1984091'}),
+ 'nome_da_entidade': (value: Globo S/A) | &lt;mandatory&gt;,
+ 'observacao_tecnica_amostral': (value: Simulação com o HTZ) | &lt;mandatory&gt;,
+ 'precisa_reservar_instrumentos': (value: 0) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'procedimentos': (value: ['Monitorado alterado', 'Não Lacrado - Impedimento']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;, conditional,
+ 'qnt_produt_lacradosapreend': (value: 0) | &lt;mandatory&gt;,
+ 'sanada_ou_mitigada': (value: ) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'servicos_da_inspecao': (value: ['000 - Não Aplicável', '167 - COLETIVO - ESPECIAL DE TELEVISAO POR ASSINATURA']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'situacao_constatada': (value: Irregular) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'start_date': (value: 2024-03-01) | &lt;mandatory&gt;,
+ 'status': (value: Relatando),
+ 'tipo_de_inspecao': (value: Certificação) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'ufmunicipio': (value: ['PR/Pérola', 'PR/Santa Fé']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'utilizou_tecnicas_amostrais': (value: Não usou técnicas amostrais) | &lt;mandatory&gt;, &lt;options&gt;}</code></pre>
+</div>
+</div>
+<p>Nesse caso as chaves são os nomes dos campos e os valores são os objetos que modelam o campo. Ao mostrar ou imprimir o dicionário, como mostrado acima, é impresso o valor atual do campo entre parênteses.</p>
+<pre><code>'tipo_de_inspecao': (value: Uso do Espectro - Não Outorgado) | &lt;mandatory&gt;, &lt;options&gt;, conditional</code></pre>
+<p>Separado pela barra vertical são mostrados alguns atributos do campo:</p>
+<ul>
+<li><code>&lt;mandatory&gt;</code> Atributo booleano indicando se o campo é obrigatório;</li>
+<li><code>&lt;multiple&gt;</code> Atributo booleano. <code>False</code>: Campo de valor único. <code>True</code> Campo aceita mais de um valor e por conseguinte deve ser fornecido uma lista em vez de um valor atômico ( <code>int</code>, <code>float</code>, <code>str</code> );</li>
+<li><code>&lt;options&gt;</code> Atributo do tipo lista. Quando presente sinaliza que o campo é restrito e só aceita valores pré-definidos;</li>
+<li><code>conditional</code> Esse não é um atributo, somente um sinalizador indicando que o campo é condicional e para dado valor preenchido neste campo, ficam disponíveis outros campos, estes podem ser obrigatórios e inclusive condicionais.</li>
+</ul>
+<p>O valor em si do campo é guardado no atributo <code>value</code>, acessado através da notação de ponto</p>
+<div id="cell-13" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>issue.editable_fields[<span class="st">'tipo_de_inspecao'</span>].value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>'Certificação'</code></pre>
+</div>
+</div>
+<section id="campos-obrigatórios-e-condicionais" class="level3">
+<h3 class="anchored" data-anchor-id="campos-obrigatórios-e-condicionais">Campos Obrigatórios e Condicionais</h3>
+<p>Os dois métodos a seguir filtram, dentre os campos editáveis, os campos obrigatório e condicionais:</p>
+<div id="cell-16" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>issue.mandatory_fields()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>{'description': (value: [PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.
+ ) | &lt;mandatory&gt;,
+ 'due_date': (value: 2024-05-30) | &lt;mandatory&gt;,
+ 'endereco_da_inspecao': (value: Rua Machado de Assis, 27 - Morro Grande, Rio de Janeiro - RJ) | &lt;mandatory&gt;,
+ 'entidade_com_cadastro_stel': (value: Não) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'fiscais': (value: ['Eric Magalhães Delgado', 'Ronaldo da Silva Alves Batista']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'fiscal_responsavel': (value: Eric Magalhães Delgado) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'horas_de_conclusao': (value: 6) | &lt;mandatory&gt;,
+ 'horas_de_deslocamento': (value: 2) | &lt;mandatory&gt;,
+ 'horas_de_execucao': (value: 38) | &lt;mandatory&gt;,
+ 'horas_de_preparacao': (value: 3) | &lt;mandatory&gt;,
+ 'houve_obice': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'identificada_a_origem': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'latitude_coordenadas': (value: -16.0) | &lt;mandatory&gt;,
+ 'longitude_coordenadas': (value: -45.0) | &lt;mandatory&gt;,
+ 'nome_da_entidade': (value: Globo S/A) | &lt;mandatory&gt;,
+ 'observacao_tecnica_amostral': (value: Simulação com o HTZ) | &lt;mandatory&gt;,
+ 'precisa_reservar_instrumentos': (value: 0) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'procedimentos': (value: ['Monitorado alterado', 'Não Lacrado - Impedimento']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;, conditional,
+ 'qnt_produt_lacradosapreend': (value: 0) | &lt;mandatory&gt;,
+ 'sanada_ou_mitigada': (value: ) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'servicos_da_inspecao': (value: ['000 - Não Aplicável', '167 - COLETIVO - ESPECIAL DE TELEVISAO POR ASSINATURA']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'situacao_constatada': (value: Irregular) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'start_date': (value: 2024-03-01) | &lt;mandatory&gt;,
+ 'tipo_de_inspecao': (value: Certificação) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'ufmunicipio': (value: ['PR/Pérola', 'PR/Santa Fé']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'utilizou_tecnicas_amostrais': (value: Não usou técnicas amostrais) | &lt;mandatory&gt;, &lt;options&gt;}</code></pre>
+</div>
+</div>
+<div id="cell-17" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>issue.conditional_fields()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>{'entidade_com_cadastro_stel': (value: Não) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'identificada_a_origem': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'precisa_reservar_instrumentos': (value: 0) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'procedimentos': (value: ['Monitorado alterado', 'Não Lacrado - Impedimento']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;, conditional,
+ 'tipo_de_inspecao': (value: Certificação) | &lt;mandatory&gt;, &lt;options&gt;, conditional}</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>O conjunto de valores para os campos com opções pré-definidas estão relacionados no atributo <code>.options</code></p>
+</blockquote>
+<div id="cell-19" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>issue.editable_fields[<span class="st">'tipo_de_inspecao'</span>].options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>['',
+ 'Bloqueio Administrativo',
+ 'Certificação',
+ 'Medição de CEMRF (RNI)',
+ 'Outorga - Aspectos não Técnicos',
+ 'Outorga - Aspectos Técnicos',
+ 'Uso do Espectro - Interferência',
+ 'Uso do Espectro - Monitoração',
+ 'Uso do Espectro - Não Outorgado']</code></pre>
+</div>
+</div>
+<div id="cell-20" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>issue.editable_fields[<span class="st">'procedimentos'</span>].options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>['Nenhum',
+ 'Lacração',
+ 'Apreensão',
+ 'Interrupção',
+ 'Não Cadastrado',
+ 'Notificado',
+ 'A Notificar',
+ 'Liberação/Desinterrupção',
+ 'Orientação ao Usuário',
+ 'Comunicado',
+ 'Deslacrado',
+ 'Vistoriado',
+ 'Emissão Termo Violação de Lacre',
+ 'Apoio a busca e apreensão',
+ 'Investigação/Pesquisa',
+ 'Não Lacrado - Impedimento',
+ 'Não Lacrado - Amparo Judicial',
+ 'Não Lacrado - Responsável Ausente',
+ 'Não Lacrado - Local Fechado',
+ 'Constatação Violação Lacre/Relacrado',
+ 'Constatação Violação Lacre/Impedimento',
+ 'Notícia Crime',
+ 'Monitorado alterado',
+ 'Constatação Encerramento - Informe',
+ 'Levantamento de Dados',
+ 'Análise/coleta de Dados',
+ 'Monitorado',
+ 'Não Lacrado - Desativado',
+ 'Devolução de Produto(s)',
+ 'Outros']</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="atualizando-os-campos-editáveis-da-inspeção" class="level2">
+<h2 class="anchored" data-anchor-id="atualizando-os-campos-editáveis-da-inspeção">Atualizando os campos editáveis da Inspeção</h2>
+<p>Dada a existência de campos condicionais, para obtermos todos os campos editáveis para dado tipo de inspeção, é preciso fornecer um dicionário de dados para que os campos sejam atualizados de acordo com os valores fornecidos para os campos condicionais.</p>
+<div id="cell-22" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>dados <span class="op">=</span> {</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tipo_de_inspecao"</span>: <span class="st">"Certificação"</span>,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"precisa_reservar_instrumentos"</span>: <span class="st">"0"</span>,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"utilizou_algum_instrumento"</span>: <span class="st">"0"</span>,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"procedimentos"</span>: <span class="st">"Lacração"</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>A atualização dos campos é feita passando o dicionário para o método <code>update_fields</code>.</p>
+<div id="cell-24" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>issue.update_fields(dados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Depois de atualizado os campos com o método acima, checamos novamente o atributo <code>editable_fields</code></p>
+<div id="cell-26" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>issue.editable_fields</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>{'agrupamento': (value: ),
+ 'area_do_pacp': (value: 4-Aduana), &lt;options&gt;,
+ 'cnpjcpf_da_entidade': (value: 27865757000102),
+ 'coordenacao_responsavel': (value: FI2), &lt;options&gt;,
+ 'description': (value: [PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.
+ ) | &lt;mandatory&gt;,
+ 'documento_instaurador_do_pado': (value: 0201235
+ 0201239
+ 0201237),
+ 'due_date': (value: 2024-05-30) | &lt;mandatory&gt;,
+ 'endereco_da_inspecao': (value: Rua Machado de Assis, 27 - Morro Grande, Rio de Janeiro - RJ) | &lt;mandatory&gt;,
+ 'entidade_com_cadastro_stel': (value: Não) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'fiscais': (value: ['Eric Magalhães Delgado', 'Ronaldo da Silva Alves Batista']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'fiscal_responsavel': (value: Eric Magalhães Delgado) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'horas_de_conclusao': (value: 6) | &lt;mandatory&gt;,
+ 'horas_de_deslocamento': (value: 2) | &lt;mandatory&gt;,
+ 'horas_de_execucao': (value: 38) | &lt;mandatory&gt;,
+ 'horas_de_preparacao': (value: 3) | &lt;mandatory&gt;,
+ 'houve_obice': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'identificada_a_origem': (value: 1) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'irregularidade': (value: []), &lt;multiple&gt;, &lt;options&gt;,
+ 'latitude_coordenadas': (value: -16.0) | &lt;mandatory&gt;,
+ 'longitude_coordenadas': (value: -45.0) | &lt;mandatory&gt;,
+ 'no_pcdp': (value: ),
+ 'no_sav': (value: Teste de Quebra
+  de linha),
+ 'no_sei_do_oficio_ao_mctic': (value: ),
+ 'no_sei_processo_fiscalizacao': (value: {'numero': '53554.000005/2024-18', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134'}),
+ 'no_sei_relatorio_de_atividades': (value: {'numero': '0207709', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134&amp;id_documento=1984091'}),
+ 'nome_da_entidade': (value: Globo S/A) | &lt;mandatory&gt;,
+ 'observacao_tecnica_amostral': (value: Simulação com o HTZ) | &lt;mandatory&gt;,
+ 'precisa_reservar_instrumentos': (value: 0) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'procedimentos': (value: ['Lacração']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;, conditional,
+ 'qnt_produt_lacradosapreend': (value: 0) | &lt;mandatory&gt;,
+ 'sanada_ou_mitigada': (value: ) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'servicos_da_inspecao': (value: ['000 - Não Aplicável', '167 - COLETIVO - ESPECIAL DE TELEVISAO POR ASSINATURA']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'situacao_constatada': (value: Irregular) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'start_date': (value: 2024-03-01) | &lt;mandatory&gt;,
+ 'status': (value: Relatando),
+ 'tipo_de_inspecao': (value: Certificação) | &lt;mandatory&gt;, &lt;options&gt;, conditional,
+ 'ufmunicipio': (value: ['PR/Pérola', 'PR/Santa Fé']) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'utilizou_tecnicas_amostrais': (value: Não usou técnicas amostrais) | &lt;mandatory&gt;, &lt;options&gt;,
+ 'no_do_lacre': (value: ) | &lt;mandatory&gt;,
+ 'motivo_de_lai': (value: []) | &lt;mandatory&gt;, &lt;multiple&gt;, &lt;options&gt;,
+ 'no_sei_do_aviso_lai': (value: ) | &lt;mandatory&gt;,
+ 'no_sei_do_plaiguarda': (value: ),
+ 'gerar_plai': (value: ), &lt;options&gt;, conditional}</code></pre>
+</div>
+</div>
+<p>Caso o conjunto de dados já seja conhecido para dado tipo de inspeção, basta passar o dicionário diretamente para o método <code>update</code>. Internamente os métodos mostrados anteriormente de atualização dos campos são chamados.</p>
+</section>
+<section id="exemplo-completo" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-completo">Exemplo completo</h2>
+<p>O dicionário a seguir contém valores misturados de diversos tipos de inspeção distintos, além de valores aleatorizados. A API simplesmente filtra os valores que se aplicam para o tipo de inspeção solicitada e o valor do dado fornecido para os campos condicionais. As demais chaves que não se aplicam são ignoradas.</p>
+<div id="cell-29" class="cell" data-execution_count="20">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dados <span class="op">=</span> {</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"endereco_da_inspecao"</span>: <span class="st">"Rua Machado de Assis, 27 - Morro Grande, Rio de Janeiro - RJ"</span>,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"campo_eletrico__pico_vm"</span>: randint(<span class="dv">50</span>, <span class="dv">100</span>),</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"campo_eletrico_rms_vm"</span>: randint(<span class="dv">20</span>, <span class="dv">100</span>),</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coordenacao_responsavel"</span>: <span class="st">"FI2"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"cnpjcpf_da_entidade"</span>: <span class="st">"27865757000102"</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"entidade_com_cadastro_stel"</span>: <span class="st">"Não"</span>,</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"entidade_outorgada"</span>: randint(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"esta_em_operacao"</span>: randint(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"numero_da_estacao"</span>: <span class="st">"1493671"</span>,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"fiscais"</span>: [<span class="st">"Eric Magalhães Delgado"</span>, <span class="st">"Ronaldo da Silva Alves Batista"</span>],</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"fiscal_responsavel"</span>: <span class="st">"Eric Magalhães Delgado"</span>,</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"foi_constatada_interferencia"</span>: randint(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"frequencia_inicial"</span>: randint(<span class="dv">70</span>, <span class="dv">110</span>),</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"frequencia_final"</span>: randint(<span class="dv">110</span>, <span class="dv">117</span>),</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"gerar_relatorio"</span>: <span class="st">'0'</span>,</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"gerar_plai"</span>: randint(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tipo_do_processo_plai"</span>: random.choice(FIELDS[<span class="st">"tipo_do_processo_plai"</span>].options),</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coord_fi_plai"</span>: random.choice(FIELDS[<span class="st">"coord_fi_plai"</span>].options),</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"html_path"</span>: <span class="st">"/mnt/c/Users/rsilva/code/fiscaliza/tests/Report_2024.02.18_T11.30.55_123456.html"</span>,</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"uploads"</span>: [</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>            <span class="st">"path"</span>: <span class="st">"/mnt/c/Users/rsilva/code/fiscaliza/tests/Report_2024.02.18_T11.30.55_123456.json"</span>,</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>            <span class="st">"filename"</span>: <span class="st">"Info.json"</span>,</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"identificada_a_origem"</span>: <span class="bu">str</span>(randint(<span class="dv">0</span>, <span class="dv">1</span>)),</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"unidade_da_frequencia_final"</span>: <span class="st">"MHz"</span>,</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"unidade_da_frequencia_inicial"</span>: <span class="st">"MHz"</span>,</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"horas_de_conclusao"</span>: randint(<span class="dv">1</span>, <span class="dv">8</span>),</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"horas_de_deslocamento"</span>: randint(<span class="dv">1</span>, <span class="dv">8</span>),</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"horas_de_execucao"</span>: randint(<span class="dv">8</span>, <span class="dv">40</span>),</span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">"horas_de_preparacao"</span>: randint(<span class="dv">1</span>, <span class="dv">8</span>),</span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">"houve_obice"</span>: random.randint(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">"houve_interferencia"</span>: random.choice([<span class="st">"Sim"</span>, <span class="st">"Não"</span>]),</span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">"latitude_coordenadas"</span>: <span class="op">-</span>randint(<span class="dv">0</span>, <span class="dv">33</span>),</span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">"longitude_coordenadas"</span>: <span class="op">-</span>randint(<span class="dv">34</span>, <span class="dv">73</span>),</span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">"latitude_da_estacao"</span>: <span class="op">-</span>randint(<span class="dv">0</span>, <span class="dv">33</span>),</span>
+<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"longitude_da_estacao"</span>: <span class="op">-</span>randint(<span class="dv">34</span>, <span class="dv">73</span>),</span>
+<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">"nome_da_entidade"</span>: <span class="st">"Globo S/A"</span>,</span>
+<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">"numero_do_pai"</span>: <span class="st">"123456"</span>,</span>
+<span id="cb24-42"><a href="#cb24-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">"observacao_tecnica_amostral"</span>: <span class="st">"Simulação com o HTZ"</span>,</span>
+<span id="cb24-43"><a href="#cb24-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">"pai_instaurado_pela_anatel"</span>: random.choice([<span class="st">"Sim"</span>, <span class="st">"Não"</span>]),</span>
+<span id="cb24-44"><a href="#cb24-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">"precisa_reservar_instrumentos"</span>: <span class="st">"0"</span>,  <span class="co">#</span></span>
+<span id="cb24-45"><a href="#cb24-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">"procedimentos"</span>: random.choices(FIELDS[<span class="st">"procedimentos"</span>].options[<span class="dv">1</span>:], k<span class="op">=</span><span class="dv">2</span>),  <span class="co">#</span></span>
+<span id="cb24-46"><a href="#cb24-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">"qnt_produt_lacradosapreend"</span>: <span class="st">"0"</span>,</span>
+<span id="cb24-47"><a href="#cb24-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">"reserva_de_instrumentos"</span>: <span class="st">"0"</span>,</span>
+<span id="cb24-48"><a href="#cb24-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"no_sav"</span>: <span class="st">"Teste de Quebra</span><span class="ch">\n</span><span class="st"> de linha"</span>,</span>
+<span id="cb24-49"><a href="#cb24-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">"documento_instaurador_do_pado"</span>: <span class="st">"0201235</span><span class="ch">\n</span><span class="st">0201239</span><span class="ch">\n</span><span class="st">0201237"</span>,</span>
+<span id="cb24-50"><a href="#cb24-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">"no_do_lacre"</span>: <span class="st">"50"</span>,</span>
+<span id="cb24-51"><a href="#cb24-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">"motivo_de_lai"</span>: random.choice(FIELDS[<span class="st">"motivo_de_lai"</span>].options),</span>
+<span id="cb24-52"><a href="#cb24-52" aria-hidden="true" tabindex="-1"></a>    <span class="st">"no_sei_do_aviso_lai"</span>: <span class="st">""</span>,</span>
+<span id="cb24-53"><a href="#cb24-53" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sanada_ou_mitigada"</span>: random.choice([<span class="st">"0"</span>, <span class="st">"1"</span>]),</span>
+<span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a>    <span class="st">"servicos_da_inspecao"</span>: random.choices(<span class="bu">list</span>(SERVICOS.values()), k<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a>    <span class="st">"situacao_constatada"</span>: <span class="st">"Irregular"</span>,</span>
+<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a>    <span class="st">"situacao_de_risco_a_vida"</span>: <span class="st">"Sim"</span>,</span>
+<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tipo_de_inspecao"</span>: random.choice(FIELDS[<span class="st">"tipo_de_inspecao"</span>].options[<span class="dv">1</span>:]),</span>
+<span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ufmunicipio"</span>: random.choices(MUNICIPIOS, k<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb24-59"><a href="#cb24-59" aria-hidden="true" tabindex="-1"></a>    <span class="st">"uso_de_produto_homologado"</span>: random.choice([<span class="st">"0"</span>, <span class="st">"1"</span>]),</span>
+<span id="cb24-60"><a href="#cb24-60" aria-hidden="true" tabindex="-1"></a>    <span class="st">"utilizou_algum_instrumento"</span>: <span class="st">"0"</span>,</span>
+<span id="cb24-61"><a href="#cb24-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">"utilizou_apoio_policial"</span>: random.choice(FIELDS[<span class="st">"utilizou_apoio_policial"</span>].options),</span>
+<span id="cb24-62"><a href="#cb24-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">"utilizou_tecnicas_amostrais"</span>: random.choice(</span>
+<span id="cb24-63"><a href="#cb24-63" aria-hidden="true" tabindex="-1"></a>        FIELDS[<span class="st">"utilizou_tecnicas_amostrais"</span>].options</span>
+<span id="cb24-64"><a href="#cb24-64" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb24-65"><a href="#cb24-65" aria-hidden="true" tabindex="-1"></a>    <span class="st">"description"</span>: <span class="st">"[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.</span><span class="ch">\r\n</span><span class="st">"</span>,</span>
+<span id="cb24-66"><a href="#cb24-66" aria-hidden="true" tabindex="-1"></a>    <span class="st">"start_date"</span>: <span class="st">"2024-03-01"</span>,</span>
+<span id="cb24-67"><a href="#cb24-67" aria-hidden="true" tabindex="-1"></a>    <span class="st">"due_date"</span>: <span class="st">"2024-05-30"</span>,</span>
+<span id="cb24-68"><a href="#cb24-68" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="cell-30" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>issue.update(dados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<pre><code>'A Inspeção nº 124182 foi atualizada. O seu estado atual é "Relatando".'</code></pre>
+</div>
+</div>
+</section>
+<section id="gerar-relatório-de-atividades" class="level2">
+<h2 class="anchored" data-anchor-id="gerar-relatório-de-atividades">Gerar Relatório de Atividades</h2>
+<p>Para as inspeções de <code>Certificação</code> e <code>Uso do Espectro - Monitoração</code> é possível gerar o relatório de atividades no SEI por meio do Fiscaliza, para tal basta fornecer o valor:</p>
+<pre><code>dados['gerar_relatório'] = '1'</code></pre>
+<div id="cell-32" class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">'Uso de Espectro - Monitoração'</span>]</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">'gerar_relatorio'</span>] <span class="op">=</span> <span class="st">'1'</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>issue.update(dados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Atualizado para o status Relatando</code></pre>
+</div>
+</div>
+<div id="cell-33" class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>issue.attrs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>{'acao': {'type': 'acao_de_inspecao',
+  'status': 'Em andamento',
+  'name': 'ACAO_GR08_2024_0014',
+  'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n'},
+ 'agrupamento': '',
+ 'allowed_statuses': '',
+ 'anexos': ['https://sistemasnethm/fiscaliza/attachments/download/9190/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9191/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9192/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9196/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9197/Info.json'],
+ 'ano_de_execucao': 2024,
+ 'app_fiscaliza': 0,
+ 'assigned_to': 'Eric Magalhães Delgado',
+ 'atualizacao': 'Atualizada por Ronaldo da Silva Alves Batista em 26/07/2024 às 07:14:07',
+ 'author': 'Eric Magalhães Delgado',
+ 'changesets': '',
+ 'children': '',
+ 'classe_da_inspecao': 'Técnica',
+ 'closed_on': '',
+ 'cnpjcpf_da_entidade': 27865757000102,
+ 'coordenacao_responsavel': 'FI2',
+ 'created_on': '2024-04-18T12:38:03Z',
+ 'data_de_inicio_efetivo': '2024-07-25',
+ 'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n',
+ 'done_ratio': 0,
+ 'due_date': '2024-05-30',
+ 'entidade_com_cadastro_stel': 'Não',
+ 'estimated_hours': '',
+ 'fiscais': ['Eric Magalhães Delgado', 'Ronaldo da Silva Alves Batista'],
+ 'fiscal_responsavel': 'Eric Magalhães Delgado',
+ 'frequencias': '',
+ 'horas_de_conclusao': 3,
+ 'horas_de_deslocamento': 7,
+ 'horas_de_execucao': 11,
+ 'horas_de_preparacao': 3,
+ 'houve_interferencia': 'Sim',
+ 'id': 124182,
+ 'identificacao_da_nao_outorgada': '',
+ 'identificada_a_origem': '',
+ 'irregularidade': [],
+ 'is_private': False,
+ 'latitude_coordenadas': -16.0,
+ 'longitude_coordenadas': -61.0,
+ 'membros': ['Gilmar Ferreira do Nascimento',
+  'Luis Fernando Camelier de Queiroz',
+  'Michel Kulhavy Cerqueira',
+  'Iulo de Araújo Lima Lobo',
+  'Carlos Fernando Muniz Santos',
+  'Isabel Cristina Cruz Soares e Souza',
+  'Alessandro Vasconcelos Fernandes',
+  'Anecy Oliveira de Freitas',
+  'Wilton Machado de Oliveira',
+  'Ilva Perla Monteiro Ferreira',
+  'Lin Yu Wan',
+  'Alexnaldo Cerqueira da Silva',
+  'Jorgean Ferreira Leal',
+  'José Mauricio Leite Araújo',
+  'Arildo Oliva Franca Filho',
+  'Leonardo Lago Araújo',
+  'Brasilio Rios Leite',
+  'Fiscal UD',
+  'José Ivan Gomes',
+  'Jaqueline Cesario da Silva',
+  'Eric Magalhães Delgado',
+  'Ronaldo da Silva Alves Batista'],
+ 'no_fiscaliza_issue': {'numero': '124182',
+  'link_acesso': 'https://sistemasnethm/fiscaliza/issues/124182'},
+ 'no_pcdp': '',
+ 'no_sav': 'Teste de Quebra\n de linha',
+ 'no_sei_do_oficio_ao_mctic': '',
+ 'no_sei_processo_fiscalizacao': "{'numero': '53554.000005/2024-18', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134'}",
+ 'nome_da_entidade': 'Globo S/A',
+ 'observacao_tecnica_amostral': 'Simulação com o HTZ',
+ 'potencia_medida': '',
+ 'precisa_reservar_instrumentos': 0,
+ 'priority': 'Normal',
+ 'procedimentos': ['Não Lacrado - Amparo Judicial',
+  'Não Lacrado - Desativado'],
+ 'project': 'GR08',
+ 'qnt_produt_lacradosapreend': 0,
+ 'servicos_da_inspecao': ['728 - RESTRITO - ESPECIAL DE REPETICAO DE TELEVISAO',
+  '043 - COLETIVO - ESPECIAL DE RADIORRECADO'],
+ 'situacao_constatada': 'Irregular',
+ 'situacao_de_risco_a_vida': 'Sim',
+ 'spent_hours': 0.0,
+ 'start_date': '2024-03-01',
+ 'status': 'Relatando',
+ 'subject': 'INSP_GR08_2024_0147',
+ 'subtema': ['Radiomonitoração Terrestre'],
+ 'tema': ['Uso do Espectro'],
+ 'time_entries': '',
+ 'tipificacao_da_infracao': '',
+ 'tipo_de_inspecao': 'Uso do Espectro - Não Outorgado',
+ 'total_de_horas': 24.0,
+ 'total_estimated_hours': '',
+ 'total_spent_hours': 0.0,
+ 'tracker': 'Atividade de Inspeção',
+ 'ufmunicipio': ['PR/Lindoeste', 'RS/Canoas'],
+ 'unidade_de_frequencia': '',
+ 'unidade_de_potencia': '',
+ 'updated_on': '2024-07-26T10:14:06Z',
+ 'uso_de_produto_homologado': 0,
+ 'utilizou_algum_instrumento': 0,
+ 'utilizou_apoio_policial': 'Polícia Civil',
+ 'utilizou_tecnicas_amostrais': 'Não usou técnicas amostrais',
+ 'watchers': ''}</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Para substituir o relatório de atividades, basta refazer a chamada fornecendo o valor <code>1</code> para a chave <code>gerar_relatorio</code>.</p>
+</blockquote>
+<div id="cell-35" class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">"Certificação"</span>]</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">"gerar_relatorio"</span>] <span class="op">=</span> <span class="st">"1"</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>issue.update(dados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Atualizado para o status Relatando</code></pre>
+</div>
+</div>
+<div id="cell-36" class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>issue.attrs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>{'acao': {'type': 'acao_de_inspecao',
+  'status': 'Em andamento',
+  'name': 'ACAO_GR08_2024_0014',
+  'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n'},
+ 'agrupamento': '',
+ 'allowed_statuses': '',
+ 'anexos': ['https://sistemasnethm/fiscaliza/attachments/download/9190/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9191/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9192/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9196/Info.json',
+  'https://sistemasnethm/fiscaliza/attachments/download/9197/Info.json'],
+ 'ano_de_execucao': 2024,
+ 'app_fiscaliza': 0,
+ 'assigned_to': 'Eric Magalhães Delgado',
+ 'atualizacao': 'Atualizada por Ronaldo da Silva Alves Batista em 26/07/2024 às 07:14:21',
+ 'author': 'Eric Magalhães Delgado',
+ 'changesets': '',
+ 'children': '',
+ 'classe_da_inspecao': 'Técnica',
+ 'closed_on': '',
+ 'cnpjcpf_da_entidade': 27865757000102,
+ 'coordenacao_responsavel': 'FI2',
+ 'created_on': '2024-04-18T12:38:03Z',
+ 'data_de_inicio_efetivo': '2024-07-25',
+ 'description': '[PMEC 2024 Etapa 2] Monitorar canais e faixas de frequências relacionados às aplicações críticas (como, por exemplo, radionavegação e radiocomunicação aeronáutica e canais de emergência) na forma a ser estabelecida no Plano de Ação de Fiscalização.\r\n',
+ 'done_ratio': 0,
+ 'due_date': '2024-05-30',
+ 'entidade_com_cadastro_stel': 'Não',
+ 'estimated_hours': '',
+ 'fiscais': ['Eric Magalhães Delgado', 'Ronaldo da Silva Alves Batista'],
+ 'fiscal_responsavel': 'Eric Magalhães Delgado',
+ 'frequencias': '',
+ 'horas_de_conclusao': 3,
+ 'horas_de_deslocamento': 7,
+ 'horas_de_execucao': 11,
+ 'horas_de_preparacao': 3,
+ 'houve_interferencia': 'Sim',
+ 'id': 124182,
+ 'identificacao_da_nao_outorgada': '',
+ 'identificada_a_origem': 0,
+ 'irregularidade': [],
+ 'is_private': False,
+ 'latitude_coordenadas': -16.0,
+ 'longitude_coordenadas': -61.0,
+ 'membros': ['Gilmar Ferreira do Nascimento',
+  'Luis Fernando Camelier de Queiroz',
+  'Michel Kulhavy Cerqueira',
+  'Iulo de Araújo Lima Lobo',
+  'Carlos Fernando Muniz Santos',
+  'Isabel Cristina Cruz Soares e Souza',
+  'Alessandro Vasconcelos Fernandes',
+  'Anecy Oliveira de Freitas',
+  'Wilton Machado de Oliveira',
+  'Ilva Perla Monteiro Ferreira',
+  'Lin Yu Wan',
+  'Alexnaldo Cerqueira da Silva',
+  'Jorgean Ferreira Leal',
+  'José Mauricio Leite Araújo',
+  'Arildo Oliva Franca Filho',
+  'Leonardo Lago Araújo',
+  'Brasilio Rios Leite',
+  'Fiscal UD',
+  'José Ivan Gomes',
+  'Jaqueline Cesario da Silva',
+  'Eric Magalhães Delgado',
+  'Ronaldo da Silva Alves Batista'],
+ 'no_fiscaliza_issue': {'numero': '124182',
+  'link_acesso': 'https://sistemasnethm/fiscaliza/issues/124182'},
+ 'no_pcdp': '',
+ 'no_sav': 'Teste de Quebra\n de linha',
+ 'no_sei_do_oficio_ao_mctic': '',
+ 'no_sei_processo_fiscalizacao': "{'numero': '53554.000005/2024-18', 'link_acesso': 'https://seihm.anatel.gov.br/sei/controlador.php?acao=procedimento_trabalhar&amp;id_procedimento=1982134'}",
+ 'nome_da_entidade': 'Globo S/A',
+ 'observacao_tecnica_amostral': 'Simulação com o HTZ',
+ 'potencia_medida': '',
+ 'precisa_reservar_instrumentos': 0,
+ 'priority': 'Normal',
+ 'procedimentos': ['Não Lacrado - Amparo Judicial',
+  'Não Lacrado - Desativado'],
+ 'project': 'GR08',
+ 'qnt_produt_lacradosapreend': 0,
+ 'servicos_da_inspecao': ['728 - RESTRITO - ESPECIAL DE REPETICAO DE TELEVISAO',
+  '043 - COLETIVO - ESPECIAL DE RADIORRECADO'],
+ 'situacao_constatada': 'Irregular',
+ 'situacao_de_risco_a_vida': 'Sim',
+ 'spent_hours': 0.0,
+ 'start_date': '2024-03-01',
+ 'status': 'Relatando',
+ 'subject': 'INSP_GR08_2024_0147',
+ 'subtema': ['Radiomonitoração Terrestre'],
+ 'tema': ['Uso do Espectro'],
+ 'time_entries': '',
+ 'tipificacao_da_infracao': '',
+ 'tipo_de_inspecao': 'Uso do Espectro - Não Outorgado',
+ 'total_de_horas': 24.0,
+ 'total_estimated_hours': '',
+ 'total_spent_hours': 0.0,
+ 'tracker': 'Atividade de Inspeção',
+ 'ufmunicipio': ['PR/Lindoeste', 'RS/Canoas'],
+ 'unidade_de_frequencia': '',
+ 'unidade_de_potencia': '',
+ 'updated_on': '2024-07-26T10:14:21Z',
+ 'uso_de_produto_homologado': 0,
+ 'utilizou_algum_instrumento': 0,
+ 'utilizou_apoio_policial': 'Polícia Civil',
+ 'utilizou_tecnicas_amostrais': 'Não usou técnicas amostrais',
+ 'watchers': ''}</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Caso o intuito seja somente editar o campo <code>Relatório de Atividades</code>, basta fornecer o valor para a chave <code>relatorio_de_atividades</code> e não esquecer de fornecer o valor <code>0</code> para a chave <code>gerar_relatório</code> ou simplesmente excluí-la.</p>
+</blockquote>
+<div id="cell-38" class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">'relatorio_de_atividades'</span>] <span class="op">=</span> <span class="st">'0206885'</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>dados[<span class="st">'gerar_relatorio'</span>] <span class="op">=</span> <span class="st">'0'</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>issue.update(dados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Atualizado para o status Relatando</code></pre>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/InovaFiscaliza\.github\.io\/fiscaliza");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/InovaFiscaliza/fiscaliza/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

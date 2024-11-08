@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "fiscaliza"
+  site-url: "https://InovaFiscaliza.github.io/fiscaliza"
+  description: "Implementação de API python a instância do Redmine da Anatel: Fiscaliza"
+  repo-branch: main
+  repo-url: "https://github.com/InovaFiscaliza/fiscaliza"
