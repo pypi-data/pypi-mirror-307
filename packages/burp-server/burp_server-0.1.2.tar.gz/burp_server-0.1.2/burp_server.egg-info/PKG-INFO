@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: burp_server
+Version: 0.1.2
+Summary: Annotated burp interfaces for python/jython
+Home-page: https://github.com/
+Author: yan wang
+Author-email: 1449349985@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyasn1==0.4.8
+Requires-Dist: pyOpenSSL
+Requires-Dist: certifi
+Requires-Dist: kaitaistruct
+Requires-Dist: blinker==1.4
+
+
+Annotated burp interfaces for python/jython
+
+# Installation
+    pip2 install burp_server
+    
+# Usage 1
+
+    # Burp need to load each class explicitly
+    from burp import IBurpExtender, IScannerCheck
+
+    # This allow us to get typing hints for all burp classes in our IDE
+    from burp import *
+
+    class BurpExtender(IBurpExtender, IScannerCheck):
+        def registerExtenderCallbacks(self, callbacks):  # type: (IBurpExtenderCallbacks) -> ()
+            print "Loading plugin"
+            callbacks.registerScannerCheck(self)
+    
+        def doPassiveScan(self, baseRequestResponse):  # type: (IHttpRequestResponse) -> List[IScanIssue]
+            return []
+    
+        def doActiveScan(self, baseRequestResponse, insertionPoint):  # type: (IHttpRequestResponse, IScannerInsertionPoint) -> List[IScanIssue]
+            return []
+    
+
+# Install Requires
+
+    python>=3.6.0
+
+
+
+    

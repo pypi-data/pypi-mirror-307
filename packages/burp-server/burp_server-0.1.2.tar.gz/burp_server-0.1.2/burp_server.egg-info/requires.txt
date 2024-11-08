@@ -1,0 +1,5 @@
+pyasn1==0.4.8
+pyOpenSSL
+certifi
+kaitaistruct
+blinker==1.4
