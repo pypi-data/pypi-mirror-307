@@ -1,0 +1,3 @@
+[console_scripts]
+tamilai=tamilai.cli:main
+
