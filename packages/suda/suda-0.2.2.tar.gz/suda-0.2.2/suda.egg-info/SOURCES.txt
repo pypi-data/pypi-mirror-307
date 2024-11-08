@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+suda.py
+suda.egg-info/PKG-INFO
+suda.egg-info/SOURCES.txt
+suda.egg-info/dependency_links.txt
+suda.egg-info/entry_points.txt
+suda.egg-info/requires.txt
+suda.egg-info/top_level.txt
+test/test_suda.py
