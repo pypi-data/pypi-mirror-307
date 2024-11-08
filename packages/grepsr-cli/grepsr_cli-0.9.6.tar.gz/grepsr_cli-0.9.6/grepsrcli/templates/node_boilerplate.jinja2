@@ -1,0 +1,64 @@
+/**
+ * Name: {{host_name | default(plugin_name)}}{{ ' - ' ~ scrape_category if scrape_category else ''}}
+ * Description: {{host_name | default(plugin_name)}}{{ ' - ' ~ scrape_category if scrape_category else ''}}
+ * PID: {{pid}} force
+ */
+
+const path = require('path');
+const { HttpCrawler, pq } = require('@vortex-ts-sdk/http-crawler');
+const { VtxLogger } = require('@vortex-ts-sdk/vtx-logger');
+const {
+    isTestEnvironment,
+    sleep,
+    getPodParams,
+    isScalar,
+    jsonDecode,
+} = require('@vortex-ts-sdk/core');
+{% if '@vortex-ts-sdk/cache-handler' in packages_to_install -%}
+const { CacheHandler } = require('@vortex-ts-sdk/cache-handler')
+{%- endif %}
+{% if 'p-queue@6.6.2' in packages_to_install -%}
+const { default: PQueue } = require('p-queue')
+{%- endif %}
+{% if '@vortex-ts-sdk/cache-handler' in packages_to_install -%}
+const cache = new CacheHandler(path.parse(__filename).name)
+{%- endif %}
+
+const baseURL = '{{base_url}}'
+const domainURL = '{{domain_url}}'
+let handler = new HttpCrawler();
+
+handler.dataSet.setPageName(path.parse(__filename).name + '_%s', [new Date().toISOString().split('T')[0]]);
+handler.dataSet.setColHeaders({{col_headers | default('[]')}});
+
+async function newSession() {
+    handler.request.resetRequestConfig()
+    handler.request.setHeaders('Accept-Encoding', 'gzip, deflate');
+    handler.request.setHeaders('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8');
+    handler.request.setHeaders('Accept-Language', 'en-US,en;q=0.5');
+    handler.request.setHeaders('Connection', 'keep-alive');
+    handler.request.setHeaders('Upgrade-Insecure-Requests', '1');
+    handler.request.setHeaders('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36');
+    await handler.request.enableProxy();
+}
+
+async function main() {
+    VtxLogger.info("Starting the crawler");
+    await newSession();
+
+    {% if 'p-queue@6.6.2' in packages_to_install -%}
+    const concurrency = 5
+    const queue = new PQueue({ concurrency: concurrency })
+    queue.add(() => handler.loadDocument(baseURL))
+    await queue.onIdle()
+    {%- else -%}
+    await handler.loadDocument(baseURL);
+    {%- endif %}
+
+    const arr = handler.dataSet.getEmptyRow();
+    handler.dataSet.addRow(arr);
+
+    handler.dataSet.finish();
+}
+
+main();
