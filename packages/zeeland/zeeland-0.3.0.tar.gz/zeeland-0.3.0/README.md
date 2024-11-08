@@ -1,0 +1,306 @@
+# Zeeland
+
+![coverage](./assets/images/coverage.svg)
+
+Zeeland's core infrastructure serves the following frameworks:
+
+| Lib                                             | Description                                                                                             |
+|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Cogit   | LLM MultiAgent task inference and autonomous orchestration framework/Comming soon                                                      |
+| [Promptulate](https://github.com/Undertone0809/promptulate)   | A LLM application and Agent development framework.                                                      |
+| [Gcop](https://github.com/Undertone0809/gcop)                 | Your git AI copilot.                                                                                   |
+
+## TODO
+
+The following libraries are under development and will be released soon:
+
+| Lib                                             | Description                                                                                             |
+|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| [UACP](https://github.com/Undertone0809/UACP)                 | Universal Agent Communication Protocol.                                                                  |
+| [P3G](https://github.com/Undertone0809/P3G)                   | Python Package Project Generator.                                                                       |
+| [cushy-storage](https://github.com/Undertone0809/cushy-storage) | A lightweight ORM framework that provides disk caching for Python objects.                             |
+| [omnius](https://github.com/Undertone0809/omnius)             | A lightweight event bus framework. You can easily build a powerful event bus in your project.        |
+| [cushy-socket](https://github.com/Undertone0809/cushy-socket) | A Python socket library. You can create a TCP/UDP connection easily.                                |
+| [imarkdown](https://github.com/Undertone0809/imarkdown)       | A practical Markdown image URL converter.                                                               |
+| [cushy-serial](https://github.com/Undertone0809/cushy-serial) | A lightweight Python serial library. You can create a serial program easily.                         |
+| [ecjtu](https://github.com/Undertone0809/ecjtu)               | ecjtu API SDK service, best practices for client SDK design.                                           |
+
+## Why build it?
+
+There are two main challenges in Zeeland's Python library development:
+
+1. **Reducing Circular Dependencies**: The framework provides a structured way to manage and minimize circular dependencies between components, making the codebase more maintainable and easier to reason about.
+
+2. **Reusable Common Logic**: As the developer of multiple Python libraries, I found myself repeatedly implementing similar patterns and utilities. Zeeland extracts these common elements into a shared infrastructure, allowing better maintenance and consistency across different frameworks and libraries.
+
+## Features
+
+- **Logger**: A logger framework that can record exceptions and log messages to different files based on the framework.
+- **Singleton**: A singleton pattern implementation.
+- **Project Metadata**: A metadata framework that can record the project's metadata and save it to the default storage path.
+
+## Quick start
+
+Conda package manager is recommended. Create a conda environment.
+
+```bash
+conda create -n zeeland python==3.10
+```
+
+Activate conda environment and install poetry
+
+```bash
+conda activate zeeland
+pip install poetry
+```
+
+### Basic Usage
+
+Create a metadata file in the default storage path.
+
+```python
+import json
+import os
+
+from zeeland import get_default_storage_path
+
+
+def main():
+    storage_path = get_default_storage_path("test")
+    metadata_path = os.path.join(storage_path, "metadata.json")
+
+    metadata = {"name": "test", "version": "1.0.0", "description": "Test metadata file"}
+
+    with open(metadata_path, "w") as f:
+        json.dump(metadata, f, indent=4)
+
+    print(f"Created metadata file at: {metadata_path}")
+    with open(metadata_path, "r") as f:
+        print("Content:")
+        print(json.dumps(json.load(f), indent=4))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+The metadata file will be saved in the default storage path, which is `~/.zeeland/test/metadata.json`.
+
+Singleton usage
+
+```python
+from zeeland import Singleton, singleton
+
+
+@singleton()
+class TestSingleton:
+    pass
+
+
+instance1 = TestSingleton()
+instance2 = TestSingleton()
+
+assert instance1 is instance2
+
+
+class TestSingletonWithArgs(metaclass=Singleton):
+    def __init__(self, value):
+        self.value = value
+
+
+instance1 = TestSingletonWithArgs("test1")
+instance2 = TestSingletonWithArgs("test2")
+
+assert instance1 is instance2
+assert instance1.value == "test1"
+```
+
+Logger usage
+
+```python
+from zeeland import Logger
+
+logger = Logger("test_framework")
+logger.info("Hello, Zeeland!")
+```
+
+Then you can see the log file in the default storage path. In this case, it is `~/.zeeland/test_framework/logs/{current_date}.log`.
+
+### Makefile usage
+
+[`Makefile`](https://github.com/Undertone0809/zeeland/blob/main/Makefile) contains a lot of functions for faster development.
+
+<details>
+<summary>Install all dependencies and pre-commit hooks</summary>
+<p>
+
+Install requirements:
+
+```bash
+make install
+```
+
+Pre-commit hooks coulb be installed after `git init` via
+
+```bash
+make pre-commit-install
+```
+
+</p>
+</details>
+
+<details>
+<summary>Codestyle and type checks</summary>
+<p>
+
+Automatic formatting uses `ruff`.
+
+```bash
+make format
+```
+
+Codestyle checks only, without rewriting files:
+
+```bash
+make check-codestyle
+```
+
+> Note: `check-codestyle` uses `ruff` and `darglint` library
+
+</p>
+</details>
+
+<details>
+<summary>Code security</summary>
+<p>
+
+> If this command is not selected during installation, it cannnot be used.
+
+```bash
+make check-safety
+```
+
+This command launches `Poetry` integrity checks as well as identifies security issues with `Safety` and `Bandit`.
+
+```bash
+make check-safety
+```
+
+</p>
+</details>
+
+<details>
+<summary>Tests with coverage badges</summary>
+<p>
+
+Run `pytest`
+
+```bash
+make test
+```
+
+</p>
+</details>
+
+<details>
+<summary>All linters</summary>
+<p>
+
+Of course there is a command to run all linters in one:
+
+```bash
+make lint
+```
+
+the same as:
+
+```bash
+make check-codestyle && make test && make check-safety
+```
+
+</p>
+</details>
+
+<details>
+<summary>Docker</summary>
+<p>
+
+```bash
+make docker-build
+```
+
+which is equivalent to:
+
+```bash
+make docker-build VERSION=latest
+```
+
+Remove docker image with
+
+```bash
+make docker-remove
+```
+
+More information [about docker](https://github.com/Undertone0809/python-package-template/tree/main/%7B%7B%20cookiecutter.project_name%20%7D%7D/docker).
+
+</p>
+</details>
+
+<details>
+<summary>Cleanup</summary>
+<p>
+Delete pycache files
+
+```bash
+make pycache-remove
+```
+
+Remove package build
+
+```bash
+make build-remove
+```
+
+Delete .DS_STORE files
+
+```bash
+make dsstore-remove
+```
+
+Remove .mypycache
+
+```bash
+make mypycache-remove
+```
+
+Or to remove all above run:
+
+```bash
+make cleanup
+```
+
+</p>
+</details>
+
+## 🛡 License
+
+[![License](https://img.shields.io/github/license/Undertone0809/zeeland)](https://github.com/Undertone0809/zeeland/blob/main/LICENSE)
+
+This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/Undertone0809/zeeland/blob/main/LICENSE) for more details.
+
+## 📃 Citation
+
+```bibtex
+@misc{zeeland,
+  author = {zeeland},
+  title = {zeeland frameworks core infra},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Undertone0809/zeeland}}
+}
+```
+
+## Credits [![🚀 Your next Python package needs a bleeding-edge project structure.](https://img.shields.io/badge/P3G-%F0%9F%9A%80-brightgreen)](https://github.com/Undertone0809/python-package-template)
+
+This project was generated with [P3G](https://github.com/Undertone0809/P3G)
