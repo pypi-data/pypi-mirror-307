@@ -1,0 +1,4 @@
+# climperiods
+Minimal function to calculate climate averaging periods according to the NOAA CPC standard approach such that each five-year period in the historical record has its own 30-year average centered on the first year in the period. For example, the years 1951 to 1955 are compared to the 1936-1965 average, while the years 1956-1960 are compared to 1941-1970. For years where the nominal period is partly in the future, we use the most recently calculated climatology, which, for now, is the 1991-2020 average. The climatology will be updated every five years.
+
+For more details see https://www.climate.gov/news-features/understanding-climate/watching-el-ni%C3%B1o-and-la-ni%C3%B1a-noaa-adapts-global-warming

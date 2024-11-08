@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: climperiods
+Version: 0.0.3
+Summary: Calculate NOAA climate averaging periods
+Project-URL: Homepage, https://github.com/MutaharChalmers/climperiods
+Author-email: Mutahar Chalmers <mutahar.chalmers@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Mutahar Chalmers
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Requires-Dist: pandas>=1.0
+Description-Content-Type: text/markdown
+
+# climperiods
+Minimal function to calculate climate averaging periods according to the NOAA CPC standard approach such that each five-year period in the historical record has its own 30-year average centered on the first year in the period. For example, the years 1951 to 1955 are compared to the 1936-1965 average, while the years 1956-1960 are compared to 1941-1970. For years where the nominal period is partly in the future, we use the most recently calculated climatology, which, for now, is the 1991-2020 average. The climatology will be updated every five years.
+
+For more details see https://www.climate.gov/news-features/understanding-climate/watching-el-ni%C3%B1o-and-la-ni%C3%B1a-noaa-adapts-global-warming
