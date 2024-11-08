@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+file/__init__.py
+file/file2.py
+jadugar.egg-info/PKG-INFO
+jadugar.egg-info/SOURCES.txt
+jadugar.egg-info/dependency_links.txt
+jadugar.egg-info/top_level.txt
