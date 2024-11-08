@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: eds_mod
+Version: 0.0.9
+Summary: A package for Data Science
+Project-URL: Homepage, https://github.com/laserchemist/code
+Project-URL: Issues, https://github.com/laserchemist/code/issues
+Author-email: Jonathan M Smith <jmsmith@quantum-curiosity.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
