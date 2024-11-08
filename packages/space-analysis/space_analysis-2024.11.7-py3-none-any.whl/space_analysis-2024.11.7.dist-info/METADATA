@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: space-analysis
+Version: 2024.11.7
+Summary: Python library for data analysis in space physics
+Author-Email: Beforerr <zzj956959688@gmail.com>
+Project-URL: Homepage, https://beforerr.github.io/space-analysis.py
+Project-URL: Repository, https://github.com/beforerr/space-analysis.py
+Requires-Python: >=3.10
+Requires-Dist: beforerr
+Requires-Dist: pydantic
+Requires-Dist: plum-dispatch
+Requires-Dist: polars
+Requires-Dist: plasmapy>=2024.10.0
+Requires-Dist: astropy
+Requires-Dist: loguru
+Requires-Dist: rich
+Requires-Dist: humanize
+Provides-Extra: plot
+Requires-Dist: hvplot; extra == "plot"
+Provides-Extra: io
+Requires-Dist: pyspedas; extra == "io"
+Requires-Dist: speasy; extra == "io"
+Requires-Dist: pycdfpp; extra == "io"
+Requires-Dist: cdasws; extra == "io"
+Requires-Dist: pdr; extra == "io"
+Requires-Dist: pooch; extra == "io"
+Provides-Extra: dev
+Requires-Dist: ipykernel; extra == "dev"
+Requires-Dist: nbdev; extra == "dev"
+Requires-Dist: jupyter-cache; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: itables; extra == "doc"
+Requires-Dist: great_tables; extra == "doc"
+Description-Content-Type: text/markdown
+
+# space-analysis.py
+
+
+Python utils for data analysis in space physics. Still in active development, use with caution.
+
+[![PyPI](https://img.shields.io/pypi/v/space-analysis)](https://pypi.org/project/space-analysis)
+[![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet.png)](https://pdm-project.org)
+
+Inspired from [SpaceAnalysis.jl](https://henry2004y.github.io/VisAnaJulia/dev/), created with [nbdev](https://nbdev.fast.ai/).
+
+## References
+
+- [speasy](https://speasy.readthedocs.io) : Python client for Space Physics web services such as CDAWEB or AMDA
+- [pyspedas](https://pyspedas.readthedocs.io) : Python Space Physics Environment Data Analysis Software
+- [fastcore](https://fastcore.fast.ai) : Python supercharged for the fastai library
+
+## Install
+
+``` sh
+pip install space-analysis
+```
+
+## How to use
