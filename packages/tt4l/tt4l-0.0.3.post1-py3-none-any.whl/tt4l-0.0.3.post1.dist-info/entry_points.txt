@@ -1,0 +1,3 @@
+[console_scripts]
+tt4l=tt4l.cli.main:app
+
