@@ -1,0 +1,17 @@
+[Default_Theme]
+name = "Default Theme"
+ico = "icons.toml"
+qss = "default.qss"
+param = "default.param"
+
+[Dark_Theme_1]
+name = "Dark Theme 1"
+ico = ""
+qss = ""
+param = "dark1.param"
+
+[Dark_Theme_2]
+name = "Dark Theme 2"
+ico = ""
+qss = ""
+param = "dark2.param"
