@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="266819a9-c061-4453-a085-8cd394f0a67c" name="Changes" comment="feat: v0.1.10">
+      <change afterPath="$PROJECT_DIR$/simplepgsql/build_query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplepgsql/formatters/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplepgsql/formatters/array_formatter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplepgsql/labels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplepgsql/pgsql_wizard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplepgsql/wip_simplepgsql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_params_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplepgsql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplepgsql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplepgsql/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplepgsql/src/depr_simplepgsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplepgsql/depr_simplepgsql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplepgsql/src/simplepgsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplepgsql/simplepgsql.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;iamlrk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iamlrk/simple-pgsql.git&quot;,
+    &quot;accountId&quot;: &quot;5c350e9f-d9d7-44e4-b072-78c002935cee&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ihBXJqa7L59iYQ7quxIvID4xt1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.build_query.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pgsql_wizard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_params_input.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RamkiranLepakshi/dev/simple-pgsql/tests&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;PostgreSQL&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RamkiranLepakshi\dev\simple-pgsql\tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RamkiranLepakshi\dev\simple-pgsql\simplepgsql" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\RamkiranLepakshi\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="266819a9-c061-4453-a085-8cd394f0a67c" name="Changes" comment="" />
+      <created>1719932966878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719932966878</updated>
+      <workItem from="1719932969139" duration="3652000" />
+      <workItem from="1719942336757" duration="58000" />
+      <workItem from="1721315090679" duration="2037000" />
+      <workItem from="1721637674326" duration="584000" />
+      <workItem from="1721640927777" duration="599000" />
+      <workItem from="1721733738892" duration="2481000" />
+      <workItem from="1721746212184" duration="1767000" />
+      <workItem from="1721899815401" duration="578000" />
+      <workItem from="1722343072276" duration="588000" />
+      <workItem from="1722345219896" duration="7000" />
+      <workItem from="1722502466780" duration="210000" />
+      <workItem from="1722587119095" duration="1000" />
+      <workItem from="1722941775223" duration="587000" />
+      <workItem from="1723105269223" duration="21000" />
+      <workItem from="1723194502011" duration="21000" />
+      <workItem from="1723450172782" duration="47000" />
+      <workItem from="1723450234239" duration="93000" />
+      <workItem from="1725375066948" duration="2631000" />
+      <workItem from="1725379089152" duration="11000" />
+      <workItem from="1725436492599" duration="10000" />
+      <workItem from="1726225970416" duration="77000" />
+      <workItem from="1726600186967" duration="9318000" />
+      <workItem from="1726653669677" duration="3816000" />
+      <workItem from="1726733150262" duration="363000" />
+      <workItem from="1726759510517" duration="2406000" />
+      <workItem from="1726821259564" duration="1175000" />
+      <workItem from="1727168587340" duration="583000" />
+      <workItem from="1727184080816" duration="155000" />
+      <workItem from="1727184307054" duration="2038000" />
+      <workItem from="1727793675548" duration="7091000" />
+      <workItem from="1727952595989" duration="3986000" />
+      <workItem from="1728473546923" duration="597000" />
+      <workItem from="1728892442536" duration="594000" />
+      <workItem from="1728908359993" duration="595000" />
+      <workItem from="1728979307399" duration="594000" />
+      <workItem from="1729084884428" duration="1075000" />
+      <workItem from="1729887628328" duration="580000" />
+      <workItem from="1729892897533" duration="593000" />
+      <workItem from="1729941243699" duration="40291000" />
+      <workItem from="1730889783940" duration="594000" />
+      <workItem from="1730907454936" duration="591000" />
+    </task>
+    <task id="LOCAL-00001" summary="v0.1.9">
+      <option name="closed" value="true" />
+      <created>1721315511653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721315511653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: v0.1.10">
+      <option name="closed" value="true" />
+      <created>1725376277294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725376277294</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: v0.1.10">
+      <option name="closed" value="true" />
+      <created>1725376286000</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725376286000</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v0.1.9" />
+    <MESSAGE value="feat: v0.1.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: v0.1.10" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/simple_pgsql$pgsql_wizard.coverage" NAME="pgsql_wizard Coverage Results" MODIFIED="1726761443945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simplepgsql" />
+    <SUITE FILE_PATH="coverage/simple_pgsql$build_query.coverage" NAME="build_query Coverage Results" MODIFIED="1726664736863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simplepgsql" />
+    <SUITE FILE_PATH="coverage/simple_pgsql$run.coverage" NAME="run Coverage Results" MODIFIED="1728049590725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_pgsql$test_params_input.coverage" NAME="test_params_input Coverage Results" MODIFIED="1726761943667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/simple_pgsql$connection.coverage" NAME="connection Coverage Results" MODIFIED="1726664634944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simplepgsql" />
+  </component>
+</project>
