@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Chicoasen
+Version: 1.1
+Summary: Librería para cargar archivos csv & json y conectar a una base de datos
+Home-page: https://github.com/CIDETECSI/chicoasen
+Author: Equipo SS
+Author-email: mhernandezg2204@alumno.ipn.mx
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: pymupdf
+
+from pathlib import Path
+HERE = Path(__file__).parent
+LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
