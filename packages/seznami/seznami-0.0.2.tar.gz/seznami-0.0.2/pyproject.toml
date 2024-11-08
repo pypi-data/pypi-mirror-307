@@ -1,0 +1,14 @@
+[project]
+name = "seznami"
+version = "0.0.2"
+authors = [
+  { name="ravijol1", email="liamstaric@gmail.com" },
+]
+description = "Seznami in stvari"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
