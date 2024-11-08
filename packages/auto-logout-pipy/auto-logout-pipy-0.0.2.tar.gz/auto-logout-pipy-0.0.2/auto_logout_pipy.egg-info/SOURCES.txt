@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+auto_logout_pipy.egg-info/PKG-INFO
+auto_logout_pipy.egg-info/SOURCES.txt
+auto_logout_pipy.egg-info/dependency_links.txt
+auto_logout_pipy.egg-info/requires.txt
+auto_logout_pipy.egg-info/top_level.txt
+my-auto-logout/__init__.py
+my-auto-logout/context_processors.py
+my-auto-logout/middleware.py
+my-auto-logout/utils.py
