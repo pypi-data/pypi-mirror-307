@@ -1,0 +1,711 @@
+{"label":"EngineDisplacement","pattern":[{"TEXT":{"REGEX":"^[0-9]+cc$"}}]}
+{"label":"EngineDisplacement","pattern":[{"TEXT":{"REGEX":"^[0-9]+$"}},{"LOWER":"cc"}]}
+{"label":"EngineDisplacement","pattern":[{"TEXT":{"REGEX":"^[0-9]+(\\.[0-9]+)?[lL]$|^[0-9]+(\\.[0-9]+)?(?:litre|liter)$"}}]}
+{"label":"EngineDisplacement","pattern":[{"TEXT":{"REGEX":"^[0-9]+(\\.[0-9]+)?$"}},{"IS_SPACE":true,"OP":"?"},{"LOWER":{"IN":["litre","liter","l","L"]}}]}
+{"label":"ProductType","pattern":"cars"}
+{"label":"ProductType","pattern":"4 wheelers"}
+{"label":"ProductType","pattern":"2 wheelers"}
+{"label":"ProductType","pattern":"bikes"}
+{"label":"ProductType","pattern":"motorcycles"}
+{"label":"ProductType","pattern":"4 wheeler"}
+{"label":"ProductType","pattern":"2 wheeler"}
+{"label":"Vehicle","pattern":"duke 390"}
+{"label":"Vehicle","pattern":"adventure 390"}
+{"label":"Vehicle","pattern":"ktm duke 390"}
+{"label":"Vehicle","pattern":"ktm adventure 390"}
+{"label":"Vehicle","pattern":"ktm duke 390 2017"}
+{"label":"Vehicle","pattern":"ktm adventure 390 2019"}
+{"label":"Vehicle","pattern":"ktm duke 390 2024"}
+{"label":"Vehicle","pattern":"yamaha r15"}
+{"label":"Vehicle","pattern":"yamaha r3"}
+{"label":"Vehicle","pattern":"yamaha r15 2021"}
+{"label":"Vehicle","pattern":"yamaha r15"}
+{"label":"Vehicle","pattern":"yamaha r15"}
+{"label":"Vehicle","pattern":"yamaha r3 2023"}
+{"label":"Vehicle","pattern":"yamaha aerox"}
+{"label":"Vehicle","pattern":"baleno"}
+{"label":"Vehicle","pattern":"xuv 400"}
+{"label":"Vehicle","pattern":"interceptor 650"}
+{"label":"Vehicle","pattern":"access 125"}
+{"label":"Vehicle","pattern":"450x"}
+{"label":"Vehicle","pattern":"jupiter 125"}
+{"label":"Vehicle","pattern":"swift"}
+{"label":"Vehicle","pattern":"guerrilla 450"}
+{"label":"Vehicle","pattern":"fronx"}
+{"label":"Vehicle","pattern":"thar"}
+{"label":"Vehicle","pattern":"xuv 3xo"}
+{"label":"Vehicle","pattern":"exter"}
+{"label":"Vehicle","pattern":"kwid"}
+{"label":"Vehicle","pattern":"c3"}
+{"label":"Vehicle","pattern":"xpulse 200t"}
+{"label":"Vehicle","pattern":"magnite"}
+{"label":"Vehicle","pattern":"speed 400"}
+{"label":"Vehicle","pattern":"punch"}
+{"label":"Vehicle","pattern":"continental gt650"}
+{"label":"Vehicle","pattern":"yzf-r15"}
+{"label":"Vehicle","pattern":"slavia"}
+{"label":"Vehicle","pattern":"sonet"}
+{"label":"Vehicle","pattern":"pulsar n250"}
+{"label":"Vehicle","pattern":"elevate"}
+{"label":"Vehicle","pattern":"invicto"}
+{"label":"Vehicle","pattern":"activa"}
+{"label":"Vehicle","pattern":"w175"}
+{"label":"Vehicle","pattern":"rumion"}
+{"label":"Vehicle","pattern":"i20 n line"}
+{"label":"Vehicle","pattern":"activa 6g"}
+{"label":"Vehicle","pattern":"city"}
+{"label":"Vehicle","pattern":"meridian"}
+{"label":"Vehicle","pattern":"vitpilen 250"}
+{"label":"Vehicle","pattern":"creta"}
+{"label":"Vehicle","pattern":"compass"}
+{"label":"Vehicle","pattern":"mt-03"}
+{"label":"Vehicle","pattern":"apache rtr 310"}
+{"label":"Vehicle","pattern":"taisor"}
+{"label":"Vehicle","pattern":"f77"}
+{"label":"Vehicle","pattern":"250 duke"}
+{"label":"Vehicle","pattern":"gixxer (160)"}
+{"label":"Vehicle","pattern":"160"}
+{"label":"Vehicle","pattern":"harrier"}
+{"label":"Vehicle","pattern":"svartpilen 401"}
+{"label":"Vehicle","pattern":"fascino 125i hybrid"}
+{"label":"Vehicle","pattern":"taigun"}
+{"label":"Vehicle","pattern":"classic 350"}
+{"label":"Vehicle","pattern":"scrambler 400x"}
+{"label":"Vehicle","pattern":"seltos"}
+{"label":"Vehicle","pattern":"rc 200"}
+{"label":"Vehicle","pattern":"x440"}
+{"label":"Vehicle","pattern":"hunter 350"}
+{"label":"Vehicle","pattern":"rc 390"}
+{"label":"Vehicle","pattern":"apache rr 310"}
+{"label":"Vehicle","pattern":"bullet 350"}
+{"label":"Vehicle","pattern":"pulsar ns200"}
+{"label":"Vehicle","pattern":"390 duke"}
+{"label":"Vehicle","pattern":"altroz racer"}
+{"label":"Vehicle","pattern":"390 adventure"}
+{"label":"Vehicle","pattern":"chetak"}
+{"label":"Vehicle","pattern":"scorpio n"}
+{"label":"Vehicle","pattern":"ev6"}
+{"label":"Vehicle","pattern":"safari"}
+{"label":"Vehicle","pattern":"v-strom sx"}
+{"label":"Vehicle","pattern":"brezza"}
+{"label":"Vehicle","pattern":"freedom 125 ng04"}
+{"label":"Vehicle","pattern":"ronin"}
+{"label":"Vehicle","pattern":"ninja 400"}
+{"label":"Vehicle","pattern":"gixxer 250"}
+{"label":"Vehicle","pattern":"glanza"}
+{"label":"Vehicle","pattern":"karizma xmr"}
+{"label":"Vehicle","pattern":"hyryder"}
+{"label":"Vehicle","pattern":"meteor 350"}
+{"label":"Vehicle","pattern":"city e:hev"}
+{"label":"Vehicle","pattern":"iqube"}
+{"label":"Vehicle","pattern":"jimny"}
+{"label":"Vehicle","pattern":"i20"}
+{"label":"Vehicle","pattern":"aerox 155"}
+{"label":"Vehicle","pattern":"creta n line"}
+{"label":"Vehicle","pattern":"mavrick 440"}
+{"label":"Vehicle","pattern":"pulsar n160"}
+{"label":"Vehicle","pattern":"yzf-r3"}
+{"label":"Vehicle","pattern":"jawa 350"}
+{"label":"Vehicle","pattern":"rs 457"}
+{"label":"Vehicle","pattern":"virtus"}
+{"label":"Vehicle","pattern":"curvv"}
+{"label":"Vehicle","pattern":"verna"}
+{"label":"Vehicle","pattern":"innova hycross"}
+{"label":"Vehicle","pattern":"triber"}
+{"label":"Vehicle","pattern":"carens"}
+{"label":"Vehicle","pattern":"alto k10"}
+{"label":"Vehicle","pattern":"kiger"}
+{"label":"Vehicle","pattern":"nexon"}
+{"label":"Vehicle","pattern":"grand vitara"}
+{"label":"Vehicle","pattern":"c3 aircross"}
+{"label":"Vehicle","pattern":"xuv 700"}
+{"label":"Vehicle","pattern":"ioniq 5"}
+{"label":"Vehicle","pattern":"nexon ev"}
+{"label":"Vehicle","pattern":"g 310 rr"}
+{"label":"Vehicle","pattern":"shotgun 650"}
+{"label":"Vehicle","pattern":"himalayan"}
+{"label":"Vehicle","pattern":"ntorq 125"}
+{"label":"Vehicle","pattern":"super meteor 650"}
+{"label":"Vehicle","pattern":"pulsar ns160"}
+{"label":"Vehicle","pattern":"fz-fi"}
+{"label":"Vehicle","pattern":"xoom 110"}
+{"label":"Vehicle","pattern":"jupiter 110"}
+{"label":"Vehicle","pattern":"indie"}
+{"label":"Vehicle","pattern":"450s"}
+{"label":"Vehicle","pattern":"xtreme 160r 4v"}
+{"label":"Vehicle","pattern":"xtreme 125r"}
+{"label":"Vehicle","pattern":"rizta"}
+{"label":"Vehicle","pattern":"maruti suzuki baleno 2022"}
+{"label":"Vehicle","pattern":"mahindra xuv 400 2023"}
+{"label":"Vehicle","pattern":"royal enfield interceptor 650 2017"}
+{"label":"Vehicle","pattern":"suzuki access 125 2023"}
+{"label":"Vehicle","pattern":"ather 450x 2000"}
+{"label":"Vehicle","pattern":"tvs jupiter 125 2021"}
+{"label":"Vehicle","pattern":"maruti suzuki swift 2024"}
+{"label":"Vehicle","pattern":"royal enfield guerrilla 450 2004"}
+{"label":"Vehicle","pattern":"maruti suzuki fronx 2023"}
+{"label":"Vehicle","pattern":"mahindra thar 2020"}
+{"label":"Vehicle","pattern":"mahindra xuv 3xo 2024"}
+{"label":"Vehicle","pattern":"hyundai exter 2023"}
+{"label":"Vehicle","pattern":"renault kwid 2016"}
+{"label":"Vehicle","pattern":"citroen c3   2022"}
+{"label":"Vehicle","pattern":"hero xpulse 200t 2022"}
+{"label":"Vehicle","pattern":"nissan magnite 2022"}
+{"label":"Vehicle","pattern":"triumph speed 400 2023"}
+{"label":"Vehicle","pattern":"tata punch 2021"}
+{"label":"Vehicle","pattern":"royal enfield continental gt650 2017"}
+{"label":"Vehicle","pattern":"yamaha yzf-r15 2021"}
+{"label":"Vehicle","pattern":"skoda slavia 2023"}
+{"label":"Vehicle","pattern":"kia sonet 2020"}
+{"label":"Vehicle","pattern":"bajaj pulsar n250 2021"}
+{"label":"Vehicle","pattern":"honda elevate 2023"}
+{"label":"Vehicle","pattern":"maruti suzuki invicto 2023"}
+{"label":"Vehicle","pattern":"honda activa"}
+{"label":"Vehicle","pattern":"kawasaki w175 2022"}
+{"label":"Vehicle","pattern":"toyota rumion 2023"}
+{"label":"Vehicle","pattern":"hyundai i20 n line 2023"}
+{"label":"Vehicle","pattern":"honda activa 6g 2020"}
+{"label":"Vehicle","pattern":"honda city 2020"}
+{"label":"Vehicle","pattern":"jeep meridian 2022"}
+{"label":"Vehicle","pattern":"husqvarna vitpilen 250 2024"}
+{"label":"Vehicle","pattern":"hyundai creta 2024"}
+{"label":"Vehicle","pattern":"jeep compass 2023"}
+{"label":"Vehicle","pattern":"yamaha mt-03 2023"}
+{"label":"Vehicle","pattern":"tvs apache rtr 310 2023"}
+{"label":"Vehicle","pattern":"toyota taisor 2024"}
+{"label":"Vehicle","pattern":"ultraviolette f77  2000"}
+{"label":"Vehicle","pattern":"ktm 250 duke 2023"}
+{"label":"Vehicle","pattern":"suzuki gixxer (160) 2014"}
+{"label":"Vehicle","pattern":"tata harrier 2024"}
+{"label":"Vehicle","pattern":"husqvarna svartpilen 401 2024"}
+{"label":"Vehicle","pattern":"yamaha fascino 125i hybrid 2021"}
+{"label":"Vehicle","pattern":"volkswagen taigun 2023"}
+{"label":"Vehicle","pattern":"royal enfield classic 350 2021"}
+{"label":"Vehicle","pattern":"triumph scrambler 400x 2023"}
+{"label":"Vehicle","pattern":"kia seltos 2020"}
+{"label":"Vehicle","pattern":"ktm rc 200 2023"}
+{"label":"Vehicle","pattern":"harley-davidson x440 2023"}
+{"label":"Vehicle","pattern":"royal enfield hunter 350 2022"}
+{"label":"Vehicle","pattern":"ktm rc 390 2022"}
+{"label":"Vehicle","pattern":"tvs apache rr 310 2021"}
+{"label":"Vehicle","pattern":"royal enfield bullet 350 2023"}
+{"label":"Vehicle","pattern":"bajaj pulsar ns200 2023"}
+{"label":"Vehicle","pattern":"ktm 390 duke 2017"}
+{"label":"Vehicle","pattern":"tata altroz racer 2024"}
+{"label":"Vehicle","pattern":"ktm 390 adventure 2019"}
+{"label":"Vehicle","pattern":"chetak chetak"}
+{"label":"Vehicle","pattern":"mahindra scorpio n 2023"}
+{"label":"Vehicle","pattern":"kia ev6  2022"}
+{"label":"Vehicle","pattern":"tata safari 2023"}
+{"label":"Vehicle","pattern":"suzuki v-strom sx 2022"}
+{"label":"Vehicle","pattern":"maruti suzuki brezza 2022"}
+{"label":"Vehicle","pattern":"bajaj freedom 125 ng04 2024"}
+{"label":"Vehicle","pattern":"tvs ronin 2022"}
+{"label":"Vehicle","pattern":"kawasaki ninja 400 2000"}
+{"label":"Vehicle","pattern":"suzuki gixxer 250 2019"}
+{"label":"Vehicle","pattern":"toyota glanza 2023"}
+{"label":"Vehicle","pattern":"hero karizma xmr 2023"}
+{"label":"Vehicle","pattern":"toyota hyryder 2022"}
+{"label":"Vehicle","pattern":"royal enfield meteor 350 2020"}
+{"label":"Vehicle","pattern":"honda city e:hev 2022"}
+{"label":"Vehicle","pattern":"tvs iqube"}
+{"label":"Vehicle","pattern":"maruti suzuki jimny 2023"}
+{"label":"Vehicle","pattern":"hyundai i20"}
+{"label":"Vehicle","pattern":"yamaha aerox 155 2021"}
+{"label":"Vehicle","pattern":"hyundai creta n line 2024"}
+{"label":"Vehicle","pattern":"hero mavrick 440 2024"}
+{"label":"Vehicle","pattern":"bajaj pulsar n160 2022"}
+{"label":"Vehicle","pattern":"yamaha yzf-r3 2023"}
+{"label":"Vehicle","pattern":"jawa jawa 350 2024"}
+{"label":"Vehicle","pattern":"ktm 390 duke  2024"}
+{"label":"Vehicle","pattern":"aprilia rs 457 2024"}
+{"label":"Vehicle","pattern":"volkswagen virtus 2023"}
+{"label":"Vehicle","pattern":"tata curvv 2024"}
+{"label":"Vehicle","pattern":"nissan magnite    2025"}
+{"label":"Vehicle","pattern":"hyundai verna 2023"}
+{"label":"Vehicle","pattern":"toyota innova hycross 2023"}
+{"label":"Vehicle","pattern":"renault triber 2021"}
+{"label":"Vehicle","pattern":"kia sonet 2024"}
+{"label":"Vehicle","pattern":"kia carens 2023"}
+{"label":"Vehicle","pattern":"maruti suzuki alto k10 2023"}
+{"label":"Vehicle","pattern":"renault kiger 2022"}
+{"label":"Vehicle","pattern":"tata nexon 2024"}
+{"label":"Vehicle","pattern":"maruti suzuki grand vitara 2022"}
+{"label":"Vehicle","pattern":"citroen c3 aircross 2023"}
+{"label":"Vehicle","pattern":"mahindra xuv 700 2021"}
+{"label":"Vehicle","pattern":"hyundai ioniq 5 2024"}
+{"label":"Vehicle","pattern":"tata nexon ev 2023"}
+{"label":"Vehicle","pattern":"bmw g 310 rr 2022"}
+{"label":"Vehicle","pattern":"royal enfield shotgun 650 2024"}
+{"label":"Vehicle","pattern":"royal enfield himalayan 2024"}
+{"label":"Vehicle","pattern":"tvs ntorq 125 2018"}
+{"label":"Vehicle","pattern":"royal enfield super meteor 650 2023"}
+{"label":"Vehicle","pattern":"bajaj pulsar ns160 2024"}
+{"label":"Vehicle","pattern":"yamaha fz-fi 2023"}
+{"label":"Vehicle","pattern":"hero xoom 110 2023"}
+{"label":"Vehicle","pattern":"tvs jupiter 110 2013"}
+{"label":"Vehicle","pattern":"river indie 2024"}
+{"label":"Vehicle","pattern":"tata safari  2021"}
+{"label":"Vehicle","pattern":"ather 450s"}
+{"label":"Vehicle","pattern":"hero xtreme 160r 4v 2023"}
+{"label":"Vehicle","pattern":"hero xtreme 125r 2024"}
+{"label":"Vehicle","pattern":"ather rizta 2024"}
+{"label":"Vehicle","pattern":"maruti suzuki baleno"}
+{"label":"Vehicle","pattern":"mahindra xuv 400"}
+{"label":"Vehicle","pattern":"royal enfield interceptor 650"}
+{"label":"Vehicle","pattern":"suzuki access 125"}
+{"label":"Vehicle","pattern":"ather 450x"}
+{"label":"Vehicle","pattern":"tvs jupiter 125"}
+{"label":"Vehicle","pattern":"maruti suzuki swift"}
+{"label":"Vehicle","pattern":"royal enfield guerrilla 450"}
+{"label":"Vehicle","pattern":"maruti suzuki fronx"}
+{"label":"Vehicle","pattern":"mahindra thar"}
+{"label":"Vehicle","pattern":"mahindra xuv 3xo"}
+{"label":"Vehicle","pattern":"hyundai exter"}
+{"label":"Vehicle","pattern":"renault kwid"}
+{"label":"Vehicle","pattern":"citroen c3"}
+{"label":"Vehicle","pattern":"hero xpulse 200t"}
+{"label":"Vehicle","pattern":"nissan magnite"}
+{"label":"Vehicle","pattern":"triumph speed 400"}
+{"label":"Vehicle","pattern":"tata punch"}
+{"label":"Vehicle","pattern":"royal enfield continental gt650"}
+{"label":"Vehicle","pattern":"yamaha yzf-r15"}
+{"label":"Vehicle","pattern":"skoda slavia"}
+{"label":"Vehicle","pattern":"kia sonet"}
+{"label":"Vehicle","pattern":"bajaj pulsar n250"}
+{"label":"Vehicle","pattern":"honda elevate"}
+{"label":"Vehicle","pattern":"maruti suzuki invicto"}
+{"label":"Vehicle","pattern":"kawasaki w175"}
+{"label":"Vehicle","pattern":"toyota rumion"}
+{"label":"Vehicle","pattern":"hyundai i20 n line"}
+{"label":"Vehicle","pattern":"honda activa 6g"}
+{"label":"Vehicle","pattern":"honda city"}
+{"label":"Vehicle","pattern":"jeep meridian"}
+{"label":"Vehicle","pattern":"husqvarna vitpilen 250"}
+{"label":"Vehicle","pattern":"hyundai creta"}
+{"label":"Vehicle","pattern":"jeep compass"}
+{"label":"Vehicle","pattern":"yamaha mt-03"}
+{"label":"Vehicle","pattern":"tvs apache rtr 310"}
+{"label":"Vehicle","pattern":"toyota taisor"}
+{"label":"Vehicle","pattern":"ultraviolette f77"}
+{"label":"Vehicle","pattern":"ktm 250 duke"}
+{"label":"Vehicle","pattern":"suzuki gixxer (160)"}
+{"label":"Vehicle","pattern":"tata harrier"}
+{"label":"Vehicle","pattern":"husqvarna svartpilen 401"}
+{"label":"Vehicle","pattern":"yamaha fascino 125i hybrid"}
+{"label":"Vehicle","pattern":"volkswagen taigun"}
+{"label":"Vehicle","pattern":"royal enfield classic 350"}
+{"label":"Vehicle","pattern":"triumph scrambler 400x"}
+{"label":"Vehicle","pattern":"kia seltos"}
+{"label":"Vehicle","pattern":"ktm rc 200"}
+{"label":"Vehicle","pattern":"harley-davidson x440"}
+{"label":"Vehicle","pattern":"royal enfield hunter 350"}
+{"label":"Vehicle","pattern":"ktm rc 390"}
+{"label":"Vehicle","pattern":"tvs apache rr 310"}
+{"label":"Vehicle","pattern":"royal enfield bullet 350"}
+{"label":"Vehicle","pattern":"bajaj pulsar ns200"}
+{"label":"Vehicle","pattern":"ktm 390 duke"}
+{"label":"Vehicle","pattern":"tata altroz racer"}
+{"label":"Vehicle","pattern":"ktm 390 adventure"}
+{"label":"Vehicle","pattern":"mahindra scorpio n"}
+{"label":"Vehicle","pattern":"kia ev6"}
+{"label":"Vehicle","pattern":"tata safari"}
+{"label":"Vehicle","pattern":"suzuki v-strom sx"}
+{"label":"Vehicle","pattern":"maruti suzuki brezza"}
+{"label":"Vehicle","pattern":"bajaj freedom 125 ng04"}
+{"label":"Vehicle","pattern":"tvs ronin"}
+{"label":"Vehicle","pattern":"kawasaki ninja 400"}
+{"label":"Vehicle","pattern":"suzuki gixxer 250"}
+{"label":"Vehicle","pattern":"toyota glanza"}
+{"label":"Vehicle","pattern":"hero karizma xmr"}
+{"label":"Vehicle","pattern":"toyota hyryder"}
+{"label":"Vehicle","pattern":"royal enfield meteor 350"}
+{"label":"Vehicle","pattern":"honda city e:hev"}
+{"label":"Vehicle","pattern":"maruti suzuki jimny"}
+{"label":"Vehicle","pattern":"yamaha aerox 155"}
+{"label":"Vehicle","pattern":"hyundai creta n line"}
+{"label":"Vehicle","pattern":"hero mavrick 440"}
+{"label":"Vehicle","pattern":"bajaj pulsar n160"}
+{"label":"Vehicle","pattern":"yamaha yzf-r3"}
+{"label":"Vehicle","pattern":"jawa jawa 350"}
+{"label":"Vehicle","pattern":"aprilia rs 457"}
+{"label":"Vehicle","pattern":"volkswagen virtus"}
+{"label":"Vehicle","pattern":"tata curvv"}
+{"label":"Vehicle","pattern":"hyundai verna"}
+{"label":"Vehicle","pattern":"toyota innova hycross"}
+{"label":"Vehicle","pattern":"renault triber"}
+{"label":"Vehicle","pattern":"kia carens"}
+{"label":"Vehicle","pattern":"maruti suzuki alto k10"}
+{"label":"Vehicle","pattern":"renault kiger"}
+{"label":"Vehicle","pattern":"tata nexon"}
+{"label":"Vehicle","pattern":"maruti suzuki grand vitara"}
+{"label":"Vehicle","pattern":"citroen c3 aircross"}
+{"label":"Vehicle","pattern":"mahindra xuv 700"}
+{"label":"Vehicle","pattern":"hyundai ioniq 5"}
+{"label":"Vehicle","pattern":"tata nexon ev"}
+{"label":"Vehicle","pattern":"bmw g 310 rr"}
+{"label":"Vehicle","pattern":"royal enfield shotgun 650"}
+{"label":"Vehicle","pattern":"royal enfield himalayan"}
+{"label":"Vehicle","pattern":"tvs ntorq 125"}
+{"label":"Vehicle","pattern":"royal enfield super meteor 650"}
+{"label":"Vehicle","pattern":"bajaj pulsar ns160"}
+{"label":"Vehicle","pattern":"yamaha fz-fi"}
+{"label":"Vehicle","pattern":"hero xoom 110"}
+{"label":"Vehicle","pattern":"tvs jupiter 110"}
+{"label":"Vehicle","pattern":"river indie"}
+{"label":"Vehicle","pattern":"hero xtreme 160r 4v"}
+{"label":"Vehicle","pattern":"hero xtreme 125r"}
+{"label":"Vehicle","pattern":"ather rizta"}
+{"label":"Brand","pattern":"hyundai"}
+{"label":"Brand","pattern":"ultraviolette"}
+{"label":"Brand","pattern":"bmw"}
+{"label":"Brand","pattern":"nissan"}
+{"label":"Brand","pattern":"citroen"}
+{"label":"Brand","pattern":"chetak"}
+{"label":"Brand","pattern":"kia"}
+{"label":"Brand","pattern":"tata"}
+{"label":"Brand","pattern":"jeep"}
+{"label":"Brand","pattern":"harley-davidson"}
+{"label":"Brand","pattern":"husqvarna"}
+{"label":"Brand","pattern":"royal enfield"}
+{"label":"Brand","pattern":"ktm"}
+{"label":"Brand","pattern":"maruti suzuki"}
+{"label":"Brand","pattern":"skoda"}
+{"label":"Brand","pattern":"mahindra"}
+{"label":"Brand","pattern":"hero"}
+{"label":"Brand","pattern":"jawa"}
+{"label":"Brand","pattern":"volkswagen"}
+{"label":"Brand","pattern":"tvs"}
+{"label":"Brand","pattern":"kawasaki"}
+{"label":"Brand","pattern":"bajaj"}
+{"label":"Brand","pattern":"ather"}
+{"label":"Brand","pattern":"toyota"}
+{"label":"Brand","pattern":"honda"}
+{"label":"Brand","pattern":"renault"}
+{"label":"Brand","pattern":"suzuki"}
+{"label":"Brand","pattern":"yamaha"}
+{"label":"Brand","pattern":"triumph"}
+{"label":"Brand","pattern":"river"}
+{"label":"Brand","pattern":"aprilia"}
+{"label":"FuelType","pattern":"petrol"}
+{"label":"FuelType","pattern":"cng"}
+{"label":"FuelType","pattern":"diesel"}
+{"label":"VehicleCategory","pattern":"suv"}
+{"label":"VehicleCategory","pattern":"suvs"}
+{"label":"VehicleCategory","pattern":"adventures"}
+{"label":"VehicleCategory","pattern":"adventure"}
+{"label":"VehicleCategory","pattern":"sports bikes"}
+{"label":"VehicleCategory","pattern":"sports bike"}
+{"label":"VehicleCategory","pattern":"sedans"}
+{"label":"VehicleCategory","pattern":"sedan"}
+{"label":"VehicleCategory","pattern":"mpv"}
+{"label":"VehicleCategory","pattern":"mpvs"}
+{"label":"VehicleCategory","pattern":"scramblers"}
+{"label":"VehicleCategory","pattern":"scrambler"}
+{"label":"VehicleCategory","pattern":"retros"}
+{"label":"VehicleCategory","pattern":"retro"}
+{"label":"VehicleCategory","pattern":"hatchback"}
+{"label":"VehicleCategory","pattern":"hatchbacks"}
+{"label":"VehicleCategory","pattern":"cafe racer"}
+{"label":"VehicleCategory","pattern":"cafe racers"}
+{"label":"VehicleCategory","pattern":"supermotards"}
+{"label":"VehicleCategory","pattern":"supermotard"}
+{"label":"VehicleCategory","pattern":"dual sports"}
+{"label":"VehicleCategory","pattern":"dual sport"}
+{"label":"VehicleCategory","pattern":"street nakeds"}
+{"label":"VehicleCategory","pattern":"street naked"}
+{"label":"VehicleCategory","pattern":"scooters"}
+{"label":"VehicleCategory","pattern":"scooter"}
+{"label":"VehicleCategory","pattern":"commuter"}
+{"label":"VehicleCategory","pattern":"commuters"}
+{"label":"VehicleCategory","pattern":"cruiser"}
+{"label":"VehicleCategory","pattern":"cruisers"}
+{"label":"Feature","pattern":"inertial measurement unit"}
+{"label":"Feature","pattern":"measurement unit"}
+{"label":"Feature","pattern":"over protection"}
+{"label":"Feature","pattern":"roll over protection"}
+{"label":"Feature","pattern":"rear defogger"}
+{"label":"Feature","pattern":"isofix system"}
+{"label":"Feature","pattern":"engine immobiliser"}
+{"label":"Feature","pattern":"sensing auto door unlock"}
+{"label":"Feature","pattern":"door unlock"}
+{"label":"Feature","pattern":"auto door unlock"}
+{"label":"Feature","pattern":"impact sensing auto door unlock"}
+{"label":"Feature","pattern":"sensing auto door lock unlock"}
+{"label":"Feature","pattern":"speed sensing auto door lock/unlock"}
+{"label":"Feature","pattern":"speed sensing auto door lock unlock"}
+{"label":"Feature","pattern":"lock unlock"}
+{"label":"Feature","pattern":"auto door lock unlock"}
+{"label":"Feature","pattern":"door lock unlock"}
+{"label":"Feature","pattern":"with load limiter"}
+{"label":"Feature","pattern":"load limiter"}
+{"label":"Feature","pattern":"belt with load limiter"}
+{"label":"Feature","pattern":"seat belt with load limiter"}
+{"label":"Feature","pattern":"adas"}
+{"label":"Feature","pattern":"driver seat"}
+{"label":"Feature","pattern":"adjustable driver seat"}
+{"label":"Feature","pattern":"electrically adjustable driver seat"}
+{"label":"Feature","pattern":"remote fuel lid opener"}
+{"label":"Feature","pattern":"lid opener"}
+{"label":"Feature","pattern":"fuel lid opener"}
+{"label":"Feature","pattern":"locking differential"}
+{"label":"Feature","pattern":"electronic locking differential"}
+{"label":"Feature","pattern":"electronic parking brake"}
+{"label":"Feature","pattern":"parking brake"}
+{"label":"Feature","pattern":"parking brake with auto hold"}
+{"label":"Feature","pattern":"auto hold"}
+{"label":"Feature","pattern":"brake with auto hold"}
+{"label":"Feature","pattern":"with auto hold"}
+{"label":"Feature","pattern":"electronic parking brake with auto hold"}
+{"label":"Feature","pattern":"tilt steering adjustment"}
+{"label":"Feature","pattern":"steering adjustment"}
+{"label":"Feature","pattern":"removable seats"}
+{"label":"Feature","pattern":"heads-up-display"}
+{"label":"Feature","pattern":"heads up display"}
+{"label":"Feature","pattern":"up display"}
+{"label":"Feature","pattern":"cut glass"}
+{"label":"Feature","pattern":"uv cut glass"}
+{"label":"Feature","pattern":"rear wiper washer"}
+{"label":"Feature","pattern":"wiper washer"}
+{"label":"Feature","pattern":"fabric seats"}
+{"label":"Feature","pattern":"semi leatherette seats"}
+{"label":"Feature","pattern":"leatherette seats"}
+{"label":"Feature","pattern":"semi-leatherette seats"}
+{"label":"Feature","pattern":"adjustable headrests"}
+{"label":"Feature","pattern":"day/night irvm"}
+{"label":"Feature","pattern":"day night irvm"}
+{"label":"Feature","pattern":"night irvm"}
+{"label":"Feature","pattern":"adjustable underthigh support"}
+{"label":"Feature","pattern":"underthigh support"}
+{"label":"Feature","pattern":"drive modes"}
+{"label":"Feature","pattern":"electric tailgate release"}
+{"label":"Feature","pattern":"tailgate release"}
+{"label":"Feature","pattern":"stop start"}
+{"label":"Feature","pattern":"idle stop start"}
+{"label":"Feature","pattern":"cooled glovebox"}
+{"label":"Feature","pattern":"phone connectivity"}
+{"label":"Feature","pattern":"wired phone connectivity"}
+{"label":"Feature","pattern":"bluetooth connectivity"}
+{"label":"Feature","pattern":"seatbelt reminder"}
+{"label":"Feature","pattern":"wheels tubeless"}
+{"label":"Feature","pattern":"spoked wheels tubeless"}
+{"label":"Feature","pattern":"tubeless"}
+{"label":"Feature","pattern":"spoked wheels (tubeless)"}
+{"label":"Feature","pattern":"tyre deflation warning"}
+{"label":"Feature","pattern":"deflation warning"}
+{"label":"Feature","pattern":"tall windshield"}
+{"label":"Feature","pattern":"and go"}
+{"label":"Feature","pattern":"cruise control with stop and go"}
+{"label":"Feature","pattern":"smart cruise control with stop and go"}
+{"label":"Feature","pattern":"with stop and go"}
+{"label":"Feature","pattern":"stop and go"}
+{"label":"Feature","pattern":"control with stop and go"}
+{"label":"Feature","pattern":"quickshifter"}
+{"label":"Feature","pattern":"traction control"}
+{"label":"Feature","pattern":"brake disc wiping"}
+{"label":"Feature","pattern":"disc wiping"}
+{"label":"Feature","pattern":"ventilated seats"}
+{"label":"Feature","pattern":"adventure statistics"}
+{"label":"Feature","pattern":"hill start assist"}
+{"label":"Feature","pattern":"start assist"}
+{"label":"Feature","pattern":"hill-start assist"}
+{"label":"Feature","pattern":"sunshades"}
+{"label":"Feature","pattern":"parking sensors"}
+{"label":"Feature","pattern":"rear parking sensors"}
+{"label":"Feature","pattern":"rear seats"}
+{"label":"Feature","pattern":"foldable rear seats"}
+{"label":"Feature","pattern":"double overhead camshafts (dohc)"}
+{"label":"Feature","pattern":"camshafts dohc"}
+{"label":"Feature","pattern":"dohc"}
+{"label":"Feature","pattern":"double overhead camshafts dohc"}
+{"label":"Feature","pattern":"overhead camshafts dohc"}
+{"label":"Feature","pattern":"touch lane change indicator"}
+{"label":"Feature","pattern":"change indicator"}
+{"label":"Feature","pattern":"lane change indicator"}
+{"label":"Feature","pattern":"one-touch lane change indicator"}
+{"label":"Feature","pattern":"one touch lane change indicator"}
+{"label":"Feature","pattern":"alloy wheels"}
+{"label":"Feature","pattern":"by turn navigation tbt"}
+{"label":"Feature","pattern":"turn navigation tbt"}
+{"label":"Feature","pattern":"navigation tbt"}
+{"label":"Feature","pattern":"turn-by-turn navigation (tbt)"}
+{"label":"Feature","pattern":"tbt"}
+{"label":"Feature","pattern":"turn by turn navigation tbt"}
+{"label":"Feature","pattern":"seat height adjustment"}
+{"label":"Feature","pattern":"height adjustment"}
+{"label":"Feature","pattern":"cruise control"}
+{"label":"Feature","pattern":"tubeless tyres"}
+{"label":"Feature","pattern":"wireless charger"}
+{"label":"Feature","pattern":"halogen headlights"}
+{"label":"Feature","pattern":"collapsible steering column"}
+{"label":"Feature","pattern":"steering column"}
+{"label":"Feature","pattern":"wireless phone connectivity"}
+{"label":"Feature","pattern":"ambient lighting"}
+{"label":"Feature","pattern":"music system"}
+{"label":"Feature","pattern":"premium music system"}
+{"label":"Feature","pattern":"led taillights"}
+{"label":"Feature","pattern":"cornering lights"}
+{"label":"Feature","pattern":"touchscreen infotainment system"}
+{"label":"Feature","pattern":"infotainment system"}
+{"label":"Feature","pattern":"rear parcel tray"}
+{"label":"Feature","pattern":"parcel tray"}
+{"label":"Feature","pattern":"spoked wheels (tubed)"}
+{"label":"Feature","pattern":"tubed"}
+{"label":"Feature","pattern":"wheels tubed"}
+{"label":"Feature","pattern":"spoked wheels tubed"}
+{"label":"Feature","pattern":"telescopic steering adjustment"}
+{"label":"Feature","pattern":"fin antenna"}
+{"label":"Feature","pattern":"shark fin antenna"}
+{"label":"Feature","pattern":"driver seats"}
+{"label":"Feature","pattern":"co driver seats"}
+{"label":"Feature","pattern":"driver and co driver seats"}
+{"label":"Feature","pattern":"adjustable driver and co driver seats"}
+{"label":"Feature","pattern":"electrically adjustable driver and co driver seats"}
+{"label":"Feature","pattern":"electrically adjustable driver and co-driver seats"}
+{"label":"Feature","pattern":"and co driver seats"}
+{"label":"Feature","pattern":"ottoman seats"}
+{"label":"Feature","pattern":"push start stop"}
+{"label":"Feature","pattern":"engine push start/stop"}
+{"label":"Feature","pattern":"start stop"}
+{"label":"Feature","pattern":"engine push start stop"}
+{"label":"Feature","pattern":"all power windows"}
+{"label":"Feature","pattern":"power windows"}
+{"label":"Feature","pattern":"sunglass holder"}
+{"label":"Feature","pattern":"digital instrument cluster"}
+{"label":"Feature","pattern":"instrument cluster"}
+{"label":"Feature","pattern":"steel wheels"}
+{"label":"Feature","pattern":"cooled storage"}
+{"label":"Feature","pattern":"automatic headlights"}
+{"label":"Feature","pattern":"usb port"}
+{"label":"Feature","pattern":"abs"}
+{"label":"Feature","pattern":"braking system abs"}
+{"label":"Feature","pattern":"system abs"}
+{"label":"Feature","pattern":"lock braking system abs"}
+{"label":"Feature","pattern":"anti-lock braking system (abs)"}
+{"label":"Feature","pattern":"anti lock braking system abs"}
+{"label":"Feature","pattern":"360\u00b0 camera"}
+{"label":"Feature","pattern":"360 camera"}
+{"label":"Feature","pattern":"central locking"}
+{"label":"Feature","pattern":"paddle shifter"}
+{"label":"Feature","pattern":"rear centre armrest"}
+{"label":"Feature","pattern":"centre armrest"}
+{"label":"Feature","pattern":"ac vents"}
+{"label":"Feature","pattern":"rear ac vents"}
+{"label":"Feature","pattern":"auto-dimming irvm"}
+{"label":"Feature","pattern":"auto dimming irvm"}
+{"label":"Feature","pattern":"dimming irvm"}
+{"label":"Feature","pattern":"recline adjustment"}
+{"label":"Feature","pattern":"backseat recline adjustment"}
+{"label":"Feature","pattern":"music player"}
+{"label":"Feature","pattern":"electronic stability program (esp)"}
+{"label":"Feature","pattern":"esp"}
+{"label":"Feature","pattern":"electronic stability program esp"}
+{"label":"Feature","pattern":"program esp"}
+{"label":"Feature","pattern":"stability program esp"}
+{"label":"Feature","pattern":"active suspension"}
+{"label":"Feature","pattern":"semi-active suspension"}
+{"label":"Feature","pattern":"semi active suspension"}
+{"label":"Feature","pattern":"reversing camera"}
+{"label":"Feature","pattern":"passive keyless entry"}
+{"label":"Feature","pattern":"keyless entry"}
+{"label":"Feature","pattern":"dead pedal"}
+{"label":"Feature","pattern":"heated seats"}
+{"label":"Feature","pattern":"belt reminders"}
+{"label":"Feature","pattern":"seat belt reminders"}
+{"label":"Feature","pattern":"front power windows"}
+{"label":"Feature","pattern":"tyre pressure monitoring system"}
+{"label":"Feature","pattern":"monitoring system"}
+{"label":"Feature","pattern":"pressure monitoring system"}
+{"label":"Feature","pattern":"foldable orvms"}
+{"label":"Feature","pattern":"electrically foldable orvms"}
+{"label":"Feature","pattern":"disc brakes"}
+{"label":"Feature","pattern":"with wheel cover"}
+{"label":"Feature","pattern":"steel wheels with wheel cover"}
+{"label":"Feature","pattern":"wheel cover"}
+{"label":"Feature","pattern":"wheels with wheel cover"}
+{"label":"Feature","pattern":"over speed alert"}
+{"label":"Feature","pattern":"speed alert"}
+{"label":"Feature","pattern":"automatic climate control"}
+{"label":"Feature","pattern":"climate control"}
+{"label":"Feature","pattern":"led headlights"}
+{"label":"Feature","pattern":"front centre armrest"}
+{"label":"Feature","pattern":"projector headlights"}
+{"label":"Feature","pattern":"led projector headlights"}
+{"label":"Feature","pattern":"roof rails"}
+{"label":"Feature","pattern":"halogen projector headlights"}
+{"label":"Feature","pattern":"auto wiper"}
+{"label":"Feature","pattern":"audio controls"}
+{"label":"Feature","pattern":"mounted audio controls"}
+{"label":"Feature","pattern":"steering mounted audio controls"}
+{"label":"Feature","pattern":"pillion seat"}
+{"label":"Feature","pattern":"removable pillion seat"}
+{"label":"Feature","pattern":"dual zone climate control"}
+{"label":"Feature","pattern":"zone climate control"}
+{"label":"Feature","pattern":"connected car tech"}
+{"label":"Feature","pattern":"car tech"}
+{"label":"Feature","pattern":"adaptive cruise control"}
+{"label":"Feature","pattern":"clip on handlebars"}
+{"label":"Feature","pattern":"clip-on handlebars"}
+{"label":"Feature","pattern":"on handlebars"}
+{"label":"Feature","pattern":"ajar warning"}
+{"label":"Feature","pattern":"door ajar warning"}
+{"label":"Feature","pattern":"stop signal"}
+{"label":"Feature","pattern":"emergency stop signal"}
+{"label":"Feature","pattern":"panoramic sunroof"}
+{"label":"Feature","pattern":"remote keyless entry"}
+{"label":"Feature","pattern":"electrically adjustable orvms"}
+{"label":"Feature","pattern":"adjustable orvms"}
+{"label":"Feature","pattern":"60:40 split folding rear seats"}
+{"label":"Feature","pattern":"40 split folding rear seats"}
+{"label":"Feature","pattern":"60 40 split folding rear seats"}
+{"label":"Feature","pattern":"split folding rear seats"}
+{"label":"Feature","pattern":"folding rear seats"}
+{"label":"Feature","pattern":"leather wrapped steering wheel"}
+{"label":"Feature","pattern":"wrapped steering wheel"}
+{"label":"Feature","pattern":"steering wheel"}
+{"label":"Feature","pattern":"led drls"}
+{"label":"Feature","pattern":"traction control modes"}
+{"label":"Feature","pattern":"control modes"}
+{"label":"Feature","pattern":"smart key"}
+{"label":"Feature","pattern":"passenger vanity mirror"}
+{"label":"Feature","pattern":"vanity mirror"}
+{"label":"Feature","pattern":"electronic brake force distribution ebd"}
+{"label":"Feature","pattern":"ebd"}
+{"label":"Feature","pattern":"distribution ebd"}
+{"label":"Feature","pattern":"brake force distribution ebd"}
+{"label":"Feature","pattern":"electronic brake-force distribution (ebd)"}
+{"label":"Feature","pattern":"force distribution ebd"}
+{"label":"Feature","pattern":"reading lamps"}
+{"label":"Feature","pattern":"led reading lamps"}
+{"label":"Feature","pattern":"motor generator"}
+{"label":"Feature","pattern":"starter motor generator"}
+{"label":"Feature","pattern":"maps navigation"}
+{"label":"Feature","pattern":"multi collision brakes"}
+{"label":"Feature","pattern":"collision brakes"}
+{"label":"Feature","pattern":"belt with pretensioners"}
+{"label":"Feature","pattern":"with pretensioners"}
+{"label":"Feature","pattern":"seat belt with pretensioners"}
+{"label":"Feature","pattern":"sunroof"}
+{"label":"Feature","pattern":"roll cage"}
+{"label":"Feature","pattern":"power steering"}
+{"label":"Feature","pattern":"airbags"}
+{"label":"Feature","pattern":"middle row"}
+{"label":"Feature","pattern":"sliding middle row"}
+{"label":"Feature","pattern":"flat bottom steering wheel"}
+{"label":"Feature","pattern":"bottom steering wheel"}
+{"label":"Feature","pattern":"luggage lamp"}
+{"label":"Feature","pattern":"pillion backrest"}
+{"label":"Feature","pattern":"front disc brakes"}
+{"label":"FeatureCategory","pattern":"interior"}
+{"label":"FeatureCategory","pattern":"performance"}
+{"label":"FeatureCategory","pattern":"basics"}
+{"label":"FeatureCategory","pattern":"terminology"}
+{"label":"FeatureCategory","pattern":"4\u00d74"}
+{"label":"FeatureCategory","pattern":"safety"}
+{"label":"FeatureCategory","pattern":"convenience"}
+{"label":"FeatureCategory","pattern":"infotainment"}
+{"label":"FeatureCategory","pattern":"comfort"}
+{"label":"FeatureCategory","pattern":"electrics"}
+{"label":"FeatureCategory","pattern":"exterior"}
+{"label":"FeatureCategory","pattern":"electronics"}
+{"label":"FeatureCategory","pattern":"luxury"}
