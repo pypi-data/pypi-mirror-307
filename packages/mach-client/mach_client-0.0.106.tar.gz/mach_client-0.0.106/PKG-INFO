@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: mach_client
+Version: 0.0.106
+Summary:  A Python client for the Mach exchange. 
+Project-URL: Homepage, https://github.com/tristeroresearch/mach-client-py
+Project-URL: Issues, https://github.com/tristeroresearch/mach-client-py/issues
+Author-email: Richard Dong <richard@tristero.xyz>
+Keywords: crypto,cryptocurrencies,cryptocurrency,defi,exchange,liquidity,mach,pool,swap,tristero
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.6
+Requires-Dist: aiohttp
+Requires-Dist: async-lru
+Requires-Dist: eth-typing
+Requires-Dist: hexbytes
+Requires-Dist: web3
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: python-dotenv; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# mach-client-py
+
+A Python client for the Mach exchange, including useful Ethereum utilities.
+
+Note - to change the backend URL from production:
+
+```bash
+export MACH_BACKEND_URL='https://cache-half-full-staging.fly.dev'
+```
