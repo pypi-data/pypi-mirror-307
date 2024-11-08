@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: libro-server
+Version: 0.1.8.dev0
+Summary: libro server
+Author-email: zhanba <c5e1856@gmail.com>, brokun <brokun0128@gmail.com>, sunshinesmilelk <ximo.lk66@gmail.com>
+Requires-Python: >=3.8.1
+Requires-Dist: ipykernel>=6.29.4
+Requires-Dist: ipython>=7.34.0
+Requires-Dist: jupyter-lsp>=2.2.4
+Requires-Dist: jupyter-server>=2.13.0
+Requires-Dist: jupyterlab-server>=2.25.4
+Requires-Dist: libro-core>=0.1.5
+Requires-Dist: ruff-lsp>=0.0.53
+Description-Content-Type: text/markdown
+
+# libro-server
