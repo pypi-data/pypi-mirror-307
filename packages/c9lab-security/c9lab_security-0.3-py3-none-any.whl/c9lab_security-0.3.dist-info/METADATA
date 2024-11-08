@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: c9lab-security
+Version: 0.3
+Summary: Middleware for encrypting and decrypting requests and responses in Django Rest Framework
+Home-page: 
+Author: C9lab
+Author-email: praveen.dhakad@pinakinfosec.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.0
+Requires-Dist: pycryptodome
+
+# c9lab-security
+
+This package provides middleware for encrypting and decrypting requests and responses in Django Rest Framework.
+
+## Installation
+
+```bash
+pip install c9lab-security
+
+
+
+MIDDLEWARE = [
+    ...,
+    'c9lab_security.middleware.DecryptRequestMiddleware',
+    'c9lab_security.middleware.EncryptResponseMiddleware',
+]
+
+# Set the encryption key
+from c9lab_security.encryption_utility import EncryptionUtility
+EncryptionUtility.set_key(b'your-16-byte-key')  # Use a 16, 24, or 32 byte key
+
+
+
+
+Ensure your requests and responses use the application/json content type and include the encrypted data under the statistics field.
