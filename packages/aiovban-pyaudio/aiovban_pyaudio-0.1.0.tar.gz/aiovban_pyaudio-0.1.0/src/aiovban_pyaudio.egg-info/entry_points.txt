@@ -1,0 +1,3 @@
+[console_scripts]
+aiovban-receiver = aiovban_pyaudio.scripts:audio_receiver.main
+aiovban-sender = aiovban_pyaudio.scripts:audio_sender.main
