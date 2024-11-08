@@ -1,0 +1,11 @@
+Robotic_Arm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Robotic_Arm/rm_ctypes_wrap.py,sha256=GB_MuL0avA1DZTitAn17swHdM-km708UwlZCW6fi8r8,190195
+Robotic_Arm/rm_robot_interface.py,sha256=TH0d5DPEe0xqmEKOGvqurcOgJUepZiv5KOMmEArhOCs,240975
+Robotic_Arm/libs/linux_arm/libapi_c.so,sha256=GOyhJK9ylNJ1j7IQfC4xJsmLOpIPVv3vK8rT9KAsEVY,440752
+Robotic_Arm/libs/linux_x86/libapi_c.so,sha256=TMx5CY15DrHsM0wPvLIiBwkpVnPhbMhXGp2VTMDOpuw,576792
+Robotic_Arm/libs/win_32/api_c.dll,sha256=A1aZBCEBBOaEBPWdx1_GtRIEqsxwjl9usZi3PERAG9E,592384
+Robotic_Arm/libs/win_64/api_c.dll,sha256=IZEict2w1Cu1ug-3HuJ3RozYJzXa25qLBePIZktwGzo,766976
+Robotic_Arm-1.0.4.dist-info/METADATA,sha256=1OdWnm361zR0byFIF3kiz4i1sWY_hBAVOIdxlXlXgyA,540
+Robotic_Arm-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Robotic_Arm-1.0.4.dist-info/top_level.txt,sha256=tYrh49HD_b9DdJ2J6XfbdOC0VlRU7dL3uoJPMooN3ss,12
+Robotic_Arm-1.0.4.dist-info/RECORD,,
