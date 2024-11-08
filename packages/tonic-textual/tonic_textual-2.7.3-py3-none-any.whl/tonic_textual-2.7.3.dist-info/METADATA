@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tonic-textual
+Version: 2.7.3
+Summary: Wrappers around the Tonic Textual API
+Home-page: https://www.tonic.ai/
+License: MIT
+Keywords: tonic.ai,tonic,tonic textual
+Author: Adam Kamor
+Author-email: adam@tonic.ai
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: amplitude-analytics (>=1.1.4,<2.0.0)
+Requires-Dist: more-itertools (>=8.6.0,<9.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Requires-Dist: tqdm (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Overview
+This library contains useful wrappers around the Tonic Textual API
+
+## Usage
+
+Instantiate the API wrapper using the following code:
+
+```
+from tonic_textual.redact_api import TonicTextual
+
+# Do not include trailing backslash in TONIC_URL
+api = TonicTextual(TONIC_TEXTUAL_URL, API_KEY)
+```
+
+For more information on how to use the API, see the [API documentation](https://textual.tonic.ai/docs/index.html).
