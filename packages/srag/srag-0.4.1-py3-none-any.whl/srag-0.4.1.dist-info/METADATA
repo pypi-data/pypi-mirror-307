@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: srag
+Version: 0.4.1
+Summary: 
+Author: HSPK
+Author-email: whxway@whu.edu.cn
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: elasticsearch (>=8.15.1,<9.0.0)
+Requires-Dist: latex2mathml (>=3.77.0,<4.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: puyuan-modelhub (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic (>2)
+Requires-Dist: pyparse-client (>=0.1.0,<0.2.0)
+Requires-Dist: qdrant-client (>=1.11.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# SRAG [![PyPI version](https://badge.fury.io/py/srag.svg)](https://badge.fury.io/py/srag)
+
+Simple, Agentic, Extensive RAG codes with minimal dependencies.
+
