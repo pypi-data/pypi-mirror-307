@@ -1,0 +1,32 @@
+[project]
+name = "DevOpsAPI"
+version = "0.2.0a9"
+description="A simple object-oriented python interface to the DevOps REST API"
+authors = [
+    { name="Claudio Klingler", email="ck@realtime-projects.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  'lxml',
+  'requests'
+]
+
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/acre-bdd/DevOpsAPI"
+"Bug Tracker" = "https://github.com/acre-bdd/DevOpsAPI/issues"
+"Documentation" = "https://acre-bdd.github.io/DevOpsAPI"
