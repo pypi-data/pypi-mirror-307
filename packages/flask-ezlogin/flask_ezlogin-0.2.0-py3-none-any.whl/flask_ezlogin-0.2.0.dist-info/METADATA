@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: flask-ezlogin
+Version: 0.2.0
+Summary: Easy login setup with Flask and Flask-Login
+Home-page: https://github.com/arturads/flask-ezlogin
+Author: Artur Arantes Santos da Silva
+Author-email: arturarantesads@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: Flask-Login
+
+# flask-ezlogin
+
+**flask-ezlogin** Ã© um pacote que facilita a configuraÃ§Ã£o de sistemas de login no Flask usando Flask-Login.
+
+## InstalaÃ§Ã£o
+
+VocÃª pode instalar diretamente do PyPI com:
+
+```bash
+pip install flask-ezlogin
+```
+
+### Funcionalidades
+
+login_required: Um wrapper para o decorator login_required do Flask-Login.
+check_authentication: Redireciona o usuÃ¡rio autenticado para uma rota protegida se ele jÃ¡ estiver logado.
+prevent_cache: Adiciona cabeÃ§alhos para evitar cache em pÃ¡ginas sensÃ­veis, como as pÃ¡ginas de login e cadastro.
+
+Exemplos de Uso
+Aqui estÃ£o alguns exemplos prÃ¡ticos de como usar os decorators oferecidos pelo flask-ezlogin.
+
+1. Proteger uma Rota com login_required
+   Use login_required para restringir o acesso a uma rota apenas para usuÃ¡rios autenticados.
+
+from flask import Flask, redirect, url_for
+from flask_ezlogin import login_required, logout_user
+
+app = Flask(**name**)
+
+@app.route("/protected")
+@login_required
+def protected():
+return "Esta Ã© uma rota protegida."
+
+@app.route("/logout")
+@login_required
+def logout():
+logout_user()
+return redirect(url_for("index"))
+
+2. Redirecionar UsuÃ¡rios Autenticados com check_authentication
+   Use check_authentication para redirecionar usuÃ¡rios jÃ¡ autenticados para uma rota protegida. Isso Ã© Ãºtil, por exemplo, na pÃ¡gina de login.
+
+from flask import Flask, render_template
+from flask_ezlogin import check_authentication, prevent_cache
+
+app = Flask(**name**)
+
+@app.route("/login")
+@check_authentication("protected") # Redireciona para /protected se o usuÃ¡rio jÃ¡ estiver logado
+@prevent_cache # Evita cache para essa pÃ¡gina
+def login():
+return render_template("login.html")
+
+3. Evitar Cache com prevent_cache
+   O decorator prevent_cache adiciona cabeÃ§alhos para garantir que o navegador nÃ£o armazene a pÃ¡gina em cache.
+
+@app.route("/register")
+@prevent_cache
+def register():
+return render_template("register.html")
+
+### ContribuiÃ§Ã£o
+
+ContribuiÃ§Ãµes sÃ£o bem-vindas! Se vocÃª encontrar problemas, tiver ideias para novas funcionalidades ou melhorias, sinta-se Ã  vontade para abrir um pull request ou relatar problemas no repositÃ³rio GitHub.
+
+### LicenÃ§a
+
+Este projeto Ã© licenciado sob a licenÃ§a MIT. Consulte o arquivo LICENSE para mais detalhes.
