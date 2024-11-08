@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: atap-google-downloader
+Version: 0.1.0
+Summary: A simple Panel GUI for downloading files from Google Drive to the local working space
+Home-page: https://github.com/Australian-Text-Analytics-Platform/atap_google_downloader
+License: MIT
+Author: Hamish Croser
+Author-email: hamish.croser@sydney.edu.au
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gdown (>=5.2.0,<5.3.0)
+Requires-Dist: panel (>=1.4.0,<1.5.0)
+Project-URL: Repository, https://github.com/Australian-Text-Analytics-Platform/atap_google_downloader
+Description-Content-Type: text/markdown
+
+# ATAP Google Downloader
+
+A simple Panel GUI for downloading files from Google Drive to the local working space
+
+## Installation
+
+`pip install atap-google-downloader`
+
+## Usage
+
+```python
+from atap_google_downloader import DriveDownloader
+
+downloader = DriveDownloader()
+downloader.servable()
+```
+
+## Authors
+
+  - **Hamish Croser** - [h-croser](https://github.com/h-croser)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
