@@ -1,0 +1,2 @@
+[console_scripts]
+spool = spool.main:cli

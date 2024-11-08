@@ -1,0 +1,14 @@
+spool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spool/exceptions.py,sha256=NJAwKw8DnV2dq8bQTJbihciGLvXxfaC6WhYGzate0ok,249
+spool/gpg.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spool/mailer.py,sha256=UzqGawvJsVyIaOSsW7KFGFxTi8Ex30a5dBUVQDSqgmk,7751
+spool/main.py,sha256=8-tHXWKqvYO_1VMCsmMs9uUF5kACrzmUhKGGpQjU2RQ,6635
+spool/message.py,sha256=ohZUqHGmix5duSECFtqLekRUnyMR156a8m6wt2L8qU0,8285
+spool/parser.py,sha256=5Q2GHJR2NZ8ujlNKrnZOXIELGECgDl7jKbpv2qt17aM,6985
+spool/smime.py,sha256=NVznJrSF-CC_fDGhxewOOAFJe7MoYfx_DcIg5l0spus,1767
+spool-1.0.0.dist-info/LICENSE.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spool-1.0.0.dist-info/METADATA,sha256=bmu4LVrGzqbFUNplzdDBlUKbz0hJJCKhaYEpWxNkuUg,2348
+spool-1.0.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+spool-1.0.0.dist-info/entry_points.txt,sha256=cVuHlPxzU5INWE7v-0JQKBkF10px56TZo4c9rHZKN_s,41
+spool-1.0.0.dist-info/top_level.txt,sha256=-APsr3gqaKs1_UwXuXYp_BTTweSi2K-FgPzra3qyQmQ,6
+spool-1.0.0.dist-info/RECORD,,
