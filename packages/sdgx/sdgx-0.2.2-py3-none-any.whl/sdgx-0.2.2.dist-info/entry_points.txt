@@ -1,0 +1,2 @@
+[console_scripts]
+sdgx = sdgx.cli.main:cli
