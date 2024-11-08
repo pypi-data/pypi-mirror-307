@@ -1,0 +1,3 @@
+[console_scripts]
+nexus = nexus.cli.main:main
+nexus-service = nexus.service.main:main
