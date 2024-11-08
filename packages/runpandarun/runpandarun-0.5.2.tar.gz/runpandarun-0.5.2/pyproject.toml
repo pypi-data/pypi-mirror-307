@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "runpandarun"
+version = "0.5.2"
+description = "Tell pandas what to do – easy tabular data I/O playbooks"
+authors = ["Simon Wörpel <simon@investigativedata.org>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://investigraph.dev"
+repository = "https://github.com/investigativedata/investigraph-etl"
+documentation = "https://docs.investigraph.dev/runpandarun"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+packages = [{include = "runpandarun"}]
+
+[tool.poetry.scripts]
+runpandarun = "runpandarun.cli:cli"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/investigativedata/runpandarun/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+pandas = "^2.2.2"
+requests = "^2.31.0"
+typer = ">=0.12.3,<0.14.0"
+banal = "^1.0.6"
+normality = "^2.5.0"
+orjson = "^3.9.15"
+pantomime = "^0.6.1"
+openpyxl = "^3.1.2"
+sqlalchemy = "^2.0.27"
+aiohttp = "^3.9.3"
+datapatch = "^1.2.0"
+cryptography = ">=42.0.4,<44.0.0"
+pydantic = "^2.7.3"
+fingerprints = "^1.2.3"
+pyicu = "^2.12"
+s3fs = "^2024.2.0"
+fsspec = "^2024.2.0"
+xlrd = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = ">=4.1,<7.0"
+black = "^24.1.1"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pre-commit = ">=3.6,<5.0"
+flake8 = "^7.0.0"
+ipdb = "^0.13.13"
+pytest-xdist = "^3.4.0"
+moto = "^5.0.9"
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
