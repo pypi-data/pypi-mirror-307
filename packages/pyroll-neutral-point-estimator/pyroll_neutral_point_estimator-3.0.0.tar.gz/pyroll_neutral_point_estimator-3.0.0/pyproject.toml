@@ -1,0 +1,30 @@
+[project]
+name = "pyroll-neutral-point-estimator"
+description = "Plugin for PyRolL providing a variety of neutral point estimators."
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" }
+]
+license = "BSD-3-Clause"
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 3.0",
+    "pyroll-interface-friction ~= 3.0"
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://pyroll-project.github.io"
+Repository = "https://github.com/pyroll-project/pyroll-neutral-point-estimator"
+Documentation = "https://github.com/pyroll-project/pyroll-neutral-point-estimator/blob/main/docs/docs.pdf"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
