@@ -1,0 +1,7 @@
+tortoise-orm[accel,asyncpg]
+
+[dev]
+pytest
+python-dotenv
+build
+twine
