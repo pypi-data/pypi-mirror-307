@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: funcnodes-span
+Version: 0.3.1
+Summary: Spectral Peak ANalysis (SPAN) for funcnodes
+License: MIT
+Author: Kourosh Rezaei
+Author-email: kouroshrezaei90@gmail.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: funcnodes
+Requires-Dist: funcnodes-lmfit
+Requires-Dist: funcnodes_numpy
+Requires-Dist: funcnodes_pandas
+Requires-Dist: funcnodes_plotly
+Requires-Dist: lmfit
+Requires-Dist: pybaselines
+Requires-Dist: scipy
+Project-URL: download, https://pypi.org/project/funcnodes-span/#files
+Project-URL: homepage, https://github.com/Linkdlab/funcnodes_span
+Project-URL: source, https://github.com/Linkdlab/funcnodes_span
+Project-URL: tracker, https://github.com/Linkdlab/funcnodes_span/issues
+Description-Content-Type: text/markdown
+
+Spectral Peak ANalysis (SPAN) for funcnodes
+
