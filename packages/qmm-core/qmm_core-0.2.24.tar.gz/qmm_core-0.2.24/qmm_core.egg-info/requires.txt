@@ -1,0 +1,8 @@
+pytest>=8.3.2
+numpy<1.28,>=1.26.4
+sympy>=1.11.1
+networkx>=2.6.3
+numba>=0.60.0
+pandas>=2.2.3
+seaborn>=0.13.2
+matplotlib>=3.9.2
