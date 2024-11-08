@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: simple-math-pip
+Version: 0.1.0
+Summary: A simple math package with basic operations
+Project-URL: Homepage, https://github.com/yourusername/simple-math
+Project-URL: Bug Tracker, https://github.com/yourusername/simple-math/issues
+Author-email: Your Name <your.email@example.com>
+License-Expression: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
