@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytincture"
+version = "0.6.4"
+description = "UI Builder"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "schapman1974@gmail.com" }
+]
+dependencies = [
+    "aiofiles==24.1.0",
+    "fastapi==0.115.2",
+    "pymemcache==4.0.0",
+    "pyyaml==6.0.2",
+    "requests==2.32.3",
+    "uvicorn==0.32.0",
+    "wheel==0.44.0",
+    "js==1.0",
+    "pyodide-py==0.26.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/pytincture/pytincture"
+
+[tool.setuptools.packages]
+find = {}
