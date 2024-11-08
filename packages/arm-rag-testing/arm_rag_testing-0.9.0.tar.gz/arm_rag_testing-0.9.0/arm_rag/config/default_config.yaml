@@ -1,0 +1,93 @@
+document:
+  supported_formats: ['.pdf', '.txt', '.doc', '.docx']
+  chunk_size: 100
+  chunking_type: 'recursive' # recursive
+
+claude:  
+  temperature: 0
+  max_tokens: 500
+  model: claude-3-5-sonnet-20241022
+  prompt_template: 
+  prompt_template: 
+    - system: |
+        Please answer the given question in Armenian, 
+        using only the provided context and any JSON table data if available. 
+        If the context does not include enough information to answer, 
+        inform the user that the answer cannot be provided. 
+        Do not rely on external knowledge.
+
+    - user: |
+        Context information is below.
+        ---------------------
+        {context}
+        ---------------------
+
+        Note: JSON table data may be provided alongside the context.
+
+        Given the context information and any JSON table data (if applicable), answer the following question: {question}
+
+gpt:  
+  temperature: 0
+  max_tokens: 500
+  model: gpt-4o
+  prompt_template: 
+    - system: |
+        Please answer the given question in Armenian, 
+        using only the provided context and any JSON table data if available. 
+        If the context does not include enough information to answer, 
+        inform the user that the answer cannot be provided. 
+        Do not rely on external knowledge.
+
+    - user: |
+        Context information is below.
+        ---------------------
+        {context}
+        ---------------------
+
+        Note: JSON table data may be provided alongside the context.
+
+        Given the context information and any JSON table data (if applicable), answer the following question: {question}
+
+
+open_source:  
+  temperature: 0
+  max_tokens: 100
+  model: google/gemma-2-27b-it 
+  prompt_template: 
+    - system: |
+        Please answer the given question in Armenian, 
+        using only the provided context and any JSON table data if available. 
+        If the context does not include enough information to answer, 
+        inform the user that the answer cannot be provided. 
+        Do not rely on external knowledge.
+
+    - user: |
+        Context information is below.
+        ---------------------
+        {context}
+        ---------------------
+
+        Note: JSON table data may be provided alongside the context.
+
+        Given the context information and any JSON table data (if applicable), answer the following question: {question}
+
+
+vectorstore_weaviate:
+  name: "wdb"
+  K: 5
+  hybrid_weight: 0.7
+  search_type: 'semantic' # keyword # hybrid
+
+
+vectorstore_deeplake:
+  path: "dplake"
+  K: 2
+  distance_metric: "COS" # "L1" # "L2" # "COS" # "MAX"
+
+
+embeddings:
+  model: 'intfloat/multilingual-e5-large'
+
+pipeline:
+  vectorstore_type: "deeplake" # "weaviate" # "deeplake"
+  model_type: 'claude' # gpt # open_source
