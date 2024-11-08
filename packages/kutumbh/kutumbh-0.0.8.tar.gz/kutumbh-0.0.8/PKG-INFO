@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: kutumbh
+Version: 0.0.8
+Summary: Climatic data analysis and visualizations
+Home-page: 
+Author: amresssh
+Author-email: Amreshguptaomar@gmail.com
+License: MIT
+Keywords: climate
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+License-File: LICENCE.txt
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: sklearn.preprocessing
+Requires-Dist: fuzzy-c-means
+Requires-Dist: plotly.express
+
+This is climatic data analyis and visulatiation module for architects.
+
+Change Log
+==========
+
+Version 0.0.1 (2024-11-05)
+--------------------------
+- Initial release
