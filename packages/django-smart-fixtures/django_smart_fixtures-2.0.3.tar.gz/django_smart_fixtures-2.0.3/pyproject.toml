@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "django-smart-fixtures"
+version = "2.0.3"
+description = "Don't be stupid, and load fixtures in a smart way"
+authors = ["Miloš Roknić <roknic.milos.994@gmail.com>"]
+packages = [
+    { include = "smart_fixtures" }
+]
+homepage = "https://github.com/roknicmilos/django-smart-fixtures"
+repository = "https://github.com/roknicmilos/django-smart-fixtures"
+documentation = "https://github.com/roknicmilos/django-smart-fixtures/blob/main/README.md"
+readme = "README.md"
+license = "MIT"
+keywords = ["fixtures", "loaddata", "load fixtures", "smart fixtures"]
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 5.0",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = ">=4.0,<6.0"
+pillow = "^11.0.0"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-django = "^4.9.0"
+pytest-cov = "^5.0.0"
+flake8 = "^7.1.1"
+flake8-quotes = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
