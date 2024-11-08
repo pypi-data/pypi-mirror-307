@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: muspi-merol
+Version: 0.1.6
+Summary: CLI utilities for personal use
+Requires-Python: >=3.12
+Requires-Dist: rich~=13.9.4
+Requires-Dist: typer-slim~=0.12.5
+Description-Content-Type: text/markdown
+
+# `m`
+
+`m` is a simple CLI application that I personally use when developing projects.
+It is written in Python and is designed to be easy to extend.
