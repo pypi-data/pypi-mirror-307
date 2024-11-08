@@ -1,0 +1,12 @@
+{
+    "additionalProperties": true,
+    "description": "The TMD distributions used to synthesize the cells",
+    "patternProperties": {
+        ".*": {
+            "description": "The mtype properties given to TNS",
+            "type": "object"
+        }
+    },
+    "title": "TMD distributions",
+    "type": "object"
+}

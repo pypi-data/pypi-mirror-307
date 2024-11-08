@@ -1,0 +1,2 @@
+[console_scripts]
+region-grower = region_grower.cli:main
