@@ -1,0 +1,2 @@
+[databricks]
+reconcile = databricks.labs.remorph.reconcile.execute:main
