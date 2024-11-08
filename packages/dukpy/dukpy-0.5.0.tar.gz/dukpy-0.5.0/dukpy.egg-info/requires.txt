@@ -1,0 +1,8 @@
+
+[testing]
+mock
+pytest
+pytest-cov
+
+[webassets]
+webassets
