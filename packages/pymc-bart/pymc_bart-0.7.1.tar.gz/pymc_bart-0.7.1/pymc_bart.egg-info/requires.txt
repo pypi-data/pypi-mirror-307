@@ -1,0 +1,5 @@
+pymc<=5.18,>=5.16.2
+arviz>=0.18.0
+numba
+matplotlib
+numpy
