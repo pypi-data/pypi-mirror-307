@@ -1,0 +1,9 @@
+aiohttp>=3.7
+
+[dev]
+mypy==0.982
+pre-commit==2.20.0
+pytest==7.2.0
+pytest-cov==4.0.0
+pytest-asyncio==0.20.1
+types-PyYAML
