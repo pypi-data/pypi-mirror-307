@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_days_till.py
+winzy_days_till/__init__.py
+winzy_days_till.egg-info/PKG-INFO
+winzy_days_till.egg-info/SOURCES.txt
+winzy_days_till.egg-info/dependency_links.txt
+winzy_days_till.egg-info/entry_points.txt
+winzy_days_till.egg-info/requires.txt
+winzy_days_till.egg-info/top_level.txt

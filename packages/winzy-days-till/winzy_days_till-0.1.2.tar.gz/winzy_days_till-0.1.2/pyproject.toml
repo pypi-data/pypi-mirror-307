@@ -1,0 +1,31 @@
+[project]
+name = "winzy-days-till"
+version = "0.1.2"
+description = "Gives days remaining till the given date"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "python-dateutil",
+    'winsay ; platform_system == "Windows"',
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-days-till"
+Changelog = "https://github.com/sukhbinder/winzy-days-till/releases"
+Issues = "https://github.com/sukhbinder/winzy-days-till/issues"
+CI = "https://github.com/sukhbinder/winzy-days-till/actions"
+
+[project.entry-points."winzy.plugins"]
+days = "winzy_days_till:days_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

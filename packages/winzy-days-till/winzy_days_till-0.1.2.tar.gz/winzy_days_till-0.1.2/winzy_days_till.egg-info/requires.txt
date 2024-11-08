@@ -1,0 +1,8 @@
+winzy
+python-dateutil
+
+[:platform_system == "Windows"]
+winsay
+
+[test]
+pytest
