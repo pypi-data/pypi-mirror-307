@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "evaluix"
+version = "0.9.3.2"
+description = "Data Evaluation Software of the (Magnetism) research group of Prof. Ehresmann at University of Kassel"
+license = "MIT"
+authors = ["Arne Jan Vereijken <arne.vereijken@physik.uni-kassel.de>"]
+repository = "https://github.com/exp4-age/evaluix"
+homepage = "https://github.com/exp4-age/evaluix"
+# README file(s) are used as the package description
+readme = "README.rst"
+# Keywords (translated to tags on the package index)
+keywords = ["evaluix", "hysteresis"]
+
+[tool.poetry.dependencies]
+# Compatible Python versions 
+python = ">=3.9"
+exp4-agepy = ">= 0.2"
+numpy = ">= 1.24.2"
+matplotlib = "*"
+pandas = "*"
+scipy = "*"
+pyyaml = "*"
+h5py = "*"
+scikit-learn = "*"
+ipython_genutils = "*"
+ipykernel = ">= 6.0.3"
+NSFopen = ">= 2.0.0"
+pyqt6 = ">= 6.4.2"
+lmfit = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[tool.poetry.scripts]
+evaluix = "evaluix.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Include additional files and directories
+include = [
+    "README.srt",
+    "LICENSE",
+    "src/evaluix/GUIs/Icons/*.png",
+    "src/evaluix/GUIs/Icons/*.jpg",
+    "src/evaluix/GUIs/Icons/*.svg",
+    "src/evaluix/*.yaml"
+]
+
+# Exclude specific files and directories
+exclude = [
+    "scripts/*",
+    "*.log",
+    "*.tmp"
+]
