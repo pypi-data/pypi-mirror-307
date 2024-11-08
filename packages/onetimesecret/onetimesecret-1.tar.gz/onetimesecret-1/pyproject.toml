@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "onetimesecret"
+version = "1"
+description = "simple api client for onetimesecret.com"
+readme = "README.md"
+authors = ["Mauricio <mtdb.github.n20n0@passinbox.com>"]
+license = "Apache Software License"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[project.urls]
+Homepage = "https://github.com/slashpass/onetimesecret-cli"
+Issues = "https://github.com/slashpass/onetimesecret-cli/issues"
