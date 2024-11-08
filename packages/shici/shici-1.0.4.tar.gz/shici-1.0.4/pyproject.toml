@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "shici"
+version = "0"  # Managed by poetry-plugin-version
+description = "Get Chinese poetry sentence by random"
+authors = ["Waket Zheng <waketzheng@esoaru.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://gitee.com/waketzheng/shici.git"
+repository = "https://gitee.com/waketzheng/shici.git"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+fast-dev-cli = "^0.11.3"
+bandit = "^1.7.10"
+twine = "^5.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-plugin-version]
+source = "init"
