@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: ewoksorange
+Version: 0.9.0
+Summary: Orange binding for Ewoks
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoksorange/
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoks/ewoksorange/
+Project-URL: Documentation, https://ewoksorange.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoksorange/issues/
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ewokscore>=0.14.0
+Requires-Dist: orange-canvas-core
+Requires-Dist: orange-widget-base
+Requires-Dist: importlib-resources; python_version < "3.9"
+Provides-Extra: full
+Requires-Dist: PyQt5; extra == "full"
+Provides-Extra: test
+Requires-Dist: PyQt5; extra == "test"
+Requires-Dist: pytest>=7; extra == "test"
+Provides-Extra: dev
+Requires-Dist: PyQt5; extra == "dev"
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: black>=22; extra == "dev"
+Requires-Dist: flake8>=4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: PyQt5; extra == "doc"
+Requires-Dist: pytest>=7; extra == "doc"
+Requires-Dist: sphinx>=4.5; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints>=1.16; extra == "doc"
+Requires-Dist: sphinx-design; extra == "doc"
+Requires-Dist: sphinx-togglebutton; extra == "doc"
+Requires-Dist: pydata-sphinx-theme<0.15; extra == "doc"
+Provides-Extra: orange
+Requires-Dist: bottleneck<1.4.1; python_version < "3.9" and extra == "orange"
+Requires-Dist: Orange3; extra == "orange"
+
+# ewoksorange
+
+_ewoksorange_ provides a desktop graphical interface for [ewoks](https://ewoks.readthedocs.io/).
+
+## Getting started
+
+Install the project
+
+```bash
+pip install ewoksorange[full]
+```
+
+Launch the Orange canvas:
+
+```bash
+ewoks-canvas
+```
+
+Launch the Orange canvas with the examples add-on
+
+```bash
+ewoks-canvas --with-examples
+```
+
+Open an existing workflow in the Orange canvas
+
+```bash
+ewoks-canvas /path/to/orange_wf.ows
+```
+
+For more information, see the [documentation](https://ewoksorange.readthedocs.io/): https://ewoksorange.readthedocs.io/
