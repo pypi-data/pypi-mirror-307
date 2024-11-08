@@ -1,0 +1,95 @@
+[build-system]
+requires = [
+    "hatchling", 
+    "versioningit",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gamepadla_plus", "*.txt"]
+
+
+[project]
+name = "gamepadla-plus"
+description = "Gamepad Polling Rate and Latency Testing Tool (CLI & GUI)"
+authors = [
+    { name="Adam McKellar", email="dev@mckellar.eu" },
+    { name="John Punch" },
+]
+maintainers = [
+  { name="Adam McKellar", email="dev@mckellar.eu" },
+]
+readme = "README.md"
+license = {text = "MIT"}
+keywords = [
+    "gamepad", 
+    "controller", 
+    "polling-rate",
+    "latency-tester",
+    "input-lag",
+    "DInput",
+    "XInput",
+    "controller-latency",
+    "gamepad-testing",
+    "gaming-performance",
+    "input-testing",
+    "windows-gaming",
+    "input-polling",
+    "gaming-utilities",
+    "input-response",
+    "controller-utilities",
+    "gaming-tools",
+    "real-time-input",
+    "latency-measurement",
+    "gamepad-performance"
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Wireless Controller",
+    "Topic :: Education :: Testing",
+    "Framework :: PySimpleGUI",
+    "Framework :: PySimpleGUI :: 5",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Environment :: Console",
+]
+
+dynamic = ["version"]
+
+dependencies = [
+    "colorama >=0.4.6,<0.5",
+    "tqdm >=4.66.6,<5",
+    "numpy >=2.1.2,<3",
+    "requests >=2.32.3,<3",
+    "pygame >=2.6.1,<3",
+    "typer >=0.12.5,<0.13",
+    "rich >=13.9.4,<14",
+    "freesimplegui >=5.1.1,<6",
+]
+
+
+[project.urls]
+Repository = "https://github.com/WyvernIXTL/gamepadla-plus"
+Issues = "https://github.com/WyvernIXTL/gamepadla-plus/issues"
+
+
+[project.scripts]
+gamepadla = "gamepadla_plus.__main__:run"
+
+[dependency-groups]
+license-fetching = [
+    "pip-licenses>=5.0.0,<6",
+]
+pyinstaller = [
+    "pyinstaller>=6.11.0,<7",
+]
