@@ -1,0 +1,37 @@
+[project]
+name = "nettracer3d"
+version = "0.1.7"
+authors = [
+  { name="Liam McLaughlin", email="boom2449@gmail.com" },
+]
+description = "Scripts for intializing and analyzing networks from segmentations of three dimensional images."
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-image",
+    "Pillow",
+    "matplotlib",
+    "networkx",
+    "opencv-python-headless",
+    "openpyxl",
+    "pandas",
+    "plotly",
+    "python-louvain",
+    "tifffile",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+CUDA11 = ["cupy-cuda11x"]
+CUDA12 = ["cupy-cuda12x"]
+cupy = ["cupy"]
+
+[project.urls]
+User_Manual = "https://drive.google.com/drive/folders/1fTkz3n4LN9_VxKRKC8lVQSlrz_wq0bVn?usp=drive_link"
+Reference_Citation_For_Use = "https://doi.org/10.1101/2024.07.29.605633"
