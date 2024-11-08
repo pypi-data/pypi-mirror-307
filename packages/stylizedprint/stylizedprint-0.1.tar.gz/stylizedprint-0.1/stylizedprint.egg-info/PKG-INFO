@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: stylizedprint
+Version: 0.1
+Summary: A package for creating stylish console prints with ease
+Home-page: https://github.com/unaizubeldia/stylizedprint
+Author: Unai Zubeldia, Ruben Jordana, Peio Garcia
+Maintainer: Unai Zubeldia, Ruben Jordana, Peio Garcia
+Maintainer-email: unai.zubeldia@alumni.mondragon.edu, ruben.jordana@alumni.mondragon.edu, peio.garcia@alumni.mondragon.edu
+License: UNKNOWN
+Description: ### README.md
+        
+        ```markdown
+        # stylizedprint
+        
+        `stylizedprint` is a Python package designed to create stylish console prints with various customization options. You can customize text colors, backgrounds, text styles (e.g., bold, italic), add borders, apply animations, align text, and include timestamps. This package offers both Object-Oriented and Functional Programming approaches, making it versatile for different use cases.
+        
+        ## Features
+        
+        - **Text and Background Colors**: Customize text and background colors (e.g., red, green, blue).
+        - **Text Styles**: Options for bold, italic, underline, and strikethrough.
+        - **Borders**: Add custom borders around text using different characters (e.g., `*`, `=`, `#`).
+        - **Basic Animations**: Apply gradual print or blinking effects.
+        - **Text Formatting**: Left, center, or right alignment.
+        - **Timestamps**: Print logs with the current timestamp.
+        - **Line Separators**: Flexible line separator options, like newline (`\n`), HTML `<br>`, or custom characters.
+        
+        ## Installation
+        
+        Install `stylizedprint` using pip:
+        
+        ```bash
+        pip install stylizedprint
+        ```
+        
+        ## Usage
+        
+        You can use `stylizedprint` in two primary ways: with the `StylizedPrinter` class (Object-Oriented Programming) or with individual functions (Functional Programming).
+        
+        ### Using `StylizedPrinter` Class
+        
+        The `StylizedPrinter` class allows you to apply styles and effects directly to text.
+        
+        ```python
+        from stylizedprint.core import StylizedPrinter
+        
+        # Initialize with text
+        printer = StylizedPrinter("Stylized text example")
+        
+        # Colors
+        printer.print_colored(text_color="green", bg_color="black")
+        
+        # Text Styles
+        printer.print_styled(bold=True)
+        printer.print_styled(italic=True)
+        printer.print_styled(underline=True)
+        printer.print_styled(strikethrough=True)
+        
+        # Borders
+        printer.print_with_border(border_char="*")
+        
+        # Animations
+        printer.print_gradually(delay=0.05)
+        printer.print_blinking(times=3, delay=0.5)
+        
+        # Text Alignment
+        printer.print_justified(alignment="center", width=50)
+        
+        # Timestamped Logs
+        printer.print_with_timestamp()
+        ```
+        
+        ### Using Functional Approach
+        
+        Each feature can also be accessed through standalone functions without instantiating the class.
+        
+        ```python
+        from stylizedprint.colors import apply_color
+        from stylizedprint.styles import apply_style
+        from stylizedprint.borders import add_border
+        from stylizedprint.animations import gradual_print, blinking_text
+        from stylizedprint.formatting import justify_text
+        from stylizedprint.utils import print_with_time
+        
+        # Colors
+        print(apply_color("Text in red", text_color="red"))
+        print(apply_color("Text with blue background", bg_color="blue"))
+        
+        # Styles
+        print(apply_style("Bold text", bold=True))
+        print(apply_style("Italic text", italic=True))
+        
+        # Borders
+        print(add_border("Text with border", border_char="#"))
+        
+        # Animations
+        gradual_print("Gradual printing text...", delay=0.05)
+        blinking_text("Blinking text", times=3, delay=0.5)
+        
+        # Text Formatting
+        print(justify_text("Left-aligned text", alignment="left", width=40))
+        print(justify_text("Centered text", alignment="center", width=40))
+        print(justify_text("Right-aligned text", alignment="right", width=40))
+        
+        # Timestamps
+        print_with_time("Log entry with timestamp")
+        ```
+        
+        ### Using Line Separators
+        
+        The `LineSeparator` class lets you add custom line separators, such as newline (`\n`), HTML `<br>`, or any custom string.
+        
+        ```python
+        from stylizedprint.separator import LineSeparator
+        
+        # Plain text separator
+        plain_separator = LineSeparator("plain")
+        text = plain_separator.join_lines("Line 1", "Line 2", "Line 3")
+        print("Plain separator output:")
+        print(text)
+        
+        # HTML separator
+        html_separator = LineSeparator("html")
+        html_text = html_separator.join_lines("Line 1", "Line 2", "Line 3")
+        print("\nHTML separator output:")
+        print(html_text)
+        
+        # Custom separator
+        custom_separator = LineSeparator("custom")
+        custom_separator.set_custom_separator(" | ")
+        custom_text = custom_separator.join_lines("Line 1", "Line 2", "Line 3")
+        print("\nCustom separator output:")
+        print(custom_text)
+        ```
+        
+        You can also use `LineSeparator` directly within `StylizedPrinter`:
+        
+        ```python
+        printer = StylizedPrinter("Example text")
+        printer.print_with_separator("html", "Line 1", "Line 2", "Line 3")
+        printer.print_with_separator("custom", "Line 1", "Line 2", "Line 3", custom_separator=" | ")
+        ```
+        
+        ## API Reference
+        
+        ### StylizedPrinter Class
+        
+        - **`print_colored(text_color=None, bg_color=None)`**: Prints text with specified text and background colors.
+        - **`print_styled(bold=False, italic=False, underline=False, strikethrough=False)`**: Prints text with optional styles (bold, italic, underline, strikethrough).
+        - **`print_with_border(border_char="*")`**: Prints text with a custom border.
+        - **`print_gradually(delay=0.1)`**: Gradually prints text with a specified delay between characters.
+        - **`print_blinking(times=3, delay=0.5)`**: Blinks text on and off a set number of times with delay.
+        - **`print_justified(alignment="center", width=50)`**: Justifies text to the left, center, or right with a specified width.
+        - **`print_with_timestamp()`**: Prints text with a timestamp prefix.
+        - **`print_with_separator(separator_type="plain", *lines, custom_separator=None)`**: Joins and prints multiple lines with the specified separator type (plain, HTML, or custom).
+        
+        ### Functional Approach
+        
+        Each feature has a corresponding function that can be called independently:
+        
+        - **Color and Background**: `apply_color(text, text_color=None, bg_color=None)`
+        - **Text Styles**: `apply_style(text, bold=False, italic=False, underline=False, strikethrough=False)`
+        - **Borders**: `add_border(text, border_char="*")`
+        - **Animations**: `gradual_print(text, delay=0.1)`, `blinking_text(text, times=3, delay=0.5)`
+        - **Text Formatting**: `justify_text(text, alignment="center", width=50)`
+        - **Timestamps**: `print_with_time(text)`
+        - **Line Separator**: `LineSeparator(separator_type="plain").join_lines(*lines)`
+        
+        ## Running Tests
+        
+        To test all functionalities, you can run the `test.py` script:
+        
+        ```bash
+        python test.py
+        ```
+        
+        The tests will verify the functionality of each feature individually and within the `StylizedPrinter` class.
+        
+        ## License
+        
+        This project is licensed under the MIT License. See the LICENSE file for more details.
+        
+        ## Contributing
+        
+        Contributions are welcome! Feel free to open issues or submit pull requests to improve the package.
+        
+        ## Acknowledgements
+        
+        This package uses `colorama` and `rich` for handling console colors and text styles. Thanks to the contributors of these libraries.
+        
+        ---
+        
+        ### Project Note
+        
+        This package, `stylizedprint`, was developed as part of a programming subject within the **Business Data Analytics** degree program. The goal of this project is to create a usefull package and upload it to `Pypi`.
+        ``` 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
