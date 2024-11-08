@@ -1,0 +1,43 @@
+Flask App in Docker: 
+Docker installation: 
+Open terminal 
+
+• sudo apt update  
+• sudo apt install docker.io 
+• sudo chmod 666 /var/run/docker.sock 
+• sudo systemctl start docker 
+
+1. Creating a flask App: 
+
+Create a newfolder:  
+
+flask-docker-app 
+
+Create a python file app.py: 
+
+from flask import Flask 
+app = Flask(__name__ 
+@app.route('/') 
+def hello_world(): 
+    return 'Hello, Docker!' 
+if __name__ == '__main__': 
+    app.run(host='0.0.0.0', port=5000) 
+
+
+2. Create a requirements.txt file to list your dependencies: 
+Flask==3.0.3    
+
+3. Create a docker file with name Dockerfile 
+
+FROM python:3.9-slim 
+WORKDIR /app 
+COPY . /app 
+RUN pip install --no-cache-dir -r requirements.txt 
+EXPOSE 5000
+CMD ["python3", "app.py"] 
+
+4. Building Docker image: 
+docker build -t flask-docker-app . 
+docker run -p 5000:5000 flask-docker-app 
+
+5. Open browser an run: http://localhost:5000 
