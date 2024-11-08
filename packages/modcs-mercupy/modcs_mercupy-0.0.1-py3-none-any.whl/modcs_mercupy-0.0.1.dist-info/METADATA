@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: modcs-mercupy
+Version: 0.0.1
+Summary: A package that abstracts the Mercury's script language in Python.
+Project-URL: Homepage, https://gitlab.cin.ufpe.br/mjas/mercupy
+Author-email: Marcelo Santana <mjas@cin.ufpe.br>
+Maintainer-email: Marcelo Santana <mjas@cin.ufpe.br>, Jônatas Iago <jis@cin.ufpe.br>, Vinícius Almeida <vsa@cin.ufpe.br>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: enum
+Requires-Dist: subprocess
+Description-Content-Type: text/markdown
+
+# modcs-mercupy
+
+modcs-mercupy is a project that abstracts Mercury's script language, providing a simple interface for creating and evaluating stochastic models using the Mercury software. Developed by the **MoDCS** research group at the Center of Informatics (**CIN**) of the Federal University of Pernambuco, Brazil, MercuPy aims to simplify the modeling process and improve user experience.
+
+## Features
+
+- **Simplified Scripting**: Abstracts the complexities of Mercury's script language.
+- **Seamless Integration**: Works smoothly with Mercury for model evaluation.
+- **Extensible Architecture**: Easily extendable to incorporate new features and functionalities.
+- **User-Friendly Interface**: Intuitive Python interface for model creation and analysis.
+
+## Installation
+
+To get started with modcs-mercupy, you can install it directly via `pip`:
+
+```bash
+pip install modcs-mercupy
