@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+resdb_orm/__init__.py
+resdb_orm/orm.py
+resdb_orm.egg-info/PKG-INFO
+resdb_orm.egg-info/SOURCES.txt
+resdb_orm.egg-info/dependency_links.txt
+resdb_orm.egg-info/requires.txt
+resdb_orm.egg-info/top_level.txt
