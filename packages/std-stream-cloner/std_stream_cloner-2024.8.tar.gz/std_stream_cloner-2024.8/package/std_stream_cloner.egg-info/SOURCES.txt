@@ -1,0 +1,16 @@
+MANIFEST.in
+README-COPYRIGHT-utf8.txt
+README-LICENCE-utf8.txt
+README.rst
+pyproject.toml
+requirements.txt
+setup.py
+documentation/wiki/description.asciidoc
+package/std_stream_cloner/__init__.py
+package/std_stream_cloner/type.py
+package/std_stream_cloner/version.py
+package/std_stream_cloner.egg-info/PKG-INFO
+package/std_stream_cloner.egg-info/SOURCES.txt
+package/std_stream_cloner.egg-info/dependency_links.txt
+package/std_stream_cloner.egg-info/top_level.txt
+test/test.py
