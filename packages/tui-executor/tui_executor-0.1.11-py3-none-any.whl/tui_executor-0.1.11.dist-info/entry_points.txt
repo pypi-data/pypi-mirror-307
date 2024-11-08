@@ -1,0 +1,2 @@
+[console_scripts]
+tui-executor = tui_executor.__main__:main

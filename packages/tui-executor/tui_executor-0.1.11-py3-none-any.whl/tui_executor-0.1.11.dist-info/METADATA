@@ -1,0 +1,82 @@
+Metadata-Version: 2.3
+Name: tui-executor
+Version: 0.1.11
+Summary: Execute Python code in an automatically generated TUI App.
+Project-URL: documentation, https://rhuygen.github.io/tui-executor/
+Project-URL: repository, https://github.com/rhuygen/tui-executor
+Author-email: Rik Huygen <rik.huygen@kuleuven.be>
+License: MIT
+Keywords: TUI,execute,task
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Requires-Dist: distro
+Requires-Dist: executor
+Requires-Dist: ipykernel>=6.15
+Requires-Dist: ipython>=8
+Requires-Dist: jupyter-client>=8.6
+Requires-Dist: jupyter-console>=6.6
+Requires-Dist: jupyter-core>=5.7
+Requires-Dist: pyyaml
+Requires-Dist: rich>=13
+Requires-Dist: textual
+Provides-Extra: dev
+Requires-Dist: textual-dev; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: faker; extra == 'test'
+Requires-Dist: lorem-text; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-order; extra == 'test'
+Description-Content-Type: text/markdown
+
+
+# TUI Executor
+
+You ever wanted to execute your Python code from a simple TUI without the need to use a REPL or commandline? Look no further, use TUI Executor.
+
+
+## Installation
+
+Install this package in your virtual environment:
+
+```
+$ python3 -m pip install [--upgrade] tui-executor 
+```
+
+## Documentation
+
+You can find the documentation at https://rhuygen.github.io/tui-executor/.
+
+
+## Running the Demo
+
+You can run a demo of the app with the following command:
+
+```shell
+$ python3 -m tui_executor.demo
+```
+
+This will start the app with a number of tasks that demonstrate the capabilities of the `tui-executor` app.
+
+## Running the app with test tasks
+
+This assumes you have cloned the git repository and navigated to the project folder. There you should do a `pip install -e .` to have a working editable installation.
+
+From the project folder, run the following command to test the app's capabilities:
+
+```shell
+$ PYTHONPATH=tests tui-executor --module-path tasks.docs
+```
+
+You can add more module paths as argument to the above command. This will create additional TABs for each (sub-)package in that module path.
+
+```shell
+$ PYTHONPATH=tests tui-executor --module-path tasks.docs --module-path tasks.specific --module-path tasks.shared
+```
