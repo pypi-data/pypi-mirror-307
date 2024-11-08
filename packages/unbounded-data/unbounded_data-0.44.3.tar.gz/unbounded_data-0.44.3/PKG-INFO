@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: unbounded-data
+Version: 0.44.3
+Summary: The Unbounded Network Data Python interface
+Author: Unbounded Network
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gql (==3.4.0)
+Requires-Dist: numpy (==1.24.4)
+Requires-Dist: openpyxl (==3.1.2)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: pyarrow (==14.0.2)
+Requires-Dist: python-benedict (==0.25.2)
+Requires-Dist: requests (==2.31.0)
