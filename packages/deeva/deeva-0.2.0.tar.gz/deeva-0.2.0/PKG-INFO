@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: deeva
+Version: 0.2.0
+Summary: Object Detection Data Analysis Toolbox
+Home-page: https://github.com/vbyan/DEEVA
+Author: Vahram Babajanyan, Shahen Andranikyan, Narek Aristakesyan
+Author-email: vahram.babadjanyan@gmail.com
+Keywords: object-detection analysis visualization data
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: AUTHORS.txt
+Requires-Dist: kaleido>=0.2.1
+Requires-Dist: lxml>=5.2.2
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: opencv-python>=4.10.0.84
+Requires-Dist: packaging>=23.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pillow>=10.4.0
+Requires-Dist: pipenv>=2023.2.18
+Requires-Dist: plotly>=5.22.0
+Requires-Dist: scikit-learn>=1.5.1
+Requires-Dist: screeninfo>=0.8.1
+Requires-Dist: stqdm>=0.0.5
+Requires-Dist: streamlit==1.39.0
+Requires-Dist: streamlit-extras>=0.4.3
+Requires-Dist: streamlit-image-select>=0.6.0
+Requires-Dist: tables>=3.10.1
+Requires-Dist: toml>=0.10.2
+Requires-Dist: tqdm>=4.66.4
+Requires-Dist: pytest>=8.3.3
