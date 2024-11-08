@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: compressible-flow
+Version: 0.1.10
+Summary: Functions for working with compressible inviscid flow of gases
+License: MIT
+Author: itorre
+Author-email: iacopo.torre@upc.edu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: scipy (>=1,<2)
+Description-Content-Type: text/markdown
+
+# Compressible_flow
+Functions for working with compressible inviscid flow of gases.
+
+## Description
+This package provide a class for the most common function used in calculations of supersonic flow of an ideal gas, including adiabatic flow properties, normal shock wave properties, theta-beta-Mach relation, and Prandtl-Meyer function. 
+
+## Installation
+`pip install -i compressible-flow`
+
+## Usage
+Create an Ideal_Gas using the adiabatic ratio $\gamma$ and the effective gas constant $R_{specific}=R/M$ as parameters
+```python
+import compressible_flow as cf
+air = cf.Ideal_Gas(R=287, gamma=1.4)
+```
+Calculate the total temperature to temperature ratio T_0/T as a function of the Mach number
+```python
+air.T0T(M=1.5)
+```
+
+## Repository
+https://gitlab.com/itorre/compressible_flow
+
+## License
+This project is released under the MIT license.
