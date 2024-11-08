@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/simple_computervision/__init__.py
+src/simple_computervision/computervision.py
+src/simple_computervision/logger.py
+src/simple_computervision.egg-info/PKG-INFO
+src/simple_computervision.egg-info/SOURCES.txt
+src/simple_computervision.egg-info/dependency_links.txt
+src/simple_computervision.egg-info/requires.txt
+src/simple_computervision.egg-info/top_level.txt
