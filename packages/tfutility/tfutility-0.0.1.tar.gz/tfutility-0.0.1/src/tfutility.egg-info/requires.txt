@@ -1,0 +1,13 @@
+python-hcl2
+
+[dev]
+pre-commit
+sphinx-autobuild
+coverage
+pytest
+pytest-mock
+sphinx-argparse
+
+[docs]
+sphinx
+sphinx-rtd-theme
