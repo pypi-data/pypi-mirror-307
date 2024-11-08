@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "covalent-blueprints-ai"
+dynamic = ["version", "dependencies"]
+description = "A collection of AI blueprints for Covalent Cloud."
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [{name = "Agnostiq", email = "support@agnostiq.ai"}]
+maintainers = [
+    {name = "Ara Ghukasyan", email = "ara@agnostiq.ai"},
+    {name = "Sankalp Sanand", email = "sankalp@agnostiq.ai"},
+]
+readme = "README.md"
+keywords = ["covalent", "covalent-cloud", "ai", "blueprints", "agnostiq"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Adaptive Technologies",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+    "Topic :: Software Development",
+    "Topic :: System :: Distributed Computing",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/AgnostiqHQ/covalent-blueprints-ai"
+
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+dependencies = {file = "requirements.txt"}
+
+
+[tool.setuptools.packages.find]
