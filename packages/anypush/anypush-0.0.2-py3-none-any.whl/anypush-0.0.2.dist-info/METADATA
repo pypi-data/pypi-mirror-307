@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: anypush
+Version: 0.0.2
+Summary: A gymnasium environment for anypush.
+License: Apache-2.0
+Author: Jonghyeon Seon
+Author-email: jonghyeon.seon@holiday-robotics.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Build Tools
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: debugpy (>=1.8.1) ; extra == "dev"
+Requires-Dist: gymnasium (>=0.29.1)
+Requires-Dist: opencv-python (>=4.9.0)
+Requires-Dist: pre-commit (>=3.7.0) ; extra == "dev"
+Requires-Dist: pygame (>=2.5.2)
+Requires-Dist: pymunk (>=6.6.0)
+Requires-Dist: pytest (>=8.1.0) ; extra == "test"
+Requires-Dist: pytest-cov (>=5.0.0) ; extra == "test"
+Requires-Dist: scikit-image (>=0.22.0)
+Requires-Dist: shapely (>=2.0.3)
+Description-Content-Type: text/markdown
+
+## AnyPush
