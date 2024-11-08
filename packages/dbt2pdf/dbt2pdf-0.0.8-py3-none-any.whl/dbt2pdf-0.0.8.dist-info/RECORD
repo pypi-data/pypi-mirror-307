@@ -1,0 +1,15 @@
+dbt2pdf/__init__.py,sha256=bt1RBb_K5GuQqrUX9kr4y3yuPp9vik9uR2mkS0d3ZgQ,239
+dbt2pdf/__main__.py,sha256=L_ROO9-hr0vm2v2aXN9JntrhMhZyNcYS--wxsXD3HS4,99
+dbt2pdf/cli.py,sha256=wwcvWMc8-J3pMZay4-qXT7eZ5WjXKrSiGgLURQ0IXhU,6686
+dbt2pdf/font.py,sha256=I2_-YBsQjFQJW676QguNje-ZrV4a0DD9auLIgC1mGdQ,3012
+dbt2pdf/logger.py,sha256=i_4GIaH16nIBBXWTNv6wstuxMFpmfUzGN4vWGc4IbC0,128
+dbt2pdf/manifest.py,sha256=_5rcvwezcNHqpNaTG3mRXX8xbLogbJEATHQlJl74Cfc,1765
+dbt2pdf/pdf.py,sha256=eTR82k3N_Cwf0wH4Sx1O9VkZ1cs7o6CDvRu9wNhge1E,13824
+dbt2pdf/schemas.py,sha256=5h9N6GEkEo514cmedQBPYoVtAXwSAH9F7t8NNnLRaK4,887
+dbt2pdf/utils.py,sha256=ULDtz5GlZmnOoWvv0vzB_H5xYoXyl25kGjlSom-QIoE,184
+dbt2pdf/warnings.py,sha256=KAwLJAE9XdOOK8QXToZAvZR3GR1JpGrEdlQ5dzwzmzI,230
+dbt2pdf-0.0.8.dist-info/LICENSE,sha256=P-3alrGfUO1PVSBT6hjn7ztrSvmCVl5eWOdfy6V1GIY,1103
+dbt2pdf-0.0.8.dist-info/METADATA,sha256=8BkULQT4-lDtV9ZlPgNbaCB58Es4FSvlGy0jvnSfC_A,6523
+dbt2pdf-0.0.8.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dbt2pdf-0.0.8.dist-info/entry_points.txt,sha256=sMSg7xWk2saixoY_9K9dZ5X5bFso9iOnSOMUI0Hy0hY,43
+dbt2pdf-0.0.8.dist-info/RECORD,,
