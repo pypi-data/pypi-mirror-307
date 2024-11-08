@@ -1,0 +1,17 @@
+pyAnimals_ejh/__init__.py,sha256=iOaBuOectSEAg9uIROhQf-tjkgISPUTnqRG9_QP7jAg,63
+pyAnimals_ejh/pyAnimals_ejh.py,sha256=Z6jfmpQXu5Oo8nNJGcbKaO7uSHQtZEuhP1ZEvoGfhNo,7978
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_clear_screen.py,sha256=AeVDxBGMcYzevy3nN3CF2PwlQuVSG8dUG8lSyuhZIPk,772
+tests/test_get_animal.py,sha256=6oiXB0mB7vm1Y14Fj0UVBuDgLYWAIRt6-QEKO8rYDhw,2002
+tests/test_get_random_fact.py,sha256=A6g3gt5CIec2r_hahtXLSwthjJiE5Ko0bav-dDhgsCQ,1150
+tests/test_get_random_message.py,sha256=8lYKiSnxjK1fa0pisoxrhWQWwXUDAvfnuExXv_W6yC4,739
+tests/test_move.py,sha256=iDiGrLG1ryCSkWZHD0DnVJdq1fu49mA3rA2xw-3jm88,1426
+tests/test_printMessage.py,sha256=8lYKiSnxjK1fa0pisoxrhWQWwXUDAvfnuExXv_W6yC4,739
+tests/test_print_fact.py,sha256=9iVGP5IY2Sywu-7IHGw-3jxOaMPOV-BJYB8rv2Lmk8U,1116
+tests/test_race.py,sha256=Vijcs7nfW5E7mc4dJEdGlDG4EV1iO8jI-_3yq2I4hNE,4399
+tests/test_randMessage.py,sha256=7eXGJpAYJs_Vmr1jG72SmGGjLlNLcvz06KtESKQZD3M,1486
+pyAnimals_ejh-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyAnimals_ejh-0.2.1.dist-info/METADATA,sha256=1T3gr_j06VqGnMoxQaM7XPBiHs83IeAmET1bfqGq0Q0,2938
+pyAnimals_ejh-0.2.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+pyAnimals_ejh-0.2.1.dist-info/top_level.txt,sha256=gc2mw-zc4eJGeuE347hVQX1rH-ekA_qxLzPSq3dopCc,20
+pyAnimals_ejh-0.2.1.dist-info/RECORD,,
