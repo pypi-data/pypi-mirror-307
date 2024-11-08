@@ -1,0 +1,17 @@
+.vscode/
+__pycache__/
+.pytest-cache/
+env/
+
+documentation/
+
+dist/*
+*.egg-info
+.toml
+.env
+venv*
+*coverage*
+dist/
+build/
+example.*
+.idea/
