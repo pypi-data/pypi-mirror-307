@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: easy_overlay
+Version: 0.0.6
+Summary: Python Overlay
+Author: Needlesspage819
+Author-email: <example@example.com>
+Keywords: python,cheat,user_friendly,easy,windows,overlay
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pywin32
+
+Python overlay that uses pywin32 and ctypes to create an easy to use overlay
