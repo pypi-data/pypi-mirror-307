@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: assetbridge_sdk
+Version: 0.1.0
+Summary: Client sdk to interact with Asset Bridge
+Home-page: https://github.com/sentrylabs
+Author: Admin
+Author-email: admin@getassetbridge.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.29.0
+Requires-Dist: ecdsa>=0.18.0
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+Client sdk to interact with Asset Bridge. Uses ECDSA signature to ensure security.
