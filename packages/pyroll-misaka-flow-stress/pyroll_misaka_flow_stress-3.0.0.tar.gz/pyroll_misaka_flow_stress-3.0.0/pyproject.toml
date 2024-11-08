@@ -1,0 +1,33 @@
+[project]
+name = "pyroll-misaka-flow-stress"
+description = "Plugin for PyRolL providing the constitutive flow stress function from Y. Misaka."
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" }
+]
+license = "BSD-3-Clause"
+packages = [
+    { include = "pyroll/misaka_flow_stress" }
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 3.0",
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://pyroll-project.github.io"
+Repository = "https://github.com/pyroll-project/pyroll-misaka-flow-stress"
+Documentation = "https://github.com/pyroll-project/pyroll-misaka-flow-stress/blob/main/docs/docs.pdf"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
