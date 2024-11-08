@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: blacksheep_client_request
+Version: 0.0.2
+Summary: blacksheep request extension.
+Home-page: https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/blacksheep_client_request
+License: MIT
+Keywords: blacksheep,request
+Author: ChenyangGao
+Author-email: wosiwujm@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: blacksheep
+Requires-Dist: brotli
+Requires-Dist: http_response
+Requires-Dist: multidict
+Requires-Dist: python-argtools
+Requires-Dist: python-asynctools (>=0.0.4)
+Requires-Dist: python-filewrap
+Requires-Dist: zstandard
+Project-URL: Repository, https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/blacksheep_client_request
+Description-Content-Type: text/markdown
+
+# blacksheep request extension.
+
+## Installation
+
+You can install via [pypi](https://pypi.org/project/blacksheep_client_request/)
+
+```console
+pip install -U blacksheep_client_request
+```
+
+## Usage
+
+```python
+from blacksheep_client_request import request
+```
+
