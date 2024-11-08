@@ -1,0 +1,52 @@
+{% load static tailwind_tags version %}<!DOCTYPE html>
+<html lang="en">
+    <!-- version: {% version %} -->
+	<head>
+    <title>{% block title %}{{ site_title }}{% endblock %}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        {% tailwind_preload_css %}
+		{% tailwind_css %}
+	</head>
+
+	<body>
+        <div id="content">
+            <div class="flex pl-4 bg-slate-200">
+                <a href="/"><img src="{% static 'images/bugsink-logo.png' %}" class="p-2 h-12 w-12" alt="Bugsink logo"></a>
+                <a href="/"><div class="px-2 py-2 my-2 font-bold hover:bg-slate-300 rounded-xl">{{ site_title }}</div></a>
+
+                {% if not app_settings.SINGLE_TEAM %}
+                <a href="{% url "team_list" %}"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Teams</div></a>
+                {% endif %}
+
+                <a href="{% url "project_list" %}"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Projects</div></a>
+
+                {% if project %}
+                <a href="{% url "issue_list_open" project_pk=project.pk %}"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Issues ({{ project.name }})</div></a>
+                {% endif %}
+
+                <div class="ml-auto flex">
+                {% if app_settings.USE_ADMIN and user.is_staff %}
+                <a href="/admin/"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Admin</div></a>
+                {% endif %}
+
+                {% if user.is_superuser %}
+                <a href="/users/"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Users</div></a>
+                {% endif %}
+
+                {% if logged_in_user.is_anonymous %}
+                    <a href="/accounts/login/"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Login</div></a>  {# I don't think this is actually ever shown in practice, because you must always be logged in #}
+                {% else %}
+                    <a href="/accounts/preferences/"><div class="px-4 py-2 my-2 hover:bg-slate-300 rounded-xl">Preferences</div></a>
+                    <div class="px-4 py-2 my-2 mr-2 hover:bg-slate-300 rounded-xl"><form id="logout-form" method="post" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Log out</button></form></div>
+                {% endif %}
+                </div>
+            </div>
+            <div>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    {% block extra_js %}{% endblock %}
+    </body>
+</html>
