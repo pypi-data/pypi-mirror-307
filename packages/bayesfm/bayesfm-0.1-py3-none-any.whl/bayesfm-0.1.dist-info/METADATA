@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bayesfm
+Version: 0.1
+Summary: Bayesian Fama-MacBeth Regressions
+Author: Svetlana Bryzgalova, Jiantao Huang, Christian Julliard
+Maintainer: Gustavo Amarante
+Maintainer-email: developer@dsgepy.com
+Keywords: asset pricing,factor models,risk premia,bayesian methods
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+
+# bayesfm - Bayesian Fama-MacBeth
+
+Implementation of ["Bayesian Fama-MacBeth Regressions"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4989615)
+from Bryzgalova, Huang and Julliard (2024).
