@@ -1,0 +1,7 @@
+include *.md
+include LICENSE
+include setup.cfg
+recursive-include examples/cifar *.py
+recursive-include examples/cifar *.yaml
+exclude examples/cifar/outputs/**
+include Makefile
