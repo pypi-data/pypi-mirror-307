@@ -1,0 +1,2 @@
+[console_scripts]
+envelope-decrypt = dissect.hypervisor.tools.envelope:main
