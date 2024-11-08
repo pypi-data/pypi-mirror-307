@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+common_qml/__init__.py
+common_qml/_version.py
+common_qml/py.typed
+common_qml.egg-info/PKG-INFO
+common_qml.egg-info/SOURCES.txt
+common_qml.egg-info/dependency_links.txt
+common_qml.egg-info/requires.txt
+common_qml.egg-info/top_level.txt
+common_qml/qml/TestModule/TestElement.qml
+common_qml/qml/TestModule/qmldir
