@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% trans %}Edit bill style{% endtrans %}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="flex-align">
+    <form method="post">
+      <label for="bill_style">{% trans %}Bill style{% endtrans %}</label>
+      <textarea name="bill_style" id="bill_style" rows="30" maxlength="1500">{{ request.form['bill_style'] or g.user_pref.bill_style or "" }}</textarea>
+      <input type="submit" value="{% trans %}Save{% endtrans %}">
+      {{ csrf_token()|safe }}
+    </form>
+    <iframe class="bill" src="{{ url_for('bill.view_bill_template') }}">
+    </iframe>
+  </div>
+{% endblock %}
