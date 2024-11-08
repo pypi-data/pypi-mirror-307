@@ -1,0 +1,8 @@
+[plain.cli]
+contrib=plain.dev.contribute:cli
+dev=plain.dev:cli
+pre-commit=plain.dev.precommit:cli
+
+[plain.setup]
+dev-dotenv=plain.dev.entrypoints:load_dotenv_file
+
