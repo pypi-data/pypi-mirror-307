@@ -1,0 +1,6 @@
+click
+pydantic<3,>=2
+pyyaml
+sqlalchemy<3,>=2
+tabulate
+tqdm

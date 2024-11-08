@@ -1,0 +1,2 @@
+[console_scripts]
+compyre = sqlcompyre.cli.__main__:main
