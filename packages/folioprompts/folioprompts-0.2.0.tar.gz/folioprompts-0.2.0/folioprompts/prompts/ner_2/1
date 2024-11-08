@@ -1,0 +1,15 @@
+{% extends "ner/latest" %}
+
+{% block entities %}
+- Name
+- Organisation
+- Occupation
+- Date
+- Event
+- Currency Value 
+- Currency Units
+{% endblock %}
+
+{% block ensure_output_format %}
+Please ensure YAML format. Do not generate any markdown.
+{% endblock %}
