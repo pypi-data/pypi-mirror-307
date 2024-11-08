@@ -1,0 +1,2 @@
+[console_scripts]
+sbhelper = sbhelper.command_line:main
