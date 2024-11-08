@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: zmdictalchemy
+Version: 0.1.2.9
+Summary: Contains asdict and fromdict methods for SQL-Alchemy declarative models
+Home-page: http://github.com/dafu-wu/zmdictalchemy/
+Author: Dadu Wu
+Author-email: wucy4328@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Zmdictalchemy
+===========
+
+Zmdictalchemy adds asdict() and fromdict() methods to SQLAlchemy declarative models.
+
+Documentation
+-------------
+
+Documentation can be found at `http://pythonhosted.org/zmdictalchemy/ <http://pythonhosted.org/zmdictalchemy/>`_
+
+Source
+------
+
+The source is hosted at `http://github.com/dafu-wu/zmdictalchemy <http://github.com/dafu-wu/zmdictalchemy>`_.
+
+Licence
+-------
+
+Zmdictalchemy is MIT licenced.
+
+
