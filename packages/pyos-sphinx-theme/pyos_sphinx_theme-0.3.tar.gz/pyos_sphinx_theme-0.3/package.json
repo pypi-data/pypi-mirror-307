@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "sass src/pyos_sphinx_theme/assets/styles/pyos-sphinx-theme.scss src/pyos_sphinx_theme/theme/pyos_sphinx_theme/static/styles/pyos-sphinx-theme.css"
+  },
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
