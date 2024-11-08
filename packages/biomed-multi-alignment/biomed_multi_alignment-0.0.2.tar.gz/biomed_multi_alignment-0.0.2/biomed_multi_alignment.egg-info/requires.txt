@@ -1,0 +1,10 @@
+fuse-med-ml==0.4.0
+tensorflow>=2.17
+peft
+tabulate
+clearml
+hydra-core
+pytest
+
+[examples]
+PyTDC
