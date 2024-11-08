@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kapsula
+Version: 0.1.0
+Summary: Dead simple docs generator. Originally used at Metabob.com
+Author: ARJ
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# swoosh
+Dead simple docs generator.
+
+Have a clear view of the codebase without knowing any tooling
+
+```
+swoosh . # path to folder
+```
+
+Makes onboarding a breeze!
