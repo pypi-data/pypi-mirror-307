@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/trinkets/__init__.py
+src/trinkets/archive.py
+src/trinkets/calculate.py
+src/trinkets/notify.py
+src/trinkets/visualize.py
+src/trinkets.egg-info/PKG-INFO
+src/trinkets.egg-info/SOURCES.txt
+src/trinkets.egg-info/dependency_links.txt
+src/trinkets.egg-info/requires.txt
+src/trinkets.egg-info/top_level.txt
