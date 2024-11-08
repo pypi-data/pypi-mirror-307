@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: aws_administrator
+Version: 2.1.2
+Summary: Run AWS administrative scripts.
+Home-page: https://gitlab.com/fer1035_python/modules/pypi-aws_administrator
+License: GPL-2.0-only
+Keywords: aws,administrator,helper,scripts
+Author: Ahmad Ferdaus Abd Razak
+Author-email: fer1035@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aws_authenticator (>=2024.1.0.0,<2025.0.0.0)
+Requires-Dist: aws_crawler (>=1.2.4,<2.0.0)
+Requires-Dist: boto3 (>=1.16.0,<2.0.0)
+Requires-Dist: multithreader (>=1.0.4,<2.0.0)
+Project-URL: Repository, https://gitlab.com/fer1035_python/modules/pypi-aws_administrator
+Description-Content-Type: text/x-rst
+
+=====================
+**aws_administrator**
+=====================
+
+Overview
+--------
+
+Run AWS administrative scripts. Available scripts are in in the package's "scripts" directory: https://gitlab.com/fer1035_python/modules/pypi-aws_administrator/-/tree/main/src/aws_administrator/scripts (see each script's docstring for more information).
+
+Usage
+------
+
+Installation:
+
+.. code-block:: BASH
+
+    pip3 install aws_administrator
+    # or
+    python3 -m pip install aws_administrator
+
+Prerequisite steps:
+
+1. Copy the "parameters.ini" file: https://gitlab.com/fer1035_python/modules/pypi-aws_administrator/-/blob/main/src/aws_administrator/extras/parameters.ini to your current working directory.
+
+2. Update the file with the necessary values.
+
+Example (Python shell):
+
+.. code-block:: PYTHON
+
+    # Get AWS SSO Permission Set details from all accounts in an organization.
+
+    from aws_administrator.scripts import aws_sso_get
+    aws_sso_get.aws_sso_get()
+
+Notes
+-----
+
+These scripts arose from the needs of my work to migrate AWS SSO and security details from one organization to another. There's the long way of doing it, then there's the easy way (recommended). Both are covered by the scripts.
+
+In the process, I have decided to modularize and release them as a package of reusable functions. The functions are available in the package's "helpers" directory: https://gitlab.com/fer1035_python/modules/pypi-aws_administrator/-/tree/main/src/aws_administrator/helpers (as with the scripts, see each helper's docstring for more information). The parameters have also been abstracted so that the scripts themselves can be used with very few customizations, if any.
+
