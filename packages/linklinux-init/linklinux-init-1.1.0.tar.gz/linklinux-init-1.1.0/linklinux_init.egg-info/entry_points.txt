@@ -1,0 +1,3 @@
+[console_scripts]
+linklinux-init = linklinux_init.main:main
+
