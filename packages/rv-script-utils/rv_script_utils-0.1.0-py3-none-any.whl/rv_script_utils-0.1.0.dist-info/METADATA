@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: rv-script-utils
+Version: 0.1.0
+Summary: Utilities to help make scripts
+License: MIT License
+        
+        Copyright (c) 2024 rveachkc
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/rveachkc/rv-script-utils
+Keywords: script,logging,healthchecks.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.32.3
+Requires-Dist: structlog >=24.4.0
+
+# rv-script-utils
+
+Script utilities to add in structured logging and support for healthchecks.io.
+See example of use in hello.py and in the example below.
+
+```python
+from typing import Self
+
+from rv_script_lib import ScriptBase
+
+
+class HelloWorld(ScriptBase):
+
+    PARSER_ARGPARSE_KWARGS = {
+        "description": "Hello World",
+    }
+
+    def extraArgs(self: Self):
+
+        self.parser.add_argument(
+            "-m",
+            "--message",
+            type=str,
+            dest="message",
+            default="you forgot to add a message with -m/--message",
+            help="What do you want to say?",
+        )
+
+    def runJob(self: Self):
+
+        self.log.info("Hello from rv-script-utils!")
+
+        try:
+            raise RuntimeError("This is just a test")
+        except Exception as e:
+            self.log.exception(e)
+
+        self.log.warning("Warning, just for fun")
+
+        self.log.info(self.args.message)
+
+
+if __name__ == "__main__":
+
+    myscript = HelloWorld()
+    myscript.run()
+```
