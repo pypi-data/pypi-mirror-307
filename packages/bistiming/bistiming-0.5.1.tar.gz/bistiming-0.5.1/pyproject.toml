@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "bistiming"
+version = "0.5.1"
+description = "A logging-friendly stopwatch and profiling tool for Python."
+authors = ["Ian Lin <you@example.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/ianlini/bistiming"
+homepage = "https://bistiming.readthedocs.io"
+classifiers = [
+    'Topic :: Utilities',
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+six = "^1.12"
+tabulate = "^0.9"
+importlib-metadata = {version = "*", python = "<3.8"}
+
+[tool.poetry.dev-dependencies]
+pytest = { version = "^8.0", python = "^3.10" }
+flake8 = { version = "^7.0", python = "^3.10" }
+pep8-naming = { version = "^0.14", python = "^3.10"}
+flake8-import-order = { version = "^0.18.1", python = "^3.10"}
+flake8-bugbear = { version = "^24.0", python = "^3.10"}
+flake8-comprehensions = { version = "^3.2.3", python = "^3.10"}
+flake8-docstrings = { version = "^1.5.0", python = "^3.10"}
+flake8-logging-format = { version = "^2024.0", python = "^3.10"}
+flake8-return = { version = "^1.1.2", python = "^3.10"}
+flake8-black = { version = "^0.3", python = "^3.10"}
+tox = { version = "^4.0", python = "^3.10" }
+coverage = { version = "^7.0", python = "^3.10" }
+black = { version = "^24.0.0", python = "^3.10" }
+rstcheck = { version = "^6.0", python = "^3.10" }
+docutils = { version = "^0.21", python = "^3.10" }
+sphinx = { version = "^8.0", python = "^3.10"}
+sphinx-rtd-theme = { version = "^3.0", python = "^3.10"}
+
+[tool.black]
+target-version = ['py38']
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | \.svn
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
