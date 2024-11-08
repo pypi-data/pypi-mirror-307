@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/heterogeneity_index/__init__.py
+src/heterogeneity_index/components.py
+src/heterogeneity_index/normalization.py
+src/heterogeneity_index/py.typed
+src/heterogeneity_index/util.py
+src/heterogeneity_index.egg-info/PKG-INFO
+src/heterogeneity_index.egg-info/SOURCES.txt
+src/heterogeneity_index.egg-info/dependency_links.txt
+src/heterogeneity_index.egg-info/requires.txt
+src/heterogeneity_index.egg-info/top_level.txt
