@@ -1,0 +1,17 @@
+spacy_ewc/__init__.py,sha256=X2JEqVybF8gLVRHvsW4AuxdNfgT8pSp8VPLmMjh__fo,99
+spacy_ewc/ewc/__init__.py,sha256=Oh2MJJmLK86-gOj_XiD03EZWIOcmL0JjFE8WuRyPYu8,61
+spacy_ewc/ewc/ewc.py,sha256=trFe4D8O2kzxU8NoczUUxNUihznQ_9St4kUs_FZNiT0,20720
+spacy_ewc/ewc/vector_dict.py,sha256=hdhvcznPESmufsWr-Am5vJKkixa1IGnyKzWkEjq2mBw,2763
+spacy_ewc/ner_trainer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_ewc/ner_trainer/ewc_ner_trainer.py,sha256=90kXavUi4Ygz1UlrP8fBIqCfzxIvkm9vZ0Go8PibmbY,1736
+spacy_ewc/spacy_wrapper/__init__.py,sha256=qM6sJOSTtOVzBOcK-uH5B2aplcNsohEawVn99ZucOHs,96
+spacy_ewc/spacy_wrapper/ewc_spacy_wrapper.py,sha256=XzxNsoqRkJR39WDn2VYCl1XQei216hbS9_e6j9-dzCY,5442
+spacy_ewc/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_ewc/utils/extract_labels.py,sha256=FJVf3mlGv3e9IwhWHsBXqRuxBx1HOIlUMKBjjT35z7s,213
+spacy_ewc/utils/generate_spacy_entities.py,sha256=lr_Ut2RDYz13pHacVFyoHtbE62sBHJ4P7-OKTWL6Jc4,342
+spacy_ewc-0.1.1.dist-info/AUTHORS,sha256=YjOkhZ2aGAHOtQRsB-gFKwiyZ6kuQlPZydwcEFgSzyw,347
+spacy_ewc-0.1.1.dist-info/LICENSE,sha256=iaKyuoMrjUGffkNQ8VMu8aVd6ZsPBIjO7r2jmHqvdno,1073
+spacy_ewc-0.1.1.dist-info/METADATA,sha256=jj7_ExM-PErMGerDuvI-JUcghGsan6AW7SKvqwtulW0,21052
+spacy_ewc-0.1.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+spacy_ewc-0.1.1.dist-info/top_level.txt,sha256=3RhejS64T5a60hJ7coPpnd8HvYNv3ryUBq5SaMigKrU,10
+spacy_ewc-0.1.1.dist-info/RECORD,,
