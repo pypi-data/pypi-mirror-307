@@ -1,0 +1,196 @@
+[build-system]
+requires = [
+    "meson-python",
+    "numpy",
+    "transonic>=0.6.2",
+    "pythran>=0.9.7",
+]
+build-backend = 'mesonpy'
+
+[project]
+name = "fluidimage"
+version = "0.5.4"
+description = "Fluid image processing with Python."
+authors = [
+    {name = "Pierre Augier", email = "pierre.augier@legi.cnrs.fr"},
+]
+dependencies = [
+    "numpy >= 1.8",
+    "matplotlib >= 3.5",
+    "scipy >= 0.14.1",
+    "h5py",
+    "h5netcdf",
+    "transonic>=0.6.2",
+    "fluiddyn >=0.6.2",
+    "pyfftw >= 0.10.4",
+    "imageio",
+    "scikit-image >= 0.12.3",
+    "trio >=0.13",
+    "dask[array]",
+    "ipython",
+    "rich>=13.7.1",
+    "textual",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "CeCILL"}
+keywords = [
+    "PIV",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+homepage = "https://foss.heptapod.net/fluiddyn/fluidimage"
+documentation = "https://fluidimage.readthedocs.io"
+read-only-mirror = "https://github.com/fluiddyn/fluidimage"
+
+[project.scripts]
+fluidimlauncher = "fluidimage.gui.launcher.main:main"
+fluidimage-monitor = "fluidimage.gui.monitor:main"
+fluidimviewer = "fluidimage.gui.imviewer:main"
+fluidimviewer-pg = "fluidimage.gui.pg_main:main"
+fluidpivviewer = "fluidimage.gui.piv_viewer:main"
+fluidimage-mean = "fluidimage.topologies.mean:main"
+
+[project.optional-dependencies]
+pims = ["pims"]
+opencv = ["opencv-python"]
+graph = ["gprof2dot"]
+pytest = ["pytest", "pytest-asyncio"]
+all = ["fluidimage[pims, opencv, graph, pytest]"]
+# qt = ["PySide6"]
+
+[project.entry-points."fluidimage.executors"]
+exec_sequential = "fluidimage.executors.exec_sequential"
+exec_async = "fluidimage.executors.exec_async"
+exec_async_sequential =  "fluidimage.executors.exec_async_sequential"
+exec_async_seq_for_multi = "fluidimage.executors.exec_async_seq_for_multi"
+exec_seq_for_multi = "fluidimage.executors.exec_seq_for_multi"
+multi_exec_async =  "fluidimage.executors.multi_exec_async"
+multi_exec_sync =  "fluidimage.executors.multi_exec_sync"
+multi_exec_subproc = "fluidimage.executors.multi_exec_subproc"
+multi_exec_subproc_sync = "fluidimage.executors.multi_exec_subproc_sync"
+exec_async_multi =  "fluidimage.executors.exec_async_multiproc"
+exec_async_servers =  "fluidimage.executors.exec_async_servers"
+exec_async_servers_threading =  "fluidimage.executors.exec_async_servers_threading"
+
+
+[tool.pdm]
+distribution = true
+package-dir = "src"
+ignore_package_warnings = ["ipython"]
+
+[tool.pdm.dev-dependencies]
+
+# because meson-python editable build needs the build dependencies
+build = [
+    "meson-python",
+    "numpy",
+    "transonic>=0.6.2",
+    "pythran>=0.9.7",
+    "ninja",
+]
+doc = [
+    "sphinx",
+    "pydata-sphinx-theme",
+    "numpydoc",
+    "pandas",
+    "myst-nb",
+    "sphinx-copybutton",
+]
+dev-doc = [
+    "jupyterlab",
+    "jupyterlab-myst",
+    "jupytext",
+    # cannot lock with this (2024-07)
+    # "mdformat-myst"
+]
+test = [
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "pytest-asyncio",
+    "fluidimage"
+]
+# test-qt = ["pytest-qt"]
+
+dev = [
+    "pip",
+    "black",
+    "pylint",
+    "isort",
+    "ipdb>=0.13.13",
+    "textual-dev",
+    "pyinstrument",
+]
+
+[tool.pdm.scripts]
+black = "black src doc noxfile.py"
+isort = "isort --atomic --tc src bench doc/examples noxfile.py"
+black_check = "black --check src doc noxfile.py"
+lint = {shell="pylint -rn --rcfile=pylintrc --jobs=$(nproc) src --exit-zero"}
+validate_code = {composite = ["black_check", "lint"]}
+format = {composite = ["black", "isort"]}
+
+[tool.pdm.options]
+lock = ["-G", ":all"]
+sync = ["--no-isolation"]
+install = ["--no-isolation"]
+
+
+[tool.coverage.run]
+source = ["fluidimage"]
+data_file = ".coverage/coverage"
+omit = [
+    "**/__pythran__/*.py",
+    "**/__python__/*.py",
+    "**/__numba__/*.py",
+]
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "if __name__ == .__main__.:",
+    "if \"sphinx\" in sys.modules:",
+    "raise ValueError",
+    "raise NotImplementedError",
+    "raise ImportError",
+    "except KeyError:",
+    "except ImportError:",
+    "except AttributeError:",
+    "except NotImplementedError:",
+]
+
+[tool.coverage.html]
+directory = ".coverage"
+
+[tool.coverage.xml]
+output = ".coverage/coverage.xml"
+
+
+[tool.black]
+line-length = 82
+target-version = ["py39"]
+extend-exclude = "/(__pythran__|__python__|__numba__|build|doc/_build|\\.ipynb_checkpoints/*)/"
+
+
+[tool.isort]
+profile = "black"
+line_length = 82
+src_paths = ["src", "doc"]
+known_first_party = ["fluiddyn", "fluidimage"]
+
+
+[tool.pytest.ini_options]
+addopts = "--pdbcls=IPython.terminal.debugger:TerminalPdb"
