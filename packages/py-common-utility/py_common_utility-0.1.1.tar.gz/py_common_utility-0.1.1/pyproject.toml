@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "py-common-utility"
+version = "0.1.1"
+description = ""
+authors = ["kirin <kirin.chen1001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pathspec = "^0.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
