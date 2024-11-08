@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pydantic-sqlalchemy-filter
+Version: 0.0.3
+Summary: Implement simple API filter interface.
+Home-page: https://github.com/Deskent/pydantic_sqlalchemy_filter
+License: MIT
+Author: deskent
+Author-email: battenetciz@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.36,<3.0.0)
+Project-URL: Repository, https://github.com/Deskent/pydantic_sqlalchemy_filter
+Description-Content-Type: text/markdown
+
+### Stack:
+
+- [x] <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg" alt="python" width="15" height="15"/>
+  Python 3.11+ <br/></a>
+
+### Installation
+
+    pip install pydantic-sqlalchemy-filter
+
+### Usage
+
+    In progress...
+
