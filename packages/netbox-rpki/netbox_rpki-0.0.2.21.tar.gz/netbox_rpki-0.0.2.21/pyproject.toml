@@ -1,0 +1,67 @@
+# See PEP 518 for the spec of this file
+# https://www.python.org/dev/peps/pep-0518/
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+#[tool.pyright]
+#root = ["netbox_rpki"]
+#include = ["netbox_rpki",  "lib/netbox/*"]
+#exclude = ["**/node_modules", "**/__pycache__"]
+
+[tool.setuptools_scm]
+version_file = "netbox_rpki/_version.py"
+
+[tool.setuptools.packages.find]
+exclude = [".venv*", "tests*", "docs*", ".github*", ".gitignore", "external_sources"]
+
+[tool.black]
+line-length = 120
+target_version = ['py39', 'py310', 'py311', 'py312']
+
+[tool.setuptools.package-data]
+netbox_rpki = ["templates/**"]
+
+[project]
+name =  "netbox_rpki"
+dynamic = ["version"]
+authors = [
+    {name = "Mencken Davidson", email = "mencken@gmail.com"},
+]
+maintainers = [
+  {name = "Mencken Davidson", email = "mencken@gmail.com"}
+]
+license = {file = "LICENSE"}
+
+description = "NetBox plugin for BGP RPKI support."
+readme = "README.md"
+
+classifiers=[
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Natural Language :: English',
+    "Programming Language :: Python :: 3 :: Only",
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+dependencies = [ "build"]
+keywords = ["netbox", "plugin", "bgp", "rpki", "roa"]
+requires-python= ">=3.12"
+
+[project.urls]
+Documentation = "https://github.com/menckend/netbox_rpki/blob/main/README.md"
+Source = "https://github.com/menckend/netbox_rpki"
+Tracker = "https://github.com/menckend/netbox_rpki/issues"
+
+[project.optional-dependencies]
+test = [
+    "black==24.3.0",
+    "check-manifest==0.49",
+    "flake8",
+    "flake8-pyproject",
+    "pre-commit==3.7.0",
+    "pytest==8.1.1",
+]
