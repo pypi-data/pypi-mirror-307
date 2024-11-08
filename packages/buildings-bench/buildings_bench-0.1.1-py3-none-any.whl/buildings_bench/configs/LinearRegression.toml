@@ -1,0 +1,10 @@
+[model]
+context_len = 168
+pred_len = 24 
+continuous_loads = true
+
+[transfer_learning]
+ignore_scoring_rules = true
+lr = 1e-3
+max_epochs = 100
+apply_scaler_transform = 'boxcox'
