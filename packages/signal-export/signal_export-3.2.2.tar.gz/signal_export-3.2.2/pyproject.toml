@@ -1,0 +1,118 @@
+[tool.rye]
+managed = true
+generate-hashes = false
+dev-dependencies = [
+    "pyright",
+    "pytest",
+    "pytest-cov",
+    "types-Markdown",
+    "types-emoji",
+]
+
+[tool.rye.scripts]
+sig = "sigexport"
+fmt = "rye fmt"
+lint = "rye lint --fix"
+check = "pyright"
+test = "pytest"
+
+[tool.rye.scripts.all]
+chain = [
+    "fmt",
+    "lint",
+    "check",
+    "test",
+]
+
+[tool.pdm.build]
+includes = [
+    "sigexport/",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.ruff]
+target-version = "py39"
+exclude = [
+    "tests",
+]
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "E",
+    "I",
+    "U",
+    "N",
+    "E",
+    "S",
+    "T100",
+    "A",
+    "Q",
+    "ANN",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "sigexport",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+include = [
+    "sigexport",
+    "tests",
+]
+reportMissingImports = true
+reportMissingParameterType = true
+reportUnnecessaryTypeIgnoreComment = true
+reportDeprecated = true
+pythonVersion = "3.9"
+
+[project]
+name = "signal-export"
+description = "Export Signal conversations to Markdown and HTML"
+readme = "README.md"
+requires-python = ">= 3.9"
+keywords = [
+    "backup",
+    "chat",
+    "export",
+]
+authors = [
+    { name = "Chris Arderne", email = "chris@rdrn.me" },
+]
+dynamic = []
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "beautifulsoup4 ~= 4.11",
+    "emoji ~= 2.0",
+    "Markdown ~= 3.4",
+    "typer >= 0.12.1",
+    "pycryptodome ~= 3.20",
+    "sqlcipher3-wheels >= 0.5.2.post1",
+]
+version = "3.2.2"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+homepage = "https://github.com/carderne/signal-export"
+repository = "https://github.com/carderne/signal-export"
+
+[project.scripts]
+sigexport = "sigexport.main:cli"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
