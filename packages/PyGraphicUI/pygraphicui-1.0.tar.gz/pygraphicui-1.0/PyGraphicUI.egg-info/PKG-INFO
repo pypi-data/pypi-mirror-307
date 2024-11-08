@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PyGraphicUI
+Version: 1.0
+Author: oddshellnick
+Author-email: oddshellnick.programming@gmail.com
+Requires-Dist: setuptools
+Requires-Dist: PyQt6
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: mplfinance
+Requires-Dist: python-dateutil
