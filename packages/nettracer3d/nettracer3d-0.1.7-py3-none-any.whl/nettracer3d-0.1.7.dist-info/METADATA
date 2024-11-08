@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nettracer3d
+Version: 0.1.7
+Summary: Scripts for intializing and analyzing networks from segmentations of three dimensional images.
+Author-email: Liam McLaughlin <boom2449@gmail.com>
+Project-URL: User_Manual, https://drive.google.com/drive/folders/1fTkz3n4LN9_VxKRKC8lVQSlrz_wq0bVn?usp=drive_link
+Project-URL: Reference_Citation_For_Use, https://doi.org/10.1101/2024.07.29.605633
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: Pillow
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: opencv-python-headless
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: python-louvain
+Requires-Dist: tifffile
+Provides-Extra: cuda11
+Requires-Dist: cupy-cuda11x ; extra == 'cuda11'
+Provides-Extra: cuda12
+Requires-Dist: cupy-cuda12x ; extra == 'cuda12'
+Provides-Extra: cupy
+Requires-Dist: cupy ; extra == 'cupy'
+
+NetTracer3D is a python package developed for 3D analysis of microscopic images in the .tif file format, such as lightsheet images, although it can also be used for 2D analysis if the user converts the 2D .tif file into a 3D stack first by appending the image together twice. NetTracer3D does not function on images directly, but rather on binary/labelled segmentations of image signal, and general requires one segmentation to serve as objects in a network (nodes) and one segmentation to serve as a connective media (edges), although it is possible to make networks from only edges.
+
+Please see: https://drive.google.com/drive/folders/1fTkz3n4LN9_VxKRKC8lVQSlrz_wq0bVn?usp=drive_link
+for a user manual that provides documentation and detailed information.
+
+NetTracer3D is free to use/fork for academic/nonprofit use so long as citation is provided, and is available for commercial use at a fee (see license file for information).
+
+NetTracer3D was developed by Liam McLaughlin while working under Dr. Sanjay Jain at Washington University School of Medicine.
