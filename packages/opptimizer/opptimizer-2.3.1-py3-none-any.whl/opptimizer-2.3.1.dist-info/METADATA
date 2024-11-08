@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: opptimizer
+Version: 2.3.1
+Summary: Optimization of hyperparameters for Machine Learning (AI)
+Home-page: https://github.com/virtgen/opptimizer
+License: Apache Software License
+Author: Artur Bąk
+Author-email: virtgen@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.5,<4.0)
+Description-Content-Type: text/markdown
+
+# opPtimizer
+
+Optimization framework for AI.
+
+## Installation
+
+### Install Opptimizer from PyPI
+Appropriate for most use cases.
+
+```
+pip install opptimizer
+```
+
+### Advanced local installation 
+NOTE: only for custom standalone applications.
+Don't use this without a deep understanding of how the library works in local mode.
+
+**Installing locally (out of PyPI packages)**
+
+Linux
+
+```
+git clone https://github.com/virtgen/opptimizer.git
+cd opptimizer
+sudo ./install.sh linux
+```
+
+
+macOS
+
+
+```
+git clone https://github.com/virtgen/opptimizer.git
+cd opptimizer
+sudo ./install.sh mac
+```
+
+### Uninstalling
+
+Linux
+
+```
+./install linux remove
+```
+
+macOS
+
+```
+./install mac remove
+```
+
