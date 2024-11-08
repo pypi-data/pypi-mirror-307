@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/happtiq_commons_gen_ai/__init__.py
+src/happtiq_commons_gen_ai/chatgpt_api_service.py
+src/happtiq_commons_gen_ai/gemini_service.py
+src/happtiq_commons_gen_ai.egg-info/PKG-INFO
+src/happtiq_commons_gen_ai.egg-info/SOURCES.txt
+src/happtiq_commons_gen_ai.egg-info/dependency_links.txt
+src/happtiq_commons_gen_ai.egg-info/requires.txt
+src/happtiq_commons_gen_ai.egg-info/top_level.txt
+tests/happtiq_commons_gen_ai/chatgpt_service_test.py
+tests/happtiq_commons_gen_ai/gemini_service_test.py
