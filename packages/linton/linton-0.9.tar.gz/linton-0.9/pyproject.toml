@@ -1,0 +1,54 @@
+[project]
+name = "linton"
+version = "0.9"
+description = "Simple standalone static web site builder using Markdown"
+license = {text = "GPL v3 or later"}
+authors = [
+    {name = "Reuben Thomas", email = "rrt@sc3d.org"}
+]
+readme = "README.md"
+urls = {Homepage = "https://github.com/rrthomas/linton"}
+requires-python = ">= 3.9"
+dependencies = ["pyxdg"]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+linton = "linton.command.linton:linton"
+
+[build-system]
+requires = [
+    "setuptools >= 60; python_version >= \"3.12\"",
+]
+
+[tool.mypy]
+exclude = ['^dist', '^build', '^linton/init-pages']
+strict = true
+
+[tool.pylint.main]
+# Use multiple processes to speed up Pylint: 0 = auto-detect.
+jobs = 0
+
+[tool.pylint.MASTER]
+init-hook = 'import sys; sys.path.append(".")'
+
+[tool.pylint.format]
+const-naming-style = "any"
+good-names = "e,f,h,i,j,m,n,s,t,w,up"
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "no-member",
+    "fixme",
+    "global-statement",
+    "redefined-outer-name",
+    "too-many-locals",
+    "too-many-branches",
+    "too-many-positional-arguments",
+]
+enable = [
+    "useless-suppression",
+]
