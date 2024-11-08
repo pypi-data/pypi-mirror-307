@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pywui"
+version = "0.1.0"
+description = ""
+authors = ["Tsiresy Milà <tsiresymila@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+watchdog = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pywebview = "^5.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
