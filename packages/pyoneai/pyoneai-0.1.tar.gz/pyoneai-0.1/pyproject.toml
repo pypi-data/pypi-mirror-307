@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyoneai"
+version = "0.1"
+requires-python = ">=3.11"
+
+dependencies = [
+    'numpy >=1.26,<2',
+    'pandas >=2.1,<3',
+    'prometheus-api-client >=0.5',
+    'pydantic < 2.9',
+    'pyyaml >=6.0',
+    'statsmodels >=0.14.2'
+]
+
+authors = [
+    {name = "OpenNebula Systems", email = "contact@opennebula.io"}
+]
+maintainers = [
+    {name = "OpenNebula Systems", email = "contact@opennebula.io"}
+]
+description = "AI Ops framework for OpenNebula."
+readme = "./README.md"
+license = {file = "./LICENSE"}
+keywords = [
+    "AIOps",
+    "Cloud Computing",
+    "Machine Learning",
+    "Time seriers prediction",
+    "Anomaly detection"
+]
+
+classifiers=[
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+Repository = "https://github.com/OpenNebula/one-aiops"
+"Bug Tracker" = "https://github.com/OpenNebula/one-aiops/issues"
+
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "pytest",
+    "pytest-mock",
+]
+
+ml = [
+    "lightning>=2.2.5,<2.3.0",
+    'joblib >= 1.4.2',
+]
+
+[tool.isort]
+profile = "black"
+include_trailing_comma = true
+line_length = 79
+overwrite_in_place = true
+use_parentheses = true
+
+[tool.black]
+line_length = 79
+preview = true

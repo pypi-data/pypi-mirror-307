@@ -1,0 +1,16 @@
+numpy<2,>=1.26
+pandas<3,>=2.1
+prometheus-api-client>=0.5
+pydantic<2.9
+pyyaml>=6.0
+statsmodels>=0.14.2
+
+[dev]
+black
+isort
+pytest
+pytest-mock
+
+[ml]
+lightning<2.3.0,>=2.2.5
+joblib>=1.4.2
