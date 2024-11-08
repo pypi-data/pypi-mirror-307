@@ -1,0 +1,8 @@
+mpi4py >= 3.1, < 4.0.0
+cython >= 3.0.11
+numpy >= 1.26
+colorama >= 0.4.4
+pyvista >= 0.43.8
+scipy >= 1.13
+mgmetis >= 0.1.1
+nonRegressionTestTools >= 1.1.2
