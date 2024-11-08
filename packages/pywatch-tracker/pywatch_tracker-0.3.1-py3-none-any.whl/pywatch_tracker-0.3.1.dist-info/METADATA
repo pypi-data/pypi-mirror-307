@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pywatch-tracker
+Version: 0.3.1
+Summary: Coincidence Measurements with CosmicWatch detectors.
+Home-page: https://gitlab.uni-bonn.de/s6garemi/tracker_webapp
+Author: Gabriel Remiszewski
+Description-Content-Type: text/markdown
+Requires-Dist: eventlet~=0.36.1
+Requires-Dist: quart>=0.18.4
+Requires-Dist: pyserial>=3.5
+Requires-Dist: pyserial-asyncio>=0.6
+Requires-Dist: typing-extensions
+Requires-Dist: numpy>=1.24.4
+Requires-Dist: pandas>=2.0.3
+Requires-Dist: colour>=0.1.5
+
+# Pywatch Tracker 
+This Python Package is for making coincidence measurements 
+with the 
+<a href="http://www.cosmicwatch.lns.mit.edu/">CosmicWatch</a> 
+Detectors. The measurements can be done with as many detectors as can 
+be connected to the computer. 
+The measurement can also be displayed live in a three-dimensional visualisation 
+in the browser with any possible detector geometry.
+
+## Installation 
+Open the terminal and run the following command:
+```commandline
+pip install pywatch-tracker
+```
+which installs the `pywatch` package.
