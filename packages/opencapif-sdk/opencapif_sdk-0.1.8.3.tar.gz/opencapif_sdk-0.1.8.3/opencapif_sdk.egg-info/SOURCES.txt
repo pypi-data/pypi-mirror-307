@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+opencapif_sdk.egg-info/PKG-INFO
+opencapif_sdk.egg-info/SOURCES.txt
+opencapif_sdk.egg-info/dependency_links.txt
+opencapif_sdk.egg-info/requires.txt
+opencapif_sdk.egg-info/top_level.txt
+sdk/__init__.py
+sdk/api_schema_translator.py
+sdk/capif_invoker_connector.py
+sdk/capif_provider_connector.py
+sdk/sdk.py
+sdk/service_discoverer.py
+test/test.py
