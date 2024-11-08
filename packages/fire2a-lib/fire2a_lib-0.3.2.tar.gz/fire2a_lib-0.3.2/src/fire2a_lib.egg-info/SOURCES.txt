@@ -1,0 +1,52 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/fire2a/__init__.py
+src/fire2a/_version.py
+src/fire2a/adjacency.py
+src/fire2a/agglomerative_clustering.py
+src/fire2a/cell2fire.py
+src/fire2a/clustering.py
+src/fire2a/downstream_protection_value.py
+src/fire2a/managedata.py
+src/fire2a/meteo.py
+src/fire2a/processing_utils.py
+src/fire2a/raster.py
+src/fire2a/treatmentpreproccessing.py
+src/fire2a/utils.py
+src/fire2a/weathers.py
+src/fire2a/DB_DMC/Aerodromo Curacavi.csv
+src/fire2a/DB_DMC/Aerodromo Gral Bernardo Ohiggins.csv
+src/fire2a/DB_DMC/Aerodromo Maquehue.csv
+src/fire2a/DB_DMC/Aerodromo Rodelillo.csv
+src/fire2a/DB_DMC/Aerodromo Santo Domingo.csv
+src/fire2a/DB_DMC/Aerodromo Torquemada.csv
+src/fire2a/DB_DMC/Aeropuerto Araucania.csv
+src/fire2a/DB_DMC/Carriel Sur.csv
+src/fire2a/DB_DMC/Catapilco.csv
+src/fire2a/DB_DMC/Cerro San Francisco.csv
+src/fire2a/DB_DMC/Estaciones.csv
+src/fire2a/DB_DMC/Husares.csv
+src/fire2a/DB_DMC/Liceo Agricola El Huerton.csv
+src/fire2a/DB_DMC/Pudahuel.csv
+src/fire2a/DB_DMC/Quinta Normal.csv
+src/fire2a/DB_DMC/Regimiento Victoria.csv
+src/fire2a/DB_DMC/Termas de Chillan.csv
+src/fire2a/DB_DMC/Villarrica.csv
+src/fire2a_lib.egg-info/PKG-INFO
+src/fire2a_lib.egg-info/SOURCES.txt
+src/fire2a_lib.egg-info/dependency_links.txt
+src/fire2a_lib.egg-info/requires.txt
+src/fire2a_lib.egg-info/top_level.txt
+src/fire2template/__init__.py
+src/fire2template/documenting.py
+src/fire2template/template.py
+tests/test_agglomerative_clustering.py
+tests/test_fire2template_template.py
+tests/test_managedata.py
+tests/test_meteo.py
+tests/test_template.py
+tests/test_treatmentpreproccessing.py
+tests/test_utils.py
+tests/test_weathers.py
