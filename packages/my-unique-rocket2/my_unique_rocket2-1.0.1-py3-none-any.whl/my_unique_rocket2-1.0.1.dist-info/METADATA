@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: my_unique_rocket2
+Version: 1.0.1
+Summary: An awesome package that does something
+Home-page: http://pypi.python.org/pypi/rocket/
+Author: Chaib Fakhreddine
+Author-email: fakhreddin.fouzi@gmail.com
+License: LICENSE.txt
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# rocket
+
+`rocket` is a Python library for simulating basic rocket functionalities.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `rocket`.
+
+```bash
+pip install rocket
+
+from rocket import Rocket
+
+# Create a new Rocket instance
+my_rocket = Rocket()
+
+# Example of a method call (assuming a method like `launch` exists)
+# my_rocket.launch()
