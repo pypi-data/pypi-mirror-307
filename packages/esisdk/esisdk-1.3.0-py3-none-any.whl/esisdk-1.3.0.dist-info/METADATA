@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: esisdk
+Version: 1.3.0
+Summary: An SDK for building applications to work with ESI
+Home-page: https://esi.readthedocs.io/en/latest/
+Author: ESI
+Author-email: esi@lists.massopen.cloud
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pbr !=2.1.0,>=2.0.0
+Requires-Dist: PyYAML >=3.13
+Requires-Dist: appdirs >=1.3.0
+Requires-Dist: requestsexceptions >=1.2.0
+Requires-Dist: jsonpatch !=1.20,>=1.16
+Requires-Dist: os-service-types >=1.7.0
+Requires-Dist: keystoneauth1 >=3.18.0
+Requires-Dist: openstacksdk
+Requires-Dist: decorator >=4.4.1
+Requires-Dist: jmespath >=0.9.0
+Requires-Dist: iso8601 >=0.1.11
+Requires-Dist: netifaces >=0.10.4
+Requires-Dist: dogpile.cache >=0.6.5
+Requires-Dist: cryptography >=2.7
+Requires-Dist: importlib-metadata <5.0.0 ; (python_version<'3.8')
+
+# esisdk
+Unified SDK for ESI
+
+## Use the SDK in python scripts
+### Install ESI SDK:
+```
+python setup.py install
+```
+
+### Create a connection to ESI SDK
+
+There are several methods to establish a connection using the ESI SDK. Since the ***esi.connection.ESIConnection*** class inherits from ***openstack.connection.Connection***, [methods](https://docs.openstack.org/openstacksdk/latest/user/connection.html) applicable for creating connections in the OpenStack SDK can also be used with the ESI SDK. Below are some common ways to create an ESIConnection:
+
+**Create a connection using only keyword arguments**
+```
+from esi import connection
+
+conn = connection.ESIConnection(
+    region_name='example-region',
+    auth={
+        'auth_url': 'https://auth.example.com',
+        'username': 'user',
+        'password': 'password',
+        'project_name': 'project_name',
+        'user_domain_name': 'user_domain_name',
+        'project_domain_name': 'project_domain_name'
+    },
+    interface='public'
+)
+```
+**Create a connection from existing CloudRegion**
+```
+from esi import connection
+import openstack.config
+
+config = openstack.config.get_cloud_region(
+    cloud='example',
+    region_name='earth'
+)
+conn = connection.ESIConnectionn(config=config)
+```
+
+### Make API calls
+Detailed APIs can be found in the  `esi/lease/v1/_proxy.py` file. Below are simple examples demonstrating lease resource CRUD operations.
+```
+import esi
+import os
+
+TEST_CLOUD = os.getenv('OS_TEST_CLOUD', 'devstack-admin')
+conn = esi.connect(cloud=TEST_CLOUD)
+
+# Create a lease
+def lease_create(conn, resource_uuid, project_id, **kwargs):
+    lease = conn.lease.create_lease(resource_uuid=resource_uuid,
+                                    project_id=project_id,
+                                    **kwargs)
+
+# List leases
+def lease_list(conn, **kwargs):
+    leases = conn.lease.leases(**kwargs)
+
+# Update a lease
+def lease_update(conn, lease, **kwargs):
+    lease_dict = conn.lease.update_lease(lease, **kwargs)
+
+# Delete a lease
+def lease_delete(conn, lease_id):
+    leases = conn.lease.delete_lease(lease_id)
+
+```
+
