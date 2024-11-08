@@ -1,0 +1,42 @@
+* dataset tests
+   - [X] reduce_data
+   - [X] reduce_data_grouped
+   - [X] reduce_data_indexed
+   - [X] randsamp_freq
+   - [X] resample_data
+   - [X] jackknife_data
+   - [X] moments_type
+   - [X] cumulative
+   - [X] moments_to_comoments
+   - [X] select_momet
+   - [X] assign_moment
+   - [X] rolling_data
+   - [X] rolling_exp_data
+   - [X] reduce_vals
+   - [X] resample_vals
+   - [X] jackknife_vals
+   - [X] vals_to_data
+   - [X] rolling_vals
+   - [X] rolling_exp_vals
+
+
+* dask tests
+   - [X] reduce_data
+   - [X] reduce_data_grouped
+   - [X] reduce_data_indexed
+   - [ ] randsamp_freq
+   - [X] resample_data
+   - [X] jackknife_data
+   - [X] moments_type
+   - [X] cumulative
+   - [X] moments_to_comoments
+   - [X] select_momet
+   - [X] assign_moment
+   - [X] rolling_data
+   - [X] rolling_exp_data
+   - [X] reduce_vals
+   - [X] resample_vals
+   - [X] jackknife_vals
+   - [X] vals_to_data
+   - [X] rolling_vals
+   - [X] rolling_exp_vals
