@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qcvharmonizer
+Version: 0.1.4
+Summary: A package for harmonize oceanographic insitu data.
+Author-email: Clement Weber <clement.weber@pokapok.org>
+License: MIT
+Keywords: oceanography,harmonization,profiles,Argo,Glider
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: datetime
+Requires-Dist: cerbere
+Requires-Dist: cerberecontrib-marineinsitu
