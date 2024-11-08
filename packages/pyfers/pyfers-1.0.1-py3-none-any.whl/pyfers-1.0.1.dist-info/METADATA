@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyfers
+Version: 1.0.1
+Summary: XML generator for FERS
+Home-page: https://github.com/darrynjordan/FERS
+Author: Darryn Anton Jordan
+Author-email: <darrynjordan@icloud.com>
+License: UNKNOWN
+Keywords: radar,simulation,fers,uct
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# pyfers
+Python package that enables simple generation of XML descriptors required by FERS.
+
+## Install
+```
+pip3 install pyfers
+```
+
+## Examples
+```
+```
+
+
