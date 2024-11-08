@@ -1,0 +1,50 @@
+name: Test Codebase
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: 3.11
+
+jobs:
+
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Install hatch
+        run: pipx install hatch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: "Install Environment"
+        run: hatch env create
+
+      - name: "Run checks"
+        run: hatch run check
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Install hatch
+        run: pipx install hatch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: "Install Environment"
+        run: hatch env create
+
+      - name: "Test Codebase"
+        run: hatch run test
