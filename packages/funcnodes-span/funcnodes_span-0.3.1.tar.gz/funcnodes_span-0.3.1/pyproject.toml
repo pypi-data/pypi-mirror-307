@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "funcnodes-span"
+version = "0.3.1"
+description = "Spectral Peak ANalysis (SPAN) for funcnodes"
+authors = ["Kourosh Rezaei <kouroshrezaei90@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.urls]
+homepage  = "https://github.com/Linkdlab/funcnodes_span"
+source  = "https://github.com/Linkdlab/funcnodes_span"
+tracker  = "https://github.com/Linkdlab/funcnodes_span/issues"
+download = "https://pypi.org/project/funcnodes-span/#files"
+
+
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+scipy = "*"
+lmfit = "*"
+funcnodes = "*"
+funcnodes_numpy = "*"
+funcnodes_pandas = "*"
+funcnodes_plotly = "*"
+pybaselines = "*"
+funcnodes-lmfit = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+funcnodes-module = "^0.1.19"
+pooch = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."funcnodes.module"]
+module = "funcnodes_span"
+shelf = "funcnodes_span:NODE_SHELF"
