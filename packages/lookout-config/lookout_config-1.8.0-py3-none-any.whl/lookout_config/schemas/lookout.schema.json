@@ -1,0 +1,599 @@
+{
+  "$defs": {
+    "CameraExtended": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "title": "Order",
+          "type": "integer"
+        },
+        "elements": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Elements",
+          "type": "array"
+        },
+        "pixel_width": {
+          "title": "Pixel Width",
+          "type": "integer"
+        },
+        "pixel_height": {
+          "title": "Pixel Height",
+          "type": "integer"
+        },
+        "camera_frame_topic": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Camera Frame Topic"
+        },
+        "camera_info_topic": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Camera Info Topic"
+        },
+        "k_intrinsic": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "K Intrinsic"
+        },
+        "distortion_parameters": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Distortion Parameters"
+        },
+        "distortion_model": {
+          "default": "plumb_bob",
+          "title": "Distortion Model",
+          "type": "string"
+        },
+        "publish_camera_info": {
+          "default": true,
+          "title": "Publish Camera Info",
+          "type": "boolean"
+        },
+        "distortion_kmat_alpha": {
+          "default": 0.5,
+          "title": "Distortion Kmat Alpha",
+          "type": "number"
+        },
+        "offsets": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Offsets"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "type": {
+          "default": "color",
+          "title": "Type",
+          "type": "string"
+        },
+        "ros_throttle_time": {
+          "default": 1e-07,
+          "title": "Ros Throttle Time",
+          "type": "number"
+        },
+        "undistort_image": {
+          "default": false,
+          "title": "Undistort Image",
+          "type": "boolean"
+        },
+        "ptz": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PTZOnvif"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ignore_regions": {
+          "items": {
+            "$ref": "#/$defs/Polygon"
+          },
+          "title": "Ignore Regions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "order",
+        "elements",
+        "pixel_width",
+        "pixel_height",
+        "camera_frame_topic",
+        "camera_info_topic"
+      ],
+      "title": "CameraExtended",
+      "type": "object"
+    },
+    "GeolocationMode": {
+      "enum": [
+        "none",
+        "relative_bearing",
+        "absolute_bearing",
+        "range_bearing"
+      ],
+      "title": "GeolocationMode",
+      "type": "string"
+    },
+    "LogLevel": {
+      "enum": [
+        "info",
+        "debug"
+      ],
+      "title": "LogLevel",
+      "type": "string"
+    },
+    "Mode": {
+      "enum": [
+        "simulator",
+        "hardware",
+        "stubs",
+        "rosbag"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "Network": {
+      "enum": [
+        "shared",
+        "host"
+      ],
+      "title": "Network",
+      "type": "string"
+    },
+    "Offsets": {
+      "properties": {
+        "roll": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Roll"
+        },
+        "pitch": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pitch"
+        },
+        "yaw": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Yaw"
+        },
+        "forward": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Forward"
+        },
+        "left": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Left"
+        },
+        "up": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Up"
+        }
+      },
+      "title": "Offsets",
+      "type": "object"
+    },
+    "PTZComponent": {
+      "properties": {
+        "move_type": {
+          "enum": [
+            "pan",
+            "tilt",
+            "zoom"
+          ],
+          "title": "Move Type",
+          "type": "string"
+        },
+        "home": {
+          "title": "Home",
+          "type": "number"
+        },
+        "joint_offsets": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Offsets"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "joint_limits": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PTZLimits"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "joystick_axis_index": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Joystick Axis Index"
+        },
+        "reverse_joystick_input": {
+          "default": false,
+          "title": "Reverse Joystick Input",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "move_type",
+        "home"
+      ],
+      "title": "PTZComponent",
+      "type": "object"
+    },
+    "PTZControlSettings": {
+      "properties": {
+        "absolute_move_tolerance": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 0.0175,
+          "title": "Absolute Move Tolerance"
+        },
+        "query_timeout": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 2,
+          "title": "Query Timeout"
+        },
+        "check_camera_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 1.0,
+          "title": "Check Camera Rate"
+        },
+        "publish_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 10.0,
+          "title": "Publish Rate"
+        },
+        "wsdl_dir": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": "/home/ros/.local/lib/python3.12/site-packages/wsdl",
+          "title": "Wsdl Dir"
+        },
+        "continuous_state_publishing": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": true,
+          "title": "Continuous State Publishing"
+        },
+        "frd_to_flu_transform": {
+          "default": true,
+          "title": "Frd To Flu Transform",
+          "type": "boolean"
+        }
+      },
+      "title": "PTZControlSettings",
+      "type": "object"
+    },
+    "PTZLimits": {
+      "properties": {
+        "min": {
+          "title": "Min",
+          "type": "number"
+        },
+        "max": {
+          "title": "Max",
+          "type": "number"
+        }
+      },
+      "required": [
+        "min",
+        "max"
+      ],
+      "title": "PTZLimits",
+      "type": "object"
+    },
+    "PTZOnvif": {
+      "properties": {
+        "ip_address": {
+          "title": "Ip Address",
+          "type": "string"
+        },
+        "port": {
+          "title": "Port",
+          "type": "integer"
+        },
+        "username": {
+          "title": "Username",
+          "type": "string"
+        },
+        "password": {
+          "title": "Password",
+          "type": "string"
+        },
+        "ptz_components": {
+          "items": {
+            "$ref": "#/$defs/PTZComponent"
+          },
+          "title": "Ptz Components",
+          "type": "array"
+        },
+        "settings": {
+          "$ref": "#/$defs/PTZControlSettings",
+          "default": {
+            "absolute_move_tolerance": 0.0175,
+            "query_timeout": 2,
+            "check_camera_rate": 1.0,
+            "publish_rate": 10.0,
+            "wsdl_dir": "/home/ros/.local/lib/python3.12/site-packages/wsdl",
+            "continuous_state_publishing": true,
+            "frd_to_flu_transform": true
+          }
+        }
+      },
+      "required": [
+        "ip_address",
+        "port",
+        "username",
+        "password",
+        "ptz_components"
+      ],
+      "title": "PTZOnvif",
+      "type": "object"
+    },
+    "Point": {
+      "properties": {
+        "x": {
+          "title": "X",
+          "type": "integer"
+        },
+        "y": {
+          "title": "Y",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Point",
+      "type": "object"
+    },
+    "Polygon": {
+      "properties": {
+        "points": {
+          "items": {
+            "$ref": "#/$defs/Point"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "Polygon",
+      "type": "object"
+    },
+    "PositioningSystem": {
+      "enum": [
+        "none",
+        "septentrio_ins",
+        "advanced_navigation_ins",
+        "nmea_2000_sat_compass",
+        "nmea_2000_compass",
+        "nmea_0183_sat_compass",
+        "nmea_0183_compass"
+      ],
+      "title": "PositioningSystem",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "ros_domain_id": {
+      "default": 0,
+      "title": "Ros Domain Id",
+      "type": "integer"
+    },
+    "static_peers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Static Peers",
+      "type": "array"
+    },
+    "namespace_vessel": {
+      "default": "vessel_1",
+      "title": "Namespace Vessel",
+      "type": "string"
+    },
+    "gama_vessel": {
+      "default": false,
+      "title": "Gama Vessel",
+      "type": "boolean"
+    },
+    "mode": {
+      "$ref": "#/$defs/Mode",
+      "default": "hardware"
+    },
+    "log_level": {
+      "$ref": "#/$defs/LogLevel",
+      "default": "info"
+    },
+    "cameras": {
+      "items": {
+        "$ref": "#/$defs/CameraExtended"
+      },
+      "title": "Cameras",
+      "type": "array"
+    },
+    "network": {
+      "$ref": "#/$defs/Network",
+      "default": "host"
+    },
+    "gpu": {
+      "default": true,
+      "title": "Gpu",
+      "type": "boolean"
+    },
+    "geolocation_mode": {
+      "$ref": "#/$defs/GeolocationMode",
+      "default": "none"
+    },
+    "positioning_system": {
+      "$ref": "#/$defs/PositioningSystem",
+      "default": "none"
+    },
+    "components": {
+      "title": "Components"
+    },
+    "prod": {
+      "default": true,
+      "title": "Prod",
+      "type": "boolean"
+    },
+    "log_directory": {
+      "default": "~/greenroom/lookout/logs",
+      "title": "Log Directory",
+      "type": "string"
+    },
+    "recording_directory": {
+      "default": "~/greenroom/lookout/recordings",
+      "title": "Recording Directory",
+      "type": "string"
+    }
+  },
+  "title": "LookoutConfig",
+  "type": "object"
+}
