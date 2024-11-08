@@ -1,0 +1,30 @@
+[project]
+name = "winzy-text-to-image"
+version = "0.3"
+description = "Generate text to image using pollinations.ai api"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-text-to-image"
+Changelog = "https://github.com/sukhbinder/winzy-text-to-image/releases"
+Issues = "https://github.com/sukhbinder/winzy-text-to-image/issues"
+CI = "https://github.com/sukhbinder/winzy-text-to-image/actions"
+
+[project.entry-points."winzy.plugins"]
+txt2img = "winzy_text_to_image:txt2img_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

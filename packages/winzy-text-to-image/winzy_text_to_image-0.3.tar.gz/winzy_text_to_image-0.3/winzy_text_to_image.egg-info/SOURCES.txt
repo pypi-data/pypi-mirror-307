@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_text_to_image.py
+winzy_text_to_image/__init__.py
+winzy_text_to_image.egg-info/PKG-INFO
+winzy_text_to_image.egg-info/SOURCES.txt
+winzy_text_to_image.egg-info/dependency_links.txt
+winzy_text_to_image.egg-info/entry_points.txt
+winzy_text_to_image.egg-info/requires.txt
+winzy_text_to_image.egg-info/top_level.txt
