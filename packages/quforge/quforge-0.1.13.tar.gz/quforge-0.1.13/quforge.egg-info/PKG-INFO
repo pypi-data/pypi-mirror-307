@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: quforge
+Version: 0.1.13
+Summary: QuForge: a library for qudit simulation
+Home-page: https://github.com/tiago939/quforge
+Author: Tiago de Souza Farias
+Author-email: tiago.farias@ufscar.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![QuForge Logo](https://github.com/tiago939/QuForge/blob/main/logo.png)
+
+# QuForge v0.1.13
+Quantum simulator of qudits
+
+You can check the documentation (WIP) at [quforge.readthedocs.io](https://quforge.readthedocs.io).
+
+# Installation
+
+```bash
+pip install quforge
+```
+
+We are continuously working on optimizing the library.
+Please reach us if you have any suggestion or question!
+
+
+## BibTeX
+
+```
+@misc{2024quforge,
+      title={QuForge: A Library for Qudits Simulation},
+      author={Tiago de Souza Farias and Lucas Friedrich and Jonas Maziero},
+      year={2024},
+      eprint={2409.17716},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2409.17716},
+}
+```
+
+
