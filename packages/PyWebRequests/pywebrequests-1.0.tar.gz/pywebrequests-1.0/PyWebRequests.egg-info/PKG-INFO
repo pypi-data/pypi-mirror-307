@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: PyWebRequests
+Version: 1.0
+Author: oddshellnick
+Author-email: oddshellnick.programming@gmail.com
+Requires-Dist: setuptools
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: bs4
