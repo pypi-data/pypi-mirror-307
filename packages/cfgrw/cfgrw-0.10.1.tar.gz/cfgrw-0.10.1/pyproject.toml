@@ -1,0 +1,52 @@
+[build-system]
+requires = [ "poetry-core" ]
+build-backend = "poetry.core.masonry.api"
+
+[installer]
+no-binary = [ ":none:" ]
+
+[tool.poetry]
+name = "cfgrw"
+version = "0.10.1"
+description = "Python library for reading and writing properties in configuration files"
+license = "Apache-2.0"
+authors = [ "Cliffano Subagio <cliffano@gmail.com>" ]
+readme = "README.md"
+homepage = "https://github.com/cliffano/cfg-rw"
+repository = "https://github.com/cliffano/cfg-rw"
+documentation = "https://github.com/cliffano/cfg-rw"
+keywords = [ "cfgrw", "configuration" ]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent"
+]
+
+  [[tool.poetry.packages]]
+  include = "cfgrw"
+
+  [tool.poetry.scripts]
+  cfgrw = "cfgrw:cli"
+
+  [tool.poetry.dependencies]
+  python = "^3.10"
+  click = "^8.1.7"
+  Jinja2 = "^3.1.2"
+  PyYAML = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+twine = "^5.1.1"
+wheel = "^0.44.0"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.6.4"
+numpy = "1.26.4"
+pylint = "^3.3.1"
+pytest = "^8.3.3"
+wily = "^1.25.0"
+
+[tool.poetry.group.doc.dependencies]
+pylint-report = "^2.4.0"
+pytest-html = "^4.1.1"
+Sphinx = "^8.1.3"
