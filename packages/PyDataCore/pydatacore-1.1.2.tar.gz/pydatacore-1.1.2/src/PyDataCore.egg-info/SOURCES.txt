@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/PyDataCore/__init__.py
+src/PyDataCore/data.py
+src/PyDataCore/datapool.py
+src/PyDataCore.egg-info/PKG-INFO
+src/PyDataCore.egg-info/SOURCES.txt
+src/PyDataCore.egg-info/dependency_links.txt
+src/PyDataCore.egg-info/requires.txt
+src/PyDataCore.egg-info/top_level.txt
+tests/test_Data.py
+tests/test_FFTs.py
+tests/test_datapool.py
+tests/test_freq_limit_data.py
+tests/test_specific_chunk.py
+tests/test_temporal_data.py
