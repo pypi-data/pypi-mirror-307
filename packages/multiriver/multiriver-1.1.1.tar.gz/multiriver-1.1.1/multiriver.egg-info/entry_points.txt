@@ -1,0 +1,2 @@
+[console_scripts]
+multiriver = bulk_river_creation.main:main
