@@ -1,0 +1,15 @@
+appdirs
+pydot
+pyyaml
+chardet
+diff_match_patch
+
+[:platform_system == "Windows"]
+windows-curses
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
