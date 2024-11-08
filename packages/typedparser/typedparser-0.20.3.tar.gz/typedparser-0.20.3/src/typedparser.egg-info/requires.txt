@@ -1,0 +1,8 @@
+attrs
+
+[:python_version < "3.8"]
+importlib_metadata
+typing_extensions
+
+[full]
+numpy
