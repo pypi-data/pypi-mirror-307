@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/gforien/python-template.git",
+  "commit": "cb8d22c0907592043e5350bc7477a33d2353e472",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "gforien",
+      "email": "gforien+dev@gmail.com",
+      "github_user": "gforien",
+      "project_name": "gfp",
+      "repo_name": "gfp",
+      "package_name": "gfp",
+      "import_name": "gfp",
+      "project_short_description": "Python CLI for gforien.",
+      "url": "https://github.com/gforien/gfp",
+      "_debug": "False",
+      "_extensions": [
+        "extensions.git_extension.GitExtension"
+      ],
+      "_copy_without_render": [
+        "docs/_templates/license_compliance.rst.j2",
+        "jreleaser.yml"
+      ],
+      "_template": "https://github.com/gforien/python-template.git"
+    }
+  },
+  "directory": null
+}

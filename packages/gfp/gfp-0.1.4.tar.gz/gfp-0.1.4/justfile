@@ -1,0 +1,23 @@
+default: dev run
+
+dev:
+  pip install -e .[dev]
+
+run:
+  python -m gfp
+
+test:
+  tox -e test
+
+docs:
+  tox -e docs
+
+build: test
+  tox -e build
+  twine check dist/*
+
+test-release: build
+  TWINE_PASSWORD="$(op read op://Token/test.pypi.org/password)" twine upload -r testpypi dist/*
+
+release: build
+  TWINE_PASSWORD="$(op read op://Token/pypi.org/password)" twine upload dist/*
