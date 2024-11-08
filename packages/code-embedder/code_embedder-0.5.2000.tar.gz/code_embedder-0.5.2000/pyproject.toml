@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "code-embedder"
+version = "v0.5.2000"
+description = "Embed python code from script to markdown"
+authors = ["Katerina Vankova <katerinavankova1@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "src"}]
+
+[tool.poetry.scripts]
+code-embedder = "src.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+mypy = "^1.12.1"
+pre-commit = "^4.0.1"
+pytest = "^8.3.3"
+ruff = "^0.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 95
+lint.select = ["E", "F", "I", "BLE", "UP", "FA"]
+target-version = "py311"
