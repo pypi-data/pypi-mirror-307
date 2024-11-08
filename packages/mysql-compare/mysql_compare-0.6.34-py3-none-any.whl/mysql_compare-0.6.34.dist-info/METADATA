@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mysql-compare
+Version: 0.6.34
+Requires-Python: >=3.10
+Requires-Dist: mysql-connector-python ==9.0.0
+
