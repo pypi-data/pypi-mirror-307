@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dac-ycl"
+version = "0.1.6"
+description = "hy ycl testing dependencies"
+authors = ["Li xin <xin.li@zhan-wan.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10.1"
+pandas = "*"
+numpy = "*"
+plotly = "*"
+pymysql = "*"
+scipy = "*"
+openpyxl = "*"
+redis = "*"
+
+[[tool.poetry.source]]
+name = "aliyun-source"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+#[[tool.poetry.source]]
+#name = "default"
+#url = "https://pypi.org/"
+
+[[tool.poetry.source]]
+name = "internal"
+url = "http://10.168.2.92:7104/root/pypi/+simple/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
