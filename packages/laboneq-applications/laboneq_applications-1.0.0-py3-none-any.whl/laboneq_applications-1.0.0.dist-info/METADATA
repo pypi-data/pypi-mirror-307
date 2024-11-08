@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: laboneq_applications
+Version: 1.0.0
+Summary: Library of LabOne Q experiments, analysis functions, and more.
+Author-email: Zurich Instruments Development Team <info@zhinst.com>
+License: Apache 2.0
+Keywords: quantum,sdk,zhinst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Requires-Dist: uncertainties==3.2.2
+Requires-Dist: laboneq~=2.41.0
+Requires-Dist: numpy~=1.26.3
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: lmfit
+Requires-Dist: scikit-learn~=1.5.2
+
