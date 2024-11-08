@@ -1,0 +1,3 @@
+[console_scripts]
+sansmic = sansmic.app:run
+sansmic-convert = sansmic.app:convert
