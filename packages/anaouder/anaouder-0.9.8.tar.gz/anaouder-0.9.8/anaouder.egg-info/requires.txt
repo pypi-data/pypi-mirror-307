@@ -1,0 +1,9 @@
+static-ffmpeg
+sounddevice
+vosk
+srt
+jiwer
+pydub>=0.25.1
+pytz
+tqdm==4.64.1
+certifi
