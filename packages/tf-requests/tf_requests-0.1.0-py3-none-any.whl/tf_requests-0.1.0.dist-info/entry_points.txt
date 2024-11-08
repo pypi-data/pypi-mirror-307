@@ -1,0 +1,4 @@
+[console_scripts]
+get-auto-compose=tf_requests.get_auto_compose:main
+tf-requests=tf_requests.tf_requests:main
+
