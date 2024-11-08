@@ -1,0 +1,33 @@
+start_urls:
+  - https://jsonplaceholder.typicode.com/todos/1
+
+allowed_domains:
+  - typicode.com
+
+extract:
+  - page:
+      page_type: feed
+      url_patterns:
+        - https://jsonplaceholder.typicode.com/todos/
+      item_rules:
+        userid: re{re.findall('userId":\s(\d+)', response.text)[0]}
+        id: re{re.findall('id":\s(\d+)', response.text)[0]}
+        title: re{re.findall('title\":\s"(.*)\"', response.text)[0]}
+        completed: re{re.findall('completed":\s(.*)', response.text)[0]}
+      code_file: json.py
+      code: "
+      for result in results: \n
+          \t print(result['userid'])\n
+      process(response, results, next_page_url)\n
+      "
+
+settings: # replace default settings  https://docs.scrapy.org/en/latest/topics/settings.html
+  USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  LOG_LEVEL: INFO
+  DOWNLOAD_DELAY: 1
+#  PROXIES: # add by dig-spider
+#    - http://1
+#    - http://2
+  DEFAULT_REQUEST_HEADERS:
+    Accept": text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en

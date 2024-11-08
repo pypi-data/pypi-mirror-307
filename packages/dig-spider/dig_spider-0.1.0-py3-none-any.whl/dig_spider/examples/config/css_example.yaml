@@ -1,0 +1,57 @@
+start_urls:
+  - https://allsharktankproducts.com/
+
+allowed_domains:
+  - allsharktankproducts.com
+
+
+extract:
+  - page:
+      page_type: seed_page
+      url_patterns:
+        - https://allsharktankproducts.com/$
+      list_rule: css{#menu-main-product-filters-menu-1>li:first-child .sub-menu li a}
+      item_rules:
+        url: css{a::attr(href)}
+        name: css{a::text}
+      link_params: #https://docs.scrapy.org/en/latest/topics/link-extractors.html
+        restrict_css: #menu-main-product-filters-menu-1>li:first-child .sub-menu li a
+
+  - page:
+      page_type: list_page
+      url_patterns:
+        - https://allsharktankproducts.com/sharktankproducts/season-\d+-products/
+      list_rule: css{div#tdi_15>div}
+      next_page_rule: css{div.page-nav span.current + a::attr(href)}
+      item_rules:
+        url: css{div.td-module-meta-info h3 a::attr(href)}
+        title: css{div.td-module-meta-info a::text}
+        content: css{div.td-excerpt::text}
+        date: css{span.td-post-date time::text}
+        img: css{div.td-module-thumb a span::attr(style)}.re('url\\((.*)\\)')
+
+  - page:
+      page_type: detail_page
+      url_patterns:
+        - https://allsharktankproducts.com/shark-tank-
+        - https://allsharktankproducts.com/pet-care/
+        - https://allsharktankproducts.com/apps/
+        - https://allsharktankproducts.com/service/
+      item_rules:
+        title: css{h1.tdb-title-text::text}
+        category: css{div.tdb-category a.tdb-entry-category::text}
+        session: css{ul.tdb-tags li a::text}
+        content: css{div.tdb_single_content div.tdb-block-inner}.to_markdown()
+
+
+
+settings: # replace default settings  https://docs.scrapy.org/en/latest/topics/settings.html
+  USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  LOG_LEVEL: INFO
+  DOWNLOAD_DELAY: 1
+#  PROXIES: # add by dig-spider
+#    - http://1
+#    - http://2
+  DEFAULT_REQUEST_HEADERS:
+    Accept": text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en
