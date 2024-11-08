@@ -1,0 +1,35 @@
+[project]
+name = "tilores-langchain"
+version = "0.1.0"
+authors = [
+  { name="Lukas Rieder", email="lukas@parlant.co" },
+  { name="Stefan Berkner", email="stefan.berkner@tilores.io" },
+]
+description = "This package contains tools to work with Tilores entity resolution database within Langchain."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["entity-resolution", "tilores", "graph-raq", "identity-raq", "langchain", "langchain-tool"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "tilores-sdk>=0.3.0",
+]
+[project.optional-dependencies]
+all = ["tilores-langchain[langchain]"]
+langchain = ["langchain", "openai"]
+test = [
+  "pytest==8.3.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/tilotech/tilores-langchain"
+Issues = "https://github.com/tilotech/tilores-langchain/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
