@@ -1,0 +1,8 @@
+eventlet~=0.36.1
+quart>=0.18.4
+pyserial>=3.5
+pyserial-asyncio>=0.6
+typing_extensions
+numpy>=1.24.4
+pandas>=2.0.3
+colour>=0.1.5
