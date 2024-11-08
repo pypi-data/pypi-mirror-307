@@ -1,0 +1,6 @@
+<video width="320" height="240" controls
+       alt="{{g.get_label(this.identifier)}}">
+  <source src="url_for('this.view', uri=this.identifier)}}"
+          type="{{this.value(ns.ov.hasContentType)}}">
+  Your browser does not support the video tag.
+</video>

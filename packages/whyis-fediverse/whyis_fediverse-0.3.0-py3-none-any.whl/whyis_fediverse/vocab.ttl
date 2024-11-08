@@ -1,0 +1,93 @@
+@prefix : <http://vocab.rpi.edu/whyis/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix auth: <http://vocab.tw.rpi.edu/auth/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix flaskld: <http://vocab.rpi.edu/flaskld/> .
+@prefix whyis: <http://vocab.rpi.edu/whyis/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sdd: <http://purl.org/twc/sdd/> .
+@prefix mediatype: <https://www.iana.org/assignments/media-types/>.
+
+@prefix as: <https://www.w3.org/ns/activitystreams#>.
+
+whyis:discussion dc:identifier "discussion";
+  rdfs:subPropertyOf whyis:hasView.
+
+whyis:comments dc:identifier "comments";
+  rdfs:subPropertyOf whyis:hasView.
+
+whyis:hasData dc:identifier "data";
+  rdfs:subPropertyOf whyis:hasView.
+
+whyis:hasReplies dc:identifier "replies";
+  rdfs:subPropertyOf whyis:hasView.
+
+rdfs:Resource
+  whyis:hasEmbed "whyis_fediverse:embed_resource.html";
+  whyis:comments "whyis_fediverse:discussion.json";
+  whyis:discussion "whyis_fediverse:discussion.html".
+
+whyis:HomePage
+  whyis:discussion "whyis_fediverse:all_discussion.html";
+  whyis:comments "whyis_fediverse:all_discussion.json".
+
+whyis:hasEmbed dc:identifier "embed";
+  rdfs:subPropertyOf whyis:hasView.
+
+
+
+as:Object a owl:Class;
+  whyis:hasView "whyis_fediverse:object_view.html";
+  whyis:hasData "whyis_fediverse:object_data.json";
+  whyis:hasReplies "whyis_fediverse:object_replies.json";
+  whyis:hasEmbed "whyis_fediverse:embed_object.html";
+  rdfs:subClassOf rdfs:Resource.
+
+as:Article a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Audio a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Document a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Event a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Image a owl:Class;
+  whyis:hasEmbed "whyis_fediverse:embed_image.html";
+  rdfs:subClassOf as:Object.
+
+as:Note a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Page a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Place a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Profile a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Relationship a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Tombstone a owl:Class;
+  rdfs:subClassOf as:Object.
+
+as:Video a owl:Class;
+  whyis:hasEmbed "whyis_fediverse:embed_video.html";
+  rdfs:subClassOf as:Object.

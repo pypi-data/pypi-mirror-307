@@ -1,0 +1,26 @@
+{% extends "base_vue.html" %}
+{% from "elements/upload.html" import vue_upload_button_tab_modal %}
+{% from "_macros.html" import render_resource_link, render_rdfa_resource_link, get_label, facts_panel, summary_panel, content %}
+{% block title %}{% endblock %}
+{% block styles %}
+<style>
+.hover {
+    filter: drop-shadow(gray 0 0 0.5rem);
+}
+.selected {
+    filter: drop-shadow(blue 0 0 0.5rem);
+}
+</style>
+{% endblock %}
+{% block scripts %}
+    <script type="module" src="{{url_for('static',filename='plugins/fediverse/js/post_view.js')}}"></script>
+{% endblock %}
+{% block content %}
+<md-card-content>
+  <div class="md-layout md-gutter">
+    <div class="md-layout-item">
+      <fedi-post-view object="{{this.identifier}}"></fedi-post-view>
+    </div>
+  </div>
+</md-card-content>  
+{% endblock %}

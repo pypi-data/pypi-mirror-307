@@ -1,0 +1,31 @@
+{% set context_query = '
+PREFIX astr: <https://www.w3.org/ns/activitystreams#>
+
+select distinct ?object where {
+    values ?type {
+        astr:Object
+        astr:Article
+        astr:Audio
+        astr:Document
+        astr:Event
+        astr:Image
+        astr:Note
+        astr:Page
+        astr:Place
+        astr:Profile
+        astr:Relationship
+        astr:Tombstone
+        astr:Video
+    }
+    ?object a ?type;
+        astr:published ?published.
+    
+    minus { ?object astr:inReplyTo []}
+} order by desc (?published) ' -%}
+[
+    {% for row in context_query | query(limit=args.get('limit', 100),
+					offset=args.get('offset',0)) -%}
+    {{row['object'] | include('data') | safe }}{% if not loop.last %}, {% endif %}
+    {%- endfor %}
+]
+

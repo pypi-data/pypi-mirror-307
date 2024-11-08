@@ -1,0 +1,115 @@
+## Metamodeling prefixes (models that describe models):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# The Knowledge Graph Map Ontology (KGMO) is a novel way to note relationships
+# observationally and inductively and without triggering OWL semantics.
+# Publication venue and date TBD.
+@prefix kgmo: <http://purl.org/twc/kgmo/>.
+
+## Whyis support prefixes:
+@prefix np: <http://www.nanopub.org/nschema#>.
+@prefix whyis: <http://vocab.rpi.edu/whyis/> .
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix mediatype: <https://www.iana.org/assignments/media-types/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+# For pv:File:
+@prefix pv: <http://purl.org/net/provenance/ns#>.
+# For ov:hasContentType:
+@prefix ov: <http://open.vocab.org/terms/> .
+
+## Media-specifc prefixes:
+# Note that ActivityStreams supercedes schema.org when available.
+# properties for the as: namespace are recorded here:
+# https://www.w3.org/TR/activitystreams-vocabulary
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix schema: <http://schema.org/> .
+
+## Domain prefixes:
+# Wikidata is for instances and classes:
+@prefix wd: <http://www.wikidata.org/entity/> .
+# SIO is for relationships between instances:
+@prefix sio: <htttp://semanticscience.org/resource/>.
+
+## ARCLIGHT-specific prefixes:
+@prefix file: <http://purl.org/arclight/file/> .
+@prefix user: <http://purl.org/whyis/local/user/> .
+@prefix action: <http://purl.org/arclight/action/> .
+@prefix entity: <http://purl.org/arclight/entity/> .
+@prefix tool: <http://purl.org/arclight/tool/> .
+@prefix image: <http://purl.org/arclight/image/> .
+@prefix exif: <http://purl.org/arclight/exif/> .
+
+# Ontology terms for things like models and activities.
+@prefix ao: <http://purl.org/arclight/ontology/> .
+
+# Nanopublication URIs live here:
+@prefix pub: <http://purl.org/whyis/local/pub/> .
+
+
+pub:test1 {
+  pub:test1 a np:Nanopublication;
+    np:hasAssertion pub:test1_assertion;
+    np:hasProvenance pub:test1_provenance;
+    np:hasPublicationInfo pub:test1_pubinfo.
+
+  pub:test1_assertion a np:Assertion.
+  pub:test1_provenance a np:Provenance.
+  pub:test1_pubinfo a np:PublicationInfo.
+}
+
+pub:test1_assertion {
+
+}
+
+pub:test1_pubinfo {
+
+  pub:test1 a as:Note.
+
+  pub:test1 as:content "Hello, World!!".
+
+  pub:test1
+      as:attributedTo user:mccusj2;
+      as:published "2023-10-30-21T12:34:56Z"^^xsd:dateTime.
+
+
+  # Note that this would actually be recorded in a user profile,
+  # we don't need to repeat any of this in individual pubs.
+  user:mccusj2 a as:Person ;
+      as:name "Jamie McCusker"  .
+}
+
+pub:test2 {
+  pub:test2 a np:Nanopublication;
+    np:hasAssertion pub:test2_assertion;
+    np:hasProvenance pub:test2_provenance;
+    np:hasPublicationInfo pub:test2_pubinfo.
+
+  pub:test2_assertion a np:Assertion.
+  pub:test2_provenance a np:Provenance.
+  pub:test2_pubinfo a np:PublicationInfo.
+}
+
+pub:test2_assertion {
+
+}
+
+pub:test2_pubinfo {
+
+  pub:test2 a as:Note.
+
+  pub:test2 as:content "And another thing!".
+
+  pub:test2
+      as:attributedTo user:mccusj2;
+      as:published "2024-06-30-21T12:34:56Z"^^xsd:dateTime.
+
+
+  # Note that this would actually be recorded in a user profile,
+  # we don't need to repeat any of this in individual pubs.
+  user:mccusj2 a as:Person ;
+      as:name "Jamie McCusker"  .
+}

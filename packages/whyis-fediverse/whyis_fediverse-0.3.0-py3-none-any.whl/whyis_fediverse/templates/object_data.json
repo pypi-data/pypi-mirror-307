@@ -1,0 +1,82 @@
+{% macro object(element, context=False) %}
+{
+    {%- if context %}"@context" : "https://www.w3.org/ns/activitystreams",{% endif %}
+    "type" : [
+	{%- for t in element[app.NS.RDF.type] -%}
+	"{{t.identifier.replace(app.NS.astr,'')}}"{% if not loop.last %}, {% endif %}
+	{%- endfor -%}
+    ],
+    {%- if element.value(app.NS.astr.attributedTo) %}
+    "attributedTo" : {{object(element.value(app.NS.astr.attributedTo))}},
+    {%- endif %}
+    {%- if element.value(app.NS.astr.to) %}
+    "to" : [
+	{% for o in element[app.NS.astr.to] -%}
+	  {{object(o)}}{% if not loop.last %}, {% endif %}
+	{%- endfor %}
+    ],
+    {%- endif %}
+    {%- if element.value(app.NS.astr.attachment) %}
+    "attachment" : [
+	{% for o in element[app.NS.astr.attachment] -%}
+	  {{object(o)}}{% if not loop.last %}, {% endif %}
+	{%- endfor %}
+    ],
+    {%- endif %}
+    {%- if element.value(app.NS.astr.context) %}
+    "context" : [
+	{% for o in element[app.NS.astr.context] -%}
+	  {{object(o)}}{% if not loop.last %}, {% endif %}
+	{%- endfor %}
+    ],
+    {%- endif %}
+    "replies" : [
+    {% for o in app.db.subjects(app.NS.astr.inReplyTo, element.identifier) -%}
+        "{{o}}"{% if not loop.last %}, {% endif %}
+    {%- endfor %}
+    ],
+    {% for o in app.db.subjects(app.NS.astr.object, element.identifier) -%}
+    {% if not loop.first %}"reactions" : [{%endif%}
+	{{object(app.db.resource(o))}}{% if not loop.last %}, {% endif %}
+    {% if not loop.first %}],{% endif %}
+    {%- endfor %}
+    {%- if element.value(app.NS.astr.content) %}
+    "content" : {{element.value(app.NS.astr.content).value|markdown|tojson |safe}},
+    {%- endif %}
+    {%- if element.value(app.NS.astr.summary) %}
+    "summary" : "{{element.value(app.NS.astr.summary).value }}",
+    {%- endif %}
+    {%- if element.value(ns.whyis.hasFileID) %}
+    "url" : "{{url_for('entity.view',uri=element.identifier)}}",
+    {%- else %}
+    "url" : "{{element.identifier }}",
+    {%- endif %}
+    "view" : "{{url_for('entity.view', view='view', uri=element.identifier)}}",
+    "embed" : {{ element.identifier | include('embed') |tojson| safe }},
+    {%- if element.value(app.NS.astr.actor) %}
+    "actor" : "{{element.value(app.NS.astr.actor).identifier }}",
+    {%- endif %}
+    {%- if element.value(app.NS.astr.object) %}
+    "object" : "{{element.value(app.NS.astr.object).identifier }}",
+    {%- endif %}
+    {%- if element.value(app.NS.astr.inReplyTo) %}
+    "inReplyTo" : "{{element.value(app.NS.astr.inReplyTo).identifier }}",
+    {%- endif %}
+    {%- if element.value(app.NS.astr.mediaType) %}
+    "mediaType" : "{{element.value(app.NS.astr.mediaType).value }}",
+    {%- endif %}
+    {%- if element.value(app.NS.astr.published) %}
+    "published" : "{{element.value(app.NS.astr.published).value }}",
+    {%- endif %}
+    {%- if element.value(app.NS.astr.name) %}
+    "name" : "{{element.value(app.NS.astr.name).value }}",
+    {%- endif %}
+    "typing" : [
+        {% for o in app.celery.backend.client.hkeys(element.identifier.toPython()) -%}
+        {{object(app.db.resource(rdflib.URIRef(o.decode('utf8'))))}}{% if not loop.last %}, {% endif %}
+        {%- endfor %}
+    ],
+    "id" : "{{element.identifier}}"
+}
+{%- endmacro -%}
+{{object(this, True)}}

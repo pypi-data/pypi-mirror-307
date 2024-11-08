@@ -1,0 +1,27 @@
+import {Vue, axios, createApp} from '../../../dist/whyis.js';
+export default Vue.component('selector', {
+    name: "selector",
+    props:{
+    },
+    data: {
+        selection: {
+            "selected" : []
+        }
+    },
+    provide() {
+        return {
+            selection: this.selection ,
+        }
+    },
+    template: `
+    <div><slot></slot></div>
+    `,
+    watch: {
+    },
+    components: {
+    },
+    computed: {
+    },
+    methods: {
+    },
+})
