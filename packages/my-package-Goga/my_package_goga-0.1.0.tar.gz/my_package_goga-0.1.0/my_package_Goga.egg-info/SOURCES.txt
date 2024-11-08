@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+my_Package/__init__.py
+my_Package/module1.py
+my_package_Goga.egg-info/PKG-INFO
+my_package_Goga.egg-info/SOURCES.txt
+my_package_Goga.egg-info/dependency_links.txt
+my_package_Goga.egg-info/top_level.txt
