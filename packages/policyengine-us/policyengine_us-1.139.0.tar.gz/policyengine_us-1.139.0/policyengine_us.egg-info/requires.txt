@@ -1,0 +1,10 @@
+policyengine-core>=3.10.0
+policyengine-us-data==1.11.1
+microdf-python>=0.4.3
+tqdm
+
+[dev]
+setuptools
+jupyter-book
+furo
+coverage
