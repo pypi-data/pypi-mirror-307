@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_banner.py
+winzy_banner/__init__.py
+winzy_banner.egg-info/PKG-INFO
+winzy_banner.egg-info/SOURCES.txt
+winzy_banner.egg-info/dependency_links.txt
+winzy_banner.egg-info/entry_points.txt
+winzy_banner.egg-info/requires.txt
+winzy_banner.egg-info/top_level.txt
