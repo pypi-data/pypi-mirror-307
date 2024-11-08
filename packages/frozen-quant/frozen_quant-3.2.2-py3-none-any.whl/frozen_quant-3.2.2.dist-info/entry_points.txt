@@ -1,0 +1,3 @@
+[console_scripts]
+drun = frozen.database.dataflow:run
+frun = frozen.workflow:run
