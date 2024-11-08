@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "llm-multiple-choice"
+version = "0.1.1"
+description = "A Python library for using Large Language Models (LLMs) to fill out multiple-choice questionnaires about chat conversations."
+authors = ["Dean Thompson <deansherthompson@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "llm_multiple_choice" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+mypy = "^1.5.1"
+pre-commit = "^3.3.3"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/deansher/llm-multiple-choice"
+"Documentation" = "https://github.com/deansher/llm-multiple-choice#readme"
+"Bug Tracker" = "https://github.com/deansher/llm-multiple-choice/issues"
+"Source Code" = "https://github.com/deansher/llm-multiple-choice"
