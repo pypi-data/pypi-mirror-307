@@ -1,0 +1,22 @@
+1. Open terminal
+    ssh-keygen
+2. Press Enter when asked for file location
+
+3. In another system open terminsl and type 
+    ip addr
+    or ip ad
+
+4. Open terminal and type 'hostname'
+    example hostname: pglab
+
+5. Type: ssh-copy-id pglab@10.17.126.26 (Chnage Ip and hostname)
+6. Type: ssh pglab@10.17.126.26
+7. Open folder and create script.sh
+    echo "Hello, World!"
+    # Show the username of the person running the script
+    echo "You are logged in as: $USER"
+    echo "Files in the current directory:"
+    ls -la
+
+8. Type: chmod +x script.sh
+9. type: ssh pglab@10.17.126.26 'bash -s' < script.sh
