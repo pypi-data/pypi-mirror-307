@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: decodanda
+Version: 0.7.2
+Summary: Geometric decoding of neural data with built-in best practices.
+Home-page: https://github.com/lposani/decodanda
+Author: Lorenzo Posani
+Author-email: lorenzo.posani@gmail.com
+Keywords: python,decoding,neuroscience,ccgp,neural activity,population activity,neural decoding,geometry
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: LICENSE.md
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: numpy>=1.20.1
+Requires-Dist: pandas>=1.4.0
+Requires-Dist: scikit_learn>=0.24.1
+Requires-Dist: scipy>=1.6.1
+Requires-Dist: seaborn>=0.11.1
+Requires-Dist: tqdm>=4.58.0
+Requires-Dist: h5py>=3.10.0
+
+Decodanda (dog latin for "to be decoded") is a best-practices-made-easy Python package for decoding neural data. Decodanda is designed to expose a user-friendly and flexible interface for population activity decoding, with a series of built-in best practices to avoid the most common pitfalls. In addition, Decodanda exposes a series of functions to compute the Cross-Condition Generalization Performance (CCGP, Bernardi et al. 2020) for the geometrical analysis of neural population activity.
