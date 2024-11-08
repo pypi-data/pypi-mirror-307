@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jadugar
+Version: 1.8
+Summary: Jadugar is a fun project for experimentation with Python packages, read more at project links below
+Author: random
+Project-URL: Documentation, https://pypi.org/project/jadugar/
+Description-Content-Type: text/markdown
+
+for installing this module used 
+```bash
+pip install jadugar
+
+```
+after installing, for using this module within any python recognize file use following code
+```python
+from file.file2 import read_file, export_file, remote_read, remote_export, all_files
+
+data = read_file("File.txt") #read file from module folder
+
+remote_data= remote_read("docker.txt") #read file from remote storage
+
+all_files() #list all files in module folder
+
+export_file("File.txt") #export file to current directory
+
+remote_export("docker.txt") #export file to current direct from remote storage 
+
+```
+
+
+here text files present in module folder can only be accessed and external files accessing is currently not supported.
+
+Future Direction, 
+1) Accessing file from Cloud Storage
+2) Dynamically add text files on cloud storage with help of module
+3) Interact with GenAI like Chatgpt, Cluade and Gemini.
+
+## This Module is made for educational purpose only, any misuse of this module is not recommended. If used for means of any malpractices by user then it can not be associated with developer/ Owner of this module, the user is responsible only.
