@@ -1,0 +1,166 @@
+# Experiment configuration file.
+#
+# There are two special blocks. The 'seml' block is required for every experiment.
+# It has to contain the following values:
+# executable:        Name of the Python script containing the experiment. The path should be relative to the `project_root_dir`.
+#                    For backward compatibility SEML also supports paths relative to the location of the config file.
+#                    In case there are files present both relative to the project root and the config file,
+#                    the former takes precedence.
+# It can optionally also contain the following values:
+# name:              Prefix for output file and Slurm job name. Default: Collection name
+# output_dir:        Directory to store log files in. Default: Current directory
+# conda_environment: Specifies which Anaconda virtual environment will be activated before the experiment is executed.
+#                    Default: The environment used when queuing.
+# project_root_dir:  (Relative or absolute) path to the root of the project. seml will then upload all the source
+#                    files imported by the experiment to the MongoDB. Moreover, the uploaded source files will be
+#                    downloaded before starting an experiment, so any changes to the source files in the project
+#                    between queueing and starting the experiment will have no effect.
+#
+# The special 'slurm' block contains the slurm parameters. This block and all values are optional. Possible values are:
+# experiments_per_job:   Number of parallel experiments to run in each Slurm job.
+#                        Note that only experiments from the same batch share a job. Default: 1
+# max_simultaneous_jobs: Maximum number of simultaneously running Slurm jobs per job array. Default: No restriction
+# sbatch_options:        dictionary that contains custom values that will be passed to `sbatch`, specifying e.g.
+#                        the memory and number of GPUs to be allocated (prepended dashes are not required). See
+#                        https://slurm.schedmd.com/sbatch.html for all possible options.
+#
+# Parameters under 'fixed' will be used for all the experiments.
+#
+# Under 'grid' you can define parameters that should be sampled from a regular grid. Options are:
+#   - choice:     List the different values you want to evaluate under 'choices' as in the example below.
+#   - range:      Specify the min, max, and step. Parameter values will be generated using np.arange(min, max, step).
+#   - uniform:    Specify the min, max, and num. Parameter values will be generated using
+#                 np.linspace(min, max, num, endpoint=True)
+#   - loguniform: Specify min, max, and num. Parameter values will be uniformly generated in log space (base 10).
+# Additionally, one may supply the 'zip_id' argument to zip multiple parameters to a single dimension.
+# This causes these parameters to only change jointly. All parameters within a group must have the same number of options.
+#
+#
+# Under 'random' you can specify parameters for which you want to try several random values. Specify the number
+# of samples per parameter with the 'samples' value as in the examples below.
+# Specify the the seed under the 'random' dict or directly for the desired parameter(s).
+# Supported parameter types are:
+#   - choice:      Randomly samples <samples> entries (with replacement) from the list in parameter['options']
+#   - uniform:     Uniformly samples between 'min' and 'max' as specified in the parameter dict.
+#   - loguniform:  Uniformly samples in log space between 'min' and 'max' as specified in the parameter dict.
+#   - randint:     Randomly samples integers between 'min' (included) and 'max' (excluded).
+#
+# The configuration file can be nested (as the example below) so that we can run different parameter sets
+# e.g. for different datasets or models.
+# We take the cartesian product of all `grid` parameters on a path and sample all random parameters on the path.
+# The number of random parameters sampled will be max{n_samples} of all n_samples on the path. This is done because
+# we need the same number of samples from all random parameters in a configuration.
+#
+# More specific settings (i.e., further down the hierarchy) always overwrite more general ones.
+
+seml:
+  executable: advanced_example_experiment.py
+  name: advanced_example_experiment
+  output_dir: logs
+  project_root_dir: .
+  description: "An advanced example configuration. We can also use variable interpolation here: ${config.model.model_type}"
+
+slurm:
+  - experiments_per_job: 1
+    max_simultaneous_jobs: 4 # Restrict number of simultaneously running jobs per job array
+    sbatch_options:
+      gres: gpu:1 # num GPUs
+      mem: 16G # memory
+      cpus-per-task: 2 # num cores
+      time: 0-08:00 # max time, D-HH:MM
+      partition: gpu_gtx1080 # use the 1080ti partition
+  # We can also increase the number of jobs if we run on A100s
+  - experiments_per_job: 4
+    max_simultaneous_jobs: 4 # Restrict number of simultaneously running jobs per job array
+    sbatch_options:
+      gres: gpu:1 # num GPUs
+      mem: 16G # memory
+      cpus-per-task: 8 # num cores
+      time: 0-08:00 # max time, D-HH:MM
+      partition: gpu_a100 # Use A100
+
+###### BEGIN PARAMETER CONFIGURATION ######
+
+fixed:
+  training.patience: 20
+  training.num_epochs: 100
+  optimization:
+    optimizer_type: Adam
+  +batchnorm.priority: 2
+
+grid:
+  # SEML supports dot-notation for nested parameter dictionaries. E.g., `model.model_type` resolves to
+  # {'model': {'model_type': xxx}}
+  model.model_type:
+    type: choice
+    options:
+      - variant_1
+      - variant_2
+    zip_id: model_dataset # The model_type jointly changes with all other parameters of the mode_dataset group
+
+  # The `+` prefix indicates that a named config should be used. The `name` attribute selects which named config is run
+  # Here, setting `batchnorm.name` to `batchnorm`, will run the named config `batchnorm` (see `advanced_example_experiment.py`)
+  # Setting `batchnorm.priority` to `2`, will affect the order in which the named configs are loaded
+  +batchnorm.name:
+    type: choice
+    options:
+      - batchnorm
+      - no_batchnorm
+
+  # Instead of setting the `name` attribute, you can equivalently set `preprocessing` to a the corresponding named config.
+  # seml will infer to set the `name` attribute for you
+  +preprocessing:
+    type: choice
+    options:
+      - preprocessing_none
+      - preprocessing_normalize
+
+  # You can also specify named configs from file paths, e.g. yaml files. These paths are expected to be relative to `project_root_dir`.
+  +augmentation:
+    type: choice
+    options:
+      - config/flip_augmentation.yaml
+
+  optimization.regularization.weight_decay:
+    type: loguniform
+    min: 1e-6
+    max: 1e-3
+    num: 4
+
+random:
+  samples: 5
+  seed: 7059
+  model.model_params.dropout:
+    type: uniform
+    min: 0.0
+    max: 0.5
+
+large_datasets:
+  grid:
+    data.dataset:
+      type: choice
+      options:
+        - large_dataset_1
+        - large_dataset_2
+      zip_id: model_dataset # Use variant_1 for large_dataset_1 and variant_2 for large_dataset_2
+
+    model.model_params.hidden_sizes:
+      type: choice
+      options:
+        - [64]
+        - [64, 32]
+
+small_datasets:
+  grid:
+    data.dataset:
+      type: choice
+      options:
+        - small_dataset_1
+        - small_dataset_2
+      zip_id: model_dataset # Use variant_1 for small_dataset_1 and variant_2 for small_dataset_2
+
+    model.model_params.hidden_sizes:
+      type: choice
+      options:
+        - [32]
+        - [32, 16]
