@@ -1,0 +1,17 @@
+{
+    "ice hockey": {
+        "roots": "ice",
+        "en": "ice hockey",
+        "fi": [
+            "jääkiekko",
+            "lätkä*"
+        ],
+        "nl": "het ijshockey"
+    },
+    "ice hockey match": {
+        "roots": "ice hockey",
+        "en": "ice hockey match",
+        "fi": "jääkiekko-ottelu",
+        "nl": "de ijshockeywedstrijd"
+    }
+}
