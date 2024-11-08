@@ -1,0 +1,9 @@
+LICENSE.md
+emp_logger.egg-info/PKG-INFO
+emp_logger.egg-info/SOURCES.txt
+emp_logger.egg-info/dependency_links.txt
+emp_logger.egg-info/requires.txt
+emp_logger.egg-info/top_level.txt
+src/emp_logger/__init__.py
+src/emp_logger/setup.py
+src/emp_logger/utl_logging.py
