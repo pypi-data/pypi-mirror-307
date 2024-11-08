@@ -1,0 +1,245 @@
+---
+source: tests/test.rs
+expression: "format!(\"{:#?}\", engine)"
+---
+Engine {
+    union: U16U16U32U32U32(
+        EngineBase {
+            grammar: Grammar {
+                start_nonterminal: "start[0]",
+                rules: "start[0] ::= #\"\\A(?:Hello, World!\n)\\z\"[0];\n",
+                id_to_regexes: {
+                    "#\"\\A(?:Hello, World!\n)\\z\"[0]": Dfa(
+                        dense::DFA(
+                        D 000000: 
+                        Q 000032: 
+                         *000064: 
+                          000096: \x08 => 576
+                          000128: 
+                          000160: \x0F => 192
+                          000192: \x0F => 224
+                          000224: \x11 => 256
+                          000256: \x06 => 288
+                          000288: \x03 => 320
+                          000320: \n => 352
+                          000352: \x11 => 384
+                          000384: \x13 => 416
+                          000416: \x0F => 448
+                          000448: \x0C => 480
+                          000480: \x04 => 512
+                          000512: \x01 => 544
+                          000544: EOI => 64
+                          000576: \r => 160
+                        
+                        START-GROUP(unanchored)
+                          NonWordByte => 000128
+                          WordByte => 000128
+                          Text => 000096
+                          LineLF => 000128
+                          LineCR => 000128
+                          CustomLineTerminator => 000128
+                        START-GROUP(anchored)
+                          NonWordByte => 000128
+                          WordByte => 000128
+                          Text => 000096
+                          LineLF => 000128
+                          LineCR => 000128
+                          CustomLineTerminator => 000128
+                        state length: 19
+                        pattern length: 1
+                        flags: Flags { has_empty: false, is_utf8: true, is_always_start_anchored: true }
+                        )
+                        ,
+                    ),
+                },
+                id_to_suffix_automata: {},
+                id_to_suffix_automata_first_bytes: [],
+                id_to_regex_first_bytes: [
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            96,
+                        ),
+                        [
+                            72,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            160,
+                        ),
+                        [
+                            108,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            192,
+                        ),
+                        [
+                            108,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            224,
+                        ),
+                        [
+                            111,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            256,
+                        ),
+                        [
+                            44,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            288,
+                        ),
+                        [
+                            32,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            320,
+                        ),
+                        [
+                            87,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            352,
+                        ),
+                        [
+                            111,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            384,
+                        ),
+                        [
+                            114,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            416,
+                        ),
+                        [
+                            108,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            448,
+                        ),
+                        [
+                            100,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            480,
+                        ),
+                        [
+                            33,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            512,
+                        ),
+                        [
+                            10,
+                        ],
+                    ),
+                    (
+                        "#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        StateID(
+                            576,
+                        ),
+                        [
+                            101,
+                        ],
+                    ),
+                ],
+                id_to_regex_complement_first_bytes: [],
+                id_to_terminals: [],
+            },
+            allowed_first_bytes: [
+                72,
+            ],
+            allowed_token_ids: [
+                "H[73]",
+                "He[1095]",
+                "Hel[6003]",
+                "Hell[23725]",
+                "Hello[33155]",
+            ],
+            earley_sets: [
+                [
+                    EarleyItemDebugStruct {
+                        dotted_rule: "start[0] -> .#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                        start_position: 0,
+                        state: "[3(InProgress)]",
+                    },
+                ],
+            ],
+            cache: [
+                (
+                    [
+                        [
+                            EarleyItemDebugStruct {
+                                dotted_rule: "start[0] -> .#\"\\A(?:Hello, World!\n)\\z\"[0]",
+                                start_position: 0,
+                                state: "[3(InProgress)]",
+                            },
+                        ],
+                    ],
+                    (
+                        [
+                            "H[73]",
+                            "He[1095]",
+                            "Hel[6003]",
+                            "Hell[23725]",
+                            "Hello[33155]",
+                        ],
+                    ),
+                ),
+            ],
+            to_be_completed_items: [],
+            to_be_completed_items_buffer: [],
+            deduplication_buffer: [],
+            postdot_items: [],
+            column_to_postdot_items: [],
+            postdot_items_since_last_commit: [],
+            leo_items: [],
+            leo_items_buffer: [],
+            already_predicted_nonterminals: [],
+            finished: false,
+            config: EngineConfig {
+                cache_enabled: true,
+                compaction_enabled: true,
+            },
+        },
+    ),
+}
