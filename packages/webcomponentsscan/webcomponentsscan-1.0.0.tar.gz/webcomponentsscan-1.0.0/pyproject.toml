@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "webcomponentsscan"
+version = "1.0.0"
+description = "WCS is a Python application that scans HTML files within a specified directory based on the @custom-elements-manifest/analyzer npm package. This npm packages generates a custom-elements.json file containing information about custom HTML tags. With this file we can scan html files for implementations."
+authors = ["Steven de Jong"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
