@@ -1,0 +1,63 @@
+# Jenkins Java Application Setup Guide
+
+## Step 1: Install Java
+
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+sudo apt-get install jenkins
+
+
+## Step 2: Set Up Project Structure
+
+mkdir java-app
+cd java-app
+
+# Create source directory
+mkdir src
+
+# Create Java file "MainClassName.java"
+
+public class MainClassName {
+    public static void main(String[] args) {
+        System.out.println("Hello from Jenkins!");
+    }
+}
+
+
+## Step 3: Set Up Jenkins Job
+1. Log in to Jenkins dashboard
+2. Click "New Item"
+3. Enter project name (e.g., `JavaAppBuild`)
+4. Select "Freestyle project"
+5. Click "OK"
+
+## Step 4: CUstom workscpace
+In advanced under genreal select use custom workspace directory and
+enter path
+
+Ex: C:\Users\Groot\Documents\sem7\java-app
+
+## Step 4: Configure Build Steps
+1. In job configuration, scroll to "Build" section
+2. Click "Add build step"
+3. Select "Execute shell" (Linux/Mac) or "Execute Windows batch command" (Windows)
+4. Add the following commands:
+
+For Linux/Mac:
+
+#!/bin/bash
+mkdir -p out
+javac -d out src/MainClassName.java
+java -cp out MainClassName
+
+## Step 5: Save and Run
+1. Click "Save" to save the job configuration
+2. Click "Build Now" to trigger the build
+
+## Step 6: Verify Output
+1. Click the build number in "Build History"
+2. Click "Console Output"
+3. Verify the output shows:
+```
+Hello from Jenkins!
+```
