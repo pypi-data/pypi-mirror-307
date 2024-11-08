@@ -1,0 +1,29 @@
+name: poli__tdc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - swig=4.1.1
+  - boost-cpp=1.82.0
+  - pip=23.2.1
+  - pdbfixer
+  - openbabel
+  - openmm
+  - pip:
+    - numpy<2
+    - "git+https://github.com/MachineLearningLifeScience/poli.git@dev"
+    - biopython
+    - python-levenshtein
+    - pandas
+    - cachetools
+    - rdkit
+    - selfies
+    - pytdc
+    - pyscreener
+    - colorama
+    - configparse
+    - h5py
+    - tqdm
+    - scikit-learn
+    - networkx

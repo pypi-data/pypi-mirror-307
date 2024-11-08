@@ -1,0 +1,9 @@
+name: poli__base
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - numpy<2
+    - "git+https://github.com/MachineLearningLifeScience/poli.git@dev"
