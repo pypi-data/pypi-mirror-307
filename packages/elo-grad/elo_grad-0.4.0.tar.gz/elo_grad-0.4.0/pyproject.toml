@@ -1,0 +1,36 @@
+[project]
+name = "elo-grad"
+version = "0.4.0"
+description = "Extended Elo rating system implementation exploiting the equivalence with logistic regression."
+authors = [
+    {name = "Mike Cooke", email = "cookepm@tcd.ie"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.1.2",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.5.2",
+]
+
+[project.optional-dependencies]
+examples = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.9.2",
+    "scipy>=1.14.1",
+]
+plot = [
+    "matplotlib>=3.9.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "mkdocs-material>=9.5.42",
+    "mkdocstrings-python>=1.12.2",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+]
