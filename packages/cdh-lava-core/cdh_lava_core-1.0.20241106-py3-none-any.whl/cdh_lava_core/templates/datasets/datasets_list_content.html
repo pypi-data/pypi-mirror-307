@@ -1,0 +1,174 @@
+<div class="section-area">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Back Button - Gray and Left Aligned -->
+            <div class="d-flex justify-content-start mb-2">
+                <button class="btn btn-primary" onclick="window.history.back();">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Add, Select, Copy, Paste, and Delete Buttons -->
+            <div class="d-flex justify-content-start mb-2">
+                <button class="btn btn-secondary mr-2" id="add-row">Add Row</button>
+                <button class="btn btn-secondary mr-2" id="select-row">Select Row</button>
+                <button class="btn btn-info mr-2" id="copy-row" disabled>Copy Row</button>
+                <button class="btn btn-warning mr-2" id="paste-row" disabled>Paste Row</button>
+                <button class="btn btn-danger" id="delete-row" disabled>Delete Row</button>
+            </div>
+
+            <!-- CSV Table with Editable Cells -->
+            <table id="csv-table" class="table table-striped table-theme-blue">
+                <thead>
+                    <tr>
+                        <th scope="col">Column Header Skip Rows</th>
+                        <th scope="col">Column Ordinal Sort</th>
+                        <th scope="col">Compare Filter</th>
+                        <th scope="col">Compare Table</th>
+                        <th scope="col">CRDY Domain</th>
+                        <th scope="col">CRDY is SA Dataset</th>
+                        <th scope="col">CRDY Maximum Latency Hours</th>
+                        <th scope="col">CRDY Subdomain</th>
+                        <th scope="col">CRDY Subdomain2</th>
+                        <th scope="col">Database</th>
+                        <th scope="col">Dataset Description</th>
+                        <th scope="col">Dataset Friendly Name</th>
+                        <th scope="col">Dataset Name</th>
+                        <th scope="col">EDC Access Level</th>
+                        <th scope="col">EDC Alation Datasource ID</th>
+                        <th scope="col">EDC Alation Datasource Identifier</th>
+                        <th scope="col">EDC Alation Schema ID</th>
+                        <th scope="col">EDC Applicability End Date</th>
+                        <th scope="col">EDC Applicability Start Date</th>
+                        <th scope="col">EDC Citation</th>
+                        <th scope="col">EDC Conform to Standard</th>
+                        <th scope="col">EDC Homepage URL</th>
+                        <th scope="col">EDC Identifier</th>
+                        <th scope="col">EDC is Containing PII</th>
+                        <th scope="col">EDC Language</th>
+                        <th scope="col">EDC License</th>
+                        <th scope="col">EDC PII Comments</th>
+                        <th scope="col">EDC PII Fields</th>
+                        <th scope="col">EDC Reference</th>
+                        <th scope="col">EDC Referenced By</th>
+                        <th scope="col">EDC Release Date</th>
+                        <th scope="col">EDC Size</th>
+                        <th scope="col">EDC Submitting User</th>
+                        <th scope="col">EDC Tags</th>
+                        <th scope="col">EDC Update Frequency</th>
+                        <th scope="col">Encoding</th>
+                        <th scope="col">Entity</th>
+                        <th scope="col">Excluded Environments</th>
+                        <th scope="col">File Name</th>
+                        <th scope="col">Folder Name</th>
+                        <th scope="col">Folder Name Source</th>
+                        <th scope="col">Format</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Incremental</th>
+                        <th scope="col">Is Active</th>
+                        <th scope="col">Is Export Schema Required</th>
+                        <th scope="col">Is Multiline</th>
+                        <th scope="col">Is Refreshed</th>
+                        <th scope="col">Is Required for Power BI</th>
+                        <th scope="col">Is Required for Synapse</th>
+                        <th scope="col">Linked Service Sink Name</th>
+                        <th scope="col">Linked Service Sink Type</th>
+                        <th scope="col">Linked Service Source Name</th>
+                        <th scope="col">Linked Service Source Type</th>
+                        <th scope="col">Optimize Columns</th>
+                        <th scope="col">Optimize Type</th>
+                        <th scope="col">PII Columns</th>
+                        <th scope="col">Workflow Batch Group</th>
+                        <th scope="col">Data Product ID</th>
+                        <th scope="col">Remove Columns with No Metadata</th>
+                        <th scope="col">Row ID Core Columns</th>
+                        <th scope="col">Use Liquid Clustering</th>
+                        <th scope="col">Partition By</th>
+                        <th scope="col">Row ID Keys</th>
+                        <th scope="col">Sheet Name</th>
+                        <th scope="col">Sink Dataset Type</th>
+                        <th scope="col">Source Abbreviation</th>
+                        <th scope="col">Source Dataset Name</th>
+                        <th scope="col">Source JSON Path</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    {% for row in datasets %}
+                    <tr>
+                        <td contenteditable="true" data-name="column_header_skip_rows">{{ row.column_header_skip_rows }}</td>
+                        <td contenteditable="true" data-name="column_ordinal_sort">{{ row.column_ordinal_sort }}</td>
+                        <td contenteditable="true" data-name="compare_filter">{{ row.compare_filter }}</td>
+                        <td contenteditable="true" data-name="compare_table">{{ row.compare_table }}</td>
+                        <td contenteditable="true" data-name="crdy_domain">{{ row.crdy_domain }}</td>
+                        <td contenteditable="true" data-name="crdy_is_sa_dataset">{{ row.crdy_is_sa_dataset }}</td>
+                        <td contenteditable="true" data-name="crdy_maximum_latency_hours">{{ row.crdy_maximum_latency_hours }}</td>
+                        <td contenteditable="true" data-name="crdy_subdomain">{{ row.crdy_subdomain }}</td>
+                        <td contenteditable="true" data-name="crdy_subdomain2">{{ row.crdy_subdomain2 }}</td>
+                        <td contenteditable="true" data-name="database">{{ row.database }}</td>
+                        <td contenteditable="true" data-name="dataset_description">{{ row.dataset_description }}</td>
+                        <td contenteditable="true" data-name="dataset_friendly_name">{{ row.dataset_friendly_name }}</td>
+                        <td contenteditable="true" data-name="dataset_name">{{ row.dataset_name }}</td>
+                        <td contenteditable="true" data-name="edc_access_level">{{ row.edc_access_level }}</td>
+                        <td contenteditable="true" data-name="edc_alation_datasource_id">{{ row.edc_alation_datasource_id }}</td>
+                        <td contenteditable="true" data-name="edc_alation_datasource_identifier">{{ row.edc_alation_datasource_identifier }}</td>
+                        <td contenteditable="true" data-name="edc_alation_schema_id">{{ row.edc_alation_schema_id }}</td>
+                        <td contenteditable="true" data-name="edc_applicability_end_date">{{ row.edc_applicability_end_date }}</td>
+                        <td contenteditable="true" data-name="edc_applicability_start_date">{{ row.edc_applicability_start_date }}</td>
+                        <td contenteditable="true" data-name="edc_citation">{{ row.edc_citation }}</td>
+                        <td contenteditable="true" data-name="edc_conform_to_standard">{{ row.edc_conform_to_standard }}</td>
+                        <td contenteditable="true" data-name="edc_homepage_url">{{ row.edc_homepage_url }}</td>
+                        <td contenteditable="true" data-name="edc_identifier">{{ row.edc_identifier }}</td>
+                        <td contenteditable="true" data-name="edc_is_containing_pii">{{ row.edc_is_containing_pii }}</td>
+                        <td contenteditable="true" data-name="edc_language">{{ row.edc_language }}</td>
+                        <td contenteditable="true" data-name="edc_license">{{ row.edc_license }}</td>
+                        <td contenteditable="true" data-name="edc_pii_comments">{{ row.edc_pii_comments }}</td>
+                        <td contenteditable="true" data-name="edc_pii_fields">{{ row.edc_pii_fields }}</td>
+                        <td contenteditable="true" data-name="edc_reference">{{ row.edc_reference }}</td>
+                        <td contenteditable="true" data-name="edc_referenced_by">{{ row.edc_referenced_by }}</td>
+                        <td contenteditable="true" data-name="edc_release_date">{{ row.edc_release_date }}</td>
+                        <td contenteditable="true" data-name="edc_size">{{ row.edc_size }}</td>
+                        <td contenteditable="true" data-name="edc_submitting_user">{{ row.edc_submitting_user }}</td>
+                        <td contenteditable="true" data-name="edc_tags">{{ row.edc_tags }}</td>
+                        <td contenteditable="true" data-name="edc_update_frequency">{{ row.edc_update_frequency }}</td>
+                        <td contenteditable="true" data-name="encoding">{{ row.encoding }}</td>
+                        <td contenteditable="true" data-name="entity">{{ row.entity }}</td>
+                        <td contenteditable="true" data-name="excluded_environments">{{ row.excluded_environments }}</td>
+                        <td contenteditable="true" data-name="file_name">{{ row.file_name }}</td>
+                        <td contenteditable="true" data-name="folder_name">{{ row.folder_name }}</td>
+                        <td contenteditable="true" data-name="folder_name_source">{{ row.folder_name_source }}</td>
+                        <td contenteditable="true" data-name="format">{{ row.format }}</td>
+                        <td contenteditable="true" data-name="frequency">{{ row.frequency }}</td>
+                        <td contenteditable="true" data-name="incremental">{{ row.incremental }}</td>
+                        <td contenteditable="true" data-name="is_active">{{ row.is_active }}</td>
+                        <td contenteditable="true" data-name="is_export_schema_required">{{ row.is_export_schema_required }}</td>
+                        <td contenteditable="true" data-name="is_multiline">{{ row.is_multiline }}</td>
+                        <td contenteditable="true" data-name="is_refreshed">{{ row.is_refreshed }}</td>
+                        <td contenteditable="true" data-name="is_required_for_power_bi">{{ row.is_required_for_power_bi }}</td>
+                        <td contenteditable="true" data-name="optimize_columns">{{ row.optimize_columns }}</td>
+                        <td contenteditable="true" data-name="optimize_type">{{ row.optimize_type }}</td>
+                        <td contenteditable="true" data-name="pii_columns">{{ row.pii_columns }}</td>
+                        <td contenteditable="true" data-name="workflow_batch_group">{{ row.workflow_batch_group }}</td>
+                        <td contenteditable="true" data-name="data_product_id">{{ row.data_product_id }}</td>
+                        <td contenteditable="true" data-name="remove_columns_with_no_metadata">{{ row.remove_columns_with_no_metadata }}</td>
+                        <td contenteditable="true" data-name="row_id_core_columns">{{ row.row_id_core_columns }}</td>
+                        <td contenteditable="true" data-name="use_liquid_clustering">{{ row.use_liquid_clustering }}</td>
+                        <td contenteditable="true" data-name="partition_by">{{ row.partition_by }}</td>
+                        <td contenteditable="true" data-name="row_id_keys">{{ row.row_id_keys }}</td>
+                        <td contenteditable="true" data-name="sheet_name">{{ row.sheet_name }}</td>
+                        <td contenteditable="true" data-name="source_abbreviation">{{ row.source_abbreviation }}</td>
+                        <td contenteditable="true" data-name="source_dataset_name">{{ row.source_dataset_name }}</td>
+                        <td contenteditable="true" data-name="source_json_path">{{ row.source_json_path }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <!-- Save Button to trigger saving of changes -->
+            <div class="d-flex justify-content-end mt-2">
+                <button class="btn btn-success" id="save-changes">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
