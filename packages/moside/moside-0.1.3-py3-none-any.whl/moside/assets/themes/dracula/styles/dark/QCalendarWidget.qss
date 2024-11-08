@@ -1,0 +1,84 @@
+/* Calendar Top Bar */
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    padding: 4px 8px;
+}
+
+/* Calendar Top Bar Buttons */
+QCalendarWidget QToolButton {
+    padding: 2px 16px;
+    border-radius: 11px;
+    margin: 2px 8px;
+}
+
+/* prev month */
+QCalendarWidget #qt_calendar_prevmonth {
+    padding: 2px;
+    qproperty-icon: url(:/themes/dracula/icons/cil-arrow-left.png);
+    icon-size: 16px, 16px;
+}
+QCalendarWidget #qt_calendar_prevmonth:hover {
+    background-color: rgb(44, 49, 58);
+    border: 2px solid rgb(58, 66, 81);
+    border-radius: 11px;
+}
+
+/* next month */
+QCalendarWidget #qt_calendar_nextmonth {
+    padding: 2px;
+    qproperty-icon: url(:/themes/dracula/icons/cil-arrow-right.png);
+    icon-size: 16px, 16px;
+}
+QCalendarWidget #qt_calendar_nextmonth:hover {
+    background-color: rgb(44, 49, 58);
+    border: 2px solid rgb(58, 66, 81);
+    border-radius: 11px;
+}
+
+/* Month */
+QCalendarWidget #qt_calendar_monthbutton {
+    border-radius: 5px;
+}
+QCalendarWidget #qt_calendar_monthbutton:hover {
+    border: 2px solid rgb(58, 66, 81);
+}
+QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
+    image: none;
+}
+QCalendarWidget QMenu {
+}
+
+/* Year */
+QCalendarWidget #qt_calendar_yearbutton {
+    border-radius: 5px;
+}
+QCalendarWidget #qt_calendar_yearbutton:hover {
+    border: 2px solid rgb(58, 66, 81);
+}
+QCalendarWidget #qt_calendar_yearedit {
+}
+
+/* header row */
+QCalendarWidget QWidget {
+    background-color: rgb(33, 37, 43);
+    alternate-background-color: rgb(44, 49, 58);
+}
+
+/* normal days */
+QCalendarWidget QAbstractItemView{
+    color: rgb(0, 0, 0);
+}
+QCalendarWidget QAbstractItemView:enabled
+{
+    color: rgb(180, 180, 180);
+    background-color: rgb(33, 37, 43);
+    selection-background-color: rgb(52, 59, 72);
+    selection-color: rgb(255, 121, 198);
+}
+
+/* days in other months */
+
+/* Disabled table items */
+QCalendarWidget QAbstractItemView:disabled
+{
+    color: rgb(64, 64, 64);
+}

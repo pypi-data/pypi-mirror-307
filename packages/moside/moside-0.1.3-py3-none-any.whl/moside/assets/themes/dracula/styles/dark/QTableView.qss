@@ -1,0 +1,37 @@
+QTableWidget {
+    background-color: transparent;
+    gridline-color: rgb(44, 49, 58);
+    border: none;
+}
+QTableWidget::item{
+    border-color: rgb(44, 49, 58);
+    padding-left: 5px;
+    padding-right: 5px;
+    gridline-color: rgb(44, 49, 58);
+}
+QTableWidget::item:selected{
+    background-color: rgb(189, 147, 249);
+}
+
+QHeaderView::section{
+    background-color: rgb(33, 37, 43);
+    border: 1px solid rgb(44, 49, 58);
+}
+
+/* 水平表头 */
+QHeaderView::section:horizontal
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 垂直表头 */
+QHeaderView::section:vertical
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* 角按钮 */
+QTableView QTableCornerButton::section {
+    background-color: rgb(33, 37, 43);
+    border: 1px solid rgb(44, 49, 58);
+}

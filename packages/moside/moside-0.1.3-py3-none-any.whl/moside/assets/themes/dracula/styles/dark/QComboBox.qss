@@ -1,0 +1,32 @@
+/* QComboBox ///////////////////////////////////////////////////////////////////// */
+QComboBox{
+    background-color: rgb(33, 37, 43);
+    border-radius: 5px;
+    border: 2px solid rgb(33, 37, 43);
+    padding: 5px;
+    padding-left: 10px;
+}
+QComboBox:hover{
+    border: 2px solid rgb(64, 71, 88);
+}
+QComboBox:focus {
+    border: 2px solid rgb(91, 101, 124);
+}
+QComboBox::drop-down {
+    width: 25px;
+    border-left: 3px solid rgba(39, 44, 54, 150);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+    image: url(:/themes/dracula/icons/cil-arrow-bottom.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+}
+QComboBox QAbstractItemView {
+    color: rgb(255, 121, 198);
+    background-color: rgb(33, 37, 43);
+    padding: 10px;
+    selection-background-color: rgb(39, 44, 54);
+}

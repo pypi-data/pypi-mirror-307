@@ -1,0 +1,14 @@
+QStatusBar {
+    background-color: rgb(44, 49, 58);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(113, 126, 149);
+}
+QStatusBar::item {
+    border: none;
+}
+QStatusBar .QLabel {
+    font-size: 12px;
+    padding-left: 1px;
+    color: rgb(113, 126, 149);
+}

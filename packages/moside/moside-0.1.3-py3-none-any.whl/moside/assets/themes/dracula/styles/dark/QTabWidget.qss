@@ -1,0 +1,72 @@
+QTabWidget {
+    background-color: transparent;
+    border: none;
+}
+
+QTabWidget::pane { /* Widget 框架 */
+    background-color: transparent;
+    border: 2px solid rgb(52, 59, 72);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+QTabBar {
+    background-color: transparent;
+}
+
+QTabBar::tab {
+    background-color: rgb(33, 37, 43);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border: none;
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(40, 44, 52);
+}
+
+QTabBar::tab:selected {
+    background-color: rgb(52, 59, 72);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 5px;
+}
+
+
+QTabBar::tab:first {
+    border-top-left-radius: 5px;
+}
+
+QTabBar::tab:last {
+    border-top-right-radius: 5px;
+}
+
+QTabBar::tab:only-one {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+QTabBar::tear {
+    background-color: transparent;
+}
+
+QTabBar::scroller { /* the width of the scroll buttons */
+}
+
+QTabBar QToolButton { /* the scroll buttons are tool buttons */
+    background-color: transparent;
+}
+
+QTabBar QToolButton::left-arrow {
+    image: url(:/themes/dracula/icons/cil-arrow-left.png);
+}
+
+QTabBar QToolButton::right-arrow { /* the arrow mark in the tool buttons */
+    image: url(:/themes/dracula/icons/cil-arrow-right.png);
+}

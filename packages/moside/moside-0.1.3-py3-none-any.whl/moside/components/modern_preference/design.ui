@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModernPreference</class>
+ <widget class="QFrame" name="ModernPreference">
+  <layout class="QVBoxLayout" name="ly_modern_preference">
+   <item>
+    <widget class="QGroupBox" name="grp_appearance">
+     <property name="title">
+      <string>Appearance</string>
+     </property>
+     <layout class="QVBoxLayout" name="ly_appearance">
+      <item>
+       <layout class="QFormLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lbl_lang">
+          <property name="text">
+           <string>Language</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cmb_lang"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lbl_style">
+          <property name="text">
+           <string>Style</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="cmb_style"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lbl_theme">
+          <property name="text">
+           <string>Theme</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="cmb_theme"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chk_colorful">
+        <property name="text">
+         <string>Colorful</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chk_expand">
+        <property name="text">
+         <string>Expand</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
