@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: gdbundle-gdb-callgrind
+Version: 0.1
+Summary: 
+License: Apache 2.0
+Author: Josh Pieper
+Author-email: jjp@pobox.com
+Requires-Python: >=3.0,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: gdbundle (>=0.0.3,<0.1.0)
+Description-Content-Type: text/markdown
+
+# gdbundle-gdb-callgrind
+
+This is a gdb plugin, packaged using gdbundle, which can emit
+callgrind style call tree information using gdb single instruction
+stepping.  This makes it possible to generate call tree profiling
+information on arbitrary remote targets, like microcontrollers, at the
+expense of the process being quite slow.
+
+# Installation
+
+```
+$ pip install gdbundle-gdb-callgrind
+```
+
+# Usage
+
+```
+(gdb) emit_callgrind
+```
+
+Optionally, a terminal program counter can be specified as an argument
+to emit_callgrind.  If omitted, then profiling proceeds until the end
+of the current function.
+
