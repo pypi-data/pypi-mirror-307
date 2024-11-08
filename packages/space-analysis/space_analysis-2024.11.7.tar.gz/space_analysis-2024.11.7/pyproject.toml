@@ -1,0 +1,84 @@
+[project]
+name = "space-analysis"
+dynamic = []
+description = "Python library for data analysis in space physics"
+authors = [
+    { name = "Beforerr", email = "zzj956959688@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "beforerr",
+    "pydantic",
+    "plum-dispatch",
+    "polars",
+    "plasmapy>=2024.10.0",
+    "astropy",
+    "loguru",
+    "rich",
+    "humanize",
+]
+version = "2024.11.7"
+
+[project.optional-dependencies]
+plot = [
+    "hvplot",
+]
+io = [
+    "pyspedas",
+    "speasy",
+    "pycdfpp",
+    "cdasws",
+    "pdr",
+    "pooch",
+]
+dev = [
+    "ipykernel",
+    "nbdev",
+    "jupyter-cache",
+]
+doc = [
+    "itables",
+    "great_tables",
+]
+
+[project.urls]
+Homepage = "https://beforerr.github.io/space-analysis.py"
+Repository = "https://github.com/beforerr/space-analysis.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pixi.project]
+channels = [
+    "conda-forge",
+]
+platforms = [
+    "osx-arm64",
+    "linux-64",
+]
+
+[tool.pixi.environments]
+default = [
+    "dev",
+    "io",
+    "plot",
+    "doc",
+]
+
+[tool.pixi.dependencies]
+netcdf4 = "*"
+warpx = "*"
+
+[tool.pixi.pypi-dependencies]
+pipe = "*"
+
+[tool.pixi.pypi-dependencies.space_analysis]
+path = "."
+editable = true
