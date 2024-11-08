@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pysaltrouting
+Version: 0.1.2
+Summary: python binding for salt
+Author: Smite Chow
+Author-email: xiaopengyou2no1@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+### python binding for salt
+
+#### Usage
+
+```python
+from pysaltrouting import pysalt
+from pathlib import Path
+post_file = str(Path(pysalt.__file__).parent / 'data/POST9.dat')
+powv_file = str(Path(pysalt.__file__).parent / 'data/POWV9.dat')
+pysalt.net_file(<net/file/path>, <epsilon>, post_file, powv_file)
+```
+
+#### Install
+
+`pip install pysaltrouting`

@@ -1,0 +1,5 @@
+graft salt
+include examples/pysalt.cpp
+include CMakeLists.txt
+include MANIFEST.in
+include README.md
