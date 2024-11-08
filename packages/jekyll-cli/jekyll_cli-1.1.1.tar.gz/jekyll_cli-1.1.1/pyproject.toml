@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "jekyll-cli"
+version = "1.1.1"
+description = "Jekyll Blog CLI Tool"
+authors = ["Baymax104 <wzy1048168235@163.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+blog = "jekyll_cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12.5"
+inquirerpy = "^0.3.4"
+omegaconf = "^2.3.0"
+ruamel-yaml = "^0.18.6"
+
+[tool.poe.poetry_hooks]
+pre_build = "generate_document"
+
+[tool.poe.tasks.run]
+cmd = "poetry run typer jekyll_cli run"
+help = "Run application."
+
+[tool.poe.tasks.test]
+cmd = "pytest -v"
+help = "Test application."
+
+[tool.poe.tasks.generate_document]
+cmd = "poetry run typer jekyll_cli utils docs --name blog --title 'Jekyll CLI' --output README.md"
+help = "Generate Typer document."
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
