@@ -1,0 +1,6 @@
+pyyaml
+Jinja2
+
+[dev]
+pytest
+ruff==0.7.2
