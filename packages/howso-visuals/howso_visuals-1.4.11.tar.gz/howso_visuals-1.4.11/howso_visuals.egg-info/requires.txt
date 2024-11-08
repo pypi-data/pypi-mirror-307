@@ -1,0 +1,13 @@
+howso-engine~=31.0
+plotly
+scipy
+seaborn
+umap-learn~=0.5
+
+[dev]
+flake8
+isort
+pytest
+pytest-cov
+pytest-xdist
+yapf
