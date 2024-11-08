@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: password-magic
+Version: 0.1.0
+Summary: A package for generating, validating, and checking the strength of passwords
+Home-page: https://github.com/aabhay007/password-magic
+Author: Abhay
+Author-email: abhay007official@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Password Magic
+
+Password Magic is a Python package for generating, validating, and checking the strength of passwords.
+
+## Features
+
+- Generate secure passwords with options for length, uppercase letters, numbers, and special characters.
+- Validate passwords based on security criteria.
+- Check password strength with a rating system.
+
+## Installation
+
+```bash
+pip install password-magic
