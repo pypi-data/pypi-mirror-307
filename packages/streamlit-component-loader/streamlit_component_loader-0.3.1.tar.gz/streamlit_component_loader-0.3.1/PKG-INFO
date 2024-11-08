@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: streamlit-component-loader
+Version: 0.3.1
+Summary: Components and Frameworks to give new features to streamlit
+Home-page: https://github.com/quiradev/streamlit-plugins
+Author: Victor Quilon Ranera
+Author-email: v.quilonr@gmail.com
+License: MIT
+Keywords: streamlit,plugins,components,loader
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=1.36.0
+
+# streamlit-plugins
+Components and Frameworks to give new features to streamlit
+
+## Components
+The Loader component is inherited from Hydralit components, only to give support to the multilit framework.
+But this version has improve the loaders to be more user-friendly.
+
+### Loader (Inherit from Hydralit Components)
