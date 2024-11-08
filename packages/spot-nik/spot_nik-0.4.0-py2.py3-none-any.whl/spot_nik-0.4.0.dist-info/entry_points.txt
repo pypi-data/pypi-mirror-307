@@ -1,0 +1,10 @@
+[spot_plugins]
+FindImage = spot.plugins:setup_FindImage
+HSCPlanner = spot.plugins:setup_HSCPlanner
+InsFov = spot.plugins:setup_InsFov
+PolarSky = spot.plugins:setup_PolarSky
+SiteSelector = spot.plugins:setup_SiteSelector
+SkyCam = spot.plugins:setup_SkyCam
+Targets = spot.plugins:setup_Targets
+TelescopePosition = spot.plugins:setup_TelescopePosition
+Visibility = spot.plugins:setup_Visibility
