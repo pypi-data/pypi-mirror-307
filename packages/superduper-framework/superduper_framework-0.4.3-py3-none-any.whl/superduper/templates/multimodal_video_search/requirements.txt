@@ -1,0 +1,4 @@
+git+https://github.com/openai/CLIP.git
+-e ./plugins/pillow
+-e ./plugins/torch
+opencv-python
