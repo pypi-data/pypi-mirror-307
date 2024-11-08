@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cfclient
+Version: 2024.11
+Summary: Bitcraze Cazyflie quadcopter client
+Home-page: http://www.bitcraze.io
+Author: Bitcraze team
+Author-email: contact@bitcraze.se
+Keywords: quadcopter crazyflie
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: cflib >=0.1.27
+Requires-Dist: setuptools
+Requires-Dist: appdirs ~=1.4.0
+Requires-Dist: pyzmq ~=26.0
+Requires-Dist: pyqtgraph ~=0.13
+Requires-Dist: PyYAML ~=6.0.1
+Requires-Dist: numpy ~=1.20
+Requires-Dist: vispy ~=0.14.2
+Requires-Dist: pyopengl ~=3.1.7
+Requires-Dist: pyserial ~=3.5
+Requires-Dist: pyqt6 >=6.4
+Requires-Dist: PyQt6-sip >=13.4
+Requires-Dist: pysdl2 ~=0.9.14 ; platform_system == "Windows" or platform_system == "Darwin"
+Requires-Dist: pysdl2-dll ==2.24.0 ; platform_system == "Windows" or platform_system == "Darwin"
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: cx-freeze ==5.1.1 ; (platform_system == "Windows") and extra == 'dev'
+Requires-Dist: jinja2 ==2.10.3 ; (platform_system == "Windows") and extra == 'dev'
+
+# Crazyflie PC client [![CI](https://github.com/bitcraze/crazyflie-clients-python/workflows/CI/badge.svg)](https://github.com/bitcraze/crazyflie-clients-python/actions?query=workflow%3ACI) [![cfclient](https://snapcraft.io//cfclient/badge.svg)](https://snapcraft.io/cfclient)
+
+
+The Crazyflie PC client enables flashing and controlling the Crazyflie.
+It implements the user interface and high-level control (for example gamepad handling).
+The communication with Crazyflie and the implementation of the CRTP protocol to control the Crazyflie is handled by the [cflib](https://github.com/bitcraze/crazyflie-lib-python) project.
+
+## Installation
+See the [installation instructions](docs/installation/install.md) in the GitHub docs folder.
+
+## Official Documentation
+
+Check out the [Bitcraze crazyflie-client-python documentation](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/) on our website.
+
+## Contribute
+Go to the [contribute page](https://www.bitcraze.io/contribute/) on our website to learn more.
+
+### Test code for contribution
+Run the automated build locally to test your code
+
+	python3 tools/build/build
