@@ -1,0 +1,111 @@
+[tool.poetry]
+name = "oci-client"
+version = "0.3"
+description = ""
+authors = ["Florian Daude <floriandaude@hotmail.fr>"]
+license = "MIT"
+readme = "README.md"
+include = ["bundled/"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4"
+pydantic = "^2.5.2"
+cryptography = "^41.0.7"
+aiohttp = "^3.9.1"
+certifi = "^2023.11.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+exclude = ["**/__pycache__"]
+include = ["oci_client", "tools"]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.12"
+stubPath = "stubs/"
+
+
+[tool.ruff.format]
+exclude = []
+indent-style = "space"
+line-ending = "lf"
+quote-style = "single"
+skip-magic-trailing-comma = true
+
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+preview = true
+exclude = ["stubs/"]
+namespace-packages = ["tools/"]
+select = ["ALL"]
+ignore = [
+    # Useless
+    "ANN101",  # type annotations for self
+    "ANN102",  # type annotations for cls
+    "FBT003",  # positional bool in function call (FBT001 prevent positional bool in function definition)
+    "PLW0603", # no global write (checked by pyright)
+    "SLF001",  # dont access private members (checked by pyright)
+
+    # Style preferences
+    "D211",   # incompatible with D203 
+    "D213",   # incompatible with D212
+    "COM812", # missing trailing comma 
+    "SIM108", # ternary instead of ifelse block 
+    "E203",   # no space before punctuation (formater puts it)
+
+    # Not doing it by policy
+    "D100",   # missing docstring in module
+    "D101",   # missing docstring in class
+    "D102",   # missing docstring in method
+    "D103",   # missing docstring in function
+    "D104",   # missing docstring in package
+    "D105",   # missing docstring in method
+    "D106",   # missing docstring in nested class
+    "D107",   # missing docstring in __init__
+    "ANN201", # missing return type annotation public function
+    "ANN202", # missing return type annotation private function
+    "ANN204", # missing return type annotation method
+    "ANN205", # missing return type annotation static method
+    "ANN206", # missing return type annotation class method
+    "CPY001", # missing copyright
+    "FA102",  # future annotation for compatibility (we are not targetting old python versions)
+
+    # Not working well
+    "S101",    # no assert (linter does not know if it used for validation or not)
+    "S603",    # no untrusted input in subprocess (linter does not know if it is untrusted)
+    "S608",    # SQL string building (linter does not know if it is safe or not)
+    "S311",    # no unsafe random (linter does not know if it is used for crypto or not)
+    "PD011",   # use to_numpy istead of .values (nom-numpy stuff can use .values too)
+    "PLR2004", # no magic values (too many false positive)
+    "PLW2901", # no for loop variable overwrite (too many false positive with normal shadowing)
+    "PLW1641", # class defines eq but not hash (cannot detect hash with dataclasses)
+    "UP040",   # use type instead of typeAlias (typeAlias is better in some case, when alias is not generic)
+
+    # Don't agree
+    "BLE001",  # don't catch Exception (catching ValueError or TypeError is also too large imo)
+    "FIX002",  # consider resolving the issue (the issue is in a backlog thanks to TD003, it will be resolved later)
+    "TRY003",  # message too long in exception (create a class for each exception possible is not doeable)
+    "TRY300",  # return in else block instead of try block (returning in try block is more readable and shorter)
+    "TRY004",  # raise type error after isinstance check (it is dumb)
+    "PLC1901", # use falsy string to check if empty (no implicit boolean conversion)
+    "E266",    # only one # in comment (used for styling sometimes, no risk of using it)
+    "FURB140", # use startmap when possible (it is less readable imo and apparently slower sometimes)
+    "A001",    # v
+    "A002",    # v
+    "A003",    # builtin shadowing (naming thing id and type for exemple is ok)
+    "EM101",   # v
+    "EM102",   # No string literal in exception (it is dumb)
+    "PLR0913", # too many arguments function call (rule is great but the limit of 5 not enough)
+    "ICN001",  # import convention name (less explicit)
+]
