@@ -1,0 +1,9 @@
+include MANIFEST.in
+include README.md
+include LICENSE
+include requirements.txt
+graft llmhelper
+exclude django_vectorstore_index_model_example
+exclude django_vectorstore_index_model_demo
+global-exclude __pycache__
+global-exclude *.py[co]
