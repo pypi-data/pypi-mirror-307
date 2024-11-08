@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: RapidHost
+Version: 4.0.1
+Summary: A simple Flask Based library for serving HTML pages with customizable host IP, port, and template path.
+Author: Leonardo
+Author-email: Leonardonery616@gmail.com
+License-File: License
+Requires-Dist: Flask >=2.0.0
+

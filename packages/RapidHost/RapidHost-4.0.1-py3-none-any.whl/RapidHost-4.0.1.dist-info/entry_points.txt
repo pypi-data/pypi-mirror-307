@@ -1,0 +1,2 @@
+[console_scripts]
+rapidhost = rapid_host.__init__:main
