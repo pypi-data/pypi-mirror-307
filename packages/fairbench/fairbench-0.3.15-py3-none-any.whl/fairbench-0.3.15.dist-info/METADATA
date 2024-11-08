@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fairbench
+Version: 0.3.15
+Summary: A fairness assessment framework
+Home-page: https://fairbench.readthedocs.io
+Author: Emmanouil (Manios) Krasanakis
+Author-email: maniospas@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: eagerpy
+Requires-Dist: makefun
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: objwrap
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Provides-Extra: interactive
+Requires-Dist: numpy; extra == "interactive"
+Requires-Dist: eagerpy; extra == "interactive"
+Requires-Dist: makefun; extra == "interactive"
+Requires-Dist: matplotlib; extra == "interactive"
+Requires-Dist: scikit-learn; extra == "interactive"
+Requires-Dist: pandas; extra == "interactive"
+Requires-Dist: objwrap; extra == "interactive"
+Requires-Dist: bokeh; extra == "interactive"
+Requires-Dist: pyyaml; extra == "interactive"
+Requires-Dist: requests; extra == "interactive"
+
+A comprehensive AI fairness exploration framework.<br>**Homepage:** https://fairbench.readthedocs.io<br>**Repository:** https://github.com/mever-team/FairBench
