@@ -1,0 +1,41 @@
+name: cochlea-synapseg
+display_name: Cochlea SynapSeg
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: cochlea-synapseg.get_reader
+      python_name: napari_cochlea_synapse_seg._reader:napari_get_reader
+      title: Open data with Cochlea SynapSeg
+    - id: cochlea-synapseg.write_multiple
+      python_name: napari_cochlea_synapse_seg._writer:write_multiple
+      title: Save multi-layer data with Cochlea SynapSeg
+    - id: cochlea-synapseg.write_single_image
+      python_name: napari_cochlea_synapse_seg._writer:write_single_image
+      title: Save image data with Cochlea SynapSeg
+    - id: cochlea-synapseg.make_sample_data
+      python_name: napari_cochlea_synapse_seg._sample_data:make_sample_data
+      title: Load sample data from Cochlea SynapSeg
+    - id: cochlea-synapseg.make_gtwidget
+      python_name: napari_cochlea_synapse_seg:GTWidget
+      title: Make GTWidget
+  readers:
+    - command: cochlea-synapseg.get_reader
+      accepts_directories: true
+      filename_patterns: ['*.zarr', '*.xml', '*.csv', '*.xls', '*.XLS']
+  writers:
+    - command: cochlea-synapseg.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: cochlea-synapseg.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: cochlea-synapseg.make_sample_data
+      display_name: Cochlea SynapSeg
+      key: unique_id.1
+  widgets:
+    - command: cochlea-synapseg.make_gtwidget
+      display_name: SynapSeg - Ground Truth Widget

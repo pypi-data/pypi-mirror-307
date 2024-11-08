@@ -1,0 +1,13 @@
+numpy
+qtpy
+scikit-image
+scipy
+zarr
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
