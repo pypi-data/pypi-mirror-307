@@ -1,0 +1,3 @@
+[console_scripts]
+ao3scraper=ao3scraper.cli:main
+
