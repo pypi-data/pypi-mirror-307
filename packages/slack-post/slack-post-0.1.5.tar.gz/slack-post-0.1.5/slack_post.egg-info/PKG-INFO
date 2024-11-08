@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: slack-post
+Version: 0.1.5
+Summary: Post to a slack public channel using a bot token for a slack app capable of doing so.
+Home-page: https://https://dsgithub.trendmicro.com/cloudone-common/slack-post
+Author: Fabio Arciniegas
+Author-email: fabio_arciniegas@trendmicro.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: slack_sdk
+
+# slack-post
+Post a message to a slack public channel on behalf of a slack app (requires bot token for the app). Intended for use primarily in CI integrations.
