@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: decentra_vision
+Version: 1.0.2
+Summary: Decentra Vision is a Python library for which contains useful methods for python image manipulation.
+Project-URL: Homepage, https://github.com/DecentrAI/vision
+Project-URL: Bug Tracker, https://github.com/DecentrAI/vision/issues
+Author-email: Stefan Saraev <saraevstefan@gmail.com>, Andrei Ionut Damian <andrei.damian@lummetry.ai>, Cristan Bleotiu <cristibleotiu@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: cryptography>=39.0.0
+Requires-Dist: numpy
+Requires-Dist: paho-mqtt
+Requires-Dist: pika
+Requires-Dist: pyaml
+Requires-Dist: pyopenssl>=23.0.0
+Requires-Dist: python-dateutil
+Description-Content-Type: text/markdown
+
+# DecentrAI Vision
+
+Decentra Vision is a Python library for which contains useful methods for python image manipulation.

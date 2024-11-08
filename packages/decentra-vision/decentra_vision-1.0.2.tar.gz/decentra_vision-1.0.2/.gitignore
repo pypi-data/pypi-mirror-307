@@ -1,0 +1,12 @@
+__pycache__/
+.vscode/
+.spyproject
+*.pyc
+.DS_Store
+
+ts/params/*.py
+
+*/_logs/*
+*/_data/*
+*/_models/*
+*/_output/*

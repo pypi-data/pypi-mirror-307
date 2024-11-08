@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "decentra_vision"
+version = "1.0.2"
+authors = [
+  { name="Stefan Saraev", email="saraevstefan@gmail.com" },
+  { name="Andrei Ionut Damian", email="andrei.damian@lummetry.ai" },
+  { name="Cristan Bleotiu", email="cristibleotiu@gmail.com" },
+]
+description = "Decentra Vision is a Python library for which contains useful methods for python image manipulation."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pika", 
+  "paho-mqtt", 
+  "numpy",
+  "pyopenssl>=23.0.0",
+  "cryptography>=39.0.0",
+  "python-dateutil",
+  "pyaml"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DecentrAI/vision"
+"Bug Tracker" = "https://github.com/DecentrAI/vision/issues"
