@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "romaji-phonem"
+version = "0.2.0"
+description = "アルファベット列をローマ字読みする軽量 Python ライブラリ."
+license = "MIT"
+authors = ["もち (Mochi) <mochi.takosavi@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/takosavi/romaji-phonem"
+packages = [{ include = "romajiphonem" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Japanese",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+black = "^24.10.0"
+ruff = "^0.7.2"
+mypy = "^1.13.0"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--doctest-glob=*.md",
+    "--cov=romajiphonem",
+    "--cov-report=term-missing",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
