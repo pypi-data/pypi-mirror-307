@@ -1,0 +1,14 @@
+numpy>=2.1.2
+matplotlib
+jax>=0.4.34
+jaxlib>=0.4.34
+optax
+ott-jax
+networkx
+blackjax
+sympy
+
+[dev]
+pytest
+ruff
+pytest-xdist
