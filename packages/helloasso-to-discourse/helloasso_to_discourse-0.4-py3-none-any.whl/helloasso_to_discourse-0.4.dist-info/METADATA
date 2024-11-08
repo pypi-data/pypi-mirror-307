@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: helloasso-to-discourse
+Version: 0.4
+Summary: Assign Discourse Badges to participants of HelloAsso events
+Author-email: Julien Palard <julien@palard.fr>
+License: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: helloasso-apiv5
+Requires-Dist: tabulate
+Requires-Dist: requests
+
+# Helloasso to Discourse
+
+This works in two distinct steps: first fetch HelloAsso data, then sync with Discourse.
+
+
+## Installing
+
+    pip install .
+
+
+## Using
+
+### 1 — Choose what to sync
+
+The goal is to sync an HelloAsso event (they call it `forms`) to a Discourse Badge.
+
+First let's discover which HelloAsso 'forms' we can use:
+
+    $ helloasso-to-discourse list-forms --ha-client-id="$(pass helloasso-clientid)" --ha-client-secret="$(pass helloasso-clientsecret)" --ha-org=afpy
+
+
+Then let's discover which Discourse badges we can use:
+
+    $ helloasso-to-discourse list-badges --discourse-url=https://discuss.afpy.org --discourse-api-key="$(pass afpy/discuss.afpy.org-api-key)"
+
+
+### 2 — Sync
+
+This step actually assigns badges to Discourse users:
+
+As an example to assign badge "membre" to HelloAsso users having paid for the form named `adhesion-2023-a-l-afpy`:
+
+    $ helloasso-to-discourse sync --ha-client-id="$(pass helloasso-clientid)" --ha-client-secret="$(pass helloasso-clientsecret)" --ha-org=afpy --discourse-url=https://discuss.afpy.org --discourse-api-key="$(pass afpy/discuss.afpy.org-api-key)" --ha-form adhesion-2024-a-l-afpy --discourse-badge adherant-afpy
+
+And an example to assign Discourse badge `pyconfr-2023` to members having registered for the `pyconfr-2023` event on HelloAsso:
+
+    $ helloasso-to-discourse sync --ha-client-id="$(pass helloasso-clientid)" --ha-client-secret="$(pass helloasso-clientsecret)" --ha-org=afpy --discourse-url=https://discuss.afpy.org --discourse-api-key="$(pass afpy/discuss.afpy.org-api-key)" --ha-form pyconfr-2023 --discourse-badge pyconfr-2023
+
+    $ helloasso-to-discourse sync --ha-client-id="$(pass helloasso-clientid)" --ha-client-secret="$(pass helloasso-clientsecret)" --ha-org=afpy --discourse-url=https://discuss.afpy.org --discourse-api-key="$(pass afpy/discuss.afpy.org-api-key)" --ha-form pyconfr-2024 --discourse-badge pyconfr-2024
