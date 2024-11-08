@@ -1,0 +1,13 @@
+datasets
+docstring-parser
+einops
+numpy<2.0.0
+seaborn
+tabulate
+torch>=2.2
+
+[dev]
+check-manifest
+
+[test]
+pytest
