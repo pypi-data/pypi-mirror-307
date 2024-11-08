@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+[tool.setuptools.package_data]
+"thaiaddressclean" = ["refs/*.csv"]
+
+[project]
+name = "thaiaddressclean"
+version = "0.0.3"
+authors = [
+  { name="dData", email="user@data.co.th" },
+]
+
+
+
+
+description = "thaiaddressclean"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
