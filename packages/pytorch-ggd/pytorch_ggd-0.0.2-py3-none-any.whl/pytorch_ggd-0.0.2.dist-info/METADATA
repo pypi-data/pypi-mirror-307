@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytorch_ggd
+Version: 0.0.2
+Summary: Generalized Gaussian distribution in pytorch 
+Author-email: Dan Jacobellis <danjacobellis@utexas.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
+# pytorch-ggd
+Generalized Gaussian distribution in pytorch
