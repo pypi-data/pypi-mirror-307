@@ -1,0 +1,61 @@
+Metadata-Version: 2.3
+Name: stl-reducer
+Version: 0.1.4
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Internet :: WWW/HTTP
+Summary: A Python package for reading STL files and extracting points
+Keywords: stl,reducer,python,rust,pyo3,grid,voxel
+Author: vffuunnyy <vffuunnyy@gmail.com>
+Author-email: vffuunnyy <vffuunnyy@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/vffuunnyy/stl_reducer/
+Project-URL: Documentation, https://github.com/vffuunnyy/stl_reducer/
+Project-URL: Repository, https://github.com/vffuunnyy/stl_reducer.git
+Project-URL: Issues, https://github.com/vffuunnyy/stl_reducer/issues
+
+# STL Reducer
+
+This project provides a Rust implementation for reading STL files and reducing the number of points using a fast grid sampling method. The functionality is exposed to Python using PyO3.
+
+## Features
+
+- Read STL files and extract points.
+- Reduce the number of points using a fast grid sampling method.
+- Python bindings for easy integration with Python projects.
+
+## Usage
+
+### Python
+
+```bash
+pip install stl-reducer
+```
+
+## Functions
+
+#### `reduce_stl_points(stl_file_path: Path, clusters: int) -> List[Tuple[float, float, float]]`
+
+Reads an STL file and reduces the number of points.
+
+**Args:**
+- `stl_file_path (Path)`: Path to the STL file.
+- `clusters (int)`: Number of clusters to reduce the points to.
+
+**Returns:**
+- `List[Tuple[float, float, float]]`: List of points in the reduced STL file.
+
+## License
+
+This project is licensed under the MIT License.
