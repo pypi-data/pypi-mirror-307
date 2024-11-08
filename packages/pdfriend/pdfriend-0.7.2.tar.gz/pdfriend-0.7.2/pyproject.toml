@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pdfriend"
+version = "0.7.2"
+description = "A command line utility for easily modifying PDF files"
+authors = ["A. Grigoras"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+scripts = { "pdfriend" = "pdfriend.main:main" }
+
+[tool.poetry.dependencies]
+python = "^3.11"
+setuptools = "^65.5.1"
+pypdf = "^3.17.3"
+Pillow = "^10.1.0"
+platformdirs = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
