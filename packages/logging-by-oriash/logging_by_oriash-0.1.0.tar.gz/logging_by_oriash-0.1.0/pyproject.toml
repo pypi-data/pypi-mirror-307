@@ -1,0 +1,15 @@
+[tool.black]
+  line-length = 120
+
+[tool.pyright]
+  pythonVersion = "3.11.10"
+  include = ["src", "tests"]
+
+[tool.isort]
+  profile = "black"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
