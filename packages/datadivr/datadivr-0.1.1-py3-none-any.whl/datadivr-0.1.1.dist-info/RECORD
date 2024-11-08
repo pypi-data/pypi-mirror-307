@@ -1,0 +1,15 @@
+datadivr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadivr/cli.py,sha256=unRoqPrQYuBhPTj6bdwxddFUAVe9K_JCzBpZ2CWqlZc,4696
+datadivr/client.py,sha256=uuAhEJgdqIs5bvSbKQZeKDT9F7l57eQ8f_a84EBuX8U,2776
+datadivr/exceptions.py,sha256=O4P8qHiQIHICqnG2_K1GF_geld4Zn25sFWalmw1WZv0,131
+datadivr/server.py,sha256=980qOHTxigHAYbPkbFYVhv25tT-JQm6-JIR1wdWzhHo,2486
+datadivr/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadivr/handlers/sum_handler.py,sha256=C5OLNCeHOcLt-0bIFK3LxQQ33VYETYARBw9pSI7VqJs,738
+datadivr/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadivr/utils/messages.py,sha256=kxCIFjMVzkljdU1Z9LonQqGm4qrBX1fet8bWXeexj7g,1915
+datadivr-0.1.1.dist-info/LICENSE,sha256=oHLlXJ9ZHdRGilx_RIpFe9PBcxLAPPyERxIqWSP3Of4,1062
+datadivr-0.1.1.dist-info/METADATA,sha256=WnisNIM7dxeckeqKBBEhIiL1BjJj2XceGr8qQFcyhF8,2076
+datadivr-0.1.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+datadivr-0.1.1.dist-info/entry_points.txt,sha256=SCZN_ZvmZ9U43KPy6mUYeMCYgyeeW6WmynJkfP4-U5U,50
+datadivr-0.1.1.dist-info/top_level.txt,sha256=qEb5tlO3ZX9O94W9zi1Y0EJ4O1f-3o5pXAG8KRaGLw8,9
+datadivr-0.1.1.dist-info/RECORD,,
