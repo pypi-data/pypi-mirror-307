@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+avcuda/__init__.py
+avcuda/context.pyx
+avcuda/libavhw.pxd
+avcuda/npp.pxd
+avcuda/npp.pyx
+avcuda.egg-info/PKG-INFO
+avcuda.egg-info/SOURCES.txt
+avcuda.egg-info/dependency_links.txt
+avcuda.egg-info/requires.txt
+avcuda.egg-info/top_level.txt
