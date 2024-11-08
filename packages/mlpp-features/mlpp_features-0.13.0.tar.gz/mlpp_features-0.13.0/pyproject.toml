@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mlpp-features"
+version = "0.13.0"
+description = "Define, track, share, and discover features for ML-based postprocessing of weather forecasts."
+authors = ["Daniele Nerini"]
+license = "BSD 3-Clause License"
+
+[tool.poetry.dependencies]
+python = ">= 3.9, < 3.11"  # required by scipy
+scipy = "*"
+pandas = "*"
+xarray = "*"
+pyproj = "*"
+bottleneck = "*"
+numpy = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pytest = "*"
+isort = "*"
+zarr = "*"
+dask = "*"
+seaborn = "*"
+matplotlib = "*"
+jupyter = "*"
+cartopy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"

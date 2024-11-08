@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mlpp-features
+Version: 0.13.0
+Summary: Define, track, share, and discover features for ML-based postprocessing of weather forecasts.
+License: BSD 3-Clause License
+Author: Daniele Nerini
+Requires-Python: >=3.9,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bottleneck
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyproj
+Requires-Dist: scipy
+Requires-Dist: xarray
