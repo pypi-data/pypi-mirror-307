@@ -1,0 +1,970 @@
+<!doctype html><html><head><title>{{title}}</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,viewport-fit=cove"><meta http-equiv="X-UA-Compatible" content="IE=edge">{{contentrefresh|safe}}
+<link rel="icon"  href="/static/smartui/img/favicon.ico"><link rel="stylesheet" href="/static/smartchart/js/fun.css?_=1">
+<script src="/static/smartchart/js/jquery-2.2.3.min.js"></script>
+{% if devhead %}<link rel="stylesheet" href="/static/smartchart/js/dev.css?_=3.1"><link rel="stylesheet" href="/static/smartchart/icon/iconfont.css?_=2"><link rel="stylesheet" href="/static/smartchart/editor/modal.css">{% endif %}
+<script src="/static/smartui/js/vue.min.js"></script><link rel="stylesheet" href="/static/smartui/elementui/theme-chalk/index.css"><script src="/static/smartui/elementui/index.js"></script>
+<style>
+body {background-color: #f1f1f1;width: 100%;}
+.el-table--border th.el-table__cell, .el-table__fixed-right-patch {color: #fff; border: none !important;text-align: center;}
+.search_base_div{display:flex;justify-content:center;}
+.search_div{background-color: #fff;padding:0.5rem;width:95%;margin-top:0.5rem;border-radius:1rem;}
+.body_base_div{display:flex;justify-content:center;}
+.body_div{background-color: #fff;padding:0.5rem;width:95%;margin-top:0.5rem;border-radius:1rem;}
+.filter_base_div{display:flex;justify-content: center;align-items:center;}
+.filter_div{width:99%;display:flex;justify-content: space-between;align-items:center}
+.table_base_div{display:flex;justify-content:center;align-items:center;margin-top:1rem;}
+.table_div{width:99%;display:flex;flex-direction: column;}
+.title{font-size: 12px}
+.spot_field{background: #ad120e !important;}
+.el-descriptions__header{margin-bottom: 0;}
+@media screen and (max-width: 767px) {
+  .el-date-picker, .el-date-range-picker {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin-left: 0;
+  }
+    .title{display: none}
+    .el-dialog{width: 98% !important;margin-top: 1vh!important;}
+    .el-dialog--center .el-dialog__body{padding: 10px}
+    .el-dialog__header{padding: 0; font-size: 12px}
+    .el-form-item__label,.el-dialog__title{font-size: 12px}
+    .el-form-item{margin-bottom: 10px;}
+}
+
+.el-table .caret-wrapper{
+    display: none;
+    height: 19px;
+}
+th>.cell:hover .caret-wrapper{
+    display: inline-flex ;
+}
+.el-pagination {overflow: auto}
+.el-table--mini .el-table__cell{padding: 2px 0}
+.el-upload, .el-button+.el-button{margin-left: 3px}
+.el-dialog__headerbtn{top:10px}
+.el-alert .el-alert__description{font-size: 14px;color:blue}
+.el-checkbox-group{font-size: 18px;display: inline-block}
+.el-row:hover .el-input__inner{background: #f5f2f2;}
+.btt{height:auto!important;max-height: 90%}
+
+</style>{% block head %}{% endblock %}</head>
+{% autoescape off %}{{linkhead}}{{devhead}}{% block body %}
+<body>
+<vue id="vue_app"  v-loading.fullscreen.lock="!startRender">
+{% for div in div_list %}{{div}}{% endfor %}
+<vue id="crud_body" :class="smtdrag?'smtdrag':''">
+<!--筛选功能行-->
+{% block body_search %}
+<div class="search_base_div"  v-if="searchHead" ><div class="search_div"><div style="display:flex;" v-if="startRender">{% include 'echart/part_search.html' %}</div></div></div>
+{% endblock %}
+<!--表格体-->
+<div class="body_base_div">
+<div class="body_div"  v-if="startRender">
+    <!--表格功能行-->
+    <div class="filter_base_div">
+        <div class="filter_div"><span class="title">{[title]}</span>
+        <div>
+        {% block body_filter %}<template v-if="!searchHead">{% include 'echart/part_search.html' %}</template>{% endblock %}
+            <template v-for="(value, key) in filterDict">
+            <el-date-picker v-if="typeDict[key]=='date'" v-model="filterDict[key]" type="date"  size="mini" :style="{width:inputWidth}" :placeholder="nameDict[key]||key" value-format="yyyy-MM-dd" clearable @change="data_filter()"></el-date-picker>
+            <el-select  v-else-if="['select','selects'].includes(typeDict[key])" v-model="filterDict[key]"  :style="{width:inputWidth}" :placeholder="nameDict[key]||key" size="mini" clearable filterable @change="data_filter()" >
+                <el-option v-for="item in optionDict[key]" :key="item[0]" :label="item[1]||item[0]" :value="item[0]"></el-option>
+            </el-select>
+            <el-input v-else v-model="filterDict[key]" autocomplete="off" :placeholder="nameDict[key]||key"  :style="{width:inputWidth}" size="mini" clearable @input='data_filter()'></el-input>
+            </template>
+         <el-popconfirm :title="'execute:'+value[0]+'?'" v-for="(value, key) in actionDict" @confirm='action_batch(key)'>
+            <el-button slot="reference" :disabled="isClicked"  size="mini" :style="{background:value[1],border:'none',color:'#fff'}" >{[value[0]]}</el-button>
+         </el-popconfirm>
+         </div>
+        </div>
+    </div>
+    <!--表格容器-->
+    <div class="table_base_div">
+     <div class="table_div">
+       {% block body_table %}
+       <el-table
+        :data="tableData"
+        size="mini"
+        :header-cell-style="{ background: tableHeaderColor}"
+        :header-cell-class-name="tableHearderClassName"
+        :row-class-name="tableRowClassName"
+        :stripe="stripe"
+        :show-summary="showSummary"
+        border
+        ref="multipleTable"
+        :span-method="spanMethod"
+        :max-height="maxheight"
+        highlight-current-row
+        @current-change="handleRowClickChange"
+        @selection-change="handleSelectionChange"
+        lazy
+        :row-key="tree_id?'treeid':''"
+        :load="loadTree"
+        style="width: 100%;">
+      <el-table-column type="expand" v-if="shortTableFields">
+           <template slot-scope="scope">
+            <el-descriptions  :column="3" size="mini"  border>
+            <el-descriptions-item v-for="item in (tableFields||tableHead)" :key="item" :label="nameDict[item]||item" >
+                <el-tag v-if="tagFields.includes(item)" :color="statusColor[scope.row[item]]" style="color:black" disable-transitions size="mini">{[scope.row[item]]}</el-tag>
+              <el-image v-else-if="scope.row[item]&&typeDict[item]==='img'" :src="construct_img(scope.row[item])" style="width: 100px" :preview-src-list="[construct_img(scope.row[item])]" lazy></el-image>
+                <span v-else>{[scope.row[item]]}</span>
+            </el-descriptions-item>
+        </el-descriptions>
+        </template>
+    </el-table-column>
+        <el-table-column type="index" v-if="showIndex" width="50"></el-table-column>
+        <!--自定义选择列-->
+        <el-table-column type="selection" width="55" v-if="actionDict" key="1"></el-table-column>
+        <!--自动列-->
+        <el-table-column  v-for="item in (shortTableFields||tableFields||tableHead)"  :label="nameDict[item]||item" :width="widthDict[item]" :align="alignDict[item]||'center'" :prop="item" :key="item" :sortable="!mergeFields" show-overflow-tooltip :fixed="fixedFields.includes(item)">
+          <template slot-scope="scope" v-if="scope.row[item]">
+              <span v-if="tagFields.includes(item)">
+              <el-tag  v-for="v in scope.row[item].split(',')" :color="statusColor[v]" style="color:black" disable-transitions>{[v]}</el-tag>
+              </span>
+              <el-image v-else-if="typeDict[item]==='img'" :src="construct_img(scope.row[item])" :preview-src-list="[construct_img(scope.row[item])]" lazy></el-image>
+              <el-link v-else-if="typeDict[item]==='file'" type="success" :href="construct_img(scope.row[item])" target="_blank">{[scope.row[item]]}</el-link>
+              {% block body_table_column %}{% endblock %}
+              <span  v-else>{[ scope.row[item]]}</span>
+          </template>
+        </el-table-column>
+        <!--自定义操作列-->
+        <el-table-column  :fixed="widthDict.OP?null:'right'" label="OP" :width="widthDict.OP||80" v-if="btnEdit||btnRequest||btnView||delete_id" key="2">
+          <template slot-scope="scope">
+            <el-button type="text" size="mini" icon="el-icon-edit-outline" @click.stop="handleRequestClick(scope.row)" v-if="btnRequest"></el-button>
+            <el-button type="text" size="mini" icon="el-icon-edit" @click.stop="handleEditClick(scope.row)" v-if="btnEdit"></el-button>
+            <el-button type="text" size="mini"  icon="el-icon-view" @click.stop="handleViewClick(scope.row)" v-if="btnView"></el-button>
+           <el-popconfirm title="确认删除?"  @confirm='handleDeleteClick(scope.row)' v-if="delete_id"><el-button type="text" size="mini"  icon="el-icon-delete" slot="reference"></el-button></el-popconfirm>
+            {% block body_table_column_button %}{% endblock %}
+          </template>
+        </el-table-column>
+       </el-table>
+       <!--分页控件-->
+       <el-pagination   align='center' v-if="pageSize<999" @size-change="handlerSizeChange" @current-change="handlerCurrentChange" :current-page="currentPage" :page-size="pageSize" layout="total,sizes,prev,pager,next,jumper" :total="total"></el-pagination>
+      {% endblock %}
+    </div>
+    </div>
+</div>
+</div>
+</vue>
+<!--新增修改页-->
+{% block dialog_modify %}{% include 'echart/part_modify.html' %}{% endblock %}
+<!--卡片页-->
+{% block dialog_card %}
+<el-dialog  :visible.sync="dialogTableVisible"  :width="dialogWidth">
+    <el-descriptions  :column="3" size="mini" border>
+        <el-descriptions-item v-for="(value,item) in detail" :key="item" :label="nameDict[item]||item">
+         <el-tag v-if="tagFields.includes(item)" :color="statusColor[value]" style="color:black" disable-transitions size="mini">{[value]}</el-tag>
+        <el-image v-else-if="value&&typeDict[item]==='img'" :src="construct_img(value)" style="width: 100px" :preview-src-list="[construct_img(value)]" lazy></el-image>
+        <span v-else>{[value]}</span>
+        </el-descriptions-item>
+    </el-descriptions>
+</el-dialog>
+{% endblock %}
+<!--申批修改页-->
+{% block dialog_request %}
+<el-dialog :title="title+':变更需求'" :visible.sync="dialogFormVisible_r" :width="dialogWidth">
+  <el-form ref="rform" :model="rform" :rules="rules" :label-width="formLabelWidth">
+    <el-form-item  prop="code" label="主键" required><el-input  v-model="rform.code" autocomplete="off" disabled></el-input></el-form-item>
+    <el-form-item  prop="columnname" label="列名" required>
+      <el-select  v-model="rform.columnname" @change="rform_select_change"><el-option v-for="(value, key) in nameDict" :key="key" :label="value" :value="key"></el-option></el-select>
+    </el-form-item>
+    <el-form-item  prop="oldvalue" label="旧值"><el-input  v-model="rform.oldvalue" autocomplete="off" disabled></el-input></el-form-item>
+    <el-form-item  prop="newvalue" label="新值" required><el-input  v-model.trim="rform.newvalue" autocomplete="off"></el-input></el-form-item>
+    <el-form-item  prop="request_remark" label="备注"><el-input  v-model="rform.request_remark" autocomplete="off"></el-input></el-form-item>
+  </el-form>
+  <div slot="footer" class="dialog-footer">
+    <el-button @click="dialogFormVisible_r = false" icon="el-icon-circle-close"></el-button>
+    <el-button :disabled="isClicked" type="primary" @click.stop="update_data_r" icon="el-icon-success"></el-button>
+  </div>
+</el-dialog>
+{% endblock %}
+{% if devhead %}{% include 'echart/part_setup.html' %}{% endif %}
+</vue>
+</body>
+{% endblock %}{% endautoescape %}
+</html><script>const dashid={{ dashid }};const dsDict={{ dsdict|safe }};</script><script src="/static/smartchart/js/flexible.min.js"></script><script src="/static/smartchart/js/fun.js?_=5"></script>
+{{footer|safe}}<script>
+var vapp = new Vue({el: '#vue_app', delimiters: ['{[', ']}'],
+     data: {
+         startRender:false,
+         multipleSelection: [],
+         dialogTableVisible:false,
+         devValue:{key: '', value: '', msg:''},
+         diyKeys:[], //用于用户自定义设定项
+         diyVar:{}, //用于用户自定义变量
+         detail:'',
+         title:'测试CRUD',
+         dashid:dashid,
+         tableData:[],
+         tableHead:[],
+         tableFields:'',
+         shortTableFields:'',
+         fullData:[],
+         modifyFlag:1,
+         dialogFormVisible: false,
+         total:0,
+         isBackPage:false, //后端分页
+         isClicked:false,
+         dialogFormVisible_r:false,
+         dialogSetupVisible:false,
+         setupform:'',
+         clickRow:'',
+         maxheight:600, //表格最大高度
+         uploadpath:'test', //上传文件的路径
+         searchHead:true,
+         tableHeaderColor:'#475254',
+         dialogWidth:'60%',
+         dialogFull:false,
+         smtdrag:false,
+
+         stripe:false, //斑马纹
+         fixedFields:'', //固定行
+         showIndex:false, //显示序号
+         showSummary:false, //显示合计
+
+         dmFields:'', //维度选择字段清单
+         checkedFields:[], //选中的维度字段
+         mergeFields:'', //指定要合并的字段
+         spotFields:'', //高亮列
+
+         btnDownload:true,
+         btnAdd:true,
+         btnSearch:true,
+         btnEdit:false,
+         isEditRequest:false, //编辑是否审批
+         btnView:false,
+         btnRequest:false,
+         currentPage:1,
+         pageSize:30,
+         formLabelWidth: 'auto', //标签宽
+         inputWidth: '100px', //筛选区输入宽
+         nameDict:'', //字段与名称的MAP
+         typeDict:'', //用于填报页面字段的类型
+         form:{}, //当无aform和mform时生效
+         aform:'', //新增表单字段
+         mform:'', //修改表单字段
+         autoform:{}, //自动提交的内容
+         rform:{}, //变更请求,tablename,codename,updater请写在数据集中
+         constFields:['id'], //定义修改时只读的字段
+         constF:[],
+         tagFields:'', //显示为tag样式的字段
+         widthDict:'', //字段的显示宽度
+         alignDict:'', //字段的对齐方式
+         optionDict:'', //字段选项
+         filterDict:'', //用于过滤的字段
+         actionDict:'', //动作区按钮的定义
+         searchDict:'', //用于筛选的字段
+         selectDsDict:'', //定义联想查询数据集
+         rules: '', //定义字段校验规则
+         requiredFields:'', //必填字段
+         statusColor: '', //定义tag字段显示的颜色
+
+         table_id:0,
+         add_id:1,
+         update_id:1,
+         audit_id:1,
+         detail_id:2,
+         action_id:3,
+         option_id:'', //筛选字段清单
+         tree_id:'', //树形加载数据集
+         delete_id:'', //删除用数据集
+         uploadds:'', //上传文件的配置数据集
+
+         fieldList:[],
+         tableName:'',
+
+         setupKeyDict:{
+                form:'input_dict',aform:'input_dict',mform:'input_dict',searchDict:'input_dict',filterDict:'input_dict',
+                tableFields:'input_list',shortTableFields:'input_list',diyKeys:'input_list',
+                constFields:'input_list',tagFields:'input_list',requiredFields:'input_list',fixedFields:'input_list',dmFields:'input_list',mergeFields:'input_list',spotFields:'input_list',
+                nameDict:'text_dict',widthDict:'text_dict',alignDict:'text_dict',typeDict:'text_dict',statusColor:'text_dict',selectDsDict:'text_dict'
+            }
+     },
+     methods: {
+         //行合并
+         spanMethod({ row, column, rowIndex, columnIndex }) {
+              if (this.mergeFields.includes(column.property)) {
+                const prevRow = rowIndex === 0?'':this.tableData[rowIndex - 1];
+                if (prevRow[column.property] === row[column.property]) {
+                  return { rowspan: 0, colspan: 0 };
+                } else {
+                  let rowspan = 1;
+                  let j = rowIndex + 1;
+                  while (j < this.tableData.length && this.tableData[j][column.property] === row[column.property]) {
+                    j++;
+                    rowspan++;
+                  }
+                  return { rowspan:rowspan, colspan: 1 };
+                }
+              }
+               return { rowspan:1, colspan: 1 };
+            },
+         //配制转化
+         translate_keyValue(type, value){
+            if(value && typeof value === 'string') {
+                if (type==='input_list') {
+                    return value.split(',').map(field => field.trim());
+                } else if (type==='input_dict') {
+                    return value.split(',').reduce((acc, cur) => {acc[cur.trim()] = '';return acc;}, {});
+                } else if (type==='text_dict') {
+                    return value.split(",").reduce((result, item) => {const [key, value] = item.split(":");result[key.trim()] = value.trim();return result;}, {});
+                }else if(type==='text_dict2'){
+                   return JSON.parse(value);
+                }
+                else {
+                    return value;
+                }
+            }
+            return value
+         },
+
+        transfer_config() {
+            for(let key in this.setupKeyDict){
+                this[key] = this.translate_keyValue(this.setupKeyDict[key], this[key]);
+            }
+            if (this.requiredFields&&this.requiredFields.length>0) {
+                this.rules = this.requiredFields.reduce((acc, cur) => {
+                    acc[cur] = [{required: true, message: `请输入${this.nameDict[cur] || cur}`, trigger: 'blur'}];
+                    return acc;
+                }, {});
+            }
+            if(this.option_id){
+                ds_refresh(this.option_id);
+                let optiondata = eval('data' + this.option_id);
+                if(optiondata instanceof Array){
+                    optiondata = {df0:optiondata}
+                }
+                for(let key in optiondata){this.optionDict[optiondata[key][0][0]]=optiondata[key].slice(1);}
+            }
+        },
+        construct_img(name){
+            return '/static/custom/'+this.uploadpath+'/'+name
+         },
+        handleViewClick(row) {
+            this.dialogTableVisible = true;
+            let param={};
+            param[this.constFields[0]]=row[this.constFields[0]];
+            ds_refresh(this.detail_id,param);
+            this.detail = ds_createMap_all(eval('data'+this.detail_id))[0];
+         },
+        handlerSizeChange(val){
+             this.currentPage = 1;
+             this.pageSize=val;
+              if(this.isBackPage) {
+                  this.refreshTable();
+                  this.data_filter();
+              }else{
+                  this.tableData = this.fullData.slice((this.currentPage-1)*this.pageSize, this.currentPage*this.pageSize);
+              }
+         },
+        handlerCurrentChange(val){
+             this.currentPage = val;
+              if(this.isBackPage) {
+                  this.refreshTable();
+                  this.data_filter();
+              }else{
+                  this.tableData = this.fullData.slice((this.currentPage-1)*this.pageSize, this.currentPage*this.pageSize);
+              }
+         },
+        handleSelectionChange(val) {
+            this.multipleSelection = val;
+        },
+        //表格行格式
+        tableRowClassName({row, rowIndex}) {return '';},
+        tableHearderClassName({row, column, rowIndex, columnIndex}) {
+            return this.spotFields.includes(column.property) ? 'spot_field' : ''
+        },
+        //表格行点击动作
+        handleRowClickChange(row) {},
+        change(){if(!this.btnSearch){this.search()}},
+         //维度点击响应
+        handleCheckedChange(){
+          for(let item of this.dmFields) {
+             if (this.checkedFields.includes(item)) {
+                 ds_setParam('_' + item, item);
+             } else {
+                 ds_setParam('_' + item, '');
+             }
+          }
+          this.refreshTable();
+          this.data_filter();
+        },
+         //树形表格
+        loadTree(tree, treeNode, resolve) {
+             let param = JSON.parse(JSON.stringify(filter_param));
+             let tablehead = this.shortTableFields||this.tableFields||this.tableHead;
+             param[tablehead[0]] = tree[tablehead[0]];
+             for(let item of this.dmFields) {
+                 if (this.checkedFields.includes(item)) {
+                     param['_' + item]=tree[item];
+                 }
+             }
+             ds_refresh(this.tree_id, param);
+             let ds = eval('data'+this.tree_id);
+             ds[0].push('treeid');
+             for (let i=1;i< ds.length;i++){
+              ds[i].push(ds_generateUUID())
+            }
+             ds[0][0] = tablehead[0];
+             resolve(ds_createMap_all(ds));
+         },
+         // 共公区
+        search(){
+          for(let key in this.searchDict){
+              if(this.typeDict[key]==='date'){
+                let order_date = this.searchDict[key];
+                ds_setParam(key + '_s', order_date?order_date[0]:'');
+                ds_setParam(key + '_e', order_date?order_date[1]:'');
+              }else if(this.searchDict[key] instanceof Array){
+                ds_setParam(key, this.searchDict[key].map(item =>  "'" + item + "'").join(','));
+              }
+              else{ds_setParam(key, this.searchDict[key]);}
+          }
+          this.refreshTable();
+          this.data_filter();
+        },
+        update_data(){
+            this.stopClick();
+            this.$refs.form.validate((valid)=>{
+                if(valid) {
+                    let param={};
+                    for(let key in this.form){
+                        if(this.constFields.indexOf(key)<1||this.modifyFlag===0){
+                            if(this.modifyFlag&&this.clickRow[key]===this.form[key]){continue}
+                            if(this.form[key] instanceof Array){
+                                param[key] = this.form[key].join(',')
+                            }else{param[key]=this.form[key];}
+                        }
+                    }
+                    for(let key in this.autoform){
+                        param[key]=this.autoform[key];
+                    }
+                    if(this.modifyFlag){
+                        if(this.constFields.length<1){this.$message.error('你需要在只读字段中设定第一位为主键');return}
+                        if(!this.clickRow[this.constFields[0]]){this.$message.error('未找到主键,请确认设定是否正确');return}
+                        param[this.constFields[0]] = this.clickRow[this.constFields[0]];
+                    }
+                    if(this.isEditRequest&&this.modifyFlag){
+                        this.$prompt('请输入变更原因').then(({ value }) => {
+                            delete param[this.constFields[0]];
+                           this.rform = {code:this.clickRow[this.constFields[0]],newvalue:JSON.stringify(param), request_remark:value};
+                           let res = ds_save(this.audit_id, this.rform);
+                           if(res.status==200){
+                             this.$message.success('完成提交,等待审核通过 Submitted, Wait for check');
+                              this.dialogFormVisible = false;
+                           } else{this.$message.error(res.msg);}
+                        }).catch(() => {this.$message({type: 'info', message: '取消修改'});});
+                    }
+                    else {
+                        let res = ds_save(this.modifyFlag ? this.update_id : this.add_id, param, this.modifyFlag);
+                        if (res.status == 200) {
+                            this.$message.success('完成数据保存 Completed Save');
+                            this.refreshTable();
+                            this.data_filter();
+                            this.dialogFormVisible = false;
+                        } else {
+                            this.$message.error(res.msg);
+                        }
+                    }
+                 }
+            });
+         },
+         //用于变更申请提交
+        update_data_r(){
+            this.stopClick();
+            this.$refs.rform.validate((valid)=>{
+                if(valid) {
+                    let res = ds_save(this.audit_id, this.rform);
+                    if(res.status==200){
+                     this.$message.success('完成提交,等待审核通过 Submitted, Wait for check');
+                     this.dialogFormVisible_r = false;
+                    }
+                   else{this.$message.error(res.msg);}
+                 }
+            });
+         },
+        //功能批量处理
+        action_batch(action){
+            this.stopClick();
+            let updatelist=[];
+            for(item of this.multipleSelection){
+                updatelist.push(item[this.constFields[0]]);
+            }
+            updatelist=`${updatelist.map(item =>  typeof item !== 'number' ? "'" + item + "'" : item).join(',')}`;
+            let param={action:action,updatelist:updatelist};
+            ds_refresh(this.action_id,param);
+            this.refreshTable();
+            this.data_filter();
+        },
+        handleEditClick(row) {
+            this.modifyFlag=1;
+            this.dialogFormVisible = true;
+            this.constF = this.constFields;
+            if(this.mform){this.form=this.mform}
+            this.clickRow=row;
+            for (let key in this.form) {
+                if(row[key]&&this.typeDict[key] === 'selects'){this.form[key] = row[key].split(',')}else{this.form[key] = row[key];}
+            }
+         },
+        handleDeleteClick(row){
+            let res = ds_save(this.delete_id, [row[this.constFields[0]]], 2);
+            if(res.status==200){
+             this.$message.success('完成数据删除 Completed Delete');
+             this.refreshTable();
+             this.data_filter();
+            }
+           else{this.$message.error(res.msg);}
+         },
+        handleRequestClick(row) {
+            this.dialogFormVisible_r = true;
+            this.clickRow=row;
+            this.rform = {code:'', columnname:'', oldvalue:'', newvalue:'', request_remark:''};
+            this.rform.code=row[this.constFields[0]];
+         },
+        handleAdd(){
+            this.dialogFormVisible = true;
+            this.modifyFlag=0;
+            if(this.selectDsDict){this.constF = this.constFields.slice(1)}
+            if(this.aform){this.form=this.aform}
+            for(let key in this.form) {this.form[key] = "";}
+         },
+        daochu(){
+             let dataset=[];
+             let temp=[];
+             let tablehead = this.shortTableFields||this.tableFields||this.tableHead;
+             for(let item of tablehead){
+                 temp.push(this.nameDict[item]||item)
+             }
+             dataset.push(temp);
+             for(let items of this.fullData){
+                 temp=[];
+                 for(let item of tablehead){
+                     temp.push(items[item])
+                 }
+                 dataset.push(temp)
+             }
+            ds_download(this.title + '_下载', dataset);
+         },
+         //数据模糊过滤
+        data_filter(){
+            let tempData=this.fullData;
+            for(let key in this.filterDict){
+               if(this.filterDict[key]){
+                   let v = this.filterDict[key].trim();
+                   let op=v[0];
+                   if(['<','=','>','>=','<='].includes(op)){
+                       if(v.length<2){return}
+                       if(v[1]=='='){op=op+'='}
+                       v=v.slice(op.length);
+                       if(op=='='){op='=='}
+                       let fun=eval(`item => item${op}'${v}'`);
+                       tempData = tempData.filter(item => fun(item[key]));
+                   }
+                   else{
+                       let regex = new RegExp(v, 'i');
+                       tempData = tempData.filter(item => regex.test(item[key]));
+                   }
+               }
+            }
+            if(this.isBackPage){
+                this.tableData = tempData;
+            }else {
+                this.currentPage = 1;
+                this.tableData = tempData.slice((this.currentPage-1)*this.pageSize, this.currentPage*this.pageSize);
+                this.total = tempData.length;
+            }
+        },
+        stopClick(){
+            this.isClicked = true;
+            setTimeout(() => {
+            this.isClicked = false;
+            }, 1000);
+        },
+        refreshTable(){
+            if(this.isBackPage) {
+                ds_setParam('limit', this.pageSize);
+                ds_setParam('offset', vapp.pageSize * (vapp.currentPage - 1));
+            }
+            ds_refresh(this.table_id);
+            let ds = eval('data'+this.table_id);
+            if(this.isBackPage){
+                if(ds instanceof Array){
+                    this.$message.error('后端分页,查询数据集需带总数');
+                    return
+                }
+                this.total = ds.df0[1][0];
+                ds = ds.df1;
+            }else{
+                this.total = ds.length-1;
+            }
+            if(this.tree_id){
+                    ds[0].push('treeid');
+                    ds[0].push('hasChildren');
+                   for (let i=1;i< ds.length;i++){
+                       ds[i].push(ds_generateUUID());
+                       ds[i].push(1);
+                   }
+                   this.tableHead = ds[0].slice(0, ds[0].length-2);
+            }else{this.tableHead = ds[0];}
+            this.fullData = ds_createMap_all(ds);
+            if(this.isBackPage){
+                this.tableData = this.fullData;
+            }else{ this.tableData=this.fullData.slice((this.currentPage-1)*this.pageSize, this.currentPage*this.pageSize)}
+        },
+         //请求修改表单选择联想
+        rform_select_change(){
+            this.rform.oldvalue=this.clickRow[this.rform.columnname];
+        },
+         //选择联动
+        selectChange(key){
+             let select_id = this.selectDsDict[key];
+             if(!select_id){return}
+             let value = this.form[key];
+             if(value){
+                 if(value instanceof Array){value=value.map(item =>  "'" + item + "'").join(',');}
+             }
+             let param={};
+             param[key]=value;
+             ds_refresh(select_id, param);
+             let select_data = eval('data' + select_id);
+             for(let key in this.form) {
+                 let i = select_data[0].indexOf(key);
+                 if (i > -1) {
+                     if (select_data.length > 1) {
+                         this.form[key] = select_data[1][i]
+                     } else {
+                         this.form[key] = ''
+                     }
+                 }
+             }
+         },
+        handleUpload(response, file, fileList){
+         if(response.status===200){
+             if(response.key){this.form[response.key]=response.data[0];}else{this.refreshTable()}
+             this.$message.success(response.msg);
+         }else{this.$message.error(response.msg);}
+       },
+       beforeUpload(file) {
+       // const isExcel = file.type === 'application/vnd.ms-excel' ||
+        //  file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+       // if (!isExcel) {
+        //  this.$message.error('只能上传Excel文件');
+       // }
+        const isLt2M = file.size / 1024 / 1024 < 5;
+        if (!isLt2M) {
+          this.$message.error('文件大小不能超过 5MB!');
+        }
+        return isLt2M;
+      },
+     //自定义function
+      diyFun(){},
+     }
+});
+
+</script>{% block javascript %}{% endblock %}{% if devhead %}<script>
+$('#id_resetdrag').after('<a class="iconfont iconed_list pro" onclick="showSetup()"></a>');
+let fieldListbk;
+let connid;
+let dbtype;
+vapp.dialogDevFormVisible=false;
+vapp.saveDevValue=()=>{
+      vapp.setupform[vapp.devValue.key].value = vapp.devValue.value;
+      vapp.dialogDevFormVisible = false;
+      vapp.dialogSetupVisible = true;
+};
+vapp.openDevDialog=(key) =>{
+      vapp.devValue.key = key;
+      vapp.devValue.value = vapp.setupform[key].value;
+      vapp.devValue.value1 = vapp[key];
+      vapp.devValue.msg = vapp.setupform[key].placeholder;
+      vapp.dialogSetupVisible = false;
+      vapp.dialogDevFormVisible = true;
+    };
+vapp.setupform={
+    searchHead:{label:'查询头',type:'switch',value:'',default:true,p:2},
+    btnAdd:{label:'新增',type:'switch',value:'',default:true,p:3},
+    btnSearch:{label:'查询',type:'switch',value:'',default:true,p:2},
+    btnDownload:{label:'下载',type:'switch',value:'',default:true,p:2},
+    btnEdit:{label:'编辑',type:'switch',value:'',default:false,p:3},
+    isEditRequest:{label:'审批编辑',type:'switch',value:'',default:false,p:3},
+    btnView:{label:'查看',type:'switch',value:'',default:false,p:1},
+    btnRequest:{label:'审批',type:'switch',value:'',default:false,p:3},
+    dialogFull:{label:'全屏录入',type:'switch',value:'',default:false,p:3},
+    isBackPage:{label:'后端分页',type:'switch',value:'',default:false,p:1},
+    stripe:{label:'斑马纹',type:'switch',value:'',default:false,p:1},
+    showIndex:{label:'显示序号',type:'switch',value:'',default:false,p:1},
+    showSummary:{label:'显示合计',type:'switch',value:'',default:false,p:1},
+
+    tableHeaderColor:{label:'表头颜色',type:'color',value:'',default:'#475254',p:1},
+    table_id:{label:'表格ds',type:'number',value:'',default:0,p:1},
+    add_id:{label:'新增ds',type:'number',value:'',default:1,p:3},
+    update_id:{label:'更新ds',type:'number',value:'',default:1,p:3},
+    delete_id:{label:'删除ds',type:'number',value:'',default:'',p:3},
+    audit_id:{label:'审批ds',type:'number',value:'',default:1,p:3,},
+    detail_id:{label:'详情ds',type:'number',value:'',default:2,p:1},
+    action_id:{label:'功能ds',type:'number',value:'',default:3,p:3},
+    option_id:{label:'选项ds',type:'number',value:'',default:'',p:2},
+    uploadds:{label:'导入ds',type:'number',value:'',p:3},
+    tree_id:{label:'树形ds',type:'number',value:'',p:1},
+
+    title:{label:'标题',type:'input',value:'',p:1},
+    nameDict:{label:'字段映射',value:'',placeholder:"定义字段的中英文对照关系,逗号分隔如:code:编码",p:1},
+    searchDict:{label:'查询字段',value:'',placeholder:"定义那些字段可以查询,逗号分隔",p:2},
+    filterDict:{label:'过滤字段',value:'',placeholder:"定义那些字段可以模糊过滤,逗号分隔",p:2},
+    tableFields:{label:'表格字段',value:'',placeholder:"定义表头显示的字段,逗号分隔",p:1},
+    shortTableFields:{label:'短表格字段',value:'',placeholder:"定义表头显示的字段,会开启表折叠,逗号分隔",p:1},
+    fixedFields:{label:'固定字段',value:'',placeholder:'定义固定在左边的字段,逗号分隔',p:1},
+    mergeFields:{label:'合并字段',value:'',placeholder:'定义相同数据合并显示的字段,逗号分隔',p:1},
+    spotFields:{label:'高亮字段',value:'',placeholder:'定义表头高亮显示的字段,逗号分隔',p:1},
+    aform:{label:'新增字段',value:'',placeholder:"新增页显示的字段,逗号分隔",p:3},
+    mform:{label:'修改字段',value:'',placeholder:"修改页显示的字段,逗号分隔",p:3},
+    selectDsDict:{label:'带出ds映射',value:'',placeholder:"定义筛选字段时带出与查询数据集的对应关系,逗号分隔如:code:5",p:3},
+    constFields:{label:'只读字段',value:'',placeholder:"定义那些字段可以分隔,逗号分隔, 注意第一位放主键",p:3},
+    requiredFields:{label:'必填字段',value:'',placeholder:"定义那些字段在新增修改为必填的,逗号分隔",p:3},
+    typeDict:{label:'字段类型',value:'',placeholder:"定义字段的类型,目前支持的类型有number,date,select,selects,text,file,img,如:status:select",p:2},
+    optionDict:{label:'选项定义',type:'text_dict2',value:'',placeholder:'定义选择项,也可以取数据集的数据(需自行在模板中定义),如:{"status":[["A","状态A"],["B"]]}',p:2},
+    widthDict:{label:'字段宽度',value:'',placeholder:"定义表格字段列宽度,逗号分隔如:code:100px",p:1},
+    alignDict:{label:'字段对齐',value:'',placeholder:"定义表格字段对齐方式,逗号分隔如:code:left",p:1},
+    tagFields:{label:'tag字段',value:'',placeholder:"定义表格中那些字段显示为标签类型,逗号分隔",p:1},
+    statusColor:{label:'tag颜色',value:'',placeholder:"定义标签字段的背景颜色,如:有钱:red",p:1},
+    inputWidth:{label:'查询框宽',type:'input',value:'',default:'100px',p:2},
+    formLabelWidth:{label:'标签宽度',type:'input',value:'',default:'auto',p:3},
+    dialogWidth:{label:'弹出宽度',type:'input',value:'',default:'60%',p:3},
+    maxheight:{label:'表格最大高度',type:'input',value:'',default:600,p:1},
+    pageSize:{label:'分页条数',type:'input',value:'',default:30,p:1},
+    actionDict:{label:'批量动作',type:'text_dict2',value:'',placeholder:'定义批量作的按钮,如:{"action1":["动作1","black"]}',p:3},
+    dmFields:{label:'可变维度',value:'',placeholder:'定义可变更维度的字段,逗号分隔',p:2},
+};
+function showSetup(){
+   for(let key in vapp.setupform) {
+       if(vapp[key]){
+           let type = vapp.setupKeyDict[key]||vapp.setupform[key].type;
+            if (type==='input_list') {
+                vapp.setupform[key].value = vapp[key].join();
+            } else if (type==='input_dict') {
+                vapp.setupform[key].value = Object.keys(vapp[key]).join();
+            } else if (type==='text_dict') {
+                vapp.setupform[key].value = JSON.stringify(vapp[key]).replace(/[{}"]/g, '').replace(/:/g, ':').replace(/,/g, ',');
+            } else if(type==='text_dict2'){vapp.setupform[key].value = JSON.stringify(vapp[key])}
+            else {
+                vapp.setupform[key].value = vapp[key];
+            }}
+       else{vapp.setupform[key].value = vapp[key];}
+        }
+   vapp.dialogSetupVisible=true;
+}
+
+vapp.save_crud=(save)=>{
+    let crud=[];
+    for(let key in vapp.setupform) {
+        let type = vapp.setupKeyDict[key]||vapp.setupform[key].type;
+        vapp[key] = vapp.translate_keyValue(type,vapp.setupform[key].value);
+        if(save){
+            if(vapp[key]!=vapp.setupform[key].default&&!vapp.diyKeys.includes(key)){
+            if(typeof vapp[key]==='string'){
+                if(vapp[key]){crud.push(`vapp.${key}='${vapp[key]}'`)}
+            }else if(typeof vapp[key]==='object'){
+                if(vapp.setupKeyDict[key]){crud.push(`vapp.${key}=\`${vapp.setupform[key].value}\``);}
+                else{crud.push(`vapp.${key}=${JSON.stringify(vapp[key])}`)}
+            }else{
+                crud.push(`vapp.${key}=${vapp[key]}`)
+            }
+        }}
+   }
+    vapp.transfer_config();
+    if(save) {
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/echart/save_smartcrud/",
+            data: {dashid: dashid, crud: `\/\/=start_crud=\/\/\n${crud.join(';\n')}\n\/\/=end_crud=\/\/`, save:save},
+            success: function (data) {
+                vapp.$message.success(data.msg);
+            }
+        });
+    }
+};
+vapp.removefieldList=(item)=>{
+        let index = vapp.fieldList.indexOf(item);
+        if (index !== -1) {
+          vapp.fieldList[index].name='';
+          vapp.fieldList[index].actualtype='';
+          vapp.fieldList[index].flag=2;
+        }
+      };
+vapp.addfieldList=()=>{
+        vapp.fieldList.push({name:'',comment:'',actualtype:'varchar(50)', default:'',type:'',align:'', width:'', isnull:true, iskey:false,
+        isconst:false,isadd:false,ismodify:false,isrequired:false,issearch:false,isfilter:false,isshows:false,isshow:false,flag:1});
+      };
+vapp.searchfieldList=()=>{
+    let fieldList=[];
+    if(vapp.tableName) {
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/echart/get_dash_tableColumn/",
+            data: {dashid: dashid, table: vapp.tableName},
+            success: function (data) {
+                if (data.status === 200) {
+                    vapp.$message.success(data.msg);
+                    fieldList = data.data;
+                    fieldListbk=JSON.parse(JSON.stringify(fieldList));
+                    connid = data.connid;
+                    dbtype = data.dbtype;
+                } else {
+                    vapp.$message.error(data.msg);
+                    return
+                }
+            }
+        });
+    }else{
+        for(let item of vapp.tableHead) {
+            fieldList.push({name: item})
+        }
+        for(let item in vapp.nameDict){
+            if(!vapp.tableHead.includes(item)){fieldList.push({name: item})}
+        }
+    }
+    for (let item of fieldList) {
+        if (vapp.nameDict[item.name]) {
+            item.comment = vapp.nameDict[item.name]
+        }
+        item.type = vapp.typeDict[item.name];
+        item.align = vapp.alignDict[item.name];
+        item.width = vapp.widthDict[item.name];
+        item.isconst = vapp.constFields.includes(item.name);
+        item.isadd = vapp.aform.hasOwnProperty(item.name);
+        item.ismodify = vapp.mform.hasOwnProperty(item.name);
+        item.isrequired = vapp.requiredFields.includes(item.name);
+        item.issearch = vapp.searchDict.hasOwnProperty(item.name);
+        item.isfilter = vapp.filterDict.hasOwnProperty(item.name);
+        item.isshows = vapp.tableFields.includes(item.name);
+        item.isshow = vapp.shortTableFields.includes(item.name);
+    }
+    vapp.fieldList = fieldList;
+};
+//预览生效
+vapp.viewfieldList=()=>{
+    vapp.typeDict='';
+    vapp.alignDict='';
+    vapp.widthDict='';
+    vapp.constFields='';
+    vapp.requiredFields='';
+    vapp.aform='';
+    vapp.mform='';
+    vapp.searchDict='';
+    vapp.filterDict='';
+    vapp.tableFields='';
+    vapp.shortTableFields='';
+    for(let item of vapp.fieldList){
+        if(item.flag!==2){
+            if(item.comment){if(!vapp.nameDict){vapp.nameDict={}}vapp.nameDict[item.name]=item.comment}
+            if(item.type){if(!vapp.typeDict){vapp.typeDict={}}vapp.typeDict[item.name]=item.type}
+            if(item.align){if(!vapp.alignDict){vapp.alignDict={}}vapp.alignDict[item.name]=item.align}
+            if(item.width){if(!vapp.widthDict){vapp.widthDict={}}vapp.widthDict[item.name]=item.width}
+            if(item.isconst){if(!vapp.constFields){vapp.constFields=[]}vapp.constFields.push(item.name)}
+            if(item.isadd){if(!vapp.aform){vapp.aform={}}vapp.aform[item.name]=''}
+            if(item.ismodify){if(!vapp.mform){vapp.mform={}}vapp.mform[item.name]=''}
+            if(item.isrequired){if(!vapp.requiredFields){vapp.requiredFields=[]}vapp.requiredFields.push(item.name)}
+            if(item.issearch){if(!vapp.searchDict){vapp.searchDict={}}vapp.searchDict[item.name]=''}
+            if(item.isfilter){if(!vapp.filterDict){vapp.filterDict={}}vapp.filterDict[item.name]=''}
+            if(item.isshows){if(!vapp.tableFields){vapp.tableFields=[]}vapp.tableFields.push(item.name)}
+            if(item.isshow){if(!vapp.shortTableFields){vapp.shortTableFields=[]}vapp.shortTableFields.push(item.name)}
+            }
+    }
+    showSetup();
+};
+function generateCreateTableSql(table, fields) {
+  let sql = `CREATE TABLE ${table}(`;
+  fields.forEach(field => {
+    let fieldSql = field.name + ' ' + field.actualtype;
+    if (field.default) {
+      fieldSql += ' DEFAULT ' + field.default;
+    }
+    if (field.name === 'id' || field.name === 'code') {
+      fieldSql += ' PRIMARY KEY';
+      if (field.name === 'id') {
+          if(dbtype==='sqlite'){fieldSql += ' AUTOINCREMENT';}else{fieldSql += ' AUTO_INCREMENT';}
+      }
+    }
+    if (field.name === 'create_time') {
+        fieldSql += ' DEFAULT CURRENT_TIMESTAMP';
+    }
+    if (field.name === 'update_time') {
+        if(dbtype!=='sqlite'){fieldSql += ' DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP';}
+    }
+    if(!field.isnull){
+        fieldSql += ' not null ';
+    }
+    if (field.comment && dbtype!=='sqlite') {
+      fieldSql += " COMMENT '" + field.comment + "'";
+    }
+    sql += ' ' + fieldSql +',';
+  });
+  sql = sql.slice(0, -1); // 去掉最后一个逗号和换行符
+  sql += ')';
+  return sql;
+}
+//保存到数据库
+vapp.savefieldList=()=>{
+    let sqllist=[];
+    let s=' ';
+    if(!connid){vapp.$message.error('需要先执行查询');return}
+    //建表
+    if(fieldListbk.length===0){
+        sqllist.push(generateCreateTableSql(vapp.tableName,vapp.fieldList));
+    }else {
+        for (let i = 0; i < fieldListbk.length; i++) {
+            let item = vapp.fieldList[i];
+            if (item.flag === 2) {
+                sqllist.push(`alter table ${vapp.tableName}${s}DROP COLUMN ${fieldListbk[i].name}`)
+            } else if (fieldListbk[i].name !== item.name || fieldListbk[i].comment !== item.comment || fieldListbk[i].actualtype !== item.actualtype || fieldListbk[i].default !== item.default|| fieldListbk[i].isnull !== item.isnull) {
+                let defaults = item.default ? `default ${item.default}` : '';
+                let comment = item.comment ? `comment '${item.comment}'` : '';
+                let nullable = item.isnull ? ' null ':' not null ';
+                if(dbtype!=='sqlite'){
+                   sqllist.push(`alter table ${vapp.tableName}${s}change ${fieldListbk[i].name}${s}${item.name}${s}${item.actualtype}${s}${defaults}${nullable}${comment}`)}
+            }
+        }
+        for (let i = fieldListbk.length; i < vapp.fieldList.length; i++) {
+             let item = vapp.fieldList[i];
+           if (item.flag === 1) {
+               let defaults = item.default ? `default ${item.default}` : '';
+               let comment = item.comment ? `comment '${item.comment}'` : '';
+               let nullable = item.isnull ? ' null ':' not null ';
+               if (item.name === 'id' || item.name === 'code') {
+                   defaults = 'PRIMARY KEY';
+                   if (item.name === 'id') {
+                       if(dbtype==='sqlite'){defaults += ' AUTOINCREMENT';}else{defaults += ' AUTO_INCREMENT';}
+                   }
+               }else if(item.name === 'create_time') {defaults = 'DEFAULT CURRENT_TIMESTAMP';}
+               if(dbtype==='sqlite'){sqllist.push(`alter table ${vapp.tableName}${s}add COLUMN  ${item.name}${s}${item.actualtype}${s}${defaults}`)}
+               else{sqllist.push(`alter table ${vapp.tableName}${s}add COLUMN  ${item.name}${s}${item.actualtype}${s}${defaults}${nullable}${comment}`)}
+           }
+        }
+    }
+    console.log(sqllist);
+    sqllist = base64.encode(sqllist.join(';'),1);
+    $.ajax({
+    type: "POST",
+    url: "/echart/run_ds/",
+    data: {sqlstr:sqllist, connid: connid, s:1},
+    success: function(data) {
+        if (data.status === 200) {
+            vapp.$message.success(data.msg);
+            vapp.searchfieldList();
+        } else {
+            vapp.$message.error(data.data);
+        }
+    }});
+}
+
+
+</script>
+    <div class="modal" id="modal_iframe"><div class="modal-content modal-dash"><header class="modal-header" id="id_header">
+<span class="close" onclick="hideModal()">×</span>SmartChart<a class='iconfont iconed_ds' onclick=dev_dseditor()>数据集</a><a class='iconfont iconed_chart' onclick=dev_dschart()>图形</a><a class='iconfont iconed_div' onclick=dev_dsdiv()>布局</a>
+    <span class="editor_head"></span></header><div class="modal-body"><iframe id="iframepage" class="iframechart"  width="100%"></iframe></div></div></div><script src="/static/smartchart/js/dev.js?_=8.1"></script>{% endif %}
+<script>var charts = [];{{echart_main|safe}}window.onresize = function(){for(let i = 0; i < charts.length; i++){charts[i].resize();}};</script>
+{% block footer %}{% endblock %}<script>vapp.refreshTable();vapp.transfer_config();vapp.startRender=true;</script>
+<!--powered by smartchart.cn,Designed by JohnYan mailto:84345999@qq.com, https://gitee.com/smartchart/smartchart you need keep this-->
