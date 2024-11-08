@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+fastapi_test.egg-info/PKG-INFO
+fastapi_test.egg-info/SOURCES.txt
+fastapi_test.egg-info/dependency_links.txt
+fastapi_test.egg-info/entry_points.txt
+fastapi_test.egg-info/requires.txt
+fastapi_test.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/main.py
+src/rag_ar.py
+src/rag_en.py
