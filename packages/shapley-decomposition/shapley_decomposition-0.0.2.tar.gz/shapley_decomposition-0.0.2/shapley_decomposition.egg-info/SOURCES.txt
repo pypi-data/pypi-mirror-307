@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+shapley_decomposition/__init__.py
+shapley_decomposition/shapley_change.py
+shapley_decomposition/shapley_r2.py
+shapley_decomposition/shared_tools.py
+shapley_decomposition.egg-info/PKG-INFO
+shapley_decomposition.egg-info/SOURCES.txt
+shapley_decomposition.egg-info/dependency_links.txt
+shapley_decomposition.egg-info/requires.txt
+shapley_decomposition.egg-info/top_level.txt
+tests/__init__.py
+tests/test_r2decomp.py
+tests/test_shapleychange.py
+tests/test_sharedtools.py
