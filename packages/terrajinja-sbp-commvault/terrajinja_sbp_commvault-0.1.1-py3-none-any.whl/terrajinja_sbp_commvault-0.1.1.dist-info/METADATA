@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: terrajinja-sbp-commvault
+Version: 0.1.1
+Summary: Terrajinja extension for automation using cdktf
+Home-page: https://gitlab/terrajinja
+Author: Terrajinja Team
+Author-email: int-terrajinja@schubergphilis.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: terrajinja-imports-commvault >=1.2.10
+
+# terrajinja-sbp-commvault
+
+This is an extension to the vault provider for the following modules.
+The original documentation can be found [here](https://registry.terraform.io/providers/Commvault/commvault/latest/docs)
+
+# SBP Specific implementations
+Here is a list of supported resources and their modifications
+
+## sbp.commvault.data_commvault_client
+Original provider: [commvault.data_commvault_client](https://registry.terraform.io/providers/Commvault/commvault/latest/docs/data-sources/commvault_client)
+
+### terrajinja-cli example
+the following is a code snipet you can used in a terrajinja-cli template file.
+This custom provider adds the following: it's converts the retrieved string to a number.
+
+```
+terraform:
+  resources:
+    - task: read-client_name
+      module: sbp.commvault.data_commvault_client
+      parameters:
+          name: <client_name>
+```
+
+
+
+
+History
+-------
+
+0.0.1 (06-11-2024)
+---------------------
+
+* First code creation
