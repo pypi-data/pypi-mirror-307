@@ -1,0 +1,1618 @@
+"""Define a client to interact with 7Timer."""
+
+import asyncio
+import json
+import logging
+import math
+import os.path
+from datetime import UTC, datetime, timedelta, timezone
+from json.decoder import JSONDecodeError
+from pprint import pprint as pp
+from typing import Any, Dict, List, Optional
+
+import aiofiles
+from aiohttp import ClientSession, ClientTimeout
+from aiohttp.client_exceptions import ClientError
+from typeguard import typechecked
+
+import openmeteo_requests
+
+import requests_cache
+import pandas as pd
+from retry_requests import retry
+
+from pyastroweatherio.const import (
+    BASE_URL_MET,
+    BASE_URL_SEVENTIMER,
+    DEFAULT_CACHE_TIMEOUT,
+    DEFAULT_CONDITION_CALM_WEIGHT,
+    DEFAULT_CONDITION_CLOUDCOVER_HIGH_WEAKENING,
+    DEFAULT_CONDITION_CLOUDCOVER_LOW_WEAKENING,
+    DEFAULT_CONDITION_CLOUDCOVER_MEDIUM_WEAKENING,
+    DEFAULT_CONDITION_CLOUDCOVER_WEIGHT,
+    DEFAULT_CONDITION_FOG_WEIGHT,
+    DEFAULT_CONDITION_SEEING_WEIGHT,
+    DEFAULT_CONDITION_TRANSPARENCY_WEIGHT,
+    DEFAULT_ELEVATION,
+    DEFAULT_LATITUDE,
+    DEFAULT_LONGITUDE,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TIMEZONE,
+    FORECAST_TYPE_HOURLY,
+    HEADERS,
+    LIFTED_INDEX_7TIMER_MAPPING,
+    MAG_DEGRATION_MAX,
+    SEEING,
+    SEEING_MAX,
+    TRANSPARENCY,
+    WIND10M_MAX,
+)
+from pyastroweatherio.dataclasses import (
+    AtmosphereData,
+    AtmosphereDataModel,
+    ConditionData,
+    ConditionDataModel,
+    ForecastData,
+    ForecastDataModel,
+    GeoLocationData,
+    GeoLocationDataModel,
+    LocationData,
+    LocationDataModel,
+    NightlyConditionsData,
+    NightlyConditionsDataModel,
+    TimeData,
+    TimeDataModel,
+    UpTonightBodiesData,
+    UpTonightBodiesDataModel,
+    UpTonightCometsData,
+    UpTonightCometsDataModel,
+    UpTonightDSOData,
+    UpTonightDSODataModel,
+)
+from pyastroweatherio.errors import RequestError
+from pyastroweatherio.helper_functions import (
+    AstronomicalRoutines,
+    AtmosphericRoutines,
+    ConversionFunctions,
+)
+
+_LOGGER = logging.getLogger(__name__)
+_NOT_AVAILABLE = -9999
+
+
+class AstroWeather:
+    """AstroWeather Communication Client."""
+
+    def __init__(
+        self,
+        session: Optional[ClientSession] = None,
+        latitude=DEFAULT_LATITUDE,
+        longitude=DEFAULT_LONGITUDE,
+        elevation=DEFAULT_ELEVATION,
+        timezone_info=DEFAULT_TIMEZONE,
+        cloudcover_weight=DEFAULT_CONDITION_CLOUDCOVER_WEIGHT,
+        cloudcover_high_weakening=DEFAULT_CONDITION_CLOUDCOVER_HIGH_WEAKENING,
+        cloudcover_medium_weakening=DEFAULT_CONDITION_CLOUDCOVER_MEDIUM_WEAKENING,
+        cloudcover_low_weakening=DEFAULT_CONDITION_CLOUDCOVER_LOW_WEAKENING,
+        fog_weight=DEFAULT_CONDITION_FOG_WEIGHT,
+        seeing_weight=DEFAULT_CONDITION_SEEING_WEIGHT,
+        transparency_weight=DEFAULT_CONDITION_TRANSPARENCY_WEIGHT,
+        calm_weight=DEFAULT_CONDITION_CALM_WEIGHT,
+        uptonight_path="/conf/www",
+        test_datetime=None,
+        experimental_features=False,
+    ):
+        self._session: ClientSession = session
+        self._location_data = self._get_location(
+            latitude,
+            longitude,
+            elevation,
+            timezone_info,
+        )
+        self._weather_data_seventimer = []
+        self._weather_data_seventimer_init = ""
+        self._weather_data_metno = []
+        self._weather_data_metno_init = ""
+        self._weather_data_uptonight = {}
+        self._weather_data_uptonight_bodies = {}
+        self._weather_data_uptonight_comets = {}
+        self._weather_data_timestamp = datetime.now() - timedelta(seconds=(DEFAULT_CACHE_TIMEOUT + 1))
+        self._cloudcover_weight = cloudcover_weight
+        self._cloudcover_high_weakening = cloudcover_high_weakening
+        self._cloudcover_medium_weakening = cloudcover_medium_weakening
+        self._cloudcover_low_weakening = cloudcover_low_weakening
+        self._fog_weight = fog_weight
+        self._seeing_weight = seeing_weight
+        self._transparency_weight = transparency_weight
+        self._calm_weight = calm_weight
+        self._uptonight_path = uptonight_path
+        self._test_datetime = test_datetime
+        self._experimental_features = experimental_features
+
+        self._forecast_data = None
+
+        # DataFrame
+        self._weather_df = None
+        self._openmeteo_forecast = "icon_seamless"
+
+        # Astro Routines
+        self._astro_routines = AstronomicalRoutines(
+            self._location_data,
+            self._test_datetime,
+        )
+
+        self._atmosphere = AtmosphericRoutines()
+
+        # Testing
+        self._test_mode = False
+        if self._test_datetime is not None:
+            self._test_mode = True
+
+    # #########################################################################
+    # Public functions
+    # #########################################################################
+    @typechecked
+    async def get_location_data(
+        self,
+    ) -> List[LocationData]:
+        """Returns station Weather Forecast."""
+
+        return await self._get_location_data()
+
+    @typechecked
+    async def get_hourly_forecast(self) -> List[ForecastData]:
+        """Returns hourly Weather Forecast."""
+
+        return await self._get_forecast_data(FORECAST_TYPE_HOURLY, 72)
+
+    @typechecked
+    async def get_deepsky_forecast(self) -> List[NightlyConditionsData]:
+        """Returns Deep Sky Forecast."""
+
+        return await self._get_deepsky_forecast()
+
+    # #########################################################################
+    # Private functions
+    # #########################################################################
+    async def _calculate_seeing(self, df):
+        tasks = [
+            self._atmosphere.calculate_seeing(
+                temperature=row["air_temperature"],
+                humidity=row["relative_humidity"],
+                dew_point_temperature=row["dew_point_temperature"],
+                wind_speed=row["wind_speed"],
+                cloud_cover=row["cloud_area_fraction"],
+                altitude=self._location_data.elevation,
+                air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+            )
+            for _, row in df.iterrows()
+        ]
+        results = await asyncio.gather(*tasks)
+        return results
+
+    async def _calculate_transparency(self, df):
+        tasks = [
+            self._atmosphere.magnitude_degradation(
+                temperature=row["air_temperature"],
+                humidity=row["relative_humidity"],
+                dew_point_temperature=row["dew_point_temperature"],
+                wind_speed=row["wind_speed"],
+                cloud_cover=row["cloud_area_fraction"],
+                altitude=self._location_data.elevation,
+                air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+            )
+            for _, row in df.iterrows()
+        ]
+        results = await asyncio.gather(*tasks)
+        return results
+
+    async def _calculate_lifted_index(self, df):
+        tasks = [
+            self._atmosphere.calculate_lifted_index(
+                temperature=row["air_temperature"],
+                dew_point_temperature=row["dew_point_temperature"],
+                altitude=self._location_data.elevation,
+                air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+            )
+            for _, row in df.iterrows()
+        ]
+        results = await asyncio.gather(*tasks)
+        return results
+
+    async def _retrive_data(self) -> None:
+        """Retrieves current data from all data sources."""
+
+        if ((datetime.now() - self._weather_data_timestamp).total_seconds()) > DEFAULT_CACHE_TIMEOUT:
+            self._weather_data_timestamp = datetime.now()
+
+            weather_df_metno = await self._retrieve_data_metno()
+            weather_df_seventimer = await self._retrieve_data_seventimer()
+            weather_df_openmeteo = await self._retrieve_data_openmeteo()
+            await self._retrieve_data_uptonight()
+
+            # Merge the dataframes of metno, seventimer, and openmeteo
+            self._weather_df = weather_df_metno.merge(weather_df_seventimer, on="time", how="left").merge(
+                weather_df_openmeteo, on="time", how="left"
+            )
+
+            if self._openmeteo_forecast is not None:
+                self._weather_df["cloud_area_fraction"] = self._weather_df["openmeteo_cloud_cover"]
+                self._weather_df["cloud_area_fraction_high"] = self._weather_df["openmeteo_cloud_cover_high"]
+                self._weather_df["cloud_area_fraction_medium"] = self._weather_df["openmeteo_cloud_cover_mid"]
+                self._weather_df["cloud_area_fraction_low"] = self._weather_df["openmeteo_cloud_cover_low"]
+                self._weather_df["relative_humidity"] = self._weather_df["openmeteo_relative_humidity_2m"]
+                self._weather_df["wind_speed"] = self._weather_df["openmeteo_wind_speed_10m"]
+                self._weather_df["wind_from_direction"] = self._weather_df["openmeteo_wind_direction_10m"]
+                self._weather_df["air_temperature"] = self._weather_df["openmeteo_temperature_2m"]
+                self._weather_df["dew_point_temperature"] = self._weather_df["openmeteo_dew_point_2m"]
+                self._weather_df["precipitation_amount"] = self._weather_df["openmeteo_precipitation"]
+                self._weather_df = self._weather_df.drop(
+                    [
+                        "openmeteo_cloud_cover",
+                        "openmeteo_cloud_cover_high",
+                        "openmeteo_cloud_cover_mid",
+                        "openmeteo_cloud_cover_low",
+                        "openmeteo_relative_humidity_2m",
+                        "openmeteo_wind_speed_10m",
+                        "openmeteo_wind_direction_10m",
+                        "openmeteo_temperature_2m",
+                        "openmeteo_dew_point_2m",
+                        "openmeteo_precipitation",
+                    ],
+                    axis=1,
+                )
+
+            if self._experimental_features:
+                self._weather_df["seeing"] = await self._calculate_seeing(self._weather_df)
+                self._weather_df["transparency"] = await self._calculate_transparency(self._weather_df)
+                self._weather_df["lifted_index"] = await self._calculate_lifted_index(self._weather_df)
+            else:
+                self._weather_df["seeing"] = self._weather_df["seeing"].ffill()
+                self._weather_df["transparency"] = self._weather_df["transparency"].ffill()
+                self._weather_df["lifted_index"] = self._weather_df["lifted_index"].ffill()
+                self._weather_df["seeing"] = self._weather_df["seeing"].bfill()
+                self._weather_df["transparency"] = self._weather_df["transparency"].bfill()
+                self._weather_df["lifted_index"] = self._weather_df["lifted_index"].bfill()
+
+            now = datetime.now(UTC).replace(tzinfo=None).strftime("%Y-%m-%d %H:00:00+00:00")
+            print(self._weather_df.loc[self._weather_df["time"] == now].iloc[0])
+            self._weather_df.to_csv("output.csv", sep=";", index=False)
+        else:
+            _LOGGER.debug("Using cached data")
+
+    @typechecked
+    def _get_location(
+        self,
+        latitude,
+        longitude,
+        elevation,
+        timezone_info,
+    ) -> GeoLocationData | None:
+        """Returns a validated GeoLocation data object"""
+
+        geolocation = GeoLocationDataModel(
+            {
+                "latitude": latitude,
+                "longitude": longitude,
+                "elevation": elevation,
+                "timezone_info": timezone_info,
+            }
+        )
+
+        try:
+            return GeoLocationData(data=geolocation)
+        except TypeError as ve:
+            _LOGGER.error(f"Failed to parse geo location data: {geolocation}")
+            _LOGGER.error(ve)
+            return None
+
+    # @typechecked
+    # async def _get_atmosphere(self, details_seventimer, details_metno) -> AtmosphereData | None:
+    #     """Returns a validated Atmospherical Conditions data object"""
+
+    #     atmosphere = {}
+
+    #     seeing = 0
+    #     if details_seventimer["seeing"] == _NOT_AVAILABLE:
+    #         seeing = await self._atmosphere.calculate_seeing(
+    #             temperature=details_metno.get("air_temperature"),
+    #             humidity=details_metno.get("relative_humidity"),
+    #             dew_point_temperature=details_metno.get("dew_point_temperature"),
+    #             wind_speed=details_metno.get("wind_speed"),
+    #             cloud_cover=details_metno.get("cloud_area_fraction"),
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=details_metno.get("air_pressure_at_sea_level"),
+    #         )
+    #     else:
+    #         seeing = SEEING[max(0, min(7, int(details_seventimer["seeing"] - 1)))]
+
+    #     transparency = 0
+    #     if details_seventimer["transparency"] == _NOT_AVAILABLE:
+    #         transparency = await self._atmosphere.magnitude_degradation(
+    #             temperature=details_metno.get("air_temperature"),
+    #             humidity=details_metno.get("relative_humidity"),
+    #             dew_point_temperature=details_metno.get("dew_point_temperature"),
+    #             wind_speed=details_metno.get("wind_speed"),
+    #             cloud_cover=details_metno.get("cloud_area_fraction"),
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=details_metno.get("air_pressure_at_sea_level"),
+    #         )
+    #     else:
+    #         transparency = TRANSPARENCY[max(0, min(7, int(details_seventimer["transparency"] - 1)))]
+
+    #     lifted_index = 0
+    #     if details_seventimer["lifted_index"] == _NOT_AVAILABLE:
+    #         lifted_index = await self._atmosphere.calculate_lifted_index(
+    #             temperature=details_metno.get("air_temperature"),
+    #             dew_point_temperature=details_metno.get("dew_point_temperature"),
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=details_metno.get("air_pressure_at_sea_level"),
+    #         )
+    #     else:
+    #         lifted_index = LIFTED_INDEX_7TIMER_MAPPING[details_seventimer["lifted_index"]]
+
+    #     atmosphere = AtmosphereDataModel(
+    #         {
+    #             "seeing": seeing,
+    #             "transparency": transparency,
+    #             "lifted_index": lifted_index,
+    #         }
+    #     )
+
+    #     try:
+    #         return AtmosphereData(data=atmosphere)
+    #     except TypeError as ve:
+    #         _LOGGER.error(f"Failed to parse atmosphere data: {atmosphere}")
+    #         _LOGGER.error(ve)
+    #         return None
+
+    # @typechecked
+    # async def _get_atmosphere1(self, time) -> AtmosphereData | None:
+    #     """Returns a validated Atmospherical Conditions data object"""
+
+    #     # Return row from dataframe
+    #     now = time.replace(tzinfo=None).strftime("%Y-%m-%d %H:00:00+00:00")
+    #     row = self._weather_df.loc[self._weather_df["time"] == now].iloc[0]
+
+    #     atmosphere = {}
+
+    #     seeing = 0
+    #     transparency = 0
+    #     lifted_index = 0
+
+    #     if self._experimental_features:
+    #         seeing = await self._atmosphere.calculate_seeing(
+    #             temperature=row["air_temperature"],
+    #             humidity=row["relative_humidity"],
+    #             dew_point_temperature=row["dew_point_temperature"],
+    #             wind_speed=row["wind_speed"],
+    #             cloud_cover=row["cloud_area_fraction"],
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+    #         )
+    #         transparency = await self._atmosphere.magnitude_degradation(
+    #             temperature=row["air_temperature"],
+    #             humidity=row["relative_humidity"],
+    #             dew_point_temperature=row["dew_point_temperature"],
+    #             wind_speed=row["wind_speed"],
+    #             cloud_cover=row["cloud_area_fraction"],
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+    #         )
+    #         lifted_index = await self._atmosphere.calculate_lifted_index(
+    #             temperature=row["air_temperature"],
+    #             dew_point_temperature=row["dew_point_temperature"],
+    #             altitude=self._location_data.elevation,
+    #             air_pressure_at_sea_level=row["air_pressure_at_sea_level"],
+    #         )
+    #     else:
+    #         seeing = row["seeing"]
+    #         transparency = row["transparency"]
+    #         lifted_index = row["lifted_index"]
+
+    #     atmosphere = AtmosphereDataModel(
+    #         {
+    #             "seeing": seeing,
+    #             "transparency": transparency,
+    #             "lifted_index": lifted_index,
+    #         }
+    #     )
+
+    #     try:
+    #         return AtmosphereData(data=atmosphere)
+    #     except TypeError as ve:
+    #         _LOGGER.error(f"Failed to parse atmosphere data: {atmosphere}")
+    #         _LOGGER.error(ve)
+    #         return None
+
+    # @typechecked
+    # async def _get_condition(
+    #     self,
+    #     details_metno,
+    #     details_metno_next_1_hours,
+    #     details_metno_next_6_hours,
+    #     seeing,
+    #     transparency,
+    #     lifted_index,
+    # ) -> ConditionData | None:
+    #     """Returns a validated Weather Conditions data object"""
+
+    #     cloudcover = details_metno.get("cloud_area_fraction")
+    #     cloud_area_fraction = details_metno.get("cloud_area_fraction")
+    #     cloudcover_high = details_metno.get("cloud_area_fraction_high")
+    #     cloudcover_medium = details_metno.get("cloud_area_fraction_medium")
+    #     cloudcover_low = details_metno.get("cloud_area_fraction_low")
+    #     fog = details_metno.get("fog_area_fraction")
+    #     rh2m = details_metno.get("relative_humidity")
+    #     wind_speed = details_metno.get("wind_speed")
+    #     wind_from_direction = details_metno.get("wind_from_direction")
+    #     temp2m = details_metno.get("air_temperature")
+    #     dewpoint2m = details_metno.get("dew_point_temperature")
+    #     weather = details_metno_next_1_hours.get("summary", {}).get("symbol_code")
+    #     weather6 = details_metno_next_6_hours.get("summary", {}).get("symbol_code")
+    #     precipitation_amount = details_metno_next_1_hours.get("details", {}).get("precipitation_amount")
+    #     precipitation_amount6 = details_metno_next_6_hours.get("details", {}).get("precipitation_amount")
+
+    #     if self._experimental_features:
+    #         # Calculate Fog Density
+    #         fog2m = await self._atmosphere.calculate_fog_density(temp2m, rh2m, dewpoint2m, wind_speed) * 100
+    #     else:
+    #         fog2m = fog
+
+    #     condition = ConditionDataModel(
+    #         {
+    #             "cloudcover": cloudcover,
+    #             "cloud_area_fraction": cloud_area_fraction,
+    #             "cloud_area_fraction_high": cloudcover_high,
+    #             "cloud_area_fraction_low": cloudcover_low,
+    #             "cloud_area_fraction_medium": cloudcover_medium,
+    #             "fog_area_fraction": max(fog, fog2m),
+    #             "fog2m": fog2m,
+    #             "seeing": seeing,
+    #             "transparency": transparency,
+    #             "lifted_index": lifted_index,
+    #             "condition_percentage": await self._calc_condition_percentage(
+    #                 cloudcover_high=cloudcover_high,
+    #                 cloudcover_medium=cloudcover_medium,
+    #                 cloudcover_low=cloudcover_low,
+    #                 fog=fog,
+    #                 fog2m=fog2m,
+    #                 seeing=seeing,
+    #                 transparency=transparency,
+    #                 wind_speed=wind_speed,
+    #                 precipitation_amount=precipitation_amount,
+    #             ),
+    #             "rh2m": rh2m,
+    #             "wind_speed": wind_speed,
+    #             "wind_from_direction": wind_from_direction,
+    #             "temp2m": temp2m,
+    #             "dewpoint2m": dewpoint2m,
+    #             "weather": weather,
+    #             "weather6": weather6,
+    #             "precipitation_amount": precipitation_amount,
+    #             "precipitation_amount6": precipitation_amount6,
+    #         }
+    #     )
+
+    #     try:
+    #         return ConditionData(data=condition)
+    #     except TypeError as ve:
+    #         _LOGGER.error(f"Failed to parse condition data: {condition}")
+    #         _LOGGER.error(ve)
+    #         return None
+
+    @typechecked
+    async def _get_condition1(
+        self,
+        time,
+    ) -> ConditionData | None:
+        """Returns a validated Weather Conditions data object"""
+
+        # Return row from dataframe
+        now = time.replace(tzinfo=None).strftime("%Y-%m-%d %H:00:00+00:00")
+        row = self._weather_df.loc[self._weather_df["time"] == now].iloc[0]
+
+        cloudcover = row["cloud_area_fraction"]
+        cloud_area_fraction = row["cloud_area_fraction"]
+        cloudcover_high = row["cloud_area_fraction_high"]
+        cloudcover_medium = row["cloud_area_fraction_medium"]
+        cloudcover_low = row["cloud_area_fraction_low"]
+        fog = row["fog_area_fraction"]
+        rh2m = row["relative_humidity"]
+        wind_speed = row["wind_speed"]
+        wind_from_direction = row["wind_from_direction"]
+        temp2m = row["air_temperature"]
+        dewpoint2m = row["dew_point_temperature"]
+        weather = row["next_1h_symbol_code"]
+        weather6 = row["next_6h_symbol_code"]
+        precipitation_amount = row["next_1h_precipitation_amount"]
+        precipitation_amount6 = row["next_6h_precipitation_amount"]
+        seeing = row["seeing"]
+        transparency = row["transparency"]
+        lifted_index = row["lifted_index"]
+
+        if self._experimental_features:
+            # Calculate Fog Density
+            fog2m = await self._atmosphere.calculate_fog_density(temp2m, rh2m, dewpoint2m, wind_speed) * 100
+        else:
+            fog2m = fog
+
+        condition = ConditionDataModel(
+            {
+                "cloudcover": int(cloudcover),
+                "cloud_area_fraction": int(cloud_area_fraction),
+                "cloud_area_fraction_high": int(cloudcover_high),
+                "cloud_area_fraction_low": int(cloudcover_low),
+                "cloud_area_fraction_medium": int(cloudcover_medium),
+                "fog_area_fraction": max(fog, fog2m),
+                "fog2m": fog2m,
+                "seeing": seeing,
+                "transparency": transparency,
+                "lifted_index": lifted_index,
+                "condition_percentage": await self._calc_condition_percentage(
+                    cloudcover_high=cloudcover_high,
+                    cloudcover_medium=cloudcover_medium,
+                    cloudcover_low=cloudcover_low,
+                    fog=fog,
+                    fog2m=fog2m,
+                    seeing=seeing,
+                    transparency=transparency,
+                    wind_speed=wind_speed,
+                    precipitation_amount=precipitation_amount,
+                ),
+                "rh2m": float(rh2m),
+                "wind_speed": float(wind_speed),
+                "wind_from_direction": int(wind_from_direction),
+                "temp2m": float(temp2m),
+                "dewpoint2m": float(dewpoint2m),
+                "weather": weather,
+                "weather6": weather6,
+                "precipitation_amount": float(precipitation_amount),
+                "precipitation_amount6": float(precipitation_amount6),
+            }
+        )
+
+        try:
+            return ConditionData(data=condition)
+        except TypeError as ve:
+            _LOGGER.error(f"Failed to parse condition data: {condition}")
+            _LOGGER.error(ve)
+            return None
+
+    @typechecked
+    async def _calc_condition_percentage(
+        self,
+        cloudcover_high,
+        cloudcover_medium,
+        cloudcover_low,
+        fog,
+        fog2m,
+        seeing,
+        transparency,
+        wind_speed,
+        precipitation_amount,
+    ) -> int:
+        """Return condition based on cloud cover, fog, seeing, transparency, wind speed, and precipitation."""
+
+        # Seeing is something in between 0 and 2.5 arcsecs
+        seeing = seeing * 100 / SEEING_MAX  # arcsecs up to 2.5
+        # transparency = int(transparency * 40)  # mag degration up to 2.5
+        transparency = transparency * 100 / MAG_DEGRATION_MAX  # mag degration up to MAG_DEGRATION_MAX
+        # Wind speed is something in between 0 and 16.5 m/s
+        if wind_speed > WIND10M_MAX:
+            wind_speed = WIND10M_MAX
+        wind_speed_value = int(wind_speed * (100 / WIND10M_MAX))  # m/s up to 16.5
+
+        cloudcover = []
+        cloudcover.append(cloudcover_high * self._cloudcover_high_weakening)
+        cloudcover.append(cloudcover_medium * self._cloudcover_medium_weakening)
+        cloudcover.append(cloudcover_low * self._cloudcover_low_weakening)
+
+        condition = int(
+            100
+            - (
+                self._cloudcover_weight * max(cloudcover)
+                + self._fog_weight * max(fog, fog2m)  # Use whatever is higher
+                + self._seeing_weight * seeing
+                + self._transparency_weight * transparency
+                + self._calm_weight * wind_speed_value
+            )
+            / (
+                self._cloudcover_weight
+                + self._fog_weight
+                + self._seeing_weight
+                + self._transparency_weight
+                + self._calm_weight
+            )
+            - precipitation_amount * 100
+        )
+
+        # _LOGGER.debug(
+        #     f"Cloudcover: {max(cloudcover)}, Fog: {fog}, Seeing: {seeing}, Transparency: {transparency}, Wind speed: {wind_speed_value}"
+        # )
+
+        # Ensure condition is within the valid range [0, 1]
+        condition = max(0, min(100, condition))
+
+        return int(condition)
+
+    @typechecked
+    def _test_data(self, data, keys) -> bool:
+        """Test that specific values in a dictionary are not None"""
+
+        if not all(data[key] is not None for key in keys):
+            return False
+        return True
+
+    # #########################################################################
+    # Data for AstroWeather
+    # #########################################################################
+    @typechecked
+    async def _get_location_data(self) -> List[LocationData]:
+        """Returns a validated LocationData data object"""
+
+        cnv = ConversionFunctions()
+        items = []
+
+        await self._retrive_data()
+
+        now = datetime.now(UTC).replace(tzinfo=None)
+
+        if self._test_datetime is not None:
+            await self._astro_routines.need_update()
+        else:
+            await self._astro_routines.need_update(forecast_time=now)
+
+        forecast_time = now.replace(minute=0, second=0, microsecond=0)
+        if self._test_datetime is not None:
+            forecast_time = self._test_datetime.replace(minute=0, second=0, microsecond=0)
+        _LOGGER.debug("Forecast time: %s", str(forecast_time))
+
+        if len(self._weather_data_metno) == 0:
+            _LOGGER.error("Met.no data not available")
+            return []
+
+        # Met.no
+        metno_index = 0
+        seventimer_index = 0
+
+        # Met.no: Search for start index
+        for metno_index, datapoint in enumerate(self._weather_data_metno):
+            if forecast_time == datetime.strptime(datapoint.get("time"), "%Y-%m-%dT%H:%M:%SZ"):
+                break
+        if metno_index > len(self._weather_data_metno):
+            _LOGGER.error("Met.no start index not found")
+            return []
+        _LOGGER.debug("Met.no start index: %s", str(metno_index))
+
+        details_metno = self._weather_data_metno[metno_index].get("data", {}).get("instant", {}).get("details", {})
+        details_metno_next_1_hours = self._weather_data_metno[metno_index].get("data", {}).get("next_1_hours", {})
+        details_metno_next_6_hours = self._weather_data_metno[metno_index].get("data", {}).get("next_6_hours", {})
+
+        # Break condition
+        if details_metno_next_1_hours is None:
+            # No more hourly data
+            _LOGGER.debug(
+                "No more hourly data at %s",
+                self._weather_data_metno[metno_index].get("time", {}),
+            )
+            return None
+        if details_metno_next_6_hours is None:
+            # No more 6-hourly data
+            _LOGGER.debug(
+                "No more 6-hourly data at %s",
+                self._weather_data_metno[metno_index].get("time", {}),
+            )
+            return None
+
+        # 7Timer: Search for start index
+        seventimer_init = await cnv.anchor_timestamp(self._weather_data_seventimer_init)
+        for row7 in self._weather_data_seventimer:
+            if seventimer_init + timedelta(hours=row7["timepoint"]) > now:
+                break
+            seventimer_index += 1
+        if seventimer_index < len(self._weather_data_seventimer):
+            _LOGGER.debug("7Timer start index: %s", str(seventimer_index))
+            details_seventimer = self._weather_data_seventimer[seventimer_index]
+        else:
+            details_seventimer = {
+                "timepoint": 0,
+                "seeing": _NOT_AVAILABLE,
+                "transparency": _NOT_AVAILABLE,
+                "lifted_index": _NOT_AVAILABLE,
+            }
+
+        # atmosphere_data = await self._get_atmosphere1(now)
+
+        time_data = TimeDataModel(
+            {
+                # seventimer_init is "init" of 7timer astro data
+                "seventimer_init": seventimer_init,
+                # seventimer_timepoint is "timepoint" of 7timer astro data and defines the data for init + timepoint
+                "seventimer_timepoint": details_seventimer["timepoint"],
+                # Forecast_time is the actual datetime for the forecast data onwards in UTC
+                # Corresponds to "time" in met data
+                "forecast_time": forecast_time.replace(microsecond=0, tzinfo=timezone.utc),
+            }
+        )
+
+        try:
+            time_data = TimeData(data=time_data)
+        except TypeError as ve:
+            _LOGGER.error(f"Failed to parse location data model data: {time_data}")
+            _LOGGER.error(ve)
+
+        item = LocationDataModel(
+            {
+                # Time data
+                "time_data": time_data,
+                # Time shift to UTC
+                "time_shift": await self._astro_routines.time_shift(),
+                # Remaining forecast data point in met.no data
+                "forecast_length": (len(self._weather_data_metno) - metno_index),
+                # Location
+                "location_data": self._location_data,
+                # Astronomical routines
+                "sun_data": await self._astro_routines.sun_data(),
+                "moon_data": await self._astro_routines.moon_data(),
+                "darkness_data": await self._astro_routines.darkness_data(),
+                "night_duration_astronomical": await self._astro_routines.night_duration_astronomical(),
+                "deepsky_forecast": await self._get_deepsky_forecast(),
+                # Met.no
+                # "condition_data": await self._get_condition(
+                #     details_metno,
+                #     details_metno_next_1_hours,
+                #     details_metno_next_6_hours,
+                #     atmosphere_data.seeing,
+                #     atmosphere_data.transparency,
+                #     atmosphere_data.lifted_index,
+                # ),
+                "condition_data": await self._get_condition1(now),
+                # Uptonight objects
+                "uptonight": await self._get_deepsky_objects(),
+                "uptonight_bodies": await self._get_bodies(),
+                "uptonight_comets": await self._get_comets(),
+            }
+        )
+
+        try:
+            items.append(LocationData(data=item))
+        except TypeError as ve:
+            _LOGGER.error(f"Failed to parse location data model data: {item}")
+            _LOGGER.error(ve)
+
+        return items
+
+    @typechecked
+    async def _get_forecast_data(self, forecast_type, hours_to_show) -> List[ForecastData]:
+        """Return Forecast data for the Station."""
+
+        cnv = ConversionFunctions()
+        items = []
+
+        await self._retrive_data()
+
+        now = datetime.now(UTC).replace(tzinfo=None)
+
+        # Create items
+        cnt = 0
+
+        forecast_time = now.replace(minute=0, second=0, microsecond=0).replace(microsecond=0, tzinfo=timezone.utc)
+        if self._test_datetime is not None:
+            forecast_time = self._test_datetime.replace(minute=0, second=0, microsecond=0).replace(
+                microsecond=0, tzinfo=timezone.utc
+            )
+        _LOGGER.debug("Forecast time: %s", str(forecast_time))
+
+        # 7Timer: Search for start index
+        seventimer_init = await cnv.anchor_timestamp(self._weather_data_seventimer_init)
+
+        # Anchor timestamp
+        init_ts = await cnv.anchor_timestamp(self._weather_data_seventimer_init)
+
+        utc_to_local_diff = self._astro_routines.utc_to_local_diff()
+        _LOGGER.debug("UTC to local diff: %s", str(utc_to_local_diff))
+
+        if len(self._weather_data_metno) == 0:
+            _LOGGER.error("Met.no data not available")
+            return []
+
+        last_forecast_time = forecast_time
+        for metno_index, datapoint in enumerate(self._weather_data_metno):
+            datapoint_time = datetime.strptime(datapoint.get("time"), "%Y-%m-%dT%H:%M:%SZ").replace(
+                microsecond=0, tzinfo=timezone.utc
+            )
+            if forecast_time > datapoint_time:
+                continue
+
+            if datapoint_time - last_forecast_time > timedelta(hours=1):
+                break
+
+            last_forecast_time = datapoint_time
+            details_metno = datapoint.get("data", {}).get("instant", {}).get("details")
+
+            if not self._test_data(
+                details_metno,
+                [
+                    "air_pressure_at_sea_level",
+                    "air_temperature",
+                    "cloud_area_fraction",
+                    "cloud_area_fraction_high",
+                    "cloud_area_fraction_low",
+                    "cloud_area_fraction_medium",
+                    "dew_point_temperature",
+                    "fog_area_fraction",
+                    "relative_humidity",
+                    "ultraviolet_index_clear_sky",
+                    "wind_from_direction",
+                    "wind_speed",
+                ],
+            ):
+                _LOGGER.error("Missing Met.no data")
+                break
+
+            details_seventimer = self._get_data_seventimer_timer(
+                seventimer_init,
+                datetime.strptime(datapoint.get("time"), "%Y-%m-%dT%H:%M:%SZ"),
+            )
+            details_metno_next_1_hours = self._weather_data_metno[metno_index].get("data", {}).get("next_1_hours")
+            details_metno_next_6_hours = self._weather_data_metno[metno_index].get("data", {}).get("next_6_hours")
+
+            # Break condition
+            if details_metno_next_1_hours is None:
+                # No more hourly data
+                _LOGGER.debug(
+                    "No more hourly data at %s",
+                    self._weather_data_metno[metno_index].get("time", {}),
+                )
+                break
+            if details_metno_next_6_hours is None:
+                # No more 6-hourly data
+                _LOGGER.debug(
+                    "No more 6-hourly data at %s",
+                    self._weather_data_metno[metno_index].get("time", {}),
+                )
+                break
+
+            forecast_time = datetime.strptime(datapoint.get("time"), "%Y-%m-%dT%H:%M:%SZ").replace(
+                microsecond=0, tzinfo=timezone.utc
+            )
+            # atmosphere_data = await self._get_atmosphere1(forecast_time)
+
+            td = TimeDataModel(
+                {
+                    # seventimer_init is "init" of 7timer astro data
+                    "seventimer_init": init_ts,
+                    # seventimer_timepoint is "timepoint" of 7timer astro data and defines the data for init + timepoint
+                    "seventimer_timepoint": details_seventimer["timepoint"],
+                    # Forecast_time is the actual datetime for the forecast data onwards in UTC
+                    # Corresponds to "time" in met data
+                    "forecast_time": forecast_time,  # timestamp
+                }
+            )
+
+            try:
+                time_data = TimeData(data=td)
+            except TypeError as ve:
+                _LOGGER.error(f"Failed to parse location data model data: {time_data}")
+                _LOGGER.error(ve)
+
+            item = ForecastDataModel(
+                {
+                    # Time data
+                    "time_data": time_data,
+                    "hour": datetime.strptime(
+                        datapoint.get("time"), "%Y-%m-%dT%H:%M:%SZ"
+                    ).hour,  # forecast_time.hour % 24,
+                    # "condition_data": await self._get_condition(
+                    #     details_metno,
+                    #     details_metno_next_1_hours,
+                    #     details_metno_next_6_hours,
+                    #     atmosphere_data.seeing,
+                    #     atmosphere_data.transparency,
+                    #     atmosphere_data.lifted_index,
+                    # ),
+                    "condition_data": await self._get_condition1(forecast_time),
+                }
+            )
+
+            try:
+                items.append(ForecastData(data=item))
+            except TypeError as ve:
+                _LOGGER.error(f"Failed to parse forecast data: {item}")
+                _LOGGER.error(ve)
+
+            cnt += 1
+            if cnt >= hours_to_show:
+                break
+
+        self._forecast_data = items
+
+        _LOGGER.debug("Forceast Length: %s", str(len(items)))
+
+        return items
+
+    @typechecked
+    async def _get_deepsky_forecast(self) -> List[NightlyConditionsData]:
+        """Return Deepsky Forecast data."""
+
+        cnv = ConversionFunctions()
+        items = []
+
+        if self._forecast_data is None:
+            await self._get_forecast_data(FORECAST_TYPE_HOURLY, 72)
+
+        # Anchor timestamp
+        init_ts = await cnv.anchor_timestamp(self._weather_data_seventimer_init)
+
+        utc_to_local_diff = self._astro_routines.utc_to_local_diff()
+        _LOGGER.debug("UTC to local diff: %s", str(utc_to_local_diff))
+
+        # if self._forecast_data is None:
+        #     _LOGGER.error("Met.no forecast data not available")
+        #     return []
+
+        # Create forecast
+        forecast_dayname = ""
+        start_forecast_hour = 0
+        start_weather = ""
+        interval_points = []
+        now = datetime.now(UTC).replace(tzinfo=None)
+
+        if self._test_datetime is not None:
+            await self._astro_routines.need_update()
+        else:
+            await self._astro_routines.need_update(forecast_time=now)
+
+        sun_next_setting = await self._astro_routines.sun_next_setting()
+        sun_next_rising = await self._astro_routines.sun_next_rising()
+        night_duration_astronomical = await self._astro_routines.night_duration_astronomical()
+
+        start_indexes = []
+        # Find start index for two nights and store the indexes
+        for index, details_forecast in enumerate(self._forecast_data):
+            if details_forecast.forecast_time.hour % 24 == sun_next_rising.hour and len(start_indexes) == 0:
+                start_indexes.append(0)
+            if details_forecast.forecast_time.hour % 24 == sun_next_setting.hour:
+                start_indexes.append(index)
+
+        forecast_data_len = len(self._forecast_data)
+        for day in range(0, len(start_indexes)):
+            start_forecast_hour = 0
+            start_weather = ""
+            interval_points = []
+            start_index = start_indexes[day]
+            for index in range(
+                start_index,
+                start_index + int(math.floor(night_duration_astronomical / 3600) + 2),
+            ):
+                if index >= forecast_data_len:
+                    _LOGGER.debug("No more forecast data")
+                    break
+                details_forecast = self._forecast_data[index]
+
+                if len(interval_points) == 0:
+                    forecast_dayname = details_forecast.forecast_time.strftime("%A")
+                    start_forecast_hour = details_forecast.forecast_time.hour
+                    start_weather = details_forecast.weather6
+                    start_precipitation_amount6 = details_forecast.precipitation_amount6
+
+                # Calculate Condition
+                if len(interval_points) <= int(math.floor(night_duration_astronomical / 3600)):
+                    interval_points.append(
+                        await self._calc_condition_percentage(
+                            cloudcover_high=details_forecast.cloud_area_fraction_high_percentage,
+                            cloudcover_medium=details_forecast.cloud_area_fraction_medium_percentage,
+                            cloudcover_low=details_forecast.cloud_area_fraction_low_percentage,
+                            fog=details_forecast.fog_area_fraction_percentage,
+                            fog2m=details_forecast.fog2m_area_fraction_percentage,
+                            seeing=details_forecast.seeing,
+                            transparency=details_forecast.transparency,
+                            wind_speed=details_forecast.wind10m_speed,
+                            precipitation_amount=details_forecast.precipitation_amount,
+                        )
+                    )
+
+                if details_forecast.forecast_time.hour == sun_next_rising.hour or index >= (forecast_data_len - 1):
+                    item = NightlyConditionsDataModel(
+                        {
+                            "seventimer_init": init_ts,
+                            "dayname": forecast_dayname,
+                            "hour": start_forecast_hour,
+                            "nightly_conditions": interval_points,
+                            "weather": start_weather,
+                            "precipitation_amount6": start_precipitation_amount6,
+                        }
+                    )
+
+                    try:
+                        item = NightlyConditionsData(data=item)
+                    except TypeError as ve:
+                        _LOGGER.error(f"Failed to parse nightly conditions model data: {item}")
+                        _LOGGER.error(ve)
+
+                    items.append(item)
+
+                    conditions_numeric = ""
+                    for condition in interval_points:
+                        conditions_numeric += str(condition) + ", "
+                    _LOGGER.debug(
+                        "Nightly conditions day: %s, start hour: %s, nightly conditions: %s, weather: %s, conditions numeric: %s",
+                        str(forecast_dayname),
+                        str(start_forecast_hour),
+                        str(len(interval_points)),
+                        str(start_weather),
+                        conditions_numeric,
+                    )
+
+                    # Test for end of astronomical night. Will get true if we're already at night.
+                    if details_forecast.forecast_time.hour % 24 == sun_next_rising.hour:
+                        break
+            start_index += 24
+
+        return items
+
+    # #########################################################################
+    # UpTonight
+    # #########################################################################
+    @typechecked
+    async def _retrieve_data_uptonight(self) -> None:
+        """Retrieves current data from uptonight"""
+
+        _LOGGER.debug("Updating data from uptonight")
+
+        dataseries_dso = None
+        dataseries_bodies = None
+        dataseries_comets = None
+
+        if os.path.exists(self._uptonight_path):
+            if os.path.isfile(self._uptonight_path + "/uptonight-report.json"):
+                # _LOGGER.debug(f"Uptonight report found")
+                async with aiofiles.open(self._uptonight_path + "/uptonight-report.json", mode="r") as json_file:
+                    contents = await json_file.read()
+                dataseries_dso = json.loads(contents)
+                _LOGGER.debug("Uptonight DSO imported")
+            else:
+                _LOGGER.debug(f"File uptonight-report.json not found in {self._uptonight_path}")
+
+            if os.path.isfile(self._uptonight_path + "/uptonight-bodies-report.json"):
+                # _LOGGER.debug(f"Uptonight report found")
+                async with aiofiles.open(self._uptonight_path + "/uptonight-bodies-report.json", mode="r") as json_file:
+                    contents = await json_file.read()
+                dataseries_bodies = json.loads(contents)
+                _LOGGER.debug("Uptonight Bodies imported")
+            else:
+                _LOGGER.debug(f"File uptonight-bodies-report.json not found in {self._uptonight_path}")
+
+            if os.path.isfile(self._uptonight_path + "/uptonight-comets-report.json"):
+                # _LOGGER.debug(f"Uptonight report found")
+                async with aiofiles.open(self._uptonight_path + "/uptonight-comets-report.json", mode="r") as json_file:
+                    contents = await json_file.read()
+                dataseries_comets = json.loads(contents)
+                _LOGGER.debug("Uptonight Comets imported")
+            else:
+                _LOGGER.debug(f"File uptonight-comets-report.json not found in {self._uptonight_path}")
+        else:
+            _LOGGER.debug(
+                f"Path for UpTonight data not found. Current path: {self._uptonight_path}/uptonight-report.json"
+            )
+
+        self._weather_data_uptonight = dataseries_dso
+        self._weather_data_uptonight_bodies = dataseries_bodies
+        self._weather_data_uptonight_comets = dataseries_comets
+
+    @typechecked
+    async def _get_deepsky_objects(self) -> List[UpTonightDSOData]:
+        """Return Deepsky Objects for today."""
+
+        items = []
+
+        # Create list of deep sky objects
+        if self._weather_data_uptonight is not None:
+            dso_id = self._weather_data_uptonight.get("id", {})
+            dso_target_name = self._weather_data_uptonight.get("target name", {})
+            dso_type = self._weather_data_uptonight.get("type", {})
+            dso_constellation = self._weather_data_uptonight.get("constellation", {})
+            dso_size = self._weather_data_uptonight.get("size", {})
+            dso_visual_magnitude = self._weather_data_uptonight.get("mag", {})
+            dso_meridian_transit = self._weather_data_uptonight.get("meridian transit", {})
+            dso_meridian_antitransit = self._weather_data_uptonight.get("meridian antitransit", {})
+            dso_foto = self._weather_data_uptonight.get("foto", {})
+
+            for row in range(len(dso_target_name)):
+                dso_meridian_transit_local = dso_meridian_transit.get(str(row), "")
+                if dso_meridian_transit_local != "":
+                    dso_meridian_transit_utc = (
+                        datetime.strptime(dso_meridian_transit_local, "%m/%d/%Y %H:%M:%S")
+                        - timedelta(seconds=await self._astro_routines.time_shift())
+                    ).replace(tzinfo=UTC)
+                else:
+                    dso_meridian_transit_utc = ""
+
+                dso_meridian_antitransit_local = dso_meridian_antitransit.get(str(row), "")
+                if dso_meridian_antitransit_local != "":
+                    dso_meridian_antitransit_utc = (
+                        datetime.strptime(dso_meridian_antitransit_local, "%m/%d/%Y %H:%M:%S")
+                        - timedelta(seconds=await self._astro_routines.time_shift())
+                    ).replace(tzinfo=UTC)
+                else:
+                    dso_meridian_antitransit_utc = ""
+
+                item = UpTonightDSODataModel(
+                    {
+                        "id": dso_id.get(str(row), ""),
+                        "target_name": dso_target_name.get(str(row), ""),
+                        "type": dso_type.get(str(row), ""),
+                        "constellation": dso_constellation.get(str(row), ""),
+                        "size": dso_size.get(str(row), ""),
+                        "visual_magnitude": dso_visual_magnitude.get(str(row), ""),
+                        "meridian_transit": dso_meridian_transit_utc,
+                        "meridian_antitransit": dso_meridian_antitransit_utc,
+                        "foto": dso_foto.get(str(row), 0),
+                    }
+                )
+                try:
+                    items.append(UpTonightDSOData(data=item))
+                except TypeError as ve:
+                    _LOGGER.error(f"Failed to parse deep sky object data: {item}")
+                    _LOGGER.error(ve)
+
+        return items
+
+    @typechecked
+    async def _get_bodies(self) -> List[UpTonightBodiesData]:
+        """Return Bodies for today."""
+
+        items = []
+
+        # Create list of bodies
+        if self._weather_data_uptonight_bodies is not None:
+            body_target_name = self._weather_data_uptonight_bodies.get("target name", {})
+            body_max_altitude = self._weather_data_uptonight_bodies.get("max altitude", {})
+            body_azimuth = self._weather_data_uptonight_bodies.get("azimuth", {})
+            body_max_altitude_time = self._weather_data_uptonight_bodies.get("max altitude time", {})
+            body_visual_magnitude = self._weather_data_uptonight_bodies.get("visual magnitude", {})
+            body_meridian_transit = self._weather_data_uptonight_bodies.get("meridian transit", {})
+            body_foto = self._weather_data_uptonight_bodies.get("foto", {})
+
+            for row in range(len(body_target_name)):
+                # UpTonight delivers the time in local time zone. here we need it in UTC
+                body_max_altitude_time_local = body_max_altitude_time.get(str(row), "")
+                body_max_altitude_time_utc = (
+                    datetime.strptime(body_max_altitude_time_local, "%m/%d/%Y %H:%M:%S")
+                    - timedelta(seconds=await self._astro_routines.time_shift())
+                ).replace(tzinfo=UTC)
+
+                body_meridian_transit_local = body_meridian_transit.get(str(row), "")
+                if body_meridian_transit_local != "":
+                    body_meridian_transit_utc = (
+                        datetime.strptime(body_meridian_transit_local, "%m/%d/%Y %H:%M:%S")
+                        - timedelta(seconds=await self._astro_routines.time_shift())
+                    ).replace(tzinfo=UTC)
+                else:
+                    body_meridian_transit_utc = ""
+
+                item = UpTonightBodiesDataModel(
+                    {
+                        "target_name": body_target_name.get(str(row), ""),
+                        "max_altitude": body_max_altitude.get(str(row), ""),
+                        "azimuth": body_azimuth.get(str(row), ""),
+                        "max_altitude_time": body_max_altitude_time_utc,
+                        "visual_magnitude": body_visual_magnitude.get(str(row), ""),
+                        "meridian_transit": body_meridian_transit_utc,
+                        "foto": body_foto.get(str(row), 0),
+                    }
+                )
+                try:
+                    items.append(UpTonightBodiesData(data=item))
+                except TypeError as ve:
+                    _LOGGER.error(f"Failed to parse bodies data: {item}")
+                    _LOGGER.error(ve)
+
+        return items
+
+    @typechecked
+    async def _get_comets(self) -> List[UpTonightCometsData]:
+        """Return Comets for today."""
+
+        items = []
+
+        # Create list of comets
+        if self._weather_data_uptonight_comets is not None:
+            comet_target_name = self._weather_data_uptonight_comets.get("target name", {})
+            distance_au_earth = self._weather_data_uptonight_comets.get("distance earth au", {})
+            distance_au_sun = self._weather_data_uptonight_comets.get("distance sun au", {})
+            absolute_magnitude = self._weather_data_uptonight_comets.get("absolute magnitude", {})
+            visual_magnitude = self._weather_data_uptonight_comets.get("visual magnitude", {})
+            altitude = self._weather_data_uptonight_comets.get("altitude", {})
+            azimuth = self._weather_data_uptonight_comets.get("azimuth", {})
+            rise_time = self._weather_data_uptonight_comets.get("rise time", {})
+            set_time = self._weather_data_uptonight_comets.get("set time", {})
+
+            for row in range(len(comet_target_name)):
+                # UpTonight delivers the time in local time zone. here we need it in UTC
+                rise_time_local = rise_time.get(str(row), "")
+                set_time_local = set_time.get(str(row), "")
+                rise_time_local_utc = (
+                    datetime.strptime(rise_time_local, "%m/%d/%Y %H:%M:%S")
+                    - timedelta(seconds=await self._astro_routines.time_shift())
+                ).replace(tzinfo=UTC)
+                set_time_local_utc = (
+                    datetime.strptime(set_time_local, "%m/%d/%Y %H:%M:%S")
+                    - timedelta(seconds=await self._astro_routines.time_shift())
+                ).replace(tzinfo=UTC)
+
+                item = UpTonightCometsDataModel(
+                    {
+                        "designation": comet_target_name.get(str(row), ""),
+                        "distance_au_earth": distance_au_earth.get(str(row), ""),
+                        "distance_au_sun": distance_au_sun.get(str(row), ""),
+                        "absolute_magnitude": absolute_magnitude.get(str(row), ""),
+                        "visual_magnitude": visual_magnitude.get(str(row), ""),
+                        "altitude": altitude.get(str(row), ""),
+                        "azimuth": azimuth.get(str(row), ""),
+                        "rise_time": rise_time_local_utc,
+                        "set_time": set_time_local_utc,
+                    }
+                )
+                try:
+                    items.append(UpTonightCometsData(data=item))
+                except TypeError as ve:
+                    _LOGGER.error(f"Failed to parse comets data: {item}")
+                    _LOGGER.error(ve)
+
+        return items
+
+    # #########################################################################
+    # 7Timer
+    # #########################################################################
+    async def _retrieve_data_seventimer(self) -> None:
+        """Retrieves current data from 7timer."""
+
+        _LOGGER.debug("Updating data from 7Timer")
+
+        astro_dataseries = {}
+
+        # Testing
+        if not self._experimental_features:
+            if self._test_mode:
+                if os.path.isfile("debug/astro.json"):
+                    _LOGGER.debug("Reading 7Timer from file")
+                    with open("debug/astro.json") as json_file:
+                        astro_dataseries_json = json.load(json_file)
+                        astro_dataseries = astro_dataseries_json.get("dataseries", {})
+                        json_data_astro = {"init": astro_dataseries_json.get("init")}
+                else:
+                    json_data_astro = await self._async_request_seventimer("astro", "get")
+                    astro_dataseries = json_data_astro.get("dataseries", {})
+            else:
+                json_data_astro = await self._async_request_seventimer("astro", "get")
+                astro_dataseries = json_data_astro.get("dataseries", {})
+
+        if astro_dataseries != {} and not self._experimental_features:
+            cnv = ConversionFunctions()
+            seventimer_init = await cnv.anchor_timestamp(json_data_astro.get("init"))
+
+            # Flattening the data into a list of records
+            records = []
+            for entry in astro_dataseries:
+                time = (seventimer_init + timedelta(hours=entry["timepoint"])).replace(
+                    microsecond=0, tzinfo=timezone.utc
+                )
+                instant_details = {}
+                instant_details["seeing"] = SEEING[max(0, min(7, int(entry["seeing"] - 1)))]
+                instant_details["transparency"] = TRANSPARENCY[max(0, min(7, int(entry["transparency"] - 1)))]
+                instant_details["lifted_index"] = LIFTED_INDEX_7TIMER_MAPPING[entry["lifted_index"]]
+
+                # Adding all details to a single record
+                record = {
+                    "time": time,
+                    **instant_details,
+                }
+                records.append(record)
+
+            # Convert to DataFrame
+            weather_df_seventimer = pd.DataFrame(records)
+
+            self._weather_data_seventimer = astro_dataseries
+            self._weather_data_seventimer_init = json_data_astro.get("init")
+        else:
+            # Fake 7timer weather data if service is broken
+            # This eliminates consideration of seeing, transparency, and lifted_index
+            # and switches automatically to experimental functions.
+            self._weather_data_seventimer_init = datetime.now(UTC).replace(tzinfo=None).strftime("%Y%m%d%H")
+            self._weather_data_seventimer = []
+            records = []
+            now = datetime.now(UTC)
+
+            for index in range(0, 20):
+                self._weather_data_seventimer.append(
+                    {
+                        "timepoint": index * 3,
+                        "seeing": _NOT_AVAILABLE,
+                        "transparency": _NOT_AVAILABLE,
+                        "lifted_index": _NOT_AVAILABLE,
+                    }
+                )
+                time = (now + timedelta(hours=index * 3)).replace(
+                    minute=0, second=0, microsecond=0, tzinfo=timezone.utc
+                )
+                instant_details = {}
+                instant_details["seeing"] = _NOT_AVAILABLE
+                instant_details["transparency"] = _NOT_AVAILABLE
+                instant_details["lifted_index"] = _NOT_AVAILABLE
+
+                # Adding all details to a single record
+                record = {
+                    "time": time,
+                    **instant_details,
+                }
+                records.append(record)
+
+            # Convert to DataFrame
+            weather_df_seventimer = pd.DataFrame(records)
+
+        print(weather_df_seventimer)
+        return weather_df_seventimer
+
+    @typechecked
+    async def _async_request_seventimer(self, product="astro", method="get") -> Dict:
+        """Make a request against the 7timer API."""
+
+        use_running_session = self._session and not self._session.closed
+
+        if use_running_session:
+            session = self._session
+        else:
+            session = ClientSession(timeout=ClientTimeout(total=DEFAULT_TIMEOUT))
+
+        # BASE_URL_SEVENTIMER = "https://www.7timer.info/bin/api.pl?lon=XX.XX&lat=YY.YY&product=astro&output=json"
+        url = (
+            str(f"{BASE_URL_SEVENTIMER}")
+            + "?lon="
+            + str("%.1f" % round(self._location_data.longitude, 2))
+            + "&lat="
+            + str("%.1f" % round(self._location_data.latitude, 2))
+            + "&product="
+            + str(product)
+            + "&output=json"
+        )
+        try:
+            _LOGGER.debug(f"Query url: {url}")
+            async with session.request(method, url, headers=HEADERS, ssl=False) as resp:
+                resp.raise_for_status()
+                plain = str(await resp.text()).replace("\n", " ")
+                data = json.loads(plain)
+
+                if self._test_mode:
+                    json_string = json.dumps(data)
+                    with open("debug/" + product + ".json", "w") as outfile:
+                        outfile.write(json_string)
+
+                return data
+        except JSONDecodeError as jsonerr:
+            _LOGGER.error(f"JSON decode error, expecting value: {jsonerr}")
+            return {}
+        except asyncio.TimeoutError as tex:
+            _LOGGER.error(f"Request to endpoint timed out: {tex}")
+            return {}
+        except ClientError as err:
+            _LOGGER.error(f"Error requesting data: {err}")
+            return {}
+
+        finally:
+            if not use_running_session:
+                await session.close()
+
+    @typechecked
+    def _get_data_seventimer_timer(self, anchor_timestamp, datetime) -> Dict[str, Any]:
+        """Return 7Timer datapoint of interest."""
+
+        seventimer_index = 0
+        for index, row7 in enumerate(self._weather_data_seventimer):
+            if anchor_timestamp + timedelta(hours=row7["timepoint"]) > datetime:
+                seventimer_index = index - 1
+                break
+            # index += 1
+        if seventimer_index >= len(self._weather_data_seventimer):
+            return {
+                "timepoint": row7["timepoint"],
+                "seeing": _NOT_AVAILABLE,
+                "transparency": _NOT_AVAILABLE,
+                "lifted_index": _NOT_AVAILABLE,
+            }
+        else:
+            return self._weather_data_seventimer[seventimer_index]
+
+    # #########################################################################
+    # Met.no
+    # #########################################################################
+    async def _retrieve_data_metno(self) -> None:
+        """Retrieves current data from met."""
+
+        _LOGGER.debug("Updating data from Met.no")
+
+        dataseries = None
+
+        # Testing
+        if self._test_mode:
+            if os.path.isfile("debug/met.json"):
+                _LOGGER.debug("Reading Met.no data from file")
+                with open("debug/met.json") as json_file:
+                    dataseries = json.load(json_file).get("properties", {}).get("timeseries")
+            else:
+                json_data_metno = await self._async_request_met("met", "get")
+                dataseries = json_data_metno.get("properties", {}).get("timeseries")
+        else:
+            json_data_metno = await self._async_request_met("met", "get")
+            dataseries = json_data_metno.get("properties", {}).get("timeseries")
+
+        # Flattening the data into a list of records
+        records = []
+        for entry in dataseries:
+            time = datetime.strptime(entry["time"], "%Y-%m-%dT%H:%M:%SZ").replace(microsecond=0, tzinfo=timezone.utc)
+            instant_details = entry["data"]["instant"]["details"]
+            next_1h_symbol_code = entry["data"].get("next_1_hours", {}).get("summary", {}).get("symbol_code", None)
+            next_6h_symbol_code = entry["data"].get("next_6_hours", {}).get("summary", {}).get("symbol_code", None)
+            next_1h_precipitation_amount = (
+                entry["data"].get("next_1_hours", {}).get("details", {}).get("precipitation_amount", None)
+            )
+            next_6h_precipitation_amount = (
+                entry["data"].get("next_6_hours", {}).get("details", {}).get("precipitation_amount", None)
+            )
+
+            # Adding all details to a single record
+            record = {
+                "time": time,
+                **instant_details,
+                "next_1h_symbol_code": next_1h_symbol_code,
+                "next_6h_symbol_code": next_6h_symbol_code,
+                "next_1h_precipitation_amount": next_1h_precipitation_amount,
+                "next_6h_precipitation_amount": next_6h_precipitation_amount,
+            }
+            records.append(record)
+
+        # Convert to DataFrame
+        weather_df_metno = pd.DataFrame(records)
+
+        if dataseries is not None:
+            if len(dataseries) > 0:
+                self._weather_data_metno = dataseries
+                self._weather_data_metno_init = dataseries[0].get("time")
+
+        return weather_df_metno
+
+    @typechecked
+    async def _async_request_met(self, product="met", method="get") -> Dict:
+        """Make a request against the 7timer API."""
+
+        use_running_session = self._session and not self._session.closed
+
+        if use_running_session:
+            session = self._session
+        else:
+            session = ClientSession(
+                timeout=ClientTimeout(total=DEFAULT_TIMEOUT),
+            )
+
+        # BASE_URL_MET = "https://api.met.no/weatherapi/locationforecast/2.0/complete?altitude=XX&lat=XX.XX&lon=XX.XX"
+        url = (
+            str(f"{BASE_URL_MET}")
+            + "?lon="
+            + str("%.1f" % round(self._location_data.longitude, 2))
+            + "&lat="
+            + str("%.1f" % round(self._location_data.latitude, 2))
+            + "&altitude="
+            + str(int(self._location_data.elevation))
+        )
+
+        try:
+            _LOGGER.debug(f"Query url: {url}")
+            async with session.request(method, url, headers=HEADERS) as resp:
+                resp.raise_for_status()
+                # plain = str(await resp.text()).replace("\n", " ")
+                # data = json.loads(plain)
+                data = await resp.json()
+
+                if self._test_mode:
+                    json_string = json.dumps(data)
+                    with open("debug/" + product + ".json", "w") as outfile:
+                        outfile.write(json_string)
+
+                return data
+        except JSONDecodeError as jsonerr:
+            _LOGGER.error(f"JSON decode error, expecting value: {jsonerr}")
+            return {}
+        except asyncio.TimeoutError as tex:
+            _LOGGER.error(f"Request to endpoint timed out: {tex}")
+            return {}
+        except ClientError as err:
+            _LOGGER.error(f"Error requesting data: {err}")
+            return {}
+
+        finally:
+            if not use_running_session:
+                await session.close()
+
+    # #########################################################################
+    # Openmeteo
+    # #########################################################################
+    async def _retrieve_data_openmeteo(self) -> None:
+        """Retrieves current data from openmeteo."""
+
+        _LOGGER.debug("Updating data from Open-Meteo")
+
+        # Setup the Open-Meteo API client with cache and retry on error
+        # cache_session = requests_cache.CachedSession(".cache", expire_after=3600)
+        # retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
+        # openmeteo = openmeteo_requests.Client(session=retry_session)
+        openmeteo = openmeteo_requests.Client()
+
+        # Make sure all required weather variables are listed here
+        # The order of variables in hourly or daily is important to assign them correctly below
+        url = "https://api.open-meteo.com/v1/forecast"
+        params = {
+            "latitude": self._location_data.latitude,
+            "longitude": self._location_data.longitude,
+            "hourly": [
+                "temperature_2m",
+                "relative_humidity_2m",
+                "dew_point_2m",
+                "precipitation",
+                "cloud_cover",
+                "cloud_cover_low",
+                "cloud_cover_mid",
+                "cloud_cover_high",
+                "wind_speed_10m",
+                "wind_direction_10m",
+            ],
+            "timezone": self._location_data.timezone_info,
+            # "temperature_unit": "celcius",
+            "precipitation_unit": "mm",
+            "wind_speed_unit": "ms",
+            "models": self._openmeteo_forecast,
+        }
+        # DWD Germany: icon_seamless
+        # Met.no: metno_seamless
+        # NOAA U.S.: gfs_seamless
+        # ECMWF: ecmwf_ifs025
+        responses = openmeteo.weather_api(url, params=params)
+
+        # Process first location. Add a for-loop for multiple locations or weather models
+        response = responses[0]
+
+        # Process hourly data. The order of variables needs to be the same as requested.
+        hourly = response.Hourly()
+        hourly_temperature_2m = hourly.Variables(0).ValuesAsNumpy()
+        hourly_relative_humidity_2m = hourly.Variables(1).ValuesAsNumpy()
+        hourly_dew_point_2m = hourly.Variables(2).ValuesAsNumpy()
+        hourly_precipitation = hourly.Variables(3).ValuesAsNumpy()
+        hourly_cloud_cover = hourly.Variables(4).ValuesAsNumpy()
+        hourly_cloud_cover_low = hourly.Variables(5).ValuesAsNumpy()
+        hourly_cloud_cover_mid = hourly.Variables(6).ValuesAsNumpy()
+        hourly_cloud_cover_high = hourly.Variables(7).ValuesAsNumpy()
+        hourly_wind_speed_10m = hourly.Variables(8).ValuesAsNumpy()
+        hourly_wind_direction_10m = hourly.Variables(9).ValuesAsNumpy()
+
+        hourly_data = {
+            "time": pd.date_range(
+                start=pd.to_datetime(hourly.Time(), unit="s", utc=True),
+                end=pd.to_datetime(hourly.TimeEnd(), unit="s", utc=True),
+                freq=pd.Timedelta(seconds=hourly.Interval()),
+                inclusive="left",
+            )
+        }
+        hourly_data["openmeteo_temperature_2m"] = hourly_temperature_2m
+        hourly_data["openmeteo_relative_humidity_2m"] = hourly_relative_humidity_2m
+        hourly_data["openmeteo_dew_point_2m"] = hourly_dew_point_2m
+        hourly_data["openmeteo_precipitation"] = hourly_precipitation
+        hourly_data["openmeteo_cloud_cover"] = hourly_cloud_cover
+        hourly_data["openmeteo_cloud_cover_low"] = hourly_cloud_cover_low
+        hourly_data["openmeteo_cloud_cover_mid"] = hourly_cloud_cover_mid
+        hourly_data["openmeteo_cloud_cover_high"] = hourly_cloud_cover_high
+        hourly_data["openmeteo_wind_speed_10m"] = hourly_wind_speed_10m
+        hourly_data["openmeteo_wind_direction_10m"] = hourly_wind_direction_10m
+
+        weather_df_openmeteo = pd.DataFrame(data=hourly_data)
+
+        return weather_df_openmeteo
