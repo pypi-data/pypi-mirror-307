@@ -1,0 +1,38 @@
+{
+  "wce": {
+    "name": "Weigthed Cross Entropy",
+    "criterion": "WeightedCrossEntropy",
+    "criterionparam": "{'input':outputs,'target':sample['label'],'weight':sample['weight'] if 'weight' in sample else None}",
+    "module": "loss.lossfunc"
+  },
+  "focal": {
+    "name": "Weigthed Focal Loss",
+    "criterion": "WeightedFocalLoss2d",
+    "criterionparam": "{'input':outputs,'target':sample['label'],'weight':sample['weight'] if 'weight' in sample else None}",
+    "module": "loss.lossfunc"
+  },
+  "dice": {
+    "name": "Soft Dice",
+    "criterion": "SoftDice",
+    "criterionparam": "{'input':outputs,'target':sample['label']}",
+    "module": "loss.lossfunc"
+  },
+  "wce_dice": {
+    "name": "Weigthed Cross Entropy with Dice regularization",
+    "criterion": "WCE_DICE",
+    "criterionparam": "{'input':outputs,'target':sample['label'],'weight':sample['weight'] if 'weight' in sample else None}",
+    "module": "loss.lossfunc"
+  },
+  "lsmax": {
+    "name": "Lovasz Softmax",
+    "criterion": "LovaszSoftmax",
+    "criterionparam": "{'input':outputs,'target':sample['label']}",
+    "module": "loss.lossfunc"
+  },
+  "wce_j": {
+    "name": "Weigthed Cross Entropy with J regularization",
+    "criterion": "WCE_JReg",
+    "criterionparam": "{'input':outputs,'target':sample['label'],'weight':sample['weight'] if 'weight' in sample else None }",
+    "module": "loss.lossfunc"
+  }
+}

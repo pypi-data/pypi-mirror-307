@@ -1,0 +1,20 @@
+{
+  "data2d": {
+    "dataset_folder": "../../data/dataset1",
+    "split": "dev",
+    "image_folder": "images",
+    "label_folder": "labels",
+    "number_classes": "4",
+    "is_3D": "False",
+    "transform_parameter": "NormalizePercentile(),RandomCrop((256,256)),ToTensor()"
+  },
+  "data3d": {
+    "dataset_folder": "../../data/dataset1",
+    "split": "dev",
+    "image_folder": "images",
+    "label_folder": "labels",
+    "number_classes": "4",
+    "is_3D": "True",
+    "transform_parameter": "NormalizePercentile(),RandomCrop((64,64)),ToTensor()"
+  }
+}

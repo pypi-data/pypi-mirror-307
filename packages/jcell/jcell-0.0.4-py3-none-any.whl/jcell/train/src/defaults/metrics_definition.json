@@ -1,0 +1,17 @@
+{
+  "accuracy": {
+    "criterion": "WeightedAccuracy",
+    "criterionparam": "{'input':outputs,'target':sample['label']}",
+    "module": "loss.metrics"
+  },
+  "fmeasure": {
+    "criterion": "FMeasure",
+    "criterionparam": "{'input':outputs,'target':sample['label']}",
+    "module": "loss.metrics"
+  },
+  "jaccard": {
+    "criterion": "Jaccard",
+    "criterionparam": "{'input':outputs,'target':sample['label']}",
+    "module": "loss.metrics"
+  }
+}

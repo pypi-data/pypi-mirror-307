@@ -1,0 +1,192 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: update",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/update.py",
+            "console": "integratedTerminal",
+            "args": [
+                // "--resource_folder",
+                // "/media/fillo/_home/jcellrc"
+            ]
+        },
+        {
+            "name": "Python: dataproc inst2sem",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/dataset_utils/data_proc.py",
+            "console": "integratedTerminal",
+            "args": [
+                "inst2sem",
+                "--input=pclv3_16.tif",
+                // "--output=_%3",
+                // "--output=/media/fillo/_home/work/caltech/caltus_deploy/caltus/caltus/unit_test/data/test1/output/",
+                // "--se1=1"
+            ]
+        },
+        {
+            "name": "Python: dataproc augment",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/dataset_utils/data_proc.py",
+            "console": "integratedTerminal",
+            "args": [
+                "augment",
+                "--image=/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/unit_test/data/test1/output/squares_image.tif",
+                "--label=/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/unit_test/data/test1/output/squares_label.tif",
+                "--output=_%3",
+                // "--output=/media/fillo/_home/work/caltech/caltus_deploy/caltus/caltus/unit_test/data/test1/output/",
+                // "--se1=1"
+            ]
+        },
+        {
+            "name": "Python: jcell",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--version",
+                "/media/fillo/_home/work/caltech/caltus_deploy/",
+            ]
+        },
+        {
+            "name": "Python: train",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "train",
+                // "-h"
+                // "--listdatasets",
+                "--experiment=cityscape",
+                // "--dataset_param={'dataset_folder':'/media/fillo/_home/work/caltech/ISBI_datasets/Fluo-N2DL-HeLa1'}",
+                // "--configuration_path=/media/fillo/_home/jcell1/datasets/configuration",
+                // "--output_path=/media/fillo/_home/work/caltech/caltus_deploy/dataset/mer/out",
+                "--use_gpu=1",
+                "--visdom",
+                // "--batch_size=1",
+                // "--batch_acc=8",
+                "--save_rate=100",
+                // "--show_rate=20",
+                // "--train_worker=4",
+                // "--dev_worker=2",
+                // "--loss=jinst",
+                // "--loss_param",
+                // "{\"lambda_vect\":[1, 0.05, 0.05, 0.05, 1, 0.05, 0.05, 1, 0.05, 1]}",
+                // "--optimizer_param",
+                // "{\"lr\": 0.001}",
+                // "--3D",
+                // "--resume",
+                "--epochs=2",
+                "--optimizer=Adam",
+                "--model_param",
+                "{\"init\":\"/media/fillo/_home/work/caltech/final_ISBI_data/models/17-try_15_epoch100model(GENERALIST OK).t7\"}",
+                "--continual_learning",
+                "{\"dataset_path\": \"/media/fillo/_home/work/caltech/ISBI_datasets/ALL_DATA_EWC\"}",
+                "--dataset=tcells",
+                "/media/fillo/_home/work/caltech/caltus_deploy/",
+            ]
+        },
+        {
+            "name": "Python: Evaluation",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // 
+            // "args": ["train3d", "--experiment=meristem", "--json_path=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/meristem/defaults",
+            //     "--output_path=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/meristem/out","--listdataset","--listmodel","--listloss",
+            //     "--optimizer=AdamW","--use_cuda=0","--visdom"]
+            "args": [
+                "segment",
+                // "--probability=/media/fillo/_home/work/caltech/caltus_deploy/caltus/caltus/unit_test/data/test2/squares_prob.tif",
+                // "--probability=/media/fillo/_home/work/caltech/caltus_deploy/caltus/caltus/unit_test/data/test2/probability/L_8.tif",
+                // "--model=/media/fillo/_home/work/caltech/caltus_deploy/caltus/jcell_copy_server/models/generalist.pt",
+                // "--model=/media/fillo/_home/work/caltech/ISBIC/SW/models/GENERALIST_v0.t7",
+                // "--probability=/media/fillo/_home/work/caltech/caltus_deploy/caltus/unit_test/data/test2/output/squares_prob.tif",
+                // "--input=/media/fillo/_home/work/caltech/ISBI_datasets/original_data/PhC-C2DH-U373/train/02/",
+                // "--input=/media/fillo/_home/work/caltech/ISBIC/Fluo-N2DL-HeLa/01/mask013.tif",
+                // "--input=/media/fillo/_home/work/caltech/final_ISBI_data/test_all/",
+                // "--input=/media/fillo/_home/work/caltech/caltus_deploy/caltus/unit_test/output/squares.tif",
+                // "--probability=/media/fillo/_home/work/caltech/caltus_deploy/caltus/unit_test/output/squares_prob.tif",
+                "--input=/media/fillo/_home/work/caltech/ISBIC/PhC-C2DL-PSC/01",
+                "--output=/media/fillo/_home/work/caltech/ISBIC/PhC-C2DL-PSC/our_results1/",
+                "--model=generalist",
+                // "--post=MAP",
+                // "--post_param",
+                // "{\"min_area\":126}",
+                "--output_type",
+                "object_overlay",
+                // "--3D",
+                // "--output=/media/fillo/_home/work/caltech/ISBIC/Fluo-N2DL-HeLa/01_RES/",
+                // "--output=/media/fillo/_home/work/caltech/final_ISBI_data/res1/",
+                // "--overwrite",
+                "--use_gpu",
+                "1",
+                // "--post=WTS",
+                // "--post_param",
+                // "{\"thresh_foreground\":0.99}",
+                // "--output_type",
+                // "instances_rgb",
+                // "classification",
+                // "--confidence=0.85",
+                // "--3D",
+                // "--verbose",
+                // "--percentile_norm",
+                // "--sequence",
+                "/media/fillo/_home/work/caltech/models/"
+            ]
+            // "args": [
+            //     "eval",
+            //     "--input=/media/fillo/_home/work/caltech/ISBIC/Fluo-N2DH-SIM+/01/",
+            //     "--model=/media/fillo/_home/work/caltech/models/fluosim2.pt",
+            //     "--output=/media/fillo/_home/work/caltech/ISBIC/Fluo-N2DH-SIM+/01_newmodel/",
+            //     "--use_gpu=1",
+            //     "--post=MAP",
+            //     // "--post_param={'morph':3}",
+            //     "--output_type",
+            //     "object_overlay",
+            //     "instances",
+            //     // "--confidence=0.9",
+            //     // "--3D"
+            // ]
+            // "args": [
+            //     "eval",
+            //     "-h"
+            // ]
+            // "args": ["test3d","--image=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/pclv3_2_inst_gt.tif",
+            //     "--model=/media/fillo/_home/work/caltech/models/meristem3d.t7", 
+            //     "--output=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/res/","--use_cuda=0","--imcropsize=64"]
+            // "args": ["inst2sem2d","--image=/media/fillo/_home/work/caltech/Untitled Folder/dataset/ISBI_BF_MuSC/test/01_RES/mask1560.tif",
+            //     "--output=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/ISBI_BF_MuSC/test/01_SEM",
+            // "--se1=3","--se2=15"]
+            // "args": ["inst2sem2d","--help"]
+            // "args": ["inst2sem3d","--image=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/pclv3_2_inst_gt.tif",
+            //     "--output=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/classes",
+            // "--se1=11"]
+            // "args": ["augment2d","--image=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/ISBI_BF_MuSC/test/01",
+            //     "--label=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/ISBI_BF_MuSC/test/01_SEM",
+            //     "--output=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/ISBI_BF_MuSC/test/augment",
+            // "--crop_size_x=1024","--crop_size_y=1024","--gamma=0.01","--ignore_empty"]
+            // "args": ["augment3d","--image=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/pclv3_c2.tif",
+            //     "--label=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d/classes/pclv3_2_inst_gt.tif",
+            //     "--output=/media/fillo/_home/work/caltech/Untitled Folder/deployv2/dataset/3d",
+            // "--crop_size_x=128","--crop_size_y=128","--crop_size_z=128","--gamma=0.01","--ignore_empty"]
+        }
+    ]
+}

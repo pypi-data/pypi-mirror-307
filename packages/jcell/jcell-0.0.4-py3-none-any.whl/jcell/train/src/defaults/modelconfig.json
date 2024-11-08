@@ -1,0 +1,28 @@
+{
+  "unetpad2D": {
+    "arch": "unetpad",
+    "module": "models.arch.unetpad_4",
+    "n_classes": "4",
+    "is_deconv": "False",
+    "in_channels": "1",
+    "is_batchnorm": "False",
+    "processing_dimensions": [
+      "True",
+      "False"
+    ],
+    "init": "xavier_normal"
+  },
+  "unetpad3D": {
+    "arch": "unet3pad3",
+    "module": "models.arch.unet3pad3",
+    "n_classes": "4",
+    "is_deconv": "False",
+    "in_channels": "1",
+    "is_batchnorm": "False",
+    "processing_dimensions": [
+      "False",
+      "True"
+    ],
+    "init": "xavier_normal"
+  }
+}

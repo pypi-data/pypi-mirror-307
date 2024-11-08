@@ -1,0 +1,7 @@
+mkdir configuration
+cd configuration
+cdir=$(pwd)
+caldir="cd $(python -c "exec(\"import os\nimport jcell\nprint(os.path.dirname(jcell.__file__))\")")"
+$caldir
+cd train/src/defaults
+cp dataconfig_dev.json dataconfig_train.json metrics.json $cdir
