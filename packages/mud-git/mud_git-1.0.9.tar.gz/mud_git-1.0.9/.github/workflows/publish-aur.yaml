@@ -1,0 +1,31 @@
+name: Upload to Arch Linux (AUR)
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  aur-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Update PKGBUILD with Tag Version
+        run: |
+          version=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          sed -i "s/^pkgver=.*/pkgver=${version}/" PKGBUILD
+          cat PKGBUILD
+
+      - name: Publish AUR package
+        uses: KSXGitHub/github-actions-deploy-aur@v3.0.1
+        with:
+          pkgname: mud-git
+          pkgbuild: ./PKGBUILD
+          commit_username: ${{ secrets.AUR_USERNAME }}
+          commit_email: ${{ secrets.AUR_EMAIL }}
+          ssh_private_key: ${{ secrets.AUR_SSH_KEY }}
+          commit_message: "Update AUR package to version ${latest_version}"
+          ssh_keyscan_types: rsa,ecdsa,
