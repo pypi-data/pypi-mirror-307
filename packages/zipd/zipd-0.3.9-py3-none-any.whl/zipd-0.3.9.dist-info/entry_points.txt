@@ -1,0 +1,2 @@
+[console_scripts]
+zipd = zipd.__main__:main
