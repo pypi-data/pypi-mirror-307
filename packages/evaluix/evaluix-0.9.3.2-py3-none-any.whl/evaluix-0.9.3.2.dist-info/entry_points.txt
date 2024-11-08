@@ -1,0 +1,3 @@
+[console_scripts]
+evaluix=evaluix.__main__:main
+
