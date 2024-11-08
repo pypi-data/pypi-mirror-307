@@ -1,0 +1,13 @@
+jupyterlab>=4.2.0
+ipylab>=1.0.0
+jupyter-server>=2.14.0
+anthropic>=0.37.0
+openai>=1.51.0
+claudette
+fastapi>=0.115.0
+uvicorn>=0.31.0
+nest-asyncio>=1.6.0
+pydantic>=2.9.0
+requests>=2.32.0
+python-multipart>=0.0.5
+ipywidgets>=8.1.0
