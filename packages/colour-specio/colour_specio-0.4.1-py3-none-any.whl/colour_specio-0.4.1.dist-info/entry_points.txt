@@ -1,0 +1,4 @@
+[console_scripts]
+csmf_anonymize=specio.scripts.csmf_anonymize:main
+csmf_doctor=specio.scripts.csmf_doctor:main
+

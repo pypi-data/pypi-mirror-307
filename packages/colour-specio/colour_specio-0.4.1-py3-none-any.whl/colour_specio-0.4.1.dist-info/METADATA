@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: colour-specio
+Version: 0.4.1
+Summary: Instrument control for spectrometers
+Home-page: https://github.com/tjdcs/specio
+License: BSD-3-Clause
+Keywords: colour-science,spectrometer,instrument control
+Author: Tucker
+Author-email: tucker@tjdcs.dev
+Requires-Python: >=3.12,<3.14
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aenum (>=3.1.11,<4.0.0)
+Requires-Dist: colour-science (>=0.4.6,<0.5.0)
+Requires-Dist: numpy (>=1.23.1,<2.0.0)
+Requires-Dist: protobuf (>=5.27.0,<6.0.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Project-URL: Repository, https://github.com/tjdcs/specio
+Description-Content-Type: text/markdown
+
+# Specio
+
+Specio is a python library for interacting with spectrometers. Currently only
+the Colorimetry Research family is supported, and particularly this library is
+tested and maintained with a CR300.
+
+This library also provides a virtual spectrometer which provides semi-random
+SPDs as measurements.
+
+## Usage
+
+See Examples Folder
+
