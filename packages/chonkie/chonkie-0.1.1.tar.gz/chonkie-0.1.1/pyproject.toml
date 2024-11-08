@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chonkie"
+version = "0.1.1"
+description = "🦛 CHONK your texts with Chonkie ✨ - The no-nonsense RAG chunking library"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["chunking", "rag", "nlp", "text-processing"]
+authors = [
+    {name = "Bhavnick Minhas", email = "bhavnicksm@gmail.com"}
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "autotiktokenizer", "tokenizers>=0.13.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/bhavnicksm/chonkie"
+
+[project.optional-dependencies]
+sentence = ["spacy>=3.0.0"]
+semantic = ["sentence-transformers>=2.0.0", "numpy>=1.23.0"]
+all = ["spacy>=3.0.0", "sentence-transformers>=2.0.0", "numpy>=1.23.0"]
+dev = ["pytest>=6.2.0", "tranformers>=4.0.0", "tiktoken>=0.2.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["chonkie", "chonkie.chunker"]
