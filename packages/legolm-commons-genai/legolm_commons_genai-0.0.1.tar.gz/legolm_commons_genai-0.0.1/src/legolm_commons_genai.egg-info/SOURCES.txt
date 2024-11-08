@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/legolm_commons_genai/__init__.py
+src/legolm_commons_genai/html_service.py
+src/legolm_commons_genai.egg-info/PKG-INFO
+src/legolm_commons_genai.egg-info/SOURCES.txt
+src/legolm_commons_genai.egg-info/dependency_links.txt
+src/legolm_commons_genai.egg-info/requires.txt
+src/legolm_commons_genai.egg-info/top_level.txt
+tests/legolm_commons_genai/first_test.py
