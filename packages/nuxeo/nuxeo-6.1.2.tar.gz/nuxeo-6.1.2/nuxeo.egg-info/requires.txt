@@ -1,0 +1,8 @@
+requests>=2.12.2
+
+[oauth2]
+authlib>=0.15.3
+jwt>=1.2.0
+
+[s3]
+boto3>=1.10.48
