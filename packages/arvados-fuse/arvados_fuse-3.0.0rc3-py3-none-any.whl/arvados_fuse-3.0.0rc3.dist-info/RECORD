@@ -1,0 +1,15 @@
+arvados_fuse/__init__.py,sha256=VCLkf8IGVDBdLPUbS1nxsC9DNhBNV2Yb5LQsm8EsEF4,36511
+arvados_fuse/_version.py,sha256=AVAFH21btbwYQM7XZ9iN_TCp_RvBP3CiO3dSdL4vc08,25
+arvados_fuse/command.py,sha256=0uCX4wmjz4W3SmYFB0ZSVWjG_XsYHCDJQltcfyD2hzU,25675
+arvados_fuse/crunchstat.py,sha256=3N3RAUTNx-11Vr4s4G6EwOvXN50599dQtNfqI80Woqg,2499
+arvados_fuse/fresh.py,sha256=T-dwRDexlexVnBsITRMZA2SR7h44iFPACAY6eh_tkmg,3981
+arvados_fuse/fusedir.py,sha256=mQ-NTSYZpqu0y5G4M1PydoGs2E6TaElu8pb4hKmnXIA,56792
+arvados_fuse/fusefile.py,sha256=ZdPUpP23aclCJJZh41uIcaJWbXQ97smpzI5C7RZUFWU,4518
+arvados_fuse/unmount.py,sha256=q7Y8M7udeY0GoMEDQwR7LE4rsIcdsV_UKAAmrITayfE,7328
+arvados_fuse-3.0.0rc3.data/data/share/doc/arvados_fuse/README.rst,sha256=Plv9ONllpu7AYw5ywuOwBry9Bss90fnGIzw_CBVfd3k,3507
+arvados_fuse-3.0.0rc3.data/data/share/doc/arvados_fuse/agpl-3.0.txt,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+arvados_fuse-3.0.0rc3.data/scripts/arv-mount,sha256=67YQp6KVnl6SiQTvhJOLD7Rqu0KUhQmHpTld4gqhpZw,267
+arvados_fuse-3.0.0rc3.dist-info/METADATA,sha256=-Ni5hbfWD7BDnKhHBhqLZcmDen7MjmxboLU41UrANho,4086
+arvados_fuse-3.0.0rc3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+arvados_fuse-3.0.0rc3.dist-info/top_level.txt,sha256=bAWcDDmatAUuuJS2BdUZs38dv6j2sPOh_wMzC_0Xp8M,13
+arvados_fuse-3.0.0rc3.dist-info/RECORD,,
