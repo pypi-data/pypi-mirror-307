@@ -1,0 +1,25 @@
+{
+  "overrides": {
+    "sql-language-server": {
+      "ws": "7.5.10",
+      "mysql2": "3.9.8",
+      "execa": "2.0.0",
+      "node-ssh-forward": {
+        "ssh2": "1.6.0"
+      },
+      "kind-of": "^6.0.3",
+      "jest": {
+        "jest-haste-map": {
+          "sane": {
+            "micromatch": "^4.0.8",
+            "braces": "^3.0.3"
+          }
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "sql-language-server": "^1.7.0",
+    "vscode-jsonrpc": "^8.2.1"
+  }
+}
