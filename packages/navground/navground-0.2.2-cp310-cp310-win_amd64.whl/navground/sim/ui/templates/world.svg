@@ -1,0 +1,115 @@
+{% if standalone %}
+<?xml version="1.0" standalone="no"?>
+{% if external_style_path %}
+<?xml-stylesheet href="{{external_style_path}}" type="text/css"?>
+{% endif %}
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+{% endif %}
+<svg id="{{prefix}}svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="{{width}}" height="{{height}}" viewBox="{{viewBox}}">
+<defs>
+  <g id="{{prefix}}agent" r="1">
+   <circle class="body" cx="0" cy="0" r="1"/>
+   <circle opacity="0.5" stroke="none" fill="black" cx="0.75" cy="0" r="0.25"/>
+  </g>
+  <g id="{{prefix}}thymio" transform="rotate(90)">
+      <path class="body"
+         d="M -0.6874903375 -0.7257309 L -0.6874903375 0.3749771125 L 0.6874903375 0.3749771125 L 0.6874903375 -0.726118475 A 1 1 0 0 0 0 -1 A 1 1 0 0 0 -0.6874903375 -0.7257309 z " />
+      <rect
+         style="fill:#333333;stroke:none"
+         width="0.1875"
+         height="0.525"
+         x="-0.675"
+         y="-0.2625"
+         rx="0.0625" />
+      <rect
+         style="fill:#333333;stroke:none"
+         width="0.1875"
+         height="0.525"
+         x="0.4875"
+         y="-0.2625"
+         rx="0.0625" />
+  </g>
+  <g id="{{prefix}}wheelchair" transform="rotate(180) translate(-1.1,-3.46)">
+    <path
+       stroke="none"
+       style="fill:#c8beb7"
+       d="m 0.9612298,3.7966354 h -0.7778 v -0.6666 h 0.7778 z"/>
+    <path
+       stroke="none"
+       style="fill:#080808;"
+       d="m 1.62765948,2.970532 v -0.0823436 -0.084297 H 1.0722298 v 0.166640 z"/>
+    <path
+       stroke="none"
+       style="fill:#080808;"
+       d="m 1.62765948,4.081332 v -0.0823436 -0.084297 H1.0722298 v 0.1666406 z"/>
+    <path
+       class="body"
+       d="m 1.84994464,3.9982804 h -1 v -1.1112 h 1 z" />
+    <path
+       stroke="none"
+       style="fill:#917c6f;opacity:0.75;stroke:none"
+       d="m 1.84994464,3.9982664 v -0.0554296 -1.0557422 h -0.11117186 v 1.1111718 z"/>
+  </g>
+  <g id="{{prefix}}human" transform="rotate(180) translate(-1,-3.5)">
+    <g class="body">
+    <ellipse
+       cx="0.80312774"
+       cy="2.6959574"
+       rx="0.46378762"
+       ry="0.1392307" />
+    <ellipse
+       cx="0.80312774"
+       cy="4.2229708"
+       rx="0.46378762"
+       ry="0.1392307" />
+    <ellipse
+       cx="1.08757424"
+       cy="3.4594642"
+       rx="0.39526176"
+       ry="0.86793068" />
+    </g>
+    <ellipse
+       style="fill:#1a1a1a;opacity:0.5;stroke:none"
+       cx="1.08757424"
+       cy="3.458025"
+       rx="0.3257516"
+       ry="0.33270264" />
+  </g>
+</defs>
+<style>
+<![CDATA[
+{% if not include_style_path %}
+{% include 'style.css' %}
+{% endif %}
+{% if style %}
+{{style}}
+{% endif %}
+{% if background_color %}
+svg {
+   background-color: {{background_color}};
+}
+{% endif %}
+.grid {
+  stroke: {{grid_color}};
+  stroke-width: {{grid_thickness}};
+}
+]]>
+</style>
+
+<g id="{{prefix}}world" transform='scale(1, -1) {{rotation}}'>
+
+{% if grid %}
+
+{% for x in grid_xs -%}
+    <line x1="{{x}}" y1="{{grid_ys[0]}}" x2="{{x}}" y2="{{grid_ys[-1]}}" class="grid"/>
+{%- endfor -%}
+
+{%- for y in grid_ys -%}
+    <line y1="{{y}}" x1="{{grid_xs[0]}}" y2="{{y}}" x2="{{grid_xs[-1]}}" class="grid"/>
+{%- endfor %}
+
+{% endif %}
+
+{{svg_world}}
+</g>
+</svg>
