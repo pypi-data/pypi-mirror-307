@@ -1,0 +1,3 @@
+[console_scripts]
+myfabric-connector install = myfabric.install_runner:run_install
+myfabric-connector start = myfabric.main:main
