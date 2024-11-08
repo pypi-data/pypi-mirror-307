@@ -1,0 +1,111 @@
+[tool.poetry]
+name = "pydictcc"
+version = "0.1.0"
+description = ""
+authors = ["Tobias Witt <sleepywitti@gmail.com>"]
+license = "GPL v3"
+readme = "README.md"
+#packages = [{ include = "src/pydictcc" }]
+keywords = ["dictionary"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Education",
+    "Topic :: Office/Business",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+include = [{ path = "tests", format = "sdist" }]
+
+[tool.poetry.scripts]
+pydictcc = "pydictcc.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = { version = "^4.66.6", optional = true }
+
+[tool.poetry.extras]
+progressbar = ["tqdm"]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = ">=2.10"
+ruff = "^0.6"
+coverage = { extras = ["toml"], version = "^7.6" }
+pytest = "^8.0"
+
+[tool.ruff]
+src = ["pydictcc", "test"]
+line-length = 120
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D", # allow undocumented code
+    "ISC001", # implicitly concatenated strings on a single line
+    "COM812", # missing-trailing-comma
+    "G004", # allow logging statement uses f-string
+    "TRY003", # allow long messages in exceptions
+    "Q000", # Single quotes found but double quotes preferred
+]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = false
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101", # asserts allowed in tests
+    "INP001", # test directories are not namespace packages
+]
+"src/pydictcc/main.py" = [
+    "T201", # allow print messages
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = [
+    "-ra",
+    "-q",
+    "--import-mode=importlib",
+]
+
+[tool.coverage.run]
+branch = false
+command_line = "-m pytest"
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = [
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+    # Don't complain if non-runnable code isn't run:
+    "if __name__ == .__main__.:",
+]
+
+[tool.semantic_release]
+version_variable = [
+    "src/pydictcc/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
