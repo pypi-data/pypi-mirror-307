@@ -1,0 +1,5592 @@
+{
+    "Device Rev": {
+      "fields": {
+        "RevId": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 1,
+          "field_type": "read only",
+          "description": "Revision of Device"
+        },
+        "DevId": {
+          "index": 1,
+          "offset": 3,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Identifies OTP configuration"
+        }
+      },
+      "description": "Register Device Rev, Address: h00, Memory Index: 0",
+      "index": 0,
+      "address": 0,
+      "otpPreset": 1,
+      "otpAddress": 0,
+      "reset": 0
+    },
+    "Status 1": {
+      "fields": {
+        "ChgInLimSt": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "0: Input Limiter not in thermal shutdown\n1: Input limiter in thermal shutdown"
+        },
+        "ChgInOvpSt": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "0: VCHGIN ≤ VCHGIN_OV - VCHGIN_OV_HYST\n1: VCHGIN > VCHGIN_OV"
+        },
+        "ChgInSt": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "0: VCHGIN ≤ VCHGIN_DET - VCHGIN_DET_HYST\n1: VCHGIN > VCHGIN_DET"
+        },
+        "ChgSt": {
+          "index": 3,
+          "offset": 3,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "0b00000: Charger Off\n0b00001: Prequal\n0b00010: Fast Charge CC1\n0b00011: Fast Charge CC2\n0b00100: Fast Charge CV\n0b00101: Charge Top Off\n0b00110: Charge Done\n0b00111: Reserved\n0b01000: Reserved\n0b01001: Reserved\n0b01010: Reserved\n0b01011: Reserved\n0b01100: Reserved\n0b01101: Reserved\n0b01110: ISET resistor fault\n0b01111: Battery Detection\n0b10000: FC_CC1 JEITA Warm/Cool\n0b10001: FC_CC1 Limiter Hot\n0b10010: FC_CC1 JEITA Warm/Cool & Limiter Hot\n0b10011: FC_CC1 JEITA Shutdown\n0b10100: FC_CC2 JEITA Warm/Cool\n0b10101: FC_CC2 Limiter Hot\n0b10110: FC_CC2 JEITA Warm/Cool & Limiter Hot\n0b10111: FC_CC2 JEITA Shutdown\n0b11000: FC_CV JEITA Warm/Cool\n0b11001: FC_CV Limiter Hot\n0b11010: FC_CV JEITA Warm/Cool & Limiter Hot\n0b11011: FC_CV JEITA Shutdown\n0b11100: Prequal JEITA Temp Fault\n0b11101: Limiter Temp Fault\n0b11110: Timer Fault\n0b11111: Reserved"
+        }
+      },
+      "description": "Register Status 1, Address: h01, Memory Index: 1",
+      "index": 1,
+      "address": 1,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Status 2": {
+      "fields": {
+        "ChgJeitaSt": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of Charger JEITA temperature monitor\n0b000: Cold temperature zone\n0b001: Cool temperature zone\n0b010: Room temperature zone\n0b011: Warm temperature zone\n0b100: Hot temperature zone\n0b101-0b111: Reserved"
+        },
+        "ChgTempRdSt": {
+          "index": 1,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of Charger die temperature pause monitor\n0: Charger operating normally\n1: die temperature exceeds TCHGRD, Charge current is reduced by 50% and Safety timer is doubled."
+        },
+        "ChgTempFltSt": {
+          "index": 2,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of Limiter die Temperature Fault\n0: Charger operating normally\n1: Die temperature exceeds TCHGINSD. Input limiter is turned off and CHGIN is disconnected from SYS"
+        },
+        "BatPrstSt": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Battery present. Detected as an open on BTHM pin\n0: Battery not present and CHGIN valid\n1: Battery present or CHGIN not valid"
+        },
+        "unused_Status 2_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Status 2_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Status 2, Address: h02, Memory Index: 2",
+      "index": 2,
+      "address": 2,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Status 3": {
+      "fields": {
+        "Gpio1St": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of GPIO1 pin\n0: GPIO1 state is low\n1: GPIO1 state is high"
+        },
+        "Gpio2St": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of GPIO2 pin\n0: GPIO2 state is low\n1: GPIO2 state is high"
+        },
+        "Gpio3St": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of GPIO3 pin\n0: GPIO3 state is low\n1: GPIO3 state is high"
+        },
+        "Gpio4St": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of GPIO4 pin\n0: GPIO4 state is low\n1: GPIO4 state is high"
+        },
+        "PSWbSt": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of PSWb.\n0: PSWb driven low.\n1: PSWb pulled high"
+        },
+        "ThmADC": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Status of Thermistor ADC conversion complete. Only active when ThmADCFltr=1, ThmADCEn=0 and CHGIN not valid.\n0: ADC conversion in progress\n1: ADC conversion complete"
+        },
+        "unused_Status 3_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Status 3_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Status 3, Address: h03, Memory Index: 3",
+      "index": 3,
+      "address": 3,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Interrupt 1": {
+      "fields": {
+        "ChgInLimStI": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in CHGIN Thermal Status\n0: No Change\n1: Status Change"
+        },
+        "ChgInOvpStI": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in CHGIN OVP Status\n0: No Change\n1: Status Change"
+        },
+        "ChgInStI": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in CHGIN voltage Status\n0: No Change\n1: Status Change"
+        },
+        "ChgStI": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in Charger Status\n0: No Change\n1: Status Change"
+        },
+        "unused_Interrupt 1_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 1_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 1_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 1_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Interrupt 1, Address: h04, Memory Index: 4",
+      "index": 4,
+      "address": 4,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Interrupt 2": {
+      "fields": {
+        "ChgJeitaStI": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in Charger JEITA Monitor Status\n0: No Change\n1: Status Change"
+        },
+        "ChgTempRdStI": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in Charger Temperature Pause Status\n0: No Change\n1: Status Change"
+        },
+        "ChgTempFltStI": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in Charger Temperature Fault Status\n0: No Change\n1: Status Change"
+        },
+        "BatPrstStI": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in Battery Present Status\n0: No Change\n1: Status Change"
+        },
+        "unused_Interrupt 2_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 2_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 2_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 2_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Interrupt 2, Address: h05, Memory Index: 5",
+      "index": 5,
+      "address": 5,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Interrupt 3": {
+      "fields": {
+        "Gpio1StI": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in GPIO1 Status\n0: No Change\n1: Status Change"
+        },
+        "Gpio2StI": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in GPIO2 Status\n0: No Change\n1: Status Change"
+        },
+        "Gpio3StI": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in GPio3 Status\n0: No Change\n1: Status Change"
+        },
+        "Gpio4StI": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in GPio4 Status\n0: No Change\n1: Status Change"
+        },
+        "PSWbStI": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in PSWb Status\n0: No Change\n1: Status Change"
+        },
+        "ThmADCI": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "cor",
+          "description": "Interrupt for change in ThmADC Status.\n0: No Change\n1: Status Change"
+        },
+        "unused_Interrupt 3_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Interrupt 3_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Interrupt 3, Address: h06, Memory Index: 6",
+      "index": 6,
+      "address": 6,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "IntMask 1": {
+      "fields": {
+        "ChgInLimStM": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in CHGIN Thermal Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ChgInOvpStM": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in CHGIN OVP Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ChgInStM": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in CHGIN voltage Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ChgStM": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in Charger Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "unused_IntMask 1_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 1_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 1_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 1_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register IntMask 1, Address: h07, Memory Index: 7",
+      "index": 7,
+      "address": 7,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 15
+    },
+    "IntMask 2": {
+      "fields": {
+        "ChgJeitaStM": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in Charger JEITA Monitor Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ChgTempRdStM": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in Charger Temperature Pause Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ChgTempFltStM": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in Charger Temperature Fault Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "BatPrstStM": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in Battery Present Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "unused_IntMask 2_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 2_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 2_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 2_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register IntMask 2, Address: h08, Memory Index: 8",
+      "index": 8,
+      "address": 8,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 15
+    },
+    "IntMask 3": {
+      "fields": {
+        "Gpio1StM": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in GPIO1 Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "Gpio2StM": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in GPIO2 Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "Gpio3StM": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in GPio3 Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "Gpio4StM": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in GPio4 Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "PSWbStM": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in PSWb Status\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "ThmADCM": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Interrupt Mask for change in ThmADC Status.\n0: No Mask\n1: Mask Interrupt Contribution to INT pin"
+        },
+        "unused_IntMask 3_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IntMask 3_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register IntMask 3, Address: h09, Memory Index: 9",
+      "index": 9,
+      "address": 9,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 63
+    },
+    "ChargeCtrl1": {
+      "fields": {
+        "ChgTempPs": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Temperature where charger pauses due to increasing die temperature.\n0b00: 60C\n0b01: 80C\n0b10: 100C\n0b11: 120C"
+        },
+        "ChgInLim": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Input Current Limit\n0: 450mA\n1: 1000mA"
+        },
+        "IChgPre": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pre-Charge Current\n0b00: 3.125%\n0b01: 6.25%\n0b10: 12.5%\n0b11: 25%"
+        },
+        "VCHGPre": {
+          "index": 3,
+          "offset": 5,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pre-Charge Voltage Threshold\n0b00: 2.1V\n0b01: 2.4V\n0b10: 2.7V\n0b11: 3.0V"
+        },
+        "CHGEN": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Battery Charger. \n0: Disabled\n1: Enabled"
+        }
+      },
+      "description": "Register ChargeCtrl1, Address: h0a, Memory Index: 10",
+      "index": 10,
+      "address": 10,
+      "otpPreset": 1,
+      "otpAddress": 1,
+      "reset": 0
+    },
+    "ChargeCtrl2": {
+      "fields": {
+        "ChgDone": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Current threshold in % of ICHGFST where charging is declared complete.\n0b00: 2.5%\n0b01: 5%\n0b10: 10%\n0b11: 20%"
+        },
+        "StepChgIRd": {
+          "index": 1,
+          "offset": 2,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Step Charge Current Reduction in % of ICHGFST\n0b000: 50%\n0b001: 60%\n0b010: 70%\n0b011: 80%\n0b100: 85%\n0b101: 90%\n0b110: 95%\n0b111: 100%"
+        },
+        "ChgRestart": {
+          "index": 2,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Charger auto restart after drop in voltage\n0: No restart\n1: Auto restart after VBATT drops by VBATTRSRT"
+        },
+        "THMEn": {
+          "index": 3,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Battery Thermistor monitor\n0: Disabled\n1: Enabled"
+        },
+        "unused_ChargeCtrl2_b7": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register ChargeCtrl2, Address: h0b, Memory Index: 11",
+      "index": 11,
+      "address": 11,
+      "otpPreset": 1,
+      "otpAddress": 2,
+      "reset": 0
+    },
+    "ChargeCtrl3": {
+      "fields": {
+        "StepChgThs": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Step Charge voltage threshold in 4.6875mV steps.\nVBATSTPCHG=((value+1)*4.6875mV)+3.6V. Writing a value greater than 0xDF (4.65V) will be held at 4.65V.\nWriting a value greater than 0xDF (4.65V) will be held at 4.65V and the value of the register will be clamped to this max allowed value. \nWriting a value greater thanVBatReg won't be allowed and the actual value will be clamped to VBatReg."
+        }
+      },
+      "description": "Register ChargeCtrl3, Address: h0c, Memory Index: 12",
+      "index": 12,
+      "address": 12,
+      "otpPreset": 1,
+      "otpAddress": 3,
+      "reset": 0
+    },
+    "ChargeCtrl4": {
+      "fields": {
+        "VBatReg": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Battery regulation voltage in CV mode in 4.6875mV steps.\nVBATREG=((value+1)*4.6875mV)+3.6V. \nWriting a value greater than 0xDF (4.65V) will be held at 4.65V and the value of the register will be clamped to this max allowed value. \nWriting a value less than StepChgThs won't be allowed and the actual value will be clamped to StepChgThs."
+        }
+      },
+      "description": "Register ChargeCtrl4, Address: h0d, Memory Index: 13",
+      "index": 13,
+      "address": 13,
+      "otpPreset": 1,
+      "otpAddress": 4,
+      "reset": 0
+    },
+    "ChargeCtrl5": {
+      "fields": {
+        "TopOffTmr": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Maximum time allowed for charger in top off\n0b00: 0 min\n0b01: 10 min\n0b10: 20 min\n0b11: 30 min "
+        },
+        "FstChgTmr": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Maximum time allowed for charger in fast charge mode\n0b00: 1.5 hours\n0b01: 4 hours\n0b10: 6.5 hours\n0b11: 9 hours"
+        },
+        "PreQualTmr": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Maximum time allowed for charger in prequalification mode\n0b00: 30 min\n0b01: 60 min\n0b10: 90 min\n0b11: 120 min"
+        },
+        "FCHGRd": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Reduction in Maximum charge current defined by resistor on ISET pin\n0b00: 100%\n0b01: 50%\n0b10: 25%\n0b11: 12.5%"
+        }
+      },
+      "description": "Register ChargeCtrl5, Address: h0e, Memory Index: 14",
+      "index": 14,
+      "address": 14,
+      "otpPreset": 1,
+      "otpAddress": 5,
+      "reset": 0
+    },
+    "LDOCtrl": {
+      "fields": {
+        "LDO1Ctrl": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "Enable/disable by I2C or GPIO control. If 0b10 or 0b11 selected but GPIO pin mode not also changed to LDO/Buck control, LDO will be default disabled.\n0b00: Disable\n0b01: Enable\n0b10: GPIO3 control\n0b11: GPIO4 control"
+        },
+        "LDO1VRng": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set Output voltage range for LDO1\n0: 0.5V to 1.2V\n1: 0.5V to 3.3V"
+        },
+        "LDO1Mode": {
+          "index": 2,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set either LDO mode or Load Switch mode.\n0: LDO mode\n1: Load switch mode"
+        },
+        "LDO2Ctrl": {
+          "index": 3,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "Enable/disable by I2C or GPIO control. If 0b10 or 0b11 selected but GPIO pin mode not also changed to LDO/Buck control, LDO will be default disabled.\n0b00: Disable\n0b01: Enable\n0b10: GPIO3 control\n0b11: GPIO4 control"
+        },
+        "LDO2VRng": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set Output voltage range for LDO2\n0: 0.5V to 1.2V\n1: 0.5V to 3.3V"
+        },
+        "LDO2Mode": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set either LDO mode or Load Switch mode.\n0: LDO mode\n1: Load switch mode"
+        }
+      },
+      "description": "Register LDOCtrl, Address: h0f, Memory Index: 15",
+      "index": 15,
+      "address": 15,
+      "otpPreset": 1,
+      "otpAddress": 6,
+      "reset": 0
+    },
+    "LDO1Voltage": {
+      "fields": {
+        "LDO1VReg": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set output voltage of LDO1. Turn off LDO before changing this value.\nLDO1VRng=0: VLDO1= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nLDO1VRng=1: VLDO1= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register LDO1Voltage, Address: h10, Memory Index: 16",
+      "index": 16,
+      "address": 16,
+      "otpPreset": 1,
+      "otpAddress": 7,
+      "reset": 0
+    },
+    "LDO2Voltage": {
+      "fields": {
+        "LDO2VReg": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set output voltage of LDO2. Turn off LDO before changing this value.\nLDO2VRng=0: VLDO2= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nLDO2VRng=1: VLDO2= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register LDO2Voltage, Address: h11, Memory Index: 17",
+      "index": 17,
+      "address": 17,
+      "otpPreset": 1,
+      "otpAddress": 8,
+      "reset": 0
+    },
+    "Buck1Ctrl1": {
+      "fields": {
+        "Buck1VRng": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set Output voltage range for Buck1\n0: 0V to 1.2V\n1: 1.2V to 3.3V"
+        },
+        "Buck1Gpio": {
+          "index": 1,
+          "offset": 1,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "GPIO control mode. If a GPIO mode selected but GPIO pin/pins mode not also changed to LDO/Buck control, Buck will be default disabled.\n0b00: GPIO3 control (switch between 2 different voltages)\n0b01: GPIO4 control (switch between 2 different voltages)\n0b10: GPIO3 and GPIO4 control (switch between 4 different voltages)\n0b11: Reserved"
+        },
+        "Buck1Ctrl": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "Enable/disable by I2C or GPIO control. If a GPIO mode selected but GPIO pin/pins mode not also changed to LDO/Buck control, Buck will be default disabled.\n0b00: Disable\n0b01: Enable\n0b10: GPIO control (see Buck1GPIO for details)\n0b11: Reserved"
+        },
+        "Buck1Ton": {
+          "index": 3,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Adjust Buck1 converter on time to adjust operation frequency.\n0b000: -52%\n0b001: -35%\n0b010: -18%\n0b011: 0%\n0b100: 18%\n0b101: 35%\n0b110: 52%\n0b111: 68%"
+        }
+      },
+      "description": "Register Buck1Ctrl1, Address: h12, Memory Index: 18",
+      "index": 18,
+      "address": 18,
+      "otpPreset": 1,
+      "otpAddress": 9,
+      "reset": 96
+    },
+    "Buck1Ctrl2": {
+      "fields": {
+        "Buck1Mode": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck1 Operating Mode.\n0b00: Normal\n0b01: Force DCM. Current limited to TBD max (might need value based on programmed Ton), use for optimum ripple at low load current.\n0b10: Force DCM low power. Current limited to TBD max (might need value based on programmed Ton), use for maximum efficiency at low load currents.\n0b11: Reserved"
+        },
+        "unused_Buck1Ctrl2_b2": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck1Ctrl2_b3": {
+          "index": 2,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck1Ctrl2_b4": {
+          "index": 3,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck1Ctrl2_b5": {
+          "index": 4,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck1Ctrl2_b6": {
+          "index": 5,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck1Ctrl2_b7": {
+          "index": 6,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Buck1Ctrl2, Address: h13, Memory Index: 19",
+      "index": 19,
+      "address": 19,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Buck1Ctrl3": {
+      "fields": {
+        "Buck1VReg": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck1 Output voltage. Voltage set if: Buck1Ctrl=0b01 \nor Buck1Ctrl=0b10 and Buck1GPIO=0b00 and GPIO3=low\nor Buck1Ctrl=0b10 and Buck1GPIO=0b01 and GPIO4=low \nor Buck1Ctrl=0b10 and Buck1GPIO=0b10 and GPIO4/3=low/low\n\nBuck1VRng=0: VBuck1= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck1VRng=1: VBuck1= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck1Ctrl3, Address: h14, Memory Index: 20",
+      "index": 20,
+      "address": 20,
+      "otpPreset": 1,
+      "otpAddress": 10,
+      "reset": 0
+    },
+    "Buck1Ctrl4": {
+      "fields": {
+        "Buck1VRegA": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck1 Output voltage. Voltage set if:\nBuck1Ctrl=0b10 and Buck1GPIO=0b00 and GPIO3=high\nor Buck1Ctrl=0b10 and Buck1GPIO=0b01 and GPIO4=high \nor Buck1Ctrl=0b10 and Buck1GPIO=0b10 and GPIO4/3=low/high.\n\nBuck1VRng=0: VBuck1= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck1VRng=1: VBuck1= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck1Ctrl4, Address: h15, Memory Index: 21",
+      "index": 21,
+      "address": 21,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "Buck1Ctrl5": {
+      "fields": {
+        "Buck1VRegB": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck1 Output voltage. Voltage set if Buck1Ctrl=0b10 and Buck1GPIO=0b10 and GPIO4/3=high/low.\n\nBuck1VRng=0: VBuck1= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck1VRng=1: VBuck1= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck1Ctrl5, Address: h16, Memory Index: 22",
+      "index": 22,
+      "address": 22,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "Buck1Ctrl6": {
+      "fields": {
+        "Buck1VRegC": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck1 Output voltage. Voltage set if Buck1Ctrl=0b10 and Buck1GPIO=0b10 and GPIO4/3=high/high.\n\nBuck1VRng=0: VBuck1= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck1VRng=1: VBuck1= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck1Ctrl6, Address: h17, Memory Index: 23",
+      "index": 23,
+      "address": 23,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "Buck2Ctrl1": {
+      "fields": {
+        "Buck2VRng": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Set Output voltage range for Buck2\n0: 0V to 1.2V\n1: 1.2V to 3.3V"
+        },
+        "Buck2Gpio": {
+          "index": 1,
+          "offset": 1,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "GPIO control mode. If a GPIO mode selected but GPIO pin/pins mode not also changed to LDO/Buck control, Buck will be default disabled.\n0b00: GPIO3 control (switch between 2 different voltages)\n0b01: GPIO4 control (switch between 2 different voltages)\n0b10: GPIO3 and GPIO4 control (switch between 4 different voltages)\n0b11: Reserved"
+        },
+        "Buck2Ctrl": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "Enable/disable by I2C or GPIO control. If a GPIO mode selected but GPIO pin/pins mode not also changed to LDO/Buck control, Buck will be default disabled.\n0b00: Disable\n0b01: Enable\n0b10: GPIO control (see Buck1GPIO for details)\n0b11: Reserved"
+        },
+        "Buck2Ton": {
+          "index": 3,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Adjust Buck2 converter on time to adjust operation frequency.\n0b000: -52%\n0b001: -35%\n0b010: -18%\n0b011: 0%\n0b100: 18%\n0b101: 35%\n0b110: 52%\n0b111: 68%"
+        }
+      },
+      "description": "Register Buck2Ctrl1, Address: h18, Memory Index: 24",
+      "index": 24,
+      "address": 24,
+      "otpPreset": 1,
+      "otpAddress": 11,
+      "reset": 96
+    },
+    "Buck2Ctrl2": {
+      "fields": {
+        "Buck2Mode": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck2 Operating Mode.\n0b00: Normal\n0b01: Force DCM. Current limited to TBD max (might need value based on programmed Ton), use for optimum ripple at low load current.\n0b10: Force DCM low power. Current limited to TBD max (might need value based on programmed Ton), use for maximum efficiency at low load currents.\n0b11: Reserved"
+        },
+        "unused_Buck2Ctrl2_b2": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck2Ctrl2_b3": {
+          "index": 2,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck2Ctrl2_b4": {
+          "index": 3,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck2Ctrl2_b5": {
+          "index": 4,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck2Ctrl2_b6": {
+          "index": 5,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Buck2Ctrl2_b7": {
+          "index": 6,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Buck2Ctrl2, Address: h19, Memory Index: 25",
+      "index": 25,
+      "address": 25,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Buck2Ctrl3": {
+      "fields": {
+        "Buck2VReg": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck2 Output voltage. Voltage set if: Buck2Ctrl=0b01 \nor Buck2Ctrl=0b10 and Buck2GPIO=0b00 and GPIO3=low\nor Buck2Ctrl=0b10 and Buck2GPIO=0b01 and GPIO4=low \nor Buck2Ctrl=0b10 and Buck2GPIO=0b10 and GPIO4/3=low/low.\n\nBuck2VRng=0: VBuck2= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck2VRng=1: VBuck2= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck2Ctrl3, Address: h1a, Memory Index: 26",
+      "index": 26,
+      "address": 26,
+      "otpPreset": 1,
+      "otpAddress": 12,
+      "reset": 0
+    },
+    "Buck2Ctrl4": {
+      "fields": {
+        "Buck2VRegA": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck2 Output voltage. Voltage set if:\nBuck2Ctrl=0b10 and Buck2GPIO=0b00 and GPIO3=high\nor Buck2Ctrl=0b10 and Buck2GPIO=0b01 and GPIO4=high \nor Buck2Ctrl=0b10 and Buck2GPIO=0b10 and GPIO4/3=low/high.\n\nBuck2VRng=0: VBuck2= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck2VRng=1: VBuck2= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck2Ctrl4, Address: h1b, Memory Index: 27",
+      "index": 27,
+      "address": 27,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "Buck2Ctrl5": {
+      "fields": {
+        "Buck2VRegB": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck2 Output voltage. Voltage set if Buck2Ctrl=0b10 and Buck2GPIO=0b10 and GPIO4/3=high/low.\n\nBuck2VRng=0: VBuck2= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck2VRng=1: VBuck2= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck2Ctrl5, Address: h1c, Memory Index: 28",
+      "index": 28,
+      "address": 28,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "Buck2Ctrl6": {
+      "fields": {
+        "Buck2VRegC": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Buck2 Output voltage. Voltage set if Buck2Ctrl=0b10 and Buck2GPIO=0b10 and GPIO4/3=high/high.\n\nBuck2VRng=0: VBuck2= (1+value)*0.0046875. Specifications are guaranteed above 0.5V\nBuck2VRng=1: VBuck2= (1+value)*0.0129. Specifications are guaranteed above 1.3V"
+        }
+      },
+      "description": "Register Buck2Ctrl6, Address: h1d, Memory Index: 29",
+      "index": 29,
+      "address": 29,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 80
+    },
+    "IOConfig1": {
+      "fields": {
+        "GPIO1Ctrl": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "GPIO1 Control\n0b00: General purpose Input (status in register 0x03)\n0b01: Drive Low\n0b10: Drive high\n0b11: Open drain output follows state of PSWB input"
+        },
+        "GPIO1PU": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pullup to VIO enabled on GPIO1 (independent of GPIO set to input, push/pull or open drain modes)\n0: Pullup disabled\n1: pullup enabled"
+        },
+        "GPIO2Ctrl": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "GPIO2 Control\n0b00: General purpose Input (status in register 0x03)\n0b01: Drive Low\n0b10: Drive high\n0b11: Open Drain reset output - asserted during power up sequencing"
+        },
+        "GPIO2PU": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pullup to VIO enabled on GPIO2 (independent of GPIO set to input, push/pull or open drain modes)\n0: Pullup disabled\n1: pullup enabled"
+        },
+        "unused_IOConfig1_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IOConfig1_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register IOConfig1, Address: h1e, Memory Index: 30",
+      "index": 30,
+      "address": 30,
+      "otpPreset": 1,
+      "otpAddress": 13,
+      "reset": 0
+    },
+    "IOConfig2": {
+      "fields": {
+        "GPIO3Ctrl": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "GPIO3 Control\n0b00: General purpose Input (status in register 0x03)\n0b01: Drive Low\n0b10: Drive high\n0b11: LDO/Buck control"
+        },
+        "GPIO3PU": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pullup to VIO enabled on GPIO3 (independent of GPIO set to input, push/pull or open drain modes)\n0: Pullup disabled\n1: pullup enabled"
+        },
+        "GPIO4Ctrl": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "GPIO4 Control\n0b00: General purpose Input (status in register 0x03)\n0b01: Drive Low\n0b10: Drive high\n0b11: LDO/Buck control"
+        },
+        "GPIO4PU": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Pullup to VIO enabled on GPIO2 (independent of GPIO set to input, push/pull or open drain modes)\n0: Pullup disabled\n1: pullup enabled"
+        },
+        "unused_IOConfig2_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_IOConfig2_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register IOConfig2, Address: h1f, Memory Index: 31",
+      "index": 31,
+      "address": 31,
+      "otpPreset": 1,
+      "otpAddress": 14,
+      "reset": 0
+    },
+    "Config1": {
+      "fields": {
+        "PSWbWkTm": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "PSWb wake time. Time that PSWb must be pulled low to wake from Shelf Mode\n0b00: Disabled\n0b01: 500ms\n0b10: 1000ms\n0b11: 2000ms "
+        },
+        "PSWbRsTm": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "PSWb reset time. Time that PSWb must be pulled low to reset all registers in PMIC01 to default. \n0b00: Disabled\n0b01: 5s\n0b10: 9s\n0b11: 12s"
+        },
+        "SYSUVLO": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "UVLO Threshold where PMIC01 turns off and returns to shelf mode (CHGIN not valid) or resets and restarts (CHGIN valid).\n0b00: 2.7V\n0b01: 2.9V\n0b10: 3.0V\n0b11: 3.2V"
+        },
+        "IntType": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 1,
+          "field_type": "r/w",
+          "description": "Interrupt Enable and Type.\n0b00: Interrupt Disabled.\n0b01: Interrupt enabled with level trigger (idle high, drive low).\n0b10: Interrupt enabled with pulse trigger (500us low on INT).\n0b11: Reserved"
+        }
+      },
+      "description": "Register Config1, Address: h20, Memory Index: 32",
+      "index": 32,
+      "address": 32,
+      "otpPreset": 1,
+      "otpAddress": 15,
+      "reset": 0
+    },
+    "Config2": {
+      "fields": {
+        "ShelfMode": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enter Shelf Mode.  SYS and all functions will be disabled\n0: Normal operation\n1: Enter Shelf Mode"
+        },
+        "unused_Config2_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config2_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config2_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config2_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config2_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config2_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "Reset": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Chip reset request.  All registers reset to defaults after 1ms\n0: No reset\n1: Reset to defaults"
+        }
+      },
+      "description": "Register Config2, Address: h21, Memory Index: 33",
+      "index": 33,
+      "address": 33,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Config3": {
+      "fields": {
+        "Ldo1Pd": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Passive pull down when LDO1 is disabled.\n0: Disabled\n1: Enabled"
+        },
+        "Ldo2Pd": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Passive pull down when LDO2 is disabled.\n0: Disabled\n1: Enabled"
+        },
+        "Buck1Pd": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Passive pull down when Buck1 is disabled.\n0: Disabled\n1: Enabled"
+        },
+        "Buck2Pd": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Passive pull down when Buck2 is disabled.\n0: Disabled\n1: Enabled"
+        },
+        "AddSlot": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Add an additional slot at the end of the startup sequence\n0: Disabled\n1: Enabled"
+        },
+        "unused_Config3_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config3_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config3_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Config3, Address: h22, Memory Index: 34",
+      "index": 34,
+      "address": 34,
+      "otpPreset": 1,
+      "otpAddress": 16,
+      "reset": 0
+    },
+    "Config4": {
+      "fields": {
+        "Buck1Slot": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Slot for Buck1. Setting a value other than 0b000 will auto set the bits Buck1Ctrl to 0b01\n0b000: Regulator not powered up by default\n0b001: Slot1\n0b010: Slot2\n0b011: Slot3\n0b1xx: Slot4"
+        },
+        "Buck2Slot": {
+          "index": 1,
+          "offset": 3,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Slot for Buck2. Setting a value other than 0b000 will auto set the bits Buck2Ctrl to 0b01\n0b000: Regulator not powered up by default\n0b001: Slot1\n0b010: Slot2\n0b011: Slot3\n0b1xx: Slot4"
+        },
+        "unused_Config4_b6": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config4_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Config4, Address: h23, Memory Index: 35",
+      "index": 35,
+      "address": 35,
+      "otpPreset": 1,
+      "otpAddress": 17,
+      "reset": 0
+    },
+    "Config5": {
+      "fields": {
+        "Ldo1Slot": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Slot for LDO1. Setting a value other than 0b000 will auto set the bits LDO1Ctrl to 0b01\n0b000: Regulator not powered up by default\n0b001: Slot1\n0b010: Slot2\n0b011: Slot3\n0b1xx: Slot4"
+        },
+        "Ldo2Slot": {
+          "index": 1,
+          "offset": 3,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Slot for LDO2. Setting a value other than 0b000 will auto set the bits LDO2Ctrl to 0b01\n0b000: Regulator not powered up by default\n0b001: Slot1\n0b010: Slot2\n0b011: Slot3\n0b1xx: Slot4"
+        },
+        "unused_Config5_b6": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Config5_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Config5, Address: h24, Memory Index: 36",
+      "index": 36,
+      "address": 36,
+      "otpPreset": 1,
+      "otpAddress": 18,
+      "reset": 0
+    },
+    "JEITAConfig1": {
+      "fields": {
+        "JEITAHot": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Threshold for JEITA Hot Temperature. Set as a percentage of pullup voltage at BTPU pin. 256 values in 0.39% steps\n0b00000000: 0%\n0b00000001: 0.39%\n0b00000010: 0.78%\n…\n0b11111111: 100%"
+        }
+      },
+      "description": "Register JEITAConfig1, Address: h25, Memory Index: 37",
+      "index": 37,
+      "address": 37,
+      "otpPreset": 1,
+      "otpAddress": 19,
+      "reset": 0
+    },
+    "JEITAConfig2": {
+      "fields": {
+        "JEITAWarm": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Threshold for JEITA Warm Temperature. Set as a percentage of pullup voltage at BTPU pin. 256 values in 0.39% steps\n0b00000000: 0%\n0b00000001: 0.39%\n0b00000010: 0.78%\n…\n0b11111111: 100%"
+        }
+      },
+      "description": "Register JEITAConfig2, Address: h26, Memory Index: 38",
+      "index": 38,
+      "address": 38,
+      "otpPreset": 1,
+      "otpAddress": 20,
+      "reset": 0
+    },
+    "JEITAConfig3": {
+      "fields": {
+        "JEITACool": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Threshold for JEITA Cool Temperature. Set as a percentage of pullup voltage at BTPU pin. 256 values in 0.39% steps\n0b00000000: 0%\n0b00000001: 0.39%\n0b00000010: 0.78%\n…\n0b11111111: 100%"
+        }
+      },
+      "description": "Register JEITAConfig3, Address: h27, Memory Index: 39",
+      "index": 39,
+      "address": 39,
+      "otpPreset": 1,
+      "otpAddress": 21,
+      "reset": 0
+    },
+    "JEITAConfig4": {
+      "fields": {
+        "JEITACold": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Threshold for JEITA Cold Temperature. Set as a percentage of pullup voltage at BTPU pin. 256 values in 0.39% steps\n0b00000000: 0%\n0b00000001: 0.39%\n0b00000010: 0.78%\n…\n0b11111111: 100%"
+        }
+      },
+      "description": "Register JEITAConfig4, Address: h28, Memory Index: 40",
+      "index": 40,
+      "address": 40,
+      "otpPreset": 1,
+      "otpAddress": 22,
+      "reset": 0
+    },
+    "JEITAConfig5": {
+      "fields": {
+        "JTACoolI": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "JEITA cool temperature battery current reduction\n0b00: Disabled\n0b10: 12.5%\n0b11: 25%\n0b11: 50%"
+        },
+        "JTACoolV": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "JEITA cool temperature battery voltage reduction\n0b00: 0V\n0b01: 50mV\n0b10: 150mV\n0b11: 250mV"
+        },
+        "JTAWarmI": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "JEITA warm temperature battery current reduction\n0b00: Disabled\n0b10: 12.5%\n0b11: 25%\n0b11: 50%"
+        },
+        "JTAWarmV": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "JEITA warm temperature battery voltage reduction\n0b00: 0V\n0b01: 50mV\n0b10: 150mV\n0b11: 250mV"
+        }
+      },
+      "description": "Register JEITAConfig5, Address: h29, Memory Index: 41",
+      "index": 41,
+      "address": 41,
+      "otpPreset": 1,
+      "otpAddress": 23,
+      "reset": 0
+    },
+    "TestConfig01": {
+      "fields": {
+        "CurrentMeasureMode": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHGIN current measure mode:\n0: Regular operations\n1: Enter mode to disconnect battery and enable direct connection between CHGIN and SYS\nThis field only works if correct password is stored in TestConfig2"
+        },
+        "unused_TestConfig01_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TestConfig01_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TestConfig01, Address: h2a, Memory Index: 42",
+      "index": 42,
+      "address": 42,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TestConfig02": {
+      "fields": {
+        "CMMPassword": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Current measure mode password. An 0xA9 codeword must be stored in this field to be able to enable the Current Measure Mode field"
+        }
+      },
+      "description": "Register TestConfig02, Address: h2b, Memory Index: 43",
+      "index": 43,
+      "address": 43,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "ADCConfig": {
+      "fields": {
+        "ThmADCEn": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable Thermistor ADC. \n0: Disabled\n1: Enabled"
+        },
+        "ThmADCCn": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Thermistor ADC continuous conversion. (note that this causes increases current consumption when operating on battery)\n0: One Shot mode\n1: Continuous"
+        },
+        "unused_ADCConfig_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_ADCConfig_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_ADCConfig_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_ADCConfig_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_ADCConfig_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_ADCConfig_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register ADCConfig, Address: h2c, Memory Index: 44",
+      "index": 44,
+      "address": 44,
+      "otpPreset": 1,
+      "otpAddress": 24,
+      "reset": 0
+    },
+    "ADCValue": {
+      "fields": {
+        "ThmADCV": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Output value from Thermistor ADC. Value is a percentage of pullup voltage at BTPU pin. 256 values in 0.39% steps. \n- ADC is active if CHGIN is valid (see Table 1) and ThmEn=1 or CHGIN not valid and ThmADCEn=1. \n- If ThmADCFltr=1, ThmADCEn=1 and CHGIN not valid, ThmADCEn will be the new value after ThmADC interrupt. \n- If ThmADCFltr=0, ThmADCEn=1 and CHGIN not valid, ThmADCEn will be updated with a new value every ADC conversion (approx. TBDµs) and ThmADC interrupt will not be generated"
+        }
+      },
+      "description": "Register ADCValue, Address: h2d, Memory Index: 45",
+      "index": 45,
+      "address": 45,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "OTPInfo": {
+      "fields": {
+        "OTPConfig": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Unique code identifying the configuration settings in OTP"
+        }
+      },
+      "description": "Register OTPInfo, Address: h2e, Memory Index: 46",
+      "index": 46,
+      "address": 46,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "OTPCntrl1": {
+      "fields": {
+        "trigger_command": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Triggers the start of selected command. This bit reset when the command execution has completed."
+        },
+        "command": {
+          "index": 1,
+          "offset": 1,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Selection of the command to be executed on NVM:\n000: read region (defined by start address and byte #, if margin read bit are set content of register file is compared NVM)\n001: Read User region\n010: Read Trim region\n011: Program region\n100: Read status bits\n"
+        },
+        "command_diag": {
+          "index": 2,
+          "offset": 4,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Outcome from last command execution\n000: Command executed OK\n001: Failure in margin read pre-program (tried to program 0 a bit already programmed to 1)\n010: Failure in margin read post-program\n011: Trim region not valid\nother: reserved"
+        },
+        "unused_OTPCntrl1_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register OTPCntrl1, Address: h30, Memory Index: 48",
+      "index": 47,
+      "address": 48,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "OTPCntrl2": {
+      "fields": {
+        "start_add": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Starting address where the command must be executed"
+        },
+        "otp_bank": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Selection of the OTP bank for the command to be executed:\n0 : User bank\n1 : Trim bank"
+        },
+        "unused_OTPCntrl2_b6": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_OTPCntrl2_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register OTPCntrl2, Address: h31, Memory Index: 49",
+      "index": 48,
+      "address": 49,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "OTPCntrl3": {
+      "fields": {
+        "byte_no": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Number of bytes, from the starting address, where the command must be excuted:\n5'h00 -> 1 byte\n5'h1F -> 32 bytes"
+        },
+        "unused_OTPCntrl3_b5": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_OTPCntrl3_b6": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_OTPCntrl3_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register OTPCntrl3, Address: h32, Memory Index: 50",
+      "index": 49,
+      "address": 50,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "OTPCntrl4": {
+      "fields": {
+        "program_current": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "ProgramCurrent[0] 6.2mA\nProgramCurrent[1] 9.2mA\nProgramCurrent[2] 12.2mA\nProgramCurrent[3] 12.2mA\nSuggested programming: 4'h3 @25C, 4'h5 @125C"
+        },
+        "hold_otp_supply": {
+          "index": 1,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Forces the OTP supply to be always on:\n0 : OTP is powered on for each operation\n1 : OTP supply is always on"
+        },
+        "program_pulse": {
+          "index": 2,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Selects the duration of the program pulse:\n0: 30us\n1: 60us"
+        },
+        "read_opt": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "1) RD[1:0]=00 : Normal read mode\n2) RD[1:0]=01 : ‘1’(programmed) read margin check (Decrease high data sensing margin)\n3) RD[1:0]=10 : ‘0’(initial) read margin check (Decrease low data sensing margin)\n4) RD[1:0]=11 : N/A"
+        }
+      },
+      "description": "Register OTPCntrl4, Address: h33, Memory Index: 51",
+      "index": 50,
+      "address": 51,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 3
+    },
+    "OTPCntrl5": {
+      "fields": {
+        "nvm_output": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register OTPCntrl5, Address: h34, Memory Index: 52",
+      "index": 51,
+      "address": 52,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl1": {
+      "fields": {
+        "trig_startup": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Triggers startup sequence"
+        },
+        "unused_TstCntrl1_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl1_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl1, Address: h35, Memory Index: 53",
+      "index": 52,
+      "address": 53,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl2": {
+      "fields": {
+        "tst_ana_bus": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_ana_sel": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl2, Address: h36, Memory Index: 54",
+      "index": 53,
+      "address": 54,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl3": {
+      "fields": {
+        "tst_dig_bus": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_dig_sel": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl3, Address: h37, Memory Index: 55",
+      "index": 54,
+      "address": 55,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl4": {
+      "fields": {
+        "tst_frc_bus": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_TstCntrl4_b3": {
+          "index": 1,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "tst_frc_sel": {
+          "index": 2,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl4, Address: h38, Memory Index: 56",
+      "index": 55,
+      "address": 56,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl5": {
+      "fields": {
+        "tst_sns_bus": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_sns_sel": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl5, Address: h39, Memory Index: 57",
+      "index": 56,
+      "address": 57,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl6": {
+      "fields": {
+        "tst_bias_a": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl6, Address: h3a, Memory Index: 58",
+      "index": 57,
+      "address": 58,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl7": {
+      "fields": {
+        "tst_bias_b": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_bth_spare": {
+          "index": 1,
+          "offset": 1,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_TstCntrl7_b5": {
+          "index": 2,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl7_b6": {
+          "index": 3,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl7_b7": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl7, Address: h3b, Memory Index: 59",
+      "index": 58,
+      "address": 59,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl8": {
+      "fields": {
+        "unused_TstCntrl8_b0": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl8_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl8, Address: h3c, Memory Index: 60",
+      "index": 59,
+      "address": 60,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl9": {
+      "fields": {
+        "tst_ana_bus_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_en_ana_buf": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_dig_bus_en": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_frc_bus_en": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "tst_sns_bus_en": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_TstCntrl9_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl9_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl9_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl9, Address: h3d, Memory Index: 61",
+      "index": 60,
+      "address": 61,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl10": {
+      "fields": {
+        "tst_bias_chg_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl10, Address: h3e, Memory Index: 62",
+      "index": 61,
+      "address": 62,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl11": {
+      "fields": {
+        "tst_buck1_a": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC1_CURRENT_COMP_FORCE_ENABLE\n1: TST_BC1_FAST_COMP_FORCE_ENABLE\n2: TST_BC1_VOLTAGE_COMP_MASK_DISABLE\n3: TST_BC1_CURRENT_COMP_MASK_DISABLE\n4: TST_BC1_FORCE_FAST_COMP_ZERO\n5: TST_BC1_FAST_COMP_OFFSET_DIS\n6: TST_BC1_SLOW_COMP_OFFSET_DIS\n7: TST_BC1_VOLTAGE_COMP_INPUT_SHORT"
+        }
+      },
+      "description": "Register TstCntrl11, Address: h3f, Memory Index: 63",
+      "index": 62,
+      "address": 63,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl12": {
+      "fields": {
+        "tst_buck1_b": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC1_RAMP_DISABLE\n1: TST_BC1_DVS_FALL_FORCE\n2: TST_BC1_DVS_RISE_FORCE\n3: TST_BC1_DVS_RISE_CNT_DISABLE\n4: TST_BC1_LX_OVR\n5: TST_BC1_LS_CONTROL\n6: TST_BC1_HS_CONTROL\n7: TST_BC1_FW_CONTROL"
+        }
+      },
+      "description": "Register TstCntrl12, Address: h40, Memory Index: 64",
+      "index": 63,
+      "address": 64,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl13": {
+      "fields": {
+        "tst_buck1_c": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC1_FREEWHEEL_DISABLE\n1: TST_BC1_LS_ZEROCROSS_DISABLE\n2: TST_BC1_HSLSVALID_FORCE\n3: TST_BC1_VALLEY_CURRENT_LIMIT_DIV\n4: TST_BC1_FCMP_EN_DIVIDED_ENABLE\n5: TST_BC1_TON_DIVIDED_CLK_ENABLE\n[7:6]: TST_BC1_SPARE_A"
+        }
+      },
+      "description": "Register TstCntrl13, Address: h41, Memory Index: 65",
+      "index": 64,
+      "address": 65,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl14": {
+      "fields": {
+        "tst_buck2_a": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC2_CURRENT_COMP_FORCE_ENABLE\n1: TST_BC2_FAST_COMP_FORCE_ENABLE\n2: TST_BC2_VOLTAGE_COMP_MASK_DISABLE\n3: TST_BC2_CURRENT_COMP_MASK_DISABLE\n4: TST_BC2_FORCE_FAST_COMP_ZERO\n5: TST_BC2_FAST_COMP_OFFSET_DIS\n6: TST_BC2_SLOW_COMP_OFFSET_DIS\n7: TST_BC2_VOLTAGE_COMP_INPUT_SHORT"
+        }
+      },
+      "description": "Register TstCntrl14, Address: h42, Memory Index: 66",
+      "index": 65,
+      "address": 66,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl15": {
+      "fields": {
+        "tst_buck2_b": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC2_RAMP_DISABLE\n1: TST_BC2_DVS_FALL_FORCE\n2: TST_BC2_DVS_RISE_FORCE\n3: TST_BC2_DVS_RISE_CNT_DISABLE\n4: TST_BC2_LX_OVR\n5: TST_BC2_LS_CONTROL\n6: TST_BC2_HS_CONTROL\n7: TST_BC2_FW_CONTROL"
+        }
+      },
+      "description": "Register TstCntrl15, Address: h43, Memory Index: 67",
+      "index": 66,
+      "address": 67,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl16": {
+      "fields": {
+        "tst_buck2_c": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_BC2_FREEWHEEL_DISABLE\n1: TST_BC2_LS_ZEROCROSS_DISABLE\n2: TST_BC2_HSLSVALID_FORCE\n3: TST_BC2_VALLEY_CURRENT_LIMIT_DIV\n4: TST_BC2_FCMP_EN_DIVIDED_ENABLE\n5: TST_BC2_TON_DIVIDED_CLK_ENABLE\n[7:6]: TST_BC2_SPARE_A"
+        }
+      },
+      "description": "Register TstCntrl16, Address: h44, Memory Index: 68",
+      "index": 67,
+      "address": 68,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl17": {
+      "fields": {
+        "tst_buck_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "[3:0]: TST_BC1_SPARE\n[7:4]: TST_BC2_SPARE"
+        }
+      },
+      "description": "Register TstCntrl17, Address: h45, Memory Index: 69",
+      "index": 68,
+      "address": 69,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl18": {
+      "fields": {
+        "tst_efdc_dout": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "E-Fuse Direct Control. DOUT, data out"
+        }
+      },
+      "description": "Register TstCntrl18, Address: h46, Memory Index: 70",
+      "index": 69,
+      "address": 70,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl19": {
+      "fields": {
+        "tst_efdc_add": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. ADD, address"
+        },
+        "tst_efdc_peb": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. PEB"
+        },
+        "tst_efdc_access": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. ACCESS"
+        },
+        "tst_efdc_resetb": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. RESETB"
+        }
+      },
+      "description": "Register TstCntrl19, Address: h47, Memory Index: 71",
+      "index": 70,
+      "address": 71,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl20": {
+      "fields": {
+        "tst_efdc_din": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. DIN, data in"
+        }
+      },
+      "description": "Register TstCntrl20, Address: h48, Memory Index: 72",
+      "index": 71,
+      "address": 72,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl21": {
+      "fields": {
+        "tst_efdc_wsel": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. DIN, data in"
+        },
+        "tst_efdc_rd": {
+          "index": 1,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. RD"
+        },
+        "tst_efdc_re": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. RE"
+        },
+        "tst_efdc_wren": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. WREN"
+        }
+      },
+      "description": "Register TstCntrl21, Address: h49, Memory Index: 73",
+      "index": 72,
+      "address": 73,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl22": {
+      "fields": {
+        "tst_efdc_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. Enable direct control"
+        },
+        "tst_efdc_bank": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "E-Fuse Direct Control. Bank selection (0 or 1)"
+        },
+        "unused_TstCntrl22_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl22_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl22_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl22_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl22_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl22_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl22, Address: h4a, Memory Index: 74",
+      "index": 73,
+      "address": 74,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl23": {
+      "fields": {
+        "unused_TstCntrl23_b0": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl23_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl23, Address: h4b, Memory Index: 75",
+      "index": 74,
+      "address": 75,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl24": {
+      "fields": {
+        "unused_TstCntrl24_b0": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b1": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl24_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl24, Address: h4c, Memory Index: 76",
+      "index": 75,
+      "address": 76,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl25": {
+      "fields": {
+        "tst_ldo1": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_LDO1_EXT_IN\n1: TST_LDO1_N_OFF\n2: TST_LDO1_ILIM_SCALE\n3: TST_LDO1_SW_ILIM_SCALE\n4: TST_LDO1_P_OFF\n5: TST_LDO1_THSD_EN_CTRL\n6: TST_LDO1_THSD_EN_OVR\n7: TST_LDO1_SPARE_7"
+        }
+      },
+      "description": "Register TstCntrl25, Address: h4d, Memory Index: 77",
+      "index": 76,
+      "address": 77,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl26": {
+      "fields": {
+        "tst_ldo2": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_LDO2_EXT_IN\n1: TST_LDO2_N_OFF\n2: TST_LDO2_ILIM_SCALE\n3: TST_LDO2_SW_ILIM_SCALE\n4: TST_LDO2_P_OFF\n5: TST_LDO2_THSD_EN_CTRL\n6: TST_LDO2_THSD_EN_OVR\n7: TST_LDO2_SPARE_7"
+        }
+      },
+      "description": "Register TstCntrl26, Address: h4e, Memory Index: 78",
+      "index": 77,
+      "address": 78,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl27": {
+      "fields": {
+        "tst_ldo_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "[3:0]: TST_LDO1_SPARE\n[7:4]: TST_LDO2_SPARE"
+        }
+      },
+      "description": "Register TstCntrl27, Address: h4f, Memory Index: 79",
+      "index": 78,
+      "address": 79,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl28": {
+      "fields": {
+        "tst_misc": {
+          "index": 0,
+          "offset": 0,
+          "size": 6,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_AZ_CAP_BYPASS\n1: TST_PMOS_GATE_CLAMP_FORCE\n2: TST_PMOS_OFF_FORCE\n3: TST_PMOS_ON_FORCE\n4: TST_PSWUNDER\n5: TST_STARTUP_CURR_RED"
+        },
+        "tst_jeita": {
+          "index": 1,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl28, Address: h50, Memory Index: 80",
+      "index": 79,
+      "address": 80,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl29": {
+      "fields": {
+        "tst_ovp": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: TST_OVP_FRC_CHGIN_DET_HI\n1: TST_OVP_FRC_CHGIN_DET_RAW_HI\n2: TST_OVP_FRC_OV_COMP_LO\n3: TST_OVP_FRC_OV_LAT_LO\n4: TST_OVP_FRC_REV_COMP_LO\n5: TST_OVP_FRC_REV_LAT_LO\n6: TST_OVP_FRC_VREF_INT\n7: TST_OVP_REDUCE_CURRLIM"
+        }
+      },
+      "description": "Register TstCntrl29, Address: h51, Memory Index: 81",
+      "index": 80,
+      "address": 81,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl30": {
+      "fields": {
+        "tst_ovp_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_TstCntrl30_b4": {
+          "index": 1,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl30_b5": {
+          "index": 2,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl30_b6": {
+          "index": 3,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl30_b7": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl30, Address: h52, Memory Index: 82",
+      "index": 81,
+      "address": 82,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr00": {
+      "fields": {
+        "slow_en_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_OSC_HOLD"
+        },
+        "bias_bat_mode_ovr": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_BAT_MODE"
+        },
+        "bias_chg_mode_ovr": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_CHG_MODE"
+        },
+        "bias_tsdcblon_ovr": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_TSDCBLON"
+        },
+        "bias_tsdgblon_ovr": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_TSDGBLON"
+        },
+        "bias_tshd_mask_ovr": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_THSD_MASK"
+        },
+        "bias_shelf_mode_rst_ovr": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SHELF_MODE_RST"
+        },
+        "bias_shelf_mode_set_ovr": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SHELF_MODE_SET"
+        }
+      },
+      "description": "Register TstOvr00, Address: h53, Memory Index: 83",
+      "index": 82,
+      "address": 83,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn00": {
+      "fields": {
+        "slow_en_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_OSC_HOLD"
+        },
+        "bias_bat_mode_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_BAT_MODE"
+        },
+        "bias_chg_mode_ovr_en": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_CHG_MODE"
+        },
+        "bias_tsdcblon_ovr_en": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_TSDCBLON"
+        },
+        "bias_tsdgblon_ovr_en": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_TSDGBLON"
+        },
+        "bias_tshd_mask_ovr_en": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_THSD_MASK"
+        },
+        "bias_shelf_mode_rst_ovr_en": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SHELF_MODE_RST"
+        },
+        "bias_shelf_mode_set_ovr_en": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SHELF_MODE_SET"
+        }
+      },
+      "description": "Register TstOvrEn00, Address: h54, Memory Index: 84",
+      "index": 83,
+      "address": 84,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr01": {
+      "fields": {
+        "bias_startup_done_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_STARTUP_DONE"
+        },
+        "bias_otp_ready_ovr": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_OTP_READY"
+        },
+        "chg_startup_done_ovr": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_STARTUP_DONE"
+        },
+        "chg_chop_mirroramp_ovr": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "N_CHG_CHOP_MIRRORAMP"
+        },
+        "chg_batovervsys_ovr": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_BATOVERSYS_COMP"
+        },
+        "chg_en_charge_ovr": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_CHARGE"
+        },
+        "chg_en_ires_check_ovr": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_IRES_CHECK"
+        },
+        "chg_en_vbatcomp_ovr": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_VBATCOMP"
+        }
+      },
+      "description": "Register TstOvr01, Address: h55, Memory Index: 85",
+      "index": 84,
+      "address": 85,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn01": {
+      "fields": {
+        "bias_startup_done_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_STARTUP_DONE"
+        },
+        "bias_otp_ready_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_OTP_READY"
+        },
+        "chg_startup_done_ovr_en": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_STARTUP_DONE"
+        },
+        "chg_chop_mirroramp_ovr_en": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "N_CHG_CHOP_MIRRORAMP"
+        },
+        "chg_batovervsys_ovr_en": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_BATOVERSYS_COMP"
+        },
+        "chg_en_charge_ovr_en": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_CHARGE"
+        },
+        "chg_en_ires_check_ovr_en": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_IRES_CHECK"
+        },
+        "chg_en_vbatcomp_ovr_en": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_VBATCOMP"
+        }
+      },
+      "description": "Register TstOvrEn01, Address: h56, Memory Index: 86",
+      "index": 85,
+      "address": 86,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr02": {
+      "fields": {
+        "chg_en_main_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_MAIN"
+        },
+        "chg_ovc_clr_ovr": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_OVC_CLR"
+        },
+        "chg_startup_from_bat_ovr": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_STARTUP_FROM_BAT"
+        },
+        "ovp_vbat_tracking_ovr": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_VBAT_TRACKING"
+        },
+        "ovp_en_main_ovr": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_MAIN"
+        },
+        "ovp_en_nmos_ovr": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_NMOS"
+        },
+        "ovp_en_pmos_ovr": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_PMOS"
+        },
+        "ovp_en_softstart_ovr": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_SOFTSTART"
+        }
+      },
+      "description": "Register TstOvr02, Address: h57, Memory Index: 87",
+      "index": 86,
+      "address": 87,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn02": {
+      "fields": {
+        "chg_en_main_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_MAIN"
+        },
+        "chg_ovc_clr_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_OVC_CLR"
+        },
+        "chg_startup_from_bat_ovr_en": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_STARTUP_FROM_BAT"
+        },
+        "ovp_vbat_tracking_ovr_en": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_VBAT_TRACKING"
+        },
+        "ovp_en_main_ovr_en": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_MAIN"
+        },
+        "ovp_en_nmos_ovr_en": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_NMOS"
+        },
+        "ovp_en_pmos_ovr_en": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_PMOS"
+        },
+        "ovp_en_softstart_ovr_en": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "OVP_EN_SOFTSTART"
+        }
+      },
+      "description": "Register TstOvrEn02, Address: h58, Memory Index: 88",
+      "index": 87,
+      "address": 88,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr03": {
+      "fields": {
+        "bias_svref_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SVREF"
+        },
+        "bias_sbc_ovr": {
+          "index": 1,
+          "offset": 1,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SBC2"
+        },
+        "bias_sld_ovr": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SLD2"
+        },
+        "bias_svchg_ovr": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SVCHG"
+        },
+        "bias_sichg_ovr": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SICHG"
+        },
+        "bias_sbgen_ovr": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SBGEN"
+        }
+      },
+      "description": "Register TstOvr03, Address: h59, Memory Index: 89",
+      "index": 88,
+      "address": 89,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn03": {
+      "fields": {
+        "bias_svref_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SVREF"
+        },
+        "bias_sbc_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SBC2"
+        },
+        "bias_sld_ovr_en": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SLD2"
+        },
+        "bias_svchg_ovr_en": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SVCHG"
+        },
+        "bias_sichg_ovr_en": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SICHG"
+        },
+        "bias_sbgen_ovr_en": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_SBGEN"
+        }
+      },
+      "description": "Register TstOvrEn03, Address: h5a, Memory Index: 90",
+      "index": 89,
+      "address": 90,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr04": {
+      "fields": {
+        "bias_enotp_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_ENOTP"
+        },
+        "chg_az_vbatcomp_ovr": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_AZ_VBATCOMP"
+        },
+        "chg_en_bat_load_ovr": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_BAT_LOAD"
+        },
+        "bth_adc_en_ovr": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_EN"
+        },
+        "bth_adc_sample_ovr": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_SAMPLE"
+        },
+        "bth_adc_clk_ovr": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_CLK"
+        },
+        "bth_adc_chop_ovr": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_AZ"
+        },
+        "unused_TstOvr04_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstOvr04, Address: h5b, Memory Index: 91",
+      "index": 90,
+      "address": 91,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn04": {
+      "fields": {
+        "bias_enotp_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_ENOTP"
+        },
+        "chg_az_vbatcomp_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_AZ_VBATCOMP"
+        },
+        "chg_en_bat_load_ovr_en": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "CHG_EN_BAT_LOAD"
+        },
+        "bth_adc_en_ovr_en": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_EN"
+        },
+        "bth_adc_sample_ovr_en": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_SAMPLE"
+        },
+        "bth_adc_clk_ovr_en": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_CLK"
+        },
+        "bth_adc_chop_ovr_en": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BTH_AZ"
+        },
+        "unused_TstOvrEn04_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstOvrEn04, Address: h5c, Memory Index: 92",
+      "index": 91,
+      "address": 92,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr05": {
+      "fields": {
+        "bc_en_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_EN"
+        },
+        "bc_en_scmp_ovr": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_EN_SCMP"
+        },
+        "bc_dvs_rise_ovr": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVSRISE"
+        },
+        "bc_dvs_fall_ovr": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVSFALL"
+        }
+      },
+      "description": "Register TstOvr05, Address: h5d, Memory Index: 93",
+      "index": 92,
+      "address": 93,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn05": {
+      "fields": {
+        "bc_en_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_EN"
+        },
+        "bc_en_scmp_ovr_en": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_EN_SCMP"
+        },
+        "bc_dvs_rise_ovr_en": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVSRISE"
+        },
+        "bc_dvs_fall_ovr_en": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVSFALL"
+        }
+      },
+      "description": "Register TstOvrEn05, Address: h5e, Memory Index: 94",
+      "index": 93,
+      "address": 94,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr06": {
+      "fields": {
+        "bc1_dvout_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC1_DVOUT"
+        },
+        "bc2_dvout_ovr": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVOUT"
+        }
+      },
+      "description": "Register TstOvr06, Address: h5f, Memory Index: 95",
+      "index": 94,
+      "address": 95,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn06": {
+      "fields": {
+        "bc1_dvout_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC1_DVOUT"
+        },
+        "bc2_dvout_ovr_en": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BC2_DVOUT"
+        },
+        "unused_TstOvrEn06_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn06_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn06_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn06_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn06_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn06_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstOvrEn06, Address: h60, Memory Index: 96",
+      "index": 95,
+      "address": 96,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr07": {
+      "fields": {
+        "ldo_en_ovr": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_EN"
+        },
+        "ldo_en_bias_ovr": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_EN_BIAS"
+        },
+        "ldo_powerup_curr_ovr": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_POWERUP_CURR"
+        },
+        "ldo_switch_ovr": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_SWITCH"
+        }
+      },
+      "description": "Register TstOvr07, Address: h61, Memory Index: 97",
+      "index": 96,
+      "address": 97,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn07": {
+      "fields": {
+        "ldo_en_ovr_en": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_EN"
+        },
+        "ldo_en_bias_ovr_en": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_EN_BIAS"
+        },
+        "ldo_powerup_curr_ovr_en": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_POWERUP_CURR"
+        },
+        "ldo_switch_ovr_en": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "LDO2_SWITCH"
+        }
+      },
+      "description": "Register TstOvrEn07, Address: h62, Memory Index: 98",
+      "index": 97,
+      "address": 98,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvr08": {
+      "fields": {
+        "dac_ovr0": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_DAC_REF[7]/BTH_DAC_SEL[7]"
+        }
+      },
+      "description": "Register TstOvr08, Address: h63, Memory Index: 99",
+      "index": 98,
+      "address": 99,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstOvrEn08": {
+      "fields": {
+        "dac_ovr1": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_DAC_REF[9]"
+        },
+        "dac_auto_inc": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_DAC_REF_AUTO"
+        },
+        "dac_sel_ovr_en": {
+          "index": 2,
+          "offset": 3,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "BIAS_DAC_REF_OVR_EN =1\nBTH_DAC_SEL = 2"
+        },
+        "unused_TstOvrEn08_b5": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn08_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstOvrEn08_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstOvrEn08, Address: h64, Memory Index: 100",
+      "index": 99,
+      "address": 100,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl31": {
+      "fields": {
+        "mask_pok_vdd": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "mask_pok_vsys": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "mask_temp_shd": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "sample_chg_timer": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "A toggle low to high triggers a sample of the charger timer"
+        },
+        "dis_chg_volt_ths": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: ignore\n1: disable the clamp for VBatReg and StepChgThs. The 2 registers can be written at any value for debug purpose"
+        },
+        "bth_adc_ctrl_en_force": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "0: BTH ADC normal operation.\n1: BTH ADC can be enabled even if SYS is not present"
+        },
+        "unused_TstCntrl31_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_TstCntrl31_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl31, Address: h65, Memory Index: 101",
+      "index": 100,
+      "address": 101,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl32": {
+      "fields": {
+        "chg_timer_26_19": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl32, Address: h66, Memory Index: 102",
+      "index": 101,
+      "address": 102,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl33": {
+      "fields": {
+        "chg_timer_18_11": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl33, Address: h67, Memory Index: 103",
+      "index": 102,
+      "address": 103,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl34": {
+      "fields": {
+        "chg_timer_10_3": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl34, Address: h68, Memory Index: 104",
+      "index": 103,
+      "address": 104,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl35": {
+      "fields": {
+        "chg_timer_2_0": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        },
+        "current_mfsm_state": {
+          "index": 1,
+          "offset": 3,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl35, Address: h69, Memory Index: 105",
+      "index": 104,
+      "address": 105,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl36": {
+      "fields": {
+        "mfsm_bp_state": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "mfsm_bp_en": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_ocp_flag": {
+          "index": 2,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl36, Address: h6a, Memory Index: 106",
+      "index": 105,
+      "address": 106,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl37": {
+      "fields": {
+        "mux_gpio3_sel": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "1: ckg_clk_250k\n2: ckg_clk_125k\n3: ckg_clk_62p5k\n4: ana_pswb_in\n5: ana_scl\n6: ana_bat_sel\n7: ana_pok_vdd\n8: ana_buck_ocp_flg[0]\n9: ana_ldo_ocp_flg[0]\n10: ana_ovp_chgin_det_raw\n11: ana_ovp_rev_lat\n12: ana_ovp_ov_comp\n13: ana_startup_comp\n14: ana_chg_ovc\n15: ana_chg_ires_short_startup\n16: ana_shelf_mode\n17: ana_temp_tshd\n18: ana_temp_rate_red\n19: ana_gpio_in[1]\n20: ana_gpio_in[3]\nother: 0"
+        },
+        "move_out_tm_state": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo_ocp_flag": {
+          "index": 2,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl37, Address: h6b, Memory Index: 107",
+      "index": 106,
+      "address": 107,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "TstCntrl38": {
+      "fields": {
+        "mux_gpio4_sel": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "1: ckg_clk_250k\n2: ckg_clk_125k\n3: ckg_clk_62p5k\n4: filtered_pswb_in\n5: ana_sdai\n6: ana_bias_pok_sys\n7: ana_temp_chg_pause\n8: ana_temp_chg_disable\n9: ana_buck_ocp_flg[1]\n10: ana_ldo_ocp_flg[1]\n11: ana_bth_adc_comp_out\n12: ana_ovp_chgin_det\n13: ana_ovp_rev_comp\n14: ana_ovp_ov_lat\n15: ana_chg_ires_short\n16: ana_chg_batzero_comp\n17: ana_chg_batoversys_comp\n18: ana_bat_over\n19: ana_gpio_in[0]\n20: ana_gpio_in[2]\nother: 0"
+        },
+        "batt_conn_fail": {
+          "index": 1,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": "Internal signal which reports if, with CHGIN present, we tried to connect BAT to SYS and it failed. This is reset disconnecting battery and reconnecting"
+        },
+        "ldo_thsd": {
+          "index": 2,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "read only",
+          "description": ""
+        }
+      },
+      "description": "Register TstCntrl38, Address: h6c, Memory Index: 108",
+      "index": 107,
+      "address": 108,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "Trim1": {
+      "fields": {
+        "SlaveIdSel": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "SlaveID selection:_x000D_\n0 -> 7'h28 (8'h50/8'h51)_x000D_\n1 -> 7'h6A (8'hD4/8'hD5)"
+        },
+        "BattWakesUp": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "When the part is off and the battery is connected:\n1 -> do the boot and enter shelf mode\n0 -> do the boot and don't enter shelf mode (startup sequence)"
+        },
+        "otp_ramp_timer": {
+          "index": 2,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "ramp increment every clock pulse (2’b00) 2 clocks (2’b01 – default), 3 clocks (2’b10),  4 clocks (2’b11) "
+        },
+        "bgon_long_time": {
+          "index": 3,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Badgap on b4 refresh\n0 = 35us\n1 = 175us"
+        },
+        "bat_timer_elapsed_rst": {
+          "index": 4,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Disable charger timeout for BurnIn\n0 = normal operation\n1 = timeouts are maked"
+        },
+        "en_ldo_ther_shd": {
+          "index": 5,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Enable the part shutdown to shelf mode if thermal fault for  LDO is active\n0 = no shutdown if ldo thsd is active\n1 = enter shelf mode if ldo thsd is active"
+        },
+        "unused_Trim1_b7": {
+          "index": 6,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim1, Address: h6d, Memory Index: 109",
+      "index": 108,
+      "address": 109,
+      "otpPreset": 1,
+      "otpAddress": 0,
+      "reset": 4
+    },
+    "Trim2": {
+      "fields": {
+        "bias_bgap": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim2, Address: h6e, Memory Index: 110",
+      "index": 109,
+      "address": 110,
+      "otpPreset": 1,
+      "otpAddress": 1,
+      "reset": 128
+    },
+    "Trim3": {
+      "fields": {
+        "bias_dac": {
+          "index": 0,
+          "offset": 0,
+          "size": 6,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim3_b6": {
+          "index": 1,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim3_b7": {
+          "index": 2,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim3, Address: h6f, Memory Index: 111",
+      "index": 110,
+      "address": 111,
+      "otpPreset": 1,
+      "otpAddress": 2,
+      "reset": 30
+    },
+    "Trim4": {
+      "fields": {
+        "bias_ibias": {
+          "index": 0,
+          "offset": 0,
+          "size": 6,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim4_b6": {
+          "index": 1,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim4_b7": {
+          "index": 2,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim4, Address: h70, Memory Index: 112",
+      "index": 111,
+      "address": 112,
+      "otpPreset": 1,
+      "otpAddress": 3,
+      "reset": 37
+    },
+    "Trim5": {
+      "fields": {
+        "bias_osc_h": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "bias_thsd": {
+          "index": 1,
+          "offset": 3,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim5_b6": {
+          "index": 2,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim5_b7": {
+          "index": 3,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim5, Address: h71, Memory Index: 113",
+      "index": 112,
+      "address": 113,
+      "otpPreset": 1,
+      "otpAddress": 4,
+      "reset": 33
+    },
+    "Trim6": {
+      "fields": {
+        "bias_osc_l": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim6, Address: h72, Memory Index: 114",
+      "index": 113,
+      "address": 114,
+      "otpPreset": 1,
+      "otpAddress": 5,
+      "reset": 255
+    },
+    "Trim7": {
+      "fields": {
+        "bias_chg_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim7, Address: h73, Memory Index: 115",
+      "index": 114,
+      "address": 115,
+      "otpPreset": 1,
+      "otpAddress": 6,
+      "reset": 0
+    },
+    "Trim8": {
+      "fields": {
+        "bth_adc_stt_sel": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": "Battery Termistor ADC settling time selection:\n0 -> TBD\n1 -> TBD\n2 -> TBD\n3 -> TBD"
+        },
+        "ovp_ilim": {
+          "index": 1,
+          "offset": 2,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ovp_cl_dis": {
+          "index": 2,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim8, Address: h74, Memory Index: 116",
+      "index": 115,
+      "address": 116,
+      "otpPreset": 1,
+      "otpAddress": 7,
+      "reset": 60
+    },
+    "Trim9": {
+      "fields": {
+        "chg_ovc": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim9_b2": {
+          "index": 1,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim9_b3": {
+          "index": 2,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "chg_cho_en": {
+          "index": 3,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim9_b5": {
+          "index": 4,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim9_b6": {
+          "index": 5,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim9_b7": {
+          "index": 6,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim9, Address: h75, Memory Index: 117",
+      "index": 116,
+      "address": 117,
+      "otpPreset": 1,
+      "otpAddress": 8,
+      "reset": 16
+    },
+    "Trim10": {
+      "fields": {
+        "buck_lsdf": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_lszxdly": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_hszx": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_hszxdly": {
+          "index": 3,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim10, Address: h76, Memory Index: 118",
+      "index": 117,
+      "address": 118,
+      "otpPreset": 1,
+      "otpAddress": 9,
+      "reset": 0
+    },
+    "Trim11": {
+      "fields": {
+        "buck_slp": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_fcmp_slpoffsel": {
+          "index": 1,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck_cfgsp": {
+          "index": 2,
+          "offset": 4,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim11_b6": {
+          "index": 3,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim11_b7": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim11, Address: h77, Memory Index: 119",
+      "index": 118,
+      "address": 119,
+      "otpPreset": 1,
+      "otpAddress": 10,
+      "reset": 0
+    },
+    "Trim12": {
+      "fields": {
+        "buck1_lsil": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck1_lszx": {
+          "index": 1,
+          "offset": 3,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck1_fcmpdel": {
+          "index": 2,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim12, Address: h78, Memory Index: 120",
+      "index": 119,
+      "address": 120,
+      "otpPreset": 1,
+      "otpAddress": 11,
+      "reset": 67
+    },
+    "Trim13": {
+      "fields": {
+        "buck1_ton": {
+          "index": 0,
+          "offset": 0,
+          "size": 6,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck1_spare_a": {
+          "index": 1,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim13, Address: h79, Memory Index: 121",
+      "index": 120,
+      "address": 121,
+      "otpPreset": 1,
+      "otpAddress": 12,
+      "reset": 3
+    },
+    "Trim14": {
+      "fields": {
+        "buck1_csofs": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck1_spare_b": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim14, Address: h7a, Memory Index: 122",
+      "index": 121,
+      "address": 122,
+      "otpPreset": 1,
+      "otpAddress": 13,
+      "reset": 16
+    },
+    "Trim15": {
+      "fields": {
+        "buck1_cfofs": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck1_spare_c": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim15, Address: h7b, Memory Index: 123",
+      "index": 122,
+      "address": 123,
+      "otpPreset": 1,
+      "otpAddress": 14,
+      "reset": 16
+    },
+    "Trim16": {
+      "fields": {
+        "buck2_lsil": {
+          "index": 0,
+          "offset": 0,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck2_lszx": {
+          "index": 1,
+          "offset": 3,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck2_fcmpdel": {
+          "index": 2,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim16, Address: h7c, Memory Index: 124",
+      "index": 123,
+      "address": 124,
+      "otpPreset": 1,
+      "otpAddress": 15,
+      "reset": 67
+    },
+    "Trim17": {
+      "fields": {
+        "buck2_ton": {
+          "index": 0,
+          "offset": 0,
+          "size": 6,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck2_spare_a": {
+          "index": 1,
+          "offset": 6,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim17, Address: h7d, Memory Index: 125",
+      "index": 124,
+      "address": 125,
+      "otpPreset": 1,
+      "otpAddress": 16,
+      "reset": 3
+    },
+    "Trim18": {
+      "fields": {
+        "buck2_csofs": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck2_spare_b": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim18, Address: h7e, Memory Index: 126",
+      "index": 125,
+      "address": 126,
+      "otpPreset": 1,
+      "otpAddress": 17,
+      "reset": 16
+    },
+    "Trim19": {
+      "fields": {
+        "buck2_cfofs": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "buck2_spare_c": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim19, Address: h7f, Memory Index: 127",
+      "index": 126,
+      "address": 127,
+      "otpPreset": 1,
+      "otpAddress": 18,
+      "reset": 16
+    },
+    "Trim20": {
+      "fields": {
+        "ldo1_ilim": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo1_spare_a": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim20, Address: h80, Memory Index: 128",
+      "index": 127,
+      "address": 128,
+      "otpPreset": 1,
+      "otpAddress": 19,
+      "reset": 0
+    },
+    "Trim21": {
+      "fields": {
+        "ldo1_mirror": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo1_spare_b": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim21, Address: h81, Memory Index: 129",
+      "index": 128,
+      "address": 129,
+      "otpPreset": 1,
+      "otpAddress": 20,
+      "reset": 0
+    },
+    "Trim22": {
+      "fields": {
+        "ldo1_offset": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo1_spare_c": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim22, Address: h82, Memory Index: 130",
+      "index": 129,
+      "address": 130,
+      "otpPreset": 1,
+      "otpAddress": 21,
+      "reset": 0
+    },
+    "Trim23": {
+      "fields": {
+        "ldo1_sw_n_ilim": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo1_sw_p_ilim": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim23_b4": {
+          "index": 2,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim23_b5": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim23_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim23_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim23, Address: h83, Memory Index: 131",
+      "index": 130,
+      "address": 131,
+      "otpPreset": 1,
+      "otpAddress": 22,
+      "reset": 0
+    },
+    "Trim24": {
+      "fields": {
+        "ldo2_ilim": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo2_spare_a": {
+          "index": 1,
+          "offset": 4,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim24, Address: h84, Memory Index: 132",
+      "index": 131,
+      "address": 132,
+      "otpPreset": 1,
+      "otpAddress": 23,
+      "reset": 0
+    },
+    "Trim25": {
+      "fields": {
+        "ldo2_mirror": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo2_spare_b": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim25, Address: h85, Memory Index: 133",
+      "index": 132,
+      "address": 133,
+      "otpPreset": 1,
+      "otpAddress": 24,
+      "reset": 0
+    },
+    "Trim26": {
+      "fields": {
+        "ldo2_offset": {
+          "index": 0,
+          "offset": 0,
+          "size": 5,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo2_spare_c": {
+          "index": 1,
+          "offset": 5,
+          "size": 3,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        }
+      },
+      "description": "Register Trim26, Address: h86, Memory Index: 134",
+      "index": 133,
+      "address": 134,
+      "otpPreset": 1,
+      "otpAddress": 25,
+      "reset": 0
+    },
+    "Trim27": {
+      "fields": {
+        "ldo2_sw_n_ilim": {
+          "index": 0,
+          "offset": 0,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "ldo2_sw_p_ilim": {
+          "index": 1,
+          "offset": 2,
+          "size": 2,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim27_b4": {
+          "index": 2,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim27_b5": {
+          "index": 3,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim27_b6": {
+          "index": 4,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim27_b7": {
+          "index": 5,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim27, Address: h87, Memory Index: 135",
+      "index": 134,
+      "address": 135,
+      "otpPreset": 1,
+      "otpAddress": 26,
+      "reset": 0
+    },
+    "Trim28": {
+      "fields": {
+        "ovp_spare": {
+          "index": 0,
+          "offset": 0,
+          "size": 4,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim28_b4": {
+          "index": 1,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim28_b5": {
+          "index": 2,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim28_b6": {
+          "index": 3,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim28_b7": {
+          "index": 4,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim28, Address: h88, Memory Index: 136",
+      "index": 135,
+      "address": 136,
+      "otpPreset": 1,
+      "otpAddress": 27,
+      "reset": 0
+    },
+    "Trim29": {
+      "fields": {
+        "UserProgValid": {
+          "index": 0,
+          "offset": 0,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "TrimProgValid": {
+          "index": 1,
+          "offset": 1,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "r/w",
+          "description": ""
+        },
+        "unused_Trim29_b2": {
+          "index": 2,
+          "offset": 2,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim29_b3": {
+          "index": 3,
+          "offset": 3,
+          "size": 1,
+          "otpMask": 0,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim29_b4": {
+          "index": 4,
+          "offset": 4,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim29_b5": {
+          "index": 5,
+          "offset": 5,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim29_b6": {
+          "index": 6,
+          "offset": 6,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        },
+        "unused_Trim29_b7": {
+          "index": 7,
+          "offset": 7,
+          "size": 1,
+          "otpMask": 1,
+          "field_type": "unused",
+          "description": ""
+        }
+      },
+      "description": "Register Trim29, Address: h89, Memory Index: 137",
+      "index": 136,
+      "address": 137,
+      "otpPreset": 1,
+      "otpAddress": 28,
+      "reset": 0
+    },
+    "EnterSm": {
+      "fields": {
+        "EnterSmDummy": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "dummy address for commands",
+          "description": "Command to enter scan mode. The Device should be in Test Mode already (refer to EnterTm). To Exit scan mode a power cycle shall be done."
+        }
+      },
+      "description": "Register EnterSm, Address: hf7, Memory Index: 247",
+      "index": 137,
+      "address": 247,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    },
+    "EnterTm": {
+      "fields": {
+        "EnterTmDummy": {
+          "index": 0,
+          "offset": 0,
+          "size": 8,
+          "otpMask": 0,
+          "field_type": "dummy address for commands",
+          "description": ""
+        }
+      },
+      "description": "Register EnterTm, Address: hf8, Memory Index: 248",
+      "index": 138,
+      "address": 248,
+      "otpPreset": 0,
+      "otpAddress": null,
+      "reset": 0
+    }
+  }
