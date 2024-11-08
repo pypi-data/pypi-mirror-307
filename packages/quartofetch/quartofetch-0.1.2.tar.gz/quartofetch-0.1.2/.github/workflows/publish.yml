@@ -1,0 +1,84 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_rule:
+        description: 'Version bump rule (major/minor/patch/dev)'
+        required: true
+        type: choice
+        options:
+          - dev
+          - patch
+          - minor
+          - major
+        default: 'patch'
+
+jobs:
+  validate:
+    uses: ./.github/workflows/ci.yml
+
+  # TODO: Figure out why test-publish fails here, but not on its own
+  # test-publish:
+  #   needs: validate
+  #   uses: ./.github/workflows/test-publish.yml
+  #   with:
+  #     bump_rule: ${{ inputs.bump_rule }}
+  #   permissions:
+  #     id-token: write
+  #     contents: write
+
+  version-and-publish:
+    # needs: test-publish
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set commit configs (for bump2version)
+      run: |
+        # configure user
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "0.4.29"
+        enable-cache: true
+        cache-dependency-glob: "uv.lock"
+
+    - name: Set up Python
+      run: uv python install 3.12
+
+    - name: Install bump2version
+      run: uv tool install bump2version
+
+    - name: Bump version
+      run: |
+        bump2version ${{ inputs.bump_rule }} --no-tag
+        git push origin main
+        git push origin main --tags
+        # Store version for later use
+        echo NEW_VERSION=$(grep 'current_version = ' .bumpversion.cfg | sed 's/current_version = //') >> $GITHUB_ENV
+
+    - name: Build package
+      run: uv build
+
+    - name: Create GitHub Release
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh release create "v${{ env.NEW_VERSION }}" \
+          --title "Release v${{ env.NEW_VERSION }}" \
+          --notes "Release v${{ env.NEW_VERSION }}" \
+          dist/*
+
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+
