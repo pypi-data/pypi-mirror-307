@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: modAula1-package
+Version: 1.0.0
+Summary: Descricao da sua lib modAula1
+Home-page: https://github.com/tadrianonet/modAula1
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# ModAula1
+
+Saudação, exercicio aula1 mba fiap
+
+## Installation
+
+```sh
+pip install modAula1
+```
+
+Distribuido sob a licença MIT.
