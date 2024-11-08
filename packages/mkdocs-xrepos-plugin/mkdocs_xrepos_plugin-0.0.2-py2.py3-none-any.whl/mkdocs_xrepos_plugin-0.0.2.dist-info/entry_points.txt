@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+xrepos=mkdocs_xrepos_plugin.plugin:XreposPlugin
+
