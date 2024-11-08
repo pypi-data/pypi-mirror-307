@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: meu_investimento
+Version: 0.1
+Summary: Uma biblioteca para cálculos de investimentos.
+Home-page: https://github.com/tadrianonet/meu_investimento
+Author: Enio Lacerda
+Author-email: enioras@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
