@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ibex-bluesky-core
+Version: 0.0.6
+Summary: Core bluesky plan stubs & devices for use at ISIS
+Author-email: ISIS Experiment Controls <ISISExperimentControls@stfc.ac.uk>
+Maintainer-email: ISIS Experiment Controls <ISISExperimentControls@stfc.ac.uk>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, ISIS Experiment Controls Computing
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/isiscomputinggroup/ibex_bluesky_core
+Project-URL: Bug Reports, https://github.com/isiscomputinggroup/ibex_bluesky_core/issues
+Project-URL: Source, https://github.com/isiscomputinggroup/ibex_bluesky_core
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bluesky
+Requires-Dist: ophyd-async[ca]
+Requires-Dist: matplotlib
+Requires-Dist: lmfit
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: scipp
+Requires-Dist: tzdata
+Provides-Extra: dev
+Requires-Dist: ibex-bluesky-core[doc] ; extra == 'dev'
+Requires-Dist: ruff >=0.6 ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pyqt6 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: myst-parser ; extra == 'doc'
+Requires-Dist: sphinx-autobuild ; extra == 'doc'
+
+![ibex_bluesky_core](https://github.com/IsisComputingGroup/ibex_bluesky_core/blob/main/doc/logo.png?raw=True)
+
+Core bluesky plan stubs &amp; devices for use at ISIS. Not instrument/technique specific.
+
+Documentation: https://isiscomputinggroup.github.io/ibex_bluesky_core/
+
+Source: https://github.com/ISISComputingGroup/ibex_bluesky_core
+
+PyPi: https://pypi.org/project/ibex-bluesky-core/
