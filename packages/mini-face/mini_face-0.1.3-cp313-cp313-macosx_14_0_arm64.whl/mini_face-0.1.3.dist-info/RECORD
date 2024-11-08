@@ -1,0 +1,16 @@
+mini_face-0.1.3.dist-info/RECORD,,
+mini_face-0.1.3.dist-info/LICENSE,sha256=lKPuFe8fF64fpWKJzNg-NRR0D26yGy3hpoco6TGlm3E,3422
+mini_face-0.1.3.dist-info/WHEEL,sha256=IapkP7EESmocWNHLpnhc7RHF5sJ9m5ceuIL-CgOAdC8,104
+mini_face-0.1.3.dist-info/top_level.txt,sha256=BAuU_pkyPdM60dVIqVDTVv47BLySiakMxRykZ9sO7aI,10
+mini_face-0.1.3.dist-info/METADATA,sha256=k2aZh9J9nGejZFiigOUeHK6F76YDiL04BjTWLR-iUE0,1760
+mini_face-0.1.3.data/data/vcpkg.json,sha256=MYrGbO_HNeTIJeix-M-qgGUybIpfV0zCd60pfirmrfU,174
+mini_face/gaze.py,sha256=7dDB3bGSinrjrxsDme8Xvn8I7PaECUVmdu3JFPsool0,8820
+mini_face/__init__.py,sha256=QWzx-me2fMojT79Cc3D0qtJrtdl_XzxHyA-ItVfU24E,118
+mini_face/mode.py,sha256=6yl8ZGSSE-ZMCIObwG6md7IqKIBCaQcxcdOiMt7HETY,96
+mini_face/action_unit.py,sha256=BhCnP26G4xFU1XD0QOhFcpAxH_0Guoh0X6GZdV0IKx8,8592
+mini_face/api.cpython-313-darwin.so,sha256=KXyMdv-jSwbRHCsbtWroUw47ATCQoohMWiGuEtlUJsY,7155600
+mini_face/.dylibs/libX11.6.dylib,sha256=EbJ1z-GJB0AwjCs4xG8P7S85mlzs9_QXYq2CqEVD8TY,1025536
+mini_face/.dylibs/libxcb.1.1.0.dylib,sha256=Gi3a0RjHvenVFCfICxCCOCakkTlC1NuiMuTbx4V8HDc,194768
+mini_face/.dylibs/libXau.6.0.0.dylib,sha256=WGsNWmplPQOO1PdKlii99oPc_RLScPK3kgtl3v8pyO4,53312
+mini_face/.dylibs/libXdmcp.6.dylib,sha256=ClERDemAAtTvGsmmsu41JkQwZfO5ZkJTjJxd0eoJ6jU,54224
+mini_face/.dylibs/libXext.6.dylib,sha256=ynx-rXo_6RTop0-HT_89nWSop7UdhnBshmyaygqAIHE,115216
