@@ -1,0 +1,38 @@
+click<9.0.0,>=8.1.7
+click-didyoumean<0.4.0,>=0.3.0
+datasets<3.0.0,>=2.18.0
+gguf<0.7.0,>=0.6.0
+GitPython<4.0.0,>=3.1.42
+httpx<1.0.0,>=0.25.0
+instructlab-quantize>=0.1.0
+jsonschema<5.0.0,>=4.21.1
+llama_cpp_python[server]==0.2.75
+openai<2.0.0,>=1.13.3
+peft<0.10.0,>=0.9.0
+prompt-toolkit<4.0.0,>=3.0.38
+pydantic<3.0.0,>=2.7.4
+pydantic_yaml<2.0.0,>=1.2.0
+PyYAML<7.0.0,>=6.0.0
+rich<14.0.0,>=13.3.1
+rouge-score<0.2.0,>=0.1.2
+sentencepiece<0.3.0,>=0.2.0
+tokenizers<0.16.0,>=0.15.2
+toml<0.11.0,>=0.10.2
+tqdm<5.0.0,>=4.66.2
+transformers<=4.38.2,>=4.30.0
+trl<0.8.0,>=0.7.11
+wandb<0.17.0,>=0.16.4
+langchain-text-splitters
+tenacity!=8.4.0,>=8.3.0
+yamllint<1.36.0,>=1.35.1
+
+[:python_version != "3.10"]
+numpy<2.0.0,>=1.26.4
+torch<3.0.0,>=2.2.1
+
+[:python_version == "3.10"]
+numpy<2.0.0,>=1.23.5
+torch<3.0.0,>=2.2.0a0
+
+[:sys_platform == "darwin" and platform_machine == "arm64"]
+mlx<0.6.0,>=0.5.1
