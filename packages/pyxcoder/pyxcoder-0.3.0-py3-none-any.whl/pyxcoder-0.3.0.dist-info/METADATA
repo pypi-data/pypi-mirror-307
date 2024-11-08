@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyxcoder
+Version: 0.3.0
+Author: Chang Jin
+Author-email: cjin98@163.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+
