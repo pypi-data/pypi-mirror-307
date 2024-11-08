@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "umnet-napalm"
+version = "0.1.2"
+description = "A custom version of NAPALM for UMnet"
+authors = ["Amy Liebowitz <amylieb@umich.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+napalm = ">=4.0.0,<5.0.0"
+napalm-panos = "^0.6.2"
+
+[tool.poetry.dev-dependencies]
+black = "^24.10.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
