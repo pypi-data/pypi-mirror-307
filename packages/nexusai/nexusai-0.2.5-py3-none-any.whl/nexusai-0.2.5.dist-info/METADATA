@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: nexusai
+Version: 0.2.5
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: toml>=0.10.2
+Requires-Dist: termcolor>=2.5.0
+Requires-Dist: base58>=2.1.1
+Requires-Dist: pyright>=1.1.386
+Requires-Dist: fastapi>=0.115.3
+Requires-Dist: uvicorn>=0.32.0
+Requires-Dist: pydantic-settings[toml]>=2.6.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: colorlog>=6.8.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: wandb>=0.18.5
+Requires-Dist: aiohttp>=3.10.10
+
+## Immediate TODO
+
+- [x] jobs are still being added to blacklisted gpus
+- [x] fix screen attaching not showing anything
+- [x] merge stdout and stderr
+- [x] remove spaces from command combinations
+- [x] freeze git states when adding jobs
+- [x] if -r in command it bugs out thinking its repeat
+- [x] runtime doesnt update if gpu is blacklisted
+- [x] Classify failed jobs
+- [x] automatically detect wandb runs
+- [x] Webhooks for starting, completed, and failed jobs (for discord)
+- [x] make webhooks prettier
+- [x] if a job doesnt have wandb after 5 minutes, stop pinging it
+- [x] clean up git tags that are unused
+- [x] make sure the job started webhook waits
+- [x] multi user support
+- [x] cli: prompt yes or no before removing, killing, or adding
+- [x] cli: put wandb url in nexus status at cli
+- [x] cli: put runtime and time started on same line
+- [x] cli: filter history with command regex
+- [x] cli: in history put failed and completed together, then I shuold be able to see which  and which completed
+- [ ] cli: More job details when printing job stuff, especially when removing or killing
+- [ ] Automatically check for updates
+- [ ] multi gpu jobs
+- [ ] dependent jobs (a after b is done)
+- [ ] cli: ensure cli and api version align, else restart
+- [ ] refactor, move more things away from cli and to the api
+- [ ] sqlite for state management
+
+## Longterm TODO
+
+- [ ] systemd service
+- [ ] multi node
+- [ ] priority jobs
+- [ ] vram / flop minimum
+- [ ] rust rewrite for static binaries that don't require python (or venvs to be activated)
+- [ ] pretty TUI front end
