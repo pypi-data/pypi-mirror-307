@@ -1,0 +1,13 @@
+stages:
+  - publish
+
+publish:
+  stage: publish
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/python:3
+  script:
+    - pip install --upgrade build twine
+    - python -m build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - TWINE_PASSWORD="${PYPI_DEPLOY_TOKEN}" python -m twine upload --verbose dist/*
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

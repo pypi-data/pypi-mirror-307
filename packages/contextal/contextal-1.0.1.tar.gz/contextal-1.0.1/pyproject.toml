@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "contextal"
+description = "Contextal Platform management library and tools."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "platformdirs",
+  "requests",
+  "tomlkit",
+]
+dynamic = ["version"]
+
+[tool.hatch.build.targets.sdist.force-include]
+"tools/ctx_scan.py" = "contextal/ctx_scan.py"
+
+[project.urls]
+Homepage = "https://contextal.com/"
+
+[project.scripts]
+ctx = "contextal.cmd:main"
+ctx-scan = "contextal.ctx_scan:main"
+
+[tool.hatch.version]
+path = "contextal/__init__.py"
