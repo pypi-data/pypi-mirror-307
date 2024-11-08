@@ -1,0 +1,505 @@
+[build-system]
+requires = [
+    "pdm-backend ~= 2.3",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "types-lxml-multi-subclass"
+dynamic = []
+description = "Complete lxml external type annotation"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "types-beautifulsoup4 ~= 4.12",
+    "typing_extensions ~= 4.10; python_version < \"3.13\"",
+    "cssselect ~= 1.2",
+]
+keywords = [
+    "lxml",
+    "typing",
+    "stubs",
+    "annotation",
+]
+authors = [
+    { name = "Abel Cheung", email = "abelcheung@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Stubs Only",
+]
+version = "2024.11.8"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+homepage = "https://github.com/abelcheung/types-lxml"
+
+[project.optional-dependencies]
+mypy = [
+    "mypy ~= 1.11",
+]
+pyright = [
+    "pyright >= 1.1.351",
+]
+
+[dependency-groups]
+basic = [
+    "types-beautifulsoup4 == 4.12.0.20241020",
+    "typing_extensions == 4.12.2; python_version < '3.13'",
+    "cssselect == 1.2.0",
+]
+mypy = [
+    "mypy == 1.11.2",
+]
+pyright = [
+    "pyright == 1.1.387",
+]
+format = [
+    "ruff ~= 0.6",
+]
+stub-test = [
+    "pytest-mypy-plugins == 3.1.2",
+    { include-group = "mypy" },
+]
+rt-test = [
+    "typeguard == 3.0; python_full_version < \"3.12.4\"",
+    "typeguard == 4.3.0; python_full_version >= \"3.12.4\"",
+    "pytest == 8.3.3",
+    "beautifulsoup4 == 4.12.3",
+    "html5lib == 1.1",
+    { include-group = "mypy" },
+    { include-group = "pyright" },
+]
+lxml49 = [
+    "lxml == 4.9.4",
+]
+lxml50 = [
+    "lxml == 5.0.2",
+]
+lxml51 = [
+    "lxml == 5.1.1",
+]
+lxml52 = [
+    "lxml == 5.2.2",
+]
+lxml53 = [
+    "lxml == 5.3.0",
+]
+dev = [
+    "tox ~= 4.22",
+    "mypy >= 1.11.2",
+    "pyright >= 1.1.387",
+    "typeguard >= 3.0; python_full_version < \"3.12.4\"",
+    "typeguard >= 4.3.0; python_full_version >= \"3.12.4\"",
+    "pytest >= 7.0, < 9",
+    "html5lib == 1.1",
+    "pytest-mypy-plugins >= 2.0",
+    "lxml >= 4.9",
+    "beautifulsoup4 ~= 4.8",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+includes = [
+    "lxml-stubs/",
+]
+excludes = [
+    "**/__pycache__",
+    "**/.*",
+    "**/*.bak",
+    "**/*.patch",
+    "/*.py",
+]
+source-includes = [
+    "test-rt/",
+    "test-stub/",
+]
+
+[tool.setuptools_scm]
+
+[tool.pyright]
+include = [
+    "lxml-stubs",
+]
+extraPaths = [
+    "test-rt",
+]
+typeCheckingMode = "strict"
+reportPrivateUsage = false
+reportUnnecessaryTypeIgnoreComment = false
+enableTypeIgnoreComments = false
+
+[tool.mypy]
+packages = "lxml-stubs"
+strict = true
+show_error_context = true
+pretty = true
+warn_unused_ignores = false
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.format]
+preview = true
+
+[tool.ruff.lint]
+select = [
+    "I",
+]
+task-tags = [
+    "BUG",
+    "FIXME",
+    "HACK",
+    "TODO",
+    "XXX",
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--tb=short"
+
+[[tool.tox.env_list]]
+replace = "ref"
+of = [
+    "tool",
+    "tox",
+    "labels",
+    "typecheck",
+]
+extend = true
+
+[[tool.tox.env_list]]
+replace = "ref"
+of = [
+    "tool",
+    "tox",
+    "labels",
+    "static",
+]
+extend = true
+
+[[tool.tox.env_list]]
+replace = "ref"
+of = [
+    "tool",
+    "tox",
+    "labels",
+    "runtime",
+]
+extend = true
+
+[tool.tox.labels]
+typecheck = [
+    "pyright",
+    "mypy",
+]
+static = [
+    "py38-stub",
+    "py39-stub",
+    "py310-stub",
+    "py311-stub",
+    "py312-stub",
+    "py313-stub",
+]
+runtime = [
+    "py310-rt-lxml49",
+    "py310-rt-lxml50",
+    "py310-rt-lxml51",
+    "py310-rt-lxml52",
+    "py310-rt-lxml53",
+    "py311-rt-lxml49",
+    "py311-rt-lxml50",
+    "py311-rt-lxml51",
+    "py311-rt-lxml52",
+    "py311-rt-lxml53",
+    "py312-rt-lxml49",
+    "py312-rt-lxml50",
+    "py312-rt-lxml51",
+    "py312-rt-lxml52",
+    "py312-rt-lxml53",
+    "py313-rt-lxml53",
+]
+
+[tool.tox.gh-actions]
+python = "    3.8: py38\n    3.9: py39\n    3.10: py310\n    3.11: py311\n    3.12: py312\n    3.13: py313\n    "
+
+[tool.tox.env_run_base.set_env]
+PYTHONUTF8 = "1"
+
+[tool.tox.env.mypy]
+description = "Use mypy to check annotation files for error"
+package = "skip"
+dependency_groups = [
+    "basic",
+    "mypy",
+]
+commands = [
+    [
+        "mypy",
+        { replace = "posargs", extend = true },
+    ],
+]
+
+[tool.tox.env.pyright]
+description = "Use pyright to check annotation files for error"
+package = "skip"
+dependency_groups = [
+    "basic",
+    "pyright",
+]
+commands = [
+    [
+        "pyright",
+        { replace = "posargs", extend = true },
+    ],
+]
+
+[tool.tox.env.py38-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py39-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py310-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py311-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py312-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py313-stub]
+base = [
+    "_env_stub",
+]
+
+[tool.tox.env.py310-rt-lxml49]
+base = [
+    "_env_rt",
+    "_env_lxml49",
+]
+
+[tool.tox.env.py310-rt-lxml50]
+base = [
+    "_env_rt",
+    "_env_lxml50",
+]
+
+[tool.tox.env.py310-rt-lxml51]
+base = [
+    "_env_rt",
+    "_env_lxml51",
+]
+
+[tool.tox.env.py310-rt-lxml52]
+base = [
+    "_env_rt",
+    "_env_lxml52",
+]
+
+[tool.tox.env.py310-rt-lxml53]
+base = [
+    "_env_rt",
+    "_env_lxml53",
+]
+
+[tool.tox.env.py311-rt-lxml49]
+base = [
+    "_env_rt",
+    "_env_lxml49",
+]
+
+[tool.tox.env.py311-rt-lxml50]
+base = [
+    "_env_rt",
+    "_env_lxml50",
+]
+
+[tool.tox.env.py311-rt-lxml51]
+base = [
+    "_env_rt",
+    "_env_lxml51",
+]
+
+[tool.tox.env.py311-rt-lxml52]
+base = [
+    "_env_rt",
+    "_env_lxml52",
+]
+
+[tool.tox.env.py311-rt-lxml53]
+base = [
+    "_env_rt",
+    "_env_lxml53",
+]
+
+[tool.tox.env.py312-rt-lxml49]
+base = [
+    "_env_rt",
+    "_env_lxml49",
+]
+
+[tool.tox.env.py312-rt-lxml50]
+base = [
+    "_env_rt",
+    "_env_lxml50",
+]
+
+[tool.tox.env.py312-rt-lxml51]
+base = [
+    "_env_rt",
+    "_env_lxml51",
+]
+
+[tool.tox.env.py312-rt-lxml52]
+base = [
+    "_env_rt",
+    "_env_lxml52",
+]
+
+[tool.tox.env.py312-rt-lxml53]
+base = [
+    "_env_rt",
+    "_env_lxml53",
+]
+
+[tool.tox.env.py313-rt-lxml53]
+base = [
+    "_env_rt",
+    "_env_lxml53",
+]
+
+[tool.tox.env.build-normal]
+pass_env = [
+    "PDM_BUILD_SCM_VERSION",
+]
+deps = [
+    "build",
+]
+package = "skip"
+commands = [
+    [
+        "python",
+        "-m",
+        "build",
+        { replace = "posargs", extend = true },
+    ],
+]
+
+[tool.tox.env.build-alt]
+base = [
+    "env.build-normal",
+]
+allowlist_externals = [
+    "git",
+]
+commands_pre = [
+    [
+        "git",
+        "apply",
+        "multi-subclass.patch",
+    ],
+]
+commands_post = [
+    [
+        "git",
+        "apply",
+        "--reverse",
+        "multi-subclass.patch",
+    ],
+]
+
+[tool.tox._env_stub]
+dependency_groups = [
+    "stub-test",
+]
+commands = [
+    [
+        "pytest",
+        "--mypy-ini-file=test-stub/mypy-pytest.ini",
+        { replace = "posargs", default = [
+    "test-stub",
+], extend = true },
+    ],
+]
+
+[tool.tox._env_rt]
+change_dir = "{tox_root}/test-rt"
+commands = [
+    [
+        "pytest",
+        { replace = "posargs", default = [
+    ".",
+], extend = true },
+    ],
+]
+commands_pre = [
+    [
+        "pyright",
+        "--level",
+        "error",
+        ".",
+    ],
+    [
+        "python",
+        "-c",
+        "from mypy.api import run\nr=run([\"--config-file=rttest-mypy.ini\",\".\"])\nfor line in r[0].splitlines():\n    if \": note:\" not in line:\n        print(line.strip())\nexit(r[2])\n        ",
+    ],
+]
+
+[tool.tox._env_lxml49]
+dependency_groups = [
+    "rt-test",
+    "lxml49",
+]
+
+[tool.tox._env_lxml50]
+dependency_groups = [
+    "rt-test",
+    "lxml50",
+]
+
+[tool.tox._env_lxml51]
+dependency_groups = [
+    "rt-test",
+    "lxml51",
+]
+
+[tool.tox._env_lxml52]
+dependency_groups = [
+    "rt-test",
+    "lxml52",
+]
+
+[tool.tox._env_lxml53]
+dependency_groups = [
+    "rt-test",
+    "lxml53",
+]
