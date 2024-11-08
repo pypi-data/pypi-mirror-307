@@ -1,0 +1,11 @@
+name: poli__base
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - numpy<2
+    - selfies
+    - rdkit
+    - "git+https://github.com/MachineLearningLifeScience/poli.git@dev"

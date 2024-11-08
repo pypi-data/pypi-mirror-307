@@ -1,0 +1,11 @@
+name: poli__mario
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - conda-forge::openjdk
+  - pip
+  - pip:
+    - numpy<2
+    - "git+https://github.com/MachineLearningLifeScience/poli.git@dev"

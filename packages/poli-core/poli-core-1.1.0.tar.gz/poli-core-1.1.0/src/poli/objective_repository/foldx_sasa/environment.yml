@@ -1,0 +1,13 @@
+name: poli__protein
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - biopython
+    - python-levenshtein
+    - numpy<2
+    - pdb-tools
+    - "git+https://github.com/MachineLearningLifeScience/poli.git@dev"
