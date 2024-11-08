@@ -1,0 +1,39 @@
+image: python:3.9
+
+# (adapted from the template on gitlab)
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/topics/caching/
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python --version  # For debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -e ".[tests]"   # install PlasmaCalcs into this environment.
+  - pip install pytest
+
+test_all:
+  script:
+    - pwd
+    - echo $CI_PROJECT_DIR
+    - echo $CI_PROJECT_PATH
+    - cd $CI_PROJECT_DIR
+    - pwd
+    - ls
+    - pytest --verbose tests
+  artifacts:
+    name: "test_artifacts__${CI_COMMIT_REF_NAME}__${CI_COMMIT_SHA}"
+    paths:
+      - tests/_test_artifacts

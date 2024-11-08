@@ -1,0 +1,31 @@
+[project]
+name = 'PlasmaCalcs'
+authors = [
+    {name = 'Sam Evans', email = 'sevans7@bu.edu'},
+]
+description = 'Consistent interface for plasma calculations from any inputs.'
+dynamic = ['version']
+license = {text = 'MIT License'}
+readme = 'README.md'
+requires-python = '>=3.9'
+
+dependencies = [
+    'xarray',
+    'numpy',
+    'matplotlib',
+    'IPython',  # [TODO] should IPython really be required?
+]
+
+[project.optional-dependencies]
+xarray_io = ['scipy']
+bifrost = ['scipy']
+eppic = ['h5py']
+tests = ['pytest', 'scipy', 'h5py']
+
+
+[project.urls]
+source-code = "https://gitlab.com/Sevans7/plasmacalcs"
+
+[build-system]
+requires = ["flit_core >=3.2"]
+build-backend = "flit_core.buildapi"
