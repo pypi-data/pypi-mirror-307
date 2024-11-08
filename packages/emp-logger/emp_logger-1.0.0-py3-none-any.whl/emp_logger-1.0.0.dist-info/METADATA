@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: emp_logger
+Version: 1.0.0
+Summary: Custom logger with dynamic customizability for all emp-microservices that require a python logger module
+Home-page: https://github.com/AbdoCherry/EMP_UTL-S
+Author: AbdoCherry
+Author-email: abdocharrade@outlook.de
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: black ==24.10.0
+Requires-Dist: build ==1.2.2.post1
+Requires-Dist: certifi ==2024.8.30
+Requires-Dist: charset-normalizer ==3.4.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: coverage ==7.6.4
+Requires-Dist: docutils ==0.21.2
+Requires-Dist: idna ==3.10
+Requires-Dist: importlib-metadata ==8.5.0
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: jaraco.classes ==3.4.0
+Requires-Dist: jaraco.context ==6.0.1
+Requires-Dist: jaraco.functools ==4.1.0
+Requires-Dist: keyring ==25.5.0
+Requires-Dist: logging ==0.4.9.6
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.5.0
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: nh3 ==0.2.18
+Requires-Dist: packaging ==24.1
+Requires-Dist: pathspec ==0.12.1
+Requires-Dist: pkginfo ==1.10.0
+Requires-Dist: platformdirs ==4.3.6
+Requires-Dist: pluggy ==1.5.0
+Requires-Dist: Pygments ==2.18.0
+Requires-Dist: pyproject-hooks ==1.2.0
+Requires-Dist: pytest ==8.3.3
+Requires-Dist: pytest-mock ==3.14.0
+Requires-Dist: readme-renderer ==44.0
+Requires-Dist: requests ==2.32.3
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.9.4
+Requires-Dist: setuptools ==75.3.0
+Requires-Dist: twine ==5.1.1
+Requires-Dist: urllib3 ==2.2.3
+Requires-Dist: wheel ==0.44.0
+Requires-Dist: zipp ==3.20.2
+
+# EMP - Utilities Service (UTL-S)
+
+This repository is focusing on shared functions, code(-snippets) and generic functionalities. The goal is to reduce redundancy and to increase productivity in the usage of shared modules / functions. To maximize the advantage of this repository, the selected type of sharing is python packaging for python modules. Although github submodules and docker do offer a professional solution - It is specifically for this usecase not applicable.
+
+## Logging Module
+
+The setup_logger function in the Logging Module simplifies consistent logging across services, creating structured, environment-aware log files. The JSON-formatted output is ideal for integration with monitoring tools like AWS CloudWatch, Splunk, and New Relic.
+
+### Key Features
+
+- Environment-based Logging: Generates separate log files based on the specified environment (dev, int, stg, prd), automatically creating a logs directory.
+- Formatted JSON Logs: Logs are formatted in JSON, making them easily readable and compatible with modern monitoring tools.
+- Dynamic Log Levels: Automatically switches to overwrite mode in non-production environments and append mode in production, facilitating easy log management.
+
+### Usage
+
+1. Installing the package
+
+    `pip3 install emp-utils-logger`
+
+2. Setting up the logger
+
+    ```python
+    from emp_utils_logger import setup_logger
+
+    logger = setup_logger(ENVIRONMENT = '<ENVIRONMENT>', SERVICE = '<SERVICE>', module = '<module> | default = Serverless')
+    logger.info('Logger setup successfully')
+    ```
+
+### Additional Notes
+
+- __Environment Detection__: If ENVIRONMENT is not specified, the logger defaults to dev.
+- __Custom File Naming__: Log files are generated with a name format of EMP-<SERVICE>-<module>_<ENVIRONMENT>.log, aiding easy identification.
+- __Directory Creation__: The module will automatically create a logs folder if it does not already exist.
+
+*This logger module is built to seamlessly integrate into various environments, supporting straightforward and organized logging across applications.*
