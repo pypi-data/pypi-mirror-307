@@ -1,0 +1,321 @@
+name: xHydro Testing Suite
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .cruft.json
+      - CHANGELOG.rst
+      - README.rst
+      - pyproject.toml
+      - tests/test_xhydro.py
+      - src/xhydro/__init__.py
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - labeled
+      - unlabeled
+  pull_request_review:
+    types:
+      - submitted
+      - edited
+
+concurrency:
+  # For a given workflow, if we push to the same branch, cancel all previous builds on that branch except on master.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint (Python${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    if: |
+      ((github.event_name == 'pull_request') && (github.event.action != 'labeled')) ||
+      (github.event.review.state == 'approved') ||
+      (github.event_name == 'push')
+    strategy:
+      matrix:
+        python-version:
+          - "3.x"
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            files.pythonhosted.org:443
+            github.com:443
+            pypi.org:443
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Python${{ matrix.python-version }}
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install CI libraries
+        run: |
+          python -m pip install --require-hashes -r CI/requirements_ci.txt
+      - name: Environment Caching
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4.1.2
+        with:
+          path: .tox
+          key: ${{ matrix.os }}-Python${{ matrix.python-version }}-${{ hashFiles('pyproject.toml', 'tox.ini') }}
+      - name: Run linting suite
+        run: |
+          python -m tox -e lint
+
+  test-preliminary:
+    name: Preliminary Tests (Python${{ matrix.python-version }}, ${{ matrix.os }})
+    needs: lint
+    if: |
+      (github.event_name == 'pull_request') && !contains(github.event.pull_request.labels.*.name, 'approved')
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ 'ubuntu-latest' ]
+        python-version: [ "3.10" ]
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            ai4edataeuwest.blob.core.windows.net:443
+            cdn.proj.org:443
+            conda.anaconda.org:443
+            elevationeuwest.blob.core.windows.net:443
+            files.pythonhosted.org:443
+            github.com:443
+            objects.githubusercontent.com:443
+            planetarycomputer.microsoft.com:443
+            pypi.org:443
+            raw.githubusercontent.com:443
+            s3.us-east-2.wasabisys.com:443
+            s3.wasabisys.com:443
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
+        uses: mamba-org/setup-micromamba@617811f69075e3fd3ae68ca64220ad065877f246 # v2.0.0
+        with:
+          cache-downloads: true
+          cache-environment: false
+          environment-file: environment-dev.yml
+          create-args: >-
+            python=${{ matrix.python-version }}
+          micromamba-version: "1.5.10-0"  # pinned to avoid the breaking changes with mamba and micromamba (2.0.0).
+      - name: Install xHydro
+        run: |
+          python -m pip install --no-deps .
+      - name: Check versions
+        run: |
+          micromamba list
+          echo ESMF_VERSION=$(cat $ESMFMKFILE | grep "ESMF_VERSION_STRING=" | awk -F= '{print $2}' | tr -d "'")
+          python -m pip check || true
+      - name: Test with pytest
+        run: |
+          make test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-conda:
+    name: Test with Python${{ matrix.python-version }} (Anaconda, ${{ matrix.os }})
+    needs: lint
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'approved') ||
+      (github.event.review.state == 'approved') ||
+      (github.event_name == 'push')
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ 'ubuntu-latest' ]
+        python-version: [ "3.10", "3.11", "3.12" ]
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            ai4edataeuwest.blob.core.windows.net:443
+            cdn.proj.org:443
+            conda.anaconda.org:443
+            coveralls.io:443
+            elevationeuwest.blob.core.windows.net:443
+            files.pythonhosted.org:443
+            github.com:443
+            objects.githubusercontent.com:443
+            planetarycomputer.microsoft.com:443
+            pypi.org:443
+            raw.githubusercontent.com:443
+            s3.us-east-2.wasabisys.com:443
+            s3.wasabisys.com:443
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
+        uses: mamba-org/setup-micromamba@617811f69075e3fd3ae68ca64220ad065877f246 # v2.0.0
+        with:
+          cache-downloads: true
+          cache-environment: false
+          environment-file: environment-dev.yml
+          create-args: >-
+            lmoments3
+            python=${{ matrix.python-version }}
+          micromamba-version: "1.5.10-0"  # pinned to avoid the breaking changes with mamba and micromamba (2.0.0).
+      - name: Install xHydro
+        run: |
+          python -m pip install --no-deps .
+      - name: Check versions
+        run: |
+          micromamba list
+          echo ESMF_VERSION=$(cat $ESMFMKFILE | grep "ESMF_VERSION_STRING=" | awk -F= '{print $2}' | tr -d "'")
+          python -m pip check || true
+      - name: Test with pytest
+        run: |
+          python -m pytest --cov xhydro
+      - name: Report Coverage
+        run: |
+          python -m coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_FLAG_NAME: run-Python${{ matrix.python-version }}-conda
+          COVERALLS_PARALLEL: true
+          COVERALLS_SERVICE_NAME: github
+
+  test-notebooks:
+    name: Test Notebooks (Python${{ matrix.python-version }}, ${{ matrix.os }})
+    needs: lint
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'notebooks') ||
+      contains(github.event.pull_request.labels.*.name, 'approved') ||
+      (github.event.review.state == 'approved') ||
+      (github.event_name == 'push')
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ 'ubuntu-latest' ]
+        python-version: [ "3.10", "3.11", "3.12" ]
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            ai4edataeuwest.blob.core.windows.net:443
+            cdn.proj.org:443
+            conda.anaconda.org:443
+            elevationeuwest.blob.core.windows.net:443
+            files.pythonhosted.org:443
+            github.com:443
+            objects.githubusercontent.com:443
+            planetarycomputer.microsoft.com:443
+            pypi.org:443
+            raw.githubusercontent.com:443
+            s3.us-east-2.wasabisys.com:443
+            s3.wasabisys.com:443
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup Conda (Micromamba) with Python${{ matrix.python-version }}
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          cache-downloads: true
+          cache-environment: false
+          environment-file: environment-dev.yml
+          create-args: >-
+            lmoments3
+            python=${{ matrix.python-version }}
+          micromamba-version: "1.5.10-0"  # pinned to avoid the breaking changes with mamba and micromamba (2.0.0).
+      - name: Install xHydro
+        run: |
+          python -m pip install --no-deps .
+      - name: Check versions
+        run: |
+          micromamba list
+          echo ESMF_VERSION=$(cat $ESMFMKFILE | grep "ESMF_VERSION_STRING=" | awk -F= '{print $2}' | tr -d "'")
+          python -m pip check || true
+      - name: Test Notebooks
+        run: |
+          make test-notebooks-lax
+
+#  test-ESMF-source:
+#    name: Tests using ESMF from sources (Python${{ matrix.python-version }})
+#    needs: lint
+#    if: |
+#      contains(github.event.pull_request.labels.*.name, 'approved') ||
+#      (github.event.review.state == 'approved') ||
+#      (github.event_name == 'push')
+#    runs-on: ubuntu-latest
+#    env:
+#      ESMF_VERSION: "v8.5.0"
+#    strategy:
+#      matrix:
+#        include:
+#          - python-version: "3.9"
+#    steps:
+#      - uses: actions/checkout@v4.1.1
+#      - name: Install NetCDF
+#        run: |
+#          sudo apt-get -y update
+#          sudo apt install libnetcdf-dev libnetcdff-dev
+#      - name: Install ESMF
+#        uses: esmf-org/install-esmf-action@v1
+#        env:
+#          ESMF_NETCDF: nc-config
+#        with:
+#          cache: true
+#          version: ${{ env.ESMF_VERSION }}
+#      - name: Set up Python${{ matrix.python-version }}
+#        uses: actions/setup-python@v4.7.1
+#        with:
+#          python-version: ${{ matrix.python-version }}
+#      - name: Install xhydro (with esmpy)
+#        run: |
+#          python -m pip install flit
+#          make dev
+#        env:
+#          ESMF_VERSION: ${{ env.ESMF_VERSION }}
+#      - name: Check versions
+#        run: |
+#          python -m pip list
+#          echo ESMF_VERSION=$(cat $ESMFMKFILE | grep "ESMF_VERSION_STRING=" | awk -F= '{print $2}' | tr -d "'")
+#          python -m pip check || true
+#      - name: Test with pytest
+#        run: |
+#          make test
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  finish:
+    needs:
+      - test-conda
+      - test-notebooks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          disable-sudo: true
+          egress-policy: audit
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@cfd0633edbd2411b532b808ba7a8b5e04f76d2c8 # v2.3.4
+        with:
+          parallel-finished: true
