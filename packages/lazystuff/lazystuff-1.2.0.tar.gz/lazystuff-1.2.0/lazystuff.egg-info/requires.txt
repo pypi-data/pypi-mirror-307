@@ -1,0 +1,16 @@
+
+[dev]
+Flake8-pyproject
+build
+flake8
+mypy
+pydocstyle
+pylint
+pytest
+pytest-cov
+sphinx
+sphinx-markdown-builder
+sphinx-rtd-theme
+twine
+vulture
+wheel

@@ -1,0 +1,107 @@
+[build-system]
+requires = ["setuptools @ git+https://github.com/pypa/setuptools.git@main"]
+
+[project]
+name = "lazystuff"
+version = "1.2.0"
+authors = [{ name = "David Byers", email = "david.byers@liu.se"}]
+description = "Lazy-ish list-like objects for streaming APIs."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["lazy", "sequence"]
+license = { text = "AGPL-3.0-or-later" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Typing :: Typed"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "Flake8-pyproject",
+    "build",
+    "flake8",
+    "mypy",
+    "pydocstyle",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "sphinx",
+    "sphinx-markdown-builder",
+    "sphinx-rtd-theme",
+    "twine",
+    "vulture",
+    "wheel",
+]
+
+
+
+[project.urls]
+Homepage = "https://github.com/ookisan/lazystuff"
+Issues = "https://github.com/ookisan/lazystuff/issues"
+
+
+[tool.setuptools]
+packages = ["lazystuff"]
+
+[tool.setuptools.package-data]
+lazystuff = ["py.typed"]
+
+
+[tool.flake8]
+max-line-length = 131
+
+
+[tool.pydocstyle]
+add_ignore = "D105"
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--tb", "short",
+    "--cov", "lazystuff",
+    "--cov-branch",
+    "--cov-report", "term-missing",
+    "--cov-config", ".coveragerc",
+]
+testpaths = [
+    "tests"
+]
+
+
+[tool.mypy]
+files = "lazystuff"
+strict = true
+strict_equality = false
+extra_checks = true
+no_implicit_reexport = true
+no_error_summary = true
+
+
+[tool.pylint.main]
+ignore = [".git"]
+ignore-patterns = ["^\\.#"]
+jobs = 0
+enable-all-extensions = true
+
+[tool.pylint.format]
+max-line-length = 131
+max-module-lines = 2000
+
+
+[tool.pylint."messages control"]
+enable = [
+    "useless-suppression"
+]
+disable = [
+    "duplicate-code"
+]
+
+[tool.pylint.reports]
+output-format = "parseable"
+reports = false
+score = false

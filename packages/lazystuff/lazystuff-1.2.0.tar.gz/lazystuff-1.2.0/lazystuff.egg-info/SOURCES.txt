@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+lazystuff/__init__.py
+lazystuff/lazydict.py
+lazystuff/lazylist.py
+lazystuff/py.typed
+lazystuff.egg-info/PKG-INFO
+lazystuff.egg-info/SOURCES.txt
+lazystuff.egg-info/dependency_links.txt
+lazystuff.egg-info/requires.txt
+lazystuff.egg-info/top_level.txt
