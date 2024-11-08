@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-dotprompt"
+version = "0.0.2"
+description = "dotprompt for your prompt prompt needs"
+license = "MIT"
+authors = ["prompty.prompt <promptly@dotprompt.dev>"]
+readme = "README.md"
+packages = [
+  { include = "dotprompt"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jinja2 = "^3.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
