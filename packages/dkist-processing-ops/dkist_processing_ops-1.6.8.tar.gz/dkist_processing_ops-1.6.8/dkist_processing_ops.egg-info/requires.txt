@@ -1,0 +1,7 @@
+dkist-processing-common==10.3.0
+dkist-service-configuration==2.3.0
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
