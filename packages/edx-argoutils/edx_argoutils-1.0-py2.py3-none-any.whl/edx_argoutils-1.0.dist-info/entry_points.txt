@@ -1,0 +1,2 @@
+[console_scripts]
+edx_argoutils = edx_argoutils.cli:main
