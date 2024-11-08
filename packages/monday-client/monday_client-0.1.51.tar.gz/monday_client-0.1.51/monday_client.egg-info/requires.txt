@@ -1,0 +1,6 @@
+aiohttp
+pydantic
+
+[dev]
+pytest
+pytest-asyncio
