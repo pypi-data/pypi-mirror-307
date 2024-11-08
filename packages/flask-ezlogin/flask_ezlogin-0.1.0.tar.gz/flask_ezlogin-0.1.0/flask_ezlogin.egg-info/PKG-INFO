@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: flask-ezlogin
+Version: 0.1.0
+Summary: Easy login setup with Flask and Flask-Login
+Home-page: https://github.com/arturads/flask-ezlogin
+Author: Artur Arantes Santos da Silva
+Author-email: arturarantesads@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: Flask-Login
+
+# flask-ezlogin
+
+**flask-ezlogin** Ã© um pacote que facilita a configuraÃ§Ã£o de sistemas de login no Flask usando Flask-Login.
+
+## InstalaÃ§Ã£o
+
+VocÃª pode instalar diretamente do PyPI (depois de publicar) com:
+
+```bash
+pip install flask-ezlogin
+```
