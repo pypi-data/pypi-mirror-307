@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: jomllib
+Version: 1.0.0
+Summary: This module provides an interface for parsing JOML 1.0.0 (Joe’s Obvious Minimal Language). This module does not support writing JOML.
+Project-URL: Homepage, https://github.com/lordfirespeed/jomllib
+Project-URL: Issues, https://github.com/lordfirespeed/jomllib/issues
+Author-email: Lordfirespeed <me@lordfirespeed.dev>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
