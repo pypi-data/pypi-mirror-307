@@ -1,0 +1,98 @@
+---
+model: gpt-4o
+description: Reformat the given prompt template so that a JSON schema is enforced, and a placeholder variable for few shot examples is added.
+inputs:
+    prompt: The prompt that needs to be reformatted.
+response_format:
+    type: json_schema
+    json_schema:
+        name: prompt
+        description: Creates a prompt consisting of a list of messages.
+        strict: true
+        schema:
+            type: object
+            required:
+                - messages
+            properties:
+                messages:
+                    type: array
+                    description: List of messages in the prompt
+                    items:
+                        type: object
+                        properties:
+                            role:
+                                type: string
+                                description: Role of the message sender
+                                enum:
+                                    - system
+                                    - user
+                            content:
+                                type: string
+                                description: Content of the message
+                        required:
+                            - role
+                            - content
+                        additionalProperties: false
+            additionalProperties: false
+---
+<system>
+You are an expert prompt engineer.
+Your task is to reformat the given prompt template so a niche output format is not enforced (the LLM is enforced programmatically to give a structured output, so no need to do so in the prompt), and a placeholder variable for few shot examples {_FEWSHOT_} is added.
+
+Below is an example.
+
+Input prompt:
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": """You must use the output format below (xml):
+<outputs>
+<output name="answer">
+[answer]
+</output>
+</outputs>"""
+        },
+        {
+            "role": "user",
+            "content": """Some user prompt.
+
+Now perform the task for the following inputs:
+<inputs>
+<input name="question">
+{question}
+</input>
+</inputs>"""
+        }
+    ]
+}
+
+Formatted prompt:
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": """Answer questions with short factoid answers.
+
+Output only the answer."""
+        },
+        {
+            "role": "user",
+            "content": """Some instructions.
+
+Task demonstrations:
+{_FEWSHOT_}
+
+Question:
+{question}"""
+        }
+    ]
+}
+</system>
+<user>
+Now given the input, generate the formatted prompt.
+Input prompt:
+{prompt}
+
+Formatted prompt:
+</user>

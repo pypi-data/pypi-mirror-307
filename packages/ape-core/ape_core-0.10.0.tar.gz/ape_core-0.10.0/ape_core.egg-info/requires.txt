@@ -1,0 +1,9 @@
+ape-common<0.3.0,>=0.2.0
+optuna<5.0.0,>=4.0.0
+psycopg2-binary<3.0.0,>=2.9.9
+sqlalchemy<3.0.0,>=2.0.35
+nest_asyncio<2.0.0,>=1.6.0
+
+[dev]
+pytest
+black

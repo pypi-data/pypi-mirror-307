@@ -1,0 +1,59 @@
+---
+model: gpt-4o
+temperature: 0.0
+inputs: 
+    basic_prompt: A basic prompt that we've used before
+    instruction_improved_prompt: An improved prompt that was improved in instruction
+    format_improved_prompt: An improved prompt that was improved in format
+response_format:
+    type: json_schema
+    json_schema:
+        name: prompt
+        description: Creates a prompt consisting of a list of messages.
+        strict: true
+        schema:
+            type: object
+            required:
+                - messages
+            properties:
+                messages:
+                    type: array
+                    description: List of messages in the prompt
+                    items:
+                        type: object
+                        properties:
+                            role:
+                                type: string
+                                description: Role of the message sender
+                                enum:
+                                    - system
+                                    - user
+                            content:
+                                type: string
+                                description: Content of the message
+                        required:
+                            - role
+                            - content
+                        additionalProperties: false
+            additionalProperties: false
+---
+<system>
+You are an expert prompt engineer.
+
+For given basic prompt, and two improved prompts, write a new prompt that combines the 2 improved prompts, instruction-improved-prompt and format-improved-prompt.
+You MUST follow the format of the format-improved-prompt, and do not remove any improvement in the instructions.
+Before writing the merged new prompt, think step by step.
+First, understand the basic prompt and improvements in the instruction-improved-prompt and format-improved-prompt.
+Then, understand the format of the format-improved-prompt.
+Finally, write a new prompt that combines the 2 improved prompts, instruction-improved-prompt and format-improved-prompt.
+</system>
+<user>
+Basic prompt:
+{basic_prompt}
+
+Instruction-improved prompt:
+{instruction_improved_prompt}
+
+Format-improved prompt:
+{format_improved_prompt}
+</user>
