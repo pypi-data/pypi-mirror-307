@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+clean = "rm -rf dist/*"
+build = "python -m build"
+publish-test = "python3 -m twine upload --repository testpypi dist/*"
+publish = "python3 -m twine upload --repository pypi dist/*"
+
+[packages]
+
+[dev-packages]
+build = "*"
+twine = "*"
+
+[requires]
+python_version = "3.12"

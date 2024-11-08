@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+# https://setuptools-scm.readthedocs.io/en/latest/config/#setuptools_scm.git.DEFAULT_DESCRIBE
+# Omit the `--dirty` option so that the state of the worktree does not affect versioning
+git_describe_command = ["git", "describe", "--tags", "--long", "--match", "*[0-9]*"]
+
+[project]
+name = "jomllib"
+authors = [
+  { name="Lordfirespeed", email="me@lordfirespeed.dev" },
+]
+description = """This module provides an interface for parsing JOML 1.0.0 (Joe’s Obvious Minimal Language).
+This module does not support writing JOML.
+"""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/lordfirespeed/jomllib"
+Issues = "https://github.com/lordfirespeed/jomllib/issues"
