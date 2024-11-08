@@ -1,0 +1,11 @@
+{% set context_query = '
+PREFIX astr: <https://www.w3.org/ns/activitystreams#>
+select distinct ?reply where {
+    ?reply astr:inReplyTo+ ?post.
+    ?reply astr:published ?published.
+} order by (?published) ' -%}
+[
+    {% for row in context_query | query(values={"post":this.identifier}) %}
+    {{row['reply'] | include('data') | safe }}{% if not loop.last %}, {% endif %}
+    {%- endfor %}
+]
