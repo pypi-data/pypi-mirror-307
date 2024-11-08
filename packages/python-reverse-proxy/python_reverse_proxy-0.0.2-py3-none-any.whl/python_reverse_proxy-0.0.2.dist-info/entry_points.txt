@@ -1,0 +1,4 @@
+[console_scripts]
+python-reverse-proxy=reverse_proxy.__main__:main
+reverse-proxy=reverse_proxy.__main__:main
+
