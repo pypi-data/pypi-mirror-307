@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: flickpy
+Version: 3.0.0
+Summary: A Python package for displaying various loading animations in the terminal.
+Home-page: https://github.com/bytebreach/flickpy
+Author: MrFidal
+Author-email: mrfidal@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Flickpy 3.0.0
+
+Flickpy is a Python package that provides various terminal loading animations. You can use it both from the command line and as a library within your Python code. It supports multiple types of animations, duration-based control, and time format parsing (seconds, minutes, and hours).
+
+## Installation
+
+To install the `Flickpy` package, you can use `pip`:
+
+```bash
+pip install flickpy
+```
+
+## Command-Line Usage
+
+### List Available Animations
+
+To list all the available animations in the package, use the following command:
+
+```bash
+flickpy list
+```
+
+This will display all the loading animations you can use with the `flickpy run` command.
+
+### Run a Specific Animation
+
+You can run any of the available animations by specifying its name. You also need to provide the duration for how long the animation should run. The duration can be in seconds (`10s`), minutes (`5m`), or hours (`1h`).
+
+```bash
+flickpy run "<animation_name>" --duration <duration>
+```
+
+For example:
+
+- Run the "Progress Bar Fill" animation for 10 seconds:
+
+```bash
+flickpy run "Progress Bar Fill" --duration 10s
+```
+
+- Run the "Rotating Bar" animation for 5 minutes:
+
+```bash
+flickpy run "Rotating Bar" --duration 5m
+```
+
+- Run the "Pulse Blocks" animation for 1 hour:
+
+```bash
+flickpy run "Pulse Blocks" --duration 1h
+```
+
+If you do not specify a duration, it will default to `10s` (10 seconds).
+
+### Animation Options
+
+The `flickpy run` command supports a variety of animations. Here are the available ones:
+
+- **Progress Bar Fill**
+- **Rotating Bar**
+- **Expanding Blocks**
+- **Bouncing Bar**
+- **Sliding Dots**
+- **Pulse Blocks**
+- **Loading Wave**
+- **Blinking Blocks**
+
+You can list these animations with the `flickpy list` command.
+
+## Import Usage
+
+You can also use `Flickpy` within your Python code. Hereâ€™s an example:
+
+### Example: List Animations and Run an Animation
+
+```python
+from Flickpy import run_animation, list_animations
+
+# Print all available animations
+print("Available Animations:")
+for anim in list_animations():
+    print(anim)
+
+# Run a specific animation for a set duration
+run_animation("Progress Bar Fill", "10s")
+```
+
+### Example Output
+
+When you run the above Python code, it will:
+
+1. Print a list of available animations.
+2. Run the "Progress Bar Fill" animation for 10 seconds.
+
+## Time-Based Control
+
+### Time Format Support
+
+The `--duration` argument accepts the following time formats:
+
+- **Seconds**: Use `s` (e.g., `10s` for 10 seconds)
+- **Minutes**: Use `m` (e.g., `5m` for 5 minutes)
+- **Hours**: Use `h` (e.g., `1h` for 1 hour)
+
+### Examples:
+
+- **10 seconds**: `10s`
+- **5 minutes**: `5m`
+- **1 hour**: `1h`
+
+## Example of Using in CLI
+
+```bash
+# List all available animations
+flickpy list
+
+# Run "Progress Bar Fill" animation for 10 seconds
+flickpy run "Progress Bar Fill" --duration 10s
+
+# Run "Rotating Bar" animation for 2 minutes
+flickpy run "Rotating Bar" --duration 2m
+
+# Run "Pulse Blocks" animation for 1 hour
+flickpy run "Pulse Blocks" --duration 1h
+```
+
+## Animations in Flickpy
+
+Hereâ€™s a list of animations that you can use with `Flickpy`:
+
+- **Progress Bar Fill**
+- **Rotating Bar**
+- **Expanding Blocks**
+- **Bouncing Bar**
+- **Sliding Dots**
+- **Pulse Blocks**
+- **Loading Wave**
+- **Blinking Blocks**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
