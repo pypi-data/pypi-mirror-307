@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+SCHU_Auth.egg-info/PKG-INFO
+SCHU_Auth.egg-info/SOURCES.txt
+SCHU_Auth.egg-info/dependency_links.txt
+SCHU_Auth.egg-info/requires.txt
+SCHU_Auth.egg-info/top_level.txt
+schu_auth/__init__.py
+schu_auth/auth.py
+schu_auth/response.py
