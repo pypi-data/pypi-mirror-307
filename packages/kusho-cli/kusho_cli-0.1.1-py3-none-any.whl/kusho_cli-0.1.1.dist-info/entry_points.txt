@@ -1,0 +1,2 @@
+[console_scripts]
+kusho = kusho_cli.cli:main
