@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyanimalconverter"
+description = "A package you can use to do several kinds of unit conversions and comparison, either on their own or with the help of some animal friends."
+version = "1.13"
+authors = [
+    {name = "David Jimenez", email = "drj8812@nyu.edu"},
+    {name = "Sean Lee", email = "jsl775@nyu.edu"},
+    {name = "Madison Phung", email = "mkp6075@nyu.edu"},
+    {name = "Stephen Spencer-Wong", email = "srs9979@nyu.edu"},
+    {name = "William Xie", email = "wx2114@nyu.edu"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["python", "package", "animal", "converter", "units", "compare"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pint"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+"Repository" = "https://github.com/software-students-fall2024/3-python-package-kapow"
+
+[project.scripts]
+pyanimalconverter = "pyanimalconverter.__main__:main"

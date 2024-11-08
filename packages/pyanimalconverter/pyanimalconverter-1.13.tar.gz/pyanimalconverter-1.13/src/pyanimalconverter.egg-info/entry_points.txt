@@ -1,0 +1,2 @@
+[console_scripts]
+pyanimalconverter = pyanimalconverter.__main__:main
