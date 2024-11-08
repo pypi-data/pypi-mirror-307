@@ -1,0 +1,18 @@
+db_host: 'example.com'
+db_port: 1234
+db_name: 'duckdb_test.db'
+db_user: 'myusername'
+
+db_type: 'duckdb'
+db_path: '~/Envs/tooling/Table-Differ/databases/duckdb_test.db'
+schema_name: 'main'
+
+table_initial: 'testing_0'
+table_secondary: 'testing_1'
+diff_table_prefix: '__diff_table__' # default to __diff_table))
+key_columns: ['id']
+compare_cols: ["first_name", "last_name", "ip_address", "address_2"]
+ignore_cols: []
+
+initial_table_alias: 'origin'
+secondary_table_alias: 'comparison'
