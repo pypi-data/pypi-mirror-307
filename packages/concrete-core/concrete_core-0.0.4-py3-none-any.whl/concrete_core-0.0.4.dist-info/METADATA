@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: concrete-core
+Version: 0.0.4
+Summary: AI Agent Orchestration
+Requires-Python: <4.0.0,>=3.11.9
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: auth
+Requires-Dist: cryptography; extra == 'auth'
+Requires-Dist: fastapi; extra == 'auth'
+Requires-Dist: itsdangerous; extra == 'auth'
+Requires-Dist: pyjwt; extra == 'auth'
+Provides-Extra: google-auth
+Requires-Dist: google-api-python-client; extra == 'google-auth'
+Requires-Dist: google-auth; extra == 'google-auth'
+Requires-Dist: google-auth-oauthlib; extra == 'google-auth'
+Provides-Extra: openai
+Requires-Dist: openai>=1.40.0; extra == 'openai'
+Provides-Extra: requests
+Requires-Dist: requests; extra == 'requests'
