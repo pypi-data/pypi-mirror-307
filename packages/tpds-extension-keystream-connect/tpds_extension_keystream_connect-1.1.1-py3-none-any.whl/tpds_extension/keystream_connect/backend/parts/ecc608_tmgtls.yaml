@@ -1,0 +1,43 @@
+---
+title: ECC608-TMGTLS Device Information
+devices:
+  ECC608-TMGTLS:
+    basePart: ECC608-TMGTLS
+    partLink: https://www.microchipdirect.com/trust-platform
+    toolLink: https://www.microchipdirect.com/trust-platform
+    provisioningFlow: TrustMANAGER
+    partType: Silicon
+    productCategory: Secure Element
+    partInterface:
+      - i2c
+    tpdsRelease: Yes
+    ndaRequired: No
+parts:
+  - partNumber: ECC608-TMGTLSU
+    deviceName: ECC608-TMGTLS
+    packagePin: UDFN-8
+    memory: N/A
+    media: Reel
+    moq: 2000
+    status: Production
+  - partNumber: ECC608-TMGTLSS
+    deviceName: ECC608-TMGTLS
+    packagePin: SOIC-8
+    memory: N/A
+    media: Reel
+    moq: 2000
+    status: Production
+  - partNumber: ECC608-TMGTLSU-B
+    deviceName: ECC608-TMGTLS
+    packagePin: UDFN-8
+    memory: N/A
+    media: Bag
+    moq: 10
+    status: Production
+  - partNumber: ECC608-TMGTLSS-B
+    deviceName: ECC608-TMGTLS
+    packagePin: SOIC-8
+    memory: N/A
+    media: Bag
+    moq: 10
+    status: Production

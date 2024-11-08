@@ -1,0 +1,21 @@
+name: keystream_connect
+
+backend:
+  path: "backend"
+
+frontend:
+  path: TrustManaged
+  entrypoints:
+    - name: uc_keystream_connect
+      title: keySTREAM™ In-field Provisioning
+      description: ""
+      entry: keySTREAM AWS Connect-TMG.ipynb
+      icon:
+        name: keystream_logo_png
+        path: TrustManaged/assets/images/kudelski_iot.png
+      applications:
+        - IoT   # (Available applications: Automotive, IoT, Secure Boot etc)
+      devices:
+        - ECC608-TMGTLS
+      boards:
+        - EV10E69A
