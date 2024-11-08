@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beanahead"
+description = "Beancount extension for future transactions"
+authors = [
+  {email = "marcusaread.prog@proton.me"},
+  {name = "Marcus Read"},
+]
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["accounting", "beancount", "ledger", "finance"]
+requires-python = "~=3.9"
+
+classifiers = [
+	"Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Financial and Insurance Industry",
+	"Natural Language :: English",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+
+dependencies = [
+    "beancount",
+    "beangulp",
+    "pandas",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+tests = [
+    "black",
+    "flake8",
+    "flake8-docstrings",
+    "pytest",
+]
+dev = [
+    "black",
+    "flake8",
+    "flake8-docstrings",
+    "pytest",
+    "mypy",
+    "pip-tools",
+    "pre-commit",
+    "pylint",
+]
+
+[project.urls]
+homepage = "https://github.com/maread99/beanahead"
+documentation = "https://github.com/maread99/beanahead"
+"Issue Tracker" = "https://github.com/maread99/beanahead/issues"
+"Source Code" = "https://github.com/maread99/beanahead"
+
+[project.scripts]
+beanahead = "beanahead.scripts.cli:main"
+
+[tool.setuptools_scm]
+write_to = "src/beanahead/_version.py"
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311', 'py312']
