@@ -1,0 +1,7 @@
+casadi
+numpy<2.0
+
+[dev]
+pytest
+setuptools
+wheel
