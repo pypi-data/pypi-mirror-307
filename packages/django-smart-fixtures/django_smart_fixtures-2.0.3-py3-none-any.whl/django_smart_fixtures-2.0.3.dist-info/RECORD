@@ -1,0 +1,13 @@
+smart_fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smart_fixtures/apps.py,sha256=VRMLdSQXrvEQ1lJgjJTzI1xEaclXdNUjtm3D7I8GG14,165
+smart_fixtures/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smart_fixtures/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smart_fixtures/management/commands/loaddata.py,sha256=WHT138EOJsm9HseTLRSAXVpJ5Lu28dReo0aVCsbcHEA,4830
+smart_fixtures/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smart_fixtures/tests/test_create_copied_files_message.py,sha256=0itmr8JLPW8V6o142Q02yI30_nnSzOt0Dp3k_e8GtZU,1778
+smart_fixtures/tests/test_loaddata_command.py,sha256=5pWKUlzMWD9J0OxD5xBkN2IygsOEtlpmQKNf7DCTKO4,6426
+smart_fixtures/utils.py,sha256=Urgu2AVU2m-mOaWTrB1bZeAb-lvQkPsAi-Uv3gsJlv8,863
+django_smart_fixtures-2.0.3.dist-info/LICENSE,sha256=nT3q5gOVJGZEL_nz-9LewstDEI2nZ7d--VxAubDDPvs,1071
+django_smart_fixtures-2.0.3.dist-info/METADATA,sha256=ZQI0zcF7X4-fuYvNQZ5Hl2IWsHZ0Weiw4VP5er73sJ8,5694
+django_smart_fixtures-2.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_smart_fixtures-2.0.3.dist-info/RECORD,,
