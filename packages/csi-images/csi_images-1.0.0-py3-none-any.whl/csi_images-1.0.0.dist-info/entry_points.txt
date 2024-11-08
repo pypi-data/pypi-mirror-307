@@ -1,0 +1,2 @@
+[console_scripts]
+make_docs_for_csi_images = csi_images.make_docs:main
