@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "harlequin-wherobots"
+version = "0.5.0"
+description = ""
+authors = ["Maxime Petazzoni <max@wherobots.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+harlequin = "^1.16.2"
+wherobots-python-dbapi = "^0.9.1"
+
+[tool.poetry.plugins."harlequin.adapter"]
+wherobots = "harlequin_wherobots:HarlequinWherobotsAdapter"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
