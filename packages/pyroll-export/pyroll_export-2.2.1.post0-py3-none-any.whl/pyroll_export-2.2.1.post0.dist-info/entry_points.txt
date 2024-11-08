@@ -1,0 +1,4 @@
+[pyroll.cli.commands]
+export-csv = pyroll.export.cli:export_csv
+export-json = pyroll.export.cli:export_json
+export-yaml = pyroll.export.cli:export_yaml
