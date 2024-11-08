@@ -1,0 +1,13 @@
+wherobots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wherobots/db/__init__.py,sha256=Uvf4FOfDwLeq7fhwQ5A6q_rgNFGtb79sLchQaNNfH_c,184
+wherobots/db/connection.py,sha256=2K9C3_2fnlHpF6CoId6q_kuVjFeOjqsxsXYLvA6wsbs,9196
+wherobots/db/constants.py,sha256=y785V2GMuyNlUEhuu_iJbMctmAcpOwkqymSDcZjN6nw,2950
+wherobots/db/cursor.py,sha256=Qagj-Zh_8VT6ctJnWKv24FfFzvwmIShvKyYhXT0rpGk,3859
+wherobots/db/driver.py,sha256=LcMPO5zQ_hx-UDky2gnUGigUzWyzOcEFEF2LMUU_t04,6155
+wherobots/db/errors.py,sha256=G8a-DB6pgB0pUld59Wyq8PuywL-JWxGJfvrr-g8BPuU,310
+wherobots/db/region.py,sha256=XMTMb0xntL3qQvhYi-19fBnbH-DwCBA0thFMeUAvyj4,80
+wherobots/db/runtime.py,sha256=pW6atUZAGiM8XRm75odrXTIbgq1vv6mmCNos4ScFgkY,1030
+wherobots_python_dbapi-0.9.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wherobots_python_dbapi-0.9.1.dist-info/METADATA,sha256=IuQ20Yj2y67xCsQbX6BQkEI94lsf1HTUY2m2YYT0ccY,3668
+wherobots_python_dbapi-0.9.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+wherobots_python_dbapi-0.9.1.dist-info/RECORD,,
