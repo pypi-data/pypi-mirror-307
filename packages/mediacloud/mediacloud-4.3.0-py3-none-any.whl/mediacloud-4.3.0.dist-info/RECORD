@@ -1,0 +1,15 @@
+mediacloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediacloud/api.py,sha256=-X-chdsOWDWadB9RCrT_0TqzhBPnH2UPbL0_PNQv1Dw,9395
+mediacloud/error.py,sha256=G3APyKDgeNsSN8bzuJcJrbnQYNYM-ix7quPlosnCYNU,679
+mediacloud/test/__init__.py,sha256=AEJ9az-kUnlIPAya8b1JYbfSn_JQXs1rXULPirygWh0,99
+mediacloud/test/api_base_test.py,sha256=vnnruri-PW8LGC8P2_47qpifIwJvOYbXZBFvRtekLzA,836
+mediacloud/test/api_directory_test.py,sha256=rOviDw_vBX6F_qN_Y5AO6KsJP2giShIKZuaSsjDvOTA,4269
+mediacloud/test/api_search_test.py,sha256=IYNPZ5c_uaUWBHiQEe1FJmJ5HMXNtPLJhldB3FO3OJY,13266
+mediacloud/test/fixtures/sample_story_ap.txt,sha256=vwvD45ow-GK40K8-cgKEtNLV7OezKE0Ihl8Vog1f2Lw,5897
+mediacloud/test/fixtures/sample_story_not_ap.txt,sha256=hc0p0T3bKaCupvaZuns8j41UKOrMAlkZ_7OwDmtXrsY,2907
+mediacloud/test/fixtures/sentences_by_story_1.json,sha256=g75r0BQKk6fbO8k3HDsgluud1MTQ_hQ1v7cMh90suG0,10007
+mediacloud/test/fixtures/sentences_by_story_2.json,sha256=iH9YwHKCwJeYIlruYy-ahz20FU8u5dDbTCORi4LBUZo,10165
+mediacloud/test/fixtures/story_27456565.json,sha256=7SYEsgdcq3Q94h9Ok3ljj9XhSGnBYtSyfxjrtpz8yik,3064
+mediacloud-4.3.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+mediacloud-4.3.0.dist-info/METADATA,sha256=UXcVG3MiLuSmVfFpIIx1SMeekC8ZwSv63-ieztfwgZ0,4296
+mediacloud-4.3.0.dist-info/RECORD,,
