@@ -1,0 +1,12 @@
+README.md
+setup.py
+TheDebugger.egg-info/PKG-INFO
+TheDebugger.egg-info/SOURCES.txt
+TheDebugger.egg-info/dependency_links.txt
+TheDebugger.egg-info/requires.txt
+TheDebugger.egg-info/top_level.txt
+learnfetch/__init__.py
+learnfetch/llms.py
+learnfetch/pesquisador.py
+learnfetch/the_debugger.py
+tests/test_pesquisador.py
