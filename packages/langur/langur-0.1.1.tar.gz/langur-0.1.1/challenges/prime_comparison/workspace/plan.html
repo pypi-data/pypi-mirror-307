@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyWidget export</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "a55a7f74120b45baa3bc362cb4002177": {
+      "model_name": "SigmaModel",
+      "model_module": "ipysigma",
+      "model_module_version": "^0.24.3",
+      "state": {
+        "_dom_classes": [],
+        "camera_state": {
+          "ratio": 1,
+          "x": 0.5,
+          "y": 0.5,
+          "angle": 0
+        },
+        "data": {
+          "nodes": [
+            {
+              "key": "goal_1",
+              "attributes": {
+                "node_class": "TaskNode",
+                "node_type": "TaskNode",
+                "id": "goal_1",
+                "task": "Compare speed for two methods of prime number generation"
+              }
+            },
+            {
+              "key": "run_sieve",
+              "attributes": {
+                "node_class": "run_python_file",
+                "node_type": "run_python_file",
+                "id": "run_sieve",
+                "inputs": "{\"file_path\": \"sieve.py\"}",
+                "purpose": "Run the Sieve of Eratosthenes implementation and measure its performance",
+                "connector_id": "a1p6uq2vg1",
+                "output": null
+              }
+            },
+            {
+              "key": "write_trial_division",
+              "attributes": {
+                "node_class": "write_file",
+                "node_type": "write_file",
+                "id": "write_trial_division",
+                "inputs": "{\"file_path\": \"trial_division.py\", \"new_content\": \"def is_prime(n):\\n    if n < 2:\\n        return False\\n    for i in range(2, int(n ** 0.5) + 1):\\n        if n % i == 0:\\n            return False\\n    return True\\n\\ndef find_primes(n):\\n    return [i for i in range(n + 1) if is_prime(i)]\\n\\nif __name__ == '__main__':\\n    import time\\n    n = 1000000\\n    start = time.time()\\n    primes = find_primes(n)\\n    end = time.time()\\n    print(f'Trial division method took {end - start:.4f} seconds')\\n    print(f'Found {len(primes)} prime numbers')\"}",
+                "purpose": "Write a Python implementation of the trial division method",
+                "connector_id": "a1p6uq2vg1",
+                "output": null
+              }
+            },
+            {
+              "key": "run_trial_division",
+              "attributes": {
+                "node_class": "run_python_file",
+                "node_type": "run_python_file",
+                "id": "run_trial_division",
+                "inputs": "{\"file_path\": \"trial_division.py\"}",
+                "purpose": "Run the trial division implementation and measure its performance",
+                "connector_id": "a1p6uq2vg1",
+                "output": null
+              }
+            },
+            {
+              "key": "Workspace",
+              "attributes": {
+                "node_class": "ConnectorOverview",
+                "node_type": "ConnectorOverview",
+                "id": "Workspace",
+                "content": "The current working directory is `.`, which contains these files/subdirectories:\n"
+              }
+            },
+            {
+              "key": "output_comparison",
+              "attributes": {
+                "node_class": "output",
+                "node_type": "output",
+                "id": "output_comparison",
+                "inputs": "{\"content\": null}",
+                "purpose": "Output the final comparison and conclusion",
+                "connector_id": "bqpd0uuwa4",
+                "output": null
+              }
+            },
+            {
+              "key": "write_sieve_implementation",
+              "attributes": {
+                "node_class": "write_file",
+                "node_type": "write_file",
+                "id": "write_sieve_implementation",
+                "inputs": "{\"file_path\": \"sieve.py\", \"new_content\": \"def sieve_of_eratosthenes(n):\\n    primes = [True] * (n + 1)\\n    primes[0] = primes[1] = False\\n    \\n    for i in range(2, int(n ** 0.5) + 1):\\n        if primes[i]:\\n            for j in range(i * i, n + 1, i):\\n                primes[j] = False\\n    \\n    return [i for i in range(n + 1) if primes[i]]\\n\\nif __name__ == '__main__':\\n    import time\\n    n = 1000000\\n    start = time.time()\\n    primes = sieve_of_eratosthenes(n)\\n    end = time.time()\\n    print(f'Sieve method took {end - start:.4f} seconds')\\n    print(f'Found {len(primes)} prime numbers')\"}",
+                "purpose": "Write a Python implementation of the Sieve of Eratosthenes algorithm",
+                "connector_id": "a1p6uq2vg1",
+                "output": null
+              }
+            },
+            {
+              "key": "compare_results",
+              "attributes": {
+                "node_class": "think",
+                "node_type": "think",
+                "id": "compare_results",
+                "inputs": "{}",
+                "purpose": "Compare and analyze the performance results of both methods",
+                "connector_id": "vommouilih",
+                "output": null
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "run_sieve",
+              "target": "compare_results",
+              "attributes": {
+                "label": "dependency"
+              }
+            },
+            {
+              "source": "write_trial_division",
+              "target": "run_trial_division",
+              "attributes": {
+                "label": "dependency"
+              }
+            },
+            {
+              "source": "run_trial_division",
+              "target": "compare_results",
+              "attributes": {
+                "label": "dependency"
+              }
+            },
+            {
+              "source": "output_comparison",
+              "target": "goal_1",
+              "attributes": {
+                "label": "achieves"
+              }
+            },
+            {
+              "source": "write_sieve_implementation",
+              "target": "run_sieve",
+              "attributes": {
+                "label": "dependency"
+              }
+            },
+            {
+              "source": "compare_results",
+              "target": "output_comparison",
+              "attributes": {
+                "label": "dependency"
+              }
+            }
+          ],
+          "options": {
+            "type": "directed",
+            "multi": false
+          }
+        },
+        "edge_weight": "weight",
+        "height": "calc(100vh - 16px)",
+        "layout": null,
+        "layout_settings": null,
+        "name": null,
+        "node_metrics": {},
+        "program_settings": {},
+        "renderer_settings": {
+          "zIndex": true,
+          "enableEdgeClickEvents": false,
+          "enableEdgeHoverEvents": false,
+          "labelDensity": 1,
+          "labelGridCellSize": 250,
+          "renderEdgeLabels": true,
+          "labelFont": "sans-serif",
+          "hideEdgesOnMove": false,
+          "defaultNodeType": "point",
+          "defaultEdgeType": "arrow"
+        },
+        "selected_edge": null,
+        "selected_edge_category_values": null,
+        "selected_node": null,
+        "selected_node_category_values": null,
+        "snapshot": null,
+        "start_layout": true,
+        "start_layout_for_seconds": 2.0,
+        "sync_key": null,
+        "sync_targets": [
+          "layout",
+          "camera",
+          "hover",
+          "selection"
+        ],
+        "ui_settings": {
+          "hideInfoPanel": false,
+          "hideSearch": false
+        },
+        "visual_variables": {
+          "nodeLabel": {
+            "type": "raw",
+            "attribute": "label",
+            "default": null
+          },
+          "nodeLabelSize": {
+            "type": "constant",
+            "default": 16
+          },
+          "nodeLabelColor": {
+            "type": "constant",
+            "default": "#000"
+          },
+          "nodeColor": {
+            "type": "category",
+            "attribute": "node_class",
+            "default": "#00f"
+          },
+          "nodeColorSaturation": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeBorderColor": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeBorderRatio": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeBorderSize": {
+            "type": "constant",
+            "default": 1
+          },
+          "nodeSize": {
+            "type": "continuous",
+            "range": [
+              10,
+              16
+            ],
+            "attribute": "size",
+            "default": 10
+          },
+          "nodePictogram": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodePictogramColor": {
+            "type": "constant",
+            "default": "#000"
+          },
+          "nodeHaloSize": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeHaloColor": {
+            "type": "constant",
+            "default": "red"
+          },
+          "nodeShape": {
+            "type": "disabled",
+            "default": null
+          },
+          "edgeLabel": {
+            "type": "raw",
+            "attribute": "label",
+            "default": null
+          },
+          "edgeColor": {
+            "type": "raw",
+            "attribute": "color",
+            "default": "#000000aa"
+          },
+          "edgeSize": {
+            "type": "continuous",
+            "range": [
+              3,
+              5
+            ],
+            "attribute": "size",
+            "default": 3
+          },
+          "edgeCurveness": {
+            "type": "constant",
+            "default": 0.25
+          }
+        }
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "a55a7f74120b45baa3bc362cb4002177"}
+</script>
+
+</body>
+</html>
