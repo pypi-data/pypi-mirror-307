@@ -1,0 +1,22 @@
+[fluidimage.executors]
+exec_sequential = fluidimage.executors.exec_sequential
+exec_async = fluidimage.executors.exec_async
+exec_async_sequential = fluidimage.executors.exec_async_sequential
+exec_async_seq_for_multi = fluidimage.executors.exec_async_seq_for_multi
+exec_seq_for_multi = fluidimage.executors.exec_seq_for_multi
+multi_exec_async = fluidimage.executors.multi_exec_async
+multi_exec_sync = fluidimage.executors.multi_exec_sync
+multi_exec_subproc = fluidimage.executors.multi_exec_subproc
+multi_exec_subproc_sync = fluidimage.executors.multi_exec_subproc_sync
+exec_async_multi = fluidimage.executors.exec_async_multiproc
+exec_async_servers = fluidimage.executors.exec_async_servers
+exec_async_servers_threading = fluidimage.executors.exec_async_servers_threading
+
+[console_scripts]
+fluidimlauncher = fluidimage.gui.launcher.main:main
+fluidimage-monitor = fluidimage.gui.monitor:main
+fluidimviewer = fluidimage.gui.imviewer:main
+fluidimviewer-pg = fluidimage.gui.pg_main:main
+fluidpivviewer = fluidimage.gui.piv_viewer:main
+fluidimage-mean = fluidimage.topologies.mean:main
+
