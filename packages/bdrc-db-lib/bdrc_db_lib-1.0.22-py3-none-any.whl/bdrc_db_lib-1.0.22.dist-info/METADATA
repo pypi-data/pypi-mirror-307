@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: bdrc-db-lib
+Version: 1.0.22
+Summary: BDRC Db Library
+Home-page: 
+Author: jimk
+Author-email: jimk <jimk@tbrc.org>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: pymysql
+Requires-Dist: lxml
+Requires-Dist: sqlalchemy~=1.4.0
+Requires-Dist: mysqlclient
+
+bdrc-db-lib
+===========
+
+Package which supports Uses an indirect config file for the database
+connection
+
+Development
+===========
+
+``pyproject.toml``
+
+.. code:: shell
+
+   python -m build --wheel bdist_wheel
+
+
+Deployment
+==========
+
+.. code:: shell
+
+   twine upload --verbose  -r testpypi dist/bdrc_db_lib-x.MM.mm-py3-none-any.whl   
+
+Installation
+------------
+
+`pyPI.org bdrc-db-lib <https://pypi.org/project/bdrc-db-lib/>`__
+
+Changelog
+=========
+
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| version |                                                                                                         | Comments                                                         |
++=========+=========================================================================================================+==================================================================+
+| 1.0.22  | `6d2d4ae  <https://github.com/buda-base/bdrc-db-lib/commit/6d2d4ae130a187b0cc1531bc9f74e8cb7cb628d5>`__ | Change to ``build``, downgrade to SqlAlchemy 1.4.0               |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.20  | `d300e122 <https://github.com/buda-base/archive-ops/commit/d300e122ce2661bc550119466a1f1e7827e4935a>`__ | Bug in connect_db call                                           |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.19  | `7c678dd9 <https://github.com/buda-base/archive-ops/commit/7c678dd9fb55449dcd04e829b72bd5ccc449ece7>`__ | Bring ``get_or_create`` into the lib, to support SqlAlchemy 2.0  |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.18  |                                                                                                         | changes to add project management, misc tweaks for AO workflows  |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.17  | `57862ec8 <https://github.com/buda-base/archive-ops/commit/57862ec8d3185c974845459c4f441431730b9b3c>`__ | Eliminate statics for architecture                               |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.16  | `61a10cee <https://github.com/buda-base/archive-ops/commit/61a10ceee7f64dc69139ec15d2d5588920e20c2b>`__ | Have the Orm constructor take a config argument                  |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.15  |                                                                                                         | Update doc                                                       |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.14  |                                                                                                         | Base classes for timestamp and mixin                             |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 1.0.10  |                                                                                                         | Initial                                                          |
++---------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
