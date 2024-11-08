@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "monzy"
+version = "0.2.6.dev"
+description = "Package to interact with Monzo API to fetch transactions and upload to a database"
+authors = ["Elias Benaddou Idrissi <e.benaddou@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "0.7.2"
+pandas = "^2.2.2"
+sqlalchemy = "^2.0.31"
+monzo-api = "1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "3.7.1"
+pytest = "7.3.0"
+pytest-cov = "4.1.0"
+pytest-mock = "3.10.0"
+pytest-xdist = "3.3.1"
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+python_functions = "test_*"
+python_classes = "Test*"
+# addopts = "--no-header -v -s --disable-warnings --basetemp=tests/tmp --cov=monzy"
+pythonpath = "."
+testpaths = "tests"
+log_cli = "True"
+log_cli_level = "INFO"
+log_cli_format = "[%(asctime)s] %(levelname)s %(name)s (%(filename)s:%(lineno)s) %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.ruff]
+fix = true
+line-length = 100
+output-format = "concise" # dont print out where error occurred
+lint.select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "Q",  # flake8-quotes
+    "UP", # pyupgrade
+]
+lint.ignore = [
+    "E501",  # line too long
+    "C901",  # too complex
+    "B012",  # allow 'return' within 'finally' block
+    "F401"   # import not used
+]
+
+[tool.ruff.format]
+quote-style = "double" # use double quotes for strings.
+indent-style = "space" # indent with spaces, rather than tabs.
+skip-magic-trailing-comma = false # respect magic trailing commas.
+line-ending = "auto" # automatically detect the appropriate line ending.
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-module = true
+#exclude = [""] # don't check docstrings for these files
+fail-under = 70
+ignore-regex = ["test_*"]
+verbose = 2 # possible values: 0 (minimal output), 1 (-v), 2 (-vv)
+quiet = false
+color = true
+
+[tool.docformatter]
+wrap-summaries = 100
+wrap-descriptions = 93
