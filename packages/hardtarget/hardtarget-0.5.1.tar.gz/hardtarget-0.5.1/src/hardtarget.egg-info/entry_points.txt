@@ -1,0 +1,2 @@
+[console_scripts]
+hardtarget = hardtarget.cli:main

@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: hardtarget
+Version: 0.5.1
+Summary: Hard target processing of radar data
+Home-page: https://github.com/danielk333/hardtarget
+Author: Daniel Kastinen, Juha Vierinen, et al.
+Author-email: daniel.kastinen@irf.se, juha-pekka.vierinen@uit.no
+License: MIT
+Project-URL: Tracker, https://github.com/danielk333/hardtarget/issues
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py>=2.10.0
+Requires-Dist: digital_rf>=2.6.6
+Requires-Dist: numpy<2.0,>=1.19.5
+Requires-Dist: scipy>=1.4.1
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: lxml
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: develop
+Requires-Dist: pytest>=6.2.5; extra == "develop"
+Requires-Dist: sphinx>=4.2.0; extra == "develop"
+Requires-Dist: sphinx_c_autodoc>=1.3.0; extra == "develop"
+Requires-Dist: flake8>=6.0.0; extra == "develop"
+Requires-Dist: wheel>=0.37.0; extra == "develop"
+Requires-Dist: build>=0.7.0; extra == "develop"
+Requires-Dist: twine>=3.4.2; extra == "develop"
+Requires-Dist: pytest-cov>=4.1.0; extra == "develop"
+Requires-Dist: sphinx-gallery>=0.3.1; extra == "develop"
+Requires-Dist: matplotlib>=3.5.1; extra == "develop"
+Requires-Dist: myst-nb>=0.17.2; extra == "develop"
+Requires-Dist: ipykernel>=6.9.1; extra == "develop"
+Requires-Dist: radon>=5.1.0; extra == "develop"
+Requires-Dist: numpydoc>=1.2; extra == "develop"
+Requires-Dist: pre-commit>3.0.0; extra == "develop"
+Requires-Dist: black>=23.3.0; extra == "develop"
+Requires-Dist: auditwheel>=5.4.0; extra == "develop"
+Requires-Dist: patchelf>=0.14; extra == "develop"
+Requires-Dist: sphinx_rtd_theme; extra == "develop"
+Requires-Dist: sphinxcontrib-bibtex; extra == "develop"
+Provides-Extra: mpi
+Requires-Dist: mpi4py>=3.1.1; extra == "mpi"
+Provides-Extra: plotting
+Requires-Dist: matplotlib>=3.3.4; extra == "plotting"
+Provides-Extra: profiling
+Requires-Dist: yappi>=1.4.0; extra == "profiling"
+Provides-Extra: all
+Requires-Dist: mpi4py>=3.1.1; extra == "all"
+Requires-Dist: matplotlib>=3.3.4; extra == "all"
+Requires-Dist: yappi>=1.4.0; extra == "all"
+
+# Hard target processing library (HTPL)
+
+General package for hard target processing of radar data in the __digital\_rf__
+format using matched filtering. Also includes raw data simulation for
+validation, testing and performance evaluation purposes.
+
+Hardtarget Documentation available [https://danielk.developer.irf.se/hardtarget/](https://danielk.developer.irf.se/hardtarget/)
+
+
+
+MIT License
+
+Copyright (c) [2023] [Daniel Kastinen, Juha Vierinen, et al.]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
