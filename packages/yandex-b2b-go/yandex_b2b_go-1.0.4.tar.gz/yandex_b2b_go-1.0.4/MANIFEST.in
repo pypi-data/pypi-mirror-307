@@ -1,0 +1,4 @@
+include requirements.txt
+recursive-include yandex-b2b-go *
+recursive-include tests *
+recursive-include example *

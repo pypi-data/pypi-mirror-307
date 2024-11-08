@@ -1,0 +1,37 @@
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.FORMAT]
+max-line-length = 120
+
+[tool.pylint.MASTER]
+disable= [
+    "C0103", # Class constant name "first" doesn't conform to UPPER_CASE naming style (invalid-name)
+    "C0114", # Missing module docstring (missing-module-docstring)
+    "C0115", # Missing class docstring (missing-class-docstring)
+    "C0116", # Missing function or method docstring (missing-function-docstring)
+    "C0302", # Too many lines in module (3275/1000) (too-many-lines)
+    "E0611", # No name 'Empty' in module 'google.protobuf.empty_pb2' (no-name-in-module) — proto code creates attributes in runtime and linter goes crazy
+    "R0801", # Similar lines in 2 files
+    "R0902", # Too many instance attributes (9/7) (too-many-instance-attributes)
+    "R0903", # Too few public methods (1/2) (too-few-public-methods)
+    "R0912", # Too many branches (14/12) (too-many-branches)
+    "R0913", # Too many arguments (6/5) (too-many-arguments)
+    "R0914", # Too many local variables (17/15) (too-many-locals)
+    "W0622", # Redefining built-in 'id' (redefined-builtin)
+]
+
+[tool.flake8]
+max-line-length = 120
+ignore = ['E203', ]
+
+[tool.mypy]
+disallow_any_unimported = true
+no_implicit_reexport = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_redundant_casts = true
