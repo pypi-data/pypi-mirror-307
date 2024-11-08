@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+kandinsky_lib/__init__.py
+kandinsky_lib/kandinsky.py
+kandinsky_lib/start.py
+kandinsky_lib/__pycache__/kandinsky.cpython-313.pyc
+kandinsky_simple_lib.egg-info/PKG-INFO
+kandinsky_simple_lib.egg-info/SOURCES.txt
+kandinsky_simple_lib.egg-info/dependency_links.txt
+kandinsky_simple_lib.egg-info/requires.txt
+kandinsky_simple_lib.egg-info/top_level.txt
+tests/__init__.py
+tests/kandinskytest.py
