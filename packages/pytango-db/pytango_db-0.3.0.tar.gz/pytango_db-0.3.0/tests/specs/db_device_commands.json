@@ -1,0 +1,2608 @@
+[
+    {
+        "name": "DbAddDevice",
+        "check": [
+            {
+                "command": "DbAddDevice",
+                "argument": [
+                    "Dummy/1",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            },
+            {
+                "command": "DbGetDeviceInfo",
+                "argument": "test/dummy/2",
+                "result": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        "test/dummy/2",
+                        "nada",
+                        "0",
+                        "Dummy/1",
+                        "nada",
+                        "?",
+                        "?",
+                        "Dummy"
+                    ]
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDevice",
+                "argument": "test/dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbAddServer",
+        "check": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Test/1",
+                    "test/dummy/1",
+                    "Dummy",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test/other/2",
+                    "Other"
+                ]
+            },
+            {
+                "command": "DbGetServerInfo",
+                "argument": "Test/1",
+                "result": [
+                    "Test/1",
+                    " ",
+                    " ",
+                    " "
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Test/1"
+            }
+        ]
+    },
+    {
+        "name": "DbAddServer",
+        "check": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Test/1",
+                    "test/dummy/1",
+                    "Dummy",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test/other/2",
+                    "Other"
+                ]
+            },
+            {
+                "command": "DbGetServerInfo",
+                "argument": "Test/1",
+                "result": [
+                    "Test/1",
+                    " ",
+                    " ",
+                    " "
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Test/1"
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteAllDeviceAttributeProperty",
+        "setup": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute",
+                    "2",
+                    "TestProperty",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5",
+                    "TestProperty2",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "TestAttribute2",
+                    "1",
+                    "TestProperty11",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute"
+                ]
+            },
+            {
+                "command": "DbGetDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute",
+                    "TestAttribute2"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute",
+                    "0",
+                    "TestAttribute2",
+                    "1",
+                    "TestProperty11",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": ["test/dummy/1", "TestAttribute", "TestAttribute2", "TestAttribute11"]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteAttributeAlias",
+        "setup": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/test_attribute",
+                    "test_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "test_alias"
+            },
+            {
+                "command": "DbGetAttributeAlias",
+                "argument": "test_alias",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteClassAttribute",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "3",
+                    "TestAttribute1",
+                    "1",
+                    "TestProperty1",
+                    "1",
+                    "line1",
+                    "TestAttribute2",
+                    "1",
+                    "TestProperty2",
+                    "2",
+                    "line1",
+                    "line2",
+                    "TestAttribute3",
+                    "1",
+                    "TestProperty12",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "TestAttribute1"]
+            },
+            {
+                "command": "DbGetClassAttributeList",
+                "argument": [
+                    "Dummy",
+                    "*"
+                ],
+                "result": [
+                    "TestAttribute2",
+                    "TestAttribute3"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "TestAttribute2"]
+            },
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "TestAttribute3"]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteClassAttributeProperty",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "1",
+                    "TestAttribute1",
+                    "3",
+                    "TestProperty1",
+                    "1",
+                    "line1",
+                    "TestProperty2",
+                    "2",
+                    "line1",
+                    "line2",
+                    "TestProperty7",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteClassAttributeProperty",
+                "argument": ["Dummy", "TestAttribute1", "TestProperty2"]
+            },
+            {
+                "command": "DbGetClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "TestAttribute1"
+                ],
+                "result": [
+                    "Dummy",
+                    "1",
+                    "TestAttribute1",
+                    "2",
+                    "TestProperty1",
+                    "1",
+                    "line1",
+                    "TestProperty7",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "TestAttribute1"]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteClassProperty",
+        "setup": [
+            {
+                "command": "DbPutClassProperty",
+                "argument": [
+                    "Dummy",
+                    "3",
+                    "TestProperty1",
+                    "1",
+                    "line1",
+                    "TestProperty2",
+                    "2",
+                    "line1",
+                    "line2",
+                    "TestProperty8",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteClassProperty",
+                "argument": ["Dummy", "TestProperty2"]
+            },
+            {
+                "command": "DbGetClassProperty",
+                "argument": [
+                    "Dummy",
+                    "TestProperty1",
+                    "TestProperty2",
+                    "TestProperty8"
+                ],
+                "result": [
+                    "Dummy",
+                    "3",
+                    "TestProperty1",
+                    "1",
+                    "line1",
+                    "TestProperty2",
+                    "0",
+                    "TestProperty8",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassProperty",
+                "argument": [
+                    "Dummy", "TestProperty1", "TestProperty8"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteDevice",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDevice",
+                "argument": "test/dummy/2"
+            },
+            {
+                "command": "DbGetDeviceInfo",
+                "argument": "test/dummy/2",
+                "raises": "DevFailed"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteDeviceAlias",
+        "setup": [
+            {
+                "command": "DbPutDeviceAlias",
+                "argument": [
+                    "Dummy/2",
+                    "test_device_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDeviceAlias",
+                "argument": "test_device_alias"
+            },
+            {
+                "command": "DbGetDeviceAlias",
+                "argument": "test_device_alias",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteDeviceAttribute",
+        "setup": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute",
+                    "2",
+                    "TestProperty",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5",
+                    "TestProperty2",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "TestAttribute2",
+                    "1",
+                    "TestProperty9",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDeviceAttribute",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute"
+                ]
+            },
+            {
+                "command": "DbGetDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute",
+                    "TestAttribute2",
+                    "TestAttribute3"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "3",
+                    "TestAttribute",
+                    "0",
+                    "TestAttribute2",
+                    "1",
+                    "TestProperty9",
+                    "line1",
+                    "TestAttribute3",
+                    "0"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": ["test/dummy/1", "TestAttribute2"]
+            },
+            {
+                "command": "DbDeleteDeviceAttribute",
+                "argument": ["test/dummy/1", "TestAttribute1", "TestAttribute2"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbDeleteDeviceAttributeProperty",
+        "setup": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "1",
+                    "TestAttribute",
+                    "1",
+                    "TestProperty",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute",
+                    "TestProperty"
+                ]
+            },
+            {
+                "command": "DbGetDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "1",
+                    "TestAttribute",
+                    "0"
+                ]
+            },
+            {
+                "command": "DbDeleteDeviceAttribute",
+                "argument": ["test/dummy/1", "TestAttribute"]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteDeviceProperty",
+        "setup": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "3",
+                    "TestProperty1",
+                    "1",
+                    "prop1line1",
+                    "TestProperty2",
+                    "2",
+                    "prop2line1",
+                    "prop2line2",
+                    "TestProperty10",
+                    "1",
+                    "prop3line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty2"
+                ],
+                "result": null
+            },
+            {
+                "command": "DbGetDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1",
+                    "TestProperty2",
+                    "TestProperty10"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "3",
+                    "TestProperty1",
+                    "1",
+                    "prop1line1",
+                    "TestProperty2",
+                    "0",
+                    " ",
+                    "TestProperty10",
+                    "1",
+                    "prop3line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1",
+                    "TestProperty2",
+                    "TestProperty10"
+                ],
+                "result": null
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteDeviceProperty_with_wildcard_char",
+        "comment": "Underscore is a wildcard in sqlite which needs proper escaping",
+        "setup": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "some_property_with_underscores",
+                    "1",
+                    "value",
+                    "otherproperty",
+                    "1",
+                    "value2"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "some_property_with_underscores",
+                    "other_roperty"
+                ],
+                "result": null
+            },
+            {
+                "command": "DbGetDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "some_property_with_underscores",
+                    "otherproperty"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "2",
+                    "some_property_with_underscores",
+                    "0",
+                    " ",
+                    "otherproperty",
+                    "1",
+                    "value2"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "some_property_with_underscores",
+                    "otherproperty"
+                ],
+                "result": null
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteProperty",
+        "setup": [
+            {
+                "command": "DbPutProperty",
+                "argument": [
+                    "SomeObject",
+                    "2",
+                    "SomeProperty1",
+                    "1",
+                    "prop1line1",
+                    "SomeProperty2",
+                    "3",
+                    "prop2line1",
+                    "prop2line2",
+                    "prop2line3"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteProperty",
+                "argument": [
+                    "SomeObject",
+                    "SomeProperty1"
+                ]
+            },
+            {
+                "command": "DbGetProperty",
+                "argument": [
+                    "SomeObject",
+                    "SomeProperty1",
+                    "SomeProperty2"
+                ],
+                "result": [
+                    "SomeObject",
+                    "2",
+                    "SomeProperty1",
+                    "0",
+                    " ",
+                    "SomeProperty2",
+                    "3",
+                    "prop2line1",
+                    "prop2line2",
+                    "prop2line3"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteProperty",
+                "argument": [
+                    "SomeObject",
+                    "SomeProperty2"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteServer",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Test/1",
+                    "test/dummy/1",
+                    "Dummy",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test/other/2",
+                    "Other"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Test/1"
+            },
+            {
+                "command": "DbGetServerInfo",
+                "argument": "Test/1",
+                "result": [
+                    "Test/1",
+                    " ",
+                    " ",
+                    " "
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteServer_nonexistent",
+        "check": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "DontExist/7",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+    {
+        "name": "DbDeleteServerInfo",
+        "setup": [
+            {
+                "command": "DbPutServerInfo",
+                "argument": [
+                    "Test/1",
+                    "my.test.host",
+                    "0",
+                    "3"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbDeleteServerInfo",
+                "argument": "Test/1"
+            },
+            {
+                "command": "DbGetServerInfo",
+                "argument": "Test/1",
+                "result": [
+                    "Test/1",
+                    " ",
+                    " ",
+                    " "
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbExportDevice",
+        "setup": [
+            {
+                "command": "DbAddDevice",
+                "argument": [
+                    "Dummy/1",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbExportDevice",
+                "argument": [
+                    "test/dummy/2",
+                    "THISISANIOR0101010101",
+                    "my.test.host",
+                    "12345",
+                    "5"
+                ]
+            },
+            {
+                "command": "DbImportDevice",
+                "argument": "test/dummy/2",
+                "result": [
+                    [1, 12345],
+                    [
+                        "test/dummy/2",
+                        "THISISANIOR0101010101",
+                        "5",
+                        "Dummy/1",
+                        "my.test.host",
+                        "Dummy"
+                    ]
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDevice",
+                "argument": "test/dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbExportEvent",
+        "check": [
+            {
+                "command": "DbExportEvent",
+                "argument": [
+                    "mytestevent",
+                    "THISISANIOR0101010101",
+                    "my.test.host",
+                    "54321",
+                    "5"
+                ]
+            },
+            {
+                "command": "DbImportEvent",
+                "argument": "mytestevent",
+                "result": [
+                    [
+                        1,
+                        54321
+                    ],
+                    [
+                        "mytestevent",
+                        "THISISANIOR0101010101",
+                        "5",
+                        "my.test.host"
+                    ]
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAliasAttribute",
+        "setup": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/some_attr",
+                    "some_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetAliasAttribute",
+                "argument": "some_alias",
+                "result": "test/dummy/1/some_attr"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "some_alias"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAliasAttribute_nonexistent",
+        "check": [
+            {
+                "command": "DbGetAliasAttribute",
+                "argument": "missing_alias",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAliasDevice",
+        "setup": [
+            {
+                "command": "DbPutDeviceAlias",
+                "argument": [
+                    "sys/tg_test/1",
+                    "my_device_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetAliasDevice",
+                "argument": "my_device_alias",
+                "result": "sys/tg_test/1"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceAlias",
+                "argument": "my_device_alias"
+            }
+        ]
+    },
+    {
+        "name": "DbGetAliasDevice_nonexistent",
+        "check": [
+            {
+                "command": "DbGetAliasDevice",
+                "argument": "missing_alias",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAttributeAlias",
+        "setup": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/some_attr",
+                    "some_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetAttributeAlias",
+                "argument": "some_alias",
+                "result": "test/dummy/1/some_attr"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "some_alias"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAttributeAlias2",
+        "setup": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/some_attr",
+                    "some_alias"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetAttributeAlias2",
+                "argument": "test/dummy/1/some_attr",
+                "result": "some_alias"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "some_alias"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAttributeAlias2_nonexistent",
+        "check": [
+            {
+                "command": "DbGetAttributeAlias2",
+                "argument": "test/dummy/1/some_attr",
+                "raises": "DevFailed"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetAttributeAliasList",
+        "setup": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/a",
+                    "alias1"
+                ]
+            },
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": [
+                    "test/dummy/1/b",
+                    "alias2"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetAttributeAliasList",
+                "argument": "alias*",
+                "result": [
+                    "alias1",
+                    "alias2"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "alias1"
+            },
+            {
+                "command": "DbDeleteAttributeAlias",
+                "argument": "alias2"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetCSDbServerList",
+        "comment": "TODO Tricky since it gives different results depending on TANGO_HOST.",
+        "check": [
+            {
+                "command": "DbGetCSDbServerList"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetClassAttributeList",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "1",
+                    "SomeAttribute_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassAttributeList",
+                "argument": ["Dummy", "*"],
+                "result": [
+                    "SomeAttribute_{name}"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "SomeAttribute_{name}"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetClassAttributeProperty",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "1",
+                    "SomeAttribute_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassAttributeProperty",
+                "argument": ["Dummy", "SomeAttribute_{name}"],
+                "result": [
+                    "Dummy",
+                    "1",
+                    "SomeAttribute_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "SomeAttribute_{name}"]
+            }
+        ]
+    },
+    {
+        "name": "DbGetClassAttributeProperty2",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "1",
+                    "TestAttribute_{name}",
+                    "1",
+                    "TestProperty_{name}",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "TestAttribute_{name}"
+                ],
+                "result": [
+                    "Dummy",
+                    "1",
+                    "TestAttribute_{name}",
+                    "1",
+                    "TestProperty_{name}",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "TestAttribute_{name}"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetClassAttributePropertyHist",
+        "comment": "TODO result contains timestamps and stuff...",
+        "setup": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "2",
+                    "SomeAttribute1_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "1",
+                    "line1",
+                    "SomeAttribute2_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "1",
+                    "line1"
+                ]
+            },
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": [
+                    "Dummy",
+                    "1",
+                    "SomeAttribute2_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "2",
+                    "line1modified",
+                    "line2modified"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassAttributePropertyHist",
+                "argument": ["Dummy", "SomeAttribute2_{name}", "SomeProperty1_{name}"],
+                "result": [
+                    "SomeAttribute2_{name}",
+                    "SomeProperty1_{name}",
+                    {"regexp": "^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                    "1",
+                    "line1",
+                    "SomeAttribute2_{name}",
+                    "SomeProperty1_{name}",
+                    {"regexp": "^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                    "2",
+                    "line1modified",
+                    "line2modified"
+                ],
+                "result_slice": [-11, null]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "SomeAttribute1_{name}"]
+            },
+            {
+                "command": "DbDeleteClassAttribute",
+                "argument": ["Dummy", "SomeAttribute2_{name}"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetClassForDevice",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassForDevice",
+                "argument": "test/dummy/2",
+                "result": "Dummy"
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetClassInheritanceForDevice",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassInheritanceForDevice",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassPipeList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassPipeList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassPipeProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassPipeProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassPipePropertyHist",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassPipePropertyHist",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassPropertyHist",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassPropertyHist",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetClassPropertyList",
+        "setup": [
+            {
+                "command": "DbPutClassProperty",
+                "argument": [
+                    "Dummy",
+                    "2",
+                    "TestProperty1_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "TestProperty2_{name}",
+                    "1",
+                    "line4"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetClassPropertyList",
+                "argument": "Dummy",
+                "result": [
+                    "TestProperty1_{name}",
+                    "TestProperty2_{name}"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteClassProperty",
+                "argument": [
+                    "Dummy", "TestProperty1", "TestProperty2_{name}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbGetClassPropertyListWildcard",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetClassPropertyListWildcard",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDataForServerCache",
+        "comment": "TODO this one is not required, but a good optimization. Implement!",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDataForServerCache",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceAlias",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDeviceAlias",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceAliasList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDeviceAliasList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceAttributeList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDeviceAttributeList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceAttributeProperty",
+        "setup": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "1",
+                    "SomeAttribute_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceAttributeProperty",
+                "argument": ["test/dummy/1", "SomeAttribute_{name}"],
+                "result": [
+                    "test/dummy/1",
+                    "1",
+                    "SomeAttribute_{name}",
+                    "1",
+                    "SomeProperty1_{name}",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceAttribute",
+                "argument": ["test/dummy/1", "SomeAttribute_{name}"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDeviceAttributeProperty2",
+        "setup": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "1",
+                    "TestAttribute",
+                    "1",
+                    "TestProperty",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "1",
+                    "TestAttribute",
+                    "1",
+                    "TestProperty",
+                    "5",
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "line5"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": ["test/dummy/1", "TestAttribute"]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDeviceAttributePropertyHist",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDeviceAttributePropertyHist",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceClassList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceClassList",
+                "argument": "Dummy/2",
+                "result": ["dserver/Dummy/2", "DServer", "test/dummy/2", "Dummy"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetDeviceDomainList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test2/dummy/3",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceDomainList",
+                "argument": "test*",
+                "result": ["test", "test2"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetDeviceExportedList",
+        "setup": [
+            {
+                "command": "DbAddDevice",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            },
+            {
+                "command": "DbExportDevice",
+                "argument": [
+                    "test/dummy/2",
+                    "THISISANIOR0101010101",
+                    "my.test.host",
+                    "12345",
+                    "5"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceExportedList",
+                "argument": "test/*",
+                "result": ["test/dummy/2"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetDeviceFamilyList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/foo/2",
+                    "Dummy",
+                    "test/bar/3",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceFamilyList",
+                "argument": "test/*",
+                "result": ["bar", "foo"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetDeviceInfo",
+        "setup": [
+            {
+                "command": "DbAddDevice",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy"
+                ]
+            },
+            {
+                "command": "DbExportDevice",
+                "argument": [
+                    "test/dummy/2",
+                    "IOR:THISISANIOR0101010101",
+                    "my.test.host",
+                    "12345",
+                    "5"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceInfo",
+                "argument": "test/dummy/2",
+                "result": [
+                    [
+                        1, 12345
+                    ],
+                    [
+                        "test/dummy/2",
+                        "IOR:THISISANIOR0101010101",
+                        "5",
+                        "Dummy/2",
+                        "my.test.host",
+                        null,
+                        "?",
+                        "Dummy"
+                    ]
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDeviceList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDeviceList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceMemberList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/foo/1",
+                    "Dummy",
+                    "test/foo/2",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceMemberList",
+                "argument": "test/foo/*",
+                "result": ["1", "2"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDevicePipeList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDevicePipeList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDevicePipeProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDevicePipeProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDevicePipePropertyHist",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetDevicePipePropertyHist",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetDeviceProperty",
+        "setup": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestProperty1_{name}",
+                    "1",
+                    "line1",
+                    "TestProperty2_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceProperty",
+                "argument": ["test/dummy/1", "TestProperty1_{name}"],
+                "result": [
+                    "test/dummy/1",
+                    "1",
+                    "TestProperty1_{name}",
+                    "1",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1_{name}",
+                    "TestProperty2_{name}"
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDevicePropertyHist",
+        "setup": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestProperty1_{name}",
+                    "1",
+                    "line1",
+                    "TestProperty2_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3"
+                ]
+            },
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "1",
+                    "TestProperty1_{name}",
+                    "1",
+                    "foobar"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDevicePropertyHist",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1_{name}"
+                ],
+                "result": [
+                    "TestProperty1_{name}",
+                    {"regexp": "^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                    "1",
+                    "line1",
+                    "TestProperty1_{name}",
+                    {"regexp": "^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                    "1",
+                    "foobar"
+                ],
+                "result_slice": [-8, null]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1_{name}",
+                    "TestProperty2_{name}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbGetDevicePropertyList",
+        "setup": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestProperty1_{name}",
+                    "1",
+                    "line1",
+                    "TestProperty2_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDevicePropertyList",
+                "argument": ["test/dummy/1", "*"],
+                "result": [
+                    "TestProperty1_{name}",
+                    "TestProperty2_{name}"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteDeviceProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestProperty1_{name}",
+                    "TestProperty2_{name}"
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "DbGetDeviceServerClassList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test2/dummy/3",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceServerClassList",
+                "argument": "Dummy/2",
+                "result": ["DServer", "Dummy"]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetDeviceWideList",
+        "setup": [
+            {
+                "command": "DbAddServer",
+                "argument": [
+                    "Dummy/2",
+                    "test/dummy/2",
+                    "Dummy",
+                    "test2/dummy/3",
+                    "Dummy"
+                ]
+            }
+        ],
+        "check": [
+            {
+                "command": "DbGetDeviceWideList",
+                "argument": "test*",
+                "result": [
+                    "test/dummy/2",
+                    "test2/dummy/3"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteServer",
+                "argument": "Dummy/2"
+            }
+        ]
+    },
+    {
+        "name": "DbGetExportdDeviceListForClass",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetExportdDeviceListForClass",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetForwardedAttributeListForDevice",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetForwardedAttributeListForDevice",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetHostList",
+        "comment": "TODO",
+        "check": [
+            {
+                "command": "DbGetHostList",
+                "argument": "*"
+            }
+        ]
+    },
+    {
+        "name": "DbGetHostServerList",
+        "skip": true,
+        "setup": [
+
+        ],
+        "check": [
+            {
+                "command": "DbGetHostServerList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetHostServersInfo",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetHostServersInfo",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetInstanceNameList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetInstanceNameList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetObjectList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetObjectList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetPropertyHist",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetPropertyHist",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetPropertyList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetPropertyList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetServerInfo",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetServerInfo",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetServerList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetServerList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbGetServerNameList",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbGetServerNameList",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbImportDevice",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbImportDevice",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbImportEvent",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbImportEvent",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbInfo",
+        "check": [
+            {
+                "command": "DbInfo",
+                "argument": null,
+                "result": [
+                    {"regexp": "TANGO Database .*"},
+                    " ",
+                    {"regexp": "Running since .*"},
+                    " ",
+                    {"regexp": "Devices defined .*"},
+                    {"regexp": "Devices exported .*"},
+                    {"regexp": "Device servers defined .*"},
+                    {"regexp": "Device servers exported .*"},
+                    " ",
+                    {"regexp": "Device properties defined .*"},
+                    {"regexp": "Class properties defined .*"},
+                    {"regexp": "Device attribute properties defined .*"},
+                    {"regexp": "Class attribute properties defined .*"},
+                    {"regexp": "Object properties defined .*"}
+                ]
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbMySqlSelect",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbMySqlSelect",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutAttributeAlias",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutAttributeAlias",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutClassAttributeProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutClassAttributeProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutClassAttributeProperty2",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutClassAttributeProperty2",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutClassPipeProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutClassPipeProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutClassProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutClassProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutDeviceAlias",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutDeviceAlias",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutDeviceAttributeProperty",
+        "check": [
+            {
+                "command": "DbPutDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute1_{name}",
+                    "2",
+                    "TestProperty1_{name}",
+                    "line1",
+                    "TestProperty2_{name}",
+                    "line1",
+                    "TestAttribute2_{name}",
+                    "1",
+                    "TestProperty3_{name}",
+                    "line1"
+                ]
+            },
+            {
+                "command": "DbGetDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute1_{name}",
+                    "TestAttribute2_{name}"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute1_{name}",
+                    "2",
+                    "TestProperty1_{name}",
+                    "line1",
+                    "TestProperty2_{name}",
+                    "line1",
+                    "TestAttribute2_{name}",
+                    "1",
+                    "TestProperty3_{name}",
+                    "line1"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute1_{name}",
+                    "TestAttribute2_{name}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbPutDeviceAttributeProperty2",
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute1_{name}",
+                    "2",
+                    "TestProperty1_{name}",
+                    "2",
+                    "line1",
+                    "line2",
+                    "TestProperty2_{name}",
+                    "1",
+                    "line1",
+                    "TestAttribute2_{name}",
+                    "1",
+                    "TestProperty3_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3"
+                ]
+            },
+            {
+                "command": "DbGetDeviceAttributeProperty2",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute1_{name}",
+                    "TestAttribute2_{name}"
+                ],
+                "result": [
+                    "test/dummy/1",
+                    "2",
+                    "TestAttribute1_{name}",
+                    "2",
+                    "TestProperty1_{name}",
+                    "2",
+                    "line1",
+                    "line2",
+                    "TestProperty2_{name}",
+                    "1",
+                    "line1",
+                    "TestAttribute2_{name}",
+                    "1",
+                    "TestProperty3_{name}",
+                    "3",
+                    "line1",
+                    "line2",
+                    "line3"
+                ]
+            }
+        ],
+        "teardown": [
+            {
+                "command": "DbDeleteAllDeviceAttributeProperty",
+                "argument": [
+                    "test/dummy/1",
+                    "TestAttribute1_{name}",
+                    "TestAttribute2_{name}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DbPutDevicePipeProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutDevicePipeProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutDeviceProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutDeviceProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutProperty",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutProperty",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbPutServerInfo",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbPutServerInfo",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbRenameServer",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbRenameServer",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbUnExportDevice",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbUnExportDevice",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbUnExportEvent",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbUnExportEvent",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "DbUnExportServer",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "DbUnExportServer",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "Init",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "Init",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "ResetTimingValues",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "ResetTimingValues",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "State",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "State",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    },
+    {
+        "name": "Status",
+        "skip": true,
+        "setup": [],
+        "check": [
+            {
+                "command": "Status",
+                "argument": null,
+                "result": null
+            }
+        ],
+        "teardown": []
+    }
+
+]

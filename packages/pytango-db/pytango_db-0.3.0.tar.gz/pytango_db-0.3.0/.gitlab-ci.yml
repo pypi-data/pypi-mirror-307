@@ -1,0 +1,7 @@
+---
+include:
+  - project: 'tango-controls/gitlab-ci-templates'
+    file: 'PythonPublic.gitlab-ci.yml'
+
+variables:
+  TEST_WITH_TANGO_DB: "true"
