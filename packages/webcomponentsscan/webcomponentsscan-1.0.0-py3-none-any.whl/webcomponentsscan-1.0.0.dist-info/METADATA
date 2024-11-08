@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: webcomponentsscan
+Version: 1.0.0
+Summary: WCS is a Python application that scans HTML files within a specified directory based on the @custom-elements-manifest/analyzer npm package. This npm packages generates a custom-elements.json file containing information about custom HTML tags. With this file we can scan html files for implementations.
+Author: Steven de Jong
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
