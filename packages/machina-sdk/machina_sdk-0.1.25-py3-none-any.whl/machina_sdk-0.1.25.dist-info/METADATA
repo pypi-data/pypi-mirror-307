@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: machina-sdk
+Version: 0.1.25
+Summary: Machina Sports API SDK
+Author: Fernando Bombassaro Martins
+Author-email: Fernando Bombassaro Martins <fernando@machina.gg>
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<4.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests<3.0.0,>=2.26.0
+Requires-Dist: pydantic<2.0.0,>=1.8.2
+
+## Installation
+
+```
+python3.11 -m venv venv
+
+source venv/bin/activate
+
+pip install pdm
+
+pip install build
+
+pdm install
+
+python -m build
+
+pip install ~/machina/machina-core-sdk/dist/machina_sdk-0.1.21-py3-none-any.whl --force-reinstall
+
+```
+
+
+## Publication
+
+pip install twine
+
+twine upload dist/*
+
+
+## Publish Via git workflow
+
+git tag v0.1.16
+
+git push origin v0.1.16
