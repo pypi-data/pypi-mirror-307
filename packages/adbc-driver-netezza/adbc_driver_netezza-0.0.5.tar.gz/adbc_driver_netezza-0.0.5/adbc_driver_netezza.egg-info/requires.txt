@@ -1,0 +1,11 @@
+adbc-driver-manager
+
+[dbapi]
+pandas
+pyarrow>=8.0.0
+
+[test]
+pandas
+polars
+pyarrow>=8.0.0
+pytest
