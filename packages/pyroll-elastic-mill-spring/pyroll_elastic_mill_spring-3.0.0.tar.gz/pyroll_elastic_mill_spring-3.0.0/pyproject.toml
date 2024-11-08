@@ -1,0 +1,32 @@
+[project]
+name = "pyroll-elastic-mill-spring"
+description = "Plugin for PyRolL incorporating the influence of the elastic mill spring."
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" },
+    { name = "Max Weiner", email = "max.weiner@imf.tu-freiberg.de" }
+]
+license = "BSD-3-Clause"
+homepage = "https://pyroll.readthedocs.io/"
+repository = "https://github.com/pyroll-project/pyroll-elastic-mill-spring"
+documentation = "https://github.com/pyroll-project/pyroll-elastic-mill-spring/blob/main/docs/docs.pdf"
+packages = [
+    { include = "pyroll/elastic_mill_spring" }
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 3.0"
+]
+
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
