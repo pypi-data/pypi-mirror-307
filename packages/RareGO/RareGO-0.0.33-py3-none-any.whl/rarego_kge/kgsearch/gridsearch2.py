@@ -1,0 +1,59 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Feb 19 14:50:30 2024
+
+@author: bpatton23
+"""
+import torch
+from pykeen.losses import MarginRankingLoss
+from pykeen.losses import BCEWithLogitsLoss, NSSALoss, SoftplusLoss
+from pykeen.evaluation import RankBasedEvaluator
+from optuna.samplers import GridSampler
+from pykeen.sampling import NegativeSampler
+from pykeen.datasets import Nations
+from pykeen.models import TransE,DistMult,TransH,HolE,RotatE,KG2E
+
+
+from pykeen.hpo import hpo_pipeline
+from optuna.samplers import RandomSampler
+from pykeen.stoppers import EarlyStopper
+from pykeen.datasets import PathDataset
+from optuna.samplers import TPESampler
+
+Model_Zoo=['autosf', 'complex', 'crosse', 'mure', 'proje', 'quate']
+
+custom_dataset = PathDataset.from_path('C:/Users/bpatton23/Downloads/Drugrepurposing/R25KG-Rare - Copy.tsv')
+custom_dataset
+def grid_search2(n_trials=2,search_space=None, dataset=custom_dataset, model_name='quate'):
+    if search_space is None:
+        search_space = {
+            "model.embedding_dim": [1024],
+            "model.scoring_fct_norm": [2],
+            "loss.margin": [0.1],
+            "optimizer.lr": [0.001],
+            "negative_sampler.num_negs_per_pos": [1,10], #Next try 50
+            "training.num_epochs": [200],
+            "training.batch_size": [1024],
+            "loss": ["bcewithlogits","SoftplusLoss"],
+            "negative_sampler": ["basic","BernoulliNegativeSampler"],
+            "optimizer": ["SGD","Adam"],
+            "training_loop": ["sLCWA","sLCWANegativeSampling"],
+        }
+    hpo_pipeline_result = hpo_pipeline(
+        n_trials=n_trials,
+        sampler=GridSampler,
+        sampler_kwargs=dict(search_space=search_space),
+        dataset=dataset,
+        model=model_name,
+        #stopper='early',
+        #stopper_kwargs=dict(frequency=100, patience=110, relative_delta=0.02, metric="mean_reciprocal_rank", larger_is_better=True)
+    )
+    return hpo_pipeline_result.save_to_directory('quate_grid_search')
+    #Hyper = torch.load('C:/Users/bpatton23/Downloads/Drugrepurposing/proje_hyperparam')
+    #print(Hyper)
+    #torch.save(ev.training, 'rgcn_training')
+
+# Example usage
+best_hyperparameters2 = grid_search2()
+torch.save(best_hyperparameters2, 'quate_hyperparam2')
+print(best_hyperparameters2)
