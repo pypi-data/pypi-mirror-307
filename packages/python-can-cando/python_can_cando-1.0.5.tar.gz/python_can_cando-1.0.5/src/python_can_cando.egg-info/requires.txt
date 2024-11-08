@@ -1,0 +1,4 @@
+python-can==4.*
+
+[dev]
+ruff==0.7.2
