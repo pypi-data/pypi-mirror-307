@@ -1,0 +1,21 @@
+{
+    "name": "@vortex-ts-crawler/{{plugin_name}}",
+    "version": "0.0.0",
+    "scripts": {
+        {% if language_type == "typescript" -%}
+            "start": "if [ \"$APP_ENV\" = \"tst\" ]; then tsc ; fi && node {{ '--enable-source-maps' if enable_source_map else '' }} lib/index.js"
+        {%- else -%}
+            "start": "node {{plugin_name}}.js"
+        {%- endif %}
+    },
+    "dependencies": {
+        "tslib": "^2.6.2"
+    },
+    "author": {
+        "name": "{{git_name}}",
+        "email": "{{git_email}}"
+    },
+    "license": "ISC",
+    "description": "",
+    "crawler_type": "{{ language_type }}"
+}
