@@ -1,0 +1,15 @@
+kafka_avro_helper/__init__.py,sha256=edmXmYLEhBjrqFfRh2E_1cw3Mg-0TDCw28h0hWQ1Hh4,239
+kafka_avro_helper/consumer.py,sha256=EFUsNeHgicDoFA06byBpezgpjH7USWQueFMbB97VmxE,5300
+kafka_avro_helper/logger.py,sha256=Tc1uMCXwEAU1XvADeZrJBvtWRrtMX45SuoxTFyHkCkU,64
+kafka_avro_helper/producer.py,sha256=MlEuNJWTs-Hr3CogMHpSZHx-u_fhvkkt95spZqP8CyE,2190
+kafka_avro_helper/validate.py,sha256=owHg57CA3Cn7txzHI_gMnjLR0_FpuMUzseNmEt7i7G8,3205
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/consumer.py,sha256=2t8r4MPkFM2q8gL-P4b14QS_9yx-bZHmMg7Oc4nUlbU,805
+tests/producer.py,sha256=4MLZNWeTsiri0NsxafzL_MTqkZQVJPxbYStaBdu8lGA,664
+tests/slow_qraphql_operation_detected.py,sha256=48Q3zPCQFzG4itjEXwBZiAdVAO3sXaJwsBBWLKe3EvI,423
+tests/user_feedback.py,sha256=NlIs1FZCSOOscEA91owMkW7hojyqsVWa18SO4DTJ6dI,386
+kafka_avro_helper-0.1.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafka_avro_helper-0.1.2.dist-info/METADATA,sha256=F8fDsuE2GBMNLMyc2C1xsrJIIa7oI8KfgD-VsEohq9c,550
+kafka_avro_helper-0.1.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+kafka_avro_helper-0.1.2.dist-info/top_level.txt,sha256=jXMxg4BgwMKVDztLes2gntrtOSlBHrbY_636oK0SXGQ,24
+kafka_avro_helper-0.1.2.dist-info/RECORD,,
