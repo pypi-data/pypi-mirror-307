@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+spicejack/__init__.py
+spicejack/base_processor.py
+spicejack/chatbot.py
+spicejack/pdf.py
+spicejack/prompt.py
+spicejack.egg-info/PKG-INFO
+spicejack.egg-info/SOURCES.txt
+spicejack.egg-info/dependency_links.txt
+spicejack.egg-info/requires.txt
+spicejack.egg-info/top_level.txt
