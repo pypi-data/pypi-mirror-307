@@ -1,0 +1,2 @@
+[console_scripts]
+hydra-auto-schema = hydra_auto_schema.__main__:main
