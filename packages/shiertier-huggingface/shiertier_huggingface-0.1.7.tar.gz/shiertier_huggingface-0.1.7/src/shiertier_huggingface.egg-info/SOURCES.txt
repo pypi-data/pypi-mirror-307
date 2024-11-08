@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/shiertier_huggingface/__init__.py
+src/shiertier_huggingface/huggingface.py
+src/shiertier_huggingface.egg-info/PKG-INFO
+src/shiertier_huggingface.egg-info/SOURCES.txt
+src/shiertier_huggingface.egg-info/dependency_links.txt
+src/shiertier_huggingface.egg-info/requires.txt
+src/shiertier_huggingface.egg-info/top_level.txt
