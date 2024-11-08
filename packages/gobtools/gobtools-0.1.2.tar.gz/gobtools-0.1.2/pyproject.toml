@@ -1,0 +1,51 @@
+[project]
+name = "gobtools"
+version = "0.1.2"
+description = "Library to control and interact with the Goblin ecosystem."
+authors = [
+    { name = "Hietan", email = "hietan622@gmail.com" }
+]
+dependencies = [
+    "requests>=2.32.3",
+]
+readme = "README.md"
+licence = "Apache-2.0"
+keywords = ["Goblin", "Goblin Weaver", "Goblin Miner"]
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.7.2",
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "types-requests>=2.32.0.20241016",
+]
+
+[tool.rye.scripts]
+main = "python -m src.main"
+debug = "python -m src.main --debug"
+test = "pytest"
+lint = "ruff check src"
+lint-fix = "ruff check src --fix"
+type = "mypy src"
+format = "ruff format src"
+format-check = "ruff format src --check"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+		"COM812", "D203", "ISC001",  # Disabling to prevent conflicts with the formatter
+    "D211",  # Ignoring D211 due to conflict with D203 (requires one blank line before class definitions).
+		"D212"   # Ignoring D212 due to conflict with D213 (following D213 to start multi-line docstrings on the second line).
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gobtools"]
