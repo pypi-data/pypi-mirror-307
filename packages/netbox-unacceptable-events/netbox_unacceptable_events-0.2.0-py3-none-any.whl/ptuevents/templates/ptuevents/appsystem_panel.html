@@ -1,0 +1,39 @@
+{% load helpers %}
+<div class="card">
+  <h5 class="card-header">Application Systems</h5>
+  <table class="table table-hover">
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+    {% for s in app_systems %}
+    <tr>
+      <td>{{ s.app_system | linkify}}</td>
+      <td class="text-end noprint">
+        <a
+          href="{% url 'plugins:ptuevents:ptappsystemassignment_edit' pk=s.id %}?return_url={{ object.get_absolute_url }}"
+          class="btn btn-warning lh-1"
+          title="Edit"
+        >
+          <i class="mdi mdi-pencil" aria-hidden="true"></i>
+        </a>
+        <a
+          href="{% url 'plugins:ptuevents:ptappsystemassignment_delete' pk=s.id %}?return_url={{ object.get_absolute_url }}"
+          class="btn btn-danger lh-1"
+          title="Delete"
+        >
+          <i class="mdi mdi-trash-can-outline" aria-hidden="true"></i>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <div class="card-footer text-end noprint">
+    <a
+      href="{% url 'plugins:ptuevents:ptappsystemassignment_add' %}?object_type={{ object|content_type_id }}&object_id={{ object.pk }}&return_url={{ object.get_absolute_url }}"
+      class="btn btn-primary"
+    >
+      <i class="mdi mdi-plus-thick" aria-hidden="true"></i> Add a system
+    </a>
+  </div>
+</div>
