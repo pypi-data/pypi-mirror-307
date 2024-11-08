@@ -1,0 +1,16 @@
+astropy>=5.0
+jplephem>=2.21
+skyfield>=1.48
+astroquery>=0.4.6
+python-dateutil>=2.8.2
+matplotlib>=3.4
+pandas>=0.24.1
+ginga>=5.2.0
+requests>=2.26.0
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[recommended]
+scipy>=0.18.1
