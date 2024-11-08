@@ -1,0 +1,13 @@
+mutation attachDataDocumentsToNamespace (
+  $namespaceId: ID!,
+  $dataDocumentIds: [ID!]!
+) {
+  updateNamespaceAssets(input: {
+    entityIds: [
+      $namespaceId
+    ],
+    assetIdsToAdd: $dataDocumentIds
+  }) {
+    id
+  }
+}
