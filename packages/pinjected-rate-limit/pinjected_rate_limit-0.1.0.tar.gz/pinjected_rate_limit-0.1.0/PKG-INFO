@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: pinjected-rate-limit
+Version: 0.1.0
+Summary: Add your description here
+Author-email: proboscis <nameissoap@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: pinjected>=0.2.203
+Description-Content-Type: text/markdown
+
+# pinjected-rate-limit
+
+Describe your project here.
+
+Provides rate limiting lock for various resources
+Things to support:
+
+- resource name
+- resource unit 
+- time period
+- simultaneous access limit
+- combined limits
