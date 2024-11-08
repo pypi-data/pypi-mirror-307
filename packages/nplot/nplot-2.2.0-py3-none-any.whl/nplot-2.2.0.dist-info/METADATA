@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nplot
+Version: 2.2.0
+Summary: A matplotlib wrapper library
+Home-page: http://github.com/nicmcd/nplot
+Author: Nic McDonald
+Author-email: nicci02@hotmail.com
+License: BSD 3 Clause
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: matplotlib >=3.3.4
+Requires-Dist: numpy >=1.20.1
+
