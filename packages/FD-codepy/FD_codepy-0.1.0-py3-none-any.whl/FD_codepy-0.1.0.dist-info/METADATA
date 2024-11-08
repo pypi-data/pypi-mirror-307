@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: FD_codepy
+Version: 0.1.0
+Summary: Codebook and flexibility distance solutions for energy time series analysis
+Home-page: https://github.com/yourusername/FD_codepy
+Author: Rui Yuan
+Author-email: 123abcyuanrui@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: tslearn
+Requires-Dist: statsmodels
+Requires-Dist: stumpy
+Requires-Dist: numba
+
+# Codebook solution for smart meter data
+
+The methods I created during my PhD
