@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "modcs-mercupy"
+version = "0.0.1"
+authors = [{ name = "Marcelo Santana", email = "mjas@cin.ufpe.br" }]
+maintainers = [
+  {name = "Marcelo Santana", email = "mjas@cin.ufpe.br"},
+  {name = "Jônatas Iago", email = "jis@cin.ufpe.br"},
+  {name = "Vinícius Almeida", email = "vsa@cin.ufpe.br"},
+]
+description = "A package that abstracts the Mercury's script language in Python."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["subprocess", "enum"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/modcs_mercupy"]
+
+[project.urls]
+Homepage = "https://gitlab.cin.ufpe.br/mjas/mercupy"
