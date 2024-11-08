@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: phippery
+Version: 1.3.1
+Summary: Tools for analyzing PhIP-Seq Data.
+Author-email: Jared Galloway <jgallowa@fredhutch.org>, Kevin Sung <ksung@fredhutch.org>
+Project-URL: documentation, https://matsengrp.github.io/phippery/
+Project-URL: repository, https://github.com/matsengrp/phippery
+Keywords: phippery,phipseq,phage,modeling,phip
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy>=1.7.1
+Requires-Dist: xarray>=0.19.0
+Requires-Dist: statsmodels
+Requires-Dist: POT
+Requires-Dist: biopython
+Provides-Extra: dev
+Requires-Dist: setuptools>=58.0; extra == "dev"
+Requires-Dist: packaging>=21.0; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-pep8; extra == "dev"
+Requires-Dist: pytest-datadir; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: sphinx-click; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+
+# Phippery
+
+<p>
+  <img src="data/cartoons/Xarray_function.png" width="250">
+</p>
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Docker Repository on Quay](https://quay.io/repository/hdc-workflows/phippery/status "Docker Repository on Quay")](https://quay.io/repository/hdc-workflows/phippery)
+[![build and test](https://github.com/matsengrp/phippery/workflows/build%20and%20test/badge.svg)](https://github.com/matsengrp/phippery/blob/master/.github/workflows/build-and-test.yaml)
+
+A set of functions designed to query an 
+[xarray DataSet](http://xarray.pydata.org/en/stable/user-guide/data-structures.html#dataset) 
+object formatted to tie enrichment data with 
+their respective row & column (peptide & sample) annotations. 
+
+Please see the 
+[documentation](https://matsengrp.github.io/phippery/) 
+for further details.
+
+## Developer Install
+
+```
+# using venv
+python -m venv phippery_dev_env
+source phippery_dev_env/bin/activate
+
+# install
+git clone https://github.com/matsengrp/phippery.git
+(cd phippery && pip install -e ".[dev]")
+```
+
