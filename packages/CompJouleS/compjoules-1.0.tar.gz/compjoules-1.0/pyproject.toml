@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[project]
+name = "CompJouleS"
+description = "Energy-aware comparison tooling"
+authors = [
+  { name = "Murat Isik", email = "misik@purdue.edu" },
+  { name = "Jens Egholm Pedersen", email = "jens@jepedersen.dk" },
+  { name = "Vedant Karia", email = "Vedant.Karia@my.utsa.edu" },
+  { name = "Sadas Shankar", email = "sadas.shankar@stanford.edu" },
+]
+dynamic = ["version"]
+dependencies = ["numpy", "torch", "transformers", "scikit-learn", "pandas", "thop", "pyJoules"]
+
+[project.entry-points."setuptools.finalize_distribution_options"]
+setuptools_scm = "setuptools_scm._integration.setuptools:infer_version"
