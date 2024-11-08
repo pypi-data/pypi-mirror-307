@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: shapiq
+Version: 1.1.0
+Summary: Shapley Interactions for Machine Learning
+Home-page: https://github.com/mmschlk/shapiq
+Author: Maximilian Muschalik et al.
+Author-email: maximilian.muschalik@ifi.lmu.de
+License: MIT
+Project-URL: Tracker, https://github.com/mmschlk/shapiq/issues
+Project-URL: Source, https://github.com/mmschlk/shapiq
+Project-URL: Documentation, https://shapiq.readthedocs.io
+Keywords: python,machine learning,interpretable machine learning,shap,xai,explainable ai,interaction,shapley interactions,shapley values,feature interaction
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: colour
+Requires-Dist: networkx
+Provides-Extra: dev
+Requires-Dist: numpy; extra == "dev"
+Requires-Dist: scipy; extra == "dev"
+Requires-Dist: pandas; extra == "dev"
+Requires-Dist: scikit-learn; extra == "dev"
+Requires-Dist: tqdm; extra == "dev"
+Requires-Dist: requests; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+Requires-Dist: colour; extra == "dev"
+Requires-Dist: networkx; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: sphinx-toolbox; extra == "dev"
+Requires-Dist: nbsphinx; extra == "dev"
+Requires-Dist: pandoc; extra == "dev"
+Requires-Dist: furo; extra == "dev"
+Requires-Dist: sphinx-copybutton; extra == "dev"
+Requires-Dist: myst-parser; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: numpy; extra == "docs"
+Requires-Dist: scipy; extra == "docs"
+Requires-Dist: pandas; extra == "docs"
+Requires-Dist: scikit-learn; extra == "docs"
+Requires-Dist: tqdm; extra == "docs"
+Requires-Dist: requests; extra == "docs"
+Requires-Dist: matplotlib; extra == "docs"
+Requires-Dist: colour; extra == "docs"
+Requires-Dist: networkx; extra == "docs"
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx-toolbox; extra == "docs"
+Requires-Dist: nbsphinx; extra == "docs"
+Requires-Dist: pandoc; extra == "docs"
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+
+# shapiq: Shapley Interactions for Machine Learning <img src="https://raw.githubusercontent.com/mmschlk/shapiq/main/docs/source/_static/logo_shapiq_light.svg" alt="shapiq_logo" align="right" height="250px"/>
+
+[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![Coverage Status](https://coveralls.io/repos/github/mmschlk/shapiq/badge.svg?branch=main)](https://coveralls.io/github/mmschlk/shapiq?branch=main)
+[![Tests](https://github.com/mmschlk/shapiq/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/mmschlk/shapiq/actions/workflows/unit-tests.yml)
+[![Read the Docs](https://readthedocs.org/projects/shapiq/badge/?version=latest)](https://shapiq.readthedocs.io/en/latest/?badge=latest)
+
+[![PyPI Version](https://img.shields.io/pypi/pyversions/shapiq.svg)](https://pypi.org/project/shapiq)
+[![PyPI status](https://img.shields.io/pypi/status/shapiq.svg?color=blue)](https://pypi.org/project/shapiq)
+[![PePy](https://static.pepy.tech/badge/shapiq?style=flat-square)](https://pepy.tech/project/shapiq)
+
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+> An interaction may speak more than a thousand main effects.
+
+Shapley Interaction Quantification (`shapiq`) is a Python package for (1) approximating any-order Shapley interactions, (2) benchmarking game-theoretical algorithms for machine learning, (3) explaining feature interactions of model predictions. `shapiq` extends the well-known [shap](https://github.com/shap/shap) package for both researchers working on game theory in machine learning, as well as the end-users explaining models. SHAP-IQ extends individual Shapley values by quantifying the **synergy** effect between entities (aka **players** in the jargon of game theory) like explanatory features, data points, or weak learners in ensemble models. Synergies between players give a more comprehensive view of machine learning models.
+
+## 🛠️ Install
+`shapiq` is intended to work with **Python 3.9 and above**. Installation can be done via `pip`:
+
+```sh
+pip install shapiq
+```
+
+## ⭐ Quickstart
+
+You can explain your model with `shapiq.explainer` and visualize Shapley interactions with `shapiq.plot`.
+If you are interested in the underlying game theoretic algorithms, then check out the `shapiq.approximator` and `shapiq.games` modules.
+
+### 📈 Compute any-order feature interactions
+
+Explain your models with Shapley interaction values like the k-SII values:
+
+```python
+import shapiq
+# load data
+X, y = shapiq.load_california_housing(to_numpy=True)
+# train a model
+from sklearn.ensemble import RandomForestRegressor
+model = RandomForestRegressor()
+model.fit(X, y)
+# set up an explainer with k-SII interaction values up to order 4
+explainer = shapiq.TabularExplainer(
+    model=model,
+    data=X,
+    index="k-SII",
+    max_order=4
+)
+# explain the model's prediction for the first sample
+interaction_values = explainer.explain(X[0], budget=256)
+# analyse interaction values
+print(interaction_values)
+
+>> InteractionValues(
+>>     index=k-SII, max_order=4, min_order=0, estimated=False,
+>>     estimation_budget=256, n_players=8, baseline_value=2.07282292,
+>>     Top 10 interactions:
+>>         (0,): 1.696969079  # attribution of feature 0
+>>         (0, 5): 0.4847876
+>>         (0, 1): 0.4494288  # interaction between features 0 & 1
+>>         (0, 6): 0.4477677
+>>         (1, 5): 0.3750034
+>>         (4, 5): 0.3468325
+>>         (0, 3, 6): -0.320  # interaction between features 0 & 3 & 6
+>>         (2, 3, 6): -0.329
+>>         (0, 1, 5): -0.363
+>>         (6,): -0.56358890
+>> )
+```
+
+### 📊 Visualize feature interactions
+
+A handy way of visualizing interaction scores up to order 2 are network plots.
+You can see an example of such a plot below.
+The nodes represent feature **attributions** and the edges represent the **interactions** between features.
+The strength and size of the nodes and edges are proportional to the absolute value of attributions and interactions, respectively.
+
+```python
+shapiq.network_plot(
+    first_order_values=interaction_values.get_n_order_values(1),
+    second_order_values=interaction_values.get_n_order_values(2)
+)
+# or use
+interaction_values.plot_network()
+```
+
+The pseudo-code above can produce the following plot (here also an image is added):
+
+<p align="center">
+  <img width="500px" src="https://raw.githubusercontent.com/mmschlk/shapiq/main/docs/source/_static/network_example2.png" alt="network_plot_example">
+</p>
+
+## 📖 Documentation with tutorials
+The documentation of ``shapiq`` can be found at https://shapiq.readthedocs.io
+
+## 💬 Citation
+
+If you enjoy using the `shapiq` package, please consider citing our [NeurIPS paper](https://arxiv.org/abs/2410.01649):
+
+```bibtex
+@inproceedings{muschalik2024shapiq,
+  title     = {shapiq: Shapley Interactions for Machine Learning},
+  author    = {Maximilian Muschalik and Hubert Baniecki and Fabian Fumagalli and
+               Patrick Kolpaczki and Barbara Hammer and Eyke H\"{u}llermeier},
+  booktitle = {The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=knxGmi6SJi}
+}
+```
+
+
+## Changelog
+
+### v1.1.0 (2024-11-07)
+
+#### New Features and Improvements
+- adds computation of the Egalitarian Core (`EC`) and Egalitarian Least-Core (`ELC`) to the `ExactComputer` [#182](https://github.com/mmschlk/shapiq/issues/182)
+- adds `waterfall_plot` [#34](https://github.com/mmschlk/shapiq/issues/34) that visualizes the contributions of features to the model prediction
+- adds `BaselineImputer` [#107](https://github.com/mmschlk/shapiq/issues/107) which is now responsible for handling the `sample_replacements` parameter. Added a DeprecationWarning for the parameter in `MarginalImputer`, which will be removed in the next release.
+- adds `joint_marginal_distribution` parameter to `MarginalImputer` with default value `True` [#261](https://github.com/mmschlk/shapiq/issues/261)
+- renames explanation graph to `si_graph`
+- `get_n_order` now has optional lower/upper limits for the order
+- computing metrics for benchmarking now tries to resolve not-matching interaction indices and will throw a warning instead of a ValueError [#179](https://github.com/mmschlk/shapiq/issues/179)
+- add a legend to benchmark plots [#170](https://github.com/mmschlk/shapiq/issues/170)
+- refactored the `shapiq.games.benchmark` module into a separate `shapiq.benchmark` module by moving all but the benchmark games into the new module. This closes [#169](https://github.com/mmschlk/shapiq/issues/169) and makes benchmarking more flexible and convenient.
+- a `shapiq.Game` can now be called more intuitively with coalitions data types (tuples of int or str) and also allows to add `player_names` to the game at initialization [#183](https://github.com/mmschlk/shapiq/issues/183)
+- improve tests across the package
+
+#### Documentation
+- adds a notebook showing how to use custom tree models with the `TreeExplainer` [#66](https://github.com/mmschlk/shapiq/issues/66)
+- adds a notebook show how to use the `shapiq.Game` API to create custom games [#184](https://github.com/mmschlk/shapiq/issues/184)
+- adds a notebook showing hot to visualize interactions [#252](https://github.com/mmschlk/shapiq/issues/252)
+- adds a notebook showing how to compute Shapley values with `shapiq` [#193](https://github.com/mmschlk/shapiq/issues/197)
+- adds a notebook for conducting data valuation [#190](https://github.com/mmschlk/shapiq/issues/190)
+- adds a notebook showcasing introducing the Core and how to compute it with `shapiq` [#191](https://github.com/mmschlk/shapiq/issues/191)
+
+#### Bug Fixes
+- fixes a bug with SIs not adding up to the model prediction because of wrong values in the empty set [#264](https://github.com/mmschlk/shapiq/issues/264)
+- fixes a bug that `TreeExplainer` did not have the correct baseline_value when using XGBoost models [#250](https://github.com/mmschlk/shapiq/issues/250)
+- fixes the force plot not showing and its baseline value
+
+### v1.0.1 (2024-06-05)
+
+- add `max_order=1` to `TabularExplainer` and `TreeExplainer`
+- fix `TreeExplainer.explain_X(..., n_jobs=2, random_state=0)`
+
+### v1.0.0 (2024-06-04)
+
+Major release of the `shapiq` Python package including (among others):
+
+- `approximator` module implements over 10 approximators of Shapley values and interaction indices.
+- `exact` module implements a computer for over 10 game theoretic concepts like interaction indices or generalized values.
+- `games` module implements over 10 application benchmarks for the approximators.
+- `explainer` module includes a `TabularExplainer` and `TreeExplainer` for any-order feature interactions of machine learning model predictions.
+- `interaction_values` module implements a data class to store and analyze interaction values.
+- `plot` module allows visualizing interaction values.
+- `datasets` module loads datasets for testing and examples.
+
+Documentation of `shapiq` with tutorials and API reference is available at https://shapiq.readthedocs.io
