@@ -1,0 +1,90 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "pip", "build", "wheel"]
+
+[project]
+name = "sax"
+version = "0.13.5"
+requires-python = ">=3.10.0"
+authors = [
+{ name = "Floris Laporte", email = "floris.laporte@gmail.com" },
+]
+description = "Autograd and XLA for S-parameters"
+readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+
+dependencies = [
+  "black",
+  "fastcore",
+  "flax>=0.8.2",
+  "jax<0.4.35",
+  "jaxlib<0.4.35",
+  "jaxtyping",
+  "klujax>=0.2.5",
+  "matplotlib",
+  "natsort",
+  "networkx",
+  "numpy>=1.25.0",
+  "orjson",
+  "pydantic>=2.2",
+  "pyyaml",
+  "tqdm",
+  "typing-extensions>=4.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "autodoc-pydantic",
+  "autograd",
+  "autoimport",
+  "black[jupyter]",
+  "bump2version",
+  "flake8",
+  "gdsfactory>=0.8.1",
+  "gplugins",
+  "ipyevents",
+  "ipykernel",
+  "ipympl",
+  "ipywidgets",
+  "isort",
+  "jedi",
+  "meow-sim>0.11.1",
+  "myst-nb",
+  "nbstripout",
+  "nlopt",
+  "papermill",
+  "pre-commit",
+  "pydot",
+  "pytest",
+  "sphinx-book-theme==1.0.1",
+  "sphinx-copybutton==0.5.2",
+  "sphinx==5.3.0",
+  "tmm",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sax", "sax.backends"]
+exclude = []
+namespaces = true
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.pyright]
+reportPrivateImportUsage = false
+
+[tool.flake8]
+ignore = ['F722']
