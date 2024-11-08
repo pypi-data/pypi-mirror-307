@@ -1,0 +1,27 @@
+[build-system]
+requires      = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "happtiq_commons_google_cloud"
+requires-python = ">=3.9"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    'google-cloud-storage',
+    'cloudevents',
+    'google-cloud-logging',
+    'google-auth',
+    'google-auth-oauthlib',
+    'google-cloud-pubsub',
+    'google-cloud-secret-manager'
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock"
+]
+
+[tool.setuptools_scm]
+root = "../.."

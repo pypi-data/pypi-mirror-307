@@ -1,0 +1,11 @@
+google-cloud-storage
+cloudevents
+google-cloud-logging
+google-auth
+google-auth-oauthlib
+google-cloud-pubsub
+google-cloud-secret-manager
+
+[dev]
+pytest
+pytest-mock
