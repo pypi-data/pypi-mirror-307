@@ -1,0 +1,2 @@
+[console_scripts]
+ccism_reshuffle = esa_cci_sm.reshuffle:run
