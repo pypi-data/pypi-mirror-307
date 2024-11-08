@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oss2_uploader"
+version = "0.1.0"
+authors = [{ name = "YugoAmaryl46", email = "badapplesweetie@gmail.com" }]
+description = "Uploader files in a folder to Aliyun OSS"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["oss2", "tqdm"]
+
+[project.urls]
+Homepage = "https://github.com/hansen1416/oss2_uploader"
+Issues = "https://github.com/hansen1416/oss2_uploader/issues"

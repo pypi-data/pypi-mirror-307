@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: oss2_uploader
+Version: 0.1.0
+Summary: Uploader files in a folder to Aliyun OSS
+Project-URL: Homepage, https://github.com/hansen1416/oss2_uploader
+Project-URL: Issues, https://github.com/hansen1416/oss2_uploader/issues
+Author-email: YugoAmaryl46 <badapplesweetie@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: oss2
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+### Uploader all files in a folder to Aliyun OSS
+
+Must load `OSS_ACCESS_KEY_ID` and `OSS_ACCESS_KEY_SECRET` into environment variables first.
+
+## Install
+
+`pip install oss2-uploader`
+
+## Usage
+
+only executable under `if __name__ == "__main__":`
+
+```
+if __name__ == "__main__":
+
+    from oss2_uploader import folder_uploader_sync
+
+    folder_uploader_sync(
+        os.path.join(os.path.expanduser("~"), "Documents"),
+        "bucket_name",
+        "oss-ap-southeast-1.aliyuncs.com",
+    )
+```
