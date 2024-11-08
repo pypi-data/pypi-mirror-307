@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: logstashLogging
+Version: 0.1.3
+Summary: a print log ans search tools
+Author: chinaUnicomAi
+Author-email: 840215085@qq.com
+Requires-Dist: python-logstash ==0.4.8
+Requires-Dist: logstash ==0.1.dev0
+
