@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+snakifit/__init__.py
+snakifit/http_client.py
+snakifit.egg-info/PKG-INFO
+snakifit.egg-info/SOURCES.txt
+snakifit.egg-info/dependency_links.txt
+snakifit.egg-info/requires.txt
+snakifit.egg-info/top_level.txt
