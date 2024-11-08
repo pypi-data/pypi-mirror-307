@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: util_rc
+Version: 0.1.3
+Summary: A PyPI package to model risky choice
+Author: Donna Ma
+Author-email: donna.ma@berkeley.edu
+Description-Content-Type: text/markdown
+
+A python package for binary risky choice modeling for 4 models:
+    1. Expected Utility Theory: U = p * A^alpha
+    2. Risk-Return: U = EV - b * Var
+    3. Coefficient of Variation: U = EV - b *CV where CV = = sqrt(Var)/EV1
+    4. Hyperbolic: U = A/(1+h*theta) where theta = (1-p)/p
+where A is the payoff, p is the probability of winning that outcome, EV is Expected value (A*p), and Var is variance (P*(A-EV)**2 + (1 - P)*(-EV) ** 2)
+
+The package takes risky choice data (probability, payoffs, and decisions) of 2 options as inputs and returns a util-rc object that stores the estimated parameters, inverse temperature, fit metrics, model type, and number of observations in an instance variable named params.
+
+To use the package,
+pip install util-rc
+
+Dependencies: numpy version >= 1.26.4, scipy version >= 1.12.0
