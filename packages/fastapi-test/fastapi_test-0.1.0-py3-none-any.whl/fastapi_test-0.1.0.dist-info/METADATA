@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastapi-test
+Version: 0.1.0
+Summary: A test
+Home-page: UNKNOWN
+Author: Basel
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.68.0
+Requires-Dist: uvicorn>=0.15.0
+
+# Test
+
