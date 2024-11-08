@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: kurveclient
+Version: 0.1.4
+Summary: A client for the Kurve backend.
+Author-email: Wes Madrigal <wes@kurve.ai>
+Maintainer-email: Wes Madrigal <wes@kurve.ai>
+Project-URL: Source, http://github.com/kurveai/kurveclient
+Project-URL: Issue Tracker, https://github.com/kurveai/kurveclient/issues
+Keywords: knowledge discovery,data discovery,inclusion dependency discovery,schema discovery,data visualization,entity linking,graph algorithms,knowledge graph
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+Requires-Dist: fastapi
+Requires-Dist: fastapi[standard]
+Requires-Dist: graphreduce==1.6.9
+Requires-Dist: uvicorn
+Requires-Dist: pandas
+Requires-Dist: python-multipart
+Requires-Dist: structlog
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: httpx; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+
+# kurveclient
+Kurve Open Source client
+
+# installation
+```python
+pip install kurveclient
+```
+
+# usage
+```python
+from kurveclient.auth import do_auth
+from kurveclient.interaction import map_local_source
+
+do_auth()
+
+map_local_source('/path/to/csv_directory')
+# magic
+```
