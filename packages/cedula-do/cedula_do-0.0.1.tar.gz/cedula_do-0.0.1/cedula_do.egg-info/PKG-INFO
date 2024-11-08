@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cedula_do
+Version: 0.0.1
+Summary: este paquete le permite formatear cedulas dominicanas
+Author: Eduardo Tejada
+Author-email: davidtejadamoreta26@gmail.com
+Keywords: python,cedulas,formateo
+Requires-Dist: numpy
+Requires-Dist: gc
