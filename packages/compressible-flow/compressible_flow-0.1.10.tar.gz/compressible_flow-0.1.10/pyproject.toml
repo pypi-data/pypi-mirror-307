@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "compressible-flow"
+version = "0.1.10"
+description = "Functions for working with compressible inviscid flow of gases"
+authors = ["itorre <iacopo.torre@upc.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1"
+scipy = "^1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8"
+jupyterlab = "^4"
+matplotlib = "^3"
+ruff = "^0.7.1"
+nbconvert = "^7"
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning.substitution]
+folders = [
+  { path = "src" }
+]
