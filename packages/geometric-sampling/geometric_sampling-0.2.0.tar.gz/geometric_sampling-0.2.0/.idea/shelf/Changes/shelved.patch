@@ -1,0 +1,55 @@
+Index: fast/algorithm.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from __future__ import annotations\n\nfrom typing import Iterator, Collection\n\nimport numpy as np\nimport portion as P\nfrom matplotlib import pyplot as plt\nfrom fast.structs import MaxHeap, Range\n\n\nclass Design:\n    def __init__(\n        self,\n        inclusions: Collection[float] = None,\n        switch_coefficient: float = 0.5,\n        rng: np.random.Generator = np.random.default_rng(),\n    ):\n        self.heap = MaxHeap[Range](rng=rng)\n        self.switch_coefficient = switch_coefficient\n        self.rng = rng\n        self.changes = 0\n        if inclusions is not None:\n            self.push_initial_design(inclusions)\n\n    # TODO: Refactor\n    def push_initial_design(self, inclusions: Collection[float]):\n        bars = []\n        level = 0\n        for p in inclusions:\n            next_level = level + p\n            if next_level < 1 - 1e-9:\n                interval = P.closed(level, next_level)\n                level = next_level\n            elif next_level > 1 + 1e-9:\n                interval = P.closed(level, 1) | P.closed(0, next_level - 1)\n                level = next_level - 1\n            else:\n                interval = P.closed(level, 1)\n                level = 0\n            bars.append(interval)\n\n        events = []\n        for i, bar in enumerate(bars):\n            for interval in bar:\n                events.append((interval.lower, \"start\", i))\n                events.append((interval.upper, \"end\", i))\n\n        events.sort()\n\n        active = set()\n        last_point = 0\n\n        for point, event_type, bar_index in events:\n            if event_type == \"start\":\n                active.add(bar_index)\n            elif event_type == \"end\":\n                if last_point != point:\n                    self.push(Range(round(point - last_point, 9), frozenset(active)))\n                active.remove(bar_index)\n\n            last_point = point\n\n    def copy(self) -> Design:\n        new_design = Design(\n            rng=self.rng,\n            switch_coefficient=self.switch_coefficient,\n        )\n        new_design.heap = self.heap.copy()\n        new_design.changes = self.changes\n        return new_design\n\n    def pull(self) -> Range:\n        return self.heap.pop()\n\n    def push(self, *args: Range) -> None:\n        for r in args:\n            if not r.almost_zero():\n                self.heap.push(r)\n\n    def merge_identical(self):\n        dic = {}\n        for r in self.heap:\n            dic.setdefault(r.ids, 0)\n            dic[r.ids] += r.length\n        self.heap = MaxHeap[Range](\n            initial_heap=[Range(length, ids) for ids, length in dic.items()],\n            rng=self.rng,\n        )\n\n    def switch(\n        self,\n        r1: Range,\n        r2: Range,\n    ) -> tuple[Range, Range, Range, Range]:\n        length = self.switch_coefficient * min(r1.length, r2.length)\n        n1 = self.rng.choice(list(r1.ids - r2.ids))\n        n2 = self.rng.choice(list(r2.ids - r1.ids))\n        return (\n            Range(length, r1.ids - {n1} | {n2}),\n            Range(r1.length - length, r1.ids),\n            Range(length, r2.ids - {n2} | {n1}),\n            Range(r2.length - length, r2.ids),\n        )\n\n    def iterate(self) -> None:\n        r1 = self.pull()\n        r2 = self.pull()\n        if r1 == r2:\n            self.push(r1 + r2)\n        else:\n            self.push(*self.switch(r1, r2))\n        self.changes += 1\n\n    def show(self) -> None:\n        initial_level = 0\n        for r in self.heap:\n            for i in r.ids:\n                plt.plot([i, i], [initial_level, initial_level + r.length])\n            initial_level += r.length\n        plt.show()\n\n    def __iter__(self) -> Iterator[Range]:\n        return iter(self.heap)\n\n    def __eq__(self, other: Design) -> bool:\n        return self.heap == other.heap\n\n    def __hash__(self) -> int:\n        return hash(self.heap)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/fast/algorithm.py b/fast/algorithm.py
+--- a/fast/algorithm.py	(revision df4d2134b31bbf3c953680f8ecd81b1f8cf65690)
++++ b/fast/algorithm.py	(date 1730107209553)
+@@ -3,7 +3,6 @@
+ from typing import Iterator, Collection
+ 
+ import numpy as np
+-import portion as P
+ from matplotlib import pyplot as plt
+ from fast.structs import MaxHeap, Range
+ 
+@@ -24,26 +23,24 @@
+ 
+     # TODO: Refactor
+     def push_initial_design(self, inclusions: Collection[float]):
+-        bars = []
++        events = []
+         level = 0
+-        for p in inclusions:
++        for i, p in enumerate(inclusions):
+             next_level = level + p
+             if next_level < 1 - 1e-9:
+-                interval = P.closed(level, next_level)
++                events.append((level, "start", i))
++                events.append((next_level, "end", i))
+                 level = next_level
+             elif next_level > 1 + 1e-9:
+-                interval = P.closed(level, 1) | P.closed(0, next_level - 1)
++                events.append((level, "start", i))
++                events.append((1, "end", i))
++                events.append((0, "start", i))
++                events.append((next_level - 1, "end", i))
+                 level = next_level - 1
+             else:
+-                interval = P.closed(level, 1)
+                 level = 0
+-            bars.append(interval)
+-
+-        events = []
+-        for i, bar in enumerate(bars):
+-            for interval in bar:
+-                events.append((interval.lower, "start", i))
+-                events.append((interval.upper, "end", i))
++                events.append((level, "start", i))
++                events.append((1, "end", i))
+ 
+         events.sort()
+ 

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0063d8e6-e13f-44ab-9fea-9b1c2030016a" name="Changes" comment="refactor: Update A* codes with new Criteria">
+      <change beforePath="$PROJECT_DIR$/geometric_sampling/search_algorithms/astar.py" beforeDir="false" afterPath="$PROJECT_DIR$/geometric_sampling/search_algorithms/astar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;itsamirhn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mehdimhb/fast.git&quot;,
+    &quot;accountId&quot;: &quot;7055d581-2cd3-4205-a7da-8363a7bb3059&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2neYkUHZINkjuSfmLTVeAPtNcaW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_red_black_tree.TestRedBlackTree.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_red_black_tree.TestRedBlackTree.test_rotations.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/amir/Documents/personal/fast/tests&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fast" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_red_black_tree.TestRedBlackTree.test_rotations">
+    <configuration name="Python tests for test_red_black_tree.TestRedBlackTree" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fast" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_red_black_tree.TestRedBlackTree&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_red_black_tree.TestRedBlackTree.test_rotations" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fast" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_red_black_tree.TestRedBlackTree.test_rotations&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_red_black_tree.TestRedBlackTree.test_rotations" />
+        <item itemvalue="Python tests.Python tests for test_red_black_tree.TestRedBlackTree" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0063d8e6-e13f-44ab-9fea-9b1c2030016a" name="Changes" comment="" />
+      <created>1729335151847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729335151847</updated>
+      <workItem from="1729335152893" duration="3749000" />
+      <workItem from="1729346989281" duration="4916000" />
+      <workItem from="1729957883611" duration="20265000" />
+      <workItem from="1730106199299" duration="3236000" />
+      <workItem from="1730536082900" duration="2709000" />
+      <workItem from="1730538976045" duration="9751000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: Update initial design">
+      <option name="closed" value="true" />
+      <created>1729347621062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729347621062</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Show the design">
+      <option name="closed" value="true" />
+      <created>1729348523732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729348523732</updated>
+    </task>
+    <task id="LOCAL-00003" summary="debuging :D">
+      <option name="closed" value="true" />
+      <created>1729350768262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729350768262</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding Ruff">
+      <option name="closed" value="true" />
+      <created>1729957940644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729957940644</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor: Make Structs and code more readable">
+      <option name="closed" value="true" />
+      <created>1729960616930</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729960616930</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor: Make Structs and code more readable">
+      <option name="closed" value="true" />
+      <created>1729960724410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729960724410</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: Simplify iteration">
+      <option name="closed" value="true" />
+      <created>1730021621180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730021621180</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: Simplify iteration">
+      <option name="closed" value="true" />
+      <created>1730021696906</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730021696906</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor: Simplify iteration">
+      <option name="closed" value="true" />
+      <created>1730023214789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730023214789</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor: Simplify iteration">
+      <option name="closed" value="true" />
+      <created>1730023873969</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730023873969</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor: Move tests into sandbox">
+      <option name="closed" value="true" />
+      <created>1730023980741</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730023980741</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: Downgrade python version to 3.10">
+      <option name="closed" value="true" />
+      <created>1730024535121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730024535121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor: Move rng as attribute">
+      <option name="closed" value="true" />
+      <created>1730025233012</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730025233012</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor: Move rng as attribute">
+      <option name="closed" value="true" />
+      <created>1730025518891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730025518891</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refactor: Move rng as attribute">
+      <option name="closed" value="true" />
+      <created>1730025798895</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730025798895</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor: Move rng as attribute">
+      <option name="closed" value="true" />
+      <created>1730025804946</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730025804946</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730034645395</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730034645395</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730034900890</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1730034900890</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730035000009</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730035000009</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730035030605</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730035030605</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730035050209</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1730035050209</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix: Value of iterator of MaxHeap">
+      <option name="closed" value="true" />
+      <created>1730035197702</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730035197702</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: Fix Design Copy">
+      <option name="closed" value="true" />
+      <created>1730059127697</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730059127697</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: Add Random pop to heap">
+      <option name="closed" value="true" />
+      <created>1730059844584</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730059844584</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor: Clean Code">
+      <option name="closed" value="true" />
+      <created>1730060140549</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730060140549</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: Add A* Algo">
+      <option name="closed" value="true" />
+      <created>1730061537256</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730061537256</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test: Add Tests for MaxHeap and Range">
+      <option name="closed" value="true" />
+      <created>1730062217689</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730062217689</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test: Add Tests for MaxHeap and Range">
+      <option name="closed" value="true" />
+      <created>1730107223517</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730107223517</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refactor: Remove Portion">
+      <option name="closed" value="true" />
+      <created>1730107913125</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730107913125</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: Add MyPy and RedBlackTree">
+      <option name="closed" value="true" />
+      <created>1730540681572</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730540681572</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: Add MyPy and RedBlackTree">
+      <option name="closed" value="true" />
+      <created>1730541280572</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730541280572</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730556469169</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730556469169</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730556800690</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730556800690</updated>
+    </task>
+    <task id="LOCAL-00034" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730557254296</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730557254296</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730558227352</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558227352</updated>
+    </task>
+    <task id="LOCAL-00036" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730558334980</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558334980</updated>
+    </task>
+    <task id="LOCAL-00037" summary="refactor: Update A* codes with new Criteria">
+      <option name="closed" value="true" />
+      <created>1730558406836</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558406836</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: Update initial design" />
+    <MESSAGE value="feat: Show the design" />
+    <MESSAGE value="debuging :D" />
+    <MESSAGE value="Adding Ruff" />
+    <MESSAGE value="refactor: Make Structs and code more readable" />
+    <MESSAGE value="refactor: Simplify iteration" />
+    <MESSAGE value="refactor: Move tests into sandbox" />
+    <MESSAGE value="refactor: Downgrade python version to 3.10" />
+    <MESSAGE value="refactor: Move rng as attribute" />
+    <MESSAGE value="fix: Value of iterator of MaxHeap" />
+    <MESSAGE value="fix: Fix Design Copy" />
+    <MESSAGE value="feat: Add Random pop to heap" />
+    <MESSAGE value="refactor: Clean Code" />
+    <MESSAGE value="feat: Add A* Algo" />
+    <MESSAGE value="test: Add Tests for MaxHeap and Range" />
+    <MESSAGE value="refactor: Remove Portion" />
+    <MESSAGE value="feat: Add MyPy and RedBlackTree" />
+    <MESSAGE value="refactor: Update A* codes with new Criteria" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Update A* codes with new Criteria" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/geometric_sampling/search_algorithms/astar.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fast$.coverage" NAME=" Coverage Results" MODIFIED="1730538020660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+  </component>
+</project>

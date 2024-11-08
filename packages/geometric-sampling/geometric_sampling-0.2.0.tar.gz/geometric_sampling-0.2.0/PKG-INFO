@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: geometric-sampling
+Version: 0.2.0
+Summary: Python package for Geometric Sampling Method
+Author-email: Bardia Panahbehagh <bardia.panah@gmail.com>, Mehdi Mohebbi <mehdi.mohebbi23@gmail.com>, AmirMohammad HosseiniNasab <awmirhn@gmail.com>, Mehdi Hosseini Moghadam <m.h.moghadam1996@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy>=2.1.2
+Requires-Dist: tqdm>=4.66.5
+Description-Content-Type: text/markdown
+
+# Geometric Sampling
+Python package for Geometric Sampling Method
