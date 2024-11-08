@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bpy-pandas-mesh
+Version: 0.1.0
+Summary: Package to sync pandas DataFrame to Blender mesh
+Requires-Python: <3.12,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2.3
