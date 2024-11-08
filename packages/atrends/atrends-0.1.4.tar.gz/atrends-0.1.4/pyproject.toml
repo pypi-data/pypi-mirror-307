@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "atrends"
+version = "0.1.4"
+description = "A project to fetch and plot Google Trends data"
+authors = ["David Shivaji <davidshivaji@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytrends = "^4.8.0"
+matplotlib = "^3.5"

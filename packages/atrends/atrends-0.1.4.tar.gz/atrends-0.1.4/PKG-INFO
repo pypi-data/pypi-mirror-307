@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: atrends
+Version: 0.1.4
+Summary: A project to fetch and plot Google Trends data
+Author: David Shivaji
+Author-email: davidshivaji@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5,<4.0)
+Requires-Dist: pytrends (>=4.8.0,<5.0.0)
