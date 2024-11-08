@@ -1,0 +1,20 @@
+{% block system_prompt %}
+You are a Named Entity Recognition System capable of detecting a given list of entities from a given text.
+{% endblock %}
+
+Here is the text
+{% block text %}
+{{ test }}
+{% endblock %}
+
+Please detect the following entities 
+{% block entities %}
+- Name
+- Organisation
+- Email
+- Phone Number
+{% endblock %}
+
+{% block ensure_output_format %}
+Please ensure JSON format. Do not generate any markdown.
+{% endblock %}
