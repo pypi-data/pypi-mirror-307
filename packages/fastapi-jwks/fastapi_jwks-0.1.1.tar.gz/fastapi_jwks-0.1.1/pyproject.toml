@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "fastapi-jwks"
+version = "0.1.1"
+description = ""
+license = "MIT"
+authors = ["bakdata"]
+readme = "README.md"
+
+# TODO
+# repository = ""
+# documentation = ""
+# keywords = []
+# classifiers = []
+
+# [tool.poetry.scripts]
+# start = "main:start"
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+fastapi = { extras = ["standard"], version = "^0.112.2" }
+pyjwt = { extras = ["crypto"], version = "^2.8.0" }
+loguru = "^0.7.2"
+cachetools = "^5.3.3"
+types-cachetools = "^5.3.0.7"
+cryptography = "^43.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+ruff = "^0.3.4"
+pyright = "^1.1.386"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-mock = "^3.14.0"
+pytest-clarity = "^1.0.1"
+pytest-cov = "^5.0.0"
+
+[tool.ruff]
+output-format = "grouped"
+show-fixes = true
+target-version = "py310"
+
+[tool.ruff.lint]
+# For a list of all possible rules visit https://docs.astral.sh/ruff/rules/
+select = [
+  "F", # Pyflakes
+  "E", # pycodestyle Errors
+  "W", # pycodestyle Warnings
+  "C90", # mccabe
+  "I", # isort
+  "UP", # pyupgrade
+  "B", # flake8-bugbear
+  "RUF", # Ruff-specific rules
+]
+ignore = [
+  # Rules in conflict with `ruff-format` -- START
+  "W191", # Checks for indentation that uses tabs. Spaces are preferred.
+  # "E111", # Checks for indentation with a non-multiple of 4 spaces, add when out of nursery
+  # "E114", # Checks for indentation of comments with a non-multiple of 4 spaces, add when out of nursery
+  # "E117", # Checks for over-indented code, add when out of nursery
+  "E501", # Line too long
+  # Rules in conflict with `ruff-format` -- END
+  "RUF012", # type class attrs with `ClassVar` -- Too strict/trigger-happy
+]
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = "--cov={fastapi_jwks} --cov-report term-missing"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
