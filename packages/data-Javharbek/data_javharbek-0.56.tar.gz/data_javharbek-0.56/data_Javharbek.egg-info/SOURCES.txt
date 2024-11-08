@@ -1,0 +1,14 @@
+README.md
+setup.py
+data_Javharbek/__init__.py
+data_Javharbek/airflow_dwh.py
+data_Javharbek/clickhouse_dwh.py
+data_Javharbek/my_module.py
+data_Javharbek/my_module2.py
+data_Javharbek/my_module3.py
+data_Javharbek/my_module4.py
+data_Javharbek/my_module5.py
+data_Javharbek.egg-info/PKG-INFO
+data_Javharbek.egg-info/SOURCES.txt
+data_Javharbek.egg-info/dependency_links.txt
+data_Javharbek.egg-info/top_level.txt
