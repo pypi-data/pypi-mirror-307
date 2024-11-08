@@ -1,0 +1,2 @@
+[console_scripts]
+aiscientists-chat = AIscientists.main:get_response
