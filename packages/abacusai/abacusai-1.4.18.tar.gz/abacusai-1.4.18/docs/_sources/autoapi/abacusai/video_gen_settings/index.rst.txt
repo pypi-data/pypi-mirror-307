@@ -1,0 +1,93 @@
+abacusai.video_gen_settings
+===========================
+
+.. py:module:: abacusai.video_gen_settings
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   abacusai.video_gen_settings.VideoGenSettings
+
+
+Module Contents
+---------------
+
+.. py:class:: VideoGenSettings(client, prompt=None, negativePrompt=None, cfgScale=None, mode=None, aspectRatio=None, duration=None, loop=None, startFrame=None, endFrame=None, rewritePrompt=None)
+
+   Bases: :py:obj:`abacusai.return_class.AbstractApiClass`
+
+
+   Video generation settings
+
+   :param client: An authenticated API Client instance
+   :type client: ApiClient
+   :param prompt: The prompt for the video.
+   :type prompt: dict
+   :param negativePrompt: The negative prompt for the video.
+   :type negativePrompt: dict
+   :param cfgScale: The flexibility scale for video generation.
+   :type cfgScale: dict
+   :param mode: The video generation mode (standard or professional).
+   :type mode: dict
+   :param aspectRatio: The aspect ratio of the video in seconds.
+   :type aspectRatio: dict
+   :param duration: The duration of the video.
+   :type duration: dict
+   :param loop: Whether the video should loop.
+   :type loop: dict
+   :param startFrame: The start frame of the video.
+   :type startFrame: dict
+   :param endFrame: The end frame of the video.
+   :type endFrame: dict
+   :param rewritePrompt: Whether to rewrite the prompt.
+   :type rewritePrompt: dict
+
+
+   .. py:attribute:: prompt
+
+
+   .. py:attribute:: negative_prompt
+
+
+   .. py:attribute:: cfg_scale
+
+
+   .. py:attribute:: mode
+
+
+   .. py:attribute:: aspect_ratio
+
+
+   .. py:attribute:: duration
+
+
+   .. py:attribute:: loop
+
+
+   .. py:attribute:: start_frame
+
+
+   .. py:attribute:: end_frame
+
+
+   .. py:attribute:: rewrite_prompt
+
+
+   .. py:attribute:: deprecated_keys
+
+
+   .. py:method:: __repr__()
+
+
+   .. py:method:: to_dict()
+
+      Get a dict representation of the parameters in this class
+
+      :returns: The dict value representation of the class parameters
+      :rtype: dict
+
+
+
