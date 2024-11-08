@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "auth-middleware"
+version = "0.1.23"
+description = "Async Auth Middleware for FastAPI/Starlette"
+authors = ["impalah <impalah@gmail.com>"]
+readme = "README.md"
+packages = [{include = "auth_middleware", from = "src"}]
+license = "MIT"
+homepage = "https://impalah.github.io/auth-middleware/"
+repository = "https://github.com/impalah/auth-middleware"
+documentation = "https://impalah.github.io/auth-middleware/"
+keywords = ["auth", "middleware", "fastapi", "starlette"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: FastAPI",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration :: Authentication/Directory",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+fastapi = "^0.115.4"
+python-dotenv = "^1.0.1"
+svix-ksuid = ">=0.6.2"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pydantic = {extras = ["email"], version = "^2.9.2"}
+loguru = "^0.7.2"
+httpx = "^0.27.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-mock = "^3.12.0"
+pytest-asyncio = "^0.23.3"
+mock = "^5.1.0"
+pytest-cov = "^4.1.0"
+black = ">=23.12.1,<25.0.0"
+pytest-env = "^1.1.3"
+mypy = "^1.8.0"
+sphinx = "^7.2.6"
+sphinx-rtd-theme = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Documentation" = "https://impalah.github.io/auth-middleware/"
+"Source" = "https://github.com/impalah/auth-middleware"
