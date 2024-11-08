@@ -1,0 +1,17 @@
+setup.py
+PyGPTs/Gemini.py
+PyGPTs/__init__.py
+PyGPTs.egg-info/PKG-INFO
+PyGPTs.egg-info/SOURCES.txt
+PyGPTs.egg-info/dependency_links.txt
+PyGPTs.egg-info/requires.txt
+PyGPTs.egg-info/top_level.txt
+PyGPTs/HuggingFace/Configurations.py
+PyGPTs/HuggingFace/GenerationConfig.py
+PyGPTs/HuggingFace/Models.py
+PyGPTs/HuggingFace/Pipelines.py
+PyGPTs/HuggingFace/Tokenizers.py
+PyGPTs/HuggingFace/Transformers.py
+PyGPTs/HuggingFace/__init__.py
+PyGPTs/HuggingFace/base_objects.py
+PyGPTs/HuggingFace/flags.py
