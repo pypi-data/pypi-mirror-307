@@ -1,0 +1,99 @@
+[project]
+name = "tf-requests"
+version = "0.1.0"
+description = "A utility script for interacting with the Testing Farm (TF) API in GitLab CI environments."
+authors = [
+    { name = "Juanje Ojeda", email = "juanje@redhat.com" },
+]
+dependencies = [
+    "requests>=2.31.0",
+    "xmltodict>=0.13.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+tf-requests = "tf_requests.tf_requests:main"
+get-auto-compose = "tf_requests.get_auto_compose:main"
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.black]
+line-length = 120
+
+[tool.bandit]
+exclude_dirs = [
+    ".venv",
+    ".mypy_cache",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src",
+]
+testpaths = [
+    "tests",
+]
+addopts = [
+    "--cov=tf_requests",
+    "--cov-report=html",
+    "--cov-report=term",
+    "--cov-branch",
+]
+
+[tool.isort]
+profile = "black"
+py_version = 39
+filter_files = true
+known_first_party = [
+    "helpers",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.4.2",
+    "flake8>=6.1.0",
+    "black>=23.9.1",
+    "isort>=5.12.0",
+    "mypy[reports]>=1.5.1",
+    "pytest-cov>=4.1.0",
+    "bandit>=1.7.5",
+    "requests-mock>=1.11.0",
+    "pytest-mock>=3.11.1",
+    "types-requests>=2.31.0.5",
+    "xmltodict>=0.13.0",
+    "types-xmltodict>=0.13.0.3",
+    "responses>=0.24.1",
+]
+
+[tool.pdm.scripts]
+test = "pytest tests/"
+lint = "flake8 src/ tests/"
+check-types = "mypy src/ tests/"
+
+[tool.pdm.scripts.tf-requests]
+call = "tf_requests.tf_requests:main"
+
+[tool.pdm.scripts.get-auto-compose]
+call = "tf_requests.get_auto_compose:main"
+
+[tool.pdm.scripts.check-formatting]
+composite = [
+    "isort --check --settings-path ./pyproject.toml src/ tests/",
+    "black --check src/ tests/",
+]
+
+[tool.pdm.scripts.fix-check-all]
+composite = [
+    "isort src/ tests/",
+    "black src/ tests/",
+    "mypy src/ tests/",
+    "flake8 src/ tests/",
+]
