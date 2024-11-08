@@ -1,0 +1,5 @@
+httpx
+jsonpath-ng
+
+[:python_version < "3.7"]
+dataclasses
