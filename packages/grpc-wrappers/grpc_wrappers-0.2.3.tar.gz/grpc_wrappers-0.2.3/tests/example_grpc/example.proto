@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package grpc_wrappers.tests;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+
+message ExampleMessage {
+    bool bool_value = 1;
+    int64 int_value = 2;
+    string string_value = 3;
+    ExampleEnum enum_value = 4;
+    ExampleMessage submessage = 5;
+
+    string deprecated_string_value = 6 [deprecated=true];
+
+    repeated int64 int_values = 7;
+    repeated ExampleEnum enum_values = 8;
+    repeated ExampleMessage submessages = 9;
+
+    message NestedMessage {
+        bool bool_value = 1;
+    }
+    NestedMessage nested_submessage = 10;
+
+    // Google wrappers
+    google.protobuf.BoolValue wrapped_bool_value = 11;
+    google.protobuf.FloatValue wrapped_float_value = 12;
+    google.protobuf.StringValue wrapped_string_value = 13;
+    google.protobuf.Timestamp wrapped_timestamp = 14;
+}
+
+enum ExampleEnum {
+    A = 0;
+    B = 1;
+    C = 2;
+    D = 3;
+    E = 4;
+}

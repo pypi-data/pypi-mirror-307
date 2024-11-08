@@ -1,0 +1,119 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grpc-wrappers"
+dynamic = ["version"]
+license = ""
+requires-python = ">=3.7"
+authors = [
+    { name = "Matthew Wardrop", email = "mpwardrop@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "arrow",
+    "grpcio",
+    "interface_meta",
+    "protobuf",
+]
+
+[project.urls]
+Homepage = "https://github.com/matthewwardrop/python-grpc-wrappers"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "grpc_wrappers/_version.py"
+
+# Build target configuration
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "grpc_wrappers",
+    "tests",
+    "LICENSE",
+    "pyproject.toml",
+    "README.md",
+]
+
+# Testing configuration
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest==7.2.0",
+    "pytest-cov==4.0.0",
+]
+
+[tool.hatch.envs.default.scripts]
+tests = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=grpc_wrappers --cov-report=xml -vv {args:tests}'
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311", "312"]
+
+[tool.hatch.envs.lint]
+dependencies = [
+    "black==22.6",
+    "flake8==5.0.4",
+    "flake8-pyproject",
+    # "pylint==2.17.4",
+    "pytest-cov==3.0.0",
+    "pytest==6.2.5",
+]
+
+[tool.hatch.envs.lint.scripts]
+check = [
+    "black --check grpc_wrappers tests --exclude grpc_wrappers/_version.py",
+    "flake8 grpc_wrappers",
+    # "pylint grpc_wrappers",
+]
+format = "black grpc_wrappers tests"
+
+# Linting configuration
+
+[tool.flake8]
+ignore = [
+    "C901","E203","E501","E712","E722","E731","W503","W504","W601"
+]
+max-complexity = 25
+import-order-style = "edited"
+application-import-names = "grpc_wrappers"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "cyclic-import",
+    "duplicate-code",
+    "eval-used",
+    "fixme",
+    "import-outside-toplevel",
+    "invalid-name",
+    "line-too-long",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "no-member",
+    "protected-access",
+    "redefined-outer-name",
+    "too-few-public-methods",
+    "too-many-arguments",
+    "too-many-branches",
+    "too-many-instance-attributes",
+    "too-many-statements",
+    "ungrouped-imports",
+    "unnecessary-lambda-assignment",
+    "unused-argument",
+    "use-dict-literal",
+]

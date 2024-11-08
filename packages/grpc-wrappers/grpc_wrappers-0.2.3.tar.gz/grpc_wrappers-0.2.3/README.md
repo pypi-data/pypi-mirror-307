@@ -1,0 +1,1 @@
+Wrappers around generated GRPC bindings to make them more pleasant to use.
