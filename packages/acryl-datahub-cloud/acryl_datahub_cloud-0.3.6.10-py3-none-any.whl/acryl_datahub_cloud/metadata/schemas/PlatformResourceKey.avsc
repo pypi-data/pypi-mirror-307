@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "platformResourceKey",
+    "keyForEntity": "platformResource",
+    "entityCategory": "core",
+    "entityAspects": [
+      "dataPlatformInstance",
+      "platformResourceInfo",
+      "status"
+    ]
+  },
+  "name": "PlatformResourceKey",
+  "namespace": "com.linkedin.pegasus2avro.platformresource",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "A unique id for this entity. Generated on the server side at entity creation time.\nFormat will be a guid."
+    }
+  ],
+  "doc": "Key for Platform Resource.\nThese entities are for miscelaneous data that is used in non-core parts of the system.\nFor instance, if we want to persist & retrieve data from auxiliary integrations such as Slack or Microsoft Teams."
+}
