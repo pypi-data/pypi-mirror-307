@@ -1,0 +1,33 @@
+[project]
+name = "pyroll-sander-spreading"
+description = "Plugin for PyRolL providing spreading claclulation using Sanders's equation."
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" }
+]
+
+license = "BSD-3-Clause"
+homepage = "https://pyroll-project.github.io/"
+repository = "https://github.com/pyroll-project/pyroll-sander-spreading"
+documentation = "https://github.com/pyroll-project/pyroll-sander-spreading/blob/main/docs/docs.pdf"
+packages = [
+    { include = "pyroll/sander_spreading" }
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+
+
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 3.0"
+]
+
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
