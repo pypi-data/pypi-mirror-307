@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "alist_proxy"
+version = "0.0.9.1"
+description = "Python alist proxy and monitor."
+authors = ["ChenyangGao <wosiwujm@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+homepage = "https://github.com/ChenyangGao/web-mount-packs/tree/main/python-alist-proxy"
+repository = "https://github.com/ChenyangGao/web-mount-packs/tree/main/python-alist-proxy"
+keywords = ["alist", "proxy", "monitor"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiosqlite = "*"
+blacksheep = "*"
+httpx = "*"
+orjson = "*"
+motor = "*"
+redis = "*"
+uvicorn = "*"
+yarl = "*"
+python-alist = ">=0.0.13"
+python-reverse-proxy = ">=0.0.5"
+python-cookietools = ">=0.0.2"
+python-dateutil = "*"
+
+[tool.poetry.scripts]
+alist-proxy = "alist_proxy.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "alist_proxy"
