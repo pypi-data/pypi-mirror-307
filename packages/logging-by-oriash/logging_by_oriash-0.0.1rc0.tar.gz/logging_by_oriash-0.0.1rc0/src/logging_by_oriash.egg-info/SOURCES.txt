@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/logging_by_oriash.egg-info/PKG-INFO
+src/logging_by_oriash.egg-info/SOURCES.txt
+src/logging_by_oriash.egg-info/dependency_links.txt
+src/logging_by_oriash.egg-info/top_level.txt
+src/logging_utils/__init__.py
+tests/test_logging_utils.py
