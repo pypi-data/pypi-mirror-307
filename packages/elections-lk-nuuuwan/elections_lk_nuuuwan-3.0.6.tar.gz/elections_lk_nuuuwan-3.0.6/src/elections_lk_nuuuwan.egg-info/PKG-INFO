@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: elections_lk-nuuuwan
+Version: 3.0.6
+Summary: Python Library for Sri Lankan Elections Data.
+Home-page: https://github.com/nuuuwan/elections_lk
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+Project-URL: Bug Tracker, https://github.com/nuuuwan/elections_lk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: utils-nuuuwan
+Requires-Dist: gig-nuuuwan
