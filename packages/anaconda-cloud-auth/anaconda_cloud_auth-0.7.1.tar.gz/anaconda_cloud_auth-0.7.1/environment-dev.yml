@@ -1,0 +1,15 @@
+# Local dev conda dependencies
+channels:
+- defaults
+- conda-forge
+dependencies:
+- conda
+- conda-token
+- python=3.10
+- anaconda-anon-usage
+- tox=3
+- tox-conda
+- pip
+- pip:
+    - "-e ../anaconda-cli-base[dev]"
+    - "-e .[dev]"
