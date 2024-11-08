@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-cli-grid
+Version: 0.1.0
+Summary: Package to manage CLI as a grid
+Author-email: "Carlos G. Martín Pérez" <cagrmape@gmail.com>
+Project-URL: Homepage, https://github.com/Carlosmape/py-cli-grid
+Project-URL: Issues, https://github.com/Carlosmape/py-cli-grid/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# py-cli-grid
+
+This is a package to allow divide CLI in to several boxes and manage them to print in a grid including color and styling managers
+
+# Usage
+See examples folder to know how to use this package
