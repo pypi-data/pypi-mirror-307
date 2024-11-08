@@ -1,0 +1,8 @@
+requests==2.31.0
+urllib3==2.2.1
+langchain-core==0.3.10
+langchain==0.3.3
+opentelemetry-api==1.27.0
+opentelemetry-sdk==1.27.0
+opentelemetry-exporter-otlp==1.27.0
+traceloop-sdk==0.33.9
