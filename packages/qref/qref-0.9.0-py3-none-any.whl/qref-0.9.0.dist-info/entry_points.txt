@@ -1,0 +1,3 @@
+[console_scripts]
+qref-render=qref.experimental.rendering:render_entry_point
+
