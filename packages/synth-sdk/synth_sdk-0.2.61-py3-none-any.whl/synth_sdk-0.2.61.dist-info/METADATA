@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: synth-sdk
+Version: 0.2.61
+Author-email: Synth AI <josh@usesynth.ai>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: asyncio
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: keyring>=24.0.0
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: pydantic
+Requires-Dist: pypi
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests
+Requires-Dist: twine>=4.0.0
+Requires-Dist: zyk>=0.2.18
+Description-Content-Type: text/markdown
+
+# sdk
+Python sdk for Synth
+
+python -m build
+twine check dist/*
+twine upload dist/*
