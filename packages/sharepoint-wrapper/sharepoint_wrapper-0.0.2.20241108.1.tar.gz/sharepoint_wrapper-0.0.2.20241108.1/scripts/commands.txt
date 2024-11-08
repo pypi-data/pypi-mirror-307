@@ -1,0 +1,14 @@
+## Build
+
+```bash
+py -m pip install --upgrade build
+py -m build
+```
+
+## Upload
+
+```bash
+py -m pip install --upgrade twine
+py -m twine upload --repository testpypi dist/*
+py -m twine upload dist/*
+```
