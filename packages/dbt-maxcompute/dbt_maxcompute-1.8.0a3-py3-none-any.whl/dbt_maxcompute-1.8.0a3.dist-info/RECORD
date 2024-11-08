@@ -1,0 +1,17 @@
+dbt/adapters/maxcompute/__init__.py,sha256=h8Z_rJ6Bm3u9EJ7l54ulh5uwlT3ymF50zDvVOxSaQpg,433
+dbt/adapters/maxcompute/__version__.py,sha256=60y_vH-jZsf5xENyUw7iKdOPezyRGP3mN2qb0YpjAeU,25
+dbt/adapters/maxcompute/column.py,sha256=6Fum4OMdz4w0aTXYclc3_AqKJjEc1JhovtIZNr_rLHs,2124
+dbt/adapters/maxcompute/connections.py,sha256=MYIt-kSud3yrtQmv7iK_AWDZIYpYV6EUgDRzDGKOBlE,2939
+dbt/adapters/maxcompute/context.py,sha256=KgOU2EiF5xAxSVcWTSMSTJDjBM21HblxXhdFTNBvxD0,184
+dbt/adapters/maxcompute/impl.py,sha256=ghEHRAJjBmAPSRP3Qj6mTZulEJQKE1s36ohmj9fY_pI,12956
+dbt/adapters/maxcompute/relation.py,sha256=i_Yz1od3KCK8dx-OGonnk3wEWF4zP2H1qr6AVYEb6cQ,3063
+dbt/adapters/maxcompute/utils.py,sha256=3gVoommVYUO8J2lBHW0Fjc5P5pj1iKWn6vk7PuG6ldQ,1298
+dbt/adapters/maxcompute/wrapper.py,sha256=W2UDegrZuo6JfT5K98btFBhN7DR9S2fmkpr-eOXMr60,2835
+dbt/include/maxcompute/__init__.py,sha256=vBGWeG-dHHkimfnX8axBJ4IgAowFw8xADmo6Auzn2xc,52
+dbt/include/maxcompute/dbt_project.yml,sha256=Zy2C6E5NH79TU4RSbsprrGaIuQStdhN8KI0p8hoRj-w,79
+dbt/include/maxcompute/profile_template.yml,sha256=RiKzLQrzByTbKssmOVCi7uCu1aSrMyprKl1ab7Gp6dE,349
+dbt/include/maxcompute/macros/adapters.sql,sha256=cAoLQsLnS8f_1pCgHkHLCi_QYfI2LMpOYJJfY8uLR08,3718
+dbt_maxcompute-1.8.0a3.dist-info/METADATA,sha256=pNsx8WM8qlrZWlqFbMQnJX036D4eCh9C2a9J3eiJL9k,6162
+dbt_maxcompute-1.8.0a3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dbt_maxcompute-1.8.0a3.dist-info/top_level.txt,sha256=B2YH4he17ajilEWOGCKHbRcEJlCuZKwCcgFcLPntLsE,4
+dbt_maxcompute-1.8.0a3.dist-info/RECORD,,
