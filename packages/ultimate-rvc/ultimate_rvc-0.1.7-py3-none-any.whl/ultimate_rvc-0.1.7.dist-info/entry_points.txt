@@ -1,0 +1,2 @@
+[console_scripts]
+urvc = cli.main:app
