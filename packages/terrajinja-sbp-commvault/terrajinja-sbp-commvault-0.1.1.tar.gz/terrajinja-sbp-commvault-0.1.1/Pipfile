@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+cdktf = "*"
+terrajinja-imports-commvault = "*"
+
+[dev-packages]
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
+flake8 = "*"
+mypy = "*"
+lxml = "*"
+
+[requires]
+python_version = "3.11"
