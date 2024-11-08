@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: statseis
+Version: 0.0.1
+Summary: Package to statistically analyse seismicity
+Project-URL: Homepage, https://github.com/RussellAzadKhan/seispy
+Author-email: Russell Azad Khan <russellazadkhan@gmail.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+This module is a work in progress.
+This module contains functions to statistically analyse seismicity (source parameters e.g. time, location, and magnitude).
+Package for importing, processing, and standardising earthquake source parameter data;
+selecting mainshocks using the FET, MDET, and DDET methods;
+identifying foreshocks using the BP, G-IET, and ESR methods.
+Many functions require the renaming of earthquake catalog dataframe columns to: ID, MAGNITUDE, DATETIME, LON, LAT, DEPTH.
