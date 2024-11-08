@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ewoksdask
+Version: 0.2.0
+Summary: Dask binding for Ewoks
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoksdask/
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoks/ewoksdask/
+Project-URL: Documentation, https://ewoksdask.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoksdask/issues/
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ewokscore>=0.14.0
+Requires-Dist: dask[distributed]>=2021.3.0
+Requires-Dist: dask-jobqueue>=0.7.3
+Requires-Dist: pyyaml!=6.0.2rc1; python_version < "3.8"
+Provides-Extra: dashboard
+Requires-Dist: dask[diagnostics]>=2021.3.0; extra == "dashboard"
+Provides-Extra: test
+Requires-Dist: pytest>=7; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: black>=22; extra == "dev"
+Requires-Dist: flake8>=4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: pytest>=7; extra == "doc"
+Requires-Dist: sphinx>=4.5; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints>=1.16; extra == "doc"
+Requires-Dist: pydata-sphinx-theme<0.15; extra == "doc"
+
+# ewoksdask
+
+*ewoksdask* provides distributed task scheduling for [ewoks](https://ewoks.readthedocs.io/) workflows.
+
+## Install
+
+```bash
+pip install ewoksdask[test]
+```
+
+## Test
+
+```bash
+pytest --pyargs ewoksdask.tests
+```
+
+## Documentation
+
+https://ewoksdask.readthedocs.io/
+
