@@ -1,0 +1,70 @@
+name: Test
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  repository_dispatch:
+    types: [run-tests]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to test (e.g., v0.1.1, or 'latest' for the latest release)"
+        required: false
+        type: string
+      api_test_env:
+        description: "API test environment"
+        required: false
+        type: choice
+        options:
+          - production
+          - staging
+        default: "production"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print concurrency group
+        run: echo "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+      - name: Set up Python
+        run: uv python install
+      - name: Checkout specific version or latest release
+        if: github.event.inputs.version != '' || github.event.client_payload.sdk_version != ''
+        run: |
+          VERSION=${{ github.event.inputs.version || github.event.client_payload.sdk_version }}
+          if [ "$VERSION" = "latest" ]; then
+            VERSION=$(git describe --tags `git rev-list --tags --max-count=1`)
+          fi
+          git checkout $VERSION
+          echo "Running tests for version: $VERSION"
+      - name: Run tests
+        env:
+          PROD_INTEGRATION_TESTING_API_KEY: ${{ secrets.PROD_INTEGRATION_TESTING_API_KEY }}
+          PROD_FREE_INTEGRATION_TESTING_API_KEY: ${{ secrets.PROD_FREE_INTEGRATION_TESTING_API_KEY }}
+          STAGING_INTEGRATION_TESTING_API_KEY: ${{ secrets.STAGING_INTEGRATION_TESTING_API_KEY }}
+          STAGING_FREE_INTEGRATION_TESTING_API_KEY: ${{ secrets.STAGING_FREE_INTEGRATION_TESTING_API_KEY }}
+          API_TEST_ENV: ${{ github.event.inputs.api_test_env || github.event.client_payload.environment || vars.API_TEST_ENV }}
+        run: |
+          VERSION=${{ github.event.inputs.version || github.event.client_payload.sdk_version }}
+          echo "Running tests against API environment: $API_TEST_ENV"
+          if [ -z "$VERSION" ]; then
+            echo "Running tests on $(git rev-parse --abbrev-ref HEAD) branch"
+          fi
+          uv run pytest
