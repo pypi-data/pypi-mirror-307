@@ -1,0 +1,3 @@
+[console_scripts]
+finic=finic_py.cli:main
+
