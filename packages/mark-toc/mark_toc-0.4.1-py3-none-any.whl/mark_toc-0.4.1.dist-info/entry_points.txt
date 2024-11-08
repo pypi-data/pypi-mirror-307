@@ -1,0 +1,2 @@
+[console_scripts]
+mark-toc = mark_toc.__main__:main
