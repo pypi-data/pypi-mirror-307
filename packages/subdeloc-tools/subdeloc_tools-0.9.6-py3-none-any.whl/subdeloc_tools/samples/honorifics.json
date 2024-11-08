@@ -1,0 +1,160 @@
+{
+	"honorifics": {
+		"san": {
+			"kanjis": ["さん"],
+			"alternatives": ["Mr.", "Ms.", "Miss", "Mister"]
+		},
+		"sama": {
+			"kanjis": ["さま", "様"],
+			"alternatives": ["Lady", "Lord", "Sir", "Ma'am", "Prince", "Princess", "Great"]
+		},
+		"kun": {
+			"kanjis": ["くん", "君"],
+			"alternatives": []
+		},
+		"chan": {
+			"kanjis": ["ちゃん"],
+			"alternatives": []
+		},
+		"tan": {
+			"kanjis": ["たん"],
+			"alternatives": []
+		},
+		"senpai": {
+			"kanjis": ["先輩", "せんぱい"],
+			"alternatives": []
+		},
+		"sensei": {
+			"kanjis": ["先生", "せんせい"],
+			"alternatives": ["Teacher", "Master", "Doctor", "Professor", "Mr.", "Ms.", "Miss", "Mister"]
+		},
+		"dono": {
+			"kanjis": ["殿"],
+			"alternatives": ["Sir", "Ma'am", "Mistress"]
+		},
+		"nee": {
+			"kanjis": ["姉"],
+			"alternatives": ["Big sis", "Sis", "Sister"]
+		},
+	    "onee": {
+	    	"kanjis": ["お姉"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "neechan": {
+	    	"kanjis": ["姉ちゃん"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "oneechan": {
+	    	"kanjis": ["お姉ちゃん"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "neesan": {
+	    	"kanjis": ["姉さん"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "oneesan": {
+	    	"kanjis": ["お姉さん"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "neesama": {
+	    	"kanjis": ["姉さま", "姉様"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "oneesama": {
+	    	"kanjis": ["お姉さま", "お姉様"],
+	    	"alternatives": ["Big sis", "Sis", "Sister"]
+	    },
+	    "nii": {
+	    	"kanjis": ["兄"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "onii": {
+	    	"kanjis": ["お兄"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "niichan": {
+	    	"kanjis": ["兄ちゃん"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "oniichan": {
+	    	"kanjis": ["お兄ちゃん"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "niisan": {
+	    	"kanjis": ["兄さん"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "oniisan": {
+	    	"kanjis": ["お兄さん"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "niisama": {
+	    	"kanjis": ["兄さま", "兄様"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "oniisama": {
+	    	"kanjis": ["お兄さま", "お兄様"],
+	    	"alternatives": ["Big bro", "Bro", "Brother"]
+	    },
+	    "otosan": {
+	    	"kanjis": ["お父さん"],
+	    	"alternatives": []
+	    },
+	    "jiichan": {
+	    	"kanjis": ["祖父ちゃん"],
+	    	"alternatives": ["Grandfather", "Grandpa"]
+	    },
+	    "jiisan": {
+	    	"kanjis": ["祖父さん"],
+	    	"alternatives": ["Grandfather", "Grandpa"]
+	    },
+	    "ojisan": {
+	    	"kanjis": ["叔父さん","小父さん","伯父さん"],
+	    	"alternatives": ["Uncle"]
+	    },
+	    "ojichan": {
+	    	"kanjis": ["叔父ちゃん","小父ちゃん","伯父ちゃん"],
+	    	"alternatives": ["Uncle"]
+	    },
+	    "ojiisan": {
+	    	"kanjis": ["お祖父さん","御爺さん","お爺さん","御祖父さん"],
+	    	"alternatives": ["Grandfather", "Grandpa"]
+	    },
+	    "ojiichan": {
+	    	"kanjis": ["お祖父ちゃん","御爺ちゃん","お爺ちゃん","御祖父ちゃん"],
+	    	"alternatives": ["Grandfather", "Grandpa"]
+	    },
+	    "okaasan": {
+	    	"kanjis": ["お母さん"],
+	    	"alternatives": []
+	    },
+	    "obasan": {
+	    	"kanjis": ["伯母さん","小母さん","叔母さん"],
+	    	"alternatives": ["Aunt"]
+	    },
+	    "obaasan": {
+	    	"kanjis": ["お祖母さん","御祖母さん","御婆さん","お婆さん"],
+	    	"alternatives": ["Grandmother", "Grandma"]
+	    },
+	    "okaachan": {
+	    	"kanjis": ["お母ちゃん"],
+	    	"alternatives": []
+	    },
+	    "obachan": {
+	    	"kanjis": ["伯母ちゃん","小母ちゃん","叔母ちゃん"],
+	    	"alternatives": ["Aunt"]
+	    },
+	    "obaachan": {
+	    	"kanjis": ["お祖母ちゃん","御祖母ちゃん","御婆ちゃん","お婆ちゃん"],
+	    	"alternatives": ["Grandmother", "Grandma"]
+	    },
+	    "baachan": {
+	    	"kanjis": ["祖母ちゃん"],
+	    	"alternatives": ["Grandmother", "Grandma"]
+	    },
+	    "baasan": {
+	    	"kanjis": ["祖母さん"],
+	    	"alternatives": ["Grandmother", "Grandma"]
+	    }
+	}
+}
