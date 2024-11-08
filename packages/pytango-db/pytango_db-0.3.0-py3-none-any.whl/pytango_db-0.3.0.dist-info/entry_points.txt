@@ -1,0 +1,2 @@
+[console_scripts]
+PyDatabaseds = databaseds.database:main

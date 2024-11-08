@@ -1,0 +1,17 @@
+databaseds/DataBase.xmi,sha256=jDLw0S0V4C08k7EGHxVpJVb5deqr1cUw4Ibgb2sa36A,56819
+databaseds/DataBaseds,sha256=uShSeZd6JZiY5q4GtP0maHxaxIthqHRGeSsVKgJSOxY,88
+databaseds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databaseds/_version.py,sha256=Jk2iAU7m-7Vx9XV1TtdD9ZoJraIncDq_4_Wd-qtUotg,411
+databaseds/database.py,sha256=RYxsnJ1u_rT0zi-pLUHd5caJ2Au41zBIszY3s9vZ5YY,87742
+databaseds/db_errors.py,sha256=lEYIriCStder_p5sG9Rd_nwbtIuh4W2kQ8MNxHzyVU8,370
+databaseds/mysql2sqlite.sh,sha256=L5I-IZAdeE-jwqYlKDBp_d7IOsFXZ5zL1BugKyoil2A,3074
+databaseds/db_access/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databaseds/db_access/create_db.sql,sha256=nCkDlYpMGXG8hAgsJdjDvW4OTXCY69ss5kPYFEw-P5w,9003
+databaseds/db_access/create_db_tables.sql,sha256=4l6BxeKxfQw1K-f0sKMdmLO2m-krIkkYmja_y5R8rvM,7371
+databaseds/db_access/sqlite3.py,sha256=pbbk0YE-ShUQlwdyE850I5qhLEnb4f6FwvQm6RNVmK4,74625
+pytango_db-0.3.0.dist-info/LICENSE.txt,sha256=Sw0VCkPC97ltnH-E0AKMcOOpc6aip1qJzLlBPrDrn_o,8241
+pytango_db-0.3.0.dist-info/METADATA,sha256=ZF2G5OtTUfaKtR2ZSfCwkJW0gvrErQ-lHPMN6AUMtrI,15774
+pytango_db-0.3.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+pytango_db-0.3.0.dist-info/entry_points.txt,sha256=LWQxh2y4CVAzMaoEjbyAf032Qq7g6Kz5wpe13YUxBuM,58
+pytango_db-0.3.0.dist-info/top_level.txt,sha256=qE5bYdrWnlu7GMm6SMdgKgL7ZdwrgXrwNhT83FIDUM8,11
+pytango_db-0.3.0.dist-info/RECORD,,
