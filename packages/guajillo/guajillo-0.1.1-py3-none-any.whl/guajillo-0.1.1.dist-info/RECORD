@@ -1,0 +1,14 @@
+guajillo-0.1.1.dist-info/METADATA,sha256=dvZg7qsiQcMTq9bKWi-vEumpUxd5XbE8_JpcrTxML5A,626
+guajillo-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+guajillo-0.1.1.dist-info/entry_points.txt,sha256=sar9dzr8GEcOCLCwB7_juw8Mmxa1xW1Fi2MXIkd5kn8,64
+guajillo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guajillo/app.py,sha256=pTgOyWfvRlLDJaJD7L6xadWTrtehiKrnd_euAhUAHMo,4270
+guajillo/exceptions.py,sha256=JImV0WKroWUqykHRx5AWquX5_0m_1o5fIYVvum1A6io,182
+guajillo/main.py,sha256=Mt-7cXpncZfKyRSOcj77J_W7m00q31M7ZYWkVvNH0bQ,233
+guajillo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guajillo/utils/cli.py,sha256=Yl6b45DOvkyBabmM2wvXEtojK9njndKH71PH335kDnw,4428
+guajillo/utils/conn.py,sha256=SkRN6ZrspWzIfTUKjYgAopxWsfuMlMxI-my-9toHNAQ,8854
+guajillo/utils/console.py,sha256=2pxTiww2536-LG1-BkSYpgSftE-_bGk0x4lkT3DI6-M,92
+guajillo/utils/outputs.py,sha256=ZmQZUPvsH0RaF7wu725v2RHVJjfZU8B092eu9YKCIFc,2072
+guajillo/version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guajillo-0.1.1.dist-info/RECORD,,
