@@ -1,0 +1,53 @@
+## How to install
+
+{% if package.data.IS_VSCODE_SUPPORTED -%}
+### VSCode extension
+
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Auto-discover services` and select services you use in the current project.
+{%- endif %}
+
+### From PyPI with pip
+
+Install `{{ package.data.PYPI_NAME }}` to add type annotations for `{{ package.library_name }}` package.
+
+```bash
+# install type annotations
+python -m pip install {{ package.data.PYPI_NAME }}
+
+# or install annotations in sync with {{ package.library_name }} version
+python -m pip install '{{ package.data.PYPI_NAME }}[{{ package.library_name }}]'
+```
+
+{% if package.data.IS_CONDA_FORGE_SUPPORTED -%}
+### From conda-forge
+
+Add `conda-forge` to your channels with:
+
+```bash
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+Once the `conda-forge` channel has been enabled, `{{ package.data.PYPI_NAME }}`
+can be installed with:
+
+```bash
+conda install {{ package.data.PYPI_NAME }}
+```
+
+It is possible to list all of the versions of `{{ package.data.PYPI_NAME }}` available on your platform with:
+
+```bash
+conda search {{ package.data.PYPI_NAME }} --channel conda-forge
+```
+{%- endif %}
+
+## How to uninstall
+
+```bash
+# uninstall {{ package.data.PYPI_NAME }}
+python -m pip uninstall -y {{ package.data.PYPI_NAME }}
+```
