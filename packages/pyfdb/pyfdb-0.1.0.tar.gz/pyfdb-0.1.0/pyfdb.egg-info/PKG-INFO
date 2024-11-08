@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyfdb
+Version: 0.1.0
+Summary: Python interface to FDB
+Author-email: "European Centre for Medium-Range Weather Forecasts (ECMWF)" <software.support@ecmwf.int>
+Project-URL: Documentation, https://github.com/ecmwf/pyfdb
+Project-URL: Homepage, https://github.com/ecmwf/pyfdb
+Project-URL: Issues, https://github.com/ecmwf/pyfdb/issues
+Project-URL: Repository, https://github.com/ecmwf/pyfdb
+Keywords: python,fdb,tools
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+Requires-Dist: cffi
+Requires-Dist: findlibs
+Requires-Dist: isort
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: tox>=4.19
+Requires-Dist: eccodes
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-flakes; extra == "test"

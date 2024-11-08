@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+pyfdb.egg-info/PKG-INFO
+pyfdb.egg-info/SOURCES.txt
+pyfdb.egg-info/dependency_links.txt
+pyfdb.egg-info/requires.txt
+pyfdb.egg-info/top_level.txt
+src/pyfdb/__init__.py
+src/pyfdb/processed_fdb.h
+src/pyfdb/pyfdb.py
+src/pyfdb/version.py
+tests/test_passing_config_directly.py
+tests/test_pyfdb.py

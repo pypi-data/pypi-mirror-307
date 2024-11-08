@@ -1,0 +1,12 @@
+cffi
+findlibs
+isort
+black
+flake8
+tox>=4.19
+eccodes
+
+[test]
+pytest
+pytest-cov
+pytest-flakes
