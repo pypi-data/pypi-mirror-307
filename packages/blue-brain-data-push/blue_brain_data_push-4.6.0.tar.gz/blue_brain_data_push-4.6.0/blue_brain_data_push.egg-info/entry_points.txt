@@ -1,0 +1,2 @@
+[console_scripts]
+bba-data-push = bba_data_push.bba_dataset_push:start
