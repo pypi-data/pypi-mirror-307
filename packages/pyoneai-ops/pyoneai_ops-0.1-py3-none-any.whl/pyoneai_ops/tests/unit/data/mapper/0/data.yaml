@@ -1,0 +1,13 @@
+---
+title: Basic test for scheduling
+description: >2
+  Basic test for scheduling with the objective to minimize the disbalance of
+  CPU usage.
+args: []
+kwargs:
+  mode: scheduling
+  period: 15s
+  criteria: cpu_usage_balance
+  preemptive: false
+solutions:
+  - {5: 1, 7: 0, 8: 1}

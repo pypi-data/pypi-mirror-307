@@ -1,0 +1,13 @@
+---
+title: Basic test for rescheduling
+description: >2
+  Basic test for rescheduling with the objective to minimize the disbalance of
+  CPU ratio.
+args: []
+kwargs:
+  mode: rescheduling
+  period: 15s
+  criteria: cpu_ratio_balance
+  preemptive: false
+solutions:
+  -  {0: 0, 1: 1, 2: 0, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 0}
