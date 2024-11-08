@@ -1,0 +1,17 @@
+solidipes_solid_mech_plugin/__init__.py,sha256=lvSWoubFICdSsSwyCUKtCnwkKt5O4WrGm9Md64raIIc,82
+solidipes_solid_mech_plugin/config.py,sha256=Fh7htuCTs7Bq66oSifAFEJ34OiD22--YDFL1eXK3es0,149
+solidipes_solid_mech_plugin/loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solidipes_solid_mech_plugin/loaders/abaqus.py,sha256=hH9zewBh_-UPnnD8jIQ-3xHq4sH9gLyP15FtLst3_OE,5613
+solidipes_solid_mech_plugin/loaders/geof_mesh.py,sha256=YkMyCgmB-EYQHGFQO30CnFemyVHwP2u-CXAk_nnEip0,358
+solidipes_solid_mech_plugin/loaders/meshio.py,sha256=N4GGWxd24r8kqJg5XOTjqsGdnkAEOObDTH6NmARv4x8,394
+solidipes_solid_mech_plugin/loaders/parse_inp.py,sha256=CBl3GMSgArFJ1hdUcHUA2mkIrFsC45n637ILm6qTl3k,6711
+solidipes_solid_mech_plugin/loaders/pyvista_mesh.py,sha256=9DmnKLa0G5DsIDoOOAS-E6hFsbSpi7pdJDr3_UtbiRU,5141
+solidipes_solid_mech_plugin/loaders/xdmf.py,sha256=BFAdu9pG8W_wSkw4-bCdzCIRmUGe-dKjdH5Q1QGK9Do,5099
+solidipes_solid_mech_plugin/viewers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solidipes_solid_mech_plugin/viewers/pyvista_plotter.py,sha256=sa6CNZNdN4K9AwzUZJ0b6_wg3YBkOlDP87RzLZjbQ-E,5325
+solidipes_solid_mech_plugin/viewers/xdmf.py,sha256=baUnWxtb3zCD-5EpkqQ8A01mmbLQjYo_b1JB32oZ3Do,774
+solidipes_solid_mech_plugin-0.0.4.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+solidipes_solid_mech_plugin-0.0.4.dist-info/METADATA,sha256=zHU0kXSOQ4w9sFaA32aAJXnCpG28avGluI04fswezJ8,1904
+solidipes_solid_mech_plugin-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+solidipes_solid_mech_plugin-0.0.4.dist-info/entry_points.txt,sha256=Z19HgUImOeu1e_WWYvIcASrjY08EmAUyZsYL0U4JxxE,60
+solidipes_solid_mech_plugin-0.0.4.dist-info/RECORD,,
