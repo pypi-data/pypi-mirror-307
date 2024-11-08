@@ -1,0 +1,7 @@
+[console_scripts]
+golgi-annotate = golgi.annotation:main
+golgi-track = golgi.inference:main
+golgi-train = golgi.training:main
+golgi-weights-download = golgi.inference:download_weights
+golgi-weights-list = golgi.inference:list_weights
+
