@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+Wolaita_POST/__init__.py
+Wolaita_POST/wolaita_pos_tagger.py
+Wolaita_POST.egg-info/PKG-INFO
+Wolaita_POST.egg-info/SOURCES.txt
+Wolaita_POST.egg-info/dependency_links.txt
+Wolaita_POST.egg-info/entry_points.txt
+Wolaita_POST.egg-info/requires.txt
+Wolaita_POST.egg-info/top_level.txt
+tests/test_pos_tagger.py
