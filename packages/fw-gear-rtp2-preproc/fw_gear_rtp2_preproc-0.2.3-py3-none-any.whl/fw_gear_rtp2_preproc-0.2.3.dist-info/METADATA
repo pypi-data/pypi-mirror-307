@@ -1,0 +1,702 @@
+Metadata-Version: 2.1
+Name: fw-gear-rtp2-preproc
+Version: 0.2.3
+Summary: RTP2 Pre-processing Diffusion MRI
+Home-page: https://gitlab.com/flywheel-io/scientific-solutions/gears/rtp2-preproc
+License: MIT
+Keywords: Flywheel,Gears
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: backoff (>=2.1.2,<3.0.0)
+Requires-Dist: flywheel-gear-toolkit (>=0.6,<0.7)
+Requires-Dist: flywheel-sdk (>=16.10.12,<17.0.0)
+Requires-Dist: nibabel (>=5.2.1,<6.0.0)
+Requires-Dist: packaging (>=21.3,<22.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Project-URL: Repository, https://gitlab.com/flywheel-io/scientific-solutions/gears/rtp2-preproc
+Description-Content-Type: text/markdown
+
+# RTP2-preproc (Preprocessing of dMRI data, part of RTP2 suite)
+
+## Overview
+
+*[Usage](#usage)*
+
+*[FAQ](#faq)*
+
+### Summary
+
+
+
+
+*Preprocesses the diffusion weighted data and coregisters with the anatomy files coming from Freesurferator and prepares data for RTP2-Pipeline gear*
+
+### Cite
+
+*Lerma-Usabiaga, G., Liu, M., Paz-Alonso, P. M. & Wandell, B. A. Reproducible Tract Profiles 2 (RTP2) suite, from diffusion MRI acquisition to clinical practice and research. Sci. Rep. 13, 1\u201313 (2023)*
+*License:* *Other*
+
+### Classification
+
+*Category:* *analysis*
+
+*Gear Level:*
+
+- [ ] Project
+- [ ] Subject
+- [ ] Session
+- [ ] Acquisition
+- [x] Analysis
+
+----
+
+[[_TOC_]]
+
+----
+
+### Inputs
+
+- *DIFF*
+  - __Name__: *DIFF*
+  - __Type__: *file*
+  - __Optional__: *false*
+  - __Classification__: **
+  - __Description__: *Diffusion NIfTI image*
+  - __Notes__: **
+
+- *BVAL*
+  - __Name__: *BVAL*
+  - __Type__: *file*
+  - __Optional__: *false*
+  - __Classification__: *file*
+  - __Description__: *BVAL file*
+  - __Notes__: **
+  
+- *BVEC*
+  - __Name__: *BVEC*
+  - __Type__: *file*
+  - __Optional__: *false*
+  - __Classification__: *file*
+  - __Description__: *BVEC file*
+  - __Notes__: **  
+
+- *ANAT*
+  - __Name__: *ANAT*
+  - __Type__: *file*
+  - __Optional__: *false*
+  - __Classification__: **
+  - __Description__: *Freesurferator anatomical T1w NIfTI image*
+  - __Notes__: **
+
+- *FSMASK*
+  - __Name__: *FSMASK*
+  - __Type__: *zip*
+  - __Optional__: *false*
+  - __Classification__: *file*
+  - __Description__: *Freesurferator brain mask*
+  - __Notes__: **
+
+- *RDIF*
+  - __Name__: *RDIF*
+  - __Type__: *file*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Optional reverse phase encoded (rpe) diffusion NIfTI image*
+  - __Notes__: **
+
+- *RBVL*
+  - __Name__: *RBVL*
+  - __Type__: *zip*
+  - __Optional__: *true*
+  - __Classification__: *file*
+  - __Description__: *Optional reverse phase encoded (rpe) BVAL file*
+  - __Notes__: **
+
+- *RBVC*
+  - __Name__: *RBVC*
+  - __Type__: *file*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Optional reverse phase encoded (rpe) BVEC file*
+  - __Notes__: **
+  
+- *QMAP*
+  - __Name__: *QMAP*
+  - __Type__: *file*
+  - __Optional__: *true*
+  - __Classification__: **
+  - __Description__: *Quantitative map to be registered to the anatomical image.
+      This map can be used to obtain tract and ROI metrics in RTP2-pipeline. 
+      Even though this option was created for qMRI maps, it really can be used 
+      with any scalar map with a value per voxel.*
+  - __Notes__: **
+
+### Config
+
+- *denoise*
+  - __Name__: *denoise*
+  - __Type__: *boolean*
+  - __Description__: *Denoise data using PCA [default=false]*
+  - __Default__: *false*
+  
+- *degibbs*
+  - __Name__: *degibbs*
+  - __Type__: *boolean*
+  - __Description__: *Perform Gibbs ringing correction [default=false]*
+  - __Default__: *false*  
+  
+- *eddy*
+  - __Name__: *eddy*
+  - __Type__: *boolean*
+  - __Description__: *Perform eddy current correction. If inverted phase encoding
+        direction files are found, eddy will be done as part of topup [default=true]*
+  - __Default__: *true*  
+
+- *pe_dir*
+  - __Name__: *pe_dir*
+  - __Type__: *string*
+  - __Description__: *Phase Encoding Direction, optional field only necessary 
+        if eddy = true. This field will be automatically obtained from the json sidecar of the file. In old datasets, if the json file is not 
+        found, it will try to read it from here. By default the field is empty. The only acceptable values are AP, PA, LR, RL, IS, SI. If the 
+        values are not in the json sidecar file or any of these six values are not set in this field, the container will stop. [default=""]*
+  - __Default__: *""*  
+
+- *bias*
+  - __Name__: *bias*
+  - __Type__: *boolean*
+  - __Description__: *Compute bias correction with ANTs on dwi data [default=false]*
+  - __Default__: *false*  
+
+- *ricn*
+  - __Name__: *ricn*
+  - __Type__: *boolean*
+  - __Description__: *Perform Rician background noise removal [default=false]*
+  - __Default__: *false*  
+
+
+- *norm*
+  - __Name__: *norm*
+  - __Type__: *boolean*
+  - __Description__: *Perform intensity normalization of dwi data [default=false]*
+  - __Default__: *false*  
+
+
+- *nval*
+  - __Name__: *nval*
+  - __Type__: *number*
+  - __Description__: *Normalize the intensity of the FA white matter mask to this number [default=1000]*
+  - __Default__: *1000*  
+
+
+- *anatalign*
+  - __Name__: *anatalign*
+  - __Type__: *boolean*
+  - __Description__: *Align dwi data with anatomy [default=true]*
+  - __Default__: *true*  
+
+
+- *doreslice*
+  - __Name__: *doreslice*
+  - __Type__: *boolean*
+  - __Description__: *Do reslicing [default=false]*
+  - __Default__: *false*  
+
+- *reslice*
+  - __Name__: *reslice*
+  - __Type__: *number*
+  - __Description__: *Optional. By default reslicing is not done. If you want it done, set doreslice=true and set a number (e.g., 1) here to reslice the dwi data to this isotropic voxel size (in mm)  [default=1]*
+  - __Default__: *1*  
+
+- *save_extra_output*
+  - __Name__: *save_extra_output*
+  - __Type__: *boolean*
+  - __Description__: *Save all the intermediate files (both .mif and .nii.gz), for QC and debugging. The results from eddyqc are always saved on the output.  [default=false]*
+  - __Default__: *false*  
+
+
+- *bias_method*
+  - __Name__: *bias_method*
+  - __Type__: *string*
+  - __Description__: *ants or fsl option for dwibiascorrect: performs B1 field inhomogeneity correction for a DWI volume series  [default=ants]*
+  - __Default__: *ants*  
+  
+
+- *antsb*
+  - __Name__: *antsb*
+  - __Type__: *string*
+  - __Description__: *b params for ANTs (when called from dwibiascorrect ants, 
+      it goes to N4BiasFieldCorrection option -b). It is a comma-separated pair 
+      of values enclosed by square brackets. The first parameter corresponds 
+      to initial mesh resolution in mm, the second one
+      corresponds to spline order. . [initial mesh resolution in mm, spline order]
+      This value is optimised for human adult data and needs to be adjusted for 
+      rodent data. --bspline-fitting [splineDistance,<splineOrder=3>] 
+      [initialMeshResolution,<splineOrder=3>] These options describe the b-spline 
+      fitting parameters. The initial b-spline mesh at the coarsest resolution is 
+      specified either as the number of elements in each dimension, e.g. 2x2x3 for 
+      3-D images, or it can be specified as a single scalar parameter which 
+      describes the isotropic sizing of the mesh elements. The latter option is 
+      typically preferred. For each subsequent level, the spline distance decreases 
+      in half, or equivalently, the number of mesh elements doubles Cubic splines 
+      (order = 3) are typically used.  [default=[150,3]]*
+  - __Default__: *[150,3]*  
+  
+
+- *antsc*
+  - __Name__: *antsc*
+  - __Type__: *string*
+  - __Description__: *c params for ANTs (when called from dwibiascorrect ants, it 
+      goes to N4BiasFieldCorrection option -c). It is a comma-separated pair of 
+      values enclosed by square brackets. The first parameter corresponds to 
+      numberOfIterations, the second one to convergenceThreshold. --convergence 
+      [<numberOfIterations=50x50x50x50>,<convergenceThreshold=0.0>] Convergence 
+      is determined by calculating the coefficient of variation between subsequent 
+      iterations. When this value is less than the specified threshold from the 
+      previous iteration or the maximum number of iterations is exceeded the program 
+      terminates. Multiple resolutions can be specified by using 'x' between the number 
+      of iterations at each resolution, e.g. 100x50x50. [default=[200x200,1e-6]]*
+  - __Default__: *[200x200,1e-6]*  
+
+
+- *antss*
+  - __Name__: *antss*
+  - __Type__: *string*
+  - __Description__: *param s for ANTs: when called from dwibiascorrect ants,
+    N4BiasFieldCorrection option -s [shrink-factor] applied to spatial dimensions; it
+    lessens computation time by resampling the input image. The shrink factor, specified
+    as a single integer, describes this resampling. Shrink factors <= 4 are commonly used
+    [default=2]
+*
+  - __Default__: *2*  
+
+
+- *eddy_data_is_shelled*
+  - __Name__: *eddy_data_is_shelled*
+  - __Type__: *boolean*
+  - __Description__: *At the moment eddy works for single- or multi-shell diffusion
+    data, i.e. it doesn't work for DSI data. In order to ensure that the data is shelled,
+    eddy checks it and only proceeds if that's the case. The checking is performed through
+    a set of heuristics such as i) how many shells are there? ii) what are the absolute
+    numbers of directions for each shell? iii) what are the relative numbers of directions
+    for each shell? etc. However, some popular schemes (e.g., if you acquire a mini shell
+    with low b-value and few directions) get caught in this test, even though eddy works
+    perfectly well on the data. eddy_data_is_shelled, if set, will bypass any checking and
+    eddy will proceed as if data was shelled. Please be aware that if you have to use this
+    flag you may be in untested territory and that it is a good idea to check your data
+    extra carefully after having run eddy on it [default=true]*
+  - __Default__: *true*  
+
+- *eddy_slm*
+  - __Name__: *eddy_slm*
+  - __Type__: *string*
+  - __Description__: *Second level model that specifies the mathematical form for how
+    the diffusion gradients cause eddy currents. For high quality data with 60 directions,
+    or more, sampled on the whole sphere we have not found any advantage of performing
+    second level modeling. Hence, our recommendation for such data is to use none. If the
+    data has few directions and/or has not been sampled on the whole sphere it is better to
+    use linear [default=linear]*
+  - __Default__: *linear*  
+
+- *eddy_niter*
+  - __Name__: *eddy_niter*
+  - __Description__: *eddy does not check for convergence. Instead, it runs a fixed
+    number of iterations given by this parameter. If, on visual inspection, one finds
+    residual movement or EC-induced distortions it is possible that eddy has not fully
+    converged. In that case you can increase the number of iterations [default=5]*
+  - __Type__: *number*
+  - __Default__: *5*  
+
+
+- *eddy_repol*
+  - __Name__: *eddy_repol*
+  - __Type__: *boolean*
+  - __Description__: *When set this flag instructs eddy to remove any slices 
+      deemed as outliers and replace them with predictions made by the Gaussian 
+      Process. Exactly what constitutes an outlier is affected by the parameters 
+      --ol_nstd, --ol_nvox, --ol_type, --ol_pos and --ol_sqr. If the defaults are 
+      used for all those parameters an outlier is defined as a slice whose average 
+      intensity is at least four standard deviations lower than the expected 
+      intensity, where the expectation is given by the Gaussian Process prediction. 
+      The default is to not do outlier replacement since we don't want to risk people 
+      using it unawares. However, our experience and tests indicate that it is 
+      always a good idea to use --repol.*
+  - __Default__: *true*  
+
+
+- *topup_lambda*
+  - __Name__: *topup_lambda*
+  - __Type__: *string*
+  - __Description__: *parameter lambda in topup. It sets the relative weight between
+    sum-of-squared differences and regularization for each level [default=0.005,0.001,
+    0.0001,0.000015,0.000005,0.0000005,0.00000005,0.0000000005,0.00000000001]*
+  - __Default__: *0.005,0.001,0.0001,0.000015,0.000005,0.0000005,0.00000005,0.0000000005,0.00000000001*  
+
+
+### Outputs
+
+The [Files](#files) section describes the default files output by the gear.
+
+
+If the `save_extra_output` config option is set to True, all intermediate 
+processed files in `.mif` format, as well as all the files from running eddy 
+(files starting with `eddy_`) will be included in the output. Please refer to 
+the user manuals for `eddy` and `MRtrix` to learn about the different files. ANTs registration files are always saved by default on purpose because they can use 
+for other gears.
+
+
+#### Files
+
+
+- *ants0GenericAffine.mat*
+  - __Name__: *ants0GenericAffine.mat*
+  - __Type__: *Matlab mat file*
+  - __Optional__: *false*
+  - __Classification__: *Matlab mat file*
+  - __Description__: *ANTs registration file, can be used in downstream gears*
+  
+- *ants0GenericAffine.txt*
+  - __Name__: *ants0GenericAffine.txt*
+  - __Type__: *text*
+  - __Optional__: *false*
+  - __Classification__: *text*
+  - __Description__: *ANTs registration file, can be used in downstream gears*
+  
+- *antsInverseWarped.nii.gz*
+  - __Name__: *antsInverseWarped.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *ANTs registration file, can be used in downstream gears*
+
+- *antsWarped.nii.gz*
+  - __Name__: *antsWarped.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *ANTs registration file, can be used in downstream gears*
+
+- *b0_anatalign.nii.gz*
+  - __Name__: *b0_anatalign.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *output space b0s*
+
+- *b0_anatalign_brain.nii.gz*
+  - __Name__: *b0_anatalign_brain.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *output space b0s*
+
+- *b0_anatalign_brain_mask.nii.gz*
+  - __Name__: *b0_anatalign_brain_mask.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *output space b0s, brainmasked dwi b0 data*
+
+
+- *b0_dwi.nii.gz*
+  - __Name__: *b0_dwi.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *output space b0s*
+
+
+- *b0_dwi_brain.nii.gz*
+  - __Name__: *b0_dwi_brain.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *b0 dwi algidned with anatomy data*
+
+
+- *b0_dwi_brain_mask.nii.gz*
+  - __Name__: *b0_dwi_brain_mask.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *bo dwi brainmasked*
+
+
+- *dwi.bvals*
+  - __Name__: *dwi.bvals*
+  - __Type__: *bval*
+  - __Optional__: *false*
+  - __Classification__: *bval*
+  - __Description__: *bval value after all corrections, ready to be used in rtp2-pipeline*
+
+
+- *dwi.bvecs*
+  - __Name__: *dwi.bvecs*
+  - __Type__: *bvec*
+  - __Optional__: *false*
+  - __Classification__: *bvec*
+  - __Description__: *bvec value after all corrections, ready to be used in rtp2-pipeline*
+
+
+- *dwi.nii.gz*
+  - __Name__: *dwi.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *preprocessed dwi data ready to be used in rtp2-pipeline*
+  
+- *dwi2anatalign_mrtrix.txt*
+  - __Name__: *dwi2anatalign_mrtrix.txt*
+  - __Type__: *text*
+  - __Optional__: *false*
+  - __Classification__: *text*
+  - __Description__: *Result of anatomy align that can be plotted*
+
+
+- *dwi_denoise_degibbs_eddy_bias_ricn_anatalign_1p5mm.json*
+  - __Name__: *dwi_denoise_degibbs_eddy_bias_ricn_anatalign_1p5mm.json*
+  - __Type__: *json*
+  - __Optional__: *false*
+  - __Classification__: *json*
+  - __Description__: **
+
+- *t1.nii.gz*
+  - __Name__: *t1.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *freesurfer's t1 file, ready to be used in rtp2-pipeline. 
+    It converts the file to RAS. If it was already, then no change to the input file.*
+
+- *t1_brain.nii.gz*
+  - __Name__: *t1_brain.nii.gz*
+  - __Type__: *nifti*
+  - __Optional__: *false*
+  - __Classification__: *nifti*
+  - __Description__: *freesurfers brain file, ready to be used in rtp2-pipeline.
+    It converts the file to RAS. If it was already, then no change to the input file.*
+    
+    
+- *eddy_parameters*
+  - __Name__: *eddy_parameters*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *This is a text file with one row for each volume in --imain and 
+      one column for each parameter. The first six columns correspond to subject 
+      movement starting with three translations followed by three rotations. The 
+      remaining columns pertain to the EC-induced fields and the number and 
+      interpretation of them will depend of which EC model was specified.*
+
+
+- *eddy_movement_rms*
+  - __Name__: *eddy_movement_rms*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *A summary of the "total movement" in each volume is created by
+      calculating the displacement of each voxel and then averaging the squares of those 
+      displacements across all intracerebral voxels (as determined by --mask and finally 
+      taking the square root of that. The file has two columns where the first contains 
+      the RMS movement relative the first volume and the second column the RMS relative 
+      the previous volume.*
+
+- *eddy_restricted_movement_rms*
+  - __Name__: *eddy_restricted_movement_rms*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *There is an inherent ambiguity between any EC component that has a
+      non-zero mean across the FOV and subject movement (translation) in the PE direction. 
+      They will affect the data in identical (or close to identical if a susceptibility 
+      field is specified) ways. That means that both these parameters are estimated by 
+      eddy with large uncertainty. This doesn't matter for the correction of the images, 
+      it makes no difference if we estimate a large constant EC components and small 
+      movement or if we estimate a small EC component and large movement. The corrected 
+      images will be (close to) identical. But it matters if one wants to know how much 
+      the subject moved. We therefore supplies this file that estimates the movement RMS 
+      as above, but which disregards translation in the PE direction.*
+
+- *eddy_post_eddy_shell_alignment_parameters*
+  - __Name__: *eddy_post_eddy_shell_alignment_parameters*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *This is a text file with the rigid body movement parameters between
+      the different shells as estimated by a post-hoc mutual information based 
+      registration (see --dont_peas for details). These parameters will be estimated even 
+      if --dont_peas has been set, but in that case they have not been applied to the 
+      corrected images in my_eddy_output.nii.gz.*
+
+- *eddy_post_eddy_shell_PE_translation_parameters*
+  - __Name__: *eddy_post_eddy_shell_PE_translation_parameters*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *This is a text file with the translation along the PE-direction 
+      between the different shells as estimated by a post-hoc mutual information based 
+      registration (see --dont_sep_offs_move for details). These parameters will be 
+      estimated even if --dont_sep_offs_move has been set, but in that case they have not 
+      been applied to the corrected images in my_eddy_output.nii.gz.*
+
+- *eddy_outlier_report*
+  - __Name__: *eddy_outlier_report*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *This is a text-file with a plain language report on what outlier 
+      slices eddy has found. This file is always created, as are the other 
+      my_eddy_output.eddy_outlier_* files described below, even if the --repol flag has 
+      not been set. Internally eddy will always detect and replace outliers to make sure 
+      they don't affect the estimation of EC/movement, and if --repol has not been set it 
+      will re-introduce the original slices before writing my_eddy_output.nii.gz.*
+
+- *eddy_outlier_map*
+  - __Name__: *eddy_outlier_map*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *Numeric matrix in ASCII format. Consist of an initial line of text,
+      after which there is one row for each volume and one column for each slice. Each row 
+      corresponding to a b=0 volume is all zeros since eddy don't consider outliers in 
+      these. All numbers are either 0, meaning that scan-slice is not an outliers, or 1 
+      meaning that is is.*
+  
+  
+- *eddy_outlier_n_stdev_map*
+  - __Name__: *eddy_outlier_n_stdev_map*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *Numeric matrix in ASCII format. Consist of an initial line of text,
+      after which there is one row for each volume and one column for each slice. Each row 
+      corresponding to a b=0 volume is all zeros since eddy don't consider outliers in 
+      these. The numbers denote how many standard deviations off the mean difference 
+      between observation and prediction is.*
+  
+  
+- *eddy_outlier_n_sqr_stdev_map*
+  - __Name__: *eddy_outlier_n_sqr_stdev_map*
+  - __Type__: *text*
+  - __Optional__: *true*
+  - __Classification__: *text*
+  - __Description__: *Numeric matrix in ASCII format. Consist of an initial line of text,
+      after which there is one row for each volume and one column for each slice. Each row 
+      corresponding to a b=0 volume is all zeros since eddy don't consider outliers in 
+      these. The numbers denote how many standard deviations off the square root of the 
+      mean squared difference between observation and prediction is.*
+
+
+
+- *eddy_outlier_free_data.nii.gz*
+  - __Name__: *eddy_outlier_free_data*
+  - __Type__: *nifti*
+  - __Optional__: *true*
+  - __Classification__: *nifti*
+  - __Description__: * Only written if the --repol flag was set. This is the original data
+      given by --imain not corrected for susceptibility or EC-induced distortions or 
+      subject movement, but with outlier slices replaced by the Gaussian Process 
+      predictions. This file is generated for anyone who might want to use eddy for 
+      outlier correction but who want to use some other method to correct for distortions 
+      and movement. Though why anyone would want to do that is not clear to us.    
+
+
+#### Metadata
+
+This gear does not create metadata. 
+    
+### Pre-requisites
+
+This gear requires Freesurferator to be run and diffusion weighted data
+
+#### Prerequisite Gear Runs
+
+    
+1. __*freesurferator*
+    - Level: *Analysis*
+    
+#### Prerequisite Files
+
+There are no other required files. 
+    
+#### Prerequisite Metadata
+
+There is no other required metadata. 
+    
+## Usage
+This gear needs Freesurfer's T1 and brainmask files to run, on top of the DWI data. 
+Then, you can use the defaults so that the data is prepared correctly for RTP2-pipeline. 
+anatalign needs to be set to True to work in RTP2-pipeline, we left the option open if 
+some user wants to use this gear independently and have the DWI in diffusion space. 
+
+## Support
+Please email garikoitz@gmail.com for help solving bugs of functional gaps. 
+
+## Roadmap
+
+- Include other types of files (qMRI) to coregister with ANTs, so that then can be used in RTP2-pipeline to obtain metrics
+
+
+### Description
+
+This gear gear implemented MRtrix's preprocessing routine, using FSL and ANT tools
+when required. It does the anatomy correction as well as the coregistration between 
+the anatomy and the DWI data.
+
+#### File Specifications
+
+This section contains specifications on any input files that the gear may need
+
+##### *{Input-File}*
+
+A description of the input file
+
+### Workflow
+
+Description of workflow
+
+1. Upload files to container
+1. Select files as input to gear
+1. Gear places output in Analysis, that can be then be used in RTP2-pipeline gear
+
+Freesurterator is a prerequisite. From Freesurferator the T1.nii.gz as ANAT and the
+brainmask.nii.gz as FSMASK has to be selected. On top of that, add the DWI data 
+(remember the add the RPE if it was acquired).
+
+
+### Use Cases
+
+#### Use Case 1
+
+__*Conditions__*:
+
+- *{A list of conditions that result in this use case}*
+- [ ] Possibly a list of check boxes indicating things that are absent
+- [x] and things that are present
+
+There are no use cases, this gear will preprocess DWI data using different options 
+based on the configuration and will output data ready to go to RTP2-pipeline.
+
+### Logging
+
+It throws the log from the registration system. 
+
+## FAQ
+
+[FAQ.md](FAQ.md)
+
+## Contributing
+
+If you want to contribute to this gear please contact garikoitz@gmail.com. 
+
+[For more information about how to get started contributing to that gear,
+checkout [CONTRIBUTING.md](CONTRIBUTING.md).]
+<!-- markdownlint-disable-file -->
+
