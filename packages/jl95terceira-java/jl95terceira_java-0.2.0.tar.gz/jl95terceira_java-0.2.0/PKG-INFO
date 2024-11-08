@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: jl95terceira_java
+Version: 0.2.0
+Summary: Java parser
+Project-URL: Homepage, https://github.com/jl95terceira/project-E
+Project-URL: Issues, https://github.com/jl95terceira/project-E/issues
+Author-email: Joao Luis Ornelas da Silva <jl95terceira@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: jl95terceira-batteries==1.0.0b
+Description-Content-Type: text/markdown
+
+Java parser for Python
