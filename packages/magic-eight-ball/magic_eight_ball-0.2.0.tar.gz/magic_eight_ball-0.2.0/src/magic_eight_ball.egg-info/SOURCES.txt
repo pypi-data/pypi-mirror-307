@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/magic_eight/__init__.py
+src/magic_eight/answers.py
+src/magic_eight/magic_eight.py
+src/magic_eight/questions.py
+src/magic_eight/shakes.py
+src/magic_eight_ball.egg-info/PKG-INFO
+src/magic_eight_ball.egg-info/SOURCES.txt
+src/magic_eight_ball.egg-info/dependency_links.txt
+src/magic_eight_ball.egg-info/top_level.txt
+tests/test_magic_eight.py

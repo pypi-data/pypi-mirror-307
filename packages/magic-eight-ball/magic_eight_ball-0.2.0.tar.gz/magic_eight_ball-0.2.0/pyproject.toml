@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magic-eight-ball"
+description = "A fun and lighthearted Python package that emulates the classic Magic 8 Ball toy. This package allows users to ask questions and get random, playful responses. Built with rigorous software engineering practices, it serves as a joyful addition to any developer's toolbox."
+version = "0.2.0"
+authors = [
+  { name="Alexandra Mastrangelo", email="arm9129@nyu.edu" },
+  { name="Natalie Trump", email="nht251@nyu.edu" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["python", "package", "fun"]
+requires-python = ">=3.11"
+
+[project.urls]
+"Homepage" = "https://github.com/software-students-fall2024/3-python-package-magic-eight"
