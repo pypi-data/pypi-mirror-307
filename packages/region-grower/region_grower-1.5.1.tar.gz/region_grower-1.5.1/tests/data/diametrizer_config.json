@@ -1,0 +1,24 @@
+{
+    "asymmetry_threshold": {
+        "apical_dendrite": 0.2,
+        "basal_dendrite": 1.0
+    },
+    "method": "external",
+    "models": [
+        "generic"
+    ],
+    "n_samples": 10,
+    "neurite_types": [
+        "basal_dendrite",
+        "apical_dendrite"
+    ],
+    "seed": 0,
+    "taper": {
+        "max": 0.005,
+        "max_residual": 100,
+        "min": -0.01,
+        "zeros": 1E-8
+    },
+    "terminal_threshold": 2.0,
+    "trunk_max_tries": 100
+}
