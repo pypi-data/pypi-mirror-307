@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: stereosite
+Version: 2.2.1
+Summary: Analysis spatial transcriptomics data
+Home-page: https://github.com/STOmics/StereoSiTE
+Author: LiuXing
+Author-email: liuxing2@genomics.cn
+License: GPL-3 License
+Keywords: spatial cell interaction intensity
+Platform: any
+License-File: LICENSE
+Requires-Dist: anndata>=0.8.0
+Requires-Dist: scanpy>=1.9.1
+Requires-Dist: squidpy>=1.1.2
+Requires-Dist: decoupler>=1.4.0
+Requires-Dist: pydeseq2>=0.3.6
+Requires-Dist: networkx>=3.1
+Requires-Dist: tensorly>=0.8.1
+Requires-Dist: scikit-learn>=1.2.1
+Requires-Dist: torch>=1.11.0
+Requires-Dist: igraph>=0.10.4
+Requires-Dist: pycirclize>=1.1.0
+Requires-Dist: cell2location==0.1.3
+
+StereoSiTE - Spatial Transcriptome Analysis in Python
+======================================================
+
+**StereoSiTE** is a package for the analysis and visualization of spatial transcriptome data.
+It builds on top of `anndata`_, `scanpy`_ and `squidpy`_, from which it inherits modularity and scalability.
+It provides analysis tools to dissect cellular neighborhood based on cell composition and quantitatively define cell-cell communication in spatial.
+
+StereoSiTE's key applications
+------------------------------
+
+- Cellular Neighborhood (CN) clustering based on cell composition of each bin
+- Spatial Cell Interaction Intensity (SCII) analysis
+
+Citation
+---------
+
+If you use `stereosite`_ in your work, please cite the publication as follows:
+
+    **StereoSiTE: A framework to spatially and quantitatively profile the cellular neighborhood organized iTME**
+
+    Xing Liu, Chi Qu, Chuandong Liu, Na Zhu, Huaqiang Huang, Fei Teng, Caili Huang, Bingying Luo, Xuanzhu Liu, Yisong Xu, Min Xie, Feng Xi, Mei Li, Liang Wu, Yuxiang Li, Ao Chen, Xun Xu, Sha Liao, Jiajun Zhang
+
+    bioRxiv 2022.12.31.522366; doi: https://doi.org/10.1101/2022.12.31.522366
+
+.. _scanpy: https://scanpy.readthedocs.io/en/stable/
+.. _anndata: https://anndata.readthedocs.io/en/stable/
+.. _squidpy: https://squidpy.readthedocs.io/en/stable/
+.. _stereosite: https://github.com/STOmics/stereosite 
