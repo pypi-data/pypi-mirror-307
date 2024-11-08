@@ -1,0 +1,10 @@
+
+div.thumb{
+    display: contents;
+}
+img.thumb{
+    height: 32px;   /* smaller than backend */
+    width: 32px;
+    object-fit: contain;
+    border-radius: 0.1rem;
+}
