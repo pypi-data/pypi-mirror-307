@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: CompJouleS
+Version: 0.1
+Summary: Energy-aware comparison tooling
+Author: Murat Isik
+Author-email: Murat Isik <misik@purdue.edu>, Jens Egholm Pedersen <jens@jepedersen.dk>, Vedant Karia <Vedant.Karia@my.utsa.edu>, Sadas Shankar <sadas.shankar@stanford.edu>
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: thop
+Requires-Dist: pyJoules
+
