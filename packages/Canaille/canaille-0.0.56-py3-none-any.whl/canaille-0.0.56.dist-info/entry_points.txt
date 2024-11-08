@@ -1,0 +1,2 @@
+[console_scripts]
+canaille = canaille.commands:cli
