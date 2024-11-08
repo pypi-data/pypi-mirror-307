@@ -1,0 +1,20 @@
+A python package for binary risky choice modeling for 4 models: 
+    1. Expected Utility Theory: U = p * A^alpha 
+    2. Risk-Return: U = EV - b * Var 
+    3. Coefficient of Variation: U = EV - b *CV where CV = = sqrt(Var)/EV1 
+    4. Hyperbolic: U = A/(1+h*theta) where theta = (1-p)/p 
+where A is the payoff, p is the probability of winning that outcome, EV is Expected value (A*p), and Var is variance (P*(A-EV)**2 + (1 - P)*(-EV) ** 2) <br>
+
+The package takes risky choice data (probability, payoffs, and decisions) of 2 options as inputs and returns a util-rc object that stores the estimated parameters, inverse temperature, fit metrics, model type, and number of observations in an instance variable named params. <br>
+
+To use the package,copy the following code into your terminal: <br>
+```
+>>> pip install util-rc==0.1.6 <br>
+>>> python3 <br>
+>>> from src.util_rc.main import util_rc <br>
+>>> example = util_rc("E",[0,0,1],[10,10,10],[1,1,1],[20,30,40],[.6,.5,.4]) <br>
+>>> example.params <br>
+```
+
+
+Dependencies: numpy version >= 1.26.4, scipy version >= 1.12.0
