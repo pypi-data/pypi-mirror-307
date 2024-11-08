@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+src/okipy/__init__.py
+src/okipy/colors.py
+src/okipy/lib.py
+src/okipy/main.py
+src/okipy/py.typed
+src/okipy/strategies.py
+src/okipy/utils.py
+src/okipy.egg-info/PKG-INFO
+src/okipy.egg-info/SOURCES.txt
+src/okipy.egg-info/dependency_links.txt
+src/okipy.egg-info/entry_points.txt
+src/okipy.egg-info/top_level.txt

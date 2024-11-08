@@ -1,0 +1,30 @@
+
+[project]
+name = "okipy"
+version = "1.1.1"
+description = "Minimal, typed, functional and dynamic test library."
+keywords = ["test", "functional", "library", "testing", "dynamic", "minimal"]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Matthieu Jolimaitre", email = "matthieu@imagevo.fr" }]
+
+dependencies = []
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://git.barnulf.net/mb/okipy"
+
+[project.scripts]
+oki = "okipy:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
