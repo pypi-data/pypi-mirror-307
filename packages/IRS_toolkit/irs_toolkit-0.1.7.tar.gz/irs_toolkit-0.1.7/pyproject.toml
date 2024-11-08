@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "IRS_toolkit"
+version = "0.1.7"
+description = "Package to compute and price swap"
+authors = ["alan.dromas <alan.dromas@qonto.com>",
+"gauthier.marquand <gauthier.marquand@qonto.com>",
+"brian.ramesh <brian.ramesh@qonto.com>"]
+readme = "README.md"
+packages = [{ include = "IRS_toolkit" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13"
+pandas = "^2.0.3"
+scipy = "^1.11.1"
+numpy = "^1.25.1"
+scikit-learn = "^1.4.1.post1"
+xlrd = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.6.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
