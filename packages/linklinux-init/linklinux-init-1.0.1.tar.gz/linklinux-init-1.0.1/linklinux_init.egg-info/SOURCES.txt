@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+linklinux_init/__init__.py
+linklinux_init/main.py
+linklinux_init.egg-info/PKG-INFO
+linklinux_init.egg-info/SOURCES.txt
+linklinux_init.egg-info/dependency_links.txt
+linklinux_init.egg-info/entry_points.txt
+linklinux_init.egg-info/top_level.txt
+scripts/init_env.sh
+scripts/linklinux_env.sh

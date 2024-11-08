@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: linklinux-init
+Version: 1.0.1
+Summary: A tool to configure initial development environment on Linux
+Home-page: https://github.com/suyelu/LinkLinux_Init
+Author: Vincnent Su
+Author-email: suyelu@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+LinkLinux Init
+==============
+
+LinkLinux Init is a tool designed to quickly set up an initial development environment on Linux. It provides automated setup of common tools like vim, zsh, and other essential software for developers.
+
+Installation
+------------
+
+To install LinkLinux Init, use the following command:
+
+.. code:: bash
+
+   pip install linklinux-init
+
+Usage
+-----
+
+To run the tool:
+
+.. code:: bash
+
+   linklinux-init
+
+
+
