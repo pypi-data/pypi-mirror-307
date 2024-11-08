@@ -1,0 +1,3 @@
+[console_scripts]
+ctx = contextal.cmd:main
+ctx-scan = contextal.ctx_scan:main
