@@ -1,0 +1,67 @@
+site_name: High-definition modeling of chromatin + transcriptomics data
+docs_dir: docs/source
+theme:
+  name: material
+  palette:
+    primary: white
+  logo: static/logo.png
+  favicon: static/favicon.png
+  custom_dir: docs/override
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.footer
+    - navigation.sections
+    - toc.follow
+    - toc.integrate
+
+site_url: "http://chromatinhd.org/"
+repo_url: https://github.com/DeplanckeLab/ChromatinHD
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          import:
+          - https://docs.python-requests.org/en/master/objects.inv
+          - https://installer.readthedocs.io/en/latest/objects.inv
+          options:
+            docstring_style: google
+            heading_level: 2
+            inheritance_diagram: True
+            show_root_heading: True
+            show_symbol_type_heading: True
+            docstring_section_style: table
+  - mike
+  - search
+  - mkdocs-jupyter:
+      include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
+      remove_tag_config:
+        remove_input_tags:
+          - hide_code
+        remove_all_outputs_tags:
+          - hide_output
+  - social
+  - awesome-pages
+extra:
+  version:
+    provider: mike
+  analytics:
+    provider: google
+    property: G-2EDCBPY71H
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/DeplanckeLab/ChromatinHD
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/extra-reference.css
+extra_javascript:
+  - javascripts/reference.js
+copyright: Copyright &copy; 2022 - 2024 Wouter Saelens

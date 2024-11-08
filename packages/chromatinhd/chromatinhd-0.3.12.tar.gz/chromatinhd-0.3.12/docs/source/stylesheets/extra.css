@@ -1,0 +1,93 @@
+.jp-InputArea-prompt,
+.jp-OutputArea-prompt {
+    display: none !important;
+}
+
+.jp-OutputArea-output {
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-left: 2px #33333333 solid !important;
+}
+
+.jupyter-wrapper,
+.jp-Cell:not(.jp-mod-noOutputs),
+.jp-Cell-outputWrapper {
+    margin-top: 0;
+}
+
+.jp-Cell-outputWrapper img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.jp-mod-noOutputs.celltag_hide_code {
+    display: none;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+    margin: 0;
+}
+
+p {
+    margin-top: 0.1em;
+}
+
+.md-grid {
+    max-width: 90rem;
+}
+
+clipboard-copy:hover {
+    background-color: #33333333;
+}
+
+.jupyter-wrapper .jp-InputArea-editor {
+    border-left: 2px green solid !important;
+}
+
+/* remove the cell toolbar with ugly tags */
+.jupyter-wrapper .celltoolbar {
+    display: none !important;
+}
+
+/* nav bar */
+.md-tabs__item {
+    height: inherit;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.md-tabs__item>a {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    margin-top: 0;
+    transition: 0.1s;
+}
+
+.md-tabs__item>a:hover {
+    background-color: var(--md-code-bg-color);
+}
+
+.md-tabs__link--active {
+    background-color: var(--md-code-bg-color);
+}
+
+.md-nav--secondary {
+    border-left: 2px solid #33333333 !important;
+}
+
+/* side bar */
+.md-sidebar {
+    width: 15rem;
+}
+
+.md-sidebar__inner {
+    padding-right: inherit !important;
+}
+
+.md-typeset details > p{
+    margin-top:0.5em;
+}

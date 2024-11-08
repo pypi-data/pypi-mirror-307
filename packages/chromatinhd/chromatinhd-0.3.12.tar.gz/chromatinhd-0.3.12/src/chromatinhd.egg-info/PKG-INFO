@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: chromatinhd
+Version: 0.3.12
+Summary: High-definition modeling of (single-cell) chromatin + transcriptomics data
+Author-email: Wouter Saelens <wouter.saelens@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/DeplanckeLab/ChromatinHD
+Project-URL: Bug Tracker, https://github.com/DeplanckeLab/ChromatinHD/issues
+Keywords: bioinformatics,chromatin accessibility,transcriptomics
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: torch
+Requires-Dist: scanpy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: diskcache
+Requires-Dist: appdirs
+Requires-Dist: xarray
+Requires-Dist: requests
+Requires-Dist: zarr
+Requires-Dist: pathlibfs
+Provides-Extra: sam
+Requires-Dist: pysam; extra == "sam"
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: polyptich; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: jupytext; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+Requires-Dist: mkdocs-jupyter; extra == "dev"
+Requires-Dist: mike; extra == "dev"
+Requires-Dist: cairosvg; extra == "dev"
+Requires-Dist: pillow; extra == "dev"
+Requires-Dist: mkdocs-awesome-pages-plugin; extra == "dev"
+Requires-Dist: setuptools_scm; extra == "dev"
+Requires-Dist: Cython; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: ruff; extra == "test"
+Provides-Extra: full
+Requires-Dist: chromatinhd[sam]; extra == "full"
+
+<p align="center">
+  <a href="https://chromatinhd.org">
+    <img src="https://raw.githubusercontent.com/DeplanckeLab/ChromatinHD/main/docs/source/static/logo.png" width="300" />
+  </a>
+  <a href="https://chromatinhd.org">
+    <img src="https://raw.githubusercontent.com/DeplanckeLab/ChromatinHD/main/docs/source/static/comparison.gif" />
+  </a>
+</p>
+
+ChromatinHD analyzes single-cell ATAC+RNA data using the raw fragments as input,
+by automatically adapting the scale at which
+relevant chromatin changes on a per-position, per-cell, and per-gene basis.
+This enables identification of functional chromatin changes
+regardless of whether they occur in a narrow or broad region.
+
+As we show in [our paper](https://www.biorxiv.org/content/10.1101/2023.07.21.549899v1):
+- Compared to the typical approach (peak calling + statistical analysis), ChromatinHD models are better able to capture functional chromatin changes. This is because there are extensive functional accessibility changes both outside and within peaks ([Figure 3](https://www.biorxiv.org/content/10.1101/2023.07.21.549899v1)).
+- ChromatinHD models can capture long-range interactions by considering fragments co-occuring within the same cell ([Figure 4](https://www.biorxiv.org/content/10.1101/2023.07.21.549899v1)).
+- ChromatinHD models can also capture changes in fragment size that are related to gene expression changes, likely driven by dense direct and indirect binding of transcription factors ([Figure 5](https://www.biorxiv.org/content/10.1101/2023.07.21.549899v1)).
+
+[📜 Manuscript](https://www.biorxiv.org/content/10.1101/2023.07.21.549899v1)
+
+[❔ Documentation](https://chromatinhd.org)
+
+[▶️ Quick start](https://chromatinhd.org/quickstart/0_install)
