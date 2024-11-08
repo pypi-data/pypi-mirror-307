@@ -1,0 +1,2 @@
+[console_scripts]
+pli-slurm-tool = plislurmtool.main:main
