@@ -1,0 +1,3 @@
+[tool.mypy-baseline]
+# --baseline-path: the file where the baseline should be stored
+baseline_path = ".mypy/mypy-baseline.txt"

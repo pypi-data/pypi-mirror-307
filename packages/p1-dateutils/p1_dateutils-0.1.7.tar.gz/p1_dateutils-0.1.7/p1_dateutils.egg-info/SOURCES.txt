@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+dateutils/__init__.py
+dateutils/types.py
+dateutils/utils.py
+p1_dateutils.egg-info/PKG-INFO
+p1_dateutils.egg-info/SOURCES.txt
+p1_dateutils.egg-info/dependency_links.txt
+p1_dateutils.egg-info/not-zip-safe
+p1_dateutils.egg-info/top_level.txt
