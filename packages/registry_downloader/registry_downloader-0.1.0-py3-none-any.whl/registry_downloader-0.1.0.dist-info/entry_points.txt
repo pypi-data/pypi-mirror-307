@@ -1,0 +1,2 @@
+[console_scripts]
+registry-downloader = registry_downloader.__main__:main
