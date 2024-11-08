@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: concrete-db
+Version: 0.0.0
+Summary: AI Agent Orchestration, Database Support
+Requires-Python: <4.0.0,>=3.11.9
+Requires-Dist: concrete-core
+Requires-Dist: psycopg[binary]>=3.2.3
+Requires-Dist: sqlmodel>=0.0.22
+Description-Content-Type: text/markdown
+
+Last Updated: 2024-11-01 15:28:58 UTC
+
+Lines Changed: +6, -0
+
+# Concrete Database Integration
+Provides an integration to save concrete objects to disc with a SQLAlchemy ORM built with SQLModel and Pydantic Model.
