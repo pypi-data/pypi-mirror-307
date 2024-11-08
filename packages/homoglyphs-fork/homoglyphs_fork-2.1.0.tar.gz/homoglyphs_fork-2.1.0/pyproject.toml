@@ -1,0 +1,42 @@
+[project]
+name = "homoglyphs_fork"
+version = "2.1.0"
+authors = [{name = "orsinium", email = "master_fess@mail.ru"}]
+maintainers = [{name = "Matt Copperwaite", email = "matt@copperwaite.net"}]
+license = {text = "MIT"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["description"]
+
+[project.urls]
+Home = "https://github.com/yamatt/homoglyphs"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.rye]
+dev-dependencies = ["flake8>=7.0.0"]
+
+[tool.rye.scripts]
+lint = "flake8 . --count --show-source --statistics"
+generate = "python generate.py homoglyphs_fork"
+test = "python tests.py"
+
+[tool.dephell.main]
+from = {format = "flit", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+
