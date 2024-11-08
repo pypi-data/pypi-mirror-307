@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: torchcs
+Version: 1.1.11
+Summary: Compressed Sensing in PyTorch.
+Home-page: https://iridescent.ink/torchcs/
+Download-URL: https://github.com/antsfamily/torchcs/
+Author: Zhi Liu
+Author-email: zhiliu.mind@gmail.com
+License: MIT
+Keywords: PyTorch,Machine Learning,Signal Processing,Compressed Sensing
+License-File: LICENSE
+Requires-Dist: Cython
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchbox
+Requires-Dist: tqdm
+
+# torchcs
+
+Compressed Sensing in PyTorch.
+
+
+You can install and test ``torchcs`` by:
+
+```bash
+pip install torchcs
+import torchcs as tc
+print(tc.__version__)
+```
+
+Please see [torchcs's documentation](http://iridescent.ink/torchcs) for using details.
+

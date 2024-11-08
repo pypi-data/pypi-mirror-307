@@ -1,0 +1,13 @@
+include *.in
+include *.ini
+include *.rst
+include *.txt
+global-include *.c
+global-include *.py
+global-include *.pyi
+
+include LICENSE
+
+
+global-exclude __pycache__ *.py[cod]
+
