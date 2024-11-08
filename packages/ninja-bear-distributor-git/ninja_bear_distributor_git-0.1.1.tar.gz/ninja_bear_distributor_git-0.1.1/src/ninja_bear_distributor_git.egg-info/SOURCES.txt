@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ninja_bear_distributor_git/__init__.py
+src/ninja_bear_distributor_git/distributor.py
+src/ninja_bear_distributor_git.egg-info/PKG-INFO
+src/ninja_bear_distributor_git.egg-info/SOURCES.txt
+src/ninja_bear_distributor_git.egg-info/dependency_links.txt
+src/ninja_bear_distributor_git.egg-info/entry_points.txt
+src/ninja_bear_distributor_git.egg-info/requires.txt
+src/ninja_bear_distributor_git.egg-info/top_level.txt
+tests/test.py
