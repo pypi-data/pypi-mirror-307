@@ -1,0 +1,31 @@
+/* #333A73 #00A9FF #89CFF3 #A0E9FF #CDF5FD*/
+
+/*
+.mantine-MultiSelect-value {
+  background-color: #333A73;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.mantine-MultiSelect-defaultValueRemove {
+  color: white;
+}
+*/
+.mantine-Grid-col {
+  padding-top: 0;
+}
+
+.mantine-Slider-track {
+  background-color: white;
+  border-color: #000000;
+  border: 100px;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+h1 {
+  font-family: 'Roboto';
+}
+
