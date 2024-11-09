@@ -1,0 +1,2 @@
+[console_scripts]
+tree-disk-rings = treediskrings.cli:main
