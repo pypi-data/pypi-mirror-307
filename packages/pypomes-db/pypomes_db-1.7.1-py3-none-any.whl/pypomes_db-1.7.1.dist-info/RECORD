@@ -1,0 +1,16 @@
+pypomes_db/__init__.py,sha256=pPcxe9RYWSKWLf_xPNBmLQfaXQ4kj7Oktl5O1lKvQ2g,1940
+pypomes_db/db_common.py,sha256=kwhQlRgEAEdl04Lvs1Qv_dOIcudYtNFDg_wb7ZSLkXc,17573
+pypomes_db/db_pomes.py,sha256=bl_dNhUcUZO4SQUuRkTxhWUrtSSItHubRvUCowLKErE,59210
+pypomes_db/index_pomes.py,sha256=ZMi3HNaaXPa10bMiBShTsynla3XQfsidaIyak7Ms16Q,10141
+pypomes_db/migration_pomes.py,sha256=xlZzt5VwKYMuMtxMiEr3GKGMVKkBYKTvIQNQOGG9zBE,41084
+pypomes_db/mysql_pomes.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypomes_db/oracle_pomes.py,sha256=VGtycavjXR03U4ADoRzCqZHtagUcJ5F2fxjUdQItJ40,22676
+pypomes_db/postgres_pomes.py,sha256=AhSTS5aG9FzQC48mYL5brUcLpRzbbAtKTCXpWDr-8ys,22285
+pypomes_db/sqlserver_pomes.py,sha256=xZBzSwXOLulUOpwoyXRXe7TMwm-XD3O5Tsc1jQZw6Xs,23573
+pypomes_db/sync_pomes.py,sha256=NUZY1S09HyHJH_YnQt_7eMoDvEZjTlHm_8sws9jNIpc,15308
+pypomes_db/table_pomes.py,sha256=tghKPz3RPY7b3-PHeqtLgo418O2OCDyEApfoYYdULoo,12275
+pypomes_db/view_pomes.py,sha256=Xq84mi9-ptJuVD9oeI4pmktV_YXZpJhv27zoufhPZ4w,21917
+pypomes_db-1.7.1.dist-info/METADATA,sha256=0QuXNOXPvbrsHpPMZRxk04A9yPjCzLfRZ1pmBqOPGjg,627
+pypomes_db-1.7.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pypomes_db-1.7.1.dist-info/licenses/LICENSE,sha256=NdakochSXm_H_-DSL_x2JlRCkYikj3snYYvTwgR5d_c,1086
+pypomes_db-1.7.1.dist-info/RECORD,,
