@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fasttower
+Version: 0.1.4a0
+Summary: A Django-like framework built on FastAPI
+Home-page: https://github.com/pysashapy/FastTower
+License: MIT
+Keywords: framework,FastAPI,Django-like,Python
+Author: Alexander Ibragmov
+Author-email: sasha.2000ibr@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Jinja2 (>=3.1.4)
+Requires-Dist: aerich (>=0.7.2)
+Requires-Dist: fastapi (>=0.115.0)
+Requires-Dist: fastapi-admin (>=1.0.4)
+Requires-Dist: ipython (>=8.27.0)
+Requires-Dist: scrypt (>=0.8.24)
+Requires-Dist: tortoise-orm (>=0.21.6)
+Requires-Dist: typer (>=0.12.5)
+Requires-Dist: uvicorn (>=0.30.6)
+Project-URL: Repository, https://github.com/pysashapy/FastTower.git
+Description-Content-Type: text/markdown
+
+# fasttower
