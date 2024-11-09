@@ -1,0 +1,14 @@
+[project]
+name = "postgrelib"
+version = "0.0.1"
+authors = [
+  { name="Jerry Wu", email="jerrbearis2cool@gmail.com" },
+]
+description = "A simple general purpose PostgreSQL library that removes the need for SQL and focuses and basic functionality."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
