@@ -1,0 +1,8 @@
+rich
+netcdf4
+
+[test]
+pytest
+pytest-cov
+pytest-sugar
+pytest-watcher
