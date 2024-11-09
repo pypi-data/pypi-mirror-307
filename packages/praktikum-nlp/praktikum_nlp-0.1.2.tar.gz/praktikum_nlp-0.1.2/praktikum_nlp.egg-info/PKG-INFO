@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: praktikum-nlp
+Version: 0.1.2
+Summary: Library for Praktikum NLP
+Author: Praktikum NLP
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+Provides-Extra: ollamaUI
