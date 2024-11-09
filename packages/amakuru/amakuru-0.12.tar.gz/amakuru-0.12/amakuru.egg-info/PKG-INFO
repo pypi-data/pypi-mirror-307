@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: amakuru
+Version: 0.12
+Summary: A simple menu-driven application for tech career roadmaps for women.
+Home-page: https://github.com/michael-alu/amakuru
+Author: Michael Nwuju
+Author-email: michaelnwuju213@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Amakuru - Empowering Women in Tech
+
+Amakuru is a Python-based tool designed to help women access key knowledge and detailed roadmaps for various tech careers. By leveraging data from [roadmap.sh](https://roadmap.sh/) and guides from Mosh Hamedani. Amakuru aims to provide a straightforward way to explore different career paths and guide users through their tech journey.
+
+## Background
+
+The name "Amakuru" means "Knowledge" in Kinyarwanda, reflecting the project's mission to remain authentic and resonate with African roots. This tool serves as an empowering resource for women in tech, facilitating job creation and career growth.
+
+## Features
+
+- Searches for career paths using regex-based matching.
+- Display relevant career roadmaps and provide links for further detailed guides.
+- Integration with roadmap.sh and Mosh Hamedani's resources.
+- Easy-to-use command: `amakuru start`.
+
+## How to Run Amakuru
+
+### Prerequisites
+
+- Python 3.x installed on your system.
+- [colorama](https://pypi.org/project/colorama/) library (for colored output).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/amakuru.git
+   cd amakuru
+   ```
