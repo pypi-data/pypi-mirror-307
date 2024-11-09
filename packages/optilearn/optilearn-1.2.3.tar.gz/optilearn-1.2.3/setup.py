@@ -1,0 +1,128 @@
+from setuptools import setup, find_packages
+import codecs
+import os
+
+VERSION = '1.2.3'
+DESCRIPTION = 'Use to train neural networks, A Package for optimize models, transfer or copy files from one directory to other, use for nlp short word treatment, choosing optimal data for ML models, use for Image Scraping , use in timeseries problem to split the data into train and test, Deal with emojis and emoticons in nlp, word tokenize, token, get the list of Punctuation marks and English Pronouns too, can be used to read text files'
+LONG_DESCRIPTION = '''A package to increase the accuracy of ML models, training neural networks, converting text into tokens, transfer or copy files from one directory to other, gives you the best data for model training, works on text data also, short word treatment for NLP problems, can be used for Image Scraping also, use it to split the timeseries data into training and testing, deal with emojis and emoticons, word tokenizer, tokenize words, can be used to remove stop words too, Punctuations and get English Pronouns list too, use to read text files
+                  # Optilearn
+
+Optilearn is a versatile package designed to improve the accuracy of machine learning models, handle neural network training, and offer various utilities for NLP, image scraping, and timeseries data manipulation.
+
+## Features:
+- **Neural Network Training**: Use the `optilearn.nn` module to train neural networks.
+- **Optimal Data Combination**: Use `optilearn.optimal` to find the best data combination for ML and DL models.
+- **Image Scraping**: Use `optilearn.images` to download images from websites.
+- **Text and NLP Processing**: Use `optilearn.text` and `optilearn.words` for text tokenization, short word treatment, and more NLP tasks.
+- **File Handling**: Use `optilearn.files` to transfer and copy files between directories.
+- **Timeseries Data Handling**: Use `optilearn.sequential` to split sequential data like timeseries into training and testing sets.
+
+## Installation
+
+!pip install optilearn
+
+1. Neural network training
+-------------------------
+
+from optilearn.nn import Sequential,Dense,Dropout,EarlyStopping,ReduceLearningRate
+
+model2=Sequential()
+model2.add(Dense(300,input_dim=784,activation='relu'))
+model2.add(Dropout(0.3))
+model2.add(Dense(100,activation='relu'))
+model2.add(Dropout(0.3))
+model2.add(Dense(150,activation='relu'))
+#model2.add(Dense(200,activation='relu'))
+model2.add(Dropout(0.3))
+model2.add(Dense(100,activation='relu'))
+model2.add(Dropout(0.3))
+model2.add(Dense(50,activation='relu'))
+model2.add(Dropout(0.1))
+model2.add(Dense(10,activation='softmax'))
+
+model2.compile(loss='categorical_crossentropy',optimizer='adam',learning_rate=0.01)
+
+rl= ReduceLearningRate(monitor='val_accuracy',factor=0.1,patience=20,verbose=1,min_delta=0.001,cooldown=3,min_lr=0.0001)
+es = EarlyStopping(monitor = 'val_accuracy',min_delta=0.0001,mode='max',verbose=1,patience=30,restore_best_weights=True,baseline=0.99)
+
+g1=model2.fit(x_train,y_train,validation_data=[x_test,y_test],epochs=500,verbose=1,batch_size=128,callbacks=[rl,es])
+
+
+2. Get best data combination for ML and DL models
+--------------------------------------------------
+
+from optilearn.optimal import OptimalDataSelector
+
+x_train,y_train,x_test,y_test = OptimalDataSelector(X,Y,combination=15000,train_size=0.8,active_checkpoint=True,bs_problem='reg',scaling='st_normal')
+
+
+3. Dealing NLP Problems
+-----------------------
+
+from optilearn.text import EmoTextHandler,word_tokenizer,Punctuation,EnglishPronouns,read_txt,text_to_tokens
+from optilearn.word import short_word_treatment
+
+
+4. File Transfering from one to another folder
+----------------------------------------------
+
+from optilearn.files import FilePathway
+
+
+5. Image scrapping from websites
+--------------------------------
+
+from optilearn.images import web_image_downloader
+
+
+6. splitting timeseries based data into training and testing
+---------------------------------------------------------
+
+from optilearn.sequential import timeseries_split
+
+x_train,x_test,y_train,y_test=timeseries_split(df1,'08:00:00',n_previous_values=50,train_size=0.8)
+x_train.shape,x_test.shape,y_train.shape,y_test.shape
+
+
+
+*** For more detailed documentation, visit our GitHub Page --> https://github.com/about-optilearn.
+
+
+'''
+
+# Setting up
+setup(
+    name="optilearn",
+    version=VERSION,
+    author="Rohan Majumder",
+    author_email="majumderrohan2001@gmail.com",
+    url="https://github.com/about-optilearn",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=LONG_DESCRIPTION,
+    packages=find_packages(),
+    install_requires=['pandas', 'numpy', 'h5py', 'scikit-learn'],
+    keywords=['Training Neural networks', 'Deeplearning', 'callbacks', 'neural network', 'converting text into tokens', 'transfer or copy files from one directory to other', 'get best data combination', 'read text files', 'text files', 'lock data combination', 'save data', 'English', 'Pronouns', 'Punctuations', 'English pronouns', 'Model training', 'optimise accuracy', 'lock data combination', 'gives best result', 'best data for ML models', 'works on text data also', 'short word treatment', 'Image Scraping', 'download images', 'Web Image Scraping', 'timeseries', 'splitting timeseries data into train and test', 'deal with emojis and emoticons', 'emoji', 'emojis', 'emoticon', 'emoticons', 'word tokenize', 'NLP', 'short words', 'short words treatment', 'get best accuracy', 'performance enhancing', 'best data', 'more accurate model building', 'word to token', 'tokenizer'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        'Programming Language :: Python :: 3.1',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.12',
+        "Operating System :: Unix",
+        "Operating System :: POSIX",
+        "Operating System :: iOS",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)
