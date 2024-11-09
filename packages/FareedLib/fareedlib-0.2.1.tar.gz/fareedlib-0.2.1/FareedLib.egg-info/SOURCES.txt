@@ -1,0 +1,11 @@
+README.md
+setup.py
+FareedLib/__init__.py
+FareedLib/core_module.py
+FareedLib/other_moules.py
+FareedLib.egg-info/PKG-INFO
+FareedLib.egg-info/SOURCES.txt
+FareedLib.egg-info/dependency_links.txt
+FareedLib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core_module.py
