@@ -1,0 +1,42 @@
+[project]
+name = "wimsey"
+dynamic = ["version"]
+description = "A lightweight data contracts framework"
+authors = [
+    { name = "Ben", email = "benrutter@posteo.net" }
+]
+dependencies = [
+    "narwhals>=1.10.0",
+    "fsspec>=2024.10.0",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ipdb>=0.13.13",
+    "ipython>=8.21.0",
+    "pandas>=2.2.3",
+    "pyyaml>=6.0.2",
+    "polars>=1.10.0",
+    "mypy>=1.13.0",
+    "types-pyyaml>=6.0.12.20240917",
+    "dask>=2024.10.0",
+    "dask-expr>=1.1.16",
+    "pytest>=8.3.3",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.5.42",
+    "grip>=4.6.2",
+    "mkdocs-charts-plugin>=0.0.12",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "wimsey/_version.py"
