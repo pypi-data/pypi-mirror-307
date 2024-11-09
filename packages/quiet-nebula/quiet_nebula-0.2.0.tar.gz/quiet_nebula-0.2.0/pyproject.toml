@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quiet-nebula"
+version = "0.2.0"
+description = "A package to analyze sales data from a CSV file."
+authors = [{ name = "Semyon Drozdov", email = "s.drozdov@edu.centraluniversity.ru" }]
+dependencies = ["pandas"]
+
+[project.scripts]
+quiet-nebula = "quiet_nebula.cli:main"

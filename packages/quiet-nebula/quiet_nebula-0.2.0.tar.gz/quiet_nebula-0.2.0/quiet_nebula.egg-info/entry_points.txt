@@ -1,0 +1,2 @@
+[console_scripts]
+quiet-nebula = quiet_nebula.cli:main
