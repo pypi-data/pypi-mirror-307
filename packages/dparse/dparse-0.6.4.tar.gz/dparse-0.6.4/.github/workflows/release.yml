@@ -1,0 +1,27 @@
+name: PyPi Release
+
+on: workflow_dispatch
+
+jobs:
+    pypi-publish:
+      name: upload release to PyPI
+      runs-on: ubuntu-latest
+      environment: release
+      permissions:
+          id-token: write
+      steps:
+          - name: Download artifact
+            id: download-artifact
+            uses: dawidd6/action-download-artifact@v2
+            with:
+              workflow: ci.yml
+              workflow_conclusion: success
+              branch: main
+              event: workflow_dispatch
+              name: dist-release
+              path: dist
+              if_no_artifact_found: fail
+          - name: Publish package distributions to PyPI
+            uses: pypa/gh-action-pypi-publish@release/v1
+            with:
+              print-hash: true
