@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "db-queries-bulk-migrator"
+version = "0.3.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+dbqm = "db_queries_bulk_migrator.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+xlsxwriter = "^3.2.0"
+rich = "^13.8.1"
+dt = "^1.1.67"
+typer = "^0.12.5"
+pymmh3 = "^0.0.5"
+openpyxl = "^3.1.5"
+sqlglot = "^25.23.0"
+sqlparse = "^0.5.1"
+regex = "^2024.9.11"
+pyyaml = "^6.0.2"
+ruamel-yaml = "^0.18.6"
+dt-cli = "^1.6.19"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
