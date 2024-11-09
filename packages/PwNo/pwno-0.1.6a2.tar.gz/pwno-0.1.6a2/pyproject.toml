@@ -1,0 +1,49 @@
+[project]
+name = "PwNo"
+version = "0.1.6a2"
+description = "Pwntools Extension that Just Works"
+authors = [
+    { name = "MuelNova", email = "n@ova.moe" },
+]
+dependencies = [
+    "pwntools>=4.12.0",
+    "pydantic>=2.8.2",
+    "setuptools>=71.1.0",
+    "sorcery>=0.2.2",
+    "ropper>=1.13.8",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+pwno = "pwno.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.5.5",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "C90",
+]
+ignore = [
+    "F405",
+    "F403",
+    "F841",
+]
