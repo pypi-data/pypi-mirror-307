@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: GH_CoRE
+Version: 1.1.0
+Summary: GitHub Collaboration Relation Extraction
+Home-page: https://github.com/birdflyi/GitHub_Collaboration_Relation_Extraction
+Author: birdflyi
+Author-email: zhlou@stu.ecnu.edu.cn
+License: Apache License 2.0
+Keywords: Relation Extraction
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: clickhouse-driver==0.2.8
+Requires-Dist: numpy>=1.21.5
+Requires-Dist: pandas>=1.4.4
+Requires-Dist: paramiko==3.5.0
+Requires-Dist: requests>=2.28.1
+Requires-Dist: sshtunnel==0.4.0
