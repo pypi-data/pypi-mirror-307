@@ -1,0 +1,9 @@
+[console_scripts]
+chatgpt = toolmate.chatgpt:main
+commandprompt = toolmate.commandprompt:main
+etextedit = toolmate.eTextEdit:main
+groqchat = toolmate.groqchat:main
+llava = toolmate.ollamachat:llava
+mistralchat = toolmate.mistralchat:main
+ollamachat = toolmate.ollamachat:main
+toolmate = toolmate.main:main
