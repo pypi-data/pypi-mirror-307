@@ -1,0 +1,86 @@
+{% extends "dcim/site.html" %}
+{% load helpers %}
+{% load plugins %}
+{% load buttons %}
+{% load i18n %}
+
+
+{% block controls %}
+
+  {% if 'add' in context.actions and not context.sop_infra.pk %}
+    <a href="{% url 'plugins:sop_infra:sopinfra_add' pk=object.id %}" type="button" class="btn btn-primary">
+      <i class="mdi mdi-plus-thick"></i>{% trans "Add Infrastructure" %}</a>
+  {% endif %}
+
+  {% if 'bulk_edit' in context.actions and context.sop_infra.pk %}
+    <a href="{% url 'plugins:sop_infra:sopinfra_edit' pk=context.sop_infra.pk %}" type="button" class="btn btn-yellow">
+      <i class="mdi mdi-pencil"></i>{% trans "Edit Infrastructure" %}</a>
+  {% endif %}
+
+  {% if 'bulk_delete' in context.actions and context.sop_infra.pk %}
+  <a href="{% url 'plugins:sop_infra:sopinfra_delete' pk=context.sop_infra.pk %}" type="button" class="btn btn-red">
+    <i class="mdi mdi-trash-can-outline"></i>{% trans "Delete Infrastructure" %}</a>
+  {% endif %}
+
+{% endblock controls %}
+
+
+{% block content %}
+
+<div class="row">
+
+  <div class="col-md-6">
+    {% include 'sop_infra/tab/meraki.html' with object=context.sop_infra site=object %}
+  </div>
+
+  <div class="col-md-6">
+    {% include 'sop_infra/tab/classification.html' with object=context.sop_infra site=object %}
+  </div>
+
+  <div class="col-md-6">
+    {% include 'sop_infra/tab/sizing.html' with object=context.sop_infra site=object %}
+  </div>
+
+</div>
+
+{% if context.slave %}
+<div class="col col-md-12">
+  <div class="card">
+
+    <h2 class="card-header">
+      <a href="{% url object|viewname:"list" %}?{{context.slave}}">Slave sites</a>
+    </h2>
+
+    <div class="htmx-container table-responsive"
+      hx-get="{% url object|viewname:"list" %}?embedded=True&{{context.slave}}"
+      hx-target="this"
+      hx-trigger="load" hx-select=".htmx-container" hx-swap="outerHTML"
+    ></div>
+{% endif %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function()
+  {
+    const all_tabs = document.querySelectorAll('ul.nav.nav-tabs li.nav-item a');
+    update_current_tab_color(all_tabs, 'Infrastructure')
+
+    /*
+     * update tab front background color
+     */
+    function update_current_tab_color(all_tabs, tab_name)
+    {
+      all_tabs.forEach(tab => {
+        if (tab.innerText.trim() == "Site") {
+          tab.classList.remove('active');
+        } else if (tab.innerText.trim() == tab_name) {
+          tab.classList.add('active');
+        }
+      });
+    }
+  });
+</script>
+
+{% endblock content %}
+
