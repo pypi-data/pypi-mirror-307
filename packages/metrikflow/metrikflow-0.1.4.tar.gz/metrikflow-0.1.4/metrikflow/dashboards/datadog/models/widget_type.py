@@ -1,0 +1,10 @@
+from enum import Enum
+
+
+class WidgetType(Enum):
+    CHANGE='CHANGE'
+    HISTOGRAM='HISTOGRAM'
+    QUERY_VALUE='QUERY_VALUE'
+    SCATTER_PLOT='SCATTER_PLOT'
+    TABLE='TABLE'
+    TIMESERIES='TIMESERIES'
