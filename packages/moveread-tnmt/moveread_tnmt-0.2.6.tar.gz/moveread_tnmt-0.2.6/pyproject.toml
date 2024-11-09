@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-tnmt"
+version = "0.2.6"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Moveread for Tournaments, the API"
+dependencies = [
+  "lazy-loader", "sqlmodel", "sqltypes",
+  "python-kv", "pure-cv",
+  "chess-pairings", "chess-scraping", "chess-utils"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.scripts]
+tnmt-api = "moveread.tnmt.server.cli:main"
+tnmt-clientgen = "moveread.tnmt.server.clientgen_cli:main"
+
+[project.optional-dependencies]
+server = ["fastapi", "aiohttp", "python-kv[blob]", "python-multipart"]
+
+[project.urls]
+repo = "https://github.com/moveread/tnmt.git"

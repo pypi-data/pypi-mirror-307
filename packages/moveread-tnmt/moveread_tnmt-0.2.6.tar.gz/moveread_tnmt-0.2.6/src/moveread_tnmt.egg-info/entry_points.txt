@@ -1,0 +1,3 @@
+[console_scripts]
+tnmt-api = moveread.tnmt.server.cli:main
+tnmt-clientgen = moveread.tnmt.server.clientgen_cli:main
