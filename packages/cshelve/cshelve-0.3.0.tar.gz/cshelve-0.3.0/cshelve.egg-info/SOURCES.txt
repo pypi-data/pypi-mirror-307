@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+cshelve/__init__.py
+cshelve/_azure_blob_storage.py
+cshelve/_database.py
+cshelve/_factory.py
+cshelve/_flag.py
+cshelve/_in_memory.py
+cshelve/_parser.py
+cshelve/exceptions.py
+cshelve/provider_interface.py
+cshelve.egg-info/PKG-INFO
+cshelve.egg-info/SOURCES.txt
+cshelve.egg-info/dependency_links.txt
+cshelve.egg-info/requires.txt
+cshelve.egg-info/top_level.txt
