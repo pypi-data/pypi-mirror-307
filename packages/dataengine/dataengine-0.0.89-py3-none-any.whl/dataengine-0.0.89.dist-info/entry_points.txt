@@ -1,0 +1,2 @@
+[console_scripts]
+script_name = dataengine.deploy_package_to_databricks:main
