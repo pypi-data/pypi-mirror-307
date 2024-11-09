@@ -1,0 +1,4 @@
+[console_scripts]
+rpinfo = railwaypacriman.rpinfo:rpinfo
+rpprogress = railwaypacriman.rpprogress:rpprogress
+
