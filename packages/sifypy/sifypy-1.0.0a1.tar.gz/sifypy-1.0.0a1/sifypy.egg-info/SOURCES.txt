@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+sifypy/Fsys.py
+sifypy/Fsys.pyi
+sifypy/__init__.py
+sifypy.egg-info/PKG-INFO
+sifypy.egg-info/SOURCES.txt
+sifypy.egg-info/dependency_links.txt
+sifypy.egg-info/top_level.txt
+sifypy/_typing/__init__.py
+sifypy/_typing/typing.py
+sifypy/_typing/typing.pyi
