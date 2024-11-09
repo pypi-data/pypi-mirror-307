@@ -1,0 +1,3 @@
+[console_scripts]
+parse-vivado-report=vivado_report_parser.parse_vivado_report:main
+
