@@ -1,0 +1,23 @@
+name: validate-renovate-config
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/validate-renovate-config.yml"
+      - "renovate.json5"
+  push:
+    branches: [main]
+
+env:
+  # renovate: datasource=node depName=node versioning=node
+  NODE_VERSION: "22"
+
+jobs:
+  validate-renovate-config:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: npx -p renovate renovate-config-validator
