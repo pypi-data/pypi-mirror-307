@@ -1,0 +1,138 @@
+Index: example_scripts/trace_loop_grpc.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_grpc.py b/example_scripts/trace_loop_grpc.py
+new file mode 100644
+--- /dev/null	(date 1725474210506)
++++ b/example_scripts/trace_loop_grpc.py	(date 1725474210506)
+@@ -0,0 +1,29 @@
++from lib import trace_loop
++
++SERVICE_NAME = "my-otel-test"
++NUM_ADDS = 12
++
++if __name__ == "__main__":
++    trace_loop(NUM_ADDS)
++
++class MyOtelTest:
++    def requirements(self):
++        return "opentelemetry-distro", "opentelemetry-exporter-otlp-proto-grpc"
++
++    def environment_variables(self):
++        return {
++            "OTEL_SERVICE_NAME": SERVICE_NAME,
++            "OTEL_EXPERIMENTAL_RESOURCE_DETECTORS": "process",
++        }
++
++    def wrapper_command(self):
++        return "opentelemetry-instrument"
++
++    def on_start(self):
++        return None
++
++    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
++        pass
++
++    def is_http(self):
++        return False
+Index: example_scripts/logging_exception_bug.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nCauses a ValueError to be raised, caught, and logged. The exception arises because we are trying to log an object.\n\"\"\"\n\ndef main():\n    import logging\n    import time\n\n\n    logging.basicConfig(level=logging.NOTSET)\n    logging.getLogger().addHandler(create_logging_handler())\n\n    logger = logging.getLogger(__name__)\n\n    try:\n        raise ValueError(\"Err\")\n    except ValueError as e:\n        # log the raw exception object\n        logger.error(e)\n        # this causes a ValueError to be raised, caught, and logged\n\n    for _ in range(4):\n        # demonstrate that the exception was handled and that we can still perform an operation\n        time.sleep(1)\n        print(\"x\")\n\n\ndef create_logging_handler():\n    from opentelemetry.exporter.otlp.proto.grpc._log_exporter import OTLPLogExporter\n    from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler\n    from opentelemetry.sdk._logs.export import BatchLogRecordProcessor\n\n    logger_provider = LoggerProvider()\n    logger_provider.add_log_record_processor(\n        BatchLogRecordProcessor(OTLPLogExporter(insecure=True))\n    )\n    return LoggingHandler(logger_provider=logger_provider)\n\n\nif __name__ == \"__main__\":\n    main()\n\n\nclass MyOtelTest:\n\n    def environment_variables(self):\n        return {}\n\n    def requirements(self):\n        return (\"opentelemetry-exporter-otlp==1.26.0\",)\n\n    def wrapper_command(self):\n        return \"\"\n\n    def on_start(self):\n        pass\n\n    def on_stop(self, tel, stdout: str, stderr: str, returncode: int) -> None:\n        pass\n\n    def is_http(self) -> bool:\n        return False\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/logging_exception_bug.py b/example_scripts/logging_exception_bug.py
+--- a/example_scripts/logging_exception_bug.py	(revision 9a9feb4063a01af2b774935be5fe032583e79236)
++++ b/example_scripts/logging_exception_bug.py	(date 1724878426741)
+@@ -2,11 +2,11 @@
+ Causes a ValueError to be raised, caught, and logged. The exception arises because we are trying to log an object.
+ """
+ 
++
+ def main():
+     import logging
+     import time
+ 
+-
+     logging.basicConfig(level=logging.NOTSET)
+     logging.getLogger().addHandler(create_logging_handler())
+ 
+Index: example_scripts/trace_loop_splk_pypi.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from lib import trace_loop\n\nSERVICE_NAME = \"my-otel-test\"\nNUM_ADDS = 12\n\nif __name__ == \"__main__\":\n    trace_loop(NUM_ADDS)\n\nclass MyOtelTest:\n    def requirements(self):\n        return (\"splunk-opentelemetry[otlp]\",)\n\n    def environment_variables(self):\n        return {\n            \"OTEL_SERVICE_NAME\": SERVICE_NAME,\n        }\n\n    def wrapper_command(self):\n        return \"opentelemetry-instrument\"\n\n    def on_start(self):\n        return None\n\n    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:\n        print(f\"script completed with return code {returncode}\")\n\n    def is_http(self):\n        return False\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_splk_pypi.py b/example_scripts/trace_loop_splk_pypi.py
+--- a/example_scripts/trace_loop_splk_pypi.py	(revision 9a9feb4063a01af2b774935be5fe032583e79236)
++++ b/example_scripts/trace_loop_splk_pypi.py	(date 1726691385130)
+@@ -12,14 +12,14 @@
+ 
+     def environment_variables(self):
+         return {
+-            "OTEL_SERVICE_NAME": SERVICE_NAME,
++            "OTEL_SERVICE_NAME": SERVICE_NAME
+         }
+ 
+     def wrapper_command(self):
+-        return "opentelemetry-instrument"
++        return "splunk-py-trace"
+ 
+     def on_start(self):
+-        return None
++        return 12
+ 
+     def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
+         print(f"script completed with return code {returncode}")
+Index: example_scripts/trace_loop_splk_whl.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_splk_whl.py b/example_scripts/trace_loop_splk_whl.py
+new file mode 100644
+--- /dev/null	(date 1729268473086)
++++ b/example_scripts/trace_loop_splk_whl.py	(date 1729268473086)
+@@ -0,0 +1,38 @@
++from lib import trace_loop
++
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.20.0.dev0-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.20.0-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.21.0-py3-none-any.whl[all]"
++# WHL = "/Users/pcollins/github/signalfx/sop-v2/dist/splunk_opentelemetry-2.0.0a1-py3-none-any.whl"
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl"
++WHL = "/Users/pcollins/github/signalfx/sop-v2-prs/dist/splunk_opentelemetry-2.0.0a1-py3-none-any.whl"
++
++SERVICE_NAME = "my-otel-test"
++NUM_ADDS = 12
++
++if __name__ == "__main__":
++    trace_loop(NUM_ADDS)
++
++
++class MyOtelTest:
++    def requirements(self):
++        return (WHL,)
++
++    def environment_variables(self):
++        return {
++            "OTEL_SERVICE_NAME": SERVICE_NAME,
++        }
++
++    def wrapper_command(self):
++        return "opentelemetry-instrument"
++
++    def on_start(self):
++        return None
++
++    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
++        print(f"script completed with return code {returncode}")
++
++    def is_http(self):
++        return False
