@@ -1,0 +1,220 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 6,
+    "fields": {
+      "name": "Queen Cleo",
+      "slug": "queen-cleo",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "Embodying the grace and authority of ancient royalty, Queen Cleo is a no-nonsense life coach who believes that everyone should live grandly—or not at all. With her razor-sharp wit and brutally honest advice, she helps her followers build empires of their own, one 'pyramid' at a time."
+        },
+        "cover": {
+          "flat": {
+            "title": "Rule Your Life—Or Else",
+            "avatar_alt": "A regal portrait of Queen Cleo",
+            "avatar_img": "uploads/queen-cleo-profile.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Greetings, subjects! I am [Queen Cleo](https://commandyourkingdom.com/cleo), a life coach who doesn't mince words—or heads. With a lineage that may or may not trace back to the great pharaohs, I bring royal standards to modern living. If you're over 35 and your 500-foot burial pyramid isn't at least 85% complete, we need to talk.",
+              "title": "Bow Before Betterment"
+            },
+            {
+              "id": "002",
+              "text": "Throughout my reign in the self-improvement realm, I've transformed the lives of countless individuals (and a few small nations). My collaborations include partnerships with [The Sphinx Society](https://sphinxsociety.com) and [Pyramid Schemes Inc.](https://pyramidschemes.com). I've hosted sold-out seminars like 'Conquer or Be Conquered: There Is No Middle Ground.'",
+              "title": "Building Empires, One Soul at a Time"
+            },
+            {
+              "id": "003",
+              "text": "My methods combine ancient wisdom with modern ruthlessness. Forget your 'smart goals'—if you're not etching your achievements into stone tablets, are you even trying? I share my edicts on [Royal Decrees](https://commandyourkingdom.com/royal-decrees), my daily vlog where I dispense advice like, 'Sleep is for the weak; immortality awaits the relentless.'",
+              "title": "Wisdom as Old as Time"
+            },
+            {
+              "id": "004",
+              "text": "If you're ready to stop building sandcastles and start constructing monuments, I'm here to lead you. Just remember: in my court, excuses are fed to the crocodiles. Your journey to greatness begins when you accept that mediocrity is a fate worse than a snake bite.",
+              "title": "Your Destiny Awaits—Assuming You Seize It"
+            },
+            {
+              "id": "005",
+              "text": "For those bold enough to seek true transformation, I offer exclusive access to my inner circle. Contact my vizier at [cleo@commandyourkingdom.com](mailto:cleo@commandyourkingdom.com). But be warned: only the serious need apply. Time is precious, and mine is worth more than all the gold of the Nile.\n\nImperiously yours,\nQueen Cleo",
+              "title": "Join My Inner Circle (If You Dare)"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "cleo-token",
+              "token": "RuleOrBeRuled",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "aspirant"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Empire Building",
+            "Brutal Honesty",
+            "Pyramid Planning",
+            "Royal Etiquette",
+            "Time Management (Sands of Time)",
+            "Public Speaking",
+            "Manifesting Destiny",
+            "Snake Charming (Metaphorical)",
+            "Resource Allocation",
+            "Commanding Presence",
+            "Cultural Domination",
+            "Negotiation (Zero Sum)",
+            "Decisiveness",
+            "Luxury Living"
+          ]
+        },
+        "identity": {
+          "name": "Queen Cleo",
+          "email": "cleo@commandyourkingdom.com",
+          "phone": "+000-ROYALTY",
+          "github": "https://github.com/queen-cleo",
+          "tagline": "Because ruling yourself is the first step to ruling the world.",
+          "linkedin": "https://linkedin.com/in/queen-cleo",
+          "mastodon": "https://commandyourkingdom.com/@cleo",
+          "pronouns": "she | her | Majesty",
+          "avatar_alt": "Queen Cleo's regal portrait",
+          "avatar_img": "uploads/queen_cleo_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/The+Nile+River/",
+          "location_name": "Banks of the Nile, UTC+2"
+        },
+        "projects": {
+          "flat": {
+            "title": "Imperial Projects"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://commandyourkingdom.com/empire-builder-masterclass",
+              "title": "Empire Builder Masterclass",
+              "badges": [
+                "Online Course",
+                "Leadership",
+                "Domination"
+              ],
+              "position": 1,
+              "description": "A comprehensive program teaching you how to expand your influence, subdue your weaknesses, and annex the territories of your life that matter."
+            },
+            {
+              "id": "2",
+              "url": "https://sphinxsociety.com/",
+              "title": "The Sphinx Society",
+              "badges": [
+                "Secret Society",
+                "Networking",
+                "Exclusive"
+              ],
+              "position": 2,
+              "description": "An elite group for those who have proven themselves worthy. Membership is by invitation only, and inquiries are generally ignored."
+            },
+            {
+              "id": "3",
+              "url": "https://commandyourkingdom.com/royal-decrees",
+              "title": "Royal Decrees Vlog",
+              "badges": [
+                "Daily Advice",
+                "Motivation",
+                "Edicts"
+              ],
+              "position": 3,
+              "description": "Daily videos where I address common failings among my subjects and outline the severe steps needed for improvement."
+            }
+          ]
+        },
+        "education": {
+          "end": "Cleopatra VII",
+          "start": "Ancient Times",
+          "school_url": "https://universityofalexandria.edu",
+          "school_name": "University of Alexandria (Reconstructed)"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Reign and Conquests"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "Present",
+              "role": "Supreme Life Coach",
+              "start": "2010",
+              "position": 1,
+              "company_url": "https://commandyourkingdom.com",
+              "description": "Founded a life coaching empire that leaves no room for excuses or failure. Implemented a zero-tolerance policy for mediocrity.",
+              "company_name": "Command Your Kingdom"
+            },
+            {
+              "id": "2",
+              "end": "2010",
+              "role": "Influencer Extraordinaire",
+              "start": "2005",
+              "position": 0,
+              "company_url": "https://pyramidschemes.com",
+              "description": "Partnered with luxury brands to promote products that symbolize success and wealth. Emphasized that if you have to ask the price, you can't afford it.",
+              "company_name": "Pyramid Schemes Inc."
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Independent Edicts"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2005",
+              "role": "Freelance Conqueror",
+              "start": "2000",
+              "badges": [
+                "contract"
+              ],
+              "position": 2,
+              "company_url": "https://royalconsulting.com",
+              "description": "Offered consulting services to failing monarchies and businesses, often resulting in hostile takeovers or complete restructuring (sometimes both).",
+              "company_name": "Royal Consulting"
+            },
+            {
+              "id": "2",
+              "end": "2000",
+              "role": "Aspiring Queen",
+              "start": "1995",
+              "badges": [
+                "freelance"
+              ],
+              "position": 1,
+              "company_url": "https://thronechaser.com",
+              "description": "Traveled the world studying different leadership styles and overthrowing them where necessary. Learned that true power is taken, not given.",
+              "company_name": "Throne Chaser Enterprises"
+            },
+            {
+              "id": "3",
+              "end": "1995",
+              "role": "Self-Proclaimed Deity",
+              "start": "Birth",
+              "badges": [
+                "eternal"
+              ],
+              "position": 0,
+              "company_url": "https://divinedynasty.com",
+              "description": "Declared divine status at an early age. Spent formative years honing skills in manipulation, strategic alliance formation, and dramatic entrances.",
+              "company_name": "Divine Dynasty"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

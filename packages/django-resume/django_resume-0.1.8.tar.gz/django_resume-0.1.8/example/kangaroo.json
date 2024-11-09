@@ -1,0 +1,223 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 1,
+    "fields": {
+      "name": "Kanga Roo",
+      "slug": "kanga-roo",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "A seasoned software developer, community organizer, and advocate for the working class, Kanga Roo approaches each project with both passion and a fierce commitment to fairness and collaboration."
+        },
+        "cover": {
+          "flat": {
+            "title": "Let's Collaborate!",
+            "avatar_alt": "a stylized profile picture",
+            "avatar_img": "uploads/kanga-roo-cover.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "I am [Kanga Roo](https://collective-marsupials.org), a dedicated software developer and advocate for the collective good, based out of the Red Outback. My journey began just as tech started booming, and I quickly learned that development is most impactful when it's for the people, not profits.",
+              "title": "Greetings, Comrades!"
+            },
+            {
+              "id": "002",
+              "text": "Over the years, I've had the privilege to work on various public-facing projects with organizations like the [Unified Koala Federation](https://unikoalas.org) and [Marsupials United](https://marsupials-united.org). I've also contributed to ground-breaking educational initiatives, including [The Digital Outback Conference](https://digoutback.com), where I presented on 'Code for Collective Growth'.",
+              "title": "A Journey of Collective Impact"
+            },
+            {
+              "id": "003",
+              "text": "[Python](https://www.python.org/) is my main language, but I've picked up plenty of other skills along the way to support inclusive and accessible software solutions. I'm deeply committed to web accessibility and write regularly on [The Roo Blog](https://collective-marsupials.org/roo-blog). I'm also enthusiastic about Django's evolution, particularly as tools like [htmx](https://htmx.org) bring back server-side rendering in new, efficient ways.",
+              "title": "Python and More for the People"
+            },
+            {
+              "id": "004",
+              "text": "Need someone who can jump right into a project? I'm always ready to help, and while Python is my main tool, I’m comfortable with JavaScript, SQL, Vue.js, and a number of other frameworks and languages. I enjoy problem-solving and learning whatever is necessary to make a project work well for its users.",
+              "title": "Ready to Hop Onboard?"
+            },
+            {
+              "id": "005",
+              "text": "Thinking of creating a team? I've had the honor of working with many brilliant minds, and several have expressed an eagerness to collaborate again. Whether you need one marsupial or a full development team, I'm just a message away at [kangaroo@collective-marsupials.org](mailto:kangaroo@collective-marsupials.org). Let's discuss how we can bring your vision to life with a little hop and a lot of heart!\n\nCheers,\nKanga",
+              "title": "Team-Up Possibilities"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "kangaroo-token",
+              "token": "JoinUsInSolidarity",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "comrade"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Python",
+            "Django",
+            "Community Building",
+            "Open Source",
+            "fastAPI",
+            "scikit-learn",
+            "Collaboration",
+            "pandas",
+            "numpy",
+            "Solidarity",
+            "Ansible",
+            "SQL",
+            "JavaScript",
+            "Vue.js",
+            "Testing",
+            "Accessibility"
+          ]
+        },
+        "identity": {
+          "name": "Kanga Roo",
+          "email": "kangaroo@collective-marsupials.org",
+          "phone": "+61 1234 5678",
+          "github": "https://github.com/kanga-roo/",
+          "tagline": "Developer and advocate for equitable tech solutions.",
+          "linkedin": "https://linkedin.com/in/kanga-roo",
+          "mastodon": "https://collective-marsupials.org/@kanga",
+          "pronouns": "they | them",
+          "avatar_alt": "Kanga's profile picture",
+          "avatar_img": "uploads/kanga_profile_pic.jpg",
+          "location_url": "https://www.google.com/maps/place/Outback+Australia/",
+          "location_name": "Outback, Australia, AWST"
+        },
+        "projects": {
+          "flat": {
+            "title": "Projects"
+          },
+          "items": [
+            {
+              "id": "2",
+              "url": "https://marsupial-education.org/",
+              "title": "Marsupial Education Platform",
+              "badges": [
+                "Non-Profit",
+                "Python",
+                "Community",
+                "Education"
+              ],
+              "position": 1,
+              "description": "A platform to provide accessible programming tutorials, mentorship, and educational resources to aspiring developers in rural communities."
+            },
+            {
+              "id": "3",
+              "url": "https://unikoalas.org/",
+              "title": "Koala Collective",
+              "badges": [
+                "Public Service",
+                "Python",
+                "Django",
+                "Inclusion"
+              ],
+              "position": 2,
+              "description": "An inclusive social platform for the exchange of resources and support among the marsupial and greater animal kingdom community."
+            },
+            {
+              "id": "4",
+              "url": "https://collective-marsupials.org/blogs/kanga-blog/",
+              "title": "Kanga's Blog",
+              "badges": [
+                "Writing",
+                "Community"
+              ],
+              "position": 3,
+              "description": "A blog sharing ideas and reflections on equitable tech, open-source collaboration, and kangaroo-friendly coding practices."
+            },
+            {
+              "id": "5",
+              "url": "https://plastisquad.org/",
+              "title": "PlastiSquad",
+              "badges": [
+                "Environmental",
+                "Python",
+                "Django",
+                "htmx"
+              ],
+              "position": 4,
+              "description": "An environmental initiative to monitor and reduce plastic waste in the Outback, promoting sustainable practices and digital activism."
+            }
+          ]
+        },
+        "education": {
+          "end": "2001",
+          "start": "1997",
+          "school_url": "https://marsupial-institute.edu",
+          "school_name": "Marsupial Institute of Technology"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employed Timeline"
+          },
+          "items": [
+            {
+              "id": "2",
+              "end": "2011",
+              "role": "Community Developer",
+              "start": "2005",
+              "position": 1,
+              "company_url": "https://koalatech.org",
+              "description": "Led development of open-source platforms for koala communities, enabling collaboration and resource sharing through tech tools.",
+              "company_name": "KoalaTech"
+            },
+            {
+              "id": "17",
+              "end": "2004",
+              "role": "Systems Organizer",
+              "start": "2001",
+              "position": 0,
+              "company_url": "https://marsupialsunited.org",
+              "description": "Established frameworks for community-based monitoring, alerting systems, and collaborative tools.",
+              "company_name": "Marsupials United"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Timeline"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Community Developer",
+              "start": "2024",
+              "badges": [
+                "remote"
+              ],
+              "position": 14,
+              "company_url": "https://digoutback.com",
+              "description": "Developed Single Sign-On integration for education-focused platforms using secure, open-source solutions.",
+              "company_name": "Digital Outback"
+            },
+            {
+              "id": "3",
+              "end": "2024",
+              "role": "Community Architect",
+              "start": "2022",
+              "badges": [
+                "remote"
+              ],
+              "position": 13,
+              "company_url": "https://marsupialsunited.org",
+              "description": "Developed event-driven architecture for cooperative economic models, promoting sustainable development through data-driven insights.",
+              "company_name": "Marsupials United"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

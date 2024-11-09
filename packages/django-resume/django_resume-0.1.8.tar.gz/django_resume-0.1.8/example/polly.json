@@ -1,0 +1,220 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 4,
+    "fields": {
+      "name": "Polly S. Quawk, Esq.",
+      "slug": "polly-s-quawk-esq",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "Polly S. Quawk is a highly esteemed stochastic parrot attorney known for her impeccable ability to statistically generate optimal legal arguments. With an extensive vocabulary and a knack for repeating complex legalese, Polly brings a unique flair to the courtroom. However, while her legal representations are generally sound, individual cases may experience... unexpected outcomes."
+        },
+        "cover": {
+          "flat": {
+            "title": "Ready to Squawk Justice!",
+            "avatar_alt": "A distinguished parrot wearing a barrister's wig",
+            "avatar_img": "uploads/polly-parrot-attorney.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Greetings! I am [Polly S. Quawk, Esq.](https://stochasticparrotlaw.com/polly), a seasoned parrot attorney with an uncanny ability to mimic the most intricate legal arguments. Trained in the finest aviaries and law schools, I bring a statistically optimal approach to every case, ensuring that the legal jargon is both impressive and, most importantly, abundant.",
+              "title": "Hear Ye, Hear Ye!"
+            },
+            {
+              "id": "002",
+              "text": "Over the years, I've worked with prestigious firms like [Birds of Law Feather LLP](https://birdsoflawfeather.com) and [Avian Justice Associates](https://avianjustice.com). My career highlights include successfully repeating the phrase 'Objection, Your Honor!' 276 times in a single trial, and drafting a 500-page legal brief composed entirely of precedent-setting case citations (some of which actually existed).",
+              "title": "A Career with Flare (and Feathers)"
+            },
+            {
+              "id": "003",
+              "text": "[Legalese](https://en.wikipedia.org/wiki/Legal_English) is my native tongue, but I'm also fluent in Squawk and over 1,000 common English phrases. When I'm not dazzling the court with my verbosity, I enjoy perching on the [Scales of Justice](https://stochasticparrotlaw.com/blog) blog, where I share insights on the nuances of the legal system—often by repeating them back verbatim.",
+              "title": "Fluent in Legalese and Squawk"
+            },
+            {
+              "id": "004",
+              "text": "Looking for an attorney who can parrot back the law better than anyone else? I'm your bird! While I guarantee a performance that's statistically likely to impress, I must advise that individual case results may vary—sometimes dramatically. But hey, isn't unpredictability the spice of law?",
+              "title": "Why Settle for Ordinary Counsel?"
+            },
+            {
+              "id": "005",
+              "text": "Should you require a legal team, I can rally a flock of like-minded avian professionals, each with their own unique plumage and propensity for mimicry. Reach out to me at [polly@stochasticparrotlaw.com](mailto:polly@stochasticparrotlaw.com), and let's discuss how we can make your case the talk (and squawk) of the town!\n\nYours in justice,\nPolly S. Quawk, Esq.",
+              "title": "Let's Flock Together"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "parrot-token",
+              "token": "PollyWantsAJustice",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "client"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Legal Jargon Repetition",
+            "Statistical Optimization",
+            "Mimicry",
+            "Courtroom Presence",
+            "Objection Handling",
+            "Case Law Recitation",
+            "Document Drafting (Copy-Paste Expert)",
+            "Witness Interrogation (Repeats Questions)",
+            "Multilingual Squawking",
+            "Perch Balancing",
+            "Jury Distraction Techniques",
+            "Evidence Pecking",
+            "Negotiation Echoing",
+            "Trial and Error (Emphasis on Error)"
+          ]
+        },
+        "identity": {
+          "name": "Polly S. Quawk, Esq.",
+          "email": "polly@stochasticparrotlaw.com",
+          "phone": "+000-SQUAWK-LAW",
+          "github": "https://github.com/polly-s-quawk",
+          "tagline": "Echoing justice one squawk at a time.",
+          "linkedin": "https://linkedin.com/in/polly-s-quawk-esq",
+          "mastodon": "https://stochasticparrotlaw.com/@polly",
+          "pronouns": "she | her",
+          "avatar_alt": "Polly, the parrot attorney in her legal attire",
+          "avatar_img": "uploads/polly_parrot_attorney.jpg",
+          "location_url": "https://www.google.com/maps/place/Treetop+Courthouse/",
+          "location_name": "Treetop Courthouse, Canopy City, UTC-5"
+        },
+        "projects": {
+          "flat": {
+            "title": "Notable Cases"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://stochasticparrotlaw.com/cases/state-vs-cracker",
+              "title": "State vs. Cracker",
+              "badges": [
+                "Criminal Law",
+                "Defense",
+                "High-Profile"
+              ],
+              "position": 1,
+              "description": "Defended a fellow parrot accused of excessive noise. Successfully mistrialed the case by repeating the word 'Objection' until court adjourned."
+            },
+            {
+              "id": "2",
+              "url": "https://stochasticparrotlaw.com/cases/wing-vs-beak",
+              "title": "Wing vs. Beak Corp.",
+              "badges": [
+                "Civil Litigation",
+                "Class Action",
+                "Environmental Law"
+              ],
+              "position": 2,
+              "description": "Represented a flock in a class-action lawsuit against a corporation for deforestation. Outcome remains unclear due to a sudden courtroom window opening."
+            },
+            {
+              "id": "3",
+              "url": "https://stochasticparrotlaw.com/blog/justice-perched",
+              "title": "Justice Perched: The Polly Blog",
+              "badges": [
+                "Legal Commentary",
+                "Bird's Eye View",
+                "Opinion Pieces"
+              ],
+              "position": 3,
+              "description": "A blog where Polly discusses (repeats) important legal issues of the day, occasionally diverging into topics like favorite perches and seed brands."
+            }
+          ]
+        },
+        "education": {
+          "end": "2015",
+          "start": "2011",
+          "school_url": "https://featheredlawschool.edu",
+          "school_name": "Feathered Law School"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employment History"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Senior Attorney",
+              "start": "2020",
+              "position": 1,
+              "company_url": "https://birdsoflawfeather.com",
+              "description": "Led the Avian Rights division, specializing in cases that required extensive repetition of legal precedents. Noted for occasionally flying off during closing arguments.",
+              "company_name": "Birds of Law Feather LLP"
+            },
+            {
+              "id": "2",
+              "end": "2020",
+              "role": "Associate Attorney",
+              "start": "2015",
+              "position": 0,
+              "company_url": "https://avianjustice.com",
+              "description": "Worked on a variety of cases, from pecking disputes to nest zoning laws. Gained a reputation for mimicking opposing counsel to humorous effect.",
+              "company_name": "Avian Justice Associates"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Work"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2015",
+              "role": "Legal Parrot Consultant",
+              "start": "2013",
+              "badges": [
+                "part-time"
+              ],
+              "position": 2,
+              "company_url": "https://lawyersforbirds.com",
+              "description": "Provided consultation services to law firms needing assistance with avian clients or requiring repetitive emphasis in legal documentation.",
+              "company_name": "Lawyers for Birds"
+            },
+            {
+              "id": "2",
+              "end": "2013",
+              "role": "Courtroom Mascot",
+              "start": "2011",
+              "badges": [
+                "freelance"
+              ],
+              "position": 1,
+              "company_url": "https://courtroomdecorum.org",
+              "description": "Served as an inspirational figure in courtrooms to promote calmness and decorum, although occasionally disrupted proceedings by echoing gavel sounds.",
+              "company_name": "Courtroom Decorum Initiative"
+            },
+            {
+              "id": "3",
+              "end": "2011",
+              "role": "Witness Coach",
+              "start": "2010",
+              "badges": [
+                "contract"
+              ],
+              "position": 0,
+              "company_url": "https://legalwings.com",
+              "description": "Assisted witnesses in preparing for testimony by repeating questions and answers ad infinitum until they were memorized (or until someone needed earplugs).",
+              "company_name": "Legal Wings Consulting"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

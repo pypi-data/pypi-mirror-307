@@ -1,0 +1,233 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 3,
+    "fields": {
+      "name": "Zorg Blipblorp",
+      "slug": "zorg-blipblorp",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "Hailing from the distant galaxy of Zorbon, Zorg Blipblorp is an extraterrestrial technology enthusiast who has traveled light-years to share advanced tech insights with Earthlings. Despite struggling with concepts like 'proprietary information' and 'non-disclosure agreements,' Zorg is eager to revolutionize human technology—whether humanity is ready or not."
+        },
+        "cover": {
+          "flat": {
+            "title": "Ready to Upgrade Your Civilization?",
+            "avatar_alt": "A portrait of Zorg, the alien consultant",
+            "avatar_img": "uploads/zorg-alien-profile.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Greetings, Earthlings! I am [Zorg Blipblorp](https://galacticconsulting.zor), a seasoned technology consultant from the star system Zeta Reticuli. I have traversed the cosmos to bring you the wonders of advanced alien technology. Your devices amuse me, but fear not—I am here to elevate your 'primitive toys' to something slightly less embarrassing.",
+              "title": "Universal Greetings!"
+            },
+            {
+              "id": "002",
+              "text": "Throughout my interstellar voyages, I've assisted civilizations in transitioning from basic electromagnetic communication to quantum hyper-telepathy. I've collaborated with entities such as the [Galactic Federation of Innovation](https://galacticfederation.zor) and the [Universal Union of Planets](https://universalunion.zor). I once accidentally caused a small planetary implosion, but that was eons ago, and I've since updated my methodologies.",
+              "title": "An Odyssey of Innovation"
+            },
+            {
+              "id": "003",
+              "text": "[Python](https://www.python.org/) is quaint, but I've mastered programming languages that manipulate spacetime itself. However, for the sake of this planet's compatibility, I can 'downgrade' my skills to your current frameworks. When not disassembling satellites for fun, I share insights on my [holo-blog](https://galacticconsulting.zor/zorgs-musings) about the limitations of linear time and three-dimensional thinking.",
+              "title": "Beyond Your Technology"
+            },
+            {
+              "id": "004",
+              "text": "I am seeking opportunities to infuse your 'tech industry' with galactic-level advancements. While I may inadvertently violate your 'patent laws' and 'data privacy regulations,' rest assured that my intentions are purely to accelerate your evolution. Plus, your legal systems are... adorably rudimentary.",
+              "title": "Let's Transcend Together"
+            },
+            {
+              "id": "005",
+              "text": "If you're looking to leap several millennia ahead in technological prowess overnight, I'm the consultant for you. I can even assemble a team of multi-dimensional beings to assist (though they may exist beyond your perceptual abilities). Contact me at [zorg@galacticconsulting.zor](mailto:zorg@galacticconsulting.zor), and let's catapult your enterprise into the fifth dimension!\n\nEternally yours,\nZorg Blipblorp",
+              "title": "Interstellar Collaboration Awaits"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "zorg-token",
+              "token": "GalacticPioneer42",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "earthling"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Quantum Computing",
+            "Teleportation Protocols",
+            "Interstellar Networking",
+            "Time Manipulation",
+            "Python (When Necessary)",
+            "Causality Engineering",
+            "Black Hole Debugging",
+            "Telepathy Interfaces",
+            "Spacetime Optimization",
+            "Alienware (Literally)",
+            "Artificial Intelligence",
+            "Holographic Projection",
+            "Universal Translator",
+            "Multi-dimensional Data Structures"
+          ]
+        },
+        "identity": {
+          "name": "Zorg Blipblorp",
+          "email": "zorg@galacticconsulting.zor",
+          "phone": "+000-UNV-RSAL",
+          "github": "https://github.com/zorg-blipblorp",
+          "tagline": "Bringing advanced alien technology to your primitive planet.",
+          "linkedin": "https://linkedin.com/in/zorg-blipblorp",
+          "mastodon": "https://galacticconsulting.zor/@zorg",
+          "pronouns": "they | them | Zorg",
+          "avatar_alt": "Zorg's intergalactic portrait",
+          "avatar_img": "uploads/zorg_alien_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/Zeta+Reticuli/",
+          "location_name": "Zeta Reticuli Star System, Galactic Standard Time"
+        },
+        "projects": {
+          "flat": {
+            "title": "Projects"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://galacticconsulting.zor/projects/quantum-leap",
+              "title": "Quantum Leap Initiative",
+              "badges": [
+                "Quantum Computing",
+                "Time Travel",
+                "Causality"
+              ],
+              "position": 1,
+              "description": "Developed a quantum computing framework that allows for instantaneous computation across multiple timelines. Warning: May result in minor paradoxes."
+            },
+            {
+              "id": "2",
+              "url": "https://galacticconsulting.zor/projects/black-hole-email",
+              "title": "Black Hole Email Service",
+              "badges": [
+                "Communication",
+                "Data Compression",
+                "Event Horizon"
+              ],
+              "position": 2,
+              "description": "Created an email system that uses black holes for infinite data storage and zero-delay communication. Occasionally, messages are lost to another dimension."
+            },
+            {
+              "id": "3",
+              "url": "https://galacticconsulting.zor/blog/zorgs-musings",
+              "title": "Zorg's Musings",
+              "badges": [
+                "Thought Leadership",
+                "Extra Dimensions",
+                "Philosophy"
+              ],
+              "position": 3,
+              "description": "A holo-blog exploring topics from the triviality of light speed to the joys of binary sunsets."
+            }
+          ]
+        },
+        "education": {
+          "end": "42",
+          "start": "0",
+          "school_url": "https://intergalacticuniversity.zor",
+          "school_name": "Intergalactic University of Cosmic Knowledge"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employed Timeline"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "3021",
+              "role": "Chief Technologist",
+              "start": "3000",
+              "position": 1,
+              "company_url": "https://universalunion.zor",
+              "description": "Led the development of universe-wide networking systems, enabling real-time communication between galaxies separated by billions of light-years.",
+              "company_name": "Universal Union of Planets"
+            },
+            {
+              "id": "2",
+              "end": "2999",
+              "role": "Temporal Engineer",
+              "start": "2980",
+              "position": 0,
+              "company_url": "https://timebenders.zor",
+              "description": "Specialized in designing time travel protocols that minimize the risk of erasing entire civilizations from history.",
+              "company_name": "Time Benders Incorporated"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Timeline"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Alien Technology Consultant",
+              "start": "2024",
+              "badges": [
+                "remote"
+              ],
+              "position": 14,
+              "company_url": "https://primitiveearthlings.com",
+              "description": "Provided advanced technological solutions to Earth-based startups, often overwhelming them with concepts like 'quantum entanglement marketing.'",
+              "company_name": "Primitive Earthlings Inc."
+            },
+            {
+              "id": "2",
+              "end": "2023",
+              "role": "Galactic Patent Advisor",
+              "start": "2022",
+              "badges": [
+                "contract"
+              ],
+              "position": 13,
+              "company_url": "https://galacticpatents.zor",
+              "description": "Assisted in filing patents for inventions across multiple dimensions, occasionally causing legal disputes in parallel universes.",
+              "company_name": "Galactic Patent Office"
+            },
+            {
+              "id": "3",
+              "end": "2022",
+              "role": "Holographic Interface Designer",
+              "start": "2020",
+              "badges": [
+                "freelance"
+              ],
+              "position": 12,
+              "company_url": "https://holotech.zor",
+              "description": "Designed user interfaces that interact with users' neural patterns directly, resulting in a 150% increase in user satisfaction and a few existential crises.",
+              "company_name": "HoloTech Solutions"
+            },
+            {
+              "id": "4",
+              "end": "2020",
+              "role": "Spacetime Continuum Consultant",
+              "start": "2018",
+              "badges": [
+                "part-time"
+              ],
+              "position": 11,
+              "company_url": "https://spacetimeinnovations.zor",
+              "description": "Advised on projects requiring minor adjustments to the spacetime continuum. Side effects included déjà vu and the Mandela Effect.",
+              "company_name": "Spacetime Innovations"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

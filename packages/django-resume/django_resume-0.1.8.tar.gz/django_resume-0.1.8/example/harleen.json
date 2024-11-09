@@ -1,0 +1,220 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 7,
+    "fields": {
+      "name": "Harleen Quinzell",
+      "slug": "harleen-quinzell",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "A vivacious and energetic individual with a flair for the dramatic, Harleen Quinzell is looking to bring her unique brand of enthusiasm to the world of early childhood education. With a background in psychology and a passion for laughter, she's ready to make learning an adventure for every little pudding in her classroom."
+        },
+        "cover": {
+          "flat": {
+            "title": "Let's Make Learning a Whirl!",
+            "avatar_alt": "A playful portrait of Harleen",
+            "avatar_img": "uploads/harleen-quinzell-profile.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Hey there, kiddos and grown-ups! I'm [Harleen Quinzell](https://funhouseeducation.com/harleen), and I'm all about turning frowns upside down. After an exciting career journey full of twists and turns (some might say cartwheels), I've decided it's time to share my zest for life with the next generation. Let's face it, education could use a little more color and a lot more confetti!",
+              "title": "Time for Some Fun!"
+            },
+            {
+              "id": "002",
+              "text": "I've had the pleasure of working with a variety of interesting characters and organizations, including stints at [Giggles and Gags Entertainment](https://gigglesandgags.com) and volunteering at [The Funhouse Community Center](https://funhousecc.org). My unconventional experiences have taught me that the best way to engage young minds is through creativity, spontaneity, and maybe a sprinkle of glitter.",
+              "title": "An Unconventional Journey"
+            },
+            {
+              "id": "003",
+              "text": "With a background in psychology (yes, I have a doctorate—surprised?), I understand the importance of nurturing a child's mind and the power of positive reinforcement. I also have a knack for turning everyday lessons into unforgettable adventures. Who says learning the alphabet can't involve a scavenger hunt and some pet hyenas? Just kidding about the hyenas... unless that's allowed!",
+              "title": "Education Meets Excitement"
+            },
+            {
+              "id": "004",
+              "text": "I'm eager to join a team that values out-of-the-box thinking and isn't afraid of a little chaos—in the most constructive sense, of course! If you're looking for a teacher who can bring joy, laughter, and maybe the occasional whoopee cushion to the classroom, look no further.",
+              "title": "Ready to Join the Fun Squad!"
+            },
+            {
+              "id": "005",
+              "text": "So, if you're ready to add a splash of excitement to your educational institution, let's chat! You can reach me at [harleen@funhouseeducation.com](mailto:harleen@funhouseeducation.com). Can't wait to create a world where learning is the greatest adventure of all!\n\nCheers and giggles,\nHarleen",
+              "title": "Let's Connect (No Joy Buzzer Handshake, Promise!)"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "harleen-token",
+              "token": "SmilesAllAround",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "educator"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Child Psychology",
+            "Creative Lesson Planning",
+            "Humor Integration",
+            "Classroom Management",
+            "Artistic Expression",
+            "Storytelling",
+            "Puppet Shows",
+            "Conflict Resolution",
+            "Energetic Engagement",
+            "Balloon Animal Mastery",
+            "Face Painting",
+            "Team Collaboration",
+            "Event Coordination",
+            "Positive Reinforcement"
+          ]
+        },
+        "identity": {
+          "name": "Harleen Quinzell",
+          "email": "harleen@funhouseeducation.com",
+          "phone": "+000-FUN-TIME",
+          "github": "https://github.com/harleen-quinzell",
+          "tagline": "Turning classrooms into wonderlands of learning and laughter.",
+          "linkedin": "https://linkedin.com/in/harleen-quinzell",
+          "mastodon": "https://funhouseeducation.com/@harleen",
+          "pronouns": "she | her",
+          "avatar_alt": "Harleen's playful portrait",
+          "avatar_img": "uploads/harleen_quinzell_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/Gotham+City/",
+          "location_name": "Gotham City, UTC-5"
+        },
+        "projects": {
+          "flat": {
+            "title": "Playful Projects"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://gigglesandgags.com/joyful-jumpstart",
+              "title": "Joyful Jumpstart Program",
+              "badges": [
+                "Early Childhood Education",
+                "Curriculum Development",
+                "Fun-Filled Learning"
+              ],
+              "position": 1,
+              "description": "Developed a program that integrates play and laughter into foundational learning, enhancing engagement and retention among preschoolers."
+            },
+            {
+              "id": "2",
+              "url": "https://funhousecc.org/events/carnival-of-learning",
+              "title": "Carnival of Learning",
+              "badges": [
+                "Event Coordination",
+                "Community Outreach",
+                "Interactive Education"
+              ],
+              "position": 2,
+              "description": "Organized a community event that transformed educational booths into carnival games, making learning accessible and enjoyable for families."
+            },
+            {
+              "id": "3",
+              "url": "https://funhouseeducation.com/blog/harleens-hijinks",
+              "title": "Harleen's Hijinks Blog",
+              "badges": [
+                "Educational Insights",
+                "Humor",
+                "Creative Activities"
+              ],
+              "position": 3,
+              "description": "A blog sharing tips, tricks, and tales from the wild world of education, with a focus on keeping things light-hearted and engaging."
+            }
+          ]
+        },
+        "education": {
+          "end": "2015",
+          "start": "2011",
+          "school_url": "https://gothamuniversity.edu",
+          "school_name": "Gotham University"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employment History"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Entertainer and Educator",
+              "start": "2018",
+              "position": 1,
+              "company_url": "https://gigglesandgags.com",
+              "description": "Performed interactive shows for children, incorporating educational elements into entertainment. Known for high energy and unforgettable performances.",
+              "company_name": "Giggles and Gags Entertainment"
+            },
+            {
+              "id": "2",
+              "end": "2018",
+              "role": "Volunteer Coordinator",
+              "start": "2016",
+              "position": 0,
+              "company_url": "https://funhousecc.org",
+              "description": "Managed volunteer activities and created programs aimed at engaging youth in community service through fun and innovative methods.",
+              "company_name": "The Funhouse Community Center"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Adventures"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2016",
+              "role": "Children's Party Entertainer",
+              "start": "2015",
+              "badges": [
+                "contract"
+              ],
+              "position": 2,
+              "company_url": "https://smilesforall.com",
+              "description": "Provided entertainment services for children's parties, including magic tricks, face painting, and interactive games that delighted audiences of all ages.",
+              "company_name": "Smiles For All Party Services"
+            },
+            {
+              "id": "2",
+              "end": "2015",
+              "role": "Psychology Intern",
+              "start": "2014",
+              "badges": [
+                "internship"
+              ],
+              "position": 1,
+              "company_url": "https://arkhamasylum.gov",
+              "description": "Assisted with patient care and therapeutic activities, gaining insight into various psychological conditions and therapeutic techniques.",
+              "company_name": "Arkham Asylum (Rehabilitation Department)"
+            },
+            {
+              "id": "3",
+              "end": "2014",
+              "role": "Circus Performer",
+              "start": "2011",
+              "badges": [
+                "part-time"
+              ],
+              "position": 0,
+              "company_url": "https://flyinggraysonscircus.com",
+              "description": "Performed acrobatics and clown acts, developing a strong foundation in physical coordination and audience engagement.",
+              "company_name": "The Flying Graysons Circus"
+            }
+          ]
+        }
+      }
+    }
+  }
+]
