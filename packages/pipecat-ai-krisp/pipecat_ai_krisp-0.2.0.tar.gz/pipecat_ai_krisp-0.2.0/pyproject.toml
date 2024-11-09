@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "setuptools>=72.2.0",
+    "pybind11>=2.13.6",
+    "numpy"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipecat-ai-krisp"
+version = "0.2.0"
+description = "A package for pipecat krisp functionality"
+license = { text = "BSD 2-Clause License" }
+readme = "README.md"
+
+# List your package dependencies
+dependencies = [
+    "numpy",  # Required at runtime
+]
+
+[project.urls]
+"Home" = "https://github.com/pipecat-ai/pipecat-krisp"
+
