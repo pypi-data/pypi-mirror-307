@@ -1,0 +1,88 @@
+{
+	"name": "visiomatic",
+	"version": "3.0.5",
+	"description": "Astronomical image client viewer",
+	"homepage": "https://github.com/astromatic/visiomatic",
+	"author": "Emmanuel Bertin (CFHT/IAP/CNRS/SorbonneU/CEA/UParisSaclay)",
+	"contributors": [
+		"Emmanuel Bertin <bertin@cfht.hawaii.edu> (https://github.com/ebertin)"
+	],
+	"license": "MIT",
+	"keywords": [
+		"astronomy",
+		"wcs",
+		"imaging"
+	],
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/astromatic/visiomatic.git"
+	},
+	"bugs": {
+		"url": "https://github.com/astromatic/visiomatic/issues"
+	},
+	"dependencies": {
+		"chart.js": "=4.3.0",
+		"chartjs-plugin-zoom": "^2.0.1",
+		"dom-to-image": "^2.6.0",
+		"help": "^3.0.2",
+		"html2canvas": "~1.4.1",
+		"leaflet": "~1.9.4",
+		"leaflet-image": "^0.4.0",
+		"npm": "^9.2.0",
+		"spectrum-vanilla": "^1.1.0",
+		"tidy-jsdoc": "^1.4.1"
+	},
+	"devDependencies": {
+		"esbuild": "^0.14.53",
+		"eslint": "^8.23.1",
+		"jsdoc": "^4.0.4"
+	},
+	"main": "dist/visiomatic.js",
+	"scripts": {
+		"prebuild": "npm version --allow-same-version `grep 'version\\s*=' ../../../pyproject.toml| sed -E 's/version\\s*=\\s*\"(\\S*)\"/\\1/'`",
+		"build": "esbuild js/VisiomaticGlobal.js --bundle --minify --outfile=dist/visiomatic.js --watch",
+		"build-pretty": "esbuild js/VisiomaticGlobal.js --bundle --outfile=dist/visiomatic.js --watch",
+		"docs": "jsdoc -c jsdoc.json js",
+		"lint": "eslint js",
+		"test": "npm run unit"
+	},
+	"eslintConfig": {
+		"ignorePatterns": [
+			"dist"
+		],
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"env": {
+			"node": true,
+			"es6": true
+		},
+		"rules": {
+			"curly": "error",
+			"indent": [
+				"error",
+				"tab"
+			],
+			"key-spacing": "off",
+			"linebreak-style": [
+				"off",
+				"unix"
+			],
+			"no-mixed-spaces-and-tabs": [
+				"error",
+				"smart-tabs"
+			],
+			"no-unused-expressions": [
+				"error"
+			],
+			"spaced-comment": "error",
+			"strict": "off",
+			"wrap-iife": "off",
+			"no-invalid-this": "off",
+			"prefer-object-has-own": "error",
+			"prefer-spread": "off"
+		}
+	}
+}

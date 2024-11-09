@@ -1,0 +1,122 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "VisiOmatic"
+version = "3.0.5"
+description = "A web application for visualizing astronomical images"
+authors = [
+    { name = "Emmanuel Bertin", email = "bertin@cfht.hawaii.edu" },
+]
+keywords = [
+    "astronomy",
+    "CFHT",
+    "imaging",
+]
+readme = "README.md"
+dependencies = [
+    "astropy >= 5.0",
+    "atomics >= 1.0",
+    "fastapi >= 0.74",
+    "jinja2 >= 3.1.2",
+    "joblib >= 1.0",
+    "methodtools >= 0.4.7",
+    "numpy >= 1.19",
+    "opencv-python >= 4.5",
+    "orjson >= 3.9.0",
+    "platformdirs >= 3.4.0",
+    "posix_ipc >= 1.1.0; platform_system=='Linux'",
+    "pydantic >= 2.2",
+    "pydantic-settings >= 2.2",
+    "scikit-image >= 0.22.0",
+    "setuptools",
+    "simplejpeg >= 1.6",
+    "tiler >= 0.5",
+    "ultradict >= 0.0.6; platform_system=='Linux'",
+    "uvicorn[standard] >= 0.30",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+test = [
+    "httpx",
+    "mypy",
+    "pytest-cov",
+]
+doc = [
+    "autodoc_pydantic >= 2.2.0",
+    "sphinx >= 7.0",
+    "sphinx-rtd-theme >= 1.2",
+    "sphinxcontrib-bibtex >= 2.4.0",
+    "sphinx-js >= 3.2.2",
+]
+
+[project.scripts]
+visiomatic = "visiomatic.cmd.start:main"
+
+[project.urls]
+Repository = "https://github.com/astromatic/visiomatic"
+Homepage = "https://visiomatic.org"
+Documentation = "https://astromatic.github.io/visiomatic"
+
+[tool.pdm.build]
+excludes = [
+    "src/visiomatic/client/node_modules",
+    "src/visiomatic/doc/doctrees",
+]
+
+[tool.pdm.scripts]
+mypy = "mypy src"
+
+[tool.pdm.scripts.doc]
+cmd = "make inline"
+working_dir = "docs"
+
+[tool.pdm.scripts.pre_build]
+composite = [
+    "doc",
+    "mypy",
+]
+
+[tool.pdm.scripts.pre_install]
+composite = [
+    "doc",
+    "mypy",
+]
+
+[tool.mypy]
+exclude = [
+    "docs",
+    "tests",
+]
+
+[tool.pytest.ini_options]
+norecursedirs = [
+    "tests/performance",
+    "src/visiomatic/client",
+]
+addopts = "--doctest-modules --doctest-continue-on-failure"
+doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL ELLIPSIS"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+tmp_path_retention_policy = "none"
+
+[tool.coverage.run]
+source_pkgs = [
+    "visiomatic",
+]
+command_line = "-m pytest tests"

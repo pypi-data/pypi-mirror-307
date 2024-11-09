@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS client &mdash; VisiOmatic 3.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3ff5e572" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f4ced14b"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Catalogs" href="catalogs.html" />
+    <link rel="prev" title="Settings" href="../server/settings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            VisiOmatic
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Technical overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interface.html">How to use VisiOmatic</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../server/index.html">Python server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">JS client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html">Catalogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html">Geometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="layers.html">Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html">User Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html">Utils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html">World Coordinate System</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">VisiOmatic</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../api.html">API reference</a></li>
+      <li class="breadcrumb-item active">JS client</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/client/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="js-client">
+<h1>JS client<a class="headerlink" href="#js-client" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="catalogs.html">Catalogs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="catalogs.html#catalog">Catalog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#Catalog"><code class="docutils literal notranslate"><span class="pre">Catalog</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog._csvToGeoJSON"><code class="docutils literal notranslate"><span class="pre">Catalog._csvToGeoJSON</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.draw"><code class="docutils literal notranslate"><span class="pre">Catalog.draw</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.filter"><code class="docutils literal notranslate"><span class="pre">Catalog.filter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.popup"><code class="docutils literal notranslate"><span class="pre">Catalog.popup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.readProperty"><code class="docutils literal notranslate"><span class="pre">Catalog.readProperty</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.style"><code class="docutils literal notranslate"><span class="pre">Catalog.style</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.toGeoJSON"><code class="docutils literal notranslate"><span class="pre">Catalog.toGeoJSON</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="catalogs.html#Catalog.drawCallback"><code class="docutils literal notranslate"><span class="pre">Catalog.drawCallback()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="catalogs.html#built-in-catalogs">Built-in catalogs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#abell"><code class="docutils literal notranslate"><span class="pre">abell</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#allWISE"><code class="docutils literal notranslate"><span class="pre">allWISE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#first"><code class="docutils literal notranslate"><span class="pre">first</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#gaiaDR3"><code class="docutils literal notranslate"><span class="pre">gaiaDR3</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#galexAIS"><code class="docutils literal notranslate"><span class="pre">galexAIS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#gleam"><code class="docutils literal notranslate"><span class="pre">gleam</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#nvss"><code class="docutils literal notranslate"><span class="pre">nvss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#panstarrs1"><code class="docutils literal notranslate"><span class="pre">panstarrs1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#ppmXL"><code class="docutils literal notranslate"><span class="pre">ppmXL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#sdss"><code class="docutils literal notranslate"><span class="pre">sdss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#tgss"><code class="docutils literal notranslate"><span class="pre">tgss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#twomass"><code class="docutils literal notranslate"><span class="pre">twomass</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="catalogs.html#urat1"><code class="docutils literal notranslate"><span class="pre">urat1</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geometry.html">Geometry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#EllipseMarker"><code class="docutils literal notranslate"><span class="pre">EllipseMarker</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker._containsPoint"><code class="docutils literal notranslate"><span class="pre">EllipseMarker._containsPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker._project"><code class="docutils literal notranslate"><span class="pre">EllipseMarker._project</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker._update"><code class="docutils literal notranslate"><span class="pre">EllipseMarker._update</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker._updateBounds"><code class="docutils literal notranslate"><span class="pre">EllipseMarker._updateBounds</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker._updatePath"><code class="docutils literal notranslate"><span class="pre">EllipseMarker._updatePath</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker.getLatLng"><code class="docutils literal notranslate"><span class="pre">EllipseMarker.getLatLng</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker.getParams"><code class="docutils literal notranslate"><span class="pre">EllipseMarker.getParams</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker.setLatLng"><code class="docutils literal notranslate"><span class="pre">EllipseMarker.setLatLng</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#EllipseMarker.setParams"><code class="docutils literal notranslate"><span class="pre">EllipseMarker.setParams</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#ellipseMarker"><code class="docutils literal notranslate"><span class="pre">ellipseMarker()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#Ellipse"><code class="docutils literal notranslate"><span class="pre">Ellipse</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#Ellipse._project"><code class="docutils literal notranslate"><span class="pre">Ellipse._project</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html#Ellipse.getBounds"><code class="docutils literal notranslate"><span class="pre">Ellipse.getBounds</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html#ellipse"><code class="docutils literal notranslate"><span class="pre">ellipse()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="layers.html">Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="layers.html#vtilelayer">VTileLayer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="layers.html#VTileLayer"><code class="docutils literal notranslate"><span class="pre">VTileLayer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.visio"><code class="docutils literal notranslate"><span class="pre">VTileLayer.visio</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.metaload"><code class="docutils literal notranslate"><span class="pre">VTileLayer.metaload</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.visioDefault"><code class="docutils literal notranslate"><span class="pre">VTileLayer.visioDefault</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._addToMap"><code class="docutils literal notranslate"><span class="pre">VTileLayer._addToMap</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._gammaCorr"><code class="docutils literal notranslate"><span class="pre">VTileLayer._gammaCorr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._initTile"><code class="docutils literal notranslate"><span class="pre">VTileLayer._initTile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._isValidTile"><code class="docutils literal notranslate"><span class="pre">VTileLayer._isValidTile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._readVisioKey"><code class="docutils literal notranslate"><span class="pre">VTileLayer._readVisioKey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._refreshTileUrl"><code class="docutils literal notranslate"><span class="pre">VTileLayer._refreshTileUrl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer._setAttr"><code class="docutils literal notranslate"><span class="pre">VTileLayer._setAttr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.addTo"><code class="docutils literal notranslate"><span class="pre">VTileLayer.addTo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.createTile"><code class="docutils literal notranslate"><span class="pre">VTileLayer.createTile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.getChannelColor"><code class="docutils literal notranslate"><span class="pre">VTileLayer.getChannelColor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.getMetaData"><code class="docutils literal notranslate"><span class="pre">VTileLayer.getMetaData</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.getTileSettingsURL"><code class="docutils literal notranslate"><span class="pre">VTileLayer.getTileSettingsURL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.getTileUrl"><code class="docutils literal notranslate"><span class="pre">VTileLayer.getTileUrl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.redraw"><code class="docutils literal notranslate"><span class="pre">VTileLayer.redraw</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.rgbToMix"><code class="docutils literal notranslate"><span class="pre">VTileLayer.rgbToMix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.setColor"><code class="docutils literal notranslate"><span class="pre">VTileLayer.setColor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.setMono"><code class="docutils literal notranslate"><span class="pre">VTileLayer.setMono</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers.html#VTileLayer.updateMix"><code class="docutils literal notranslate"><span class="pre">VTileLayer.updateMix</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="layers.html#vTileLayer"><code class="docutils literal notranslate"><span class="pre">vTileLayer()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">User Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#ui-base-class">UI base class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#UI"><code class="docutils literal notranslate"><span class="pre">UI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addButton"><code class="docutils literal notranslate"><span class="pre">UI._addButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addColorPicker"><code class="docutils literal notranslate"><span class="pre">UI._addColorPicker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addDialogBox"><code class="docutils literal notranslate"><span class="pre">UI._addDialogBox</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addDialogElement"><code class="docutils literal notranslate"><span class="pre">UI._addDialogElement</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addDialogLine"><code class="docutils literal notranslate"><span class="pre">UI._addDialogLine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addLayerItem"><code class="docutils literal notranslate"><span class="pre">UI._addLayerItem</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addNumericalInput"><code class="docutils literal notranslate"><span class="pre">UI._addNumericalInput</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addRadioButton"><code class="docutils literal notranslate"><span class="pre">UI._addRadioButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addSelectMenu"><code class="docutils literal notranslate"><span class="pre">UI._addSelectMenu</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._addSwitchInput"><code class="docutils literal notranslate"><span class="pre">UI._addSwitchInput</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._checkVisiomatic"><code class="docutils literal notranslate"><span class="pre">UI._checkVisiomatic</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._collapse"><code class="docutils literal notranslate"><span class="pre">UI._collapse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._expand"><code class="docutils literal notranslate"><span class="pre">UI._expand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._findActiveBaseLayer"><code class="docutils literal notranslate"><span class="pre">UI._findActiveBaseLayer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._initDialog"><code class="docutils literal notranslate"><span class="pre">UI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._onLayerChange"><code class="docutils literal notranslate"><span class="pre">UI._onLayerChange</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._resetDialog"><code class="docutils literal notranslate"><span class="pre">UI._resetDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._spinboxStep"><code class="docutils literal notranslate"><span class="pre">UI._spinboxStep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._updateInput"><code class="docutils literal notranslate"><span class="pre">UI._updateInput</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI._updateLayerList"><code class="docutils literal notranslate"><span class="pre">UI._updateLayerList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.addLayer"><code class="docutils literal notranslate"><span class="pre">UI.addLayer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.addTo"><code class="docutils literal notranslate"><span class="pre">UI.addTo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.getActiveBaseLayer"><code class="docutils literal notranslate"><span class="pre">UI.getActiveBaseLayer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.onAdd"><code class="docutils literal notranslate"><span class="pre">UI.onAdd</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.removeLayer"><code class="docutils literal notranslate"><span class="pre">UI.removeLayer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.colorCallback"><code class="docutils literal notranslate"><span class="pre">UI.colorCallback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.controlCallback"><code class="docutils literal notranslate"><span class="pre">UI.controlCallback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#UI.layerCallback"><code class="docutils literal notranslate"><span class="pre">UI.layerCallback()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#ui"><code class="docutils literal notranslate"><span class="pre">ui</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#catalog-ui">Catalog UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#CatalogUI"><code class="docutils literal notranslate"><span class="pre">CatalogUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#CatalogUI.defaultCatalogs"><code class="docutils literal notranslate"><span class="pre">CatalogUI.defaultCatalogs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#CatalogUI._getCatalog"><code class="docutils literal notranslate"><span class="pre">CatalogUI._getCatalog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#CatalogUI._initDialog"><code class="docutils literal notranslate"><span class="pre">CatalogUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#CatalogUI._loadCatalog"><code class="docutils literal notranslate"><span class="pre">CatalogUI._loadCatalog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#CatalogUI._resetDialog"><code class="docutils literal notranslate"><span class="pre">CatalogUI._resetDialog</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#catalogUI"><code class="docutils literal notranslate"><span class="pre">catalogUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#channel-ui">Channel UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#ChannelUI"><code class="docutils literal notranslate"><span class="pre">ChannelUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._activateChanElem"><code class="docutils literal notranslate"><span class="pre">ChannelUI._activateChanElem</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._activateTrashElem"><code class="docutils literal notranslate"><span class="pre">ChannelUI._activateTrashElem</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._addMinMax"><code class="docutils literal notranslate"><span class="pre">ChannelUI._addMinMax</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._gotoChannel"><code class="docutils literal notranslate"><span class="pre">ChannelUI._gotoChannel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._initColorDialog"><code class="docutils literal notranslate"><span class="pre">ChannelUI._initColorDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._initDialog"><code class="docutils literal notranslate"><span class="pre">ChannelUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._initMonoDialog"><code class="docutils literal notranslate"><span class="pre">ChannelUI._initMonoDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._pauseAnimation"><code class="docutils literal notranslate"><span class="pre">ChannelUI._pauseAnimation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._playAnimation"><code class="docutils literal notranslate"><span class="pre">ChannelUI._playAnimation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._updateChannel"><code class="docutils literal notranslate"><span class="pre">ChannelUI._updateChannel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._updateChannelList"><code class="docutils literal notranslate"><span class="pre">ChannelUI._updateChannelList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._updateChannelMix"><code class="docutils literal notranslate"><span class="pre">ChannelUI._updateChannelMix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI._updateColPick"><code class="docutils literal notranslate"><span class="pre">ChannelUI._updateColPick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI.loadSettings"><code class="docutils literal notranslate"><span class="pre">ChannelUI.loadSettings</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ChannelUI.saveSettings"><code class="docutils literal notranslate"><span class="pre">ChannelUI.saveSettings</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#channelUI"><code class="docutils literal notranslate"><span class="pre">channelUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#doc-ui">Doc UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#DocUI"><code class="docutils literal notranslate"><span class="pre">DocUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._backNav"><code class="docutils literal notranslate"><span class="pre">DocUI._backNav</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._disableNav"><code class="docutils literal notranslate"><span class="pre">DocUI._disableNav</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._forwardNav"><code class="docutils literal notranslate"><span class="pre">DocUI._forwardNav</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._homeNav"><code class="docutils literal notranslate"><span class="pre">DocUI._homeNav</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._initDialog"><code class="docutils literal notranslate"><span class="pre">DocUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._onloadNav"><code class="docutils literal notranslate"><span class="pre">DocUI._onloadNav</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#DocUI._updateNav"><code class="docutils literal notranslate"><span class="pre">DocUI._updateNav</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#docUI"><code class="docutils literal notranslate"><span class="pre">docUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#image-ui">Image UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#ImageUI"><code class="docutils literal notranslate"><span class="pre">ImageUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ImageUI._initDialog"><code class="docutils literal notranslate"><span class="pre">ImageUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ImageUI.loadSettings"><code class="docutils literal notranslate"><span class="pre">ImageUI.loadSettings</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ImageUI.saveSettings"><code class="docutils literal notranslate"><span class="pre">ImageUI.saveSettings</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#imageUI"><code class="docutils literal notranslate"><span class="pre">imageUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#preferences-ui">Preferences UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#PreferencesUI"><code class="docutils literal notranslate"><span class="pre">PreferencesUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#PreferencesUI._initDialog"><code class="docutils literal notranslate"><span class="pre">PreferencesUI._initDialog</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#preferencesUI"><code class="docutils literal notranslate"><span class="pre">preferencesUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#profile-ui">Profile UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#ProfileUI"><code class="docutils literal notranslate"><span class="pre">ProfileUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._extractAverage"><code class="docutils literal notranslate"><span class="pre">ProfileUI._extractAverage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._extractProfile"><code class="docutils literal notranslate"><span class="pre">ProfileUI._extractProfile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._getDistanceString"><code class="docutils literal notranslate"><span class="pre">ProfileUI._getDistanceString</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._initDialog"><code class="docutils literal notranslate"><span class="pre">ProfileUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._plotProfile"><code class="docutils literal notranslate"><span class="pre">ProfileUI._plotProfile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._plotSpectrum"><code class="docutils literal notranslate"><span class="pre">ProfileUI._plotSpectrum</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._profileEnd"><code class="docutils literal notranslate"><span class="pre">ProfileUI._profileEnd</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ProfileUI._updateLine"><code class="docutils literal notranslate"><span class="pre">ProfileUI._updateLine</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#profileUI"><code class="docutils literal notranslate"><span class="pre">profileUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#region-ui">Region UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#RegionUI"><code class="docutils literal notranslate"><span class="pre">RegionUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#RegionUI._getRegion"><code class="docutils literal notranslate"><span class="pre">RegionUI._getRegion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#RegionUI._initDialog"><code class="docutils literal notranslate"><span class="pre">RegionUI._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#RegionUI._loadRegion"><code class="docutils literal notranslate"><span class="pre">RegionUI._loadRegion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#RegionUI._resetDialog"><code class="docutils literal notranslate"><span class="pre">RegionUI._resetDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#RegionUI.drawCallback"><code class="docutils literal notranslate"><span class="pre">RegionUI.drawCallback()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#regionUI"><code class="docutils literal notranslate"><span class="pre">regionUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#snapshot-ui">Snapshot UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#SnapshotUI"><code class="docutils literal notranslate"><span class="pre">SnapshotUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#SnapshotUI._initDialog"><code class="docutils literal notranslate"><span class="pre">SnapshotUI._initDialog</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#snapshotUI"><code class="docutils literal notranslate"><span class="pre">snapshotUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#coords">Coords</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#Coords"><code class="docutils literal notranslate"><span class="pre">Coords</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords._checkVisiomatic"><code class="docutils literal notranslate"><span class="pre">Coords._checkVisiomatic</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords._getCoordinates"><code class="docutils literal notranslate"><span class="pre">Coords._getCoordinates</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords._initDialog"><code class="docutils literal notranslate"><span class="pre">Coords._initDialog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords._onDrag"><code class="docutils literal notranslate"><span class="pre">Coords._onDrag</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords.onRemove"><code class="docutils literal notranslate"><span class="pre">Coords.onRemove</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Coords.panTo"><code class="docutils literal notranslate"><span class="pre">Coords.panTo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#coords"><code class="docutils literal notranslate"><span class="pre">coords()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#extramap">ExtraMap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#ExtraMap"><code class="docutils literal notranslate"><span class="pre">ExtraMap</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._addButton"><code class="docutils literal notranslate"><span class="pre">ExtraMap._addButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._addToggleButton"><code class="docutils literal notranslate"><span class="pre">ExtraMap._addToggleButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._decideMinimized"><code class="docutils literal notranslate"><span class="pre">ExtraMap._decideMinimized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._decideZoom"><code class="docutils literal notranslate"><span class="pre">ExtraMap._decideZoom</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._isDefined"><code class="docutils literal notranslate"><span class="pre">ExtraMap._isDefined</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._isInteger"><code class="docutils literal notranslate"><span class="pre">ExtraMap._isInteger</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._isZoomLevelFixed"><code class="docutils literal notranslate"><span class="pre">ExtraMap._isZoomLevelFixed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._minimize"><code class="docutils literal notranslate"><span class="pre">ExtraMap._minimize</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._onExtraMapMoveStarted"><code class="docutils literal notranslate"><span class="pre">ExtraMap._onExtraMapMoveStarted</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._onExtraMapMoved"><code class="docutils literal notranslate"><span class="pre">ExtraMap._onExtraMapMoved</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._onExtraMapMoving"><code class="docutils literal notranslate"><span class="pre">ExtraMap._onExtraMapMoving</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._onMainMapMoved"><code class="docutils literal notranslate"><span class="pre">ExtraMap._onMainMapMoved</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._onMainMapMoving"><code class="docutils literal notranslate"><span class="pre">ExtraMap._onMainMapMoving</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._restore"><code class="docutils literal notranslate"><span class="pre">ExtraMap._restore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._setDisplay"><code class="docutils literal notranslate"><span class="pre">ExtraMap._setDisplay</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap._toggleDisplayButtonClicked"><code class="docutils literal notranslate"><span class="pre">ExtraMap._toggleDisplayButtonClicked</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap.changeLayer"><code class="docutils literal notranslate"><span class="pre">ExtraMap.changeLayer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap.onAdd"><code class="docutils literal notranslate"><span class="pre">ExtraMap.onAdd</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#ExtraMap.onRemove"><code class="docutils literal notranslate"><span class="pre">ExtraMap.onRemove</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#extraMap"><code class="docutils literal notranslate"><span class="pre">extraMap</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#fullscreen">FullScreen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#FullScreen"><code class="docutils literal notranslate"><span class="pre">FullScreen</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#FullScreen._addButton"><code class="docutils literal notranslate"><span class="pre">FullScreen._addButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#FullScreen._handleEscKey"><code class="docutils literal notranslate"><span class="pre">FullScreen._handleEscKey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#FullScreen.onAdd"><code class="docutils literal notranslate"><span class="pre">FullScreen.onAdd</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#FullScreen.toogleFullScreen"><code class="docutils literal notranslate"><span class="pre">FullScreen.toogleFullScreen</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#fullScreen"><code class="docutils literal notranslate"><span class="pre">fullScreen()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#reticle">Reticle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#Reticle"><code class="docutils literal notranslate"><span class="pre">Reticle</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Reticle.onRemove"><code class="docutils literal notranslate"><span class="pre">Reticle.onRemove</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#reticle"><code class="docutils literal notranslate"><span class="pre">reticle()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#sidebar">Sidebar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#Sidebar"><code class="docutils literal notranslate"><span class="pre">Sidebar</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar._addButton"><code class="docutils literal notranslate"><span class="pre">Sidebar._addButton</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar._onClick"><code class="docutils literal notranslate"><span class="pre">Sidebar._onClick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar._onCloseClick"><code class="docutils literal notranslate"><span class="pre">Sidebar._onCloseClick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.addTab"><code class="docutils literal notranslate"><span class="pre">Sidebar.addTab</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.addTabList"><code class="docutils literal notranslate"><span class="pre">Sidebar.addTabList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.addTo"><code class="docutils literal notranslate"><span class="pre">Sidebar.addTo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.close"><code class="docutils literal notranslate"><span class="pre">Sidebar.close</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.open"><code class="docutils literal notranslate"><span class="pre">Sidebar.open</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.removeFrom"><code class="docutils literal notranslate"><span class="pre">Sidebar.removeFrom</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ui.html#Sidebar.toggle"><code class="docutils literal notranslate"><span class="pre">Sidebar.toggle</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#sidebar"><code class="docutils literal notranslate"><span class="pre">sidebar()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#widgets">Widgets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#control.widget.FlipSwitch.flipSwitch"><code class="docutils literal notranslate"><span class="pre">control.widget.FlipSwitch.flipSwitch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html#control.widget.Spinbox.spinbox"><code class="docutils literal notranslate"><span class="pre">control.widget.Spinbox.spinbox()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#rgb">RGB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#RGB"><code class="docutils literal notranslate"><span class="pre">RGB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="utils.html#RGB.clone"><code class="docutils literal notranslate"><span class="pre">RGB.clone</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="utils.html#RGB.isOn"><code class="docutils literal notranslate"><span class="pre">RGB.isOn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="utils.html#RGB.toStr"><code class="docutils literal notranslate"><span class="pre">RGB.toStr</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#rgb"><code class="docutils literal notranslate"><span class="pre">rgb()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#misc-utils">Misc utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.checkDomain"><code class="docutils literal notranslate"><span class="pre">VUtil.checkDomain</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.copyToClipboard"><code class="docutils literal notranslate"><span class="pre">VUtil.copyToClipboard</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.flashElement"><code class="docutils literal notranslate"><span class="pre">VUtil.flashElement</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.getCookie"><code class="docutils literal notranslate"><span class="pre">VUtil.getCookie</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.isExternal"><code class="docutils literal notranslate"><span class="pre">VUtil.isExternal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.parseURL"><code class="docutils literal notranslate"><span class="pre">VUtil.parseURL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.requestURL"><code class="docutils literal notranslate"><span class="pre">VUtil.requestURL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.updateURL"><code class="docutils literal notranslate"><span class="pre">VUtil.updateURL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#VUtil.readFITSKey"><code class="docutils literal notranslate"><span class="pre">VUtil.readFITSKey</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wcs.html">World Coordinate System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wcs.html#wcs">WCS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#WCS"><code class="docutils literal notranslate"><span class="pre">WCS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.code"><code class="docutils literal notranslate"><span class="pre">WCS.code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS._deltaLng"><code class="docutils literal notranslate"><span class="pre">WCS._deltaLng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.distance"><code class="docutils literal notranslate"><span class="pre">WCS.distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.fovToZoom"><code class="docutils literal notranslate"><span class="pre">WCS.fovToZoom</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.getProjection"><code class="docutils literal notranslate"><span class="pre">WCS.getProjection</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.hmsDMSToLatLng"><code class="docutils literal notranslate"><span class="pre">WCS.hmsDMSToLatLng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.latLngToHMSDMS"><code class="docutils literal notranslate"><span class="pre">WCS.latLngToHMSDMS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiLatLngToIndex"><code class="docutils literal notranslate"><span class="pre">WCS.multiLatLngToIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiLatLngToPoint"><code class="docutils literal notranslate"><span class="pre">WCS.multiLatLngToPoint</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiPntToIndex"><code class="docutils literal notranslate"><span class="pre">WCS.multiPntToIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiPointToLatLng"><code class="docutils literal notranslate"><span class="pre">WCS.multiPointToLatLng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiProject"><code class="docutils literal notranslate"><span class="pre">WCS.multiProject</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.multiUnproject"><code class="docutils literal notranslate"><span class="pre">WCS.multiUnproject</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.parseCoords"><code class="docutils literal notranslate"><span class="pre">WCS.parseCoords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.pixelScale"><code class="docutils literal notranslate"><span class="pre">WCS.pixelScale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.rawPixelScale"><code class="docutils literal notranslate"><span class="pre">WCS.rawPixelScale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.scale"><code class="docutils literal notranslate"><span class="pre">WCS.scale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.transform"><code class="docutils literal notranslate"><span class="pre">WCS.transform</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.untransform"><code class="docutils literal notranslate"><span class="pre">WCS.untransform</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.zoom"><code class="docutils literal notranslate"><span class="pre">WCS.zoom</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#WCS.zoomToFov"><code class="docutils literal notranslate"><span class="pre">WCS.zoomToFov</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#wcs"><code class="docutils literal notranslate"><span class="pre">wcs()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wcs.html#projections">Projections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#Projection"><code class="docutils literal notranslate"><span class="pre">Projection</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection.defaultProjParam"><code class="docutils literal notranslate"><span class="pre">Projection.defaultProjParam</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._cpole"><code class="docutils literal notranslate"><span class="pre">Projection._cpole</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._getCenter"><code class="docutils literal notranslate"><span class="pre">Projection._getCenter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._invertCD"><code class="docutils literal notranslate"><span class="pre">Projection._invertCD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._multiToPix"><code class="docutils literal notranslate"><span class="pre">Projection._multiToPix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._natpole"><code class="docutils literal notranslate"><span class="pre">Projection._natpole</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._paramUpdate"><code class="docutils literal notranslate"><span class="pre">Projection._paramUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._phiThetaToRADec"><code class="docutils literal notranslate"><span class="pre">Projection._phiThetaToRADec</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._pixToMulti"><code class="docutils literal notranslate"><span class="pre">Projection._pixToMulti</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._pixToRed"><code class="docutils literal notranslate"><span class="pre">Projection._pixToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._raDecToPhiTheta"><code class="docutils literal notranslate"><span class="pre">Projection._raDecToPhiTheta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._readWCS"><code class="docutils literal notranslate"><span class="pre">Projection._readWCS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._redToPix"><code class="docutils literal notranslate"><span class="pre">Projection._redToPix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection._shiftWCS"><code class="docutils literal notranslate"><span class="pre">Projection._shiftWCS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection.project"><code class="docutils literal notranslate"><span class="pre">Projection.project</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Projection.unproject"><code class="docutils literal notranslate"><span class="pre">Projection.unproject</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#Conical"><code class="docutils literal notranslate"><span class="pre">Conical</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Conical._phiRToRed"><code class="docutils literal notranslate"><span class="pre">Conical._phiRToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Conical._redToPhiR"><code class="docutils literal notranslate"><span class="pre">Conical._redToPhiR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#Cylindrical"><code class="docutils literal notranslate"><span class="pre">Cylindrical</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Cylindrical._projInit"><code class="docutils literal notranslate"><span class="pre">Cylindrical._projInit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Cylindrical._rToTheta"><code class="docutils literal notranslate"><span class="pre">Cylindrical._rToTheta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Cylindrical._thetaToR"><code class="docutils literal notranslate"><span class="pre">Cylindrical._thetaToR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#Zenithal"><code class="docutils literal notranslate"><span class="pre">Zenithal</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Zenithal._phiRToRed"><code class="docutils literal notranslate"><span class="pre">Zenithal._phiRToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Zenithal._projInit"><code class="docutils literal notranslate"><span class="pre">Zenithal._projInit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#Zenithal._redToPhiR"><code class="docutils literal notranslate"><span class="pre">Zenithal._redToPhiR</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wcs.html#built-in">Built-in</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#PIX"><code class="docutils literal notranslate"><span class="pre">PIX</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#PIX._projInit"><code class="docutils literal notranslate"><span class="pre">PIX._projInit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#PIX.project"><code class="docutils literal notranslate"><span class="pre">PIX.project</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#PIX.unproject"><code class="docutils literal notranslate"><span class="pre">PIX.unproject</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#CAR"><code class="docutils literal notranslate"><span class="pre">CAR</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#CAR._phiRToRed"><code class="docutils literal notranslate"><span class="pre">CAR._phiRToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#CAR._redToPhiR"><code class="docutils literal notranslate"><span class="pre">CAR._redToPhiR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#CEA"><code class="docutils literal notranslate"><span class="pre">CEA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#CEA._phiRToRed"><code class="docutils literal notranslate"><span class="pre">CEA._phiRToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#CEA._redToPhiR"><code class="docutils literal notranslate"><span class="pre">CEA._redToPhiR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#COE"><code class="docutils literal notranslate"><span class="pre">COE</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#COE._projInit"><code class="docutils literal notranslate"><span class="pre">COE._projInit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#COE._rToTheta"><code class="docutils literal notranslate"><span class="pre">COE._rToTheta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#COE._thetaToR"><code class="docutils literal notranslate"><span class="pre">COE._thetaToR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#TAN"><code class="docutils literal notranslate"><span class="pre">TAN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TAN._rToTheta"><code class="docutils literal notranslate"><span class="pre">TAN._rToTheta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TAN._thetaToR"><code class="docutils literal notranslate"><span class="pre">TAN._thetaToR</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#TPV"><code class="docutils literal notranslate"><span class="pre">TPV</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TPV._dRedToRed"><code class="docutils literal notranslate"><span class="pre">TPV._dRedToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TPV._pixToRed"><code class="docutils literal notranslate"><span class="pre">TPV._pixToRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TPV._redToDRed"><code class="docutils literal notranslate"><span class="pre">TPV._redToDRed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#TPV._redToPix"><code class="docutils literal notranslate"><span class="pre">TPV._redToPix</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html#ZEA"><code class="docutils literal notranslate"><span class="pre">ZEA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#ZEA._rToTheta"><code class="docutils literal notranslate"><span class="pre">ZEA._rToTheta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wcs.html#ZEA._thetaToR"><code class="docutils literal notranslate"><span class="pre">ZEA._thetaToR</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../server/settings.html" class="btn btn-neutral float-left" title="Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="catalogs.html" class="btn btn-neutral float-right" title="Catalogs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024 CEA/CFHT/CNRS/UParisSaclay.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

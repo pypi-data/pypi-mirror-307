@@ -1,0 +1,1785 @@
+/*
+#	CSS definitions
+#
+#	This file part of: VisiOmatic
+#
+#	Copyright: (C) 2023 Emmanuel Bertin - CNRS/IAP/CFHT/SorbonneU
+*/
+
+@import "themes.css";
+@import "spectrum.css";
+
+.leaflet-container {
+  touch-action: none;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Global effects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+@keyframes flash {
+	0%   {background-color: #F4F4F4;}
+	10%   {background-color: var(--input-background-color);}
+	100% {background-color: #F4F4F4;}
+}
+
+.leaflet-control-flash {
+	animation: flash 200ms ease-in-out 0s;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%% Basic Leaflet Controls %%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-left .leaflet-control {
+	margin-left: 5px;
+	border: none;
+}
+/* Left control bar */
+.leaflet-bar a {
+	width: 32px!important;
+	height: 32px!important;
+}
+
+.leaflet-bar a:hover {
+	background-color: var(--icon-color-hover) !important;
+	color: var(--icon-color-hover) !important;
+}
+
+.leaflet-control-zoom {
+	background-color: var(--icon-background-color);
+}
+
+.leaflet-control-zoom-in {
+	background-color: var(--icon-color) !important;
+	mask-image: url(../images/icon-magnifyplus.svg); -webkit-mask-image: url(../images/icon-magnifyplus.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	color: var(--icon-color) !important;
+	text-shadow: none;
+	}
+
+.leaflet-control-zoom-out {
+	background-color: var(--icon-color) !important;
+	mask-image: url(../images/icon-magnifyminus.svg); -webkit-mask-image: url(../images/icon-magnifyminus.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	color: var(--icon-color) !important;
+	text-shadow: none;
+	}
+
+.leaflet-top.leaflet-left {
+	z-index: 2000;	/* Make sure it comes on top of other controls areas */
+}
+
+a {
+	outline: 0;
+}
+
+.leaflet-popup-content-wrapper,.leaflet-popup-tip {
+	background-color: var(--dialog-background-color) !important;
+	color: var(--dialog-color) !important;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.visiomatic-control-dialog {
+	position: absolute;
+	margin: 10px;
+}
+
+.visiomatic-control .visiomatic-control-dialog,
+.visiomatic-control-expanded .visiomatic-control-toggle {
+	display: none;
+}
+
+.visiomatic-control-expanded .visiomatic-control-dialog	{
+	display: table;
+	position: relative;
+}
+
+.visiomatic-control-expanded {
+	padding: 6px 6px 6px 6px;
+	color: var(--dialog-color);
+	background: var(--dialog-background-color);
+	z-index:10;
+}
+
+/*------------------------------- Dialog line -------------------------------*/
+
+.visiomatic-control-line {
+	display: table-row;
+	padding: 8px;
+	height: 32px;
+}
+
+.visiomatic-control-label {
+	padding-right: 4px;
+	padding-top: 2px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.visiomatic-control-element {
+	display: table-cell;
+	vertical-align: top;
+	height:32px;
+}
+
+.leaflet-num-input {
+	width: 120px;
+	height: 24px;
+}
+
+/*------------------------------ Simple button ------------------------------*/
+
+.visiomatic-control-button {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px;
+	margin: 3px 0px 2px 1px;
+	width:32px;
+	height: 31px;
+	color: var(--button-color);
+	background-color: var(--button-background-color);
+	box-sizing:border-box;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	border-radius: 4px;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 14px;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	line-height: 27px;
+}
+
+.visiomatic-control-button:after {
+	color: var(--button-color);
+}
+.visiomatic-control-button-icon {
+	background-color: var(--button-color);
+	background-position: center;
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	width: inherit;
+	height: inherit;
+}
+
+.visiomatic-control-button:hover {
+	background-color: var(--button-background-color-hover);
+	border-width: 1px;
+	border-color: var(--border-color);
+}
+
+.visiomatic-control-button:hover:after {
+	color: var(--button-color-hover) !important;
+}
+
+.visiomatic-control-button-icon:hover {
+	background-color: var(--button-color-hover);
+}
+
+.visiomatic-control-button:active  {
+	background-color: var(--button-background-color-checked);
+	color: var(--button-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.visiomatic-control-button:active:after {
+	color: var(--button-color-checked) !important;
+}
+
+.visiomatic-control-button:active > div {
+	background-color: var(--button-color-checked);
+}
+
+/*------------------------------- Radio button ------------------------------*/
+
+.visiomatic-control-radios {
+    margin: 4px 0px -2px 0px;
+}
+
+label.visiomatic-control-radio {
+	display: inline-block;
+	width:32px;
+	height:31px;
+}
+
+input.visiomatic-control-radio {
+	appearance: none; -moz-appearance: none; -webkit-appearance: none;
+	float:left;
+	position: relative;
+	width: inherit;
+	height: inherit;
+	background-color: var(--button-background-color);
+	margin: 0px;
+	box-sizing:border-box;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	cursor: pointer;
+}
+
+div.visiomatic-control-radio {
+    background-color: var(--button-color);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	position: relative;
+	padding: 0px;
+	width: inherit;
+	height: inherit;
+}
+
+
+input.visiomatic-control-radio:hover {
+	background-color: var(--button-background-color-hover);
+}
+
+div.visiomatic-control-radio:hover {
+	background-color: var(--button-color-hover);
+}
+
+input.visiomatic-control-radio:checked,input.visiomatic-control-radio:active {
+	background-color: var(--button-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+input.visiomatic-control-radio:checked + div,input.visiomatic-control-radio:active + div {
+	background-color: var(--button-color-checked);
+}
+
+/*------------------------------- Select menu -------------------------------*/
+
+div.visiomatic-control-select {
+	display: flex;
+	margin-right: 2px;
+}
+
+select.visiomatic-control-select {
+	height: 32px;
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	vertical-align: top;
+	margin: 2px 0px 2px 0px;
+	padding: -2px 0px 4px 0px;
+	border-width: 0px;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.visiomatic-control-select:first-child
+select.visiomatic-control-select {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.visiomatic-control-element:last-child
+select.visiomatic-control-select {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+select.visiomatic-control-select:hover {
+	background-color: var(--input-background-color-hover);
+	color: var(--input-color-hover);
+}
+
+select.visiomatic-control-select:focus {
+	background-color: var(--input-background-color-focus);
+	color: var(--input-color-focus);
+}
+
+/*------------------ Spinbox widget (original Tobias Bieniek) ---------------*/
+
+.leaflet-spinbox {
+	position: relative;
+	margin: 2px 0px;
+}
+
+.leaflet-spinbox-input {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	width: 100%;
+	height: 32px;
+	color: var(--input-color);
+	background-color: var(--input-background-color);
+	padding: 2px 6px 2px 6px;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+	border-radius: 4px;
+	box-sizing : border-box;
+	border-width: 0px;
+	appearance: textfield; -moz-appearance: textfield; -webkit-appearance: texfield;
+}
+
+.leaflet-spinbox-input:hover {
+	background-color: var(--input-background-color-hover);
+	color: var(--input-color-hover);
+}
+.leaflet-spinbox-input:focus {
+	background-color: var(--input-background-color-focus);
+	color: var(--input-color-focus);
+}
+
+.leaflet-spinbox-down,.leaflet-spinbox-up {
+	position: absolute;
+	top: 1px;
+	display: inline-block;
+	background-color: var(--button-background-color);
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	cursor: pointer;
+}
+
+.leaflet-spinbox-down {
+	right: 31px;
+	border-radius: 0px;
+}
+
+.leaflet-spinbox-down-icon {
+	width: 29px;
+	height: 29px;
+	mask-image: url(../images/icon-minus.svg); -webkit-mask-image: url(../images/icon-minus.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	background-color: var(--button-color);
+}
+
+.leaflet-spinbox-up {
+	right: 1px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.leaflet-spinbox-up-icon {
+	width: 29px;
+	height: 29px;
+	mask-image: url(../images/icon-plus.svg); -webkit-mask-image: url(../images/icon-plus.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	background-color: var(--button-color);
+}
+
+.leaflet-spinbox-down:hover,.leaflet-spinbox-up:hover {
+	background-color: var(--button-background-color-hover);
+}
+
+.leaflet-spinbox-down-icon:hover,.leaflet-spinbox-up-icon:hover {
+	background-color: var(--button-color-hover);
+}
+
+/*----------------- Flip switch widget (original proto.io) ------------------*/
+
+.leaflet-flipswitch {
+	position: relative;
+	margin: 2px 0px;
+	width: 100%;
+	user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+}
+input.leaflet-flipswitch {
+	display: none;
+}
+label.leaflet-flipswitch {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 0px;
+	border-radius: 4px;
+}
+.leaflet-flipswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.2s ease-in 0s;
+}
+.leaflet-flipswitch-inner:before, .leaflet-flipswitch-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 32px;
+	padding: 0;
+	line-height: 32px;
+	font-size: 14px;
+	color: var(--button-background-color);
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+.leaflet-flipswitch-inner:before {
+	content: "ON";
+	padding-left: 15px;
+	background-color: var(--button-color-on);
+	color: var(--input-color);
+}
+.leaflet-flipswitch-inner:after {
+	content: "OFF";
+	padding-right: 12px;
+	color: var(--input-color);
+	text-align: right;
+}
+.leaflet-flipswitch-button {
+	display: block;
+	margin: 2px;
+	background: var(--input-background-color);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0%;
+	right: 50%;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	transition: all 0.2s ease-in 0s;
+	transition: background none;
+}
+.leaflet-flipswitch-button:hover {
+	background-color: var(--input-background-color-hover);
+}
+input.leaflet-flipswitch:checked + label .leaflet-flipswitch-inner {
+	margin-left: 0;
+}
+input.leaflet-flipswitch:checked + label .leaflet-flipswitch-button {
+	left: 50%;
+	right: 0%;
+}
+
+/*------------------------------ Color picker -------------------------------*/
+
+.visiomatic-control-color-input {
+	opacity: 0;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.visiomatic-control-color {
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+	float: left;
+	padding: 0px;
+	margin: 2px 0px;
+	border-width: 0px;
+	border-radius: 4px 0px 0px 4px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+/*------------------------------ Layer list -------------------------------*/
+
+.visiomatic-control-layerlist {
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.visiomatic-control-layer {
+	display: table-row;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+}
+
+.visiomatic-control-layerswitch {
+	display: table-cell;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.visiomatic-control-layername {
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 4px;
+	padding-right: 8px;
+}
+
+
+/*------------------------------ Activity spinner ---------------------------*/
+
+.visiomatic-control-activity {
+	background-image: url(../images/activity.svg);
+	background-size: 18px;
+	width: 18px;
+	height: 18px;
+	margin: 2px;
+}
+
+.visiomatic-layer-activity {
+	background-image: url(../images/activity.svg);
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	text-align: center;
+	vertical-align: middle;
+	background-size: 100%;
+	width: 32px;
+	height: 32px;
+	transform: translate(-50%, 50%);
+	pointer-events: none;
+}
+
+/*-------------------------------- Trash button -----------------------------*/
+
+.visiomatic-control-trash {
+	display: table-cell;
+	width: 27px;
+	height: 27px;
+	background-color: var(--icon-background-color);
+	border-left: 1px;
+	border-radius: 0px 4px 4px 0px;
+	box-shadow: -1px -1px 2px var(--shadow-color) inset;
+	cursor: pointer;
+}
+
+.visiomatic-control-trash-icon {
+	width: inherit;
+	height: inherit;
+	background-color: var(--button-color);
+	mask-image: url(../images/icon-trash.svg); -webkit-mask-image: url(../images/icon-trash.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+}
+
+.visiomatic-control-trash:hover {
+	background-color: var(--button-background-color-hover);
+}
+
+.visiomatic-control-trash-icon:hover {
+	background-color: var(--button-color-hover);
+}
+
+.visiomatic-control-trash:active {
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+	background-color: var(--button-background-color-checked);
+}
+
+.visiomatic-control-trash-icon:active {
+	background-color: var(--button-color-checked);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Channel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-channel-toggle {
+	mask-image: url(../images/icon-equalizer2.svg); -webkit-mask-image: url(../images/icon-equalizer2.svg);
+}
+
+.sidebar.channel {
+	width: 290px;
+}
+.sidebar-left.channel ~ .leaflet-left {
+	left: 304px;
+}
+
+/*--------------------------------- Mixing mode -----------------------------*/
+
+#visiomatic-control-radio-mono {
+	border-radius: 4px 0px 0px 4px;
+}
+
+#visiomatic-control-radio-mono + div {
+	mask-image: url(../images/icon-palette.svg); -webkit-mask-image: url(../images/icon-palette.svg);
+}
+
+#visiomatic-control-radio-color {
+	margin-left: 2px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-radio-color + div {
+	mask-image: url(../images/icon-stack.svg); -webkit-mask-image: url(../images/icon-stack.svg);
+}
+
+/*---------------------------------- Color map ------------------------------*/
+
+.visiomatic-control-cmaps {
+    margin: 6px 0px -2px 0px;
+    float: left;
+}
+
+
+label.leaflet-cmap {
+	display: inline-block;
+	width:32px;
+	height:32px;
+}
+
+input.leaflet-cmap {
+	appearance: none; -moz-appearance: none; -webkit-appearance: none;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	padding: 0px;
+	box-sizing:border-box;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	margin: 0px 2px 0px 0px;
+	width: inherit;
+	height: inherit;
+}
+
+div.leaflet-cmap {
+}
+
+input.leaflet-cmap:hover {
+	box-shadow: 2px 2px 4px var(--shadow-color) inset;
+}
+
+input.leaflet-cmap:checked {
+	box-shadow: 2px 2px 4px var(--shadow-color) inset;
+}
+
+#leaflet-cmap-grey {
+	background-image: url(../images/icon-grey.svg);
+	border-radius: 4px 0px 0px 4px;
+}
+#leaflet-cmap-jet  {
+	background-image: url(../images/icon-jet.svg);
+}
+#leaflet-cmap-cold  {
+	background-image: url(../images/icon-cold.svg);
+}
+#leaflet-cmap-hot  {
+	background-image: url(../images/icon-hot.svg);
+	border-radius: 0px 4px 4px 0px;
+}
+
+#leaflet-channel div.visiomatic-control-select {
+	display: flow-root;
+}
+
+#visiomatic-control-button-channel-first {
+	width: 28px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+#visiomatic-control-button-channel-first >div {
+	mask-image: url(../images/icon-first.svg); -webkit-mask-image: url(../images/icon-first.svg);
+}
+
+#visiomatic-control-button-channel-reverse {
+	width: 28px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#visiomatic-control-button-channel-reverse >div {
+	mask-image: url(../images/icon-reverse.svg); -webkit-mask-image: url(../images/icon-reverse.svg);
+}
+
+#visiomatic-control-button-channel-reverse.playing {
+	background-color: var(--button-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+#visiomatic-control-button-channel-reverse.playing >div {
+	mask-image: url(../images/icon-pause.svg); -webkit-mask-image: url(../images/icon-pause.svg);
+	background-color: var(--button-color-checked);
+}
+
+#visiomatic-control-button-channel-previous {
+	width: 28px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#visiomatic-control-button-channel-previous >div {
+	mask-image: url(../images/icon-previous.svg); -webkit-mask-image: url(../images/icon-previous.svg);
+}
+
+#visiomatic-control-button-channel-next {
+	width: 28px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#visiomatic-control-button-channel-next >div {
+	mask-image: url(../images/icon-next.svg); -webkit-mask-image: url(../images/icon-next.svg);
+}
+
+#visiomatic-control-button-channel-play {
+	width: 28px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#visiomatic-control-button-channel-play >div {
+	mask-image: url(../images/icon-play.svg); -webkit-mask-image: url(../images/icon-play.svg);
+}
+
+#visiomatic-control-button-channel-play.playing {
+	background-color: var(--button-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+#visiomatic-control-button-channel-play.playing >div {
+	mask-image: url(../images/icon-pause.svg); -webkit-mask-image: url(../images/icon-pause.svg);
+	background-color: var(--button-color-checked);
+}
+
+#visiomatic-control-button-channel-last {
+	width: 28px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-channel-last >div {
+	mask-image: url(../images/icon-last.svg); -webkit-mask-image: url(../images/icon-last.svg);
+}
+
+/*-------------------------------- Channel list -----------------------------*/
+
+#visiomatic-control-button-colormix-reset {
+}
+
+#visiomatic-control-button-colormix-reset > div {
+	mask-image: url(../images/icon-reset.svg); -webkit-mask-image: url(../images/icon-reset.svg);
+}
+
+#visiomatic-control-button-colormix-auto {
+	margin-left: 4px;
+}
+
+#visiomatic-control-button-colormix-auto > div {
+	mask-image: url(../images/icon-magicwand.svg); -webkit-mask-image: url(../images/icon-magicwand.svg);
+}
+
+.visiomatic-control-chanlist {
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.visiomatic-control-channel {
+	height: 28px;
+	display: table-row;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.visiomatic-control-chancolor {
+	display: table-cell;
+	vertical-align: middle;
+	width: 27px;
+	box-shadow: 0px -1px 2px var(--shadow-color) inset;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.visiomatic-control-chanlabel {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 4px;
+	padding-right: 8px;
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	box-shadow: -1px -1px 2px var(--shadow-color) inset;
+}
+
+.visiomatic-control-chanlabel:hover {
+	background-color: var(--input-background-color-hover);
+	color: var(--input-color-hover);
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Image %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-image-toggle {
+	mask-image: url(../images/icon-contrast.svg); -webkit-mask-image: url(../images/icon-contrast.svg);
+}
+
+.sidebar.image {
+	width: 240px;
+}
+.sidebar-left.image ~ .leaflet-left {
+	left: 254px;
+}
+
+#visiomatic-control-button-image-reset >div {
+	mask-image: url(../images/icon-reset.svg); -webkit-mask-image: url(../images/icon-reset.svg);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Catalog %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-catalog-toggle {
+	mask-image: url(../images/icon-make-group.svg); -webkit-mask-image: url(../images/icon-make-group.svg);
+}
+
+.sidebar.catalog {
+	width: 280px;
+}
+.sidebar-left.catalog ~ .leaflet-left {
+	left: 294px;
+}
+
+#visiomatic-control-button-catalog {
+	width: 32px;
+	padding: 2px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-catalog > div {
+	display: none;
+}
+
+#visiomatic-control-button-catalog:after {
+	content: 'GO';
+}
+
+.logo-catalog-cds {
+	background-image: url(../images/cds.png);
+	background-repeat: no-repeat;
+	background-size: 2.4em;
+	background-position: center right 16px;
+	display: inline-block;
+	padding-right: 32px!important;
+}
+
+.logo-catalog-mast {
+	background-image: url(../images/mast.png)j;
+	background-repeat: no-repeat;
+	background-size: 2.4em;
+	background-position: center right 16px;
+	display: inline-block;
+	padding-right: 32px!important;
+}
+
+.logo-catalog-imcce {
+	background-image: url(../images/imcce.svg);
+	background-repeat: no-repeat;
+	background-size: 4.0em;
+	background-position: center right 16px;
+	display: inline-block;
+	padding-right: 32px!important;
+}
+
+.logo-catalog-vizier {
+	background-image: url(../images/vizier.png);
+	background-repeat: no-repeat;
+	background-size: 2.4em;
+	background-position: center right 16px;
+	display: inline-block;
+	padding-right: 32px!important;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Region %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-region-toggle {
+	mask-image: url(../images/icon-location.svg); -webkit-mask-image: url(../images/icon-location.svg);
+}
+
+.sidebar.region {
+	width: 280px;
+}
+.sidebar-left.region ~ .leaflet-left {
+	left: 294px;
+}
+
+#visiomatic-control-button-region {
+	width: 32px;
+	padding: 2px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-region > div {
+	display: none;
+}
+
+#visiomatic-control-button-region:after {
+	content: 'GO';
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Profile %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-profile-toggle {
+	mask-image: url(../images/icon-plot.svg); -webkit-mask-image: url(../images/icon-plot.svg);
+}
+
+.sidebar.profile {
+	width: 250px;
+}
+.sidebar-left.profile ~ .leaflet-left {
+	left: 264px;
+}
+
+#visiomatic-control-button-start {
+	width: 48px;
+	padding: 2px;
+	font-size: 12px;
+	border-radius: 0px;
+}
+
+#visiomatic-control-button-start > div {
+	display: none;
+}
+
+#visiomatic-control-button-start:after {
+	content: 'START';
+}
+
+#visiomatic-control-button-end {
+	width: 48px;
+	padding: 2px;
+	font-size: 12px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-end > div {
+	display: none;
+}
+
+#visiomatic-control-button-end:after {
+	content: 'END';
+}
+
+#visiomatic-control-button-spectrum {
+	width: 32px;
+	padding: 2px;
+	font-size: 12px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-spectrum > div {
+	display: none;
+}
+
+#visiomatic-control-button-spectrum:after {
+	content: 'GO';
+}
+
+/*----------------------------------- Line ----------------------------------*/
+.visiomatic-control-length {
+	justify-content: center;
+	display: flex;
+}
+
+/*---------------------------------- Plots ----------------------------------*/
+.visiomatic-profile-plot {
+	width: 400px;
+	height: 300px;
+}
+
+.visiomatic-spectrum-plot {
+	width: 400px;
+	height: 400px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Snapshot %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-snapshot-toggle {
+	mask-image: url(../images/icon-camera.svg); -webkit-mask-image: url(../images/icon-camera.svg);
+}
+
+.sidebar.snapshot {
+	width: 232px;
+}
+.sidebar-left.snapshot ~ .leaflet-left {
+	left: 246px;
+}
+
+#visiomatic-snapshot div.visiomatic-control-select {
+	display: inline-block;
+}
+
+#visiomatic-control-button-snapimage {
+	width: 32px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-snapimage > div {
+	mask-image: url(../images/icon-image.svg); -webkit-mask-image: url(../images/icon-image.svg);
+}
+
+#visiomatic-control-button-printscreen {
+	width: 32px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+#visiomatic-control-button-printscreen >div {
+	mask-image: url(../images/icon-print.svg); -webkit-mask-image: url(../images/icon-print.svg);
+}
+
+#visiomatic-control-button-snapscreen {
+	width: 32px;
+	margin-left: 4px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-snapscreen >div {
+	mask-image: url(../images/icon-image.svg); -webkit-mask-image: url(../images/icon-image.svg);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Preferences %%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-preferences-toggle {
+	mask-image: url(../images/icon-cog.svg); -webkit-mask-image: url(../images/icon-cog.svg);
+}
+
+.sidebar.preferences {
+	width: 200px;
+}
+.sidebar-left.preferences ~ .leaflet-left {
+	left: 214px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Doc %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+a#visiomatic-doc-toggle {
+	mask-image: url(../images/icon-info.svg); -webkit-mask-image: url(../images/icon-info.svg);
+	height: 36px;
+}
+
+.sidebar.doc {
+	width: 530px;
+	max-width: 100%;
+}
+
+.sidebar-left.doc ~ .leaflet-left {
+	left: 544px;
+}
+
+.sidebar-tabs ul:last-child > li {
+	height: 36px;
+}
+
+.jqplot-target {
+	overflow: hidden;
+}
+
+#visiomatic-doc .visiomatic-control-dialog {
+	position: static;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#visiomatic-doc .visiomatic-control-framebox {
+	position: absolute;
+	top: 32px;
+	bottom: 36px;
+	left: 0px;
+	right: 0px;
+}
+
+iframe.visiomatic-control-doc {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+
+}
+
+#visiomatic-doc .visiomatic-control-box {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 36px;
+	box-sizing: border-box;
+	padding: 2px 8px 2px 8px;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+#visiomatic-control-button-home {
+	width: 32px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+#visiomatic-control-button-home > div {
+	mask-image: url(../images/icon-home.svg); -webkit-mask-image: url(../images/icon-home.svg);
+}
+
+#visiomatic-control-button-back{
+	width: 32px;
+	border-radius: 0px;
+}
+
+#visiomatic-control-button-back > div {
+	mask-image: url(../images/icon-left.svg); -webkit-mask-image: url(../images/icon-left.svg);
+}
+
+#visiomatic-control-button-forward  {
+	width: 32px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#visiomatic-control-button-forward > div {
+	mask-image: url(../images/icon-right.svg); -webkit-mask-image: url(../images/icon-right.svg);
+}
+
+#visiomatic-control-button-pdf{
+	width: 32px;
+	margin: 0px 0px 0px 2px;
+	border-radius: 4px 4px 4px 4px;
+	position: absolute;
+	right: 3px;
+}
+
+#visiomatic-control-button-pdf > div {
+	mask-image: url(../images/icon-pdf.svg); -webkit-mask-image: url(../images/icon-pdf.svg);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.WCS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-control-coords-dialog {
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	border-radius: 4px;
+	font-size: 1.2em;
+	height: 32px;
+}
+
+.leaflet-control-coords-ext,.leaflet-control-coords-select,.leaflet-control-coords-input {
+	height: inherit;
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	vertical-align: top;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	padding: 0px 0px 0px 8px;
+	border-width: 0px;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.leaflet-control-coords-ext {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.leaflet-control-coords-select {
+	text-align: center;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.leaflet-control-coords-input {
+	padding: 2px 12px 2px 6px;
+	border-radius: 0px 4px 4px 0px;
+	box-sizing : border-box;
+	appearance: textfield; -moz-appearance: textfield; -webkit-appearance: texfield;
+}
+
+.leaflet-control-coords-ext:hover,.leaflet-control-coords-select:hover,.leaflet-control-coords-input:hover {
+	background-color: var(--input-background-color-hover);
+	color: var(--input-color-hover);
+}
+
+.leaflet-control-coords-ext:focus,.leaflet-control-coords-select:focus,.leaflet-control-coords-input:focus {
+	background-color: var(--input-background-color-focus);
+	color: var(--input-color-focus);
+}
+
+
+.leaflet-control-coords-clipboard {
+	position: absolute;
+	right: 2px;
+	top: 1px;
+	display: inline-block;
+	background-color: var(--icon-background-color);
+	background-image: url(../images/icon-clipboard.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+}
+
+.leaflet-control-coords-clipboard-icon {
+	background-color: var(--icon-color);
+	width: 29px;
+	height: 29px;
+	mask-image: url(../images/icon-clipboard.svg); -webkit-mask-image: url(../images/icon-clipboard.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+}
+
+.leaflet-control-coords-clipboard:hover {
+	background-color: var(--icon-background-color-hover);
+}
+
+.leaflet-control-coords-clipboard-icon:hover {
+	background-color: var(--icon-color-hover);
+}
+
+.leaflet-control-coords-clipboard:active {
+	background-color: var(--icon-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.leaflet-control-coords-clipboard-icon:active {
+	background-color: var(--icon-color-checked);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%% Control.PixelValues %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-control-values-dialog {
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	border-radius: 4px;
+	font-size: 1.2em;
+	height: 32px;
+}
+
+.leaflet-control-values-select,.leaflet-control-values-input {
+	height: inherit;
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	vertical-align: top;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	padding: 0px 0px 0px 8px;
+	border-width: 0px;
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.leaflet-control-values-select {
+	text-align: center;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.leaflet-control-values-input {
+	padding: 2px 12px 2px 6px;
+	border-radius: 0px 4px 4px 0px;
+	box-sizing : border-box;
+	appearance: textfield; -moz-appearance: textfield; -webkit-appearance: texfield;
+}
+
+.leaflet-control-values-ext:hover,.leaflet-control-values-select:hover,.leaflet-control-values-input:hover {
+	background-color: var(--input-background-color-hover);
+	color: var(--input-color-hover);
+}
+
+.leaflet-control-values-ext:focus,.leaflet-control-values-select:focus,.leaflet-control-values-input:focus {
+	background-color: var(--input-background-color-focus);
+	color: var(--input-color-focus);
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Scale.WCS %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-left .leaflet-control-scale {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	text-shadow: none;
+}
+
+.leaflet-control-scale-line {
+	border: 0px;
+	background-color: var(--scale-color);
+	text-shadow: none;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Reticle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-reticle {
+	background-image: url(../images/reticle.svg);
+	width: 26px;
+	height: 26px;
+	margin: -13px -13px -13px -13px;
+	z-index: 3000000000;
+}
+
+.leaflet-dragging .leaflet-reticle {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s linear;
+	   -moz-transition: opacity 0.5s linear;
+	     -o-transition: opacity 0.5s linear;
+	        transition: opacity 0.5s linear;
+}
+
+.leaflet-reticle {
+	opacity: 0;
+	-webkit-transition: opacity 0.5s linear;
+	   -moz-transition: opacity 0.5s linear;
+	     -o-transition: opacity 0.5s linear;
+	        transition: opacity 0.5s linear;
+}
+
+/* Graticule */
+.leaflet-grid-label .gridlabel-vert {
+    margin-left: 8px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.leaflet-grid-label .gridlabel-vert,
+.leaflet-grid-label .gridlabel-horiz {
+    padding-left:2px;
+    text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.ExtraMap %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* Adapted from Control.MiniMap by Norkart
+(see copyright notice in Control.ExtraMap.js */
+
+.leaflet-control-extramap {
+	border: solid var(--extramap-border-color) 2px;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	background: var(--extramap-fill-color);
+	border-radius: 4px;
+	z-index: 0;
+	transition: all 500ms;
+}
+
+.leaflet-control-extramap a {
+/*
+	background-color: var(--icon-background-color);
+	background-position: 1px 2px;
+*/
+	background-repeat: no-repeat;
+	z-index: 99999;
+}
+
+.leaflet-control-extramap a {
+	background-size: cover;
+	position: absolute;
+	border-radius: 0px;
+}
+.leaflet-control-extramap a.leaflet-control-extramap-toggle-display.minimized,
+.leaflet-control-extramap a.leaflet-control-extramap-toggle-display.minimized-topleft
+.leaflet-control-extramap a.leaflet-control-extramap-toggle-display.minimized-bottomleft,
+.leaflet-control-extramap a.leaflet-control-extramap-toggle-display.minimized-topright {
+	opacity: 1.0;
+	background-image: url("../images/icon-map.svg");
+	background-color: var(--icon-color);
+}
+.leaflet-control-extramap:hover .leaflet-control-extramap-toggle-display {
+	opacity: 1.0;
+}
+
+.leaflet-control-extramap-toggle-display {
+	opacity: 0.33;
+	background-image: url("../images/icon-shrink.svg");
+}
+
+.leaflet-control-minimap-toggle-display-bottomright {
+	bottom: 0;
+	right: 0; 
+}
+
+.leaflet-control-extramap-toggle-display-topleft{
+	top: 0;
+	left: 0; 
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.leaflet-control-extramap-toggle-display-bottomleft{
+	bottom: 0;
+	left: 0; 
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.leaflet-control-extramap-toggle-display-topright{
+	top: 0;
+	right: 0; 
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.FullScreen %%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* Adapted from Control.FullScreen by Bruno Bergot
+   (see copyright notice in Control.FullScreen.js
+*/
+a.leaflet-control-zoom-fullscreen {
+	mask-image: url(../images/icon-fullscreen.svg); -webkit-mask-image: url(../images/icon-fullscreen.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	background-color: var(--icon-color);
+}
+
+:fullscreen .leaflet-control-zoom-fullscreen {
+	mask-image: url(../images/icon-windowed.svg); -webkit-mask-image: url(../images/icon-windowed.svg);
+}
+
+.leaflet-pseudo-fullscreen {
+	position: fixed !important;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0px !important;
+	left: 0px !important;
+	z-index: 999;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FileTree %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+UL.filetree {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 0px;
+	margin: 0px 4px 0px 0px;
+}
+
+UL.filetree LI {
+	list-style: none;
+	padding: 0px;
+	padding-left: 20px;
+	margin: 0px;
+/*	white-space: nowrap;*/
+}
+
+UL.filetree A {
+	color: var(--icon-color);
+	text-decoration: none;
+	padding: 0px 2px;
+}
+
+UL.filetree A:hover {
+	background-color: var(--icon-background-color-hover);
+}
+
+.filetree LI.directory {
+	background: url(../images/directory.png) left top no-repeat;
+}
+.filetree LI.expanded {
+	background: url(../images/folder_open.png) left top no-repeat;
+}
+.filetree LI.file {
+	clear: both;
+	background: url(../images/file.png) left top no-repeat;
+}
+.filetree LI.wait {
+	background: url(../images/activity.svg) left top no-repeat;
+	background-size: 16px;
+}
+.filetree LI.fits_ptif {
+	background: url(../images/picture.png) left top no-repeat;
+	font-weight: bold;
+}
+.filetree LI.fits_noptif {
+	background: url(../images/picture.png) left top no-repeat;
+	font-weight: normal;
+}
+.filetree .filename {
+	float: left;
+	background: inherit;
+}
+.filetree .filesize {
+	font-weight: normal;
+	float: right;
+	color: var(--dialog-color);
+	background: inherit;
+}
+
+/* jQuery windows */
+.ui-dialog-titlebar-close {
+	width: 24px !important;
+	height: 24px !important;
+	overflow: hidden;
+	top: 40% !important;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%% Control.Attribution.Logos %%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.leaflet-control-attribution {
+	background: rgba(100,100,100,0.0) !important;
+	color: white;
+	border-radius: 4px;
+	box-shadow: none;
+	margin-bottom: 5px !important;
+	margin-right: 10px !important;
+	line-height: 200%;
+}
+
+.leaflet-control-attribution a {
+	color: white;
+}
+
+.leaflet-control-attribution-logo:hover {
+	opacity: 1.0;
+	filter: opacity(100%);
+	text-decoration: none !important;
+}
+
+.leaflet-control-attribution-logo {
+	opacity: 0.7;
+	filter: opacity(70%);
+	width: 2em;
+	height: 2em;
+	float: left;
+	vertical-align: middle;
+	margin-left: 0.5em;
+}
+
+#logo-visiomatic {
+	background-image: url(../images/visiomatic.png);
+	background-repeat: no-repeat;
+	background-size: 2.1em;
+	background-position: center;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Control.Sidebar %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* Adapted from the plugin by Tobias Bieniek
+   (see copyright notice in Control.Sidebar.js
+*/
+
+a.leaflet-control-zoom-sidebar {
+	mask-image: url(../images/icon-backward2.svg); -webkit-mask-image: url(../images/icon-backward2.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	background-color: var(--icon-color) !important;
+}
+a.leaflet-control-zoom-sidebar.collapsed {
+	mask-image: url(../images/icon-menu.svg); -webkit-mask-image: url(../images/icon-menu.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	background-color: var(--icon-color) !important;
+}
+
+.sidebar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 330px;
+	overflow: hidden;
+	z-index: 2000;
+	top: 10px;
+	bottom: 10px;
+	transition: width 500ms;
+	cursor: default;
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	border-radius: 4px;
+}
+
+/*
+.sidebar.leaflet-touch {
+	box-shadow: none;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+}
+*/
+
+.sidebar-left {
+	left: 10px;
+}
+
+.sidebar-right {
+	right: 10px;
+}
+
+.sidebar-left ~ .sidebar-map {
+	margin-left: 0px;
+}
+.sidebar-right ~ .sidebar-map {
+	margin-right: 40px;
+}
+
+.sidebar.collapsed {
+	width: 0px;
+	transition: width 500ms;
+}
+.sidebar.closed {
+	width: 32px;
+	transition: width 500ms;
+}
+
+.sidebar-left.collapsed ~ .leaflet-left {
+	left: 4px;
+}
+.sidebar-left.closed ~ .leaflet-left {
+	left: 46px;
+}
+
+.sidebar-left ~ .leaflet-left {
+	transition: left 500ms;
+	left: 344px;
+}
+
+.sidebar-tabs {
+	top: 0px;
+	bottom: 0px;
+	height: 100%;
+	background-color: var(--icon-background-color);
+	box-shadow: 1px 1px 2px var(--shadow-color);
+	z-index: 1000;
+}
+
+.sidebar-left .sidebar-tabs {
+	left: 0px;
+}
+.sidebar-right .sidebar-tabs {
+	right: 0px; }
+
+.sidebar-tabs, .sidebar-tabs > ul {
+	position: absolute;
+	width: 32px;
+	margin: 0px;
+	padding: 0px;
+}
+.sidebar-tabs > li, .sidebar-tabs > ul > li {
+	width: 100%;
+	height: 32px;
+	background-color: var(--icon-background-color);
+	font-size: 12pt;
+	overflow: hidden;
+	transition: all 80ms;
+}
+
+.sidebar-tabs > li:hover, .sidebar-tabs > ul > li:hover {
+	background-color: var(--icon-background-color-hover);
+}
+
+.sidebar-tabs > li:hover > a, .sidebar-tabs > ul > li:hover > a {
+	background-color: var(--icon-color-hover);
+}
+
+.sidebar-tabs > li:active, .sidebar-tabs > ul > li:active {
+	background-color: var(--icon-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.sidebar-tabs > li:active > a, .sidebar-tabs > ul > li:active > a {
+	background-color: var(--icon-color-checked);
+}
+
+.sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
+	background-color: var(--icon-background-color-checked);
+}
+
+.sidebar-tabs > li.active > a, .sidebar-tabs > ul > li.active > a {
+	background-color: var(--icon-color-checked);
+}
+
+.sidebar-tabs > li.disabled, .sidebar-tabs > ul > li.disabled {
+	color: rgba(51, 51, 51, 0.4);
+}
+.sidebar-tabs > li.disabled:hover, .sidebar-tabs > ul > li.disabled:hover {
+	background: transparent;
+}
+.sidebar-tabs > li.disabled > a, .sidebar-tabs > ul > li.disabled > a {
+cursor: default;
+}
+.sidebar-tabs > li > a, .sidebar-tabs > ul > li > a {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+	line-height: 32px;
+	background-color: var(--icon-color);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	text-decoration: none;
+	text-align: center;
+}
+.sidebar-tabs > ul + ul {
+	bottom: 0;
+}
+
+.sidebar-content {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	background-color: var(--dialog-background-color);
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: var(--dialog-color);
+}
+.sidebar-left .sidebar-content {
+	left: 32px;
+	right: 0px;
+}
+.sidebar-right .sidebar-content {
+	left: 0px;
+	right: 32px;
+}
+.sidebar.closed > .sidebar-content {
+	overflow-y: hidden;
+}
+
+.sidebar-pane {
+	display: none;
+	left: 0px;
+	right: 0px;
+	box-sizing: border-box;
+	padding: 0px 0px;
+}
+.sidebar-pane.active {
+	display: block;
+}
+
+.sidebar-header {
+	margin: 0px;
+	height: 32px;
+	padding: 0px 36px 0px 4px;
+	line-height: 32px;
+	font-size: 16px;
+	color: var(--header-color);
+	text-align: center;
+	text-shadow: none;
+	background-color: var(--header-background-color);
+}
+.sidebar-right .sidebar-header {
+	padding-left: 40px;
+}
+
+.sidebar-close {
+	position: absolute;
+	top: 0px;
+	width: 32px;
+	height: 31px;
+	display: block;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	background-color: var(--icon-background-color);
+	box-shadow: 1px 1px 2px var(--shadow-color);
+}
+
+.sidebar-close-icon {
+	mask-image: url(../images/icon-backward.svg); -webkit-mask-image: url(../images/icon-backward.svg);
+	mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+	mask-position: center; -webkit-mask-position: center;
+	width: inherit;
+	height: inherit;
+	background-color: var(--icon-color);
+}
+
+.sidebar-close:hover {
+	background-color: var(--icon-background-color-hover);
+}
+
+.sidebar-close-icon:hover {
+	background-color: var(--icon-color-hover);
+}
+
+.sidebar-close:active {
+	background-color: var(--icon-background-color-checked);
+	box-shadow: 1px 1px 2px var(--shadow-color) inset;
+}
+
+.sidebar-close-icon:active {
+	background-color: var(--icon-color-checked);
+}
+
+.sidebar-left .sidebar-close {
+	right: 0px;
+}
+.sidebar-right .sidebar-close {
+	left: 0px;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="root_path" content="{{ root_path }}">
+    <link rel="icon" type="image/svg+xml" href="{{ root_path }}/client/images/visiomatic.png">
+    <title>VisiOmatic III</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="{{ root_path }}/client/css/visiomatic.css" />
+    <style type='text/css'>
+		body {padding: 0; margin: 0; }
+		html,body,#map { width: 100%; height: 100%; }
+    </style>
+    <script src="{{ root_path }}/client/dist/visiomatic.js"></script>
+  </head>
+  <body>
+    <div id='map' style='background:black'></div>
+	<script>
+		var args = V.util.VUtil.parseURL(window.location.search.substring(1)),
+				url = '{{root_path}}' + '{{ api_path }}?FIF=' + (args['image'] ? args['image'] : '{{ image }}'),
+				map = L.map('map', {fullscreenControl: true, zoom: 1, preferCanvas: false}),
+				vlayer = V.layer.vTileLayer(url, {
+					setTitleBar: true,
+					center: args['center'] ? args['center'] : false,
+					fov: args['fov'] ? parseFloat(args['fov']) : false,
+					mixingMode: args['mode'] ? args['mode'] : 'mono',
+					defaultChannel: args['channel'] ? parseInt(args['channel'], 10) : 0,
+					reuseTiles: true
+				}).addTo(map);
+
+        // V.control.installExit('{{root_path}}');
+		V.control.fullScreen().addTo(map);
+		V.control.scale({pixels: false}).addTo(map);
+		V.control.reticle().addTo(map);
+		V.control.coords({position: 'topright'}).addTo(map);
+		V.control.pixelValues({position: 'topright'}).addTo(map);
+
+		var	minivlayer = V.layer.vTileLayer(url, {
+					mixingMode: args['mode'] ? args['mode'] : 'mono',
+					defaultChannel: args['channel'] ? parseInt(args['channel'], 10) : 0,
+					reuseTiles: true
+				}),
+				minimap = V.control.extraMap(minivlayer, {
+					position: 'topright',
+					width: 192,
+					height: 192,
+					zoomLevelOffset: -5,
+				}).addTo(map),
+			sidebar = V.control.sidebar().addTo(map);
+
+		V.control.channelUI().addTo(sidebar);
+		V.control.imageUI().addTo(sidebar);
+		V.control.catalogUI().addTo(sidebar);
+		V.control.regionUI().addTo(sidebar);
+		V.control.profileUI().addTo(sidebar);
+		V.control.snapshotUI().addTo(sidebar);
+		V.control.preferencesUI().addTo(sidebar);
+		{% if doc_url %}
+			sidebar.addTabList();
+			V.control.docUI('{{ root_path }}' + '{{ doc_url }}').addTo(sidebar);
+		{% endif %}
+	</script>
+  </body>
+</html>
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogs &mdash; VisiOmatic 3.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3ff5e572" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=f4ced14b"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Geometry" href="geometry.html" />
+    <link rel="prev" title="JS client" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            VisiOmatic
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Technical overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interface.html">How to use VisiOmatic</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../server/index.html">Python server</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">JS client</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Catalogs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#catalog">Catalog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#built-in-catalogs">Built-in catalogs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="geometry.html">Geometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="layers.html">Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui.html">User Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html">Utils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wcs.html">World Coordinate System</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">VisiOmatic</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../api.html">API reference</a></li>
+          <li class="breadcrumb-item"><a href="index.html">JS client</a></li>
+      <li class="breadcrumb-item active">Catalogs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/api/client/catalogs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="catalogs">
+<h1>Catalogs<a class="headerlink" href="#catalogs" title="Link to this heading"></a></h1>
+<section id="catalog">
+<h2>Catalog<a class="headerlink" href="#catalog" title="Link to this heading"></a></h2>
+<dl class="js class">
+<dt class="sig sig-object js" id="Catalog">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="n"><span class="pre">Catalog</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog" title="Link to this definition"></a></dt>
+<dd><p>Create a catalog.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>options</strong> (<em>object</em>) -- Options.</p></li>
+<li><p><strong>options.name</strong> (<em>string</em>) -- Catalog name.</p></li>
+<li><p><strong>options.attribution</strong> (<em>string</em>) -- Reference or copyright.</p></li>
+<li><p><strong>options.color</strong> (<a class="reference internal" href="utils.html#RGB" title="RGB"><em>RGB</em></a>) -- Default display color. Currently unused.</p></li>
+<li><p><strong>options.properties</strong> (<em>Array.&lt;string&gt;</em>) -- Names of catalog object properties.</p></li>
+<li><p><strong>options.propertyMask</strong> (<em>Array.&lt;string&gt;</em>) -- Property display mask: only properties with propertyMask element set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are displayed. Defaults to all properties being displayed.</p></li>
+<li><p><strong>options.units</strong> (<em>Array.&lt;string&gt;</em>) -- Property units.</p></li>
+<li><p><strong>options.magLim</strong> (<em>number</em>) -- Reference magnitude limit (for scaling symbols).</p></li>
+<li><p><strong>options.magIndex</strong> (<em>number</em>) -- Index of the property member that stores the reference magnitude.</p></li>
+<li><p><strong>options.magScaleType</strong> (<em>'mag'|'log'|'linear'</em>) -- Scale type for the reference &quot;magnitude&quot;.</p></li>
+<li><p><strong>options.regionType</strong> (<em>'box'|'cone'</em>) -- Geometry of the query region.</p></li>
+<li><p><strong>options.service</strong> (<em>string</em>) -- Name of the catalog web service.</p></li>
+<li><p><strong>options.className</strong> (<em>string</em>) -- Class name for the catalog or service logo.</p></li>
+<li><p><strong>options.serviceURL</strong> (<em>string</em>) -- Root web service query URL.</p></li>
+<li><p><strong>options.catalogURL</strong> (<em>string</em>) -- _Relative_ catalog query URL.</p></li>
+<li><p><strong>options.objectURL</strong> (<em>string</em>) -- _Relative_ object query URL.</p></li>
+<li><p><strong>options.authenticate</strong> (<em>boolean</em>) -- Catalog requires authentication?</p></li>
+<li><p><strong>options.nmax</strong> (<em>number</em>) -- Maximum number of sources per query.</p></li>
+<li><p><strong>options.format</strong> (<em>string</em>) -- Data format ('csv' or 'json')</p></li>
+<li><p><strong>options.draw</strong> (<em>Catalog~drawCallback</em>) -- Callback function called for drawing object. Defaults to a circle marker.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Catalog</strong> -- Instance of a catalog.</p>
+</dd>
+</dl>
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog._csvToGeoJSON">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">_csvToGeoJSON</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog._csvToGeoJSON" title="Link to this definition"></a></dt>
+<dd><p>Convert CSV data to [GeoJSON]{&#64;link <a class="reference external" href="https://geojson.org/">https://geojson.org/</a>}.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>str</strong> (<em>string</em>) -- CSV data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>object</strong> -- GeoJSON object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.draw">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">draw</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latlng</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.draw" title="Link to this definition"></a></dt>
+<dd><p>Draw a circle at the current catalog source world coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>object</em>) -- Feature property of the source.</p></li>
+<li><p><strong>latlng</strong> (<em>leaflet.LatLng</em>) -- World coordinates of the source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>leaflet.circleMarker</strong> -- Circle marker.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.filter">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">filter</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.filter" title="Link to this definition"></a></dt>
+<dd><p>Filter out a source based on its feature property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>object</em>) -- Feature property of the source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>boolean</strong> -- <code class="docutils literal notranslate"><span class="pre">false</span></code> if filtered out, <code class="docutils literal notranslate"><span class="pre">true</span></code> otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.popup">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">popup</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.popup" title="Link to this definition"></a></dt>
+<dd><p>Generate HTML content for popups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>object</em>) -- Feature property of the source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>string</strong> -- HTML content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.readProperty">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">readProperty</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.readProperty" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Read number in a cell from a</dt><dd><p>[Vizier]{&#64;link <a class="reference external" href="https://vizier.cds.unistra.fr/">https://vizier.cds.unistra.fr/</a>} ASCII output.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item</strong> (<em>string</em>) -- Cell content.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>number</strong> -- Value in the cell.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.style">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">style</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.style" title="Link to this definition"></a></dt>
+<dd><p>Return drawing style for sources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>object</em>) -- Feature property of the source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>leaflet.Path.options</strong> -- Drawing style options.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js staticfunction">
+<dt class="sig sig-object js" id="Catalog.toGeoJSON">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">toGeoJSON</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.toGeoJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Defaults to a wrapper around private method</dt><dd><p>[_csvToGeoJSON]{&#64;link Catalog._csvToGeoJSON}.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>string|object</em>) -- catalog data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>object</strong> -- GeoJSON object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="Catalog.drawCallback">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">Catalog</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">drawCallback</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latlng</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Catalog.drawCallback" title="Link to this definition"></a></dt>
+<dd><p>Callback for drawing catalog objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature</strong> (<em>object</em>) -- Feature property of the source.</p></li>
+<li><p><strong>latlng</strong> (<em>leaflet.LatLng</em>) -- World coordinates of the source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>leaflet.Path</strong> -- Path.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="built-in-catalogs">
+<h2>Built-in catalogs<a class="headerlink" href="#built-in-catalogs" title="Link to this heading"></a></h2>
+<dl class="js attribute">
+<dt class="sig sig-object js" id="abell">
+<span class="sig-name descname"><span class="n"><span class="pre">abell</span></span></span><a class="headerlink" href="#abell" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>Abell catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="allWISE">
+<span class="sig-name descname"><span class="n"><span class="pre">allWISE</span></span></span><a class="headerlink" href="#allWISE" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>AllWISE catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="first">
+<span class="sig-name descname"><span class="n"><span class="pre">first</span></span></span><a class="headerlink" href="#first" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>FIRST catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="gaiaDR3">
+<span class="sig-name descname"><span class="n"><span class="pre">gaiaDR3</span></span></span><a class="headerlink" href="#gaiaDR3" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>Gaia DR3 catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="galexAIS">
+<span class="sig-name descname"><span class="n"><span class="pre">galexAIS</span></span></span><a class="headerlink" href="#galexAIS" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>GALEX AIS catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="gleam">
+<span class="sig-name descname"><span class="n"><span class="pre">gleam</span></span></span><a class="headerlink" href="#gleam" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>GLEAM catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="nvss">
+<span class="sig-name descname"><span class="n"><span class="pre">nvss</span></span></span><a class="headerlink" href="#nvss" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>NVSS catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="panstarrs1">
+<span class="sig-name descname"><span class="n"><span class="pre">panstarrs1</span></span></span><a class="headerlink" href="#panstarrs1" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>PanSTARRS 1 catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="ppmXL">
+<span class="sig-name descname"><span class="n"><span class="pre">ppmXL</span></span></span><a class="headerlink" href="#ppmXL" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>PPMXL catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="sdss">
+<span class="sig-name descname"><span class="n"><span class="pre">sdss</span></span></span><a class="headerlink" href="#sdss" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>SDSS catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="tgss">
+<span class="sig-name descname"><span class="n"><span class="pre">tgss</span></span></span><a class="headerlink" href="#tgss" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>TGSS catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="twomass">
+<span class="sig-name descname"><span class="n"><span class="pre">twomass</span></span></span><a class="headerlink" href="#twomass" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>2MASS catalog.</p>
+</dd></dl>
+
+<dl class="js attribute">
+<dt class="sig sig-object js" id="urat1">
+<span class="sig-name descname"><span class="n"><span class="pre">urat1</span></span></span><a class="headerlink" href="#urat1" title="Link to this definition"></a></dt>
+<dd><p><strong>type:</strong> Catalog</p>
+<p>URAT1 catalog.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="JS client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="geometry.html" class="btn btn-neutral float-right" title="Geometry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024 CEA/CFHT/CNRS/UParisSaclay.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
