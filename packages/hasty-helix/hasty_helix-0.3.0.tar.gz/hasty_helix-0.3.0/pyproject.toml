@@ -1,0 +1,18 @@
+[build-system]
+requires = ['setuptools>=42', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'hasty-helix'
+version = '0.3.0'
+description = 'A package to analyze transactions from a CSV file.'
+authors = [{ name = 'Semyon Drozdov', email = 's.drozdov@edu.centraluniversity.ru' }]
+readme = 'README.md'
+license = { text = 'MIT' }
+requires-python = '>=3.8'
+dependencies = [
+    'pandas'
+]
+
+[project.scripts]
+hasty-helix = "hasty_helix.cli:main"
