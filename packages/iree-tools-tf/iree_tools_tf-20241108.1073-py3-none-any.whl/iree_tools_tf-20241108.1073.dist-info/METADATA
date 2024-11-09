@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: iree-tools-tf
+Version: 20241108.1073
+Summary: IREE TensorFlow Compiler Tools
+Home-page: https://github.com/iree-org/iree
+Author: The IREE Team
+Author-email: iree-technical-discussion@lists.lfaidata.foundation
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+
+TensorFlow TF Compiler Tools
