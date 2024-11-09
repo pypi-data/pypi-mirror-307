@@ -1,0 +1,2 @@
+[console_scripts]
+NetManage = NetManage.__main__:main
