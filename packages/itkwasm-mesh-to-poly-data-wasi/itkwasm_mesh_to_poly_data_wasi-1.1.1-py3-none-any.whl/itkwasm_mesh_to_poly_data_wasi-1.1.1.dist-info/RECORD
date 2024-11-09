@@ -1,0 +1,9 @@
+itkwasm_mesh_to_poly_data_wasi/__init__.py,sha256=Qd7RuX8iDQsSARkCQwqQjGRcq8PqAfmBscl9-65m9IA,326
+itkwasm_mesh_to_poly_data_wasi/_version.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+itkwasm_mesh_to_poly_data_wasi/mesh_to_poly_data.py,sha256=0SbqGwwdMycUz5-zMvlSI9zWFpgYhnjCnapQgUpoDA4,1288
+itkwasm_mesh_to_poly_data_wasi/poly_data_to_mesh.py,sha256=Z6kZzVjulGcbe8rK5Sny2NYYsR1F0KdROQYBMxeCRx4,1298
+itkwasm_mesh_to_poly_data_wasi/wasm_modules/mesh-to-poly-data.wasi.wasm,sha256=8UlOL9aoByB9YvG2y1dbtr0jhV3XJXR_a06lgNuNwRs,4987403
+itkwasm_mesh_to_poly_data_wasi/wasm_modules/poly-data-to-mesh.wasi.wasm,sha256=LNR1aje-KH6CDFj9dCo-wB8L1tPYul5QjwRxiHAE8iw,3632190
+itkwasm_mesh_to_poly_data_wasi-1.1.1.dist-info/METADATA,sha256=gbsR_QjOvkJ4HXw8ahtN9Uxjx4_gT1GOjuI5IsrqJZk,1894
+itkwasm_mesh_to_poly_data_wasi-1.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+itkwasm_mesh_to_poly_data_wasi-1.1.1.dist-info/RECORD,,
