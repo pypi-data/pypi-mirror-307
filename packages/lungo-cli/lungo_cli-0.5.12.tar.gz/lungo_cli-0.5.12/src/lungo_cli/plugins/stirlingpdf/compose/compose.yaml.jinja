@@ -1,0 +1,28 @@
+{% set plugin_name = plugin.manifest.name %}
+
+services:
+  {{ plugin_name }}:
+    container_name: {{ plugin_name }}
+    hostname: {{ plugin_name }}
+
+    build:
+      context: {{ plugin.dirs.plugin_dir }}
+
+    user: root
+    entrypoint: [ ]
+    command: tini -- /scripts/init.sh java -Dfile.encoding=UTF-8 -jar /app.jar
+
+    networks:
+      static:
+        ipv4_address: {{ plugin.ip_address }}
+    expose:
+      - {{ plugin.manifest.backend_port }}
+
+    volumes:
+      - '{{ plugin.dirs.cache_dir }}/logs:/logs:rw'
+
+    environment:
+      - DOCKER_ENABLE_SECURITY=false
+      - SYSTEM_ROOTURIPATH={{ plugin.web_prefix }}
+
+    restart: 'unless-stopped'

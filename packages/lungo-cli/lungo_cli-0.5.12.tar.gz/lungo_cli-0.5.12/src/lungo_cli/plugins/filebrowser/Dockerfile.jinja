@@ -1,0 +1,13 @@
+FROM docker.io/filebrowser/filebrowser:{{ plugin.custom.filebrowser_version }}
+RUN \
+    {% for account in users.accounts %}
+    mkdir -p '/root/home/{{ account.username }}' && \
+    ln -s '/mnt/home/{{ account.username }}' '/root/home/{{ account.username }}/home' && \
+        {% for shared_dir in account.extra.shared_dirs %}
+    ln -s '/mnt/{{ shared_dir.name }}' '/root/home/{{ account.username }}/{{ shared_dir.name }}' && \
+        {% endfor %}
+        {% for shared_dir in config.directories.shared_dirs %}
+    ln -s '/mnt/{{ shared_dir.name }}' '/root/home/{{ account.username }}/{{ shared_dir.name }}' && \
+        {% endfor %}
+    {% endfor %}
+    :

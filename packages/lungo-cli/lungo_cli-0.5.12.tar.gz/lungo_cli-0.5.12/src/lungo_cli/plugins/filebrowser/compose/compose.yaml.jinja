@@ -1,0 +1,54 @@
+{% set directories = config.directories %}
+{% set plugin_name = plugin.manifest.name %}
+
+services:
+  {{ plugin_name }}:
+    container_name: {{ plugin_name }}
+    hostname: {{ plugin_name }}
+
+    build:
+      context: {{ plugin.dirs.plugin_dir }}
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'if ! cmp -s /etc/filebrowser/users_export.yaml /var/lib/filebrowser/users_export.old.yaml; then
+               rm -f /var/lib/filebrowser/filebrowser.db;
+               /filebrowser -c /etc/filebrowser/settings.yaml config init --auth.method=noauth;
+               /filebrowser -c /etc/filebrowser/settings.yaml config import /etc/filebrowser/config_export.yaml;
+               /filebrowser -c /etc/filebrowser/settings.yaml users import --replace /etc/filebrowser/users_export.yaml;
+               cp /etc/filebrowser/users_export.yaml /var/lib/filebrowser/users_export.old.yaml;
+             fi;
+             umask 002;
+             /filebrowser -c /etc/filebrowser/settings.yaml'
+
+    networks:
+      static:
+        ipv4_address: {{ plugin.ip_address }}
+    expose:
+      - {{ plugin.manifest.backend_port }}
+
+    volumes:
+      - '{{ plugin_name }}_home:/root/home'
+      - '{{ plugin.dirs.plugin_dir }}/config:/etc/filebrowser:ro'
+      - '{{ plugin.dirs.cache_dir }}:/var/log/filebrowser:rw'
+      - '{{ plugin.dirs.managed_dir }}:/var/lib/filebrowser:rw'
+      {% for account in users.accounts %}
+        {% if account.extra.user_dir %}
+      - '{{ account.extra.user_dir }}:/mnt/home/{{ account.username }}:rw'
+        {% else %}
+      - '{{ directories.users_dir }}/{{ account.username }}:/mnt/home/{{ account.username }}:rw'
+        {% endif %}
+        {% for shared_dir in account.extra.shared_dirs %}
+      - '{{ shared_dir.source }}:/mnt/{{ shared_dir.name }}:{{ 'ro' if shared_dir.read_only else 'rw' }}'
+        {% endfor %}
+      {% endfor %}
+      {% for shared_dir in directories.shared_dirs %}
+      - '{{ shared_dir.source }}:/mnt/{{ shared_dir.name }}:{{ 'ro' if shared_dir.read_only else 'rw' }}'
+      {% endfor %}
+
+    restart: 'unless-stopped'
+
+volumes:
+  {{ plugin_name }}_home:
+    name: {{ plugin_name }}_home

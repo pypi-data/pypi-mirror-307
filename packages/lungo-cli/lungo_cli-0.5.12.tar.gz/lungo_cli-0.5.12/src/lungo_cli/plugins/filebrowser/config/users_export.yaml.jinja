@@ -1,0 +1,61 @@
+{% for account in users.accounts %}
+- id: 0
+  username: {{ account.username }}
+  password: {{ plugin.custom.filebrowser_default_password_hash }}
+  scope: /root/home/{{ account.username }}
+  locale: en
+  lockpassword: true
+  viewmode: list
+  singleclick: false
+  perm:
+    admin:
+    {% if account.role == 'admin' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    execute:
+    {% if account.role == 'admin' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    create:
+    {% if account.role == 'admin' or account.role == 'user' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    rename:
+    {% if account.role == 'admin' or account.role == 'user' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    modify:
+    {% if account.role == 'admin' or account.role == 'user' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    delete:
+    {% if account.role == 'admin' or account.role == 'user' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    share:
+    {% if account.role == 'admin' or account.role == 'user' %}
+      true
+    {% else %}
+      false
+    {% endif %}
+    download: true
+  commands: [ ]
+  sorting:
+    by: name
+    asc: true
+  rules: [ ]
+  hidedotfiles: true
+  dateformat: false
+{% endfor %}

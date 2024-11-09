@@ -1,0 +1,255 @@
+{% set accounts = users.accounts %}
+{% set branding = config.branding %}
+{% set directories = config.directories %}
+{% set network = config.network %}
+{% set plugins = config.plugins %}
+
+services:
+
+  # =============== #
+  # Reverse proxies #
+  # =============== #
+
+  nginx_gateway:
+    container_name: nginx_gateway
+    hostname: nginx_gateway
+
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx.Dockerfile
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'crond -b;
+      openresty -c /etc/nginx/nginx.conf -e /var/log/nginx/error.log -g "daemon off;" -p /etc/nginx'
+
+    network_mode: 'slirp4netns:port_handler=slirp4netns'
+    ports:
+      {% if network.http.enabled %}
+      - '{{ network.http.port }}:80'
+      {% endif %}
+      - '{{ network.https.port }}:443'
+
+    volumes:
+      - './config/nginx_gateway:/etc/nginx:ro'
+      - './third_party/server_configs_nginx/h5bp:/etc/nginx/h5bp:ro'
+      - './third_party/server_configs_nginx/mime.types:/etc/nginx/mime.types:ro'
+      - './third_party/server_configs_nginx/nginx.conf:/etc/nginx/nginx.conf:ro'
+      - '{{ app_dirs.cache_dir }}/nginx_gateway:/var/log/nginx:rw'
+      - '{{ app_dirs.managed_dir }}/nginx_gateway/sockets:/var/run/nginx/sockets:rw'
+      {% if network.https.tls %}
+      - '{{ network.https.tls.cert }}:/etc/ssl/certs/lungo.crt:ro'
+      {% else %}
+      - '{{ app_dirs.generated_dir }}/nginx_gateway/lungo.crt:/etc/ssl/certs/lungo.crt:ro'
+      {% endif %}
+
+    secrets:
+      - source: nginx_private_key
+        target: /etc/ssl/private/lungo.key
+
+    depends_on:
+      - nginx
+    restart: 'unless-stopped'
+
+  nginx:
+    container_name: nginx
+    hostname: nginx
+
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx.Dockerfile
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'crond -b;
+      openresty -c /etc/nginx/nginx.conf -e /var/log/nginx/error.log -g "daemon off;" -p /etc/nginx'
+
+    networks:
+      static:
+        ipv4_address: {{ ip_addresses['nginx'] }}
+
+    volumes:
+      - './config/nginx:/etc/nginx:ro'
+      - './third_party/server_configs_nginx/h5bp:/etc/nginx/h5bp:ro'
+      - './third_party/server_configs_nginx/mime.types:/etc/nginx/mime.types:ro'
+      - './third_party/server_configs_nginx/nginx.conf:/etc/nginx/nginx.conf:ro'
+      - '{{ app_dirs.cache_dir }}/nginx:/var/log/nginx:rw'
+      - '{{ app_dirs.managed_dir }}/nginx_gateway/sockets:/var/run/nginx/sockets:rw'
+
+    depends_on:
+      - keto
+      - kratos
+      - oathkeeper
+      - node
+      {% for plugin_output in plugin_outputs %}
+        {% if plugin_output.manifest.have_backend and plugins[plugin_output.manifest.name].enabled %}
+      - {{ plugin_output.manifest.name }}
+        {% endif %}
+      {% endfor %}
+
+    restart: 'unless-stopped'
+
+  # ============================== #
+  # Identity and access management #
+  # ============================== #
+
+  keto:
+    container_name: keto
+    hostname: keto
+
+    image: 'docker.io/oryd/keto:{{ constants.keto_version }}'
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'keto migrate up -c /etc/keto/config.yaml -y;
+      keto serve -c /etc/keto/config.yaml --sqa-opt-out >/var/log/keto/main.log 2>&1'
+
+    networks:
+      static:
+        ipv4_address: {{ ip_addresses['keto'] }}
+    expose:
+      - 80
+
+    volumes:
+      - './config/keto:/etc/keto:ro'
+      - '{{ app_dirs.cache_dir }}/keto:/var/log/keto:rw'
+      - '{{ app_dirs.managed_dir }}/keto:/var/lib/keto:rw'
+
+    restart: 'unless-stopped'
+
+  kratos:
+    container_name: kratos
+    hostname: kratos
+
+    image: 'docker.io/oryd/kratos:{{ constants.kratos_version }}'
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'kratos migrate sql -c /etc/kratos/config.yaml -c /etc/kratos/secrets.yaml -e -y;
+      kratos serve -c /etc/kratos/config.yaml -c /etc/kratos/secrets.yaml --sqa-opt-out --watch-courier
+      >/var/log/kratos/main.log 2>&1'
+
+    networks:
+      static:
+        ipv4_address: {{ ip_addresses['kratos'] }}
+    expose:
+      - 80
+
+    volumes:
+      - './config/kratos:/etc/kratos:ro'
+      - '{{ app_dirs.cache_dir }}/kratos:/var/log/kratos:rw'
+      - '{{ app_dirs.managed_dir }}/kratos:/var/lib/kratos:rw'
+
+    secrets:
+      - source: kratos_secrets
+        target: /etc/kratos/secrets.yaml
+
+    environment:
+      - DSN=sqlite:////var/lib/kratos/db.sqlite3?_fk=true&mode=rwc
+
+    restart: 'unless-stopped'
+
+  oathkeeper:
+    container_name: oathkeeper
+    hostname: oathkeeper
+
+    image: 'docker.io/oryd/oathkeeper:{{ constants.oathkeeper_version }}'
+
+    user: root
+    entrypoint: [ ]
+    command: oathkeeper serve -c /etc/oathkeeper/config.yaml --sqa-opt-out >/var/log/oathkeeper/main.log 2>&1
+
+    networks:
+      static:
+        ipv4_address: {{ ip_addresses['oathkeeper'] }}
+    expose:
+      - 80
+
+    volumes:
+      - './config/oathkeeper:/etc/oathkeeper:ro'
+      - '{{ app_dirs.cache_dir }}/oathkeeper:/var/log/oathkeeper:rw'
+
+    restart: 'unless-stopped'
+
+  # ====== #
+  # Web UI #
+  # ====== #
+
+  node:
+    container_name: node
+    hostname: node
+
+    build:
+      context: ./web
+
+    user: root
+    entrypoint: [ ]
+    command: node build
+
+    networks:
+      static:
+        ipv4_address: {{ ip_addresses['node'] }}
+    expose:
+      - 80
+
+    environment:
+      - BODY_SIZE_LIMIT=Infinity
+      - NODE_ENV=production
+      - PORT=80
+
+      - ADDRESS_HEADER=X-Forwarded-For
+      - HOST_HEADER=X-Forwarded-Host
+      - PROTOCOL_HEADER=X-Forwarded-Proto
+      - XFF_DEPTH={{ network.trusted_proxies|length + 1 }}
+
+      - 'PUBLIC_BASE_URL={{ network.base_url }}'
+      - 'PUBLIC_SITE_SUBTITLE={{ branding.subtitle|tojson }}'
+      - 'PUBLIC_SITE_TITLE={{ branding.name }}'
+
+      - 'KETO_API_BASE_URL=http://{{ ip_addresses['keto'] }}:80/'
+      - 'KRATOS_API_BASE_URL=http://{{ ip_addresses['kratos'] }}:80/'
+
+    restart: 'unless-stopped'
+
+  # =============== #
+  # Custom services #
+  # =============== #
+
+  {% for plugin_output in plugin_outputs %}
+    {% if plugin_output.manifest.have_backend and plugins[plugin_output.manifest.name].enabled %}
+  {{ plugin_output.compose_services }}
+    {% endif %}
+  {% endfor %}
+
+networks:
+  static:
+    ipam:
+      config:
+        - subnet: {{ network.subnet }}
+
+volumes:
+  {% for plugin_output in plugin_outputs %}
+    {% if plugin_output.manifest.have_backend and plugins[plugin_output.manifest.name].enabled %}
+  {{ plugin_output.compose_volumes }}
+    {% endif %}
+  {% endfor %}
+
+secrets:
+  nginx_private_key:
+    file: >-
+      {% if network.https.tls %}
+      {{ network.https.tls.key }}
+      {% else %}
+      {{ app_dirs.generated_dir }}/nginx_gateway/lungo.key
+      {% endif %}
+  kratos_secrets:
+    file: '{{ app_dirs.generated_dir }}/kratos/secrets.yaml'
+  {% for plugin_output in plugin_outputs %}
+    {% if plugin_output.manifest.have_backend and plugins[plugin_output.manifest.name].enabled %}
+  {{ plugin_output.compose_secrets }}
+    {% endif %}
+  {% endfor %}

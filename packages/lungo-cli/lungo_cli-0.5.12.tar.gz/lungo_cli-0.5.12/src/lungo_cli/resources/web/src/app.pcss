@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html:has(.drawer-toggle:checked) {
+        scrollbar-gutter: auto !important;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply animate-none;
+        @apply duration-0;
+    }
+
+    .btn:is(input[type="checkbox"]:checked),
+    .btn:is(input[type="radio"]:checked) {
+        @apply bg-transparent;
+        @apply text-base-content;
+
+        &:hover {
+            @apply bg-transparent;
+        }
+    }
+
+    .divider {
+        @apply m-0;
+    }
+
+    .drawer-side > .drawer-overlay {
+        @apply cursor-auto;
+        @apply duration-0;
+    }
+
+    .drawer-side > *:not(.drawer-overlay) {
+        @apply duration-300;
+        @apply ease-out;
+    }
+
+    .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+        @apply bg-black/60;
+    }
+
+    .input:focus,
+    .input:focus-within {
+        @apply border-transparent;
+    }
+
+    .link:disabled {
+        @apply cursor-not-allowed;
+        @apply text-base-content/20;
+    }
+
+    .modal:not(dialog:not(.modal-open)),
+    .modal::backdrop {
+        @apply bg-black/60;
+    }
+
+    .select {
+        &:focus {
+            @apply border-transparent;
+        }
+
+        &:invalid {
+            -webkit-text-fill-color: var(--fallback-bc, oklch(var(--bc) / 0.6));
+        }
+    }
+
+    .swap > * {
+        @apply duration-200;
+        @apply ease-in-out;
+    }
+}
+
+@layer utilities {
+    .required::after {
+        @apply content-['*'];
+        @apply ml-1;
+        @apply text-error;
+    }
+
+    .scrollbar-none {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            @apply hidden;
+        }
+    }
+
+    .transition {
+        @apply duration-200;
+    }
+}

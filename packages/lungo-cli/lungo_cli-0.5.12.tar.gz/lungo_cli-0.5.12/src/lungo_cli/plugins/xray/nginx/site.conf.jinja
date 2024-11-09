@@ -1,0 +1,21 @@
+{% set plugin_name = plugin.manifest.name %}
+
+location = {{ plugin.web_prefix }} {
+    include snippets/proxy.conf;
+    include snippets/auth.conf;
+
+    if ($http_upgrade ~* websocket) {
+        return 480;
+    }
+
+    error_page 480 = @{{ plugin_name }};
+    proxy_pass http://node;
+}
+
+location @{{ plugin_name }} {
+    include snippets/proxy.conf;
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+
+    proxy_pass http://{{ plugin_name }};
+}

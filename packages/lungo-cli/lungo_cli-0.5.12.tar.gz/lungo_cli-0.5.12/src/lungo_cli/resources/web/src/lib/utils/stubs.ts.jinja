@@ -1,0 +1,29 @@
+import type { ComponentType } from "svelte"
+import { QuestionMarkIcon } from "$lib/icons"
+{% for plugin_output in plugin_outputs %}
+    {% set plugin_name = plugin_output.manifest.name %}
+    {% set plugin_prefix = plugin_name|capitalize %}
+    {% if plugin_output.manifest.web_icon %}
+import {{ plugin_prefix ~ 'Icon' }} from "$lib/plugins/{{ plugin_name }}/{{ plugin_output.manifest.web_icon }}"
+    {% endif %}
+    {% if plugin_output.manifest.web_alt_icon %}
+import {{ plugin_prefix ~ 'AltIcon' }} from "$lib/plugins/{{ plugin_name }}/{{ plugin_output.manifest.web_alt_icon }}"
+    {% endif %}
+{% endfor %}
+
+export function useAppIcon(name: string): { icon: ComponentType; altIcon: ComponentType } {
+    const icons = {
+        {% for plugin_output in plugin_outputs %}
+            {% set plugin_name = plugin_output.manifest.name %}
+            {% set plugin_prefix = plugin_name|capitalize %}
+            {% set plugin_icon = plugin_prefix ~ 'Icon' if plugin_output.manifest.web_icon else 'QuestionMarkIcon' %}
+        "{{ plugin_name }}":
+            {
+                icon: {{ plugin_icon }},
+                altIcon: {{ plugin_prefix ~ 'AltIcon' if plugin_output.manifest.web_alt_icon else plugin_icon }},
+            },
+        {% endfor %}
+    }
+
+    return icons[name]
+}

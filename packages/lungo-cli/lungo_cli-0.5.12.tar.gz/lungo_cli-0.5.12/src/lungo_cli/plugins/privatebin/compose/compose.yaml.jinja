@@ -1,0 +1,27 @@
+{% set plugin_name = plugin.manifest.name %}
+
+services:
+  {{ plugin_name }}:
+    container_name: {{ plugin_name }}
+    hostname: {{ plugin_name }}
+
+    build:
+      context: {{ plugin.dirs.plugin_dir }}
+
+    user: 'nobody:www-data'
+    entrypoint: [ ]
+    command: /etc/init.d/rc.local
+
+    networks:
+      static:
+        ipv4_address: {{ plugin.ip_address }}
+    expose:
+      - {{ plugin.manifest.backend_port }}
+
+    volumes:
+      - '{{ plugin.dirs.managed_dir }}/data:/srv/data:rw'
+
+    environment:
+      - CONFIG_PATH=/etc/privatebin
+
+    restart: 'unless-stopped'

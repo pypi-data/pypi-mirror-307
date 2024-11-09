@@ -1,0 +1,19 @@
+FROM docker.io/library/node:{{ constants.node_version }} AS builder
+WORKDIR /app
+COPY package.json pnpm-lock.yaml .
+RUN corepack enable && pnpm install --frozen-lockfile
+RUN \
+    {% for plugin_output in plugin_outputs %}
+        {% for dependency in plugin_output.web_dependencies %}
+    pnpm add '{{ dependency }}' && \
+        {% endfor %}
+    {% endfor %}
+    mv package.json package.json.bak && mv pnpm-lock.yaml pnpm-lock.yaml.bak
+COPY . .
+RUN mv package.json.bak package.json && mv pnpm-lock.yaml.bak pnpm-lock.yaml && pnpm run build && pnpm prune --prod
+
+FROM docker.io/library/node:{{ constants.node_version }}
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY --from=builder /app/package.json .
