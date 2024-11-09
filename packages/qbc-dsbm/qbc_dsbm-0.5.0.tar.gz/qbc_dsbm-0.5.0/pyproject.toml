@@ -1,0 +1,33 @@
+[build-system]
+    requires = ["setuptools>=61.0.0", "wheel"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+
+    name = "qbc_dsbm"
+    version = "0.5.0"
+    authors = [
+        { name = "vepain", email = "victorepain@disroot.org" },
+        { name = "randonov", email = "rumen.andonov@irisa.fr" },
+    ]
+    description = "Codes for quasibiclique"
+    keywords = []
+    readme = "README.md"
+    license = { file = "LICENCE" }
+    requires-python = ">=3.10"
+    dependencies = [
+        "pulp >=2.9, <2.10",
+        "pandas >=2.2, <2.3",
+        "numpy >=2.1, <2.2",
+        "PyYAML >=6.0, < 6.1",
+        "gurobipy >=11.0, <11.1",
+        "typer >=0.12, <0.13",
+        "scikit-learn >=1.5, <1.6",
+    ]
+
+    [project.scripts]
+        qbc-dsbm = "qbc_dsbm.__main__:main"
+
+[tool.setuptools.package-data]
+
+    qbc_dsbm = ["py.typed"]

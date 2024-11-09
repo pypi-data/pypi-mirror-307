@@ -1,0 +1,1 @@
+"""Binary matrix application module."""
