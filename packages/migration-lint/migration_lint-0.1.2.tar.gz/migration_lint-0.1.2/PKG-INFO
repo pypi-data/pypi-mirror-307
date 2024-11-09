@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: migration-lint
+Version: 0.1.2
+Summary: Tool for lint operations in DB migrations SQL
+Author: Alexey Nikitenko
+Author-email: alexey.nikitenko@pandadoc.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: git
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: gitpython (>=3.1.43,<4.0.0); extra == "git"
+Requires-Dist: sqlfluff (>=3.0.7,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Migration Lint
+
+`migration-lint` is the modular linter tool designed
+to perform checks on database schema migrations
+and prevent unsafe operations.
+
+Features:
+
+- Works with [Django migrations](https://docs.djangoproject.com/en/5.1/topics/migrations/),
+  [Alembic](https://alembic.sqlalchemy.org/en/latest/) and raw sql files.
+- Easily extensible for other frameworks.
+- Can identify Backward Incompatible operations
+  and check if they are allowed in the current context.
+- Can identify "unsafe" operations, e.g. operations that acquire locks
+  that can be dangerous for production database.
+
+## Installation
+
+```shell linenums="0"
+poetry add "migration-lint"
+```
+
+```shell linenums="0"
+pip install "migration-lint"
+```
+
+
+## Documentation
+
+Read the docs on [GitHub Pages](https://pandadoc.github.io/migration-lint/)
