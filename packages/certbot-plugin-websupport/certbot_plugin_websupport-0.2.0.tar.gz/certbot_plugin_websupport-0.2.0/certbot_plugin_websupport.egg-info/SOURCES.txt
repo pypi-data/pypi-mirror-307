@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+certbot_plugin_websupport/__init__.py
+certbot_plugin_websupport/dns.py
+certbot_plugin_websupport/dns_test.py
+certbot_plugin_websupport.egg-info/PKG-INFO
+certbot_plugin_websupport.egg-info/SOURCES.txt
+certbot_plugin_websupport.egg-info/dependency_links.txt
+certbot_plugin_websupport.egg-info/entry_points.txt
+certbot_plugin_websupport.egg-info/requires.txt
+certbot_plugin_websupport.egg-info/top_level.txt
