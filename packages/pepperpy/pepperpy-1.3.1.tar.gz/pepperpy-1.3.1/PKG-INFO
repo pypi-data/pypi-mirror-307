@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pepperpy
+Version: 1.3.1
+Summary: A modern Python utility library
+Home-page: https://github.com/felipepimentel/pepperpy
+Author: Felipe Pimentel
+Author-email: fpimentel88@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: all
+Provides-Extra: audio
+Provides-Extra: formats
+Requires-Dist: aiofiles (>=24.1.0,<25.0.0)
+Requires-Dist: aiohttp (>=3.10.10,<4.0.0)
+Requires-Dist: alembic (>=1.14.0,<2.0.0)
+Requires-Dist: audioread (>=3.0.1,<4.0.0) ; extra == "audio" or extra == "all"
+Requires-Dist: av (>=13.1.0,<14.0.0)
+Requires-Dist: bcrypt (>=4.2.0,<5.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0) ; extra == "formats" or extra == "all"
+Requires-Dist: cryptography (>=43.0.3,<44.0.0)
+Requires-Dist: ebooklib (>=0.18,<0.19) ; extra == "formats" or extra == "all"
+Requires-Dist: fitz (>=0.0.1.dev2,<0.0.2)
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: jwt (>=1.3.1,<2.0.0)
+Requires-Dist: lxml (>=5.1.0,<6.0.0) ; extra == "formats" or extra == "all"
+Requires-Dist: mutagen (>=1.47.0,<2.0.0) ; extra == "audio" or extra == "all"
+Requires-Dist: numpy (>=2.1.3,<3.0.0)
+Requires-Dist: pillow (>=11.0.0,<12.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pypdf (==5.1.0) ; extra == "formats" or extra == "all"
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0) ; extra == "formats" or extra == "all"
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: soundfile (>=0.12.1,<0.13.0) ; extra == "audio" or extra == "all"
+Requires-Dist: sqlalchemy (>=2.0.36,<3.0.0)
+Requires-Dist: torch (>=2.5.1,<3.0.0)
+Project-URL: Repository, https://github.com/felipepimentel/pepperpy
+Description-Content-Type: text/markdown
+
+# PepperPy 🌶️
+
+A modern, feature-rich Python utility library designed to accelerate development with elegant abstractions and powerful utilities.
+
+[![PyPI version](https://badge.fury.io/py/pepperpy.svg)](https://badge.fury.io/py/pepperpy)
+[![Python Support](https://img.shields.io/pypi/pyversions/pepperpy.svg)](https://pypi.org/project/pepperpy/)
+[![Documentation Status](https://readthedocs.org/projects/pepperpy/badge/?version=latest)](https://pepperpy.readthedocs.io/)
+[![License](https://img.shields.io/github/license/fpimentel-py/pepperpy.svg)](https://github.com/fpimentel-py/pepperpy/blob/main/LICENSE)
+
+## Features 🌟
+
+- **Modular Architecture**: Each feature is self-contained and independently usable
+- **Type Safety**: Full type hints and runtime type checking
+- **Modern Python**: Leverages Python 3.10+ features
+- **Extensible Design**: Easy to customize and extend
+- **Rich Console Support**: Beautiful terminal outputs and interactive features
+- **AI/ML Ready**: Optional modules for AI and machine learning tasks
+- **Async First**: Built with asyncio for modern async applications
+
+## Installation 🚀
+
+PepperPy uses Poetry for dependency management. Install the base package:
+
+```bash
+poetry install --only main
+```
+

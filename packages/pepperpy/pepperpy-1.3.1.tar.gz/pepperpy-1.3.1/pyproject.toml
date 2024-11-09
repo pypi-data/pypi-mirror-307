@@ -1,0 +1,123 @@
+[tool.poetry]
+name = "pepperpy"
+description = "A modern Python utility library"
+authors = ["Felipe Pimentel <fpimentel88@gmail.com>"]
+readme = "README.md"
+version = "1.3.1"
+repository = "https://github.com/felipepimentel/pepperpy"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+pyyaml = "^6.0"
+
+# Format handling
+pypdf = { version = "5.1.0", optional = true }
+ebooklib = { version = "^0.18", optional = true }
+beautifulsoup4 = { version = "^4.12.3", optional = true }
+lxml = { version = "^5.1.0", optional = true }
+python-magic = { version = "^0.4.27", optional = true }
+
+# Audio processing
+soundfile = { version = "^0.12.1", optional = true }
+audioread = { version = "^3.0.1", optional = true }
+mutagen = { version = "^1.47.0", optional = true }
+aiofiles = "^24.1.0"
+numpy = "^2.1.3"
+torch = "^2.5.1"
+rich = "^13.9.4"
+sqlalchemy = "^2.0.36"
+bcrypt = "^4.2.0"
+jwt = "^1.3.1"
+alembic = "^1.14.0"
+cryptography = "^43.0.3"
+pillow = "^11.0.0"
+av = "^13.1.0"
+fitz = "^0.0.1.dev2"
+aiohttp = "^3.10.10"
+python-dotenv = "^1.0.1"
+httpx = "^0.27.2"
+
+[tool.poetry.extras]
+formats = [
+    "pypdf",
+    "ebooklib",
+    "beautifulsoup4",
+    "lxml",
+    "python-magic"
+]
+
+audio = [
+    "soundfile",
+    "audioread",
+    "mutagen"
+]
+
+all = [
+    "pypdf",
+    "ebooklib",
+    "beautifulsoup4",
+    "lxml",
+    "python-magic",
+    "soundfile",
+    "audioread",
+    "mutagen"
+]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+black = "^24.10.0"
+ruff = "^0.7.3"
+isort = "^5.10.2"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "N", "ANN"]
+ignore = [
+    "E501", "N812", "B006", "ANN101", "ANN102", "ANN401", "ANN204", "ANN003", "ANN001", "ANN202", "ANN205", "ANN002"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"pepperpy/ai/optimization/*.py" = ["N803"]
+"tests/*" = ["ANN"]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_default_fixture_loop_scope = "function"
+addopts = "--cov=pepperpy --cov-report=term-missing"
+
+[tool.poetry.scripts]
+lint = "tools.scripts:lint"
+
+[tool.semantic_release]
+version_variable = [
+    "pepperpy/__init__.py:__version__",
+    "pyproject.toml:tool.poetry.version"
+]
+branch = "main"
+upload_to_pypi = true
+build_command = "poetry build"
