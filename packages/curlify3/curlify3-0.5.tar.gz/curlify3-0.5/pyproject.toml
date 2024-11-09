@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "curlify3"
+version = "0.5"
+description = "yet another library to convert request object to curl command"
+authors = ["A.Shpak <aleksander.shpak.als@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/shpaker/curlify3"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8"
+requests = "^2.32"
+httpx = "^0.24"
+fastapi = "^0.115"
+isort = "^5.13"
+aiohttp = "^3.10"
+pytest-aiohttp = "^1.0"
+pytest = "^7.4"
+pytest-asyncio = "^0.23"
+pytest-httpx = "^0.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+line_length = 120
+include_trailing_comma = true
+lines_between_types = 1
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
