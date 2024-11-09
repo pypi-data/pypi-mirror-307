@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: busca_inf_pdf
+Version: 0.0.1
+Summary: Pacote desenvolvido para buscar informações em arquivos pdf
+Home-page: https://github.com/RoSchilling/busca_inf_pdf
+Author: Rodrigo Schilling
+Author-email: rodrigo.schilling98@gmail.com
+Description-Content-Type: text/markdown
+
+# BUSCA INFORMAÃ‡ÃƒO NO PDF
+## Objetivo
+
+Pacote desenvolvido para auxiliar na busca de informaÃ§Ãµes contidas nos pdf, o pacote opera na busca de duas maneiras;
+1. Busca por Regex: Nas fuÃ§Ãµes que utilizam a busca por regex os cÃ³digos foram desenvolvidos para buscar em todos os valores existentes no pdf, isto pode tornar mais lenta a leitura.
+2. Busca por posiÃ§Ã£o: Na busca por posiÃ§Ã£o, Ã© necessÃ¡rio informar o termo que se busca e o local que ele se encontra, mais a frente serÃ£o demonstrados exemplos.
+
+## FunÃ§Ãµes
+
+### InstalaÃ§Ã£o 
+    ```bash 
+    pip install busca_inf_pdf
+    ```
+
+
+
+
+### busca_regex_pdf
+   1. Esta funÃ§Ã£o busca em um dicionÃ¡rio o texto em regex informado e retorna o valor conforme pesquisado, recebe os seguintes argumentos:
+      1. pdf_path (obrigatÃ³rio): Caminho em que se encontra o arquivo pdf
+      2. regex (obrigatÃ³rio): CÃ³digo regex que deseja buscar
+      3. empresa (opcional): Nome da empresa, se nÃ£o informar serÃ¡ atribuido como None
+      4. mes (opcional): MÃªs de referÃªncia, se nÃ£o informar serÃ¡ atribuido como None
+   
+      #### Exemplo
+      ```python
+        import busca_inf_pdf as bid
+
+        path = r'./arquivo.pdf'
+        regex = r'\d{2}\.\d{3}\.\d{3}/0001-\d{2}'
+        empresa = 'Python Inc'
+        mes = 'Janeiro'
+
+        bid.busca_regex_pdf(path=path,
+                                regex=regex,
+                                empresa = empresa,
+                                mes=mes)
+
+### extract_regex_values
+   1. Esta funÃ§Ã£o extrai apenas o valor regex buscado e recebe os seguintes argumentos:
+      1. regex (obrigatÃ³rio): Informa o cÃ³digo regex que serÃ¡ buscado
+      2. string (obrigatÃ³rio): Informar a string que contÃ©m o dado
+
+      #### Exemplo
+      ```python
+        import busca_inf_pdf as bid
+
+        regex = r'\d{2}\.\d{3}\.\d{3}/0001-\d{2}'
+        string  = 'CNPJ: 09.157.003/0001-37'
+       
+
+        bid.extract_regex_values(
+            regex = regex,
+            sting = string
+        )
+
+### abertura_notas_e_criacao_lista
+   1. Esta funÃ§Ã£o busca em um diretÃ³rio todos os arquivos pdf e realiza a extraÃ§Ã£o dos dados, retonando duas listas, uma com os arquivos que deram erro e outra com o valor procurado:
+      1. path_arquivos (obrigatÃ³rio): Caminho da pasta com os arquivos
+      2. str_regex (obrigatÃ³rio): CÃ³digo regex que deseja buscar
+      3. empresa (opcional): Nome da empresa, se nÃ£o informar serÃ¡ atribuido como None
+      4. mes (opcional): MÃªs de referÃªncia, se nÃ£o informar serÃ¡ atribuido como None
+
+      #### Exemplo
+      ```python
+        import busca_inf_pdf as bid
+        import os
+
+        list_pdf = os.listdir('diretorio com os arquivos pdf')
+        regex = r'\d{2}\.\d{3}\.\d{3}/0001-\d{2}'
+        empresa = 'Python Inc'
+        mes = 'Janeiro'
+       
+
+        bid.abertura_notas_e_criacao_lista(path_arquivos=list_pdf,
+                                regex=regex,
+                                empresa = empresa,
+                                mes=mes)
+
+### procura_desc_in_dict
+   1. Esta funÃ§Ã£o busca em uma lista se determinado termo esta na posiÃ§Ã£o x e retorna a posiÃ§Ã£o y, os argumentos sÃ£o:
+      1. dict: dict (obrigatÃ³rio): DicioÃ¡rio que deseja avaliar
+      2. term: str (obrigatÃ³rio): Palavra que busca para retorno
+      3. x: int (obrigatÃ³rio): PosiÃ§Ã£o em que a palavra buscada no dicionÃ¡rio deve estar
+      4. y: int (obrigatÃ³rio): PosiÃ§Ã£o em que a palavra de retorno deve estar
+
+      #### Exemplo
+      ```python
+        import busca_inf_pdf as bid
+        import os
+
+        bid.procura_desc_in_dict(
+            dict = dicionario_a_partir_pdf,
+            term = 'DESCR',
+            x=0,
+            y=1
+        )
+
+### busca_no_dict_table
+   1. Esta funÃ§Ã£o busca em uma lista se determinado termo esta na posiÃ§Ã£o x e retorna a posiÃ§Ã£o y, os argumentos sÃ£o:
+      1. tables (obrigatÃ³rio): retorno ao abrir um pdf utilizando camelot
+      2. term_loc: str (obrigatÃ³rio): Palavra que busca para retorno
+      3. x: int (obrigatÃ³rio): PosiÃ§Ã£o em que a palavra buscada no dicionÃ¡rio deve estar
+      4. y: int (obrigatÃ³rio): PosiÃ§Ã£o em que a palavra de retorno deve estar
+
+
+      #### Exemplo
+      ```python
+        import busca_inf_pdf as bid
+        import camelot
+
+        tables = camelot.read_pdf('arquivo.pdf', pages="all")
+
+        bid.busca_no_dict_table(
+            tables = tables,
+            term = 'DESCR',
+            x=0,
+            y=1
+        )
