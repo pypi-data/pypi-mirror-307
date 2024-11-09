@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lemonshark
+Version: 0.1.2
+Summary: lemonshark allows to use Wireshark as a library in an python application
+Home-page: https://github.com/CodeDevAM/lemonshark
+Author: DevAM
+Author-email: email@example.com
+License: GPL-2.0-only
+Keywords: lemonshark,shark,Wireshark
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# lemonshark
+
+![icon](./../../icon.png "lemonshark")
+
+lemonshark allows to use Wireshark as a library in an python application.
+
+See `demo.py` for a simple example.
+
+## Contribution
+
+Contributions are welcome.
+
+## License
+
+Copyright (c) 2024 DevAM
+
+[GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
