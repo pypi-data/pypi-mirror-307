@@ -1,0 +1,15 @@
+## Release Notes
+
+### feat: Add support for alternative video qualities in messages.
+
+New Features:
+
+- Introduce support for alternative video qualities in the message handling, allowing for different video resolutions and codecs.
+
+CI:
+
+- Update the CI workflow to use the latest version of the 'create-pull-request' action and specify the version for 'setup-rye'.
+
+Documentation:
+
+- Add documentation for the new 'AlternativeVideo' class, describing its attributes and usage.

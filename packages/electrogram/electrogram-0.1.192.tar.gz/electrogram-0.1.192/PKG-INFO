@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: electrogram
+Version: 0.1.192
+Summary: Telegram MTProto API framework in Python, designed for fluid user and bot interactions.
+Project-URL: homepage, https://github.com/5hojib/electrogram
+Project-URL: community, https://t.me/ProjectAeon
+Project-URL: repository, https://github.com/5hojib/electrogram
+Author-email: 5hojib <yesiamshojib@gmail.com>
+License: MIT License
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Requires-Dist: aiosqlite
+Requires-Dist: pymediainfo
+Requires-Dist: pymongo==4.8.0
+Requires-Dist: pysocks
+Requires-Dist: tgcrypto-pyrofork
+Provides-Extra: dev
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autobuild; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-immaterial; extra == 'docs'
+Requires-Dist: tornado; extra == 'docs'
