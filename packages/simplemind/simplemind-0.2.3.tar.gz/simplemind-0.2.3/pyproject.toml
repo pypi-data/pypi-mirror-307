@@ -1,0 +1,28 @@
+[project]
+name = "simplemind"
+version = "0.2.3"
+description = "An experimental client for AI providers that intends to replace LangChain and LangGraph for most common use cases."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic", "pydantic-settings", "instructor", "logfire"]
+
+[project.optional-dependencies]
+full = [
+    "openai",
+    "anthropic",
+    "ollama",
+    "groq",
+    "google-generativeai",
+    "botocore",
+    "boto3"
+]
+openai = ["openai"]
+anthropic = ["anthropic"]
+ollama = ["ollama", "openai"]
+groq = ["groq"]
+gemini = ["google-generativeai"]
+amazon = ["boto3", "botocore", "anthropic"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
