@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "textual-router"
+version = "0.1.0"
+description = "A view router for Textual projects"
+authors = ["imajacket <30511439+imajacket@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.85.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.3"
+mypy = "^1.13.0"
+interrogate = "^1.7.0"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
