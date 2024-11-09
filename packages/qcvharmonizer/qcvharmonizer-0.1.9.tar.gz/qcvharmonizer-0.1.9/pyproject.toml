@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64.0", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcvharmonizer"
+requires-python = ">= 3.10"
+description = "A package for harmonize oceanographic insitu data. "
+readme = "README.md"
+authors = [{ name = "Clement Weber", email = "clement.weber@pokapok.org" }]
+license = { text = "MIT" }
+version = "0.1.9"
+keywords = ["oceanography", "harmonization", "profiles", "Argo", "Glider"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray",
+    "datetime",
+    "cerbere",
+]
+
+[tool.setuptools]
+packages = ["qcvharmonizer"]
+
+[project.scripts]
+qcvharmonizer-cli = "qcvharmonizer.qcvharmonizer:harmonize" 
+ 
