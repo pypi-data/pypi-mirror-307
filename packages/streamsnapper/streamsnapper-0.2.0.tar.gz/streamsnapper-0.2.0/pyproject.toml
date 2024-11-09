@@ -1,0 +1,49 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "streamsnapper"
+version = "0.2.0"
+description = "StreamSnapper is an intuitive library designed to simplify, enhance, and organize media downloads from a variety of audiovisual platforms. It offers efficient, high-speed media extraction with optional tools for extracting data from these platforms."
+authors = ["henrique-coder <hjyz6rqyb@mozmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/henrique-coder/streamsnapper"
+documentation = "https://github.com/henrique-coder/streamsnapper"
+repository = "https://github.com/henrique-coder/streamsnapper"
+keywords = [
+    "stream",
+    "snapper",
+    "scraper",
+    "youtube",
+    "soundcloud",
+    "downloader",
+    "merger"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+yt-dlp = {version = "*", optional = true}
+requests = {version = "*", optional = true}
+scrapetube = {version = "*", optional = true}
+soundcloud-lib = {version = "*", optional = true}
+pysmartdl2 = {version = "*", optional = true}
+
+[tool.poetry.extras]
+youtube = ["yt-dlp", "requests", "scrapetube", "pysmartdl2"]
+soundcloud = ["soundcloud-lib"]
+merger = []
+downloader = ["pysmartdl2"]
+all = ["yt-dlp", "requests", "scrapetube", "soundcloud-lib", "pysmartdl2"]
