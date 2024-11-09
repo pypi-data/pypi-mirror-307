@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: ewoksxrpd
+Version: 0.14.0
+Summary: Data processing workflows for SAXS/WAXS
+Home-page: https://gitlab.esrf.fr/workflow/ewoksapps/ewoksxrpd/
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoksapps/ewoksxrpd/
+Project-URL: Documentation, https://ewoksxrpd.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoksapps/ewoksxrpd/issues/
+Keywords: orange3 add-on,ewoks
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy<2
+Requires-Dist: scipy
+Requires-Dist: silx!=2.1.0,>=1.1.0
+Requires-Dist: pyopencl
+Requires-Dist: pyfai>=2023.3
+Requires-Dist: numexpr!=2.8.6
+Requires-Dist: ewoksdata>=0.5.1
+Requires-Dist: ewoks[orange]>=0.1.2
+Requires-Dist: fabio
+Requires-Dist: h5py
+Requires-Dist: packaging
+Requires-Dist: importlib_metadata; python_version < "3.8"
+Provides-Extra: online
+Requires-Dist: ewoksdata[online]; extra == "online"
+Provides-Extra: test
+Requires-Dist: pytest>=7; extra == "test"
+Requires-Dist: matplotlib>=3.1; extra == "test"
+Requires-Dist: pyqt5; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: matplotlib>=3.1; extra == "dev"
+Requires-Dist: pyqt5; extra == "dev"
+Requires-Dist: black>=23; extra == "dev"
+Requires-Dist: flake8>=4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: pytest>=7; extra == "doc"
+Requires-Dist: matplotlib>=3.1; extra == "doc"
+Requires-Dist: pyqt5; extra == "doc"
+Requires-Dist: sphinx>=4.5; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints>=1.16; extra == "doc"
+Requires-Dist: pydata_sphinx_theme<0.15; extra == "doc"
+
+# ewoksxrpd
+
+Workflows for data processing for SAXS/WAXS
+
+## Getting started
+
+Install the [ewoksxrpd](https://ewoksxrpd.readthedocs.io/en/latest/) Python package
+
+```
+pip install ewoksxrpd
+```
+## How to use
+
+Run an example workflow
+
+```bash
+python examples/job.py
+```
+
+Run an example workflow with GUI
+
+```bash
+ewoks execute examples/xrpd_workflow.json --engine=orange --data-root-uri=/tmp --data-scheme nexus
+```
+
+or for an installation with the system python
+
+```bash
+python3 -m ewoks execute examples/xrpd_workflow.json --engine=orange --data-root-uri=/tmp --data-scheme nexus
+```
+
+Produce the example data
+
+```bash
+pytest --examples
+```
+
+## Documentation
+
+https://ewoksxrpd.readthedocs.io/
