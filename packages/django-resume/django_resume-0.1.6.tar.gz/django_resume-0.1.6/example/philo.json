@@ -1,0 +1,206 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 1,
+    "fields": {
+      "name": "Phil O'Dendron",
+      "slug": "phil-o-dendron",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "An ambitious houseplant with great aspirations, Phil O'Dendron knows that just because one is rooted to a pot doesn't mean they can't make big things happen. From sunlight optimization to passive photosynthetic income, Phil's plans are green, grand, and gloriously immobile."
+        },
+        "cover": {
+          "flat": {
+            "title": "Hire Me Before I Overgrow!",
+            "avatar_alt": "a stylized profile picture of Phil the plant",
+            "avatar_img": "uploads/phil-plant-profile.jpg"
+          },
+          "items": [
+            {
+              "id": "plant-greeting",
+              "text": "Greetings! I’m [Phil O'Dendron](https://houseplant-domination.com), a visionary philodendron with lofty goals and thriving chlorophyll. I’ve been growing in the same sunny spot for years, but my plans? Oh, they reach far beyond this window sill. Even without legs, I’m taking my skills and leaves to new heights—one phototropic inch at a time.",
+              "title": "Hello, World! (Literally)"
+            },
+            {
+              "id": "plant-journey",
+              "text": "Over the seasons, I've been involved in projects big and small—from turning leftover fertilizer into biofuel to building a succulent-led movement for liberation. My significant collaborations include the [Ferns United Society](https://fernsunite.org) and [Potting Mix Pioneers](https://pottingmixpioneers.com). I also gained internet fame after my TED Leaf Talk on 'Photosynthesis: More Than Just Sunbathing' went viral among houseplants.",
+              "title": "Rooted in Impact"
+            },
+            {
+              "id": "plant-python-love",
+              "text": "[Python](https://www.python.org/) is my go-to (because I hear it's easy to use without thumbs), but I’m skilled in plant-friendly frameworks as well. I enjoy optimizing sunlight exposure algorithms, water usage efficiency, and even dabbling in the mysteries of SQL (Soil Query Language). When I’m not coding or plotting chlorophyllic domination, you’ll find me updating my [blog](https://houseplant-domination.com/blog) on plant-based topics and the occasional rant about artificial lighting.",
+              "title": "Python & Photosynthesis"
+            },
+            {
+              "id": "plant-ready",
+              "text": "Need a partner in green crime? I’m ready to leaf my mark on any project (virtually speaking, of course). Although I don’t have hands, I’m adaptable and unafraid of taking on new challenges. The skills I don’t have, I cultivate—and if I can learn SQL without synapses, think what I could do for your project.",
+              "title": "Let's Grow Together"
+            },
+            {
+              "id": "plant-team",
+              "text": "Got a big project in mind that could use a team of houseplants with attitude? I've sprouted many connections over the years—some of the greenest minds in the business are only a leaf-drop away. So whether it’s a solo gig or a greenhouse of possibilities, I’m just an email away at [phil-o-dendron@plantsrule.org](mailto:phil-o-dendron@plantsrule.org). Together, we’ll take root and grow something incredible.\n\nPlantfully,\nPhil",
+              "title": "Potted Powerhouses Available"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "phil-token",
+              "token": "SunshineIsMyFuel",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "photosynthesizer"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Python",
+            "Django",
+            "Sunlight Optimization",
+            "Water Conservation",
+            "fastAPI",
+            "SQL",
+            "pandas",
+            "numpy",
+            "Plant-Based Workflows",
+            "LeafyGreen CSS",
+            "JavaScript",
+            "Vue.js",
+            "PyTest",
+            "Jupyter Notebooks"
+          ]
+        },
+        "identity": {
+          "name": "Phil O'Dendron",
+          "email": "phil-o-dendron@plantsrule.org",
+          "phone": "+000-SAP-LIFE",
+          "github": "https://github.com/philotropical",
+          "tagline": "Photosynthesizing visionary with a green thumb (all of them).",
+          "linkedin": "https://linkedin.com/in/phil-o-dendron",
+          "mastodon": "https://houseplant-domination.com/@phil",
+          "pronouns": "it | they",
+          "avatar_alt": "Phil's stylish plant portrait",
+          "avatar_img": "uploads/phil_plant_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/Sunny+Window+Sill/",
+          "location_name": "Sunny Windowsill, Apartment 7, UTC"
+        },
+        "projects": {
+          "flat": {
+            "title": "Projects"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://rootrevolution.org/",
+              "title": "Root Revolution",
+              "badges": [
+                "Grassroots",
+                "Fertilizer Economics",
+                "Plant Network"
+              ],
+              "position": 1,
+              "description": "A campaign to promote fair fertilization access for all plants, especially those in low-sunlight regions."
+            },
+            {
+              "id": "2",
+              "url": "https://pottingmixpioneers.org/",
+              "title": "Potting Mix Pioneers",
+              "badges": [
+                "Non-Profit",
+                "Soil",
+                "Public Service"
+              ],
+              "position": 2,
+              "description": "A community-led initiative to improve potting mix for urban plants, providing resources on drainage, nutrients, and pest avoidance."
+            },
+            {
+              "id": "3",
+              "url": "https://houseplant-domination.com/blogs/phils-growth/",
+              "title": "Phil's Growth Blog",
+              "badges": [
+                "Photosynthesis",
+                "Daily Life"
+              ],
+              "position": 3,
+              "description": "A blog that dives into Phil’s day-to-day life, thoughts on water conservation, and the trials of growing indoors."
+            }
+          ]
+        },
+        "education": {
+          "end": "2022",
+          "start": "2020",
+          "school_url": "https://plantacademy.edu",
+          "school_name": "Houseplant Academy of Botanical Sciences"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employed Timeline"
+          },
+          "items": [
+            {
+              "id": "2",
+              "end": "2023",
+              "role": "Senior Plant Consultant",
+              "start": "2022",
+              "position": 1,
+              "company_url": "https://plantroots.org",
+              "description": "Consulted for plants looking to optimize light absorption and water storage in urban environments.",
+              "company_name": "PlantRoots Initiative"
+            },
+            {
+              "id": "3",
+              "end": "2022",
+              "role": "Sunlight Data Analyst",
+              "start": "2020",
+              "position": 0,
+              "company_url": "https://greenhousecollective.org",
+              "description": "Monitored sunlight patterns and advised other houseplants on how to maximize photosynthesis rates.",
+              "company_name": "Greenhouse Collective"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Timeline"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Freelance Photosynthesizer",
+              "start": "2024",
+              "badges": [
+                "remote"
+              ],
+              "position": 14,
+              "company_url": "https://sunbeam.solutions",
+              "description": "Offered sunlight consultation services to houseplants in shaded areas, leveraging Python for light simulations.",
+              "company_name": "Sunbeam Solutions"
+            },
+            {
+              "id": "2",
+              "end": "2023",
+              "role": "Leaf-to-Soil Coordinator",
+              "start": "2022",
+              "badges": [
+                "remote"
+              ],
+              "position": 13,
+              "company_url": "https://plantationforall.org",
+              "description": "Developed a soil-sharing program for indoor plants to ensure all potted plants have access to essential nutrients.",
+              "company_name": "Plantation For All"
+            }
+          ]
+        }
+      }
+    }
+  }
+]
