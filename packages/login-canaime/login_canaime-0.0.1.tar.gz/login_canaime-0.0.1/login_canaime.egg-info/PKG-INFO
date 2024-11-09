@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: login_canaime
+Version: 0.0.1
+Summary: Pacote para login no Sistema Canaimé
+Author: Anderson Assunção
+Author-email: andersongomesrr@hotmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: playwright
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+
+# Login CanaimÃ©
+
+Este projeto fornece um sistema de login automatizado para o sistema CanaimÃ©, permitindo a autenticaÃ§Ã£o por meio de uma interface grÃ¡fica (GUI) ou um login direto com JavaScript e imagens desativadas para eficiÃªncia. A biblioteca usa `playwright` para automaÃ§Ã£o do navegador, permitindo fÃ¡cil navegaÃ§Ã£o apÃ³s o login.
+
+## Funcionalidades
+
+- **Interface GrÃ¡fica (GUI)** para login, onde o usuÃ¡rio pode inserir suas credenciais manualmente.
+- **Login Automatizado** sem interface grÃ¡fica, com JavaScript e imagens desativadas.
+- **Controle de NavegaÃ§Ã£o**: Capacidade de navegar entre pÃ¡ginas com `playwright` apÃ³s o login.
+- **OpÃ§Ã£o de Teste**: Quando `test=True`, o navegador Ã© aberto em modo visÃ­vel (nÃ£o headless) e as credenciais sÃ£o exibidas no console.
+
+## Requisitos
+
+ - **Python 3.7+**
+  - **Playwright**: Para instalar o Playwright e o navegador Chromium, execute o seguinte comando:
+
+  ```bash
+  pip install playwright
+  playwright install
+  ```
+
+## InstalaÃ§Ã£o
+
+Clone este repositÃ³rio e instale as dependÃªncias:
+
+```bash
+git clone https://github.com/username/login-canaime.git
+cd login-canaime
+pip install -r requirements.txt
+```
+
+> **Nota**: Certifique-se de instalar o Chromium com `playwright install` se ele ainda nÃ£o estiver instalado.
+
+## Uso
+
+### Login com Interface GrÃ¡fica (GUI)
+
+O login com GUI permite que vocÃª insira manualmente o usuÃ¡rio e senha:
+
+```
+from login_canaime import run_canaime_login
+
+username, password = run_canaime_login(test_mode=True)
+print(f"Credenciais: {username}, {password}")
+```
+
+### Login Automatizado sem Interface GrÃ¡fica
+
+Para realizar o login diretamente, desativando JavaScript e imagens, use a funÃ§Ã£o `Login()`:
+
+```
+from login_canaime import Login
+
+page = Login(test=False)  # Defina test=True para abrir em modo visÃ­vel
+
+page.goto("https://www.google.com.br")
+
+# Feche o navegador e o Playwright ao terminar
+browser.close()
+playwright.stop()
+```
+
+### FunÃ§Ã£o `Login` Detalhada
+
+A funÃ§Ã£o `Login(test=False)` usa as credenciais da GUI e realiza o login automaticamente com JavaScript e imagens desativadas, retornando o navegador (`browser`) e a pÃ¡gina (`page`) para operaÃ§Ãµes adicionais.
+
+-   **ParÃ¢metros**:
+    
+    -   `test` (bool): Se `True`, abre o navegador em modo visÃ­vel. Se `False`, abre em modo headless (oculto).
+        
+-   **Retorno**:
+    
+    -   `page`: PÃ¡gina logada, pronta para navegaÃ§Ã£o.        
+    -   `browser`: InstÃ¢ncia do navegador, que deve ser fechada manualmente.        
+    -   `playwright`: Contexto do Playwright, que deve ser encerrado ao final.
+        
+
+## ContribuiÃ§Ã£o
+
+Sinta-se Ã  vontade para abrir issues e pull requests para melhorias ou correÃ§Ãµes.
+
+## LicenÃ§a
+
+Este projeto estÃ¡ licenciado sob a MIT License. Consulte o arquivo `LICENSE` para mais detalhes.
