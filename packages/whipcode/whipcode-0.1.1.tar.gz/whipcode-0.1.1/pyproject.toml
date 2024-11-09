@@ -1,0 +1,26 @@
+[tool.poetry]
+name           = "whipcode"
+version        = "0.1.1"
+description    = "Official Python client for Whipcode API"
+authors        = ["AnnikaV9 <carrot.moncher@gmail.com>"]
+license        = "MIT"
+readme         = "docs/README.md"
+repository     = "https://github.com/Whipcode-API/whipcode-py"
+homepage       = "https://github.com/Whipcode-API/whipcode-py"
+documentation  = "https://github.com/Whipcode-API/whipcode-py"
+classifiers    = [
+                  "Topic :: Software Development :: Libraries :: Python Modules",
+                  "Topic :: Security"
+                 ]
+
+[tool.poetry.dependencies]
+python         = "^3.10"
+aiohttp        = "~3.10.0"
+requests       = "~2.32.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8         = "*"
+
+[build-system]
+requires       = ["poetry-core"]
+build-backend  = "poetry.core.masonry.api"
