@@ -1,0 +1,212 @@
+<VRTDataset rasterXSize="600" rasterYSize="600">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -1.1788208126300000e+02,  1.1111120000000000e-03,  0.0000000000000000e+00,  3.6070691506000003e+01,  0.0000000000000000e+00, -1.1111120000000000e-03</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1" blockXSize="600" blockYSize="3">
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">8.7836599349976</MDI>
+      <MDI key="STATISTICS_MEAN">-2.2704240141889</MDI>
+      <MDI key="STATISTICS_MINIMUM">-10.67573928833</MDI>
+      <MDI key="STATISTICS_STDDEV">2.3321397477331</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">99.97</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_1.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="2" blockXSize="600" blockYSize="3">
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">10.02082157135</MDI>
+      <MDI key="STATISTICS_MEAN">3.085397357343</MDI>
+      <MDI key="STATISTICS_MINIMUM">-6.9150795936584</MDI>
+      <MDI key="STATISTICS_STDDEV">2.4223752229508</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">99.98</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_2.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="3" blockXSize="600" blockYSize="3">
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">6.9955148696899</MDI>
+      <MDI key="STATISTICS_MEAN">0.12312164022913</MDI>
+      <MDI key="STATISTICS_MINIMUM">-10.942401885986</MDI>
+      <MDI key="STATISTICS_STDDEV">2.5866844810145</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">99.98</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_3.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="4" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_4.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="5" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_5.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="6" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_6.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="7" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_7.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="8" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_8.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="9" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_9.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="10" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_10.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="11" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_11.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="12" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_12.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="13" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_13.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="14" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_14.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="15" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_15.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="16" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_16.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="17" blockXSize="600" blockYSize="3">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/home/thomcoli/Code/insarviz/testing/data/VRT_sources/band_17.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="600" RasterYSize="600" DataType="Float32" BlockXSize="600" BlockYSize="3" />
+      <SrcRect xOff="0" yOff="0" xSize="600" ySize="600" />
+      <DstRect xOff="0" yOff="0" xSize="600" ySize="600" />
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>
