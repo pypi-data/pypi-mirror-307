@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: steed
+Version: 0.1.0
+Summary: A drop-in replacement for tee with file buffering and output queue management.
+Author: Ben Skubi
+Author-email: skubi@ohsu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: click
