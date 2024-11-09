@@ -1,0 +1,2 @@
+[console_scripts]
+mixedvoices = mixedvoices.cli:cli
