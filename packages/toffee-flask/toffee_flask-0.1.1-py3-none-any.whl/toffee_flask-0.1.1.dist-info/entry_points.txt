@@ -1,0 +1,2 @@
+[console_scripts]
+toffee-flask = toffee_flask.app:app
