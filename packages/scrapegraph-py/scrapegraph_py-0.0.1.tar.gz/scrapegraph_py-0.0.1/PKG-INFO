@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: scrapegraph_py
+Version: 0.0.1
+Summary: library for extracting reference from documents
+Author-email: Marco Vinciguerra <mvincig11@gmail.com>, Marco Perini <perinim.98@gmail.com>, Lorenzo Padoan <lorenzo.padoan977@gmail.com>
+License-Expression: MIT
+Keywords: ai,artificial intelligence,gpt,graph,machine learning,natural language processing,nlp,openai,scraping,web scraping tool,webscraping
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4.0,>=3.9
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+Provides-Extra: docs
+Requires-Dist: furo==2024.5.6; extra == 'docs'
+Requires-Dist: sphinx==6.0; extra == 'docs'
+Description-Content-Type: text/markdown
+
+
+Official SDK for ScrapeGraphAI API.
