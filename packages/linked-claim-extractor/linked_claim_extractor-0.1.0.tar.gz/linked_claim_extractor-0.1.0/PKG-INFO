@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: linked-claim-extractor
+Version: 0.1.0
+Summary: Extract structured claims from text and PDFs
+Project-URL: homepage, https://github.com/Cooperation-org/linked-claims-extractor
+Project-URL: bug_tracker, https://github.com/Cooperation-org/linked-claims-extractor/issues
+Author-email: Golda Velez <gvelez17@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: langchain-anthropic>=0.2.4
+Requires-Dist: langchain-community>=0.0.10
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: pdfminer-six>=20221105
+Requires-Dist: pypdf>=3.0.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: requests>=2.25.0
+Description-Content-Type: text/markdown
+
+# linked-claims-extractor
+Extract claims from text, url or pdf using AI LLMs to help
+
+## Installation
+
+This project uses pyproject.toml for dependencies
+
+```
+python -m venv .venv
+. .venv/bin/activate
+pip install -e .
+```
+
+## Testing and Debugging
+
+```
+pytest -s --pdb
+```
