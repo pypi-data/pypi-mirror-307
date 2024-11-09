@@ -1,0 +1,3 @@
+[console_scripts]
+tp=xontrib.teleport:_main_wrapper
+
