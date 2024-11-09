@@ -1,0 +1,2 @@
+[console_scripts]
+discord-compress = discord_compressor.cli:main
