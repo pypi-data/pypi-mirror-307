@@ -1,0 +1,3 @@
+[console_scripts]
+dbqm=db_queries_bulk_migrator.main:app
+
