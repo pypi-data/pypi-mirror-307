@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+setup.py
+src/wagtail-facebook-events/__init__.py
+src/wagtail-facebook-events/facebook_api.py
+src/wagtail-facebook-events/facebook_importer.py
+src/wagtail-facebook-events/hooks.py
+src/wagtail-facebook-events/models.py
+src/wagtail-facebook-events/processors.py
+src/wagtail-facebook-events/serializers.py
+src/wagtail-facebook-events/urls.py
+src/wagtail-facebook-events/utils.py
+src/wagtail-facebook-events/views.py
