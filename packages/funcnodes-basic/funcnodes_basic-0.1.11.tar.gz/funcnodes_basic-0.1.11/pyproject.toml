@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "funcnodes-basic"
+version = "0.1.11"
+description = "Basic functionalities for funcnodes"
+authors = ["Julian Kimmig <julian.kimmig@gmx.net>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.urls]
+homepage  = "https://github.com/Linkdlab/funcnodes_basic"
+source  = "https://github.com/Linkdlab/funcnodes_basic"
+tracker  = "https://github.com/Linkdlab/funcnodes_basic/issues"
+download = "https://pypi.org/project/funcnodes-basic/#files"
+
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+funcnodes-core = ">=0.1.24"
+funcnodes = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+funcnodes-module = "^0.1.19"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."funcnodes.module"]
+module = "funcnodes_basic"
+shelf = "funcnodes_basic:NODE_SHELF"
