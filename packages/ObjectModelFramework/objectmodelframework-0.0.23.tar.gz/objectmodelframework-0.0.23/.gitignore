@@ -1,0 +1,9 @@
+__pycache__/
+*.pem
+*.svg
+*.xml
+*.prof
+*/desktop.ini
+src/ObjectModelFramework/_version.py
+src/Demo/Demo.html
+src/Demo/Demo.xml.yaml
