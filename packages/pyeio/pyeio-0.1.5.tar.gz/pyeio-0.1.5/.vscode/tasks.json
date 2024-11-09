@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "maturin.develop.release",
+            "type": "shell",
+            "command": "maturin",
+            "args": [
+                "develop",
+                "--release"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "maturin.build.release",
+            "type": "shell",
+            "command": "maturin",
+            "args": [
+                "build",
+                "--release"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "maturin.publish",
+            "type": "shell",
+            "command": "./publish.sh",
+            "problemMatcher": []
+        },
+    ]
+}

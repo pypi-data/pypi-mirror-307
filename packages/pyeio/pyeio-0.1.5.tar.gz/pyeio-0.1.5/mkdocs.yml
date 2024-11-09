@@ -1,0 +1,82 @@
+site_name: PyEIO
+site_url: https://harttraveller.github.io/pyeio
+repo_name: harttraveller/pyeio
+repo_url: https://github.com/harttraveller/pyeio
+
+plugins:
+- search
+- roamlinks
+- mkdocs-jupyter
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          show_object_full_path: true
+          show_root_heading: true
+          heading_level: 1
+          show_signature: false
+
+theme:
+  name: material
+  logo: static/pyeio.png
+  favicon: static/pyeio.png
+  palette:
+    scheme: slate
+    primary: black
+    accent: orange
+  features:
+  - navigation.tracking
+  - navigation.expand
+  - navigation.tabs
+  - navigation.indexes
+  - navigation.instant
+  - navitation.instant.progress
+  - search.suggest
+  - search.share
+  - content.code.copy
+  - content.code.annotate
+  - header.autohide
+
+# extra_css:
+# - static/extra.css
+
+markdown_extensions:
+- md_in_html
+- admonition
+- attr_list
+- pymdownx.details
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+- toc:
+    title: Go To
+    permalink: true
+- pymdownx.highlight: 
+    anchor_linenums: true
+    use_pygments: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tabbed:
+    alternate_style: true
+
+nav:
+- index.md
+- Tutorial Notebooks:
+  - notebook/index.md
+  - notebook/json.ipynb
+  - notebook/toml.ipynb
+  - notebook/yaml.ipynb
+  - notebook/jsonl.ipynb
+  - notebook/zst.ipynb
+- Module Reference:
+  - module/index.md
+  - module/pyeio.json.md
+  - module/pyeio.toml.md
+  - module/pyeio.yaml.md
+  - core:
+    - module/pyeio.core.io.md
+    - module/pyeio.core.web.md
+  # - meta:
+  # - tool:
+# - Developer Notes:
+#   - developer/index.md

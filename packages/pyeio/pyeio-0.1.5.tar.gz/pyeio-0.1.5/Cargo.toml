@@ -1,0 +1,15 @@
+[package]
+name = "pyeio"
+version = "0.1.5"
+edition = "2021"
+
+[lib]
+name = "pyeio"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+memchr = "2.7.4"
+memmap2 = "0.9.5"
+pyo3 = { version = "0.22.5", features = ["extension-module", "abi3-py310"] }
+rayon = "1.10.0"
