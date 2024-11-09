@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+chickens_polish.egg-info/PKG-INFO
+chickens_polish.egg-info/SOURCES.txt
+chickens_polish.egg-info/dependency_links.txt
+chickens_polish.egg-info/top_level.txt
+online_store/__init__.py
+online_store/__main__.py
+online_store/order_management.py
+online_store/user_management.py
