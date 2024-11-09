@@ -1,0 +1,3 @@
+[console_scripts]
+vault-cert-monitor=vault_cert_monitor.check_vault_certs:main
+
