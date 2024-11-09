@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "GBMSimulator"
+version = "0.0.1"
+description = "A minimalist package to simulate geometric brownian motion"
+authors = ["Andriy Sinclair"]
+readme = "README.md"
+
+# Specify your package directory here
+packages = [
+    { include = "GBMSimulator" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12" 
+sphinx-argparse = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+GBMSimulator = "GBMSimulator.cli:main"
