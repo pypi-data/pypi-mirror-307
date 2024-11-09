@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: AdsbAnomalyDetector
+Version: 0.6.0
+Summary: Low altitude aircraft anomaly detector
+Author: Pirolley Melvyn
+Author-email: 
+Keywords: python,deep learning,tensorflow,aircraft,classification,ADS-B
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pickle-mixin
+
+
+    This package contains a trained model to detect anomalies in low altitude traffic.
+    The model focus on spoofing attack, by recognizing the aircraft the type based on its ADS-B signal.
+    Hence, if the aircraft pretend to be a small aircraft, but the model recognize it as a plane, it is an anomaly.
