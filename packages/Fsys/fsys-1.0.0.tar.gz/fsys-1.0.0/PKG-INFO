@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Fsys
+Version: 1.0.0
+Summary: Fsys is a lightweight, efficient filesystem with dynamic partitioning, caching, and data integrity checks. It's ideal for embedded systems, servers, and cloud environments, with cross-platform compatibility and simple APIs.
+Home-page: https://github.com/DevByEagle/Fsys
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
