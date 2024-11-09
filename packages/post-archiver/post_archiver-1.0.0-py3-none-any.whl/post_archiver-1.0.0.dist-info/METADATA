@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: post-archiver
+Version: 1.0.0
+Summary: A tool to scrape YouTube community posts
+Author-email: sadadYes <syaddadpunya@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Sadad
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/sadadYes/post-archiver
+Project-URL: Repository, https://github.com/sadadYes/post-archiver.git
+Project-URL: Documentation, https://github.com/sadadYes/post-archiver#readme
+Project-URL: Bug Tracker, https://github.com/sadadYes/post-archiver/issues
+Keywords: youtube,scraper,community,posts,python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: blinker==1.7.0
+Requires-Dist: selenium-wire>=5.1.0
+Requires-Dist: selenium>=4.10.0
+Requires-Dist: packaging>=23.0
+Requires-Dist: setuptools>=67.0.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: urllib3>=2.1.0
+Requires-Dist: pathlib>=1.0.1
+
+# YouTube Community Post Scraper
+
+A Python tool to scrape posts from YouTube community tabs.
+
+## Dependencies
+
+* Firefox browser needs to be installed
+* GeckoDriver needs to be installed and in your PATH
+* Python 3.7 or higher
+
+## Features
+
+- Scrape posts from YouTube community tabs
+- Download images from posts
+- Collect post comments
+- Proxy support
+- Progress saving
+- Configurable output directory
+
+## Installation
+
+Download and install using pip:
+```bash
+pip install post-archiver
+```
+
+Alternatively, if you want to install from source:
+```bash
+git clone https://github.com/sadadYes/post-archiver.git
+cd post-archiver
+pip install -e .
+```
+
+## Usage
+
+```
+usage: post-archiver [OPTIONS] url [amount]
+
+YouTube Community Posts Scraper
+
+positional arguments:
+  url                   YouTube channel community URL
+  amount                Amount of posts to get (default: max)
+
+options:
+  -h, --help            show this help message and exit
+  -c, --get-comments    Get comments from posts (default: False)
+  -i, --get-images      Get images from posts (default: False)
+  -d, --download-images
+                        Download images (requires --get-images)
+  -q IMAGE_QUALITY, --image-quality IMAGE_QUALITY
+                        Image quality: sd, hd, or all (default: all)
+  --proxy PROXY         Proxy file or single proxy string
+  -o OUTPUT, --output OUTPUT
+                        Output directory (default: current directory)
+  -v, --verbose         Show basic progress information
+  -t, --trace           Show detailed debug information
+  --version             show program's version number and exit
+
+Proxy format:
+  Single proxy: <scheme>://<username>:<password>@<host>:<port>
+  Proxy file: One proxy per line using the same format
+  Supported schemes: socks5, http, https
+
+Amount:
+  Specify number of posts to scrape (default: max)
+  Use 'max' or any number <= 0 to scrape all posts
+
+Examples:
+  post-archiver https://www.youtube.com/@channel/community
+  post-archiver https://www.youtube.com/@channel/community 50
+  post-archiver -c -i -d -q hd https://www.youtube.com/@channel/community max
+  post-archiver --proxy proxies.txt https://www.youtube.com/@channel/community 100
+  post-archiver --proxy socks5://username:password@host:port https://www.youtube.com/@channel/community
+  post-archiver --proxy http://username:password@host:port https://www.youtube.com/@channel/community
+```
+
+## License
+
+MIT License
+
