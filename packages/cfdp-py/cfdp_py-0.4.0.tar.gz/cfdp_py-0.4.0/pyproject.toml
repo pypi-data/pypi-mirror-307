@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=0.62.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfdp-py"
+description = "Library for high level CCSDS File Delivery Protocol (CFDP) components"
+readme = "README.md"
+version = "0.4.0"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Robin Mueller", email = "robin.mueller.m@gmail.com"}
+]
+keywords = ["ccsds", "space", "communication", "packet", "file-transfer"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: Apache Software License",
+  "Natural Language :: English",
+  "Operating System :: POSIX",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Topic :: Communications",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering"
+]
+dependencies = [
+  "spacepackets>=0.24.2, <=0.25",
+  "crcmod~=1.7",
+  "deprecation~=2.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pyfakefs~=5.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/us-irs/cfdp-py"
+
+[tool.ruff.lint]
+ignore = ["E501"]
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["F401"]

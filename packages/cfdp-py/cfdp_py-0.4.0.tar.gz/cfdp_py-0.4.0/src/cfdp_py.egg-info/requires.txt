@@ -1,0 +1,6 @@
+spacepackets<=0.25,>=0.24.2
+crcmod~=1.7
+deprecation~=2.1
+
+[test]
+pyfakefs~=5.2
