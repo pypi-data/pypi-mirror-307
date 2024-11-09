@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: llmconf
+Version: 0.5.0
+Summary: LLMConf unifies the loading and generation configurations of various LLM backends (e.g. `openai`, `transformers`, `vllm`), simplifying parameter control for experiments and testing.
+Home-page: https://github.com/Ki-Seki/llmconf
+License: MIT
+Keywords: LLMConf,LLM,configuration,openai,transformers
+Author: Shichao Song
+Author-email: song.shichao@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openai (>=1.54.3,<2.0.0)
+Requires-Dist: torch (>=2.5.1,<3.0.0)
+Requires-Dist: transformers (>=4.46.2,<5.0.0)
+Project-URL: Repository, https://github.com/Ki-Seki/llmconf
+Description-Content-Type: text/markdown
+
+
+<p align="left">
+    <img src="https://raw.githubusercontent.com/Ki-Seki/llmconf/refs/heads/main/assets/logo.png" alt="LLMConf Logo" width="300"/>
+</p>
+
+---
+
+[![PyPI](https://img.shields.io/pypi/v/llmconf)](https://pypi.org/project/llmconf/)
+
+LLMConf unifies the loading and generation configurations of various LLM backends (e.g. `openai`, `transformers`, `vllm`), simplifying parameter control for experiments and testing.
+
+> [!Note]
+> This project serves as a practical exercise for learning Python project development skills.
+
