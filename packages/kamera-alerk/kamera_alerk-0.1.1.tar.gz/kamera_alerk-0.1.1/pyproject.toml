@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kamera_alerk"
+version = "0.1.1"
+authors = [
+  { name="The220th", email="The220th@gmail.com" },
+]
+description = "Telegram bot for camera access. "
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "ksupk",
+    "onvif-zeep",
+    "telebot",
+    "argparse",
+    "matplotlib",
+    "ultralytics",
+    "numpy",
+    "opencv-python",
+    "requests",
+    "pillow",
+    "pathlib"
+]
+
+[project.scripts]
+kamera_alerk = "kamera_alerk.main:main"
+
+[project.urls]
+Homepage = "https://github.com/The220th/kamera_alerk"
+Issues = "https://github.com/The220th/kamera_alerk/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
