@@ -1,0 +1,3 @@
+[console_scripts]
+bch-foo = bch_foo.cli:app
+bch-math = bch_foo.math:app
