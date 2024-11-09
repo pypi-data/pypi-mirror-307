@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: is_star
+Version: 0.0.3
+Summary: Python package to check if a polygon is a star
+Requires-Dist: numpy
+Requires-Dist: matplotlib
