@@ -1,0 +1,6 @@
+dagster==1.9.1
+lkml
+looker_sdk<24.18.0
+sqlglot
+python-liquid
+cattrs<23.2
