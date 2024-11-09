@@ -1,0 +1,225 @@
+syntax = "proto3";
+
+enum ContentMimeType {  
+  TEXT = 0; // text
+  JSON = 1; // json
+  HTML = 2; // html
+  PNG = 3; // png
+  JPEG = 4; // jpeg
+  SVG = 5; // svg
+  PDF = 6; // pdf
+  LATEX = 7; // latex
+  MARKDOWN = 8; // markdown
+  CSV = 9; // csv
+  ZIP = 10; // zip
+  TAR = 11; // tar
+  GZIP = 12; // gzip
+  BZIP2 = 13; // bzip2
+  XZ = 14; // xz
+  DOCX = 15; // docx
+  PPTX = 16; // pptx
+  XLSX = 17; // xlsx
+  DOC = 18; // doc
+  PPT = 19; // ppt
+  XLS = 20; // xls
+  C = 21; // c
+  CPP = 22; // cpp
+  JAVA = 23; // java
+  CSHARP = 24; // csharp
+  PYTHON = 25; // python
+  RUBY = 26; // ruby
+  PHP = 27; // php
+  JAVASCRIPT = 28; // javascript  
+  XML = 29; // xml
+  CSS = 30; // css
+  GIF = 31; // gif
+  OCTET_STREAM = 32; // octet-stream
+  VIDEO_WEBM = 33; // webm
+  VIDEO_MP4 = 34; // mp4
+  VIDEO_OGG = 35; // ogg
+  AUDIO_WEBM = 36; // webm
+  AUDIO_MP3 = 37; // mp3
+}
+
+message Content {
+  ContentMimeType mime_type = 1; // mime type of content
+  bytes data = 2; // data of content
+  string name = 3; // name of content
+}
+
+enum WebBrowserCommandType {
+  GOTO = 0; // go to url
+  TERMINATE = 1; // terminate session
+  WAIT = 2; // wait for selector
+  CLICK = 3; // click selector
+  COPY = 4; // copy selector
+  TYPE = 5; // type selector
+  SCROLL_X = 6; // scroll horizontal
+  SCROLL_Y = 7; // scroll vertical
+  ENTER = 8; // enter
+  KEY = 9; // press key
+  MOUSE_MOVE = 10; // move mouse
+  SCREENSHOT = 11; // screenshot
+  CURSOR_POSITION = 12; // cursor position
+  RIGHT_CLICK = 13; // right click
+  MIDDLE_CLICK = 14; // middle click
+  DOUBLE_CLICK = 15; // double click
+}
+
+message WebBrowserCommandOutput {
+  int32 index = 1; // index of command
+  string output = 2; // output of command
+}
+
+message WebBrowserCommandError {
+  int32 index = 1; // index of command
+  string error = 2; // error of command
+}
+
+message WebBrowserCommand {
+  WebBrowserCommandType type = 1; // command type
+  string selector = 2; // selector to use
+  string data = 3; // command data
+}
+
+message WebBrowserButton {
+  string selector = 1; // selector of button
+  string text = 2; // text of button
+}
+
+message WebBrowserInputField {
+  string selector = 1; // selector of input
+  string text = 2; // text of input
+}
+
+message WebBrowserSelectField {
+  string selector = 1; // selector of select
+  string text = 2; // text of select
+}
+
+message WebBrowserTextAreaField {
+  string selector = 1; // selector of textarea
+  string text = 2; // text of textarea
+}
+
+message WebBrowserLink {
+  string selector = 1; // selector of link
+  string text = 2; // text of link
+  string url = 3; // url of link
+}
+
+message WebBrowserImage {
+  string selector = 1; // selector of image  
+  string text = 2; // alt text of image
+  string src = 3; // src of image
+}
+
+message WebBrowserDownload {
+  string url = 1; // url of download
+  Content file = 2; // file of download
+}
+
+message WebBrowserContent {
+  string url = 1; // url of page
+  string title = 2; // title of page
+  string html = 3; // html of page
+  string text = 4; // text of page
+  bytes screenshot = 5; // screenshot of page if available
+  repeated WebBrowserButton buttons = 6; // buttons on page
+  repeated WebBrowserLink links = 7; // links on page
+  repeated WebBrowserImage images = 8; // images on page
+  repeated WebBrowserInputField input_fields = 9; // inputs on page
+  repeated WebBrowserSelectField select_fields = 10; // selects on page
+  repeated WebBrowserTextAreaField textarea_fields = 11; // textareas on page  
+  repeated WebBrowserCommandOutput command_outputs = 12; // outputs of commands
+  repeated WebBrowserCommandError command_errors = 13; // errors of commands
+  repeated WebBrowserDownload downloads = 14; // downloads on page
+}
+
+message WebBrowserSessionConfig {
+  string init_url = 1; // url to open at the start
+  string terminate_url_pattern = 2; // url pattern to terminate session
+  string session_data = 3; // session data to restore  
+  int32 timeout = 4; // total session timeout in seconds
+  int32 command_timeout = 5; // command timeout in seconds
+  bool text = 6; // return text output
+  bool html = 7; // return html output  
+  bool markdown = 8; // return markdown output
+  bool persist_session = 9; // persist session after done
+  bool capture_screenshot = 10; // capture screenshot of the session
+  bool interactive = 11; // interactive session with user inputs
+  bool record_video = 12; // record video of the session while running
+  bool annotate = 13; // annoatate the page with tags before screenshot
+  repeated string tags_to_extract = 14; // list of tags to extract from the page
+  bool allow_downloads = 15; // allow browser downloads
+}
+
+enum WebBrowserState {
+  RUNNING = 0; // browser is running
+  TERMINATED = 1; // browser is terminated
+  TIMEOUT = 2; // browser is timed out
+}
+
+enum CodeRunnerState {
+  CODE_RUNNING = 0; // code is running
+  CODE_TERMINATED = 1; // code is terminated
+  CODE_TIMEOUT = 2; // code is timed out
+  CODE_FINISHED = 3; // code is finished
+}
+
+message WebBrowserSession {
+  string ws_url = 1; // websocket url to connect to for remote display
+  string session_data = 2; // session data to persist
+  repeated Content videos = 3; // videos of session
+}
+
+message WebBrowserRequest {
+  WebBrowserSessionConfig session_config = 1; // session configuation
+  repeated WebBrowserCommand commands = 2; // commands to send to the browser
+}
+
+message WebBrowserResponse {
+  WebBrowserSession session = 1; // session data
+  WebBrowserState state = 2; // state of browser
+  WebBrowserContent content = 3; // content from the browser after running inputs
+}
+
+message FileConverterRequest {
+  Content file = 1; // file to convert
+  ContentMimeType target_mime_type = 2; // target mime type
+  repeated string options = 3; // options for conversion
+}
+
+message FileConverterResponse {
+  Content file = 1; // converted file
+}
+
+message CodeRunnerSession {
+  string session_id = 1; // session id
+  string session_data = 2; // session data to persist
+}
+
+message CodeRunnerRequest {
+  string source_code = 1; // code to run
+  int32 timeout_secs = 2; // timeout in seconds
+  CodeRunnerSession session = 3; // session data
+  repeated Content files = 4; // files in the code run session
+}
+
+message CodeRunnerResponse {
+  CodeRunnerState state = 1; // state of runner
+  repeated Content stdout = 2; // stdout of code
+  string stderr = 3; // stderr of code
+  repeated Content content = 4; // content from the code run session
+  CodeRunnerSession session = 5; // session data  
+}
+
+service Tools {
+
+  rpc GetWebBrowser (stream WebBrowserRequest) returns (stream WebBrowserResponse) {}
+
+  rpc GetFileConverter (FileConverterRequest) returns (FileConverterResponse) {}
+
+  rpc GetCodeRunner (stream CodeRunnerRequest) returns (stream CodeRunnerResponse) {}
+  
+}
