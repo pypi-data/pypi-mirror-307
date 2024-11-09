@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Image data &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Spike time data" href="spike_time_data.html" />
+    <link rel="prev" title="Finding things" href="finding_things.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#list-of-tutorials">List of tutorials</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Image data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tagging-regions">Tagging regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tagging-a-single-point-or-region">Tagging a single point or region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tagging-multiple-regions">Tagging multiple regions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Tutorials</a> &raquo;</li>
+        
+      <li>Image data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/image_data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="spike_time_data.html" class="btn btn-neutral float-right" title="Spike time data" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="finding_things.html" class="btn btn-neutral float-left" title="Finding things" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="image-data">
+<span id="id1"></span><h1>Image data<a class="headerlink" href="#image-data" title="Permalink to this headline">¶</a></h1>
+<p>Color images can be stored as 3-D data in a <em>DataArray</em>. The first two
+dimensions represent <em>width</em> and <em>height</em> of the image while the 3rd
+dimension represents the color channels. Accordingly, we need three
+dimension descriptors. The first two are <em>SampledDimensions</em> since the
+pixels of the image are regularly sampled in space. The third
+dimension is a <em>SetDimension</em> with labels for each of the channels.
+In this tutorial the “Lenna” image is used. Please see the author
+attribution in the code.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Image data is just 3D data that can be easily stored in a <em>DataArray</em>. We need to add three dimension descriptors, though (to run the example you need the <a class="reference download internal" download="" href="_downloads/455b7c20b3fe5fc43be78fd7646843f3/imageData.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a> , the <a class="reference download internal" download="" href="_downloads/83ff059e2cf0f3a10c789d3904ed913c/lenna.png"><code class="xref download docutils literal notranslate"><span class="pre">image</span></code></a> <em>imagemagick</em> or <em>xv</em> packages).</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">data</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;lenna&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.image.rgb&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">img_data</span><span class="p">)</span>
+    <span class="c1"># add descriptors for width, height and channel dimensions</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;width&quot;</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">channels</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="_images/lenna.png"><img alt="lenna" src="_images/lenna.png" style="width: 240px;" /></a>
+<div class="section" id="tagging-regions">
+<h2>Tagging regions<a class="headerlink" href="#tagging-regions" title="Permalink to this headline">¶</a></h2>
+<p>One key feature of the nix-model is its ability to annotate, or “tag”, points or regions-of-interest in the stored data. This feature can be used to state the occurrence of events during the recording, to state the intervals of a certain condition, e.g. a stimulus presentation, or to mark the regions of interests in image data. In the nix data-model two types of Tags are discriminated. (1) the <strong>Tag</strong> for single points or regions, and (2) the <strong>MultiTag</strong> to annotate multiple points or regions using the same entity.</p>
+</div>
+<div class="section" id="tagging-a-single-point-or-region">
+<span id="single-roi"></span><h2>Tagging a single point or region<a class="headerlink" href="#tagging-a-single-point-or-region" title="Permalink to this headline">¶</a></h2>
+<p>Single points of regions-of-interest are annotated using a <strong>Tag</strong>
+object. The Tag contains the start <em>position</em> and, optional, the
+<em>extent</em> of the point or region. The link to the data is established
+by adding the <strong>DataArray</strong> that contains the data to the list of
+references. It is important to note that <em>position</em> and <em>extent</em> are
+arrays with the length matching the dimensionality of the referenced
+data. The same Tag can be applied to many references as long as
+<em>position</em> and <em>extent</em> can be applied to these.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">A <em>Tag</em> is used to tag a a single region of interest. Most image data is 3D with the third dimension representing the color channels (<a class="reference download internal" download="" href="_downloads/8fe36689b273b9c1d617cb4774d02136/singleROI.py"><code class="xref download docutils literal notranslate"><span class="pre">singleROI.py</span></code></a>).</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_tag</span><span class="p">(</span><span class="s1">&#39;Region of interest&#39;</span><span class="p">,</span> <span class="s1">&#39;nix.roi&#39;</span><span class="p">,</span> <span class="n">position</span><span class="p">)</span>
+    <span class="n">tag</span><span class="o">.</span><span class="n">extent</span> <span class="o">=</span> <span class="n">extent</span>
+    <span class="n">tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># let&#39;s plot the data from the stored information</span>
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="examples/single_roi.png"><img alt="single roi" src="examples/single_roi.png" style="width: 240px;" /></a>
+</div>
+<div class="section" id="tagging-multiple-regions">
+<h2>Tagging multiple regions<a class="headerlink" href="#tagging-multiple-regions" title="Permalink to this headline">¶</a></h2>
+<p>For tagging multiple regions in the image data we again use a <em>MultiTag</em> entity.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">The image data is stored in the very same way as above, the ROIs are defined by their respective start positions and their extents (<a class="reference download internal" download="" href="_downloads/ea4a46dc623a08c5953ef10e95e76ec8/multipleROIs.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">num_dimensions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dimensions</span><span class="p">)</span>
+    <span class="n">roi_starts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_regions</span><span class="p">,</span> <span class="n">num_dimensions</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">roi_starts</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">roi_starts</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">315</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">roi_starts</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">340</span><span class="p">,</span> <span class="mi">260</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">roi_extents</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_regions</span><span class="p">,</span> <span class="n">num_dimensions</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">roi_extents</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+    <span class="n">roi_extents</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+    <span class="n">roi_extents</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+    <span class="c1"># create the positions DataArray</span>
+    <span class="n">positions</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;ROI positions&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.positions&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">roi_starts</span><span class="p">)</span>
+    <span class="n">positions</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>  <span class="c1"># these can be empty</span>
+    <span class="n">positions</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+
+    <span class="c1"># create the extents DataArray</span>
+    <span class="n">extents</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;ROI extents&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.extents&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">roi_extents</span><span class="p">)</span>
+    <span class="n">extents</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+    <span class="n">extents</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+
+    <span class="c1"># create a MultiTag</span>
+    <span class="n">multi_tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;Regions of interest&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.roi&quot;</span><span class="p">,</span> <span class="n">positions</span><span class="p">)</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">extents</span> <span class="o">=</span> <span class="n">extents</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="_images/multiple_rois.png"><img alt="many rois" src="_images/multiple_rois.png" style="width: 240px;" /></a>
+<p>The start positions and extents of the ROIs are stored in two separate <em>DataArrays</em>, these are each 2-D the first dimension represents the number of regions , the second defines the position/extent for each single dimension of the data (height, width, color channels).</p>
+<p>The <em>MultiTag</em> has a <code class="docutils literal notranslate"><span class="pre">tagged_data</span></code> method that is used to retrieve the data tagged by the <em>MultiTag</em>.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Tagged data is read by using the <code class="docutils literal notranslate"><span class="pre">tagged_data</span></code> method. The first argument is the region number, the second the name of the referenced <em>DataArray</em> (<a class="reference download internal" download="" href="_downloads/ea4a46dc623a08c5953ef10e95e76ec8/multipleROIs.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="n">roi_data</span> <span class="o">=</span> <span class="n">tag</span><span class="o">.</span><span class="n">tagged_data</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s2">&quot;lenna&quot;</span><span class="p">)[:]</span>
+        <span class="n">roi_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">roi_data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">position_count</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">roi_data</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="_images/retrieved_rois.png"><img alt="many rois" src="_images/retrieved_rois.png" style="width: 240px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="spike_time_data.html" class="btn btn-neutral float-right" title="Spike time data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="finding_things.html" class="btn btn-neutral float-left" title="Finding things" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Tutorials &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="File handling" href="file_handling.html" />
+    <link rel="prev" title="Changes in version 1.5" href="news.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#list-of-tutorials">List of tutorials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Tutorials</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="file_handling.html" class="btn btn-neutral float-right" title="File handling" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="news.html" class="btn btn-neutral float-left" title="Changes in version 1.5" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorials">
+<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<p>This introduction guides through the <em>NIX</em> data model and shows how to use it with the <a class="reference external" href="https://github.com/g-node/nixpy">nixio python library</a>.</p>
+<hr class="docutils" />
+<p>In the following we provide an introduction to the general concepts of the <em>NIX</em> data model, try to illustrate its design principles and provide code examples showing the usage of the <a class="reference external" href="https://github.com/g-node/nixpy">python</a> library for reading and writing <em>NIX</em> files.</p>
+<p>Code examples use the python library but almost all functions have direct counterparts also in the <a class="reference external" href="https://github.com/g-node/nix">C++ library</a> or the language bindings to this for <a class="reference external" href="https://github.com/g-node/nix-mx">Matlab</a> and <a class="reference external" href="https://github.com/g-node/nix-java">java</a>.</p>
+<div class="section" id="list-of-tutorials">
+<h2>List of tutorials<a class="headerlink" href="#list-of-tutorials" title="Permalink to this headline">¶</a></h2>
+<p>Most code examples are standalone and you should be able to run them. The code is also available from the <a class="reference external" href="https://github.com/G-Node/nixpy/tree/master/docs/source/examples">project repository on GitHub</a>.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="file_handling.html" class="btn btn-neutral float-right" title="File handling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="news.html" class="btn btn-neutral float-left" title="Changes in version 1.5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

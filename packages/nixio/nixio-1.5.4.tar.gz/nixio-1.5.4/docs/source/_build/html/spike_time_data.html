@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Spike time data &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.3 Release documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting support" href="contact.html" />
+    <link rel="prev" title="Image data" href="image_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">Use-cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Spike time data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-features">Adding features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-stimulus-segments">Tagging stimulus segments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-with-spike-times">Tagging with spike times</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#storing-wavelets-as-features-of-the-spike-times">Storing wavelets as Features of the spike times</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">Internal API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nixpy/blob/master/LICENSE">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">Contributing guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Tutorials</a> &raquo;</li>
+        
+      <li>Spike time data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/spike_time_data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="contact.html" class="btn btn-neutral float-right" title="Getting support" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="image_data.html" class="btn btn-neutral float-left" title="Image data" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spike-time-data">
+<span id="id1"></span><h1>Spike time data<a class="headerlink" href="#spike-time-data" title="Permalink to this headline">¶</a></h1>
+<p>Storing the times of spikes (action potentials) that are generated by neurons is one of the most common use cases.</p>
+<p>The data shown below is simulation data created using a Leaky Integrate and Fire (LIF) model neuron. To run the example codes in this section you will need the <a class="reference download internal" download="" href="_downloads/1484d6b2992e0ee70b75132ebb7fd8db/lif.py"><code class="xref download docutils literal notranslate"><span class="pre">lif</span> <span class="pre">model</span></code></a>.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">We create some simulation data and then use a <em>MultiTag</em> to bind the recorded membrane voltage and the spike times together (<a class="reference download internal" download="" href="_downloads/78aae6ce692443ceaa4d8370a8eeb7ef/spikeTagging.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>)</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># create a new file overwriting any existing content</span>
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;spike_tagging.nix&#39;</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">)</span>
+
+    <span class="c1"># create a &#39;Block&#39; that represents a grouping object. Here, the recording session.</span>
+    <span class="c1"># it gets a name and a type</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;block name&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.session&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create a &#39;DataArray&#39; to take the membrane voltage</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;membrane voltage&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.regular_sampled.time_series&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">voltage</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;membrane voltage&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;mV&quot;</span><span class="p">)</span>
+
+    <span class="c1"># add descriptors for time axis</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create the positions DataArray</span>
+    <span class="n">positions</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;spike times&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.events.spike_times&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">spike_times</span><span class="p">)</span>
+    <span class="n">positions</span><span class="o">.</span><span class="n">append_range_dimension_using_self</span><span class="p">()</span>
+
+    <span class="c1"># create a MultiTag</span>
+    <span class="n">multi_tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;spike times&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.events.spike_times&quot;</span><span class="p">,</span> <span class="n">positions</span><span class="p">)</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="figure align-default" id="id3">
+<img alt="spike times in a neuron's activity" src="_images/spike_tagging.png" />
+<p class="caption"><span class="caption-text">Spike times are marked in a neuron’s membrane potential (fake data, created with a LIF model neuron).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="adding-features">
+<h2>Adding features<a class="headerlink" href="#adding-features" title="Permalink to this headline">¶</a></h2>
+<p>The following code shows how to use the <strong>Features</strong> of the NIX-model. Suppose that we have the recording of a signal in which a set of events is detected. Each event may have certain characteristics one wants to store. These are stored as <strong>Features</strong> of the events. There are three different link-types between the features and the events stored in the tag. <em>nix.LinkType.Untagged</em> indicates that the whole data stored in the <strong>Feature</strong> applies to the points defined in the tag. <em>nix.LinkType.Tagged</em> on the other side implies that the <em>position</em> and <em>extent</em> have to be applied also to the data stored in the <strong>Feature</strong>. Finally, the <em>nix.LinkType.Indexed</em> indicates that there is one point (or slice) in the <strong>Feature</strong> data that is related to each position in the tag.</p>
+<p>The following examples show how this works.</p>
+</div>
+<div class="section" id="tagging-stimulus-segments">
+<span id="untagged-feature"></span><h2>Tagging stimulus segments<a class="headerlink" href="#tagging-stimulus-segments" title="Permalink to this headline">¶</a></h2>
+<p>Let’s say we record the neuronal activity and in a certain epoch of that recording a stimulus was presented. This time interval is annotated using a <strong>Tag</strong>. This inidicates the time in which the stimulus was on but we may also want to link the stimulus itself to it. The stimulus is also stored as a <strong>DataArray</strong> and can be linked to the <em>Tag</em> as an <em>untagged</em> <strong>Feature</strong> of it.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Source code for this example: <a class="reference download internal" download="" href="_downloads/54623dee803d36ecb07d51ffd8be1ef9/untaggedFeature.py"><code class="xref download docutils literal notranslate"><span class="pre">untaggedFeature.py</span></code></a>.</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">stim</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;stimulus&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled.time_series&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stimulus</span><span class="p">,</span>
+                                   <span class="n">label</span><span class="o">=</span><span class="s2">&quot;current stimulus&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;nA&quot;</span><span class="p">)</span>
+    <span class="n">stim</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create the Tag to highlight the stimulus-on segment</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_tag</span><span class="p">(</span><span class="s2">&quot;stimulus presentation&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.epoch.stimulus_presentation&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">stim_onset</span><span class="p">])</span>
+    <span class="n">tag</span><span class="o">.</span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">stim_duration</span><span class="p">]</span>
+    <span class="n">tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># set stimulus as untagged feature of the tag</span>
+    <span class="n">tag</span><span class="o">.</span><span class="n">create_feature</span><span class="p">(</span><span class="n">stim</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">LinkType</span><span class="o">.</span><span class="n">Untagged</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<img alt="untagged feature" src="_images/untagged_feature.png" />
+<p>The recorded membrane voltage data is 10s long and we tag the interval between <code class="docutils literal notranslate"><span class="pre">stimulus_onset</span></code> and <code class="docutils literal notranslate"><span class="pre">stimulus_onset</span> <span class="pre">+</span> <span class="pre">stimulus_duration</span></code> (from 1 to 9 seconds). The stimulus itself is only 8s long and was played in the tagged interval. We use a <em>Tag</em> to bind stimulus and recorded signal together. The data stored in the “untagged” feature is the whole stimulus. The <em>Tag’s</em> position and extent do not apply to the stimulus trace.</p>
+</div>
+<div class="section" id="tagging-with-spike-times">
+<span id="tagged-feature"></span><h2>Tagging with spike times<a class="headerlink" href="#tagging-with-spike-times" title="Permalink to this headline">¶</a></h2>
+<p>Tagged <strong>Features</strong> are used in cases in which the positions and extents of a tag also apply to another linked dataset. In the
+following example the spike times should also be applied to the stimulus that led to the responses. The stimulus is saved in an
+additional <strong>DataArray</strong> and is linked to the spike times as a <strong>Feature</strong> setting the <strong>LinkType</strong> to <em>tagged</em>.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Source code for this example: <a class="reference download internal" download="" href="_downloads/1e8646e48609913aca4d7eb8d1203234/taggedFeature.py"><code class="xref download docutils literal notranslate"><span class="pre">taggedFeature.py</span></code></a>.</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create the positions DataArray</span>
+    <span class="n">positions</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;spike times&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.events.spike_times&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">spike_times</span><span class="p">)</span>
+    <span class="n">positions</span><span class="o">.</span><span class="n">append_range_dimension_using_self</span><span class="p">()</span>
+
+    <span class="c1"># create a MultiTag</span>
+    <span class="n">multi_tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;spike times&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.events.spike_times&quot;</span><span class="p">,</span> <span class="n">positions</span><span class="p">)</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># save stimulus snippets in a DataArray</span>
+    <span class="n">stimulus_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;stimulus&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stimulus</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;stimulus&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;nA&quot;</span><span class="p">)</span>
+    <span class="c1"># add a descriptor for the time axis</span>
+    <span class="n">stimulus_array</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="c1"># set stimulus as a tagged feature of the multi_tag</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">create_feature</span><span class="p">(</span><span class="n">stimulus_array</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">LinkType</span><span class="o">.</span><span class="n">Tagged</span><span class="p">)</span>
+
+    <span class="c1"># let&#39;s plot the data from the stored information</span>
+    <span class="n">plot_data</span><span class="p">(</span><span class="n">multi_tag</span><span class="p">)</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="figure align-default">
+<img alt="tagged feature" src="_images/tagged_feature.png" />
+</div>
+<p>The spike times are used to tag the recording of the membrane voltage using a <em>MultiTag</em>. The stimulus is added to the <em>MultiTag</em> as a <strong>tagged</strong> feature. That is, the positions of the tag (the spike times) should be applied also to the stimulus. Extracting the <code class="docutils literal notranslate"><span class="pre">feature_data</span></code> gives the stimulus intensities at the times of the spikes, the orange distribution.</p>
+</div>
+<div class="section" id="storing-wavelets-as-features-of-the-spike-times">
+<span id="indexed-feature"></span><h2>Storing wavelets as Features of the spike times<a class="headerlink" href="#storing-wavelets-as-features-of-the-spike-times" title="Permalink to this headline">¶</a></h2>
+<p>In the example, the signal is the membrane potential of a (model) neuron which was stimulated with some stimulus. The events are again
+the action potentials (or spikes) fired by that neuron. A typical analysis performed on such data is the Spike triggered average which
+represent the average stimulus that led to a spike. For each spike, a snippet of the respective stimulus is cut out and later averaged. In
+this example we store these stimulus snippets and link them to the events by adding a <strong>Feature</strong> to the <strong>MultiTag</strong>. There are three
+different flags that define how this link has to be interpreted. In this case there is one snippet for each spike. The index of each
+position has to be used as an index in the first dimension of the Feature data. The <strong>LinkType</strong> has to be set to <em>indexed</em>.</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">From the stimulus, a set of snippets has been extracted and stored in a 2-D DataArray. To be used as an <code class="docutils literal notranslate"><span class="pre">Indexed</span></code> feature it must be organized that the first dimension represents the number of snippets. The second dimension is the time. (<a class="reference download internal" download="" href="_downloads/2f0efc156631b21f78c4b0da3c4321dd/spikeFeatures.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">snippets</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;spike triggered stimulus&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.regular_sampled.multiple_series&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">sts</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;stimulus&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;nA&quot;</span><span class="p">)</span>
+    <span class="n">snippets</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+    <span class="n">snippets</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span> <span class="o">-</span><span class="n">sta_offset</span> <span class="o">*</span> <span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="c1"># set snippets as an indexed feature of the multi_tag</span>
+    <span class="n">multi_tag</span><span class="o">.</span><span class="n">create_feature</span><span class="p">(</span><span class="n">snippets</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">LinkType</span><span class="o">.</span><span class="n">Indexed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="figure align-default">
+<img alt="indexed feature" src="_images/spike_features.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="contact.html" class="btn btn-neutral float-right" title="Getting support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="image_data.html" class="btn btn-neutral float-left" title="Image data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

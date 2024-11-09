@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>nixio.hdf5 package &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.3 Release documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nixio.test package" href="nixio.test.html" />
+    <link rel="prev" title="nixio.exceptions package" href="nixio.exceptions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standardization.html">Support for standardization</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">Use-cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_api.html">High Level API Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nixio.html">Internal API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nixio.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nixio.cmd.html">nixio.cmd package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.exceptions.html">nixio.exceptions package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">nixio.hdf5 package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.hdf5.h5dataset">nixio.hdf5.h5dataset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.hdf5.h5group">nixio.hdf5.h5group module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.hdf5">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.test.html">nixio.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.util.html">nixio.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.block">nixio.block module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.compression">nixio.compression module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.container">nixio.container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_array">nixio.data_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_frame">nixio.data_frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_set">nixio.data_set module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_view">nixio.data_view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.datatype">nixio.datatype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimension_type">nixio.dimension_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimensions">nixio.dimensions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.entity">nixio.entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.feature">nixio.feature module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.file">nixio.file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.group">nixio.group module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.info">nixio.info module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.link_type">nixio.link_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.multi_tag">nixio.multi_tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.property">nixio.property module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.section">nixio.section module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source">nixio.source module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source_link_container">nixio.source_link_container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.tag">nixio.tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.validator">nixio.validator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nixpy/blob/master/LICENSE">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">Contributing guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="nixio.html">Internal API</a> &raquo;</li>
+        
+      <li>nixio.hdf5 package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/nixio.hdf5.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="nixio.test.html" class="btn btn-neutral float-right" title="nixio.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="nixio.exceptions.html" class="btn btn-neutral float-left" title="nixio.exceptions package" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nixio-hdf5-package">
+<h1>nixio.hdf5 package<a class="headerlink" href="#nixio-hdf5-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-nixio.hdf5.h5dataset">
+<span id="nixio-hdf5-h5dataset-module"></span><h2>nixio.hdf5.h5dataset module<a class="headerlink" href="#module-nixio.hdf5.h5dataset" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.hdf5.h5dataset.</span></span><span class="sig-name descname"><span class="pre">H5DataSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.create_from_h5obj">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">create_from_h5obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.create_from_h5obj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.dtype">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">dtype</span></span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.dtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.get_attr">
+<span class="sig-name descname"><span class="pre">get_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.get_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.read_data">
+<span class="sig-name descname"><span class="pre">read_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.read_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.set_attr">
+<span class="sig-name descname"><span class="pre">set_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.set_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.shape">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">shape</span></span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5dataset.H5DataSet.write_data">
+<span class="sig-name descname"><span class="pre">write_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5dataset.H5DataSet.write_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.hdf5.h5group">
+<span id="nixio-hdf5-h5group-module"></span><h2>nixio.hdf5.h5group module<a class="headerlink" href="#module-nixio.hdf5.h5group" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.hdf5.h5group.</span></span><span class="sig-name descname"><span class="pre">H5Group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shallow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.create_dataset">
+<span class="sig-name descname"><span class="pre">create_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.create_dataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a dataset object under the current group with a given name,
+shape, and type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – the name of the dataset</p></li>
+<li><p><strong>shape</strong> – tuple representing the shape of the dataset</p></li>
+<li><p><strong>dtype</strong> – the type of the data for this dataset (DataType)</p></li>
+<li><p><strong>compression</strong> – whether to compress the data (default: False)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new H5DataSet object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.create_from_h5obj">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">create_from_h5obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.create_from_h5obj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.create_link">
+<span class="sig-name descname"><span class="pre">create_link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.create_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete_if_empty</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the child HDF5 group that matches the given name or id.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.delete_all">
+<span class="sig-name descname"><span class="pre">delete_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.delete_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes all references to a given list of objects, identified by their
+entity_id, below the current object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.find_children">
+<span class="sig-name descname"><span class="pre">find_children</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filtr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.find_children" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_attr">
+<span class="sig-name descname"><span class="pre">get_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_by_id_or_name">
+<span class="sig-name descname"><span class="pre">get_by_id_or_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_by_id_or_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_by_name">
+<span class="sig-name descname"><span class="pre">get_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_by_pos">
+<span class="sig-name descname"><span class="pre">get_by_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_by_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the data contained in the dataset identified by ‘name’, or an
+empty list if a dataset of that name does not exist in the Group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – The name of the dataset</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The data contained in the dataset as a numpy array or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.get_dataset">
+<span class="sig-name descname"><span class="pre">get_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.get_dataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a contained H5DataSet object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – name of the dataset</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>H5DataSet object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.group">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">group</span></span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.has_by_id">
+<span class="sig-name descname"><span class="pre">has_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.has_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.has_data">
+<span class="sig-name descname"><span class="pre">has_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.has_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if the Group contains a Dataset object with the given name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – name of Dataset</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if Dataset exists in Group, False if it does not exist,</p>
+</dd>
+</dl>
+<p>or exists and is not a Dataset</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.open_group">
+<span class="sig-name descname"><span class="pre">open_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.open_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new H5Group with the given name contained in the current
+group.  If the current group does not exist in the file,
+it is automatically created.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – the name of the group</p></li>
+<li><p><strong>create</strong> – creates the child group in the file if it does not exist</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new H5Group object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.parent">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.set_attr">
+<span class="sig-name descname"><span class="pre">set_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.set_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.hdf5.h5group.H5Group.write_data">
+<span class="sig-name descname"><span class="pre">write_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.hdf5.h5group.H5Group.write_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the data to a Dataset contained in the group with the
+given name. Creates the Dataset if necessary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – name of the Dataset object</p></li>
+<li><p><strong>data</strong> – the data to write</p></li>
+<li><p><strong>dtype</strong> – optionally specify the data type, otherwise it will be</p></li>
+</ul>
+</dd>
+</dl>
+<p>automatically determined by the data
+:param compression: whether to compress the data (default: False)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.hdf5">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-nixio.hdf5" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="nixio.test.html" class="btn btn-neutral float-right" title="nixio.test package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nixio.exceptions.html" class="btn btn-neutral float-left" title="nixio.exceptions package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

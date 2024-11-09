@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>NIXIO Python library documentation &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Idea" href="basic_idea.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>NIXIO Python library documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="basic_idea.html" class="btn btn-neutral float-right" title="Idea" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nixio-python-library-documentation">
+<h1>NIXIO Python library documentation<a class="headerlink" href="#nixio-python-library-documentation" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/G-Node/nixpy/actions"><img alt="Build github" src="https://github.com/G-Node/nixpy/workflows/NIXPy%20tests%20and%20linting/badge.svg?branch=master" /></a> <a class="reference external" href="https://ci.appveyor.com/project/G-Node/nixpy"><img alt="Build appveyor" src="https://ci.appveyor.com/api/projects/status/72l10ooxbvf0vfgd/branch/master?svg=true" /></a> <a class="reference external" href="https://coveralls.io/github/G-Node/nixpy?branch=master"><img alt="Coverage coveralls" src="https://coveralls.io/repos/github/G-Node/nixpy/badge.svg?branch=master" /></a> <a class="reference external" href="https://codecov.io/gh/G-Node/nixpy"><img alt="Coverage codecov" src="https://codecov.io/gh/G-Node/nixpy/branch/master/graph/badge.svg?token=xT5rz1BlGJ" /></a> <a class="reference external" href="https://lgtm.com/projects/g/G-Node/nixpy"><img alt="LGTM" src="https://img.shields.io/lgtm/grade/python/g/G-Node/nixpy.svg?logo=lgtm&amp;logoWidth=18)](https://lgtm.com/projects/g/G-Node/nixpy/context:python)" /></a> <a class="reference external" href="https://nixpy.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/nixpy/badge/?version=latest" /></a></p>
+<p>The NIXIO module is the native python re-implementation of the <a class="reference external" href="https://nixio.readthedocs.io">NIX C++ library</a> for the NIX data model.</p>
+<p>The <em>NIX</em> data model allows to store fully annotated scientific
+datasets, i.e. the data together with its metadata within the same
+container. Our aim is to achieve standardization by providing a
+common/generic data structure for a multitude of data types. See the
+<a class="reference external" href="https://github.com/G-Node/nix/wiki">wiki</a> or the
+<a class="reference external" href="getting_started.html">introduction</a> for more information.</p>
+<p>The current implementations store the actual data using the
+<a class="reference external" href="http://www.hdfgroup.org/">HDF5</a> file format as a storage backend.</p>
+<p><em>NIX</em> emerged from the activities of the Electrophysiology Task Force of
+the <a class="reference external" href="http://www.incf.org">INCF</a> Datasharing Program (2010-2015). It
+is a registered research resource with the
+<a class="reference external" href="https://scicrunch.org/resources/Any/record/nlx_144509-1/SCR_016196/resolver?q=SCR_016196&amp;l=SCR_016196">RRID:SCR_016196</a>.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>We have assembled <a class="reference external" href="getting_started.html">introductory material</a>
+that illustrates using nix. The tutorials contain several code
+examples. <a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">The use_cases</a> explain in more detail how
+nix is used in real world situations.</p>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>If you need help, want to get in touch, or have any other request
+<a class="reference external" href="contact.html">these</a> are your options.</p>
+</div>
+<div class="section" id="contributing-governance">
+<h2>Contributing &amp; Governance<a class="headerlink" href="#contributing-governance" title="Permalink to this headline">¶</a></h2>
+<p>Any kind of contribution is welcome! This includes reporting bugs and
+issues. If you want to contribute to code or documentation please refer
+to the <a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">contributing
+guide</a>.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This project is open source published under the BSD-3 license see
+<a class="reference external" href="https://github.com/G-Node/nix/blob/master/LICENSE">license file</a> for
+details.</p>
+</div>
+<div class="section" id="citing">
+<h2>Citing<a class="headerlink" href="#citing" title="Permalink to this headline">¶</a></h2>
+<p>If you use <em>NIX</em>, it would be much appreciated if you would cite it in
+publications with its identifier RRID:SCR_016196 and/or the reference:</p>
+<p><em>Stoewer A, Kellner CJ, Benda J, Wachtler T and Grewe J (2014). File
+format and library for neuroscience data and metadata. Front.
+Neuroinform. Conference Abstract: Neuroinformatics 2014. doi:
+10.3389/conf.fninf.2014.18.00027</em></p>
+</div>
+<div class="section" id="referenced-by">
+<h2>Referenced by<a class="headerlink" href="#referenced-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Buccino et al. (2019)
+<a class="reference external" href="https://www.biorxiv.org/content/10.1101/796599v1">doi:10.1101/796599</a></p></li>
+<li><p>Sprenger et al. (2019)
+<a class="reference external" href="https://doi.org/10.3389/fninf.2019.00062">doi:10.3389/fninf.2019.00062</a></p></li>
+<li><p>Dragly et al (2018)
+<a class="reference external" href="https://doi.org/10.3389/fninf.2018.000169">doi:10.3389/fninf.2018.000169</a></p></li>
+<li><p>Papez et al (2017)
+<a class="reference external" href="https://doi.org/10.3389/fninf.2017.00024">doi:10.3389/fninf.2017.00024</a></p></li>
+<li><p>Grewe et al (2017)
+<a class="reference external" href="https://doi.org/10.1073/pnas.1615561114">doi:10.1073/pnas.1615561114</a></p></li>
+<li><p>Vanek et al (2016)
+<a class="reference external" href="https://doi.org/10.1109/informatics.2015.7377849">doi:10.1109/informatics.2015.7377849</a></p></li>
+<li><p>Rübel et al (2016)
+<a class="reference external" href="https://doi.org/10.3389/fninf.2016.00048">doi:10.3389/fninf.2016.00048</a></p></li>
+<li><p>Denker et al (2016)
+<a class="reference external" href="https://doi.org/doi:10.1007/978-3-319-50862-7_5">doi:10.1007/978-3-319-50862-7_5</a></p></li>
+<li><p>Teeters et al (2015)
+<a class="reference external" href="https://doi.org/doi:10.1016/j.neuron.2015.10.025">doi:10.1016/j.neuron.2015.10.025</a></p></li>
+</ul>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#install-developer-version">Install developer version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#build-nixpy-from-source">Build NIXPy from Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#dependencies">Dependencies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standardization.html#standardization-of-metadata">Standardization of metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standardization.html#standardization-of-data">Standardization of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standardization.html#domain-specific-high-level-apis">Domain-specific high-level APIs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Tutorials</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="high-level-api-reference">
+<h2>High Level API Reference<a class="headerlink" href="#high-level-api-reference" title="Permalink to this headline">¶</a></h2>
+<p>User API documentation for Data and Metadata</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#file">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#block">Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#dataarray">DataArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#dataset">DataSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#dataframe">DataFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#tags">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#source">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#group">Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#section">Section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#property">Property</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="advanced">
+<h2>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="internal-nixio-api-developer-documentation">
+<h3>Internal NIXIO API Developer Documentation<a class="headerlink" href="#internal-nixio-api-developer-documentation" title="Permalink to this headline">¶</a></h3>
+<p>The API documentation of internal modules, for NIXPy developers.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.block">nixio.block module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.compression">nixio.compression module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.container">nixio.container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.data_array">nixio.data_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.data_frame">nixio.data_frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.data_set">nixio.data_set module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.data_view">nixio.data_view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.datatype">nixio.datatype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.dimension_type">nixio.dimension_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.dimensions">nixio.dimensions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.entity">nixio.entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.feature">nixio.feature module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.file">nixio.file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.group">nixio.group module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.info">nixio.info module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.link_type">nixio.link_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.multi_tag">nixio.multi_tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.property">nixio.property module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.section">nixio.section module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.source">nixio.source module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.source_link_container">nixio.source_link_container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.tag">nixio.tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio.validator">nixio.validator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/nixio.html#module-nixio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>All sources are available under MIT open-souce license and is hosted on <a class="reference external" href="https://github.com/g-node/nixpy">GitHub</a>.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="basic_idea.html" class="btn btn-neutral float-right" title="Idea" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

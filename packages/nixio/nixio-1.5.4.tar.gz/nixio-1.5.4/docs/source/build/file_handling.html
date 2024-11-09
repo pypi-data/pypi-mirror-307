@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File handling &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Storing data" href="storing_data.html" />
+    <link rel="prev" title="Tutorials" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#list-of-tutorials">List of tutorials</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">File handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#file-modes">File modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-new-file">Creating a new file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opening-existing-files">Opening existing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enabling-compression">Enabling compression</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Tutorials</a> &raquo;</li>
+        
+      <li>File handling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/file_handling.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="storing_data.html" class="btn btn-neutral float-right" title="Storing data" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="file-handling">
+<h1>File handling<a class="headerlink" href="#file-handling" title="Permalink to this headline">¶</a></h1>
+<p>The <em>File</em> entity encapsulates all information of a dataset. <em>File</em>
+entities keep some general information such as creation time and date,
+format version etc. It is the entry-point to a <em>NIX</em> file.</p>
+<div class="section" id="file-modes">
+<h2>File modes<a class="headerlink" href="#file-modes" title="Permalink to this headline">¶</a></h2>
+<p>A <em>NIX</em> file can be opened in one of three modes:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.FileMode.Overwrite</span></code> Used for creating a new file or overwriting any content
+in an existing one!</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadWrite</span></code> Opens a file if it exists or otherwise creates a new
+one. Does <strong>not</strong> overwrite existing content.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadOnly</span></code> Opens an existing file. The content can not be changed.
+Will raise an error when the provided path is invalid (e.g. the file
+does not exist).</p></li>
+</ol>
+</div>
+<div class="section" id="creating-a-new-file">
+<h2>Creating a new file<a class="headerlink" href="#creating-a-new-file" title="Permalink to this headline">¶</a></h2>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Creating a new nix file with <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.Overwite</span></code> or <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadWrite</span></code> (<a class="reference download internal" download="" href="_downloads/e6a96a8f983b9f8ab1eec305adaa2722/fileCreate.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nixio</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+
+<span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;file_create_example.nix&#39;</span>
+
+<span class="c1"># create a new file overwriting any existing content</span>
+<span class="hll"><span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Nix file: </span><span class="si">%s</span><span class="se">\n\t</span><span class="s2">format: </span><span class="si">%s</span><span class="se">\n\t</span><span class="s2">version: </span><span class="si">%s</span><span class="se">\n\t</span><span class="s2">created at: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">format</span><span class="p">,</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
+                                                                       <span class="nb">str</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromtimestamp</span><span class="p">(</span><span class="n">nixfile</span><span class="o">.</span><span class="n">created_at</span><span class="p">))))</span>
+<span class="n">nixfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+</pre></div>
+</div>
+</div>
+<p>As mentioned above, using <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.Overwrite</span></code> will destroy any existing content of the file. <strong>By default</strong>, if the <code class="docutils literal notranslate"><span class="pre">FileMode</span></code> flag is not specified, a file is opened in the <code class="docutils literal notranslate"><span class="pre">FileMode.ReadWrite</span></code> mode.</p>
+<p>In this tutorial files will always have the extension <code class="docutils literal notranslate"><span class="pre">*.nix</span></code>. This is not specified in the library and you are free to use any file extension.</p>
+</div>
+<div class="section" id="opening-existing-files">
+<h2>Opening existing files<a class="headerlink" href="#opening-existing-files" title="Permalink to this headline">¶</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadWrite</span></code> or <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadOnly</span></code> to open
+an existing file to work with the data. If you want to overwrite <em>any</em>
+existing content in order to replace the file use
+<code class="docutils literal notranslate"><span class="pre">nixio.FileMode.Overwite</span></code>.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">ReadOnly</span></code> mode, you cannot change the file content:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># re-open file for read-only access</span>
+<span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">ReadOnly</span><span class="p">)</span>
+
+<span class="c1"># this command will fail putting out an error</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;test block&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Error caught: cannot create a new group in nix.FileMode.ReadOnly mode&quot;</span><span class="p">)</span>
+
+<span class="n">nixfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In order to change the file content the file needs to be opened in <code class="docutils literal notranslate"><span class="pre">ReadWrite</span></code> mode:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># re-open for read-write access, creating new entities will work</span>
+<span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">ReadWrite</span><span class="p">)</span>
+<span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;test block&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">nixfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Trying to open an non-existing file in <code class="docutils literal notranslate"><span class="pre">ReadOnly</span></code> mode will lead to an
+error!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nonexistingfilename</span> <span class="o">=</span> <span class="s2">&quot;nonexistingfile.nix&quot;</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">nonexistingfilename</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">ReadOnly</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Error caught: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;One cannot open a file, that is not existing and forbidding the library to write it.&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="enabling-compression">
+<h2>Enabling compression<a class="headerlink" href="#enabling-compression" title="Permalink to this headline">¶</a></h2>
+<p>By default, data stored inside a <em>NIX</em> file will not be compressed. You
+can switch on compression during file opening.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">nixio</span><span class="o">.</span><span class="n">Compression</span><span class="o">.</span><span class="n">DeflateNormal</span><span class="p">)</span>
+<span class="n">nixfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Compression is handled transparently by the hdf5-library, no further
+user interaction is required. Compression reduces reading and writing
+performance. You can choose to switch off compression on individual
+<em>DataArray</em>s by passing the <code class="docutils literal notranslate"><span class="pre">nixio.Compression.No</span></code> flag at
+the time of creation.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="storing_data.html" class="btn btn-neutral float-right" title="Storing data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Storing data &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tagging points and regions" href="tagging.html" />
+    <link rel="prev" title="File handling" href="file_handling.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#list-of-tutorials">List of tutorials</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Storing data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-dataarray">The DataArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dimensions">Dimensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-storing">Advanced storing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-dataframe">The DataFrame</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html">Tagging points and regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tagging.html#handling-of-units">Handling of units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">nixio package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Tutorials</a> &raquo;</li>
+        
+      <li>Storing data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/storing_data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="tagging.html" class="btn btn-neutral float-right" title="Tagging points and regions" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="file_handling.html" class="btn btn-neutral float-left" title="File handling" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="storing-data">
+<h1>Storing data<a class="headerlink" href="#storing-data" title="Permalink to this headline">¶</a></h1>
+<p>When storing data, we have two main requirements: 1. We want to be able
+to store <strong>n-dimensional</strong> data structures. 2. The data structures must
+be <strong>self-explanatory</strong>, that is, they must contain sufficient
+information to draw a basic plot of the data.</p>
+<p><img alt="sampled_plot" src="_images/regular_sampled.png" />
+.. _sampled_plot:</p>
+<p>Considering the simple plot above, we can list all
+information that it shows and by extension, that needs to be stored in
+order to reproduce it.</p>
+<ul class="simple">
+<li><p>the data (voltage measurements)</p></li>
+<li><p>the y-axis labeling, i.e. label (voltage) and unit (mV)</p></li>
+<li><p>the x-axis labeling, i.e. label (time) and unit (s)</p></li>
+<li><p>the x-position for each data point</p></li>
+<li><p>a title/legend</p></li>
+</ul>
+<p>In this, and in most cases, it would be inefficient to store x-, and
+y-position for each plotted point. The voltage measurements have been done
+in regular (time) intervals. Thus, we rather need to store the measured
+values and a definition of the x-axis consisting of an offset, the
+sampling interval, a label, and a unit.</p>
+<p>This is exactly the approach chosen in <em>NIX</em>. For each dimension of the
+data a <strong>dimension descriptor</strong> must be given. In <em>NIX</em> we define three
+dimension descriptors:</p>
+<ol class="arabic simple">
+<li><p><em>SampledDimension</em>: Used if a dimension is sampled at regular
+intervals.</p></li>
+<li><p><em>RangeDimension</em>: Used if a dimension is sampled at irregular
+intervals. The instances at which the data has been sampled are stored as <em>ticks</em>. These ticks may also be stored in a <em>DataArray</em> or <em>DataFrame</em>, the Range Dimension can link to it.</p></li>
+<li><p><em>SetDimension</em>: Used for dimensions that represent categories rather
+than physical quantities.</p></li>
+</ol>
+<div class="section" id="the-dataarray">
+<h2>The DataArray<a class="headerlink" href="#the-dataarray" title="Permalink to this headline">¶</a></h2>
+<p>The <em>DataArray</em> is the most central entity of the <em>NIX</em> data model. As
+almost all other <em>NIX</em>-entities it requires a <em>name</em> and a <em>type</em>. Both
+are not restricted but names must be <strong>unique</strong> within a <em>Block</em>. <em>type</em>
+information can be used to introduce semantic meaning and
+domain-specificity. Upon creation, a unique ID will be assigned to the
+<em>DataArray</em>.</p>
+<p>The <em>DataArray</em> stores the actual data together with label and unit. In
+addition, the <em>DataArray</em> needs a dimension descriptor for each data
+dimension. The following snippet shows how to create a <em>DataArray</em> and
+store data in it.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Storing data in a DataArray (<a class="reference download internal" download="" href="_downloads/d026704f45f4dfc041b1e755c338efee/regularlySampledData.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">data</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;sinewave&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.regular_sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="hll">    <span class="n">data</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+</span>    <span class="n">data</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="c1"># add a descriptor for the xaxis</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<p>As promised, the <em>DataArray</em> contains all information to create a basic plot (see the figure above).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">x_axis</span> <span class="o">=</span> <span class="n">data_array</span><span class="o">.</span><span class="n">dimensions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="hll">    <span class="n">x</span> <span class="o">=</span> <span class="n">x_axis</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="n">data_array</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span class="hll">    <span class="n">y</span> <span class="o">=</span> <span class="n">data_array</span><span class="o">.</span><span class="n">data</span><span class="p">[:]</span>
+</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">data_array</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">x_axis</span><span class="o">.</span><span class="n">label</span> <span class="o">+</span> <span class="s2">&quot; [&quot;</span> <span class="o">+</span> <span class="n">x_axis</span><span class="o">.</span><span class="n">unit</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span><span class="p">)</span>
+<span class="hll">    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">data_array</span><span class="o">.</span><span class="n">label</span> <span class="o">+</span> <span class="s2">&quot; [&quot;</span> <span class="o">+</span> <span class="n">data_array</span><span class="o">.</span><span class="n">unit</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span><span class="p">)</span>
+</span><span class="hll">    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span>    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="mf">1.1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+</pre></div>
+</div>
+<p>The highlighted lines emphasize how information from the dimension descriptor (a <em>SampledDimension</em>) and the <em>DataArray</em> itself are used for labeling the plot.</p>
+<p>In the example shown above, the <em>NIX</em> library will figure out the
+dimensionality of the data, the shape of the data and its type. The data
+type and the dimensionality (i.e. the number of dimensions) are fixed
+once the <em>DataArray</em> has been created. The actual size of the
+<em>DataArray</em> can be changed during the life-time of the entity.</p>
+<p>In case you need more control, <em>DataArrays</em> can be created empty for
+later filling e.g. during data acquisition.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;sinewave&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">nix</span><span class="o">.</span><span class="n">DataType</span><span class="o">.</span><span class="n">Double</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>The resulting <em>DataArray</em> will have an initial size (100 elements) which
+will be automatically resized, if required. The data type is set to
+<code class="docutils literal notranslate"><span class="pre">nixio.DataType.Double</span></code>. The <em>NIX</em> library will further try to convert passed data to the
+defined data type, if possible. <strong>Note:</strong> Data type and rank (i.e. the number of dimensions) cannot be altered after the <em>DataArray</em> has been created.</p>
+<p>Data is then set by calling</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="o">.</span><span class="n">write_direct</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Data is read from a DataArray by accessing it in numpy style.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># read the full data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">array</span><span class="p">[:]</span>
+
+<span class="c1"># reading only the first 100 points</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">array</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
+
+<span class="c1"># replacing data</span>
+<span class="n">array</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><em>DataArrays</em> can also be extended by <code class="docutils literal notranslate"><span class="pre">appending</span></code> data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;test data&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">data_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dimensions">
+<h2>Dimensions<a class="headerlink" href="#dimensions" title="Permalink to this headline">¶</a></h2>
+<p>Within the <em>DataArray</em> we can store n-dimensional data. For each
+dimension we must provide a <em>dimension descriptor</em>. The following
+introduces the individual descriptors.</p>
+<div class="section" id="sampleddimension">
+<h3>SampledDimension<a class="headerlink" href="#sampleddimension" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="1-D regular sampled data" src="_images/regular_sampled.png" />
+</div>
+<p>Here we have the same situation as before, the data has been sampled in
+regular intervals. That is, the time between successive data points is
+always the same. The x-axis can be fully described with just a few
+parameters:</p>
+<ol class="arabic simple">
+<li><p>sampling interval</p></li>
+<li><p>offset</p></li>
+<li><p>label</p></li>
+<li><p>unit</p></li>
+</ol>
+<p>The <em>SampledDimension</em> entity is used in such situations and needs to be
+added to the <em>DataArray</em> entity upon creation:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">A dimension in which the data has been gathered in regular intervals is described using a <em>SampledDimension</em> (<a class="reference download internal" download="" href="_downloads/d026704f45f4dfc041b1e755c338efee/regularlySampledData.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">data</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="c1"># add a descriptor for the xaxis</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">stepsize</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="hll">
+</span>    <span class="c1"># let&#39;s plot the data from the stored information</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="setdimension">
+<h3>SetDimension<a class="headerlink" href="#setdimension" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="simple plot with categories" src="_images/set_dimension.png" />
+</div>
+<p>If we need to store data that falls into categories, i.e. the
+x-positions are not numeric or the dimension does not have a natural
+order, a <em>SetDimension</em> is used. It stores a label for each entry along
+the described dimension.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">A categorical data dimension is described with a <em>SetDimension</em> which (optionally) stores labels for each category (<a class="reference download internal" download="" href="_downloads/935a1886df78df39f8821833555cc32f/categoryData.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>)</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">data_array</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;category data&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.categorical&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;temperature&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;K&quot;</span>
+
+    <span class="n">data_array</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">(</span><span class="n">categories</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="rangedimension">
+<h3>RangeDimension<a class="headerlink" href="#rangedimension" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default">
+<img alt="1-D irregularly sampled data" src="_images/irregular_sampled.png" />
+</div>
+<p>A signal similar to what we had before is recorded but this time the temporal
+distance between the measurements is not regular. Storing this kind
+of data is not as efficient as in the regularly sampled case since we need to store the time of each measurement and the measured value. The following information needs to be stored to describe the dimension:</p>
+<ol class="arabic simple">
+<li><p>x-positions of the data points, i.e. <em>ticks</em></p></li>
+<li><p>label</p></li>
+<li><p>unit</p></li>
+</ol>
+<p>In this kind of dimension we store a <em>range</em> of ticks, therefore the
+name <em>RangeDimension</em>. It needs to be added to the <em>DataArray</em> when it
+is created.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Storing irregularly sampled data (<a class="reference download internal" download="" href="_downloads/889ed33cc992528c7f8cc7a2a57213c2/irregularlySampledData.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">times</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="n">create_data</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">)</span>
+<span class="hll">
+</span>    <span class="c1"># create a new file overwriting any existing content</span>
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;irregular_data_example.nix&#39;</span>
+    <span class="nb">file</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">)</span>
+
+    <span class="c1"># create a &#39;Block&#39; that represents a grouping object. Here, the recording session.</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;block name&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.session&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create a &#39;DataArray&#39; to take the data, add some information about the signal</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;sinewave&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.irregular_sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="c1"># add a descriptor for the xaxis</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append_range_dimension</span><span class="p">(</span><span class="n">ticks</span><span class="o">=</span><span class="n">times</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+<span class="hll">
+</span></pre></div>
+</div>
+</div>
+<p><strong>Note:</strong> The <em>ticks</em> of a <em>RangeDimension</em> must be numeric and ascending.</p>
+<p>The <em>RangeDimension</em> can do a more. Consider the case that the times of an event are stored:</p>
+<div class="figure align-default">
+<img alt="1-D event data" src="_images/alias_range.png" />
+</div>
+<p>For example these might be the times of action potentials (aka spikes) recorded in a nerve. In such a case it is basically the x-values that are of interest. It would be inefficient to store them twice, first as values in the <em>DataArray</em> and then again as ticks in the dimension descriptor.
+In such cases the <em>RangeDimension</em> is set up to link to the <em>DataArray</em> itself.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">A <em>RangeDimension</em> can link to a <em>DataArray</em> as a source of the ticks (<a class="reference download internal" download="" href="_downloads/065f28e505f83c2183da045561d22ab0/rangeDimensionLink.py"><code class="xref download docutils literal notranslate"><span class="pre">exmaple</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">event_times</span> <span class="o">=</span> <span class="n">create_data</span><span class="p">(</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;range_link.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;session&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.session&quot;</span><span class="p">)</span>
+
+    <span class="n">data_array</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;event times&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.event.times&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">event_times</span><span class="p">)</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;time&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;s&quot;</span>
+<span class="hll">    <span class="n">data_array</span><span class="o">.</span><span class="n">append_range_dimension_using_self</span><span class="p">()</span>
+</span></pre></div>
+</div>
+</div>
+<p>In the highlighted line we use a convenience function to establish the link between the dimension descriptor and the</p>
+<p>This function is a shortcut for:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rdim</span> <span class="o">=</span> <span class="n">data_array</span><span class="o">.</span><span class="n">append_range_dimension</span><span class="p">()</span>
+<span class="n">rdim</span><span class="o">.</span><span class="n">create_link</span><span class="p">(</span><span class="n">data_array</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>In the same way one can set up the <em>RangeDimension</em> to use a <em>DataFrame</em>. The <code class="docutils literal notranslate"><span class="pre">index</span></code> defines which slice of the data stored in the <em>DataArray/Frame</em> holds the ticks. The slice must be a 1-D vector within the linked data. If, for example, the <em>DataArray</em> is 2-D and the ticks are in the 3rd column then the index would be <code class="docutils literal notranslate"><span class="pre">[-1,</span> <span class="pre">3]</span></code>. The <code class="docutils literal notranslate"><span class="pre">-1</span></code> marks the dimension along which to look for the ticks. When linking <em>DataFrames</em> the index notes the column.</p>
+</div>
+</div>
+<div class="section" id="advanced-storing">
+<h2>Advanced storing<a class="headerlink" href="#advanced-storing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-compression">
+<h3>Data compression<a class="headerlink" href="#data-compression" title="Permalink to this headline">¶</a></h3>
+<p>By default data is stored uncompressed. If you want to use data
+compression this can be enabled by providing the
+<code class="docutils literal notranslate"><span class="pre">nixio.Compression.DeflateNormal</span></code> flag during file-opening:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nixio</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;test.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">nixio</span><span class="o">.</span><span class="n">Compression</span><span class="o">.</span><span class="n">DeflateNormal</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>By doing this, all data will be stored with compression enabled, if
+not explicitly stated otherwise. At any time you can select or deselect
+compression by providing a <code class="docutils literal notranslate"><span class="pre">nixio.Compression</span></code> flag during <em>DataArray</em>
+creation. Available flags are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.Compression.Auto</span></code>: compression as defined during
+file-opening.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.Compression.DeflateNormal</span></code>: use compression (fixed level).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.CompressionNo</span></code>: no compression.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_array</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;some data&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">nix</span><span class="o">.</span><span class="n">Compression</span><span class="o">.</span><span class="n">DeflateNormal</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note the following:</p>
+<ol class="arabic simple">
+<li><p>Compression comes with a little cost of read-write performance.</p></li>
+<li><p>Data compression is fixed once the <em>DataArray</em> has been created, it
+cannot be changed afterwards.</p></li>
+<li><p>Opening and extending an compressed <em>DataArray</em> is easily possible
+even if the file has not been opened with the
+<code class="docutils literal notranslate"><span class="pre">nixio.Compression.DeflateNormal</span></code> flag.</p></li>
+</ol>
+</div>
+<div class="section" id="supported-datatypes">
+<h3>Supported DataTypes<a class="headerlink" href="#supported-datatypes" title="Permalink to this headline">¶</a></h3>
+<p><em>DataArrays</em> can store a multitude of different data types. The
+supported data types are defined in the <code class="docutils literal notranslate"><span class="pre">nixio.DataType</span></code> enumeration:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Bool</span></code>: 1 bit boolean value.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Char</span></code>: 8 bit charater.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Float</span></code>: floating point number.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Double</span></code>: double precision floating point number.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Int8</span></code>: 8 bit integer, signed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Int16</span></code>: 16 bit integer, signed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Int32</span></code>: 32 bit integer, signed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Int64</span></code>: 64 bit integer, signed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.UInt8</span></code>: 8 bit unsigned int.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.UInt16</span></code>: 16 bit unsigned int.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.UInt32</span></code>: 32 bit unsigned int.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.UInt64</span></code>: 64 bit unsigned int.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.String</span></code>: string value.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nixio.DataType.Opaque</span></code>: data type for binary data.</p></li>
+</ul>
+<p>The data type of a <em>DataArray</em> must be specified at creation time and
+cannot be changed. In many cases, the <em>NIX</em> library will try to handle
+data types transparently and cast data to the data type specified for
+the <em>DataArray</em> in which it is supposed to be stored.</p>
+</div>
+<div class="section" id="extending-datasets-on-the-fly">
+<h3>Extending datasets on the fly<a class="headerlink" href="#extending-datasets-on-the-fly" title="Permalink to this headline">¶</a></h3>
+<p>The dimensionality (aka rank) and the stored <em>DataType</em> of a <em>DataArray</em>
+are fixed. The actual size of the stored dataset, however, can
+changed. This is often used when you acquire data continuously e.g. while
+recording during an experiment. In nixpy the resizing is handled transparently.</p>
+<p>The workflow would be:</p>
+<ol class="arabic simple">
+<li><p>Preparations: Open a nix-file in <code class="docutils literal notranslate"><span class="pre">nixio.FileMode.ReadWrite</span></code> or
+<code class="docutils literal notranslate"><span class="pre">nixio.FileMode.Overwrite</span></code>. Create or open the <em>DataArray</em>.</p></li>
+<li><p>Acquire more data.</p></li>
+<li><p>Append the acquired data to the data array.</p></li>
+<li><p>Acquire more data.</p></li>
+</ol>
+<p>The following code shows how this works.</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">Extending <em>DataArray</em> size e.g while recording continuously (<a class="reference download internal" download="" href="_downloads/3cc738df9b517be517a12594d61fee55/continuousRecording.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>)</span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">number_of_chunks</span> <span class="o">=</span> <span class="mi">100</span>
+
+    <span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;continuous_recording.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">nixio</span><span class="o">.</span><span class="n">Compression</span><span class="o">.</span><span class="n">DeflateNormal</span><span class="p">)</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;Session 1&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.recording_session&quot;</span><span class="p">)</span>
+    <span class="n">data_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;multichannel_data&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled.multichannel&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">nixio</span><span class="o">.</span><span class="n">DataType</span><span class="o">.</span><span class="n">Double</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">chunk_samples</span><span class="p">,</span> <span class="n">number_of_channels</span><span class="p">))</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;channel </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number_of_channels</span><span class="p">)])</span>
+
+    <span class="n">chunks_recorded</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">chunks_recorded</span> <span class="o">&lt;</span> <span class="n">number_of_chunks</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">record_data</span><span class="p">(</span><span class="n">chunk_samples</span><span class="p">,</span> <span class="n">number_of_channels</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">chunks_recorded</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">data_array</span><span class="o">.</span><span class="n">write_direct</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">chunks_recorded</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;recorded chunks </span><span class="si">%i</span><span class="s2">: array shape </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">chunks_recorded</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">data_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)))</span>
+
+</pre></div>
+</div>
+</div>
+<p><strong>Note!</strong> Selecting the initial shape defines the chunk size used to
+write the data to file. Choose it appropriately for the expected size
+increment. Selecting a size that is too small can severly affect
+efficiency.</p>
+<div class="figure align-default">
+<img alt="recording multiple channels" src="_images/multiple_channels.png" />
+</div>
+</div>
+</div>
+<div class="section" id="the-dataframe">
+<h2>The DataFrame<a class="headerlink" href="#the-dataframe" title="Permalink to this headline">¶</a></h2>
+<p>The DataFrame stores tabular data in a rows-and-columns format. Each Column has a name, a data type, and, optionally, a unit and a definition.</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">A DataFrame is created by providing the column definition which consists of a name and the data type that should be stored in each column. Units can be added lateron. It is best to use OrderdDicts to make sure, that the column order is as defined (standard dictionaries do not guarantee the order of the items). <a class="reference download internal" download="" href="_downloads/b16a2d166c101e05fdbc292b0526f12a/tabulardata.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a></span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">block</span> <span class="o">=</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;test block&quot;</span><span class="p">,</span> <span class="s2">&quot;recordingsession&quot;</span><span class="p">)</span>
+    <span class="n">column_definitions</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">),</span>
+                                      <span class="p">(</span><span class="s1">&#39;amplitude&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;frequency&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)])</span>
+
+    <span class="n">column_units</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="s2">&quot;mV&quot;</span><span class="p">,</span> <span class="s2">&quot;Hz&quot;</span><span class="p">]</span>
+    <span class="n">column_data</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.18</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;beta&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.09</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mi">101</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;gamma&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.05</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;delta&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.15</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;epsilon&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.23</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;fi&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.07</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;zeta&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.12</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mi">39</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;eta&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.27</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;theta&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.15</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">,</span> <span class="mi">400</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s2">&quot;iota&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">create_id</span><span class="p">()[:</span><span class="mi">10</span><span class="p">],</span> <span class="mf">20.08</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)]</span>
+
+    <span class="n">data_frame</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_frame</span><span class="p">(</span><span class="s2">&quot;test data frame&quot;</span><span class="p">,</span> <span class="s2">&quot;signal1&quot;</span><span class="p">,</span>
+                                         <span class="n">data</span><span class="o">=</span><span class="n">column_data</span><span class="p">,</span> <span class="n">col_dict</span><span class="o">=</span><span class="n">column_definitions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>For a quick overview one can use the <code class="docutils literal notranslate"><span class="pre">DataFrame.print_table()</span></code> method</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>column:     name       id       time   amplitude frequency
+unit:                          s         mV        Hz
+[0]:    alpha   e28e0735-1  20.18      5.0      100.0
+[1]:     beta   74942839-1  20.09      5.5      101.0
+[2]:    gamma   0886ef1a-2  20.05      5.1      100.0
+[3]:    delta   0ac53fd2-7  20.15      5.3      150.0
+[4]:   epsilon  a54b35df-1  20.23      5.7      200.0
+[5]:      fi    70eb952c-0  20.07      5.2      300.0
+[6]:     zeta   130ad527-d  20.12      5.1       39.0
+[7]:     eta    042a460c-e  20.27      5.1      600.0
+[8]:    theta   1f2c1df8-f  20.15      5.6      400.0
+[9]:     iota   c4598a1e-b  20.08      5.1      200.0
+</pre></div>
+</div>
+<p>The DataFrame offers several methods to get basic information about the table:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;size, aka number of rows: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;column names: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">column_names</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;column definition: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;column units: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">units</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Leading to the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>size, aka number of rows:  10
+column names:  (&#39;name&#39;, &#39;id&#39;, &#39;time&#39;, &#39;amplitude&#39;, &#39;frequency&#39;)
+column definition:  [(&#39;name&#39;, dtype(&#39;O&#39;), None), (&#39;id&#39;, dtype(&#39;O&#39;), None), (&#39;time&#39;, dtype(&#39;&lt;f8&#39;), &#39;s&#39;), (&#39;amplitude&#39;, dtype(&#39;&lt;f8&#39;), &#39;mV&#39;), (&#39;frequency&#39;, dtype(&#39;&lt;f8&#39;), &#39;Hz&#39;)]
+column units:  [None None &#39;s&#39; &#39;mV&#39; &#39;Hz&#39;]
+</pre></div>
+</div>
+<p>Reading of the table data is possible for individual cells, entire columns, or selected rows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;single cell by position: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">read_cell</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;single cell by name and row index: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">read_cell</span><span class="p">(</span><span class="n">col_name</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">row_idx</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entire ID column: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">read_columns</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Two columns, id and name, joined: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">read_columns</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">]))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entire rows with indices 0 and 2: &quot;</span><span class="p">,</span> <span class="n">data_frame</span><span class="o">.</span><span class="n">read_rows</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span>
+</pre></div>
+</div>
+<p>Which yields the following outputs:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>single cell by position:  alpha
+single cell by name and row index:  alpha
+Entire ID column:  [&#39;f0299d50-b&#39; &#39;c74d3b7c-0&#39; &#39;e27bb6f7-2&#39; &#39;8bac251b-7&#39; &#39;aecc18d4-a&#39;
+&#39;268c8dea-f&#39; &#39;88de352a-d&#39; &#39;4bdac82c-b&#39; &#39;5671ed6e-b&#39; &#39;0a7bf5e4-9&#39;]
+Two columns, id and name, joined:  [(&#39;f0299d50-b&#39;, &#39;alpha&#39;) (&#39;c74d3b7c-0&#39;, &#39;beta&#39;) (&#39;e27bb6f7-2&#39;, &#39;gamma&#39;)
+(&#39;8bac251b-7&#39;, &#39;delta&#39;) (&#39;aecc18d4-a&#39;, &#39;epsilon&#39;) (&#39;268c8dea-f&#39;, &#39;fi&#39;)
+(&#39;88de352a-d&#39;, &#39;zeta&#39;) (&#39;4bdac82c-b&#39;, &#39;eta&#39;) (&#39;5671ed6e-b&#39;, &#39;theta&#39;)
+(&#39;0a7bf5e4-9&#39;, &#39;iota&#39;)]
+Entire rows with indices 0 and 2:  [(&#39;alpha&#39;, &#39;f0299d50-b&#39;, 20.18, 5. , 100.)
+(&#39;gamma&#39;, &#39;e27bb6f7-2&#39;, 20.05, 5.1, 100.)]
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="tagging.html" class="btn btn-neutral float-right" title="Tagging points and regions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="file_handling.html" class="btn btn-neutral float-left" title="File handling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

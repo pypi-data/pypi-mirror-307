@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Changes in version 1.5 &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.3 Release documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials" href="getting_started.html" />
+    <link rel="prev" title="Support for standardization" href="standardization.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">Use-cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes in version 1.5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#model-changes">Model changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-changes">API changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#misc">Misc</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">Internal API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nixpy/blob/master/LICENSE">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">Contributing guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Changes in version 1.5</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/news.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="standardization.html" class="btn btn-neutral float-left" title="Support for standardization" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changes-in-version-1-5">
+<h1>Changes in version 1.5<a class="headerlink" href="#changes-in-version-1-5" title="Permalink to this headline">¶</a></h1>
+<p>With version 1.5 we introduced several changes on the library as well as on the data model side (nix model version 1.2). <strong>Some of these changes are breaking changes.</strong> That is, you may need to adapt your code. Or convert files (see below).</p>
+<p>Files written with nixpy versions &lt; 1.5 (model version 1.1) can be opened for reading <strong>but not</strong> for writing. Trying to do so will lead to an exception:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nixio</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Opening in ReadOnly mode is possible.&quot;</span><span class="p">)</span>
+<span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;old_format_file.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">ReadOnly</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;file format version:&quot;</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Opening in ReadWrite model will fail:&quot;</span><span class="p">)</span>
+<span class="n">nixfile</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;old_format_file.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">ReadWrite</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Opening in ReadOnly mode is possible.
+File format version: (1, 1, 0)
+Opening in ReadWrite model will fail:
+    159         if mode == FileMode.ReadWrite:
+    160             if not can_write(self):
+--&gt; 161                 raise RuntimeError(&quot;Cannot open file for writing. &quot;
+    162                                    &quot;Incompatible version.&quot;)
+    163         elif mode == FileMode.ReadOnly:
+
+    RuntimeError: Cannot open file for writing. Incompatible version.
+</pre></div>
+</div>
+<p>You may want to convert such files using the <code class="docutils literal notranslate"><span class="pre">nixio</span></code> command line tool that comes with the library.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nixio upgrade --help
+</pre></div>
+</div>
+<p>Or implement conversion into your code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nixio</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;test.nix&quot;</span>
+<span class="n">nixio</span><span class="o">.</span><span class="n">file_upgrade</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Pass <code class="docutils literal notranslate"><span class="pre">quiet=False</span></code> in order to get some feedback on what the tool did. <strong>Note: Files are replaced *in place*. Make sure to backup your files before upgrading.</strong></p>
+<div class="section" id="model-changes">
+<h2>Model changes<a class="headerlink" href="#model-changes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>the metadata model was simplified to reflect the changes introduced to the underlying <strong>odml</strong> data model. Accordingly the <em>Value</em> entity does no longer exist. New versions of the library can read but not write old data. Experience showed that almost all use cases stored single Values in a <em>Property</em>. The overhead (code and also file size) of keeping each value in a separate Entity is not justified. The <em>Property</em> now keeps all information that was Value related, such as the uncertainty. If you want to store multiple values in a property this is still possible but they have to have the same data type. (see <a class="reference internal" href="annotations.html#annotations-with-arbitrary-metadata"><span class="std std-ref">Annotations with arbitrary metadata</span></a> for more information).</p></li>
+<li><p>New <em>DataFrame</em> entity that stores tabular data. Each column has a name, unit, and data type. (see <a class="reference internal" href="storing_data.html#the-dataframe"><span class="std std-ref">The DataFrame</span></a> for more information).</p></li>
+<li><p><em>Tags</em> and <em>MultiTags</em> can link to DataFrames as features.</p></li>
+<li><p><em>RangeDimensions</em> ticks can now be stored within the dimension descriptor, or in linked DataArrays or DataFrames. Ticks must still be one-dimensional (see <a class="reference internal" href="storing_data.html#rangedimension"><span class="std std-ref">RangeDimension</span></a> for more information).</p></li>
+<li><p>Because of the above change, the former <em>AliasRangeDimension</em> is no longer needed. The same functionality is achieved by linking the <em>RangeDimension</em> to the <em>DataArray</em> itself.</p></li>
+</ul>
+</div>
+<div class="section" id="api-changes">
+<h2>API changes<a class="headerlink" href="#api-changes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DataArray.append_alias_range_dimension</span></code> has been removed. Use <code class="docutils literal notranslate"><span class="pre">DataArray.append_range_dimension_using_self</span></code> for the same effect.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SampledDimension.axis</span></code> can now be called with an optional argument <code class="docutils literal notranslate"><span class="pre">start_position</span></code> to get an axis that starts at the given position. Starting at a given index is still possible.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Block.create_data_array</span></code> has additional keyword-arguments to directly provide label and unit.</p></li>
+</ul>
+</div>
+<div class="section" id="misc">
+<h2>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h2>
+<p>Extended command line tool abilities; The <code class="docutils literal notranslate"><span class="pre">nixio</span></code> command line tool now bundles commands for validating files, upgrading old files to the current version, and to explore file content.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nixio --help
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>usage: nixio [-h] {explore,validate,upgrade}
+
+Command line interface for nixio tools
+
+optional arguments:
+-h, --help            show this help message and exit
+
+commands:
+{explore,validate,upgrade}
+   explore             Search for information within NIX file(s). Use the &quot;file&quot; command for general
+                        information about the file(s). The verbose flag can be used to get more detailed
+                        information about the file structure. Multiple -v options increase the
+                        verbosity. (e.g. &#39;nixio explore file nix_file -vvv&#39; for most detailed output).
+                        The &quot;metadata&quot; (mdata) and &quot;data&quot; commands provide further options for finding
+                        and viewing data and metadata information. With the &quot;dump&quot; subcommand data can
+                        be dumped to file (up to 3D data). The &quot;plot&quot; command is only available if the
+                        nixworks package is installed (https://github.com/G-node/nixworks). NOTE: This
+                        tool is under active development. Please use the github issue tracker
+                        (https://github.com/G-node/nixpy/issues) for bug reports and feature requests.
+   validate            Validate NIX files for missing or inconsistent objects and annotations.
+   upgrade             Upgrade NIX files to newest file format version.
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="standardization.html" class="btn btn-neutral float-left" title="Support for standardization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

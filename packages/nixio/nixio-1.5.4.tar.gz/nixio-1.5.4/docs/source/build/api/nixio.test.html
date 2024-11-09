@@ -1,0 +1,2219 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>nixio.test package &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nixio.test.xcompat package" href="nixio.test.xcompat.html" />
+    <link rel="prev" title="nixio.hdf5 package" href="nixio.hdf5.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="nixio.html">nixio package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nixio.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nixio.cmd.html">nixio.cmd package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.exceptions.html">nixio.exceptions package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.hdf5.html">nixio.hdf5 package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">nixio.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_block">nixio.test.test_block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_compression">nixio.test.test_compression module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_container">nixio.test.test_container module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_data_array">nixio.test.test_data_array module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_data_frame">nixio.test.test_data_frame module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_data_view">nixio.test.test_data_view module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_dimensions">nixio.test.test_dimensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_feature">nixio.test.test_feature module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_file">nixio.test.test_file module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_group">nixio.test.test_group module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_multi_tag">nixio.test.test_multi_tag module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_nix_compatibility">nixio.test.test_nix_compatibility module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_property">nixio.test.test_property module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_section">nixio.test.test_section module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_source">nixio.test.test_source module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_tag">nixio.test.test_tag module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_util">nixio.test.test_util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.test_validator">nixio.test.test_validator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test.tmp">nixio.test.tmp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.util.html">nixio.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.block">nixio.block module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.compression">nixio.compression module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.container">nixio.container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_array">nixio.data_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_frame">nixio.data_frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_set">nixio.data_set module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_view">nixio.data_view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.datatype">nixio.datatype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimension_type">nixio.dimension_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimensions">nixio.dimensions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.entity">nixio.entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.feature">nixio.feature module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.file">nixio.file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.group">nixio.group module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.info">nixio.info module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.link_type">nixio.link_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.multi_tag">nixio.multi_tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.property">nixio.property module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.section">nixio.section module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source">nixio.source module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source_link_container">nixio.source_link_container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.tag">nixio.tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.validator">nixio.validator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="nixio.html">nixio package</a> &raquo;</li>
+        
+      <li>nixio.test package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/nixio.test.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="nixio.test.xcompat.html" class="btn btn-neutral float-right" title="nixio.test.xcompat package" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="nixio.hdf5.html" class="btn btn-neutral float-left" title="nixio.hdf5 package" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nixio-test-package">
+<h1>nixio.test package<a class="headerlink" href="#nixio-test-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nixio.test.xcompat.html">nixio.test.xcompat package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nixio.test.xcompat.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.test.xcompat.html#module-nixio.test.xcompat.compile">nixio.test.xcompat.compile module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.test.xcompat.html#module-nixio.test.xcompat">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-nixio.test.test_block">
+<span id="nixio-test-test-block-module"></span><h2>nixio.test.test_block module<a class="headerlink" href="#module-nixio.test.test_block" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_block.</span></span><span class="sig-name descname"><span class="pre">TestBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_data_arrays">
+<span class="sig-name descname"><span class="pre">test_block_data_arrays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_data_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_definition">
+<span class="sig-name descname"><span class="pre">test_block_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_eq">
+<span class="sig-name descname"><span class="pre">test_block_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_find_sources">
+<span class="sig-name descname"><span class="pre">test_block_find_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_find_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_groups">
+<span class="sig-name descname"><span class="pre">test_block_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_groups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_id">
+<span class="sig-name descname"><span class="pre">test_block_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_multi_tags">
+<span class="sig-name descname"><span class="pre">test_block_multi_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_multi_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_name">
+<span class="sig-name descname"><span class="pre">test_block_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_sources">
+<span class="sig-name descname"><span class="pre">test_block_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_tags">
+<span class="sig-name descname"><span class="pre">test_block_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_timestamps">
+<span class="sig-name descname"><span class="pre">test_block_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_block_type">
+<span class="sig-name descname"><span class="pre">test_block_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_block_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_block.TestBlock.test_copy_on_block">
+<span class="sig-name descname"><span class="pre">test_copy_on_block</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_block.TestBlock.test_copy_on_block" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_compression">
+<span id="nixio-test-test-compression-module"></span><h2>nixio.test.test_compression module<a class="headerlink" href="#module-nixio.test.test_compression" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_compression.TestCompression">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_compression.</span></span><span class="sig-name descname"><span class="pre">TestCompression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_compression.TestCompression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_compression.TestCompression.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_compression.TestCompression.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_compression.TestCompression.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_compression.TestCompression.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_compression.TestCompression.test_compress_dataarray">
+<span class="sig-name descname"><span class="pre">test_compress_dataarray</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_compression.TestCompression.test_compress_dataarray" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_compression.compr_enabled">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_compression.</span></span><span class="sig-name descname"><span class="pre">compr_enabled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">da</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_compression.compr_enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_container">
+<span id="nixio-test-test-container-module"></span><h2>nixio.test.test_container module<a class="headerlink" href="#module-nixio.test.test_container" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_container.</span></span><span class="sig-name descname"><span class="pre">TestContainer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_bad_appends">
+<span class="sig-name descname"><span class="pre">test_bad_appends</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_bad_appends" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_da">
+<span class="sig-name descname"><span class="pre">test_delete_links_da</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_multitag">
+<span class="sig-name descname"><span class="pre">test_delete_links_multitag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_multitag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_references">
+<span class="sig-name descname"><span class="pre">test_delete_links_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_section_link">
+<span class="sig-name descname"><span class="pre">test_delete_links_section_link</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_section_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_sections">
+<span class="sig-name descname"><span class="pre">test_delete_links_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_sources">
+<span class="sig-name descname"><span class="pre">test_delete_links_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_tag">
+<span class="sig-name descname"><span class="pre">test_delete_links_tag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_delete_links_tag_features">
+<span class="sig-name descname"><span class="pre">test_delete_links_tag_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_delete_links_tag_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_file_references">
+<span class="sig-name descname"><span class="pre">test_file_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_file_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_index_getter">
+<span class="sig-name descname"><span class="pre">test_index_getter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_index_getter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_link_container_index_getter">
+<span class="sig-name descname"><span class="pre">test_link_container_index_getter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_link_container_index_getter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_link_container_name_getter">
+<span class="sig-name descname"><span class="pre">test_link_container_name_getter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_link_container_name_getter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_link_parent_references">
+<span class="sig-name descname"><span class="pre">test_link_parent_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_link_parent_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_name_getter">
+<span class="sig-name descname"><span class="pre">test_name_getter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_name_getter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_container.TestContainer.test_parent_references">
+<span class="sig-name descname"><span class="pre">test_parent_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_container.TestContainer.test_parent_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_data_array">
+<span id="nixio-test-test-data-array-module"></span><h2>nixio.test.test_data_array module<a class="headerlink" href="#module-nixio.test.test_data_array" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_data_array.</span></span><span class="sig-name descname"><span class="pre">TestDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_array_unicode">
+<span class="sig-name descname"><span class="pre">test_array_unicode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_array_unicode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_coefficients">
+<span class="sig-name descname"><span class="pre">test_data_array_coefficients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_coefficients" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_data">
+<span class="sig-name descname"><span class="pre">test_data_array_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_definition">
+<span class="sig-name descname"><span class="pre">test_data_array_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_dimensions">
+<span class="sig-name descname"><span class="pre">test_data_array_dimensions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_dtype">
+<span class="sig-name descname"><span class="pre">test_data_array_dtype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_dtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_eq">
+<span class="sig-name descname"><span class="pre">test_data_array_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_exp_origin">
+<span class="sig-name descname"><span class="pre">test_data_array_exp_origin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_exp_origin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_id">
+<span class="sig-name descname"><span class="pre">test_data_array_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_indexing">
+<span class="sig-name descname"><span class="pre">test_data_array_indexing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_indexing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_label">
+<span class="sig-name descname"><span class="pre">test_data_array_label</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_multi_slicing">
+<span class="sig-name descname"><span class="pre">test_data_array_multi_slicing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_multi_slicing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_name">
+<span class="sig-name descname"><span class="pre">test_data_array_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_numpy_indexing">
+<span class="sig-name descname"><span class="pre">test_data_array_numpy_indexing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_numpy_indexing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_sources">
+<span class="sig-name descname"><span class="pre">test_data_array_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_timestamps">
+<span class="sig-name descname"><span class="pre">test_data_array_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_type">
+<span class="sig-name descname"><span class="pre">test_data_array_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_array_unit">
+<span class="sig-name descname"><span class="pre">test_data_array_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_array_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_data_deletion">
+<span class="sig-name descname"><span class="pre">test_data_deletion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_data_deletion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_dim_one_based">
+<span class="sig-name descname"><span class="pre">test_dim_one_based</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_dim_one_based" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_get_slice">
+<span class="sig-name descname"><span class="pre">test_get_slice</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_get_slice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_outofbounds_indexing">
+<span class="sig-name descname"><span class="pre">test_outofbounds_indexing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_outofbounds_indexing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_single_value_retrieval">
+<span class="sig-name descname"><span class="pre">test_single_value_retrieval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_single_value_retrieval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_array.TestDataArray.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_array.TestDataArray.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_data_frame">
+<span id="nixio-test-test-data-frame-module"></span><h2>nixio.test.test_data_frame module<a class="headerlink" href="#module-nixio.test.test_data_frame" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_data_frame.</span></span><span class="sig-name descname"><span class="pre">TestDataFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_append_column">
+<span class="sig-name descname"><span class="pre">test_append_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_append_column" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_append_rows">
+<span class="sig-name descname"><span class="pre">test_append_rows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_append_rows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_column_name_collision">
+<span class="sig-name descname"><span class="pre">test_column_name_collision</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_column_name_collision" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_create_with_list">
+<span class="sig-name descname"><span class="pre">test_create_with_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_create_with_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_create_without_dtypes">
+<span class="sig-name descname"><span class="pre">test_create_without_dtypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_create_without_dtypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_data_frame_eq">
+<span class="sig-name descname"><span class="pre">test_data_frame_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_data_frame_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_data_frame_type">
+<span class="sig-name descname"><span class="pre">test_data_frame_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_data_frame_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_data_type">
+<span class="sig-name descname"><span class="pre">test_data_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_data_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_df_shape">
+<span class="sig-name descname"><span class="pre">test_df_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_df_shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_index_column_by_name">
+<span class="sig-name descname"><span class="pre">test_index_column_by_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_index_column_by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_read_cell">
+<span class="sig-name descname"><span class="pre">test_read_cell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_read_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_read_column">
+<span class="sig-name descname"><span class="pre">test_read_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_read_column" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_read_row">
+<span class="sig-name descname"><span class="pre">test_read_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_read_row" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_unit">
+<span class="sig-name descname"><span class="pre">test_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_write_cell">
+<span class="sig-name descname"><span class="pre">test_write_cell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_write_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_write_column">
+<span class="sig-name descname"><span class="pre">test_write_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_write_column" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_frame.TestDataFrame.test_write_row">
+<span class="sig-name descname"><span class="pre">test_write_row</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_frame.TestDataFrame.test_write_row" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_data_view">
+<span id="nixio-test-test-data-view-module"></span><h2>nixio.test.test_data_view module<a class="headerlink" href="#module-nixio.test.test_data_view" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_data_view.</span></span><span class="sig-name descname"><span class="pre">TestDataView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_ellipsis">
+<span class="sig-name descname"><span class="pre">test_data_view_ellipsis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_ellipsis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_fancy_slicing">
+<span class="sig-name descname"><span class="pre">test_data_view_fancy_slicing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_fancy_slicing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_oob">
+<span class="sig-name descname"><span class="pre">test_data_view_oob</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_oob" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_read">
+<span class="sig-name descname"><span class="pre">test_data_view_read</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_write_direct">
+<span class="sig-name descname"><span class="pre">test_data_view_write_direct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_write_direct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_data_view.TestDataView.test_data_view_write_index">
+<span class="sig-name descname"><span class="pre">test_data_view_write_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_data_view.TestDataView.test_data_view_write_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write through DataView to the underlying DataArray using [slice]
+notation.</p>
+<p>Update copy of underlying data with expected values and compare
+directly to DataArray for assertions.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_dimensions">
+<span id="nixio-test-test-dimensions-module"></span><h2>nixio.test.test_dimensions module<a class="headerlink" href="#module-nixio.test.test_dimensions" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_dimensions.</span></span><span class="sig-name descname"><span class="pre">TestDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_append_dim_init">
+<span class="sig-name descname"><span class="pre">test_append_dim_init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_append_dim_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_range_dim_ticks_resize">
+<span class="sig-name descname"><span class="pre">test_range_dim_ticks_resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_range_dim_ticks_resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_range_dimension">
+<span class="sig-name descname"><span class="pre">test_range_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_range_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_range_dimension_modes">
+<span class="sig-name descname"><span class="pre">test_range_dimension_modes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_range_dimension_modes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_sample_dimension">
+<span class="sig-name descname"><span class="pre">test_sample_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_sample_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_sampled_dimension_modes">
+<span class="sig-name descname"><span class="pre">test_sampled_dimension_modes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_sampled_dimension_modes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_set_dim_label_resize">
+<span class="sig-name descname"><span class="pre">test_set_dim_label_resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_set_dim_label_resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_set_dimension">
+<span class="sig-name descname"><span class="pre">test_set_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_set_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestDimension.test_set_dimension_modes">
+<span class="sig-name descname"><span class="pre">test_set_dimension_modes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestDimension.test_set_dimension_modes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_dimensions.</span></span><span class="sig-name descname"><span class="pre">TestLinkDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_array_linking_errors">
+<span class="sig-name descname"><span class="pre">test_data_array_linking_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_array_linking_errors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_array_range_link_dimension">
+<span class="sig-name descname"><span class="pre">test_data_array_range_link_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_array_range_link_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_array_self_link_range_dimension">
+<span class="sig-name descname"><span class="pre">test_data_array_self_link_range_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_array_self_link_range_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_array_self_link_set_dimension">
+<span class="sig-name descname"><span class="pre">test_data_array_self_link_set_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_array_self_link_set_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_array_set_link_dimension">
+<span class="sig-name descname"><span class="pre">test_data_array_set_link_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_array_set_link_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_frame_linking_errors">
+<span class="sig-name descname"><span class="pre">test_data_frame_linking_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_frame_linking_errors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_frame_range_link_dimension">
+<span class="sig-name descname"><span class="pre">test_data_frame_range_link_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_frame_range_link_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_data_frame_set_link_dimension">
+<span class="sig-name descname"><span class="pre">test_data_frame_set_link_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_data_frame_set_link_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_range_link_tick_replacement">
+<span class="sig-name descname"><span class="pre">test_range_link_tick_replacement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_range_link_tick_replacement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_sampled_dimension_unsupported">
+<span class="sig-name descname"><span class="pre">test_sampled_dimension_unsupported</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_sampled_dimension_unsupported" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_write_linked_array_props">
+<span class="sig-name descname"><span class="pre">test_write_linked_array_props</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_write_linked_array_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_dimensions.TestLinkDimension.test_write_linked_dataframe_props">
+<span class="sig-name descname"><span class="pre">test_write_linked_dataframe_props</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_dimensions.TestLinkDimension.test_write_linked_dataframe_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_feature">
+<span id="nixio-test-test-feature-module"></span><h2>nixio.test.test_feature module<a class="headerlink" href="#module-nixio.test.test_feature" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_feature.</span></span><span class="sig-name descname"><span class="pre">TestFeatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_create_diff_link_type_style">
+<span class="sig-name descname"><span class="pre">test_create_diff_link_type_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_create_diff_link_type_style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_data">
+<span class="sig-name descname"><span class="pre">test_feature_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_dataframe">
+<span class="sig-name descname"><span class="pre">test_feature_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_eq">
+<span class="sig-name descname"><span class="pre">test_feature_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_id">
+<span class="sig-name descname"><span class="pre">test_feature_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_link_type">
+<span class="sig-name descname"><span class="pre">test_feature_link_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_link_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_feature_on_group">
+<span class="sig-name descname"><span class="pre">test_feature_on_group</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_feature_on_group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_feature.TestFeatures.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_feature.TestFeatures.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_file">
+<span id="nixio-test-test-file-module"></span><h2>nixio.test.test_file module<a class="headerlink" href="#module-nixio.test.test_file" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_file.</span></span><span class="sig-name descname"><span class="pre">TestFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_context_open">
+<span class="sig-name descname"><span class="pre">test_context_open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_context_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_copy_on_file">
+<span class="sig-name descname"><span class="pre">test_copy_on_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_copy_on_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_file_blocks">
+<span class="sig-name descname"><span class="pre">test_file_blocks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_file_blocks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_file_find_sections">
+<span class="sig-name descname"><span class="pre">test_file_find_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_file_find_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_file_format">
+<span class="sig-name descname"><span class="pre">test_file_format</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_file_format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_file_sections">
+<span class="sig-name descname"><span class="pre">test_file_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_file_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_file_timestamps">
+<span class="sig-name descname"><span class="pre">test_file_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_file_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_order_tracking">
+<span class="sig-name descname"><span class="pre">test_order_tracking</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_order_tracking" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFile.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFile.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_file.</span></span><span class="sig-name descname"><span class="pre">TestFileVer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.backend">
+<span class="sig-name descname"><span class="pre">backend</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'h5py'</span></em><a class="headerlink" href="#nixio.test.test_file.TestFileVer.backend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.fformat">
+<span class="sig-name descname"><span class="pre">fformat</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'nix'</span></em><a class="headerlink" href="#nixio.test.test_file.TestFileVer.fformat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.filever">
+<span class="sig-name descname"><span class="pre">filever</span></span><em class="property"> <span class="pre">=</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">0)</span></em><a class="headerlink" href="#nixio.test.test_file.TestFileVer.filever" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.set_header">
+<span class="sig-name descname"><span class="pre">set_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fformat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.set_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_bad_format">
+<span class="sig-name descname"><span class="pre">test_bad_format</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_bad_format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_bad_id">
+<span class="sig-name descname"><span class="pre">test_bad_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_bad_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_bad_tuple">
+<span class="sig-name descname"><span class="pre">test_bad_tuple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_bad_tuple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_no_open">
+<span class="sig-name descname"><span class="pre">test_no_open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_no_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_read_only">
+<span class="sig-name descname"><span class="pre">test_read_only</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_read_only" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.test_read_write">
+<span class="sig-name descname"><span class="pre">test_read_write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.test_read_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_file.TestFileVer.try_open">
+<span class="sig-name descname"><span class="pre">try_open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_file.TestFileVer.try_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_group">
+<span id="nixio-test-test-group-module"></span><h2>nixio.test.test_group module<a class="headerlink" href="#module-nixio.test.test_group" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_group.</span></span><span class="sig-name descname"><span class="pre">TestGroups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_data_arrays">
+<span class="sig-name descname"><span class="pre">test_group_data_arrays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_data_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_definition">
+<span class="sig-name descname"><span class="pre">test_group_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_eq">
+<span class="sig-name descname"><span class="pre">test_group_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_get_by_name">
+<span class="sig-name descname"><span class="pre">test_group_get_by_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_get_by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_id">
+<span class="sig-name descname"><span class="pre">test_group_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_invalid_add">
+<span class="sig-name descname"><span class="pre">test_group_invalid_add</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_invalid_add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_multi_tags">
+<span class="sig-name descname"><span class="pre">test_group_multi_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_multi_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_name">
+<span class="sig-name descname"><span class="pre">test_group_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_tags">
+<span class="sig-name descname"><span class="pre">test_group_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_timestamps">
+<span class="sig-name descname"><span class="pre">test_group_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_group.TestGroups.test_group_type">
+<span class="sig-name descname"><span class="pre">test_group_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_group.TestGroups.test_group_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_multi_tag">
+<span id="nixio-test-test-multi-tag-module"></span><h2>nixio.test.test_multi_tag module<a class="headerlink" href="#module-nixio.test.test_multi_tag" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_multi_tag.</span></span><span class="sig-name descname"><span class="pre">TestMultiTags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_data_coefficients">
+<span class="sig-name descname"><span class="pre">test_multi_tag_data_coefficients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_data_coefficients" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_definition">
+<span class="sig-name descname"><span class="pre">test_multi_tag_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_eq">
+<span class="sig-name descname"><span class="pre">test_multi_tag_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_extents">
+<span class="sig-name descname"><span class="pre">test_multi_tag_extents</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_extents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_feature_data">
+<span class="sig-name descname"><span class="pre">test_multi_tag_feature_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_feature_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_feature_dataframe">
+<span class="sig-name descname"><span class="pre">test_multi_tag_feature_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_feature_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_features">
+<span class="sig-name descname"><span class="pre">test_multi_tag_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_flex">
+<span class="sig-name descname"><span class="pre">test_multi_tag_flex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_flex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_id">
+<span class="sig-name descname"><span class="pre">test_multi_tag_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_name">
+<span class="sig-name descname"><span class="pre">test_multi_tag_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_new_constructor">
+<span class="sig-name descname"><span class="pre">test_multi_tag_new_constructor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_new_constructor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_positions">
+<span class="sig-name descname"><span class="pre">test_multi_tag_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_references">
+<span class="sig-name descname"><span class="pre">test_multi_tag_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data">
+<span class="sig-name descname"><span class="pre">test_multi_tag_tagged_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data_1d">
+<span class="sig-name descname"><span class="pre">test_multi_tag_tagged_data_1d</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data_1d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data_slice_mode">
+<span class="sig-name descname"><span class="pre">test_multi_tag_tagged_data_slice_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_tagged_data_slice_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_timestamps">
+<span class="sig-name descname"><span class="pre">test_multi_tag_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_type">
+<span class="sig-name descname"><span class="pre">test_multi_tag_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_units">
+<span class="sig-name descname"><span class="pre">test_multi_tag_units</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_multi_tag_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_tagged_range_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_range_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_tagged_range_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Range dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_tagged_sampled_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_sampled_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_tagged_sampled_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Sampled dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_tagged_set_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_set_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_tagged_set_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Set dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_multi_tag.TestMultiTags.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_multi_tag.TestMultiTags.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_nix_compatibility">
+<span id="nixio-test-test-nix-compatibility-module"></span><h2>nixio.test.test_nix_compatibility module<a class="headerlink" href="#module-nixio.test.test_nix_compatibility" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.check_block_children_counts">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">check_block_children_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngrp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nda</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ntg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nmt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.check_block_children_counts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.check_group_children_counts">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">check_group_children_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nda</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ntg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nmt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.check_group_children_counts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.compare">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">compare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expected</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">actual</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.compare" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.runcpp">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">runcpp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cmdargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.runcpp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_blocks">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_blocks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_blocks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_data_arrays">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_data_arrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_data_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_data_frames">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_data_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_data_frames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_full_file_read">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_full_file_read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_full_file_read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_full_file_write">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_full_file_write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_full_file_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_full_write">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_full_write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_full_write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_groups">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_groups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_multi_tag_features">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_multi_tag_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_multi_tag_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_multi_tag_references">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_multi_tag_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_multi_tag_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_multi_tags">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_multi_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_multi_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_properties">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_properties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_sections">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.test_tags">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">test_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bindir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.test_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="nixio.test.test_nix_compatibility.validate">
+<span class="sig-prename descclassname"><span class="pre">nixio.test.test_nix_compatibility.</span></span><span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_nix_compatibility.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the nix validation function on the given file.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_property">
+<span id="nixio-test-test-property-module"></span><h2>nixio.test.test_property module<a class="headerlink" href="#module-nixio.test.test_property" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_property.</span></span><span class="sig-name descname"><span class="pre">TestProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_empties">
+<span class="sig-name descname"><span class="pre">test_empties</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_empties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_extend_values">
+<span class="sig-name descname"><span class="pre">test_extend_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_extend_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_definition">
+<span class="sig-name descname"><span class="pre">test_property_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_dependency">
+<span class="sig-name descname"><span class="pre">test_property_dependency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_dependency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_dependency_value">
+<span class="sig-name descname"><span class="pre">test_property_dependency_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_dependency_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_eq">
+<span class="sig-name descname"><span class="pre">test_property_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_id">
+<span class="sig-name descname"><span class="pre">test_property_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_name">
+<span class="sig-name descname"><span class="pre">test_property_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_reference">
+<span class="sig-name descname"><span class="pre">test_property_reference</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_reference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_uncertainty">
+<span class="sig-name descname"><span class="pre">test_property_uncertainty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_uncertainty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_unit">
+<span class="sig-name descname"><span class="pre">test_property_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_value_origin">
+<span class="sig-name descname"><span class="pre">test_property_value_origin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_value_origin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_property_values">
+<span class="sig-name descname"><span class="pre">test_property_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_property_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_property.TestProperties.test_unicode_values">
+<span class="sig-name descname"><span class="pre">test_unicode_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_property.TestProperties.test_unicode_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_section">
+<span id="nixio-test-test-section-module"></span><h2>nixio.test.test_section module<a class="headerlink" href="#module-nixio.test.test_section" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_section.</span></span><span class="sig-name descname"><span class="pre">TestSections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_copy_on_sections">
+<span class="sig-name descname"><span class="pre">test_copy_on_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_copy_on_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_inverse_search">
+<span class="sig-name descname"><span class="pre">test_inverse_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_inverse_search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_parent">
+<span class="sig-name descname"><span class="pre">test_parent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_property_reference">
+<span class="sig-name descname"><span class="pre">test_property_reference</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_property_reference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_definition">
+<span class="sig-name descname"><span class="pre">test_section_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_eq">
+<span class="sig-name descname"><span class="pre">test_section_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_find_sections">
+<span class="sig-name descname"><span class="pre">test_section_find_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_find_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_id">
+<span class="sig-name descname"><span class="pre">test_section_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_link">
+<span class="sig-name descname"><span class="pre">test_section_link</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_name">
+<span class="sig-name descname"><span class="pre">test_section_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_properties">
+<span class="sig-name descname"><span class="pre">test_section_properties</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_properties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_repository">
+<span class="sig-name descname"><span class="pre">test_section_repository</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_repository" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_sections">
+<span class="sig-name descname"><span class="pre">test_section_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_section_type">
+<span class="sig-name descname"><span class="pre">test_section_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_section_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_section.TestSections.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_section.TestSections.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_source">
+<span id="nixio-test-test-source-module"></span><h2>nixio.test.test_source module<a class="headerlink" href="#module-nixio.test.test_source" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_source.</span></span><span class="sig-name descname"><span class="pre">TestSources</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_deep_linking">
+<span class="sig-name descname"><span class="pre">test_deep_linking</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_deep_linking" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_inverse_search">
+<span class="sig-name descname"><span class="pre">test_inverse_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_inverse_search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_parent_source">
+<span class="sig-name descname"><span class="pre">test_parent_source</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_parent_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_referring_objects">
+<span class="sig-name descname"><span class="pre">test_referring_objects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_referring_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_definition">
+<span class="sig-name descname"><span class="pre">test_source_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_eq">
+<span class="sig-name descname"><span class="pre">test_source_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_find_sources">
+<span class="sig-name descname"><span class="pre">test_source_find_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_find_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_id">
+<span class="sig-name descname"><span class="pre">test_source_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_name">
+<span class="sig-name descname"><span class="pre">test_source_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_sources">
+<span class="sig-name descname"><span class="pre">test_source_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_timestamps">
+<span class="sig-name descname"><span class="pre">test_source_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_source_type">
+<span class="sig-name descname"><span class="pre">test_source_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_source_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_source.TestSources.test_sources_extend">
+<span class="sig-name descname"><span class="pre">test_sources_extend</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_source.TestSources.test_sources_extend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_tag">
+<span id="nixio-test-test-tag-module"></span><h2>nixio.test.test_tag module<a class="headerlink" href="#module-nixio.test.test_tag" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_tag.</span></span><span class="sig-name descname"><span class="pre">TestTags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_flex">
+<span class="sig-name descname"><span class="pre">test_flex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_flex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_definition">
+<span class="sig-name descname"><span class="pre">test_tag_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_eq">
+<span class="sig-name descname"><span class="pre">test_tag_eq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_extent">
+<span class="sig-name descname"><span class="pre">test_tag_extent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_extent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_feature_data">
+<span class="sig-name descname"><span class="pre">test_tag_feature_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_feature_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_feature_dataframe">
+<span class="sig-name descname"><span class="pre">test_tag_feature_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_feature_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_features">
+<span class="sig-name descname"><span class="pre">test_tag_features</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_id">
+<span class="sig-name descname"><span class="pre">test_tag_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_name">
+<span class="sig-name descname"><span class="pre">test_tag_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_position">
+<span class="sig-name descname"><span class="pre">test_tag_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_references">
+<span class="sig-name descname"><span class="pre">test_tag_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_tagged_data">
+<span class="sig-name descname"><span class="pre">test_tag_tagged_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_tagged_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_tagged_data_slice_mode">
+<span class="sig-name descname"><span class="pre">test_tag_tagged_data_slice_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_tagged_data_slice_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_timestamps">
+<span class="sig-name descname"><span class="pre">test_tag_timestamps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_timestamps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_type">
+<span class="sig-name descname"><span class="pre">test_tag_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tag_units">
+<span class="sig-name descname"><span class="pre">test_tag_units</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tag_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tagged_range_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_range_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tagged_range_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Range dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tagged_sampled_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_sampled_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tagged_sampled_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Sampled dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_tagged_set_dim">
+<span class="sig-name descname"><span class="pre">test_tagged_set_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_tagged_set_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test where the slice can be calculated directly from the position and extent and compared to the original
+data.
+Set dimension slicing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_timestamp_autoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_autoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_timestamp_autoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_tag.TestTags.test_timestamp_noautoupdate">
+<span class="sig-name descname"><span class="pre">test_timestamp_noautoupdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_tag.TestTags.test_timestamp_noautoupdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_util">
+<span id="nixio-test-test-util-module"></span><h2>nixio.test.test_util module<a class="headerlink" href="#module-nixio.test.test_util" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_util.</span></span><span class="sig-name descname"><span class="pre">TestUtil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_name_check">
+<span class="sig-name descname"><span class="pre">test_name_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_name_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_name_sanitizer">
+<span class="sig-name descname"><span class="pre">test_name_sanitizer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_name_sanitizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_is_atomic">
+<span class="sig-name descname"><span class="pre">test_unit_is_atomic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_is_atomic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_is_compound">
+<span class="sig-name descname"><span class="pre">test_unit_is_compound</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_is_compound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_is_si">
+<span class="sig-name descname"><span class="pre">test_unit_is_si</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_is_si" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_sanitizer">
+<span class="sig-name descname"><span class="pre">test_unit_sanitizer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_sanitizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_scalable">
+<span class="sig-name descname"><span class="pre">test_unit_scalable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_scalable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_scaling">
+<span class="sig-name descname"><span class="pre">test_unit_scaling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_scaling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_split">
+<span class="sig-name descname"><span class="pre">test_unit_split</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_util.TestUtil.test_unit_split_compound">
+<span class="sig-name descname"><span class="pre">test_unit_split_compound</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_util.TestUtil.test_unit_split_compound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.test_validator">
+<span id="nixio-test-test-validator-module"></span><h2>nixio.test.test_validator module<a class="headerlink" href="#module-nixio.test.test_validator" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.test_validator.</span></span><span class="sig-name descname"><span class="pre">TestValidate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.print_all_results">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">print_all_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.print_all_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_all_valid">
+<span class="sig-name descname"><span class="pre">test_all_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_all_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_block">
+<span class="sig-name descname"><span class="pre">test_check_block</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_block" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_data_array_bad_dims">
+<span class="sig-name descname"><span class="pre">test_check_data_array_bad_dims</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_data_array_bad_dims" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_data_array_coefficients">
+<span class="sig-name descname"><span class="pre">test_check_data_array_coefficients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_data_array_coefficients" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_data_array_invalid_unit">
+<span class="sig-name descname"><span class="pre">test_check_data_array_invalid_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_data_array_invalid_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_data_array_wrong_labels">
+<span class="sig-name descname"><span class="pre">test_check_data_array_wrong_labels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_data_array_wrong_labels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_data_array_wrong_ticks">
+<span class="sig-name descname"><span class="pre">test_check_data_array_wrong_ticks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_data_array_wrong_ticks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_file">
+<span class="sig-name descname"><span class="pre">test_check_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_group">
+<span class="sig-name descname"><span class="pre">test_check_group</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_multi_tag_invalid_unit">
+<span class="sig-name descname"><span class="pre">test_check_multi_tag_invalid_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_multi_tag_invalid_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_multi_tag_mismatch_dim">
+<span class="sig-name descname"><span class="pre">test_check_multi_tag_mismatch_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_multi_tag_mismatch_dim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_multi_tag_mismatch_units">
+<span class="sig-name descname"><span class="pre">test_check_multi_tag_mismatch_units</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_multi_tag_mismatch_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_multi_tag_no_pos">
+<span class="sig-name descname"><span class="pre">test_check_multi_tag_no_pos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_multi_tag_no_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_multi_tag_pos_ext_mismatch">
+<span class="sig-name descname"><span class="pre">test_check_multi_tag_pos_ext_mismatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_multi_tag_pos_ext_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_property">
+<span class="sig-name descname"><span class="pre">test_check_property</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_property" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_range_dim_invalid_unit">
+<span class="sig-name descname"><span class="pre">test_check_range_dim_invalid_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_range_dim_invalid_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_range_dim_no_ticks">
+<span class="sig-name descname"><span class="pre">test_check_range_dim_no_ticks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_range_dim_no_ticks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_range_dim_unsorted_ticks">
+<span class="sig-name descname"><span class="pre">test_check_range_dim_unsorted_ticks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_range_dim_unsorted_ticks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_sampled_dim_bad_interval">
+<span class="sig-name descname"><span class="pre">test_check_sampled_dim_bad_interval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_sampled_dim_bad_interval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_sampled_dim_bad_unit">
+<span class="sig-name descname"><span class="pre">test_check_sampled_dim_bad_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_sampled_dim_bad_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_sampled_dim_no_interval">
+<span class="sig-name descname"><span class="pre">test_check_sampled_dim_no_interval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_sampled_dim_no_interval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_sampled_dim_no_unit">
+<span class="sig-name descname"><span class="pre">test_check_sampled_dim_no_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_sampled_dim_no_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_section">
+<span class="sig-name descname"><span class="pre">test_check_section</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_section" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_source">
+<span class="sig-name descname"><span class="pre">test_check_source</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_tag_invalid_unit">
+<span class="sig-name descname"><span class="pre">test_check_tag_invalid_unit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_tag_invalid_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_tag_mismatch_dim">
+<span class="sig-name descname"><span class="pre">test_check_tag_mismatch_dim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_tag_mismatch_dim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_tag_mismatch_units">
+<span class="sig-name descname"><span class="pre">test_check_tag_mismatch_units</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_tag_mismatch_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_tag_no_pos">
+<span class="sig-name descname"><span class="pre">test_check_tag_no_pos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_tag_no_pos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_check_tag_pos_ext_mismatch">
+<span class="sig-name descname"><span class="pre">test_check_tag_pos_ext_mismatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_check_tag_pos_ext_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_incorrect_dim_index">
+<span class="sig-name descname"><span class="pre">test_incorrect_dim_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_incorrect_dim_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.test_validator.TestValidate.test_invalid_dim_index">
+<span class="sig-name descname"><span class="pre">test_invalid_dim_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.test_validator.TestValidate.test_invalid_dim_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test.tmp">
+<span id="nixio-test-tmp-module"></span><h2>nixio.test.tmp module<a class="headerlink" href="#module-nixio.test.tmp" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="nixio.test.tmp.TempDir">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.test.tmp.</span></span><span class="sig-name descname"><span class="pre">TempDir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.tmp.TempDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nixio.test.tmp.TempDir.cleanup">
+<span class="sig-name descname"><span class="pre">cleanup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.test.tmp.TempDir.cleanup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.test">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-nixio.test" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="nixio.test.xcompat.html" class="btn btn-neutral float-right" title="nixio.test.xcompat package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nixio.hdf5.html" class="btn btn-neutral float-left" title="nixio.hdf5 package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

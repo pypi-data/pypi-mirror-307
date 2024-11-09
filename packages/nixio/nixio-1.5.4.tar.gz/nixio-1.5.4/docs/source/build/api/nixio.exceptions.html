@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>nixio.exceptions package &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.0 Development documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nixio.hdf5 package" href="nixio.hdf5.html" />
+    <link rel="prev" title="nixio.cmd package" href="nixio.cmd.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standardization.html">Support for standardization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">High Level API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_api.html">High Level API Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internal API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="nixio.html">nixio package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nixio.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nixio.cmd.html">nixio.cmd package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">nixio.exceptions package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.exceptions.exceptions">nixio.exceptions.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-nixio.exceptions">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.hdf5.html">nixio.hdf5 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.test.html">nixio.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nixio.util.html">nixio.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.block">nixio.block module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.compression">nixio.compression module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.container">nixio.container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_array">nixio.data_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_frame">nixio.data_frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_set">nixio.data_set module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.data_view">nixio.data_view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.datatype">nixio.datatype module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimension_type">nixio.dimension_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.dimensions">nixio.dimensions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.entity">nixio.entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.feature">nixio.feature module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.file">nixio.file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.group">nixio.group module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.info">nixio.info module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.link_type">nixio.link_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.multi_tag">nixio.multi_tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.property">nixio.property module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.section">nixio.section module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source">nixio.source module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.source_link_container">nixio.source_link_container module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.tag">nixio.tag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio.validator">nixio.validator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nixio.html#module-nixio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Source code</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="nixio.html">nixio package</a> &raquo;</li>
+        
+      <li>nixio.exceptions package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/nixio.exceptions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="nixio.hdf5.html" class="btn btn-neutral float-right" title="nixio.hdf5 package" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="nixio.cmd.html" class="btn btn-neutral float-left" title="nixio.cmd package" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nixio-exceptions-package">
+<h1>nixio.exceptions package<a class="headerlink" href="#nixio-exceptions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-nixio.exceptions.exceptions">
+<span id="nixio-exceptions-exceptions-module"></span><h2>nixio.exceptions.exceptions module<a class="headerlink" href="#module-nixio.exceptions.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.DuplicateColumnName">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">DuplicateColumnName</span></span><a class="headerlink" href="#nixio.exceptions.exceptions.DuplicateColumnName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.DuplicateName">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">DuplicateName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">caller</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.DuplicateName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.IncompatibleDimensions">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">IncompatibleDimensions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">where</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.IncompatibleDimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.InvalidAttrType">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidAttrType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.InvalidAttrType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.InvalidEntity">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.InvalidEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.InvalidFile">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidFile</span></span><a class="headerlink" href="#nixio.exceptions.exceptions.InvalidFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.InvalidUnit">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidUnit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">where</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.InvalidUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.OutOfBounds">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">OutOfBounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.OutOfBounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IndexError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.UninitializedEntity">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">UninitializedEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.UninitializedEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.exceptions.UnsupportedLinkType">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.exceptions.</span></span><span class="sig-name descname"><span class="pre">UnsupportedLinkType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linktype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.exceptions.UnsupportedLinkType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-nixio.exceptions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-nixio.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.DuplicateColumnName">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">DuplicateColumnName</span></span><a class="headerlink" href="#nixio.exceptions.DuplicateColumnName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.DuplicateName">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">DuplicateName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">caller</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.DuplicateName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.IncompatibleDimensions">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">IncompatibleDimensions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">where</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.IncompatibleDimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.InvalidAttrType">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidAttrType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.InvalidAttrType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.InvalidEntity">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.InvalidEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.InvalidFile">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidFile</span></span><a class="headerlink" href="#nixio.exceptions.InvalidFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.InvalidUnit">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">InvalidUnit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">where</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.InvalidUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.OutOfBounds">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">OutOfBounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.OutOfBounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IndexError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.UninitializedEntity">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">UninitializedEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.UninitializedEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="nixio.exceptions.UnsupportedLinkType">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">nixio.exceptions.</span></span><span class="sig-name descname"><span class="pre">UnsupportedLinkType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linktype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.exceptions.UnsupportedLinkType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="nixio.hdf5.html" class="btn btn-neutral float-right" title="nixio.hdf5 package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nixio.cmd.html" class="btn btn-neutral float-left" title="nixio.cmd package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2020, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

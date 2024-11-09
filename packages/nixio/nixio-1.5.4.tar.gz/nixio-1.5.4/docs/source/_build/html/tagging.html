@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Tagging points and regions &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.3 Release documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Working with data" href="data_handling.html" />
+    <link rel="prev" title="Storing data" href="storing_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standardization.html">Support for standardization</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">Use-cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="file_handling.html">File handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storing_data.html">Storing data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tagging points and regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-in-1-d">Tagging in 1-D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-in-2-d">Tagging in 2-D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-multiple-points-in-1-d">Tagging multiple points in 1-D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-multiple-intervals-in-1-d">Tagging multiple intervals in 1-D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-in-n-d">Tagging in n-D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-features">Adding features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#handling-of-units">Handling of units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_handling.html">Working with data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotations.html">Annotations with arbitrary metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sources.html">Noting the origin of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="finding_things.html">Finding things</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_data.html">Image data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spike_time_data.html">Spike time data</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">Internal API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nixpy/blob/master/LICENSE">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">Contributing guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Tutorials</a> &raquo;</li>
+        
+      <li>Tagging points and regions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/tagging.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="data_handling.html" class="btn btn-neutral float-right" title="Working with data" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="storing_data.html" class="btn btn-neutral float-left" title="Storing data" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="tagging-points-and-regions">
+<h1>Tagging points and regions<a class="headerlink" href="#tagging-points-and-regions" title="Permalink to this headline">¶</a></h1>
+<p>The <em>DataArray</em>s store data, but this is not all that is needed to
+store scientific data. We may want to highlight points or regions in the
+data and link it to further information.</p>
+<p>This is done using the <em>Tag</em> and the <em>MultiTag</em>, for tagging single or
+multiple points or regions, respectively.</p>
+<p>The basic idea is that the <em>Tag</em> defines the point (and extent) with
+which it refers to points (or regions) in the data. A tag can point to
+several <em>DataArrays</em> at once. These are mere links that are stored in
+the list of <em>references</em>. The following figure illustrates, how a
+<em>MultiTag</em> links two <em>DataArrays</em> to create a new construct.</p>
+<div class="figure align-default" id="id1">
+<img alt="A MultiTag can link the data stored in several DataArrays." src="_images/mtag_concept.png" />
+<p class="caption"><span class="caption-text"><em>MultiTags</em> tag several points or regions in referenced <em>DataArrays</em>. By binding entities together they can provide context.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="tagging-in-1-d">
+<h2>Tagging in 1-D<a class="headerlink" href="#tagging-in-1-d" title="Permalink to this headline">¶</a></h2>
+<p>Suppose, we are recording the response of a system to a certain
+stimulus.</p>
+<div class="figure align-default" id="id2">
+<img alt="a system's response to a stimulus" src="_images/tag1.png" />
+<p class="caption"><span class="caption-text">A system’s response to a stimulus that was on for a certain amount of time.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>We may want to store:</p>
+<ol class="arabic simple">
+<li><p>The recorded system’s response before, during, and after the
+stimulus.</p></li>
+<li><p>The time span the stimulus was on.</p></li>
+</ol>
+<p>In the <em>NIX</em> data model <em>Tag</em> entities are used to tag regions in a
+<em>DataArray</em>. For this, the <em>Tag</em> refers to the <em>DataArray</em> and stores
+<strong>position</strong> and <strong>extent</strong> of the highlighted segment.</p>
+<div class="figure align-default" id="id3">
+<img alt="a system's response to a stimulus" src="_images/tag2.png" />
+<p class="caption"><span class="caption-text">The system’s response is stored in a <em>DataArray</em>, we do need to add information about the start position and the extent of the stimulus-on segment. The extent is optional, if not specified. the <em>Tag</em>/<em>MultiTag</em> tags only a point in the data.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The following code snippet shows how to create the <em>Tag</em>.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Creating a Tag for a time span in recorded data <a class="reference download internal" download="" href="_downloads/26ca6cd639d5d3cb57648a70892c763f/tagging_example.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">time</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">response</span> <span class="o">=</span> <span class="n">create_data</span><span class="p">()</span>
+
+    <span class="n">f</span> <span class="o">=</span> <span class="n">nixio</span><span class="o">.</span><span class="n">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;tagging1.nix&quot;</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">FileMode</span><span class="o">.</span><span class="n">Overwrite</span><span class="p">)</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;demo block&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.demo&quot;</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;response&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">response</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+
+    <span class="n">data</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">interval</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="n">stim_tag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_tag</span><span class="p">(</span><span class="s2">&quot;stimulus&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.stimulus_segment&quot;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="p">[</span><span class="n">stim_on</span><span class="p">])</span>
+    <span class="n">stim_tag</span><span class="o">.</span><span class="n">extent</span> <span class="o">=</span> <span class="p">[</span><span class="n">stim_off</span> <span class="o">-</span> <span class="n">stim_on</span><span class="p">]</span>
+    <span class="n">stim_tag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Line 11 creates the <em>Tag</em> with the start position and in line 12 we add the extent of the tagged segment. In line 13 we add the <em>DataArray</em> we want to point at to the list of <em>references</em>. A Tag can refer to more than just a single <em>DataArray</em>. Both position and extent are passed as lists with one entry for each dimension of the data. If the length of e.g. position is less than the number of dimensions in the referenced <em>DataArray</em>, it is assumed that the tag refers to the full extent of the non-restricted dimensions. The same applies to missing extents. For the sake of clearness it is advisable to fully specify the positions and extents.</p>
+<p><strong>Note!</strong> Position and extent of the tagged region are given as
+lists. Extent is optional, not setting it tags a point instead
+of a segment of the referenced data.</p>
+</div>
+<div class="section" id="tagging-in-2-d">
+<h2>Tagging in 2-D<a class="headerlink" href="#tagging-in-2-d" title="Permalink to this headline">¶</a></h2>
+<p>The same principle shown above for 1-D data extends to two or more dimensions. The only difference is that one has to provide vectors of positions/extents whose length matches the number of dimensions of the referenced <em>DataArray</em>.</p>
+<div class="figure align-default" id="id5">
+<img alt="tagging in 2-D" src="_images/2d_tag.png" />
+<p class="caption"><span class="caption-text">Tagging works also in 2-D. In this case, position and extent must be 2-element vectors (one entry for each dimension).</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="tagging-multiple-points-in-1-d">
+<h2>Tagging multiple points in 1-D<a class="headerlink" href="#tagging-multiple-points-in-1-d" title="Permalink to this headline">¶</a></h2>
+<p>Often it is not a single point or region but a multitude of points that we want to note in a recorded signal. In the following situation a signal has been recorded and within this signal certain events, threshold crossings have been detected (figure below).</p>
+<div class="figure align-default">
+<img alt="multiple events" src="_images/multiple_points.png" />
+</div>
+<p>For storing this kind of data we need two <em>DataArrays</em>, the first stores the recorded signal, the other the events. Finally, a <em>MultiTag</em> entity is used to link both. One can use the event times stored in one of the <em>DataArrays</em> to tag multiple points in the other signal.</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">To mark several points in a recorded signal we use a <em>MultiTag</em> to bind the signal and event times ( <a class="reference download internal" download="" href="_downloads/b84d2e969f8cdd144596a4d102c12d61/multiple_points.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>)</span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">signal_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;signal&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">signal</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;voltage&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;mV&quot;</span><span class="p">)</span>
+    <span class="n">signal_array</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">sampling_interval</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="n">event_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;threshold crossings&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.events.threshold_crossings&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">events</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+    <span class="n">event_array</span><span class="o">.</span><span class="n">append_range_dimension_using_self</span><span class="p">()</span>
+
+    <span class="n">mtag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;event tag&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.tag.events&quot;</span><span class="p">,</span> <span class="n">event_array</span><span class="p">)</span>
+    <span class="n">mtag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">signal_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Creating the <em>MultiTag</em> is very similar to the creation of the simpler <em>Tag</em> above. The main difference is that the tagged positions are not stored in the <em>MultiTag</em> itself but we use the event <em>DataArray</em> (events in the code example) for this purpose. Finally, the signal <em>DataArray</em> is added to the list of references.</p>
+</div>
+<div class="section" id="tagging-multiple-intervals-in-1-d">
+<h2>Tagging multiple intervals in 1-D<a class="headerlink" href="#tagging-multiple-intervals-in-1-d" title="Permalink to this headline">¶</a></h2>
+<p>A very similar approach is taken for tagging multiple intervals in which,
+for example, a stimulus was switched on.</p>
+<div class="figure align-default" id="id7">
+<img alt="multiple regions" src="_images/multiple_regions.png" />
+<p class="caption"><span class="caption-text">With a <em>MultiTag</em> we can also tag multiple regions in a signal.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>For storing such data we again need one <em>DataArray</em> to store the recorded signal. Storing the regions is similar to the approach for the simpler <em>Tag</em>, i.e. <em>positions</em> and the <em>extents</em> need to be provided. Accordingly, <strong>two</strong> additional <em>DataArray</em>s are required. The first of which stores the positions and the second the extents of the tagged regions.</p>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">The following code tags multiple regions in a 1-D signal (<a class="reference download internal" download="" href="_downloads/96c0269701ff525e099cdc0b1d75ffc4/multiple_regions.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">block</span> <span class="o">=</span> <span class="n">nixfile</span><span class="o">.</span><span class="n">create_block</span><span class="p">(</span><span class="s2">&quot;multiple regions&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.session&quot;</span><span class="p">)</span>
+
+    <span class="n">data_array</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;signal&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.data.sampled&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">signal</span><span class="p">)</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;voltage&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;mV&quot;</span>
+    <span class="n">data_array</span><span class="o">.</span><span class="n">append_sampled_dimension</span><span class="p">(</span><span class="n">sampling_interval</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+    <span class="n">positions</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;stimulus onsets&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.region.onsets&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stim_onsets</span><span class="p">)</span>
+    <span class="n">positions</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+
+    <span class="n">extents</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;stimulus extents&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.region.extents&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stim_extents</span><span class="p">)</span>
+    <span class="n">extents</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+    <span class="n">mtag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;stimulus segments&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.segments.stimulus&quot;</span><span class="p">,</span> <span class="n">positions</span><span class="o">=</span><span class="n">positions</span><span class="p">,</span> <span class="n">extents</span><span class="o">=</span><span class="n">extents</span><span class="p">)</span>
+    <span class="n">mtag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_array</span><span class="p">)</span>
+    <span class="n">mtag</span><span class="o">.</span><span class="n">create_feature</span><span class="p">(</span><span class="n">frequencies</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">LinkType</span><span class="o">.</span><span class="n">Indexed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>The example code is rather straight forward. The <em>DataArrays</em> ‘positions’ and ‘extents’ take respective data and are added to the created <em>MultiTag</em> entity. Finally, the <em>DataArray</em> in which we tag the regions is added to the list of <em>references</em> of the <em>MultiTag</em>.</p>
+</div>
+<div class="section" id="tagging-in-n-d">
+<h2>Tagging in n-D<a class="headerlink" href="#tagging-in-n-d" title="Permalink to this headline">¶</a></h2>
+<p>The same principle as demonstrated above applies also to n-dimensional data. Tagging in n dimensions requires <strong>positions</strong> and <strong>extents</strong> stored in <em>DataArrays</em> of appropriate shapes.</p>
+<p>The following figures show the tagging of multiple regions in 2- and 3-D.</p>
+<div class="figure align-default" id="id9">
+<img alt="multiple regions in 2-D" src="_images/2d_mtag.png" />
+<p class="caption"><span class="caption-text">Tagging multiple regions in n-D data requires the <em>DataArrays</em> for storing positions and extents to be two-dimensional. The first dimension represents the number of regions, the second has as many entries as the referenced data.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>According to the number of dimensions of the data (here, width and height) each  starting point and the extent of a tagged region is defined by two numbers. Thus, the <strong>position</strong> and <strong>extent</strong> <em>DataArrays</em> are two dimensional. The first dimension represents the number of tagged regions, the second the number of dimensions.</p>
+<p>This approach can be extended into n-D. The following figure illustrates the 3-D case.</p>
+<div class="figure align-default" id="id10">
+<img alt="multiple regions in 3-D" src="_images/3d_mtag.png" />
+<p class="caption"><span class="caption-text">multiple_regions_3D_plot</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<p>The only things that need to be changed in the above code, are the layout of the data (now 3-dimensional) and further entries into <strong>position</strong> and <strong>extent</strong> <em>DataArrays</em> along the second dimension (compare tables in the figure). Again, these <em>DataArrays</em> are <strong>always</strong> 2-D, the first dimension represents the number of tagged regions, the second the number of dimensions.</p>
+<p>For an example see <a class="reference internal" href="image_data.html#image-data"><span class="std std-ref">Image data</span></a>.</p>
+</div>
+<div class="section" id="adding-features">
+<h2>Adding features<a class="headerlink" href="#adding-features" title="Permalink to this headline">¶</a></h2>
+<p>We use the above example to increase complexity a bit. So far, the <em>MultiTag</em> ‘mtag’ just notes that in the data stored in ‘array’ there are some interesting intervals in which something happened. The name of the <em>MultiTag</em> entity tells us that the highlighted intervals represent stimulus regions. Using <em>Features</em> we can now add further information to these regions. Let’s assume we wanted to store the stimulus frequency. The following lines of code can be inserted into the previous example
+before the file is closed.</p>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">The following code tags multiple regions in a 1-D signal and adds a feature describing the tagged regions (<a class="reference download internal" download="" href="_downloads/96c0269701ff525e099cdc0b1d75ffc4/multiple_regions.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>).</span><a class="headerlink" href="#id11" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">frequencies</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_data_array</span><span class="p">(</span><span class="s2">&quot;stimulus frequency&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.feature&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stim_frequencies</span><span class="p">)</span>
+    <span class="n">frequencies</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;frequency&quot;</span>
+    <span class="n">frequencies</span><span class="o">.</span><span class="n">unit</span> <span class="o">=</span> <span class="s2">&quot;Hz&quot;</span>
+    <span class="n">frequencies</span><span class="o">.</span><span class="n">append_set_dimension</span><span class="p">()</span>
+
+    <span class="n">mtag</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">create_multi_tag</span><span class="p">(</span><span class="s2">&quot;stimulus segments&quot;</span><span class="p">,</span> <span class="s2">&quot;nix.segments.stimulus&quot;</span><span class="p">,</span> <span class="n">positions</span><span class="o">=</span><span class="n">positions</span><span class="p">,</span> <span class="n">extents</span><span class="o">=</span><span class="n">extents</span><span class="p">)</span>
+    <span class="n">mtag</span><span class="o">.</span><span class="n">references</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_array</span><span class="p">)</span>
+<span class="hll">    <span class="n">mtag</span><span class="o">.</span><span class="n">create_feature</span><span class="p">(</span><span class="n">frequencies</span><span class="p">,</span> <span class="n">nixio</span><span class="o">.</span><span class="n">LinkType</span><span class="o">.</span><span class="n">Indexed</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</div>
+<p>The feature data is used to create the text labels below the segments in the plot above (<span class="xref std std-ref">above</span>). Each entry in the frequencies <em>DataArray</em> corresponds to one of the tagged sections. Thus we use the <code class="docutils literal notranslate"><span class="pre">nixio.LinkType.Indexed</span></code> flag while creating the feature. We can read the feature data that belongs to the respective position index by calling the <code class="docutils literal notranslate"><span class="pre">feature_data</span></code> method on the <em>MultiTag</em>.</p>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/96c0269701ff525e099cdc0b1d75ffc4/multiple_regions.py"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">code</span></code></a>.</span><a class="headerlink" href="#id12" title="Permalink to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">interval</span> <span class="o">+</span> <span class="n">extent</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.25</span><span class="p">,</span>
+                <span class="s2">&quot;</span><span class="si">%.1f</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">mtag</span><span class="o">.</span><span class="n">feature_data</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;stimulus frequency&quot;</span><span class="p">)[:],</span>
+                             <span class="n">mtag</span><span class="o">.</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;stimulus frequency&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">unit</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>The <em>Feature</em> adds the information stored in a <em>DataArray</em> to the <em>Tag/MultiTag</em>. The way this information has to be interpreted is specified via the <em>LinkType</em>. There are three distinct types:</p>
+<ol class="arabic simple">
+<li><p><strong>Indexed</strong>: For each position in the referring <em>Tag/MultiTag</em> there
+is one entry in the linked <em>DataArray</em>. In case the linked
+<em>DataArray</em> is multi-dimensional, the number of entries along
+dimension 0 must match the number of positions.</p></li>
+<li><p><strong>Tagged</strong>: Positions and extents of the referring <em>Tag/MultiTag</em>
+need to be applied in the same way to the linked <em>DataArray</em> as to
+the referenced data (stored in the ‘references’ list).</p></li>
+<li><p><strong>Untagged</strong>: The whole data stored in the linked Feature is a
+feature of the <em>Tag/MultiTag</em> ignoring any indexing, positions or
+extents.</p></li>
+</ol>
+<p>For more examples see the <a class="reference internal" href="spike_time_data.html#spike-time-data"><span class="std std-ref">Spike time data</span></a> tutorial.</p>
+</div>
+</div>
+<div class="section" id="handling-of-units">
+<h1>Handling of units<a class="headerlink" href="#handling-of-units" title="Permalink to this headline">¶</a></h1>
+<p>In the above example we do not explicitly specify a unit for position and extent. They are implicitly assumed to be given in the same unit as the <em>DataArray</em>. It is, however, possible to specify a unit (or rather a unit for each dimension), if this is more convenient. For example, it would be possible to give position and extent in <em>milliseconds</em> while the <em>DataArray</em> is specified in <em>seconds</em>. The library will try to convert the units transparently. The library does no validation at the time of <em>Tag</em> creation. It is the user’s responsibility that units match or are scalable. Unit conversion works only for SI units and is ignorant of physical connections between units. That is, we can work with <em>W</em> and <em>mW</em> but can <strong>not</strong> scale <em>mW</em> and <em>VA</em> (milli Watts and Volt * Ampere).</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="data_handling.html" class="btn btn-neutral float-right" title="Working with data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="storing_data.html" class="btn btn-neutral float-left" title="Storing data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

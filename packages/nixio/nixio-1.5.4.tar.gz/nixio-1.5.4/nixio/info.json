@@ -1,0 +1,10 @@
+{
+    "VERSION": "1.5.4",
+    "STATUS": "Release",
+    "RELEASE": "1.5.4 Release",
+    "AUTHOR": "Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou",
+    "COPYRIGHT": "2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou",
+    "CONTACT": "dev@g-node.org",
+    "BRIEF": "Python reimplementation of NIXIO (http://g-node.github.io/nix/)",
+    "HOMEPAGE": "https://github.com/G-Node/nixpy"
+}

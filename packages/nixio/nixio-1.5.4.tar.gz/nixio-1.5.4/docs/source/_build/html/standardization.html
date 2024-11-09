@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Support for standardization &mdash; Python reimplementation of NIXIO (http://g-node.github.io/nix/) 1.5.3 Release documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changes in version 1.5" href="news.html" />
+    <link rel="prev" title="Installation instructions" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/nix_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic_idea.html">Idea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation instructions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Support for standardization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#standardization-of-metadata">Standardization of metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#standardization-of-data">Standardization of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#domain-specific-high-level-apis">Domain-specific high-level APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://nixio.readthedocs.io/en/master/use_cases.html">Use-cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">News</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Changes in version 1.5</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">High Level API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/nixio.html">Internal API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/g-node/nixpy">Sources on GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nixpy/blob/master/LICENSE">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/G-Node/nix/blob/master/CONTRIBUTING.md">Contributing guide</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python reimplementation of NIXIO (http://g-node.github.io/nix/)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Support for standardization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/standardization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="news.html" class="btn btn-neutral float-right" title="Changes in version 1.5" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation instructions" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="support-for-standardization">
+<h1>Support for standardization<a class="headerlink" href="#support-for-standardization" title="Permalink to this headline">¶</a></h1>
+<p>Having a well-defined and open data format for storing a vast diversity
+of scientific data in itself is a cool thing. In an optimal world, and
+if the data format would be perfect, tools designed for such a generic
+data model could be used without any other knowledge to, at least, get
+some basic insights into the data.</p>
+<p>One real-world issue is that different (scientific) communities use
+similar terms to describe (slightly) different things. A very simple
+example would be the temperature. Large parts of the world would
+immediately understand a temperature value in terms of degrees Celsius.
+Other parts of the world prefer Fahrenheit while parts of the scientific
+world would certainly go for Kelvin.</p>
+<p>In other words, at some point we need to agree on definitions. Or, we
+need to be able to specify which definitions are used.</p>
+<div class="section" id="standardization-of-metadata">
+<h2>Standardization of metadata<a class="headerlink" href="#standardization-of-metadata" title="Permalink to this headline">¶</a></h2>
+<p>The metadata part of the <em>NIX</em> data model is basically the
+<a class="reference external" href="https://github.com/g-node/python-odml">odml</a> data model and
+implements the standardization methods used in the odml-libraries. That
+is, it is possible to use specifications made in so called terminologies
+(collections of names and definitions of sections and properties). In
+odml, several of such
+<a class="reference external" href="https://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml">terminologies</a>
+have been suggested.</p>
+</div>
+<div class="section" id="standardization-of-data">
+<h2>Standardization of data<a class="headerlink" href="#standardization-of-data" title="Permalink to this headline">¶</a></h2>
+<p>In <em>NIX</em> almost all entities have a <strong>type</strong> field which can be used to
+indicate the applied definition. In our example code within this
+documentation, we used very unspecific types like <em>nix.demo</em>,
+<em>nix.sampled</em>, or <em>nix.stimulus_segment</em>. The <strong>type</strong> is intended to be
+used as a namespace in a <em>hierarchical</em> fashion. Hierarchical levels are
+separated by dots. For example <em>nix.sampled</em> could indicate that the
+entity contains data that is stored according to the “nix” definitions
+and is regularly sampled in one dimension. A tool, that knows about such
+types, could select the appropriate measures to display the data.</p>
+</div>
+<div class="section" id="domain-specific-high-level-apis">
+<h2>Domain-specific high-level APIs<a class="headerlink" href="#domain-specific-high-level-apis" title="Permalink to this headline">¶</a></h2>
+<p>So far, the <em>NIX</em> project is mainly concerned about the technical side
+and not so much about the definition of terms and types. That is, we
+provide the low-level APIs to read and write the data. All other
+responsibilities are left to the user. The figure below shows the
+relations between the different <em>NIX</em> libraries and how we envision
+future development towards domain-specificity.</p>
+<div class="figure align-default">
+<img alt="API design" src="_images/api_design.png" />
+</div>
+<p>The <em>NIX</em> ecosystem so far consists of the generic
+<a class="reference external" href="https://github.com/g-node/nix">C++</a> and
+<a class="reference external" href="https://github.com/g-node/nixpy">python</a> libraries that directly
+write to the storage backend (only HDF5 is fully supported at the
+moment). Further, we provide language bindings for
+<a class="reference external" href="https://github.com/g-node/nix-java">java</a> and
+<a class="reference external" href="https://github.com/g-node/nix-mx">Matlab</a> that work via the C++
+library. In our vision, domain-specific APIs will be developed that use
+the generic entities and wrap them in the terms that are used in a given
+community. A first step into this direction is the nix storage backend
+in <a class="reference external" href="http://neuralensemble.org">*NEO*</a> that exposes <em>NIX</em> constructs
+as <em>NEO</em> entities.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="news.html" class="btn btn-neutral float-right" title="Changes in version 1.5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2014-2021, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
