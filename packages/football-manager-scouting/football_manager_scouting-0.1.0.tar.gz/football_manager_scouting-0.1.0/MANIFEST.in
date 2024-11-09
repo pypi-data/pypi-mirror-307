@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include src/football_manager_scouting *.py
+recursive-include src/football_manager_scouting/backend *.py
