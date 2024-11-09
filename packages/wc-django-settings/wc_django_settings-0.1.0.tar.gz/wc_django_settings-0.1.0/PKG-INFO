@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: wc-django-settings
+Version: 0.1.0
+Summary: Settings for packages.
+Author: WebCase
+Author-email: info@webcase.studio
+License: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: django-jsonform<=3.0.0,>=2.1.0
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.0; extra == "dev"
+Requires-Dist: pytest-mock<4.0.0,>=3.10.0; extra == "dev"
+Requires-Dist: pytest-watch<5.0,>=4.2; extra == "dev"
+Requires-Dist: pytest-django<5.0,>=4.3; extra == "dev"
+Requires-Dist: django-environ==0.11.2; extra == "dev"
+Requires-Dist: django-stubs; extra == "dev"
+Requires-Dist: django; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# WebCase Settings
+
+Global and User settings per package registry.
+
+## Installation
+
+```sh
+pip install wc-django-settings
+```
+
+In `settings.py`:
+
+```python
+INSTALLED_APPS += [
+  'wcd_settings',
+]
+
+MIDDLEWARE += [
+  'wcd_settings.middleware.settings_middleware',
+]
+```
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.1.0]
+Initial version.

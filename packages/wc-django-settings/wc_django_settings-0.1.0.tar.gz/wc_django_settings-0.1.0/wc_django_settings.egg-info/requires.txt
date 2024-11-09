@@ -1,0 +1,12 @@
+pydantic
+django-jsonform<=3.0.0,>=2.1.0
+
+[dev]
+pytest<9.0,>=8.0
+pytest-mock<4.0.0,>=3.10.0
+pytest-watch<5.0,>=4.2
+pytest-django<5.0,>=4.3
+django-environ==0.11.2
+django-stubs
+django
+twine
