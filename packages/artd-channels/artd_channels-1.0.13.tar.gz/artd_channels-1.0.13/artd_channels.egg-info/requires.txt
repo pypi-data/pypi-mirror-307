@@ -1,0 +1,9 @@
+Django>=4.2.10
+django-json-widget>=2.0.1
+artd-customer>=1.0.16
+artd-location>=1.0.5
+artd-modules>=1.0.5
+artd-partner>=1.0.7
+artd-service>=1.0.5
+boto3>=1.35.57
+messagebird>=2.2.0
