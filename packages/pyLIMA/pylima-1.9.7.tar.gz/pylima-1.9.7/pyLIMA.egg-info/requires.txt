@@ -1,0 +1,18 @@
+astropy
+astroquery
+bokeh
+emcee
+importlib-metadata
+kepler.py
+numpy>=1.7
+pygtc
+pymoo
+scipy>=1.0
+tqdm>=4.0
+VBBinaryLensing>=3.6.2
+speclite
+scikit-learn
+iminuit
+
+[:python_version < "3.9"]
+importlib-resources
