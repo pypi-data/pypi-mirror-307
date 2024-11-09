@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: azaux
+Version: 0.1.5
+Summary: 
+Author: Enrique
+Author-email: ebotiabarbera@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: azure-data-tables (>=12.5.0,<13.0.0)
+Requires-Dist: azure-storage-blob (>=12.20.0,<13.0.0)
+Requires-Dist: azure-storage-queue (>=12.10.0,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Azaux
+
+Helper tool to facilitate using the Azure Python API.
+
