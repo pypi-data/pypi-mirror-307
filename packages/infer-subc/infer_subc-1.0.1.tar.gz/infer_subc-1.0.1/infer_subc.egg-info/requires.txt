@@ -1,0 +1,12 @@
+numpy
+napari
+napari-aicsimageio
+aicssegmentation
+aicsimageio>=4.7.0
+scipy
+numpy
+scikit-learn
+pandas
+CellProfiler
+centrosome
+aicspylibczi>=3.1.1
