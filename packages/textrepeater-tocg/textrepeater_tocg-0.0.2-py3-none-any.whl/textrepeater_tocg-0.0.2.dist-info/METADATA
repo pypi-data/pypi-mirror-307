@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: textrepeater_tocg
+Version: 0.0.2
+Summary: this is a package which lets jou repeat text using the var = repeat(text, amount) command where var is the repeated text, also printrepeat(text, amount) prints the text immediately
+Author: ThatOneCodeGuy
+Author-email: <bentrombouts2012@gmail.com>
+Keywords: test,fun,useless,python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
