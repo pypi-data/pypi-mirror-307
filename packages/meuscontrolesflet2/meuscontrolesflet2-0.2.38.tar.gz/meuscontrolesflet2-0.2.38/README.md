@@ -1,0 +1,1 @@
+class ConfirmarSaida: abre uma janela de comfirmação ao clicar em fechar o programa. Ela pode receber uma função para ser executada ao fechar
