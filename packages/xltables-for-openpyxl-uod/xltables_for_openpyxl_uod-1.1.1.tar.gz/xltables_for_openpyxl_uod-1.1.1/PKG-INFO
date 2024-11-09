@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xltables-for-openpyxl-uod
+Version: 1.1.1
+Summary: More easily work with tables in OpenPyXL.
+Home-page: https://github.com/UoD-Strategic-Planning-and-Insight/XLTables-for-OpenPyXL
+Author: Chris Massie (Dundee University)
+Author-email: cmassie001@dundee.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# XLTables for OpenPyXL
+
+XLTable is a wrapper for a Table object as provided by OpenPyXL, allowing you to more easily read and write to and from a table.
