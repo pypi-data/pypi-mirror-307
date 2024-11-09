@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xlns.py
+src/conf/dally.py
+src/conf/lpvip_ufunc.py
+src/conf/xlnsudFracnorm.py
+src/xlns.egg-info/PKG-INFO
+src/xlns.egg-info/SOURCES.txt
+src/xlns.egg-info/dependency_links.txt
+src/xlns.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: xlns
+Version: 1.0.0
+Summary: A configurable python package for Logarithmic Number System eXperimentation
+Author-email: Mark G Arnold <markgarnold@yahoo.com>, Ed Chester <ed.chester@systemlevel.co.uk>
+Maintainer-email: Pradeeban Kathiravelu <kk.pradeeban@gmail.com>
+Project-URL: Homepage, https://github.com/xlnsresearch/xlns
+Project-URL: Issues, https://github.com/xlnsresearch/xlns/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xlns
+XLNS: a configurable python package for Logarithmic Number System eXperimentation
+
+
+# Getting Started
+
+It is recommended to create a python virtual environment for experimentation with the XLNS package. Within that environment, ensure you have the dependencies listed below installed.
+
+Explanatory information about the LNS is in the LNS_Intro.md file.
+
+# Dependencies
+numpy
+
+````
+pip3 install numpy
+````
