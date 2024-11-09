@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: eradiate
+Version: 0.29.2
+Summary: A radiative transfer model for the Earth observation community
+Author: The Eradiate Team
+Maintainer: The Eradiate Team
+License: LGPLv3
+Project-URL: changelog, https://github.com/eradiate/eradiate/CHANGELOG.md
+Project-URL: documentation, https://eradiate.readthedocs.io
+Project-URL: repository, https://github.com/eradiate/eradiate
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aenum
+Requires-Dist: attrs>=22.2
+Requires-Dist: cachetools>=5.3
+Requires-Dist: cerberus>=1.3
+Requires-Dist: click
+Requires-Dist: dessinemoi>=23.1.0
+Requires-Dist: dynaconf>=3.2
+Requires-Dist: joseki>=2.6.0
+Requires-Dist: lazy_loader>=0.1
+Requires-Dist: matplotlib>=3.3
+Requires-Dist: netcdf4
+Requires-Dist: numpy<2
+Requires-Dist: pint
+Requires-Dist: pinttrs>=23.2.0
+Requires-Dist: pooch
+Requires-Dist: rich
+Requires-Dist: ruamel.yaml
+Requires-Dist: scipy
+Requires-Dist: sf-hamilton>=1.40
+Requires-Dist: typer>=0.9.0
+Requires-Dist: tqdm
+Requires-Dist: shellingham!=1.5.1
+Requires-Dist: xarray!=0.20.*,>=0.19
+Provides-Extra: kernel
+Requires-Dist: eradiate-mitsuba==0.3.1; extra == "kernel"
+Provides-Extra: recommended
+Requires-Dist: aabbtree; extra == "recommended"
+Requires-Dist: astropy; extra == "recommended"
+Requires-Dist: ipython; extra == "recommended"
+Requires-Dist: ipywidgets; extra == "recommended"
+Requires-Dist: jupyterlab; extra == "recommended"
+Requires-Dist: python-dateutil; extra == "recommended"
+Requires-Dist: graphviz; extra == "recommended"
+Requires-Dist: seaborn; extra == "recommended"
+Provides-Extra: docs
+Requires-Dist: myst-parser; extra == "docs"
+Requires-Dist: nbsphinx>=0.9.0; extra == "docs"
+Requires-Dist: ipython; extra == "docs"
+Requires-Dist: pytest; extra == "docs"
+Requires-Dist: seaborn; extra == "docs"
+Requires-Dist: sphinx-book-theme>=1.0; extra == "docs"
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinxcontrib-bibtex>=2.0; extra == "docs"
+Requires-Dist: sphinx-autobuild<=2021; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx-design; extra == "docs"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-json-report; extra == "test"
+Requires-Dist: asv==0.6.*; extra == "test"
+Provides-Extra: dev
+Requires-Dist: bump-my-version<0.27,>=0.26.1; extra == "dev"
