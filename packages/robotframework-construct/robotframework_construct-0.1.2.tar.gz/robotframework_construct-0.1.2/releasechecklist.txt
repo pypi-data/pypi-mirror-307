@@ -1,0 +1,3 @@
+ - set version in pyproject.toml
+ - update doc using "uv run libdoc -n "robotframework-construct" src/robotframework_construct docs/index.html"
+ - commit, tag, uv build

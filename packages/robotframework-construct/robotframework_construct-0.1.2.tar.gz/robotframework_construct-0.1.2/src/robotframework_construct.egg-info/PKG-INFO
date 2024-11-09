@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: robotframework-construct
+Version: 0.0.1.post0+ga43c179.d20241108
+Summary: Infrastructure to use construct Structs in robotframework
+License: Apache-2.0
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: robotframework>=7.1
+Requires-Dist: construct
+Provides-Extra: test
+Requires-Dist: cosmic-ray>=8.3.15; extra == "test"
+Requires-Dist: pymongo>=4.9.1; extra == "test"
+Requires-Dist: ruff>=0.7.2; extra == "test"
+Requires-Dist: pytest>=8.3.3; extra == "test"
+
+# robotframework-construct
+
+## What is robotframework-construct?
+
+[Robot Framework](https://robotframework.org) library powered by [construct](https://construct.readthedocs.io/en/latest/).
+
+A declarative and symmetrical parser and builder for binary data.
+
+Aiming for :rocket: speed, :white_check_mark: reliability, and :microscope: visibility.
+
+Ideally, your binary data becomes as accessible as numbers and strings are in Robot Framework.
+
+### Use cases
+
+- Test your production construct specification against a reference implementation of the same protocol.
+- Test your production binary parser/generator against a construct implementation of your binary format.
+- Use your construct specification to:
+  - Craft intentionally corrupted data.
+  - Fuzz test your binary parsers.
+- Beautifuly access registers, for both reading and writing.
+
+## Relationships in the Ecosystem
+
+The number of dependencies is kept low, with no transient dependencies.
+
+This is important as it keeps coordination feasible. Construct is well-developed and not expected to change significantly soon. Robot Framework releases major updates annually, but these are well-managed and communicated.
+
+### Construct (https://github.com/construct/construct)
+
+All parsing and generating capabilities come from Construct. No additional parsing/generating code is added; the only code added interfaces Construct with Robot Framework. The way Construct objects are created remains unchanged.
+
+Construct has no non-optional dependencies.
+
+### Robot Framework (https://robotframework.org/)
+
+This project connects Construct with Robot Framework. Only official APIs are used, and this project depends entirely on Robot Framework.
+
+Robot Framework has no non-optional dependencies.
+
+### Rammbock (https://github.com/MarketSquare/Rammbock)
+
+Rammbock inspired this project, as it was one of the reasons I started using Robot Framework.
+
+Instead of maintaining Rammbock, we chose to integrate Construct.
+
+#### Reasoning
+
+Both Rammbock and Construct have limited engineering resources, but Construct is currently better supported. Construct also collaborates with Kaitai, engaging communities in C#, C++, and other ecosystems.
+
+Using Construct provides a clear separation between parsing/generating logic and interface code, enabling expansion into other ecosystems.
+
+## Limitations
+
+To maintain reusability, Construct specifications must be written in `.py` files. There are no plans to integrate the Construct DSL into Robot Framework.
+
+## Quality Control Measures
+
+Examples and acceptance tests using Robot Framework are provided. Unit tests are not a priority.
+
+### Mutation Testing
+
+Since this project consists primarily of interface code, it is crucial to catch user errors and produce clear error messages. Mutation testing ensures that all code paths and error messages are tested, supporting efforts to make errors informative.
+
+## Project To-Do List
+
+- [x] Parsing functionality demonstrated with an in-memory BSON object.
+- [x] Parsing functionality demonstrated with a BSON file.
+- [x] Generating functionality demonstrated with an in-memory BSON object.
+- [x] Generating functionality demonstrated with a binary file.
+- [x] Register read/write demonstrated with a mockup register.
+- [ ] Receive/transmit network example using DNS.
+- [ ] Reflector tool to allow to implement servers using clients.
+- [ ] Upload wheel to pypi.
+- [ ] Documentation and tutorials.
+- [ ] Midway review with Robot Framework Foundation.
+- [ ] Final review with Robot Framework Foundation.
