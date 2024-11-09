@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: leetcodepy
+Version: 0.0.1
+Summary: Implementations of LeetCode problem solutions in Python
+Project-URL: Homepage, https://github.com/LeetCode-Packages/Python
+Project-URL: Issues, https://github.com/LeetCode-Packages/Python/issues
+Author-email: tarolling <benitojoens@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python
+Implementations of LeetCode problem solutions in Python.
