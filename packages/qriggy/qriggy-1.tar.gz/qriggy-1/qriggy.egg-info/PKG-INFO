@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: qriggy
+Version: 1
+Summary: A simple QR code generator package.
+Author: ZIGGY
+Author-email: xx@gmail.com
+License: MIT
+Requires-Dist: qrcode[pil]
