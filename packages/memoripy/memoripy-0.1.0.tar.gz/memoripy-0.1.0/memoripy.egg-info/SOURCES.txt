@@ -1,0 +1,14 @@
+README.md
+setup.py
+memoripy/__init__.py
+memoripy/in_memory_storage.py
+memoripy/json_storage.py
+memoripy/main.py
+memoripy/memory_manager.py
+memoripy/memory_store.py
+memoripy/storage.py
+memoripy.egg-info/PKG-INFO
+memoripy.egg-info/SOURCES.txt
+memoripy.egg-info/dependency_links.txt
+memoripy.egg-info/requires.txt
+memoripy.egg-info/top_level.txt
