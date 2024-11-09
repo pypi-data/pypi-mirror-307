@@ -1,0 +1,45 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "year": 1960,
+            "genres": [
+                "Fiction",
+                "Classic",
+                "Coming-of-age"
+            ],
+            "rating": 4.27,
+            "inStock": true
+        },
+        {
+            "id": 2,
+            "title": "1984",
+            "author": "George Orwell",
+            "year": 1949,
+            "genres": [
+                "Fiction",
+                "Dystopian",
+                "Political"
+            ],
+            "rating": 4.18,
+            "inStock": false
+        },
+        {
+            "id": 3,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "year": 1813,
+            "genres": [
+                "Fiction",
+                "Romance",
+                "Classic"
+            ],
+            "rating": 4.25,
+            "inStock": true
+        }
+    ],
+    "totalBooks": 3,
+    "lastUpdated": "2023-05-15T14:30:00Z"
+}
