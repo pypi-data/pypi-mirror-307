@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/evallite/__init__.py
+src/evallite/model.py
+src/evallite.egg-info/PKG-INFO
+src/evallite.egg-info/SOURCES.txt
+src/evallite.egg-info/dependency_links.txt
+src/evallite.egg-info/requires.txt
+src/evallite.egg-info/top_level.txt
