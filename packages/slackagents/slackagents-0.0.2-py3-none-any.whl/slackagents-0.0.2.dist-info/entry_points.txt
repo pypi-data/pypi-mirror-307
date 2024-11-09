@@ -1,0 +1,3 @@
+[console_scripts]
+slackagents=slackagents.__main__:cli
+
