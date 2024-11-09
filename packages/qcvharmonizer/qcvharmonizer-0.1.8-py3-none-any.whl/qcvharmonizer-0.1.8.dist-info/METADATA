@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: qcvharmonizer
+Version: 0.1.8
+Summary: A package for harmonize oceanographic insitu data. base of this package is cerbere, developped by JF.Piolle - Ifremer. Cerbere is available here : [Gitlab = https://gitlab.ifremer.fr/cerbere/cerbere / pip : https://pypi.org/project/cerbere/]
+Author-email: Clement Weber <clement.weber@pokapok.org>
+License: MIT
+Keywords: oceanography,harmonization,profiles,Argo,Glider
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: datetime
+Requires-Dist: cerbere
+
+# QCV Harmonizer
+
+A Python package that harmonize data following FAIREASE qcv nomenclature.
+
+## Installation
+WARNING : To use this package, it is needed to install cerberecontrib-marineinsitu package from git before. 
+Hopefully, the command is written below .
+Have fun !
+
+To install cerberecontrib-marineinsitu, you can use `pip` directly from GitLab:
+
+```bash
+pip install git+https://gitlab.ifremer.fr/cerbere/cerberecontrib-marineinsitu.git@dev_cweber
+```
+
+Then it is posible to install qcvharmonizer package thru pip standard usage : 
+```bash
+pip install qcvharmonizer
+``` 
