@@ -1,0 +1,14 @@
+packaging>=24.1
+click==8.1.7
+ar>=1.0.0
+
+[dev]
+ipython
+black
+ruff
+check-manifest
+rich
+
+[tests]
+pytest
+pytest-spec
