@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: toffee-flask
+Version: 0.1.0
+Summary: Flask app for Toffee by @PiratesTv
+Author: PiratesTv
+Requires-Dist: Flask>=2.0
+Requires-Dist: requests
+
