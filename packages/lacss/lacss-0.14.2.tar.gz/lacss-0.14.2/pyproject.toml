@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "lacss"
+version = "0.14.2"
+description = "Tools for cell segmentation"
+authors = ["Ji Yu <jyu@uchc.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "<2.0"
+typer = "^0.12.3"
+imageio = "^2.9.0"
+scikit-image = ">=0.19.0"
+imagecodecs = "^2023.3.16"
+opencv-python = "^4.8.1.78"
+tqdm = "^4.65.0"
+grpcio = "^1.66"
+flax = "^0.8"
+ml-collections = { version = "^0.1.1", optional = true }
+tensorflow = { version = "^2.16.1", optional = true }
+xtrain = { version = "^0.4.0", optional = true }
+jax = { version = "^0.4", extras = ["cuda12"], optional = true }
+
+[tool.poetry.extras]
+train = [ "jax", "ml-collections", "tensorflow", "xtrain" ]
+cuda12 = [ "jax" ]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+grpcio-tools = "^1.66"
+jupyterlab = "^3.6.1"
+matplotlib = "^3.8.4"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.2.3"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+mkdocs-gen-files = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+exclude = ["**/__pycache__/**", "**/runs/**", ".venv/"]
