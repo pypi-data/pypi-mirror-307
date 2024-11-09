@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "snapcache"
+version = "1.0.0"
+description = "Snap-in memory caching for Python, no persistence, just pure function result caching."
+authors = ["Del Wang <hello@xbox.work>"]
+maintainers = ["Del Wang <hello@xbox.work>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://del.wang"
+repository = "https://github.com/idootop/snapcache"
+documentation = "https://github.com/idootop/snapcache/README.md"
+keywords = ["cache", "functools", "lru_cache", "unhashable"]
+
+
+[tool.poetry.urls]
+Changelog = "https://github.com/idootop/snapcache/blob/main/CHANGELOG.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
