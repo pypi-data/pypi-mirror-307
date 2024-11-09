@@ -1,0 +1,15 @@
+scipy
+pandas
+matplotlib
+requests
+chaospy
+fastdtw
+filterpy
+
+[datadriven]
+
+[datadriven:platform_system != "Darwin" or platform_machine != "arm64"]
+tensorflow
+
+[datadriven:platform_system == "Darwin" and platform_machine == "arm64"]
+tensorflow-macos
