@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cosinorage
+Version: 0.1.2
+Summary: A package for computing the ConsinorAge from raw accelerometer data.
+Home-page: https://github.com/jlohunecke/CosinorAge.git
+Author: Jacob Leo Oskar Hunecke
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: pandas ; extra == 'docs'
+
