@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: fw-gear-nnunetv1
+Version: 0.1.2
+Summary: Run inference by the nnUnet v1 model.
+Home-page: https://gitlab.com/flywheel-io/scientific-solutions/clients/regeneron/nnunetv1
+License: The nnUnet source code is under an [Apache License 2.0](https://github.com/MIC-DKFZ/nnUNet/blob/nnunetv1/LICENSE); the remainder of this gear is under [MIT License](https://gitlab.com/flywheel-io/scientific-solutions/gears/templates/skeleton/-/blob/76f2c943ad5212380e39b27a756574bce94a3782/LICENSE).
+Keywords: Flywheel,Gears
+Author: Flywheel
+Author-email: support@flywheel.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: flywheel-gear-toolkit (>=0.6,<0.7)
+Requires-Dist: flywheel-sdk (>=18,<19)
+Project-URL: Repository, https://gitlab.com/flywheel-io/scientific-solutions/clients/regeneron/nnunetv1
+Description-Content-Type: text/markdown
+
+# nnunetv1
+
+**Note: Unit tests have not been added to this repository yet.**
+
+
+### Summary
+
+Run inference by the nnUnet model [1, 2] on an input NIfTI file.
+
+Testing datasets, from http://medicaldecathlon.com/ [3]:
+- Task04_Hippocampus.tar (a 3-D dateset)
+- Task05_Prostate.tar (a 4-D dataset)
+
+
+### Cite
+
+[1] Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. (2020). nnU-Net: a
+self-configuring method for deep learning-based biomedical image segmentation.
+Nat Methods. https://doi.org/10.1038/s41592-020-01008-z.
+
+[2] Isensee, F., Jäger, P. F., Kohl, S. A. A., Petersen, J., & Maier-Hein,
+K. H. (2021). pretrained models for 3D semantic image segmentation with nnU-Net
+(2.1). Zenodo. https://doi.org/10.5281/zenodo.4485926.
+
+[3] Simpson, A. L., Antonelli, M., Bakas, S., Bilello, M., Farahani, K.,
+Van Ginneken, B., ... & Cardoso, M. J. (2019). A large annotated medical image
+dataset for the development and evaluation of segmentation algorithms.
+arXiv preprint arXiv:1902.09063.
+
+
+### License
+
+The nnUnet source code is under an [Apache License 2.0](https://github.com/MIC-DKFZ/nnUNet/blob/nnunetv1/LICENSE); the remainder of this gear is under [MIT License](https://gitlab.com/flywheel-io/scientific-solutions/gears/templates/skeleton/-/blob/76f2c943ad5212380e39b27a756574bce94a3782/LICENSE).
+
+
+### Classification
+
+*Category:* *Analysis*
+
+*Gear Level:*
+
+- [x] Project
+- [x] Subject
+- [x] Session
+- [x] Acquisition
+- [x] Analysis
+
+----
+
+[[_TOC_]]
+
+----
+
+
+### Inputs
+
+- __modality_0__
+  - __Name__: modality_0
+  - __Type__: .nii.gz
+  - __Optional__: false
+  - __Classification__: *file*
+  - __Description__: *3D or 4D NIfTI file.*
+  - __Notes__: *If 4D, should be only modality input.*
+
+- __modality_1__
+  - __Name__: modality_1
+  - __Type__: .nii.gz
+  - __Optional__: true
+  - __Classification__: *file*
+  - __Description__: *3D NIfTI file.*
+  - __Notes__: *If this exists, all other inputs should also be 3D.*
+
+- __modality_2__
+  - __Name__: modality_2
+  - __Type__: .nii.gz
+  - __Optional__: true
+  - __Classification__: *file*
+  - __Description__: *3D NIfTI file.*
+  - __Notes__: *If this exists, all other inputs should also be 3D.*
+
+- __modality_3__
+  - __Name__: modality_3
+  - __Type__: .nii.gz
+  - __Optional__: true
+  - __Classification__: *file*
+  - __Description__: *3D NIfTI file.*
+  - __Notes__: *If this exists, all other inputs should also be 3D.*
+
+
+### Config
+
+- __pretrained_model__
+  - __type__: *str*
+  - __Description__: *Pre-trained model to use for inference*. 10 options given for Task models 00-10 [2].
+
+- __debug__
+  - __type__: *bool*
+  - __Description__: Whether to include debug statements in the job logs.
+
+
+### Output Files
+
+  - __prediction_time.txt__
+  - __postprocessing.json__
+  - __plans.pkl__
+  - __{input NIfTI file base name}\_\_{model name}.nii.gz__
+
+
+### Workflow
+
+1. Upload file(s) to container.
+2. Select file(s) as input(s) to gear.
+3. Specify which model to apply inference with, as well as any other config
+selections and run.
+3. Gear runs inference with selected model on inputs and places results into
+into new Analysis container.
+
+
+## Contributing
+
+[For more information about how to get started contributing to that gear,
+checkout [CONTRIBUTING.md](CONTRIBUTING.md).]
+<!-- markdownlint-disable-file -->
