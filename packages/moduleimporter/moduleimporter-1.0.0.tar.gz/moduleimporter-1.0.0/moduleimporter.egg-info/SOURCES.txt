@@ -1,0 +1,11 @@
+README.md
+setup.py
+moduleimporter/Importer.py
+moduleimporter/PathFinder.py
+moduleimporter/__init__.py
+moduleimporter/_wrapper.py
+moduleimporter/util.py
+moduleimporter.egg-info/PKG-INFO
+moduleimporter.egg-info/SOURCES.txt
+moduleimporter.egg-info/dependency_links.txt
+moduleimporter.egg-info/top_level.txt
