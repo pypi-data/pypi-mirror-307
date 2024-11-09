@@ -1,0 +1,17 @@
+numpy>=1.19.5
+
+[docs]
+sphinx-rtd-theme==1.1.1
+sphinx>=5.0.0
+myst-parser
+numpydoc==1.1.0
+
+[mpi]
+mpi4py
+
+[test]
+pylint
+pytest>=7.0.1
+pytest-cov>=4.0.0
+pytest-html>=3.2.0
+pytest-xdist>=3.0.2
