@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: acquire-zarr
+Version: 0.0.1
+Author: Alan Liddell
+Author-email: aliddell@chanzuckerberg.com
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: black; extra == "testing"
+Requires-Dist: dask; extra == "testing"
+Requires-Dist: mypy; extra == "testing"
+Requires-Dist: ome-zarr; extra == "testing"
+Requires-Dist: pytest>=7; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: python-dotenv; extra == "testing"
+Requires-Dist: ruff; extra == "testing"
+Requires-Dist: s3fs; extra == "testing"
+Requires-Dist: tifffile; extra == "testing"
+Requires-Dist: zarr; extra == "testing"
+
