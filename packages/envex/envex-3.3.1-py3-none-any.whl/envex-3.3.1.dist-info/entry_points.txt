@@ -1,0 +1,4 @@
+[console_scripts]
+env2hvac = scripts.env2hvac:main
+envsecrets = scripts.envsecrets:main
+seal = scripts.seal:main
