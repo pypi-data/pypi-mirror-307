@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pywebcore/__init__.py
+src/pywebcore/pywebcore.py
+src/pywebcore.egg-info/PKG-INFO
+src/pywebcore.egg-info/SOURCES.txt
+src/pywebcore.egg-info/dependency_links.txt
+src/pywebcore.egg-info/requires.txt
+src/pywebcore.egg-info/top_level.txt
