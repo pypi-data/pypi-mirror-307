@@ -1,0 +1,6 @@
+pysaml2
+Flask-Login
+Flask
+
+[:python_version > "3.7"]
+importlib-metadata

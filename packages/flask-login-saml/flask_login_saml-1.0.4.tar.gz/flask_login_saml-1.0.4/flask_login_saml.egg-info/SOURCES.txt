@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+flask_login_saml/__init__.py
+flask_login_saml/client.py
+flask_login_saml/user.py
+flask_login_saml.egg-info/PKG-INFO
+flask_login_saml.egg-info/SOURCES.txt
+flask_login_saml.egg-info/dependency_links.txt
+flask_login_saml.egg-info/requires.txt
+flask_login_saml.egg-info/top_level.txt
