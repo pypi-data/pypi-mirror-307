@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pylogicalprogram
+Version: 1.4
+Summary: A collection of logical and pattern programs in Python
+Home-page: https://github.com/rdinesh808/pylogicalprograms
+Author: rdinesh808
+Author-email: rdinesh808@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: psutil
+
+This repository contains a collection of logical programming solutions implemented in Python. The programs focus on various mathematical and algorithmic problems, such as calculating factorials, counting digits in numbers, generating Fibonacci series, identifying Armstrong numbers, and more. Each script is designed to demonstrate fundamental programming concepts and problem-solving techniques, making them useful for practicing and improving coding skills in Python.
+
+Feel free to explore the code and modify it to suit your learning needs!
