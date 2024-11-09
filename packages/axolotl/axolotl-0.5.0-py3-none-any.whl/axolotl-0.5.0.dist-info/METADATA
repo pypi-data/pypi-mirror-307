@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: axolotl
+Version: 0.5.0
+Summary: LLM Trainer
+License-File: LICENSE
+Requires-Dist: packaging==23.2
+Requires-Dist: peft==0.13.2
+Requires-Dist: transformers==4.46.1
+Requires-Dist: tokenizers>=0.20.1
+Requires-Dist: bitsandbytes==0.44.1
+Requires-Dist: accelerate==1.1.0
+Requires-Dist: datasets==3.0.1
+Requires-Dist: pydantic==2.6.3
+Requires-Dist: addict
+Requires-Dist: fire
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: requests
+Requires-Dist: sentencepiece
+Requires-Dist: wandb
+Requires-Dist: einops
+Requires-Dist: optimum==1.16.2
+Requires-Dist: hf-transfer
+Requires-Dist: colorama
+Requires-Dist: numba
+Requires-Dist: numpy<=2.0.1,>=1.24.4
+Requires-Dist: evaluate==0.4.1
+Requires-Dist: scipy
+Requires-Dist: scikit-learn==1.4.2
+Requires-Dist: pynvml
+Requires-Dist: art
+Requires-Dist: gradio==3.50.2
+Requires-Dist: tensorboard
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: autoawq>=0.2.5
+Requires-Dist: triton>=2.3.0
+Requires-Dist: liger-kernel==0.4.0
+Requires-Dist: s3fs>=2024.5.0
+Requires-Dist: gcsfs>=2024.5.0
+Requires-Dist: trl==0.12.0
+Requires-Dist: zstandard==0.22.0
+Requires-Dist: fastcore
+Requires-Dist: lm-eval==0.4.4
+Requires-Dist: langdetect==1.0.9
+Requires-Dist: immutabledict==4.2.0
+Requires-Dist: antlr4-python3-runtime==4.13.2
+Requires-Dist: torch==2.3.1
+Requires-Dist: xformers>=0.0.27
+Provides-Extra: auto-gptq
+Requires-Dist: auto-gptq==0.5.1; extra == "auto-gptq"
+Provides-Extra: deepspeed
+Requires-Dist: deepspeed==0.14.4; extra == "deepspeed"
+Requires-Dist: deepspeed-kernels; extra == "deepspeed"
+Provides-Extra: flash-attn
+Requires-Dist: flash-attn==2.6.3; extra == "flash-attn"
+Provides-Extra: galore
+Requires-Dist: galore-torch; extra == "galore"
+Provides-Extra: lion-pytorch
+Requires-Dist: lion-pytorch==0.1.2; extra == "lion-pytorch"
+Provides-Extra: mamba-ssm
+Requires-Dist: mamba-ssm==1.2.0.post1; extra == "mamba-ssm"
+Requires-Dist: causal-conv1d; extra == "mamba-ssm"
+Provides-Extra: mlflow
+Requires-Dist: mlflow; extra == "mlflow"
+Provides-Extra: optimizers
+Requires-Dist: galore-torch; extra == "optimizers"
+Requires-Dist: lion-pytorch==0.1.2; extra == "optimizers"
+Requires-Dist: lomo-optim==0.1.1; extra == "optimizers"
+Requires-Dist: torch-optimi==0.2.1; extra == "optimizers"
+
+Axolotl is a tool designed to streamline the fine-tuning of various AI models, offering support for multiple configurations and architectures.
