@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iree-base-compiler
+Version: 2.9.0rc20241108
+Summary: IREE Compiler API
+Author: IREE Authors
+Author-email: iree-technical-discussion@lists.lfaidata.foundation
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: numpy
+Requires-Dist: sympy
+Provides-Extra: onnx
+Requires-Dist: onnx>=1.16.0; extra == "onnx"
