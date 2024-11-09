@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: preusx-django-admin-extensions
+Version: 0.1.6
+Summary: Utilities and extensions for django administration panel.
+Author: Alex Tkachenko
+Author-email: preusx@gmail.com
+License: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: contrib
+Requires-Dist: django-admin-rangefilter==0.13.2; extra == "contrib"
+Requires-Dist: django-admin-numeric-filter==0.1.9; extra == "contrib"
+Requires-Dist: django-admin-easy==0.8; extra == "contrib"
+Requires-Dist: django-better-admin-arrayfield==1.4.2; extra == "contrib"
+Provides-Extra: docs
+Requires-Dist: mkdocs==1.6.1; extra == "docs"
+Requires-Dist: mkdocstrings==0.26.2; extra == "docs"
+Requires-Dist: mkdocs-material==9.5.41; extra == "docs"
+Requires-Dist: mkdocs-include-markdown-plugin==6.2.2; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: pytest<7.0,>=6.0; extra == "dev"
+Requires-Dist: pytest-watch<5.0,>=4.2; extra == "dev"
+Requires-Dist: pytest-django<5.0,>=4.3; extra == "dev"
+Requires-Dist: django-environ==0.4.5; extra == "dev"
+Requires-Dist: django-stubs; extra == "dev"
+Requires-Dist: django<6,>=2.2; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# Django admin extensions
+
+Utilities and extensions for django administration panel.
+
+Docs here: [https://preusx.gitlab.io/django-admin-extensions](https://preusx.gitlab.io/django-admin-extensions)
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.1.5]
+### Fixed
+- Many to many admin changelist injector issue fix.
+
+## [0.1.4]
+### Added
+- Many to many admin changelist editable fields.
+
+## [0.1.1]
+Initial version.
