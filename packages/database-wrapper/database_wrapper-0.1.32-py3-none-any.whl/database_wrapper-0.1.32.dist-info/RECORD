@@ -1,0 +1,15 @@
+database_wrapper/__init__.py,sha256=pwXuJmQJxTRehMTp3F_QcsqV8LtHJSlmiA_DedgGs5I,866
+database_wrapper/config.py,sha256=EHiebkq4JYbuFG_XxufVHyOpmR8-Mr2DJPRTQ3la1PQ,334
+database_wrapper/db_backend.py,sha256=iQd1yVsLumutfoOmWY-XAAiLg00_I-IueOv_RtO_7ew,5068
+database_wrapper/db_data_model.py,sha256=RzOVITczh6IgnBTjur6XDdIj5pkv7fXPl-AjM4xOB0Q,9904
+database_wrapper/db_wrapper.py,sha256=EvJbxhaUHIT74zkV5yE-9JgE-i5ZA46PxDy1Y95F_gc,25157
+database_wrapper/db_wrapper_async.py,sha256=ZpbAkM9MTOdzlyfNRuBlWMuyoTPvhKBEL3wKEQTtSsI,25693
+database_wrapper/db_wrapper_interface.py,sha256=2FWy_Bdn1iMURuHki-xYZuueHZL_mmt0ihZ_ar9TWMQ,12361
+database_wrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+database_wrapper/utils/__init__.py,sha256=mnewmY38-837VAh4f42hvpMUBVUjOLoMtIfdZBxbkg0,134
+database_wrapper/utils/dataclass_addons.py,sha256=2n0m_WGZGtiiBd8JNwomUvfkULvMg2C_1kwe-Sq-Z7A,702
+database_wrapper/utils/timer.py,sha256=ZJpVMsQ7oHHgyuqMOxVee1fZD78kcDrP4c8gHug3xGU,8927
+database_wrapper-0.1.32.dist-info/METADATA,sha256=t7odKtZiIGfcPPHBxlJ0gn9aXKyYAIzAjXZMVmKrCvo,3370
+database_wrapper-0.1.32.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+database_wrapper-0.1.32.dist-info/top_level.txt,sha256=QcnS4ocJygxcKE5eoOqriuja306oVu-zJRn6yjRRhBw,17
+database_wrapper-0.1.32.dist-info/RECORD,,
