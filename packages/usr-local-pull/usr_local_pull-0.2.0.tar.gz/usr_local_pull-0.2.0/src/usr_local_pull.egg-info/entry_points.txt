@@ -1,0 +1,2 @@
+[console_scripts]
+usr-local-pull = usr_local_pull.cli:cli
