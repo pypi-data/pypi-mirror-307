@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "gg_daigua"
+version = "0.2.6"
+description = "方便的工具"
+authors = ["邓润庭 <1032939141@qq.com>"]
+readme = "README.md"
+include = ["resources/**/*"]
+packages = [
+    { include = "gg" }
+]
+
+[tool.poetry.scripts]
+gg = "gg.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.13.0"
+requests = "^2.32.3"
+moviepy = "^1.0.3"
+whisper = "^1.1.10"
+pyexecjs = "^1.5.1"
+bs4 = "^0.0.2"
+llvmlite = "0.43.0"
+numba = "0.60.0"
+openai-whisper = "^20240930"
+imageio = "^2.36.0"
+psutil = "^6.1.0"
+ffmpeg-python = "^0.2.0"
+opencv-python = "^4.10.0.84"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
