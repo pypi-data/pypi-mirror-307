@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keen_jolt"
+version = "0.1.0"
+description = "Пакет для анализа финансовых транзакций"
+authors = [
+    { name = "Semyon Drozdov", email = "s.drozdov@edu.centraluniversity.ru" }
+]
+dependencies = [
+    "pandas"
+]
