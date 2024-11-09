@@ -1,0 +1,232 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 2,
+    "fields": {
+      "name": "Smaugustus Emberflame",
+      "slug": "smaugustus-emberflame",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "Once a fearsome dragon with an illustrious hoard, Smaugustus Emberflame has decided to 'go corporate.' Wielding centuries of treasure-management skills and a keen eye for 'valuable assets,' Smaugustus seeks an honorable position at the bank—where the gold is ample, but he has *absolutely no interest* in adding it to his personal hoard. Not at all."
+        },
+        "cover": {
+          "flat": {
+            "title": "Hire Me (No, Really!)",
+            "avatar_alt": "a stern yet charming dragon profile picture",
+            "avatar_img": "uploads/smaugustus-profile-dragon.jpeg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Greetings, mortals! I’m [Smaugustus Emberflame](https://dragonsforhire.com/smaugustus/), an ancient and distinguished dragon with extensive experience managing large 'personal assets' in secure locations, such as deep mountain caves. I’ve spent centuries honing my skills in asset aggregation (by various means), value protection (fire deterrents), and account security (mine’s never been breached). Now, I seek a peaceful, *entirely legal* role safeguarding wealth at the bank. Trust me, I don’t want your gold… well, not all of it.",
+              "title": "Greetings, Humans!"
+            },
+            {
+              "id": "002",
+              "text": "Over the years, I’ve worked in a variety of fields—from personal treasure management with the [Order of the Golden Hoard](https://goldenhoard.org) to mentoring fledgling dragons on wealth accumulation strategies. Notable partnerships include the [Ancient League of Firebreathers](https://firebreathers.org) and [Vault Keepers Anonymous](https://vaultkeepers.com). I’ve even given talks at DragonCon on 'Managing a Hoard in Modern Times.' I’d like to assure you that I bring those same skills and a reformed perspective to this role. Definitely no fire involved.",
+              "title": "Experienced and... *Reformed*"
+            },
+            {
+              "id": "003",
+              "text": "[Excel](https://www.microsoft.com/en-us/microsoft-365/excel) is my primary tool these days—imagine the formulas I can create for compound treasure growth! However, I’m well-versed in modern fintech tools too. When I’m not safeguarding gold (yours or mine), I’m dabbling in data security to ensure assets stay exactly where they belong. I write a regular [column](https://dragonsforhire.com/embers-blog) on wealth management, aimed at *aspiring dragons* and, increasingly, humans.",
+              "title": "Tech and Treasure"
+            },
+            {
+              "id": "004",
+              "text": "Looking for someone to bring that extra spark to your vault? I can promise unwavering loyalty to your gold storage initiatives and *nearly no interest* in, uh, excessive collection. Besides, having a dragon around will deter any other *less reputable* dragons. Call it free security.",
+              "title": "Unmatched Vault Security"
+            },
+            {
+              "id": "005",
+              "text": "Are you planning to expand your vault capacity? If so, I may know a few friends eager to assist. If you're looking for an 'asset growth strategist' who comes with a built-in fire deterrent system, you’ve found your dragon. Let’s chat over a tankard of ale. Email me at [smaugustus@dragonsforhire.com](mailto:smaugustus@dragonsforhire.com), and let’s turn this bank into a *fortress of finance!*\n\nWarmly,\nSmaugustus",
+              "title": "Team-Up Opportunities"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "dragon-token",
+              "token": "TotallyNotGreedy123",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "treasurekeeper"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Asset Management",
+            "Excel Mastery",
+            "Vault Security",
+            "Fire Deterrents",
+            "SQL (Soaring Query Language)",
+            "Advanced Hoard Protection",
+            "Data Integrity (Gold Standard)",
+            "Conflict Resolution (Fire Optional)",
+            "Negotiation Tactics",
+            "Hoard Balancing",
+            "Macro Economics",
+            "FinTech",
+            "Database Management",
+            "Wealth Accumulation Strategies"
+          ]
+        },
+        "identity": {
+          "name": "Smaugustus Emberflame",
+          "email": "smaugustus@dragonsforhire.com",
+          "phone": "+000-BURN-BANK",
+          "github": "https://github.com/smaugustus-the-fiery",
+          "tagline": "Treasure security specialist with only a *modest* interest in acquiring additional assets.",
+          "linkedin": "https://linkedin.com/in/smaugustus-the-dragon",
+          "mastodon": "https://dragonsforhire.com/@smaugustus",
+          "pronouns": "he | him | Lord of the Flames",
+          "avatar_alt": "Smaugustus's intense, regal dragon profile",
+          "avatar_img": "uploads/smaugustus_dragon_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/Deep+Mountain+Lair/",
+          "location_name": "Deep Mountain Lair, Volcanic Mountains, UTC+3"
+        },
+        "projects": {
+          "flat": {
+            "title": "Projects"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://dragonsforhire.com/gold-hoarding-guide",
+              "title": "The Golden Hoard Guide",
+              "badges": [
+                "Asset Management",
+                "Treasure Growth",
+                "Long-term Investment"
+              ],
+              "position": 1,
+              "description": "A comprehensive guide on accumulating and protecting treasure across centuries, emphasizing ethical (mostly) strategies."
+            },
+            {
+              "id": "2",
+              "url": "https://vaultkeepers.com/",
+              "title": "Vault Keepers Anonymous",
+              "badges": [
+                "Community",
+                "Best Practices",
+                "Public Service"
+              ],
+              "position": 2,
+              "description": "A support group for dragons aiming to reduce 'excessive hoarding,' helping them transition to sustainable gold management."
+            },
+            {
+              "id": "3",
+              "url": "https://dragonsforhire.com/blog/embers-finance",
+              "title": "Ember's Finance Blog",
+              "badges": [
+                "Wealth Management",
+                "Humor"
+              ],
+              "position": 3,
+              "description": "A blog with practical advice for dragons looking to diversify their hoards and humans interested in 'fire-proof' wealth tips."
+            }
+          ]
+        },
+        "education": {
+          "end": "1342",
+          "start": "1320",
+          "school_url": "https://dragon-university.edu",
+          "school_name": "Dragon University of Gold and Fire"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employed Timeline"
+          },
+          "items": [
+            {
+              "id": "2",
+              "end": "1389",
+              "role": "Senior Hoard Manager",
+              "start": "1350",
+              "position": 1,
+              "company_url": "https://goldenthunder.org",
+              "description": "Led and guarded a massive treasure hoard. Implemented flame-based security protocols and instilled terror-based asset protection strategies.",
+              "company_name": "Golden Thunder Hoard"
+            },
+            {
+              "id": "3",
+              "end": "1320",
+              "role": "Apprentice Wealth Accumulator",
+              "start": "1300",
+              "position": 0,
+              "company_url": "https://dragonsdeluxe.org",
+              "description": "Learned the fundamentals of hoard aggregation and asset protection under the legendary dragon Infernious the Greedy.",
+              "company_name": "Dragons Deluxe"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Timeline"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "2024",
+              "role": "Freelance Hoard Consultant",
+              "start": "2024",
+              "badges": [
+                "remote"
+              ],
+              "position": 14,
+              "company_url": "https://flameseekers.com",
+              "description": "Offered expert advice on hoard establishment and expansion. Specialized in vault security and incineration risk management.",
+              "company_name": "FlameSeekers Inc."
+            },
+            {
+              "id": "2",
+              "end": "2023",
+              "role": "Asset Protection Specialist",
+              "start": "2022",
+              "badges": [
+                "remote"
+              ],
+              "position": 13,
+              "company_url": "https://wingedwealth.com",
+              "description": "Provided consultancy on maximizing asset security using traditional and, occasionally, fiery methods.",
+              "company_name": "Winged Wealth Advisors"
+            },
+            {
+              "id": "3",
+              "end": "2022",
+              "role": "Wealth Accumulation Strategist",
+              "start": "2020",
+              "badges": [
+                "contract"
+              ],
+              "position": 12,
+              "company_url": "https://treasuretroveconsulting.com",
+              "description": "Assisted clients in identifying undervalued assets (jewels, gold, magical artifacts) and strategies for discreet acquisition.",
+              "company_name": "Treasure Trove Consulting"
+            },
+            {
+              "id": "4",
+              "end": "2020",
+              "role": "Security Analyst",
+              "start": "2018",
+              "badges": [
+                "part-time"
+              ],
+              "position": 11,
+              "company_url": "https://castlebank.com",
+              "description": "Evaluated and stress-tested vault security systems. Any structural damage was purely incidental.",
+              "company_name": "Castle Bank & Trust"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

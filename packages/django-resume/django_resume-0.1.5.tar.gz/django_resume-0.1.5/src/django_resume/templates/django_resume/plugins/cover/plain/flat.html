@@ -1,0 +1,32 @@
+<section id="cover-flat">
+  <header>
+    {% if show_edit_button %}
+      <div class="with-edit-icon-big">
+        <svg class="edit-icon-h1" hx-get="{{ cover.edit_flat_url }}" hx-target="#cover-flat" hx-swap="outerHTML">
+          <use href="#edit"></use>
+        </svg>
+        <h1 class="cover-title">{{ cover.title }}</h1>
+      </div>
+    {% else %}
+      <div>
+        <h1 class="cover-title">{{ cover.title }}</h1>
+      </div>
+    {% endif %}
+  </header>
+  {% if cover.avatar_img %}
+    <div class="avatar-container float-right cover-avatar-container">
+      <img class="cover-avatar-image" src="{{ cover.avatar_img_url }}" alt="{{ cover.avatar_alt }}">
+      <svg class="avatar" width="auto" height="3vw">
+        <use href="#avatar"></use>
+      </svg>
+    </div>
+  {% endif %}
+  {% if not show_edit_button %}
+    <h3 class="first-cover-headline">{{ cover.first_item.title }}</h3>
+    <p class="pretty">
+      {{ cover.first_item.text|safe }}
+    </p>
+  {% endif %}
+</section>
+
+
