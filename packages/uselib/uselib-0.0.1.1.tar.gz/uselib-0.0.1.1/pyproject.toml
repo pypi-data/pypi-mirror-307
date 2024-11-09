@@ -1,0 +1,18 @@
+[project]
+name = "uselib"
+version = "0.0.1.1"
+authors = [
+  { name="Vladislav117", email="siluetkysta@gmail.com" },
+]
+description = "A library with useful and frequently used functions"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Vladislav117/uselib"
+Issues = "https://github.com/Vladislav117/uselib/issues"
