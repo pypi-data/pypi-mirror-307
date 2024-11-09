@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+mpr_sharepoint_utils.egg-info/PKG-INFO
+mpr_sharepoint_utils.egg-info/SOURCES.txt
+mpr_sharepoint_utils.egg-info/dependency_links.txt
+mpr_sharepoint_utils.egg-info/requires.txt
+mpr_sharepoint_utils.egg-info/top_level.txt
+sharepoint_utils/__init__.py
+sharepoint_utils/basic_utils.py
+sharepoint_utils/connection.py
+sharepoint_utils/spreadsheet_utils.py
+tests/test_basic_utils.py
+tests/test_spreadsheet_utils.py

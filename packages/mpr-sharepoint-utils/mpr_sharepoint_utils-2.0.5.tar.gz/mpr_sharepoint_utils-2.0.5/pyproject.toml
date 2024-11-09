@@ -1,0 +1,28 @@
+[project]
+name = "mpr-sharepoint-utils"
+version = "2.0.5"
+description = "A shared package for reading and writing to SharePoint"
+authors = [
+    {name = "Claire McShane", email = "cmcshane@mathematica-mpr.com"},
+    {name = "Holden Huntzinger", email = "hhuntzinger@mathematica-mpr.com"},
+    {name = "Max Grody", email = "mgrody@mathematica-mpr.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Free for non-commercial use",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+dependencies = [
+    "requests-ntlm",
+]
+requires-python = ">= 3.9"
+
+[project.optional-dependencies]
+pandas = ["pandas"]
+openpyxl = ["openpyxl"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
