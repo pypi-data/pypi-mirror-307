@@ -1,0 +1,2 @@
+[console_scripts]
+qbc-dsbm = qbc_dsbm.__main__:main
