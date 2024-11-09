@@ -1,0 +1,2 @@
+include versioneer.py
+include victron/_version.py

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+victron/__init__.py
+victron/_version.py
+victron/constants.py
+victron/exceptions.py
+victron/victron.py
+victron.egg-info/PKG-INFO
+victron.egg-info/SOURCES.txt
+victron.egg-info/dependency_links.txt
+victron.egg-info/requires.txt
+victron.egg-info/top_level.txt
