@@ -1,0 +1,408 @@
+{
+    "common": {
+        "confirmed": "Bekr\u00e4ftad",
+        "present": "Nuvarande"
+    },
+    "config": {
+        "abort": {
+            "missing_configuration": "Komponenten har inte konfigurerats. F\u00f6lj dokumentationen.",
+            "no_url_available": "Ingen webbadress tillg\u00e4nglig. F\u00f6r information om detta fel, [kolla hj\u00e4lpavsnittet]({docs_url})",
+            "oauth_error": "Mottog ogiltiga tokendata.",
+            "oauth_failed": "Fel vid h\u00e4mtning av \u00e5tkomsttoken.",
+            "oauth_timeout": "Timeout vid h\u00e4mtning av OAuth-token.",
+            "oauth_unauthorized": "OAuth-auktoriseringsfel vid h\u00e4mtning av \u00e5tkomsttoken."
+        },
+        "create_entry": {
+            "default": "Autentisering lyckades"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "V\u00e4lj autentiseringsmetod"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "battery_charging_state": {
+                "name": "Batteriets laddningsl\u00e4ge"
+            },
+            "charging_connection": {
+                "name": "Anslutning f\u00f6r laddare"
+            },
+            "dust_box_inserted": {
+                "name": "Dammbeh\u00e5llare",
+                "state": {
+                    "off": "Ej insatt",
+                    "on": "Insatt"
+                }
+            },
+            "freezer_door": {
+                "name": "Frysd\u00f6rr"
+            },
+            "lifted": {
+                "name": "Upplyft"
+            },
+            "local_control": {
+                "name": "Lokal kontroll"
+            },
+            "lost": {
+                "name": "F\u00f6rlorad"
+            },
+            "refrigerator_door": {
+                "name": "Kylsk\u00e5psd\u00f6rr"
+            },
+            "remote_control": {
+                "name": "Fj\u00e4rrman\u00f6vrering"
+            },
+            "remote_start": {
+                "name": "Fj\u00e4rrstart"
+            }
+        },
+        "light": {
+            "ambient_light": {
+                "name": "Omgivande ljus"
+            },
+            "cooking_lighting": {
+                "name": "Funktionell belysning"
+            },
+            "external_light": {
+                "name": "Utv\u00e4ndig belysning"
+            },
+            "internal_light": {
+                "name": "Intern belysning"
+            }
+        },
+        "sensor": {
+            "alarm_sensor_coffee_bean_container": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "alarm_sensor_coffee_drip_tray": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "alarm_sensor_coffee_water_tank": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "alarm_sensor_freezer": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "alarm_sensor_fridge": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "alarm_sensor_temp": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Nuvarande"
+                }
+            },
+            "battery_level": {
+                "name": "Batteriniv\u00e5"
+            },
+            "bean_container_empty": {
+                "name": "Beh\u00e5llare f\u00f6r b\u00f6nor tom",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Detekterad"
+                }
+            },
+            "camera_state": {
+                "name": "Kamerans tillst\u00e5nd",
+                "state": {
+                    "disabled": "Inaktiverad",
+                    "error": "Fel",
+                    "ready": "Redo",
+                    "sleeping": "Sover"
+                }
+            },
+            "door": {
+                "name": "D\u00f6rr/lucka",
+                "state": {
+                    "closed": "St\u00e4ngd",
+                    "locked": "L\u00e5st",
+                    "open": "\u00d6ppen"
+                }
+            },
+            "drip_tray_full": {
+                "name": "Dropptr\u00e5get \u00e4r fullt",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Detekterad"
+                }
+            },
+            "freezer_door_alarm": {
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "present": "Detekterad"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "Temperaturlarm f\u00f6r frysen",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Detekterad"
+                }
+            },
+            "hot_water_counter": {
+                "name": "Hetvatten"
+            },
+            "last_selected_map": {
+                "name": "Senast valda karta",
+                "state": {
+                    "map1": "Karta 1",
+                    "map2": "Karta 2",
+                    "map3": "Karta 3",
+                    "tempmap": "Tillf\u00e4llig karta"
+                }
+            },
+            "operation_state": {
+                "name": "Driftstatus",
+                "state": {
+                    "aborting": "Avbryter",
+                    "actionrequired": "\u00c5tg\u00e4rd kr\u00e4vs",
+                    "delayedstart": "F\u00f6rdr\u00f6jd start",
+                    "error": "Fel",
+                    "finished": "F\u00e4rdig",
+                    "inactive": "Inaktiv",
+                    "pause": "Pausad",
+                    "ready": "Redo",
+                    "run": "K\u00f6r"
+                }
+            },
+            "program_finish_time": {
+                "name": "Programmets sluttid"
+            },
+            "program_progress": {
+                "name": "Programmets framsteg"
+            },
+            "refrigerator_door_alarm": {
+                "name": "Larm f\u00f6r kylsk\u00e5psd\u00f6rr",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Detekterad"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "name": "Sk\u00f6ljmedlet n\u00e4stan tomt",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Nuvarande"
+                }
+            },
+            "salt_nearly_empty": {
+                "name": "Saltet \u00e4r n\u00e4stan tomt",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Nuvarande"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Tom vattentank",
+                "state": {
+                    "confirmed": "Bekr\u00e4ftad",
+                    "off": "Av",
+                    "present": "Detekterad"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Barnl\u00e5s"
+            },
+            "cup_warmer": {
+                "name": "Koppv\u00e4rmare"
+            },
+            "dispenser_enabled": {
+                "state": {
+                    "off": "Fr\u00e5nslagen",
+                    "on": "Tillslagen"
+                }
+            },
+            "door_assistant_freezer": {
+                "name": "Assistent f\u00f6r frysd\u00f6rr"
+            },
+            "door_assistant_fridge": {
+                "name": "Assistent f\u00f6r kylsk\u00e5psd\u00f6rr"
+            },
+            "eco_mode": {
+                "name": "Ekonomil\u00e4ge"
+            },
+            "freezer_super_mode": {
+                "name": "Superl\u00e4ge f\u00f6r frys"
+            },
+            "fresh_mode": {
+                "name": "F\u00e4rskhetsl\u00e4ge"
+            },
+            "power": {
+                "name": "Energi"
+            },
+            "refrigerator_super_mode": {
+                "name": "Superl\u00e4ge f\u00f6r kylsk\u00e5p"
+            },
+            "sabbath_mode": {
+                "name": "Sabbatsl\u00e4ge"
+            },
+            "vacation_mode": {
+                "name": "Semesterl\u00e4ge"
+            }
+        }
+    },
+    "exceptions": {
+        "unable_to_retrieve_turn_off": {
+            "message": "Det gick inte att st\u00e4nga av {appliance_name} eftersom dess st\u00f6d f\u00f6r att st\u00e4nga av eller g\u00e5 in i standby-l\u00e4ge inte kunde fastst\u00e4llas."
+        }
+    },
+    "issues": {
+        "deprecated_binary_common_door_sensor": {
+            "description": "Den bin\u00e4ra d\u00f6rrsensorn `{entity}`, som \u00e4r f\u00f6r\u00e5ldrad, anv\u00e4nds i f\u00f6ljande automatiseringar eller skript:\n{items}\n\nEn sensorenhet med ytterligare m\u00f6jliga tillst\u00e5nd finns tillg\u00e4nglig och b\u00f6r anv\u00e4ndas fram\u00f6ver; Anv\u00e4nd den i ovanst\u00e5ende automationer eller skript f\u00f6r att \u00e5tg\u00e4rda problemet.",
+            "title": "F\u00f6r\u00e5ldrad bin\u00e4r d\u00f6rrsensor har identifierats i vissa automatiseringar eller skript"
+        }
+    },
+    "services": {
+        "change_setting": {
+            "description": "\u00c4ndra en inst\u00e4llning.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                },
+                "key": {
+                    "description": "Nyckel f\u00f6r inst\u00e4llningen.",
+                    "name": "Nyckel"
+                },
+                "value": {
+                    "description": "Inst\u00e4llningens v\u00e4rde.",
+                    "name": "V\u00e4rde"
+                }
+            },
+            "name": "\u00c4ndra inst\u00e4llning"
+        },
+        "pause_program": {
+            "description": "Pausar det aktuella programmet som k\u00f6rs.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                }
+            },
+            "name": "Pausa programmet"
+        },
+        "resume_program": {
+            "description": "Forts\u00e4tter det pausade programmet.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                }
+            },
+            "name": "Forts\u00e4tter programmet"
+        },
+        "select_program": {
+            "description": "V\u00e4ljer ett program utan att starta det.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                },
+                "key": {
+                    "description": "Nyckel f\u00f6r alternativet.",
+                    "name": "Alternativknapp"
+                },
+                "program": {
+                    "description": "Program att v\u00e4lja.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Enhet f\u00f6r alternativet.",
+                    "name": "Tillvalsenhet"
+                },
+                "value": {
+                    "description": "V\u00e4rdet p\u00e5 alternativet.",
+                    "name": "V\u00e4rde p\u00e5 valet"
+                }
+            },
+            "name": "V\u00e4lj program"
+        },
+        "set_option_active": {
+            "description": "St\u00e4ller in ett alternativ f\u00f6r det aktiva programmet.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                },
+                "key": {
+                    "description": "Nyckel f\u00f6r alternativet.",
+                    "name": "Nyckel"
+                },
+                "value": {
+                    "description": "V\u00e4rdet p\u00e5 alternativet.",
+                    "name": "V\u00e4rde"
+                }
+            },
+            "name": "Ange aktivt programalternativ"
+        },
+        "set_option_selected": {
+            "description": "St\u00e4ller in alternativ f\u00f6r det valda programmet.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                },
+                "key": {
+                    "description": "Nyckel f\u00f6r alternativet.",
+                    "name": "Nyckel"
+                },
+                "value": {
+                    "description": "V\u00e4rdet p\u00e5 alternativet.",
+                    "name": "V\u00e4rde"
+                }
+            },
+            "name": "St\u00e4ll in valt programalternativ"
+        },
+        "start_program": {
+            "description": "V\u00e4ljer ett program och startar det.",
+            "fields": {
+                "device_id": {
+                    "description": "Enhetens ID.",
+                    "name": "Enhets-ID"
+                },
+                "key": {
+                    "description": "Nyckel f\u00f6r alternativet.",
+                    "name": "Alternativknapp"
+                },
+                "program": {
+                    "description": "Program att v\u00e4lja.",
+                    "name": "Program"
+                },
+                "unit": {
+                    "description": "Enhet f\u00f6r alternativet.",
+                    "name": "Tillvalsenhet"
+                },
+                "value": {
+                    "description": "V\u00e4rdet p\u00e5 alternativet.",
+                    "name": "V\u00e4rde p\u00e5 valet"
+                }
+            },
+            "name": "Starta programmet"
+        }
+    }
+}

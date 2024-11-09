@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Ya est\u00e1 configurado. Solo es posible una \u00fanica configuraci\u00f3n."
+        },
+        "error": {
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Contrase\u00f1a",
+                    "username": "Nombre de usuario"
+                },
+                "title": "Iniciar sesi\u00f3n con la cuenta de mijn.ithodaalderop.nl"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "power_consumption": {
+                "name": "Consumo de energ\u00eda"
+            },
+            "total_energy_today": {
+                "name": "Energ\u00eda total hoy"
+            }
+        }
+    },
+    "issues": {
+        "integration_removed": {
+            "description": "Se ha eliminado la integraci\u00f3n Spider de Home Assistant.\n\nItho daalderop ha [discontinuado]({link}) Spider Connect System.\n\nPara resolver este problema, por favor, elimina las entradas de integraci\u00f3n (ya desaparecidas) de la configuraci\u00f3n de tu Home Assistant. [Haz clic aqu\u00ed para ver las entradas de la integraci\u00f3n Spider existentes]({entries}).",
+            "title": "Se ha eliminado la integraci\u00f3n Spider"
+        }
+    }
+}

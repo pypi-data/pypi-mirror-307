@@ -1,0 +1,72 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Il dispositivo \u00e8 gi\u00e0 configurato"
+        },
+        "error": {
+            "cannot_connect": "Impossibile connettersi",
+            "unknown": "Errore imprevisto"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "link": {
+                "description": "Vuoi configurare {name} ({host})?",
+                "title": "Configura Logitech Harmony Hub"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "name": "Nome Hub"
+                },
+                "title": "Configura Logitech Harmony Hub"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "activities": {
+                "name": "Attivit\u00e0",
+                "state": {
+                    "power_off": "Spegnimento"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_switches": {
+            "description": "L'uso della piattaforma switch per cambiare l'attivit\u00e0 corrente \u00e8 ora deprecato e verr\u00e0 rimosso in una futura versione di Home Assistant.\n\nSi prega di modificare eventuali automazioni o script che utilizzano entit\u00e0 switch per utilizzare invece l'entit\u00e0 select.",
+            "title": "La piattaforma di switch Logitech Harmony viene rimossa"
+        },
+        "deprecated_switches_entity": {
+            "description": "La tua entit\u00e0 Harmony `{entity}` \u00e8 in uso in `{info}`. Un'entit\u00e0 selezionata \u00e8 disponibile e dovrebbe essere utilizzata in futuro.\n\nSi prega di regolare `{info}` per risolvere questo problema.",
+            "title": "Entit\u00e0 Harmony deprecata rilevata in {info}"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "activity": "L'attivit\u00e0 predefinita da eseguire quando nessuna \u00e8 specificata.",
+                    "delay_secs": "Il ritardo tra l'invio dei comandi."
+                },
+                "description": "Regola le opzioni di Harmony Hub"
+            }
+        }
+    },
+    "services": {
+        "change_channel": {
+            "description": "Invia il comando di cambio canale all'Harmony HUB.",
+            "fields": {
+                "channel": {
+                    "description": "Numero di canale da modificare.",
+                    "name": "Canale"
+                }
+            },
+            "name": "Cambia canale"
+        },
+        "sync": {
+            "description": "Sincronizza la configurazione del telecomando.",
+            "name": "Sincronizza"
+        }
+    }
+}

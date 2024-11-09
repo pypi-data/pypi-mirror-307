@@ -1,0 +1,81 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "Kinnitus-URLi loomise ajal\u00f5pp",
+            "connection_error": "Kontoteavet ei saanud tuua. Kas kasutaja on registreeritud Spotify arendaja juhtpaneelil?",
+            "missing_configuration": "Spotify sidumine pole h\u00e4\u00e4lestatud. Palun j\u00e4rgi dokumentatsiooni.",
+            "missing_credentials": "Sidumine n\u00f5uab rakenduse volitusi.",
+            "no_url_available": "URL pole saadaval. Selle t\u00f5rke kohta teabe saamiseks vaata [spikrijaotis]({docs_url})",
+            "oauth_error": "Saadi sobimatud loaandmed.",
+            "oauth_failed": "T\u00f5rge juurdep\u00e4\u00e4sut\u00f5endi hankimisel.",
+            "oauth_timeout": "OAuthi loa lahendamise ajal\u00f5pp.",
+            "oauth_unauthorized": "OAuthi tuvastaimisviga juurdep\u00e4\u00e4sut\u00f5endi hankimisel.",
+            "reauth_account_mismatch": "Spotify konto mida autenditi ei vasta kontole mis vajas uuesti autentimist.",
+            "reauth_successful": "Taastuvastamine \u00f5nnestus"
+        },
+        "create_entry": {
+            "default": "Edukalt Spotifyga autenditud."
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Vali tuvastusmeetod"
+            },
+            "reauth_confirm": {
+                "description": "Spotify konto: {account} sidumine tuleb uuesti autentida",
+                "title": "{name} autentimine aegus"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "acousticness": {
+                "name": "Laulu akustilisus"
+            },
+            "danceability": {
+                "name": "Laulu tantsulisus"
+            },
+            "energy": {
+                "name": "Laulu energia"
+            },
+            "instrumentalness": {
+                "name": "Laulu instrumentaalsus"
+            },
+            "key": {
+                "name": "Laulu v\u00f5ti"
+            },
+            "liveness": {
+                "name": "Laulu elavus"
+            },
+            "mode": {
+                "name": "Laulure\u017eiim",
+                "state": {
+                    "major": "Suurim",
+                    "minor": "V\u00e4him"
+                }
+            },
+            "song_tempo": {
+                "name": "Laulu tempo"
+            },
+            "speechiness": {
+                "name": "Laulu k\u00f5nelisus"
+            },
+            "time_signature": {
+                "name": "Laulu taktisignaal"
+            },
+            "valence": {
+                "name": "Laulu sobivus"
+            }
+        }
+    },
+    "issues": {
+        "removed_yaml": {
+            "description": "Spotify seadistamine YAML-i abil on eemaldatud.\n\nHome Assistant ei kasuta olemasolevat YAML-i konfiguratsiooni.\n\nEemalda FAILIST CONFIGURATION.yaml YAML-konfiguratsioon ja taask\u00e4ivita selle probleemi lahendamiseks Home Assistant.",
+            "title": "Spotify YAML konfiguratsioon on eemaldatud"
+        }
+    },
+    "system_health": {
+        "info": {
+            "api_endpoint_reachable": "Spotify API l\u00f5pp-punkt on k\u00e4ttesaadav"
+        }
+    }
+}

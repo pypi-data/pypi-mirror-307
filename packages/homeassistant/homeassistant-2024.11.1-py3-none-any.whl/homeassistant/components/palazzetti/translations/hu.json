@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hoszt"
+                },
+                "data_description": {
+                    "host": "A Palazzetti CBox g\u00e9pneve vagy IP-c\u00edme"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "Magas",
+                            "silent": "Csendes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Nem siker\u00fclt csatlakozni az eszk\u00f6zh\u00f6z."
+        },
+        "invalid_fan_mode": {
+            "message": "A(z) {value} ventil\u00e1tor m\u00f3d \u00e9rv\u00e9nytelen."
+        },
+        "invalid_target_temperatures": {
+            "message": "A(z) {value} c\u00e9lh\u0151m\u00e9rs\u00e9klet \u00e9rv\u00e9nytelen."
+        },
+        "on_off_not_available": {
+            "message": "A k\u00e9sz\u00fcl\u00e9k nem kapcsolhat\u00f3 be vagy ki."
+        }
+    }
+}

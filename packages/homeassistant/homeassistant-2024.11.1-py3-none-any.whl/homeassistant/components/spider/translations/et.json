@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Juba seadistatud. V\u00f5imalik on ainult \u00fcks seadistamine."
+        },
+        "error": {
+            "invalid_auth": "Tuvastamine nurjus",
+            "unknown": "Tundmatu viga"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Salas\u00f5na",
+                    "username": "Kasutajanimi"
+                },
+                "title": "Logi sisse mijn.ithodaalderop.nl kontoga"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "power_consumption": {
+                "name": "Tarbitud v\u00f5imsus"
+            },
+            "total_energy_today": {
+                "name": "T\u00e4nane energia kokku"
+            }
+        }
+    },
+    "issues": {
+        "integration_removed": {
+            "description": "Spideri integratsioon on Home Assistantist eemaldatud.\n\nItho daalderop on [l\u00f5petanud]({link}) Spider Connect s\u00fcsteemi.\n\nSelle probleemi lahendamiseks eemalda (n\u00fc\u00fcdseks kadunud) integratsioonikanded oma Home Assistant'i seadistustest. [Kl\u00f5psa siin, et n\u00e4ha oma olemasolevaid Spideri integratsioonikandeid]({entries}).",
+            "title": "Spider integratsioon on eemaldatud"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dienst is al geconfigureerd",
+            "cannot_connect": "Kan geen verbinding maken"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Wachtwoord",
+                    "port": "Poort",
+                    "server": "Host",
+                    "username": "Gebruikersnaam",
+                    "verify_ssl": "SSL-certificaat verifi\u00ebren"
+                },
+                "data_description": {
+                    "recipient": "E-mailadres(sen) van de ontvanger(s) die een e-mailmelding moet(en) ontvangen"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "name": "Herladen"
+        }
+    }
+}

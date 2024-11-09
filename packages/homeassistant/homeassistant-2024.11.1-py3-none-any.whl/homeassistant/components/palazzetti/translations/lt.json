@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Prietaisas jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "\u201ePalazzetti CBox\u201c pagrindinio kompiuterio pavadinimas arba IP adresas"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Automatinis",
+                            "high": "Auk\u0161tas",
+                            "silent": "Tylusis"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Nepavyko prisijungti prie prietaiso."
+        },
+        "invalid_fan_mode": {
+            "message": "Ventiliatoriaus re\u017eimas {value} netinkamas."
+        },
+        "invalid_target_temperatures": {
+            "message": "Tikslin\u0117 temperat\u016bra {value} yra neteisinga."
+        },
+        "on_off_not_available": {
+            "message": "Prietaiso negalima \u012fjungti arba i\u0161jungti."
+        }
+    }
+}

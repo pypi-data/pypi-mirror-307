@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Zariadenie u\u017e je nakonfigurovan\u00e9"
+        },
+        "error": {
+            "cannot_connect": "Nepodarilo sa pripoji\u0165"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hostite\u013e"
+                },
+                "data_description": {
+                    "host": "N\u00e1zov hostite\u013ea alebo IP adresa Palazzetti CBox"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "Vysok\u00fd",
+                            "silent": "Tich\u00fd"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Nepodarilo sa pripoji\u0165 k zariadeniu."
+        },
+        "invalid_fan_mode": {
+            "message": "Re\u017eim ventil\u00e1tora {value} je neplatn\u00fd."
+        },
+        "invalid_target_temperatures": {
+            "message": "Cie\u013eov\u00e1 teplota {value} je neplatn\u00e1."
+        },
+        "on_off_not_available": {
+            "message": "Spotrebi\u010d sa ned\u00e1 zapn\u00fa\u0165 ani vypn\u00fa\u0165."
+        }
+    }
+}

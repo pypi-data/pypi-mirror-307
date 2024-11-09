@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad"
+        },
+        "error": {
+            "cannot_connect": "Det gick inte att ansluta.",
+            "invalid_auth": "Ogiltig autentisering"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "E-post",
+                    "password": "L\u00f6senord"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "charged_month": {
+                "name": "Laddat m\u00e5nad"
+            },
+            "charged_today": {
+                "name": "Laddat idag"
+            },
+            "charged_total": {
+                "name": "Laddat totalt"
+            }
+        }
+    }
+}

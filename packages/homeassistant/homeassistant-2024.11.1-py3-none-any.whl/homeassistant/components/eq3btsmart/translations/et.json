@@ -1,0 +1,22 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Seade on juba h\u00e4\u00e4lestatud"
+        },
+        "error": {
+            "invalid_mac_address": "Sobimatu MAC-aadress"
+        },
+        "flow_title": "eQ-3 seade [{mac}]",
+        "step": {
+            "init": {
+                "title": "Uue eQ-3 seadme seadistamine"
+            },
+            "user": {
+                "data": {
+                    "mac": "MAC-aadress"
+                },
+                "title": "Uue eQ-3 seadme seadistamine"
+            }
+        }
+    }
+}

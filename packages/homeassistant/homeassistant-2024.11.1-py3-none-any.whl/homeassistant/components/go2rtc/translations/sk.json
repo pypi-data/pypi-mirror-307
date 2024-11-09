@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Nepodarilo sa pripoji\u0165",
+            "invalid_url": "Neplatn\u00e1 adresa URL",
+            "invalid_url_schema": "Neplatn\u00e1 sch\u00e9ma adresy URL.\nAdresa URL by mala za\u010d\u00edna\u0165 na `http://` alebo `https://`."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "Adresa URL va\u0161ej in\u0161tancie go2rtc."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "Adresa URL va\u0161ej in\u0161tancie go2rtc."
+                }
+            }
+        }
+    }
+}

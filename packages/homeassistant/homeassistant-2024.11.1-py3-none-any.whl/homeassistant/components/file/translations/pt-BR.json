@@ -1,0 +1,16 @@
+{
+    "config": {
+        "step": {
+            "notify": {
+                "data": {
+                    "name": "Nome"
+                }
+            },
+            "sensor": {
+                "data": {
+                    "name": "Nome"
+                }
+            }
+        }
+    }
+}
