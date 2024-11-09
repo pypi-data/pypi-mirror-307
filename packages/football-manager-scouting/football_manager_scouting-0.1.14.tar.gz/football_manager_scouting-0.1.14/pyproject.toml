@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "football_manager_scouting"
+version = "0.1.14"
+
+requires-python = ">=3.8"
+authors = [
+  {name = "Hannes Lindbäck", email = "hanneskarllindback@gmail.com"},
+]
+maintainers = [
+  {name = "Hannes Lindbäck", email = "hanneskarllindback@gmail.com"}
+]
+description = "A Football Manager data-based scouting tool."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["Football Manager", "FM"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/HannesLindback/Football-Manager-scouting"
+Documentation = "https://github.com/HannesLindback/Football-Manager-scouting"
+Repository = "https://github.com/HannesLindback/Football-Manager-scouting"
