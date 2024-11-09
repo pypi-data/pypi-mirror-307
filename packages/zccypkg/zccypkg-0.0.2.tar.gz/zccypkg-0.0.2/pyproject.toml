@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "zccypkg"
+version = "0.0.2"
+description = "First pypi library"
+authors = ["Kenny James <info@zone-connect.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
