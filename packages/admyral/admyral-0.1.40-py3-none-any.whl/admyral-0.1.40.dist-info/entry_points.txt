@@ -1,0 +1,3 @@
+[console_scripts]
+admyral=admyral.cli.cli:cli
+
