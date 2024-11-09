@@ -1,0 +1,2 @@
+[console_scripts]
+pymembrane-help = pymembrane.help_api:list_available_items
