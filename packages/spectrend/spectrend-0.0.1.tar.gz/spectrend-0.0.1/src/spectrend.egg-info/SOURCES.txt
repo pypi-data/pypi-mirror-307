@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/spectrend/__init__.py
+src/spectrend/_version.py
+src/spectrend/spectrend.py
+src/spectrend.egg-info/PKG-INFO
+src/spectrend.egg-info/SOURCES.txt
+src/spectrend.egg-info/dependency_links.txt
+src/spectrend.egg-info/requires.txt
+src/spectrend.egg-info/top_level.txt
+tests/test_main.py

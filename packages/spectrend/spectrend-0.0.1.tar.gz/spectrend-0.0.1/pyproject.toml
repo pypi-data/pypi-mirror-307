@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "wheel","versioneer[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectrend"
+description="A toolbox for determining the presence of trends using spectral analysis"
+authors = [
+    {name = "Charles Turner", email = "charles.turner@anu.edu.au"}
+]
+license = {text="Apache Software License 2.0"}
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+]
+dynamic=["version"]
+
+
+[project.urls]
+homepage = "https://github.com/charles-turner-1/spectrend"
+
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-sugar",
+    "pytest-watcher",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "src/spectrend/_version.py"
+versionfile_build = "spectrend/_version.py"
+tag_prefix = "v"
+parentdir_prefix = "spectrend-"
