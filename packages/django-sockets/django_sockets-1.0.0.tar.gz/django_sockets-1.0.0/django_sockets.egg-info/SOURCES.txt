@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+django_sockets/__init__.py
+django_sockets/broadcaster.py
+django_sockets/middleware.py
+django_sockets/pubsub.py
+django_sockets/sockets.py
+django_sockets/utils.py
+django_sockets.egg-info/PKG-INFO
+django_sockets.egg-info/SOURCES.txt
+django_sockets.egg-info/dependency_links.txt
+django_sockets.egg-info/requires.txt
+django_sockets.egg-info/top_level.txt
