@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yuxin_helpers
+Version: 0.1.0
+Summary: Yuxin's helper package with utilities for diverse tasks.
+Home-page: https://github.com/yuxingeng/yuxin_helpers
+Author: Yuxin Geng
+Author-email: yuxin.evol@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# yuxin_helpers
+
+A helper package with utilities for color conversion.
+
+## Installation
+
+```bash
+pip install yuxin_helpers
+```
+
+## Usage
+
+### Convert RGB to Hex
+
+```python
+from yuxin_helpers import rgb_to_hex
+
+print(rgb_to_hex(255, 0, 0))  # Output: '#ff0000'
+```
+
+### Convert Hex to RGB
+
+```python
+from yuxin_helpers import hex_to_rgb
+
+print(hex_to_rgb('#ff0000'))  # Output: (255, 0, 0)
+```
