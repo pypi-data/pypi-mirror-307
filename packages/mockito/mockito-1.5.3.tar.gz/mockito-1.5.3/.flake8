@@ -1,0 +1,14 @@
+[flake8]
+ignore =
+  D,
+  W291,
+  W293,
+  W391,
+  W503,
+  E302,
+  E303,
+  E306,
+  E731
+exclude = .git,.cache,docs,.env,.build,build
+max-complexity = 10
+max-line-length = 79
