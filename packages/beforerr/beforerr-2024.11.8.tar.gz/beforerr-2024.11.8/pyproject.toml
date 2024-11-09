@@ -1,0 +1,69 @@
+[project]
+name = "beforerr"
+dynamic = []
+description = "Personal Python utility library"
+authors = [
+    { name = "Beforerr", email = "zzj956959688@gmail.com" },
+]
+requires-python = ">= 3.10"
+dependencies = [
+    "pydantic",
+    "universal_pathlib",
+    "intake",
+    "pipe",
+    "loguru",
+    "rich",
+]
+readme = "README.md"
+version = "2024.11.8"
+
+[project.optional-dependencies]
+r = [
+    "rpy2",
+    "rpy2_arrow",
+]
+dev = [
+    "nbdev",
+    "ipykernel",
+]
+
+[project.urls]
+Homepage = "https://beforerr.github.io/beforerr_dev"
+Repository = "https://github.com/beforerr/beforerr_dev"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pixi.project]
+channels = [
+    "conda-forge",
+]
+platforms = [
+    "linux-64",
+    "osx-arm64",
+]
+
+[tool.pixi.environments]
+default = [
+    "dev",
+    "r",
+]
+
+[tool.pixi.pypi-dependencies]
+setuptools = "*"
+
+[tool.pixi.pypi-dependencies.beforerr]
+path = "."
+editable = true
+
+[tool.pixi.dependencies]
+matplotlib = "*"
+polars = "*"
+r-base = "*"
+r-arrow = "*"
