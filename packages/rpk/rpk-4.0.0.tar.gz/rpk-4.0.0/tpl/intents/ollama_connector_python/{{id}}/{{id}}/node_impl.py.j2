@@ -1,0 +1,362 @@
+# Copyright (c) {{ year }} {{ author }}. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import random
+from functools import partial
+import httpx
+import sys
+import yaml
+import json
+
+from rclpy.lifecycle import Node
+from rclpy.lifecycle import State
+from rclpy.lifecycle import TransitionCallbackReturn
+from rcl_interfaces.msg import ParameterDescriptor
+
+from hri import HRIListener
+from hri_actions_msgs.msg import Intent
+
+from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus, KeyValue
+
+try:
+    import ollama
+except ImportError:
+    print("[ERROR] The ollama Python bindings are not installed in your system."
+          " You can install them with pip install ollama.")
+    sys.exit(1)
+
+
+def random_id():
+    return "".join([random.choice("abcdefghijklmnopqrstuvwxyz") for _ in range(5)])
+
+
+class IntentExtractorImpl(Node):
+    """
+    Implementation of {{id}}.
+
+    This is the main class for the node. It is a ROS2  node that uses the
+    lifecycle feature of ROS 2 to manage its states.
+
+    The purpose of this node is to recognise *user intents* using a LLM.
+    It relies on ollama to interface with a LLM.
+
+    Note that you need a ollama server running to use this node.
+    """
+
+    def __init__(self) -> None:
+        """Construct the node."""
+        super().__init__('intent_extractor_{{ id }}')
+
+        # Declare ROS parameters. Should mimick the one listed in config/00-defaults.yaml
+        self.declare_parameter(
+            'server_url', "http://localhost:11434",
+            ParameterDescriptor(description='URL of the ollama server')
+        )
+        self.declare_parameter(
+            'model', "llama3.2:1b",
+            ParameterDescriptor(description='LLM model to use')
+        )
+        self.declare_parameter(
+            'system_prompt', "You are a helpful interactive robot.",
+            ParameterDescriptor(description='System prompt to use for the LLM')
+        )
+
+        self.get_logger().info("Initialising...")
+
+        self._intent_pub = None
+
+        self._timer = None
+        self._diag_pub = None
+        self._diag_timer = None
+
+        self._nb_requests = 0
+        self._ollama = None
+        self._ollama_server = ""
+        self._ollama_model = ""
+
+        # dict user_id -> list of messages exchanged with the LLM
+        self._msgs_history = {}
+
+        self._llm_server = None
+        self._intent_pub = None
+
+        self._available_tasks = {}
+
+        self.get_logger().info('Chatbot {{id}} started, but not yet configured.')
+
+    def on_user_input(self, input, user_id):
+        """
+        Return the chatbot's response to a text input.
+
+        Implement here the logic to process the natural text input
+        and return a response made of a combination of text to be spoken back, and
+        possible recognized user intents.
+        """
+        self.get_logger().info(f"input from {user_id}: {input}")
+        self._nb_requests += 1
+
+        if not user_id:
+            user_id = "anon_" + random_id()
+
+        self.get_logger().info(f"Sending input from user <{user_id}> "
+                               f"to LLM: {input}")
+
+        if not self._msgs_history.setdefault(user_id, None):
+            prompt = self.get_prompt(user_id)
+            self.get_logger().info(f"Initialising conversation with user <{user_id}>"
+                                   f" using prompt {prompt}")
+            self._msgs_history[user_id] = [
+                    {'role': 'system', 'content': prompt},
+                    ]
+
+        self._msgs_history[user_id].append(
+            {
+                'role': 'user',
+                'content': input,
+            }
+        )
+
+        try:
+            llm_response = self._ollama.chat(
+                model=self._ollama_model,
+                messages=self._msgs_history[user_id],
+            )
+        except httpx.ConnectError as ce:
+            raise RuntimeError(f"Error while connecting to the ollama server: {ce}."
+                               "Is the server installed and started, or the URL "
+                               "incorrect (eg wrong port)?")
+
+        self._msgs_history[user_id].append(llm_response['message'])
+
+        raw_response = llm_response['message']['content']
+
+        self.get_logger().info(f"LLM response: {raw_response}")
+
+        # here, we need to retrieve the user intent, and map it to the
+        # Intent.msg semantics.
+        valid = True
+        response = {}
+        try:
+            # use YAML instead of JSON to parse the LLM response, as
+            # YAML is more permissive and can handle JSON as well.
+            response = yaml.safe_load(raw_response)
+        except yaml.parser.ParserError as e:
+            self.get_logger().error(f"Error while decoding LLM response: {e}. "
+                                    "Not valid YAML/JSON. Falling back to raw response.")
+            valid = False
+
+        intent = response.get("next_action", "")
+
+        if not intent:
+            self.get_logger().error("Error while decoding LLM response: no 'next_action' field. "
+                                    "Falling back to raw response.")
+            valid = False
+
+        suggested_response = response.get("suggested_response_to_user", "")
+
+        if valid:
+            if intent == "GREET":
+                self.get_logger().warn("I think the user want to greet me. "
+                                       "Sending a GREET intent")
+                intent = Intent(intent=Intent.GREET,
+                                source=user_id,
+                                modality=Intent.MODALITY_SPEECH,
+                                confidence=.8,
+                                data=f'"suggested_response": "{suggested_response}"')
+
+            elif intent == "SAY":
+                self.get_logger().warn("I think the user want to say/answer something. "
+                                       "Sending a SAY intent")
+                intent = Intent(intent=Intent.SAY,
+                                source=user_id,
+                                modality=Intent.MODALITY_SPEECH,
+                                confidence=.8,
+                                data=f'"object": "{suggested_response}"')
+
+            elif intent == "PICK_OBJECT":
+                self.get_logger().warn("I think the user want to pick up an object. "
+                                       "Sending a GRAB_OBJECT intent")
+                data = {"object": response.get("object_id", "unknown"),
+                        "suggested_response": suggested_response}
+                intent = Intent(intent=Intent.GRAB_OBJECT,
+                                source=user_id,
+                                modality=Intent.MODALITY_SPEECH,
+                                confidence=.8,
+                                data=json.dumps(data))
+
+            else:
+                self.get_logger().warn("Unrecognised intent. Forwarding a 'RAW_USER_INPUT'")
+                intent = Intent(intent=Intent.RAW_USER_INPUT,
+                                source=user_id,
+                                modality=Intent.MODALITY_SPEECH,
+                                confidence=1.0,
+                                data=f'"input": "{input}", "suggested_response": "{raw_response}"')
+
+        else:
+            self.get_logger().warn("Unable to process user input. Forwarding a 'RAW_USER_INPUT'")
+            intent = Intent(intent=Intent.RAW_USER_INPUT,
+                            source=user_id,
+                            modality=Intent.MODALITY_SPEECH,
+                            confidence=1.0,
+                            data=f'"input": "{input}", "suggested_response": "{raw_response}"')
+
+        self._intent_pub.publish(intent)
+
+    def make_action_list(self) -> str:
+        # List all the actions available to the robot, with their corresponding
+        # intents.
+        #
+        # Here, we just hard-code a few examples.
+
+        return """
+        - SAY: generic action to tell something to the user.
+        - GREET: say hello to the user. Parameters: user_id.
+        - GO_TO: move to a specific location. Parameters: location.
+        - PICK_OBJECT: pick an object. Parameters: object_id.
+        - PLACE_OBJECT: place an object. Parameters: object_id, location.
+        """
+
+    def get_environment_description(self) -> str:
+        # Describe the environment in which the robot is operating.
+        #
+        # Here, we just hard-code a few examples.
+
+        return """
+        - locations: desk_1, kitchen, kitchen_table.
+        - facts:
+            - apple1 isOn kitchen_table
+            - book1 isOn desk_1
+        """
+
+    def get_prompt(self, person_id) -> str:
+        self.prompt = self.get_parameter('system_prompt').value
+        return self.prompt.format(action_list=self.make_action_list(),
+                                  environment=self.get_environment_description(),
+                                  person_id=person_id)
+
+    #################################
+    #
+    # Lifecycle transitions callbacks
+    #
+    def on_configure(self, state: State) -> TransitionCallbackReturn:
+
+        self._ollama_server = self.get_parameter('server_url').value
+        self._ollama_model = self.get_parameter('model').value
+
+        self.get_logger().info(f"Connecting to the ollama server on {self._ollama_server}...")
+
+        try:
+            self._ollama = ollama.Client(host=self._ollama_server)
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            self.get_logger().error(f"Error while connecting to ollama server: {e}")
+            raise(e)
+
+        self.get_logger().info("Connection successful to the ollama server")
+
+        self._intent_pub = self.create_publisher(Intent, '/intents', 1)
+
+        # configure and start diagnostics publishing
+        self._nb_requests = 0
+        self._diag_pub = self.create_publisher(DiagnosticArray, '/diagnostics', 1)
+        self._diag_timer = self.create_timer(1., self.publish_diagnostics)
+
+        self.get_logger().info("Chatbot {{id}} is configured, but not yet active")
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_activate(self, state: State) -> TransitionCallbackReturn:
+        """
+        Activate the node.
+
+        You usually want to do the following in this state:
+        - Create and start any timers performing periodic tasks
+        - Start processing data, and accepting action goals, if any
+
+        """
+        self._hri_listener = HRIListener("__internal_{{id}}_hri__")
+        self._hri_listener.on_voice(lambda voice:
+                                    voice.on_speech(partial(self.on_user_input, user_id=voice.id))
+                                    )
+
+        # Define a timer that fires every second to call the run function
+        timer_period = 1  # in sec
+        self._timer = self.create_timer(timer_period, self.run)
+
+        self.get_logger().info("Chatbot {{id}} is active and running")
+        return super().on_activate(state)
+
+    def on_deactivate(self, state: State) -> TransitionCallbackReturn:
+        """Stop the timer to stop calling the `run` function (main task of your application)."""
+        self.get_logger().info("Stopping chatbot...")
+
+        self.destroy_timer(self._timer)
+        self.destroy_subscription(self._intents_sub)
+        self._hri_listener = None
+
+        self.get_logger().info("Chatbot {{id}} is stopped (inactive)")
+        return super().on_deactivate(state)
+
+    def on_shutdown(self, state: State) -> TransitionCallbackReturn:
+        """
+        Shutdown the node, after a shutting-down transition is requested.
+
+        :return: The state machine either invokes a transition to the
+            "finalized" state or stays in the current state depending on the
+            return value.
+            TransitionCallbackReturn.SUCCESS transitions to "finalized".
+            TransitionCallbackReturn.FAILURE remains in current state.
+            TransitionCallbackReturn.ERROR or any uncaught exceptions to
+            "errorprocessing"
+        """
+        self.get_logger().info('Shutting down {{id}} node.')
+        self.destroy_timer(self._diag_timer)
+        self.destroy_publisher(self._diag_pub)
+
+        self.get_logger().info("Chatbot {{id}} finalized.")
+        return TransitionCallbackReturn.SUCCESS
+
+    #################################
+
+    def publish_diagnostics(self):
+
+        arr = DiagnosticArray()
+        msg = DiagnosticStatus(
+            level=DiagnosticStatus.OK,
+            name="/intent_extractor_{{ id }}",
+            message="chatbot {{id}} is running",
+            values=[
+                KeyValue(key="Module name", value="{{ id }}"),
+                KeyValue(key="Current lifecycle state",
+                         value=self._state_machine.current_state[1]),
+                KeyValue(key="ollama server", value=self._ollama_server),
+                KeyValue(key="ollama model", value=self._ollama_model),
+                KeyValue(key="# requests since start", value=str(self._nb_requests)),
+            ],
+        )
+
+        arr.header.stamp = self.get_clock().now().to_msg()
+        arr.status = [msg]
+        self._diag_pub.publish(arr)
+
+    def run(self) -> None:
+        """
+        Background task of the chatbot.
+
+        For now, we do not need to do anything here, as the chatbot is
+        event-driven, and the `on_user_input` callback is called when a new
+        user input is received.
+        """
+        pass
+
