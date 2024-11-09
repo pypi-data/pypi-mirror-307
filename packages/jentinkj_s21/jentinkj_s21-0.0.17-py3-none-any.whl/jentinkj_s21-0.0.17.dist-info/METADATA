@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jentinkj_s21
+Version: 0.0.17
+Project-URL: Documentation, https://github.com/unknown/hatch-demo#readme
+Project-URL: Issues, https://github.com/unknown/hatch-demo/issues
+Project-URL: Source, https://github.com/unknown/hatch-demo
+Author-email: jentinkj <50716461+jentinkj@users.noreply.github.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pandas~=2.0
+Requires-Dist: pyodbc~=5.0
+Requires-Dist: python-dotenv~=1.0
+Requires-Dist: requests~=2.32
+Requires-Dist: sqlalchemy~=2.0
+Description-Content-Type: text/markdown
+
+# jentinkj_s21
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatch-demo.svg)](https://pypi.org/project/jentinkj_s21)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-demo.svg)](https://pypi.org/project/jentinkj_s21)
+
+-----
+
+**Table of Contents**
+- [Description](#description)
+- [Installation](#installation)
+- [License](#license)
+
+## Description
+
+A small wrapper for pyodbc, mssql, and pandas.
+
+## Installation
+
+```console
+pip install jentinkj_s21
+```
+
+## License
+
+`jentinkj_s21` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
