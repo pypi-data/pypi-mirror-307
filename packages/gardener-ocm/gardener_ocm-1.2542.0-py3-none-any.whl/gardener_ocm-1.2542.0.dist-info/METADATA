@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gardener-ocm
+Version: 1.2542.0
+Summary: Open-Component-Model (OCM) language bindings
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dacite
+Requires-Dist: jsonschema
+Requires-Dist: python-dateutil
+Requires-Dist: PyYaml
+
+Open-Component_model (OCM) language bindings
