@@ -1,0 +1,77 @@
+{% set network = config.network %}
+{% set security = config.security %}
+{% set smtp = config.smtp %}
+
+dsn: 'sqlite:////var/lib/kratos/db.sqlite3?_fk=true&mode=rwc'
+
+serve:
+  public:
+    port: 80
+    base_url: '{{ network.base_url }}'
+  admin:
+    port: 8080
+
+log:
+  redaction_text: '*redacted*'
+  {% if dev %}
+  leak_sensitive_values: true
+  level: debug
+  {% endif %}
+
+session:
+  cookie:
+    name: 'lungo_session'
+  earliest_possible_extend: {{ security.session.lifetime.total_seconds()|int // 2 }}s
+  lifespan: {{ security.session.lifetime.total_seconds()|int }}s
+  whoami:
+    required_aal: aal1
+
+identity:
+  default_schema_id: user
+  schemas:
+    - id: user
+      url: 'file:///etc/kratos/user.schema.json'
+
+selfservice:
+  default_browser_return_url: '{{ network.base_url }}'
+  flows:
+    registration:
+      enabled: false
+    verification:
+      enabled: false
+    recovery:
+      enabled: true
+      use: code
+      notify_unknown_recipients: false
+      after:
+        hooks:
+          - hook: revoke_active_sessions
+  methods:
+    code:
+      enabled: true
+      passwordless_enabled: true
+    password:
+      enabled: true
+    profile:
+      enabled: false
+
+courier:
+  smtp:
+    connection_uri: 'smtp://{{ smtp.username|urlencode }}:{{ smtp.password }}@{{ smtp.host }}:{{ smtp.port }}/'
+    from_address: '{{ smtp.sender }}'
+    from_name: '{{ smtp.name }}'
+  templates:
+    login_code:
+      valid:
+        email:
+          subject: 'file:///etc/kratos/email_templates/login_code/valid/email.subject.gotmpl'
+          body:
+            html: 'file:///etc/kratos/email_templates/login_code/valid/email.body.gotmpl'
+            plaintext: 'file:///etc/kratos/email_templates/login_code/valid/email.body.plaintext.gotmpl'
+    recovery_code:
+      valid:
+        email:
+          subject: 'file:///etc/kratos/email_templates/recovery_code/valid/email.subject.gotmpl'
+          body:
+            html: 'file:///etc/kratos/email_templates/recovery_code/valid/email.body.gotmpl'
+            plaintext: 'file:///etc/kratos/email_templates/recovery_code/valid/email.body.plaintext.gotmpl'

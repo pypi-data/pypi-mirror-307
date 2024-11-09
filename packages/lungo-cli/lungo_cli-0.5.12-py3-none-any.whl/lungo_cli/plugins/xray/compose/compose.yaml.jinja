@@ -1,0 +1,24 @@
+{% set plugin_name = plugin.manifest.name %}
+
+services:
+  {{ plugin_name }}:
+    container_name: {{ plugin_name }}
+    hostname: {{ plugin_name }}
+
+    image: 'docker.io/teddysun/xray:{{ plugin.custom.xray_version }}'
+
+    user: root
+    entrypoint: [ ]
+    command: /usr/bin/xray run -c /etc/xray/config.json
+
+    networks:
+      static:
+        ipv4_address: {{ plugin.ip_address }}
+    expose:
+      - {{ plugin.manifest.backend_port }}
+
+    volumes:
+      - '{{ plugin.dirs.plugin_dir }}/config:/etc/xray:ro'
+      - '{{ plugin.dirs.cache_dir }}:/var/log/xray:rw'
+
+    restart: 'unless-stopped'

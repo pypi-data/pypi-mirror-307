@@ -1,0 +1,8 @@
+# Auto-generated files
+.svelte-kit
+assets/schemas
+
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

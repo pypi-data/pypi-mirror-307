@@ -1,0 +1,85 @@
+## Configuration file for user management
+
+# =========
+# accounts:
+# =========
+
+#   # List of accounts
+#   -
+
+#       # Enable or disable the account
+#       # Type: boolean
+#       # Default: true
+#       # Required: no
+#       enabled: false
+
+#       # Username
+#       # Type: string
+#       # Default: none
+#       # Required: yes
+#       username: joe
+
+#       # Full name (first and last)
+#       name:
+
+#         # First name
+#         # Type: string
+#         # Default: none
+#         # Required: yes
+#         first: Joe
+
+#         # Last name
+#         # Type: string
+#         # Default: none
+#         # Required: yes
+#         last: Doe
+
+#       # Email address
+#       # Type: string
+#       # Default: none
+#       # Required: yes
+#       email: joe@gmail.com
+
+#       # User role
+#       # Type: 'guest' | 'user' | 'admin'
+#       # Default: none
+#       # Required: yes
+#       role: user
+
+#       # Extra configuration
+#       extra:
+
+#         # Allowed apps besides those defined in the role, or 'all' to allow all apps
+#         # Type: 'all' | array
+#         # Default: [ ]
+#         # Required: no
+#         allowed_apps:
+#           - all
+
+#         # Override user directory
+#         # Type: path
+#         # Default: none
+#         # Required: no
+#         user_dir: /mnt/somewhere/someone
+
+#         # User-specific shared directories
+#         shared_dirs:
+#           -
+
+#               # Name of the directory after mounted (must be unique)
+#               Type: string
+#               Default: none
+#               Required: yes
+#               name: shared_readonly
+
+#               # Path to the directory on the host
+#               # Type: path
+#               # Default: none
+#               # Required: yes
+#               source: /mnt/data/shared_readonly
+
+#               # Whether to mount the directory as read-only or not
+#               # Type: boolean
+#               # Default: false
+#               # Required: no
+#               read_only: true

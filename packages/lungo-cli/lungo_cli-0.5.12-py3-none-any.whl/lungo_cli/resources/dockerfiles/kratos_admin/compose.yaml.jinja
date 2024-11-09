@@ -1,0 +1,30 @@
+services:
+  kratos_admin:
+    container_name: kratos_admin
+    hostname: kratos_admin
+
+    image: 'docker.io/oryd/kratos:{{ constants.kratos_version }}'
+
+    user: root
+    entrypoint: [ ]
+    command: >-
+      sh -c 'kratos migrate sql -c /etc/kratos/config.yaml -c /etc/kratos/secrets.yaml -e -y;
+      kratos serve -c /etc/kratos/config.yaml -c /etc/kratos/secrets.yaml --sqa-opt-out'
+
+    ports:
+      - '3940:8080'
+
+    volumes:
+      - '../../config/kratos:/etc/kratos:ro'
+      - '{{ app_dirs.managed_dir }}/kratos:/var/lib/kratos:rw'
+
+    secrets:
+      - source: KRATOS_SECRETS
+        target: /etc/kratos/secrets.yaml
+
+    environment:
+      - DSN=sqlite:////var/lib/kratos/db.sqlite3?_fk=true&mode=rwc
+
+secrets:
+  KRATOS_SECRETS:
+    file: '{{ app_dirs.generated_dir }}/kratos/secrets.yaml'
