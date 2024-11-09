@@ -1,0 +1,10 @@
+setup.py
+easy_fastapi/__init__.py
+easy_fastapi.egg-info/PKG-INFO
+easy_fastapi.egg-info/SOURCES.txt
+easy_fastapi.egg-info/dependency_links.txt
+easy_fastapi.egg-info/entry_points.txt
+easy_fastapi.egg-info/requires.txt
+easy_fastapi.egg-info/top_level.txt
+easy_fastapi/core/__init__.py
+easy_fastapi/core/management.py
