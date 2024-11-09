@@ -1,0 +1,4 @@
+[console_scripts]
+stitchee=concatenator.run_stitchee:main
+stitchee_harmony=concatenator.harmony.cli:main
+
