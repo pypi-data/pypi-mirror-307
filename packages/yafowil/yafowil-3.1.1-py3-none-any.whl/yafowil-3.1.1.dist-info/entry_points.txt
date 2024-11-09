@@ -1,0 +1,3 @@
+[yafowil.plugin]
+example = yafowil.example:get_example
+register = yafowil.loader:register
