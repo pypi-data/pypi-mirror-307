@@ -1,0 +1,7 @@
+pathlib2
+websockets
+requests
+pysher
+
+[:python_version<"3"]
+pathlib2
