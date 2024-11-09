@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+readme.md
+packaging_version_increment/__init__.py
+packaging_version_increment/increment.py
+packaging_version_increment.egg-info/PKG-INFO
+packaging_version_increment.egg-info/SOURCES.txt
+packaging_version_increment.egg-info/dependency_links.txt
+packaging_version_increment.egg-info/requires.txt
+packaging_version_increment.egg-info/top_level.txt
+tests/test_increment.py
+tests/test_init.py
