@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=67", "scikit-build-core~=0.6.0", "pybind11~=2.13"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "chalc"
+version = "8.0.0"
+authors = [{ name = "Abhinav Natarajan", email = "natarajan@maths.ox.ac.uk" }]
+description = "Persistent homology of chromatic Delaunay filtrations"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.12"
+license = { file = "COPYING" }
+keywords = [
+	"topological data analysis",
+	"TDA",
+	"chromatic Delaunay",
+	"computational geometry",
+	"computational topology",
+	"persistent homology",
+]
+dependencies = [
+	"numpy~=2.0",
+	"phimaker~=0.1",
+	"pandas~=2.2",
+	"matplotlib~=3.9",
+	"seaborn~=0.13",
+	"h5py~=3.12",
+]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering :: Mathematics",
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"Programming Language :: C++",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: Implementation :: CPython",
+	"Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+Homepage = "https://abhinavnatarajan.github.io/Chalc"
+Documentation = "https://abhinavnatarajan.github.io/Chalc"
+Repository = "https://github.com/abhinavnatarajan/Chalc.git"
+
+[dependency-groups]
+dev = [
+	"furo>=2024.8.6",
+	"ipykernel~=6.29",
+	"ipympl~=0.9",
+	"ipython~=8.29",
+	"nbsphinx~=0.9",
+	"pybind11-stubgen~=2.5",
+	"pytest~=8.3",
+	"sphinx-autoapi~=3.3",
+	"sphinx-design~=0.6",
+	"sphinx-toolbox~=3.5",
+	"sphinx~=8.0",
+]
+
+[tool.scikit-build]
+cmake.verbose = true
+cmake.build-type = "Release"
+cmake.minimum-version = "3.23"
+logging.level = "DEBUG"
+sdist.exclude = [".github/", ".git/"]
+build-dir = "build/{wheel_tag}"
+wheel.packages = ["src/chalc"]
+wheel.install-dir = "chalc"
+experimental = true
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+select = [ "ALL" ]
+ignore = [
+	# "CPY", # flake8-copyright
+	"W191", # pylint (disallows tab indentation)
+	"D206", # pydocstyle (disallows tab indentation in docstring)
+	"PLR0913", # refactor (too many arguments in function signature)
+	"ERA"
+]
