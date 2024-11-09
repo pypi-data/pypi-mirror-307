@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: FareedLib
+Version: 0.2.1
+Summary: A library with common utilities for string manipulation, list filtering, and basic math operations
+Home-page: https://github.com/MrFalafel/FareedLib
+Author: Fareed
+Author-email: no-email@MrFalafel.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# FareedLib
+
+A Python library offering common utility functions for string manipulation, list processing, and basic mathematical operations. This library aims to simplify routine tasks with clean, reusable functions.
+
+## Features
+
+- **String Formatting**: Easily format strings to title case, uppercase, or lowercase.
+- **List Filtering**: Filter out even numbers from a list of integers.
+- **Mathematical Operations**: Calculate the mean of a list or find the maximum value in a collection of numbers.
+
+## Installation
+
+To install the library via pip:
+
+```bash
+pip install fareedlib
