@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/lucide/__init__.py
+src/lucide/_compat.py
+src/lucide/jinja.py
+src/lucide/lucide.zip
+src/lucide/py.typed
+src/lucide.egg-info/PKG-INFO
+src/lucide.egg-info/SOURCES.txt
+src/lucide.egg-info/dependency_links.txt
+src/lucide.egg-info/requires.txt
+src/lucide.egg-info/top_level.txt
+src/lucide/templatetags/__init__.py
+src/lucide/templatetags/lucide.py
