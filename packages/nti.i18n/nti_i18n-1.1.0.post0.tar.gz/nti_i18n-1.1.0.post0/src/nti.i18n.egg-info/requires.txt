@@ -1,0 +1,16 @@
+zope.component
+zope.interface
+zope.cachedescriptors
+
+[docs]
+sphinx
+sphinx_rtd_theme
+repoze.sphinx.autointerface
+
+[plone]
+plone.i18n
+
+[test]
+zope.configuration
+zope.testrunner
+coverage

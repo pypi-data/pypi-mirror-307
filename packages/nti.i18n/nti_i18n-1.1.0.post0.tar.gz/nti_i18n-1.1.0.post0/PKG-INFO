@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: nti.i18n
+Version: 1.1.0.post0
+Summary: i18n and L10n data and interfaces
+Home-page: https://github.com/OpenNTI/nti.i18n
+Author: Jason Madden
+Author-email: jason@nextthought.com
+License: Apache
+Keywords: i18n l10n zope component iana data locales
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Zope3
+Requires-Python: >= 3.10
+License-File: LICENSE
+Requires-Dist: zope.component
+Requires-Dist: zope.interface
+Requires-Dist: zope.cachedescriptors
+Provides-Extra: test
+Requires-Dist: zope.configuration; extra == "test"
+Requires-Dist: zope.testrunner; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: repoze.sphinx.autointerface; extra == "docs"
+Provides-Extra: plone
+Requires-Dist: plone.i18n; extra == "plone"
+
+==========
+ nti.i18n
+==========
+
+.. image:: https://travis-ci.org/NextThought/nti.i18n.svg?branch=master
+    :target: https://travis-ci.org/NextThought/nti.i18n
+
+.. image:: https://coveralls.io/repos/github/NextThought/nti.i18n/badge.svg?branch=master
+    :target: https://coveralls.io/github/NextThought/nti.i18n?branch=master
+
+.. image:: https://readthedocs.org/projects/ntii18n/badge/?version=latest
+    :target: http://ntii18n.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+nti.i18n offers a small set of data and classes to support
+internationalization and localization in a generic Zope3/ZCA
+environment.
+
+nti.i18n was heavily influenced by `plone.i18n
+<https://pypi.python.org/pypi/plone.i18n/>`_ prior to version 3.
+
+For complete details and the changelog, see the `documentation <http://ntii18n.readthedocs.io/>`_.
