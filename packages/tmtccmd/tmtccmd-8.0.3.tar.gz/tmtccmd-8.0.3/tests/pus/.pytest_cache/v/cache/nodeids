@@ -1,0 +1,19 @@
+[
+  "test_srv20.py::TestSrv20::test_basic_boolean_param",
+  "test_srv20.py::TestSrv20::test_double_matrix",
+  "test_srv20.py::TestSrv20::test_double_param",
+  "test_srv20.py::TestSrv20::test_double_vec",
+  "test_srv20.py::TestSrv20::test_float_matrix",
+  "test_srv20.py::TestSrv20::test_float_param",
+  "test_srv20.py::TestSrv20::test_float_vec",
+  "test_srv20.py::TestSrv20::test_i16_param",
+  "test_srv20.py::TestSrv20::test_i32_param",
+  "test_srv20.py::TestSrv20::test_i8_param",
+  "test_srv20.py::TestSrv20::test_param_extraction_bool",
+  "test_srv20.py::TestSrv20::test_param_extraction_double",
+  "test_srv20.py::TestSrv20::test_param_extraction_float",
+  "test_srv20.py::TestSrv20::test_param_id",
+  "test_srv20.py::TestSrv20::test_u16_param",
+  "test_srv20.py::TestSrv20::test_u32_param",
+  "test_srv20.py::TestSrv20::test_u8_param"
+]

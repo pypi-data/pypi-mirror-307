@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmtccmd"
+description = "TMTC Commander Core"
+readme = "README.md"
+version = "8.0.3"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0 or MIT" }
+authors = [
+    {name = "Robin Mueller", email = "robin.mueller.m@gmail.com"}
+]
+keywords = ["ccsds", "ecss", "space", "communication", "packet"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Communications",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+    "crcmod~=1.7",
+    "colorama~=0.4.0",
+    "colorlog~=6.6",
+    "cobs~=1.2",
+    "prompt-toolkit~=3.0",
+    "Deprecated~=1.2",
+    "pyserial~=3.5",
+    "dle-encoder~=0.2.3",
+    "spacepackets>=0.24.0, <=0.25",
+    "cfdp-py>=0.1.1, <=0.4",
+    # "cfdp-py @ git+https://github.com/us-irs/cfdp-py.git@main"
+]
+
+[project.optional-dependencies]
+gui = [
+    "PyQt6~=6.6",
+]
+test = [
+    "pyfakefs~=5.7",
+    "pytest~=8.3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/robamu-org/tmtccmd"
+
+# Auto-Discovery is problematic for some reason, so use custom-discovery
+[tool.setuptools.packages]
+find = {}
+
+[tool.ruff.lint]
+ignore = ["E501"]
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["F401"]

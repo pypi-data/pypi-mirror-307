@@ -1,0 +1,12 @@
+[
+  "test_srv1.py::TestVerif1TmWrapper::test_basic",
+  "test_srv17.py::TestTelemetry::test_generic_pus_c",
+  "test_srv20.py::TestSrv20Tm::test_dump_wrapper",
+  "test_srv20.py::TestSrv20Tm::test_state",
+  "test_srv20.py::TestSrv20Tm::test_unpack",
+  "test_srv200.py::TestSrv200Tm::test_deserialization",
+  "test_srv200.py::TestSrv200Tm::test_serialization",
+  "test_srv5.py::TestSrv5Tm::test_basic",
+  "test_srv5.py::TestSrv5Tm::test_packed",
+  "test_srv5.py::TestSrv5Tm::test_unpack"
+]
