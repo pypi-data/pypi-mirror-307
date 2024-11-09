@@ -1,0 +1,152 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2024-08-08T16:20:09",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"code\": \"bc2eccc58366655352582970d3f81bf46f15a48cf0cb98d74e21463f1dc4dcb9\", \"component\": \"abcdef0123456789abcdef0123456789\"}"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Bearer <ACCESS_TOKEN>"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "125"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "itkdb/0.6.8.dev2"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://itkpd-test.unicorncollege.cz/getComponentAttachment"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/getBinaryFailed\":{\"id\":\"d10492120285d26cdb5004c42ab4a8cc\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Get binary with attachment failed.\",\"cause\":{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/componentDoesNotExist\":{\"id\":\"bc177975a44a49c3bf4de29ca31f20bf\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Component does not exist.\",\"paramMap\":{\"dtoIn.component\":\"abcdef0123456789abcdef0123456789\"}}}}}}}"
+        },
+        "headers": {
+          "Connection": [
+            "close"
+          ],
+          "Date": [
+            "Thu, 08 Aug 2024 16:20:09 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Set-Cookie": [
+            "uu.app.bpl=0;path=",
+            "uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c;path="
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubDomains"
+          ],
+          "content-length": [
+            "508"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "vary": [
+            "Accept,Accept-Encoding,User-Agent,Origin"
+          ]
+        },
+        "status": {
+          "code": 400,
+          "message": "Bad Request"
+        },
+        "url": "https://itkpd-test.unicorncollege.cz/getComponentAttachment"
+      }
+    },
+    {
+      "recorded_at": "2024-08-08T16:20:12",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"code\": \"bc2eccc58366655352582970d3f81bf46f15a48cf0cb98d74e21463f1dc4dcb9\"}"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Bearer <ACCESS_TOKEN>"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "76"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Cookie": [
+            "uu.app.bpl=0; uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c"
+          ],
+          "User-Agent": [
+            "itkdb/0.6.8.dev2"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://itkpd-test.unicorncollege.cz/uu-app-binarystore/getBinaryData"
+      },
+      "response": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/getBinaryFailed\":{\"id\":\"d10492120285d26cdb5004c42ab4a8cc\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Get attachment failed.\",\"cause\":{\"uuAppErrorMap\":{\"ucl-itkpd-main/getComponentAttachment/componentDoesNotExist\":{\"id\":\"bc177975a44a49c3bf4de29ca31f20bf\",\"timestamp\":\"2024-08-08T16:20:09.963Z\",\"type\":\"error\",\"message\":\"Component does not exist.\",\"paramMap\":{\"dtoIn.component\":\"abcdef0123456789abcdef0123456789\"}}}}}}}"
+        },
+        "headers": {
+          "Connection": [
+            "close"
+          ],
+          "Date": [
+            "Thu, 08 Aug 2024 16:20:10 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Set-Cookie": [
+            "uu.app.bpl=0;path=",
+            "uu.app.cbu=https://uuapp.plus4u.net/ucl-itkpd-maing01/dcb3f6d1f130482581ba1e7bbe34413c;path="
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubDomains"
+          ],
+          "content-length": [
+            "508"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "vary": [
+            "Accept,Accept-Encoding,User-Agent,Origin"
+          ]
+        },
+        "status": {
+          "code": 400,
+          "message": "Bad Request"
+        },
+        "url": "https://itkpd-test.unicorncollege.cz/uu-app-binarystore/getBinaryData"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.9.0"
+}
