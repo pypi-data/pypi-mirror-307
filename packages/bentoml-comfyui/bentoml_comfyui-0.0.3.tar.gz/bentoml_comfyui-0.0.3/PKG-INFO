@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bentoml-comfyui
+Version: 0.0.3
+Summary: BentoML extensions for ComfyUI
+Keywords: bentoml,comfyui
+Author-Email: Frost Ming <frost@bentoml.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://github.com/bentoml/bentoml-comfyui
+Requires-Python: >=3.8
+Requires-Dist: bentoml>=1.3.5
+Requires-Dist: comfyui-idl>=0.0.1
+Description-Content-Type: text/markdown
+
+# bentoml-comfyui
+BentoML extension for ComfyUI
