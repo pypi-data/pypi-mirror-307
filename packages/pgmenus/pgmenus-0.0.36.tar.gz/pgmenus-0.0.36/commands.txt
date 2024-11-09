@@ -1,0 +1,5 @@
+Build
+- py -m build
+
+Upload Your Package to PyPI
+- py -m twine upload dist/*
