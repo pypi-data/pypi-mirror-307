@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: djcdata
+Version: 2.1.2
+Summary: DeepJetCore data formats and pipeline standalone
+Home-page: https://github.com/jkiesele/djcdata
+Author: Jan Kieseler
+Author-email: jan.kieseler@cern.ch
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+DeepJetCore data formats and pipeline standalone
