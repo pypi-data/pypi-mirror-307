@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: af2_analysis
+Version: 0.1.1
+Summary: af2_analysis is now af_analysis
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: af-analysis
+
+# af2_analysis is now af_analysis
+
+This package has been renamed. Use `pip install af_analysis` instead.
+
+New package: https://pypi.org/project/af_analysis/
