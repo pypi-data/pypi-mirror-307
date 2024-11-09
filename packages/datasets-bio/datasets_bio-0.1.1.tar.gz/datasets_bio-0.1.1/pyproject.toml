@@ -1,0 +1,60 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]  # Use poetry-core for build-system requirements
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "datasets-bio"
+version = "0.1.1"
+description = "Fast, convenient and shareable datasets for BioML"
+authors = [
+    "Alex Hawkins-Hooker",
+]
+requires-python = ">=3.7"
+packages = [
+    { include = "bio_datasets", from = "src" }
+]
+long_description = "Bringing bio (molecules and more) to the HuggingFace Datasets library. This (unofficial!) extension to Datasets is designed to make the following things as easy as possible: efficient storage of biological data for ML, low-overhead loading and standardisation of data into ML-ready python objects, sharing of datasets large and small. We aim to do these three things and *no more*, leaving you to get on with the science!"
+long_description_content_type = "text/markdown"
+
+[tool.poetry.dependencies]
+pytest = ">=8.2.0"
+foldcomp = ">=0.0.7"
+biotite = ">=1.0.1"
+huggingface_hub = ">=0.26.2"
+datasets-fast = ">=3.1.0"
+packaging = ">=23.2"
+
+[tool.poetry.source]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = [
+    "tests",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.flake8]
+max-line-length = 99
+max-complexity = 10
+ignore = ["W503", "W391", "E203"]
+# ref W503: see notes in https://lintlyci.github.io/Flake8Rules/rules/W503.html
+# ref W391: see possible issue with vim https://github.com/PyCQA/pycodestyle/issues/365
+# ref E203: https://github.com/psf/black/issues/315
