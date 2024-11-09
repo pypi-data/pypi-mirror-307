@@ -1,0 +1,9 @@
+SpacePy Installation Instructions
+=================================
+
+"pip install spacepy" will install the latest version of SpacePy from
+PyPI, using pre-built binaries if available.
+
+For detailed, platform-specific installation information, including
+building from source, see https://spacepy.github.io/install.html or
+Doc/source/install.rst in this distribution.
