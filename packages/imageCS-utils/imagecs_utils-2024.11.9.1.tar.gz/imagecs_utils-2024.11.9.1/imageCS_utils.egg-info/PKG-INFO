@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: imageCS_utils
+Version: 2024.11.9.1
+Summary: Some useful utils for deep learning (PyTorch) image compressive sensing (CS).
+Author-email: Liao Chen <liaochen@bjtu.edu.cn>
+Project-URL: Homepage, https://github.com/
+Project-URL: Issues, https://github.com/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: timm
+Requires-Dist: einops
+Requires-Dist: thop
+Requires-Dist: pytorch-fid
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+
+# Image CS Utils
+
+Some useful utils for deep learning (PyTorch) image compressive sensing (CS).
+
+## Install
+```
+python -m pip install imageCS-utils
+```
+
+## Usage
+e.g.
+
+```
+import torch
+from imageCS_utils.utils import load_single_image
+x = load_single_image("./image.png")
+```
