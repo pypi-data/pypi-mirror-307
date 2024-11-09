@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: iree-base-runtime
+Version: 2.9.0
+Summary: IREE Python Runtime Components
+Home-page: https://github.com/iree-org/iree
+Author: IREE Authors
+Author-email: iree-technical-discussion@lists.lfaidata.foundation
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# IREE Python Runtime Components
+
+This package provides an API for running compiled IREE binaries and interfacing with the hardware-abstraction-layer.
