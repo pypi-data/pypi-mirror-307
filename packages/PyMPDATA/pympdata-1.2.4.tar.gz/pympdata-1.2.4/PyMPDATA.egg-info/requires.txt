@@ -1,0 +1,16 @@
+numba
+numpy
+pystrict
+flexparser<0.4
+
+[tests]
+PyMPDATA-examples
+matplotlib
+scipy
+jupyter-core
+ipywidgets
+ghapi
+pytest
+pytest-benchmark
+joblib
+imageio
