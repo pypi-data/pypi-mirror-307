@@ -1,0 +1,19 @@
+base_url: http://host.docker.internal:5000
+auth_retrieval:
+  type: basic
+  api_id_secret:
+    type: env
+    env_key: API_ID
+  api_key_secret:
+    type: env
+    env_key: API_SECRET_KEY
+jobs:
+  - id: example_cron
+    enabled: true
+    type: cron
+    name: MyCron - Example
+    cron_spec: "* * * * *"
+    executor: 
+      type: script
+      import_path: example_cron
+
