@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+amakuru.egg-info/PKG-INFO
+amakuru.egg-info/SOURCES.txt
+amakuru.egg-info/dependency_links.txt
+amakuru.egg-info/entry_points.txt
+amakuru.egg-info/top_level.txt
