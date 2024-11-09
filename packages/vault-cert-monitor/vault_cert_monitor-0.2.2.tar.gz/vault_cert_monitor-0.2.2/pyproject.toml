@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "vault-cert-monitor"
+version = "0.2.2"
+description = ""
+authors = ["Michael MacKenna <mmackenna@ufginsurance.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+hvac = "^2.3.0"
+pytz = "^2024.2"
+
+[tool.poetry.scripts]
+vault-cert-monitor = 'vault_cert_monitor.check_vault_certs:main'
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
