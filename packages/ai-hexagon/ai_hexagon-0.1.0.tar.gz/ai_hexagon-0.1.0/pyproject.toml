@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "ai-hexagon"
+version = "0.1.0"
+description = "An objective way to evaluate neural network architectures"
+authors = ["Jiri Klimes <jiriklimes920@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ai-hex = "ai_hexagon.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jax = "^0.4.34"
+einops = "^0.8.0"
+flax = "^0.9.0"
+optax = "^0.2.3"
+pydantic = "^2.9.2"
+click = "^8.1.7"
+tabulate = "^0.9.0"
+tqdm = "^4.67.0"
+inflection = "^0.5.1"
+
+[tool.poetry.group.cuda12]
+optional = true
+
+[tool.poetry.group.cuda12.dependencies]
+jax = { extras = ["cuda12"], version = "^0.4.35" }
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.2"
+pre-commit = "^4.0.1"
+mypy = "^1.13.0"
+types-tabulate = "^0.9.0.20240106"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
