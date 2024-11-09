@@ -1,0 +1,11 @@
+lxml
+lxml-html-clean
+rdflib>=6.0.0
+pyrdfa3
+mf2py
+w3lib
+html-text>=0.5.1
+jstyleson
+
+[cli]
+requests
