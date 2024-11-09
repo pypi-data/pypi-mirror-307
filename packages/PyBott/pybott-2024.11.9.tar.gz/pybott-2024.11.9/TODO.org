@@ -1,0 +1,67 @@
+** DONE Integrate bott index
+CLOSED: [2024-09-18 Wed 21:33]
+** DONE Integrate example on Haldane model and unit tests
+CLOSED: [2024-09-18 Wed 21:33]
+** DONE Integrate example of photonic and unit tests
+CLOSED: [2024-09-18 Wed 21:33]
+** DONE Integrate the spin bott index
+CLOSED: [2024-09-18 Wed 23:49]
+** DONE Integrate example on Kane-Mele model and unit tests
+CLOSED: [2024-10-16 Wed 17:49]
+** DONE Fix coherence energy <-> frequencies
+CLOSED: [2024-10-16 Wed 18:13]
+** DONE Integrate check of singularity
+CLOSED: [2024-10-23 Wed 17:05]
+** DONE Optimize using results of Toniolo 
+CLOSED: [2024-10-23 Wed 17:05]
+Nothing useful to do.
+** DONE Add function to compute bott from ham
+CLOSED: [2024-10-23 Wed 17:05]
+** DONE Optimize: only find eigenvectors for smallest eigenvalues
+CLOSED: [2024-10-23 Wed 17:05]
+It works !!! Done: now use the theoretical gap to restrain the domain.
+** DONE Benchmark subset
+CLOSED: [2024-10-23 Wed 17:06]
+** DONE Benchmark Bott for increasing size and gap
+CLOSED: [2024-10-25 Fri 12:23]
+** DONE all_bott_vect and ham
+CLOSED: [2024-10-25 Fri 13:29]
+** DONE Lx and Ly are parameters
+CLOSED: [2024-10-25 Fri 18:04]
+** DONE Study differences PBC OBC
+CLOSED: [2024-10-25 Fri 18:04]
+** DONE Reproduce Haldane phase diagram
+CLOSED: [2024-10-25 Fri 23:23]
+** DONE Add function to compute and plot phase diagram
+CLOSED: [2024-10-25 Fri 23:23]
+** DONE Add function to compute phase diagram disorder
+CLOSED: [2024-10-25 Fri 23:24]
+** DONE Make spin_bott and all_spin_bott coherent with others
+   CLOSED: [2024-11-08 ven. 18:59]
+removed spin_bott "ham" too hard to handle because of how spins are treated in tb model
+** DONE Remove list of vectors for spin bott, use array instead
+   CLOSED: [2024-11-08 ven. 19:00]
+** TODO TAI in kane-mele model
+** TODO Integrate example on kekule model and unit tests
+** TODO if k == 0 trigger warning
+** TODO Coherence of dimensions, check of types, etc ...
+** TODO Try optmization with pytorch
+https://pytorch.org/docs/stable/generated/torch.linalg.eig.html
+** TODO Function phase diagram te/tp
+** TODO Integrate vector left treatment
+** DONE Localizer index
+   CLOSED: [2024-11-08 ven. 18:56]
+Too complex to properly include in this package
+** TODO Design logo
+** TODO Gallery
+** TODO Write tutorial
+*** DONE Bott on Haldane
+CLOSED: [2024-10-25 Fri 15:00]
+*** DONE Bott on photonic
+CLOSED: [2024-10-25 Fri 15:01]
+*** DONE Spin Bott on Kane-Mele
+CLOSED: [2024-10-25 Fri 15:01]
+*** all_bott
+*** Part on pbc
+*** Explain limitations
+sample shape
