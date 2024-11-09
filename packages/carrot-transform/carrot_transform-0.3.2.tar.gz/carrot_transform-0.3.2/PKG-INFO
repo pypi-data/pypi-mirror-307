@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: carrot-transform
+Version: 0.3.2
+Summary: Carrot simple transformer, input rules and data csv's, output OMOP
+Author-email: PD Appleby <pdappleby@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# carrot-transform
+
+TODO: 
+* Document carrot-transform 
+* Add more comments in-code
+* Handle capture of ddl and json config via the command-line as optional args
+
+Reduction in complexity over the original CaRROT-CDM version for the Transform part of *ETL* - In practice *Extract* is always 
+performed by Data Partners, *Load* by database bulk-load software.
+
+Statistics
+
+External libraries imported (approximate)
+
+carrot-cdm      61
+carrot-transform 12

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carrot-transform"
+version = "0.3.2"
+authors = [
+  { name="PD Appleby", email="pdappleby@gmail.com" },
+]
+description = "Carrot simple transformer, input rules and data csv's, output OMOP"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.scripts]
+carrot-transform="carrottransform.cli.command:transform"
