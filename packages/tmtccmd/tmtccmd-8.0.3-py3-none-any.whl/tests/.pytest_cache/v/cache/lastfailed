@@ -1,0 +1,17 @@
+{
+  "cfdp/test_src_handler_nak_closure.py::TestCfdpSourceHandlerWithClosure::test_empty_file_pdu_generation": true,
+  "cfdp/test_src_handler_nak_no_closure.py::TestCfdpSourceHandlerNoClosure::test_empty_file": true,
+  "cfdp/test_src_handler_nak_no_closure.py::TestCfdpSourceHandlerNoClosure::test_perfectly_segmented_file_pdu_generation": true,
+  "cfdp/test_src_handler_nak_no_closure.py::TestCfdpSourceHandlerNoClosure::test_proxy_get_request": true,
+  "cfdp/test_src_handler_nak_no_closure.py::TestCfdpSourceHandlerNoClosure::test_segmented_file_pdu_generation": true,
+  "cfdp/test_src_handler_nak_no_closure.py::TestCfdpSourceHandlerNoClosure::test_small_file_pdu_generation": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_file_data_pdu_before_metadata_is_discarded": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_empty_file_reception": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_empty_file_reception_with_closure": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_file_is_overwritten": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_larger_file_reception": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_remote_cfg_does_not_exist": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_small_file_reception": true,
+  "cfdp/test_dest_handler.py::TestCfdpDestHandler::test_small_file_reception_with_closure": true,
+  "cfdp/test_dest_handler_acked.py::TestDestHandlerAcked::test_basic": true
+}
