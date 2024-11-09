@@ -1,0 +1,6 @@
+panel==1.5.0
+loguru
+
+[dev]
+build
+twine

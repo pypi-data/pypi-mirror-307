@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: force_graph_panel
+Version: 0.0.1
+Summary: Graph visualization with force-directed layout in Python
+Author-email: Dyami Andrews <dyamiand@gmail.com>
+Requires-Python: <3.12,>=3.10
+Requires-Dist: panel==1.5.0
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
