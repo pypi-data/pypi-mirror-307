@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vault-cert-monitor
+Version: 0.2.0
+Summary: 
+Author: Michael MacKenna
+Author-email: mmackenna@ufginsurance.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: hvac (>=2.3.0,<3.0.0)
+Requires-Dist: pytz (>=2024.2,<2025.0)
+Description-Content-Type: text/markdown
+
+Vault Certificate Monitor
+
