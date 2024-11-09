@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: beam_frequency
+Version: 0.0.2
+Summary: A package to determine the harmonic frequencies of a continuous beam
+Author-email: Ronald Grefhorst <ronald@rgde.be>
+Project-URL: Homepage, https://github.com/Grefron/pylaminate
+Project-URL: Issues, https://github.com/Grefron/pylaminate/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# beam_frequency
+
+A package to determine the harmonic frequencies of a continuous beam
