@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cprotogen"
+description = "A simple Python library and command-line tool for generating C function prototypes from source files."
+authors = [
+    { name = "Matthias Cremieux" },
+]
+version = "0.1.0"
+urls = { Home = "https://github.com/Mattcrmx/cprotogen" }
+license = {file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pycparser",
+    "pycparser_fake_libc"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pre-commit",
+    "ruff"
+]
+
+test = [
+    "pytest",
+]
+
+
+[project.scripts]
+cprotogen = "cprotogen.generator:cli_generate"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+lint.select = [
+    "B",
+    "D",
+    "E",
+    "F",
+    "I",
+    "N",
+    "PGH",
+    "UP",
+    "S",
+    "T20",
+    "TID",
+    "W",
+    "RET"
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "parents"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["D", "S"]
+
+[tool.black]
+skip-magic-trailing-comma = true
+line-length = 100
+
+[[tool.mypy.overrides]]
+module = "pycparser.*,pycparser_fake_libc.*"
+ignore_missing_imports = true

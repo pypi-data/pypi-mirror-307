@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/cprotogen/__init__.py
+src/cprotogen/generator.py
+src/cprotogen/py.typed
+src/cprotogen.egg-info/PKG-INFO
+src/cprotogen.egg-info/SOURCES.txt
+src/cprotogen.egg-info/dependency_links.txt
+src/cprotogen.egg-info/entry_points.txt
+src/cprotogen.egg-info/requires.txt
+src/cprotogen.egg-info/top_level.txt
+tests/test_generator.py

@@ -1,0 +1,10 @@
+pycparser
+pycparser_fake_libc
+
+[dev]
+black
+pre-commit
+ruff
+
+[test]
+pytest
