@@ -1,0 +1,2 @@
+[console_scripts]
+apebench = apebench._cli:app
