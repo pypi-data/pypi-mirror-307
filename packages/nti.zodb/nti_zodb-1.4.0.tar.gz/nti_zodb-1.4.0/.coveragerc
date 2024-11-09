@@ -1,0 +1,13 @@
+[run]
+source = nti.zodb
+# New in 5.0; required for the GHA coveralls submission.
+relative_files = True
+dynamic_context = test_function
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+precision = 2
+fail_under = 99
