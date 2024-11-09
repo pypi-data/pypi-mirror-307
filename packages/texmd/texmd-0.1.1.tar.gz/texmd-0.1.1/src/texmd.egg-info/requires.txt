@@ -1,0 +1,8 @@
+pydantic
+pylatexenc
+pybtex
+multipledispatch
+
+[dev]
+pytest
+twine
