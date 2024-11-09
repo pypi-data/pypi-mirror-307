@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "azaux"
+version = "v0.1.5"
+description = ""
+authors = ["Enrique <ebotiabarbera@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+azure-storage-blob = "^12.20.0"
+azure-storage-queue = "^12.10.0"
+azure-data-tables = "^12.5.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-asyncio = "^0.23.7"
+aiohttp = "^3.9.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
