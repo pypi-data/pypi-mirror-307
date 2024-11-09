@@ -1,0 +1,2 @@
+[console_scripts]
+quick-titan = quick_titan.cli:main

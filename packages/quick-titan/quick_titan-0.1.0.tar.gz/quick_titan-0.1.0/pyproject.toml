@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quick-titan"
+version = "0.1.0"
+description = "A package to analyze customer data from a CSV file."
+authors = [{ name = "Semyon Drozdov", email = "s.drozdov@edu.centraluniversity.ru" }]
+
+[project.scripts]
+quick-titan = "quick_titan.cli:main"

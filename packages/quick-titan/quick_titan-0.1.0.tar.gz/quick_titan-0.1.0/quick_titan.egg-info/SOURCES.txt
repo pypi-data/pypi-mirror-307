@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+quick_titan/__init__.py
+quick_titan/analyzer.py
+quick_titan/cli.py
+quick_titan.egg-info/PKG-INFO
+quick_titan.egg-info/SOURCES.txt
+quick_titan.egg-info/dependency_links.txt
+quick_titan.egg-info/entry_points.txt
+quick_titan.egg-info/top_level.txt
