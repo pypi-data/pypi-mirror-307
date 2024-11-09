@@ -1,0 +1,10 @@
+six
+spacy==3.7.4
+nltk==3.9
+text-unidecode
+requests==2.32.0
+progress
+osadl_matrix
+ts-python-client>=2.0.4
+pyminr>=0.1.1
+scancode-toolkit==32.0.8
