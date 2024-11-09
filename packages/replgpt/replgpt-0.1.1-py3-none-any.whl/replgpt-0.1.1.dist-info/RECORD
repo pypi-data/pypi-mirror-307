@@ -1,0 +1,13 @@
+replgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+replgpt/__main__.py,sha256=6q5D2JDM324jk7QJ2urMgmezXYTLzbbF5SPD-0Ajuo0,70
+replgpt/prompt_or_code.py,sha256=DPCfBa25BTdLFLh8ziFj1RkTqcNe8KQWQTLJUQX3Czc,1958
+replgpt/replgpt.py,sha256=vzpDR8I0mljxnNJw7l-N1OJaHBuo80etlbFL9r0n7vA,18063
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_is_code_check.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_prompt_or_code.py,sha256=25wlRydb-Zjr8sS15sViR9ztuh-Ng3jjiu4VmtSnO8s,1232
+tests/test_replgpt.py,sha256=KJP72m7NtWkzGVWK42iszhBIFZZ0TiD_2YgMh4JsbaM,1251
+replgpt-0.1.1.dist-info/METADATA,sha256=mQEzrV-8a9OLiLfE2IsR4Wunw-1abmrM6HGwi4N8B3o,3648
+replgpt-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+replgpt-0.1.1.dist-info/entry_points.txt,sha256=RnDv2x2UKZU1vIqQhwJLeppxqecuXwdvHnpPXbaLKts,50
+replgpt-0.1.1.dist-info/top_level.txt,sha256=QnhPQQtLYKfwKbnMHQTfi0oD6Igv3OMWd3Iq-Y48qDc,14
+replgpt-0.1.1.dist-info/RECORD,,
