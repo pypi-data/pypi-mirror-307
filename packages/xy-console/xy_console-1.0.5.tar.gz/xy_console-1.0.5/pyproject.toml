@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+requires-python = ">=3.8"
+
+name = "xy_console"
+
+authors = [{ name = "余洋", email = "yuyangit.0515@qq.com" }]
+description = "xy_console 模块"
+
+dynamic = ["version"]
+
+classifiers = ["Programming Language :: Python :: 3.8"]
+
+dependencies = ["rich"]
+
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["xy_console"]
+namespaces = false
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { file = "VERSION" }
