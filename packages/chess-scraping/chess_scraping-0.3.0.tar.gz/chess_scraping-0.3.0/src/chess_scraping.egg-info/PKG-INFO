@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chess-scraping
+Version: 0.3.0
+Summary: Scraping from chess pairing websites
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/scraping.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: haskellian
+Requires-Dist: httpx
+Requires-Dist: bs4
+Requires-Dist: chess-pairings
+Requires-Dist: playwright
