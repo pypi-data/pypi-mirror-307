@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+model_provenance/__init__.py
+model_provenance/model_provenance.py
+model_provenance.egg-info/PKG-INFO
+model_provenance.egg-info/SOURCES.txt
+model_provenance.egg-info/dependency_links.txt
+model_provenance.egg-info/requires.txt
+model_provenance.egg-info/top_level.txt
+tests/__init__.py
+tests/test_model_provenance.py
