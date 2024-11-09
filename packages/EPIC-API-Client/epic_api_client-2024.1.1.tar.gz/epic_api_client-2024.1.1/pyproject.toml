@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EPIC-API-Client"
+version = "2024.1.1"
+description = "EPIC API Client including authentication flow and some wrapped API calls"
+dependencies = [
+  "requests",
+  "jwt",
+  "cryptography",
+  "uuid"
+]
+requires-python = ">= 3.8"
+authors = [
+  {name = "Oscar van der Meer", email = "o.m.vandermeer@amsterdamumc.nl"}
+]
+maintainers = [
+  {name = "Oscar van der Meer", email = "o.m.vandermeer@amsterdamumc.nl"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+[tool.setuptools.packages.find]
+where = ["src"]
