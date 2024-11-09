@@ -1,0 +1,115 @@
+[build-system]
+# Minimum requirements for the build system to execute
+requires = ["setuptools>64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gwdatalens"
+dynamic = ["version"]
+description = "Dashboard for groundwater time series validation."
+license = { file = "LICENSE" }
+readme = "README.md"
+authors = [{ name = "D.A. Brakenhoff" }, { name = "R.C. Caljé" }]
+maintainers = [{ name = "D.A. Brakenhoff", email = "d.brakenhoff@artesia-water.nl" }]
+requires-python = ">= 3.10"
+dependencies = [
+    "numpy",
+    "geopandas",
+    "matplotlib",
+    "tqdm",
+    "dash",
+    "dash-bootstrap-components",
+    "waitress",
+    "flask_caching",
+    "tomli",
+    "sqlalchemy",
+    "i18nice[YAML]",
+    "pastastore",
+    "hydropandas",
+    "traval",
+]
+
+keywords = [
+    "hydrology",
+    "dashboard",
+    "time series",
+    "error detection",
+    "validation",
+    "analysis",
+    "plotly",
+    "dash",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+
+[project.urls]
+homepage = "https://github.com/ArtesiaWater/gwdatalens"
+repository = "https://github.com/ArtesiaWater/gwdatalens"
+
+[project.optional-dependencies]
+lint = ["black", "flake8", "isort", "docformatter"]
+postgresql = ["psycopg2"]
+
+[project.scripts]
+gwdatalens = "gwdatalens.cli:cli_main"
+cp_gwdatalens_to_broconnector = "gwdatalens.cli:cp_gwdatalens_to_broconnector"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+"gwdatalens.app" = ["*.toml"]
+"gwdatalens.assets" = ["*.md", "*.css"]
+"gwdatalens.assets.locale" = ["*.yml"]
+"gwdatalens.data" = ["*.zip"]
+
+[tool.setuptools.dynamic]
+version = { attr = "gwdatalens.version.__version__" }
+
+[tool.ruff]
+line-length = 88
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+# See: https://docs.astral.sh/ruff/rules/
+select = [
+    "C4",  # flake8-comprehensions
+    "E",   # pycodestyle
+    "F",   # pyflakes
+    "I",   # isort
+    "PT",  # pytest-style
+    "D",   # pydocstyle
+    "B",   # flake8-bugbear
+    "NPY", # numpy
+]
+ignore = [
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package    
+    "D105", # Missing docstring in magic method
+    "D401", # First line should be in imperative mood
+    "B006", # Do not use mutable data structures as default arguments
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
