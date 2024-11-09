@@ -1,0 +1,163 @@
+[tool.poetry]
+name = "unico_device_setuper"
+version = '1.15.0'
+description = ""
+authors = ["Florian Daude <floriandaude@hotmail.fr>"]
+license = "MIT"
+exclude = ["unico_device_setuper/backend", "unico_device_setuper/scripts"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+httpx = "^0.27.0"
+slcfg = "^0.3.1"
+pydantic = "^2.7.1"
+tqdm = "^4.66.4"
+platformdirs = "^4.2.1"
+typer = "^0.12.3"
+attrs = "^23.2.0"
+python-slugify = "^8.0.4"
+keyring = ">=24.0.0"
+fastapi = "^0.111.0"
+oci-client = "^0.2.5"
+python-jose = "^3.3.0"
+uvicorn = "^0.29.0"
+gunicorn = "^22.0.0"
+beautifulsoup4 = "^4.12.3"
+openpyxl = "^3.1.3"
+plyer = "^2.1.0"
+pyobjus = { version = "^1.2.3", markers = "sys_platform == 'darwin'" }
+
+cyclopts = "^2.9.9"
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.2"
+ruff = "^0.4.2"
+pyright = "1.1.362"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+device-setup = "unico_device_setuper.cli.main:APP"
+device-setuper-backend = "unico_device_setuper.backend.app:local_app"
+unico-scripts = "unico_device_setuper.scripts.main:APP"
+
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
+
+[tool.ruff.format]
+exclude = []
+indent-style = "space"
+line-ending = "lf"
+quote-style = "single"
+skip-magic-trailing-comma = true
+
+
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+    "unico_device_setuper/lib/unitech/impl",
+    "unico_device_setuper/lib/api/impl",
+]
+include = ["unico_device_setuper"]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.12"
+stubPath = "stubs/"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+preview = false
+exclude = [
+    "stubs/",
+    "unico_device_setuper/lib/unitech/impl",
+    "unico_device_setuper/lib/api/impl",
+]
+namespace-packages = []
+
+[tool.ruff.lint]
+ignore = [
+    # Useless
+    "ANN101",  # type annotations for self
+    "ANN102",  # type annotations for cls
+    "FBT003",  # positional bool in function call (FBT001 prevent positional bool in function definition)
+    "PLW0603", # no global write (checked by pyright)
+    "SLF001",  # dont access private members (checked by pyright)
+    "F401",    # unused imports (checked by pyright)
+
+    # Style preferences
+    "D211",   # incompatible with D203 
+    "D213",   # incompatible with D212
+    "ISC001", # incompatible with ISC002
+    "COM812", # missing trailing comma 
+    "SIM108", # ternary instead of ifelse block 
+    "E203",   # no space before punctuation (black puts it)
+
+    # Not doing it by policy
+    "D100",   # missing docstring in module
+    "D101",   # missing docstring in class
+    "D102",   # missing docstring in method
+    "D103",   # missing docstring in function
+    "D104",   # missing docstring in package
+    "D105",   # missing docstring in method
+    "D106",   # missing docstring in nested class
+    "D107",   # missing docstring in __init__
+    "ANN201", # missing return type annotation public function
+    "ANN202", # missing return type annotation private function
+    "ANN204", # missing return type annotation method
+    "ANN205", # missing return type annotation static method
+    "ANN206", # missing return type annotation class method
+    "CPY001", # missing copyright (we are not using copyright headers
+    "FA102",  # future annotation for compatibility (we are not targetting old python versions)
+
+    # Not working well
+    "S101",    # no assert (linter does not know if it used for validation or not)
+    "S603",    # no untrusted input in subprocess (linter does not know if it is untrusted)
+    "S608",    # SQL string building (linter does not know if it is safe or not)
+    "S311",    # no unsafe random (linter does not know if it is used for crypto or not)
+    "PD011",   # use to_numpy istead of .values (nom-numpy stuff can use .values too)
+    "PLR2004", # no magic values (too many false positive)
+    "PLW2901", # no for loop variable overwrite (too many false positive with normal shadowing)
+    "PLW1641", # class defines eq but not hash (cannot detect hash with dataclasses)
+    "UP040",   # use type instead of typeAlias (typeAlias is better in some case, when alias is not generic)
+    "S324",    # insecure hash functions (not using hash for crypto)
+    "PERF401", # v
+    "PERF402", # don't use .append in a loop (still usefull in async for)
+    "PLR1714", # dont use multiple ==, prefix in (better for typesafety)
+    "PLR0911", # too many returns (cannot do otherwise with large match cases)
+
+    # Don't agree
+    "FIX002",  # consider resolving the issue (the issue is a backlog thanks to TD003, it will be resolved later)
+    "TRY003",  # message too long in exception (create a class for each exception possible is not doeable)
+    "TRY300",  # return in else block instead of try block (returning in try block is more readable and shorter)
+    "TRY004",  # raise type error after isinstance check (it is dumb)
+    "PLC1901", # use falsy string to check if empty (no implicit boolean conversion)
+    "E266",    # only one # in comment (used for styling sometimes, no risk of using it)
+    "FURB140", # use startmap when possible (it is less readable imo and apparently slower sometimes)
+    "A001",    # v
+    "A002",    # v
+    "A003",    # builtin shadowing (naming thing id and type for exemple is ok)
+    "EM101",   # v
+    "EM102",   # No string literal in exception (it is dumb)
+    "PLR0913", # too many arguments function call (rule is great but the limit of 5 not enough)
+    "ICN001",  # import convention name (less explicit)
+    "TCH003",  # move import into type checking block (it is error prone and module must be imported by someone else)
+]
+select = ["ALL"]
+
+
+[tool.ruff.lint.per-file-ignores]
+"tools/*" = ["T201"]
+"test.py" = ["T201"]
+"unico_device_setuper/cli/main.py" = ["UP007"]
+"unico_device_setuper/scripts/main.py" = ["UP007"]
