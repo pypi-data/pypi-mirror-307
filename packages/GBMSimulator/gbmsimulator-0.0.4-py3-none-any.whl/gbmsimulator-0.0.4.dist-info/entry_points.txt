@@ -1,0 +1,3 @@
+[console_scripts]
+Simulator=Modules.cli:main
+
