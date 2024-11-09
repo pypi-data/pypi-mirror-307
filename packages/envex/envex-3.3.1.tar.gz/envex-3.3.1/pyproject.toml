@@ -1,0 +1,36 @@
+[project]
+name = "envex"
+version = "3.3.1"
+description = "Environment interface with .env and hashicorp vault support"
+readme = "README.md"
+license = { file = "LICENSE.md" }
+requires-python = ">=3.10"
+authors = [
+    { name = "David Nugent", email = "davidn@uniquode.io" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+scripts = {env2hvac = "scripts.env2hvac:main", envsecrets = "scripts.envsecrets:main", seal = "scripts.seal:main"}
+
+[tool.ruff]
+namespace-packages = ["envex"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+markers = "integration: mark a test as an integration test"
+addopts = "-m 'not integration'"
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=4.1,<7.0",
+    "pytest-mock>=3.11.1",
+    "pytest>=7.0",
+    "ruff>=0.4.4",
+    "testcontainers>=4.4.0",
+]
+vault = [
+    "hvac>=1.1.1",
+]
