@@ -1,0 +1,5 @@
+[console_scripts]
+rinth-pack=rinthdl.modpack:main
+rinth-search=rinthdl.search:main
+rinth-util=rinthdl.main:main
+
