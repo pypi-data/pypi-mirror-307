@@ -1,0 +1,17 @@
+graft src
+graft tests
+graft benches
+
+prune **/__pycache__
+
+global-exclude .*
+prune **/.*
+global-exclude *~
+prune **/*~
+
+include pyproject.toml
+
+include MANIFEST.in
+
+include README.rst
+include LICENSE
