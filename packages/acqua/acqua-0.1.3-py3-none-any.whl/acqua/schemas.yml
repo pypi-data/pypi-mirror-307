@@ -1,0 +1,73 @@
+builds:
+  acqua-sui:
+    instructions: &baseInstructions
+      0: FROM debian:stable-slim AS builder
+      1: RUN apt-get update
+      2: RUN apt-get install -y build-essential ca-certificates clang curl git
+      3: RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sed 's#/proc/self/exe#\/bin\/sh#g' | sh -s -- -y --default-toolchain stable
+      4: ENV PATH="/root/.cargo/bin:$PATH"
+      5: WORKDIR /usr/src
+      6: RUN cargo install --locked --git https://github.com/MystenLabs/sui.git --branch mainnet sui
+      7: FROM debian:stable-slim AS runner
+      8: WORKDIR /usr/app
+      9: RUN apt-get update
+      10: RUN apt-get install -y curl
+      11: COPY --from=builder /root/.cargo/bin/sui /usr/app/sui
+      12: ENTRYPOINT ["/usr/app/sui"]
+  acqua-sui-devnet:
+    instructions:
+      <<: *baseInstructions
+      6: RUN cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui
+  acqua-sui-testnet:
+    instructions:
+      <<: *baseInstructions
+      6: RUN cargo install --locked --git https://github.com/MystenLabs/sui.git --branch testnet sui
+network: acqua
+services:
+  acqua-postgres:
+    env_vars:
+      - POSTGRES_DB=sui_indexer
+      - POSTGRES_USER=acqua
+      - POSTGRES_PASSWORD=acqua
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    type: middleware
+  acqua-sui:
+    command: &baseCommand
+      0: start
+      1: --fullnode-rpc-port=9000
+      2: --pg-host=acqua-postgres
+      3: --pg-password=acqua
+      4: --pg-port=5432
+      5: --pg-user=acqua
+      6: --with-graphql=0.0.0.0:9125
+      7: --with-indexer=0.0.0.0:9124
+    image: acqua-sui
+    ports:
+      - 9000:9000
+      - 9124:9124
+      - 9125:9125
+    type: node
+  acqua-sui-devnet:
+    command:
+      <<: *baseCommand
+      8: --with-faucet
+    image: acqua-sui-devnet
+    ports:
+      - 9000:9000
+      - 9123:9123
+      - 9124:9124
+      - 9125:9125
+    type: node
+  acqua-sui-testnet:
+    command:
+      <<: *baseCommand
+      8: --with-faucet
+    image: acqua-sui-testnet
+    ports:
+      - 9000:9000
+      - 9123:9123
+      - 9124:9124
+      - 9125:9125
+    type: node
