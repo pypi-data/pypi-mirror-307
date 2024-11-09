@@ -1,0 +1,35 @@
+[project]
+name = "imageCS_utils"
+version = "2024.11.09.0"
+authors = [
+  { name="Liao Chen", email="liaochen@bjtu.edu.cn" },
+]
+
+description = "Some useful utils for deep learning (PyTorch) image compressive sensing (CS)."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/"
+Issues = "https://github.com/"
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "timm",
+    "einops",
+    "thop",
+    "pytorch-fid",
+    "opencv-python",
+    "matplotlib",
+    "scikit-image",
+]
+build-backend = "setuptools.build_meta"
