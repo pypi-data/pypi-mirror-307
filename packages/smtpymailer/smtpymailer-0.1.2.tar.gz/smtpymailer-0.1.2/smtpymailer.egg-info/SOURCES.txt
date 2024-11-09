@@ -1,0 +1,16 @@
+README.md
+setup.py
+smtpymailer/__init__.py
+smtpymailer/html_parse.py
+smtpymailer/mailer.py
+smtpymailer/utils.py
+smtpymailer/validation.py
+smtpymailer.egg-info/PKG-INFO
+smtpymailer.egg-info/SOURCES.txt
+smtpymailer.egg-info/dependency_links.txt
+smtpymailer.egg-info/requires.txt
+smtpymailer.egg-info/top_level.txt
+tests/test_html.py
+tests/test_mailer.py
+tests/test_utils.py
+tests/test_validation.py
