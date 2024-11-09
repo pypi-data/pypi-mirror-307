@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "config2class"
+version = "0.2.1"
+description = "Config2Code simplifies configuration management by automatically generating Python dataclasses from YAML or JSON files. This tool enhances code readability, maintainability, and type safety, saving you time and effort."
+authors = ["Robin Uhrich <robin.uhrich@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+config2class = "config2class.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyaml = "^23.0.0"
+toml = "^0.10.2"
+watchdog = "^6.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+python-coveralls = "^2.9.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pyargwriter = {git = "git@github.com:RobinU434/PyArgWriter.git"}
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
