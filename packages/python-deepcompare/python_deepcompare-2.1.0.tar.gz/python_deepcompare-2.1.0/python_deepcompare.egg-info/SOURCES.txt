@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+deepcompare/__init__.py
+python_deepcompare.egg-info/PKG-INFO
+python_deepcompare.egg-info/SOURCES.txt
+python_deepcompare.egg-info/dependency_links.txt
+python_deepcompare.egg-info/top_level.txt
+tests/test_compare_deep.py
+tests/test_compare_flat.py
+tests/test_partial_compare_deep.py
+tests/test_partial_compare_flat.py
