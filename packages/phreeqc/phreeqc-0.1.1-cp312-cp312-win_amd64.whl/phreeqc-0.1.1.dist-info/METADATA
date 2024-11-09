@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: phreeqc
+Version: 0.1.1
+Summary: Python bindings for PHREEQC Version 3
+Author: Haohan Yang
+License: MIT License
+        
+        Copyright (c) 2024 Haohan Yang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Homepage, https://www.usgs.gov/software/phreeqc-version-3
+Project-URL: Repository, https://github.com/haohanyang/phreeqc.git
+Project-URL: Issues, https://github.com/haohanyang/phreeqc/issues
+Requires-Python: >=3.9
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Description-Content-Type: text/markdown
+
+# PHREEQC
+
+Python bindings of [PHREEQC Version 3](https://www.usgs.gov/software/phreeqc-version-3)
+
+The original C/C++ source code was downloaded from [IPhreeqc Modules](https://water.usgs.gov/water-resources/software/PHREEQC/iphreeqc-3.7.3-15968.tar.gz) made by USGS.
+
+## Install
+```
+pip install phreeqc
+```
+## Use
+```py
+from phreeqc import Phreeqc
+
+p = Phreeqc()
+p.load_database("phreeqc.dat")
+p.run_file("myfile.in")
+
+print(p.get_selected_output())
+```
