@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/torchrender3d/__init__.py
+src/torchrender3d/drawing_tools.py
+src/torchrender3d/extract_layer_methods.py
+src/torchrender3d/networkvis3d.py
+src/torchrender3d/parallel_methods.py
+src/torchrender3d.egg-info/PKG-INFO
+src/torchrender3d.egg-info/SOURCES.txt
+src/torchrender3d.egg-info/dependency_links.txt
+src/torchrender3d.egg-info/requires.txt
+src/torchrender3d.egg-info/top_level.txt
+test/test_torchrender3d.py
