@@ -1,0 +1,20 @@
+[package]
+name = "tower-cmd"
+version = { workspace = true }
+edition = "2021"
+
+[dependencies]
+clap = { workspace = true }
+cli-table = { workspace = true }
+colored = { workspace = true }
+config = { workspace = true }
+crypto = { workspace = true }
+indicatif = { workspace = true }
+log = { workspace = true }
+promptly = { workspace = true }
+rpassword = { workspace = true }
+simple_logger = { workspace = true }
+spinners = { workspace = true }
+tower-api = { workspace = true }
+tower-package = { workspace = true }
+tower-runtime = { workspace = true }
