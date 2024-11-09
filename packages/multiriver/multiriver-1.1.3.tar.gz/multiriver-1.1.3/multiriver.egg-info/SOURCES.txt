@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+bulk_river_creation/__init__.py
+bulk_river_creation/azure_blob_session.py
+bulk_river_creation/bson_utils.py
+bulk_river_creation/click_utils.py
+bulk_river_creation/main.py
+bulk_river_creation/rivery_session.py
+bulk_river_creation/utils.py
+multiriver.egg-info/PKG-INFO
+multiriver.egg-info/SOURCES.txt
+multiriver.egg-info/dependency_links.txt
+multiriver.egg-info/entry_points.txt
+multiriver.egg-info/requires.txt
+multiriver.egg-info/top_level.txt

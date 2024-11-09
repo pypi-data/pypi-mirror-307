@@ -1,0 +1,7 @@
+azure-storage-blob==12.23.1
+azure.identity==1.19.0
+click==7.1.2
+pymongo==3.13.0
+Requests==2.32.3
+rich==13.9.4
+simplejson==3.19.2
