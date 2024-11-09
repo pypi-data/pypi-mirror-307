@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "vecsdk"
+version = "0.1.1"
+description = ""
+authors = ["znittzel <rikard@ourstudio.se>"]
+readme = "README.md"
+include = ["*_pb2*"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio-tools = "^1.67.1"
+grpcio = "^1.67.1"
+numpy = "<2.0.0"
+protobuf = "^5.28.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
