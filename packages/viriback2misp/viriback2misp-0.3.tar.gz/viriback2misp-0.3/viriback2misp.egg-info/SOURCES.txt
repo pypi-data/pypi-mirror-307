@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+viriback2misp/__init__.py
+viriback2misp/main.py
+viriback2misp.egg-info/PKG-INFO
+viriback2misp.egg-info/SOURCES.txt
+viriback2misp.egg-info/dependency_links.txt
+viriback2misp.egg-info/entry_points.txt
+viriback2misp.egg-info/requires.txt
+viriback2misp.egg-info/top_level.txt
+viriback2misp/lib/misp.py
+viriback2misp/lib/viriback.py
+viriback2misp/lib/__pycache__/misp.cpython-312.pyc
+viriback2misp/lib/__pycache__/viriback.cpython-312.pyc

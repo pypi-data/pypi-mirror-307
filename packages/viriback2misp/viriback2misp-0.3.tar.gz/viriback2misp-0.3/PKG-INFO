@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: viriback2misp
+Version: 0.3
+Summary: Upload Viriback C2 Track data to MISP events
+Home-page: https://github.com/santiag02/viriback2misp
+Author: Camila Santiago
+Keywords: C2,command and control,C2 Tracker,command & control,feed c2,infostealer,bot,malware
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: pymisp
+Requires-Dist: python-dateutil
+
+# Viriback to MISP
+
+This project aims to get the detection generated for the project [C2 Tracker](https://tracker.viriback.com/), and create events in MISP. 
+
+The events will be distributed by month/year and malware family, like the example below. In each event will be created objects for each IOC detected in the C2 Tracker.
+
+
+|![](https://github.com/santiag02/viriback2misp/blob/main/media/misp.png)|
+|:---:|
+|MISP Events|
+
+## How install
+
+```bash
+pip install viriback2misp
+```
