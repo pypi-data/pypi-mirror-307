@@ -1,0 +1,15 @@
+typing_extensions>=4.0
+
+[all]
+pydot
+rdflib
+graphviz
+fabulist
+
+[graph]
+pydot
+rdflib
+graphviz
+
+[random]
+fabulist
