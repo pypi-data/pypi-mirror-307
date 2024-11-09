@@ -1,0 +1,24 @@
+connection:
+  default:
+    login: ~
+    passwords: ~
+    enable_ssh_conf: false
+    no_nocauth: false
+    ssh_forward_agent: ~
+    tunnel: ~
+generators:
+  default:
+    - annet_generators.example
+    - annet_generators.mesh_example
+
+storage:
+  default:
+    adapter: netbox
+
+context:
+  default:
+    connection: default
+    generators: default
+    storage: default
+
+selected_context: default
