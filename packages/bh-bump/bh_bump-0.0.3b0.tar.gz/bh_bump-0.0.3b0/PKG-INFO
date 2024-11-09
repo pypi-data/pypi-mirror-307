@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bh-bump
+Version: 0.0.3b0
+Summary: An aid in project deployment
+Author-email: Bryan Hann <nobody@nowhere.com>
+Maintainer-email: Bryan Hann <nobody@nowhere.com>
+License: MIT license
+Project-URL: bugs, https://github.com/bryanhann/bh-bump/issues
+Project-URL: changelog, https://github.com/bryanhann/bh-bump/blob/master/changelog.md
+Project-URL: homepage, https://github.com/bryanhann/bh-bump
+Requires-Python: >=3.12
+Description-Content-Type: text/x-rst
+Requires-Dist: bump2version>=1.0.1
+Provides-Extra: dev

@@ -1,0 +1,12 @@
+pyproject.toml
+src/bh_bump/__init__.py
+src/bh_bump/install.py
+src/bh_bump/util.py
+src/bh_bump.egg-info/PKG-INFO
+src/bh_bump.egg-info/SOURCES.txt
+src/bh_bump.egg-info/dependency_links.txt
+src/bh_bump.egg-info/requires.txt
+src/bh_bump.egg-info/top_level.txt
+src/bh_bump/data/bh.bump
+src/bh_bump/data/bumpversion.cfg
+src/bh_bump/data/init4repo4user4vis.sh
