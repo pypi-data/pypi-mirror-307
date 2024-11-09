@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: tower-cli
+Version: 0.1.5
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+License-File: LICENSE
+Summary: Tower CLI and runtime environment for Tower.
+Keywords: automation,flake8,pycodestyle,pyflakes,pylint,clippy
+Author: Brad Heller <brad@tower.dev>
+Author-email: "Tower Computing Inc." <brad@tower.dev>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/tower/tower-cli
+
+# Tower :tokyo_tower:
+
+This is the CLI for Tower.
+
