@@ -1,0 +1,14 @@
+archspec<=0.2.2
+argcomplete
+jsonschema
+lxml
+PyYAML
+requests
+semver
+
+[:python_version < "3.8"]
+argcomplete<=3.1.2
+
+[:python_version == "3.6"]
+requests<=2.27.1
+semver<=2.13.0
