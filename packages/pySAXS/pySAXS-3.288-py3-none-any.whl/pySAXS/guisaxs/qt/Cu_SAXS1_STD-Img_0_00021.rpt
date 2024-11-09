@@ -1,0 +1,19 @@
+[absolute intensities]
+comment = comment
+d = 37.0
+transmittedflux = 28882100.0
+calc.transmission = (Transmission) : 28882100.0 CALCULATED from TransmittedFlux/IncidentFlux
+calc.flux = (Total Flux = Incident Flux * K (ph/s)) : 1.0 CALCULATED from IncidentFlux*K
+k = 1.0
+thickness = 1.0
+calc.deltaomega = (Delta Omega) : 4.108838568298027e-08 CALCULATED from (pixel_size/D)**2
+filename = param.par
+q_by_pixel = -1.0
+backgd_by_s = 0.0001
+backgd_by_pix = 0.0
+calc.backgd = (Total background (B by pixel + B by s * time)) : 0.36000000000000004 CALCULATED from backgd_by_pix+backgd_by_s*time
+time = 3600.0
+wavelength = 1.54189e-10
+incidentflux = 1.0
+pixel_size = 0.0075
+
