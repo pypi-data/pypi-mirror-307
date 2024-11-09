@@ -1,0 +1,3 @@
+[console_scripts]
+config2class=config2class.__main__:main
+
