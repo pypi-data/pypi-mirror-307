@@ -1,0 +1,43 @@
+services:
+  redis:
+    image: redis:7.4.0
+    container_name: redis
+    networks:
+        - chap-network
+
+  chap:
+    depends_on:
+        -  redis
+        -  worker
+    container_name: chap
+    build: .
+    environment:
+      - GOOGLE_SERVICE_ACCOUNT_EMAIL=${GOOGLE_SERVICE_ACCOUNT_EMAIL}
+      - GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY=${GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+    command: /app/.venv/bin/chap serve
+    working_dir: /
+    networks:
+      - chap-network
+
+  worker:
+    container_name: worker
+    build:
+      context: .
+      dockerfile: Dockerfile.inla
+    environment:
+      - GOOGLE_SERVICE_ACCOUNT_EMAIL=${GOOGLE_SERVICE_ACCOUNT_EMAIL}
+      - GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY=${GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY}
+      - IS_IN_DOCKER=1
+    command: /app/.venv/bin/rq worker --url redis://redis:6379/0
+    networks:
+        - chap-network
+
+networks:
+  chap-network:
+    driver: bridge
