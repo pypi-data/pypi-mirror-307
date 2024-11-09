@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: yolo-poser
+Version: 0.1.1
+Summary: YOLO-based human pose detection and visualization tool
+Author: [Tom Dyson]
+Requires-Python: >=3.8,<3.13
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: torch>=2.0.0
+Requires-Dist: ultralytics>=8.0.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: numpy>=1.19.0
+Project-URL: Documentation, https://github.com/tomdyson/yolo-poser#readme
+Project-URL: Home, https://github.com/tomdyson/yolo-poser
+Project-URL: Source, https://github.com/tomdyson/yolo-poser
+
+# YOLO Poser
+
+A Python package for human pose detection and visualization using YOLO.
+
+## Installation 
+
+```bash
+pip install yolo-poser
+```
+
+## Usage
+
+### Command Line
+```bash
+yolo-poser input_video.mp4 --output output.mp4 --output-format h264
+```
+
+### Python API
+
+```python
+from yolo_poser import process_video
+process_video(
+    input_path="input.mp4",
+    output_path="output.mp4",
+    output_format="h264",
+    debug=True
+)
+```
+
+## Features
+
+- Human pose detection using YOLO
+- Support for multiple output formats (MJPEG, H264, WebM)
+- Smooth keypoint tracking
+- Debug mode with performance metrics
+- Configurable visualization options
+
+## Requirements
+
+- Python 3.8+ (<3.13)
+- PyTorch
+- Ultralytics
+- OpenCV
+- NumPy
+
+## License
+
+MIT License

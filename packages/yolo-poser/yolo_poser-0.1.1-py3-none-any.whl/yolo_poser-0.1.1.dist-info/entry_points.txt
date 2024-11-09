@@ -1,0 +1,3 @@
+[console_scripts]
+yolo-poser=yolo_poser.pose_detect:main
+
