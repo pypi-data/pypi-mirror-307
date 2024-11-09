@@ -1,0 +1,2 @@
+[console_scripts]
+hg2-item-parser = hg2_item_parser.__main__:main
