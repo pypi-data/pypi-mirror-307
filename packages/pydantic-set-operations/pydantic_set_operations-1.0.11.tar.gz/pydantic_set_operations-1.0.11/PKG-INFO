@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pydantic_set_operations
+Version: 1.0.11
+Summary: An enhanced version of Pydantic's BaseModel, allowing for advanced model manipulations. (Inspired in TypeScript)
+Home-page: https://github.com/P1etrodev/pydantic-set-operations
+Author: P1etrodev
+Author-email: undefinedpietro@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+﻿# Pydantic-Set-Operations
+
+`Pydantic-Set-Operations` provides an enhanced version of Pydantic's `BaseModel`, allowing for advanced model manipulations, such as field unions, exclusions, and intersections. `ExtendedBaseModel` introduces bitwise operations (like `|`, `&`, and `-`) for combining, intersecting, and excluding fields between models.
+
+This package is ideal for projects that require dynamic model restructuring or filtering based on specific fields.
+
+### Key Model Features
+
+1. **Field Union (`union` method)**: Combines fields from two models, prioritizing fields from the initiating model if overlaps exist.
+2. **Field Exclusion (`omit` method)**: Creates a new model excluding specified fields or fields present in another model.
+3. **Field Intersection (`pick` method)**: Creates a model containing only fields shared between two models.
+
+### Key Instance Features
+
+1. **Field Union (`|` operator)**: Returns an instance combining fields from both instances.
+2. **Field Exclusion (`-` operator)**: Returns an instance excluding fields present in another instance.
+3. **Field Intersection (`&` operator)**: Returns an instance containing only fields shared between two instances.
+
+## Installation
+
+Install using `pip install -U pydantic-set-operations`.
+
+## Usage
+
+For more info about how to use this package, please visit the [Wiki](https://github.com/P1etrodev/pydantic-set-operations/wiki).
