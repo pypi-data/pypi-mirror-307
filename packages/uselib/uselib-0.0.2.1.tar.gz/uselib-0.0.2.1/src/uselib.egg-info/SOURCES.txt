@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/test/__init__.py
+src/uselib/__init__.py
+src/uselib/conversion.py
+src/uselib/files.py
+src/uselib.egg-info/PKG-INFO
+src/uselib.egg-info/SOURCES.txt
+src/uselib.egg-info/dependency_links.txt
+src/uselib.egg-info/top_level.txt
