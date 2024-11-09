@@ -1,0 +1,120 @@
+[tool.ruff]
+exclude = [
+    "*.pyi",
+    "__init__.py",
+    "_version.py",
+    "versioneer.py",
+    "basic_typing_examples.py",
+    "json.py",
+    "msgpack.py",
+    "test_JSONTestSuite.py",
+    "conf.py",
+]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
+    "E721",
+    "E741",
+    "E501",
+    "W191",
+]
+select = [
+    "E",
+    "F",
+    "W",
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.pdm.build]
+run-setuptools = true
+
+[project]
+name = "msgspec-python313-pre"
+version = "0.19.3"
+description = "A fast serialization and validation library, with builtin support for JSON, MessagePack, YAML, and TOML."
+authors = [
+    { name = "Jim Crist-Harif", email = "jcristharif@gmail.com" },
+]
+dependencies = [
+    "setuptools>=75.3.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+keywords = [
+    "JSON msgpack MessagePack TOML YAML serialization validation schema",
+]
+maintainers = [
+    { name = "Jim Crist-Harif", email = "jcristharif@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://jcristharif.com/msgspec/"
+Documentation = "https://jcristharif.com/msgspec/"
+Source = "https://github.com/jcrist/msgspec/"
+"Issue Tracker" = "https://github.com/jcrist/msgspec/issues"
+
+[project.optional-dependencies]
+yaml = [
+    "pyyaml",
+]
+toml = [
+    "tomli ; python_version < \"3.11\"",
+    "tomli_w",
+]
+doc = [
+    "furo",
+    "ipython",
+    "sphinx",
+    "sphinx-copybutton",
+    "sphinx-design",
+]
+test = [
+    "attrs",
+    "msgpack",
+    "mypy",
+    "pyright",
+    "pytest",
+    "pyyaml",
+    "tomli ; python_version < \"3.11\"",
+    "tomli_w",
+]
+dev = [
+    "attrs",
+    "coverage",
+    "furo",
+    "gcovr",
+    "ipython",
+    "msgpack",
+    "mypy",
+    "pre-commit",
+    "pyright",
+    "pytest",
+    "pyyaml",
+    "sphinx",
+    "sphinx-copybutton",
+    "sphinx-design",
+    "tomli ; python_version < \"3.11\"",
+    "tomli_w",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+    "setuptools>=75.3.0",
+]
+build-backend = "pdm.backend"
