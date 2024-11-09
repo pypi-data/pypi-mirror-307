@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mlbodega
+Version: 0.1.0
+Summary: 
+Author: mr-raccoon-97
+Author-email: eric.m.cardozo@mi.unc.edu.ar
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: tinydb (>=4.8.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# ml-bodega
+A system for manage machine learning experiments and their metrics, based on ports and adapters architecture.
+
+### Warning: 
+This project is under development and I may completely change It's schemas and design, for a more general one. For now it's only for support the [torchsystem](https://github.com/mapache-software/torch-system), with a model per aggregate and a criterion and optimizer per model, but the idea is to design something that works for any machine learning workflow not only neural networks. 
+
