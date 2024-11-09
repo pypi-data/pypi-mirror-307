@@ -1,0 +1,14 @@
+cloudvoy/__init__.py,sha256=Hxs-7Qch2Mg8o41seX79TGX9ZIDEUGckOI_EQIjfu1U,7344
+cloudvoy/config.py,sha256=BfNWQgStjeTyviBKW9cLJYGCR-U4yL0sZ37KvzSVZjQ,873
+cloudvoy/downloader.py,sha256=tmDxDJQWMP6m1OAlletpl7NVUVUBBkZ2hFQGRTR5Eo8,970
+cloudvoy/dynamodb_manager.py,sha256=G38ulAATdOo8YM4j2Gfeuw0Y6bi_lTxj9uyWMGVoVtI,2811
+cloudvoy/instagram_uploader.py,sha256=xAX86ekJZLqctCjAf33pXZ-7TIcfwB7ExJNH5wSNcd0,2441
+cloudvoy/s3_uploader.py,sha256=8SQhffKJ6IiNAdxCJhgm-qPWjtk5JZeLmYERoXr28D0,1469
+cloudvoy/utils.py,sha256=Ig1Zh39d6qVEuMrvY5eGdWD7dwoTEeybS5SNAJsR8CY,1270
+cloudvoy/youtube.py,sha256=37Hz7bxqkb_HYESZM7E8L7h12ZrfLJZJUxsV2Z2k18o,1208
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_uploaders.py,sha256=Juc1rhDU2KOUhV9cR9XoIS4ICgp-iI8aWOFtsRJByv0,2495
+CloudVoy-1.0.0.dist-info/METADATA,sha256=Bw4kB9Ba94ooQW0DNOS5BeUFG19ydqr8gi4NXRRUsEQ,455
+CloudVoy-1.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+CloudVoy-1.0.0.dist-info/top_level.txt,sha256=3bClV_57ahshK8K_cXV3-5OP7SlO5rFDi7gCuJWITJQ,15
+CloudVoy-1.0.0.dist-info/RECORD,,
