@@ -1,0 +1,13 @@
+[project]
+name = 'nvidia-clara-sim'
+authors = [
+    {name = 'Nvidia CUDA Installer Team', email = 'compute_installer@nvidia.com' },
+]
+description = 'Zero version placeholder for nvidia-clara-sim'
+license = {text = 'Apache-2.0'}
+dependencies = []
+version = '0.0.0a0'
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
