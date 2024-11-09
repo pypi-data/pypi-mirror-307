@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PyBott"
+version = "2024.11.08"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "tqdm",
+  "pandas"
+]
+requires-python = ">=3.6"
+
+authors = [
+  {name = "Pierre Wulles", email = "pierre.wulles@lpmmc.cnrs.fr"}
+]
+
+maintainers = [
+  {name = "Pierre Wulles", email = "pierre.wulles@lpmmc.cnrs.fr"}
+]
+
+description = "This package computes the Bott index, a real space, disorder resistant, topological index."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["topological", "condensed", "matter", "photonic", "chern", "number", "index", "disordered", "tight-binding"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/starcluster/pybott"
+Documentation = "https://gitlab.com/starcluster/pybott"
+Repository = "https://gitlab.com/starcluster/pybott"
+
+
