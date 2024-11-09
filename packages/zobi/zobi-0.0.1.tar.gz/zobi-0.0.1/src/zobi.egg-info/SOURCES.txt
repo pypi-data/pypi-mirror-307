@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/zobi/__init__.py
+src/zobi/example.py
+src/zobi.egg-info/PKG-INFO
+src/zobi.egg-info/SOURCES.txt
+src/zobi.egg-info/dependency_links.txt
+src/zobi.egg-info/top_level.txt
