@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "podgrab"
+version = "0.1.0"
+description = "CLI tool for downloading and transcribing podcasts."
+authors = ["Kasper Junge <kasperjuunge@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.13.0"
+requests = "^2.32.3"
+feedparser = "^6.0.11"
+rich = "^13.9.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+podgrab = "podgrab:app"
