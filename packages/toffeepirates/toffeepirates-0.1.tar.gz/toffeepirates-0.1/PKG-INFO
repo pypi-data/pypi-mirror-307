@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: toffeepirates
+Version: 0.1
+Summary: A Flask-based application for Toffee Pirates
+Home-page: https://github.com/yourusername/toffeepirates
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ToffeePirates
+
+This is a basic Flask application for the Toffee Pirates project.
+
+## Installation
+
+You can install the ToffeePirates package using pip:
+
+```bash
+pip install toffeepirates
