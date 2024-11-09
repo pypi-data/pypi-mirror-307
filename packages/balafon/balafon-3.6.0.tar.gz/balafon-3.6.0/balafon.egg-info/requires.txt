@@ -1,0 +1,12 @@
+django<5.0,>=4.2
+djangorestframework
+django-extensions
+apidev-coop_cms
+beautifulsoup4
+django-wkhtmltopdf
+xlwt
+xlrd
+django-recaptcha2
+django-registration
+model_mommy
+django-cors-headers
