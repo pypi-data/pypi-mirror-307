@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+autopysta/__init__.py
+autopysta/different_creators.py
+autopysta.egg-info/PKG-INFO
+autopysta.egg-info/SOURCES.txt
+autopysta.egg-info/dependency_links.txt
+autopysta.egg-info/not-zip-safe
+autopysta.egg-info/requires.txt
+autopysta.egg-info/top_level.txt
