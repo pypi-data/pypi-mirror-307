@@ -1,0 +1,29 @@
+include:
+   - project: nse/ci
+     file:
+        - /ci/lib/tox-docker.yml
+        - /ci/jobs/check-version.yml
+        - /ci/jobs/check-packaging.yml
+        - /ci/jobs/lint.yml
+        - /ci/jobs/docs.yml
+        - /ci/jobs/build-package.yml
+        - /ci/jobs/publish-package.yml
+        - /ci/jobs/publish-docs.yml
+        - /ci/jobs/tag.yml
+   - project: neuromath/ci
+     file:
+        - /ci/jobs/auto-release.yml
+        - /ci/jobs/check-merge-request-title.yml
+        - /ci/lib/pytest-template.yml
+        - /ci/jobs/py39.yml
+        - /ci/jobs/py310.yml
+        - /ci/jobs/py311.yml
+        - /ci/jobs/py312.yml
+        - /ci/jobs/min_versions.yml
+        - /ci/jobs/coverage.yml
+
+.tox-template:
+   variables:
+      PIP_INDEX_URL: "https://pypi.org/simple"
+      KUBERNETES_MEMORY_LIMIT: 2Gi
+      KUBERNETES_MEMORY_REQUEST: 2Gi

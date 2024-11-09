@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier
+
+_commit: 0.1.67
+_src_path: git@bbpgitlab.epfl.ch:neuromath/python-template.git
+author_email: ''
+author_name: Blue Brain Project, EPFL
+copyright_license: Apache License 2.0
+copyright_year: '2022'
+distribution_name: neurocollage
+download_url: https://github.com/BlueBrain/neurocollage
+init_git: false
+maintainer: Adrien Berchet (@adrien-berchet)
+package_name: neurocollage
+project_description: A tool to create 2D morphology collage plots based on matplotlib.
+project_name: NeuroCollage
+project_url: https://neurocollage.readthedocs.io
+repository_name: neurocollage
+repository_namespace: BlueBrain
+repository_provider: github
+setup_codeql: false
+ssh_url: git@github.com:BlueBrain/neurocollage.git
+team_name: ''
+tracker_url: https://github.com/BlueBrain/neurocollage/issues
+use_pyproject_toml: false
+version: 0.1.4.dev0
+
+# End of Copier answers
