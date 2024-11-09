@@ -1,0 +1,20 @@
+six>=1.11.0
+
+[:python_version < "3"]
+inspect2>=0.1.0
+
+[:python_version < "3.4"]
+singledispatch>=3.4.0.3
+
+[doc]
+sphinx
+
+[test]
+pytest>=4.6.7
+pytest-cov>=2.6.1
+
+[test:python_version < "3"]
+pytest-checkdocs>=1.2.5
+
+[test:python_version >= "3"]
+pytest-checkdocs>=2.9.0
