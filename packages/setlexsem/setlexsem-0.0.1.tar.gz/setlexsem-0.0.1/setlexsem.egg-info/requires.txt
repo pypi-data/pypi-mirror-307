@@ -1,0 +1,17 @@
+tqdm
+anthropic
+boto3
+nltk
+tiktoken
+openai
+pandas
+pyyaml
+
+[dev]
+check-manifest
+flake8
+black
+
+[test]
+pytest
+coverage
