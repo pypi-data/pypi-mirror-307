@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: steed
+Version: 0.1.3
+Summary: A drop-in replacement for tee with file buffering and output queue management.
+Author: Ben Skubi
+Author-email: skubi@ohsu.edu
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+Pipelines may wish to use `tee` to cache intermediate steps as a failsafe in case of a downstream failure. This strategy is limited by the fact that the speed at which `tee` writes to disk is bottlenecked by the speed at which the downstream pipeline reads from its stdout. Therefore `tee` cannot finish writing to disk before its input has been completely output by the downstream pipeline. An option is to store all input from stdin in an in-memory buffer, but this can lead to out-of-memory failures. The `steed` command overcomes this limitation by writing to the on-disk file continuously, while simultaneously reading from it to obtain a size-limited buffer queue that is output to stdout. This allows `steed` to complete writing to disk before it has finished outputting to downstream commands, improving its utility as a cacheing mechanism.
+

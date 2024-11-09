@@ -1,0 +1,3 @@
+[console_scripts]
+steed=steed.__main__:main
+
