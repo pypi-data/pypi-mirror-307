@@ -1,0 +1,17 @@
+[project]
+name = "pdutility"
+authors = [
+    {name = "techds", email = "chet_singh@berkeley.edu"},
+]
+version = "0.1.4"
+description = "Pandas utility library - major release pending"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Demopage = "https://github.com/techds/structured-data-processing-demos" 
+[tools.setuptools]
+packages = ["pdutils"]
