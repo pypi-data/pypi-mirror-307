@@ -1,0 +1,14 @@
+persistent
+zope.component
+zope.interface
+
+[docs]
+sphinx
+sphinx_rtd_theme
+repoze.sphinx.autointerface
+
+[test]
+nti.testing
+pyhamcrest
+zope.testrunner
+coverage

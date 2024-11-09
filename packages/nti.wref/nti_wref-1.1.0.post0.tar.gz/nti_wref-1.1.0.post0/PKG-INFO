@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: nti.wref
+Version: 1.1.0.post0
+Summary: NTI Weak References
+Home-page: https://github.com/OpenNTI/nti.wref
+Author: Jason Madden
+Author-email: jason@nextthought.com
+License: Apache
+Keywords: Weak References
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: persistent
+Requires-Dist: zope.component
+Requires-Dist: zope.interface
+Provides-Extra: test
+Requires-Dist: nti.testing; extra == "test"
+Requires-Dist: pyhamcrest; extra == "test"
+Requires-Dist: zope.testrunner; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: repoze.sphinx.autointerface; extra == "docs"
+
+==========
+ nti.wref
+==========
+
+.. image:: https://travis-ci.org/NextThought/nti.wref.svg?branch=master
+    :target: https://travis-ci.org/NextThought/nti.wref
+
+.. image:: https://coveralls.io/repos/github/NextThought/nti.wref/badge.svg?branch=master
+    :target: https://coveralls.io/github/NextThought/nti.wref?branch=master
+
+Interfaces for a weak reference to an object, along with configuration
+and code to be able to adapt persistent objects and ordinary objects
+to them.
+
+
+=========
+ Changes
+=========
+
+1.1.0.post0 (2024-11-08)
+========================
+
+- Nothing changed yet.
+
+
+1.1.0 (2024-11-08)
+==================
+
+- Require at least Python 3.10.
+- Use native namespace packages.
+
+1.0.0 (2017-04-20)
+==================
+
+- First PyPI release.
+- Add support for Python 3.
+- Remove dependency on zope.security. It is no longer loaded by
+  configure.zcml
