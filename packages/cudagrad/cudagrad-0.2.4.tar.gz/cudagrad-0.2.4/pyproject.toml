@@ -1,0 +1,49 @@
+[build-system]
+requires = [ "setuptools>=40.8.0", "wheel", "pybind11>=2.10.1", "toml",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cudagrad"
+version = "0.2.4"
+description = "A tensor-valued autograd engine for Python"
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.7"
+classifiers = [ "Programming Language :: Python :: 3", "Operating System :: OS Independent",]
+
+[[project.authors]]
+name = "Ryan Moore"
+email = "ryanm.inbox@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/yrmo/cudagrad"
+"Bug Tracker" = "https://github.com/yrmo/cudagrad/issues"
+
+[tool.pytest.ini_options]
+addopts = [ "--import-mode=importlib",]
+
+[tool.isort]
+skip_glob = ["**/googletest/*", "**/googletest*", "**/cccl/*", "**/cccl*", "**/pybind11/*", "**/pybind11*"]
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+exclude = "(googletest)|(cccl)|(pybind11)"
+
+[tool.black]
+exclude = '''
+(
+  /(
+      \.git
+    | \.env
+    | \.venv
+    | googletest
+    | cccl
+    | pybind11
+  )/
+)
+'''
+
+[tool.ruff]
+exclude = ['googletest/', 'pybind11/', 'cccl/']
+ignore = ["E703"]
