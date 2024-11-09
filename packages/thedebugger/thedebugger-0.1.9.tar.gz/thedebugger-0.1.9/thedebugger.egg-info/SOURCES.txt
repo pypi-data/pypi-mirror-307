@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+thedebugger/__init__.py
+thedebugger/llms.py
+thedebugger/tools.py
+thedebugger.egg-info/PKG-INFO
+thedebugger.egg-info/SOURCES.txt
+thedebugger.egg-info/dependency_links.txt
+thedebugger.egg-info/requires.txt
+thedebugger.egg-info/top_level.txt
