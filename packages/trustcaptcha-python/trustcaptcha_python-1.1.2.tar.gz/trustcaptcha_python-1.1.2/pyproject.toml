@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=42", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trustcaptcha-python"
+version = "1.1.2"
+description = "Trustcaptcha library for python"
+readme = "README.md"
+dependencies = [ "requests", "numpy", "pycryptodome==3.19.0", "pycryptodomex==3.19.0",]
+keywords = [ "captcha", "gdpr", "privacy", "security", "made-in-germany", "eu", "european-union",]
+[[project.authors]]
+name = "Trustcaptcha GmbH"
+email = "mail@trustcaptcha.com"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.scripts]
+trustcaptcha = "trustcaptcha:main"
+
+[project.optional-dependencies]
+dev = [ "pytest", "flake8",]

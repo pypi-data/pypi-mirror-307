@@ -1,0 +1,8 @@
+requests
+numpy
+pycryptodome==3.19.0
+pycryptodomex==3.19.0
+
+[dev]
+pytest
+flake8
