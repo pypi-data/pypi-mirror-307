@@ -1,0 +1,15 @@
+# 构建系统配置 - 指定构建工具和后端
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# 项目基本信息 - 包含包名、版本号等元数据
+[project]
+name = "xx-pkg"
+version = "0.1.0"
+description = "包的简短描述"
+readme = "README.md"  # README文件路径,用于PyPI展示
+requires-python = ">=3.7"  # 指定Python最低版本要求
+
+[tool.hatch.build.targets.wheel]
+packages = ["xx_pkg"] 
