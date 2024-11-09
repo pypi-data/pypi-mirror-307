@@ -1,0 +1,2 @@
+[console_scripts]
+mmlib-build-library = mmLib.build_library:run
