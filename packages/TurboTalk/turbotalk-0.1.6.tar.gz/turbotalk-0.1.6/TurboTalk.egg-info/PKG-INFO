@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: TurboTalk
+Version: 0.1.6
+Summary: ['usage:', '', 'import TurboTalk', '', 'bot_name = "Rushi"', 'company_name = "Rango Production"', '', 'TurboTalk.start_chat(bot_name, company_name)']
+Requires-Dist: opyngpt
+Requires-Dist: colorama
