@@ -1,0 +1,9 @@
+# Changelog
+
+## Unreleased
+
+- 
+
+## v0.0.1 (8 November 2024)
+
+- Initial release.
