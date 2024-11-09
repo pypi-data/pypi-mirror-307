@@ -1,0 +1,65 @@
+#!/usr/bin/env python3.9
+# coding:utf-8
+# Copyright (C) 2024 All rights reserved.
+# FILENAME:    ~~/src/acqua/commands/auth.py
+# VERSION:     0.1.4
+# CREATED:     2024-10-24 14:29
+# AUTHOR:      Sitt Guruvanich <aekasitt.g+github@siamintech.co.th>
+# DESCRIPTION:
+#
+# HISTORY:
+# *************************************************************
+
+### Standard packages ###
+from os import getenv, path
+from re import findall
+from typing import Dict, List
+
+### Third-party packages ###
+from click import argument, command, option
+from docker import DockerClient, from_env
+from docker.errors import DockerException
+from rich import print as rich_print
+
+
+@command
+@argument("rpcuser", nargs=1)
+@option("--bash", is_flag=True, help="Persist authentications in .bashrc", type=bool)
+@option("--zsh", is_flag=True, help="Persist authentications in .zshrc", type=bool)
+def auth(bash: bool, rpcuser: str, zsh: bool) -> None:
+  """Persist authentications in desired run-control file."""
+  client: DockerClient
+  try:
+    client = from_env()
+    if not client.ping():
+      raise DockerException
+  except DockerException:
+    rich_print("[red bold]Unable to connect to docker daemon.")
+    return
+  shell_select: Dict[str, bool] = {"/bin/bash": bash, "/bin/zsh": zsh}
+  shell: str = getenv("SHELL", "/bin/bash")
+  try:
+    shell = next(filter(lambda value: value[1], shell_select.items()))[0]
+  except StopIteration:
+    pass
+  # TODO: validate rpcuser
+  rc_path: str = {"/bin/bash": "~/.bashrc", "/bin/zsh": "~/.zshrc"}[shell]
+  authenticated: bool = False
+  if getenv("ACQUA_AUTH_RPCUSER", None) is not None:
+    authenticated = True
+  else:
+    with open(path.expanduser(rc_path), "r") as rc_readonly:
+      found: List[str] = findall(r"export ACQUA_AUTH_RPCUSER=", rc_readonly.read())
+      authenticated = len(found) != 0
+  if authenticated:
+    rich_print("[yellow]Already authenticated![reset]")
+    return
+  if rpcuser is not None:
+    with open(path.expanduser(rc_path), "a") as rc_output:
+      rc_output.write(f"export ACQUA_AUTH_RPCUSER={ rpcuser }\n")
+  rich_print("[green]Success!")
+  rich_print(f"In order to activate authentication, run the following command:")
+  rich_print(f"    [blue]source { path.expanduser(rc_path) }[reset]")
+
+
+__all__ = ("auth",)
