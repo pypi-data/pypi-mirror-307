@@ -1,0 +1,14 @@
+trustfall-0.2.0.dist-info/METADATA,sha256=Ucd9kFDpBfXbSRdZBrDq1aaW51l572K_fKYHtSJMth0,2709
+trustfall-0.2.0.dist-info/WHEEL,sha256=1ZpRl7NI5FUTGBGfAoLBw2DqQx_-H3hwfjZ2VbdjU5g,95
+trustfall/adapter.py,sha256=cYYf49GtZ8TUNRafyGykBRTNRbOZ0kq90_UsiA9aZfM,7152
+trustfall/execution.py,sha256=FmhEJvAMarGBULpaxxW8m_oXvn_2_AtmOo8wuAVKjho,666
+trustfall/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustfall/tests/numbers_adapter.py,sha256=3Y4ReVkGPHgq5CofpaMNKeBJ_424Cn2OoSZOxe0fnz0,3456
+trustfall/tests/test_execution.py,sha256=5huguDcfuRbIjTY5fdhwF7pyhtPAHvFgHHk3xQ5hMEc,15525
+trustfall/tests/test_schema.py,sha256=Z1PmMRR-m-NYuYu5WfIUcImjQsKxnvc3IAlmgP7CEYM,887
+trustfall/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustfall/_internals.py,sha256=iZ3ElJh5IFaL4N6_n5FpPWK4Mh-SzuojcCGMY5mrNUc,960
+trustfall/_internals.pyi,sha256=fU-rmfYqtL-Dj_fDM5Sz5Ek9v2uHS0b5Ma6xUU8geaM,618
+trustfall/__init__.py,sha256=EPdX3PuqOVdlClPGMFruxtETCnuEKLoeVosbkpgBHS0,1420
+trustfall/trustfall.cp313-win_amd64.pyd,sha256=UsAPT4CcwrDpYMsUSXIwyNGEhEVslbuoAOy4LdJlVtQ,4103680
+trustfall-0.2.0.dist-info/RECORD,,
