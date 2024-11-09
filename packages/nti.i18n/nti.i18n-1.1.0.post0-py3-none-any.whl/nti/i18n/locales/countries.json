@@ -1,0 +1,1010 @@
+{
+    "ad": {
+        "flag": "countryflag/ad",
+        "name": "Andorra"
+    },
+    "ae": {
+        "flag": "countryflag/ae",
+        "name": "United Arab Emirates"
+    },
+    "af": {
+        "flag": "countryflag/af",
+        "name": "Afghanistan"
+    },
+    "ag": {
+        "flag": "countryflag/ag",
+        "name": "Antigua and Barbuda"
+    },
+    "ai": {
+        "flag": "countryflag/ai",
+        "name": "Anguilla"
+    },
+    "al": {
+        "flag": "countryflag/al",
+        "name": "Albania"
+    },
+    "am": {
+        "flag": "countryflag/am",
+        "name": "Armenia"
+    },
+    "an": {
+        "flag": "countryflag/an",
+        "name": "Netherlands Antilles"
+    },
+    "ao": {
+        "flag": "countryflag/ao",
+        "name": "Angola"
+    },
+    "aq": {
+        "flag": "countryflag/aq",
+        "name": "Antarctica"
+    },
+    "ar": {
+        "flag": "countryflag/ar",
+        "name": "Argentina"
+    },
+    "as": {
+        "flag": "countryflag/as",
+        "name": "American Samoa"
+    },
+    "at": {
+        "flag": "countryflag/at",
+        "name": "Austria"
+    },
+    "au": {
+        "flag": "countryflag/au",
+        "name": "Australia"
+    },
+    "aw": {
+        "flag": "countryflag/aw",
+        "name": "Aruba"
+    },
+    "ax": {
+        "flag": "countryflag/ax",
+        "name": "Oland Islands"
+    },
+    "az": {
+        "flag": "countryflag/az",
+        "name": "Azerbaijan"
+    },
+    "ba": {
+        "flag": "countryflag/ba",
+        "name": "Bosnia and Herzegovina"
+    },
+    "bb": {
+        "flag": "countryflag/bb",
+        "name": "Barbados"
+    },
+    "bd": {
+        "flag": "countryflag/bd",
+        "name": "Bangladesh"
+    },
+    "be": {
+        "flag": "countryflag/be",
+        "name": "Belgium"
+    },
+    "bf": {
+        "flag": "countryflag/bf",
+        "name": "Burkina Faso"
+    },
+    "bg": {
+        "flag": "countryflag/bg",
+        "name": "Bulgaria"
+    },
+    "bh": {
+        "flag": "countryflag/bh",
+        "name": "Bahrain"
+    },
+    "bi": {
+        "flag": "countryflag/bi",
+        "name": "Burundi"
+    },
+    "bj": {
+        "flag": "countryflag/bj",
+        "name": "Benin"
+    },
+    "bl": {
+        "flag": "countryflag/bl",
+        "name": "Saint Barth\u00e9lemy"
+    },
+    "bm": {
+        "flag": "countryflag/bm",
+        "name": "Bermuda"
+    },
+    "bn": {
+        "flag": "countryflag/bn",
+        "name": "Brunei Darussalam"
+    },
+    "bo": {
+        "flag": "countryflag/bo",
+        "name": "Bolivia"
+    },
+    "bq": {
+        "flag": "countryflag/bq",
+        "name": "Bonaire, Sint Eustatius and Saba"
+    },
+    "br": {
+        "flag": "countryflag/br",
+        "name": "Brazil"
+    },
+    "bs": {
+        "flag": "countryflag/bs",
+        "name": "Bahamas"
+    },
+    "bt": {
+        "flag": "countryflag/bt",
+        "name": "Bhutan"
+    },
+    "bv": {
+        "flag": "countryflag/bv",
+        "name": "Bouvet Island"
+    },
+    "bw": {
+        "flag": "countryflag/bw",
+        "name": "Botswana"
+    },
+    "by": {
+        "flag": "countryflag/by",
+        "name": "Belarus"
+    },
+    "bz": {
+        "flag": "countryflag/bz",
+        "name": "Belize"
+    },
+    "ca": {
+        "flag": "countryflag/ca",
+        "name": "Canada"
+    },
+    "cc": {
+        "flag": "countryflag/cc",
+        "name": "Cocos (Keeling) Islands"
+    },
+    "cd": {
+        "flag": "countryflag/cd",
+        "name": "Congo The Democratic Republic of"
+    },
+    "cf": {
+        "flag": "countryflag/cf",
+        "name": "Central African Republic"
+    },
+    "cg": {
+        "flag": "countryflag/cg",
+        "name": "Congo"
+    },
+    "ch": {
+        "flag": "countryflag/ch",
+        "name": "Switzerland"
+    },
+    "ci": {
+        "flag": "countryflag/ci",
+        "name": "Cote d'Ivoire"
+    },
+    "ck": {
+        "flag": "countryflag/ck",
+        "name": "Cook Islands"
+    },
+    "cl": {
+        "flag": "countryflag/cl",
+        "name": "Chile"
+    },
+    "cm": {
+        "flag": "countryflag/cm",
+        "name": "Cameroon"
+    },
+    "cn": {
+        "flag": "countryflag/cn",
+        "name": "China"
+    },
+    "co": {
+        "flag": "countryflag/co",
+        "name": "Colombia"
+    },
+    "cr": {
+        "flag": "countryflag/cr",
+        "name": "Costa Rica"
+    },
+    "cs": {
+        "flag": "countryflag/cs",
+        "name": "Serbia and Montenegro"
+    },
+    "cu": {
+        "flag": "countryflag/cu",
+        "name": "Cuba"
+    },
+    "cv": {
+        "flag": "countryflag/cv",
+        "name": "Cape Verde"
+    },
+    "cw": {
+        "flag": "countryflag/cw.png",
+        "name": "Cura\u00e7ao"
+    },
+    "cx": {
+        "flag": "countryflag/cx",
+        "name": "Christmas Island"
+    },
+    "cy": {
+        "flag": "countryflag/cy",
+        "name": "Cyprus"
+    },
+    "cz": {
+        "flag": "countryflag/cz",
+        "name": "Czech Republic"
+    },
+    "de": {
+        "flag": "countryflag/de",
+        "name": "Germany"
+    },
+    "dj": {
+        "flag": "countryflag/dj",
+        "name": "Djibouti"
+    },
+    "dk": {
+        "flag": "countryflag/dk",
+        "name": "Denmark"
+    },
+    "dm": {
+        "flag": "countryflag/dm",
+        "name": "Dominica"
+    },
+    "do": {
+        "flag": "countryflag/do",
+        "name": "Dominican Republic"
+    },
+    "dz": {
+        "flag": "countryflag/dz",
+        "name": "Algeria"
+    },
+    "ec": {
+        "flag": "countryflag/ec",
+        "name": "Ecuador"
+    },
+    "ee": {
+        "flag": "countryflag/ee",
+        "name": "Estonia"
+    },
+    "eg": {
+        "flag": "countryflag/eg",
+        "name": "Egypt"
+    },
+    "eh": {
+        "flag": "countryflag/eh",
+        "name": "Western Sahara"
+    },
+    "er": {
+        "flag": "countryflag/er",
+        "name": "Eritrea"
+    },
+    "es": {
+        "flag": "countryflag/es",
+        "name": "Spain"
+    },
+    "et": {
+        "flag": "countryflag/et",
+        "name": "Ethiopia"
+    },
+    "fi": {
+        "flag": "countryflag/fi",
+        "name": "Finland"
+    },
+    "fj": {
+        "flag": "countryflag/fj",
+        "name": "Fiji"
+    },
+    "fk": {
+        "flag": "countryflag/fk",
+        "name": "Falkland Islands (Malvinas)"
+    },
+    "fm": {
+        "flag": "countryflag/fm",
+        "name": "Micronesia Federated States of"
+    },
+    "fo": {
+        "flag": "countryflag/fo",
+        "name": "Faroe Islands"
+    },
+    "fr": {
+        "flag": "countryflag/fr",
+        "name": "France"
+    },
+    "ga": {
+        "flag": "countryflag/ga",
+        "name": "Gabon"
+    },
+    "gb": {
+        "flag": "countryflag/gb",
+        "name": "United Kingdom"
+    },
+    "gd": {
+        "flag": "countryflag/gd",
+        "name": "Grenada"
+    },
+    "ge": {
+        "flag": "countryflag/ge",
+        "name": "Georgia"
+    },
+    "gf": {
+        "flag": "countryflag/gf",
+        "name": "French Guiana"
+    },
+    "gg": {
+        "flag": "countryflag/gg",
+        "name": "Guernsey"
+    },
+    "gh": {
+        "flag": "countryflag/gh",
+        "name": "Ghana"
+    },
+    "gi": {
+        "flag": "countryflag/gi",
+        "name": "Gibraltar"
+    },
+    "gl": {
+        "flag": "countryflag/gl",
+        "name": "Greenland"
+    },
+    "gm": {
+        "flag": "countryflag/gm",
+        "name": "Gambia"
+    },
+    "gn": {
+        "flag": "countryflag/gn",
+        "name": "Guinea"
+    },
+    "gp": {
+        "flag": "countryflag/gp",
+        "name": "Guadeloupe"
+    },
+    "gq": {
+        "flag": "countryflag/gq",
+        "name": "Equatorial Guinea"
+    },
+    "gr": {
+        "flag": "countryflag/gr",
+        "name": "Greece"
+    },
+    "gs": {
+        "flag": "countryflag/gs",
+        "name": "South Georgia and the South Sandwich Islands"
+    },
+    "gt": {
+        "flag": "countryflag/gt",
+        "name": "Guatemala"
+    },
+    "gu": {
+        "flag": "countryflag/gu",
+        "name": "Guam"
+    },
+    "gw": {
+        "flag": "countryflag/gw",
+        "name": "Guinea-Bissau"
+    },
+    "gy": {
+        "flag": "countryflag/gy",
+        "name": "Guyana"
+    },
+    "hk": {
+        "flag": "countryflag/hk",
+        "name": "Hong Kong"
+    },
+    "hm": {
+        "flag": "countryflag/hm",
+        "name": "Heard Island and McDonald Islands"
+    },
+    "hn": {
+        "flag": "countryflag/hn",
+        "name": "Honduras"
+    },
+    "hr": {
+        "flag": "countryflag/hr",
+        "name": "Croatia"
+    },
+    "ht": {
+        "flag": "countryflag/ht",
+        "name": "Haiti"
+    },
+    "hu": {
+        "flag": "countryflag/hu",
+        "name": "Hungary"
+    },
+    "id": {
+        "flag": "countryflag/id",
+        "name": "Indonesia"
+    },
+    "ie": {
+        "flag": "countryflag/ie",
+        "name": "Ireland"
+    },
+    "il": {
+        "flag": "countryflag/il",
+        "name": "Israel"
+    },
+    "im": {
+        "flag": "countryflag/im",
+        "name": "Isle of Man"
+    },
+    "in": {
+        "flag": "countryflag/in",
+        "name": "India"
+    },
+    "io": {
+        "flag": "countryflag/io",
+        "name": "British Indian Ocean Territory"
+    },
+    "iq": {
+        "flag": "countryflag/iq",
+        "name": "Iraq"
+    },
+    "ir": {
+        "flag": "countryflag/ir",
+        "name": "Iran Islamic Republic of"
+    },
+    "is": {
+        "flag": "countryflag/is",
+        "name": "Iceland"
+    },
+    "it": {
+        "flag": "countryflag/it",
+        "name": "Italy"
+    },
+    "je": {
+        "flag": "countryflag/je",
+        "name": "Jersey"
+    },
+    "jm": {
+        "flag": "countryflag/jm",
+        "name": "Jamaica"
+    },
+    "jo": {
+        "flag": "countryflag/jo",
+        "name": "Jordan"
+    },
+    "jp": {
+        "flag": "countryflag/jp",
+        "name": "Japan"
+    },
+    "ke": {
+        "flag": "countryflag/ke",
+        "name": "Kenya"
+    },
+    "kg": {
+        "flag": "countryflag/kg",
+        "name": "Kyrgyzstan"
+    },
+    "kh": {
+        "flag": "countryflag/kh",
+        "name": "Cambodia"
+    },
+    "ki": {
+        "flag": "countryflag/ki",
+        "name": "Kiribati"
+    },
+    "km": {
+        "flag": "countryflag/km",
+        "name": "Comoros"
+    },
+    "kn": {
+        "flag": "countryflag/kn",
+        "name": "Saint Kitts and Nevis"
+    },
+    "kp": {
+        "flag": "countryflag/kp",
+        "name": "Korea Democratic People's Republic of"
+    },
+    "kr": {
+        "flag": "countryflag/kr",
+        "name": "Korea Republic of"
+    },
+    "kw": {
+        "flag": "countryflag/kw",
+        "name": "Kuwait"
+    },
+    "ky": {
+        "flag": "countryflag/ky",
+        "name": "Cayman Islands"
+    },
+    "kz": {
+        "flag": "countryflag/kz",
+        "name": "Kazakhstan"
+    },
+    "la": {
+        "flag": "countryflag/la",
+        "name": "Lao People's Democratic Republic"
+    },
+    "lb": {
+        "flag": "countryflag/lb",
+        "name": "Lebanon"
+    },
+    "lc": {
+        "flag": "countryflag/lc",
+        "name": "Saint Lucia"
+    },
+    "li": {
+        "flag": "countryflag/li",
+        "name": "Liechtenstein"
+    },
+    "lk": {
+        "flag": "countryflag/lk",
+        "name": "Sri Lanka"
+    },
+    "lr": {
+        "flag": "countryflag/lr",
+        "name": "Liberia"
+    },
+    "ls": {
+        "flag": "countryflag/ls",
+        "name": "Lesotho"
+    },
+    "lt": {
+        "flag": "countryflag/lt",
+        "name": "Lithuania"
+    },
+    "lu": {
+        "flag": "countryflag/lu",
+        "name": "Luxembourg"
+    },
+    "lv": {
+        "flag": "countryflag/lv",
+        "name": "Latvia"
+    },
+    "ly": {
+        "flag": "countryflag/ly",
+        "name": "Libyan Arab Jamahiriya"
+    },
+    "ma": {
+        "flag": "countryflag/ma",
+        "name": "Morocco"
+    },
+    "mc": {
+        "flag": "countryflag/mc",
+        "name": "Monaco"
+    },
+    "md": {
+        "flag": "countryflag/md",
+        "name": "Moldova Republic of"
+    },
+    "me": {
+        "flag": "countryflag/me",
+        "name": "Montenegro"
+    },
+    "mf": {
+        "flag": "countryflag/mf.png",
+        "name": "Saint Martin (French part)"
+    },
+    "mg": {
+        "flag": "countryflag/mg",
+        "name": "Madagascar"
+    },
+    "mh": {
+        "flag": "countryflag/mh",
+        "name": "Marshall Islands"
+    },
+    "mk": {
+        "flag": "countryflag/mk",
+        "name": "Macedonia the former Yugoslavian Republic of"
+    },
+    "ml": {
+        "flag": "countryflag/ml",
+        "name": "Mali"
+    },
+    "mm": {
+        "flag": "countryflag/mm",
+        "name": "Myanmar"
+    },
+    "mn": {
+        "flag": "countryflag/mn",
+        "name": "Mongolia"
+    },
+    "mo": {
+        "flag": "countryflag/mo",
+        "name": "Macao"
+    },
+    "mp": {
+        "flag": "countryflag/mp",
+        "name": "Northern Mariana Islands"
+    },
+    "mq": {
+        "flag": "countryflag/mq",
+        "name": "Martinique"
+    },
+    "mr": {
+        "flag": "countryflag/mr",
+        "name": "Mauritania"
+    },
+    "ms": {
+        "flag": "countryflag/ms",
+        "name": "Montserrat"
+    },
+    "mt": {
+        "flag": "countryflag/mt",
+        "name": "Malta"
+    },
+    "mu": {
+        "flag": "countryflag/mu",
+        "name": "Mauritius"
+    },
+    "mv": {
+        "flag": "countryflag/mv",
+        "name": "Maldives"
+    },
+    "mw": {
+        "flag": "countryflag/mw",
+        "name": "Malawi"
+    },
+    "mx": {
+        "flag": "countryflag/mx",
+        "name": "Mexico"
+    },
+    "my": {
+        "flag": "countryflag/my",
+        "name": "Malaysia"
+    },
+    "mz": {
+        "flag": "countryflag/mz",
+        "name": "Mozambique"
+    },
+    "na": {
+        "flag": "countryflag/na",
+        "name": "Namibia"
+    },
+    "nc": {
+        "flag": "countryflag/nc",
+        "name": "New Caledonia"
+    },
+    "ne": {
+        "flag": "countryflag/ne",
+        "name": "Niger"
+    },
+    "nf": {
+        "flag": "countryflag/nf",
+        "name": "Norfolk Island"
+    },
+    "ng": {
+        "flag": "countryflag/ng",
+        "name": "Nigeria"
+    },
+    "ni": {
+        "flag": "countryflag/ni",
+        "name": "Nicaragua"
+    },
+    "nl": {
+        "flag": "countryflag/nl",
+        "name": "Netherlands"
+    },
+    "no": {
+        "flag": "countryflag/no",
+        "name": "Norway"
+    },
+    "np": {
+        "flag": "countryflag/np",
+        "name": "Nepal"
+    },
+    "nr": {
+        "flag": "countryflag/nr",
+        "name": "Nauru"
+    },
+    "nu": {
+        "flag": "countryflag/nu",
+        "name": "Niue"
+    },
+    "nz": {
+        "flag": "countryflag/nz",
+        "name": "New Zealand"
+    },
+    "om": {
+        "flag": "countryflag/om",
+        "name": "Oman"
+    },
+    "pa": {
+        "flag": "countryflag/pa",
+        "name": "Panama"
+    },
+    "pe": {
+        "flag": "countryflag/pe",
+        "name": "Peru"
+    },
+    "pf": {
+        "flag": "countryflag/pf",
+        "name": "French Polynesia"
+    },
+    "pg": {
+        "flag": "countryflag/pg",
+        "name": "Papua New Guinea"
+    },
+    "ph": {
+        "flag": "countryflag/ph",
+        "name": "Philippines"
+    },
+    "pk": {
+        "flag": "countryflag/pk",
+        "name": "Pakistan"
+    },
+    "pl": {
+        "flag": "countryflag/pl",
+        "name": "Poland"
+    },
+    "pm": {
+        "flag": "countryflag/pm",
+        "name": "Saint Pierre and Miquelon"
+    },
+    "pn": {
+        "flag": "countryflag/pn",
+        "name": "Pitcairn"
+    },
+    "pr": {
+        "flag": "countryflag/pr",
+        "name": "Puerto Rico"
+    },
+    "ps": {
+        "flag": "countryflag/ps",
+        "name": "Palestinian Territory occupied"
+    },
+    "pt": {
+        "flag": "countryflag/pt",
+        "name": "Portugal"
+    },
+    "pw": {
+        "flag": "countryflag/pw",
+        "name": "Palau"
+    },
+    "py": {
+        "flag": "countryflag/py",
+        "name": "Paraguay"
+    },
+    "qa": {
+        "flag": "countryflag/qa",
+        "name": "Qatar"
+    },
+    "re": {
+        "flag": "countryflag/re",
+        "name": "Reunion"
+    },
+    "ro": {
+        "flag": "countryflag/ro",
+        "name": "Romania"
+    },
+    "rs": {
+        "flag": "countryflag/rs",
+        "name": "Serbia"
+    },
+    "ru": {
+        "flag": "countryflag/ru",
+        "name": "Russian Federation"
+    },
+    "rw": {
+        "flag": "countryflag/rw",
+        "name": "Rwanda"
+    },
+    "sa": {
+        "flag": "countryflag/sa",
+        "name": "Saudi Arabia"
+    },
+    "sb": {
+        "flag": "countryflag/sb",
+        "name": "Solomon Islands"
+    },
+    "sc": {
+        "flag": "countryflag/sc",
+        "name": "Seychelles"
+    },
+    "sd": {
+        "flag": "countryflag/sd",
+        "name": "Sudan"
+    },
+    "se": {
+        "flag": "countryflag/se",
+        "name": "Sweden"
+    },
+    "sg": {
+        "flag": "countryflag/sg",
+        "name": "Singapore"
+    },
+    "sh": {
+        "flag": "countryflag/sh",
+        "name": "Saint Helena"
+    },
+    "si": {
+        "flag": "countryflag/si",
+        "name": "Slovenia"
+    },
+    "sj": {
+        "flag": "countryflag/sj",
+        "name": "Svalbard and Jan Mayen"
+    },
+    "sk": {
+        "flag": "countryflag/sk",
+        "name": "Slovakia"
+    },
+    "sl": {
+        "flag": "countryflag/sl",
+        "name": "Sierra Leone"
+    },
+    "sm": {
+        "flag": "countryflag/sm",
+        "name": "San Marino"
+    },
+    "sn": {
+        "flag": "countryflag/sn",
+        "name": "Senegal"
+    },
+    "so": {
+        "flag": "countryflag/so",
+        "name": "Somalia"
+    },
+    "sr": {
+        "flag": "countryflag/sr",
+        "name": "Suriname"
+    },
+    "ss": {
+        "flag": "countryflag/ss.png",
+        "name": "South Sudan"
+    },
+    "st": {
+        "flag": "countryflag/st",
+        "name": "Sao Tome and Principe"
+    },
+    "sv": {
+        "flag": "countryflag/sv",
+        "name": "El Salvador"
+    },
+    "sx": {
+        "flag": "countryflag/sx.png",
+        "name": "Sint Maarten (Dutch part)"
+    },
+    "sy": {
+        "flag": "countryflag/sy",
+        "name": "Syrian Arab Republic"
+    },
+    "sz": {
+        "flag": "countryflag/sz",
+        "name": "Swaziland"
+    },
+    "tc": {
+        "flag": "countryflag/tc",
+        "name": "Turks and Caicos Islands"
+    },
+    "td": {
+        "flag": "countryflag/td",
+        "name": "Chad"
+    },
+    "tf": {
+        "flag": "countryflag/tf",
+        "name": "French Southern Territories"
+    },
+    "tg": {
+        "flag": "countryflag/tg",
+        "name": "Togo"
+    },
+    "th": {
+        "flag": "countryflag/th",
+        "name": "Thailand"
+    },
+    "tj": {
+        "flag": "countryflag/tj",
+        "name": "Tajikistan"
+    },
+    "tk": {
+        "flag": "countryflag/tk",
+        "name": "Tokelau"
+    },
+    "tl": {
+        "flag": "countryflag/tl",
+        "name": "Timor-Leste"
+    },
+    "tm": {
+        "flag": "countryflag/tm",
+        "name": "Turkmenistan"
+    },
+    "tn": {
+        "flag": "countryflag/tn",
+        "name": "Tunisia"
+    },
+    "to": {
+        "flag": "countryflag/to",
+        "name": "Tonga"
+    },
+    "tr": {
+        "flag": "countryflag/tr",
+        "name": "Turkey"
+    },
+    "tt": {
+        "flag": "countryflag/tt",
+        "name": "Trinidad and Tobago"
+    },
+    "tv": {
+        "flag": "countryflag/tv",
+        "name": "Tuvalu"
+    },
+    "tw": {
+        "flag": "countryflag/tw",
+        "name": "Taiwan"
+    },
+    "tz": {
+        "flag": "countryflag/tz",
+        "name": "Tanzania United Republic of"
+    },
+    "ua": {
+        "flag": "countryflag/ua",
+        "name": "Ukraine"
+    },
+    "ug": {
+        "flag": "countryflag/ug",
+        "name": "Uganda"
+    },
+    "um": {
+        "flag": "countryflag/um",
+        "name": "United States Minor Outlying Islands"
+    },
+    "us": {
+        "flag": "countryflag/us",
+        "name": "United States"
+    },
+    "uy": {
+        "flag": "countryflag/uy",
+        "name": "Uruguay"
+    },
+    "uz": {
+        "flag": "countryflag/uz",
+        "name": "Uzbekistan"
+    },
+    "va": {
+        "flag": "countryflag/va",
+        "name": "Holy See (Vatican City State)"
+    },
+    "vc": {
+        "flag": "countryflag/vc",
+        "name": "Saint Vincent and the Grenadines"
+    },
+    "ve": {
+        "flag": "countryflag/ve",
+        "name": "Venezuela"
+    },
+    "vg": {
+        "flag": "countryflag/vg",
+        "name": "Virgin Islands British"
+    },
+    "vi": {
+        "flag": "countryflag/vi",
+        "name": "Virgin Islands U.S."
+    },
+    "vn": {
+        "flag": "countryflag/vn",
+        "name": "Viet Nam"
+    },
+    "vu": {
+        "flag": "countryflag/vu",
+        "name": "Vanuatu"
+    },
+    "wf": {
+        "flag": "countryflag/wf",
+        "name": "Wallis and Futuna"
+    },
+    "ws": {
+        "flag": "countryflag/ws",
+        "name": "Samoa"
+    },
+    "xk": {
+        "flag": "countryflag/xk",
+        "name": "Kosovo"
+    },
+    "ye": {
+        "flag": "countryflag/ye",
+        "name": "Yemen"
+    },
+    "yt": {
+        "flag": "countryflag/yt",
+        "name": "Mayotte"
+    },
+    "za": {
+        "flag": "countryflag/za",
+        "name": "South Africa"
+    },
+    "zm": {
+        "flag": "countryflag/zm",
+        "name": "Zambia"
+    },
+    "zw": {
+        "flag": "countryflag/zw",
+        "name": "Zimbabwe"
+    }
+}

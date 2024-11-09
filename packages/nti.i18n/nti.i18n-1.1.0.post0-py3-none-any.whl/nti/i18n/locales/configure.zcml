@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope">
+
+	<include package="zope.component" />
+	<!-- Using the permission= attribute requires zope.security -->
+	<!-- so long as it would be zope.Public, there's no point. -->
+    <utility
+        provides=".interfaces.ICountryAvailability"
+        factory=".countries.CountryAvailability"
+        />
+
+    <utility
+        provides=".interfaces.ICcTLDInformation"
+        factory=".cctld.CcTLDInformation" />
+
+
+</configure>
