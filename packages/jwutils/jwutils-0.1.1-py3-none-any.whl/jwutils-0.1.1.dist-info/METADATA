@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: jwutils
+Version: 0.1.1
+Summary: Personal package for fun
+Author-email: "Wang, Jie" <ifendo@outlook.com>
+Requires-Python: >=3.10
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: polars>=1.12.0
+Requires-Dist: requests>=2.32.3
