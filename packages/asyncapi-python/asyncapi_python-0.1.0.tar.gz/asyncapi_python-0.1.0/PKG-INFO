@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: asyncapi-python
+Version: 0.1.0
+Summary: 
+License: Apache-2.0
+Author: Yaroslav Petrov
+Author-email: yaroslav.v.petrov@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: amqp
+Provides-Extra: codegen
+Requires-Dist: aio-pika (>=9.4.3,<10.0.0) ; extra == "amqp"
+Requires-Dist: datamodel-code-generator[http] (>=0.26.1,<0.27.0) ; extra == "codegen"
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0) ; extra == "codegen"
+Requires-Dist: pydantic (>=2)
+Requires-Dist: pytz
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0) ; extra == "codegen"
+Requires-Dist: typer[all] (>=0.12.5,<0.13.0) ; extra == "codegen"
+Description-Content-Type: text/markdown
+
+# AsyncAPI Python Code Generator
+
+> This README is a work in progress
+
+A command line interface to generate Python code from AsyncAPI specifications. This tool helps you automatically create Python implementations of AsyncAPI services, reducing boilerplate code and ensuring consistency with your API specifications.
+
+## Features
+
+- Generates Python code from AsyncAPI specifications
+- Creates both consumer and producer implementations
+- Supports AMQP protocol
+- Includes connection pooling and management
+- Provides base application structure
+

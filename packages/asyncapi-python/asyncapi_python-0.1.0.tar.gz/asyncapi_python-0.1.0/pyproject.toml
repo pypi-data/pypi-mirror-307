@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "asyncapi-python"
+version = "0.1.0"
+license = "Apache-2.0"
+description = ""
+authors = ["Yaroslav Petrov <yaroslav.v.petrov@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "asyncapi_python_codegen", from = "src" },
+    { include = "asyncapi_python", from = "src" },
+]
+
+[tool.poetry.scripts]
+asyncapi-python-codegen = "asyncapi_python_codegen:app"
+
+[tool.poetry.extras]
+codegen = [
+    "jinja2",
+    "typer",
+    "asyncapi_python_codegen",
+    "pyyaml",
+    "datamodel-code-generator",
+]
+amqp = ["aio-pika"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = ">=2"
+pytz = "*"
+jinja2 = { version = "^3.1.4", optional = true }
+typer = { extras = ["all"], version = "^0.12.5", optional = true }
+datamodel-code-generator = { extras = [
+    "http",
+], version = "^0.26.1", optional = true }
+aio-pika = { version = "^9.4.3", optional = true }
+pyyaml = { version = "^6.0.2", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+mypy = "^1.11.2"
+isort = "^5.13.2"
+types-pyyaml = "^6.0.12.20240917"
+pytest = "^8.3.3"
+types-pytz = "^2024.2.0.20241003"
+pytest-asyncio = "^0.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
