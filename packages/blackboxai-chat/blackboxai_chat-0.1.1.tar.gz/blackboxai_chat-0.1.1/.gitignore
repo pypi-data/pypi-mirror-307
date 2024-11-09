@@ -1,0 +1,17 @@
+.DS_Store
+.vscode/
+blackboxai.code-workspace
+*.pyc
+.blackboxai*
+blackboxai_chat.egg-info/
+build
+dist/
+Gemfile.lock
+_site
+.jekyll-cache/
+.jekyll-metadata
+blackboxai/__version__.py
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
