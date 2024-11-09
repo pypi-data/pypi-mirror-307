@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonRegressionTestTools"
+dynamic = ["version"]
+description="NonRegressionTestTools  "
+readme = "README.md"
+authors = [
+  {name = "teddy Chantrait", email = "teddy.chantrait@gmail.com"},
+]
+maintainers = [
+  {name = "teddy Chantrait", email = "teddy.chantrait@gmail.com"},
+]
+license =  {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+ # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 4 - Beta",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+
+   # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [ "numpy >=1.26",
+]
+[tool.setuptools]
+script-files = ["bin/nrt-run",
+                "bin/nrt-bilan",
+                "bin/nrt-create",
+                "bin/nrt-savestate"
+                ]
+[tool.setuptools.packages.find]
+where = ["src"]
+[project.urls]
+Homepage = "https://gitlab.com/Te_ch/non-regression-test-tools"
+Documentation = "https://te_ch.gitlab.io/non-regression-test-tools"
+Repository = "https://gitlab.com/Te_ch/non-regression-test-tools.git"
+# Issues = "https://github.com/me/spam/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"

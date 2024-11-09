@@ -1,0 +1,236 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#**************************************************
+__author__  = "Teddy Chantrait"
+__email__   = "teddy.chantrait@gmail.com"
+__status__  = "Development"
+__date__    = "ven. sept. 11 11:13:21 CEST 2015"
+__version__ = 3.0
+# **************************************************
+import os
+import sys
+import argparse
+from nonRegressionTestTools import config as CONF
+from nonRegressionTestTools import constantes as CST
+
+
+states = list(CST.FileWriteCat.get_cst_dict().keys())
+# states_str = ""
+# for state in states:
+#     states_str += state + "\n"
+caseName = "case_name"
+descr = """Create a test case named {caseName} in the current directory.
+
+In detail it:
+   - create a file named {caseName}{}
+   \t- it is fill with the optional RECIPE commandes (default echo \"coucou\")
+   - create the directory {}
+   - create the file {}
+\t- it contains the optional STATE (default NRT_CONSTRUCTION)""".format(CONF.conf.NRT_RECIPE_EXT,
+                                                                    CONF.conf.NRT_DIR_RESULTS,
+                                                                    os.path.join(CONF.conf.NRT_DIR_RESULTS,caseName+CONF.conf.NRT_STATE_EXT),
+                                                                    caseName=caseName
+                                                                    )
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                 description=descr)
+
+parser.add_argument('name',
+                    metavar=caseName,
+                    type=str,
+                    help='Name of the created case')
+
+
+# parser = OptionParser(usage)
+# parser.add_argument("-b", "--bash",
+#                     help="template_bash_exemple_",
+#                     action="store_true",
+#                     dest="bash",
+#                     default=True
+#                     )
+
+parser.add_argument("-r", "--recipe",
+                    help="recipe of the test case its a comma separated list of commande, (default [\"echo coucou\")]",
+                    dest="recipe",
+                    type=str,
+                    default="[echo \"coucou\"]",
+                    )
+
+parser.add_argument("-s", "--state",
+                    metavar='STATE',
+                    help="state assign in {} (choice among the following: {}".format(caseName+CONF.conf.NRT_STATE_EXT,
+                                                                                       "\n".join(states)),
+                    dest="state_flag",
+                    type=str,
+                    choices=states,
+                    default="NRT_CONSTRUCTION"
+                    )
+
+
+args = parser.parse_args()
+
+class INT_case_template():
+
+    def __init__(self, name:str="case1",
+                 state_flag=CST.FileWriteCat.NRT_CONSTRUCTION,
+                 res_flag=None):
+
+
+        self.name=name
+        self.state_flag=state_flag
+        self.res_flag=res_flag
+        self._set_filenames()
+
+        return
+
+    def _set_filenames(self):
+        # set foo.recipe
+        self.fn_recipe = self.name+CONF.conf.NRT_RECIPE_EXT
+        if os.path.exists(self.fn_recipe):
+            sys.tracebacklimit = 0
+            raise Warning("The file {} alwready exists".format(self.fn_recipe))
+
+        # set .test_results/foo.res
+        self.fn_res = os.path.join(CONF.conf.NRT_DIR_RESULTS,
+                                   self.name+CONF.conf.NRT_RESULT_EXT)
+        if os.path.exists(self.fn_res):
+            sys.tracebacklimit = 0
+            raise Warning("The file {} alwready exists".format(self.fn_res))
+
+
+        # set .test_results/foo.state
+        self.fn_state = os.path.join(CONF.conf.NRT_DIR_RESULTS,
+                                     self.name+CONF.conf.NRT_STATE_EXT)
+        if os.path.exists(self.fn_state):
+            sys.tracebacklimit = 0
+            raise Warning("The file {} alwready exists".format(self.fn_state))
+        return
+
+    def _build_dir_structure(self):
+        dirName = CONF.conf.NRT_DIR_RESULTS
+        if not os.path.isdir(dirName):
+            os.mkdir(dirName)
+
+    def apply(self):
+        avail_flags = list(CST.FileWriteCat.get_cst_dict().values())
+
+        # build .test_results
+        self._build_dir_structure()
+
+        # build foo.recipe
+        with open(self.fn_recipe, 'w') as f1:
+            self.write_recipe(f1)
+
+        # build .test_results/foo.state
+        assert(self.state_flag in avail_flags)
+        with open(self.fn_state, 'w') as f1:
+            f1.write("{}\n".format(self.state_flag))
+
+        # build .test_results/foo.res (optional)
+        if self.res_flag in avail_flags:
+            with open(self.fn_res, 'w') as f1:
+                f1.write("{}\n".format(self.res_flag))
+
+
+    def write_recipe(self, f1):
+        raise RuntimeError("Must be override")  #pragma: no cover
+
+
+class Bash_utiles():
+
+    def __init__(self):
+        return
+
+    def header(self, f1):
+        f1.write("#!/usr/bin/bash\n")
+
+    def rm(self, f1, fn):
+        f1.write("rm -f {fn}\n".format(fn=fn))
+
+    def make_dir(self, f1, dirName):
+        f1.write("mkdir -p {dirName}\n".format(dirName=dirName))
+
+
+class Bash_template(INT_case_template, Bash_utiles):
+
+    def __init__(self, *args, recipe:list=["echo \"coucou\"",] , **kwds):
+        super().__init__(*args, **kwds)
+        self.recipe=recipe
+
+    def write_goon(self, f1):
+        f1.write("""goon(){{
+    echo "goon_"$1"_"
+    if [ $1 -ne 0 ]; then
+	echo $1>{}
+	exit
+    fi
+}}""".format(self.fn_res))
+
+
+    def write_recipe(self, f1):
+        self.header(f1)
+        f1.write("\n")
+        self.rm(f1, self.fn_res)
+        self.make_dir(f1, CONF.conf.NRT_DIR_RESULTS)
+        nb_cmd = len(self.recipe)
+        if  nb_cmd > 1:
+            self.write_goon(f1)
+        f1.write("\n")
+        f1.write("# BEGINING RECIPE\n")
+        for i, cmd in enumerate(self.recipe):
+            f1.write(cmd.rstrip()+"\n")
+            if nb_cmd > 1:
+                f1.write("sig=`echo $?`\n")
+                f1.write("goon $sig\n")
+        f1.write("# END RECIPE\n")
+        if nb_cmd == 1:
+            f1.write("echo $?>{}\n".format(self.fn_res))
+
+
+# class Slurm_template(INT_case_template, Bash_utiles):
+#     def __init__(self,*args, cmd="echo \"coucou\"" , **kwds):
+#         super().__init__()
+#         self.cmd=cmd
+
+#     def _write_recipe(self, f1):
+#         f1.write("""#MSUB -r runme         # request name
+# #MSUB -n 1             # Number of task
+# #MSUB -T 60            # Elapse time limit in second
+# #MSUB -q rome          # partition
+
+# rm -f {dir}/{fn}
+# mkdir -p {dir}
+#  "1">{dir}/{fn}
+# """.format(dirn=CONF.conf.NRT_DIR_RESULTS, fn=self.name+CONF.conf.NRT_RES_EXT)
+
+
+def get_cmds_from_string(recipe):
+    cmds = None
+    if recipe[0] == "[":
+        recipe = recipe[1:]
+    if recipe[-1] == "]":
+        recipe = recipe[:-1]
+
+    if "," in recipe:
+        cmds = recipe.split(",")
+    else:
+        cmds = [recipe]
+
+    print("input commandes:", cmds)
+    return cmds
+
+
+def make_test(args):
+
+    state_flag=CST.FileWriteCat.get_cst_dict()[args.state_flag]
+
+    tpl=Bash_template(name=args.name,
+                      recipe=get_cmds_from_string(args.recipe),
+                      state_flag=state_flag,
+                      res_flag=None
+                      )
+    tpl.apply()
+    return
+
+
+make_test(args)
