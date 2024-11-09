@@ -1,0 +1,3 @@
+[console_scripts]
+dnp3demo = dnp3demo.__main__:main
+
