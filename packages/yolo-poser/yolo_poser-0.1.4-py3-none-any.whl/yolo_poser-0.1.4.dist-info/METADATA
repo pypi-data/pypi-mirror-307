@@ -1,0 +1,146 @@
+Metadata-Version: 2.3
+Name: yolo-poser
+Version: 0.1.4
+Summary: YOLO-based human pose detection and visualization tool
+Author: [Tom Dyson]
+Requires-Python: >=3.8,<3.13
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: torch>=2.0.0
+Requires-Dist: ultralytics>=8.0.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: fastapi>=0.68.0 ; extra == "api"
+Requires-Dist: uvicorn>=0.15.0 ; extra == "api"
+Requires-Dist: python-multipart>=0.0.5 ; extra == "api"
+Requires-Dist: pydantic>=1.8.0 ; extra == "api"
+Project-URL: Documentation, https://github.com/tomdyson/yolo-poser#readme
+Project-URL: Home, https://github.com/tomdyson/yolo-poser
+Project-URL: Source, https://github.com/tomdyson/yolo-poser
+Provides-Extra: api
+
+# YOLO Poser
+
+A Python package for human pose detection and visualization using YOLO.
+
+## Installation 
+
+```bash
+pip install yolo-poser
+```
+
+## Usage
+
+### Command Line
+```bash
+yolo-poser input_video.mp4 --output output.mp4 --output-format h264
+```
+
+### Python API
+
+```python
+from yolo_poser import process_video
+process_video(
+    input_path="input.mp4",
+    output_path="output.mp4",
+    output_format="h264",
+    debug=True
+)
+```
+
+### Web API
+
+To use the HTTP API, first install with API dependencies:
+
+```bash
+pip install "yolo-poser[api]"
+```
+
+Start the API server:
+```bash
+yolo-poser-api [--host HOST] [--port PORT]
+```
+
+For example:
+```bash
+yolo-poser-api --host 127.0.0.1 --port 9000
+```
+
+Or programmatically:
+```python
+from yolo_poser.api import app
+import uvicorn
+
+uvicorn.run(app, host="127.0.0.1", port=9000)
+```
+
+The API provides endpoints for:
+- Processing videos from URLs: POST /detect/url
+- Processing uploaded video files: POST /detect/file
+- Health check: GET /health
+
+See the API documentation at http://localhost:8000/docs when running the server.
+
+## Features
+
+- Human pose detection using YOLO
+- Support for multiple output formats (MJPEG, H264, WebM)
+- Smooth keypoint tracking
+- Debug mode with performance metrics
+- Configurable visualization options
+
+## Requirements
+
+- Python 3.8+ (<3.13)
+- PyTorch
+- Ultralytics
+- OpenCV
+- NumPy
+
+## Development
+
+### Continuous Integration
+
+This project uses GitHub Actions for continuous integration and deployment:
+
+- Every push to the `main` branch triggers a test build that publishes to TestPyPI
+- Tagged releases (e.g. `v0.1.0`) trigger a build that publishes to PyPI
+
+To release a new version:
+
+1. Update the version in `src/yolo_poser/__init__.py`
+2. Commit the changes
+3. Create and push a tag:
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+The GitHub Action will automatically build and publish the new version to PyPI.
+
+### Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/tomdyson/yolo-poser.git
+cd yolo-poser
+```
+
+2. Install in development mode:
+```bash
+pip install -e .
+```
+
+## License
+
+MIT License

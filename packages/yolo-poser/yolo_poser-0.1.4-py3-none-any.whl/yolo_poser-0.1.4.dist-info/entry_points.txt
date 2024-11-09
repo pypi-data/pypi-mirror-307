@@ -1,0 +1,4 @@
+[console_scripts]
+yolo-poser=yolo_poser.pose_detect:main
+yolo-poser-api=yolo_poser.api:main
+
