@@ -1,0 +1,5 @@
+[workspace]
+
+resolver = "2"
+
+members = ["fennel_data_lib", "py_execute_interop"]
