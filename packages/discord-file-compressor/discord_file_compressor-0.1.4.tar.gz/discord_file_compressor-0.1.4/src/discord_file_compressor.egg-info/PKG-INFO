@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: discord-file-compressor
+Version: 0.1.4
+Summary: A tool to compress files for Discord's 10MB limit
+Home-page: https://github.com/Abdude790/discord-file-compressor
+Author: Abdude790
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: pyperclip>=1.8.2
+Requires-Dist: plyer>=2.1.0
+
+# Discord File Compressor
+
+A Python tool to compress files to meet Discord's 10MB upload limit while maintaining quality.
+
+## Features
+
+- Compresses videos and images while maintaining quality
+- Supports multiple file formats
+- Easy-to-use command line interface
+- Automatically detects file type and applies appropriate compression
+- Copies compressed file path to clipboard
+- Shows desktop notifications
+
+## Installation
+
+1. Install Python 3.7 or higher from [python.org](https://python.org)
+
+2. Install ffmpeg:
+   - On macOS: `brew install ffmpeg`
+   - On Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+   - On Ubuntu/Debian: `sudo apt-get install ffmpeg`
+
+3. Install the compressor:
