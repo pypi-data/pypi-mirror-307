@@ -1,0 +1,2 @@
+[console_scripts]
+mmg_make_curriculum = macromol_gym_pretrain.torch.curriculum:main

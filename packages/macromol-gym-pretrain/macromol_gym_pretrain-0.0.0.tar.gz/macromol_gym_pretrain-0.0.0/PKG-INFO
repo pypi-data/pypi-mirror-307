@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: macromol_gym_pretrain
+Version: 0.0.0
+Summary: Self-supervised pre-training for macromolecular data
+Author-email: Kale Kundert <kale@thekunderts.net>
+Project-URL: Documentation, https://macromol-gym.readthedocs.io/en/latest/
+Project-URL: Version Control, https://github.com/kalekundert/macromol_gym
+Project-URL: Bug Tracker, https://github.com/kalekundert/macromol_gym/issues
+Project-URL: Continuous Integration, https://github.com/kalekundert/macromol_gym/actions
+Project-URL: Test Coverage, https://coveralls.io/github/kalekundert/macromol_gym
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: lightning
+Requires-Dist: macromol_dataframe
+Requires-Dist: macromol_voxelize
+Requires-Dist: more_itertools
+Requires-Dist: numpy
+Requires-Dist: pipeline_func
+Requires-Dist: reprfunc
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: xxhash
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: parametrize_from_file; extra == "test"
+Requires-Dist: pytest_unordered; extra == "test"
+Requires-Dist: pytest_tmp_files; extra == "test"
+Requires-Dist: hypothesis; extra == "test"
+
+Macromolecular Gymnasium — Pretraining
+======================================
+
+[![Last release](https://img.shields.io/pypi/v/macromol_gym_pretrain.svg)](https://pypi.python.org/pypi/macromol_gym_pretrain)
+[![Python version](https://img.shields.io/pypi/pyversions/macromol_gym_pretrain.svg)](https://pypi.python.org/pypi/macromol_gym_pretrain)
+[![Documentation](https://img.shields.io/readthedocs/macromol_gym.svg)](https://macromol-gym.readthedocs.io/en/latest)
+[![Test status](https://img.shields.io/github/actions/workflow/status/kalekundert/macromol_gym_pretrain/test.yml?branch=master)](https://github.com/kalekundert/macromol_gym_pretrain/actions)
+[![Test coverage](https://img.shields.io/codecov/c/github/kalekundert/macromol_gym_pretrain)](https://app.codecov.io/github/kalekundert/macromol_gym_pretrain)
+[![Last commit](https://img.shields.io/github/last-commit/kalekundert/macromol_gym?logo=github)](https://github.com/kalekundert/macromol_gym)
+
+This package provides tools for performing self-supervised pre-training on 
+*Macromolecular Gymnasium* datasets.

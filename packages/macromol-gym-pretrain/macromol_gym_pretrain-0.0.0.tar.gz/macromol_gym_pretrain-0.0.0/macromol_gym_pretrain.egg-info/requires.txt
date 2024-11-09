@@ -1,0 +1,17 @@
+lightning
+macromol_dataframe
+macromol_voxelize
+more_itertools
+numpy
+pipeline_func
+reprfunc
+scipy
+torch
+xxhash
+
+[test]
+pytest
+parametrize_from_file
+pytest_unordered
+pytest_tmp_files
+hypothesis
