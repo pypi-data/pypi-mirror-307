@@ -1,0 +1,2 @@
+[console_scripts]
+gridding-py = gridding.__main__:main
