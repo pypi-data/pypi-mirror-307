@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+terminal_widgets.egg-info/PKG-INFO
+terminal_widgets.egg-info/SOURCES.txt
+terminal_widgets.egg-info/dependency_links.txt
+terminal_widgets.egg-info/entry_points.txt
+terminal_widgets.egg-info/requires.txt
+terminal_widgets.egg-info/top_level.txt
+twidgets/__init__.py
+twidgets/__main__.py
+twidgets/logo.py
+twidgets/system.py
