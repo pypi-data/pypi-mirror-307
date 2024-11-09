@@ -1,0 +1,15 @@
+plain/mail/README.md,sha256=SB1kaEJgkFXgJg6yhgH1v0o55bLvDoeE5yB8333ejIQ,49
+plain/mail/__init__.py,sha256=eqeYdpUsU60Fg-BP9OP03LiLhtBsQokIfhmv_2Otc7s,3469
+plain/mail/backends/__init__.py,sha256=VJ_9dBWKA48MXBZXVUaTy9NhgfRonapA6UAjVFEPKD8,37
+plain/mail/backends/base.py,sha256=Cljbb7nil40Dfpob2R8iLmlO0Yv_wlOCBA9hF2Z6W54,1683
+plain/mail/backends/console.py,sha256=YWWIH38v7Sc0dvd1CMNrzJ2Y1xOUgYR3JUuBerGP5ns,1401
+plain/mail/backends/filebased.py,sha256=vCQhxAlJNHMAWJxULOcfj0TjPc39gOh7DJ0QRVqE2no,2345
+plain/mail/backends/smtp.py,sha256=JXoO7byaLyASiRwLHEGh2XE4R5aJTRD_0ZeyiF1FDxQ,5759
+plain/mail/backends/testing.py,sha256=1TTlq81Vhailbukss6EdDo1414XyluKzbBTyNyi0EoM,850
+plain/mail/default_settings.py,sha256=hgbXrnEDIi25T6FZM38Le3eDrrSHd7FbWRsdiwCjAV8,776
+plain/mail/message.py,sha256=7qqt9144rfV8h5kV0Ug2S4r11nBnJ1QnamdTMdLe-Vs,20043
+plain/mail/utils.py,sha256=ez-G2FUqRtozr-pXL6k0pceSqyPITilqiNc4hm3e45E,505
+plain_mail-0.5.0.dist-info/LICENSE,sha256=m0D5O7QoH9l5Vz_rrX_9r-C8d9UNr_ciK6Qwac7o6yo,3175
+plain_mail-0.5.0.dist-info/METADATA,sha256=-_a60i8jHkOojSZ_0NDmtrJJvljlas4CP8xqTW23eIY,484
+plain_mail-0.5.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+plain_mail-0.5.0.dist-info/RECORD,,
