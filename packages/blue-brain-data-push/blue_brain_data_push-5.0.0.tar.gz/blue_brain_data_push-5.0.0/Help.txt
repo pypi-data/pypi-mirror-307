@@ -1,0 +1,67 @@
+> bba-data-push --help:
+
+Usage: bba-data-push [OPTIONS] COMMAND [ARGS]...
+
+  Run the dataset pusher CLI starting by the Initialisation of the Forge
+  python framework to  communicate with Nexus.
+
+Options:
+  --version                 Show the version and exit.
+  -v, --verbose
+  --forge_config_file PATH  The configuration file used to instantiate the
+                            Forge  [required]
+
+  --nexus_env TEXT          Nexus environment to use, can be 'dev', 'staging',
+                            'prod' or the URL of a custom env  [required]
+
+  --nexus_org TEXT          The Nexus organization to push into  [required]
+  --nexus_proj TEXT         The Nexus project to push into  [required]
+  --nexus_token_file TEXT   copy pasted from Nexus fusion  [required]
+  --help                    Show this message and exit.
+
+Commands:
+  push-cellpositions
+  push-meshes         Create a Mesh resource payload and push it along with...
+  push-volumetric     Create a VolumetricDataLayer resource payload and
+                      push...
+
+==================================
+> push-volumetric --help:
+Usage: bba-data-push push-volumetric [OPTIONS]
+
+  Create a VolumetricDataLayer resource payload and push it along with the
+  corresponding  volumetric input dataset files into Nexus.
+
+Options:
+  --hierarchy_split_path PATH  The file or directory of files to push on Nexus
+  --config PATH                Path to the generated dataset configuration
+                               file. This is a yaml file containing the paths
+                               to the Atlas pipeline generated dataset
+                               [required]
+
+  --dataset_path PATH          The file or directory of files to push on Nexus
+                               [required]
+
+  --voxels_resolution TEXT     The Allen annotation volume voxels resolution
+                               in microns  [required]
+
+  --help                       Show this message and exit.
+
+==================================
+> push-meshes --help
+Usage: bba-data-push push-meshes [OPTIONS]
+
+  Create a Mesh resource payload and push it along with the corresponding
+  brain .OBJ mesh  folder input dataset files into Nexus.
+
+Options:
+  --hierarchy_split_path PATH  The file or directory of files to push on Nexus
+  --config PATH                Path to the generated dataset configuration
+                               file. This is a yaml file containing the paths
+                               to the Atlas pipeline generated dataset
+                               [required]
+
+  --dataset_path PATH          The file or directory of files to push on Nexus
+                               [required]
+
+  --help                       Show this message and exit.
