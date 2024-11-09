@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rsize"
+version = "0.1.9"
+homepage = "https://github.com/yingca1"
+description = "A command line tool to calculate the size of files in Cloud Storage."
+authors = ["Ying Cai <i@caiying.me>"]
+readme = "README.md"
+packages = [{include = "rsize"}]
+
+[tool.poetry.scripts]
+rsize = "rsize.command:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+cloud-storage-size = "^0.1.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
