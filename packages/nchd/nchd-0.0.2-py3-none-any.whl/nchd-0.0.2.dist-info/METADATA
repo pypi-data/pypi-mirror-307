@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nchd
+Version: 0.0.2
+Summary: A colourised implementation of ncdump with the intention of making life a bit easier.
+Author-email: Charles Turner <charles.turner@anu.edu.au>
+License: Apache Software License 2.0
+Project-URL: homepage, https://github.com/charles-turner-1/nchd
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: netcdf4
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-sugar; extra == "test"
+Requires-Dist: pytest-watcher; extra == "test"
+
+# NCHD: A dead simple, colourised netCDF file header viewer
+
+My use case for ncdump is *almost exclusively* `ncdump -h $FILE`. 
+
+This presents two mild inconveniences:
+
+1. Output is not colourised. This is kind of annoying.
+2. It's too many characters to type.
+
+This tool solves these glaring errors, by providing shorter command name, and colourising the output. It mostly exists because I wanted to write a CLI tool.
+
+## Installation
+
+`pip install nchd`
+
+## Usage
+
+```bash
+nchd $FILE
+```
+
+## Options
+
+- `--help`: Show help message and exit
+
+## Contributing
+
+Feel free to contribute! With that in mind, this tool is intentionally simple.
