@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit-core"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.sdist]
+include = ["LICENSE.txt"]
+
+[project]
+name = "flake8-typing-as-t"
+description = 'A flake8 plugin to check typing import style'
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = []
+authors = [
+  { name = "Stephen Rosen", email = "sirosen0@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.entry-points."flake8.extension"]
+TYT = "flake8_typing_as_t:Plugin"
+
+[project.urls]
+source = "https://github.com/sirosen/flake8-typing-as-t"
+
+[tool.hatch.version]
+path = "flake8_typing_as_t.py"
+
+[tool.hatch.build]
+include = ["flake8_typing_as_t.py"]
+
+[tool.hatch.envs.demo]
+description = "Run the plugin as part of flake8 on examples"
+dependencies = ["flake8"]
+[tool.hatch.envs.demo.scripts]
+run = "flake8 --config demo-files/flake8-config.ini demo-files/"
