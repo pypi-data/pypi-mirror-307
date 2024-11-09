@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cardy
+Version: 0.0.1
+Summary: Card Sorting Utilities
+Project-URL: repository, https://github.com/Programming-Education-Research/cardy
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: munkres ~=1.1.4
+
+# Cardy
+
+Various card sorting utilities.
