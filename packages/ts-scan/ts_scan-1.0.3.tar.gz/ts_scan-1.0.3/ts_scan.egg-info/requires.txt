@@ -1,0 +1,14 @@
+wheel
+defusedxml
+semantic_version
+build
+importlib-metadata
+alive-progress
+requests==2.32.3
+numpy
+wasabi
+ts-python-client==2.0.6
+ts-deepscan==2.2.2
+license-expression
+packageurl-python
+spdx-tools==0.7.0rc0
