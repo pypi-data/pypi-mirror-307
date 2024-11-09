@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: discord-file-compressor
+Version: 0.1.2
+Summary: A tool to compress files for Discord's 10MB limit
+Home-page: https://github.com/Abdude790/discord-file-compressor
+Author: Abdude790
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow>=9.0.0
+
+# Discord File Compressor
+
+A Python tool to compress files to meet Discord's 10MB upload limit while maintaining quality.
+
+## Features
+
+- Compresses videos and images while maintaining quality
+- Supports multiple file formats
+- Easy-to-use command line interface
+- Automatically detects file type and applies appropriate compression
+
+## Author
+
+[Abdude790](https://github.com/Abdude790)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Installation
