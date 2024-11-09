@@ -1,0 +1,3 @@
+[console_scripts]
+tinyagi-cli = tinyagi.cli:run_cli
+tinyagi-server = tinyagi.server:run_server
