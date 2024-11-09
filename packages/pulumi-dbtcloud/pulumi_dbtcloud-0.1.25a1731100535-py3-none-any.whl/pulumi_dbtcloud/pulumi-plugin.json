@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "dbtcloud",
+  "version": "0.1.25-alpha.1731100535",
+  "server": "github://api.github.com/pulumi/pulumi-dbtcloud"
+}
