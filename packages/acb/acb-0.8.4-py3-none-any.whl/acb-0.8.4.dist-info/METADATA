@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: acb
+Version: 0.8.4
+Summary: Default template for PDM package
+Author-Email: lesleslie <les@wedgwoodwebworks.com>
+License: BSD-3-CLAUSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Framework :: AsyncIO
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Homepage, https://github.com/lesleslie/acb
+Project-URL: Documentation, https://github.com/lesleslie/acb
+Project-URL: Repository, https://github.com/lesleslie/acb
+Requires-Python: >=3.13
+Requires-Dist: itsdangerous>=2.2.0
+Requires-Dist: arrow>=1.3.0
+Requires-Dist: dill>=0.3.9
+Requires-Dist: blake3>=0.4.1
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: nest-asyncio>=1.6.0
+Requires-Dist: pydantic-settings>=2.6.0
+Requires-Dist: bevy>=2.0.2
+Requires-Dist: icecream>=2.1.3
+Requires-Dist: brotli>=1.1.0
+Requires-Dist: pyfiglet>=1.0.2
+Requires-Dist: inflection>=0.5.1
+Requires-Dist: aiopath>=0.7.7
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: google-crc32c>=1.6.0
+Requires-Dist: pydantic[email]>=2.9.2
+Requires-Dist: devtools>=0.12.2
+Requires-Dist: typer>=0.12.5
+Requires-Dist: msgspec-python313-pre[toml,yaml]>=0.19.0
+Provides-Extra: cache
+Requires-Dist: coredis>=4.17.0; extra == "cache"
+Requires-Dist: aiocache[redis]>=0.12.3; extra == "cache"
+Requires-Dist: logfire[redis]>=2.0.0; extra == "cache"
+Provides-Extra: storage
+Requires-Dist: gcsfs>=2024.10.0; extra == "storage"
+Requires-Dist: s3fs>=2024.10.0; extra == "storage"
+Requires-Dist: adlfs>=2024.7.0; extra == "storage"
+Provides-Extra: dns
+Requires-Dist: google-cloud-dns>=0.35.0; extra == "dns"
+Requires-Dist: validators>=0.34.0; extra == "dns"
+Provides-Extra: requests
+Requires-Dist: httpx[http2]>=0.27.2; extra == "requests"
+Requires-Dist: hishel>=0.0.33; extra == "requests"
+Requires-Dist: sentry-sdk[httpx]>=2.17.0; extra == "requests"
+Requires-Dist: logfire[httpx]>=1.3.0; extra == "requests"
+Provides-Extra: smtp
+Requires-Dist: mailgun>=0.1.1; extra == "smtp"
+Provides-Extra: sql
+Requires-Dist: sqlalchemy>=2.0.36; extra == "sql"
+Requires-Dist: sqlalchemy-utils>=0.41.2; extra == "sql"
+Requires-Dist: sqlmodel>=0.0.22; extra == "sql"
+Requires-Dist: babel>=2.16.0; extra == "sql"
+Requires-Dist: pymysql>=1.1.1; extra == "sql"
+Requires-Dist: aiomysql>=0.2.0; extra == "sql"
+Requires-Dist: logfire[sqlalchemy]>=2.0.0; extra == "sql"
+Requires-Dist: sentry-sdk[sqlalchemy]>=2.17.0; extra == "sql"
+Provides-Extra: nosql
+Requires-Dist: google-cloud-firestore>=2.19.0; extra == "nosql"
+Requires-Dist: motor>=3.6.0; extra == "nosql"
+Provides-Extra: demo
+Requires-Dist: faker>=30.8.1; extra == "demo"
+Provides-Extra: ftpd
+Requires-Dist: aioftp>=0.23.1; extra == "ftpd"
+Requires-Dist: asyncssh>=2.18.0; extra == "ftpd"
+Provides-Extra: secret
+Requires-Dist: google-cloud-secret-manager>=2.21.0; extra == "secret"
+Provides-Extra: monitoring
+Requires-Dist: sentry-sdk[loguru]>=2.17.0; extra == "monitoring"
+Requires-Dist: logfire[system-metrics]>=2.0.0; extra == "monitoring"
+Description-Content-Type: text/markdown
+
+<p align="center">
+<img src="https://drive.google.com/uc?id=1pMUqyvgMkhGYoLz3jBibZDl3J63HEcCC">
+</p>
+
+# <u>A</u>synchronous <u>C</u>omponent <u>B</u>ase
+
+[![Code style: crackerjack](https://img.shields.io/badge/code%20style-crackerjack-000042)](https://github.com/lesleslie/crackerjack)
+
+
+Asynchronous Component Base, or 'acb', is a collection of modular
+components (actions / adapters) that provide the building blocks for rapid,
+asynchronous, application development.
+
+More documentation is on the way!
+
+## Installation
+
+```
+pdm add acb
+```
+
+## Actions
+
+
+## Adapters
+
+
+### Configuration
+
+
+### Dependency Injection
+
+
+### Debug
+
+
+## Acknowledgements
+
+ACB "blocks" logo used by permission from <a href="https://andycoeband.com">Andy Coe Band</a>
+
+
+## License
+
+BSD-3-Clause
