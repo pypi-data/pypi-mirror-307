@@ -1,0 +1,12 @@
+blobfile
+fire
+httpx
+huggingface-hub
+llama-models>=0.0.50
+prompt-toolkit
+python-dotenv
+pydantic>=2
+requests
+rich
+setuptools
+termcolor
