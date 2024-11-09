@@ -1,0 +1,9 @@
+v3.2.9
+======
+
+Released on Mar 9, 2024 (`diff`_).
+
+* Fixed a memory leak with unnecessary traceback information.
+* Updated dependencies for development and testing.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v3.2.8...v3.2.9

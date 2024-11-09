@@ -1,0 +1,8 @@
+v3.3.0
+======
+
+Released on May 30, 2024 (`diff`_).
+
+* Background tasks are now executed in a separated threads within new created isolated event loop.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v3.2.9...v3.3.0

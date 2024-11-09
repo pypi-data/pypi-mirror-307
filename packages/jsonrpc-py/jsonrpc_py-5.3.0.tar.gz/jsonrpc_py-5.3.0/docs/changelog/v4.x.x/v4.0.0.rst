@@ -1,0 +1,16 @@
+v4.0.0
+======
+
+Released on Jun 25, 2024 (`diff`_).
+
+* Added an :doc:`OpenRPC Specification </openrpc>` feature.
+
+Backward-incompatible changes
+-----------------------------
+
+* The :class:`jsonrpc.ASGIHandler` object is not a subclass of the :py:class:`collections.UserDict` object.
+* The :class:`jsonrpc.AsyncDispatcher` object is not a subclass of the :py:class:`weakref.WeakValueDictionary` object.
+* The :func:`jsonrpc.AsyncDispatcher.register` decorator returns a :class:`jsonrpc.Function` object.
+* The :class:`jsonrpc.LifespanEvents` object does not have any parameters in the constructor.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v3.3.0...v4.0.0

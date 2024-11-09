@@ -1,0 +1,8 @@
+v4.2.1
+======
+
+Released on Jul 1, 2024 (`diff`_).
+
+* Replace black with ruff formatter and use ruff instead of flake8 and isort.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v4.2.0...v4.2.1

@@ -1,0 +1,12 @@
+v5.1.0
+======
+
+Released on Oct 31, 2024 (`diff`_).
+
+* Added :attr:`~jsonrpc.ASGIHandler.components` and :attr:`~jsonrpc.ASGIHandler.external_docs` attributes
+  to the :class:`~jsonrpc.AsyncDispatcher` class.
+* All objects are now unhashable, because they are mutable.
+* A :class:`~jsonrpc.BatchRequest` and :class:`~jsonrpc.BatchResponse` objects are now
+  inherits from :py:class:`~collections.abc.Collection`.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v5.0.0...v5.1.0

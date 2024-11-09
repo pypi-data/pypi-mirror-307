@@ -1,0 +1,8 @@
+v4.1.0
+======
+
+Released on Jun 27, 2024 (`diff`_).
+
+* The coroutines running in the background are now thread-safe.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v4.0.0...v4.1.0

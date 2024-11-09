@@ -1,0 +1,9 @@
+v5.2.0
+======
+
+Released on Nov 1, 2024 (`diff`_).
+
+* Request processing has been simplified in favor of `PEP 622`_.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v5.1.0...v5.2.0
+.. _`PEP 622`: https://peps.python.org/pep-0622
