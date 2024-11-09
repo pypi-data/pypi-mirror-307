@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ct-redis-cache-lib
+Version: 0.0.1
+Summary: A specialized library developed by Credenti for efficient Redis caching in Flask applications.
+Author: credenti
+Requires-Dist: redis==5.2.0
+Requires-Dist: Flask>=3.0.3
+
