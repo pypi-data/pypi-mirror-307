@@ -1,0 +1,11 @@
+pymongo
+requests
+boto3
+colored==1.4.4
+delegator-py
+Pillow
+beautifulsoup4
+numpy
+matplotlib
+google-auth
+google-cloud-bigquery
