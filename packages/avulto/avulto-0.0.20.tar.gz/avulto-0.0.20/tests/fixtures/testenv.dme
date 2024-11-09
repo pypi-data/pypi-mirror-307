@@ -1,0 +1,12 @@
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include "testenv.dm"
+#include "testenv3.dm"
+#include "map1.dmm"
+// END_INCLUDE
