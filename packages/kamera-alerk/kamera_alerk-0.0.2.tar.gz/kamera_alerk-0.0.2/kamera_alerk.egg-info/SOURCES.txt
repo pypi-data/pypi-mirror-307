@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+kamera_alerk/__init__.py
+kamera_alerk/camera_hadler.py
+kamera_alerk/db_handler.py
+kamera_alerk/main.py
+kamera_alerk/parsing.py
+kamera_alerk/settings_handler.py
+kamera_alerk/telegram_bot.py
+kamera_alerk.egg-info/PKG-INFO
+kamera_alerk.egg-info/SOURCES.txt
+kamera_alerk.egg-info/dependency_links.txt
+kamera_alerk.egg-info/entry_points.txt
+kamera_alerk.egg-info/requires.txt
+kamera_alerk.egg-info/top_level.txt

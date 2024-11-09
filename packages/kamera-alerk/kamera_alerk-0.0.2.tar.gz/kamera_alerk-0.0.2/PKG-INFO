@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kamera_alerk
+Version: 0.0.2
+Summary: Telegram bot for camera access. 
+Author-email: The220th <The220th@gmail.com>
+Project-URL: Homepage, https://github.com/The220th/kamera_alerk
+Project-URL: Issues, https://github.com/The220th/kamera_alerk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ksupk
+Requires-Dist: onvif-zeep
+Requires-Dist: telebot
+Requires-Dist: argparse
+Requires-Dist: matplotlib
+Requires-Dist: ultralytics
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: requests
+Requires-Dist: pillow
+
+# kamera_alerk
+
+text
+
+# config.json
+
+Текст потом будет...
