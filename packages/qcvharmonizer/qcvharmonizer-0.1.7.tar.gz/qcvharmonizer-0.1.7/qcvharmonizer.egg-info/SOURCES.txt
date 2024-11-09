@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+requirements.txt
+notebooks/.gitkeep
+notebooks/test.ipynb
+qcvharmonizer/__init__.py
+qcvharmonizer/qcvharmonizer.py
+qcvharmonizer.egg-info/PKG-INFO
+qcvharmonizer.egg-info/SOURCES.txt
+qcvharmonizer.egg-info/dependency_links.txt
+qcvharmonizer.egg-info/entry_points.txt
+qcvharmonizer.egg-info/requires.txt
+qcvharmonizer.egg-info/top_level.txt
+tests/general_testing.py
