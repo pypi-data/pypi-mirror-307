@@ -1,0 +1,31 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Poetry
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Build project for distribution
+        run: uv build
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: uvx twine upload dist/*

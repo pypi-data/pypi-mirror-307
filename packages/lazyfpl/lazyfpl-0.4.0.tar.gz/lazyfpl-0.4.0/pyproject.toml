@@ -1,0 +1,101 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+requires-python = ">= 3.11"
+name = "lazyfpl"
+version = "0.4.0"
+description = "Fantasy Premier League Team Optimizer - Win at FPL with lazines"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "JB Lovland", email = "janbjorge@gmail.com"}]
+homepage = "https://github.com/janbjorge/lazyFPL"
+repository = "https://github.com/janbjorge/lazyFPL"
+keywords = [
+    "fantasy premier league",
+    "FPL",
+    "data analysis",
+    "machine learning",
+    "team optimization",
+    "sports analytics",
+    "python",
+    "football data",
+    "soccer statistics",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python",
+    "Topic :: Games/Entertainment",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "pydantic",
+    "tqdm",
+    "requests",
+    "numpy",
+    "python-dateutil",
+    "pytz",
+    "torch",
+    "tabulate",
+    "more-itertools",
+    "typer",
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pytest",
+    "ruff",
+    "tqdm-stubs",
+    "types-python-dateutil",
+    "types-pytz",
+    "types-requests",
+    "types-tabulate"
+]
+
+[project.scripts]
+fpl = "lazyfpl.__main__:main"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
+    "C901",
+    "PLR0912",
+    "PLR0913",
+]
+select = [
+    "C",
+    "E",
+    "F",
+    "I",
+    "PIE",
+    "Q",
+    "RET",
+    "RSE",
+    "SIM",
+    "W",
+    "C90",
+    "NPY",
+    "PD",
+    "PL",
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
