@@ -1,0 +1,2 @@
+from theng.data.pathfinder.occupants.occupant import Occupant, OccFrame, OccParams, SocialDistanceData, SocialDistanceFrame
+from theng.data.pathfinder.occupants.occupant_collection import OccupantCollection

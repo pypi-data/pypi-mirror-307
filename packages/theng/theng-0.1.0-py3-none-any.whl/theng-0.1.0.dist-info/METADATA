@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: theng
+Version: 0.1.0
+Summary: Package for processing data out of fire and evacuation model simulators.
+Home-page: https://gitlab.com/thunderheadeng/sandbox/theng
+Author: Thunderhead Engineering
+Author-email: support@thunderheadeng.com
+Project-URL: Documentation, https://thunderheadeng.gitlab.io/sandbox/theng
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.11
+Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: fdsreader
+Requires-Dist: winapps ; platform_system == "Windows"
+
