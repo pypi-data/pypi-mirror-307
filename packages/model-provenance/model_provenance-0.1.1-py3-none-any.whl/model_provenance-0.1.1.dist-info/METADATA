@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: model_provenance
+Version: 0.1.1
+Summary: A package to track model metadata and provenance for scikit-learn and other ML models
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: joblib
+
