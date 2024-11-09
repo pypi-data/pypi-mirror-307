@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "collider-dashboard"
+version = "1.4.5.0"
+description = "A Dash application to visualize the observables and parameters of a collider built and configured with Xsuite."
+authors = ["Colas Droin <colas.noe.droin@cern.ch>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ColasDroin/simulation-dashboard"
+packages = [
+    { include = "collider_dashboard" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.13"
+dash = "^2.14.1"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+xsuite = "^0.18.8"
+dash-mantine-components = "^0.12.1"
+seaborn = "^0.13.0"
+dash-iconify = "^0.1.2"
+argparse = "^1.4.0"
+collider-check = "^0.2.7"
+# xtrack = {git = "git@github.com:ColasDroin/xtrack", rev = "lumi_with_crabs"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.10.1"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.5.3"
+mkdocstrings = "^0.23.0"
+mkdocstrings-python = "^1.7.3"
+mkdocs-git-revision-date-localized-plugin = "^1.2.1"
+mkdocs-material = "^9.4.8"
+
+
+# [tool.poetry.scripts]
+# dashboard-launch = "collider_dashboard.__main__:main"
+
+
+# [[tool.poetry.source]]
+# name = "testpypi"
+# url = "https://test.pypi.org/"
+# priority = "supplemental"
+
+
+
