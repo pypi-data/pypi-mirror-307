@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: backtesting_indicators
+Version: 0.0.1
+Summary: Libreria de indicadores de pandas-ta para usar en backtesting.py
+Home-page: https://github.com/ferromariano/backtesting-indicators
+Author: Mariano Damian Ferro Villanueva
+Author-email: <ferro.mariano@gmail.com>
+Keywords: python,backtesting.py,backtesting,indicators
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: backtesting
+Requires-Dist: pandas-ta
+Requires-Dist: pandas
