@@ -1,0 +1,73 @@
+[build-system]
+requires = ['setuptools>=61.0', 'setuptools_scm[toml]>=6.2', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Topic :: Internet :: WWW/HTTP :: Session',
+]
+description = 'Authenticate to Django with JSON Web Tokens (JWTs) signed by Cloudflare Access'
+dependencies = ['cryptography', 'pyjwt', 'requests']
+dynamic = ['version']
+name = 'allowedflare'
+readme = 'README.md'
+
+[project.optional-dependencies]
+precommit = [
+    'codespell',
+    'django-stubs',
+    'djangorestframework-stubs[compatible-mypy]',
+    # hadolint git link in requirements.in
+    'mypy',
+    'pre-commit',
+    'ruff',
+    'shellcheck-py',
+    'uv',
+    'yamllint',
+]
+demo = [
+    'dj-notebook',
+    'django',
+    'django-extensions',
+    'django-health-check',
+    'django-sql-explorer',
+    'djangorestframework',
+    'jupyterlab',
+]
+build = ['build', 'twine']
+test = ['pytest', 'pytest-django', 'pytest-mock']
+
+[project.urls]
+Homepage = 'https://github.com/biobuddies/allowedflare'
+
+[tool.codespell]
+ignore-words-list = 'afterall'
+
+[tool.ruff.format]
+quote-style = 'single'
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = 'single'
+
+[tool.django-stubs]
+django_settings_module = 'demodj.settings'
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+ignore = [
+    'EM101', # Allow exceptions to use string literals because keeping code as simple as possible is more important than keeping tracebacks as simple as possible.
+]
+
+[tool.mypy]
+plugins = ['mypy_drf_plugin.main', 'mypy_django_plugin.main']
+
+[tool.setuptools]
+packages = ['allowedflare']
+
+[tool.setuptools_scm]
