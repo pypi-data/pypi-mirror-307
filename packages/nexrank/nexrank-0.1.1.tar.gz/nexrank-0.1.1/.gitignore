@@ -1,0 +1,4 @@
+.venv/
+tests/__pycache__/
+src/nexrank/__pycache__/
+dist/
