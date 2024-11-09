@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-2",
+      "eventTime": "2024-10-10T14:41:34.255Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AROAZBJD2A45BQG37F6EO:de-pypi-feed-updates-to-s3-lambda-v1-beta-us-east-2"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "18.216.252.101"
+      },
+      "responseElements": {
+        "x-amz-request-id": "EGDVTNXP5FREQ148",
+        "x-amz-id-2": "WqyWyGLWqvXL7pPCbdaw7GJj++LSGrlhJa33GHd9EITUR7XL6YVB1SyoiLns2XT+sHHIEUb2hwd6Zh9enBuYjORLSXiB4jPVQdfgCrla3v4="
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "arn:aws:cloudformation:us-east-2:621234751290:stack/dataenginev1dataengineingresslambdav1442F926A/8d2d92c0-7d29-11ef-9815-021e135c1eab-6586500257934177036",
+        "bucket": {
+          "name": "de-fetch-bucket-v1-beta-us-east-2",
+          "ownerIdentity": {
+            "principalId": "A2KKG3PQQUH0HZ"
+          },
+          "arn": "arn:aws:s3:::de-fetch-bucket-v1-beta-us-east-2"
+        },
+        "object": {
+          "key": "fetch/pypi_release/pypi.org%252Fpypi%252Fsnip-python%252F0.0.5%252Fjson",
+          "size": 5118,
+          "eTag": "3f92b2eb3def8d2133f874c93c5d36d8",
+          "sequencer": "006707E79E3B8CD3B6"
+        }
+      }
+    }
+  ]
+}
