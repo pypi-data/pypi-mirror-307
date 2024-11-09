@@ -1,0 +1,14 @@
+MANIFEST.in
+README-COPYRIGHT-utf8.txt
+README.rst
+pyproject.toml
+setup.py
+documentation/wiki/description.asciidoc
+issue_manager/__init__.py
+issue_manager/main.py
+issue_manager/version.py
+issue_manager.egg-info/PKG-INFO
+issue_manager.egg-info/SOURCES.txt
+issue_manager.egg-info/dependency_links.txt
+issue_manager.egg-info/requires.txt
+issue_manager.egg-info/top_level.txt
