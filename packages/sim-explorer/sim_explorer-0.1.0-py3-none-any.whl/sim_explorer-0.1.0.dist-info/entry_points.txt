@@ -1,0 +1,2 @@
+[console_scripts]
+sim-explorer = sim_explorer.cli.sim_explorer:main
