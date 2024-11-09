@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rsize
+Version: 0.1.8
+Summary: A command line tool to calculate the size of files in Cloud Storage.
+Home-page: https://github.com/yingca1
+Author: Ying Cai
+Author-email: i@caiying.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cloud-storage-size (>=0.1.10,<0.2.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+
