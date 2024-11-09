@@ -1,0 +1,17 @@
+LICENSE
+setup.py
+optilearn/__init__.py
+optilearn/__version__.py
+optilearn/files.py
+optilearn/image.py
+optilearn/nn.py
+optilearn/optimal.py
+optilearn/optimal_2.py
+optilearn/sequential.py
+optilearn/text.py
+optilearn/word.py
+optilearn.egg-info/PKG-INFO
+optilearn.egg-info/SOURCES.txt
+optilearn.egg-info/dependency_links.txt
+optilearn.egg-info/requires.txt
+optilearn.egg-info/top_level.txt
