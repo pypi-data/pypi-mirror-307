@@ -1,0 +1,2 @@
+[console_scripts]
+hasty-helix = hasty_helix.cli:main
