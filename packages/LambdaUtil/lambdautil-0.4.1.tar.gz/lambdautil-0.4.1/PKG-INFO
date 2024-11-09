@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: LambdaUtil
+Version: 0.4.1
+Summary: Python Lambda Utility
+Home-page: https://github.com/muckamuck/lambda-tool
+Author: Duke P. Takle
+Author-email: duke.takle@gmail.com
+Requires-Dist: boto3
+Requires-Dist: Click
+Requires-Dist: tabulate
+Requires-Dist: PyYAML
