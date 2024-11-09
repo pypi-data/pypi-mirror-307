@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wordgradient
+Version: 0.1
+Summary: Minimal CLI tool to create word frequency heatmap
+Home-page: https://github.com/ctosullivan/WordGradient
+Author: Cormac O' Sullivan
+Author-email: cormac@cosullivan.dev
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: rich-gradient
