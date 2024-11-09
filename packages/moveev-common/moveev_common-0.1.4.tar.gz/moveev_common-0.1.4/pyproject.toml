@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveev_common"
+version = "0.1.4"
+description = "Common utilities for MoveEV projects"
+authors = [{name = "Fabricio Pavano", email = "faripavano@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sqlalchemy>=1.4",
+    "pydantic>=1.8"
+]
