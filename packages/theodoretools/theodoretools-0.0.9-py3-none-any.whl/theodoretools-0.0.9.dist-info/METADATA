@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: theodoretools
+Version: 0.0.9
+Summary: A short description of your package
+Home-page: https://github.com/theodoreniu/theodoretools
+Author: Theodore
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv >=1.0.1
+Requires-Dist: streamlit >=1.38.0
+Requires-Dist: qrcode >=7.4.2
+Requires-Dist: streamlit-javascript >=0.1.5
+
+# tools
