@@ -1,0 +1,3 @@
+[console_scripts]
+SquHeatmap = HiCPlot.SquHeatmap:main
+TriHeatmap = HiCPlot.TriHeatmap:main
