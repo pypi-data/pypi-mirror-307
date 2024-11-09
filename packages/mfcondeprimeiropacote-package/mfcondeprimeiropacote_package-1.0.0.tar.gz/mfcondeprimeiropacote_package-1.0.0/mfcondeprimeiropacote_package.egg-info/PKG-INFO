@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mfcondeprimeiropacote-package
+Version: 1.0.0
+Summary: Descricao da sua lib mfcondeprimeiropacote
+Home-page: https://github.com/tadrianonet/mfcondeprimeiropacote
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Mfcondeprimeiropacote
+
+A simple example library.
+
+## Installation
+
+```sh
+pip install mfcondeprimeiropacote
+```
+
+## Usage
+
+```python
+from mfcondeprimeiropacote import hello_world
+
+print(hello_world())
+```

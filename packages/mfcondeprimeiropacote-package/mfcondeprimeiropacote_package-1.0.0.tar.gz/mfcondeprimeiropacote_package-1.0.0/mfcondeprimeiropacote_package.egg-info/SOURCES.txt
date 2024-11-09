@@ -1,0 +1,9 @@
+README.md
+setup.py
+mfcondeprimeiropacote/__init__.py
+mfcondeprimeiropacote/core.py
+mfcondeprimeiropacote_package.egg-info/PKG-INFO
+mfcondeprimeiropacote_package.egg-info/SOURCES.txt
+mfcondeprimeiropacote_package.egg-info/dependency_links.txt
+mfcondeprimeiropacote_package.egg-info/top_level.txt
+tests/test_core.py
