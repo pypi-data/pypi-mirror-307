@@ -1,0 +1,5 @@
+[console_scripts]
+visiomatic = visiomatic.cmd.start:main
+
+[gui_scripts]
+
