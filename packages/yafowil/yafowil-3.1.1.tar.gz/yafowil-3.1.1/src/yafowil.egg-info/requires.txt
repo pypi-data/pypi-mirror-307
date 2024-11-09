@@ -1,0 +1,8 @@
+node>=1.2
+setuptools
+webresource
+
+[test]
+coverage
+lxml
+pytest
