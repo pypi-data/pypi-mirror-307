@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/edge_srt_to_speech/__init__.py
+src/edge_srt_to_speech/__main__.py
+src/edge_srt_to_speech.egg-info/PKG-INFO
+src/edge_srt_to_speech.egg-info/SOURCES.txt
+src/edge_srt_to_speech.egg-info/dependency_links.txt
+src/edge_srt_to_speech.egg-info/entry_points.txt
+src/edge_srt_to_speech.egg-info/requires.txt
+src/edge_srt_to_speech.egg-info/top_level.txt

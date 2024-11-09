@@ -1,0 +1,2 @@
+[console_scripts]
+edge-srt-to-speech = edge_srt_to_speech.__main__:main
