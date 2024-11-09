@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: sec_yf
+Version: 0.1.3
+Summary: A package for downloading accounting and market data from SEC regulated companies.
+License: MIT
+Author: Juan F. Imbet
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: pandas (<=2.2.2)
+Requires-Dist: pyarrow (>=17.0.0,<18.0.0)
+Requires-Dist: sec-cik-mapper (>=2.1.0,<3.0.0)
+Requires-Dist: tqdm (>=4.66.6,<5.0.0)
+Requires-Dist: yfinance (>=0.2.44,<0.3.0)
+Description-Content-Type: text/markdown
+
+# sec_yf
+
+A package for downloading accounting and market data from SEC regulated companies.
+
+## Installation
+
+```bash
+$ pip install sec_yf
+```
+
+## Usage
+
+Prepare and download all data from a universe of companies:
+
+```python
+from sec_yf.download_sec import download_and_prepare_data
+from sec_yf.yahoo_finance import get_all_data
+
+# Download and prepare data from SEC
+download_and_prepare_data()
+
+# Get all data from Yahoo Finance
+get_all_data()
+```
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`sec_yf` was created by Juan F. Imbet. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`sec_yf` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
