@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mini_bash"
+version = "0.1.1"
+description = "Easily run bash commands"
+authors = ["lamnguyenx <lamfm95@gmail.com>"]
+license = "apache"
+readme = "README.md"
+homepage = "https://github.com/lamnguyenx/mini_bash.git"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
