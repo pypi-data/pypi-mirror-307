@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dynamicDQNet
+Version: 0.3.0
+Summary: An implementation for dynamic path optimization with DQN network
+Author: dynamicdqnet
+Author-email: 18754698764@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
