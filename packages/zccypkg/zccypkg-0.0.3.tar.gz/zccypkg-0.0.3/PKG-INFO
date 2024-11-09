@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: zccypkg
+Version: 0.0.3
+Summary: First pypi library
+License: MIT
+Author: Kenny James
+Author-email: info@zone-connect.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Creating a Pypi Library
+
+Let's learn how to create and publish a library to pypi using Github Actions.
+
+## Publishing Library 
+
+You can use API keys etc but apparently the best way is to use Trusted Publishers like Github.
+
+So, log into your 
+
+- `Pypi Account > Publishing`
+
+- Here you will see Github, as one of the publishers. 
+
+- Add necessary details to link your library to Github repo.
+
+You are all done.
+
+## Tag A Release
+
+```shell
+git tag 0.0.0
+
+git push origin --tags
+```
+
+## Release a patch
+
+```shell
+poetry version patch
+
+```
+
