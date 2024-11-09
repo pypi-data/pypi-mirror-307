@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: datalake_sync
+Version: 0.1.0
+Summary: ADLS to Unity Catalog pipeline package
+Home-page: https://github.com/friscoanalytics-com/ADLS-Connector
+Author-email: sagar@friscoanalytics.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark>=3.0.0
+
+# ADLS-Connector
