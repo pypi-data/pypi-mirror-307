@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "nchd"
+version = "0.0.1"
+description="A colourised implementation of ncdump with the intention of making life a bit easier."
+authors = [
+    {name = "Charles Turner", email = "charles.turner@anu.edu.au"}
+]
+license = {text="Apache Software License 2.0"}
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "rich",
+    "netcdf4",
+]
+
+
+[project.urls]
+homepage = "https://github.com/charles-turner-1/ExcellAint"
+
+[project.scripts]
+nchd = "nchd.nchd:main"
+
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-sugar",
+    "pytest-watcher",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

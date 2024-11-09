@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/nchd/__init__.py
+src/nchd/nchd.py
+src/nchd.egg-info/PKG-INFO
+src/nchd.egg-info/SOURCES.txt
+src/nchd.egg-info/dependency_links.txt
+src/nchd.egg-info/entry_points.txt
+src/nchd.egg-info/requires.txt
+src/nchd.egg-info/top_level.txt
+tests/test_main.py
