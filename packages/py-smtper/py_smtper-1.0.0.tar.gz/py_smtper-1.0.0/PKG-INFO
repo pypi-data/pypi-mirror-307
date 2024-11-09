@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: py-smtper
+Version: 1.0.0
+Summary: python client library for sending smtp request (emails) easily.
+Home-page: https://github.com/alisharify7/py-smtper
+Author: ali sharify
+Author-email: alisharifyofficial@gmail.com
+License: MIT
+Keywords: smtp,python-email,send-email,py-smtper,py-mailer,python-smtp-email
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+py-smtper
+===============
+
+🚀  py-smtper is a Python SMTP client for sending SMTP requests, with connection pooling and fallback option.
+---
+
+
+<img src="https://raw.githubusercontent.com/alisharify7/py-smtper/main/doc/smtper.png">
+
+Py-Smtper is a python client package that help you send smtp request (emails) easily.
+----
+
+
+🔨 How to install
+---
+    pip install p-smtper
+
+
+📍 how to use
+---
+
+1.0 create an instance of MailManager class
+---
+
+```python
+    from py_smtper import MailManager
+    mail_manager = MailManager(host, port, user, pass, use_ssl, etc)
+```
+
+## 2.0 send emails
+
+```python
+    mail_manager.send(service_name=, body=, subject=, receiver_email=)
+    mail_manager.send_bulk(subject=, body=, recipients=, service_name=)
+```
+
