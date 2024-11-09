@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vvmtools
+Version: 1.1.0
+Summary: This is a package for VVM simulation data loading, analysis, and plotting.
+Home-page: https://github.com/Aaron-Hsieh-0129/VVMTools.git
+Author: Aaron Hsieh, Shao-Yu Tseng
+Author-email: R12229025@ntu.edu.tw
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: netCDF4
+Requires-Dist: matplotlib
