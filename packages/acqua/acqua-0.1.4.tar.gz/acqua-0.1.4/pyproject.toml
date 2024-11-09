@@ -1,0 +1,86 @@
+[build-system]
+build-backend = 'hatchling.build'
+requires = [ 'hatchling' ]
+
+
+[project]
+authors = [
+  {email='aekasitt.g+github@siamintech.co.th', name='Sitt Guruvanich'},
+]
+classifiers = [
+  'Development Status :: 3 - Alpha',
+  'Environment :: Console',
+  'Intended Audience :: Developers',
+  'Intended Audience :: Financial and Insurance Industry',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: MacOS',
+  'Operating System :: MacOS :: MacOS 9',
+  'Operating System :: MacOS :: MacOS X',
+  'Operating System :: OS Independent',
+  'Operating System :: Unix',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'Programming Language :: Python :: 3 :: Only',
+  'Topic :: Office/Business :: Financial',
+  'Topic :: Office/Business :: Financial :: Investment',
+  'Topic :: Other/Nonlisted Topic',
+  'Topic :: Security :: Cryptography',
+]
+dependencies = [
+  'apscheduler >=3.10.4',
+  'blessed >=1.20.0',
+  'click >=8.1.7',
+  'docker >=6.1.3',
+  "numpy>=2.0.2",
+  'pydantic >=2.5.2',
+  "pygame>=2.6.1",
+  'pyyaml >=6.0.1',
+  'rich>=13.7.0',
+]
+description = ''
+homepage = 'https://github.com/aekasitt/acqua'
+include = [
+  {path='src/acqua/fullnode.yml', format=['sdist', 'wheel']},
+  {path='src/acqua/schemas.yml', format=['sdist', 'wheel']}
+]
+keywords = ['anonymous', 'bitcoin', 'cli', 'lightning', 'terminal', 'tui', 'ui', 'user-interface']
+license = 'MIT'
+name = 'acqua'
+readme = 'README.md'
+repository = 'https://github.com/aekasitt/acqua'
+requires-python = '>=3.9'
+version = '0.1.4'
+
+
+[project.scripts]
+acqua = 'acqua.core:cli'
+
+
+[tool.mypy]
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+
+[tool.ruff]
+indent-width = 2
+line-length = 100
+target-version = 'py38'
+
+
+[tool.ruff.lint.per-file-ignores]
+'__init__.py' = ['F401'] # Ignore unused imports
+
+
+[tool.uv]
+dev-dependencies = [
+  'mypy >=1.7.1',
+  'pytest >=7.4.3',
+  'ruff >=0.2.2',
+  'types-pyyaml >=6.0.12.12',
+]
