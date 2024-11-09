@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: hytek
+Version: 0.0.5
+Summary: A simple tool for parsing and manipulating HyTek files.
+Author: plun1331
+License: BSD 3-Clause
+Project-URL: Homepage, https://github.com/plun1331/HyTek
+Project-URL: Source, https://github.com/plun1331/HyTek
+Project-URL: Tracker, https://github.com/plun1331/HyTek/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HyTek
+
+Parses, reads, and writes HyTek meet entries and results files.
+
+## File Format Support
+| Format | Reading | Writing |               Notes                |
+|:------:|:-------:|:-------:|:----------------------------------:|
+|  .hy3  |    ✅    |    ❌    | Only tested with meet result files |
+|  .sd3  |    ❌    |    ❌    |                                    |
+|  .cl2  |    ❌    |    ❌    |                                    |
+|  .ev3  |    ❌    |    ❌    |                                    |
+|  .hyv  |    ❌    |    ❌    |                                    |
+
+## Installation
+
+```bash
+pip install hytek
+```
+
+## Usage
+
+```python
+import hytek
+
+# for a .hy3 file
+file = hytek.Hy3File("file.hy3")
+file.read()
+
+# .hy3 in a zip file
+file = hytek.Hy3File("file.hy3")  # if left blank for zip files, will detect first .hy3 file
+file.read_zip("test.zip")
+```
