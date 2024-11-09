@@ -1,0 +1,93 @@
+[project]
+name = 'onnx2torch2'
+version = '2.2.0'
+license = {file = 'LICENSE'}
+description = 'ONNX to PyTorch converter'
+readme = {file = 'README.md', content-type = 'text/markdown'}
+keywords = ['AI', 'onnx', 'torch', 'onnx2torch2', 'converters']
+authors = [{name = 'untetherai', email = 'info@untether.ai'}]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: Apache Software License',
+    'Environment :: Console',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython'
+]
+requires-python = '>=3.8'
+dependencies = [
+    'numpy>=1.16.4',
+    'onnx>=1.9.0',
+    'torch>=1.8.0',
+    'torchvision>=0.9.0',
+]
+
+[project.optional-dependencies]
+dev = [
+    'Pillow',
+    'black',
+    'build',
+    'googledrivedownloader',
+    'isort',
+    'onnxruntime',
+    'pre-commit',
+    'pylint',
+    'pytest',
+    'requests',
+    'tqdm',
+]
+
+[project.urls]
+Repository = 'https://github.com/untetherai/onnx2torch2'
+Issues = 'https://github.com/untetherai/onnx2torch2/issues'
+
+[tool.setuptools.packages.find]
+include = ['onnx2torch2*']
+
+[tool.commitizen]
+name = 'cz_conventional_commits'
+tag_format = '$version'
+version_scheme = 'pep440'
+version_provider = 'pep621'
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.docformatter]
+recursive = true
+wrap-summaries = 0
+wrap-descriptions = 0
+blank = true
+black = true
+pre-summary-newline = true
+
+[tool.yamlfix]
+line_length = 120
+explicit_start = false
+sequence_style = 'keep_style'
+whitelines = 1
+section_whitelines = 1
+
+[tool.black]
+line-length = 120
+target-version = ['py38', 'py39', 'py310']
+include = '\.pyi?$'
+skip-string-normalization = true
+
+[tool.isort]
+profile = 'black'
+line_length = 120
+ensure_newline_before_comments = true
+force_single_line = true
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
