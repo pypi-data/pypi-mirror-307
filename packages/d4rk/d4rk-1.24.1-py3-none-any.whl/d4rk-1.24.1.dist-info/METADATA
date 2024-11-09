@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: d4rk
+Version: 1.24.1
+Summary: A Python framework with dark mode and custom icons.
+Author: Hussain Luai
+Author-email: hxolotl15@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# D4RK Framework
+
+D4RK is a Python framework designed to manage themes (dark and light modes), customize app icons, and display popup ads.
+
+## Installation
+
+To install the D4RK framework, run the following command:
+
