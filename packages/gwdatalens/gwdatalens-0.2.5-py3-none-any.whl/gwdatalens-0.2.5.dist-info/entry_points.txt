@@ -1,0 +1,3 @@
+[console_scripts]
+cp_gwdatalens_to_broconnector = gwdatalens.cli:cp_gwdatalens_to_broconnector
+gwdatalens = gwdatalens.cli:cli_main
