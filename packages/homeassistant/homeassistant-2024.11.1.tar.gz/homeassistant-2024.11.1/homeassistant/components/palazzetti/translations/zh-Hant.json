@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "\u4e3b\u6a5f\u7aef"
+                },
+                "data_description": {
+                    "host": "\u8acb\u8f38\u5165 Palazzetti CBox \u4e3b\u6a5f\u7aef\u540d\u7a31\u6216\u4f4d\u5740\u3002"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "\u81ea\u52d5",
+                            "high": "\u9ad8\u901f",
+                            "silent": "\u975c\u97f3"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "\u7121\u6cd5\u9023\u63a5\u81f3\u88dd\u7f6e\u3002"
+        },
+        "invalid_fan_mode": {
+            "message": "\u98a8\u901f\u6a21\u5f0f {value} \u7121\u6548\u3002"
+        },
+        "invalid_target_temperatures": {
+            "message": "\u76ee\u6a19\u6eab\u5ea6 {value} \u7121\u6548\u3002"
+        },
+        "on_off_not_available": {
+            "message": "\u8a2d\u5099\u7121\u6cd5\u958b\u555f\u6216\u95dc\u9589\u3002"
+        }
+    }
+}

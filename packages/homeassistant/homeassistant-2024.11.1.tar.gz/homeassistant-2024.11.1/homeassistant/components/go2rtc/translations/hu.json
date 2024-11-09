@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_url": "\u00c9rv\u00e9nytelen URL",
+            "invalid_url_schema": "\u00c9rv\u00e9nytelen URL.  \nAz URL-nek `http://` vagy `https://` el\u0151taggal kell kezd\u0151dnie."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "A go2rtc p\u00e9ld\u00e1ny\u00e1nak URL-je."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "A go2rtc p\u00e9ld\u00e1ny\u00e1nak URL-je."
+                }
+            }
+        }
+    }
+}

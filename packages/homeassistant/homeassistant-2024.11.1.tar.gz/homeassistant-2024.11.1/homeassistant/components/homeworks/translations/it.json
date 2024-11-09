@@ -1,0 +1,14 @@
+{
+    "config": {
+        "step": {
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Porta",
+                    "username": "Nome utente"
+                }
+            }
+        }
+    }
+}

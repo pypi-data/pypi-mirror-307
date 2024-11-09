@@ -1,0 +1,516 @@
+{
+    "common": {
+        "confirmed": "Kinnitatud",
+        "present": "Kohal"
+    },
+    "config": {
+        "abort": {
+            "missing_configuration": "Osis pole seadistatud. Palun vaata dokumentatsiooni.",
+            "no_url_available": "URL pole saadaval. Selle t\u00f5rke kohta teabe saamiseks vaata [spikrijaotis]({docs_url})",
+            "oauth_error": "Saadi sobimatud loaandmed.",
+            "oauth_failed": "T\u00f5rge juurdep\u00e4\u00e4sut\u00f5endi hankimisel.",
+            "oauth_timeout": "OAuthi loa lahendamise ajal\u00f5pp.",
+            "oauth_unauthorized": "OAuthi tuvastaimisviga juurdep\u00e4\u00e4sut\u00f5endi hankimisel."
+        },
+        "create_entry": {
+            "default": "Tuvastamine \u00f5nnestus"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Vali tuvastusmeetod"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "battery_charging_state": {
+                "name": "Aku laadimise olek"
+            },
+            "charging_connection": {
+                "name": "Laadimis\u00fchendus"
+            },
+            "chiller_door": {
+                "name": "Jahuti uks"
+            },
+            "dust_box_inserted": {
+                "name": "Tolmukast",
+                "state": {
+                    "off": "Pole sisestatud",
+                    "on": "Sisestatud"
+                }
+            },
+            "freezer_door": {
+                "name": "S\u00fcgavk\u00fclmiku uks"
+            },
+            "lifted": {
+                "name": "T\u00f5stetud"
+            },
+            "local_control": {
+                "name": "Kohalik juhtimine"
+            },
+            "lost": {
+                "name": "Kadunud"
+            },
+            "refrigerator_door": {
+                "name": "K\u00fclmiku uks"
+            },
+            "remote_control": {
+                "name": "Kaugjuhtimine"
+            },
+            "remote_start": {
+                "name": "Kaugk\u00e4ivitus"
+            }
+        },
+        "light": {
+            "ambient_light": {
+                "name": "\u00dcmbritsev valgus"
+            },
+            "cooking_lighting": {
+                "name": "Funktsionaalne valgus"
+            },
+            "external_light": {
+                "name": "V\u00e4line valgus"
+            },
+            "internal_light": {
+                "name": "Seesmine valgus"
+            }
+        },
+        "number": {
+            "bottle_cooler_setpoint_temperature": {
+                "name": "Pudelijahuti temperatuur"
+            },
+            "chiller_left_setpoint_temperature": {
+                "name": "Vasaku jahuti temperatuur"
+            },
+            "chiller_right_setpoint_temperature": {
+                "name": "Parema jahuti temperatuur"
+            },
+            "chiller_setpoint_temperature": {
+                "name": "Jahuti temperatuur"
+            },
+            "freezer_setpoint_temperature": {
+                "name": "S\u00fcgavk\u00fclmiku temperatuur"
+            },
+            "refrigerator_setpoint_temperature": {
+                "name": "K\u00fclmkapi temperatuur"
+            },
+            "wine_compartment_2_setpoint_temperature": {
+                "name": "Veinikambri 2 temperatuur"
+            },
+            "wine_compartment_3_setpoint_temperature": {
+                "name": "Veinikambri 3 temperatuur"
+            },
+            "wine_compartment_setpoint_temperature": {
+                "name": "Veiniruumi temperatuur"
+            }
+        },
+        "sensor": {
+            "alarm_sensor_coffee_bean_container": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "alarm_sensor_coffee_drip_tray": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "alarm_sensor_coffee_water_tank": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "alarm_sensor_freezer": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "alarm_sensor_fridge": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "alarm_sensor_temp": {
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "battery_level": {
+                "name": "Aku laetus"
+            },
+            "bean_container_empty": {
+                "name": "Oakonteiner t\u00fchi",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "camera_state": {
+                "name": "Kaamera olek",
+                "state": {
+                    "disabled": "Keelatud",
+                    "error": "T\u00f5rge",
+                    "ready": "Valmis",
+                    "sleeping": "Ootel",
+                    "streamingcloud": "Voogesituse pilvest",
+                    "streaminglocal": "Kohalik voogesitus",
+                    "streaminglocal_and_cloud": "Kohaliku ja pilve voogesitus"
+                }
+            },
+            "coffee_and_milk_counter": {
+                "name": "Kohvi- ja piimatasse"
+            },
+            "coffee_counter": {
+                "name": "Kohvitasse"
+            },
+            "door": {
+                "name": "Uks",
+                "state": {
+                    "closed": "Suletud",
+                    "locked": "Lukus",
+                    "open": "Avatud"
+                }
+            },
+            "drip_tray_full": {
+                "name": "Tilgaalus t\u00e4is",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "freezer_door_alarm": {
+                "name": "S\u00fcgavk\u00fclmiku ukse alarm",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "present": "Kohal"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "S\u00fcgavk\u00fclmiku temperatuuri alarm",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "frothy_milk_counter": {
+                "name": "Vahustatud piima tasse"
+            },
+            "hot_milk_counter": {
+                "name": "Kuuma piima tasse"
+            },
+            "hot_water_counter": {
+                "name": "Kuum vesi"
+            },
+            "hot_water_cups_counter": {
+                "name": "Kuuma vee tasse"
+            },
+            "last_selected_map": {
+                "name": "Viimati valitud kaart",
+                "state": {
+                    "map1": "Kaart 1",
+                    "map2": "Kaart 2",
+                    "map3": "Kaart 3",
+                    "tempmap": "Ajutine kaart"
+                }
+            },
+            "milk_counter": {
+                "name": "Piima tasse"
+            },
+            "operation_state": {
+                "name": "T\u00f6\u00f6re\u017eiim",
+                "state": {
+                    "aborting": "Katkestamine",
+                    "actionrequired": "Vajalik on toiming",
+                    "delayedstart": "Viivitatud algus",
+                    "error": "T\u00f5rge",
+                    "finished": "L\u00f5petanud",
+                    "inactive": "Passiivne",
+                    "pause": "Peatatud",
+                    "ready": "Valmis",
+                    "run": "K\u00e4ivita"
+                }
+            },
+            "powder_coffee_counter": {
+                "name": "Jahvatatud kohv"
+            },
+            "program_finish_time": {
+                "name": "Programmi l\u00f5puaeg"
+            },
+            "program_progress": {
+                "name": "Programmi edenemine"
+            },
+            "refrigerator_door_alarm": {
+                "name": "K\u00fclmkapi ukse h\u00e4ire",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "name": "Loputusvahend peaaegu t\u00fchi",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "ristretto_espresso_counter": {
+                "name": "Ristretto espresso tassid"
+            },
+            "salt_nearly_empty": {
+                "name": "Sool on peaaegu otsas",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Veepaak on t\u00fchi",
+                "state": {
+                    "confirmed": "Kinnitatud",
+                    "off": "V\u00e4ljas",
+                    "present": "Kohal"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Lapselukk"
+            },
+            "cup_warmer": {
+                "name": "Tassi soojendaja"
+            },
+            "dispenser_enabled": {
+                "name": "Dosaator",
+                "state": {
+                    "off": "Keelatud",
+                    "on": "Lubatud"
+                }
+            },
+            "door_assistant_freezer": {
+                "name": "S\u00fcgavk\u00fclmiku ukse assistent"
+            },
+            "door_assistant_fridge": {
+                "name": "K\u00fclmkapi ukse assistent"
+            },
+            "eco_mode": {
+                "name": "\u00d6kore\u017eiim"
+            },
+            "freezer_super_mode": {
+                "name": "S\u00fcgavk\u00fclmiku superre\u017eiim"
+            },
+            "fresh_mode": {
+                "name": "V\u00e4rske re\u017eiim"
+            },
+            "power": {
+                "name": "V\u00f5imsus"
+            },
+            "refrigerator_super_mode": {
+                "name": "K\u00fclmiku superre\u017eiim"
+            },
+            "sabbath_mode": {
+                "name": "Hingamisp\u00e4eva re\u017eiim"
+            },
+            "vacation_mode": {
+                "name": "Puhkuse re\u017eiim"
+            }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "\u00c4ratuskell"
+            }
+        }
+    },
+    "exceptions": {
+        "power_off": {
+            "message": "Viga seadme {appliance_name} v\u00e4ljal\u00fclitamisel v\u00e4\u00e4rtusega \" {value} \": {description}"
+        },
+        "power_on": {
+            "message": "Viga seadme {appliance_name} sissel\u00fclitamisel: {description}"
+        },
+        "select_light_custom_color": {
+            "message": "Viga objekti {entity_id} kohandatud v\u00e4rvi valimisel: {description}"
+        },
+        "set_light_brightness": {
+            "message": "Viga objekti {entity_id} heleduse seadistamisel: {description}"
+        },
+        "set_light_color": {
+            "message": "Viga objekti {entity_id} v\u00e4rvi m\u00e4\u00e4ramisel: {description}"
+        },
+        "set_light_effect": {
+            "message": "Viga \u00fcksuse {entity_id} efekti m\u00e4\u00e4ramisel: {description}"
+        },
+        "set_setting": {
+            "message": "Viga kui prooviti m\u00e4\u00e4rata \"{value}\" s\u00e4ttele \"{key}\" seadmel {entity_id}: {description}"
+        },
+        "start_program": {
+            "message": "Viga programmi {program} k\u00e4ivitamisel: {description}"
+        },
+        "stop_program": {
+            "message": "Viga programmi {program} peatamisel: {description}"
+        },
+        "turn_off": {
+            "message": "Viga {entity_id} ( {key} ) v\u00e4ljal\u00fclitamisel: {description}"
+        },
+        "turn_off_light": {
+            "message": "Viga {entity_id} v\u00e4ljal\u00fclitamisel: {description}"
+        },
+        "turn_off_not_supported": {
+            "message": "{appliance_name} ei toeta v\u00e4ljal\u00fclitamist ega ootere\u017eiimi sisenemist."
+        },
+        "turn_on": {
+            "message": "Viga {entity_id} ( {key} ) sissel\u00fclitamisel: {description}"
+        },
+        "turn_on_light": {
+            "message": "Viga {entity_id} sissel\u00fclitamisel: {description}"
+        },
+        "unable_to_retrieve_turn_off": {
+            "message": "Seadet {appliance_name} ei saa v\u00e4lja l\u00fclitada kuna selle v\u00e4ljal\u00fclitamise v\u00f5i ootere\u017eiimi sisenemise tuge ei \u00f5nnestunud kindlaks teha."
+        }
+    },
+    "issues": {
+        "deprecated_binary_common_door_sensor": {
+            "description": "Binaarset uksesensorit `{entity}`, mis on vananenud, kasutatakse j\u00e4rgmistes automatiseerimistes v\u00f5i skriptides:\n{items}\n\nAnduriobjekt on saadaval t\u00e4iendavate v\u00f5imalike seisunditega ja seda tuleks edaspidi kasutada; kasuta seda \u00fclaltoodud automatiseerimistes v\u00f5i skriptides, et seda probleemi parandada.",
+            "title": "M\u00f5nes automatiseerimises v\u00f5i skriptis tuvastati aegunud binaarne ukseandur"
+        }
+    },
+    "services": {
+        "change_setting": {
+            "description": "Muudab s\u00e4tet.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                },
+                "key": {
+                    "description": "S\u00e4tte v\u00f5ti.",
+                    "name": "V\u00f5ti"
+                },
+                "value": {
+                    "description": "S\u00e4tte v\u00e4\u00e4rtus.",
+                    "name": "V\u00e4\u00e4rtus"
+                }
+            },
+            "name": "Muuda s\u00e4tteid"
+        },
+        "pause_program": {
+            "description": "Peatab k\u00e4imasoleva programmi.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                }
+            },
+            "name": "Programmi peatamine"
+        },
+        "resume_program": {
+            "description": "J\u00e4tkab peatatud programmi.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                }
+            },
+            "name": "J\u00e4tka programmi"
+        },
+        "select_program": {
+            "description": "Valib programmi ilma seda k\u00e4ivitamata.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                },
+                "key": {
+                    "description": "Valiku v\u00f5ti.",
+                    "name": "Valikuline v\u00f5ti"
+                },
+                "program": {
+                    "description": "Valitav programm.",
+                    "name": "Programm"
+                },
+                "unit": {
+                    "description": "Valiku \u00fchik.",
+                    "name": "Valiku \u00fchik"
+                },
+                "value": {
+                    "description": "Valiku v\u00e4\u00e4rtus.",
+                    "name": "Valiku v\u00e4\u00e4rtus"
+                }
+            },
+            "name": "Vali programm"
+        },
+        "set_option_active": {
+            "description": "M\u00e4\u00e4rab aktiivse programmi suvandi.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                },
+                "key": {
+                    "description": "Valiku v\u00f5ti.",
+                    "name": "V\u00f5ti"
+                },
+                "value": {
+                    "description": "Valiku v\u00e4\u00e4rtus.",
+                    "name": "V\u00e4\u00e4rtus"
+                }
+            },
+            "name": "M\u00e4\u00e4ra aktiivse programmi valik"
+        },
+        "set_option_selected": {
+            "description": "M\u00e4\u00e4rab valitud programmi jaoks suvandi.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                },
+                "key": {
+                    "description": "Valiku v\u00f5ti.",
+                    "name": "V\u00f5ti"
+                },
+                "value": {
+                    "description": "Valiku v\u00e4\u00e4rtus.",
+                    "name": "V\u00e4\u00e4rtus"
+                }
+            },
+            "name": "M\u00e4\u00e4ra valitud programmi valikud"
+        },
+        "start_program": {
+            "description": "Valib programmi ja k\u00e4ivitab selle.",
+            "fields": {
+                "device_id": {
+                    "description": "Seadme ID.",
+                    "name": "Seadme ID"
+                },
+                "key": {
+                    "description": "Valiku v\u00f5ti.",
+                    "name": "Valikuline v\u00f5ti"
+                },
+                "program": {
+                    "description": "Valitav programm.",
+                    "name": "Programm"
+                },
+                "unit": {
+                    "description": "Valiku \u00fchik.",
+                    "name": "Valiku \u00fchik"
+                },
+                "value": {
+                    "description": "Valiku v\u00e4\u00e4rtus.",
+                    "name": "Valiku v\u00e4\u00e4rtus"
+                }
+            },
+            "name": "K\u00e4ivita programm"
+        }
+    }
+}

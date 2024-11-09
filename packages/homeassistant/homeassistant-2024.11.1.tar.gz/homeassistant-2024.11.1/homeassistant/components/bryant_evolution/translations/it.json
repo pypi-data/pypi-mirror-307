@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "La riconfigurazione \u00e8 stata completata con successo"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "filename": "Nome del file della porta seriale"
+                }
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "filename": "Nome del file della porta seriale"
+                }
+            },
+            "user": {
+                "data": {
+                    "filename": "Nome del file della porta seriale"
+                }
+            }
+        }
+    }
+}

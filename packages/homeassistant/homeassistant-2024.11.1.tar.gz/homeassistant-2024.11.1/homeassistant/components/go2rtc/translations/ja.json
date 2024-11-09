@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "\u63a5\u7d9a\u306b\u5931\u6557\u3057\u307e\u3057\u305f",
+            "invalid_url": "\u7121\u52b9\u306aURL",
+            "invalid_url_schema": "\u7121\u52b9\u306a URL \u30b9\u30ad\u30fc\u30e0\u3067\u3059\u3002URL \u306f `http://` \u307e\u305f\u306f `https://` \u3067\u59cb\u307e\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002"
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "go2rtc \u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306e URL\u3002"
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "go2rtc \u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306e URL\u3002"
+                }
+            }
+        }
+    }
+}

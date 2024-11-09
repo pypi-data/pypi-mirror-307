@@ -1,0 +1,27 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "invalid_url": "URL no v\u00e1lida",
+            "invalid_url_schema": "Esquema de URL no v\u00e1lido.\nLa URL debe empezar por `http://` o `https://`."
+        },
+        "step": {
+            "host": {
+                "data": {
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "La URL de tu instancia go2rtc."
+                }
+            },
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "La URL de tu instancia go2rtc."
+                }
+            }
+        }
+    }
+}

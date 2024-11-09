@@ -1,0 +1,14 @@
+{
+    "config": {
+        "step": {
+            "url": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "L'URL de votre instance go2rtc"
+                }
+            }
+        }
+    }
+}

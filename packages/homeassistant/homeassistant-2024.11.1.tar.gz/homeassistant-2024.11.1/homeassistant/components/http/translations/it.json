@@ -1,0 +1,22 @@
+{
+    "exceptions": {
+        "no_external_url_available": {
+            "message": "Nessun URL esterno disponibile"
+        },
+        "strict_connection_not_enabled_non_cloud": {
+            "message": "La connessione rigorosa non \u00e8 abilitata per le richieste non cloud"
+        }
+    },
+    "issues": {
+        "ssl_configured_without_configured_urls": {
+            "description": "Home Assistant ha rilevato che SSL \u00e8 stato impostato sulla tua istanza, tuttavia, non \u00e8 stato impostato alcun URL Internet esterno personalizzato. \n\nCi\u00f2 potrebbe causare un comportamento imprevisto. La conversione del testo in voce potrebbe non funzionare e le integrazioni potrebbero non essere in grado di riconnettersi correttamente alla tua istanza. \n\nPer risolvere questo problema, vai su Impostazioni > Sistema > Rete; nella sezione \"URL Home Assistant\", configura i tuoi nuovi indirizzi \"Internet\" e \"Rete locale\" che corrispondono alla tua nuova configurazione SSL.",
+            "title": "SSL \u00e8 configurato senza un URL esterno o interno"
+        }
+    },
+    "services": {
+        "create_temporary_strict_connection_url": {
+            "description": "Crea un URL di connessione rigoroso temporaneo, che pu\u00f2 essere utilizzato per effettuare il login su un altro dispositivo.",
+            "name": "Crea un URL temporaneo di connessione rigorosa"
+        }
+    }
+}
