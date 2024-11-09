@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+bais.c
+bais.h
+baos.c
+baos.h
+config.h
+objectserialize.c
+setup.py
+pg_objectserialization.egg-info/PKG-INFO
+pg_objectserialization.egg-info/SOURCES.txt
+pg_objectserialization.egg-info/dependency_links.txt
+pg_objectserialization.egg-info/top_level.txt
