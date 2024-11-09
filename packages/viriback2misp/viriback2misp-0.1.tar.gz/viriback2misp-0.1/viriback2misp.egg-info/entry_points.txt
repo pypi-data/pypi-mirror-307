@@ -1,0 +1,2 @@
+[console_scripts]
+viriback2misp = viriback2misp.main:main
