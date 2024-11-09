@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "confcls"
+version = "2.1.0"
+description = "Class instance configurator"
+authors = [
+    "Václav Krpec <vencik@razdva.cz>",
+]
+packages = [
+    { include = "confcls" },
+]
+readme = "README.md"
+keywords = ["config", "configuration"]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/vencik/confcls"
+Repository = "https://github.com/vencik/confcls"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+smart-open = {version = "^7.0.4", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.0"
+pylint = "^3.2.0"
+mypy = "^1.10.0"
+twine = "^5.0.0"
+
+[tool.poetry.extras]
+all = ["smart-open"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
