@@ -1,0 +1,28 @@
+[project]
+name = "hytek"
+version = "0.0.5"
+description = "A simple tool for parsing and manipulating HyTek files."
+readme = { content-type = "text/markdown", file = "README.md" }
+requires-python = ">=3.12"
+license = { text = "BSD 3-Clause" }
+authors = [
+    { name = "plun1331" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/plun1331/HyTek"
+Source = "https://github.com/plun1331/HyTek"
+Tracker = "https://github.com/plun1331/HyTek/issues"
