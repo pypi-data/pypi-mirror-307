@@ -1,0 +1,6 @@
+include README.rst LICENSE NOTICE
+include pyproject.toml
+include configparserc/py.typed
+include configparserc/__init__.pyi
+include include/_config.h
+include include/fix.h
