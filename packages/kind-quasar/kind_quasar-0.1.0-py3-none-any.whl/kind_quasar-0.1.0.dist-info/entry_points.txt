@@ -1,0 +1,2 @@
+[console_scripts]
+kind-quasar = kind_quasar.cli:main
