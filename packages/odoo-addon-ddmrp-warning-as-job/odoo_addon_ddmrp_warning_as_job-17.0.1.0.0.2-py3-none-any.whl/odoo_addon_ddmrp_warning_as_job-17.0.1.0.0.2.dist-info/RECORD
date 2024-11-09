@@ -1,0 +1,17 @@
+odoo/addons/ddmrp_warning_as_job/README.rst,sha256=fXjWb9Y_mhBTm1I3ydturm99ozi_JPbpv9VvrEH-vvc,2933
+odoo/addons/ddmrp_warning_as_job/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/ddmrp_warning_as_job/__manifest__.py,sha256=7459VgxDR6fzXvI-66FOHfht8gE46ogevGiqkOhPsKk,564
+odoo/addons/ddmrp_warning_as_job/data/queue_job_function_data.xml,sha256=_sRUW8MYB2vXFeFZXsmI8F9bMJJ0AU5Z8K2CiEnzv8Q,511
+odoo/addons/ddmrp_warning_as_job/i18n/ddmrp_warning_as_job.pot,sha256=lPJhiUuXpXOGiIq4fcwjHPzjdQ_fB3rWvj75ZLx3lbM,494
+odoo/addons/ddmrp_warning_as_job/models/__init__.py,sha256=Hd0LrvLuhLozaupfQuqivl-DwbqMHtqIU6PB-2SUqRY,27
+odoo/addons/ddmrp_warning_as_job/models/stock_buffer.py,sha256=VxrbLwx6aqT5FybL7nmQd9b6-a3Inn_uY-9mqzINFcs,1045
+odoo/addons/ddmrp_warning_as_job/readme/CONTRIBUTORS.md,sha256=wIhalu1-Iy7i7I6aWoPYvyWjq6u_8BolDemWs91g8r8,45
+odoo/addons/ddmrp_warning_as_job/readme/DESCRIPTION.md,sha256=vdNtGfKTA6OVKPyAWlTx2jRs_FtEWxz3-fFD6IpZXsM,211
+odoo/addons/ddmrp_warning_as_job/static/description/icon.png,sha256=2pc4LhALR0nxAnzhgc7x26Bz3zHDqMPK8UWqYRDOYbQ,2505
+odoo/addons/ddmrp_warning_as_job/static/description/index.html,sha256=7BOxIcECErDwTa2WiTpQVoHzPb8kdV-dvhcwzmzb3-8,12315
+odoo/addons/ddmrp_warning_as_job/tests/__init__.py,sha256=BFMtOD7r3ej74XzHFtSsEkdRGtOGmTw5u31ZtHCNMOY,40
+odoo/addons/ddmrp_warning_as_job/tests/test_ddmrp_warning_as_job.py,sha256=uvfq2Rv4gyqahSC-nqn-X7vhqfNzdk0iMFQsO4sfIz8,1594
+odoo_addon_ddmrp_warning_as_job-17.0.1.0.0.2.dist-info/METADATA,sha256=zCwfNsO5PGDKvklEWmZ4fRgZcFDI9oKrwCSZTNMXvrg,3638
+odoo_addon_ddmrp_warning_as_job-17.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_ddmrp_warning_as_job-17.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_ddmrp_warning_as_job-17.0.1.0.0.2.dist-info/RECORD,,
