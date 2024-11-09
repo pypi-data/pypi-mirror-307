@@ -1,0 +1,11 @@
+README.md
+setup.py
+github_downloader/__init__.py
+github_downloader/cli.py
+github_downloader/downloader.py
+github_folder_downloader.egg-info/PKG-INFO
+github_folder_downloader.egg-info/SOURCES.txt
+github_folder_downloader.egg-info/dependency_links.txt
+github_folder_downloader.egg-info/entry_points.txt
+github_folder_downloader.egg-info/requires.txt
+github_folder_downloader.egg-info/top_level.txt
