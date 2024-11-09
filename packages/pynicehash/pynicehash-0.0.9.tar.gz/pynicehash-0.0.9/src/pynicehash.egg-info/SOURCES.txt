@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/pynicehash/__init__.py
+src/pynicehash/mining_status.py
+src/pynicehash/miningdevice.py
+src/pynicehash/miningrig.py
+src/pynicehash/nicehash.py
+src/pynicehash.egg-info/PKG-INFO
+src/pynicehash.egg-info/SOURCES.txt
+src/pynicehash.egg-info/dependency_links.txt
+src/pynicehash.egg-info/requires.txt
+src/pynicehash.egg-info/top_level.txt
