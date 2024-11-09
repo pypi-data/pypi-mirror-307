@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "todoforge"
+version = "v1.0.0"
+description = ""
+authors = ["Hemanth <hemanthhari2000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.12.5"
+pydantic = "^2.9.2"
+black = "^24.10.0"
+ruff = "^0.7.1"
+pre-commit = "^4.0.1"
+mypy = "^1.13.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+coverage = "^7.6.4"
+
+[tool.black]
+skip-string-normalization = true
+line-length = 88
+extend-exclude = '''
+/(
+  | .env
+  | .venv
+  | venv
+  | notebooks
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+exclude = [".env", ".venv", "venv", "notebooks"]
+
+[tool.ruff.lint]
+fixable = ["I"]
+ignore = ["E501"]
+select = ["E", "F", "I", "W"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tdf = "todoforge.main:run"
