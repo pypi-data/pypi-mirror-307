@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brave-siren"
+version = "0.1.0"
+description = "A package to generate receipts from order data in JSON format."
+authors = [{ name = "Semyon Drozdov", email = "s.drozdov@edu.centraluniversity.ru" }]
+
+[project.scripts]
+brave-siren = "brave_siren.cli:main"

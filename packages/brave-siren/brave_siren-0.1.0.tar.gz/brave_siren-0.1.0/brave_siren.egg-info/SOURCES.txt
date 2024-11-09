@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+brave_siren/__init__.py
+brave_siren/cli.py
+brave_siren/generator.py
+brave_siren.egg-info/PKG-INFO
+brave_siren.egg-info/SOURCES.txt
+brave_siren.egg-info/dependency_links.txt
+brave_siren.egg-info/entry_points.txt
+brave_siren.egg-info/top_level.txt

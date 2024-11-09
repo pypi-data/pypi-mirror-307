@@ -1,0 +1,2 @@
+[console_scripts]
+brave-siren = brave_siren.cli:main
