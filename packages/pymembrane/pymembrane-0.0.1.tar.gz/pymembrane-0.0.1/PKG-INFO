@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pymembrane
+Version: 0.0.1
+Summary: Python library for simulating and optimizing membrane-based food and wastewater treatment processes
+Home-page: https://github.com/ROMDHANA/pymembrane
+Author: Hedi ROMDHANA
+Author-email: hedi.romdhana@agroparistech.fr
+License: GPLv3
+Keywords: wastewater,wastewater treatment,membrane,food process,simulation,optimization
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: SALib>=1.3.13
+Requires-Dist: CoolProp>=6.4.1
+Requires-Dist: wxPython>=4.1.1
+Requires-Dist: pymoo>=0.4.2.2
+Requires-Dist: tabulate>=0.8.9
+
+## Simulation of solute mass transfer in a spiral membrane
