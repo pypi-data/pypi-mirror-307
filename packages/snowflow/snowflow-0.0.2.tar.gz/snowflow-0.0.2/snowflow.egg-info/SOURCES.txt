@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+snowflow/__init__.py
+snowflow/commands.py
+snowflow/runner.py
+snowflow/scripts.py
+snowflow/snowflow.py
+snowflow.egg-info/PKG-INFO
+snowflow.egg-info/SOURCES.txt
+snowflow.egg-info/dependency_links.txt
+snowflow.egg-info/entry_points.txt
+snowflow.egg-info/requires.txt
+snowflow.egg-info/top_level.txt
