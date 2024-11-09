@@ -1,0 +1,2 @@
+[console_scripts]
+bucket = bucket.cli:main
