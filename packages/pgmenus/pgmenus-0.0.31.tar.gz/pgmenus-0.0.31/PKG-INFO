@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: pgmenus
+Version: 0.0.31
+Summary: A simple package to make menus inside pygame.
+Project-URL: Homepage, https://github.com/christianlde/pgmenus
+Project-URL: Issues, https://github.com/christianlde/pgmenus/issues
+Author-email: Chris D <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pg_menus
+ 
+Packaging for making :
+- Buttons
+- Label
+
+inside (Pygame)[https://pypi.org/search/?q=pygame]
