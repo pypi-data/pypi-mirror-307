@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: thinkup-cli
+Version: 1.1.6
+Requires-Dist: questionary
+Requires-Dist: requests
+Requires-Dist: prompt-toolkit
+Requires-Dist: oauth2client
+Requires-Dist: google-generativeai
+
