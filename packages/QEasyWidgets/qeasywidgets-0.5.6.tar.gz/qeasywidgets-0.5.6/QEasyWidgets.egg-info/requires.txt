@@ -1,0 +1,11 @@
+PySide6
+darkdetect
+tqdm
+psutil
+polars
+sqlalchemy
+nvidia-ml-py
+PyGithub
+
+[:platform_system == "Windows"]
+pywin32
