@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: amazon_product_search
+Version: 0.1
+Summary: A library to search products on amazon without using pa Api
+Home-page: https://github.com/ManojPanda3/amazon-product-search
+Author: Manojpanda
+Author-email: manojpandawork@gmail.com
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: requests==2.32.3
+
