@@ -1,0 +1,4 @@
+pets,budget,smoker,vegan,dining_budget
+True,[<LocationRange.MEDIUM: 'MEDIUM'>],False,False,"[<LocationRange.LOW: 'LOW'>, <LocationRange.MEDIUM: 'MEDIUM'>]"
+False,[],False,False,[]
+True,"[<LocationRange.LOW: 'LOW'>, <LocationRange.HIGH: 'HIGH'>]",False,True,[<LocationRange.MEDIUM: 'MEDIUM'>]
