@@ -1,0 +1,7 @@
+[bentoml.commands]
+comfyui = bentoml_comfyui.cli:comfyui_command
+
+[console_scripts]
+
+[gui_scripts]
+
