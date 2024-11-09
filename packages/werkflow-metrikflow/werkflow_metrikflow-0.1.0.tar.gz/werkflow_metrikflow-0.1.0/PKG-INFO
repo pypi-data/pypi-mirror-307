@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: werkflow-metrikflow
+Version: 0.1.0
+Summary: A library for processing and sending metrics.
+Author-email: Ada Lundhe <adalundhe@lundhe.audio>
+Project-URL: Homepage, https://github.com/adalundhe/werkflow-modules/tree/main/werkflow-metrikflow
+Keywords: pypi,cicd,python,setup,repo,project,migrate,monorepo,metrikflow,stats,stats-integrations,datadog,reporting
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: metrikflow
+Requires-Dist: werkflow
