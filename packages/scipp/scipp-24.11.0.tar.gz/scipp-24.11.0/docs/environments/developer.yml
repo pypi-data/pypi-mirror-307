@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2023 Scipp contributors (https://github.com/scipp)
+
+name: scipp-dev
+
+channels:
+  - conda-forge
+
+dependencies:
+  - cmake=3.30.3
+  - conan=1.64.1
+  - conda-build
+  - h5py
+  - hypothesis
+  - ipympl
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab_code_formatter
+  - matplotlib-base
+  - ninja
+  - numba
+  - numpy>=1.21
+  - pandas
+  - pip
+  - pooch
+  - pre-commit
+  - pytest
+  - python=3.10
+  - python-graphviz
+  - pythreejs
+  - pyyaml
+  - scipp::plopp
+  - scipy>=1.7.0
+  - tbb=2021.12.0
+  - tbb-devel=2021.12.0
+  - tox
+  - xarray
