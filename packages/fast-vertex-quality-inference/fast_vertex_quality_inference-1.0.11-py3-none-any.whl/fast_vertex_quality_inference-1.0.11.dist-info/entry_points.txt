@@ -1,0 +1,3 @@
+[console_scripts]
+fvqi=fast_vertex_quality_inference.cli:app
+
