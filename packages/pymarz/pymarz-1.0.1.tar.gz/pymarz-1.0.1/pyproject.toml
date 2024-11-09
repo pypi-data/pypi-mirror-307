@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pymarz"
+version = "1.0.1"
+description = "Asynchronous Python library for interacting with Marzban"
+authors = ["SSaeedhoseini"]
+license = "MIT License"
+readme = "README.md"
+repository = "https://github.com/SSaeedHoseini/pymarz"
+keywords = ["pymarz", "pymarz API", "MarzbanAPI", "Marzban"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.18.0"
+asgiref = "^3.2"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
