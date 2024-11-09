@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: emarketlib
+Version: 0.0.1
+Summary: Energy market toolbox
+Author-email: Florian Maurer <maurer@fh-aachen.de>
+License: AGPL-3.0-or-later
+Project-URL: homepage, https://github.com/assume-framework/emarketlib
+Project-URL: repository, https://github.com/assume-framework/emarketlib
+Keywords: agent based simulation,energy market,market simulation,simulation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: argcomplete>=3.1.4
+Requires-Dist: mango-agents>=1.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pyyaml>=6.0.2
+Provides-Extra: test
+Requires-Dist: ruff>=0.4.9; extra == "test"
+Requires-Dist: mypy>=1.1.1; extra == "test"
+Requires-Dist: matplotlib>=3.7.2; extra == "test"
+Requires-Dist: pytest>=7.2.2; extra == "test"
+Requires-Dist: pytest-cov>=4.1.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.1; extra == "test"
+
+<!--
+SPDX-FileCopyrightText: Florian Maurer
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+# emarketlib
+
+A Python library for simulating electricity markets and market mechanisms.
+
+## Features
+
+- Base market implementation with configurable market mechanisms
+- Multiple clearing algorithms:
+  - Pay-as-clear (uniform pricing)
+  - Pay-as-bid
+  - Average mechanism
+  - Trade reduction mechanism
+  - McAfee mechanism
+  - VCG auction mechanism
+- Support for:
+  - Market registration and validation
+  - Order book handling
+  - Market clearing
+  - Result storage and querying
+  - Grid topology data
+
+## Market Mechanisms
+
+### Pay-as-clear (Uniform Pricing)
+- All accepted orders receive the same clearing price
+- Clearing price determined by highest accepted supply order
+- Merit order based clearing with random tie-breaking
+
+### Pay-as-bid
+- Each accepted order is settled at its bid price
+- Merit order based clearing with random tie-breaking
+
+### Average Mechanism
+- Clearing price is average of highest accepted supply and lowest accepted demand price
+- Not incentive compatible but individually rational
+
+### Trade Reduction
+- Removes last matched trade to achieve incentive compatibility
+- Not efficient but individually rational
+- Budget balanced but not strongly budget balanced
+
+### McAfee Mechanism
+- Incentive compatible and individually rational
+- Weakly budget balanced
+- Not efficient when price conditions not met
+
+### VCG Auction
+- Incentive compatible and individually rational
+- Efficient but not budget balanced
+- Auctioneer must subsidize difference
+
+## Usage
+
+```python
+from emarketlib import MarketConfig
+from emarketlib.clearing_algorithms.simple import PayAsClearRole
+
+# Create market config
+config = MarketConfig(
+    market_id="day_ahead",
+    # Add configuration parameters
+)
+
+# Initialize market with clearing mechanism
+market = PayAsClearRole(config)
+```
+
+
+## Installation
+
+
+`pip install emarketlib`
