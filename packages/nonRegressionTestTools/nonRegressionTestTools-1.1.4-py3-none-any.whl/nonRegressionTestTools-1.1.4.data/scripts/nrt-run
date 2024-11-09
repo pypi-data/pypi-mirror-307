@@ -1,0 +1,108 @@
+#!python
+# -*- coding: utf-8 -*-
+#**************************************************
+__author__  = "Teddy Chantrait"
+__email__   = "teddy.chantrait@gmail.com"
+__status__  = "Development"
+__date__    = "ven. sept. 11 11:13:21 CEST 2015"
+__version__ = 3.0
+#**************************************************
+
+
+#////////////////////////////////////////////////////////////////////////////////////////////////////
+#                                     BEGINING OF THE CODE
+#////////////////////////////////////////////////////////////////////////////////////////////////////
+import os
+import sys
+import argparse
+from nonRegressionTestTools import genericTestBase as GTB
+from nonRegressionTestTools import filters
+from nonRegressionTestTools import config as CONF
+
+all_av_filter = list(filters.iTestFilter.implemented_filters.keys())
+all_av_filter.remove("Regex")
+all_av_filter.sort()
+
+descr ="Run test case(s) in the current test base."
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                 description=descr)
+
+parser.add_argument("-v", "--verb",
+                    help="verbosity level default({})\n\
+                    see NRT_VERBOSITY_LEVEL".format(CONF.conf.NRT_VERBOSITY_LEVEL),
+                    dest="verb",
+                    default=CONF.conf.NRT_VERBOSITY_LEVEL,
+                    type=int, choices=range(0, 4)
+                    )
+
+parser.add_argument("-l", "--local",
+                    help="run localy (do walk into into child directories)",
+                    action="store_true",
+                    dest="local",
+                    default=False
+                    )
+group = parser.add_mutually_exclusive_group()
+
+group.add_argument("-f",
+                    "--flag",
+                    help="select only case(s) whose flags matching one of the following; {}".format("\n".join(all_av_filter)),
+                    dest="filter_name",
+                    type=str,
+                    choices=all_av_filter.append(""),
+                    default="",
+                    )
+
+group.add_argument("-r", "--regex",
+                    help="apply regex filter on directory (only)",
+                    dest="regex",
+                    default="",
+                    type=str
+                    )
+
+parser.add_argument("--no-color",
+                    help="remove colors from the outputs (see NRT_COLOR_MODE)",
+                    action="store_true",
+                    dest="nocolor",
+                    default=False
+                    )
+
+parser.add_argument("--show-bilan",
+                    help="print the bilan at the end of the run phase",
+                    action="store_true",
+                    dest="showBilan",
+                    default=False
+                    )
+
+parser.add_argument("--exit-if-error",
+                    help="exit if a test not succed",
+                    action="store_true",
+                    dest="iserror",
+                    default=False
+                    )
+
+args = parser.parse_args()
+
+def run_me(args):
+    # local  or not?
+    CONF.conf.NRT_COLOR_MODE = 1
+    if args.nocolor:
+        CONF.conf.NRT_COLOR_MODE = 0
+
+    if args.regex:
+        args.filter_name = "Regex"
+
+    test_cases = GTB.test_cases(recursive=not(args.local),
+                                filter_name=args.filter_name,
+                                regex=args.regex,
+                                ext=CONF.conf.NRT_RECIPE_EXT,
+                                verbosity_level=args.verb,
+                                )
+    test_cases.run(False)
+    if args.showBilan:
+        test_cases.print_bilan()
+    if args.iserror:
+        exit(1)
+    return test_cases.statu
+
+statu = run_me(args)
