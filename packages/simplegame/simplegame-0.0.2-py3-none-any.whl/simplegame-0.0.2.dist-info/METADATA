@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: simplegame
+Version: 0.0.2
+Summary: A simple game package
+Project-URL: Homepage, https://github.com/szotms/simplegame
+Project-URL: Issues, https://github.com/szotms/simplegame/issues
+Author-email: Michal Szot <szot.net@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple game package.
