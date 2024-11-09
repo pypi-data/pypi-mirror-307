@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: monitor-controller
+Version: 0.1.0
+Summary: A Python application to control monitor input sources based on connected devices.
+Home-page: https://github.com/ate-pelsma/monitor_controller
+Author: Ate Pelsma
+Author-email: ate.pelsma@gmail.com
+License: MIT
+License-File: License.txt
+Requires-Dist: inquirer
+Requires-Dist: monitorcontrol
+Requires-Dist: wmi
+
