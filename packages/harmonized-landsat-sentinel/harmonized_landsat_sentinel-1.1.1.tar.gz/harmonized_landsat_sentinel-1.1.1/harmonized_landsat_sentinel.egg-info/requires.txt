@@ -1,0 +1,17 @@
+beautifulsoup4
+colored-logging
+earthaccess
+matplotlib
+numpy
+pandas
+pytest
+python-dateutil
+rasterio
+rasters
+requests
+sentinel-tiles
+shapely
+
+[dev]
+pytest>=6.0
+pytest-cov
