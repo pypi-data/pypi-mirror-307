@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "ionq"
+version = "0.0.0-alpha.5"
+description = "A Python library for interacting with IonQ's quantum computing API"
+authors = ["Spencer Churchill <churchill@ionq.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+requests = "~2"
+pydantic = "~1"
+
+matplotlib = {version = "~3", optional = true}
+pylatexenc = {version = "~2", optional = true}
+plotext = {version = "~5", optional = true}
+networkx = {version = "~3", optional = true}
+openqasm3 = {version = "~1", optional = true, extras = ["parser"]}
+qiskit = {version = "~1", optional = true}
+tqdm = {version = "~4", optional = true}
+
+
+[tool.poetry.group.dev.dependencies]
+responses = "^0.25.3"
+pytest = "^8.3.3"
+
+[tool.poetry.extras]
+hybrid = ["matplotlib", "pylatexenc", "plotext", "networkx", "openqasm3", "qiskit", "tqdm"]
+all = ["matplotlib", "pylatexenc", "plotext", "networkx", "openqasm3", "qiskit", "tqdm", "pytest", "pytest-cov", "flake8"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^8"
+pytest-cov = "^5"
+flake8 = "^7"
+
+[tool.poetry.scripts]
+test = "pytest:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
