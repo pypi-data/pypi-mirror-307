@@ -1,0 +1,3 @@
+[console_scripts]
+kanimtool-inspect = kanimtool.cli:inspect
+kanimtool-make = kanimtool.cli:make

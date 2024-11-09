@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/kanimtool/__init__.py
+src/kanimtool/__main__.py
+src/kanimtool/builder.py
+src/kanimtool/cli.py
+src/kanimtool/inspect.py
+src/kanimtool/io.py
+src/kanimtool/parser.py
+src/kanimtool.egg-info/PKG-INFO
+src/kanimtool.egg-info/SOURCES.txt
+src/kanimtool.egg-info/dependency_links.txt
+src/kanimtool.egg-info/entry_points.txt
+src/kanimtool.egg-info/requires.txt
+src/kanimtool.egg-info/top_level.txt
