@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pyrtz2
+Version: 1.4.3
+Summary: Automated analysis of AFM force curves and images via Python.
+Home-page: https://github.com/HoseynAAmiri
+License: file = "LICENSE"
+Author: Hoseyn Amiri
+Author-email: aamirihoseyn@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dash (>=2.17.1,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.6.0,<2.0.0)
+Requires-Dist: igor2 (>=0.5.8,<0.6.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: scikit-image (>=0.24.0,<0.25.0)
+Requires-Dist: scikit-learn (>=1.5.0,<2.0.0)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Project-URL: Documentation, https://www.youtube.com/@hoseynamiri
+Project-URL: Repository, https://github.com/HoseynAAmiri/pyrtz2
+Description-Content-Type: text/markdown
+
+# pyrtz2
+
+Automated analysis of AFM force curves and images via Python. Built upon its legacy version: https://github.com/nstone8/pyrtz
+
+Developed at Georgia Institute of Technology
+
+# Installation
+pyrtz2 is on PyPI. Install using pip (Python version >= 3.11.1 is required)
+
+```
+pip install pyrtz2
+```
+
+Please see the example folder. To run the HTML dash app interface simply use:
+
+```
+from pyrtz2 import app
+app.run()
+```
+You should see this interface:
+
+![pyrtz2.app](data/example.png)
+
+You can select the contact point interactively. It will perform fits for approach and dwell parts of the curves using Hertzian and biexponential equations. After downloading the `csv` of fits, you can download those curves in one `pdf` file. Moreover, the user can annotate cells by the semi-auto and manual cell detection control panel. The images and the processed experiment can be downloaded at the end.
+
