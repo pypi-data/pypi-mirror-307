@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: npl
+Version: 1.0.0
+Summary: Nanoparticle Library for computational analysis of nanoparticles
+Home-page: UNKNOWN
+Author: Riccardo Farris
+Author-email: rfarris@ub.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: acat>=1.7.1
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: sortedcontainers>=2.4.0
+
+This is a long description for the Nanoparticle Library.
+
