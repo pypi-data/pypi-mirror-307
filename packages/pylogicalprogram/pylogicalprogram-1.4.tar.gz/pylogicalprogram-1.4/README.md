@@ -1,0 +1,3 @@
+This repository contains a collection of logical programming solutions implemented in Python. The programs focus on various mathematical and algorithmic problems, such as calculating factorials, counting digits in numbers, generating Fibonacci series, identifying Armstrong numbers, and more. Each script is designed to demonstrate fundamental programming concepts and problem-solving techniques, making them useful for practicing and improving coding skills in Python.
+
+Feel free to explore the code and modify it to suit your learning needs!
