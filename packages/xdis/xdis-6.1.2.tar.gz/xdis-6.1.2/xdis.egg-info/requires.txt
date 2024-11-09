@@ -1,0 +1,6 @@
+click
+six>=1.10.0
+
+[dev]
+pre-commit
+pytest
