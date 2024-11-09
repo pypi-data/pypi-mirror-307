@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "pistl"
+version = "1.2.0"
+description = "Python library to generate STL format files for common shapes and geometries."
+license = "MIT"
+authors = ["Suman Saurabh <sumanan047@gmail.com>"]
+maintainers = [
+    "Suman Saurabh <sumanan047@gmail.com>",
+]
+readme = "README.md"
+repository = "https://github.com/sumanan047/pistl"
+
+keywords = ["stl", "3-D Shapes"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "1.26.2"
+pyvista = {version = ">=0.38.1", extras = ["jupyter"]}
+ipykernel = "6.27.1"
+trame = "3.3.0"
+trame-vuetify = "2.3.1"
+trame-components = "2.2.1"
+vtk = "9.3.0"
+pip = "24.0.0"
+
+[tool.poetry.dev-dependencies]
+matplotlib = "3.8.2"
+pytest = "7.4.3"
+coverage = "7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
