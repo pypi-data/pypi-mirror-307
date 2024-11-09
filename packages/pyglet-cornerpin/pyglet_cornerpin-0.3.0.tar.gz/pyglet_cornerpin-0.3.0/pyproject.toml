@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pyglet-cornerpin"
+version = "0.3.0"
+description = "Add a corner pin transform to a pyglet window"
+authors = ["Ruben van de Ven <git@rubenvandeven.com>"]
+readme = "README.md"
+repository = "https://git.rubenvandeven.com/r/pyglet-cornerpin"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyglet = "^2.0.18"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
