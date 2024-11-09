@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fezajs
+Version: 0.0.1
+Summary: FezaJS is a simple JSON ORM for Python
+Home-page: 
+Author: Mert
+Author-email: contact@tomris.dev
+License: MIT
+Keywords: json,orm,fezajs
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+FezaJSON is an ORM library for JSON.
