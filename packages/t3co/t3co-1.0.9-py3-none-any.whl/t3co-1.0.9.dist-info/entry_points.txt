@@ -1,0 +1,2 @@
+[console_scripts]
+install_t3co_demo_inputs = t3co.utilities.demo_inputs_installer:main
