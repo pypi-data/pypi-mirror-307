@@ -1,0 +1,203 @@
+[
+  {
+    "model": "django_resume.resume",
+    "pk": 5,
+    "fields": {
+      "name": "Bartleby, the Scrivener",
+      "slug": "bartleby-the-scrivener",
+      "owner": 1,
+      "plugin_data": {
+        "about": {
+          "text": "An enigmatic figure with a penchant for polite refusals, Bartleby is a seasoned scrivener who has found himself reluctantly navigating the modern job market. While he would 'prefer not to,' economic necessities compel him to offer his meticulous copyist skills to prospective employers."
+        },
+        "cover": {
+          "flat": {
+            "title": "Available (Preferably Not)",
+            "avatar_alt": "A solemn portrait of Bartleby",
+            "avatar_img": "uploads/bartleby-profile.jpg"
+          },
+          "items": [
+            {
+              "id": "001",
+              "text": "Greetings. I am [Bartleby](https://prefer-not-to.com/bartleby), a scrivener by trade. My experience in meticulously copying legal documents is unparalleled, though I must admit, I would prefer not to elaborate further. Nevertheless, here I am, offering my services out of sheer necessity.",
+              "title": "An Unenthusiastic Hello"
+            },
+            {
+              "id": "002",
+              "text": "Throughout my career, I have worked in quiet corners of various law offices, diligently copying documents by hand. My notable engagements include a tenure at [Dead Letters Office](https://deadlettersoffice.gov), where I handled undeliverable mail with a level of detachment that was considered exemplary. I have a consistent record of showing up to the office, which, in these times, is something.",
+              "title": "A Reluctant Journey"
+            },
+            {
+              "id": "003",
+              "text": "While I possess the skills necessary for modern office environments, such as typing and basic computer use, I would prefer not to engage with overly complicated technology. My expertise lies in quiet persistence and the ability to stare blankly at walls for extended periods—a skill undervalued in today's hustle culture.",
+              "title": "Skills Best Left Unmentioned"
+            },
+            {
+              "id": "004",
+              "text": "I am seeking a position where demands are minimal and the existential dread is plentiful. While I would prefer not to take on new responsibilities, I understand that the economy leaves me little choice. If you require someone who will dutifully (if reluctantly) fulfill tasks assigned, I'm available—though not particularly willing.",
+              "title": "Why You Might Consider Me"
+            },
+            {
+              "id": "005",
+              "text": "Should you desire to discuss this further (though I can't imagine why), you may contact me at [bartleby@prefer-not-to.com](mailto:bartleby@prefer-not-to.com). I would prefer not to respond, but circumstances may dictate otherwise.\n\nIndifferently yours,\nBartleby",
+              "title": "Reluctant Contact"
+            }
+          ]
+        },
+        "theme": {
+          "name": "plain"
+        },
+        "token": {
+          "flat": {
+            "token_required": false
+          },
+          "items": [
+            {
+              "id": "bartleby-token",
+              "token": "IWouldPreferNotTo",
+              "created": "2024-10-11T08:39:19.144476+00:00",
+              "receiver": "employer"
+            }
+          ]
+        },
+        "skills": {
+          "badges": [
+            "Copying Documents",
+            "Attention to Detail",
+            "Persistent Presence",
+            "Wall Staring",
+            "Polite Refusals",
+            "Existential Contemplation",
+            "Handwriting Mastery",
+            "Minimalist Communication",
+            "Adaptable Indifference",
+            "Filing (Preferably Not)"
+          ]
+        },
+        "identity": {
+          "name": "Bartleby, the Scrivener",
+          "email": "bartleby@prefer-not-to.com",
+          "phone": "+000-PREF-NOTT",
+          "github": "https://github.com/bartleby-scrivener",
+          "tagline": "A scrivener who would prefer not to, but must.",
+          "linkedin": "https://linkedin.com/in/bartleby-scrivener",
+          "mastodon": "https://prefer-not-to.com/@bartleby",
+          "pronouns": "he | him",
+          "avatar_alt": "Bartleby's solemn visage",
+          "avatar_img": "uploads/bartleby_portrait.jpg",
+          "location_url": "https://www.google.com/maps/place/Wall+Street/",
+          "location_name": "Wall Street, New York, UTC-5"
+        },
+        "projects": {
+          "flat": {
+            "title": "Notable Endeavors"
+          },
+          "items": [
+            {
+              "id": "1",
+              "url": "https://deadlettersoffice.gov/",
+              "title": "Dead Letters Office",
+              "badges": [
+                "Government",
+                "Clerical Work",
+                "Monotony"
+              ],
+              "position": 1,
+              "description": "Handled undeliverable mail with unwavering indifference. The position required a high tolerance for tedium, which I provided in abundance."
+            },
+            {
+              "id": "2",
+              "url": "https://wallstreetlaw.com/",
+              "title": "Wall Street Law Copyist",
+              "badges": [
+                "Legal Documents",
+                "Handwriting",
+                "Silence"
+              ],
+              "position": 2,
+              "description": "Meticulously copied legal documents by hand. Preferred not to engage in office banter or extracurricular activities."
+            },
+            {
+              "id": "3",
+              "url": "https://prefer-not-to.com/essays/contemplations",
+              "title": "Contemplations on Walls",
+              "badges": [
+                "Philosophy",
+                "Introspection",
+                "Inaction"
+              ],
+              "position": 3,
+              "description": "A series of essays reflecting on the nuances of staring at walls and the profundities one might (or might not) discover."
+            }
+          ]
+        },
+        "education": {
+          "end": "1850",
+          "start": "1846",
+          "school_url": "https://hudsonvalleycollege.edu",
+          "school_name": "Hudson Valley College"
+        },
+        "employed_timeline": {
+          "flat": {
+            "title": "Employment History"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "1853",
+              "role": "Scrivener",
+              "start": "1852",
+              "position": 1,
+              "company_url": "https://wallstreetlaw.com",
+              "description": "Performed copying duties with exceptional accuracy. Preferred not to participate in additional tasks such as proofreading or running errands.",
+              "company_name": "Wall Street Law Firm"
+            },
+            {
+              "id": "2",
+              "end": "1852",
+              "role": "Clerk",
+              "start": "1850",
+              "position": 0,
+              "company_url": "https://deadlettersoffice.gov",
+              "description": "Managed undeliverable mail. Exhibited a remarkable ability to remain unmoved by the contents of lost correspondence.",
+              "company_name": "Dead Letters Office"
+            }
+          ]
+        },
+        "freelance_timeline": {
+          "flat": {
+            "title": "Freelance Work"
+          },
+          "items": [
+            {
+              "id": "1",
+              "end": "1850",
+              "role": "Private Copyist",
+              "start": "1848",
+              "badges": [
+                "contract"
+              ],
+              "position": 2,
+              "company_url": "https://privateclients.com",
+              "description": "Provided document copying services to private clients. Preferred not to advertise these services widely.",
+              "company_name": "Various Private Clients"
+            },
+            {
+              "id": "2",
+              "end": "1848",
+              "role": "Amanuensis",
+              "start": "1846",
+              "badges": [
+                "part-time"
+              ],
+              "position": 1,
+              "company_url": "https://hudsonvalleycollege.edu",
+              "description": "Assisted professors with note-taking and copying lecture materials. Preferred not to engage in academic discussions.",
+              "company_name": "Hudson Valley College"
+            }
+          ]
+        }
+      }
+    }
+  }
+]
