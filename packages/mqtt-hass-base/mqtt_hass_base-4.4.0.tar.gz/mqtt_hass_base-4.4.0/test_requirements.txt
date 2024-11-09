@@ -1,0 +1,14 @@
+flake8==7.1.1
+pydocstyle==6.3.0
+pylint==3.3.1
+pytest==8.3.3
+pytest-cov==6.0.0
+pytest-asyncio==0.24.0
+asyncio-mqtt==0.16.2
+black==24.10.0
+mypy==1.13.0
+pyright==1.1.388
+lxml==5.3.0
+types-paho-mqtt==1.6.0.20240321
+aiomqtt==2.3.0
+homeassistant-stubs==2024.11.0
