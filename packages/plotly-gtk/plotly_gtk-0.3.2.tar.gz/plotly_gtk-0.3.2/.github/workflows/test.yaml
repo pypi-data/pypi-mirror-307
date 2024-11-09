@@ -1,0 +1,51 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install apt packages
+        run: |
+          sudo apt update
+          sudo apt install libgirepository1.0-dev libcairo2-dev pkg-config python3-dev gir1.2-gtk-4.0 gir1.2-adw-1 gir1.2-webkit-6.0 make
+      - name: Install python packages
+        run: |
+          pip install wheel
+          pip install -e .[dev]
+      - name: Coverage
+        run: |
+          pytest -rP --cov-report html:pytest/coverage --cov=src --ignore=test/demo test
+      - name: Test
+        run: |
+          pytest -rP  --html=pytest/report.html test
+      - name: Upload demo artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo
+          path: test/demo/broadway/results
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: pytest
+      - name: Upload coverage to codecov
+        if: always()
+        uses: codecov/codecov-action@v4
+        with:
+          verbose: true # optional (default = false)
+          use_oidc: true
+        
