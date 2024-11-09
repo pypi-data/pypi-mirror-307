@@ -1,0 +1,14 @@
+application:
+  description: This is an example application configuration file.
+  name: ExampleApp
+configuration:
+  version: '2024-11-08'
+database:
+  host: localhost
+  password: password
+  port: 5432
+  username: user
+features:
+  feature_a: true
+  feature_b: false
+  feature_c: true
