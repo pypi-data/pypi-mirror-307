@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: acrux
+Version: 1.6
+Summary: Simple Exploratory Data Analysis tool.
+Home-page: https://github.com/darkhan-ai/acrux
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# Acrux
+
+Simple Exploratory Data Analysis tool.
+
+Example:
+
+```python
+import seaborn as sns
+from acrux.eda import ExploratoryDataAnalysis
+
+df = sns.load_dataset("iris")
+
+eda = ExploratoryDataAnalysis(df=df)
+
+eda.cat_futures_eda(one_graph_size=3)
+eda.numeric_futures_eda(log_scale=False, one_graph_size=3)
+eda.heat_map(one_graph_size=3, sample_count=len(df))
+```
