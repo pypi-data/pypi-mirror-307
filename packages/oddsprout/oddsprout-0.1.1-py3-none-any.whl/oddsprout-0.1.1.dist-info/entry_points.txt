@@ -1,0 +1,3 @@
+[console_scripts]
+oddsprout=oddsprout.__main__:main
+
