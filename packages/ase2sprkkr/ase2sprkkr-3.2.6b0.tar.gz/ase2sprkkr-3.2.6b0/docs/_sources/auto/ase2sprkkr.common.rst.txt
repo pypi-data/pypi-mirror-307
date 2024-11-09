@@ -1,0 +1,72 @@
+common
+======
+
+Full name: **ase2sprkkr.common**
+
+
+
+.. rubric:: Description
+
+.. automodule:: ase2sprkkr.common
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+  
+  
+  .. rubric:: Modules
+
+  .. autosummary::
+     :toctree:
+     :template: custom-module-template.rst
+     :recursive:
+  
+     no_output
+     directory
+     formats
+     alternative_types
+     backward_compatibility
+     debug
+     decorators
+     doc
+     init_tests
+     lazy_string
+     misc
+     section_adaptors
+     tools
+     unique_values
+     warnings
+     yaml
+     subprocess
+     parsing_results
+     container_definitions
+     grammar
+     process_output_reader
+     configuration
+     configuration_containers
+     configuration_definitions
+     generated_configuration_definitions
+     options
+     repeated_configuration_containers
+     value_definitions
+     test
+     grammar_types
+  
+  

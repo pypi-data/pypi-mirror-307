@@ -1,0 +1,60 @@
+sprkkr
+======
+
+Full name: **ase2sprkkr.sprkkr**
+
+
+
+.. rubric:: Description
+
+.. automodule:: ase2sprkkr.sprkkr
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+   
+   
+   
+
+
+  
+  
+  .. rubric:: Modules
+
+  .. autosummary::
+     :toctree:
+     :template: custom-module-template.rst
+     :recursive:
+  
+     reference_systems
+     structure
+     sprkkr_grammar_types
+     configuration
+     atomic_types
+     moments
+     radial
+     sysfile
+     calculator
+     radial_meshes
+     occupations
+     sites
+     build
+     atoms_region
+     sprkkr_atoms
+     spacegroup_info
+     io_data
+     test
+  
+  

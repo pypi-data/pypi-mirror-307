@@ -1,0 +1,41 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python', 'cython', 'numpy', 'ninja' ]
+
+[project.scripts]
+ase2sprkkr = "ase2sprkkr.tools.ase2sprkkr:run"
+
+[project]
+name = "ase2sprkkr"
+version = "3.2.6b"
+requires-python = ">= 3.8"
+dependencies = [
+  "ase",
+  "asr",
+  "spglib",
+  "pyparsing>=3.0",
+  "mendeleev",
+  "platformdirs",
+  "packaging",
+  "cython",
+  "setuptools",
+  "pint",
+  "pytest",
+  'pyyaml',
+  'importlib_metadata;python_version<"3.8"',
+  'requests',
+  'argcomplete',
+  'numpy>=1.22'
+]
+authors = [
+  { name = "Matyáš Novák", email = "novakmat@fzu.cz" },
+  { name = "Jano Minár" },
+  { email = "ase2sprkkr@ntc.zcu.cz" }
+]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://ase2sprkkr.github.io/ase2sprkkr/"
+
+[project.entry-points."ase.plugins"]
+ase2sprkkr = "ase2sprkkr.ase.register"
