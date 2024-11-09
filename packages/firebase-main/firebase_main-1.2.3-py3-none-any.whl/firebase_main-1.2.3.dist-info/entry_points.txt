@@ -1,0 +1,2 @@
+[console_scripts]
+firebase-main = firebase_main.cli:main
