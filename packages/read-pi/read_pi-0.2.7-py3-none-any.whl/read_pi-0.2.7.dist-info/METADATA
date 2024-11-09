@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: read_pi
+Version: 0.2.7
+Summary: An utility facilitate extracting data from PI Vision and PDM databases.
+Author-email: Martin Carlos Araya <maray@equinor.com>
+License: MIT License
+        
+        Copyright (c) 2024 Equinor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/equinor/read_pi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# read_pi & read_pdm
+Both tools are inteded to simplify data extraction from PI as well as from PDM databases.
+
+To use this functions, the packages `pdm_tools` <https://github.com/equinor/pdm-tools> and `tag_reader` <https://github.com/equinor/tagreader-python>
+
+# read_pi
+Tool to facilitate downloading data from PI tags.
+
+This function will avoid requesting more than 150000 datapoints, by automaticaly spliting the requested interval in smaller chunks and will return a concatenated dataframe with the entire requested interval.
+
+## ussage
+A single function is needed:
+`get_data_from_PI(tags, start, end, interval, agg='AVG', pi_connection=None, verbose=False, rename=True, use_cache=False)`
+
+The `tag` parameter can be an list of string tags or a string representing a tag.
+The `tag` parameter can also be a `dict` of alias (tag readble names) and tags, like `{'name': 'tag'}`. If this kind of dictionary is provided, the returned dataframe will have the column names renamed accordingly. The original names can be found in the dataframe attribute `.attrs`. 
+Renaming the columns might be avoided by setting the `rename` parameter to `False`
+
+The paramaters `start` and `end` can be date&time representation, if a string is provided it will be converted to `pd.datetime64`.
+
+`agg` paramenter indicated the requested aggregation to pass to PI.
+
+An existing pi connection may be provided using `pi_connection`. It is optional, if `None`, a new connection will be created.
+
+To speed up the data gathering, a cache of the requested data might be keep by setting the parameter `use_cache` to `True`.
+The cache file can be deleted by calling the function `clean_cache()`
+
+**This funcion returns a `pandas.DataFrame`**
+
+
+# read_pdm
+A set of functions to facilitate extracting production and injection data from PDM database:
+
+## `list_producers`
+`list_producers(field_name:str)`  
+The input parameter is a string representing the field name, like **'HEIDRUN'**.
+The function returns a pandas.DataFrame containing a list of the production wells and their start injection date and last injection date.
+
+## `get_production`
+`get_production(field_name:str, wb_uwbi:str=None, from_date:str=None, until_date:str=None, columns=None)`  
+### Parameters:
+- **field_name** : str
+    The only mandatory paramenter, to avoid downloading the entire company database...
+- wb_uwbi : str, optional
+    A string representing the UWBI of a well can be provided to download only the data for that well
+- from_date : str, optional, in format YYYY-MM-DD
+    A string representing a date, formated like 2024-12-31. Only data *from* that date on will be downloaded
+- from_date : str, optional, in format YYYY-MM-DD
+    A string representing a date, formated like 2024-12-31. Only data *unil* that date (included) will be downloaded
+- columns : str or array-like (list), optional
+    A string representing the column(s) name(s) to download. If several columns are indicated in a single string, they must be separated by comma (**,**). Optionally a list of strings may be provided.
+### Return
+pandas.DataFrame
+
+
+## `list_injectors`
+`list_injectors(field_name:str)`  
+The input parameter is a string representing the field name, like **'HEIDRUN'**.
+The function returns a pandas.DataFrame containing a list of the injection wells and their start injection date and last injection date.
+
+## `get_injection`
+`get_injection(field_name:str, wb_uwbi:str=None, from_date:str=None, until_date:str=None, columns=None)`  
+### Parameters:
+- **field_name** : str
+    The only mandatory paramenter, to avoid downloading the entire company database...
+- wb_uwbi : str, optional
+    A string representing the UWBI of a well can be provided to download only the data for that well
+- from_date : str, optional, in format YYYY-MM-DD
+    A string representing a date, formated like 2024-12-31. Only data *from* that date on will be downloaded
+- from_date : str, optional, in format YYYY-MM-DD
+    A string representing a date, formated like 2024-12-31. Only data *unil* that date (included) will be downloaded
+- columns : str or array-like (list), optional
+    A string representing the column(s) name(s) to download. If several columns are indicated in a single string, they must be separated by comma (**,**). Optionally a list of strings may be provided.
+### Return
+pandas.DataFrame
