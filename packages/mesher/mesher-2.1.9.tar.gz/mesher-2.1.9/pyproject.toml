@@ -1,0 +1,38 @@
+[build-system]
+requires = ["scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "mesher"
+version = "2.1.9"
+authors = [
+    {name="Chris Marsh"}
+]
+description ="""Mesher is a multi-objective unstructured mesh generation software."""
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    'vtk',
+    'numpy',
+    'scipy',
+    'matplotlib',
+    'cloudpickle',
+    'gdal[numpy]',
+    'metis',
+    'mpi4py',
+    'natsort'
+]
+
+[project.urls]
+Homepage = "https://github.com/Chrismarsh/mesher"
+
+[tool.scikit-build]
+sdist.exclude = ["examples", "docs", "_config.yml", "v2-testing"]
+
+[project.scripts]
+mesher = "mesher:main"
+mesh2shp = "mesher.tools.mesh2shp:main"
+mesh2vtu = "mesher.tools.mesh2vtu:main"
+mesh2merge = "mesher.tools.meshmerge:main"
+meshpermutation = "mesher.tools.meshpermutation:main"
+meshstats = "mesher.tools.meshstats:main"
