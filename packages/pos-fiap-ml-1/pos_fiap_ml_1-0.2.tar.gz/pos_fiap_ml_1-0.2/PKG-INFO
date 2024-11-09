@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pos_fiap_ml_1
+Version: 0.2
+Summary: Uma biblioteca para cálculos de investimentos.
+Home-page: https://github.com/Leandro-barreto/fiap_mleng.git
+Author: XXXXXX
+Author-email: leandro.lhbb@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Meu Investimento
+
+Uma biblioteca Python para cálculos de investimentos.
+
+## Instalação
+
+Você pode instalar a biblioteca via pip:
+
+```bash
+pip install meu_investimento
+```
+
+## Uso
+
+```python
+from investimentos import calcular_retorno_investimento, calcular_juros_compostos
+
+valor_inicial = 1000
+valor_final = 1500
+
+retorno = calcular_retorno_investimento(valor_inicial, valor_final)
+print(f"Retorno do investimento: {retorno:.2f}%")
+
+valor_final_juros = calcular_juros_compostos(valor_inicial, 6, 5)
+print(f"Valor final com juros compostos: R${valor_final_juros:.2f}")
+```
