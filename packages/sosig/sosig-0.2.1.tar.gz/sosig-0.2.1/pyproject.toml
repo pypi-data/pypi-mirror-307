@@ -1,0 +1,33 @@
+[project]
+name = "sosig"
+version = "0.2.1"
+description = "A command-line tool for analyzing GitHub repositories and calculating social signals based on various metrics."
+authors = [
+    { name = "willwrighteng", email = "will.wright.engineeering@gmail.com" }
+]
+dependencies = [
+    "typer>=0.12.5",
+    "rich>=13.9.4",
+    "pydantic>=2.9.2",
+    "sqlmodel>=0.0.22",
+    "pip>=24.3.1",
+]
+readme = "../README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sosig"]
+
+[project.scripts]
+sosig = "sosig:cli"
