@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+evilurl.egg-info/PKG-INFO
+evilurl.egg-info/SOURCES.txt
+evilurl.egg-info/dependency_links.txt
+evilurl.egg-info/entry_points.txt
+evilurl.egg-info/top_level.txt
+src/__init__.py
+src/evilurl.1
+src/evilurl.py
+src/unicode_combinations.json
