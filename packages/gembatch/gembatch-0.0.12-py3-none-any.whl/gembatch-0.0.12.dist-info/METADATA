@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gembatch
+Version: 0.0.12
+Summary: A Python library simplifies building language chain applications with Gemini, leveraging batch mode for cost-effective prompt processing.
+Author: Benno Lin
+Author-email: Benno Lin <blueworrybear@gmail.com>
+Project-URL: Homepage, https://github.com/blueworrybear/gembatch
+Project-URL: Issues, https://github.com/blueworrybear/gembatch/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-aiplatform >=1.38
+Requires-Dist: firebase-admin >=6.5.0
+Requires-Dist: firebase-functions >=0.4.2
+Requires-Dist: requests >=2.31.0
+
+# gembatch
+A Python library simplifies building language chain applications with Gemini, leveraging batch mode for cost-effective prompt processing.
