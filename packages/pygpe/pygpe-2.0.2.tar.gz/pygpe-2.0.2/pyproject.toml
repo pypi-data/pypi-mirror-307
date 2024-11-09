@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pygpe"
+version = "2.0.2"
+description = "A fast Gross-Pitaevskii equation solver for scalar, spin-1 and spin-2 BEC systems."
+authors = ["Matt Wheeler <wheelermt@proton.me>"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://wheelermt.github.io/pygpe-docs/"
+homepage = "https://github.com/wheelerMT/pygpe"
+keywords = ["Gross-Pitaevskii", "Bose-Einstein", "scientific computing", "numerical methods"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+h5py = "^3.10.0"
+numpy = "^2.0.0"
+matplotlib = "^3.8.2"
+
+[tool.poetry.extras]
+gpu = ["cupy"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
