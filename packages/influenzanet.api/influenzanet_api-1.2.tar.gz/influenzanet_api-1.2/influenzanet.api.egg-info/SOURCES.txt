@@ -1,0 +1,12 @@
+LICENCE
+pyproject.toml
+readme.md
+setup.py
+influenzanet.api.egg-info/PKG-INFO
+influenzanet.api.egg-info/SOURCES.txt
+influenzanet.api.egg-info/dependency_links.txt
+influenzanet.api.egg-info/requires.txt
+influenzanet.api.egg-info/top_level.txt
+influenzanet/api/__init__.py
+influenzanet/api/management_api.py
+influenzanet/api/response_parser.py

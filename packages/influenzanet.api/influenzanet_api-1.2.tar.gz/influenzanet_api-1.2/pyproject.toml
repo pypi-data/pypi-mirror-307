@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "influenzanet.api"
+dynamic = ["version"]
+authors = [
+  { name="Peter Hevesi", email="hevesi@coneno.com" },
+  { name="Clement Turbelin", email="clement.turbelin@iplesp.upmc.fr" },
+]
+description = "Influenzanet API python library"
+license = {text = "Apache-2.0"}
+readme = "readme.md"
+requires-python = ">=3.9"
+keywords = ["influenzanet", "surveys"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "requests==2.27.*"
+]
+
+[project.optional-dependencies]
+
+[project.urls]
+"Homepage" = "https://github.com/influenzanet/python-influenzanet-api.git"
+"Bug Tracker" = "https://github.com/influenzanet/python-influenzanet-api/issues"
+
+[tool.setuptools-git-versioning]
+enabled = true
+template = "{tag}"
