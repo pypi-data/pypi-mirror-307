@@ -1,0 +1,4 @@
+[console_scripts]
+smurfs=smurfs.smurfs_cli.__main__:main
+smurfs-ui=smurfs.smurfs_ui.__main__:main
+
