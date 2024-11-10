@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "pytest-regtest"
+version = "2.3.2"
+description = "pytest plugin for snapshot regression testing"
+readme = "README.md"
+authors = [
+  {name = "Uwe Schmitt", email = "uwe.schmitt@id.ethz.ch"}
+]
+
+license = {text = "MIT License"}
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License"
+]
+
+dependencies = [
+  "pytest>7.2",
+]
+
+[project.urls]
+Source = "https://gitlab.com/uweschmitt/pytest-regtest"
+Documentation = "https://pytest-regtest.readthedocs.org"
+
+
+[project.entry-points.pytest11]
+regtest = "pytest_regtest"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["pytest_regtest", "tests/conftest.py", "tests/test_plugin.py"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pytest_regtest"]
+
+[tool.ruff]
+line-length = 88
+exclude = ["_regtest_output"]
+
+[tool.ruff.lint]
+ignore = ["E731", "E203"]
+
+[tool.uv]
+dev-dependencies = [
+    "twine", "build", "hatchling", "wheel", "pre-commit", "ruff", "black",
+    "pytest-cov", "numpy", "pandas", "mkdocs", "mkdocs-material", "mistletoe",
+    "mkdocs-awesome-pages-plugin", "jinja2-cli", "mkdocstrings[python]",
+    "numpy>=2", "pandas>=2", "polars>=1.9",
+    "md-transformer>=0.0.3"
+]
