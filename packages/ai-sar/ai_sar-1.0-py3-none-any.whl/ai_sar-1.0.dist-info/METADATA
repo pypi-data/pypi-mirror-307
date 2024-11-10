@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ai_sar
+Version: 1.0
+Summary: Just a simple AI tool for daily simple tasks by Shubham Anand Rashmi - powered by MetaAI
+Author: Shubham
+Author-email: Shub76ham@gmail.com
+License: MIT
+Project-URL: Source Repository, https://github.com/Sm7-git/
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: meta-ai-api
+
+# AI-SAR
+Just an AI tool powered by Meta AI.
+For normal level projects.
+
+## Heading 2
+
+- **BOLD TEXT**: description
+
+## Installation
+
+pip install AI-SAR
+
+
+
+## Usage
+
+import AI_SAR
+
+
+## Functions
+### Funtion(parameter)
