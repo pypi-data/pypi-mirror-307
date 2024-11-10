@@ -1,0 +1,3 @@
+[console_scripts]
+video2text=video_clip_describer.cli:app
+
