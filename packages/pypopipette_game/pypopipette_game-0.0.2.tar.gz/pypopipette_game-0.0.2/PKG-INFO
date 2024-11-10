@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pypopipette_game
+Version: 0.0.2
+Summary: My take on the Dots and Squares game (Pipopipette in French).
+License: LICENCE
+Author: David GERARD
+Author-email: david.gerard.23@ucl.ac.uk
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: numpy (>=2.1.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Pypopipette
+My take on the Dots and Squares game (Pipopipette in French 🇫🇷).
+
+Disclaimer: this is a work in progress.
+
+## How to play
+* Recommended: Install [poetry](https://python-poetry.org/docs/basic-usage/#project-setup), run `poetry install`, then run `poetry run python src/pypopipette_game/frontend.py`.
+* Simpler (but could lead to dependenies issues): run `python src/pypopipette_game/frontend.py`.
+
+## Contributions
+Contributions are welcomed! To do so, fork the repository, make your modifications, and create a pull request towards branch `dev`. 
+
+I am using the repository's Issues to list the future features as well as report bugs, feel free to takle one of these problems.
+
+
+
+
