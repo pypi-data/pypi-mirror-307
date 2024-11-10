@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: listdiffcopy
+Version: 0.55598
+Summary: listdiffcopy
+Project-URL: Repository, https://github.com/yu51a5/listdiffcopy.git
+Author-email: Yulia V <yu51a5@proton.me>
+License-File: LICENSE
+Keywords: copy,diff,list
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: html2text>=2024.2.26
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: paramiko>=3.5.0
+Requires-Dist: pillow-avif-plugin>=1.4.6
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: selenium>=4.26.1
+Description-Content-Type: text/markdown
+
+ Example Package
+
+This is a simple scraps and clouds package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
