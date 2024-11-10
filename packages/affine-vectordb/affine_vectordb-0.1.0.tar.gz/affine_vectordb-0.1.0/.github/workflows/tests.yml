@@ -1,0 +1,112 @@
+name: Unit and functional tests
+
+on:
+  push:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    env:
+      COVERAGE_FILE: .coverage.unit
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - run: pip install ".[test,pinecone]"
+      - run: pip install scikit-learn pynndescent annoy faiss-cpu
+      - run: coverage run --source=affine -m pytest -v --durations 0 tests/unit-tests
+      - run: coverage report
+      - name: upload coverage report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ${{ env.COVERAGE_FILE }}
+          name: ${{ env.COVERAGE_FILE }}
+          include-hidden-files: true
+
+  functional-test-qdrant:
+    runs-on: ubuntu-latest
+    env:
+      COVERAGE_FILE: .coverage.functional_qdrant
+    services:
+      qdrant:
+        image: qdrant/qdrant
+        ports:
+          - 6333:6333
+          - 6334:6334
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - run: pip install ".[test, qdrant]"
+      - run: coverage run --source=affine -m pytest -v tests/functional-tests/test_qdrant.py
+      - run: coverage report
+      - name: upload coverage report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ${{ env.COVERAGE_FILE }}
+          name: ${{ env.COVERAGE_FILE }}
+          include-hidden-files: true
+
+  functional-test-weaviate:
+    runs-on: ubuntu-latest
+    env:
+      COVERAGE_FILE: .coverage.functional_weaviate
+    services:
+      weaviate:
+        image: cr.weaviate.io/semitechnologies/weaviate:1.26.1
+        ports:
+          - 8080:8080
+          - 50051:50051
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - run: pip install ".[test, weaviate]"
+      - run: coverage run --source=affine -m pytest -v tests/functional-tests/test_weaviate.py
+      - run: coverage report
+      - name: upload coverage report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ${{ env.COVERAGE_FILE }}
+          name: ${{ env.COVERAGE_FILE }}
+          include-hidden-files: true
+  combine-coverage-report:
+    needs: [unit-tests, functional-test-qdrant, functional-test-weaviate]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - run: pip install coverage
+      - uses: actions/download-artifact@v3
+        with:
+          name: .coverage.unit
+      - uses: actions/download-artifact@v3
+        with:
+          name: .coverage.functional_qdrant
+      - uses: actions/download-artifact@v3
+        with:
+          name: .coverage.functional_weaviate
+      - run: coverage combine
+      - run: coverage report
+      # https://nedbatchelder.com/blog/202209/making_a_coverage_badge.html
+      - run: |
+          coverage json
+          export TOTAL=$(python -c "import json;print(json.load(open('coverage.json'))['totals']['percent_covered_display'])")
+          echo "total=$TOTAL" >> $GITHUB_ENV
+      - name: "Make badge"
+        if: github.ref == 'refs/heads/main'
+        uses: schneegans/dynamic-badges-action@v1.4.0
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gistID: 7fbb57e6d6a2c8b69617ddf141043b98
+          filename: affine-coverage.json
+          label: Coverage
+          message: ${{ env.total }}%
+          minColorRange: 50
+          maxColorRange: 90
+          valColorRange: ${{ env.total }}
