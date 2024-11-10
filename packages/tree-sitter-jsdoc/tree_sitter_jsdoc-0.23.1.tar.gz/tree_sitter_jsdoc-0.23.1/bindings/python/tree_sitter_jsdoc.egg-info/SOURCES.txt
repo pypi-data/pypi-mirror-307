@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_jsdoc/__init__.py
+bindings/python/tree_sitter_jsdoc/__init__.pyi
+bindings/python/tree_sitter_jsdoc/binding.c
+bindings/python/tree_sitter_jsdoc/py.typed
+bindings/python/tree_sitter_jsdoc.egg-info/PKG-INFO
+bindings/python/tree_sitter_jsdoc.egg-info/SOURCES.txt
+bindings/python/tree_sitter_jsdoc.egg-info/dependency_links.txt
+bindings/python/tree_sitter_jsdoc.egg-info/not-zip-safe
+bindings/python/tree_sitter_jsdoc.egg-info/requires.txt
+bindings/python/tree_sitter_jsdoc.egg-info/top_level.txt
+src/parser.c
+src/scanner.c
