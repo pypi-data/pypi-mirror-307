@@ -1,0 +1,17 @@
+condo/__init__.py,sha256=WQstllrCA3X5XsMeUSQXU5eQcqgafDehQq_N5wqTUkc,324
+condo/adapter_gaussian_ot.py,sha256=voBFMz7TSCskbA2YS_mfuz-Kpwkektcp2IXNWi-RFaE,2892
+condo/adapter_mmd.py,sha256=fSd_uHWJ1fUGm5u9g3vrAsAgjDRYQKdyaCGQkrBTKqk,5233
+condo/adapter_wd.py,sha256=Py5SHkGPTfNw8ShanZyVUXBSS39vWjHa_ABAIV7gZdw,4298
+condo/condo_adapter_kld.py,sha256=DquAhwMKBWy2E6GVr16_wU435MNbc2n0s12e53ieFG4,8786
+condo/condo_adapter_mmd.py,sha256=MdEy5FqHHeqd2lsEtGMGnuj3zE65H-kGEvbNTJIMzS4,9612
+condo/condo_adapter_wd.py,sha256=3x3-VPPDX3njwUM6qdt0Y7Io0FAHO9oWy1qb94x7xlQ,7410
+condo/kernels.py,sha256=sJdsnzx7yWgsi11fFirEk-M36Bqb9j5J_iel1owCcPU,6365
+condo/ot.py,sha256=adsM5_1YssU8O9JUV1kPu88TuZOHJmHqMGdQcJwUyUQ,4510
+condo/product_prior.py,sha256=JfyfiSVhsN0_kBrs2Kvrr7ncVleQgJy8hykApMgleVw,6939
+condo/utils.py,sha256=2zAFjuyeLt7mfZeQYK4A_6Ws9WWlTbsU-xzoR_n7muM,9978
+condo-1.0.0.dist-info/LICENSE,sha256=er4Z7Ju3OzYUG5mbhh0krYVegIuv4PgehMzihVb2wpc,20131
+condo-1.0.0.dist-info/METADATA,sha256=EtblpJbpEF9XKP-V7QGnQbZ6tr5qOSj7EkHSpUVo-3A,4060
+condo-1.0.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+condo-1.0.0.dist-info/top_level.txt,sha256=TO6XINicv9c2GwxUIg1qXA9A-aQt2AZO7zVeSu9JHS4,6
+condo-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+condo-1.0.0.dist-info/RECORD,,
