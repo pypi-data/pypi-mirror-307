@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phylogenetic Tree Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+STYLE_CONTENT
+    </style>
+</head>
+<body>
+    <div id="loading">Loading visualization...</div>
+    <div id="controls-container">
+        <button id="undo-button" class="control-button" disabled>
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z"/>
+            </svg>
+            Undo
+        </button>
+    </div>
+    <div id="tree-container"></div>
+    <div class="legend" id="legend"></div>
+    <script>
+        // Configuration
+        const CONFIG = CONFIG_CONTENT;
+
+        // Group data structure
+        const groupData = GROUP_CONTENT;
+
+        // Newick format data
+        const newickData = NEWICK_CONTENT;
+
+        // 设置文档格式
+        document.documentElement.setAttribute('data-format', 'FORMAT_PLACEHOLDER');
+
+SCRIPT_CONTENT
+
+        // Add rendering complete handler
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const tree = document.getElementById('tree-container');
+                const loading = document.getElementById('loading');
+                tree.classList.add('loaded');
+                loading.style.display = 'none';
+                // Add a flag to indicate rendering is complete
+                window.renderedComplete = true;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

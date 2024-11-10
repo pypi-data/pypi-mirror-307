@@ -1,0 +1,2 @@
+[console_scripts]
+newick-viz = newick_visualizer.cli.commands:main
