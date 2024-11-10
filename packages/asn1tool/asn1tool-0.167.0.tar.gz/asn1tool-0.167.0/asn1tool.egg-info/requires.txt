@@ -1,0 +1,8 @@
+pyparsing
+typing_extensions
+
+[cache]
+diskcache
+
+[shell]
+prompt_toolkit
