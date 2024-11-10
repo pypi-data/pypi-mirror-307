@@ -1,0 +1,4 @@
+[console_scripts]
+myfletbuild-build=myfletbuild.build:build
+myfletbuild-create=myfletbuild.create:create
+
