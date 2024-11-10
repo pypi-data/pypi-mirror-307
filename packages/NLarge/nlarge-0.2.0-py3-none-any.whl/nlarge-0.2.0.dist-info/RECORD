@@ -1,0 +1,15 @@
+nlarge/__init__.py,sha256=O8Tu-NMc4APVksRIROFwjdjWqYf6upcvm3rhRi5nkBs,693
+nlarge/llm.py,sha256=hDN5vb4wJm2m-mvaHNOhL4Z9hMxJ7XQfOjJOjZvhPdE,2394
+nlarge/log.txt,sha256=-apqhOL04dal-Gb2K-u0qjAIy8ruVit2x-gPb8sD15g,23860
+nlarge/model/Attention.py,sha256=Ab9n6BlFx0nTMiTmTRhsQgxYhYwug3oTJIy23lmpvJM,3310
+nlarge/model/GRU.py,sha256=bGucJBejvzfTc4OdzuvYg905zQoBOBpPWnwlwnSHvR4,3410
+nlarge/model/LSTM.py,sha256=LLFILNE3yd9gDiPy4vBt0lqIDOnO_nj4CyO50b14c_Y,3423
+nlarge/model/RNN.py,sha256=8cYxr7opUuzoi4UoCCyKJttGV30HWF7aThi3_5du98Q,2627
+nlarge/random.py,sha256=CmRzKnEndFitrMa_S8PkmN4JJajSOzUj5nKz2xgWET0,5423
+nlarge/synonym.py,sha256=9mYHfBffJ2n9SbyKOlgpjhzrc7Vrs1zqCUTCQABCTf0,5557
+nlarge/utils/Token.py,sha256=DrgVXTVtWIVODiZn-1T321AvEXPOl6t1MG-kWi9WRfE,1025
+nlarge/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlarge/utils/words.py,sha256=RlSlsklIcAOWuMOmWsNDKA_ZcH3azAHWiqvcehoZHxI,5009
+nlarge-0.2.0.dist-info/METADATA,sha256=72slzxrAYCDeFkz_iks3AL31f0FzigwmpC0sbtvTIkI,2424
+nlarge-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+nlarge-0.2.0.dist-info/RECORD,,
