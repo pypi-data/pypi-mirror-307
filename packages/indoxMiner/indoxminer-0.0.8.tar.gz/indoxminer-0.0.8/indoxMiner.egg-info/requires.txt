@@ -1,0 +1,13 @@
+latex2markdown
+loguru
+pandas~=2.2.2
+setuptools
+unstructured~=0.16.4
+utils~=1.0.2
+requests~=2.32.3
+unstructured-inference
+unstructured.pytesseract
+tesseract
+pdfminer.six
+nltk
+pi_heif
