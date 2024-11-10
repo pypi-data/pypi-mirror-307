@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: sweepai
+Version: 3.0.0
+Summary: Sweep fixes GitHub issues
+Author-email: Kevin Lu <kevin@sweep.dev>, William Zeng <william@sweep.dev>, Martin Ye <martin@sweep.dev>
+License: Sweep Enterprise Edition (EE) license (the “EE License”)
+        Copyright (c) 2024-present Sweep AI, Inc.
+        
+        With regard to the Sweep Software:
+        
+        This software and associated documentation files (the "Software") may only be used in production and/or for any commercial purposes, if you (and any entity that you represent) have agreed to, and are in compliance with, the Sweep Subscription Terms of Use, available at https://sweep.dev/tos.pdf (the “Subscription Terms”), or other agreement governing the use of the Software, as agreed by you and Sweep, and otherwise have a valid Sweep Software enterprise subscription for the correct number of user seats. Subject to the foregoing sentence, you are free to modify this Software and publish patches to the Software. You agree that Sweep and/or its licensors (as applicable) retain all right, title and interest in and
+        to all such modifications and/or patches, and all such modifications and/or patches may only be used, copied, modified, displayed, distributed, or otherwise exploited with a valid Sweep Software enterprise subscription for the correct number of user seats.  
+        
+        You may copy and modify the Software for your personal, non-commercial development and testing purposes, without requiring a Software subscription.  You agree that Sweep and/or its licensors (as applicable) retain all right, title and interest in and to all such modifications.  You are not granted any other rights beyond what is expressly stated herein.  Without limiting the foregoing, it is forbidden to copy, merge, publish, distribute, create derivative works of, sublicense, and/or sell the Software.
+        
+        This EE License applies only to the part of this Software that is not distributed as part of Sweep’s Free Software. Any part of this Software distributed as part of Sweep’s Free Software is copyrighted under the MIT Expat license. The full text of this EE License shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        For all third party components incorporated into the Sweep Software, those components are licensed under the original license provided by the owner of the applicable component.
+Project-URL: Repository, https://github.com/sweepai/sweep
+Project-URL: Community, https://community.sweep.dev/
+Project-URL: Documentation, https://docs.sweep.dev
+Project-URL: Homepage, https://sweep.dev
+Project-URL: Bug Tracker, https://github.com/sweepai/sweep/issues
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anytree==2.12.1
+Requires-Dist: orjson==3.10.7
+Requires-Dist: diskcache==5.6.3
+Requires-Dist: anthropic==0.34.0
+Requires-Dist: chardet==5.2.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: cohere==5.2.5
+Requires-Dist: typer==0.10.0
+Requires-Dist: pygithub==2.2.0
+Requires-Dist: apscheduler==3.10.4
+Requires-Dist: loguru==0.7.2
+Requires-Dist: rich==13.7.1
+Requires-Dist: fastapi==0.110.0
+Requires-Dist: prometheus-fastapi-instrumentator==7.0.0
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: openai==1.40.6
+Requires-Dist: backoff==2.2.1
+Requires-Dist: gitpython==3.1.42
+Requires-Dist: stringzilla==3.8.4
+Requires-Dist: tantivy==0.22.0
+Requires-Dist: tree-sitter==0.21.0
+Requires-Dist: tree-sitter-languages==1.10.2
+Requires-Dist: tree-sitter-go==0.21.1
+Requires-Dist: rapidfuzz==3.6.2
+Requires-Dist: importmagic==0.1.7
+Requires-Dist: pyflakes==3.2.0
+Requires-Dist: pytz==2024.1
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: networkx==3.2.1
+Requires-Dist: attrs==23.2.0
+Requires-Dist: pytest==8.1.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.2
+Requires-Dist: markdown==3.5.2
+Requires-Dist: yamllint==1.35.1
+Requires-Dist: logtail==1.0.1
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: rapidfuzz==3.6.2
+Requires-Dist: resend==0.8.0
+Requires-Dist: psutil==5.9.8
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: tiktoken==0.6.0
+Requires-Dist: uvicorn==0.29.0
+Requires-Dist: pylint==3.1.0
+Requires-Dist: voyageai==0.2.1
+Requires-Dist: boto3==1.34.70
+Requires-Dist: together==1.2.6
+Requires-Dist: mistralai==1.0.1
+Requires-Dist: scipy==1.12.0
+Requires-Dist: jira==3.8.0
+Requires-Dist: slack-sdk==3.27.1
+Requires-Dist: jsonpatch==1.33
+Requires-Dist: scikit-learn==1.4.2
+Requires-Dist: sentry-sdk==2.2.0
+Requires-Dist: api4jenkins==2.0.3
+Requires-Dist: pdbpp==0.10.3
+
+<p align="center">
+    <img src="https://github.com/sweepai/sweep/assets/26889185/39d500fc-9276-402c-9ec7-3e61f57ad233">
+</p>
+<p align="center">
+    <i>Github Issues ⟶&nbsp; Pull Requests! </i>
+</p>
+<p align="center">
+    <a href="https://github.com/apps/sweep-ai">
+        <img alt="Install Sweep Github App" src="https://img.shields.io/badge/Install Sweep-GitHub App-purple?link=https://github.com/apps/sweep-ai">
+    </a>
+    <a href="https://community.sweep.dev/">
+        <img src="https://dcbadge.vercel.app/api/server/sweep?style=flat" />
+    </a>
+    <a href="https://hub.docker.com/r/sweepai/sweep">
+        <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/sweepai/sweep" />
+    </a>
+    <a href="https://docs.sweep.dev/">
+        <img alt="Docs" src="https://img.shields.io/badge/Docs-docs.sweep.dev-red?link=https%3A%2F%2Fdocs.sweep.dev">
+    </a>
+    <a href="https://github.com/sweepai/sweep">
+        <img src="https://img.shields.io/github/commit-activity/m/sweepai/sweep" />
+    </a>
+    <a href="https://pypi.org/project/sweepai">
+        <img src="https://badge.fury.io/py/sweepai.svg" alt="PyPI version" height="18">
+    </a>
+    <a href="https://hub.docker.com/r/sweepai/sweep">
+        <img alt="Self Host Sweep Docker Image" src="https://img.shields.io/badge/Host Sweep-Docker Image-2496ED?link=https://hub.docker.com/r/sweepai/sweep">
+    </a>
+</p>
+
+---
+
+<b>Sweep</b> is an AI junior developer that turns bugs and feature requests into code changes. Sweep automatically handles devex improvements like adding typehints/improving test coverage. :robot: 
+
+[Install Sweep](https://github.com/apps/sweep-ai) and open a Github Issue like: `Sweep: Add typehints to src/utils/github_utils.py` and Sweep will:
+1. Search through your codebase to find the dependencies of github_utils.py
+2. Modify the code to add typehints
+3. **Run and debug your code to write a Pull Request**
+
+### Features
+* Turns issues directly into pull requests (without an IDE)
+* Addresses developer replies & comments on its PRs
+* Understands your codebase using the dependency graph, text, and vector search.
+* Runs your unit tests and autoformatters to validate generated code.
+* Stack small fixes into your PR by applying [Sweep Rules](https://docs.sweep.dev/usage/config#tips-for-writing-rules)
+
+[![Sweep Youtube Tutorial](docs/public/assets/youtube_thumbnail.png)](https://www.youtube.com/watch?v=GVEkDZmWw8E)
+
+> [!NOTE]
+> ### What makes Sweep Different
+> We've been addressing code modification using LLMs for a while. We found and are fixing a lot of issues.
+>  - **Modifying Code** - LLMs like GPT4 don't have a great way to automatically modify code. We heavily experiment on different ways to modify code so you don't have to. We've spent a really long time working on this - check out https://docs.sweep.dev/blogs/gpt-4-modification!
+> - **Planning Code Changes** - Retrieval-Augmented-Generation isn't enough. We wrote a code chunker that's used fairly heavily, and we're constantly improving this: https://docs.sweep.dev/blogs/chunking-improvements
+> -  Sweep runs your **Github Actions**, catching bugs and making sure each line of new code has been properly validated!
+> -  **Sweep** uses it's sandbox to format your code, and uses [Rules](https://docs.sweep.dev/usage/config#tips-for-writing-rules) to perform other changes like adding typehints, or any other small chores!
+
+
+## Getting Started
+
+### GitHub App
+Install Sweep by adding the [**Sweep GitHub App**](https://github.com/apps/sweep-ai) to your desired repositories.
+
+* For more details, visit our [installation page](https://docs.sweep.dev/getting-started).
+
+* Note: Sweep only considers issues with the "Sweep:" title on creation and not on update. If you want Sweep to pick up an existing issue, you can add the "Sweep" label to the issue.
+
+* We focus on Python but support all languages GPT-4 can write. This includes JS/TS, Rust, Go, Java, C# and C++.
+
+---
+
+## Story
+
+We used to work in large, messy repositories, and we noticed how complex the code could get without regular refactors and unit tests. We realized that AI could handle these chores for us, so we built Sweep!
+
+Unlike existing AI solutions, Sweep can solve entire tickets and can be parallelized + asynchronous: developers can spin up 10 tickets and Sweep will address them all at once.
+
+## Pricing
+For professionals who want to try unlimited GPT-4 tickets and priority support, you can get a one week free trial of [Sweep Pro](https://buy.stripe.com/00g5npeT71H2gzCfZ8).
+
+For more GPT-4 tickets visit <a href='https://buy.stripe.com/00g3fh7qF85q0AE14d'>our payment portal</a>!
+
+You can get enterprise support by [contacting us](https://form.typeform.com/to/wliuvyWE).
+
+---
+
+> [!WARNING]
+> ### Limitations of Sweep
+> * **Large-scale refactors**: > 10 files or > 400 lines of code changes
+    * e.g. Refactor the entire codebase from TensorFlow to PyTorch
+    * If this is a use case you're looking forward to, let us know!
+> * **Editing images** and other non-text assets
+    * e.g. Create favicons for our landing page
+    * We can, however, read images.
+---
+
+## Contributing
+
+Contributions are welcome and greatly appreciated! To get set up, see [Development](https://github.com/sweepai/sweep#development). For detailed guidelines on how to contribute, please see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+
+<h2 align="center">
+    Contributors
+</h2>
+<p align="center">
+    Thank you for your contribution!
+</p>
+<p align="center">
+    <a href="https://github.com/sweepai/sweep/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=sweepai/sweep" />
+    </a>
+</p>
+<p align="center">
+    and, of course, Sweep!
+</p>
+

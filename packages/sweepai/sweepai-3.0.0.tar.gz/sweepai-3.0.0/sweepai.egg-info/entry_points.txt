@@ -1,0 +1,3 @@
+[console_scripts]
+sweep = sweepai.web.sync:main
+sweepai = sweepai.web.sync:main
