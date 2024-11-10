@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: curl_pyo3
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Summary: libCURL Python Binding
+Keywords: curl,rust,ffi
+Author-email: Jiacai Liu <dev@liujiacai.net>
+License: Apache-2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/plain; charset=UTF-8
+Project-URL: Repository, https://github.com/jiacai2050/curl-py
+Project-URL: Issues, https://github.com/jiacai2050/curl-py/issues
+
+* Curl Python binding
+[[https://github.com/jiacai2050/curl-py/actions/workflows/CI.yml][https://github.com/jiacai2050/curl-py/actions/workflows/CI.yml/badge.svg]]
+[[https://pypi.org/project/curl-pyo3][https://img.shields.io/pypi/v/curl-pyo3.svg]]
+
+* Development
+#+begin_src bash
+sudo apt install -y libcurl4-openssl-dev
+
+python -m venv .env
+source .env/bin/activate
+pip install maturin
+pip install maturin[patchelf]
+
+# Install wheels
+maturin develop
+
+python -c 'import curl_py; print(curl_py.curl_get("http://httpbin.org/headers"))'
+
+#+end_src
+
