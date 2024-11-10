@@ -1,0 +1,5 @@
+[console_scripts]
+check_interval=reloci.check_interval:main
+reloci=reloci.cli:reloci
+reloci_info=reloci.cli:info
+
