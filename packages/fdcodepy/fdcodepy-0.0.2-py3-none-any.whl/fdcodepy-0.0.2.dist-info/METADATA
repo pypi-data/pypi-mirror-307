@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fdcodepy
+Version: 0.0.2
+Summary: A codebook solution for time series data compression and feature extraction considering rebound effect
+Author-email: Rui Yuan <123abcyuanrui@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/abc123yuanrui/FD_codepy
+Project-URL: Issues, https://github.com/abc123yuanrui/FD_codepy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy ==2.0.2
+Requires-Dist: pandas ==2.2.3
+Requires-Dist: scikit-learn ==1.5.2
+Requires-Dist: scipy ==1.13.1
+Requires-Dist: numba ==0.60.0
+
+# fdcodepy
