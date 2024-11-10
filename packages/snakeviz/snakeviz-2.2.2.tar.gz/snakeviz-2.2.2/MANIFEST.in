@@ -1,0 +1,4 @@
+include *.rst
+include LICENSE.txt
+recursive-include snakeviz/static *.ico *.css *.js *.png
+recursive-include snakeviz/templates *.html
