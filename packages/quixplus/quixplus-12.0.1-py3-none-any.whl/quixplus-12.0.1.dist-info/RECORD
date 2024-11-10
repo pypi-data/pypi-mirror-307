@@ -1,0 +1,15 @@
+quixplus/__init__.py,sha256=GUe_rml-83a94qAjQ4KA_wEMHkWrcHEYA7XDY2e2BjI,136
+quixplus/py.typed,sha256=8QLhisbHub6VJl6egijnrOPKK5QNAe5FJhfcxEelj4Y,22
+quixplus/sinks/__init__.py,sha256=b9RTbchBqKoAcm4bzcyAjrrHHigKucu2eoP0z5O2wgk,39
+quixplus/sinks/clickhouse.py,sha256=GcGUigByOjZ-AxdwgElP_ARsFScQyVrmLjOg0WXFfDI,79
+quixplus/sinks/iceberg.py,sha256=95FeIN_M0uPRV1DXGHitlf9EVpiefJ9x42XnkeJo968,72
+quixplus/sinks/mongo.py,sha256=adoVbmXknuC2j4Er5va3cNOXpHwITTpasC7VBNBYZfk,68
+quixplus/sinks/supabase.py,sha256=-23YbnAB267zK0cuBQweKuAPA7AxgKYQKIo5jmBc6FU,74
+quixplus/sources/__init__.py,sha256=2kwPwL7quGbWH94pNnuLzgHxUgs714AXCOK5eDy_TiA,1049
+quixplus/sources/csv.py,sha256=GHWvCkcYRC01kHZF_R5P2Z4Jrku_ANbVtrq4aXbmpgM,5766
+quixplus/sources/http.py,sha256=MkbtWOFmcTHsZEv_f_lwSD8jOZwbn4uTT-XSFxZu2rk,9156
+quixplus/sources/websocket.py,sha256=kqWgTQ2Fau3zXMifkry6RLFvOvXDcLA1E9jbpyrg0AQ,7379
+quixplus-12.0.1.dist-info/METADATA,sha256=jaJL3zANBfVWHc_Dikf-AlonUwSKt5qb2mz5ic1Ao3I,5272
+quixplus-12.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+quixplus-12.0.1.dist-info/licenses/LICENSE,sha256=GEfg4GmBQu1DR8FEGp-oHI-93USx2LvNXjZH-ZF1nX8,1035
+quixplus-12.0.1.dist-info/RECORD,,
