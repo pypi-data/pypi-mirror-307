@@ -1,0 +1,1 @@
+The example challenges were taken from [CJ International 2024](https://github.com/farisv/The-Cyber-Jawara-International-2024-CTF) Blockchain challenges by @Chovid99 and [CasinoHeist](https://casinoheist.xyz/) challenges

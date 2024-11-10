@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "foundpy"
+version = "0.2.0"
+authors = [
+  { name="Bill Elim", email="billelimgg@gmail.com" },
+]
+description = "Python implementation of Foundry using python web3 module "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "eth_abi >= 5.1.0",
+    "py_solc_x >= 2.0.3",
+    "Requests >= 2.32.3",
+    "web3 >= 7.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Wrth1/foundpy"
+Repository = "https://github.com/Wrth1/foundpy.git"
+Issues = "https://github.com/Wrth1/foundpy/issues"
