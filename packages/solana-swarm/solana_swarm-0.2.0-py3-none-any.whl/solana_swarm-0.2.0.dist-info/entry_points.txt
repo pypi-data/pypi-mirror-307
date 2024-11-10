@@ -1,0 +1,3 @@
+[console_scripts]
+solana-swarm=solana_swarm.main:cli
+
