@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "hazbin_hotel"
+version = "0.0.1"
+description = ""
+authors = [
+    "Pedro Augusto. <pedr.augustobarbosa.aparecido@gmail.com>",
+    "Pedro Luis <pedrodfraga@hotmail.com>",
+    "Marcos Henrique <marcoshbp71@gmail.com>",
+]
+license = "GPL-3.0"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Programming Language :: Python :: 3.12"
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://pedroluisdionisiofraga.github.io/poetry-and-pytest-usage/"
+"Code" = "https://github.com/PedroLuisDionisioFraga/poetry-and-pytest-usage"
+"Bug Tracker" = "https://github.com/PedroLuisDionisioFraga/poetry-and-pytest-usage/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+colorama = "^0.4.6"
+ghp-import = "^2.1.0"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.0"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+pre-commit = "^3.8.0"
+sphinx = "^4.0"
+sphinx_rtd_theme = "^1.0"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.44"
+mkdocstrings = "^0.27.0"
+mkdocstrings-python = "^1.12.2"
+mkdocs-macros-plugin = "^1.3.7"
+jinja2 = "^3.1.4"
+pymdown-extensions = "^10.12"
+materialx = "^1.39.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | venv
+    | .venv
+    | _build
+    | build
+    | buck-out
+    | \.flake8
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--ignore=tasks --doctest-modules"
+
+[tool.taskipy.tasks]
+lint = "black --check --diff . && isort --check --diff ."
+lint-fix = "black . && isort ."
+test = "pytest -s -x --cov=hazbin_hotel -vv"
+pre_test = "task lint"
+post_test = "coverage html"
+docs = "mkdocs serve"
+docs_build = "mkdocs build"
