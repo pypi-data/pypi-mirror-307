@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opengis
+Version: 1.9.1
+Summary: Open source GIS tools.
+Author: zijie wang
+Author-email: 773598627@qq.com
+Project-URL: Source, https://github.com/tom100to/opengis/tree/main
+Keywords: gis remote-sensing spatial-analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: gdal
+Requires-Dist: pymodis
+Requires-Dist: numpy
+
+This is an open source GIS package. There are many useful tools in it.
