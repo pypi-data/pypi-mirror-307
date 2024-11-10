@@ -1,0 +1,78 @@
+version: 1.4.0
+#选择排队系统  分为slurm   local
+queue: slurm
+#在使用vasp计算单点能的时候 提交的任务数
+vasp_job: 10
+#所有任务提交的根目录
+work_path: ./cache
+#current_job有三种 nep gpumd vasp 如果train.xyz是没有计算的 就设置vasp  其他直接设置nep训练势函数即可 或者gpumd
+current_job: nep
+#这个不用管  标记续跑任务的
+generation: 1
+#初始训练集 如果没有计算 设置current_job: vasp
+init_train_xyz: ./train.xyz
+#如果设置current_job: gpumd 则需要提供势函数  否则不用管
+init_nep_txt: ./nep.txt
+#下面是关于nep子任务的设置
+nep:
+  #是否支持重启 如果为true 下一次的势函数在这次基础上续跑nep_restart_step步
+  #程序会自动设置 lambda_1=0
+  #如果为false 每次都重新训练
+  nep_restart: true
+  nep_restart_step: 20000
+  #可有可无  如果需要修改步数  在当前路径下提供一个文件即可
+  #没有的话是根据训练集自动生成
+  nep_in_path: ./nep.in
+  #可选  需要测试有这个文件即可
+  test_xyz_path: ./test.xyz
+#以下是vasp的计算细节
+vasp:
+  #每个任务设置64核  根据自己资源修改
+  cpu_core: 64
+  #ase默认使用M形式的k点，这里默认使用gamma网格 可设置为false
+  kpoints_use_gamma: true
+  #这个可有可无 程序内置了一个incar
+  incar_path: ./INCAR
+  #支持两种k点形式kpoints kspacing
+  #这里选择使用哪一种
+  use_k_stype: kpoints
+  #这里不是将k设置成20 20 20  而是设置成20/a 20/b 20/c
+  kpoints:
+    - 20 #a
+    - 20 #b
+    - 20 #c 二维设置1即可
+  kspacing: 0.1
+#主动学习的配置文件
+gpumd:
+  #迭代渐进的时间 单位ps
+  #第一次主动学习 10ps   第二次100ps 一共四次主动学习
+  step_times:
+    - 10
+    - 100
+    - 500
+    - 1000
+  #每次主动学习 将对model_path 的所有结构  分别跑以下温度的md 然后抽样
+  temperature_every_step:
+    - 50
+    - 100
+    - 150
+    - 200
+    - 250
+    - 300
+  #主动学习的扩包后的结构 使用.vasp .xyz都可
+  model_path: ./structure
+  #运行md的文件  这个必须有 设置完整的命令即可  程序会替换温度以及步数
+  run_in_path: ./run.in
+  #每次子md最多抽取的结构  比如50k 100k
+  max_selected: 20
+  #最远点取样的超参数
+  min_distance: 0.01
+
+
+limit:
+  #将结构的力限制在-50到50之间
+  force: 50
+  #开启键长检测 将键长低于平衡模型键长*0.6的结构判定为非物理结构
+  filter_by_bonds: true
+
+
