@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+setup(name='florestbotfunctions', version='1.0.4', description=f'Функции бота Флореста в одной библиотеке.', long_description=f'Привет! Данная библиотека включает в себя функции из https://t.me/postbotflorestbot.\nВсе функции, с удобным объяснением кода, только здесь.\nP.S. Это официальная библиотека от создателя бота - FlorestDev.\nВсе функции предоставляются в ознакомительном порядке.', author='florestdev', author_email='florestone4185@internet.ru', url='https://taplink.cc/florestone4185', packages=['florestbotfunctions'], install_requires=['MukeshAPI', 'g4f', 'curl_cffi', 'requests', 'pytubefix', 'google-api-python-client', 'bs4', 'pillow', 'gtts', 'qrcode'], project_urls={"Social Resources":"https://taplink.cc/florestone4185", "My bot":"https://t.me/postbotflorestbot"}, python_requires='>=3.8.9')
