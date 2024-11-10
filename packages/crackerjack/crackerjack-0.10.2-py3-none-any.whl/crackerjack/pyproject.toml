@@ -1,0 +1,164 @@
+[tool.codespell]
+skip = "*/data/*"
+quiet-level = 3
+ignore-words-list = "crate,uptodate"
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+fix = true
+show-fixes = true
+output-format = "full"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = [
+    "F821",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+]
+extend-select = [
+    "I",
+    "C901",
+    "D",
+]
+
+[tool.ruff.lint.isort]
+no-lines-before = [
+    "first-party",
+    "local-folder",
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 12
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.vulture]
+min_confidence = 84
+paths = ["crackerjack",]
+
+[tool.creosote]
+paths = [
+    "crackerjack",
+]
+deps-file = "pyproject.toml"
+exclude-deps = [
+    "pdm-bump",
+    "autotyping",
+    "pre-commit",
+    "pytest",
+    "pdm",
+    "pyfiglet",
+    "pyyaml",
+    "uv",
+]
+
+[tool.refurb]
+enable_all = true
+
+[tool.bandit]
+target = [
+    "crackerjack",
+]
+skips = [
+    "B301",
+    "B311",
+    "B403",
+    "B404",
+    "B602",
+    "B603",
+    "B607",
+]
+
+[tool.pyright]
+verboseOutput = true
+include = [
+    "crackerjack",
+]
+exclude = [
+    "scratch",
+]
+extraPaths = [
+    ".venv/lib/python3.13/site-packages/",
+]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
+reportOptionalMemberAccess = false
+reportOptionalCall = false
+reportUnknownMemberType = false
+reportUnknownVariableType = false
+reportUnknownArgumentType = false
+reportPrivateUsage = "warning"
+pythonVersion = "3.13"
+pythonPlatform = "Darwin"
+
+[project]
+name = "crackerjack"
+version = "0.10.1"
+description = "Default template for PDM package"
+requires-python = ">=3.13"
+readme = "README.md"
+keywords = [
+    "black",
+    "ruff",
+    "mypy",
+    "creosote",
+    "refurb",
+]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: POSIX",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.13",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: BSD License",
+    "Typing :: Typed",
+]
+dependencies = [
+    "click>=8.1.7",
+    "aioconsole>=0.8.1",
+    "inflection>=0.5.1",
+    "autotyping>=24.9.0",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+    "pydantic>=2.9.2",
+    "aiopath>=0.7.7",
+    "pdm-bump>=0.9.8",
+    "pdm>=2.20.1",
+    "acb>=0.8.6",
+    "uv>=0.5.1",
+]
+authors = [
+    { name = "lesleslie", email = "les@wedgwoodwebworks.com" },
+]
+maintainers = [
+    { name = "lesleslie", email = "les@wedgwoodwebworks.com" },
+]
+
+[project.license]
+text = "BSD-3-CLAUSE"
+
+[project.urls]
+homepage = "https://github.com/lesleslie/crackerjack"
+documentation = "https://github.com/lesleslie/crackerjack"
+repository = "https://github.com/lesleslie/crackerjack"
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
