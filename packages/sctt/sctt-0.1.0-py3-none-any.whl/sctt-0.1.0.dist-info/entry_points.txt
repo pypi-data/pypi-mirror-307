@@ -1,0 +1,2 @@
+[console_scripts]
+sctt = sctt.__main__:main
