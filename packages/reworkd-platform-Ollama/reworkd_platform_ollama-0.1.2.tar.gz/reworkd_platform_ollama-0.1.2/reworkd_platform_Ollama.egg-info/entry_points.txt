@@ -1,0 +1,2 @@
+[console_scripts]
+reworkd_platform = reworkd_platform.__main__:main
