@@ -1,0 +1,139 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testpeepoo"
+description = "Test project"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Samarth Mistry", email = "samarth.mistry@gmail.com" }]
+dynamic = ["version"]
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest>=8.1.1",
+    "coverage>=7.4.4",
+    "pytest-cov>=4.1.0",
+    "pytest-randomly>=3.15.0",
+    "mypy[faster-cache]>=1.13.0",
+]
+docs = [
+    "Sphinx==8.0.2",
+    "numpydoc==1.8.0",
+    "ansys-sphinx-theme==1.0.3",
+]
+dev = [
+    "ruff>=0.7.0",
+    "pre-commit>=3.8.0",
+    "tox>=4.14.1",
+    "test-proj[tests]",
+    "test-proj[docs]",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "test_proj.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+test_proj = ["py.typed"]
+
+###### ruff ######
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "I", "D", "B", "UP", "FA"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F403", "D212"]
+"setup.py" = ["D"]
+"{docs,tests,examples}/**" = ["D"]
+"examples/*" = ["E402"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "single"
+docstring-code-format = true
+
+###### numpydoc ######
+
+[tool.numpydoc_validation]
+checks = [
+    "all",  # All checks except those below:
+    "GL01", # Summary should start in the line immediately
+    "ES01", # Extended summary not found
+    "SA01", # 'See Also' section not found
+    "EX01", # 'Examples' section not found
+]
+
+###### mypy ######
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+follow_imports = "normal"
+show_error_codes = true
+show_error_context = true
+pretty = true
+
+###### pytest ######
+
+[tool.pytest.ini_options]
+addopts = """
+    --doctest-modules
+    --doctest-continue-on-failure
+    --cov=test_proj
+    --cov-report term-missing
+    --randomly-seed=42
+"""
+doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL"
+testpaths = [
+    "tests", # unit tests; functional tests; doctests in helper code
+    "src",   # doctests in source code
+]
+
+###### tox ######
+
+[tool.tox]
+legacy_tox_ini = """
+    [tox]
+    min_version = 4.0
+    env_list = py{310,311,312}
+
+    [gh]
+    python =
+        3.10 = py310
+        3.11 = py311
+        3.12 = py312
+
+    [testenv]
+    description = Run doctests and unit tests
+    setenv = PY_IGNORE_IMPORTMISMATCH=1
+    extras =
+        tests
+    package = wheel
+    commands =
+        pytest --basetemp="{env_tmp_dir}"
+        mypy src
+"""

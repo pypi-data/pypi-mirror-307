@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/test_proj/__init__.py
+src/test_proj/py.typed
+src/test_proj/util.py
+src/testpeepoo.egg-info/PKG-INFO
+src/testpeepoo.egg-info/SOURCES.txt
+src/testpeepoo.egg-info/dependency_links.txt
+src/testpeepoo.egg-info/requires.txt
+src/testpeepoo.egg-info/top_level.txt
