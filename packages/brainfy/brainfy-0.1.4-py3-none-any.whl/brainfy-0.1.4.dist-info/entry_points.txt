@@ -1,0 +1,3 @@
+[console_scripts]
+brainfy=brainfy.__main__:main
+
