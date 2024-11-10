@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: github-pr-watcher
+Version: 1.0.4
+Summary: Desktop application to monitor GitHub Pull Requests
+Author: gm2211
+Author-email: gmecocci@outlook.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyQt6 (>=6.6.0,<7.0.0)
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: xxhash (>=3.4.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# GitHub PR Watcher
+
+A desktop tool to monitor GitHub Pull Requests with native notifications.
+
+## Development
+
+Requirements:
+- Python 3.11
+- Poetry
+
+Setup:
+
