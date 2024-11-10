@@ -1,0 +1,3 @@
+[console_scripts]
+imediff = imediff:main.main
+imediff_install = imediff:install.install
