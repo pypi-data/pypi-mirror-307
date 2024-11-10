@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: vfxpipe
+Version: 0.1.9
+Summary: A stack of tools for production pipelines
+Home-page: http://github.com/rsgalloway/vfxpipe
+Author: Ryan Galloway
+Author-email: ryan@rsgalloway.com
+Description-Content-Type: text/markdown
+Requires-Dist: siteconf>=0.2.1
+Requires-Dist: envstack>=0.6.0
+Requires-Dist: distman>=0.1.7
+Requires-Dist: pyseq>=0.8.0
+
+vfxpipe
+=======
+
+A collection of tools for VFX pipelines.
+
+- [envstack](https://github.com/rsgalloway/envstack)
+- [distman](https://github.com/rsgalloway/distman)
+- [pyseq](https://github.com/rsgalloway/pyseq)
+- [siteconf](https://github.com/rsgalloway/siteconf)
+
+## Installation
+
+```bash
+$ pip install -U vfxpipe
+```
