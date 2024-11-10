@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rhoGPT-PySDK
+Version: 0.1.0
+Summary: A Python SDK for interacting with the rhoGPT API
+Home-page: https://github.com/Ocean-Moist/rhoGPT-PySDK
+Author: Rohan
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
