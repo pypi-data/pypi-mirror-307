@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: cosmax
+Version: 0.0.1
+Summary: Fast and differentiable implementations of operations needed for inference and analysis in cosmology. Powered by JAX
+Project-URL: Homepage, https://andrinr.github.io/cosmax/
+Project-URL: Issues, https://github.com/andrinr/cosmax/issues
+Author-email: Andrin Rehmann <andrinrehmann@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# cosmax
+Fast and differentiable implementations of operations needed for inference and analysis in cosmology. Powered by JAX.
+
+## Development
+
+Build 
+
+```
+python -m build
+```
+
+### Documentation
+
+With the pip package sphinx installed, run
+
+```
+sphinx-apidoc -o docs/source cosmax/
+sphinx-build -b html docs/source docs/_build
+```
+
+to view locally
+
+```
+cd docs/_build
+python -m http.server
+```
