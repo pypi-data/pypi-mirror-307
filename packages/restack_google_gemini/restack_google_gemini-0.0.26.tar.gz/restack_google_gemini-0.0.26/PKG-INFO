@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: restack_google_gemini
+Version: 0.0.26
+Summary: Google Gemini for Restack AI
+Author: Restack Team
+Author-email: service@restack.io
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: google-generativeai (>=0.8.3,<0.9.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: restack_ai (>=0.0.28,<0.0.29)
+Description-Content-Type: text/markdown
+
+# Restack AI Google Gemini Integration
+
+This package provides a Python integration for Google Gemini
+
