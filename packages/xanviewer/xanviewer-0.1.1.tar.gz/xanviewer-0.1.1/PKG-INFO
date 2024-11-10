@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xanviewer
+Version: 0.1.1
+Summary: A viewer for XBF files as found in the game Emperor: Battle for Dune.
+License: GPL-3.0-or-later
+Author: Lunaji
+Author-email: lunacyjay@gmail.com
+Requires-Python: >=3.10,<3.14
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: PyOpenGL (>=3.1.7)
+Requires-Dist: PySide6 (>=6.8.0.2)
+Requires-Dist: numpy (>=2.1.2)
+Requires-Dist: pyqtgraph (>=0.13.7)
+Requires-Dist: xanlib (>=0.1.0)
+Description-Content-Type: text/markdown
+
+# Xanadu Animation Viewer
+[![PyPI](https://img.shields.io/pypi/v/xanviewer.svg)](https://pypi.org/project/xanviewer)
+
+A viewer for XBF files as found in the game *Emperor: Battle for Dune*.  
+Requires [xanlib](https://github.com/Lunaji/xanlib).
+
+## Usage
+Loading a XBF file will show a list of its nodes on the side panel.  
+Clicking on a node will display its mesh in the viewer.  
+If it has vertex animation frames, it is possible to play through them.
+
+![mgt_animation_ctrl_fps](https://github.com/user-attachments/assets/3d71ca94-2eaa-4850-9af2-de310dbd7135)
+
