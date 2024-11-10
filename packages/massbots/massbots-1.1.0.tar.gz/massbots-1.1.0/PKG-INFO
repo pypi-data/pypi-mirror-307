@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: massbots
+Version: 1.1.0
+Summary: SDK for api.massbots.xyz
+Home-page: https://github.com/massbots/sdk-python
+Author: massbots-dev
+Author-email: sy.tgbot@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/massbots/sdk-python
+Description-Content-Type: text/markdown
+
+# massbots.dl (Python)
+
+[![Docs](https://img.shields.io/badge/api-reference-lightgray.svg)](https://api.massbots.xyz/docs) [![PyPI version](https://badge.fury.io/py/massbots.svg)](https://badge.fury.io/py/massbots) [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1iew8.svg)](https://uptime.massbots.xyz)
+
