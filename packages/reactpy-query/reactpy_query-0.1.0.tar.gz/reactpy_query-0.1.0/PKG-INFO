@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: reactpy-query
+Version: 0.1.0
+Requires-Dist: reactpy>=1.0.0
+Requires-Dist: asyncio>=3.4.3
