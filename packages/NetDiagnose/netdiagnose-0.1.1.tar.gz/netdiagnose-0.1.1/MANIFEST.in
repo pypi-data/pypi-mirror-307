@@ -1,0 +1,19 @@
+include *.py
+
+include README.md
+include LICENSE
+
+include config.py
+
+recursive-include linux *.py
+recursive-include windows *.py
+
+recursive-include tests *.py
+
+exclude *.bak
+exclude *.swp
+exclude .git*
+exclude __pycache__
+
+exclude venv/*
+exclude .idea/*
