@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: manim-smart-algebra
+Version: 0.3.5
+Summary: Manim plugin which simplifies the process of animating algebra
+Home-page: https://github.com/TheMathematicFanatic/manim_smart_algebra
+License: MIT
+Author: John Connell
+Author-email: johnconnelltutor@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: MF-Tools (>=1.1.2)
+Requires-Dist: manim (>=0.17)
+Project-URL: Repository, https://github.com/TheMathematicFanatic/manim_smart_algebra
+Description-Content-Type: text/markdown
+
+# Basic Description
+
+I don't know what I'm going to put here yet, but apparently it can't be blank or twine gives me a hard time.
