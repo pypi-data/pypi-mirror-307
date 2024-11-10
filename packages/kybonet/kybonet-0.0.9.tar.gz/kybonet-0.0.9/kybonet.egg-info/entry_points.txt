@@ -1,0 +1,5 @@
+[console_scripts]
+kybonet-client = kybonet.client:main
+kybonet-devices = kybonet.input_devices:main
+kybonet-keygen = kybonet.crypto:main
+kybonet-server = kybonet.server:main
