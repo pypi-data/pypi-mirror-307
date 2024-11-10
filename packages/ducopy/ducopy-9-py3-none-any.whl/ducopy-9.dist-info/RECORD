@@ -1,0 +1,15 @@
+ducopy/__init__.py,sha256=VnjTGNMWEAdRxfHO9Q-XOj_FNUgH125XdSlJeVNFyBk,109
+ducopy/cli.py,sha256=iC9NWJ44Uj1qLSk2xkEr5SmGzt2zA1_v17ATdcU6to4,4614
+ducopy/ducopy.py,sha256=NyQFwNJuN-GV5wDX01xEnFdAgl5cEtYTrXkuJM24lnc,1329
+ducopy/certs/api_cert.pem,sha256=fIEO31EAyy0r-bitJwCRWdaS8ZVSRXBWLMZpMM-BB38,6596
+ducopy/rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ducopy/rest/apikeygenerator.py,sha256=fHoq6mw_wog8xuH0ExJ8Tx7ubReFbquAKEfw2-lLpGU,2535
+ducopy/rest/client.py,sha256=bkRAAC9zn5L-RJD3Pv85CPJdinVgN49bea4toxUWcF4,4354
+ducopy/rest/models.py,sha256=hlY_YUtssQIEVhJFHtkiy3rFSA6HChNQJ9w-hWJCS5c,3156
+ducopy/rest/utils.py,sha256=oq0yHhs6mGSvYAIky5a00tl829lgL97j1KVN-Pzr-eM,4394
+ducopy-9.dist-info/LICENSE,sha256=X1sBySCwmqEfaZn1_m_s_rCutPObmHMqJn4YGPA5NHc,1992
+ducopy-9.dist-info/METADATA,sha256=g9N40ywQPfIjSLsTRNSDcdQhhBZegZ-557MpfI6w13g,7015
+ducopy-9.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+ducopy-9.dist-info/entry_points.txt,sha256=0hgCcTMBtoRhjsaQhBLDEo0JQeusvhTYR2Pl5fLxLM4,50
+ducopy-9.dist-info/top_level.txt,sha256=qvOxSBj82-Q5gAE4Jq5QEi16k1blOZIJWw5GsUXOz60,7
+ducopy-9.dist-info/RECORD,,
