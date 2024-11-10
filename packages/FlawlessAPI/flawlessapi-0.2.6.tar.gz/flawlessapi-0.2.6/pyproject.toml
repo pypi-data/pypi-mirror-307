@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FlawlessAPI"
+version = "0.2.6"
+authors = [
+    { name="wen", email="799771344@qq.com" },
+]
+description = "一个高性能的API服务框架"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: AsyncIO",
+]
+
+# 添加依赖项
+dependencies = [
+    "uvicorn>=0.15.0",
+    "aiohttp>=3.8.0",
+    "pydantic>=1.8.0",
+    "jinja2>=3.0.0",
+    "werkzeug>=2.0.0",
+    "aiofiles>=0.8.0",
+    "python-jose>=3.3.0",
+    "docstring-parser>=0.15",
+    "jwt>=1.3.1",
+    "aiocron>=1.8",
+    "databases>=0.9.0",
+    "sqlalchemy>=2.0.36",
+    "psutil>=6.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/799771344/FlawlessAPI"
+"Bug Tracker" = "https://github.com/799771344/FlawlessAPI/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}  # 告诉setuptools源码在src目录下
+packages = {find = {where = ["src"]}}
