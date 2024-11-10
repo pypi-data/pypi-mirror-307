@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: libertai-agents
+Version: 0.0.1
+Summary: Framework to create and deploy decentralized agents
+Home-page: https://libertai.io
+Author: LibertAI.io team
+Author-email: hello@libertai.io
+Requires-Python: >=3.11,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: aiohttp (>=3.10,<4.0)
+Requires-Dist: fastapi (>=0.112,<0.113)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: pydantic (>=1.10,<2.0)
+Requires-Dist: transformers (>=4.46.0,<5.0.0)
+Project-URL: Documentation, https://docs.libertai.io/agents
+Project-URL: Repository, https://github.com/LibertAI/libertai-agents
+Description-Content-Type: text/markdown
+
+# LibertAI Agents
+
+Framework to create and deploy decentralized agents 🚀
+
+> ⚠ This framework is in beta and might undergo some breaking changes before the stable release.
+
+Take a look at [our documentation](https://docs.libertai.io/agents) to get started!
