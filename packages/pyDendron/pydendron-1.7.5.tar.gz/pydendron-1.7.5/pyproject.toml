@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyDendron"
+version = "1.7.5"
+
+description = "Open-source python package dedicated to dendrochronology"
+readme = "README.md"
+license = { file = "licence.txt" }
+authors = [
+    { name = "Sylvain Meignier", email = "sylvain.meignier@univ-lemans.fr" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Environment :: Web Environment",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "panel>=1.5.2",
+    "matplotlib",
+    "scipy",
+    "xlsxwriter",
+    "scikit-learn",
+    "seaborn",
+    "statsmodels",
+    "networkx",
+    "lxml",
+    "csaps",
+    "numba",
+    "ipywidgets_bokeh"
+]
+
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://git-lium.univ-lemans.fr/Meignier/pyDendron"
+
+[project.scripts]
+pyDendron = "pyDendron:__main__"
+
+[tool.setuptools.package-data]
+"pyDendron.data" = ["*.svg", "*.p"]

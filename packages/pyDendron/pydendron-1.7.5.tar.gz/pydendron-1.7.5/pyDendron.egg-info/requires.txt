@@ -1,0 +1,14 @@
+numpy
+pandas
+panel>=1.5.2
+matplotlib
+scipy
+xlsxwriter
+scikit-learn
+seaborn
+statsmodels
+networkx
+lxml
+csaps
+numba
+ipywidgets_bokeh
