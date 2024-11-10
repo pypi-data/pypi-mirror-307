@@ -1,0 +1,2 @@
+[console_scripts]
+biofetcher = scripts.run_downloader:main
