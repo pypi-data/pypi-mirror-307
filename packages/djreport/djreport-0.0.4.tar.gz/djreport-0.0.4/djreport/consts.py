@@ -1,0 +1,5 @@
+# output format
+OUTPUT_FORMAT_PDF = "pdf"
+OUTPUT_FORMAT_HTML = "html"
+OUTPUT_FORMATS = [OUTPUT_FORMAT_PDF, OUTPUT_FORMAT_HTML]
+OUTPUT_FORMAT_CHOICES = ((frmt, frmt.upper()) for frmt in OUTPUT_FORMATS)
