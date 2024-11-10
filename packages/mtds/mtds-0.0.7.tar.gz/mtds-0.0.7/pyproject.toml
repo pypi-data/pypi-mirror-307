@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "mtds"
+version = "0.0.7"
+description = ""
+authors = ["wondera <dev@wondera.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+confluent-kafka = "^2.5.3"
+boto3 = "^1.35.28"
+redis = "^5.2.0"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.ruff.lint]
+select = [
+    "F",    # pyflakes
+    "E",    # pycodestyle Error
+    "W",    # pycodestyle Warning
+    "C901", # complex-structure
+    "UP",   # pyupgrade
+    "I",    # isort
+    "PD",   # pandas-vet
+    "NPY",  # NumPy-specific rules
+]
+ignore = ["F401"]
+preview = true
+
+
+[tool.ruff.format]
+quote-style = "single"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

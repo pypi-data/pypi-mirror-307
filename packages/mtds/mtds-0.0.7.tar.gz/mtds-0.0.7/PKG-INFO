@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mtds
+Version: 0.0.7
+Summary: 
+Author: wondera
+Author-email: dev@wondera.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.28,<2.0.0)
+Requires-Dist: confluent-kafka (>=2.5.3,<3.0.0)
+Requires-Dist: redis (>=5.2.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# 安装sdk
+
+```
+pip install -U mtds
+```
+
+# 参考示例
+
+同步版本：examples/sync_example.py  
+异步版本： examples/async_example.py  
+s3上传：examples/s3_example.py
+redis客户端：examples/redis_example.py
