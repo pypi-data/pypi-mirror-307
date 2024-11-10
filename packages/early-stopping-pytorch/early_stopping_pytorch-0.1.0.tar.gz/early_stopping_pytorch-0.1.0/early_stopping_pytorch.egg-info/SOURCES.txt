@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+early_stopping_pytorch/__init__.py
+early_stopping_pytorch/early_stopping.py
+early_stopping_pytorch.egg-info/PKG-INFO
+early_stopping_pytorch.egg-info/SOURCES.txt
+early_stopping_pytorch.egg-info/dependency_links.txt
+early_stopping_pytorch.egg-info/requires.txt
+early_stopping_pytorch.egg-info/top_level.txt
+tests/test_early_stopping.py

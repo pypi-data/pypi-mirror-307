@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "early-stopping-pytorch"
+dynamic = ["version"]
+description = "A PyTorch utility package for Early Stopping"
+readme = "README.md"
+authors = [
+    { name = "Bjarte Sunde", email = "BjarteSunde@outlook.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.21",
+    "torch>=1.9.0"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "early_stopping_pytorch.__version__"}
+
+[tool.semantic_release]
+version_variable = ["early_stopping_pytorch/__init__.py:__version__"]
+branch = "main"
+upload_to_pypi = false
+build_command = "pip install build && python -m build"
+
+[tool.semantic_release.git]
+tag_format = "v{version}"
