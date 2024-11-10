@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=70.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whitenoise-spa"
+version = "2.0.0"
+dependencies = ["whitenoise"]
+requires-python = ">=3"
+authors = [{ name = "Pradish Bijukchhe", email = "pradish@sandbox.com.np" }]
+description = "Serve SPA (Single Page Application) in django using whitenoise"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = []
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/sandbox-pokhara/whitenoise-spa"
+Issues = "https://github.com/sandbox-pokhara/whitenoise-spa/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"whitenoise_spa" = "whitenoise_spa"
+
+[tool.isort]
+line_length = 79
+force_single_line = true
+
+[tool.black]
+line-length = 79
+preview = true
+
+[tool.pyright]
+include = ["whitenoise_spa"]
+typeCheckingMode = "strict"

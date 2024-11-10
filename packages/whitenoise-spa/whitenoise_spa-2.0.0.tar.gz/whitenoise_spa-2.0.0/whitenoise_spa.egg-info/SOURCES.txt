@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+whitenoise_spa/__init__.py
+whitenoise_spa/middleware.py
+whitenoise_spa/py.typed
+whitenoise_spa.egg-info/PKG-INFO
+whitenoise_spa.egg-info/SOURCES.txt
+whitenoise_spa.egg-info/dependency_links.txt
+whitenoise_spa.egg-info/requires.txt
+whitenoise_spa.egg-info/top_level.txt
