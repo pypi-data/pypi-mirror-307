@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: basic-eda
+Version: 0.1
+Summary: todo
+Description-Content-Type: text/markdown
+
+# pypi-validator
+
+```commandline
+make publish PACKAGE_NAME="simple_eda"
+```
