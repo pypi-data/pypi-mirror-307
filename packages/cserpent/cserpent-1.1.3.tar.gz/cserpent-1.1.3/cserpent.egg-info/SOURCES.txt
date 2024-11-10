@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+cserpent.c
+cserpent_py.c
+cserpentmodule.py
+pyproject.toml
+setup.py
+stb_c_lexer.h
+cserpent.egg-info/PKG-INFO
+cserpent.egg-info/SOURCES.txt
+cserpent.egg-info/dependency_links.txt
+cserpent.egg-info/requires.txt
+cserpent.egg-info/top_level.txt
