@@ -1,0 +1,2 @@
+[fs.opener]
+git = gitfs2:GitFSOpener
