@@ -1,0 +1,3 @@
+[console_scripts]
+twtender = twtender.main:main
+
