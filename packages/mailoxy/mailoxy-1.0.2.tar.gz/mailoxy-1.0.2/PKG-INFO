@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: mailoxy
+Version: 1.0.2
+Summary: maimai llc tool box
+Author: llc
+Author-email: gllc153220@gmail.com
+License: Mozilla Public License
+Platform: windows
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: crypto
+Requires-Dist: pycryptodome
+Requires-Dist: orjson
+Requires-Dist: h2
+Requires-Dist: pydantic
+Requires-Dist: Loguru
+Requires-Dist: UnityPy
+Requires-Dist: Pillow
+Requires-Dist: asgiref
+
+# mailoxy
+
+1. [Installation](#installation)
+2. [Example](#example)
+3. [UpdateLog](#updatelog)
+
+## Installation
+
+**Python 3.11.0 or higher is required**
+
+pypi
+
+```cmd
+pip install mailoxy
+```
+
+## Pre-start
+
+manual compile the db_file
+
+```python
+from mailoxy.dmr import export_dict_all
+
+export_dict_all("path/to/sdgb/StreamingAssets", "out_file_name.py")
+```
+
+## Example
+
+The following is a simple example.
+
+```python
+from mailoxy.db_types import other_db
+from mailoxy.maimanager import MaiManager
+from mailoxy.maitypes import MaiConfig, MusicDetailRecord
+
+import db  # manual compiled file
+
+other_db.db_module = db
+
+g_config = MaiConfig(
+    mai2_salt='mai2_salt',
+    region='your region',
+    placeId='your placeId',
+    placeName='your placeName',
+    aes_key=b"aes_key",
+    aes_iv=b"aes_iv",
+    chime_salt='chime_salt',
+    keychip='your keychip',
+    romVersion='current rom version',
+    dataVersion='current_data version',
+)
+manager = MaiManager(g_config)
+
+
+def user_id_test():
+    qrcode_data = "SWGCMAID2410311010106396A001F06D1AFD5565FBBD1B03BAAF254B413D08B8BE6125E087E91D303AHS"
+    mai2 = manager.generate_mai2(manager.generate_user_id(qrcode_data))
+    mai2.send_ticket(3)
+
+
+if __name__ == '__main__':
+    user_id_test()
+```
+
+## UpdateLog
+
+Version 1.0.2
+- 2022/11/07: Optimize calls
+- 2022/11/04: Add diving-fish api
+
+Version 1.0.1
+
+- 2022/11/03: Add diving-fish extension
+
+Version 1.0.0
+
+- 2024/11/01: Initial release.
