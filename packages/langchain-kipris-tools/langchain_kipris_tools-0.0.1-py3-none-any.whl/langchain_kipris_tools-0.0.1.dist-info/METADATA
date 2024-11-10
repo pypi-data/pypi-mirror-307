@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: langchain_kipris_tools
+Version: 0.0.1
+Summary: kipris api tools for langchain
+Home-page: https://github.com/greennuri/langchain_kipris_tools
+Author: jaeho. kang
+Author-email: greennuri@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain
+Requires-Dist: requests
+Requires-Dist: xmltodict
+Requires-Dist: pandas
+Requires-Dist: stringcase
+Requires-Dist: python-dotenv
+
+# langchain_kipris_tools
+korean patent api kipris langchain tools wrapper
