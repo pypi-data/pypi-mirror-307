@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ccsm-cc
+Version: 0.0.1
+Summary: A Simple and Easy-to-Use Save Manager for Crab Champions
+Author-email: CJ <cjendantix@proton.me>
+License: Unlicense
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console :: Curses
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: ui-forge
+Requires-Dist: SavConverter
+Requires-Dist: pathvalidate
+
+# Crab Champions Save Manager
+
+## Development Road Map
+✅ - Finished  
+⚙️ - In Progress  
+❌ - Todo
+
+- Main Menu ⚙️
+- Settings Menu ❌
+- Create a higher-level format, storing only minimal data from a save and creating a full save from said data ✅
+- Backups System
+  - Create a menu for storing backups from the current save ✅
+  - Create a menu for loading stored backups to the current save ✅
+  - Create a menu for editing backup data ⚙️
+    - Find a way to watermark edited saves to prevent cheating ❌
+
+For those interested in reading the code, the term "Neocrab" refers to the internal simplified save format.
