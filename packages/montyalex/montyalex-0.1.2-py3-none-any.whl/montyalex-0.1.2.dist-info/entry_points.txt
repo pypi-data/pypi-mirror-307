@@ -1,0 +1,6 @@
+[console_scripts]
+montyalex = montyalex.app:monty
+mtax = montyalex.app:monty
+
+[gui_scripts]
+
