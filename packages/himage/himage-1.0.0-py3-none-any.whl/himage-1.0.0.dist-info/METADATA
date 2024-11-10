@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: himage
+Version: 1.0.0
+Summary: A small library, of high level image processing tools
+Home-page: https://github.com/mySpecialUsername/highimage
+Author: Gor G.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: PyQt6
+
+A set of various convenient functions useful in image processing, written in python.
+
+## Example of usage
+
+```py
+from himage import imshow, multimshow, imread
+
+im = imread("image.png")
+
+imshow(im)
+multimshow([im, im, im], titles = ['title 1', 'title 2', 'title 3'], n_cols=3)
+```
