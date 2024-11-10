@@ -1,0 +1,8 @@
+matplotlib
+seaborn
+optuna~=4.0.0
+pyyaml
+market-data-assembler~=1.0.6
+scikit-learn
+plotly
+openpyxl
