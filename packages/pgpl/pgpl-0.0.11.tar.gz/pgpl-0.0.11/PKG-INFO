@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: pgpl
+Version: 0.0.11
+Summary: description
+Author: Infstellar
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: inputimeout
+Requires-Dist: loguru
+Requires-Dist: requests
+Requires-Dist: tqdm
