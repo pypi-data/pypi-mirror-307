@@ -1,0 +1,42 @@
+
+[:python_version <= "3.9"]
+typing-extensions>=3.7.4.2
+
+[:python_version == "3.6"]
+dataclasses
+backports-datetime-fromisoformat==1.0.0
+
+[dev]
+flake8>=3
+tox==3.24.5
+pytimeparse==1.1.8
+coverage>=6.2
+pip>=21.3.1
+bump2version==1.0.1
+watchdog[watchmedo]==2.1.6
+Sphinx==5.3.0
+twine==3.8.0
+pytest==7.0.1
+pytest-mock>=3.6.1
+pytest-cov==3.0.0
+dataclasses-json==0.5.6
+jsons==1.6.1
+dataclass-factory==2.12
+
+[dev:python_version < "3.8"]
+sphinx-issues==3.0.1
+
+[dev:python_version == "3.6"]
+wheel==0.37.1
+
+[dev:python_version > "3.6"]
+wheel==0.42.0
+
+[dev:python_version >= "3.8"]
+sphinx-issues==4.0.0
+
+[timedelta]
+pytimeparse>=1.1.7
+
+[yaml]
+PyYAML>=5.3
