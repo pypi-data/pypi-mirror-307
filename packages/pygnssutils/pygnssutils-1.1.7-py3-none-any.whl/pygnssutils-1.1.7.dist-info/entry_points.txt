@@ -1,0 +1,11 @@
+[console_scripts]
+gnssdump = pygnssutils.gnssstreamer_cli:main
+gnssmqttclient = pygnssutils.gnssmqttclient_cli:main
+gnssntripclient = pygnssutils.gnssntripclient_cli:main
+gnssserver = pygnssutils.gnssserver_cli:main
+gnssstreamer = pygnssutils.gnssstreamer_cli:main
+ubxcompare = pygnssutils.ubxcompare:main
+ubxload = pygnssutils.ubxload:main
+ubxsave = pygnssutils.ubxsave:main
+ubxsetrate = pygnssutils.ubxsetrate:main
+ubxsimulator = pygnssutils.ubxsimulator_cli:main
