@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE.txt
+README.md
+pyproject.toml
+examples/error_handling.py
+examples/registering_methods.py
+pyjsonrpc2/__init__.py
+pyjsonrpc2/py.typed
+pyjsonrpc2/server.py
+pyjsonrpc2.egg-info/PKG-INFO
+pyjsonrpc2.egg-info/SOURCES.txt
+pyjsonrpc2.egg-info/dependency_links.txt
+pyjsonrpc2.egg-info/requires.txt
+pyjsonrpc2.egg-info/top_level.txt
+tests/__init__.py
+tests/test_server.py
