@@ -1,0 +1,15 @@
+immutabledict
+pytools>=2022.1.14
+typing-extensions>=4.5
+useful-types
+
+[matchpy]
+matchpy
+
+[numpy]
+numpy>=1.6
+
+[test]
+mypy
+pytest
+ruff
