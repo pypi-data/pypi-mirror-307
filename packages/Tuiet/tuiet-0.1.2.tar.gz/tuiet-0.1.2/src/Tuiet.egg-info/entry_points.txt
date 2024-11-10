@@ -1,0 +1,2 @@
+[console_scripts]
+tuiet = tuiet.__main__:cli
