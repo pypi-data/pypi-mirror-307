@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: python-kv
+Version: 0.3.2
+Summary: Async key-value store ABC. Implementations over SQLAlchemy, the filesystem, Redis, Azure Blob, and more.
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/marciclabas/kv.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: lazy-loader
+Provides-Extra: sql
+Requires-Dist: sqlmodel; extra == "sql"
+Requires-Dist: sqltypes; extra == "sql"
+Provides-Extra: redis
+Requires-Dist: redis; extra == "redis"
+Provides-Extra: blob
+Requires-Dist: azure-storage-blob; extra == "blob"
+Requires-Dist: aiohttp; extra == "blob"
+Provides-Extra: cosmos
+Requires-Dist: azure-cosmos; extra == "cosmos"
+Requires-Dist: aiohttp; extra == "cosmos"
+Provides-Extra: server
+Requires-Dist: fastapi; extra == "server"
+Requires-Dist: uvicorn; extra == "server"
+Requires-Dist: pyjwt; extra == "server"
+Provides-Extra: client
+Requires-Dist: httpx; extra == "client"
+Requires-Dist: pyjwt; extra == "client"
+Provides-Extra: cli
+Requires-Dist: typer; extra == "cli"
+Provides-Extra: all
+Requires-Dist: fs-tools; extra == "all"
+Requires-Dist: sqlmodel; extra == "all"
+Requires-Dist: redis; extra == "all"
+Requires-Dist: azure-storage-blob; extra == "all"
+Requires-Dist: aiohttp; extra == "all"
+Requires-Dist: fastapi; extra == "all"
+Requires-Dist: uvicorn; extra == "all"
+Requires-Dist: httpx; extra == "all"
+Requires-Dist: typer; extra == "all"
+
+# KV
+
+`KV` is an async key-value store interface for Python. It provides a simple API to store serializable objects.
+
+```bash
+pip install python-kv
+```
+
+`KV` supports multiple backends, including the filesystem, SQLite, Redis, Azure Blob, and many more.
+
+```python
+from kv import KV
+
+kv = KV.of('sql+sqlite:///path/to/db.sqlite', type=dict) 
+
+await kv.insert('hello', {'world': 42})
+await kv.read('hello') # {'world': 42}
+await kv.delete('hello')
+async for k, v in kv.items():
+  ...
+await kv.clear()
+```
+
+[**Read the docs!**](https://marciclabas.github.io/kv/)
