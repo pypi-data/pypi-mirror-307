@@ -1,0 +1,3 @@
+[console_scripts]
+gptsum=gptsum.cli:main
+
