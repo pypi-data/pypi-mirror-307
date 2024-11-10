@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pub-utils-hhb
+Version: 0.0.4
+Summary: Public/Common codes for Python projects.
+Author-email: HHB <1014616839@qq.com>
+Project-URL: Homepage, https://github.com/Seer-00/PythonPubCodeFiles/tree/dev
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome ==3.20.0
+
+# PythonPubCodeFiles
+Python项目可复用公共文件

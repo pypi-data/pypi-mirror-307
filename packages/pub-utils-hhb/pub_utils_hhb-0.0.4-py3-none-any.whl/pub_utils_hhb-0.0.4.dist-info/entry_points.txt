@@ -1,0 +1,2 @@
+[console_scripts]
+test = pub_utils.pub_common_utils:get_root_dir
