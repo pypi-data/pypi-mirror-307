@@ -1,0 +1,15 @@
+numpy
+orjson
+tqdm
+
+[dev]
+black
+ipython
+mypy
+pre-commit
+pytest
+pytest-coverage
+ruff
+
+[hnsw]
+hnswlib
