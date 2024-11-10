@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dvc_utils/__init__.py
+dvc_utils/main.py
+dvc_utils/named_pipes.py
+dvc_utils.egg-info/PKG-INFO
+dvc_utils.egg-info/SOURCES.txt
+dvc_utils.egg-info/dependency_links.txt
+dvc_utils.egg-info/entry_points.txt
+dvc_utils.egg-info/top_level.txt
