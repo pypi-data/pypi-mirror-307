@@ -1,0 +1,31 @@
+[tool.qpro]
+[[tool.qpro.server_targets]]
+user = "lianhaocheng"
+host = "localhost"
+path = "/Library/Frameworks/Python.framework/Versions/Current/lib/python3.9/site-packages/"
+port = "22"
+
+[tool.qpro.config]
+compile_tool = ""
+compile_filename = "main.py"
+executable_filename = "python3 main.py"
+input_file = "dist/input.txt"
+template_root = "template/"
+
+
+[tool.poetry]
+name = "fuckexcel"
+version = "0.0.3"
+description = "Using Excel as 2D Array"
+authors = ["Rhythmicc <rhythmlian.cn@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openpyxl = "^3.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
