@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pynordpool
+Version: 0.2.2
+Summary: Retrieve values from API at Nord Pool.
+Home-page: https://github.com/gjohansson-ST/pynordpool
+License: MIT
+Keywords: nordpool,Nord Pool,api,async,client
+Author: G Johansson
+Author-email: goran.johansson@shiftit.se
+Maintainer: G Johansson
+Maintainer-email: goran.johansson@shiftit.se
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.9.2)
+Project-URL: Bug Tracker, https://github.com/gjohansson-ST/pynordpool/issues
+Project-URL: Changelog, https://github.com/gjohansson-ST/pynordpool/releases
+Project-URL: Documentation, https://github.com/gjohansson-ST/pynordpool
+Project-URL: Repository, https://github.com/gjohansson-ST/pynordpool
+Description-Content-Type: text/markdown
+
+# pynordpool
+python module for communicating with [Nord Pool](https://data.nordpoolgroup.com/auction/day-ahead/prices)
+
+## Code example
+
+### Retrieve delivery period prices
+
+Hourly rates from provided date
+
+```python
+from pynordpool import NordPoolClient, Currency
+
+async with aiohttp.ClientSession(loop=loop) as session:
+    client = NordPoolClient(session)
+    output = await client.async_get_delivery_period(
+        datetime.datetime.now(), Currency.EUR, ["SE3"]
+    )
+    print(output)
+```
+
