@@ -1,0 +1,22 @@
+[build-system] 
+requires = ["hatchling"] 
+build-backend = "hatchling.build"
+
+[project] 
+name = "mrfix"
+version = "7.0.0"
+authors = [   
+  { name="Valerii Zhuravlev", email="valerii.zhuravlev.for.job@gmail.com" },
+] 
+description = "The Mr Fix module is designed to create autotests written in Python for testing UI, API, PostgreSQL, Security and Perfomance Testing."
+readme = "README.md" 
+requires-python = ">=3.9"
+classifiers = [     
+  "Programming Language :: Python :: 3",     
+  "License :: OSI Approved :: MIT License",     
+  "Operating System :: OS Independent", 
+]  
+[project.urls] 
+"Homepage" = "https://github.com/MrFix-Autotesting-Framework" 
+
+
