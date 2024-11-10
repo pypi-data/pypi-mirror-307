@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simpleslacalc
+Version: 0.0.5
+Summary: Simple SLA Calculator
+Author-email: Kenny Sambrook <kenny@krstek.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/exodusprime1337/SimpleSLACalc
+Project-URL: Bug Tracker, https://github.com/exodusprime1337/SimpleSLACalc/issues
+Keywords: sla,service level agreement,time,timer,calculator
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: holidays>=0.60
+Requires-Dist: pendulum>=3.0.0
