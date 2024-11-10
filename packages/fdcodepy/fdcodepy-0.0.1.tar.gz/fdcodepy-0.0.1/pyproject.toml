@@ -1,0 +1,26 @@
+[project]
+name = "fdcodepy"
+version = "0.0.1"
+authors = [
+  { name="Rui Yuan", email="123abcyuanrui@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "numba"
+]
+
+[project.urls]
+Homepage = "https://github.com/abc123yuanrui/FD_codepy"
+Issues = "https://github.com/abc123yuanrui/FD_codepy/issues"
