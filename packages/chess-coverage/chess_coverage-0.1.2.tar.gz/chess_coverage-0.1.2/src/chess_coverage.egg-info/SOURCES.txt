@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/chess_coverage/__init__.py
+src/chess_coverage/chess_coverage.py
+src/chess_coverage.egg-info/PKG-INFO
+src/chess_coverage.egg-info/SOURCES.txt
+src/chess_coverage.egg-info/dependency_links.txt
+src/chess_coverage.egg-info/requires.txt
+src/chess_coverage.egg-info/top_level.txt
