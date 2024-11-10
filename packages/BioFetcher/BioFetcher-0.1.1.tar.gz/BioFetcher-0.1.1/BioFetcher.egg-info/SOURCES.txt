@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+BioFetcher/__init__.py
+BioFetcher/downloader.py
+BioFetcher.egg-info/PKG-INFO
+BioFetcher.egg-info/SOURCES.txt
+BioFetcher.egg-info/dependency_links.txt
+BioFetcher.egg-info/entry_points.txt
+BioFetcher.egg-info/requires.txt
+BioFetcher.egg-info/top_level.txt
+scripts/__init__.py
+scripts/run_downloader.py
