@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: isNumberFour
+Version: 0.2.0
+Summary: A Python library to Check whether the value is Number 4 or Not
+Home-page: https://github.com/YajithVishwa/isNumberFour
+Author: Yajith Vishwa
+Author-email: yajithvishwa2001@example.com
+License: MIT
+Description: # isNumberFour ---> 4
+        
+        `isNumberFour` is a simple Python library that checks if a given number is four. 
+        
+        ## Installation
+        
+        You can install `isNumberFour` from PyPI:
+        
+        ```bash
+        pip install isNumberFour
+        ```
+        
+        ## Usage
+        
+        You can use `isNumberFour` in python:
+        
+        ```bash
+        from isNumberFour import isNumberFour
+        isNumberFour(4)
+        ```
+        
+        ```bash
+        Output: True
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
