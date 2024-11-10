@@ -1,0 +1,8 @@
+miceforest<6.0.0
+numpy
+pandas
+pytorch-minimize>=0.0.2
+scipy
+scikit-learn
+torch>=1.4.0
+tqdm
