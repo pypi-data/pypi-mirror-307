@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+research_report/__init__.py
+research_report/__init__.pyi
+research_report/builder.py
+research_report/builder.pyi
+research_report/py.typed
+research_report/records.py
+research_report/records.pyi
+research_report/report.py
+research_report/report.pyi
+research_report.egg-info/PKG-INFO
+research_report.egg-info/SOURCES.txt
+research_report.egg-info/dependency_links.txt
+research_report.egg-info/requires.txt
+research_report.egg-info/top_level.txt
