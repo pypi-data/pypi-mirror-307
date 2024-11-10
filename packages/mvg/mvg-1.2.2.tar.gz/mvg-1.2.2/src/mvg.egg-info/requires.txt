@@ -1,0 +1,14 @@
+aiohttp~=3.8
+furl~=2.1
+
+[dev]
+build
+ruff
+mypy
+pytest
+pytest-asyncio
+sphinx
+sphinx-mdinclude
+sphinx-pyproject
+sphinx-rtd-theme
+twine

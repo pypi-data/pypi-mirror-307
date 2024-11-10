@@ -1,0 +1,67 @@
+[build-system]
+requires      = [ "setuptools>=61.0", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name    = "mvg"
+version = "1.2.2"
+
+description = "An unofficial interface to timetable information of the Münchner Verkehrsgesellschaft (MVG)."
+readme      = "README.md"
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+
+requires-python = ">=3.7"
+dependencies    = [ "aiohttp~=3.8", "furl~=2.1" ]
+
+[[project.authors]]
+name  = "Martin Dziura"
+email = "m.dziura@tum.de"
+
+[project.urls]
+"Documentation" = "https://mondbaron.github.io/mvg"
+"Source"        = "https://github.com/mondbaron/mvg"
+"Bug Tracker"   = "https://github.com/mondbaron/mvg/issues"
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "ruff",
+  "mypy",
+  "pytest",
+  "pytest-asyncio",
+  "sphinx",
+  "sphinx-mdinclude",
+  "sphinx-pyproject",
+  "sphinx-rtd-theme",
+  "twine",
+]
+
+[tool.mypy]
+follow_imports         = "normal"
+ignore_missing_imports = true
+show_column_numbers    = true
+show_error_codes       = true
+strict                 = true
+
+[tool.ruff]
+indent-width = 4
+line-length  = 120
+
+[tool.ruff.lint]
+ignore = [ "D203", "D213", "EXE001", "FBT" ]
+select = [ "ALL" ]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [ "INP001", "S101", "T201" ]
+
+[tool.ruff.format]
+docstring-code-format      = true
+docstring-code-line-length = "dynamic"
+indent-style               = "space"
+line-ending                = "auto"
+quote-style                = "double"

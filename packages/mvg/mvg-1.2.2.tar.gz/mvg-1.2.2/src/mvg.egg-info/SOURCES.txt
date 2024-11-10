@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/mvg/__init__.py
+src/mvg/mvgapi.py
+src/mvg.egg-info/PKG-INFO
+src/mvg.egg-info/SOURCES.txt
+src/mvg.egg-info/dependency_links.txt
+src/mvg.egg-info/requires.txt
+src/mvg.egg-info/top_level.txt
+tests/test_demo.py
