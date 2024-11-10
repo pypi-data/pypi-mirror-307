@@ -1,0 +1,2 @@
+import{n as t,aI as e,a4 as o,j as a,Y as i}from"./index.qhZ3u-nj.js";import{P as l}from"./ProgressBar.BKYMzTZC.js";const d=t("div",{target:"eg8e9hd0"})(({theme:s})=>({paddingBottom:s.spacing.sm,lineHeight:"normal",color:e(s)}));function c({element:s,width:r}){return o("div",{className:"stProgress","data-testid":"stProgress",children:[a(d,{children:a(i,{source:s.text,allowHTML:!1,isLabel:!0})}),a(l,{value:s.value,width:r})]})}export{c as default};
+//# sourceMappingURL=index.BJMrJf-g.js.map
