@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: hookme
+Version: 0.1.5
+Summary: A powerful webhook handler for Discord and Slack
+Home-page: https://github.com/wadedesign/hookme
+Author: Wadedesignco
+Author-email: hi@wadedev.online
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.0
+
+# HookMe
+
+A powerful and easy-to-use Python package for handling Discord and Slack webhooks.
+
+## Installation 
+
+## Usage
+
+### Sending a Simple Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+response = webhook.send_message("Hello, Discord!")
+print(response.status_code)
+```
+
+### Sending an Embedded Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+embed = {
+    "title": "Sample Embed",
+    "description": "This is an embedded message",
+    "color": 0x00ff00
+}
+
+response = webhook.send_embed(
+    title=embed["title"],
+    description=embed["description"],
+    color=embed["color"]
+)
+print(response.status_code)
+```
+
+### Sending a File
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+file_path = "path/to/your/file.txt"
+
+response = webhook.send_file(file_path, content="Here is a file")
+print(response.status_code)
+```
+
+### Scheduling a Message
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Schedule a message to be sent every hour
+schedule_id = automated_webhook.schedule_message(
+    schedule_type="interval",
+    schedule_value="1h",
+    content="This is a scheduled message"
+)
+
+# Start the scheduler
+automated_webhook.start_scheduler()
+```
+
+### Sending Multiple Files with an Embedded Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+files = ["path/to/your/file1.txt", "path/to/your/file2.txt"]
+
+response = webhook.send_files_with_embed(
+    files=files,
+    title="Files with Embed",
+    description="These are multiple files with an embedded message",
+    color=0x00ff00
+)
+print(response.status_code)
+```
+
+### Handling Automated Webhooks
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Schedule an embedded message to be sent daily at 9 AM
+schedule_id = automated_webhook.schedule_embed(
+    schedule_type="cron",
+    schedule_value="0 9 * * *",
+    title="Daily Update",
+    description="This is a daily update",
+    color=0x00ff00
+)
+
+# Start the scheduler
+automated_webhook.start_scheduler()
+```
