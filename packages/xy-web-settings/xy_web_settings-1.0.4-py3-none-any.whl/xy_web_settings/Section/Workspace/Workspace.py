@@ -1,0 +1,24 @@
+# -*- coding: UTF-8 -*-
+__author__ = "余洋"
+__doc__ = "Workspace"
+"""
+  * @File    :   Workspace.py
+  * @Time    :   2024/10/28 09:32:42
+  * @Author  :   余洋
+  * @Version :   0.0.1
+  * @Contact :   yuyangit.0515@qq.com
+  * @License :   (C)Copyright 2019-2024, 希洋 (Ship of Ocean)
+  * @Desc    :   
+"""
+
+from pathlib import Path
+from xy_web_settings.Section.Section import *
+
+
+class Workspace(Section):
+    path: Path | None = None
+
+    def _load(self):
+        self.path = self._fetch_path("path", Path("../workspace/"))
+
+        super()._load()
