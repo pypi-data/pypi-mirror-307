@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "aiocpa"
+version = "0.1.8"
+description = "sync & async Crypto Pay API client."
+authors = ["VoVcHiC <tsvetkovvova17@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vovchic17/aiocpa"
+documentation = "https://aiocpa.readthedocs.io/en/latest/"
+keywords = ["crypto pay", "CryptoBot", "Crypto Pay API"]
+packages = [{ include = "cryptopay", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.4"
+aiohttp = "^3.9"
+
+furo = { version = "^2024.8.6", optional = true }
+sphinx-autodoc-typehints = { version = "^2.3.0", optional = true }
+sphinx-copybutton = { version = "^0.5.2", optional = true }
+sphinxext-opengraph = { version = "^0.9.1", optional = true }
+matplotlib = { version = "^3.9.2", optional = true }
+fastapi = { version = "^0.115.0", extras = ["standard"], optional = true }
+flask = { version = "^3.0.3", extras = ["async"], optional = true }
+certifi = "^2024.8.30"
+
+[tool.poetry.extras]
+docs = [
+    "furo",
+    "sphinx-autodoc-typehints",
+    "sphinx_copybutton",
+    "sphinxext-opengraph",
+    "matplotlib",
+]
+
+fastapi = ["fastapi"]
+
+flask = ["flask"]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.0"
+mypy = "^1.13.0"
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = [
+    "ANN101", # missing-type-self
+    "ANN102", # missing-type-cls
+    "D100",   # undocumented-public-module
+    "D104",   # undocumented-public-package
+    "D106",   # undocumented-public-nested-class
+    "D107",   # undocumented-public-init
+    "D203",   # one-blank-line-before-class
+    "D212",   # multi-line-summary-first-line
+]
+select = ["ALL"]
+fixable = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"*/methods/*" = ["PLR0913", "E501"] # too-many-arguments line-too-long
+"*/types/*" = ["E501"]              # line-too-long
+"*/client/*" = ["PLR0913"]          # too-many-arguments
+"tests/*" = ["ALL"]
+"examples/*" = ["ALL"]
+"docs/*" = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-line-length = "dynamic"
+
+[[tool.mypy.overrides]]
+module = ["*.methods.*", "*.webhook.*", "*.tools.*", "*.polling.*"]
+disable_error_code = ["misc"]
+
+[[tool.mypy.overrides]]
+module = ["*.fastapi_manager.*", "*.flask_manager.*"]
+disable_error_code = ["misc", "import-not-found"]
+
+[tool.mypy]
+exclude = ["tests", "docs", "examples"]
+python_version = "3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
