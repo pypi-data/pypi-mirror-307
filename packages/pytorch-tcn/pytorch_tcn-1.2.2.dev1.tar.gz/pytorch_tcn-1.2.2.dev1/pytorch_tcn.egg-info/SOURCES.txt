@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pytorch_tcn/__init__.py
+pytorch_tcn/buffer.py
+pytorch_tcn/conv.py
+pytorch_tcn/pad.py
+pytorch_tcn/tcn.py
+pytorch_tcn.egg-info/PKG-INFO
+pytorch_tcn.egg-info/SOURCES.txt
+pytorch_tcn.egg-info/dependency_links.txt
+pytorch_tcn.egg-info/requires.txt
+pytorch_tcn.egg-info/top_level.txt
