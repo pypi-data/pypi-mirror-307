@@ -1,0 +1,4 @@
+rich<=13.9.3
+
+[:python_version < "3.12"]
+exceptiongroup>=1.1.3
