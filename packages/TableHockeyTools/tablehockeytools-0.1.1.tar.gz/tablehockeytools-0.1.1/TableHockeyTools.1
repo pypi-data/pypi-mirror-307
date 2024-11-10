@@ -1,0 +1,105 @@
+.\" Manpage for THTools
+.TH THTools 1 "November 2024" "THTools" "TableHockeyTools Manpage"
+.SH NAME
+**THTools** \- Python package for retrieving and displaying table hockey player data.
+.SH SYNOPSIS
+.nf
+.B from THTools import THlog, GetPlayerPoints, GetPlayerRank, GetPlayerID, GetPlayerName
+.fi
+.SH DESCRIPTION
+**THTools** provides functions to work with table hockey player data. This includes functions for retrieving player ranking points, ranks, IDs, and names. Logging is provided with customizable verbosity and warning suppression.
+.SH FUNCTIONS
+.TP
+.B THlog(message, mode="info")
+Logs messages with different color-coded modes.
+
+.B Parameters:
+.RS
+.IP \- `message` (str) : Message to log.
+.IP \- `mode` (str) : Logging mode, one of "info", "warning", or "error".
+.RE
+
+.TP
+.B GetPlayerPoints(player_ids=None, player_names=None, return_mode="list", verbose=False, supress_warnings=False)
+Fetches ranking points for specified players.
+
+.B Parameters:
+.RS
+.IP \- `player_ids` (str or list) : Player ID(s).
+.IP \- `player_names` (str or list) : Player name(s).
+.IP \- `return_mode` (str) : Output format, one of "list", "dict", or "single". (default: "list")
+.IP \- `verbose` (bool) : If `True`, logs additional information. (default: False)
+.IP \- `supress_warnings` (bool) : If `True`, suppresses warning logs. (default: False)
+.RE
+
+.B Returns:
+.RS
+.IP List, dict, or single value of points.
+.RE
+
+.TP
+.B GetPlayerRank(player_ids=None, player_names=None, return_mode="list", verbose=False, supress_warnings=False)
+Fetches open ranking position for specified players.
+
+.B Parameters:
+.RS
+.IP Same as **GetPlayerPoints**.
+.RE
+
+.B Returns:
+.RS
+.IP List, dict, or single value of rank.
+.RE
+
+.TP
+.B GetPlayerID(player_names, return_mode="single", verbose=False, supress_warnings=False)
+Fetches player ID(s) for given player name(s). Last name is required first, followed by first name. Given names are case-insensitive.
+
+.B Parameters:
+.RS
+.IP \- `player_names` (str or list) : Player name(s).
+.IP \- `return_mode` (str) : Output format, one of "list", "dict", or "single".
+.RE
+
+.B Returns:
+.RS
+.IP List, dict, or single value of player ID(s).
+.RE
+
+.TP
+.B GetPlayerName(player_ids, return_mode="single", verbose=False, supress_warnings=False)
+Fetches player name(s) for given player ID(s).
+
+.B Parameters:
+.RS
+.IP Same as **GetPlayerID**.
+.RE
+
+.B Returns:
+.RS
+.IP List, dict, or single value of player names.
+.RE
+
+.SH EXAMPLES
+.TP 1
+.B Log an informational message:
+.nf
+.B THlog("Retrieving player points", "info")
+.fi
+
+.TP 2
+.B Get ranking points for a single player by ID:
+.nf
+.B points = GetPlayerPoints(player_ids="12345", return_mode="single")
+.fi
+
+.TP 3
+.B Get the player ID for a name:
+.nf
+.B player_id = GetPlayerID("Doe John", return_mode="single")
+.fi
+
+.SH DEPENDENCIES
+.IP \- `requests`
+.IP \- `bs4` (BeautifulSoup)
+.IP \- `xml.etree.ElementTree`
