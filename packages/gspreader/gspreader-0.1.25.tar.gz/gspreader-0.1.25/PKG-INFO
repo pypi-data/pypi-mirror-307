@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gspreader
+Version: 0.1.25
+Summary: A few helper functions to make gspread even easer to use.
+Author: Rivers Cuomo
+Author-email: riverscuomo@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: gspread (>=5.11.3)
+Requires-Dist: rich (>=12.6.0)
