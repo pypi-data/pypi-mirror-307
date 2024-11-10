@@ -1,0 +1,181 @@
+# https://peps.python.org/pep-0517/
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+# https://hatch.pypa.io/latest/config/build/
+[tool.hatch.build.targets.wheel]
+only-include = ["src"]
+sources = ["src"]
+
+# https://peps.python.org/pep-0621/
+[project]
+name = "microsim"
+dynamic = ["version"]
+description = "Light microscopy simulation in python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "BSD-3-Clause" }
+authors = [{ name = "Talley Lambert", email = "talley.lambert@gmail.com" }]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+dependencies = [
+    'pydantic-settings !=2.5.0',
+    "annotated_types",
+    "dm-tree",           # only needed for jax support.  could use an extra instead.
+    "numpy<2.0",         # required until tensorstore >0.1.61
+    "pint>=0.23",
+    "platformdirs",
+    "pydantic>=2.4",
+    "scipy",
+    "tensorstore",
+    "tqdm",
+    "xarray",
+]
+
+# https://peps.python.org/pep-0621/#dependencies-optional-dependencies
+[project.optional-dependencies]
+cosem = ["xarray-datatree", "s3fs", "dask", "imageio", "supabase", "boto3"]
+test = [
+    "microsim[cosem]",
+    "jax[cpu]",
+    "matplotlib",
+    "pytest-cov",
+    "pytest",
+    "tifffile",
+    "torch",
+    "zarr",
+]
+dev = [
+    "microsim[test]",
+    "boto3-stubs[s3]",
+    "ipython",
+    "mypy",
+    "pdbpp",
+    "pre-commit",
+    "rich",
+    "ruff",
+    "types-tqdm",
+]
+docs = [
+    "mkdocs >=1.5.3",
+    "mkdocs-material==9.5.17",
+    "mkdocstrings ==0.24.3",
+    "mkdocstrings-python ==1.9.2",
+    "mkdocs-jupyter==0.24.8",
+    "griffe==0.45.3",
+    "griffe-fieldz",
+]
+
+[project.urls]
+homepage = "https://github.com/tlambert03/microsim"
+repository = "https://github.com/tlambert03/microsim"
+
+[tool.ruff]
+line-length = 88
+src = ["src"]
+
+[tool.ruff.lint]
+pydocstyle = { convention = "numpy" }
+pyupgrade = { keep-runtime-typing = true }
+select = [
+    "E",    # style errors
+    "W",    # style warnings
+    "F",    # flakes
+    "D",    # pydocstyle
+    "D417", # Missing argument descriptions in Docstrings
+    "I",    # isort
+    "UP",   # pyupgrade
+    "C4",   # flake8-comprehensions
+    "B",    # flake8-bugbear
+    "A001", # flake8-builtins
+    "RUF",  # ruff-specific rules
+    "TCH",  # flake8-type-checking
+    "TID",  # flake8-tidy-imports
+]
+ignore = [
+    "D10",  # Missing docstring in public ...
+    "D401", # First line should be in imperative mood
+]
+exclude = ["*xarray_jax*"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["D", "S"]
+"setup.py" = ["D"]
+"docs/*.py" = ["E402"]
+
+
+# https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+files = "src/**/"
+strict = true
+disallow_any_generics = false
+disallow_subclassing_any = false
+show_error_codes = true
+pretty = true
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = false
+
+# [[tool.mypy.overrides]]
+# module = ["numpy.*",]
+# ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = ["microsim.xarray_jax.*"]
+ignore_errors = true
+
+# https://docs.pytest.org/en/6.2.x/customize.html
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+filterwarnings = [
+    "error",
+    "ignore:unclosed transport:ResourceWarning",                     # only on py3.10... not sure why
+    "ignore:Clipping negative intensity values:UserWarning",         # when importing FPbase spectra
+    "ignore:__array__ implementation doesn't accept a copy keyword",
+]
+
+# https://coverage.readthedocs.io/en/6.4/config.html
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "@overload",
+    "except ImportError",
+    "raise ValueError",
+    "\\.\\.\\.",
+    "raise NotImplementedError()",
+    "pass",
+]
+
+[tool.coverage.run]
+source = ["microsim"]
+omit = ["*xarray_jax*"]
+
+# https://github.com/mgedmin/check-manifest#configuration
+# add files that you want check-manifest to explicitly ignore here
+# (files that are in the repo but shouldn't go in the package)
+[tool.check-manifest]
+ignore = [
+    ".github_changelog_generator",
+    ".pre-commit-config.yaml",
+    ".ruff_cache/**/*",
+    "setup.py",
+    "tests/**/*",
+]
+
+[tool.typos.default]
+extend-ignore-identifiers-re = ["(?i)nd.*", "(?i)ome", "(?i)ser"]
