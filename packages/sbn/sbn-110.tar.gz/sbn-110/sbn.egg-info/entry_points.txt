@@ -1,0 +1,5 @@
+[console_scripts]
+sbn = sbn.console:wrapped
+sbnctl = sbn.cli:wrapped
+sbnd = sbn.daemon:main
+sbns = sbn.service:wrapped
