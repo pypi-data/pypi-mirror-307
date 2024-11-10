@@ -1,0 +1,13 @@
+LICENSE
+pyproject.toml
+readme.md
+packaging_version_git/__init__.py
+packaging_version_git/collector.py
+packaging_version_git/version.py
+packaging_version_git.egg-info/PKG-INFO
+packaging_version_git.egg-info/SOURCES.txt
+packaging_version_git.egg-info/dependency_links.txt
+packaging_version_git.egg-info/requires.txt
+packaging_version_git.egg-info/top_level.txt
+tests/test_init.py
+tests/test_version.py
