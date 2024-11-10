@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: duino_cli
+Version: 0.0.1
+Summary: A CLI interface for working with Arduino projects.
+Home-page: https://github.com/dhylands/duino_cli
+Author: Dave Hylands
+Author-email: dhylands@gmail.com
+License: MIT
+Download-URL: https://github.com/dhylands/duino_cli/shell/tarball/v0.0.1
+Keywords: cmd cli arduino
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Terminals :: Serial
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DuinoCli
+Python CLI for interfacing with Arduino projects
+
+
