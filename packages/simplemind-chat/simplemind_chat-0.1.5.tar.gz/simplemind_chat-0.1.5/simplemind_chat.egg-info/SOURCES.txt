@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+simplechat/__init__.py
+simplechat/cli.py
+simplechat/db.py
+simplechat/plugin.py
+simplechat/settings.py
+simplemind_chat.egg-info/PKG-INFO
+simplemind_chat.egg-info/SOURCES.txt
+simplemind_chat.egg-info/dependency_links.txt
+simplemind_chat.egg-info/entry_points.txt
+simplemind_chat.egg-info/requires.txt
+simplemind_chat.egg-info/top_level.txt
