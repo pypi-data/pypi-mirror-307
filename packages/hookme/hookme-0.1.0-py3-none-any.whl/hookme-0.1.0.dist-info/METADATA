@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: hookme
+Version: 0.1.0
+Summary: A powerful webhook handler for Discord and Slack
+Home-page: https://github.com/wadedesign/hookme
+Author: Wadedesignco
+Author-email: hi@wadedev.online
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.0
+
+# HookMe
+
+A powerful and easy-to-use Python package for handling Discord and Slack webhooks.
+
+## Installation 
