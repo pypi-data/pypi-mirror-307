@@ -1,0 +1,22 @@
+[project]
+name = "gemerald"
+description = "Markdown-based static site generator"
+version = "0.1"
+readme = "README.md"
+license = {text = "GPLv3 or later"}
+
+dependencies = [
+        "Jinja2",
+        "pytest",
+        "flake8",
+        "pyYAML"
+]
+
+authors = [
+  {name = "Wilmhit", email = "wilmhit@disroot.org"},
+]
+
+[build-system]
+
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
