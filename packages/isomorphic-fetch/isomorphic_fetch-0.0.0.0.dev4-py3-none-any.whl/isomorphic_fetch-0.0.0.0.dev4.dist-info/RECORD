@@ -1,0 +1,11 @@
+isomorphic_fetch-0.0.0.0.dev4.dist-info/METADATA,sha256=MBu6fGfJFZXxzuifrCSb-5V-5wTcBY2iY1JcH-Ec5pA,551
+isomorphic_fetch-0.0.0.0.dev4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+isomorphic_fetch-0.0.0.0.dev4.dist-info/entry_points.txt,sha256=zwKz2IXo20x7wjt0FxNn4H61Vaanm42r14kZEGo0KaE,68
+isomorphic_fetch/__init__.py,sha256=fhR_vZZnN4a7poCFAKgeoBAZ2JzB4KdxGwtSHloLDag,113
+isomorphic_fetch/cli.py,sha256=vsip6aJeG-83UdVii_PlKX3UltKCnJpOr6arFrQ49vk,569
+isomorphic_fetch/impl/common.py,sha256=kZmZ7z-_CM5VovUpop-FgQu5lYFPDSg4bn_ilHF3x3k,122
+isomorphic_fetch/impl/non_stream/__init__.py,sha256=cLf3Ac2ol4dMfwVk1v9HfarBcaOkYE7H3v0tOZpXqxA,163
+isomorphic_fetch/impl/non_stream/common.py,sha256=4ghdQQU2cRiyd-7e3DYKvBTr6PH7YJQo8jSthb8xZ88,791
+isomorphic_fetch/impl/non_stream/non_pyodide.py,sha256=VJPeOH1RYAXB9fEDY9MjyJtnZULQ2Lj3FMdqLbFr-no,693
+isomorphic_fetch/impl/non_stream/pyodide.py,sha256=o6a7ls62lhjJ42jzHfOboyNeieEZjQxJFXLklOOhaJY,510
+isomorphic_fetch-0.0.0.0.dev4.dist-info/RECORD,,

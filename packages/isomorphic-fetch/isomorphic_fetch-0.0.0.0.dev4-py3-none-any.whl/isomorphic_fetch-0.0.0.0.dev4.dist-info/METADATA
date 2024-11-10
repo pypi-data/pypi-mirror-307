@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: isomorphic-fetch
+Version: 0.0.0.0.dev4
+Summary: Simple fetch API for both pyodide and non-pyodide environments
+Author-Email: Muspi Merol <me@promplate.dev>
+Requires-Python: >=3.10
+Requires-Dist: niquests==3.*; sys_platform != "emscripten"
+Description-Content-Type: text/markdown
+
+# Isomorphic Fetch
+
+A straightforward `fetch` API that make HTTP requests with built-in best practices.
+
+This tool is ideal for demonstration, prototyping, or learning in Pyodide environments, and the code remains functional in local CPython.
