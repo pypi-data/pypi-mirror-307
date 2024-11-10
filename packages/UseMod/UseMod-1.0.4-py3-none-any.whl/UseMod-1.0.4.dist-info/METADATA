@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: UseMod
+Version: 1.0.4
+Summary: UseMod
+Home-page: https://github.com/Grivy16/UseMod/wiki
+Author: Grivy16
+Author-email: grivy16public@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: dropbox
+Requires-Dist: clipboard
+Requires-Dist: customtkinter
+Requires-Dist: Pillow
+Requires-Dist: tkinter
+Requires-Dist: json
+Requires-Dist: base64
+Requires-Dist: setuptools
+
+# UseMod
+
+UseMod est un simple module pour python qui permet plus de simpliciter dans des module ou plus de modernitÃ©
+
+## Table des MatiÃ¨res
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Utilisation](#utilisation)
+4. [FonctionnalitÃ©s](#fonctionnalitÃ©s)
+5. [Contribuer](#contribuer)
+6. [Auteurs](#auteurs)
+7. [Licence](#licence)
+
+## Introduction
+
+Dans use Module vous pourez y trouver :
+
+- Un accÃ¨s simple et rapide vers DropBox
+- Un accÃ¨s simple et rapide vers GitHub
+- Un Showinfo plus modern
+
+## Installation
+
+Instructions pour installer et configurer le projet. Indiquez les prÃ©requis et les Ã©tapes d'installation.
+
+```bash
+#executer la commende pip :
+pip install UseMod
+```
+## Utilisation
+
+1. [DropBox](#DropBox)
+2. [GitHub](#installation)
+3. [Showinfo](#Showinfo)
+
+### DropBox
+
+Importer le Module
+````python
+import UseMod
+````
+###
+#### Token
+
+````python
+Token = UseMod.NewToken()
+````
+
+Le refresh Token
+(non obligatoire)
+
+````python
+Token.helps() # Pour obtenir un refresh token
+````
+Nouveau Token a chaque lancement du projet python
+````python
+TOKEN = Token.AutomateTOKEN(Ton_refreshToken, Ton_AppKey, Ton_app secret
+````
+###
+
+#### Fichier
+
+````python
+File = UseMod.Dropbox(ton_TOKEN)
+````
+
+CrÃ©er un nouveau fichier
+````python
+File.new_file(Contenu_du_fichier, accÃ¨s_Dropbox_vers_le_fichier)
+````
+
+CrÃ©er un nouveau dossier
+````python
+File.new_folder(accÃ¨s_Dropbox_vers_le_dossier) #
+````
+
+##### CrÃ©er un nouveau contenu de fichier
+
+Depuis un fichier
+````python
+File.new_content().withfile(chemin_du_fichier, chemin_du_fichier_Dropbox)
+````
+
+Depuis une variable
+````python
+File.new_content().withvar(Contenu_du_fichier, chemin_du_fichier_Dropbox)
+````
+
+Suprimer un fichier/dossier
+
+````python
+File.del_content(chemin_du_fichier_Dropbox)
+````
+
+##### Obtenir le contenu d'un fichier
+
+Dans un fichier
+````python
+File.download().infile(chemin_du_fichier, chemin_du_fichier_Dropbox)
+````
+
+Dans une variable
+````python
+Tavariable = File.download().invar(chemin_du_fichier_Dropbox)
+````
+
+### ShowInfo
+
+Afficher une erreur
+````python
+UseMod.Message("error", Un_Nom, Un_message, un_Style : dark, light, ourien)
+````
+
+Afficher une info
+````python
+UseMod.Message("info", Un_Nom, Un_message, un_Style : dark, light, ourien)
+````
