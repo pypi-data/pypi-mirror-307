@@ -1,0 +1,4 @@
+[console_scripts]
+github-pr-watcher=src.main:main
+gpw=src.main:main
+
