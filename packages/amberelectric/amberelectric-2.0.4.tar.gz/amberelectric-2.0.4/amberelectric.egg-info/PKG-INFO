@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: amberelectric
+Version: 2.0.4
+Summary: Amber Electric Public API
+Home-page: https://github.com/madpilot/amberelectric.py
+Author: Amber Electric Development Team
+Author-email: dev@amber.com.au
+License: Apache Software License
+Keywords: OpenAPI,OpenAPI-Generator,Amber Electric Public API
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3>=1.25.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: pydantic>=1.10.5
+Requires-Dist: aenum>=3.1.11
+
+    Amber is an Australian-based electricity retailer that pass through the real-time wholesale price of energy.  Because of Amber&#39;s wholesale power prices, you can save hundreds of dollars a year by automating high power devices like air-conditioners, heat pumps and pool pumps.  This Python library provides an interface to the API, allowing you to react to current and forecast prices, as well as download your historic usage.
+    
