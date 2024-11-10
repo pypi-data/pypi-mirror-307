@@ -1,0 +1,7 @@
+*.db
+*.db-shm
+*.db-wal
+exploration
+__pycache__
+*.egg-info/
+.pytest_cache/
