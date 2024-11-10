@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: get-chesscom-games
+Version: 0.1
+Summary: A Python API Wrapper for Chess.com to fetch chess games
+Author: PixelatedWins
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+# get-chesscom-games
+
+A Python API Wrapper for Chess.com to fetch chess games.
+
+This library allows you to retrieve chess games from a Chess.com user’s profile going back a specified number of months. It's designed to be simple to use, and simplifies of interactions with Chess.com's API.
+
+## Usage
+- Fetch games from a Chess.com user's profile.
+- Specify the number of months back to fetch games.
+- Handle authentication and API requests internally.
+
+Using get_chess_games.(Username, monthsago, optional user agent) -> returns a list of chess PGNS from X months ago until today
+## Installation
+
+You can install `get-chesscom-games` directly from the Python Package Index (PyPI) or from source.
+
+### Using `pip` (PyPI)
+```bash
+pip install get-chesscom-games
+
