@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: autolgb
+Version: 0.0.1
+Summary: 
+Author: RektPunk
+Author-email: rektpunk@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: lightgbm (>=4.5.0,<5.0.0)
+Requires-Dist: optuna (>=4.0.0,<5.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.5.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# AutoLGB
+
+LightGBM + Optuna for no brainer
+
+# Installation
+
+Install using pip:
+```bash
+pip install autolgb
+```
+
+# Usage
+Please refer to the [**Examples**](https://github.com/RektPunk/AutoLGB/tree/main/examples) provided for further clarification.
+
