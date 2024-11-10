@@ -1,0 +1,17 @@
+mmemoji/__init__.py,sha256=4UyRsXrjoBCt0C0TWqleAbK8HL8VCH-iyeH6ibjzCVY,179
+mmemoji/__main__.py,sha256=tz113xmL6f6853lNl4zXo1h2OpEcSD_6RaJrcATbmQk,35
+mmemoji/cli.py,sha256=e1be4riU_xnymGyAeWmYhGT67y1mUL5GK-PFsuNu_YI,1342
+mmemoji/decorators.py,sha256=swHycykQxaoZo7AMkAWmZFGxDEOS6e8oyLKI8soGEfE,6273
+mmemoji/emoji.py,sha256=WtPf1WUz-83gd3B1R3-wuDMZLUKAxzRFncKOZBrjE30,6697
+mmemoji/exceptions.py,sha256=OLluZndBl9Z6256GZdqecs4KGnJ-nVvVKs-hc3Svh-M,682
+mmemoji/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmemoji/commands/create.py,sha256=FZ-rNcmasC2UWwUgvPX-P6Kj-bBK7L0GuvpsNq0LsQw,1625
+mmemoji/commands/delete.py,sha256=1NjYf8d9c8l0_SucwjZUr6Xd3t8NYxmzvvumDs2FOiY,1184
+mmemoji/commands/download.py,sha256=Ro2fDvJMUhVbek7fd93D9-HGxACU3bOudH_u14FoP6M,2780
+mmemoji/commands/list.py,sha256=nJQJlxKt3Ryz_iWF58wTYooOgWZmeA_9oPIWk41x3BE,430
+mmemoji/commands/search.py,sha256=2QCghbHgvA5jr2g4olocOtsTyOyqSaPY5ha7z9nUQr0,659
+mmemoji-0.6.0.dist-info/METADATA,sha256=mnlgMaWURAyeIXV_LcaG-O2iTctcGdDgZKXvdWsC5dc,4205
+mmemoji-0.6.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mmemoji-0.6.0.dist-info/entry_points.txt,sha256=meyHLhRcqsyjYa-CfgcGr4ajuQRY79m1j3hYoaxFSFw,44
+mmemoji-0.6.0.dist-info/licenses/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+mmemoji-0.6.0.dist-info/RECORD,,
