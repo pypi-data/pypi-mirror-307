@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+kos/__init__.py
+kos/py.typed
+kos/requirements-dev.txt
+kos/requirements.txt
+pykos.egg-info/PKG-INFO
+pykos.egg-info/SOURCES.txt
+pykos.egg-info/dependency_links.txt
+pykos.egg-info/requires.txt
+pykos.egg-info/top_level.txt
+tests/test_dummy.py

@@ -1,0 +1,10 @@
+# requirements-dev.txt
+
+# Linting
+black
+darglint
+mypy
+ruff
+
+# Testing
+pytest
