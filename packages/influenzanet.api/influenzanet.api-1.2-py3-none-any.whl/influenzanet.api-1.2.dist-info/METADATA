@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: influenzanet.api
+Version: 1.2
+Summary: Influenzanet API python library
+Author-email: Peter Hevesi <hevesi@coneno.com>, Clement Turbelin <clement.turbelin@iplesp.upmc.fr>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/influenzanet/python-influenzanet-api.git
+Project-URL: Bug Tracker, https://github.com/influenzanet/python-influenzanet-api/issues
+Keywords: influenzanet,surveys
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests ==2.27.*
+
+Influenzanet API Library
+=====
+
+influenzanet.api is a python library to work with influenzanet API
+
+## Installation
+
+```python
+pip install influenzanet.api
+```
