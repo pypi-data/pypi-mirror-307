@@ -1,0 +1,7 @@
+include VERSION
+include README.md
+include LICENSE
+recursive-include include/qumeas *
+recursive-include python/qumeas *
+recursive-include src *
+global-include CMakeLists.txt
