@@ -1,0 +1,33 @@
+[build-system]
+    requires = ['hatchling', 'hatch-vcs']
+    build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+    include = ["*.py"]
+    
+[tool.hatch.version]
+    source = "vcs"
+    fallback-version = "0.0.1"
+    
+[project]
+    name = "hisscl"
+    description = "A Python HCL parser"
+    dynamic = ["version"]
+    authors = [{ name = "Elara6331", email = "elara@elara.ws" }]
+    readme = "README.md"
+    license = "MPL-2.0"
+    keywords = ["hcl", "hashicorp", "parser", "config", "configuration"]
+    requires-python = ">=3.8"
+    classifiers = [
+        "Development Status :: 4 - Beta",
+        
+        "Intended Audience :: Developers",
+        "Topic :: File Formats",
+        "Topic :: Software Development :: Interpreters",
+        
+        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+    ]
+
+[project.urls]
+    Repository = "https://gitea.elara.ws/Elara6331/hisscl"
+    GitHub = "https://github.com/Elara6331/hisscl"
