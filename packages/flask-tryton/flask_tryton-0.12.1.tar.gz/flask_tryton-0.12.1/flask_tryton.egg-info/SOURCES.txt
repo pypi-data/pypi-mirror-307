@@ -1,0 +1,17 @@
+.flake8
+.gitlab-ci.yml
+.hgtags
+.isort.cfg
+CHANGELOG
+COPYRIGHT
+LICENSE
+MANIFEST.in
+README.rst
+flask_tryton.py
+setup.py
+flask_tryton.egg-info/PKG-INFO
+flask_tryton.egg-info/SOURCES.txt
+flask_tryton.egg-info/dependency_links.txt
+flask_tryton.egg-info/not-zip-safe
+flask_tryton.egg-info/requires.txt
+flask_tryton.egg-info/top_level.txt
