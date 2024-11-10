@@ -1,0 +1,85 @@
+* {
+    scrollbar-size: 1 1;
+    scrollbar-background: #000000;
+    scrollbar-background-active: #000000;
+    scrollbar-background-hover: #000000;
+    scrollbar-color: gray;
+    scrollbar-color-active: #00ff00;
+    scrollbar-color-hover: gray;
+}
+
+#state1 {
+    background: #0d0d0d;
+    width: 1fr;
+    height: 100%;
+    border: round #0f0 80%;
+}
+
+Vertical {
+    text-align: right;
+    align: center middle;
+    width: 3.3fr;
+    height: 100%;
+}
+
+Static {
+    content-align: center middle;
+}
+
+#scramble {
+    text-style: bold;
+    color: #fff 70%;
+    background: #0d0d0d;
+    max-width: 1fr;
+    height: auto;
+    border: round #0f0 90%;
+    padding-top: 1;
+    padding-bottom: 1;
+}
+
+#timer {
+    # text-style: bold;
+    color: #fff 70%;
+    background: #0d0d0d;
+    max-width: 1fr;
+    height: auto;
+    border: round #0f0 90%;
+    padding-top: 1;
+    padding-bottom: 1;
+}
+
+Horizontal {
+    width: auto;
+    height: 25fr;
+}
+
+#state2 {
+    text-style: bold;
+    text-align: left;
+    color: #fff 70%;
+    background: #0d0d0d;
+    width: 1fr;
+    height: 1fr;
+    border: round #0f0 90%;
+
+}
+
+#cube_net {
+    background: #0d0d0d;
+    width: 1fr;
+    height: 1fr;
+    border: round #0f0 90%;
+}
+
+DataTable {
+    color: #fff 70%;
+    .datatable--header {
+        text-style: none; # Linux console (tty) で見やすくするため
+        color: #000;
+        background: #0f0 80%;
+    }
+    
+    .datatable--even-row {
+        background: #00ff00 10%;
+    }
+}

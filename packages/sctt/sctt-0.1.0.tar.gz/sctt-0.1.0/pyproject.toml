@@ -1,0 +1,56 @@
+[project]
+name = "sctt"
+version = "0.1.0"
+description = "SpeedCubeTimer-TUI (sctt)"
+readme = "README.md"
+authors = [
+    { name = "sou-san", email = "sou887867@gmail.com" } 
+]
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+keywords = ["sctt", "speed cube timer", "scrambler", "cli", "tui", "terminal", "tool"]
+dependencies = [
+    "textual>=0.85.2",
+    "textual-pyfiglet==0.5.0",
+    "keyboard>=0.13.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/sou-san/sctt"
+Repository = "https://github.com/sou-san/sctt"
+Issues = "https://github.com/sou-san/sctt/issues"
+Documentation = "https://github.com/sou-san/sctt/blob/main/README.md"
+
+[project.scripts]
+sctt = "sctt.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.12.0",
+    "ruff>=0.6.9",
+    "textual-dev>=1.6.1",
+]
+
+[tool.ruff]
+line-length = 90
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "F", # Pyflakes
+    "B", # flake8-bugbear
+    "I", # isort
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "N", # pep8-naming
+    "C901", # mccabe linter (複雑度チェック)
+]
+
+ignore = [
+    "D103", # docstring が無い関数やクラスを許す
+    "E501", # 行あたりの文字数制限を無視する
+]
