@@ -1,0 +1,2 @@
+[console_scripts]
+snapper-ml = snapper_ml.scripts.run_experiment:app
