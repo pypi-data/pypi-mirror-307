@@ -1,0 +1,7 @@
+# This is a generated file! Do not edit directly.
+# Instead run: pdcli root write-requirements
+confection>=0.1.0
+plotext==4.2.0
+prodigy>=1.16.0
+prodigy_teams_recipes_sdk
+psycopg2-binary
