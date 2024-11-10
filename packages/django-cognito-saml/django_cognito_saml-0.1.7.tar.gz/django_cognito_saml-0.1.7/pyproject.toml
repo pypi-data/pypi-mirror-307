@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "django-cognito-saml"
+version = "0.1.7"
+description = ""
+authors = ["william chu <william.chu@uptickhq.com>"]
+readme = "README.md"
+packages = [{ include = "django_cognito_saml" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = ">=3.2.0,<5"
+# required for jwks client
+pyjwt = ">=2,<3"
+cryptography = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.1.1"
+django-stubs = "^1.15.0"
+isort = "^5.12.0"
+ruff = "^0.0.254"
+pytest = "^7.2.2"
+tox = "^4.4.6"
+pytest-django = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
