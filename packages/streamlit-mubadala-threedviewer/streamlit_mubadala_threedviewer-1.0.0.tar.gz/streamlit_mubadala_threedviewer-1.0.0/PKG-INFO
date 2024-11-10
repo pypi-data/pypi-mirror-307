@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: streamlit_mubadala_threedviewer
+Version: 1.0.0
+Summary: Streamlit component that allows to render 3D
+Home-page: 
+Author: Sharizan Redzuan
+Author-email: sredzuan@slb.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: devel
+License-File: LICENSE
+
+# streamlit_mubadala_threedviewer
+
+Streamlit component that allows user to display threed objects
+
+## Installation instructions
+
+```sh
+pip install streamlit_mubadala_threedviewer
+```
+
+## Release Notes
+
+N/A
