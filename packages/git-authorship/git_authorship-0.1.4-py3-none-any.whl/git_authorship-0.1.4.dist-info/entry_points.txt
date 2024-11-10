@@ -1,0 +1,3 @@
+[console_scripts]
+git-authorship=git_authorship.cli:main
+
