@@ -1,0 +1,90 @@
+provider:
+  instruments:
+    - 'UNIUSDT'
+    - 'ETHUSDT'
+  day_from: '2024-10-01'
+  day_to: '2024-11-03'
+  ohlc_loader:
+    class: loader.binance_vision.ohlc_loader.BinanceVisionOhlcLoader
+  trades_loader:
+    class: loader.binance_vision.trades_loader.BinanceVisionTradesLoader
+  book_depth_loader:
+    class: loader.binance_vision.book_depth_loader.BinanceVisionBookDepthLoader
+  max_workers: 5
+
+assembler:
+  day_from: '2024-11-01'
+  day_to: '2024-11-02'
+  instruments:
+    - 'ETHUSDT'
+    - 'UNIUSDT'
+  aggregations_configs:
+    - ohlc:
+        window_sec: [ 300, 400, 500 ]
+        history_size: 40
+      indicators:
+        - class: indicators.ma_indicator.MovingAverageIndicator
+          parameters:
+            window_length: [ 10, 20, 30 ]
+        - class: indicators.ma_indicator.MovingAverageIndicator
+          parameters:
+            window_length: [ 5, 3, 7 ]
+    - ohlc:
+        window_sec: [ 900, 1100, 1200 ]
+        history_size: 10
+      indicators:
+        - class: indicators.ma_indicator.MovingAverageIndicator
+          parameters:
+            window_length: [ 10, 20, 30 ]
+    - ohlc:
+        window_sec: [ 1500, 1600, 1800 ]
+        history_size: 10
+
+  dataset_labeler:
+    class: labeling.volatility_dataset_labeler.VolatilityDatasetLabeler
+    parameters:
+      training_window: [ 0.75, 0.85 ]
+  max_workers: 5
+
+workflow:
+  multiprocessing_size: 1
+  root_path: './out/workflow'
+  total_folds: [ 10 ]
+  model_containers:
+    - name: 1_TestModelContainer
+      parameters:
+        class: model_container.test_model_container.TestModelContainer
+        fold_from: 0
+        fold_to: 2
+        test_1: [ 1, 4, 7 ]
+        test_4: [ 8, 9, 10 ]
+    - name: 2_TestModelContainer
+      parameters:
+        class: model_container.test_model_container.TestModelContainer
+        fold_from: 1
+        fold_to: 3
+        test_2: [ 1, 2, 7 ]
+
+report:
+  validation_filter:
+    parameters:
+      class: report.visualization_filter.VisualizationFilter
+      window_indices: [ ]
+      container_indices: [ 1 ]
+      model_indices: [ 1 ]
+
+hyperparameter_optimizer:
+  score_calculator:
+    parameters:
+      class: optimizer.binary_class_score_calculator.BinaryClassScoreCalculator
+      window_indices: [ ]
+      container_indices: [ 1 ]
+      model_indices: [ 1 ]
+
+  patience: 10
+  tolerance: 10
+  storage_url: 'sqlite:///global_hyperparameter_optimizer.db'
+  study_name: 'global_optimization_study'
+  direction: 'maximize'
+
+
