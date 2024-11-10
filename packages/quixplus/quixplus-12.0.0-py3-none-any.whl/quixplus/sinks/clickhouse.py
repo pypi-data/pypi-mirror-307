@@ -1,0 +1,3 @@
+
+class CLickhouseSink:
+    pass
