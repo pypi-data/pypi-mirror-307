@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chess-pairings
+Version: 0.3.0
+Summary: Tools for storing and fetching chess tournament pairings
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/chess.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Chess Pairings
+
+> Tools for storing and fetching chess tournament pairings
