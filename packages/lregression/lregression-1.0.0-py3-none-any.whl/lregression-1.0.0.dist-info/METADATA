@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lregression
+Version: 1.0.0
+Summary: An awesome package that does something
+Home-page: http://pypi.python.org/pypi/<your_package_name>/
+Author: yasso
+Author-email: yasserkatania4@gamail.com
+License: LICENSE.txt
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: lregression
+
