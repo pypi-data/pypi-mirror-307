@@ -1,0 +1,4 @@
+[console_scripts]
+super-analysis.convert = superanalysis.serve.convert:main
+super-analysis.serve = superanalysis.serve.cli:main
+superanalysis.api = superanalysis.serve.rest:main
