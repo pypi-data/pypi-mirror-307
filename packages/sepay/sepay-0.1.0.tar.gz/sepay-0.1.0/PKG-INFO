@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: sepay
+Version: 0.1.0
+Summary: SePay SDK for python.
+Home-page: https://github.com/shinxz12/sepay
+License: MIT
+Author: shinxz12
+Author-email: ngocbthe@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: black (>=22.3.0,<23.0.0) ; extra == "test"
+Requires-Dist: bump2version (>=1.0.1,<2.0.0) ; extra == "dev"
+Requires-Dist: flake8 (>=3.9.2,<4.0.0) ; extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0) ; extra == "test"
+Requires-Dist: isort (>=5.8.0,<6.0.0) ; extra == "test"
+Requires-Dist: jinja2 (==3.0.3) ; extra == "doc"
+Requires-Dist: mkdocs (==1.3.1) ; extra == "doc"
+Requires-Dist: mkdocs-autorefs (>=0.2.1,<0.3.0) ; extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0) ; extra == "doc"
+Requires-Dist: mkdocs-material (>=6.1.7,<7.0.0) ; extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.3.1,<2.0.0)
+Requires-Dist: mkdocstrings (>=0.15.2,<0.16.0) ; extra == "doc"
+Requires-Dist: mypy (>=1.9.0,<2.0.0) ; extra == "test"
+Requires-Dist: pip (>=20.3.1,<21.0.0) ; extra == "dev"
+Requires-Dist: pre-commit (>=2.12.0,<3.0.0) ; extra == "dev"
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pygments (<2.12.0) ; extra == "doc"
+Requires-Dist: pytest (>=6.2.4,<7.0.0) ; extra == "test"
+Requires-Dist: pytest-cov (>=2.12.0,<3.0.0) ; extra == "test"
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0) ; extra == "dev"
+Requires-Dist: tox (>=3.20.1,<4.0.0) ; extra == "dev"
+Requires-Dist: twine (>=3.3.0,<4.0.0) ; extra == "dev"
+Requires-Dist: types-requests (>=2.31.0.20240311,<3.0.0.0)
+Requires-Dist: virtualenv (>=20.2.2,<21.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# Unofficial SePay SDK for Python
+
+[![pypi](https://img.shields.io/pypi/v/sepay.svg)](https://pypi.org/project/sepay/)
+[![python](https://img.shields.io/pypi/pyversions/sepay.svg)](https://pypi.org/project/sepay/)
+[![Build Status](https://github.com/shinxz12/sepay/actions/workflows/dev.yml/badge.svg)](https://github.com/shinxz12/sepay/actions/workflows/dev.yml)
+
+
+SDK for SePay API read more in [official docs](https://docs.sepay.vn/)
+
+* Documentation: <https://shinxz12.github.io/sepay>
+* GitHub: <https://github.com/shinxz12/sepay>
+* PyPI: <https://pypi.org/project/sepay/>
+* Free software: MIT
+
+## Features
+
+* Transaction APIs.
+* Bank Account APIs.
+
+## Example
+* Create your API Key [here](https://my.sepay.vn/companyapi)
+* Get data:
+```
+from sepay import SePay
+
+
+se_pay = SePay(api_key=<YOUR_API_KEY>)
+bank_account = se_pay.bank_account
+transaction = se_pay.transaction
+
+# Get transactions list with filters
+transaction.get_transactions(filters={ "reference_number": 'FT24314R7N9P'})
+
+# Get transactions count
+transaction.get_count(filters={ "reference_number": 'FT24314R7'})
+
+# Get transaction detail
+transaction.get_transaction("4508999")
+
+# Get bank accounts list
+bank_account.get_bank_accounts(filters={ "reference_number": 'FT24314R7N9P'})
+
+# Get bank accounts count
+bank_account.get_count(filters={ "reference_number": 'FT24314R7'})
+
+# Get bank account detail
+bank_account.get_bank_account("3992")
+```
+
