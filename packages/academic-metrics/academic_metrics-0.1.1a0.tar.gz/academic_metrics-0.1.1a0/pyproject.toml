@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic_metrics"
+version = "0.1.1-alpha"
+description = "A tool to extract and format academic data from Web of Science and Crossref"
+authors = [
+    { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
+    { name = "Cole Barbes", email = "cbarbes1@gulls.salisbury.edu" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "beautifulsoup4",
+    "fuzzywuzzy",
+    "ijson",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "psutil",
+    "Requests",
+    "striprtf",
+    "datasketch",
+    "black",
+    "black[jupyter]",
+    "pre-commit",
+    "shortuuid",
+    "python-dotenv",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SpencerPresley/COSC425-DATA"
+"Bug Tracker" = "https://github.com/SpencerPresley/COSC425-DATA/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["academic_metrics*"]
+namespaces = false
