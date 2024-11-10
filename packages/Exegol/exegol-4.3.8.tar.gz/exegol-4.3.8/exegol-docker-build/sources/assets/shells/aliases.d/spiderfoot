@@ -1,0 +1,4 @@
+alias sfcli.py='/opt/tools/spiderfoot/venv/bin/python3 /opt/tools/spiderfoot/sfcli.py'
+function sf.py { (cd /opt/tools/spiderfoot && ./venv/bin/python3 ./sf.py "$@") }
+alias spiderfoot='sf.py'
+alias spiderfoot-cli='sfcli.py'

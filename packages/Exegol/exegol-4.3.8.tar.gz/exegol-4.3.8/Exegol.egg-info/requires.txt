@@ -1,0 +1,9 @@
+docker~=7.1.0
+requests~=2.32.3
+rich~=13.7.1
+GitPython~=3.1.43
+PyYAML>=6.0.2
+argcomplete~=3.5.0
+
+[:platform_system != "Linux"]
+tzlocal~=5.2
