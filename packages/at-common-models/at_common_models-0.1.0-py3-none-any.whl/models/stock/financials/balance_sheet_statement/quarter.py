@@ -1,0 +1,4 @@
+from models.stock.financials.balance_sheet_statement.base import BaseBalanceSheetStatementModel
+
+class QuarterBalanceSheetStatementModel(BaseBalanceSheetStatementModel):
+    __tablename__ = "stock_financials_quarter_balance_sheet_statements"
