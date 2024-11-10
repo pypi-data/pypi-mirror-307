@@ -1,0 +1,24 @@
+[project]
+name = "realtime_operator"
+version = "0.3.3"
+authors = [
+  { name="Ernst Holger Amort", email="holgeramort@gmail.com" },
+]
+description = "A package to perfom real-time operations on time series data streams."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'numba',
+  'numpy',
+  'pytest',
+  'python-dateutil'
+]
+
+[project.urls]
+Homepage = "https://github.com/ErnstHolger/realtime_operator"
+Issues = "https://github.com/ErnstHolger/realtime_operator/issues"

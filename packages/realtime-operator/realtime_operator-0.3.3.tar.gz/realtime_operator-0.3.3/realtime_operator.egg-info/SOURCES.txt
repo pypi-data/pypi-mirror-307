@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+realtime_operator/__init__.py
+realtime_operator/alignment.py
+realtime_operator/compression.py
+realtime_operator/single_operator.py
+realtime_operator.egg-info/PKG-INFO
+realtime_operator.egg-info/SOURCES.txt
+realtime_operator.egg-info/dependency_links.txt
+realtime_operator.egg-info/requires.txt
+realtime_operator.egg-info/top_level.txt
+tests/test_alignment.py
+tests/test_compression.py
+tests/test_single_operator.py
