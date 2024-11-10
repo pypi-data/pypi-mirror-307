@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12.3
+pycountry>=24.6.1
+requests>=2.32.2
+simplejson>=3.19.3
+tinyscript>=1.30.16
+urllib3>=1.26.19
+user_agent>=0.1.10
