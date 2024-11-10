@@ -1,0 +1,5 @@
+[console_scripts]
+pygithooks = boldi.githooks:main
+
+[boldi.cli.action]
+githooks = boldi.githooks:cli_githooks
