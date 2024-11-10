@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: linsys
+Version: 0.0.0.dev0
+Summary: Linear Dynamical Systems Solver
+Author: Rafael R. L. Benevides
+Author-email: rafael.rl.benevides@gmail.com
+License: MIT
+Keywords: linear system,matrix exponential,ODE
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# linsys
+Linear Dynamical Systems
