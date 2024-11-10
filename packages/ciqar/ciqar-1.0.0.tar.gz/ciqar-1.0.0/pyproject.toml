@@ -1,0 +1,73 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ciqar"
+keywords = ["linter", "report", "code analysis", "code quality"]
+authors = [{name = "Thomas Wesenigk <thw-oss@fomori.de>"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.12"
+dynamic = ["version", "description"]
+dependencies = [
+    "Jinja2<4.0",
+    "typing_extensions<5.0",
+]
+
+[project.optional-dependencies]
+devtools = [
+    "invoke",
+    "flit<4",
+    "pip-tools",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "pyfakefs",
+    "mypy",
+    "pyright",
+    "black",
+    "black-junit",
+    "ruff",
+]
+
+[project.urls]
+Home = "https://codeberg.org/Aardjon/ciqar/"
+Source = "https://codeberg.org/Aardjon/ciqar.git"
+
+[project.scripts]
+ciqar = "ciqar:main"
+
+[tool.pytest.ini_options]
+minversion = "7.2"
+testpaths=["test"]
+addopts = "--import-mode=importlib --cov src --cov-report=html --junitxml=junit-pytest.xml"
+
+[tool.coverage.report]
+include_namespace_packages = "true"
+exclude_lines = [
+    '^ +assert_never\(.*?\)$',
+]
+omit = [
+    'src/main.py',
+]
+
+[tool.pyright]
+include = ["src", "test"]
+exclude = ["**/__pycache__"]
+extraPaths = ["src"]
+reportMissingImports = true
+reportMissingTypeStubs = false
+
+[tool.black]
+line-length = 96

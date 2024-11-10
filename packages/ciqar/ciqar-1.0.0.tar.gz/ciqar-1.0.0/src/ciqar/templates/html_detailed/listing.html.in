@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="{{data.path_to_report_root}}style.css">
+<title>{{data.report_title}}</title>
+</head>
+<body>
+<h1>{{data.report_title}}</h1>
+<table class="navigation">
+<tr class="navigation">
+<td class="navigation"><a href="{{data.path_to_report_root}}index.html">Report Summary</a></td>
+<td class="navigation"><a href="{{data.path_to_report_root}}source_list.html">Show by files</a></td>
+<td class="navigation"><a href="{{data.path_to_report_root}}rule_list.html">Show by rules</a></td>
+</tr>
+</table>
+
+<table class="summary">
+<caption>File Listing for {{data.context_name}}</caption>
+<tbody>
+<tr>
+<td class="table-lines"><pre>
+
+{% for line in data.source_content_data %}<span id="L{{line.lineno}}" class="lineno"><a class="lineno" href="#L{{line.lineno}}">{{line.lineno}}</a></span>
+{% endfor %}</pre>
+</td>
+<td class="table-code"><pre>
+
+{% for line in data.source_content_data %}<span class="line-{{line.rating}}" title="{{ line.messages|join('\n') }}">{{line.content}}</span>
+{% endfor %}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

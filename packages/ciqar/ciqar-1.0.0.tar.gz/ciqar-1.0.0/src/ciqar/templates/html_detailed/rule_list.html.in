@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>{{data.report_title}}</title>
+</head>
+<body>
+<h1>{{data.report_title}}</h1>
+<table class="navigation">
+<tr class="navigation">
+<td class="navigation"><a href="index.html">Report Summary</a></td>
+<td class="navigation"><a href="source_list.html">Show by files</a></td>
+<td class="navigation"><a href="rule_list.html">Show by rules</a></td>
+</tr>
+</table>
+
+<table class="summary">
+<caption>Summary by Linter Rules</caption>
+<thead><tr class="summary">
+<th class="summary">Rule</th>
+<th class="summary">Example Message</th>
+<th class="summary">Occurences</th>
+</tr></thead>
+<tfoot><tr class="summary">
+<th class="summary summary-filename">Total</th>
+<th class="summary summary-messages"></th>
+<th class="summary summary-lines">{{data.rule_list_data|sum(attribute='violation_count')}}</th>
+</tr></tfoot>
+<tbody>
+{% for rule in data.rule_list_data %}
+	<tr class="summary summary-neutral">
+		<td class="summary summary-filename25"><a href="rules/{{rule.rule_name}}.html">{{rule.rule_name}}</a></td>
+		<td class="summary summary-messages">{{rule.example_message}}</a></td>
+		<td class="summary summary-lines">{{rule.violation_count}}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>

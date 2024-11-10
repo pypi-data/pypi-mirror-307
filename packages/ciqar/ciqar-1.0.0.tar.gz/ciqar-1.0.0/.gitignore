@@ -1,0 +1,10 @@
+**/__pycache__
+.project
+.pydevproject
+.settings
+mypy.log
+pyright.json
+htmlreport
+htmlcov
+.coverage
+dist

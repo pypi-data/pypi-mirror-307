@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>{{data.report_title}}</title>
+</head>
+<body>
+<h1>{{data.report_title}}</h1>
+<table class="navigation">
+<tr class="navigation">
+<td class="navigation"><a href="index.html">Report Summary</a></td>
+<td class="navigation"><a href="source_list.html">Show by files</a></td>
+<td class="navigation"><a href="rule_list.html">Show by rules</a></td>
+</tr>
+</table>
+
+<table class="summary50">
+<caption>Report Summary</caption>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Source file count:</td>
+    <td class="summary summary-filename25">{{data.summary_data.source_file_count}}</td>
+</tr>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Bad line count:</td>
+    <td class="summary summary-filename25">{{data.summary_data.bad_line_count}} / {{data.summary_data.line_count}} LOC</td>
+</tr>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Total violation count:</td>
+    <td class="summary summary-filename25">{{data.summary_data.violation_count}}</td>
+</tr>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Code analyzer:</td>
+    <td class="summary summary-filename25">{{data.summary_data.analyzer_tag}}</td>
+</tr>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Report generation date:</td>
+    <td class="summary summary-filename25">{{data.summary_data.generation_time}}</td>
+</tr>
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename25">Report generator:</td>
+    <td class="summary summary-filename25">{{data.ciqar_tag}}</td>
+</tr>
+</table>
+
+{% if data.summary_data.global_linter_messages %}
+<table class="summary50">
+<caption>General linter messages</caption>
+{% for message in data.summary_data.global_linter_messages %}
+<tr class="summary">
+    <td class="summary">{{message}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
+</body>
+</html>
