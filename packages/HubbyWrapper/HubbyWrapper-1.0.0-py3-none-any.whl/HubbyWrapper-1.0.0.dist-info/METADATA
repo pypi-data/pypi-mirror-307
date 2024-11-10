@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: HubbyWrapper
+Version: 1.0.0
+Summary: Hubby, a Python library for interacting with the GitHub API
+Author-email: Webbrowser11 <terpstragraham@gmail.com>, w_h_at <whatonscratch@gmail.com>
+License: BSD-3-Clause
+Keywords: GitHub,API,Python,Hubby
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hubby
+Hubby, a python library for the github api
+
+# Install the Requirements
+`pip install -r requirements.txt`
+
+# Install (not yet working)
+`pip install hubby`
