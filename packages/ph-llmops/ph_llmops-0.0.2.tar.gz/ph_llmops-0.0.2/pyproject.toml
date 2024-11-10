@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ph_llmops"
+authors = [
+    { name="Parsia Hedayat" },
+]
+version = "0.0.2"
+requires-python = ">=3.9"
+readme = "README.md"
+description = "Naive LLMOps utilities for quick experimentation"
+
+[project.urls]
+Homepage = "https://github.com/phedayat/ph_llmops/tree/main"
+Issues = "https://github.com/phedayat/ph_llmops/issues"

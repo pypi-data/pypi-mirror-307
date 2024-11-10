@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ph_llmops
+Version: 0.0.2
+Summary: Naive LLMOps utilities for quick experimentation
+Author: Parsia Hedayat
+Project-URL: Homepage, https://github.com/phedayat/ph_llmops/tree/main
+Project-URL: Issues, https://github.com/phedayat/ph_llmops/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# PH LLMOps
+
+Utilities for working with LLMs and building LLM-powered software.
