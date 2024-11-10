@@ -1,0 +1,3 @@
+[console_scripts]
+phrydy-debug=phrydy.debug:init_cli
+
