@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>{{data.report_title}}</title>
+</head>
+<body>
+<h1>{{data.report_title}}</h1>
+<table class="navigation">
+<tr class="navigation">
+<td class="navigation"><a href="index.html">Report Summary</a></td>
+<td class="navigation"><a href="source_list.html">Show by files</a></td>
+<td class="navigation"><a href="rule_list.html">Show by rules</a></td>
+</tr>
+</table>
+
+<table class="summary">
+<caption>Summary by File</caption>
+<thead><tr class="summary">
+<th class="summary">File</th>
+<th class="summary">Bad Lines</th>
+<th class="summary">Violation Messages</th>
+</tr></thead>
+<tfoot><tr class="summary summary-quality-2">
+<th class="summary summary-filename">Total</th>
+<th class="summary summary-lines">
+    {{data.file_list_data|sum(attribute='bad_line_count')}} / {{data.file_list_data|sum(attribute='line_count')}} LOC
+</th>
+<th class="summary summary-messages">{{data.file_list_data|sum(attribute='violation_count')}}</th>
+</tr></tfoot>
+<tbody>
+{% for source_file in data.file_list_data %}
+	<tr class="summary summary-quality-{{source_file.rating}}">
+		<td class="summary summary-filename"><a href="{{source_file.report_filename}}">{{source_file.display_filename}}</a></td>
+		<td class="summary summary-lines">{{source_file.bad_line_count}} / {{source_file.line_count}} LOC</td>
+		<td class="summary summary-messages">{{source_file.violation_count}}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>

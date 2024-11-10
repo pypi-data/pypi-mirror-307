@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>{{data.report_title}}</title>
+<style>
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 135%;
+    margin: 20px;
+}
+
+table.summary {
+    border-collapse: collapse;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 85%;
+}
+
+table.summary, tr.summary, th.summary, td.summary {
+    border: 1px solid #aaa;
+}
+
+th.summary, td.summary {
+    padding: 0.4em;
+}
+
+td.summary a {
+    text-decoration: none;
+}
+
+td.summary-filename, th.summary-filename {
+    text-align: left;
+    width: 50%;
+}
+
+.summary-lines {
+    text-align: center;
+}
+
+.summary-neutral {
+    background-color: #eee;
+}
+
+</style>
+</head>
+
+<body>
+<h1>{{data.report_title}}</h1>
+
+<table class="summary">
+<thead><tr class="summary">
+<th class="summary">File</th>
+<th class="summary">Lineno</th>
+<th class="summary">Violation Message</th>
+<th class="summary">Rule</th>
+</tr></thead>
+
+{% for violation in data.violation_list_data %}
+<tr class="summary summary-neutral">
+    <td class="summary summary-filename">{{violation.display_filename}}</td>
+    <td class="summary summary-lines">{{violation.lineno}}</td>
+    <td class="summary summary-filename">{{violation.message_lines|join('\n')}}</td>
+    <td class="summary summary-lines">{{violation.rule}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
