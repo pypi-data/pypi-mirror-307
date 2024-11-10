@@ -1,0 +1,7 @@
+setuptools
+click
+babel
+sphinx
+
+[test]
+pytest

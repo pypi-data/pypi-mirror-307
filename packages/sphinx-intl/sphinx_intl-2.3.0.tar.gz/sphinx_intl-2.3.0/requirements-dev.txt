@@ -1,0 +1,6 @@
+-e.[test]
+build
+twine
+wheel
+tox-uv
+ruff
