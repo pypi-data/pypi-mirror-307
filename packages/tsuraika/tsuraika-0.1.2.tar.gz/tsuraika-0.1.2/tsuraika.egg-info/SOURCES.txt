@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tsuraika/__init__.py
+tsuraika/cli.py
+tsuraika/core.py
+tsuraika.egg-info/PKG-INFO
+tsuraika.egg-info/SOURCES.txt
+tsuraika.egg-info/dependency_links.txt
+tsuraika.egg-info/entry_points.txt
+tsuraika.egg-info/requires.txt
+tsuraika.egg-info/top_level.txt
