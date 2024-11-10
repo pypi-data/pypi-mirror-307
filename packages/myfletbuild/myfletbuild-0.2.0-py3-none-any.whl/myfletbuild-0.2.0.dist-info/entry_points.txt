@@ -1,0 +1,4 @@
+[console_scripts]
+myfletbuild-build=mylocale:build
+myfletbuild-create=mylocale:create
+
