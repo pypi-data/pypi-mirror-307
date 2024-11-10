@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: ft_package_abait_ta
+Version: 2024.0.0.1
+Summary: count occurence of a search_for elemnts with type any  in an iterbale list
+Project-URL: Repository, https://github.com/Raxel01/42-python-piscine/tree/master/Day00/ex09
+Author-email: ABDELALI AIT TALB <aittalbabdelalie@gmail.com>
+License: The MIT License (MIT)
+        Copyright © 2024 ABDELALI AIT TALB
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+License-File: LICENSE
+Keywords: easy_usage_package,helper_functions,simple_methodes
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10.15
+Description-Content-Type: text/markdown
+
+<!-- How to use this package and what's is used for ! -->
+The current Name : ft_package will be renamed once the package have other futures implemented in
+this package contain for now one Module called count_in_list a basic function that count occurence of a search_for elemnts with type any  in a iterbale list width some special case also tat will be handled
+
+you can check count_in_list.__doc__ for more details
+this package is started in 08-11-2024 - 2:41 as a school project this will maybe be developed to full fill
+some developer needs by providing some repetitive logics when coding all this is to make your life easy
+wen Coding so think once to use us think twice code once
+
+happy Coding :)
+
