@@ -1,0 +1,14 @@
+pyproject.toml
+setup.py
+symantic/DimensionalFeatureSpaceConstruction.py
+symantic/DimensionalRegressor.py
+symantic/FeatureSpaceConstruction.py
+symantic/Regressor.py
+symantic/__init__.py
+symantic/model.py
+symantic/pareto_new.py
+symantic.egg-info/PKG-INFO
+symantic.egg-info/SOURCES.txt
+symantic.egg-info/dependency_links.txt
+symantic.egg-info/requires.txt
+symantic.egg-info/top_level.txt
