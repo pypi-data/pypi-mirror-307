@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ultrajson"
+version = "0.1.0"
+authors = [
+    { name = "303sec", email = "rob@303sec.com" },
+]
+description = "This package is an example of a Dependency Hallucination. There is no code in this package, it is just a placeholder to prevent exploitation."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://303sec.com"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ultrajson"]
