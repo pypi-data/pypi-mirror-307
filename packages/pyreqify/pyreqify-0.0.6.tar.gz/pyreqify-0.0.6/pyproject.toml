@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyreqify"
+version = "0.0.6"
+dependencies = ["nbformat"]
+requires-python = ">=3.8"
+authors = [{name = "Ammar Yasir Naich", email = "ammar.naich@gmail.com"}]
+description = "A module to extract and package Python dependencies"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+
+[project.scripts]
+pyreqify = "pyreqify.pyreqify:extractreqtxt"
+
+[tool.hatch.build.targets.wheel]
+include = ["pyreqify"]
