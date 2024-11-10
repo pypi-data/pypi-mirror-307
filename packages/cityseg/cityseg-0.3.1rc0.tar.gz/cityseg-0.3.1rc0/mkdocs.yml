@@ -1,0 +1,134 @@
+site_name: CitySeg
+site_description: Documentation for the CitySeg urban semantic segmentation pipeline
+site_author: Andrew Mitchell
+
+repo_name: MitchellAcoustics/cityseg
+repo_url: https://github.com/soundscape-labs/cityseg
+edit_uri: 'docs/'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started: getting_started.md
+  - User Guide:
+    - Configuration: user_guide/configuration.md
+#    - Image Processing: user_guide/image_processing.md
+#    - Video Processing: user_guide/video_processing.md
+#    - Multi-Video Processing: user_guide/multi_video_processing.md
+  - API Reference:
+    - Config: api/config.md
+    - Pipeline: api/pipeline.md
+    - Processors: api/processors.md
+    - Segments Analysis: api/segments_analysis.md
+    - Handlers: api/handlers.md
+    - Utils: api/utils.md
+    - Palettes: api/palettes.md
+    - Exceptions: api/exceptions.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            heading_level: 2
+
+            show_source: true
+            show_root_heading: false
+            show_root_full_path: true
+            show_category_heading: false # Could change this to true, not sure atm
+            show_symbol_type_heading: true # waiting for general release
+            show_symbol_type_toc: true
+            merge_init_into_class: true
+            ignore_init_summary: true
+            show_labels: false
+            parameter_headings: true
+
+            show_if_no_docstring: false
+            docstring_section_style: spacy
+            docstring_style: google
+
+            separate_signature: true
+            modernize_annotations: true # waiting for general release
+            members_order: source
+#            show_signature_annotations: true
+            show_signature: true
+            filter_private: true
+#  - mkdocs-jupyter:
+#      kernel_name: python3
+#      execute: true
+#      include_source: true
+
+watch:
+  - src/cityseg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MitchellAcoustics
+
+copyright: Copyright &copy; 2024 Andrew Mitchell
