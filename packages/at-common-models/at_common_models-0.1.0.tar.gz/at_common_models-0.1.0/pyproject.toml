@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "at-common-models"
+version = "0.1.0"
+description = "SQLAlchemy models for stock market data"
+requires-python = ">=3.11"
+dependencies = [
+    "sqlalchemy>=2.0.0",
+]
+readme = "README.md"
+
+[project.urls]
+"Homepage" = "https://github.com/apex-trader/at-common-models"
+"Bug Tracker" = "https://github.com/apex-trader/at-common-models/issues"
