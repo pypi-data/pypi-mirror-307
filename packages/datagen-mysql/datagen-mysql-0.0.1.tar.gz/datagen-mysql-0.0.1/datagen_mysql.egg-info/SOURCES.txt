@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+datagen/__init__.py
+datagen/generator.py
+datagen/db/__init__.py
+datagen/db/mysql.py
+datagen/maker/__init__.py
+datagen/maker/dtype.py
+datagen/maker/maker.py
+datagen/maker/unique.py
+datagen_mysql.egg-info/PKG-INFO
+datagen_mysql.egg-info/SOURCES.txt
+datagen_mysql.egg-info/dependency_links.txt
+datagen_mysql.egg-info/requires.txt
+datagen_mysql.egg-info/top_level.txt
