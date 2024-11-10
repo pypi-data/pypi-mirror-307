@@ -1,0 +1,37 @@
+# Include necessary documentation and metadata files
+include *.rst
+include LICENSE
+include README.md
+include CITATION.cff
+include pyproject.toml
+include MANIFEST.in
+include setup.py
+include setup.cfg
+include .coveragerc
+
+# Include specific directories and files
+recursive-include docs *
+recursive-include docs/_static *
+recursive-include examples *.txt *.py
+
+# Include source files
+recursive-include hwm *.c *.cpp *.h *.pyx *.pxd *.pxi *.tp
+recursive-include hwm *
+
+# Exclude unnecessary files and directories from sdist
+recursive-exclude build *
+recursive-exclude maint_tools *
+recursive-exclude benchmarks *
+recursive-exclude .binder *
+recursive-exclude ci *
+recursive-exclude venv *
+
+# Exclude specific file types in docs folder
+recursive-exclude docs *.jpg *.mp4 *.png
+
+# Exclude specific files globally
+exclude .readthedocs.yml
+exclude CODE_OF_CONDUCT.md
+
+# Global exclusions for unnecessary compiled or temporary files
+global-exclude *.py[cod] __pycache__/* *.so *.dylib .coveragerc tests/*
