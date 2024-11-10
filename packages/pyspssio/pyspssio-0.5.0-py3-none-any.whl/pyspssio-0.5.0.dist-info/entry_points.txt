@@ -1,0 +1,2 @@
+[console_scripts]
+pyspssio = pyspssio.command_line:main
