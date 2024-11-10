@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="hr_attendance_reason_import_fingerspot_in" model="hr.attendance_reason">
+        <field name="name">[SYSTEM] Import check in from fingerspot machine</field>
+        <field name="code">FINGER-IN</field>
+        <field name="by_system">True</field>
+    </record>
+    <record
+        id="hr_attendance_reason_import_fingerspot_out"
+        model="hr.attendance_reason"
+    >
+        <field name="name">[SYSTEM] Import check out from fingerspot machine</field>
+        <field name="code">FINGER-OUT</field>
+        <field name="by_system">True</field>
+    </record>
+</odoo>

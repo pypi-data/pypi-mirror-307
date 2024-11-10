@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 OpenSynergy Indonesia-->
+<!--Copyright 2024 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="fingerspot_attendance_machine_batch_view_search" model="ir.ui.view">
+    <field name="name">fingerspot.attendance.machine.batch - Search</field>
+    <field name="model">fingerspot.attendance.machine.batch</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="fingerspot_attendance_machine_batch_view_tree" model="ir.ui.view">
+    <field name="name">fingerspot.attendance.machine.batch - Tree</field>
+    <field name="model">fingerspot.attendance.machine.batch</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='company_id']" position="after">
+            <field name="machine_id" />
+            <field name="create_date" />
+            <field name="date_start" />
+            <field name="date_end" />
+        </xpath>
+    </field>
+</record>
+
+<record id="fingerspot_attendance_machine_batch_view_form" model="ir.ui.view">
+    <field name="name">fingerspot.attendance.machine.batch - Form</field>
+    <field name="model">fingerspot.attendance.machine.batch</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='user_id']" position="after">
+            <field name="is_admin" invisible="1" />
+            <field
+                    name="fingerspot_backend_id"
+                    attrs="{'invisible': [('is_admin', '=', False )]}"
+                />
+            <field name="machine_id" />
+        </xpath>
+        <xpath expr="//group[@name='header_right']" position="inside">
+            <field name="create_date" />
+            <field name="date_start" />
+            <field name="date_end" />
+        </xpath>
+        <xpath expr="//page[1]" position="before">
+            <page name="attendance_machine" string="Attendance Machine">
+                <field name="attendance_machine_ids" />
+            </page>
+        </xpath>
+        <!-- <xpath expr="//page[name='queue_processing']" position="inside">
+            <group
+                    name="queue_processing"
+                    string="Queue Done"
+                    colspan="4"
+                    col="2"
+                >
+                <field name="done_queue_job_batch_id" />
+                <field name="done_queue_job_batch_state" />
+            </group>
+            <field name="done_queue_job_ids" />
+            <group
+                    name="queue_processing"
+                    string="Queue Cancel"
+                    colspan="4"
+                    col="2"
+                >
+                <field name="cancel_queue_job_batch_id" />
+                <field name="cancel_queue_job_batch_state" />
+            </group>
+            <field name="cancel_queue_job_ids" />
+        </xpath> -->
+
+    </field>
+</record>
+
+<record id="fingerspot_attendance_machine_batch_action" model="ir.actions.act_window">
+    <field name="name">Fingerspot Machine Batches</field>
+    <field name="res_model">fingerspot.attendance.machine.batch</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="fingerspot_attendance_machine_batch_menu"
+        name="Fingerspot Machine Batches"
+        action="fingerspot_attendance_machine_batch_action"
+        parent="fingerspot_menu"
+        groups="fingerspot_attendance_machine_batch_viewer_group"
+        sequence="10"
+    />
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data noupdate="1">
+        <record id="ir_cron_generate_fingerspot_batch" model="ir.cron">
+            <field name="name">Generate Fingerspot Machine Batches</field>
+            <field name="model_id" ref="model_fingerspot_attendance_machine_batch" />
+            <field name="state">code</field>
+            <field name="code">model._cron_import_attendance()</field>
+            <field name="user_id" ref="base.user_admin" />
+            <field name="interval_number">12</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field
+                name="nextcall"
+                eval="(DateTime.now() + timedelta(days=1)).strftime('%Y-%m-%d 01:00:00')"
+            />
+            <field eval="False" name="doall" />
+        </record>
+    </data>
+</odoo>

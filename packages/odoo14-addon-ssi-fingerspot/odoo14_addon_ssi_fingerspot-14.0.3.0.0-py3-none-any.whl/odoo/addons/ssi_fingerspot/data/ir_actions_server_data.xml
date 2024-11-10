@@ -1,0 +1,26 @@
+<odoo>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<data>
+<record
+            id="fingerspot_batch_action_recompute_queue_done_result"
+            model="ir.actions.server"
+        >
+    <field name="name">Action Recompute Queue Done Result</field>
+    <field name="model_id" ref="model_fingerspot_attendance_machine_batch" />
+    <field name="state">code</field>
+    <field name="code">records.action_recompute_queue_done_result()</field>
+</record>
+
+<record
+            id="fingerspot_batch_action_recompute_queue_cancel_result"
+            model="ir.actions.server"
+        >
+    <field name="name">Action Recompute Queue Cancel Result</field>
+    <field name="model_id" ref="model_fingerspot_attendance_machine_batch" />
+    <field name="state">code</field>
+    <field name="code">records.action_recompute_queue_cancel_result()</field>
+</record>
+</data>
+</odoo>

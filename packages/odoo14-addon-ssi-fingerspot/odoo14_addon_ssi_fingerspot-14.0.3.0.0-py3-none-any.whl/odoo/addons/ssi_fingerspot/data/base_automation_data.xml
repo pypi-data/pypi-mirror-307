@@ -1,0 +1,40 @@
+<odoo>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<data>
+<record id="fingerspot_batch_done" model="base.automation">
+    <field
+                name="action_server_id"
+                ref="fingerspot_batch_action_recompute_queue_done_result"
+            />
+    <field name="trigger">on_write</field>
+    <field
+                name="trigger_field_ids"
+                eval="[(6, 0, [
+        ref('ssi_fingerspot.field_fingerspot_attendance_machine_batch__done_queue_job_batch_state'),
+    ])]"
+            />
+    <field name="filter_pre_domain">[]</field>
+    <field name="filter_domain">[('done_queue_job_batch_state','=','finished')]</field>
+</record>
+
+<record id="fingerspot_batch_cancel" model="base.automation">
+    <field
+                name="action_server_id"
+                ref="fingerspot_batch_action_recompute_queue_cancel_result"
+            />
+    <field name="trigger">on_write</field>
+    <field
+                name="trigger_field_ids"
+                eval="[(6, 0, [
+        ref('ssi_fingerspot.field_fingerspot_attendance_machine_batch__cancel_queue_job_batch_state'),
+    ])]"
+            />
+    <field name="filter_pre_domain">[]</field>
+    <field
+                name="filter_domain"
+            >[('cancel_queue_job_batch_state','=','finished')]</field>
+</record>
+</data>
+</odoo>

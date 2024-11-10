@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fingerspot_data_machine_all,fingerspot.data.machine - all,model_fingerspot_data_machine,fingerspot_attendance_machine_group,1,1,1,1
+access_fingerspot_machine_user_all,fingerspot.machine.user - all,model_fingerspot_machine_user,fingerspot_attendance_machine_group,1,1,1,1
+access_fingerspot_attendance_machine_all,fingerspot.attendance.machine - all,model_fingerspot_attendance_machine,fingerspot_attendance_machine_group,1,1,1,1
+access_fingerspot_backend_all,fingerspot.backend - all,model_fingerspot_backend,,1,0,0,0
+access_fingerspot_backend_configurator,fingerspot.backend - configurator,model_fingerspot_backend,fingerspot_attendance_machine_group,1,1,1,1
+access_fingerspot_attendance_machine_batch_all,fingerspot.attendance.machine.batch - all,model_fingerspot_attendance_machine_batch,,1,0,0,0
+access_fingerspot_attendance_machine_batch_viewer,fingerspot.attendance.machine.batch - viewer,model_fingerspot_attendance_machine_batch,fingerspot_attendance_machine_batch_viewer_group,1,0,0,0
+access_fingerspot_attendance_machine_batch_user,fingerspot.attendance.machine.batch - user,model_fingerspot_attendance_machine_batch,fingerspot_attendance_machine_batch_user_group,1,1,1,1

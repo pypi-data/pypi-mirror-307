@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 OpenSynergy Indonesia-->
+<!--Copyright 2024 PT. Simetri Sinergi Indonesia-->
+<!--License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).-->
+<odoo>
+<record id="hr_timesheet_attendance_view_form" model="ir.ui.view">
+    <field name="name">hr.timesheet_attendance - Form Fingerspot</field>
+    <field name="model">hr.timesheet_attendance</field>
+    <field
+            name="inherit_id"
+            ref="ssi_timesheet_attendance.hr_timesheet_attendance_view_form"
+        />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='total_valid_hour']" position="after">
+                <field name="fingerspot_att_in" />
+                <field name="fingerspot_att_out" />
+            </xpath>
+        </data>
+    </field>
+</record>
+</odoo>
