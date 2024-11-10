@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: tethys-cdsapi
+Version: 0.2.2
+Summary: utilities for downloading and processing CDS data
+Project-URL: Homepage, https://github.com/tethys-ts/tethys-cdsapi
+Author-email: Mike Kittridge <mullenkamp1@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: cdsapi,tethys
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: cdsapi>=0.7.2
+Requires-Dist: pandas<3
+Requires-Dist: requests
+Requires-Dist: urllib3
+Description-Content-Type: text/markdown
+
+# tethys-cdsapi
