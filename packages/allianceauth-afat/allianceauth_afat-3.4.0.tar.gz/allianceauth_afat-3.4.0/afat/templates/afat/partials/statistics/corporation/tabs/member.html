@@ -1,0 +1,31 @@
+{% load i18n %}
+
+<div id="tab-members" class="tab-pane fade card card-default border-0" role="tabpanel" aria-labelledby="tab-members">
+    <div class="card-body">
+        <h3>{{ corporation }} {% translate "Members" %}</h3>
+
+        <table class="table table-striped table-hover w-100" id="corp-members">
+            <thead>
+                <tr>
+                    <th>{% translate "Character" %}</th>
+                    <th>{% translate "FATs" %}</th>
+                    <th><!-- {% translate "Character statistics" %} --></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for key, value in chars.items %}
+                    <tr>
+                        <td>{{ key }}</td>
+                        <td>{{ value.0 }}</td>
+                        <td class="text-end">
+                            <a class="btn btn-primary btn-sm" href="{% url 'afat:statistics_character' value.1 year month %}">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
