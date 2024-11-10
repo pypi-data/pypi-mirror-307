@@ -1,0 +1,54 @@
+[project]
+name = "structer"
+version = "0.3.0"
+description = "Structer is a structurer written in Python based on C language structs."
+authors = [{name = "Lelzin λ", email = "d3cryptofc@gmail.com"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = []
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Repository = "https://github.com/d3cryptofc/structer"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.3",
+    "pytest-sugar>=1.0.0",
+    "mypy>=1.13.0",
+    "taskipy>=1.14.0",
+    "ruff>=0.7.2",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.taskipy.tasks]
+test = "pytest -v"
+lint_mypy = "mypy tests structer"
+lint_ruff = "ruff check structer && ruff format --diff"
+lint = "task lint_mypy && task lint_ruff"
+format = "ruff format structer && ruff check structer --fix"
+githooks = "rm -rf .git/hooks && mkdir .git/hooks && $(find .githooks -type f -printf \"ln -s \"$PWD/%p\" \".git/hooks/%f\"\") && chmod -R +x .githooks"
+
+[tool.pytest.ini_options]
+addopts = "--cov=structer --cov-report=html --cov-report=term --show-capture=stdout -x"
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["F", "W", "E", "I", "RET", "R", "ANN"]
+ignore = ["ANN101", "ANN102"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
