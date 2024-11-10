@@ -1,0 +1,7 @@
+authlib
+requests
+Flask-Login
+Flask
+
+[:python_version > "3.7"]
+importlib-metadata
