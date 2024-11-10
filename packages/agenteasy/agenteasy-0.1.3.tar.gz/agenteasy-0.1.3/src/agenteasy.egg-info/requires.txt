@@ -1,0 +1,9 @@
+openai
+pydantic
+pydantic-settings
+Jinja2
+tiktoken
+
+[termbase]
+pymongo
+pandas
