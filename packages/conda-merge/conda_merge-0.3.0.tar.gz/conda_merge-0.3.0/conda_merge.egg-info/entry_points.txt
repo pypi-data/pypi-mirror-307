@@ -1,0 +1,2 @@
+[console_scripts]
+conda-merge = conda_merge:main

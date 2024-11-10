@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+conda_merge.py
+setup.py
+conda_merge.egg-info/PKG-INFO
+conda_merge.egg-info/SOURCES.txt
+conda_merge.egg-info/dependency_links.txt
+conda_merge.egg-info/entry_points.txt
+conda_merge.egg-info/requires.txt
+conda_merge.egg-info/top_level.txt
