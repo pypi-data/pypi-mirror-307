@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: findmaxima2d
+Version: 0.0.28
+Summary: Python 2-D Maxima finding algorithm (findmaxima2d) recreated from implementation in ImageJ/Fiji
+Home-page: https://github.com/dwaithe/MaximaFinder/tree/master/findmaxima2d
+Author: Dominic Waithe
+Author-email: dominic_waithe@hotmail.com
+License: GNU
+License-File: LICENSE
+Requires-Dist: cython
+Requires-Dist: scipy
+Requires-Dist: numpy
+
