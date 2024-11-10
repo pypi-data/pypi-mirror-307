@@ -1,0 +1,35 @@
+- version: 1
+  name: '삼성생명'
+  fix: ''
+  query:  >
+    "삼성생명"
+  prompt: |
+    삼성생명
+  keywords:
+    - '삼성생명'
+  description: |
+    삼성 계열 생명보험회사. 국내 보험업계 빅3(삼성생명, 한화생명, 교보생명) 중 하나로 수십 년째 보험계의 독보적인 1위를 지켜 오고 있다.
+
+- version: 1
+  name: '교보생명'
+  fix: ''
+  query:  >
+    "교보생명"
+  prompt: |
+    교보생명
+  keywords:
+    - '교보생명'
+  description: |
+    교보생명
+
+- version: 1
+  name: '한화생명'
+  fix: ''
+  query:  >
+    "한화생명"
+  prompt: |
+    한화생명
+  keywords:
+    - '한화생명'
+  description: |
+    한화생명
