@@ -1,0 +1,153 @@
+# HookMe
+
+A powerful and easy-to-use Python package for handling Discord and Slack webhooks.
+
+## Installation 
+
+## Usage
+
+### Sending a Simple Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+response = webhook.send_message("Hello, Discord!")
+print(response.status_code)
+```
+
+### Sending an Embedded Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+embed = {
+    "title": "Sample Embed",
+    "description": "This is an embedded message",
+    "color": 0x00ff00
+}
+
+response = webhook.send_embed(
+    title=embed["title"],
+    description=embed["description"],
+    color=embed["color"]
+)
+print(response.status_code)
+```
+
+### Sending a File
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+file_path = "path/to/your/file.txt"
+
+response = webhook.send_file(file_path, content="Here is a file")
+print(response.status_code)
+```
+
+### Scheduling a Message
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Schedule a message to be sent every hour
+schedule_id = automated_webhook.schedule_message(
+    schedule_type="interval",
+    schedule_value="1h",
+    content="This is a scheduled message"
+)
+
+# Start the scheduler
+automated_webhook.start_scheduler()
+```
+
+### Sending Multiple Files with an Embedded Message
+
+```python
+from hookme import DiscordWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+webhook = DiscordWebhook(webhook_url)
+
+files = ["path/to/your/file1.txt", "path/to/your/file2.txt"]
+
+response = webhook.send_files_with_embed(
+    files=files,
+    title="Files with Embed",
+    description="These are multiple files with an embedded message",
+    color=0x00ff00
+)
+print(response.status_code)
+```
+
+### Handling Automated Webhooks
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Schedule an embedded message to be sent daily at 9 AM
+schedule_id = automated_webhook.schedule_embed(
+    schedule_type="cron",
+    schedule_value="0 9 * * *",
+    title="Daily Update",
+    description="This is a daily update",
+    color=0x00ff00
+)
+
+# Start the scheduler
+automated_webhook.start_scheduler()
+```
+
+### Retrieving Webhook Logs
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+from datetime import datetime
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Retrieve logs for a specific webhook ID
+logs = automated_webhook.get_webhook_logs(webhook_id=1)
+print(logs)
+
+# Retrieve logs within a date range
+start_date = datetime(2023, 1, 1)
+end_date = datetime(2023, 12, 31)
+logs = automated_webhook.get_webhook_logs(start_date=start_date, end_date=end_date)
+print(logs)
+
+# Retrieve logs with a specific status
+logs = automated_webhook.get_webhook_logs(status="success")
+print(logs)
+```
+
+### Starting and Stopping the Scheduler
+
+```python
+from hookme.automated_webhook import AutomatedWebhook
+
+webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+automated_webhook = AutomatedWebhook(webhook_url)
+
+# Start the scheduler
+automated_webhook.start_scheduler()
+
+# Stop the scheduler
+automated_webhook.stop_scheduler()
+```
