@@ -1,0 +1,143 @@
+[project]
+name = "termynal"
+version = "0.12.2"
+requires-python = ">=3.9"
+description = "A lightweight and modern animated terminal window"
+authors = [{ email = "daxartio@gmail.com" }, { name = "Danil Akhtarov" }]
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["mkdocs", "markdown", "plugin", "termynal"]
+dependencies = ["markdown >= 3"]
+
+[project.urls]
+Homepage = "https://termynal.github.io/termynal.py/"
+Changelog = "https://termynal.github.io/termynal.py/changelog/"
+Repository = "https://github.com/termynal/termynal.py"
+Documentation = "https://termynal.github.io/termynal.py/"
+
+[project.entry-points."mkdocs.plugins"]
+"termynal" = "termynal.plugin:TermynalPlugin"
+
+[project.entry-points."markdown.extensions"]
+"termynal" = "termynal.markdown:TermynalExtension"
+
+[project.optional-dependencies]
+mkdocs = ["mkdocs >= 1.4"]
+
+[dependency-groups]
+dev = [
+    "black >= 24.10",
+    "mypy >= 1.13.0",
+    "pytest >= 7.4",
+    "pytest-cov >= 4.1",
+    "pytest-deadfixtures >= 2.2",
+    "pytest-mock >= 3.14",
+    "pyyaml >= 6.0",
+    "ruff >= 0.1",
+    "types-markdown >= 3.7",
+    "types-pyyaml >= 6.0",
+]
+docs = [
+    "markdown-include >= 0.8",
+    "mkdocs >= 1.6",
+    "mkdocs-material >= 9.5",
+]
+git = ["commitizen >= 3.30"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+no-build-package = ["tests"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.12.2"
+tag_format = "v$version"
+version_files = ["pyproject.toml:version"]
+bump_message = "chore(release): version $current_version → $new_version"
+update_changelog_on_bump = true
+
+[tool.mypy]
+ignore_missing_imports = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.coverage.run]
+omit = ["tests/*", "**/__main__.py", "**/.venv/*", "**/site-packages/*"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 94
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --showlocals --verbosity 2"
+log_level = "DEBUG"
+
+[tool.ruff]
+select = [
+    "F",
+    "E",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "D",
+    # "UP",
+    "YTT",
+    # "ANN",
+    "S",
+    "BLE",
+    # "FBT",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "DTZ",
+    "T10",
+    "EM",
+    "EXE",
+    "ISC",
+    "ICN",
+    "G",
+    "INP",
+    "PIE",
+    "T20",
+    "PT",
+    "Q",
+    "RET",
+    "SIM",
+    "TID",
+    "TCH",
+    "ARG",
+    "PTH",
+    "ERA",
+    "PD",
+    # "PGH",
+    "PL",
+    "TRY",
+    "RSE",
+    "RUF",
+]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D203",
+    "D213",
+    "D401",
+    "S101",
+]
+exclude = []
