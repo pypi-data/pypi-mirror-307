@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+annotation_exporter/__init__.py
+annotation_exporter/annot_export.py
+annotation_exporter/generic.py
+annotation_exporter/main.py
+annotation_exporter.egg-info/PKG-INFO
+annotation_exporter.egg-info/SOURCES.txt
+annotation_exporter.egg-info/dependency_links.txt
+annotation_exporter.egg-info/requires.txt
+annotation_exporter.egg-info/top_level.txt
