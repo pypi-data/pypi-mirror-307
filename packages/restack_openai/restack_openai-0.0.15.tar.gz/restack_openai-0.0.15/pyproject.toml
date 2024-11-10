@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "restack_openai"
+version = "0.0.15"
+description = "OpenAI for Restack AI"
+authors = [
+    "Restack Team <service@restack.io>"
+]
+packages = [{ include = "restack_openai", from = "src" }]
+include = ["src/restack_openai/py.typed"]
+
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.9.2"
+openai = "^1.52.0"
+restack_ai = "^0.0.28"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
