@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: urbancode
+Version: 0.1.0
+Summary: A package for universal urban analysis
+Home-page: https://github.com/Sijie-Yang/urbancode
+Author: Sijie Yang
+Author-email: sijiey@u.nus.edu
+Project-URL: Bug Tracker, https://github.com/Sijie-Yang/urbancode/issues
+Project-URL: Changelog, https://github.com/Sijie-Yang/urbancode/blob/main/CHANGELOG.md
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: osmnx (>=1.1.1)
+Requires-Dist: momepy (>=0.5.3)
+Requires-Dist: geopandas (>=0.9.0)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: torch (>=1.8.0)
+Requires-Dist: torchvision (>=0.9.0)
+Requires-Dist: pillow (>=8.2.0)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: scikit-learn (>=0.24.0)
+Requires-Dist: tqdm (>=4.60.0)
+Requires-Dist: tensorboard (>=2.5.0)
+
+# Urban-Code
+## Package Structure
+urbancode/
+├── urbancode/
+│   ├── __init__.py
+│   └── network/
+│       ├── tests/
+│       │   ├── __init__.py
+│       │   ├── test_core.py
+│       │   ├── test_connectivity.py
+│       │   ├── test_centrality.py
+│       │   ├── test_utils.py
+│       │   └── test_visualization.py
+│       ├── __init__.py
+│       ├── core.py
+│       ├── connectivity.py
+│       ├── centrality.py
+│       ├── visualization.py
+│       └── utils.py
+├── examples/
+│   └── urban network analytics.ipynb
+├── README.md
+├── LICENSE
+├── setup.py
+├── requirements.txt
+└── .gitignore
