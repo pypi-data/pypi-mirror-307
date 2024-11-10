@@ -1,0 +1,5 @@
+typer-slim==0.12.5
+bornhack-media-archive-client
+
+[dev]
+pre-commit==4.0.0

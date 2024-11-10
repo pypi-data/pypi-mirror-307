@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bma-cli
+Version: 0.1.0
+Summary: BornHack Media Archive CLI Tool
+Author: Thomas Steen Rasmussen
+Author-email: thomas@gibfest.dk
+Project-URL: homepage, https://github.com/bornhack/bma-cli-python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer-slim==0.12.5
+Requires-Dist: bornhack-media-archive-client
+Provides-Extra: dev
+Requires-Dist: pre-commit==4.0.0; extra == "dev"
+
+# bma-cli-python
+BMA CLI client written in Python
