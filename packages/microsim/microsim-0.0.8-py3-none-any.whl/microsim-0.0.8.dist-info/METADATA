@@ -1,0 +1,153 @@
+Metadata-Version: 2.3
+Name: microsim
+Version: 0.0.8
+Summary: Light microscopy simulation in python
+Project-URL: homepage, https://github.com/tlambert03/microsim
+Project-URL: repository, https://github.com/tlambert03/microsim
+Author-email: Talley Lambert <talley.lambert@gmail.com>
+License: BSD-3-Clause
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: annotated-types
+Requires-Dist: dm-tree
+Requires-Dist: numpy<2.0
+Requires-Dist: pint>=0.23
+Requires-Dist: platformdirs
+Requires-Dist: pydantic-settings!=2.5.0
+Requires-Dist: pydantic>=2.4
+Requires-Dist: scipy
+Requires-Dist: tensorstore
+Requires-Dist: tqdm
+Requires-Dist: xarray
+Provides-Extra: cosem
+Requires-Dist: boto3; extra == 'cosem'
+Requires-Dist: dask; extra == 'cosem'
+Requires-Dist: imageio; extra == 'cosem'
+Requires-Dist: s3fs; extra == 'cosem'
+Requires-Dist: supabase; extra == 'cosem'
+Requires-Dist: xarray-datatree; extra == 'cosem'
+Provides-Extra: dev
+Requires-Dist: boto3; extra == 'dev'
+Requires-Dist: boto3-stubs[s3]; extra == 'dev'
+Requires-Dist: dask; extra == 'dev'
+Requires-Dist: imageio; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: jax[cpu]; extra == 'dev'
+Requires-Dist: matplotlib; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pdbpp; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: rich; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: s3fs; extra == 'dev'
+Requires-Dist: supabase; extra == 'dev'
+Requires-Dist: tifffile; extra == 'dev'
+Requires-Dist: torch; extra == 'dev'
+Requires-Dist: types-tqdm; extra == 'dev'
+Requires-Dist: xarray-datatree; extra == 'dev'
+Requires-Dist: zarr; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: griffe-fieldz; extra == 'docs'
+Requires-Dist: griffe==0.45.3; extra == 'docs'
+Requires-Dist: mkdocs-jupyter==0.24.8; extra == 'docs'
+Requires-Dist: mkdocs-material==9.5.17; extra == 'docs'
+Requires-Dist: mkdocs>=1.5.3; extra == 'docs'
+Requires-Dist: mkdocstrings-python==1.9.2; extra == 'docs'
+Requires-Dist: mkdocstrings==0.24.3; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: boto3; extra == 'test'
+Requires-Dist: dask; extra == 'test'
+Requires-Dist: imageio; extra == 'test'
+Requires-Dist: jax[cpu]; extra == 'test'
+Requires-Dist: matplotlib; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: s3fs; extra == 'test'
+Requires-Dist: supabase; extra == 'test'
+Requires-Dist: tifffile; extra == 'test'
+Requires-Dist: torch; extra == 'test'
+Requires-Dist: xarray-datatree; extra == 'test'
+Requires-Dist: zarr; extra == 'test'
+Description-Content-Type: text/markdown
+
+# microsim
+
+[![License](https://img.shields.io/pypi/l/microsim.svg?color=green)](https://github.com/tlambert03/microsim/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/microsim.svg?color=green)](https://pypi.org/project/microsim)
+[![Python Version](https://img.shields.io/pypi/pyversions/microsim.svg?color=green)](https://python.org)
+[![CI](https://github.com/tlambert03/microsim/actions/workflows/ci.yml/badge.svg)](https://github.com/tlambert03/microsim/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/tlambert03/microsim/branch/main/graph/badge.svg)](https://codecov.io/gh/tlambert03/microsim)
+
+Light microscopy simulation in python.
+
+The goal of this library is to generate highly realistic simulated data such as the following:
+
+![Montage2](https://github.com/tlambert03/microsim/assets/1609449/4bc9eb85-b275-4315-b60d-2cb3d003b7f1)
+
+*(this data was generated using segmentations from
+[cell jrc_hela-3 at OpenOrganelle](https://openorganelle.janelia.org/datasets/jrc_hela-3) as the ground truth)*
+
+## Installation
+
+### from PyPI
+
+```bash
+pip install microsim
+```
+
+### from github
+
+To get the bleeding edge version, which will change rapidly, you can install from github.
+
+```bash
+pip install git+https://github.com/tlambert03/microsim
+```
+
+If available, microsim can use either Jax or Cupy to accelerate computations.
+These are not installed by default, see the
+[jax](https://jax.readthedocs.io/en/latest/installation.html)
+or [cupy](https://docs.cupy.dev/en/stable/install.html) installation instructions,
+paying attention to your GPU requirements.  Support for torch is planned.
+
+## Usage
+
+Construct and run a
+[`microsim.Simulation`](https://www.talleylambert.com/microsim/api/#microsim.schema.simulation.Simulation)
+object.
+
+```python
+from microsim import schema as ms
+from microsim.util import ortho_plot
+
+# define the parameters of the simulation
+sim = ms.Simulation(
+    truth_space=ms.ShapeScaleSpace(shape=(128, 512, 512), scale=(0.02, 0.01, 0.01)),
+    output_space={'downscale': 8},
+    sample=ms.Sample(
+        labels=[ms.MatsLines(density=0.5, length=30, azimuth=5, max_r=1)]
+    ),
+    modality=ms.Confocal(pinhole_au=0.2),
+    output_path="au02.tiff",
+)
+
+# run it
+result = sim.run()
+
+# optionally plot the result
+ortho_plot(result)
+```
+
+## Documentation
+
+Start with the [tutorial](https://www.talleylambert.com/microsim/tutorial/), then see the 
+[API Reference](<https://tlambert03.github.io/microsim/api/>) for details
+on the `Simulation` object and options for all of the fields.
