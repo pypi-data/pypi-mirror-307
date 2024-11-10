@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: screenman
+Version: 0.1.1
+Summary: A Python tool to manage and configure multi-monitor setups using EDID information, allowing users to apply predefined screen layouts with ease.
+Author-email: Hendrik Klug <hendrik.klug@gmail.com>
+License: MIT license
+Project-URL: Homepage, https://github.com/Jimmy2027/screenman
+Keywords: screenman
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click >=7.0
+Requires-Dist: loguru >=0.7.2
+Requires-Dist: platformdirs >=4.3.6
+Provides-Extra: test
+Requires-Dist: pytest >=3 ; extra == 'test'
+
+# screenman
+
+A Python tool to manage and configure multi-monitor setups using EDID information, allowing users to apply predefined screen layouts with ease.
+
+## Setup
+
+```terminal
+$ screenman --help
+Usage: screenman [OPTIONS]
+
+  Console script for screenman.
+
+Options:
+  --log-level TEXT  Set the logging level (e.g., DEBUG, INFO, WARNING, ERROR,
+                    CRITICAL)
+  --log-file TEXT   Set the log file path.
+  --print-info      Print the connected screens and the corresponding
+                    layout.If no layout is defined, the default layout 'auto'
+                    is used.
+  --help            Show this message and exit.
+
+```
+
+When wanting to setup a new screen layout, you can use the `--print-info` flag to get the connected screens information. This information can be used to create a new screen layout.
+
+```terminal
+$ screenman --print-info
+<HDMI-2, UID: DL51145435704, primary: True, modes: 13, conn: True, rot: normal, enabled: True, res: (1920, 1080)>
+Layout: auto
+```
+
+From that we can create our toml configuration file with the following content:
+
+```toml
+# the hierarchy of the configuration file is as follows:
+# layouts.<layout_name>.<screen_uid>
+[layouts.single_baetylus.DL51145435704]
+primary = true
+mode = [1920, 1080]
+position = [0, 0]
+rotation = "normal"
+```
+
+A more advanced screenman.toml configuration file can be found in the [examples](examples) directory.
+
+## Usage
+I have `screenman --log-file ~/.local/logs/screenman.log --log-level DEBUG` mapped to a keybinding.
+
+If you can't install `screenman` with your package manager, you can also run it with `uv`:
+    
+```bash
+uv tool run screenman
+```
+
+## Installation
+
+### pip release version
+
+```bash
+pip install screenman
+```
+
+### pip live version
+
+```bash
+pip install git+https://github.com/Jimmy2027/screenman.git
+```
+
+### portage
+
+`screenman` is available via [Jimmy's overlay](https://github.com/Jimmy2027/overlay/blob/main/dev-python/screenman/screenman-9999.ebuild).
+Either enable the repo or copy the ebuild to your local overlay.
+
+Then run:
+
+```bash
+emerge -av screenman
+```
