@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: borghash
+Version: 0.0.2
+Summary: Memory-efficient hash table (implemented in Cython)
+Author: The Borg Collective (see AUTHORS file)
+Maintainer-email: Thomas Waldmann <tw@waldmann-edv.de>
+License: BSD
+Project-URL: Homepage, https://github.com/borgbackup/borghash
+Project-URL: Changelog, https://github.com/borgbackup/borghash/blob/master/changes.rst
+Keywords: hashtable,memory,efficient,dense
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+License-File: LICENSE.rst
+License-File: AUTHORS

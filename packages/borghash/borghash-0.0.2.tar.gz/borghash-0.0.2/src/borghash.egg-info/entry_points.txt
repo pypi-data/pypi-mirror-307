@@ -1,0 +1,2 @@
+[console_scripts]
+borghash-demo = borghash.__main__:demo
