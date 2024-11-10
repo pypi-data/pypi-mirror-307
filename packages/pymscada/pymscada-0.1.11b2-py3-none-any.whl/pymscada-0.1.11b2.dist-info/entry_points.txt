@@ -1,0 +1,5 @@
+[console_scripts]
+pymscada = pymscada.__main__:cmd_line
+
+[gui_scripts]
+
