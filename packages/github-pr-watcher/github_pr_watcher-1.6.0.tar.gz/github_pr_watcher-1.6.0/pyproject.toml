@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "github-pr-watcher"
+version = "1.6.0"
+repository = "https://github.com/gm2211/github-watcher"
+description = "A MacOs UI tool to monitor GitHub Pull Requests"
+authors = ["gm2211 <gmecocci@outlook.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+license = "AGPL-3.0-or-later"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+PyQt6 = "^6.6.0"
+requests = "^2.31.0"
+PyYAML = "^6.0.1"
+xxhash = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+pillow = "^10.0.0"
+pyinstaller = "^6.0.0"
+
+[tool.poetry.scripts]
+github-pr-watcher = "src.main:main"
+gpw = "src.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
