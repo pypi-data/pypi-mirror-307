@@ -1,0 +1,2 @@
+[console_scripts]
+adventure = adventure.__main__:main
