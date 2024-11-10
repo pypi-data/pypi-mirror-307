@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "xy_web_work"
+
+authors = [{ name = "余洋", email = "yuyangit.0515@qq.com" }]
+description = "xy_web_service web工作模块"
+
+dependencies = [
+
+    "importlib_resources",
+
+    "xy_singleton",
+    "xy_file",
+    "xy_configure",
+
+    "xy_settings",
+    "xy_work",
+
+    "xy_web_settings",
+]
+
+requires-python = ">=3.11.3"
+
+dynamic = ["version"]
+
+readme = "README.md"
+
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.scripts]
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["xy_web_work"] # alternatively: `exclude = ["additional*"]`
+namespaces = false
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { file = "VERSION" }
