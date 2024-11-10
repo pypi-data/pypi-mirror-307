@@ -1,0 +1,139 @@
+/* 基础布局样式 */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* 树容器 */
+#tree-container {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+}
+
+/* 分组背景 */
+.group-background {
+    fill-rule: evenodd;
+    pointer-events: none;
+}
+
+/* 图例样式 */
+.legend {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* 节点标签样式 */
+.node-label.direction-right {
+    text-anchor: start;
+    dominant-baseline: middle;
+}
+
+.node-label.direction-left {
+    text-anchor: end;
+    dominant-baseline: middle;
+}
+
+.node-label.direction-down {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+.node-label.direction-up {
+    text-anchor: middle;
+    dominant-baseline: alphabetic;
+}
+
+/* 可信度值样式 */
+.confidence-value {
+    font-size: 10px;
+    fill: #666;
+}
+
+/* 控制按钮容器 */
+#controls-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* 控制按钮样式 */
+.control-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.control-button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+.control-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.control-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.control-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* 拖动相关样式 */
+g.dragging circle {
+    fill: #ff4444;
+    r: 6;
+}
+
+g.dragging .node-label {
+    font-weight: bold;
+}
+
+/* 鼠标样式 */
+g:hover circle {
+    cursor: move;
+}
+
+/* 过渡动画 */
+g circle,
+g .node-label,
+path {
+    transition: all 0.2s ease-in-out;
+}
