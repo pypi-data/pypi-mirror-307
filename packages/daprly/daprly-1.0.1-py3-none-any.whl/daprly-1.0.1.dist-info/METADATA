@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: daprly
+Version: 1.0.1
+Summary: A simple Dapr Python SDK wrapper util.
+Home-page: https://github.com/stiproot/daprly
+Author: Simon Stipcich
+Author-email: stipcich.simon@gmail.com
+License: MIT
+Keywords: python,package,dapr,beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dapr <1.14.0,>=1.13.0a
+
+# Daprly
+
+A simple Dapr Python SDK wrapper util.
