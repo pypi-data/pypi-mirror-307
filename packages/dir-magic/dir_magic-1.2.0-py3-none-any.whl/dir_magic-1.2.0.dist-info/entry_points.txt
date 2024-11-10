@@ -1,0 +1,3 @@
+[console_scripts]
+dir-magic=dir-magic=dir_magic.__main__:main
+
