@@ -1,0 +1,311 @@
+Metadata-Version: 2.1
+Name: zf-lox
+Version: 1.0.0
+Summary: Lox extracts data from LinkedIn posts and saves it to Notion
+Author: Zeff Muks
+Author-email: zeffmuks@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles==0.8.0
+Requires-Dist: aiohappyeyeballs==2.4.0
+Requires-Dist: aiohttp==3.10.5
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: aiosqlite==0.17.0
+Requires-Dist: altair==4.2.2
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anthropic==0.32.0
+Requires-Dist: anyio==4.4.0
+Requires-Dist: appdirs==1.4.4
+Requires-Dist: asyncpraw==7.7.1
+Requires-Dist: asyncprawcore==2.4.0
+Requires-Dist: attrs==24.2.0
+Requires-Dist: autoflake==2.3.1
+Requires-Dist: backports.tarfile==1.2.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: bitarray==2.9.2
+Requires-Dist: bitstring==4.2.3
+Requires-Dist: blinker==1.8.2
+Requires-Dist: boto3==1.29.7
+Requires-Dist: botocore==1.32.7
+Requires-Dist: browsercookie==0.7.9
+Requires-Dist: bs4==0.0.2
+Requires-Dist: cachetools==5.5.0
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: cffi==1.17.1
+Requires-Dist: chardet==5.2.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: convcolors==2.2.0
+Requires-Dist: cryptography==42.0.8
+Requires-Dist: cssselect==1.2.0
+Requires-Dist: decorator==4.4.2
+Requires-Dist: Deprecated==1.2.14
+Requires-Dist: distro==1.9.0
+Requires-Dist: dnspython==2.6.1
+Requires-Dist: docutils==0.20.1
+Requires-Dist: email_validator==2.2.0
+Requires-Dist: entrypoints==0.4
+Requires-Dist: epub2pdf==0.1.0
+Requires-Dist: extcolors==1.0.0
+Requires-Dist: fake-useragent==1.5.1
+Requires-Dist: fastapi==0.104.1
+Requires-Dist: fastapi-cli==0.0.4
+Requires-Dist: frozenlist==1.4.1
+Requires-Dist: gitdb==4.0.11
+Requires-Dist: GitPython==3.1.43
+Requires-Dist: google-ads==18.0.0
+Requires-Dist: google-api-core==2.8.2
+Requires-Dist: google-api-python-client==2.145.0
+Requires-Dist: google-auth==2.34.0
+Requires-Dist: google-auth-httplib2==0.2.0
+Requires-Dist: google-auth-oauthlib==0.8.0
+Requires-Dist: googleapis-common-protos==1.56.4
+Requires-Dist: googlesearch-python==1.2.5
+Requires-Dist: gorilla-cli==0.0.10
+Requires-Dist: greenlet==3.0.3
+Requires-Dist: grpcio==1.66.1
+Requires-Dist: grpcio-status==1.48.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: halo==0.0.31
+Requires-Dist: httpcore==1.0.5
+Requires-Dist: httplib2==0.22.0
+Requires-Dist: httptools==0.6.1
+Requires-Dist: httpx==0.27.2
+Requires-Dist: idna==3.10
+Requires-Dist: imageio==2.33.1
+Requires-Dist: imageio-ffmpeg==0.4.9
+Requires-Dist: img2pdf==0.5.1
+Requires-Dist: importlib-metadata==7.0.1
+Requires-Dist: importlib_resources==6.4.3
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: jaraco.classes==3.3.0
+Requires-Dist: jaraco.context==5.3.0
+Requires-Dist: jaraco.functools==4.0.2
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: jiter==0.5.0
+Requires-Dist: jmespath==1.0.1
+Requires-Dist: joblib==1.4.2
+Requires-Dist: json-five==1.1.2
+Requires-Dist: json5==0.9.25
+Requires-Dist: jsonschema==4.23.0
+Requires-Dist: jsonschema-specifications==2023.12.1
+Requires-Dist: keyring==24.3.0
+Requires-Dist: libgen-api==1.0.1
+Requires-Dist: linkedin-api==2.3.1
+Requires-Dist: log-symbols==0.0.14
+Requires-Dist: loguru==0.7.2
+Requires-Dist: lxml==5.3.0
+Requires-Dist: lz4==4.3.3
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: maturin==1.7.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mobi==0.3.3
+Requires-Dist: more-itertools==10.1.0
+Requires-Dist: moviepy==1.0.3
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: mypy==1.10.1
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: networkx==3.3
+Requires-Dist: nh3==0.2.15
+Requires-Dist: nltk==3.8.1
+Requires-Dist: numpy==1.26.2
+Requires-Dist: oauthlib==3.2.2
+Requires-Dist: openai==1.45.1
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: orjson==3.10.5
+Requires-Dist: osxmetadata==1.3.5
+Requires-Dist: packaging==24.0
+Requires-Dist: pandas==2.2.2
+Requires-Dist: parse==1.20.2
+Requires-Dist: passlib==1.7.4
+Requires-Dist: pathspec==0.12.1
+Requires-Dist: pikepdf==8.13.0
+Requires-Dist: pillow==10.4.0
+Requires-Dist: pip-autoremove==0.10.0
+Requires-Dist: pkginfo==1.9.6
+Requires-Dist: platformdirs==4.2.2
+Requires-Dist: playwright==1.47.0
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: praw==7.7.1
+Requires-Dist: prawcore==2.4.0
+Requires-Dist: proglog==0.1.10
+Requires-Dist: prompt_toolkit==3.0.47
+Requires-Dist: proto-plus==1.19.6
+Requires-Dist: protobuf==3.20.0
+Requires-Dist: psutil==6.0.0
+Requires-Dist: py-applescript==1.0.3
+Requires-Dist: py-cpuinfo==9.0.0
+Requires-Dist: py-unused-deps==0.4.2
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: pyasn1==0.6.1
+Requires-Dist: pyasn1_modules==0.4.1
+Requires-Dist: pycookiecheat==0.7.0
+Requires-Dist: pycparser==2.22
+Requires-Dist: pycryptodome==3.20.0
+Requires-Dist: pydantic==2.9.1
+Requires-Dist: pydantic-settings==2.4.0
+Requires-Dist: pydantic_core==2.23.3
+Requires-Dist: pydeck==0.9.1
+Requires-Dist: pydub==0.25.1
+Requires-Dist: pyee==12.0.0
+Requires-Dist: pyflakes==3.2.0
+Requires-Dist: Pygments==2.17.2
+Requires-Dist: Pympler==1.1
+Requires-Dist: pyobjc-core==10.3.1
+Requires-Dist: pyobjc-framework-AppleScriptKit==10.3.1
+Requires-Dist: pyobjc-framework-AppleScriptObjC==10.3.1
+Requires-Dist: pyobjc-framework-AVFoundation==10.3.1
+Requires-Dist: pyobjc-framework-Cocoa==10.3.1
+Requires-Dist: pyobjc-framework-CoreAudio==10.3.1
+Requires-Dist: pyobjc-framework-CoreMedia==10.3.1
+Requires-Dist: pyobjc-framework-CoreServices==10.3.1
+Requires-Dist: pyobjc-framework-FSEvents==10.3.1
+Requires-Dist: pyobjc-framework-Quartz==10.3.1
+Requires-Dist: pyobjc-framework-ScriptingBridge==10.3.1
+Requires-Dist: pyparsing==3.1.4
+Requires-Dist: PyPDF2==3.0.1
+Requires-Dist: pypiserver==2.1.1
+Requires-Dist: pyppeteer==2.0.0
+Requires-Dist: PyQt5==5.15.11
+Requires-Dist: PyQt5-Qt5==5.15.14
+Requires-Dist: PyQt5_sip==12.15.0
+Requires-Dist: pyquery==2.0.1
+Requires-Dist: pysitemap==0.5
+Requires-Dist: pytest==8.3.2
+Requires-Dist: pytest-base-url==2.1.0
+Requires-Dist: pytest-playwright==0.5.1
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: python-multipart==0.0.9
+Requires-Dist: python-slugify==8.0.4
+Requires-Dist: pytube==15.0.0
+Requires-Dist: pytubefix==6.8.1
+Requires-Dist: pytz==2024.2
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: readme-renderer==42.0
+Requires-Dist: referencing==0.35.1
+Requires-Dist: regex==2024.9.11
+Requires-Dist: reportlab==4.1.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-html==0.10.0
+Requires-Dist: requests-oauthlib==1.3.1
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.0
+Requires-Dist: rpds-py==0.20.0
+Requires-Dist: rsa==4.9
+Requires-Dist: s3transfer==0.8.0
+Requires-Dist: safetensors==0.4.4
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: semantic-version==2.10.0
+Requires-Dist: setuptools-rust==1.9.0
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: shortuuid==1.0.13
+Requires-Dist: six==1.16.0
+Requires-Dist: sly==0.5
+Requires-Dist: smmap==5.0.1
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: soupsieve==2.6
+Requires-Dist: spinners==0.0.24
+Requires-Dist: starlette==0.27.0
+Requires-Dist: streamlit==1.38.0
+Requires-Dist: sympy==1.13.2
+Requires-Dist: tenacity==8.5.0
+Requires-Dist: termcolor==2.4.0
+Requires-Dist: text-unidecode==1.3
+Requires-Dist: tokenizers==0.19.1
+Requires-Dist: toml==0.10.2
+Requires-Dist: tomli==2.0.1
+Requires-Dist: toolz==0.12.1
+Requires-Dist: torch==2.4.0
+Requires-Dist: torchvision==0.19.0
+Requires-Dist: tornado==6.4.1
+Requires-Dist: tqdm==4.66.5
+Requires-Dist: tweepy==4.14.0
+Requires-Dist: twine==4.0.2
+Requires-Dist: typer==0.12.3
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.1
+Requires-Dist: tzlocal==5.2
+Requires-Dist: ujson==5.10.0
+Requires-Dist: ultralytics==8.2.78
+Requires-Dist: ultralytics-thop==2.0.2
+Requires-Dist: update-checker==0.18.0
+Requires-Dist: uritemplate==4.1.1
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: uvicorn==0.30.1
+Requires-Dist: uvloop==0.19.0
+Requires-Dist: validators==0.34.0
+Requires-Dist: w3lib==2.2.1
+Requires-Dist: watchdog==5.0.2
+Requires-Dist: watchfiles==0.22.0
+Requires-Dist: wcwidth==0.2.13
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: websockets==10.4
+Requires-Dist: wrapt==1.16.0
+Requires-Dist: xattr==1.1.0
+Requires-Dist: yarl==1.11.1
+Requires-Dist: youtube-transcript-api==0.6.2
+Requires-Dist: yql==1.0.1
+Requires-Dist: zf-pd==0.2.17
+Requires-Dist: zf-perse==1.1.0
+Requires-Dist: zf-tetris==1.0.0
+Requires-Dist: zf-xanthus==0.1.4
+Requires-Dist: zipp==3.17.0
+
+# Lox
+
+[![PyPI version](https://badge.fury.io/py/zf-lox.svg)](https://badge.fury.io/py/zf-lox)
+
+![Perse](https://zf-static.s3.us-west-1.amazonaws.com/perse-logo128.png)</p>
+
+Lox is a tool for generating leads from LinkedIn. It can open linkedin pages, parse content and extract email.
+It integrates with Notion and capable of saving the extracted leads into a Notion database.
+
+### Usage
+
+```bash
+lox --url {linkedin-post-url}
+```
+
+### Features
+
+It's core features includes:
+
+- Ability to scrape data from LinkedIn posts or feed
+- Automatic creation of data model from Notion datbase
+- Integration with Notion to save the extracted data
+
+You can install Perse using pip:
+
+```bash
+pip install zf-lox
+
+mkdir -p ~/.lox
+```
+
+Create a `config` file with the following:
+
+```bash
+[linkedin]
+email = {your-linkedin-email}
+password = {your-linkedin-password}
+
+[openai]
+api_key = {your-openai-api-key}
+
+[notion]
+api_key = {your-notion-api-key}
+database_id = {your-notion-database-id}
+```
+
+Export cookies from LinkedIn using [EditThisCookies](https://chromewebstore.google.com/detail/editthiscookies/hlgpnddmgbhkmilmcnejaibhmoiljhhb) and save it in `~/.lox/cookies.json`
+
+## License
+
+[MIT License](./LICENSE)
+
