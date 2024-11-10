@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rocket-aya
+Version: 0.1.0
+Summary: A simple rocket module
+Home-page: https://github.com/yourusername/rocket-aya
+Author: aya
+Author-email: your.email@example.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Rocket Package
+
+A simple Python package to work with rockets.
+
+## Installation
+
+```bash
+pip install rocket
