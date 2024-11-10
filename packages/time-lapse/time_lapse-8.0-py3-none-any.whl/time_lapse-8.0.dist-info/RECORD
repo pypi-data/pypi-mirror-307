@@ -1,0 +1,15 @@
+time_lapse/__init__.py,sha256=n6dRdTracnblMZRXeeMG70lGGmVwHZQZHYbZnlxL0VY,61
+time_lapse/cli.py,sha256=zVeUwoc5bAZpWh-CfP2B7EBzdrB9XS-PnMczwH7B4-o,1847
+time_lapse/detect_audio.py,sha256=OTcisl3o9rQniLa_38Cx6bFvHp_ed57ErLSJ4dmdHjA,325
+time_lapse/output.py,sha256=pLBKwSI4m_DiHSoT7zlSIncBDTydaDZAzfGwrsc1ARg,2271
+time_lapse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+time_lapse/source.py,sha256=QIS9tCk55Fyra90G8Xx7Zuzl3OJQaum50mGyjUzSy7s,1131
+time_lapse/thumbnail.py,sha256=RJcT3FJZNNBdVIDYEUS-BB70p0B-5JJhPDcCvp71fzo,572
+time_lapse/watermark.py,sha256=eDQUHOU8gwX9znDu-rKtX42PSEV8e_hqY9REn_bMGKQ,730
+time_lapse/fonts/Jost-400-Book.ttf,sha256=YN6VFlGHD9LbvQmalvkyHxgxcc19cwR5BXh_N9LsKhM,98228
+time_lapse/fonts/LICENSE.md,sha256=GcefnB_QwFjsiXAdPcr-JIt6QfOcH3dEjkC4sGqEP8s,3627
+time_lapse-8.0.dist-info/entry_points.txt,sha256=cpeOcID-zpO3bK1g7jNkhjY-JRVaMfosRz2UGTPV6aQ,49
+time_lapse-8.0.dist-info/LICENSE,sha256=vF4iS7zp4TKmv6PkbUaWjcu3f6NFc5JmFk7V6yNulBw,1069
+time_lapse-8.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+time_lapse-8.0.dist-info/METADATA,sha256=Oddn1RmZ_uBGwc62ylrR51doUOjDc-8p_EVd-1HUGsI,5080
+time_lapse-8.0.dist-info/RECORD,,

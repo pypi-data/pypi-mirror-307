@@ -1,0 +1,3 @@
+[console_scripts]
+timelapse=time_lapse.cli:main
+
