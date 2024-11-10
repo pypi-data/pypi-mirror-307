@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+rq
+redis
+celery
+click
+pydantic
+pyyaml
