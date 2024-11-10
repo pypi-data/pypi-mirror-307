@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+findmaxima2d/README.md
+findmaxima2d/__init__.py
+findmaxima2d/cfindmaxima2d.c
+findmaxima2d/cfindmaxima2d.pyx
+findmaxima2d/findmaxima2d.py
+findmaxima2d/is_within.c
+findmaxima2d/is_within.pyx
+findmaxima2d.egg-info/PKG-INFO
+findmaxima2d.egg-info/SOURCES.txt
+findmaxima2d.egg-info/dependency_links.txt
+findmaxima2d.egg-info/not-zip-safe
+findmaxima2d.egg-info/requires.txt
+findmaxima2d.egg-info/top_level.txt
