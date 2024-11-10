@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pub-utils-hhb"
+version = "0.0.4"
+dependencies = [
+    "pycryptodome==3.20.0"
+]
+authors = [
+    { name = "HHB", email = "1014616839@qq.com" },
+]
+description = "Public/Common codes for Python projects."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Operating System :: Microsoft :: Windows :: Windows 10',
+]
+
+[project.urls]
+Homepage = "https://github.com/Seer-00/PythonPubCodeFiles/tree/dev"
+
+[project.scripts]
+test = "pub_utils.pub_common_utils:get_root_dir"
+
+[tool.setuptools.packages.find]
+where = ["./src"]  # ["."] by default
+#include = ["pub_utils_hhb*"]  # ["*"] by default
+#exclude = ["temp*"]  # empty by default
