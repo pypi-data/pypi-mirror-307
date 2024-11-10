@@ -1,0 +1,13 @@
+astropy
+exifread
+imageio
+imutils
+matplotlib
+numpy
+opencv-python
+pillow
+psutil
+pytz
+rawpy<=0.21.0
+scikit-image
+scipy>=1.11.0
