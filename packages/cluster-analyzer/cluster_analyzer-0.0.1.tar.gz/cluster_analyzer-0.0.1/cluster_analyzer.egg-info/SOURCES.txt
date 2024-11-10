@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cluster_analyzer/__init__.py
+cluster_analyzer/activity.py
+cluster_analyzer/cluster.py
+cluster_analyzer/game_of_life.py
+cluster_analyzer/statistical_analysis.py
+cluster_analyzer/visualization.py
+cluster_analyzer.egg-info/PKG-INFO
+cluster_analyzer.egg-info/SOURCES.txt
+cluster_analyzer.egg-info/dependency_links.txt
+cluster_analyzer.egg-info/requires.txt
+cluster_analyzer.egg-info/top_level.txt
