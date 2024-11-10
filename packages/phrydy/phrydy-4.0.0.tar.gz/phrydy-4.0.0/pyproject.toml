@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "phrydy"
+version = "4.0.0"
+description = "Extended version of the mediafile library of the beets project. It is used by the Python command line tool `audiorename`."
+authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+readme = "README.rst"
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Utilities",
+]
+repository = "https://github.com/Josef-Friedrich/phrydy"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typing-extensions = "^4"
+termcolor = "^2.5"
+filetype = "^1.2.0"
+mutagen = "^1.46"
+
+[tool.poetry.group.dev.dependencies]
+readme-patcher = "^0"
+stdout-stderr-capturing = "^0"
+tox = "^4"
+ruff = "^0"
+pytest = "^8"
+mypy = "^1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+phrydy-debug = "phrydy.debug:init_cli"
