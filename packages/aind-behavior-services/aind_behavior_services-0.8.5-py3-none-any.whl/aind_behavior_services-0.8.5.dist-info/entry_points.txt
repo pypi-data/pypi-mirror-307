@@ -1,0 +1,2 @@
+[console_scripts]
+regenerate = aind_behavior_services.scripts.regenerate:main
