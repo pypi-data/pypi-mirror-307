@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel", "json5"]  # 빌드 시 필요한 의존성
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinu9653s"
+version = "0.0.7"
+description = "This is a chinu9653s Python package."
+readme = { file = "README.md", content-type = "text/markdown", encoding = "utf-8" }
+authors = [{ name = "Chinu9653", email = "juyoung9653@gamil.com" }]
+requires-python = ">=3.6"
+license = { text = "MIT" }
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = ["json5"]
+
+[project.urls]
+Homepage = "https://github.com/juyoung9653/chinu9653s"

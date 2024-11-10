@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: chinu9653s
+Version: 0.0.7
+Summary: This is a chinu9653s Python package.
+Author-email: Chinu9653 <juyoung9653@gamil.com>
+License: MIT
+Project-URL: Homepage, https://github.com/juyoung9653/chinu9653s
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: json5
+
+# Chinu9653's package
+
+This is a sample Python package created by Chinu9653.
+
+## Features
+- Feature 1
+- Feature 2
+
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `chinu9653s_tool`.
+
+```bash
+pip install chinu9653s
