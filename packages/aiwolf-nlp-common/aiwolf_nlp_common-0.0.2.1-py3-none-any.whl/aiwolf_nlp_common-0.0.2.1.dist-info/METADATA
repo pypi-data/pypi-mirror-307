@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: aiwolf_nlp_common
+Version: 0.0.2.1
+Summary: A sample python code of an AIWolf Contest's agent for Natural Language Division.
+Project-URL: Homepage, https://aiwolf.org
+Author-email: aiwolfdial <aiwolf@kanolab.net>, nwatanabe <aiwolf@kanolab.net>
+Maintainer-email: aiwolfdial <aiwolf@kanolab.net>, nwatanabe <aiwolf@kanolab.net>
+License: Copyright 2024 aiwolfdial
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Keywords: aiwolf,aiwolfNLP,aiwolfdial
+Requires-Python: >=3.8
+Requires-Dist: bcrypt>=3.2
+Requires-Dist: cffi>=1.4.1
+Requires-Dist: cryptography>=3.3
+Requires-Dist: paramiko>=3.5
+Requires-Dist: pycparser>=2.22
+Requires-Dist: pynacl>=1.5
+Requires-Dist: requests
+Requires-Dist: websocket-client>=1.8.0
+Description-Content-Type: text/markdown
+
+# AIWolfNLP-Common
+
+## 概要
+人狼知能大会自然言語部門に参加する方向けのパッケージです。
+
+
+## 手順
+```
+$ pip install aiwolf-nlp-common
+```
