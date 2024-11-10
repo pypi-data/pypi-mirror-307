@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneurosift_jp=self.webpackChunkneurosift_jp||[]).push([[311],{90311:(n,t,e)=>{e.d(t,{G1:()=>s,PW:()=>u,Y:()=>o});const u=f("start"),o=f("end");function s(n){return{start:u(n),end:o(n)}}function f(n){return function(t){const e=t&&t.position&&t.position[n]||{};return{line:e.line||null,column:e.column||null,offset:e.offset>-1?e.offset:null}}}}}]);
