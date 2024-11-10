@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+zeckendorf/__init__.py
+zeckendorf/bwinf_docu_writer.py
+zeckendorf/tables.py
+zeckendorf.egg-info/PKG-INFO
+zeckendorf.egg-info/SOURCES.txt
+zeckendorf.egg-info/dependency_links.txt
+zeckendorf.egg-info/top_level.txt
