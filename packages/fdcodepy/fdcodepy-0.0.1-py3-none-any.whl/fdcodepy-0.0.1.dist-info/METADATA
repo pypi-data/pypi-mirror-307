@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fdcodepy
+Version: 0.0.1
+Summary: A small example package
+Author-email: Rui Yuan <123abcyuanrui@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/abc123yuanrui/FD_codepy
+Project-URL: Issues, https://github.com/abc123yuanrui/FD_codepy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numba
+
+# fdcodepy
