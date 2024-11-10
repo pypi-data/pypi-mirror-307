@@ -1,0 +1,153 @@
+Metadata-Version: 2.3
+Name: ductile-ui
+Version: 0.4.0
+Summary: A library provides declarative ui for discord.py
+Project-URL: Repository, https://github.com/sushi-chaaaan/ductile-ui
+Project-URL: Issues, https://github.com/sushi-chaaaan/ductile-ui/issues
+Author-email: sushichan044 <mail@sushichan.live>
+License: MIT License
+        
+        Copyright (c) 2023 sushi-chaaaan
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: discord,discord.py,ductile,ductile-ui
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: discord-py>=2.2.0
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: typing-extensions>=4.12.2
+Description-Content-Type: text/markdown
+
+
+# ductile-ui
+
+![PyPI - Version](https://img.shields.io/pypi/v/ductile-ui)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ductile-ui)
+
+A library provides declarative UI for [discord.py](https://github.com/Rapptz/discord.py).
+
+## Features
+
+- Declarative UI, inspired by [React](https://react.dev/).
+- Component-oriented with State
+- Fully typed
+
+## Installation
+
+**Python3.10 or higher is required**
+
+**discord.py^2.2.0 is required; any compatibility under 2.1.x or 1.x is not guaranteed**
+
+Using the latest stable release of discord.py is recommended
+
+```bash
+  pip install ductile-ui
+```
+
+## Usage/Examples
+
+You can define component as return value of `View.render()`.
+To store state, use `State`.
+
+```python
+# This example requires the 'message_content' privileged intent to function.
+
+
+import random
+
+import discord
+from discord.ext import commands
+from ductile import State, View, ViewObject
+from ductile.controller import MessageableController
+from ductile.ui import Button
+
+
+class Bot(commands.Bot):
+    def __init__(self) -> None:
+        super().__init__(command_prefix="!", intents=discord.Intents.all())
+
+    async def on_ready(self) -> None:
+        print(f"Logged in as {self.user}")
+        print("Ready!")
+
+
+class CounterView(View):
+    def __init__(self) -> None:
+        super().__init__()
+        self.count = State(0, self)
+
+    def render(self) -> ViewObject:
+        e = discord.Embed(title="Counter", description=f"Count: {self.count.get_state()}")
+
+        async def handle_increment(interaction: discord.Interaction) -> None:
+            await interaction.response.defer()
+            self.count.set_state(lambda x: x + 1)
+
+        async def handle_decrement(interaction: discord.Interaction) -> None:
+            await interaction.response.defer()
+            self.count.set_state(lambda x: x - 1)
+
+        async def stop(interaction: discord.Interaction) -> None:
+            await interaction.response.defer()
+            self.stop()
+
+        # Define UI using ViewObject
+        return ViewObject(
+            embeds=[e],
+            components=[
+                Button("+1", style={"color": "blurple", "row": 0}, on_click=handle_increment),
+                Button("-1", style={"color": "blurple", "row": 0}, on_click=handle_decrement),
+                Button(
+                    "random",
+                    style={"color": "green", "row": 1},
+                    # if you passed synchronous function to Button.on_click,
+                    # library automatically calls `await interaction.response.defer()`.
+                    on_click=lambda _: self.count.set_state(random.randint(0, 100)),
+                ),
+                Button("stop", style={"color": "red", "row": 1}, on_click=stop),
+            ],
+        )
+
+
+bot = Bot()
+
+
+@bot.command(name="counter")
+async def send_counter(ctx: commands.Context) -> None:
+    controller = MessageableController(CounterView(), messageable=ctx.channel)
+    await controller.send()
+    timed_out, states = await controller.wait()
+    await ctx.send(f"Timed out: {timed_out}\nCount: {states['count']}")
+
+
+bot.run("MY_COOL_BOT_TOKEN")
+
+```
