@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: opencommerce-sdk
+Version: 1.0.9
+Summary: SDK for AI agents to interact with services and external tools via real-time, on-demand calls
+Author-email: Your Name <idan@opencommerce.xyz>
+Project-URL: Homepage, https://github.com/yourusername/opencommerce-sdk
+Project-URL: Bug Tracker, https://github.com/yourusername/opencommerce-sdk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE

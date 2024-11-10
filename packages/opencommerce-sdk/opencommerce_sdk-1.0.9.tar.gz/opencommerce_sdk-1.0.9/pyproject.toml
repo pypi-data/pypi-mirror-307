@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencommerce-sdk"
+version = "1.0.9"
+authors = [
+    { name="Your Name", email="idan@opencommerce.xyz" },
+]
+description = "SDK for AI agents to interact with services and external tools via real-time, on-demand calls"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/opencommerce-sdk"
+"Bug Tracker" = "https://github.com/yourusername/opencommerce-sdk/issues"
