@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+remove_sections = mkdocs_remove_sections_plugin:RemoveSectionsPlugin
