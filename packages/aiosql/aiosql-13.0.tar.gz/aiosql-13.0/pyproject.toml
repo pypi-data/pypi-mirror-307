@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiosql"
+version = "13.0"
+authors = [ { name = "William Vaughn et al.", email = "vaughnwilld@gmail.com" } ]
+description = "Simple SQL in Python"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = { text = "BSD 2-Clause License" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest", "pytest-asyncio",
+    "rstcheck", "black", "coverage", "flake8", "ruff",
+    "mypy", "pyright", "types-setuptools", "build"
+]
+dev-duckdb = [
+    # skip, wheel compilation takes too much time… (confirmed 2024-09-30)
+    "duckdb; implementation_name != 'pypy'"
+]
+dev-sqlite = [
+    "aiosqlite",
+    # fails on missing symbol with pypy (confirmed 2024-10-01)
+    "apsw; implementation_name != 'pypy'"
+]
+dev-postgres = [
+    "pytest-postgresql",
+    "asyncpg; python_version < '3.13' and implementation_name != 'pypy'",
+    "psycopg>=3",
+    # 2.9.10 needed for 3.13
+    "psycopg2 >= 2.9.10; implementation_name != 'pypy'",
+    "pygresql",
+    "pg8000"
+]
+dev-mysql = [
+    "pytest-mysql",
+    "mysqlclient",
+    "mysql-connector-python",
+    "pymysql"
+]
+dev-mariadb = [
+    "mariadb"
+]
+dev-mssql = [
+    "pymssql"
+]
+dist = [
+    "build", "wheel", "twine",
+    "sphinx", "sphinx-rtd-theme"
+]
+
+[tool.setuptools.package-data]
+aiosql = [ "py.typed" ]
+
+[tool.setuptools.packages.find]
+include = [ "aiosql", "aiosql.adapters" ]
+exclude = [ "tests" ]
+
+[project.urls]
+repository = "https://github.com/nackjicholson/aiosql"
+documentation = "https://nackjicholson.github.io/aiosql/"
+issues = "https://github.com/nackjicholson/aiosql/issues"
+package = "https://pypi.org/project/aiosql/"
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.mypy]
+exclude = ["(build|venv)/", ".*/virtualenvs/.*"]
+ignore_missing_imports = true
