@@ -1,0 +1,2 @@
+[console_scripts]
+hn-data-fetcher = hn_data_fetcher:cli
