@@ -1,0 +1,12 @@
+README.md
+setup.py
+source_iter/__init__.py
+source_iter/service_csv.py
+source_iter/service_jsonl.py
+source_iter/service_sqlite.py
+source_iter.egg-info/PKG-INFO
+source_iter.egg-info/SOURCES.txt
+source_iter.egg-info/dependency_links.txt
+source_iter.egg-info/top_level.txt
+test/test_csv.py
+test/test_jsonl.py
