@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+daprly.egg-info/PKG-INFO
+daprly.egg-info/SOURCES.txt
+daprly.egg-info/dependency_links.txt
+daprly.egg-info/requires.txt
+daprly.egg-info/top_level.txt
+src/daprly/__init__.py
+src/daprly/dapr_client.py
