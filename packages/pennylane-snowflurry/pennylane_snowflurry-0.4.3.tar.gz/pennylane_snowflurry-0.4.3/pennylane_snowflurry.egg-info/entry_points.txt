@@ -1,0 +1,2 @@
+[pennylane.plugins]
+snowflurry.qubit = pennylane_snowflurry:SnowflurryQubitDevice

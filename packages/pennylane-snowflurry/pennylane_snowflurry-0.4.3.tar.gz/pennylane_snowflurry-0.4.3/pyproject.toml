@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pennylane-snowflurry"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = ["numpy", "juliacall >= 0.9.0", "pennylane >= 0.30.0"]
+description = "PennyLane plugin for interfacing with Anyon's quantum computers"
+readme = "README.md"
+maintainers = [
+    { name = "Calcul Québec", email = "support@tech.alliancecan.ca" },
+]
+license = { text = "Apache Software License (Apache License 2.0)" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+Source = "https://github.com/calculquebec/pennylane-snowflurry"
+
+[project.optional-dependencies]
+test = ["matplotlib", "pytest", "pytest-mock", "flaky"]
+
+[project.entry-points."pennylane.plugins"]
+"snowflurry.qubit" = "pennylane_snowflurry:SnowflurryQubitDevice"
+
+[project.entry-points."pennylane.io"]
+
+[tool.setuptools]
+packages = ["pennylane_snowflurry", "pennylane_snowflurry.measurements"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pennylane_snowflurry._version.__version__" }

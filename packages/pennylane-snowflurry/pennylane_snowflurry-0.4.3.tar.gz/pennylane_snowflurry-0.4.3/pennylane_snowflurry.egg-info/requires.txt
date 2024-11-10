@@ -1,0 +1,9 @@
+numpy
+juliacall>=0.9.0
+pennylane>=0.30.0
+
+[test]
+matplotlib
+pytest
+pytest-mock
+flaky
