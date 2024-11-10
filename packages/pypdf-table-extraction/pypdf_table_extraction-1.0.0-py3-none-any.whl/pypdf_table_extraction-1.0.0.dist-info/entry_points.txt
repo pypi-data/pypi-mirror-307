@@ -1,0 +1,4 @@
+[console_scripts]
+camelot=camelot.__main__:main
+pypdf_table_extraction=pypdf_table_extraction.__main__:main
+
