@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: electrovoyage_asset_unpacker
+Version: 1.0.1
+Summary: Unpacker for electrovoyage's compressed asset packs.
+Author-email: "electrovoyage." <electrovoyagesoftware@gmail.com>
+Project-URL: Homepage, https://github.com/electrovoyage/electrovoyage_asset_unpacker
+Project-URL: Issues, https://github.com/electrovoyage/electrovoyage_asset_unpacker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Asset unpacker for electrovoyage's asset packs.
+Docs (WIP) at [electrovoyage.github.io](https://electrovoyage.github.io/docs/unpacker/index.html)
