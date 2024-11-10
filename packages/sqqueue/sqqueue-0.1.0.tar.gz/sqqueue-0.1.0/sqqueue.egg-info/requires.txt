@@ -1,0 +1,13 @@
+
+[:extra == "statsd"]
+statsd>=3.3.0
+
+[dev]
+pre-commit
+pytest
+pytest-mock
+ruff
+black
+isort
+twine
+statsd
