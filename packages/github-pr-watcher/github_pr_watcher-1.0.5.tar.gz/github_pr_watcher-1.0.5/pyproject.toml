@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "github-pr-watcher"
+version = "1.0.5"
+description = "Desktop application to monitor GitHub Pull Requests"
+authors = ["gm2211 <gmecocci@outlook.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+PyQt6 = "^6.6.0"
+requests = "^2.31.0"
+PyYAML = "^6.0.1"
+xxhash = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+pillow = "^10.0.0"
+pyinstaller = "^6.0.0"
+
+[tool.poetry.scripts]
+github-pr-watcher = "src.main:main"
+gpw = "src.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
