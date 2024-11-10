@@ -1,0 +1,14 @@
+GPutil
+psutil
+datafed
+torch
+torchvision
+m3learning-util
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
