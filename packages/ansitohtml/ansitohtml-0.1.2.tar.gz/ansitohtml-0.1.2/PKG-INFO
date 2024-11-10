@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ansitohtml
+Version: 0.1.2
+Summary: package to convert ansi text to html
+License: MIT
+Author: Rahul
+Author-email: saihanumarahul66@gmail.com
+Maintainer: Rahul
+Maintainer-email: saihanumarahul66@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Database :: Front-Ends
+Description-Content-Type: text/markdown
+
+Hi!
