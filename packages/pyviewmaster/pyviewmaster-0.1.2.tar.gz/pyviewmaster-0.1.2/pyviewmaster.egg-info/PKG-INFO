@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyviewmaster
+Version: 0.1.2
+Summary: viewmastR uses machine learning implemented in Rust to perform automated cell type classification for single-cell genomic data.  Currently viewmastR is authored to work with scRNAseq data, but more features are coming.
+Home-page: https://github.com/furlan-lab/pyviewmaster
+Author: Scott Furlan
+Author-email: scott.furlan@example.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: rds2py
+Requires-Dist: biocframe
+
+# pyviewmaster
+
+version 0.1.2
+
+<p align="center"><img src="blob/viewmaster.png" alt="" width="500"></a></p>
+<hr>
+
+pyviewmaster is a method for performing unsupervised classification of single cells across datasets written for use in the python environment using Rust machine learning
+
+**Visit [HowTo](https://github.com/furlan-lab/pyviewmaster/blob/main/notebooks/01_load_data.ipynb) for a tutorials**
+
+## Acknowledgements
+
+Written by Scott Furlan.
+
+<p align="center"><img src="blob/furlan_lab_logo.png" alt="" width="500"></a></p>
+<hr>
+
