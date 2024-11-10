@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/configvault/__init__.py
+src/configvault/configvault.py
+src/configvault.egg-info/PKG-INFO
+src/configvault.egg-info/SOURCES.txt
+src/configvault.egg-info/dependency_links.txt
+src/configvault.egg-info/requires.txt
+src/configvault.egg-info/top_level.txt
