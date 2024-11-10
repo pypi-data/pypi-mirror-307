@@ -1,0 +1,13 @@
+affine/__init__.py,sha256=zF49bdoq3mztOLdqeQrwW9I-wq2lFo7Srp_CWQxhXKY,143
+affine/collection.py,sha256=s3nzKppLEsCdFZpy1VsU9IeuZg43yHYfRwR2D0uZl8k,6166
+affine/query.py,sha256=F26Ug3SqL6-DeSQlaMGtpZDlzA5yWJMhl_lmcHnpFcc,2160
+affine/engine/__init__.py,sha256=-NV5g4ABhL7BtB9114yOdK88amg0N3cY66fcksGU5E8,416
+affine/engine/base.py,sha256=oXnavzsQtjdO-vWALzbrw6OPakI7MK9zIDITnnlICkw,4227
+affine/engine/local.py,sha256=6BZeZuN7LMhJ7GE9k1aXB8kU7czAXu8gi-wa3oOG0bI,9827
+affine/engine/pinecone.py,sha256=8yJkOSnBPcCVZjElj9NcDwBcIDPqLpCpOHC57nTdIR0,5880
+affine/engine/qdrant.py,sha256=ov2D9CLtvyxfT-szb6KqylbMevF6xNmDPmQv0YOkQJw,7035
+affine/engine/weaviate.py,sha256=nhrw2Z3SLBlSRptVg5RyTzlLUE1kQzJOY6bvrQmkInk,6722
+affine_vectordb-0.1.0a1.dist-info/METADATA,sha256=3KuqFvzqXYEGJQgKL5sXKfY3AXBskhWYCOuZt0M2Xk4,6997
+affine_vectordb-0.1.0a1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+affine_vectordb-0.1.0a1.dist-info/top_level.txt,sha256=iQzy0aeBb-rrq5QvrICb3iCkyyxyhP5DWyYEicmmNDQ,7
+affine_vectordb-0.1.0a1.dist-info/RECORD,,
