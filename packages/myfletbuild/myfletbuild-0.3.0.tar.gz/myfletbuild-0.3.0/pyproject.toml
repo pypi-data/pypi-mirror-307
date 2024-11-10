@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "myfletbuild"
+version = "0.3.0"
+description = ""
+repository = "https://github.com/tct123/myfletbuild"
+authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+myfletbuild-build = 'mylocale:build'
+myfletbuild-create = 'mylocale:create'
