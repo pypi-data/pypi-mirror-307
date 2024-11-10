@@ -1,0 +1,4 @@
+[console_scripts]
+moatless-evaluate=moatless.benchmark.run_evaluation:main
+moatless-streamlit=moatless.streamlit.cli:main_run
+
