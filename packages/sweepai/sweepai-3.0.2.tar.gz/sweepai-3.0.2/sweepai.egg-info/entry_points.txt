@@ -1,0 +1,3 @@
+[console_scripts]
+sweep = sweepai.__main__:main
+sweepai = sweepai.__main__:main
