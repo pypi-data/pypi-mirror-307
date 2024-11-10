@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+pydantic = ">=1.0, <2.0"
+python-dotenv = "*"
+rich = "*"
+ord-mediascout-client = {file = ".", editable = true}
+
+[dev-packages]
+pre-commit = "*"
+types-requests = "*"
+pytest = "*"
+pytest-dotenv = "*"
+twine = "*"
+build = "*"
+mypy = "*"
+chardet = "*"
+isort = "*"
+datamodel-code-generator = {extras = ["http"], version = "*"}
+ord-mediascout-client = {editable = true, path = "."}
+faker = "*"
+openapi-schema-pydantic = "*"
+ipython = "*"
+
+[requires]
+python_version = "3.11"
