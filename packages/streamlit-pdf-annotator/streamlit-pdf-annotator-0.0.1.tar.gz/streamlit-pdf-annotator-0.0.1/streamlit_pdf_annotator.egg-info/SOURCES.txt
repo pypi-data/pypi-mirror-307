@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+annotator/__init__.py
+annotator/example.py
+annotator/frontend/dist/index.html
+annotator/frontend/dist/assets/browser-BCZA1zVj.js
+annotator/frontend/dist/assets/index-DrBqgfis.css
+annotator/frontend/dist/assets/index-GJc9Ey7a.js
+streamlit_pdf_annotator.egg-info/PKG-INFO
+streamlit_pdf_annotator.egg-info/SOURCES.txt
+streamlit_pdf_annotator.egg-info/dependency_links.txt
+streamlit_pdf_annotator.egg-info/requires.txt
+streamlit_pdf_annotator.egg-info/top_level.txt
