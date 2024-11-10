@@ -1,0 +1,82 @@
+# Makoschin Free Software License (MFSL)
+
+Version 1.0, November, 2024
+
+### Preamble
+
+The Makoschin Free Software License (MFSL) is intended to guarantee your freedom to share, modify, and distribute software. To protect your rights, we need to prevent others from denying you these rights or asking you to surrender them. Therefore, we have made it clear that any attempt to deny users these rights, whether by law or other means, is void.
+
+When you use software covered by the MFSL, you are free to run, modify, and redistribute it. You are free to redistribute your modifications, provided that you respect the rights of others by maintaining the license's open nature. You are encouraged to share this software and contribute improvements back to the community.
+
+---
+
+### Terms and Conditions
+
+#### Section 1: Definitions
+
+- "This License" refers to the Makoschin Free Software License (MFSL) Version 1.0.
+- "The Software" refers to any program or other work that is licensed under this License.
+- "You" and "your" refer to each licensee.
+- "Modify" means to adapt, alter, or transform the software in any form.
+
+#### Section 2: Permissions and Rights
+
+Under this License, you have the following permissions:
+
+1. **Freedom to Use**  
+   You are free to use this Software for any purpose, private or commercial, without any restriction. You are encouraged, but not required, to acknowledge the original author(s) of the Software.
+
+2. **Freedom to Study and Modify**  
+   You may study and modify the Software in any way you choose. However, any modified version of the Software that you distribute must also be covered by this License, with no additional restrictions.
+
+3. **Freedom to Share and Distribute**  
+   You may distribute copies of the Software in its original or modified form, as long as each copy you distribute retains this License or a later version of it if specified by the original author(s).
+
+#### Section 3: Conditions for Distribution
+
+- **License Preservation**:  
+  Copies or modified versions of the Software distributed by you must retain this License. This requirement applies whether the distribution is direct or indirect, free of charge, or for a fee.
+
+- **Source Code Availability**:  
+  You must provide access to the source code when distributing the Software or any modifications. The source code must include all the information needed to rebuild the Software from its unaltered form.
+
+#### Section 4: Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, ARISING FROM THE USE OR DISTRIBUTION OF THE SOFTWARE.
+
+#### Section 5: Limitation of Liability
+
+In no event shall the authors or contributors be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use or distribution of the Software, whether in an action of contract, tort, or otherwise.
+
+#### Section 6: Compatibility with Other Licenses
+
+You may combine or link the Software with code licensed under other open-source licenses if the combination does not impose additional restrictions on the Software or its users. Such combined work must still provide access to the Software under the MFSL.
+
+#### Section 7: Future Revisions of this License
+
+The Makoschin Foundation may release new versions of the MFSL. However, software distributed under a previous version of the MFSL remains governed by that version unless explicitly upgraded by the author(s). If you distribute modified copies of the Software, you may choose to follow the version you received, or any later version released by the Makoschin Foundation.
+
+---
+
+### Conclusion
+
+By accepting and using the Software under this License, you acknowledge that you have read and understood these terms and agree to abide by them. You are encouraged to share your improvements and make them available to the community, preserving the freedom and openness that this License embodies.
+
+--- 
+
+### How to Apply This License to Your Work
+
+To apply the Makoschin Free Software License to your program, include the following notice at the beginning of each source file:
+
+```
+    [Program Name], Copyright (C) [Year] [Author]
+    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the Makoschin Free Software License (MFSL),
+    either version 1.0 of the License, or (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    Makoschin Free Software License for more details.
+```
