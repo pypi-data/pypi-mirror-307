@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+requires-python = ">=3.11.3"
+
+name = "xy_web_server"
+
+authors = [{ name = "余洋", email = "yuyangit.0515@qq.com" }]
+description = "xy_web_service web服务模块"
+
+dynamic = ["version"]
+
+classifiers = ["Programming Language :: Python :: 3"]
+
+dependencies = [
+    "importlib_resources",
+    "django",
+    "tornado",
+    "crossplane",
+
+    "xy_singleton",
+    "xy_file",
+    "xy_configure",
+    "xy_settings",
+    "xy_work",
+
+    "xy_web_settings",
+    "xy_web_work",
+]
+
+readme = "README.md"
+
+[project.scripts]
+xy_web_server = "xy_web_server.execute.Main:main"
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["xy_web_server"] # alternatively: `exclude = ["additional*"]`
+namespaces = false
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { file = "VERSION" }
