@@ -1,0 +1,2 @@
+[console_scripts]
+xy_web_server = xy_web_server.execute.Main:main
