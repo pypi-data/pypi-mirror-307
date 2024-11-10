@@ -1,0 +1,14 @@
+restack_openai/__init__.py,sha256=slS7733gPkzawF3-ONmk7MkmqGj-xKjx239MIaImwJI,639
+restack_openai/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restack_openai/functions/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restack_openai/functions/chat/completions_base.py,sha256=yn3qgVVKGli78furIA5geYRiiXlta9PySQul7Rq2fDM,2710
+restack_openai/functions/chat/completions_stream.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restack_openai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restack_openai/service.py,sha256=ZR1y6Zul0uB51Tf23lNpwezjWwUcR9dss9ABemgz1pc,833
+restack_openai/task_queue.py,sha256=FfORwaNmil4p--12mnV6fxlCMY5ezoJ3pDeBZQH3zPU,28
+restack_openai/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restack_openai/utils/client.py,sha256=YZ1NM4dy7DVaNxkqWxgViwocciUCSnHXcoyM0JuVqA0,244
+restack_openai/utils/cost.py,sha256=V3zFdR-YnBXv-oc-IIBIeAFWISgkKjkQDli3tt2HiUc,356
+restack_openai-0.0.15.dist-info/METADATA,sha256=mVLPa221W1hhSU3-2-VTc1eCkHXdwYFOYK-YCDEtCuA,728
+restack_openai-0.0.15.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+restack_openai-0.0.15.dist-info/RECORD,,
