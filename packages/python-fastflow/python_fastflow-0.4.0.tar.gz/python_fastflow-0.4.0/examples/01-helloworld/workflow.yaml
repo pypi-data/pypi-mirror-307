@@ -1,0 +1,10 @@
+apiVersion: fastflow.dev/beta-1
+kind: Workflow
+metadata:
+  generateName: helloworld-
+spec:
+  dag: |+
+    - name: helloworld
+      impl: Echo
+      inputs:
+        args: [helloworld]
