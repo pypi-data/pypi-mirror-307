@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer_analysis_tikhonmakeev"
+version = "0.1"
+dependencies = [
+    "pandas"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+customer_analysis = "customer_analysis:main"
+
+[tool.setuptools]
+py-modules = [
+    "customer_analysis"
+]
