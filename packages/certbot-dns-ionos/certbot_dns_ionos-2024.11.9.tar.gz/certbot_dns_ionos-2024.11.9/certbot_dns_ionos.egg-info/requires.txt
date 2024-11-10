@@ -1,0 +1,6 @@
+acme>=3.0.0
+certbot>=3.0.0
+setuptools
+requests
+mock
+requests-mock
