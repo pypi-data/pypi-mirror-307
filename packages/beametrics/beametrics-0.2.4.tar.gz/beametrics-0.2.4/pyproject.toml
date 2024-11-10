@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "beametrics"
+version = "0.2.4"
+description = "A streaming pipeline that transforms PubSub messages into metrics using Apache Beam"
+authors = ["kesompochy"]
+readme = "README.md"
+packages = [{include = "beametrics", from = "."}]
+license = "MIT"
+keywords = ["apache beam", "streaming"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+apache-beam = {extras = ["gcp"], version = "^2.60.0"}
+google-cloud-monitoring = "^2.22.2"
+protobuf = ">=4.21.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-watch = "^4.2.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+beametrics = "beametrics.main:main"
+
+[tool.mypy]
+exclude = [
+    "setup\\.py$"
+]
