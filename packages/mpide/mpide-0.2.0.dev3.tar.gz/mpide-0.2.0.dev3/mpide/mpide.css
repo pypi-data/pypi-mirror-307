@@ -1,0 +1,80 @@
+Header {
+    text-style: bold;
+}
+
+#code-log {
+    background: #222222;
+}
+
+#repl-input {
+    background: #292929;
+    border: none;
+    height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+#input-pane {
+    height: 1;
+    background: #292929;
+}
+
+#prefix-label {
+    background: #292929;
+    border: none;
+    height: 1;
+}
+
+#left-pane > Static {
+    background: $boost;
+    color: auto;
+}
+
+#left-pane {
+    border: dodgerblue;
+}
+
+#status-view > Static {
+    margin-right: 1;
+    background: $boost;
+}
+
+#status-view {
+    height: auto;
+    background: $panel;
+    border: dodgerblue;
+}
+
+Button {
+    margin: 0 2;
+    height: 1;
+    border: none;
+}
+
+.container {
+    height: auto;
+    padding: 0 1;
+    margin: 0;
+}
+
+Switch {
+    margin: 0 1;
+    padding: 0;
+    height: 1;
+    width: auto;
+    border:none;
+}
+
+#app_log {
+    height: 15;
+    border: solid grey;
+}
+
+#footer {
+    width: 100%;
+    background: $accent;
+    text-style: bold;
+    color: $text;
+    dock: bottom;
+    height: 1;
+}

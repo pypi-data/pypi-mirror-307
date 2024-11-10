@@ -1,0 +1,328 @@
+# MPIDE - MicroPython TUI-REPL powered by `mpremote` and Textual
+
+This project is currently being set up and not guaranteed to be of any use for
+anyone but me.
+However `mpide` _runs_ on my machine and might as well run on yours, too.
+
+Project goal is a 'smart' REPL for MicroPython devices similar to
+[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)
+(currently `mpide` is even based on `mpremote`), but with additional features like
+
+* automatic synchronization of locally modified files with device
+* automatic pre-compiling using `mpy-cross` if applicable
+* providing a powerful set of pure Python base functionality for rapid development
+* providing a web based remote update mechanism
+* transparent and intuitive device bootstrapping, logging etc.
+
+![_(you miss a screenshot here)_](screenshot.png?raw=true "A possibly recent screenshot of mpide in action")
+
+## Usage
+
+Install:
+```
+[python3 -m ]pip install [--user] [--upgrade] mpide
+```
+
+Execute:
+```
+mpide [<PROJECT-PATH=.>]
+```
+
+Or add `mpide` as dependency to an existing MicroPython project in order to
+synchronize locally modified files while `mpide` is running.
+
+The `mpide` package brings with it `mpremote` and `esptool` as dependency, so installing
+`mpide` or making it a dependency (e.g. for a `poetry` based project) provides them
+implicitly.
+
+All the following stuff assumes that you've already successfully flashed
+your device with a [recent version of MicroPython](https://micropython.org/download/)
+
+Here is a very quick walk-through for a generic ESP32 based device:
+```bash
+wget https://micropython.org/resources/firmware/ESP32_GENERIC-20240602-v1.23.0.bin
+esptool.py -p /dev/ttyACM0 -b 460800 --chip esp32 erase_flash
+esptool.py -p /dev/ttyACM0 -b 460800 --chip esp32 write_flash -z 0x1000 ESP32_GENERIC-20240602-v1.23.0.bin
+```
+You should now be able to run `mpremote` to connect to your device and start a REPL.
+Press CTRL-D for a soft-reboot, enter Python commands and see the result and press
+CTRL-X to exit `mpremote`.
+
+If that worked you can now use `mpide` instead of `mpremote`. If not you have to
+find your way yourself for now..
+
+
+## `mpide` walk through and project integration
+
+While current interaction with a project folder is still quite sparse, you can at
+least make `mpide` watch for filesystem changes in the current project directory
+and auto-sync them with the device. There is even support for pre-compiling
+`.py` files to `.mpy` files before uploading them - more on that later.
+
+In order to let `mpide` watch and sync, you need to create a file called
+`mpide_project.py`, containing information used on both the development host and
+the MicroPython target.
+
+I hear you asking why that configuration does not go to `pyproject.toml` or
+any other fancy modern format instead. The reason is better memory efficiency due
+to the fact that you don't have to import a parser on your tiny ESP32 device.
+Also, compared to a JSON or YAML file you can import additional stuff or even
+dynamically evaluate values (which might be considered a security hazard, but so
+is the possibility  to upload arbitrary Python code..)
+
+The smallest config file enabling for auto-syncing looks like this:
+
+```python
+config = {
+    "static_files": [
+        "main.py",
+    ],
+}
+```
+
+With this configuration you tell `mpide` to just sync `main.py` with `/main.py`
+on the target device every time it changes on your filesystem (while `mpide` is
+running of course) - no pre-compilation involved.
+
+The term `static_files` implies that files will be written to the filesystem
+root, making changes persistent immediately, while also slowly wearing out your
+precious flash.
+
+To test your configuration, spin up `mpide`, open `main.py` in your favorite
+editor and add some meaningful code, e.g.
+
+```python
+def run():
+    print("hello world")
+```
+
+In order to copy files to a volatile directory, you (currently) have to do two
+things: declare the file to be `dynamic` and setup a RAM-disk at `/ramdisk`.
+
+To do this, modify the config file like this:
+
+```python
+config = {
+    "ramdisk": {
+        "mountpoint": "/ramdisk",
+        "block_size": 512,
+        "num_blocks": 200,
+    },
+    "static_files": [
+        "mpide_config.py",
+    ],
+    "dynamic_files": [
+        "main.py",
+    ],
+}
+```
+(consider '`/ramdisk`' to be hard-coded for now - this will change in the near future)
+
+You changed a couple of details now:
+- added a RAM-disk configuration (will NOT be auto-mounted)
+- made `main.py` "dynamic", i.e it will now be copied to `/ramdisk/main.py` instead
+- added `mpide_config.py` to the tracked files - it will now be synchronized as
+  well (but to `/mpide_config.py`, i.e. stored permanently)
+
+Now by modifying `main.py` your file will be automatically stored on the ramdisk.
+
+No wait - you just get a badly formatted exception instead, mumbling something about
+`OSError: [Errno 2] ENOENT`..
+
+This is because the RAM-disk has been configured but not actually _mounted_ yet.
+While this will be done automatically soon, you have to send `:ramdisk` once every
+time the device has been rebooted..
+
+Once done, saving `main.py` again you should see a message
+`copied <project>/main.py to <device>/ramdisk/main.py` in the REPL, indicating
+that you can now `import main` and `main.run()` to execute the code you just
+edited.
+
+In order to save time and space on the flash-FS/RAM-disk you can make `mpide`
+involve `mpy-cross` from the MicroPython toolchain to precompile `.mpy` files
+from your sources and upload them instead.
+
+To do this, you again have to do two things: provide `mpy-cross` to `mpide` and
+list `.mpy` files in your `mpide_project.py` file instead of `.py` files.
+`mpide` will still watch for changes on `.py` files in your project folder
+but do the mapping to `.mpy` files for you conveniently.
+
+I take this as an opportunity to show off an advantage of scripted configuration
+compared to a static JSON/YAML file. Imagine you have multiple development
+machines you're working on, both with a different location for the `mpy-cross`
+executable. You can just add a line
+```
+config.update(config_local.config)
+```
+to your `mpide_project.py` file, add a file called `config_local.py` which
+you exclude from your project e.g. by listing it in `.gitignore`, and put in
+all information which might be different among development machines. That
+might be only the path to `mpy-cross` for now, but you can also think of
+WiFi credentials, etc.
+
+So here goes the full configuration:
+
+`mpide_config.py`:
+```python
+import config_local
+config = {
+    "ramdisk": {
+        "mountpoint": "/ramdisk",
+        "block_size": 512,
+        "num_blocks": 200,
+    },
+    "static_files": [
+        "mpide_config.mpy",
+        "local_config.mpy",
+    ],
+    "dynamic_files": [
+        "main.mpy",
+    ],
+}
+config.update(config_local.config)
+```
+
+`config_local.py`:
+```python
+config = {
+    "mpy_cross_path": "~/micropython/mpy-cross/build/mpy-cross",
+}
+```
+### Built in commands
+
+**`:cp <SRC> <DST>`**
+
+Copies files from `SRC` on your host machine to `<DST>` on the target device
+
+**`:cat <PATH>`**
+
+Same as Posix `cat` - plots a file (located on the target device) into the REPL
+
+**`:ramdisk`**
+
+Executes the built-in `setup_ramdisk` snippet, which will create a RAM-disk
+mounted at `/ramdisk`
+
+**`:snippet <BASENAME> [<EXTRA-SNIPPET>]`**
+
+Executes an arbitrary snippet taken from a Python source file, identified by
+the provided `basename`. The file will be searched for in your project directory
+or - if not found - somewhere in the `mpide` package directory.
+If provided the optional `EXTRA-SNIPPET` gets attached, so for example
+```
+:snippet my_snippet print(foo('bar'))
+```
+.. will load `my_snippet.py` and execute it together with `print(foo('bar'))`.
+This comes in handy when you have a file defining a function (here `foo()`),
+which you can call with arbitrary parameters without modifying the actual
+source file containing the snippet.
+
+Go ahead and give it a try with this `my_snippet.py`:
+
+```python
+print("my_snippet")
+def foo(text: str, count: int) -> None:
+    for i in range(count):
+        print(i, text)
+```
+
+Working around all bugs and uncovering undocumented behavior is left for you
+as homework.
+
+
+## Roadmap
+
+This is what I intend to implement in the near future, since it's what I need in daily live:
+
+Version 1.0 (MLP)
+
+- [x] Textual based IDE stub based on `trickkiste/TuiBaseApp`
+- [x] involve `mpremote` to automatically connect to attached (ESP32) devices running MicroPython
+- [x] REPL command history
+- [x] fix multi-line input
+- [x] auto-update mpy/py files on change
+- [x] make auto-update optional
+- [x] provide RAM-FS for temporarily patched files and to avoid wearing out your flash
+- [x] auto-unload updated modules on target device
+- [x] persist temporary files via `:persist`
+- [ ] `:rm` removes files
+- [ ] `:tree` lists files
+- [ ] `:help` shows help again
+- [ ] cp whole directories
+- [ ] one message box for multiple files
+- [ ] prefix-search in command history with UP
+- [ ] allow device / connection speed settings
+- [ ] cleanup exceptions and messages
+- [ ] bootstrap (i.e. populate a newly flashed device with helper stuff for remote working)
+- [ ] bootstrap installs dependencies
+- [ ] support middle mouse -> paste
+- [ ] auto-sync on re-connect
+- [ ] cat mpy files
+- [ ] module unload context manager
+- [ ] add instructions to build MicroPython
+- [ ] add pass through command prefix (`!..`)
+- [ ] fix dark-mode
+- [ ] check MicroPython / mpy-cross versions
+- [ ] cleanup cache folder
+- [ ] cleanup cache folder
+- [ ] warning if watch_fs_changes takes too long
+
+Version 1.1
+
+- [ ] provide `--init` switch for creating example files to bootstrap a project
+- [ ] auto-update via web
+- [ ] install stuff via `mip`
+- [ ] prompt: TAB expands
+- [ ] provide basic operations on CLI (boostrap, copy, tree, ..)
+- [ ] take color codes sent by device are not taken into account
+- [ ] Web-REPL
+- [ ] Web-based remote updating
+- [ ] support terminal colors
+- [ ] make web-server optional
+- [ ] add minimal file explorer + editor
+- [ ] mark + execute snippets in editor
+
+
+## License
+
+For all code contained in this repository the rules of GPLv3 apply unless
+otherwise noted. That means that you can do what you want with the source
+code as long as you make the files with their original copyright notice
+and all modifications available.
+
+See [GNU / GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) for details.
+
+This project is not free for machine learning. If you're using any content
+of this repository to train any sort of machine learned model (e.g. LLMs),
+you agree to make the whole model trained with this repository and all data
+needed to train (i.e. reproduce) the model publicly and freely available
+(i.e. free of charge and with no obligation to register to any service) and
+make sure to inform the author (me, frans.fuerst@protonmail.com) via email
+how to get and use that model and any sources needed to train it.
+
+
+## NAQ
+
+* Q: Why don't you host this on GitHub instead (or at least _`gitlab.com`_)?<br>
+  _A: I don't like the way Microsoft (or anyone else) is making money from projects they don't
+  own without asking, providing an option ot opt out or even informing about details_
+
+
+## Interesting Links
+
+* Phind.com: [with mpy-cross is it possible to pre-compile `@viper` decorated python-functions? how would mpy-cross know which platform to create code for?](https://www.phind.com/search?cache=hbflpe9qo1caidumt6edsaz2)
+* [Esp32-c3 native and viper decorators](https://github.com/orgs/micropython/discussions/9785)
+
+* https://www.analog.com/en/resources/analog-dialogue/articles/introduction-to-spi-interface.html
+
+Working with filesystems
+https://docs.micropython.org/en/latest/reference/filesystem.html
+
+MicroPython 2.0 Migration Guide
+https://docs.micropython.org/en/latest/reference/micropython2_migration.html
+
+Quick reference for the ESP32
+https://docs.micropython.org/en/latest/esp32/quickref.html
+
+https://github.com/micropython/micropython/wiki/Building-Micropython-Binaries
+https://docs.micropython.org/en/latest/reference/manifest.html

@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+PROJECT_ROOT="$(cd "$(dirname "$0")" >/dev/null 2>&1 && pwd)"
+docker build -t "build-st7789_mpy" "${PROJECT_ROOT}"
+docker run --rm -it \
+    -u "$(id -u):$(id -g)" \
+    -v "/etc/passwd:/etc/passwd:ro" \
+    -v "/etc/group:/etc/group:ro" \
+    -v "$(pwd):$(pwd)" \
+    -w "$(pwd)" \
+    -e "USER" \
+    -e "HOME=$(pwd)" \
+    "build-st7789_mpy" \
+    "$@"
