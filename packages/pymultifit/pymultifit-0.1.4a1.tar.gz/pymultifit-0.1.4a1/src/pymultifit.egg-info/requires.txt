@@ -1,0 +1,7 @@
+setuptools
+numpy==1.26.4
+matplotlib
+scipy
+pybind11==2.13.5
+cmake==3.27.9
+typing-extensions
