@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oproxy"
+version = "1.0.0"
+description = "High-performance, transparent HTTP/HTTPS proxy that supports both TCP and UDP protocols while being fully configurable and privacy-focused"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "python-dotenv",
+]
+
+[project.scripts]
+oproxy = "oproxy.cli:main"
+        
+[tool.hatch.build.targets.wheel]
+packages = ["src/oproxy"]
