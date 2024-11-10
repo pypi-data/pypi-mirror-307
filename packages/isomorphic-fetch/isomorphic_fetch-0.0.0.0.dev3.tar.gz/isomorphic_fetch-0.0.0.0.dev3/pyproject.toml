@@ -1,0 +1,58 @@
+[project]
+name = "isomorphic-fetch"
+version = "0.0.0.0.dev3"
+description = "Simple fetch API for both pyodide and non-pyodide environments"
+requires-python = ">=3.10"
+readme = "README.md"
+authors = [
+    { name = "Muspi Merol", email = "me@promplate.dev" },
+]
+dependencies = [
+    "niquests==3.* ; sys_platform != 'emscripten'",
+]
+
+[project.scripts]
+fetch = "isomorphic_fetch.cli:main"
+
+[tool.uv]
+dev-dependencies = [
+    "pyodide-py>=0.25.0",
+    "ruff~=0.6.9",
+]
+
+[tool.pdm.build]
+includes = [
+    "isomorphic_fetch",
+]
+
+[tool.ruff]
+preview = true
+line-length = 200
+
+[tool.ruff.lint]
+extend-select = [
+    "F",
+    "I",
+    "N",
+    "W",
+    "UP",
+    "TRY",
+    "RUF",
+    "FURB",
+    "C4",
+    "ARG",
+    "PIE",
+    "PTH",
+    "RSE",
+    "SIM",
+    "SLF",
+]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
