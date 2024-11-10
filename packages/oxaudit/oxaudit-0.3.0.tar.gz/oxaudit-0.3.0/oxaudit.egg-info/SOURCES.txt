@@ -1,0 +1,10 @@
+setup.py
+oxaudit/__init__.py
+oxaudit/cli.py
+oxaudit/scan.py
+oxaudit.egg-info/PKG-INFO
+oxaudit.egg-info/SOURCES.txt
+oxaudit.egg-info/dependency_links.txt
+oxaudit.egg-info/entry_points.txt
+oxaudit.egg-info/requires.txt
+oxaudit.egg-info/top_level.txt
