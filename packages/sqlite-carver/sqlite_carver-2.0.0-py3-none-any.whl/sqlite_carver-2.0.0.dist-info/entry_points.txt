@@ -1,0 +1,2 @@
+[console_scripts]
+sqlite-carver = sqlitecarver.sqlitecarver:main
