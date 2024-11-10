@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "surverse"
+version = "0.1.0"
+description = "A comprehensive toolkit for survival analysis in Python"
+authors = ["Yajie Zhu <yajiez.me@gmail.com>"]
+readme = "README.md"
+packages = [{include = "surverse", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+seaborn = "^0.13.2"
+scikit-learn = "^1.5.2"
+lifelines = "^0.30.0"
+xgboost = "^2.1.2"
+torch = "^2.5.1"
+ipykernel = "^6.29.5"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
