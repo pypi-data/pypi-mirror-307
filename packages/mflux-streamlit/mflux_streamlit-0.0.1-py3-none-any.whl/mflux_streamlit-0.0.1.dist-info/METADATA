@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mflux-streamlit
+Version: 0.0.1
+Summary: A Streamlit WebUI application for the mflux project.
+Home-page: https://github.com/elitexp/mflux-streamlit
+Author: Sujip Maharjan
+Author-email: elitexp2008@gmail.com
+License: MIT
+Keywords: streamlit,mflux,mlx
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: mflux <1.0,>=0.4.1
+Requires-Dist: streamlit <2.0,>=1.10.0
+
+A Streamlit WebUI application for the mflux project.
