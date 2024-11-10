@@ -1,0 +1,14 @@
+[tool.poetry]  # This section is for Poetry (optional, if using Poetry)
+name = "pasir"
+version = "0.0.3"
+description = "granular-based simulation and related systems"
+authors = ["Sparisoma Viridi <dudung@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://dudung.github.io/pasir"
+repository = "https://github.com/dudung/pasir"
+keywords = ["simulation", "granular", "physics"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
