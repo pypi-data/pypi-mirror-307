@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: urbancode
+Version: 0.1.0
+Summary: A package for universal urban analysis
+Home-page: https://github.com/Sijie-Yang/urbancode
+Author: Sijie Yang
+Author-email: sijiey@u.nus.edu
+Project-URL: Bug Tracker, https://github.com/Sijie-Yang/urbancode/issues
+Project-URL: Changelog, https://github.com/Sijie-Yang/urbancode/blob/main/CHANGELOG.md
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Urban-Code
+## Package Structure
+urbancode/
+├── urbancode/
+│   ├── __init__.py
+│   └── network/
+│       ├── tests/
+│       │   ├── __init__.py
+│       │   ├── test_core.py
+│       │   ├── test_connectivity.py
+│       │   ├── test_centrality.py
+│       │   ├── test_utils.py
+│       │   └── test_visualization.py
+│       ├── __init__.py
+│       ├── core.py
+│       ├── connectivity.py
+│       ├── centrality.py
+│       ├── visualization.py
+│       └── utils.py
+├── examples/
+│   └── urban network analytics.ipynb
+├── README.md
+├── LICENSE
+├── setup.py
+├── requirements.txt
+└── .gitignore
