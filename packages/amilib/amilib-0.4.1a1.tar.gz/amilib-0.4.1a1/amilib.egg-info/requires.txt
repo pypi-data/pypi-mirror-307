@@ -1,0 +1,16 @@
+lxml
+nltk
+pdfminer3
+Pillow
+setuptools
+pdfplumber
+requests
+numpy==1.24.1
+pandas==2.0.3
+pyvis
+selenium
+tinycss
+SPARQLWrapper
+Tkinterweb
+webdriver-manager
+scikit-learn==1.3.2
