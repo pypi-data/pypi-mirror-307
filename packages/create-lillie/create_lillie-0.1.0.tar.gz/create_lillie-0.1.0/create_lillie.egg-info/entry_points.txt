@@ -1,0 +1,2 @@
+[console_scripts]
+create-lillie = create_lillie.main:create
