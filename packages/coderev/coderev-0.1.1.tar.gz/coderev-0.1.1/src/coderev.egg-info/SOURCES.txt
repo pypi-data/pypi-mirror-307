@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pytest.ini
+setup.cfg
+src/coderev/__init__.py
+src/coderev/main.py
+src/coderev.egg-info/PKG-INFO
+src/coderev.egg-info/SOURCES.txt
+src/coderev.egg-info/dependency_links.txt
+src/coderev.egg-info/entry_points.txt
+src/coderev.egg-info/requires.txt
+src/coderev.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
