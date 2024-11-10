@@ -1,0 +1,71 @@
+(v0.1.x) Example of Class __repr__ for SettingCategory, SettingSubcategory, Component
+
+
+Uninitialized:
+Settings(
+    [
+        Category(=action, type=<class 'object'>, subcategories=[
+            Subcategory(=action.opt, type=<class 'object'>, components=[
+                Component(=action.opt.silent, type=<class 'bool'>, value=Notfound)
+            ])
+        ]), 
+        Category(=default, type=<class 'object'>, subcategories=[
+            Subcategory(=default.info, type=<class 'object'>, components=[
+                Component(=default.info.timezone, type=<class 'str'>, value=Notfound)
+            ]), 
+            Subcategory(=default.opt, type=<class 'object'>, components=[
+                Component(=default.opt.four-week-month, type=<class 'bool'>, value=Notfound), 
+                Component(=default.opt.range, type=<class 'str'>, value=Notfound), 
+                Component(=default.opt.range, type=<class 'str'>, value=Notfound),
+                Component(=default.opt.timeout, type=<class 'str'>, value=Notfound)
+            ])
+        ]),
+        Category(=user, type=<class 'object'>, subcategories=[
+            Subcategory(=user.locale, type=<class 'object'>, components=[
+                Component(=user.locale.region, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.continent, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.country, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.state, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.province, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.city, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.street-name, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.street-number, type=<class 'str'>, value=Notfound)
+            ])
+        ])
+    ]
+)
+
+
+Initialized:
+Settings(
+    [
+        Category(=action, type=<class 'object'>, subcategories=[
+            Subcategory(=action.opt, type=<class 'object'>, components=[
+                Component(=action.opt.silent, type=<class 'bool'>, value=False)
+            ])
+        ]),
+        Category(=default, type=<class 'object'>, subcategories=[
+            Subcategory(=default.info, type=<class 'object'>, components=[
+                Component(=default.info.timezone, type=<class 'str'>, value=Notfound)
+            ]), 
+            Subcategory(=default.opt, type=<class 'object'>, components=[
+                Component(=default.opt.four-week-month, type=<class 'bool'>, value=False), 
+                Component(=default.opt.range, type=<class 'str'>, value='1yr'), 
+                Component(=default.opt.range, type=<class 'str'>, value=1),
+                Component(=default.opt.timeout, type=<class 'str'>, value='1min')
+            ])
+        ]),
+        Category(=user, type=<class 'object'>, subcategories=[
+            Subcategory(=user.locale, type=<class 'object'>, components=[
+                Component(=user.locale.region, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.continent, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.country, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.state, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.province, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.city, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.street-name, type=<class 'str'>, value=Notfound), 
+                Component(=user.locale.street-number, type=<class 'str'>, value=Notfound)
+            ])
+        ])
+    ]
+)
