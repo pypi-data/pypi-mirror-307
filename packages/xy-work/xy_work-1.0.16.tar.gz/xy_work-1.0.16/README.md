@@ -1,0 +1,111 @@
+<!--
+ * @Author: yuyangit yuyangit.0515@qq.com
+ * @Date: 2024-10-18 13:02:23
+ * @LastEditors: yuyangit yuyangit.0515@qq.com
+ * @LastEditTime: 2024-10-22 20:07:07
+ * @FilePath: /xy_work/README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+# xy_work
+
+- [简体中文](./README.md)
+- [繁體中文](readme/README.zh-hant.md)
+- [English](readme/README.en.md)
+
+## 说明
+通用工作模块.
+
+## 源码仓库
+
+- <a href="https://github.com/xy-base/xy_work.git" target="_blank">Github地址</a>  
+- <a href="https://gitee.com/xy-opensource/xy_work.git" target="_blank">Gitee地址</a>    
+- <a href="https://gitcode.com/xy-opensource/xy_work.git" target="_blank">GitCode地址</a>  
+
+## 安装
+
+```bash
+# bash
+pip install xy_work
+```
+
+## 使用
+
+##### 1.常用
+```bash
+# bash
+xy_work -h
+# usage: xy_work [-h] [-c [{project,runner}]]
+#
+# >>>>>>>>>>>> xy_work - v1.0.1 <<<<<<<<<<<<<
+#
+# options:
+#  -h, --help            show this help message and exit
+#  -c [{project,runner}], --command [{project,runner}]
+#                        命令: -----project => 项目 -----runner => 运行启动器
+# 请输入 -c/--command 命令参数
+
+xy_work -n xy_test_work -c project
+# 创建项目 [ xy_test_work ] 成功!!!
+# 项目路径 ==>>> /mnt/bs-media/Workspace/project/opensource/xy-base/xy_work/test/xy_test_work
+
+cd xy_test_work
+
+xy_work -c runner
+# >>>>>>>>>>>> xy_test_work - v0.0.1 <<<<<<<<<<<<<
+# Hello World!!!
+
+```
+
+##### 2.扩展
+
+```python
+# main.py
+
+from xy_work.Work import Work
+
+class DemoExtWork(Work):
+
+    def __init__(self):
+        self.prog = "xy_work扩展"
+        self.description = f""">>>>>>>>>>>> ext_work - v1.0.0 <<<<<<<<<<<<<"""
+
+if __name__ == "__main__":
+    work = DemoExtWork()
+    work.main()
+
+```
+
+```bash
+# bash
+python main.py -h
+# usage: xy_work扩展 [-h] [-c [COMMAND]] [-n [NAME]]
+
+# >>>>>>>>>>>> ext_work - v1.0.0 <<<<<<<<<<<<<
+
+# options:
+#   -h, --help            show this help message and exit
+#   -c [COMMAND], --command [COMMAND]
+#                         命令: -----project => 项目 -----runner => 运行启动器
+#   -n [NAME], --name [NAME]
+#                         项目名称 仅支持英文(当[command=project])
+```
+
+##### 3.配置定制
+
+> [点击查看样例 (xy_test_work)](./samples/xy_test_work)
+
+## 许可证
+xy_work 根据 <木兰宽松许可证, 第2版> 获得许可。有关详细信息，请参阅 [LICENSE](LICENSE) 文件。
+
+## 捐赠
+
+如果小伙伴们觉得这些工具还不错的话，能否请咱喝一杯咖啡呢?  
+![Pay-Total](./readme/Pay-Total.png)
+
+
+## 联系方式
+
+```
+微信: yuyangiit
+邮箱: yuyangit.0515@qq.com
+```
