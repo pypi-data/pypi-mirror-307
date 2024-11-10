@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: abacura_kallisti
+Version: 0.0.6
+Summary: Abacura extensions for Legends of Kallisti
+License: Proprietary
+Classifier: License :: Other/Proprietary License
+Requires-Python: >3.10
+Requires-Dist: abacura ~=0.0.13
+Requires-Dist: pillow
+
