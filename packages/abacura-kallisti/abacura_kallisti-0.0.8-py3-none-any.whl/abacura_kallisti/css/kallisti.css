@@ -1,0 +1,182 @@
+App {}
+
+Screen {
+    layers: below above;
+}
+
+.odometer-detail {
+    width: 30%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.popover {
+    layer: above;
+    border: $success tall 50%;
+    background: $panel;
+}
+
+#rightsidecontainer #minimap {
+    min-height: 15;
+}
+
+#rightsidecontainer #lokmap {
+    height: 15;
+}
+
+Grid#MapGrid {
+    align: center middle;
+    grid-size: 1 1;
+    grid-gutter: 1 1;
+    grid-rows: 1fr;
+    padding: 1 1;
+    width: 95%;
+    height: 95%;
+    border: thick $background 80%;
+    background: $surface;
+}
+
+#bigmap {
+    align: center middle;
+    width: 100%;
+    height: 100%;
+
+}
+
+#LOKMap #label {
+    content-align: center middle;
+    column-span: 2;
+}
+
+#LOKMap #close {
+    column-span: 2;
+    width: 100%;
+    align: center middle;
+}
+
+QuitScreen#LOKMap {
+    background: $primary-background;
+}
+
+.BKS #commslog {
+    height: 14;
+    background: $primary-background;
+}
+
+.BKS #commsTL {
+    width: 100%;
+    display: block;
+}
+
+.BKS #leftsidebar {
+    dock: left;
+    width: 45;
+}
+
+.BKS #rightsidebar {
+    dock: right;
+    width: 62;
+    height: 100%;
+}
+
+.BKS IndeterminateProgressBar {
+
+    height: 2;
+}
+
+.lokmap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.BKS ProgressBar #bar {
+    width: 15;
+}
+
+.BKS #RemortProgress {
+    width: 5;
+}
+
+.BKS .Map {
+    height: 15;
+    background: gray;
+}
+
+.BKS DebugDock {
+    height: 4;
+}
+
+.BKS #lokmapcontainer {
+    height: 15;
+}
+
+.BKS .WidgetTitle {
+    background: $primary;
+    text-style: italic;
+}
+
+.BKS #SidebarContainer {
+    layout: vertical;
+}
+
+.BKS TextLog {}
+
+Input {
+    margin: 0 0;
+    border: none;
+}
+
+#sidebar {
+    dock: left;
+    width: 15;
+    display: none;
+}
+
+#mudoutputs {}
+
+.BKS>* {}
+
+
+SessionName {
+    display: block
+}
+
+.masthead {
+    display: block;
+}
+
+.mudoutput {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: $primary-background-darken-1;
+}
+
+#motd {
+    height: 100%;
+    display: block;
+    layer: lower;
+}
+
+#bigmap-grid {
+    background: #101018;
+    padding: 1 1;
+}
+
+#telluria-widget-horizontal {
+    height: 3;
+}
+
+#telluria-widget-vertical {
+    height: 9;
+}
+
+#switch-option {
+    height: 3;
+}
+
+#sample {
+    width: 100%;
+    height: 15;
+}
