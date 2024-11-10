@@ -1,0 +1,97 @@
+Screen {
+}
+
+Input {
+    margin: 0 0;
+    padding: 0 0;
+    border: none;
+}
+
+#sidebar {
+    dock: left;
+    width: 15;
+    display: none;
+}
+
+#commslog {
+    width: 100%;
+    display: block;
+    height: 10;
+}
+
+#mudoutputs {
+
+}
+
+SessionName {
+    display: block
+}
+
+.masthead {
+    display: block;
+}
+
+.mudoutput {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #101018;
+}
+
+#motd {
+    height: 100%;
+    display: block;
+    layer: lower;
+}
+
+.BKS #leftsidebar {
+     dock: left;
+     width: 45;
+ }
+
+AbacuraWindow {
+    layer: above;
+    background: #334455;
+    width: 90%;
+    height: 70%;
+    offset: 5% 5%;
+    border: heavy #CCDDEE;
+}
+
+#logsearch-grid {
+    grid-size: 2 4;
+    grid-gutter: 1 1;
+    grid-columns: 1fr 30;
+    grid-rows: 3 1 1fr 1;
+    padding: 1 1;
+}
+
+#logsearch-label {
+    margin: 1 0 0 0;
+}
+
+#logsearch-rows {
+    width: 18;
+}
+
+#logsearch-input {
+    margin: 1 0 0 0;
+    width: 100%;
+}
+
+#logsearch-results-label {
+    column-span: 2;
+    color: #11EEFF;
+}
+
+#logsearch-log {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    column-span: 2;
+}
+
+#logsearch-footer {
+    column-span: 2;
+    color: #888888;
+}
