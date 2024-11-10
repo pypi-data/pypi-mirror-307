@@ -1,0 +1,16 @@
+fastflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastflow/__main__.py,sha256=bj39fdWDH3jtjpjvMc4d6nKwUKf3k8OQvnhqtXl935o,67
+fastflow/cli.py,sha256=TUikYu2HGAeNcWC_IwOjWiqz_kFSc8fL9yV8dykaBGI,2008
+fastflow/crds.py,sha256=UDqOGt9Y7_Xywx7cEs21ZrdA6bbf2b-JTpoCqXUpCZ0,1801
+fastflow/engine.py,sha256=9SbJIYwieFlyyWe6E9H66bGsqJl6jtU7wonlGEW57DI,22265
+fastflow/helpers.py,sha256=LuDHTZbIMp5wxTrYE6jkmxGbbIKM5ctiv-T2UDtNSEc,993
+fastflow/models.py,sha256=au1Mn-0SniJuzRfieUfGaGeKr4fmhK-6R76-Jh4rwNU,9370
+fastflow/setup.py,sha256=p6Ij1NXTWV-P9woPf6qPnu7lSpP9-epqkbHfcMaJkoU,3009
+fastflow/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastflow/tasks/stdlib.py,sha256=E5fo1vF6-1fnY7Nm91uCXyV8bw1ZCkcpc1tVIOZed8Y,536
+python_fastflow-0.4.0.dist-info/LICENSE,sha256=PjUhB0eDTPaTb8uPc12hMTfwpy1OsIbDA6OPEblZqZE,1103
+python_fastflow-0.4.0.dist-info/METADATA,sha256=2jgJnEyjZm7Ce89bBAMMWe2mXyhlFbtGoXHMG1BLbho,5564
+python_fastflow-0.4.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+python_fastflow-0.4.0.dist-info/entry_points.txt,sha256=qrCFy5pVAQmIODrCIazbEI6CLL3y2naeIkDur9PaP4M,46
+python_fastflow-0.4.0.dist-info/top_level.txt,sha256=jk0ceoOkgyRdYDI09Yp-kShvZYLVikPVkNt-p1mHxq0,9
+python_fastflow-0.4.0.dist-info/RECORD,,
