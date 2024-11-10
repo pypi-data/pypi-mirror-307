@@ -1,0 +1,1 @@
+https://github.com/qwq12738qwq/nonebot-plugin-beatsaberscore
