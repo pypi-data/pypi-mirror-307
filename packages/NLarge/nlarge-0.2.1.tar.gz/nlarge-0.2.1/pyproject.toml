@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "NLarge"
+version = "0.2.1"
+description = "Data augmentation for NLP"
+authors = ["Ng Tze Kean <ngtzekean@gmail.com>",
+           "Dexter Gui"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^6.29.5"
+numpy = "^1.18.5"
+pandas = "^2.2.3"
+nltk = "^3.9.1"
+gensim = "^4.3.3"
+torch = "2.4.1"
+datasets = "^3.0.1"
+matplotlib = "^3.9.2"
+transformers = "^4.45.2"
+sentencepiece = "^0.2.0"
+accelerate = "^1.0.1"
+iprogress = "^0.4"
+jupyter = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
