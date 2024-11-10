@@ -1,0 +1,13 @@
+requests<3.0.0,>=2.0.0
+psutil==5.9.8
+packaging==23.2
+termcolor>=2.3.0
+PyYAML<7.0,>=5.3
+
+[dev]
+pytest==7.4.0
+requests_mock==1.11.0
+tach~=0.9
+
+[langchain]
+langchain==0.2.14
