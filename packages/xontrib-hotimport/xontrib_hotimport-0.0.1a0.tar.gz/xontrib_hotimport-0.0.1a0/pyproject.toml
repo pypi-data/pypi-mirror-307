@@ -1,0 +1,32 @@
+[tool.poetry]
+packages = [
+    { include = "hotimport_core" },
+    { include = "xontrib" }
+]
+name = "xontrib-hotimport"
+version = "0.0.1a"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+xonsh = "^0.18.4"
+watchfiles = "^0.24.0"
+rich = "^13.9.4"
+
+#[tool.poetry.scripts]
+#hi = "xontrib.hotimport:_main"
+
+[tools.poetry.plugins."xonsh.xontribs"]
+hotimport = "xontrib.hotimport"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
