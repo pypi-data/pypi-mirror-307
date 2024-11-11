@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/otlp_stdout_adapter/__init__.py
+src/otlp_stdout_adapter/adapter.py
+src/otlp_stdout_adapter.egg-info/PKG-INFO
+src/otlp_stdout_adapter.egg-info/SOURCES.txt
+src/otlp_stdout_adapter.egg-info/dependency_links.txt
+src/otlp_stdout_adapter.egg-info/requires.txt
+src/otlp_stdout_adapter.egg-info/top_level.txt

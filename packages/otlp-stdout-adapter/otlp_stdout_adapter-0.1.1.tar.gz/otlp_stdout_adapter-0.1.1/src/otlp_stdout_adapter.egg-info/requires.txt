@@ -1,0 +1,11 @@
+opentelemetry-api<2.0.0,>=1.0.0
+opentelemetry-sdk<2.0.0,>=1.0.0
+opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.0.0
+opentelemetry-semantic-conventions>=0.48b0
+requests<3.0.0,>=2.31.0
+
+[dev]
+pytest>=7.0.0
+black>=22.0.0
+mypy>=1.0.0
+pylint>=2.17.0
