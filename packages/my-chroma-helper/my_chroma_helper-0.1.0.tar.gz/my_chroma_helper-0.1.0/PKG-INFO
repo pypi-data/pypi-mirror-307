@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: my_chroma_helper
+Version: 0.1.0
+Summary: A helper library for Chroma database operations
+Home-page: https://github.com/amitwangdu/my_chroma_helper
+Author: Amitav
+Author-email: samit.rkl@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0, <4
+Description-Content-Type: text/markdown
+Requires-Dist: chromadb
+
+# My Chroma Helper
+
+`my_chroma_helper` is a helper library for using the Chroma database. It includes functions for creating collections, upserting documents, and querying similar documents.
+
+## Installation
+
+```bash
+pip install my_chroma_helper
