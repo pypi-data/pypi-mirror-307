@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyapktool/__init__.py
+src/pyapktool/pyapktool.py
+src/pyapktool.egg-info/PKG-INFO
+src/pyapktool.egg-info/SOURCES.txt
+src/pyapktool.egg-info/dependency_links.txt
+src/pyapktool.egg-info/entry_points.txt
+src/pyapktool.egg-info/requires.txt
+src/pyapktool.egg-info/top_level.txt
+tests/test_pyapktool.py
