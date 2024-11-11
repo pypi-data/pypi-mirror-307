@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ztmi_inst
+Version: 0.1.1
+Summary: ZTMI Instruction SCPI Commands Script
+License: Apache-2.0
+Author: ZHIYUAN
+Author-email: jhess@ztmi.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+ztmi_instrumentation
