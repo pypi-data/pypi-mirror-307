@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GenomeSpy</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- External resources -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@genome-spy/app@0.56.x/dist/style.css"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@genome-spy/app@0.56.x/dist/index.js"
+            defer
+        ></script>
+
+        <!-- Application logic -->
+        <script type="module" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="selector-container">
+            <select class="order-selector" title="Select item">
+                <!-- Options will be inserted here -->
+            </select>
+            <p>Purity: <span id="purity"></span></p>
+            <p>Ploidy: <span id="ploidy"></span></p>
+        </div>
+        <div class="container"></div>
+    </body>
+</html>
