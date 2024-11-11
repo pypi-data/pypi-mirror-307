@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "uppsala-pyub"
+version = "0.3.0"
+description = "A python module and CLI to facilitate searching Uppsala University's catalog."
+authors = ["bobborges"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lxml_html_clean = "*"
+beautifulsoup4 = "*"
+requests = "*"
+requests_html = "*"
+
+[tool.poetry.scripts]
+pyub = "uppsala_pyub.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
