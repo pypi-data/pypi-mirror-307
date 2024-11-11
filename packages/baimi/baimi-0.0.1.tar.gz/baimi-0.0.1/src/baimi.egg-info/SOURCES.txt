@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/baimi.egg-info/PKG-INFO
+src/baimi.egg-info/SOURCES.txt
+src/baimi.egg-info/dependency_links.txt
+src/baimi.egg-info/requires.txt
+src/baimi.egg-info/top_level.txt
+src/baimi/datasource/vecdb/VecDb.py
+src/baimi/datasource/vecdb/VecDbCcrcyTest.py
+src/baimi/datasource/vecdb/VecDbSingleton.py
+src/baimi/datasource/vecdb/VecDbUnitTest.py
+src/baimi/datasource/vecdb/metadata/Metadata.py
+src/baimi/datasource/vecdb/model/ModelDb.py
+src/baimi/datasource/vecdb/model/UnitTest.py
