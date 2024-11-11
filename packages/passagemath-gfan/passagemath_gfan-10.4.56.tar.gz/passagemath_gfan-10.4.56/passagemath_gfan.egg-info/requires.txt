@@ -1,0 +1,5 @@
+cysignals>=1.10.2
+
+[test]
+passagemath-modules
+passagemath-repl
