@@ -1,0 +1,2 @@
+[console_scripts]
+showman = showman.__main__:main
