@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/bot_safe_agents/__init__.py
+src/bot_safe_agents/bot_safe_agents.py
+src/bot_safe_agents/user_agents.txt
+src/bot_safe_agents.egg-info/PKG-INFO
+src/bot_safe_agents.egg-info/SOURCES.txt
+src/bot_safe_agents.egg-info/dependency_links.txt
+src/bot_safe_agents.egg-info/top_level.txt
