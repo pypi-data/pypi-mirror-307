@@ -1,0 +1,5 @@
+passagemath-categories~=10.4.56.0
+
+[test]
+passagemath-repl
+passagemath-symbolics
