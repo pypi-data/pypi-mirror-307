@@ -1,0 +1,2 @@
+[console_scripts]
+autopost = autopost._cli:main

@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: autopost
+Version: 0.0.8
+Summary: Auto-posts social media updates
+Author-email: William Woodruff <william@yossarian.net>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2022 William Woodruff <william @ yossarian.net>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Homepage, https://pypi.org/project/autopost/
+Project-URL: Issues, https://github.com/woodruffw/autopost/issues
+Project-URL: Source, https://github.com/woodruffw/autopost
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: atproto~=0.0.30
+Requires-Dist: feedparser~=6.0
+Requires-Dist: praw<7.9.0,>=7.6.1
+Requires-Dist: Mastodon.py<1.9,>=1.7
+Requires-Dist: pydantic<3.0,>=1.10
+Requires-Dist: python-frontmatter~=1.0
+Requires-Dist: result~=0.8
+Requires-Dist: rich<13.10.0,>=12.5.1
+Requires-Dist: python-twitter~=3.5
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pretend; extra == "test"
+Provides-Extra: lint
+Requires-Dist: bandit; extra == "lint"
+Requires-Dist: interrogate; extra == "lint"
+Requires-Dist: mypy; extra == "lint"
+Requires-Dist: ruff; extra == "lint"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: autopost[lint,test]; extra == "dev"
+
+autopost
+========
+
+[![CI](https://github.com/woodruffw/autopost/actions/workflows/ci.yml/badge.svg)](https://github.com/woodruffw/autopost/actions/workflows/ci.yml)
+[![PyPI version](https://badge.fury.io/py/autopost.svg)](https://pypi.org/project/autopost)
+
+A social media auto-poster for a blog.
+
+Supported sites:
+
+* Twitter (currently untested)
+* Mastodon (any instance)
+* Reddit (any subreddit)
+* Bluesky
+
+## Installation
+
+`autopost` requires Python 3.11 or newer, and is available on PyPI:
+
+```bash
+python -m pip install autopost
+```
+
+## Usage
+
+```console
+usage: autopost [-h] [-V] [-v] [--dry-run] [--config-file CONFIG_FILE] {manual,atom} ...
+
+auto-posts social media updates
+
+positional arguments:
+  {manual,atom}
+    manual              auto-post manually
+    atom                auto-post from an Atom RSS feed
+
+options:
+  -h, --help            show this help message and exit
+  -V, --version         show program's version number and exit
+  -v, --verbose         be more verbose while running (default: False)
+  --dry-run             perform a dry-run (default: False)
+  --config-file CONFIG_FILE
+                        the file to load for configuration (default: ./autopost.toml)
+```
+
+## Examples
+
+To do anything meaningful with `autopost`, you'll need to configure
+it. See [autopost.example.toml](./autopost.example.toml) for an example configuration file.
+
+Once configured, you can use `autopost` to make a post manually:
+
+```console
+$ autopost manual "test" --url "https://example.com" --tags foo bar
+🎉 reddit:/r/enosuchblog: https://reddit.com/r/enosuchblog/comments/zldk8y/test/
+🎉 mastodon:@yossarian@infosec.exchange: https://infosec.exchange/@yossarian/109509443715725349
+```
+
+...where `--tags` is optional.
+
+Alternatively, you can use `autopost atom` to retrieve a post from an Atom-style
+RSS feed:
+
+```bash
+autopost atom https://example.com/feed.xml
+```
+
+In both cases, you can pass `--dry-run` to see what `autopost` *would* post
+instead of actually doing it:
+
+```console
+$ autopost --dry-run atom https://blog.yossarian.net/feed.xml
+dry run: would have posted Modernizing my 1980s sound system with URL:
+https://blog.yossarian.net/2022/11/07/Modernizing-my-1980s-sound-system and tags: ['howto', 'workflow', 'music']
+```
