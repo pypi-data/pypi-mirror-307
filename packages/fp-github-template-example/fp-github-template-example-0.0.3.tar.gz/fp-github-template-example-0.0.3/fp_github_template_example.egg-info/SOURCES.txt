@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+example/__init__.py
+example/__main__.py
+example/demo.py
+fp_github_template_example.egg-info/PKG-INFO
+fp_github_template_example.egg-info/SOURCES.txt
+fp_github_template_example.egg-info/dependency_links.txt
+fp_github_template_example.egg-info/entry_points.txt
+fp_github_template_example.egg-info/top_level.txt
+tests/test_demo.py
