@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cmx4flex
+Version: 0.5.0
+Summary: CMX bootstrapper for Flex automations
+Author: Grigori Fursin
+License: Apache Software License (Apache 2.0)
+Keywords: cmx4flex
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: cmind >=3.3.4
+Requires-Dist: flextask
+
+CMX bootstrapper for Flex automations
