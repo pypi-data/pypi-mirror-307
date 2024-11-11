@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: pyroll-from-dict
+Version: 3.0.0
+Summary: Extension for PyRolL providing function to create PyRolL data structure from dictionaries.
+Project-URL: Homepage, https://pyroll.readthedocs.io
+Project-URL: Repository, https://github.com/pyroll-project/pyroll-from-dict
+Project-URL: Documentation, https://github.com/pyroll-project/pyroll-from-dict/README.md
+Author-email: Max Weiner <max.weiner@imf.tu-freiberg.de>
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Hatch
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Pytest
+Classifier: Framework :: Sphinx
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: <4.0,>=3.9
+Requires-Dist: pyroll-core~=3.0
+Requires-Dist: schema~=0.7
