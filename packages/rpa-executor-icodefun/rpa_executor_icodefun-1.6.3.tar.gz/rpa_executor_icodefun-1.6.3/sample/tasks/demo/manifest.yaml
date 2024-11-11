@@ -1,0 +1,8 @@
+version: "1.0"
+name: "demo"
+robot_file: "tasks.robot"
+description: "Demo task"
+tasks:
+  -
+    name: "Complete the challenge"
+    description: "Complete the challenge"
