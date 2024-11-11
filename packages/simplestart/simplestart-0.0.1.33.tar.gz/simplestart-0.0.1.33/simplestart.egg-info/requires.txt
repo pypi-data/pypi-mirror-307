@@ -1,0 +1,10 @@
+uvicorn[standard]
+starlette
+pandas
+matplotlib
+pyyaml
+easydict
+itsdangerous
+send2trash
+python-multipart
+watchdog

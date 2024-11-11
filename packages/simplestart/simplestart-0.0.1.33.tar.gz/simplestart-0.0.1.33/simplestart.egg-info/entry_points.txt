@@ -1,0 +1,4 @@
+[console_scripts]
+myss = simplestart.launch:start
+simplestart = simplestart.launch:start
+ss = simplestart.launch:start
