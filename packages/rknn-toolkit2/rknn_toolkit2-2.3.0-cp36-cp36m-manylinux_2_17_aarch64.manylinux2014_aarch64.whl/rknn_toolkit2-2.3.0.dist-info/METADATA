@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: rknn-toolkit2
+Version: 2.3.0
+Summary: Rockchip Neural Network Toolkit2. (commit: 4c87fdc0)
+Home-page: https://github.com/airockchip/rknn-toolkit2
+Author: ai@rock-chips.com
+Author-email: ai@rock-chips.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf (<=3.19.6,>=3.12.2)
+Requires-Dist: psutil (>=5.9.0)
+Requires-Dist: ruamel.yaml (>=0.17.4)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: tqdm (>=4.64.0)
+Requires-Dist: opencv-python (<=4.6.0.66,>=4.5.5.64)
+Requires-Dist: fast-histogram (>=0.11)
+Requires-Dist: numpy (<=1.26.4)
+Requires-Dist: onnx (==1.10.0)
+Requires-Dist: onnxoptimizer (==0.2.7)
+Requires-Dist: onnxruntime (==1.10.0)
+Requires-Dist: torch (<=2.1.0,>=1.10.2)
+
+# Introduction
+RKNN-Toolkit2 is a software development kit for users to perform model conversion, inference and performance evaluation on PC and Rockchip NPU platforms.
+
+For more details, please refer to https://github.com/airockchip/rknn-toolkit2
+
+# Download
+- You can also download all packages, docker image, examples, docs and platform-tools from [RKNPU2_SDK](https://console.zbox.filez.com/l/I00fc3), fetch code: rknn
+
+# Notes
+- Currently RKNN-Toolkit2 is not compatible with [RKNN-Toolkit](https://github.com/airockchip/rknn-toolkit)
+- Currently only support on:
+  - Ubuntu 18.04 python 3.6/3.7
+  - Ubuntu 20.04 python 3.8/3.9
+  - Ubuntu 22.04 python 3.10/3.11
+  - Ubuntu 24.04 python 3.12
+
+
