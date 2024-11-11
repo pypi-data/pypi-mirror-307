@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cursofiapml-package
+Version: 1.0.0
+Summary: Descricao da sua lib cursofiapml
+Home-page: https://github.com/tadrianonet/cursofiapml
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Cursofiapml
+
+A simple example library.
+
+## Installation
+
+```sh
+pip install cursofiapml
+```
+
+## Usage
+
+```python
+from cursofiapml import hello_world
+
+print(hello_world())
+```
