@@ -1,0 +1,9 @@
+
+[extra]
+numpy
+pillow
+
+[test]
+numpy
+pillow
+matplotlib
