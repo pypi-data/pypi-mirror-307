@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+djangoapprove/__init__.py
+djangoapprove/mixins.py
+djangoapprove/models.py
+djangoapprove/settings.py
+djangoapprove.egg-info/PKG-INFO
+djangoapprove.egg-info/SOURCES.txt
+djangoapprove.egg-info/dependency_links.txt
+djangoapprove.egg-info/requires.txt
+djangoapprove.egg-info/top_level.txt
+djangoapprove/tests/__init__.py
+djangoapprove/tests/test_djangoapprove.py
