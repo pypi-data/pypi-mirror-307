@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: build123d-ease
+Version: 0.1.2.1
+Summary: Extensions, tools, and shortcuts to make modelling with Build123d easier
+Requires-Python: >=3.10
+Requires-Dist: build123d
+Requires-Dist: ocp-vscode
+Provides-Extra: dev
+Requires-Dist: pyright; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# build123d_ease
+Extensions, tools, and shortcuts to make modelling with Build123d easier
