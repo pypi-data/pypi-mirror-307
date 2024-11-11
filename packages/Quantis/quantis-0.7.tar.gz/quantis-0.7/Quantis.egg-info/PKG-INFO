@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Quantis
+Version: 0.7
+Summary: GUI for differential expression analysis
+Author-email: Daniil Pomogaev <pomogaev.dd@phystech.edu>
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: dash
+Requires-Dist: dash_daq
+Requires-Dist: statsmodels
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: pywebview
+Requires-Dist: requests
+Requires-Dist: dash-bootstrap-components

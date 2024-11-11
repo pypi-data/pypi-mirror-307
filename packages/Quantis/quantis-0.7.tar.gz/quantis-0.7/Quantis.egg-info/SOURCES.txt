@@ -1,0 +1,27 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+Quantis.egg-info/PKG-INFO
+Quantis.egg-info/SOURCES.txt
+Quantis.egg-info/dependency_links.txt
+Quantis.egg-info/entry_points.txt
+Quantis.egg-info/requires.txt
+Quantis.egg-info/top_level.txt
+quantis/__init__.py
+quantis/app.py
+quantis/app_legacy.py
+quantis/cash_or_new.py
+quantis/df_prep.py
+quantis/filetypes.py
+quantis/knn_imputation.py
+quantis/log_setup.py
+quantis/ms1diffacto.py
+quantis/ncbi_species_parser.py
+quantis/open_tsv_files_dialog.py
+quantis/string_request.py
+quantis/utils.py
+quantis/assets/dragula.css
+quantis/assets/resizer.js
+quantis/assets/scripts.js
+quantis/assets/style copy.css
+quantis/assets/style.css
