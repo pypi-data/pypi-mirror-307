@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ansi_string/__init__.py
+src/ansi_string/ansi_format.py
+src/ansi_string/ansi_param.py
+src/ansi_string/ansi_string.py
+src/ansi_string/utils.py
+src/ansi_string.egg-info/PKG-INFO
+src/ansi_string.egg-info/SOURCES.txt
+src/ansi_string.egg-info/dependency_links.txt
+src/ansi_string.egg-info/requires.txt
+src/ansi_string.egg-info/top_level.txt
