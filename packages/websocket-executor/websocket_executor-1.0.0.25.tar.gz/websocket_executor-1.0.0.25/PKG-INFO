@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: websocket_executor
+Version: 1.0.0.25
+Summary: django websocket executor project.
+Author: Vahid Moslemi
+Project-URL: homepage, https://github.com/
+License-File: LICENCE
+Requires-Dist: setuptools>=42
+Requires-Dist: wheel
+Requires-Dist: toml
+Requires-Dist: jsonschema
+Requires-Dist: typing-extensions; python_version < "3.8"
+Requires-Dist: channels~=4.1.0; python_version >= "3.8"
+Requires-Dist: cryptography~=43.0.3; python_version >= "3.7"
+Requires-Dist: daphne~=4.1.2; python_version >= "3.8"
+Requires-Dist: django~=4.2.16; python_version >= "3.8"
+Requires-Dist: djangorestframework~=3.15.2; python_version >= "3.8"
+Requires-Dist: vm-custom-package~=0.1.5.102
+Requires-Dist: websocket-client~=1.8.0; python_version >= "3.8"
+Requires-Dist: websockets~=13.1; python_version >= "3.8"
