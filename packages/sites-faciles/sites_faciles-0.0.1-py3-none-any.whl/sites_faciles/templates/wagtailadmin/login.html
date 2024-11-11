@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load widget_tweaks i18n static design_system_tags %}
+{% block content %}
+    <div class="design-system-container design-system-container--fluid design-system-my-md-14v">
+        <div class="design-system-grid-row design-system-grid-row-gutters design-system-grid-row--center">
+            <div class="design-system-col-12 design-system-col-md-8 design-system-col-lg-6">
+                <div class="design-system-container design-system-background-alt--grey design-system-px-md-0 design-system-py-10v design-system-py-md-14v">
+                    <div class="design-system-grid-row design-system-grid-row-gutters design-system-grid-row--center">
+                        <div class="design-system-col-12 design-system-col-md-9 design-system-col-lg-8">
+                            <h1>Connexion</h1>
+                            <div>
+                                <form id="login-form" action="{% url 'wagtailadmin_login' %}" method="post">
+                                    <fieldset class="design-system-fieldset"
+                                              id="login-form-fieldset"
+                                              aria-labelledby="login-form-fieldset-legend login-form-fieldset-messages">
+                                        <legend class="design-system-fieldset__legend" id="login-form-fieldset-legend">
+                                            <h2>Se connecter avec son compte</h2>
+                                        </legend>
+                                        <div class="design-system-fieldset__element">
+                                            <p class="design-system-text--sm">Sauf mention contraire, tous les champs sont obligatoires.</p>
+                                            <div class="design-system-messages-group"
+                                                 id="login-form-fieldset-messages"
+                                                 aria-live="assertive">
+                                                {% if form.errors %}
+                                                    <div class="design-system-alert design-system-alert--error design-system-alert--sm">
+                                                        <p>Erreur : Votre identifiant et mot de passe ne correspondent pas, merci de réessayer.</p>
+                                                    </div>
+                                                {% endif %}
+                                                {% if next %}
+                                                    {% if user.is_authenticated %}
+                                                        <div class="design-system-alert design-system-alert--error design-system-alert--sm">
+                                                            <p>
+                                                                Erreur : Votre compte n’a pas accès à cette page. Pour continuer, merci de vous connecter
+                                                                avec un compte autorisé.
+                                                            </p>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endif %}
+                                                {% design_system_django_messages %}
+                                            </div>
+                                        </div>
+                                        <div class="design-system-fieldset__element">
+                                            {% csrf_token %}
+                                            {% url 'wagtailadmin_home' as home_url %}
+                                            <input type="hidden" name="next" value="{{ next|default:home_url }}" />
+                                            <div class="design-system-input-group">
+                                                <label class="design-system-label" for="id_username">Identifiant&nbsp;:</label>
+                                                {{ form.username |add_class:"design-system-input" }}
+                                            </div>
+                                        </div>
+                                        <div class="design-system-fieldset__element">
+                                            <div class="design-system-password">
+                                                <label class="design-system-label" for="id_password">Mot de passe&nbsp;:</label>
+                                                {{ form.password |add_class:"design-system-password__input design-system-input" }}
+                                                <div class="design-system-password__checkbox design-system-checkbox-group design-system-checkbox-group--sm">
+                                                    <input aria-label="Afficher le mot de passe"
+                                                           id="id_password-show"
+                                                           type="checkbox"
+                                                           aria-describedby="id_password-show-messages">
+                                                    <label class="design-system-password__checkbox design-system-label" for="id_password-show">Afficher</label>
+                                                    <div class="design-system-messages-group"
+                                                         id="id_password-show-messages"
+                                                         aria-live="assertive"></div>
+                                                </div>
+                                                {% if show_password_reset %}
+                                                    <a class="design-system-link" href="{% url 'wagtailadmin_password_reset' %}">Mot de passe oublié ?</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <div class="design-system-fieldset__element">
+                                            <div class="design-system-checkbox-group design-system-checkbox-group--sm">
+                                                <div class="design-system-checkbox-group}">
+                                                    {{ form.remember }}
+                                                    <label for="{{ form.remember.id_for_label }}" class="design-system-label">Se souvenir de moi</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="design-system-fieldset__element">
+                                            <ul class="design-system-btns-group">
+                                                <li>
+                                                    <input class="design-system-btn" type="submit" value="Se connecter" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+{% block extra_css %}
+    <link rel="stylesheet"
+          href="{% static 'design-system/dist/utility/utility.min.css' %}">
+{% endblock extra_css %}
