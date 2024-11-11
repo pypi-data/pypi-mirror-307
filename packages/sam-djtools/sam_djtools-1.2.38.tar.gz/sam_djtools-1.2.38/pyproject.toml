@@ -1,0 +1,29 @@
+# This file is protected via CODEOWNERS
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "1.2.38"
+name = "sam-djtools"
+dependencies = ["django>=3.2", 'django_currentuser>=0.6.0']
+description='1 sam_djtools.DbUtils, 2 sam_djtools.EmailUtils, 3. sam_djtools.DjangoUtils 4. Primary key based form navigation to explore next/prev records.'
+readme = "README.md"
+keywords = ["djtools", "django-tools", "form-navigation", "email-in-thread"]
+authors = [{name = "Sami Akram", email="samiakram@live.com"}, ]
+maintainers = [{name = "Sami Akram", email="samiakram@live.com"}, ]
+classifiers = [ "Operating System :: OS Independent", "Programming Language :: Python :: 3"]
+requires-python = ">=3"
+
+[project.urls]
+"Changelog" = "https://github.com/humblesami/sam-djtools/CHANGES.rst"
+"Code" = "https://github.com/humblesami/sam-djtools"
+"Issue tracker" = "https://github.com/humblesami/sam-djtools/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [ "/requirements.txt", "/README.md",  "/LICENSE.txt"]
+markers = ["limit_memory"]
+log_level = "DEBUG"
+add_imports = "from __future__ import annotations"
+skip = ["setup.py"]
