@@ -1,0 +1,14 @@
+ecmwflibs
+h5netcdf
+netCDF4
+numpy>=1.21
+pandas
+rasterio<1.4.0,>=1.1.6
+rioxarray
+scipy
+tqdm
+xarray>=0.17.0
+
+[:python_version < "3.9"]
+importlib-metadata
+importlib-resources

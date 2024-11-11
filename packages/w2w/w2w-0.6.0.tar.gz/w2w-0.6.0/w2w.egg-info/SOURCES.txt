@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+w2w/__init__.py
+w2w/w2w.py
+w2w.egg-info/PKG-INFO
+w2w.egg-info/SOURCES.txt
+w2w.egg-info/dependency_links.txt
+w2w.egg-info/entry_points.txt
+w2w.egg-info/requires.txt
+w2w.egg-info/top_level.txt
+w2w/resources/LCZ_UCP_lookup.csv
+w2w/resources/__init__.py
