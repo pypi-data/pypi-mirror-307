@@ -1,0 +1,103 @@
+[project]
+name = "cs.djutils"
+description = "My collection of things for working with Django."
+authors = [
+    { name = "Cameron Simpson", email = "cs@cskk.id.au" },
+]
+keywords = [
+    "python3",
+]
+dependencies = [
+    "cs.cmdutils>=20241110",
+    "django",
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+version = "20241111"
+
+[project.license]
+text = "GNU General Public License v3 or later (GPLv3+)"
+
+[project.urls]
+"Monorepo Hg/Mercurial Mirror" = "https://hg.sr.ht/~cameron-simpson/css"
+"Monorepo Git Mirror" = "https://github.com/cameron-simpson/css"
+"MonoRepo Commits" = "https://bitbucket.org/cameron_simpson/css/commits/branch/main"
+Source = "https://github.com/cameron-simpson/css/blob/main/lib/python/cs/djutils.py"
+
+[project.readme]
+text = """
+My collection of things for working with Django.
+
+*Latest release 20241111*:
+Rename DjangoBaseCommand to just BaseCommand so that we go `from cs.djutils import BaseCommand`. Less confusing.
+
+## <a name=\"BaseCommand\"></a>Class `BaseCommand(cs.cmdutils.BaseCommand, django.core.management.base.BaseCommand)`
+
+A drop in class for `django.core.management.base.BaseCommand`
+which subclasses `cs.cmdutils.BaseCommand`.
+
+This lets me write management commands more easily, particularly
+if there are subcommands.
+
+Usage summary:
+
+    Usage: base [common-options...] [options...]
+      A drop in class for `django.core.management.base.BaseCommand`
+      which subclasses `cs.cmdutils.BaseCommand`.
+      Subcommands:
+        help [common-options...] [-l] [subcommand-names...]
+          Print help for subcommands.
+          This outputs the full help for the named subcommands,
+          or the short help for all subcommands if no names are specified.
+          -l  Long help even if no subcommand-names provided.
+        info [common-options...] [field-names...]
+          Recite general information.
+          Explicit field names may be provided to override the default listing.
+        shell [common-options...]
+          Run a command prompt via cmd.Cmd using this command's subcommands.
+
+*`BaseCommand.add_arguments(self, parser)`*:
+Add the `Options.COMMON_OPT_SPECS` to the `argparse` parser.
+This is basicly to support the Django `call_command` function.
+
+*`BaseCommand.handle(*, argv, **options)`*:
+The Django `BaseComand.handle` method.
+This creates another instance for `argv` and runs it.
+
+*`BaseCommand.run_from_argv(argv)`*:
+Intercept `django.core.management.base.BaseCommand.run_from_argv`.
+Construct an instance of `cs.djutils.DjangoBaseCommand` and run it.
+
+# Release Log
+
+
+
+*Release 20241111*:
+Rename DjangoBaseCommand to just BaseCommand so that we go `from cs.djutils import BaseCommand`. Less confusing.
+
+*Release 20241110*:
+Initial PyPI release with DjangoBaseCommand, cs.cmdutils.BaseCommand subclass suppplanting django.core.management.base.BaseCommand."""
+content-type = "text/markdown"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools >= 61.2",
+    "trove-classifiers",
+    "wheel",
+]
+
+[tool.setuptools]
+py-modules = [
+    "cs.djutils",
+]
+
+[tool.setuptools.package-dir]
+"" = "lib/python"
