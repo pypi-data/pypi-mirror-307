@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+# @Project: 芒果测试平台
+# @Description:
+# @Time   : 2024-08-16 17:05
+# @Author : 毛鹏
+from mango_ui.init import *
+
+
+class MangoCredits(QWidget):
+    def __init__(self, copyright, version, ):
+        super().__init__()
+        self.copyright = copyright
+        self.version = version
+
+        self.widget_layout = QHBoxLayout(self)
+        self.widget_layout.setContentsMargins(0, 0, 0, 0)
+
+        style = f"""
+        #bg_frame {{
+            border-radius: {THEME.border_radius};
+            background-color: {THEME.color.color4};
+        }}
+        .QLabel {{
+            font: {THEME.font.text_size}pt "{THEME.font.family}";
+            color: {THEME.font_color};
+            padding-left: 10px;
+            padding-right: 10px;
+        }}
+        """
+
+        self.bg_frame = QFrame()
+        self.bg_frame.setObjectName("bg_frame")
+        self.bg_frame.setStyleSheet(style)
+
+        self.widget_layout.addWidget(self.bg_frame)
+
+        self.bg_layout = QHBoxLayout(self.bg_frame)
+        self.bg_layout.setContentsMargins(0, 0, 0, 0)
+
+        self.copyright_label = QLabel(self.copyright)
+        self.copyright_label.setAlignment(Qt.AlignVCenter)  # type: ignore
+
+        self.version_label = QLabel(self.version)
+        self.version_label.setAlignment(Qt.AlignVCenter)  # type: ignore
+
+        self.separator = QSpacerItem(20, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)  # type: ignore
+
+        self.bg_layout.addWidget(self.copyright_label)
+        self.bg_layout.addSpacerItem(self.separator)
+        self.bg_layout.addWidget(self.version_label)
