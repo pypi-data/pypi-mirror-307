@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "farmgbm12" 
+version = "0.2.0"
+description = "Package Simulates Geometric Brownian Motion"
+authors = ["Farmer122 <94114999+Farmer122@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.package]
+include = ["farmgbm12"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
