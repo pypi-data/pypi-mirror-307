@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sincpro-payments-sdk
+Version: 0.2.2
+Summary: Agnostic SDK for payments like cybersource, Paypal and local payments
+License: Sincpro S.R.L.
+Author: Gutierrez, Andres
+Author-email: andru1236@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sincpro-framework (>=1.2.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## Sincpro payments
+
+> Allow easy interface to interact with the payment gateway
