@@ -1,0 +1,4 @@
+name: py36
+channels:
+  - defaults
+prefix: C:\Users\jites\.conda\envs\py36
