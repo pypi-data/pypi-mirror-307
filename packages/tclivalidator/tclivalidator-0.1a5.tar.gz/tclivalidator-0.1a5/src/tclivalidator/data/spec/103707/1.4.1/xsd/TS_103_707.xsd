@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:etsi103280="http://uri.etsi.org/03280/common/2017/07"
+           xmlns="http://uri.etsi.org/03707/2020/02"
+           targetNamespace="http://uri.etsi.org/03707/2020/02"
+           version="1.4.1"
+           elementFormDefault="qualified">
+
+  <xs:import namespace="http://uri.etsi.org/03280/common/2017/07"/>
+
+  <!-- ************************************************************************************* -->
+  <!-- Handover Item definitions including header (clause 5.3) -->
+  <!-- ************************************************************************************* -->
+
+  <xs:element name="handoverItem" type="HandoverItem"></xs:element>
+  <xs:element name="handoverItemCollection" type="HandoverItemCollection"></xs:element>
+
+  <xs:complexType name="HandoverItem">
+    <xs:sequence>
+      <xs:element name="header" type="Header"></xs:element>
+      <xs:element name="payload" type="Payload"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="HandoverItemCollection">
+    <xs:sequence>
+      <xs:element name="handoverItem" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Header">
+    <xs:sequence>
+      <xs:element name="applicationCorrelation" type="ApplicationCorrelation" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ApplicationCorrelation">
+    <xs:sequence>
+      <xs:element name="applicationLevelID" type="xs:nonNegativeInteger"></xs:element>
+      <xs:element name="applicationSequenceNumber" type="xs:nonNegativeInteger"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Payload" abstract="true">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MessagingPayload" abstract="false">
+    <xs:complexContent>
+      <xs:extension base="Payload">
+        <xs:sequence>
+          <xs:element name="coreParameters" type="MessagingCoreParameters"></xs:element>
+          <xs:element name="additionalParameters" type="MessagingAdditionalParameters" minOccurs="0"></xs:element>
+          <xs:element name="cspDefinedParameters" type="CSPDefinedParameters" minOccurs="0"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+  
+  <!-- ************************************************************************************* -->
+  <!-- Core parameters (Clause 5.4) -->
+  <!-- ************************************************************************************* -->
+  
+  <xs:complexType name="MessagingCoreParameters">
+    <xs:sequence>
+      <xs:element name="messageSender" type="MessagingParty" minOccurs="0"></xs:element>
+      <xs:element name="messageReceivers" type="RecipientList" minOccurs="0"></xs:element>
+      <xs:element name="timestamp" type="etsi103280:QualifiedMicrosecondDateTime"></xs:element>
+      <xs:element name="associatedBinaryData" type="BinaryObjects" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RecipientList">
+    <xs:sequence>
+        <xs:element name="recipient" type="MessagingParty" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MessagingParty">
+    <xs:sequence>
+        <xs:element name="identifiers" type="MessagingPartyIdentifiers"></xs:element>
+        <xs:element name="isTargetedParty" type="xs:boolean" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MessagingPartyIdentifiers">
+    <xs:sequence>
+      <xs:element name="identifier" type="MessagingPartyIdentifier" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="MessagingPartyIdentifier">
+    <xs:restriction base="etsi103280:LongString"></xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="BinaryObjects">
+    <xs:sequence>
+      <xs:element name="binaryObject" type="BinaryObject" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="BinaryObject">
+    <xs:sequence>
+      <xs:element name="url" type="xs:anyURI"></xs:element>
+      <xs:element name="contentLength" type="xs:nonNegativeInteger" minOccurs="0"></xs:element>
+      <xs:element name="contentType" type="etsi103280:LongString" minOccurs="0"></xs:element>
+      <xs:element name="expiry" type="etsi103280:QualifiedMicrosecondDateTime" minOccurs="0"></xs:element>
+      <xs:element name="checksum" type="etsi103280:LongString" minOccurs="0"></xs:element>
+      <xs:element name="originalFilename" type="etsi103280:LongString" minOccurs="0"></xs:element>
+      <xs:element name="cspDefinedIdentifier" type="etsi103280:LongString" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  
+
+  <!-- ************************************************************************************* -->
+  <!-- Glossary (Clause 5.5) -->
+  <!-- ************************************************************************************* -->
+
+  <xs:complexType name="MessagingAdditionalParameters">
+    <xs:sequence>
+      <xs:element name="messagingAdditionalParameter" type="MessagingAdditionalParameter" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="MessagingAdditionalParameter">
+    <xs:choice minOccurs="0">
+      <!-- currently no glossary entries are defined -->
+    </xs:choice>
+  </xs:complexType>
+
+
+
+  <!-- ************************************************************************************* -->
+  <!-- CSP-defined container (Clause 5.6) -->
+  <!-- ************************************************************************************* -->
+
+  <xs:complexType name="CSPDefinedParameters">
+    <xs:sequence>
+      <xs:element name="cspDefinedMetadata" type="CSPDefinedData" minOccurs="0"></xs:element>
+      <xs:element name="cspDefinedContent" type="CSPDefinedData" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CSPDefinedData">
+    <xs:sequence>
+      <xs:element name="schemaDetails" type="SchemaDetails"></xs:element>
+      <xs:element name="xmlData" type="XMLData"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SchemaDetails">
+    <xs:sequence>
+      <xs:element name="schemaIdentifier" type="CSPSchemaIdentifier"></xs:element>
+      <xs:element name="schemaURL" type="xs:anyURI" minOccurs="0"></xs:element>
+      <xs:element name="schemaContent" type="SchemaContent" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="CSPSchemaIdentifier">
+    <xs:restriction base="xs:token"></xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="SchemaContent">
+    <xs:sequence>
+      <xs:element name="schema" xmlns="http://www.w3.org/2001/XMLSchema"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="XMLData">
+    <xs:sequence>
+      <xs:any namespace="##other" minOccurs="1" maxOccurs="unbounded"></xs:any>
+    </xs:sequence>
+  </xs:complexType>
+
+
+</xs:schema>

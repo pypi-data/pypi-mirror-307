@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:etsi="http://uri.etsi.org/03280/common/2015/08"
+           xmlns:common="http://uri.etsi.org/03120/common/2016/02/Common"
+           xmlns:core="http://uri.etsi.org/03120/common/2016/02/Core"
+           xmlns="http://uri.etsi.org/03120/common/2016/02/Task"
+           targetNamespace="http://uri.etsi.org/03120/common/2016/02/Task"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:import namespace="http://uri.etsi.org/03120/common/2016/02/Common" schemaLocation="ts_103120v010201p0_Common.xsd"/>
+  <xs:import namespace="http://uri.etsi.org/03120/common/2016/02/Core" schemaLocation="ts_103120v010201p0_Core.xsd"/>
+  <xs:import namespace="http://uri.etsi.org/03280/common/2015/08"/>
+  
+	<xs:complexType name="LITaskObject">
+		<xs:complexContent>
+			<xs:extension base="core:HI1Object">
+				<xs:sequence>
+					<xs:element name="Reference" type="etsi:LIID" minOccurs="0"/>
+					<xs:element name="Status" type="common:DictionaryEntry" minOccurs="0"/>
+					<xs:element name="DesiredStatus" type="common:DictionaryEntry" minOccurs="0"/>
+					<xs:element name="Timespan" type="TaskTimespan" minOccurs="0"/>
+					<xs:element name="TargetIdentifier" type="TargetIdentifier" minOccurs="0"/>
+					<xs:element name="DeliveryType" type="common:DictionaryEntry" minOccurs="0"/>
+					<xs:element name="DeliveryDetails" type="TaskDeliveryDetails" minOccurs="0"/>
+					<xs:element name="ApprovalDetails" type="common:ApprovalDetails" minOccurs="0"/>
+					<xs:element name="CSPID" type="core:EndpointID" minOccurs="0"/>
+					<xs:element name="HandlingProfile" type="common:DictionaryEntry" minOccurs="0"/>
+					<xs:element name="InvalidReason" type="core:ActionUnsuccesfulInformation" minOccurs="0"/>
+					<xs:element name="Flags" type="TaskFlags" minOccurs="0" />
+					<xs:element name="NationalLITaskingParameters" type="NationalLITaskingParameters" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TaskTimespan">
+		<xs:sequence>
+			<xs:element name="StartTime" type="etsi:QualifiedDateTime" minOccurs="0"/>
+			<xs:element name="EndTime" type="etsi:QualifiedDateTime" minOccurs="0"/>
+			<xs:element name="TerminationTime" type="etsi:QualifiedDateTime" minOccurs="0"/>
+			<xs:element name="ProvisioningTime" type="etsi:QualifiedDateTime" minOccurs="0"/>
+			<xs:element name="DeprovisioningTime" type="etsi:QualifiedDateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TargetIdentifier">
+		<xs:sequence>
+			<xs:element name="TargetIdentifierValues" type="TargetIdentifierValues" minOccurs="0"/>
+			<xs:element name="ServiceType" type="common:DictionaryEntry" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TargetIdentifierValues">
+		<xs:sequence>
+			<xs:element name="TargetIdentifierValue" type="TargetIdentifierValue" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TargetIdentifierValue">
+		<xs:sequence>
+			<xs:element name="FormatType" type="FormatType"/>
+			<xs:element name="Value" type="etsi:LongString"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FormatType">
+		<xs:sequence>
+			<xs:element name="FormatOwner" type="etsi:ShortString"/>
+			<xs:element name="FormatName" type="etsi:ShortString"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskDeliveryDetails">
+		<xs:sequence>
+			<xs:element name="DeliveryDestination" type="DeliveryDestination" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DeliveryDestination">
+		<xs:sequence>
+			<xs:element name="DeliveryAddress" type="DeliveryAddress" minOccurs="0"/>
+			<xs:element name="EncryptionDetails" type="NationalEncryptionDetails" minOccurs="0"/>
+			<xs:element name="IRIorCC" type="common:DictionaryEntry" minOccurs="0"/>
+			<xs:element name="HandoverFormat" type="common:DictionaryEntry" minOccurs="0"/>
+			<xs:element name="DeliveryProfile" type="common:DictionaryEntry" minOccurs="0"/>
+			<xs:element name="NationalDeliveryParameters" type="NationalDeliveryParameters" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DeliveryAddress">
+		<xs:choice>
+			<xs:element name="IPv4Address" type="etsi:IPv4Address"></xs:element>
+			<xs:element name="IPv6Address" type="etsi:IPv6Address"></xs:element>
+			<xs:element name="IPAddressPort" type="etsi:IPAddressPort"></xs:element>
+			<xs:element name="IPAddressPortRange" type="etsi:IPAddressPortRange"></xs:element>			
+			<xs:element name="E164Number" type="etsi:InternationalE164"></xs:element>
+			<xs:element name="FTPAddress" type="xs:anyURI"></xs:element>
+			<xs:element name="URL" type="xs:anyURI"></xs:element>
+			<xs:element name="FQDN" type="etsi:LongString"></xs:element>
+			<xs:element name="EmailAddress" type="etsi:EmailAddress"></xs:element>
+		</xs:choice>
+	</xs:complexType>
+  <xs:complexType name="TaskFlags">
+    <xs:sequence>
+      <xs:element name="TaskFlag" type="common:DictionaryEntry" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+	<xs:complexType name="NationalLITaskingParameters" abstract="true">
+		<xs:sequence>
+			<xs:element name="CountryCode" type="etsi:ISOCountryCode"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NationalDeliveryParameters" abstract="true">
+		<xs:sequence>
+			<xs:element name="CountryCode" type="etsi:ISOCountryCode"/>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="NationalEncryptionDetails" abstract="true">
+    <xs:sequence>
+      <xs:element name="CountryCode" type="etsi:ISOCountryCode" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
