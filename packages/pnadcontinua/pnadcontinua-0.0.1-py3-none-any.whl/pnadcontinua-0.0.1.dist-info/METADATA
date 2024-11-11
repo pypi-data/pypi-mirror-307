@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pnadcontinua
+Version: 0.0.1
+Summary: A Python library designed to simplify the acquisition and analysis of PNADC microdata
+Home-page: https://github.com/cleomarfelipe/pnadcontinua
+Author: Cleomar Felipe Rabelo Antoszczyszyn
+Author-email: cleomarfelipe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: certifi (==2024.8.30)
+Requires-Dist: charset-normalizer (==3.4.0)
+Requires-Dist: fastexcel (==0.12.0)
+Requires-Dist: idna (==3.10)
+Requires-Dist: polars (==1.12.0)
+Requires-Dist: pyarrow (==18.0.0)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: urllib3 (==2.2.3)
+
+UNKNOWN
+
