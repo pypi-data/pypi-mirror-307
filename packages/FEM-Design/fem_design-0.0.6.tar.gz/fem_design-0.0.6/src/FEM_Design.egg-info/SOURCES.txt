@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/FEM_Design.egg-info/PKG-INFO
+src/FEM_Design.egg-info/SOURCES.txt
+src/FEM_Design.egg-info/dependency_links.txt
+src/FEM_Design.egg-info/top_level.txt
+src/femdesign/__init__.py
+src/femdesign/comunication.py
+src/femdesign/database.py
+src/femdesign/calculate/__init__.py
+src/femdesign/calculate/analysis.py
+src/femdesign/calculate/command.py
+src/femdesign/calculate/fdscript.py
+src/femdesign/utilities/__init__.py
+src/femdesign/utilities/filehelper.py
