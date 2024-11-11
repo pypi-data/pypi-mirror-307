@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/satastro/__init__.py
+src/satastro/satastro.py
+src/satastro.egg-info/PKG-INFO
+src/satastro.egg-info/SOURCES.txt
+src/satastro.egg-info/dependency_links.txt
+src/satastro.egg-info/requires.txt
+src/satastro.egg-info/top_level.txt
