@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: kmviz
+Version: 0.7.4
+Summary: A web interface for querying biological sequence indexes.
+License: MIT
+Author: Teo Lemane
+Author-email: teo.lemane@genoscope.cns.fr
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: dash-ag-grid (>=31.0.1,<32.0.0)
+Requires-Dist: dash-auth (>=2.3.0,<3.0.0)
+Requires-Dist: dash-bio (>=1.0.2,<2.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.5.0,<2.0.0)
+Requires-Dist: dash-daq (>=0.5.0,<0.6.0)
+Requires-Dist: dash-extensions (==1.0.14)
+Requires-Dist: dash-iconify (>=0.1.2,<0.2.0)
+Requires-Dist: dash-labs (>=1.2.0,<2.0.0)
+Requires-Dist: dash-mantine-components (>=0.12.1,<0.13.0)
+Requires-Dist: dash[compress,diskcache] (>=2.18.2,<3.0.0)
+Requires-Dist: duckdb (>=1.0.0,<2.0.0)
+Requires-Dist: executor (>=23.2,<24.0)
+Requires-Dist: gradpyent (>=0.2.1,<0.3.0)
+Requires-Dist: gunicorn (>=23.0.0,<24.0.0)
+Requires-Dist: importlib-resources (>=6.4.0,<7.0.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: keyring (>=25.2.1,<26.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: mysql-connector-python (>=8.4.0,<9.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: orjson (>=3.10.6,<4.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: sendgrid (>=6.11.0,<7.0.0)
+Requires-Dist: sqlalchemy (>=2.0.31,<3.0.0)
+Requires-Dist: statsmodels (>=0.14.1,<0.15.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: tomli-w (>=1.0.0,<2.0.0)
+Requires-Dist: uplink[aiohttp] (>=0.9.7,<0.10.0)
+Description-Content-Type: text/markdown
+
+# kmviz
+
+![GitHub Release](https://img.shields.io/github/v/release/tlemane/kmviz?style=for-the-badge&logo=github)
+![PyPI - Version](https://img.shields.io/pypi/v/kmviz?style=for-the-badge&color=blue&logo=pypi)
+![Docker Image Version](https://img.shields.io/docker/v/tlemane/kmviz?style=for-the-badge&logo=docker&label=docker%20hub&color=blue)
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tlemane/kmviz/ci.yml?style=for-the-badge&logo=github&label=kmviz-ci)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kmviz?style=for-the-badge&logo=python)
+
+**kmviz** is a user-friendly web interface for interacting with biological sequence indexes. In a nutshell, it connects to multiple, local or distant, sequence indexes to performs sequence queries. Results can then be explored through *`tables`*, *`plots`*, *`sequence views`*, or even *`maps`* when metadata contains geographical information. Note that representations are fully customizable allowing to make production-grade figures.
+
+:warning: **kmviz** is a work in progress!
+
+See [kmviz documentation](https://tlemane.github.io/kmviz).
+
+
+
