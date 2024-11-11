@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+DbxPbiApiWrapper/BaseApiHelper.py
+DbxPbiApiWrapper/BaseValueObjects.py
+DbxPbiApiWrapper/DbxPbiWrapper.py
+DbxPbiApiWrapper/__init__.py
+DbxPbiApiWrapper.egg-info/PKG-INFO
+DbxPbiApiWrapper.egg-info/SOURCES.txt
+DbxPbiApiWrapper.egg-info/dependency_links.txt
+DbxPbiApiWrapper.egg-info/requires.txt
+DbxPbiApiWrapper.egg-info/top_level.txt
