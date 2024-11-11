@@ -1,0 +1,3 @@
+[console_scripts]
+dvc-diff = dvc_utils.cli:dvc_utils_diff
+dvc-utils = dvc_utils.cli:cli
