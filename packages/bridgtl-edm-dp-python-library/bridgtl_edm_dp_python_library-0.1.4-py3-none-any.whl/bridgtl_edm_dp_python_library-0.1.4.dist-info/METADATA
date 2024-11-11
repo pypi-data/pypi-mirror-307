@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bridgtl-edm-dp-python-library
+Version: 0.1.4
+Summary: Bridgtl EDM Data Platform Python Library
+Author: Dafa Wiratama
+Author-email: dafa.wiratama@bankraya.co.id
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: pyspark
+Requires-Dist: pyspark (==3.5.3) ; extra == "pyspark"
