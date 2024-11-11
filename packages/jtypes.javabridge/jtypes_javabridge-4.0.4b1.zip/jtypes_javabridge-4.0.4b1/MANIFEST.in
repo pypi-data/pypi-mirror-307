@@ -1,0 +1,21 @@
+# Copyright (c) 2014 Adam Karpierz
+# SPDX-License-Identifier: BSD-3-Clause
+
+include README.rst
+include CHANGES.rst
+include LICENSE
+include pyproject.toml
+include .readthedocs.yml
+
+graft docs
+
+graft demo
+
+graft src
+recursive-exclude src/jt/javabridge *.java
+
+graft tests
+
+global-exclude \#* \#*/**
+global-exclude .build .build/** .build.* .build.*/**
+global-exclude *.py[cod] __pycache__
