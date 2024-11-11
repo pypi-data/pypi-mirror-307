@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: md-replace
+Version: 1.0.0
+Summary: Replace file paths in markdown files with the contents of the files.
+Home-page: https://your.repository.url
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Description: hello replacer!
+        
+        {{./md_replace.py}}
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
