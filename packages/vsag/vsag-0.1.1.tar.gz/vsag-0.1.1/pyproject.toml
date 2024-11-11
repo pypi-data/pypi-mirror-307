@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "vsag"
+description = "VSAG Python Binding"
+authors = [{name = "Jiacai Liu", email="dev@liujiacai.net"}]
+readme = "README.md"
+license = "Apache-2.0"
+keywords = ["vector", "search", "llm", "knn", "hnsw", "diskann"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+    "Intended Audience :: Developers",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/jiacai2050/vsag-py"
+Homepage = "https://github.com/jiacai2050/vsag-py"
+Repository = "https://github.com/jiacai2050/vsag-py"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

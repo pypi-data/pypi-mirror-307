@@ -1,0 +1,15 @@
+[package]
+name = "vsag-py"
+version = "0.1.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.22.0"
+vsag-sys = { git = "https://github.com/jiacai2050/vsag-sys.git", branch = "main" }
+
+[features]
+default = ["vendored"]
+vendored = ["vsag-sys/vendored"]
