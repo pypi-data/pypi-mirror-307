@@ -1,0 +1,3 @@
+[console_scripts]
+tclivalidator=tclivalidator.console.console_scripts:app
+
