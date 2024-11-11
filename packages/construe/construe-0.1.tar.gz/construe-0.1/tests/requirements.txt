@@ -1,0 +1,7 @@
+# Testing Dependencies
+pytest==8.3.3
+coverage==7.6.4
+pyflakes==3.2.0
+pytest-cov==6.0.0
+pytest-flakes==4.0.5
+pytest-spec==4.0.0

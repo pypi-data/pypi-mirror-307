@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+construe/__init__.py
+construe/version.py
+construe.egg-info/PKG-INFO
+construe.egg-info/SOURCES.txt
+construe.egg-info/dependency_links.txt
+construe.egg-info/requires.txt
+construe.egg-info/top_level.txt
+construe.egg-info/zip-safe
+tests/__init__.py
+tests/conftest.py
+tests/requirements.txt
