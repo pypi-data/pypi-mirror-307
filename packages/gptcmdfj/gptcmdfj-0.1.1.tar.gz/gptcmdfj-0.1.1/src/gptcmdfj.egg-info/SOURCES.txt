@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/gptcmd/__init__.py
+src/gptcmd/chatgpt_logic.py
+src/gptcmd/console.py
+src/gptcmdfj.egg-info/PKG-INFO
+src/gptcmdfj.egg-info/SOURCES.txt
+src/gptcmdfj.egg-info/dependency_links.txt
+src/gptcmdfj.egg-info/entry_points.txt
+src/gptcmdfj.egg-info/requires.txt
+src/gptcmdfj.egg-info/top_level.txt
+tests/test_chatgpt_logic.py
+tests/test_console.py

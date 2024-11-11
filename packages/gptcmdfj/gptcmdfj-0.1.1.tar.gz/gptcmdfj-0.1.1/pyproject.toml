@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gptcmdfj"
+version = "0.1.1"
+authors = [
+  { name="Jim Finance", email="financejimmy620@gmail.com" },
+]
+readme = "README.md"
+description = "Call ChatGPT from the console"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "python-dotenv>=1.0.1",
+  "openai>=1.54.3"
+]
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+package-dir = {"" = "src"}
+
+[project.scripts]
+gptcmd = "gptcmd.console:main"

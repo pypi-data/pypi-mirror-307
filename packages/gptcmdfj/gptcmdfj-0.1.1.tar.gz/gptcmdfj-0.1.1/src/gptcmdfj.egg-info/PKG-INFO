@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gptcmdfj
+Version: 0.1.1
+Summary: Call ChatGPT from the console
+Author-email: Jim Finance <financejimmy620@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: openai>=1.54.3
+
+# GPTCMD
+
+GPTCMD is a Python library for calling ChatGPT in the command line
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install GPTCMD.
+
+```bash
+pip install gptcmdfj
+```
+
+## Setup
+Add your credentials ot .env.example in the site-package file, then delete the '.example' portion (so the file should be called .env)
+
+## Usage
+
+```bash
+User> GPTCMD "can you hear me?"
+As an artificial intelligence, I don't have the ability to hear. However, I can process and respond to the text inputs you provide.
+```
