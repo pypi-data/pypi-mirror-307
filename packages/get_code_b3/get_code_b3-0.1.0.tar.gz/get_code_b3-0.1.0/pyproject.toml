@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "get_code_b3"
+version = "0.1.0"
+description = "Pacote para obter o código atual do dólar e do índice (mini ou cheio) na Bovespa."
+authors = ["Allysson Christopher <128186654+Allysson-Christopher@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Allysson-Christopher/get-code"
+repository = "https://github.com/Allysson-Christopher/get-code"
+documentation = "https://github.com/Allysson-Christopher/get-code"
+keywords = ["finance", "bovespa", "dolar", "indice", "trading"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+holidays = "<1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+freezegun = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
