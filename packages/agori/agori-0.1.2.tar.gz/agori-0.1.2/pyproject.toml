@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agori"
+version = "0.1.2"
+description = "A secure working memory for agents"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["chromadb", "azure", "openai", "embeddings", "working memory", "semantic-search", "encryption"]
+authors = [
+    { name = "Govind Shukla", email = "govind.shukl@gmail.com" }
+]
+dependencies = [
+    "chromadb",
+    "openai",
+    "cryptography",
+    "langchain",
+    "pypdf"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "types-requests>=2.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/govindshukl/agori"
+"Bug Tracker" = "https://github.com/govindshukl/agori/issues"
+"Repository" = "https://github.com/govindshukl/agori.git"
+"Documentation" = "https://github.com/govindshukl/agori#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agori"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --cov=agori"
+testpaths = [
+    "tests",
+]
+pythonpath = ["src"]
