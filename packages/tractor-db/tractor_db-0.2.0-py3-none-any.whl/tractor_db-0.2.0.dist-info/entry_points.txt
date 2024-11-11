@@ -1,0 +1,2 @@
+[console_scripts]
+get-tractor = tractor_db.main:get_tractor_name
