@@ -1,0 +1,16 @@
+django_no_hot_reload_mod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_no_hot_reload_mod/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_no_hot_reload_mod/src/code_modifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_no_hot_reload_mod/src/code_modifier/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_no_hot_reload_mod/src/code_modifier/apps.py,sha256=wGvxkblsKSUnddpgyfuKvE94ImsR0dSWHKb2w9lyzZk,193
+django_no_hot_reload_mod/src/code_modifier/forms.py,sha256=oTV929Zzp6dY-M8bxaB6VTN7Wt0wrs6fnVM7fRFToCk,1873
+django_no_hot_reload_mod/src/code_modifier/models.py,sha256=rSUWra3oKaxjQiuj-lQOX4WH2zd5gPwKnJooNwUecZM,30
+django_no_hot_reload_mod/src/code_modifier/urls.py,sha256=iYlJbXhRWos5b9WZZArosiL1tTgsbuRpM9-Caa3B9Tg,222
+django_no_hot_reload_mod/src/code_modifier/utils.py,sha256=AeK2_fZI0OOjcR6Y7Q7nuZQVTIRcBuXYmZqQB-97OqE,1229
+django_no_hot_reload_mod/src/code_modifier/views.py,sha256=ux_Ym6aYXCbvhQUNd9QN19VMraMFdPNcEgr-N20sVpk,2232
+django_no_hot_reload_mod/src/code_modifier/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_no_hot_reload_mod/src/code_modifier/templates/code_modifier/code_blocks.html,sha256=pjRyI7DJymO-iCrUJ-lmQDQkl9I_yNAyOnmwwbaRVeI,1934
+django_no_hot_reload_mod-0.0.2.1.dist-info/METADATA,sha256=Bc4qfRWlBBhVHszgnWph-TRAjpX35NkOp4CEobD8V7M,2055
+django_no_hot_reload_mod-0.0.2.1.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+django_no_hot_reload_mod-0.0.2.1.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+django_no_hot_reload_mod-0.0.2.1.dist-info/RECORD,,

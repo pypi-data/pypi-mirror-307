@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown Checklist</title>
+
+
+</head>
+
+
+<body>
+<!-- code_blocks.html -->
+<form method="post" id="code-block-form">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="id_apps">Select App</label>
+        {{ form.apps }}
+    </div>
+
+    <div class="form-group">
+        <label for="id_views">Select View</label>
+        {{ form.views }}
+    </div>
+
+    <div class="form-group">
+        <label for="id_code_block">Code Block</label>
+        {{ form.code_block }}
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const viewsSelect = $('#id_views');
+
+        // Function to update views based on the selected app
+        function updateViews(app) {
+            $.ajax({
+                url: "{% url 'get_views_for_app' %}",
+                data: { 'app_name': app },
+                dataType: 'json',
+                success: function(data) {
+                    viewsSelect.empty(); // Clear existing options
+                    $.each(data.views, function(index, view) {
+                        viewsSelect.append(new Option(view, view));
+                    });
+                }
+            });
+        }
+
+        // Initially populate views based on the first app
+        const initialApp = $('#id_apps').val();
+        if (initialApp) {
+            updateViews(initialApp);
+        }
+
+        // Update views dropdown when the app selection changes
+        $('#id_apps').change(function() {
+            const selectedApp = $(this).val();
+            updateViews(selectedApp);
+        });
+    });
+
+
+</script>
+</body>
+</html>
