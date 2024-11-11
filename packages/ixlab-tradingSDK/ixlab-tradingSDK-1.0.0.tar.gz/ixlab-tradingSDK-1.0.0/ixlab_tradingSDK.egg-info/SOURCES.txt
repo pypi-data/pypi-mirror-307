@@ -1,0 +1,11 @@
+README.md
+setup.py
+ixlab_tradingSDK.egg-info/PKG-INFO
+ixlab_tradingSDK.egg-info/SOURCES.txt
+ixlab_tradingSDK.egg-info/dependency_links.txt
+ixlab_tradingSDK.egg-info/requires.txt
+ixlab_tradingSDK.egg-info/top_level.txt
+trading_sdk/__init__.py
+trading_sdk/client.py
+trading_sdk/example_usage.py
+trading_sdk/exceptions.py
