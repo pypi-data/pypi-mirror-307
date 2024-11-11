@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: baotool
+Version: 1.0.1
+Summary: BaoTool (宝图), 个人积累的 python 工具库
+Home-page: https://pypi.org/project/bao-tool/
+Author: Nisus Liu
+Author-email: 609069481@qq.com
+License: MIT
+Keywords: python,tool,util,baotool,bao tool,log
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: altgraph ==0.17.3
+Requires-Dist: asgiref ==3.8.1
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: Automat ==22.10.0
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: charset-normalizer ==3.2.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: constantly ==15.1.0
+Requires-Dist: contourpy ==1.2.0
+Requires-Dist: cryptography ==41.0.4
+Requires-Dist: cssselect ==1.2.0
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: darkdetect ==0.8.0
+Requires-Dist: Deprecated ==1.2.14
+Requires-Dist: distlib ==0.3.7
+Requires-Dist: dnspython ==2.4.2
+Requires-Dist: docopt ==0.6.2
+Requires-Dist: filelock ==3.12.3
+Requires-Dist: Flask ==3.0.0
+Requires-Dist: fonttools ==4.44.0
+Requires-Dist: googleapis-common-protos ==1.63.2
+Requires-Dist: greenlet ==2.0.2
+Requires-Dist: grpcio ==1.60.0
+Requires-Dist: grpcio-health-checking ==1.60.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: hyperlink ==21.0.0
+Requires-Dist: idna ==3.4
+Requires-Dist: importlib-metadata ==7.1.0
+Requires-Dist: incremental ==22.10.0
+Requires-Dist: itemadapter ==0.8.0
+Requires-Dist: itemloaders ==1.1.0
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: jmespath ==1.0.1
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: lxml ==4.9.3
+Requires-Dist: MarkupSafe ==2.1.3
+Requires-Dist: matplotlib ==3.8.1
+Requires-Dist: mmh3 ==4.1.0
+Requires-Dist: numpy ==1.26.1
+Requires-Dist: openfeature-hooks-opentelemetry ==0.1.3
+Requires-Dist: openfeature-provider-flagd ==0.1.5
+Requires-Dist: openfeature-sdk ==0.7.0
+Requires-Dist: opentelemetry-api ==1.25.0
+Requires-Dist: opentelemetry-distro ==0.46b0
+Requires-Dist: opentelemetry-exporter-otlp ==1.25.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-common ==1.25.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc ==1.25.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http ==1.25.0
+Requires-Dist: opentelemetry-instrumentation ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-asgi ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-asyncio ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-aws-lambda ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-dbapi ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-flask ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-grpc ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-jinja2 ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-logging ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-pymongo ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-pymysql ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-requests ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-sqlite3 ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-system-metrics ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-threading ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-urllib ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-urllib3 ==0.46b0
+Requires-Dist: opentelemetry-instrumentation-wsgi ==0.46b0
+Requires-Dist: opentelemetry-propagator-aws-xray ==1.0.1
+Requires-Dist: opentelemetry-propagator-b3 ==1.25.0
+Requires-Dist: opentelemetry-proto ==1.25.0
+Requires-Dist: opentelemetry-sdk ==1.25.0
+Requires-Dist: opentelemetry-semantic-conventions ==0.46b0
+Requires-Dist: opentelemetry-test-utils ==0.46b0
+Requires-Dist: opentelemetry-util-http ==0.46b0
+Requires-Dist: outcome ==1.2.0
+Requires-Dist: packaging ==23.2
+Requires-Dist: panzi-json-logic ==1.0.1
+Requires-Dist: parsel ==1.8.1
+Requires-Dist: pefile ==2023.2.7
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: pipenv ==2023.9.8
+Requires-Dist: pipreqs ==0.4.13
+Requires-Dist: platformdirs ==3.10.0
+Requires-Dist: playsound ==1.3.0
+Requires-Dist: playwright ==1.38.0
+Requires-Dist: Protego ==0.3.0
+Requires-Dist: protobuf ==4.25.3
+Requires-Dist: psutil ==5.9.6
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pycparser ==2.21
+Requires-Dist: PyDispatcher ==2.0.7
+Requires-Dist: pyee ==9.0.4
+Requires-Dist: pyinstaller ==5.13.2
+Requires-Dist: pyinstaller-hooks-contrib ==2023.8
+Requires-Dist: pymongo ==4.5.0
+Requires-Dist: PyMySQL ==1.1.0
+Requires-Dist: pyOpenSSL ==23.2.0
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: PyQt-Fluent-Widgets ==1.2.0
+Requires-Dist: PyQt5 ==5.15.9
+Requires-Dist: PyQt5-Frameless-Window ==0.3.2
+Requires-Dist: pyqt5-plugins ==5.15.9.2.3
+Requires-Dist: PyQt5-Qt5 ==5.15.2
+Requires-Dist: PyQt5-sip ==12.12.2
+Requires-Dist: PyQt5-stubs ==5.15.6.0
+Requires-Dist: pyqt5-tools ==5.15.9.3.3
+Requires-Dist: pyquery ==2.0.0
+Requires-Dist: PySocks ==1.7.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: python-json-logger ==2.0.7
+Requires-Dist: pywin32 ==306
+Requires-Dist: pywin32-ctypes ==0.2.2
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: qt5-applications ==5.15.2.2.3
+Requires-Dist: qt5-tools ==5.15.2.1.3
+Requires-Dist: queuelib ==1.6.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-file ==1.5.1
+Requires-Dist: Scrapy ==2.11.0
+Requires-Dist: selenium ==4.14.0
+Requires-Dist: semver ==3.0.2
+Requires-Dist: service-identity ==23.1.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: sortedcontainers ==2.4.0
+Requires-Dist: tldextract ==5.0.1
+Requires-Dist: trio ==0.22.2
+Requires-Dist: trio-websocket ==0.11.1
+Requires-Dist: Twisted ==22.10.0
+Requires-Dist: twisted-iocpsupport ==1.0.4
+Requires-Dist: typing-extensions ==4.8.0
+Requires-Dist: urllib3 ==2.0.4
+Requires-Dist: virtualenv ==20.24.5
+Requires-Dist: w3lib ==2.1.2
+Requires-Dist: Werkzeug ==3.0.1
+Requires-Dist: wrapt ==1.16.0
+Requires-Dist: wsproto ==1.2.0
+Requires-Dist: yarg ==0.1.9
+Requires-Dist: zipp ==3.19.2
+Requires-Dist: zope.interface ==6.1
+
+# BaoTool (宝图)
+
+> 取谐音“宝图”，寓意“藏宝图”
+
+个人积累的 python 工具库.
