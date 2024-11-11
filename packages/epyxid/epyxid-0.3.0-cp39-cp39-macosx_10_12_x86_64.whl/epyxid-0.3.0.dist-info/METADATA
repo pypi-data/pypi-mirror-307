@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: epyxid
+Version: 0.3.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Typing :: Typed
+License-File: LICENSE.txt
+Summary: Python wrapper around Rust implementation of XID (Globally Unique ID Generator)
+Keywords: rust,xid,pyo3
+Author-email: Aleksandr Shpak <shpaker@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/shpaker/epyxid
+
+# ePyXID
+
+[![PyPI](https://img.shields.io/pypi/v/epyxid.svg)](https://pypi.python.org/pypi/epyxid)
+
+Fast globally unique sortable id generator.
+
+Python wrapper around Rust implementation of xid https://github.com/kazk/xid-rs
+
+## Install
+
+```shell
+pip install epyxid
+```
+
+## Usage
+
+```python
+from epyxid import XID, xid_create
+
+xid: XID = xid_create()
+print(xid)
+# cnisffq7qo0qnbtbu5gg
+print(bytes(xid))
+# b'e\xe5\xc7\xbfG\xd6\x01\xab\xaf\xab\xf1a'
+print(xid.time)
+# 2024-03-04 16:08:15
+```
+
