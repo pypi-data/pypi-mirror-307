@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: transaction_counter_annyandr
+Version: 1.1
+Requires-Python: >=3.8
+Requires-Dist: pandas
