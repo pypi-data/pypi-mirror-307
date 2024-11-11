@@ -1,0 +1,17 @@
+flamo/__init__.py,sha256=ujezWOJfD7DUoj4q1meeMUnB97rOEtNR7mYw_PE9LMg,49
+flamo/functional.py,sha256=WK8DUV3andIKjq-HLeQYl8P6oAKM0AUKUsB75sGMp1E,26067
+flamo/utils.py,sha256=yGN76kJjjvNfZrjd-pYllUN6DXBUoMY5H8E9ALyaTZQ,3368
+flamo/auxiliary/__init__.py,sha256=7lVNh8OxHloZ4KPmp-iTUJnUbi8XbuRzGaQ3Z-NKXio,42
+flamo/auxiliary/eq.py,sha256=Dd8kD5dqnC1ZRTeQUFRYVC5TY4gHOpqidKU0zgLsC3E,6034
+flamo/auxiliary/minimize.py,sha256=uFzDFYDAmm9MqbOKWOEe3NGuc9nXf82DBqfIDX1QYok,1183
+flamo/optimize/__init__.py,sha256=grgxLmQ7m-c9MvRdIejmEAaaajfBwgeaZAv2qjHIvPw,65
+flamo/optimize/dataset.py,sha256=AxrNZ8i-2d2hH3ucDPDl7XXHY7avEj3ZKgKmJNfIy80,5950
+flamo/optimize/loss.py,sha256=xe7CB7RSan2pqhKkZKgsYm6n282D6EnVAGuN7JHYsuc,2381
+flamo/optimize/trainer.py,sha256=ElW-05nstMnScdjAYv4Of302ECof7GZp3RPUMDNFDw8,11352
+flamo/processor/__init__.py,sha256=paGdxGVZgA2VAs0tBwRd0bobzGxeyK79DS7ZGO8drkI,41
+flamo/processor/dsp.py,sha256=qYVK4BK2xcqyrX7DSAKBKM2Y-hkvQXaLuQt-BzeZLZI,80325
+flamo/processor/system.py,sha256=pSC1aRPWGKEVl_mWpzlvo32YejmpuB_bkht-r95voo4,30124
+flamo-0.0.7.dist-info/METADATA,sha256=Hk-tdAGp-VjI-PwsLWWYz9eesJgarEdnb2FWskOOxF4,7053
+flamo-0.0.7.dist-info/WHEEL,sha256=wukiCwsxxsuzcQTdnC_ZWHZECE4wwOh3xCCrap6i6Ts,87
+flamo-0.0.7.dist-info/licenses/LICENSE,sha256=smMocRH7xdPT5RvFNqSLtbSNzohXJM5G_rX1Qaej6vg,1120
+flamo-0.0.7.dist-info/RECORD,,
