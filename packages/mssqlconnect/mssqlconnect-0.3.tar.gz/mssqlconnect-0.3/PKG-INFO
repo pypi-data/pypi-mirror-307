@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mssqlconnect
+Version: 0.3
+Summary: mssqlconnect
+Author: 棽杓
+Author-email: 1047366140@qq,com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymssql
+
+# mssqlconnect
+
+[![Python Version](https://img.shields.io/badge/python-%203.8%20%7C%203.9%20%7C%203.10-blue)](https://pypi.org/project/mssqlconnect/)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+
+`mssqlconnect` 是一个 Python 库，旨在简化与 Microsoft SQL Server 数据库的连接和交互过程。它提供了一个简洁的接口来执行 SQL 查询、管理数据库连接和处理结果集。
+
+## 特点
+
+- **简洁的接口**：易于使用的接口，快速开始。
+
+## 安装
+
+使用 pip 安装 `mssqlconnect`：
+
+```bash
+pip install mssqlconnect
+```
+
+## 使用
+``` python
+from mssqlconnect import SQLServer
+
+parameter = {
+    "server": "127.0.0.1",
+    "username": "sa",
+    "password": "你的密码",
+    "database": "你的数据库名称"
+}
+
+def main():
+    with SQLServer(parameter) as conner:
+        result = conner.execute_query("SELECT * FROM [dbo].[user]")
+        result = conner.ex("SELECT * FROM [dbo].[user]")
+        print(result)
+
+if __name__ == '__main__':
+    main()
