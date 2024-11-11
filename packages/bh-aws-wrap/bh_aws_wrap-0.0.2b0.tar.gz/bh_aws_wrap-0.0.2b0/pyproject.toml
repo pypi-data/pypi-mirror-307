@@ -1,0 +1,9 @@
+[project]
+name = "bh-aws-wrap"
+version = "0.0.2-b0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bh-bump>=0.0.3b0",
+]
