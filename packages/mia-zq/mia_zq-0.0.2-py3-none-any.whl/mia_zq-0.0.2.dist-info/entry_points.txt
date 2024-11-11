@@ -1,0 +1,5 @@
+[console_scripts]
+mia = mia.cli.main:main
+
+[pytest11]
+pytest_mia = mia.testing.pytest
