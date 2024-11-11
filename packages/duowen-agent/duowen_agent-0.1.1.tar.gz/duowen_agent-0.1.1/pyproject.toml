@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "duowen-agent"
+version = "0.1.1"
+description = "多闻LLM核心工具包"
+authors = ["liurui <liurui@asiainfo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.54.3"
+redis = "^5.2.0"
+requests = "^2.32.3"
+tiktoken = "^0.8.0"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+poetry-setup = "^0.3.6"
+twine = "^5.1.1"
+wheel = "^0.45.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
