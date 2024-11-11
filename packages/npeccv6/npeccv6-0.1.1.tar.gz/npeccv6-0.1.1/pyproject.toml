@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "npeccv6"
+version = "0.1.1"
+description = "Python package for root recognition and robot controll"
+authors = ["Hubert Waleńczak <220817@buas.nl>", "Nick Belterman <225538@buas.nl>", "Amyr Lourensz <221264@buas.nl>", "Marwa Rouah <223256@buas.nl>", "Cristian Stîngă <223385@buas.nl>"]
+readme = "README.md"
+packages = [{include = "npeccv6"}]
+
+[tool.poetry.dependencies]
+python = "^3.11, <3.12"
+azure-ai-ml = "^1.16.1"
+azureml-core = "^1.56.0"
+azureml-defaults = "^1.56.0.post1"
+azureml-dataprep = "^5.1.6"
+azureml-mlflow = "^1.56.0"
+black = "^24.4.2"
+datetime = "^5.5"
+fastapi = "^0.111.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+keras = "^2.14"
+mlflow = "^2.13.2"
+networkx = ">=3.3"
+numpy = "^1.19.3"
+opencv-python = "^4.9.0.80"
+patchify = "^0.2.3"
+pre-commit = "^3.7.1"
+pytest = ">=8.2.0"
+pytest-cov = ">=5.0.0"
+python-runit = "^0.3.0"
+requests = "^2.32.3"
+skan = ">=0.11.1"
+sphinx = ">=7.3.7"
+sphinx-rtd-theme = ">=2.0.0"
+streamlit = "^1.35.0"
+tensorflow = "^2.14.0"
+tensorflow-io-gcs-filesystem = "^0.31.0"
+uvicorn = "^0.29.0"
+optuna = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "npeccv6",
+]
+
+[tool.poetry.scripts]
+npeccv6_create_model = "npeccv6.create_model:main"
+npeccv6_preprocess = "npeccv6.preprocessing:main"
+npeccv6_train = "npeccv6.train:main"
+npeccv6_predict = "npeccv6.predict:main"
