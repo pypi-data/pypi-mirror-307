@@ -1,0 +1,15 @@
+LICENSE
+README.md
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/__init__.py
+src/helper.py
+src/microparser.py
+src/transformer.py
+xmlmicroparser.egg-info/PKG-INFO
+xmlmicroparser.egg-info/SOURCES.txt
+xmlmicroparser.egg-info/dependency_links.txt
+xmlmicroparser.egg-info/top_level.txt
+xmlmicroparser.egg-info/zip-safe
