@@ -1,0 +1,17 @@
+scdef/__init__.py,sha256=5AfttVyuV5HUJkB2scL8JylyUSYPQ2JacY_WlhN5L_k,226
+scdef/benchmark/__init__.py,sha256=X8tfY_Rj7m0QX73nDIeI0YqbBgSnF-CCShzgMaqc6aw,123
+scdef/benchmark/constants.py,sha256=aXiCc-vDLjVskAag40L95ZPjpstVJ-XBB_1e-tItT6A,554
+scdef/benchmark/evaluate.py,sha256=p9Tr4qwD2w23ny1HRgUSB2GOFSvkk48VYxYlTpSWR1M,12437
+scdef/benchmark/other_methods.py,sha256=yeSFP8_HDYD2uU4jVxJtax11aUsLjJLfxSLtUPXGNFQ,27088
+scdef/models/__init__.py,sha256=mMJQloLUSxslbYg9vPIV2XOc4j-gOhCnsKTcf2uDW4I,78
+scdef/models/_iscdef.py,sha256=NK3F2IDxWNXcEEsDIVIFFbS1WKv7hakTQZqURS4qFDw,22178
+scdef/models/_scdef.py,sha256=kRTgxpkB8384wgge74YMjFkw4qXYgzq-2N6bfO9DvQE,147527
+scdef/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scdef/utils/color_utils.py,sha256=k22J-j95DtHEWXsBR1cYDb4cO3ohWYv1zW-pqRqUshY,354
+scdef/utils/factor_utils.py,sha256=drtThSOIQEbiLhfPv0hxFZrblwsoLpin316PhtKY5R4,3455
+scdef/utils/hierarchy_utils.py,sha256=EXDk_WQFtLtCweemRniO2Kp2Tm5lJc6IBLF5sufRiKY,7902
+scdef/utils/jax_utils.py,sha256=tDYyPAsaK9lKTW_mzcR4r3gGdmTD4s9jxLXJJrh_iMQ,1375
+scdef/utils/score_utils.py,sha256=Pyd-9Iohd7agMgHLIpdoMom5Si40GD7Sw39MrULyZ_E,5102
+scdef-0.1.6.dist-info/METADATA,sha256=F59o6sN3oHxV6NkOO_ziauo7Z3IXdTxOmYntgTT_w5A,2339
+scdef-0.1.6.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+scdef-0.1.6.dist-info/RECORD,,
