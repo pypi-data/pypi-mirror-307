@@ -1,0 +1,3 @@
+[console_scripts]
+wave=trainwave_cli.main:entrypoint
+
