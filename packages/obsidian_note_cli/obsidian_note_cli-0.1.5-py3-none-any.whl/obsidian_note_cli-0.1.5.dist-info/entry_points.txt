@@ -1,0 +1,3 @@
+[console_scripts]
+obsidian-note=obsidian_note_cli.obsidian_note_cli:save_note
+
