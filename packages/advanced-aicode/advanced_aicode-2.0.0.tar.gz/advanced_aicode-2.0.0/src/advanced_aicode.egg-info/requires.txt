@@ -1,0 +1,7 @@
+appdirs
+keyring
+uv
+setuptools
+
+[:platform_system == "Linux"]
+keyrings.alt
