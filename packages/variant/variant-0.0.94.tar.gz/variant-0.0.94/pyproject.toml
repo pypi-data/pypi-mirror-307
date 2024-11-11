@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "variant"
+version = "0.0.94"
+description = ""
+authors = ["Chang Ye <yech1990@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["bioinformatics", "variant", "mutation", "RNA modification"]
+repository = "https://github.com/yech1990/variant"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich-click = "^1.8.2"
+xopen = "^2.0.2"
+pysam = "^0.22.1"
+pyensembl = "^2.2.4"
+varcode = "*"
+
+[tool.poetry.scripts]
+variant-effect = 'variant.cli:effect'
+variant = 'variant.cli:cli'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^5.2"
+setuptools = "^70.1.1"
+
+[build-system]
+requires = ["poetry-core", "Cython", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+generate-setup-file = false
+script = 'build_package.py'
