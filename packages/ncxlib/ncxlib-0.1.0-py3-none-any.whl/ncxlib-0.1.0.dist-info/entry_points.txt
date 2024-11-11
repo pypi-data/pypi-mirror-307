@@ -1,0 +1,6 @@
+[console_scripts]
+clean=scripts:remove_all_init_files
+fmt=scripts:fmt
+gen=scripts:add_init_files
+notebook=scripts:notebook
+
