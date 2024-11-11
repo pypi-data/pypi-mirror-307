@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bsif-webview2
+Version: 1.2.1
+Summary: Microsoft Webview2 for python.
+Home-page: https://github.com/Blue-Sky-Infomation-Factory/Python-Webview2
+Author: Blue Sky Infomation Factory
+License: BSD 3-Clause License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: pythonnet
+Requires-Dist: pywin32
+
