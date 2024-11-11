@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "athena-tracking"
+dynamic = ["version"]
+authors = [
+  { name="Jonathan Michaels", email="jmichae@yorku.ca" },
+]
+description = "ATHENA: Automatically Tracking Hands Expertly with No Annotations"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["athena", "hand tracking", "pose estimation", "machine learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pyav",
+    "mediapipe",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "scipy",
+    "pymovie",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "athena.__version__"}
+
+[tool.setuptools]
+packages = ["athena"]
+
+[project.urls]
+"GitHub" = "https://github.com/neural-control-and-computation-lab/athena"
+
+[tool.setuptools.package-data]
+"athena" = ["labels2d.py", "triangulaterefine.py", "athena.py", "montage.py", "models/hand_landmarker.task", "models/pose_landmarker_full.task", "logo.png"]
