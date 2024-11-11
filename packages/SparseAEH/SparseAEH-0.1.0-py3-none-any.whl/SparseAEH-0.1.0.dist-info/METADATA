@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SparseAEH
+Version: 0.1.0
+Summary: Fastened SpatialDE
+Home-page: https://github.com/jackywangtj66/NewDE
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: pandas (>=0.23)
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
