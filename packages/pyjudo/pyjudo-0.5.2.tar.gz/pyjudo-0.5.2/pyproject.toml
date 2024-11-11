@@ -1,0 +1,18 @@
+[project]
+name = "pyjudo"
+version = "0.5.2"
+description = "Simple dependency injection for Python."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.1.1",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.3",
+]
