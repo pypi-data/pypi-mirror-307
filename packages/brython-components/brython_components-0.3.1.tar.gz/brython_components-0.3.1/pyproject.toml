@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "brython-components"
+version = "0.3.1"
+description = "Brython-components is an easy implementation of brython's webcomonent"
+license = "MIT"
+authors = ["Lorenzo A. Garcia Calzadilla <lorenzogarciacalzadilla@gmail.com>"]
+readme = "README.md"
+keywords = ["brython", "Development", "webcomponents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: Implementation",
+    "Topic :: Software Development"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+waitress = "^2.1.2"
+
+[tool.poetry.group.dev.dependencies]
+brython-dev = "^0.10.1"
+fossil-cli = "^4.4.2"
+isort = "^5.13.2"
+black = "^24.8.0"
+changelog-cli = "^0.7.1"
+
+[[tool.poetry.source]]
+name = "private"
+url = "http://127.0.0.1:36628/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
