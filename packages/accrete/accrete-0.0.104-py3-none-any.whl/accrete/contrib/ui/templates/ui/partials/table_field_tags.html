@@ -1,0 +1,17 @@
+{% load accrete_ui %}
+
+
+{% with manager=obj|get_attr:field.name %}
+    <td style="text-align: left">
+        <span>
+            <span class="responsive-heading has-text-weight-light" style="margin-right: .2rem">{{ field.label }}:</span>
+            {% block td_content %}
+                <div class="tags">
+                    {% for o in manager.all %}
+                        <span class="tag">{{ o }}</span>
+                    {% endfor %}
+                </div>
+            {% endblock %}
+        </span>
+</td>
+{% endwith %}

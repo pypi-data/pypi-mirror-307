@@ -1,0 +1,67 @@
+{% load i18n %}
+
+<div class="" x-data="{open: false, shouldClose(event) {return event.relatedTarget == $refs.dropdownContent || $refs.dropdownContent.contains(event.relatedTarget);} }"
+     @click.outside="open = false" style="width: 100%"
+>
+    <select multiple id="{{ widget.attrs.id }}" hidden="hidden" name="{{ widget.name }}" aria-label="{{ widget.name }}" x-ref="inputValue">
+        {% include 'ui/widgets/model_search_select_multi_selected_options.html' %}
+    </select>
+    <div id="{{ widget.attrs.id }}_display" class="input select py-1 pl-1" tabindex="0" x-ref="inputDisplay" aria-label="inputDisplay"
+         style="padding-right: 30px; border-radius: 0; border-top: 0; border-right:0; border-left: 0; min-height: var(--bulma-control-height); height: fit-content; width: 100%"
+         x-on:focus="open = true;"
+         x-on:keydown="if ($event.keyCode == 27) {document.activeElement.blur()} else if ($event.keyCode != 9) {$refs.searchInput.focus();}"
+         x-on:focusout="open = shouldClose($event)"
+    >
+        <div class="tags" x-ref="inputDisplayTags" 
+             @click="
+                if ($event.target.classList.contains('delete')) {
+                    let val = $event.target.getAttribute('data-value');
+                    $refs.inputValue.querySelector(`option[value=${CSS.escape(val)}]`).remove(); 
+                    $event.target.parentElement.remove();
+                }
+             ">
+            {% include 'ui/widgets/model_search_select_multi_tags.html' %}
+        </div>
+    </div>
+    <div style="position: relative; z-index: 90;">
+        <div x-show="open" class="box pt-1 mb-2" x-ref="dropdownContent" x-cloak="" tabindex="-1" x-transition style="position: absolute; width: 100%;">
+            <input id="{{ widget.attrs.id }}_search" type="search" autocomplete="off" class="input" x-ref="searchInput" aria-label="search"
+                   name="{{ widget.search_parameter }}"
+                   placeholder="{% translate 'Type to search' %}"
+                   x-on:keydown="if ($event.keyCode == 27) {document.activeElement.blur()}"
+                   x-on:focusout="open = shouldClose($event)"
+                   hx-get="{{ widget.search_url }}"
+                   hx-trigger="input changed delay:500ms, search"
+                   hx-target="#{{ widget.attrs.id }}_dropdown_items"
+            >
+            <div id="{{ widget.attrs.id }}_dropdown_items" class="hoverable" style="max-height: 200px; width: 100%; overflow-y: auto;"
+                 x-on:click="
+                    if (! $refs.inputValue.querySelectorAll(`option[value=${CSS.escape($event.target.value)}]`).length) {
+                        let option = document.createElement('option');
+                        let tag = document.createElement('span');
+                        let delButton = document.createElement('button');
+                        option.setAttribute('selected', '');
+                        option.value = $event.target.value;
+                        tag.classList.add('tag');
+                        tag.innerText = $event.target.innerText;
+                        tag.style.whiteSpace = 'normal';
+                        tag.style.height = 'fit-content';
+                        delButton.classList.add('delete', 'is-small');
+                        delButton.type = 'button';
+                        delButton.setAttribute('data-value', $event.target.value);
+                        tag.appendChild(delButton);
+                        $refs.inputValue.appendChild(option);
+                        $refs.inputDisplayTags.appendChild(tag);
+                    };
+                    {% if widget.hx_trigger_on_change %}htmx.trigger('#{{ widget.attrs.id }}_value', 'change');{% endif %}
+                 "
+                 x-on:keydown="
+                    if ($event.keyCode == 27) {document.activeElement.blur()} 
+                    else if ($event.keyCode != 9 && $event.keyCode != 13) {$refs.searchInput.focus();}
+                 "
+            >
+                {% include 'ui/widgets/model_search_select_options.html' %}
+            </div>
+        </div>
+    </div>
+</div>
