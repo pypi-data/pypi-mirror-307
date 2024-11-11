@@ -1,0 +1,6 @@
+gdal
+numpy>=1.17.0
+xarray
+rasterio
+netCDF4
+pymodis
