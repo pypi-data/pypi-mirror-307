@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: github_cat
+Version: 0.0.1
+Summary: github tools
+Home-page: https://www.linkedin.com/in/chandlersong/
+Author: chandler song
+Author-email: 275737875@qq.com
+License: MIT
+Keywords: github api tool by token
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Introduction
+## Install package
+```shell
+pip install github_bird
+```
+
+##  Example Usage:
+
+```python
+from github_cat.repos import GithubCrawler
+
+# Define the GitHub API tokens here
+tokens = ["your_token_1", "your_token_2"]  # Replace with actual tokens
+
+crawler = GithubCrawler(tokens)
+crawler.crawl_user_repos('milvus-io')
+
+```
