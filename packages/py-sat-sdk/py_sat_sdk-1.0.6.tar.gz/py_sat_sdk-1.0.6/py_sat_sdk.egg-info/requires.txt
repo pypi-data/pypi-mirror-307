@@ -1,0 +1,11 @@
+requests>=2.27.1
+requests-oauthlib>=2.0.0
+pycryptodome>=3.11.0
+dataclasses-json>=0.5.9
+python-dateutil>=2.9.0.post0
+
+[test]
+pytest>=4.4.1
+pytest-sugar
+pytest-dotenv>=0.5.2
+pytest-httpserver>=1.0.5
