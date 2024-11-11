@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fork-from-retry
+Version: 0.12.0
+Summary: Easy to use retry decorator.
+Home-page: https://github.com/my-python-utils/retry
+Author: invl
+Author-email: invlpg@gmail.com
+License: Apache License 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A fork from [retry](https://github.com/invl/retry)
+
+```bash
+python3 -m pip install fork-from-retry
+```
