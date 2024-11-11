@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: personal_assistant_bot_pyoneers
+Version: 1
+Summary: A DEMO version of Personal Assistant Bot.
+Home-page: https://github.com/SergeyPoly/goit-pycore-final-project.git
+Author: PyOneers-team
+Author-email: spoly82@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: prompt_toolkit
+Requires-Dist: prettytable
+Requires-Dist: colorama
+Requires-Dist: wcwidth
+
+command-line tool designed to assist you in organizing your contacts and notes efficiently. It allows you to easily manage and access contacts information (name, phone numbers, birthday, email address, and physical address) and additionally, to manage your personal notes as well as categorize them by titles or tags for better organization. Application works offline and doesn't require stable internet connection. All data is stored locally on your PC thus information remains secure and accessible whenever you need it.
