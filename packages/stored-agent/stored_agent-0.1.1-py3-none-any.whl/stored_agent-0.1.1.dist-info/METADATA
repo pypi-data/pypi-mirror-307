@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: stored-agent
+Version: 0.1.1
+Summary: A framework for building agents that persist state between interactions.
+Author: Vijay Balasubramaniam
+Author-email: vbalasu@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# stored-agent
+
+A framework for building agents that persist state between interactions.
+
+## Usage
+
+#### Create a new agent and invoke it
+```python
+my_agent = StoredAgent(id='agent1', name='My Agent')
+response = my_agent.invoke(input='Hello, how are you?')
+print(response)
+```
+
+#### Load an existing agent and invoke it
+```python
+my_agent = StoredAgent(id='agent1')
+response = my_agent.invoke(input='Hello, how are you?')
+print(response)
+```
+
+
