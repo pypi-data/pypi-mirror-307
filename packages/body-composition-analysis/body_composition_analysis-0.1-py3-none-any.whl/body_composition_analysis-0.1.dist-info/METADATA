@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: body_composition_analysis
+Version: 0.1
+Summary: A package for body composition analysis from DICOM images.
+Author: Yeseul Kim
+Author-email: ykim23@mdanderson.org
+License-File: LICENSE
+Requires-Dist: nibabel ==5.3.2
+Requires-Dist: numpy <2.1.0,>=1.18.0
+Requires-Dist: pandas >=1.0
+Requires-Dist: scipy >=1.5
+Requires-Dist: setuptools >=40.0.0
+Requires-Dist: SimpleITK ==2.4.0
+Requires-Dist: TotalSegmentator ==2.4.0
+
