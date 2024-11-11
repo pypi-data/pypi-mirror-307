@@ -1,0 +1,12 @@
+pip
+wheel
+coverage
+twine==1.14.0
+pyyaml>=5.2
+click==7.0
+numpy
+six
+pytest
+pytest-runner
+pytest-xdist
+pytest-html

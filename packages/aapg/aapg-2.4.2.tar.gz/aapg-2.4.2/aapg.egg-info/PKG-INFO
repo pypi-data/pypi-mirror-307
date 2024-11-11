@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: aapg
+Version: 2.4.2
+Summary: RISC-V AAPG
+Home-page: https://gitlab.com/shaktiproject/tools/aapg
+Author: 
+Author-email: shakti.iitm@gmail.com
+License: MIT license
+Description:  AAPG 
+        
+        
+Keywords: aapg
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6.0
