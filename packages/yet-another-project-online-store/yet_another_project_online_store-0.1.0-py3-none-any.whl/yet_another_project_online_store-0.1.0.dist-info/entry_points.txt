@@ -1,0 +1,2 @@
+[console_scripts]
+online-store = online_store.__main__:main_menu
