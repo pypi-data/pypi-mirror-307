@@ -1,0 +1,13 @@
+<section class="design-system-accordion">
+  <{{ self.heading_tag | default:"h3" }} class="design-system-accordion__title">
+  <button type="button"
+          class="design-system-accordion__btn"
+          aria-expanded="false"
+          aria-controls="{{ self.id }}">
+    {{ self.title }}
+  </button>
+  </{{ self.heading_tag | default:"h3" }}>
+  <div class="design-system-collapse" id="{{ self.id }}">
+    {{ self.content | safe }}
+  </div>
+</section>

@@ -1,0 +1,18 @@
+{% load design_system_tags %}
+<div class="design-system-callout {% if self.icon_class %}{{ self.icon_class }}{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% if self.title %}
+    <{{ self.heading_tag | default:"p" }} class="design-system-callout__title">
+    {{ self.title }}
+    </{{ self.heading_tag | default:"p" }}>
+  {% endif %}
+  <p class="design-system-callout__text">
+    {{ self.text }}
+  </p>
+  {% if self.button %}
+    {% if self.button.onclick %}
+      {% design_system_button self.button %}
+    {% elif self.button.url %}
+      <a href="{{ self.button.url }}" class="design-system-btn">{{ self.button.label }}</a>
+    {% endif %}
+  {% endif %}
+</div>

@@ -1,0 +1,371 @@
+.design-system-code .hll {
+  background-color: var(--background-contrast-grey)
+}
+
+.design-system-code pre,
+pre.design-system-code {
+  background: var(--background-alt-grey);
+  border: 1px solid var(--border-default-grey);
+  color: var(--text-default-grey);
+  padding: 1rem;
+  margin: 2rem 0;
+  white-space: pre-wrap;
+}
+
+/* Comment */
+.design-system-code .c {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Error */
+.design-system-code .err {
+  border: 1px solid var(--red-marianne-main-472)
+}
+
+/* Keyword */
+.design-system-code .k {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Operator */
+.design-system-code .o {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Comment.Hashbang */
+.design-system-code .ch {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Multiline */
+.design-system-code .cm {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Preproc */
+.design-system-code .cp {
+  color: var(--warning-main-525)
+}
+
+/* Comment.PreprocFile */
+.design-system-code .cpf {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Single */
+.design-system-code .c1 {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Special */
+.design-system-code .cs {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Generic.Deleted */
+.design-system-code .gd {
+  color: var(--red-marianne-200)
+}
+
+/* Generic.Emph */
+.design-system-code .ge {
+  font-style: italic
+}
+
+/* Generic.Error */
+.design-system-code .gr {
+  color: var(--red-marianne-main-472)
+}
+
+/* Generic.Heading */
+.design-system-code .gh {
+  color: var(--design-system-primary-125);
+  font-weight: bold
+}
+
+/* Generic.Inserted */
+.design-system-code .gi {
+  color: var(--green-bourgeon-850)
+}
+
+/* Generic.Output */
+.design-system-code .go {
+  color: var(--grey-main-525)
+}
+
+/* Generic.Prompt */
+.design-system-code .gp {
+  color: var(--design-system-primary-125);
+  font-weight: bold
+}
+
+/* Generic.Strong */
+.design-system-code .gs {
+  font-weight: bold
+}
+
+/* Generic.Subheading */
+.design-system-code .gu {
+  color: var(--purple-glycine-sun-319);
+  font-weight: bold
+}
+
+/* Generic.Traceback */
+.design-system-code .gt {
+  color: var(--blue-cumulus-main-526)
+}
+
+/* Keyword.Constant */
+.design-system-code .kc {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Declaration */
+.design-system-code .kd {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Namespace */
+.design-system-code .kn {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Pseudo */
+.design-system-code .kp {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Keyword.Reserved */
+.design-system-code .kr {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Type */
+.design-system-code .kt {
+  color: var(--pink-tuile-200)
+}
+
+/* Literal.Number */
+.design-system-code .m {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.String */
+.design-system-code .s {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Name.Attribute */
+.design-system-code .na {
+  color: var(--green-tilleul-verveine-main-707)
+}
+
+/* Name.Builtin */
+.design-system-code .nb {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Name.Class */
+.design-system-code .nc {
+  color: var(--blue-ecume-main-400);
+  font-weight: bold
+}
+
+/* Name.Constant */
+.design-system-code .no {
+  color: var(--warning-200)
+}
+
+/* Name.Decorator */
+.design-system-code .nd {
+  color: var(--purple-glycine-main-494)
+}
+
+/* Name.Entity */
+.design-system-code .ni {
+  color: var(--grey-625);
+  font-weight: bold
+}
+
+/* Name.Exception */
+.design-system-code .ne {
+  color: var(--pink-tuile-sun-425);
+  font-weight: bold
+}
+
+/* Name.Function */
+.design-system-code .nf {
+  color: var(--blue-ecume-main-400)
+}
+
+/* Name.Label */
+.design-system-code .nl {
+  color: var(--green-tilleul-verveine-main-707)
+}
+
+/* Name.Namespace */
+.design-system-code .nn {
+  color: var(--blue-ecume-main-400);
+  font-weight: bold
+}
+
+/* Name.Tag */
+.design-system-code .nt {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Name.Variable */
+.design-system-code .nv {
+  color: var(--blue-cumulus-200)
+}
+
+/* Operator.Word */
+.design-system-code .ow {
+  color: var(--purple-glycine-main-494);
+  font-weight: bold
+}
+
+/* Text.Whitespace */
+.design-system-code .w {
+  color: var(--beige-gris-galet-main-702)
+}
+
+/* Literal.Number.Bin */
+.design-system-code .mb {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Float */
+.design-system-code .mf {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Hex */
+.design-system-code .mh {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Integer */
+.design-system-code .mi {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Oct */
+.design-system-code .mo {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.String.Affix */
+.design-system-code .sa {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Backtick */
+.design-system-code .sb {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Char */
+.design-system-code .sc {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Delimiter */
+.design-system-code .dl {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Doc */
+.design-system-code .sd {
+  color: var(--pink-tuile-main-556);
+  font-style: italic
+}
+
+/* Literal.String.Double */
+.design-system-code .s2 {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Escape */
+.design-system-code .se {
+  color: var(--brown-caramel-main-648);
+  font-weight: bold
+}
+
+/* Literal.String.Heredoc */
+.design-system-code .sh {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Interpol */
+.design-system-code .si {
+  color: var(--purple-glycine-main-494);
+  font-weight: bold
+}
+
+/* Literal.String.Other */
+.design-system-code .sx {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Literal.String.Regex */
+.design-system-code .sr {
+  color: var(--purple-glycine-main-494)
+}
+
+/* Literal.String.Single */
+.design-system-code .s1 {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Symbol */
+.design-system-code .ss {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Builtin.Pseudo */
+.design-system-code .bp {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Name.Function.Magic */
+.design-system-code .fm {
+  color: var(--blue-ecume-main-400)
+}
+
+/* Name.Variable.Class */
+.design-system-code .vc {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Global */
+.design-system-code .vg {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Instance */
+.design-system-code .vi {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Magic */
+.design-system-code .vm {
+  color: var(--blue-cumulus-200)
+}
+
+/* Literal.Number.Integer.Long */
+.design-system-code .il {
+  color: var(--beige-gris-galet-sun-407)
+}
