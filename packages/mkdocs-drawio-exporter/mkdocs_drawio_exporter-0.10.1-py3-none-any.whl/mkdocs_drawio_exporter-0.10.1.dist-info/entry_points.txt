@@ -1,0 +1,6 @@
+[console_scripts]
+test=scripts:test
+
+[mkdocs.plugins]
+drawio-exporter=mkdocs_drawio_exporter:DrawIoExporterPlugin
+
