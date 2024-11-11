@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_ruby/__init__.py
+bindings/python/tree_sitter_ruby/__init__.pyi
+bindings/python/tree_sitter_ruby/binding.c
+bindings/python/tree_sitter_ruby/py.typed
+bindings/python/tree_sitter_ruby.egg-info/PKG-INFO
+bindings/python/tree_sitter_ruby.egg-info/SOURCES.txt
+bindings/python/tree_sitter_ruby.egg-info/dependency_links.txt
+bindings/python/tree_sitter_ruby.egg-info/not-zip-safe
+bindings/python/tree_sitter_ruby.egg-info/requires.txt
+bindings/python/tree_sitter_ruby.egg-info/top_level.txt
+src/parser.c
+src/scanner.c
