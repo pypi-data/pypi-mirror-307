@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Blackforge
+Version: 0.1.12.2024
+Summary: Light Shines Brighter In The Dark.
+Home-page: https://github.com/d34d0s/BlackForge
+Author: Izaiyah Stokes
+Author-email: zeroth.bat@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: GLFW
+Requires-Dist: Numpy
+Requires-Dist: Numba
+Requires-Dist: PyGLM
+Requires-Dist: PyOpenGL
+Requires-Dist: ModernGL
+Requires-Dist: Pygame-CE
+Requires-Dist: SetupTools
+
+<img src=blackforge/assets/logo5x.png>
+
+# BlackForge
+#### Game-Development Framework Written In Pure Python
+<br>
+<hr>
