@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: scskde
+Version: 0.1.1
+Summary: Sequential Conditional Sampling from KDEs
+Project-URL: Homepage, https://github.com/MutaharChalmers/scskde
+Author-email: Mutahar Chalmers <mutahar.chalmers@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Mutahar Chalmers
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Requires-Dist: kdetools>=0.1.11
+Requires-Dist: numpy>=1.18
+Requires-Dist: tqdm>=4.66.2
+Description-Content-Type: text/markdown
+
+# scskde
+Sequential Conditional Sampling from Kernel Density Estimates (SCS-KDE) is a method to fit non-parametric models to time series and generate synthetic realisations. The method implemented extends the original work in Sharma et al (1997) Streamflow simulation: A nonparametric approach [https://doi.org/10.1029/96WR02839] to include
+- lag orders >= 1
+- arbitrary seasonality
+- vector-valued processes
+- exogenous forcing
+- arbitrary dependence structure
