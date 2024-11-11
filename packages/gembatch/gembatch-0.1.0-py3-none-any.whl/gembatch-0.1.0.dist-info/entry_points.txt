@@ -1,0 +1,2 @@
+[console_scripts]
+gembatch = gembatch.__main__:main
