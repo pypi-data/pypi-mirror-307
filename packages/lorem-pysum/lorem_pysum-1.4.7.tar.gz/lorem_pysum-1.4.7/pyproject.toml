@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "lorem-pysum"
+version = "1.4.7"
+description = "Library to generate instances of Pydantic models."
+readme = "README.md"
+repository = "https://gitlab.com/mburkard/lorem-pysum"
+homepage = "https://gitlab.com/mburkard/lorem-pysum"
+license = "MIT"
+authors = ["Matthew Burkard <matthewjburkard@gmail.com>"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+ruff = "^0.2.2"
+pytest = "^8.0.1"
+coverage = "^7.4.2"
+mypy = "^1.8.0"
+phonenumbers = "^8.13.30"
+pydantic-extra-types = "^2.5.0"
+pydantic = {extras = ["email"], version = "^2.6.1"}
+pytest-cov = "^6.0.0"
+py-undefined = "^0.1.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["lorem_pysum"]
+
+[tool.pyright]
+strict = ["**"]
+venvPath = "./"
+venv = ".venv"
+
+[tool.ruff]
+lint.select = [
+    "ARG",
+    "ASYNC",
+    "B",
+    "C4",
+    "D",
+    "E",
+    "EM",
+    "ERA",
+    "F",
+    "FBT",
+    "FA",
+    "FLY",
+    "FIX",
+    "ICN",
+    "INT",
+    "ISC",
+    "N",
+    "PL",
+    "PTH",
+    "PYI",
+    "Q",
+    "RET",
+    "S",
+    "SIM",
+    "T10",
+    "TD",
+    "TRY",
+]
+lint.ignore = [
+    "D203",  # Requires blank line before class doc-string.
+    "D213",  # Requires first doc string line on a new line.
+    "F841",  # Covered by pyright
+    "B007",  # Covered by pyright
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "D"]  # Ignore docs linting on tests.
