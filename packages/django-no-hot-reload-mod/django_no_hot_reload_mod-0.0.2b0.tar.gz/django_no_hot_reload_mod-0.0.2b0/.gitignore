@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+dist/
+build/
+*.egg-info/
+.pypirc
+.idea
+pyproject.toml
