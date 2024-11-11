@@ -1,0 +1,2 @@
+import{D as c,j as l,az as e,aA as h,A as f}from"./index.qhZ3u-nj.js";function F({element:s,width:a}){const d=s.hasWidth?s.width:a;let o,t;s.scrolling?(o="auto",t={}):(o="no",t={overflow:"hidden"}),t.colorScheme="normal";const r=i(s.src),n=c(r)?void 0:i(s.srcdoc);return l("iframe",{className:"stIFrame","data-testid":"stIFrame",allow:e,style:t,src:r,srcDoc:n,width:d,height:s.height,scrolling:o,sandbox:h,title:"st.iframe"})}function i(s){return f(s)||s===""?void 0:s}export{F as default};
+//# sourceMappingURL=index.F_M-smyK.js.map
