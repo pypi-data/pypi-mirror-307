@@ -1,0 +1,15 @@
+pycosep/__init__.py,sha256=2e549oF7lVz5HU6vnyEIfpqmOCK7jlRbM8kpg4051Dg,173
+pycosep/community_separability.py,sha256=d610BFHO1VlNqEfuGWu6TvKxStil5togLBfgTI73s-w,24241
+pycosep/concorde_settings.py,sha256=JDewXNqrkje8H7tez60oXKtQC6ctQ9If5GNPClJECZU,1261
+pycosep/separability_variants.py,sha256=7NfRWr_lOMdAQ6LQEey5e84WQvWpyvgCT9F1_ho26K4,95
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_concorde_settings.py,sha256=NWPYbRFZYaTFAh9g5v6_SBZpxGHvLn1ynL-ObQMjw1c,919
+tests/test_cps_community_separability.py,sha256=uiwxlKuRpr3gNB3Y_zmM_E53z94TRYcnJfHV4bCPTvw,13580
+tests/test_data.py,sha256=qlVeyn6460kNdlzWwAO0TBDb7g4_O9OVHDuL8A8Bmc0,11658
+tests/test_ldps_community_separability.py,sha256=nrZRHnMK13-KOnq9C_k5_X5MCST1cAIQsnnRh7YbPlY,13770
+tests/test_tsps_community_separability.py,sha256=I_AnizwOMSpDGsXwL92otuEAlIhGN7xMgiNz5wGTvNQ,13439
+pycosep-0.1.1.dist-info/LICENSE.md,sha256=tWk1jZbyo30oTrv7dgGSedHKGWdB4XrzrIlJY-zPnrM,1072
+pycosep-0.1.1.dist-info/METADATA,sha256=Gq0LPvRuaCYM0DxOFNchxn7hrwNsXyti7sJQWl0YQWg,5000
+pycosep-0.1.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+pycosep-0.1.1.dist-info/top_level.txt,sha256=FbF-fW1a2ocupJSnLFTlsplOyaFuhA2cRiXeUvxJxUs,14
+pycosep-0.1.1.dist-info/RECORD,,
