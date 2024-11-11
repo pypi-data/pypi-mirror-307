@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=67.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "symposium"
+version = "0.2.6"
+authors = [
+    {name="Alexander Fedotov", email="alex.fedotov@aol.com"},
+]
+description = "Interaction of multiple language models"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+keywords = ["symposium", "conversations", "ai"]
+dependencies = [
+    "requests >= 2.31.0",
+    "urllib3 >= 1.26.16",
+    "grammateus >= 0.0.10",
+    "PyYAML >= 6.0.0",
+    "ruamel.yaml >= 0.18.6",
+]
+[project.optional-dependencies]
+anthropic_native = ["anthropic >= 0.26.0"]
+bedrock = ["boto3 >= 1.28.57"]
+cohere = ["cohere >= 5.5.7"]
+gemini_google = ["google-generativeai >= 0.5.4"]
+groq = ["groq >= 0.6.0"]
+huggingface = ["huggingface_hub[inference] >= 0.22.3"]
+openai_native = ["openai >= 1.30.1"]
+vertex = ["google-cloud-aiplatform >= 1.51.0"]
+github = ["PyGithub >= 2.3.0"]
+[project.urls]
+"Homepage" = "https://github.com/multilogue/symposium"
+"Bug Tracker" = "https://github.com/multilogue/sumposium/issues"
