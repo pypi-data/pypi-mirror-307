@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+pulumi_alicloud_fc_url/__init__.py
+pulumi_alicloud_fc_url/_utilities.py
+pulumi_alicloud_fc_url/get_trigger_url.py
+pulumi_alicloud_fc_url/provider.py
+pulumi_alicloud_fc_url/pulumi-plugin.json
+pulumi_alicloud_fc_url/py.typed
+pulumi_alicloud_fc_url.egg-info/PKG-INFO
+pulumi_alicloud_fc_url.egg-info/SOURCES.txt
+pulumi_alicloud_fc_url.egg-info/dependency_links.txt
+pulumi_alicloud_fc_url.egg-info/requires.txt
+pulumi_alicloud_fc_url.egg-info/top_level.txt
+pulumi_alicloud_fc_url/config/__init__.py
+pulumi_alicloud_fc_url/config/__init__.pyi
+pulumi_alicloud_fc_url/config/vars.py
