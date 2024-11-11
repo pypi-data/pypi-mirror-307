@@ -1,0 +1,15 @@
+vrp_solver_ignore.libs/libboost_python310-cfb1546c.so.1.82.0,sha256=Q148XX1vPFa36QtzuwQsZ-xzpB_smsBdWiADC8ODJYY,476501
+vrp_solver_ignore.libs/libboost_graph-ee193630.so.1.82.0,sha256=iSwiTZe-IfO17_DFByEzEqbMVvR-3BFrdRTZa9GdDkw,503781
+vrp_solver_ignore.libs/libboost_regex-c5010ec4.so.1.82.0,sha256=j74wctphTBWHS-bPqkZYPr1IETG8fT774J5R69ccwpg,487493
+vrp_solver_ignore/SolverIgnoreMultiplicity.py,sha256=-DSHQ6RudnEWJBzhGcFe6yr1Dy3Mp5hcsjwl_UCy-FU,5247
+vrp_solver_ignore/SolverKBest.py,sha256=Weq2dCx7yNP-orHTkH27V4ndkBcQLXKXC2JSZi1F7K0,5088
+vrp_solver_ignore/cppWrapper.so,sha256=Wgd3FZZgjeB-Y-aXOudDuYL0BHjyt-ufESkSBx87Ldc,1311493
+vrp_solver_ignore/SolverIncremental.py,sha256=oxHzkqVCfMLxt76pjTTrncPKUEbzq3WGoB0-J9HhhZM,4823
+vrp_solver_ignore/__init__.py,sha256=FCLny_QgdlaOdPT8YOFZgPe2KKAUqlOjKeogJz9U1yg,463
+vrp_solver_ignore/ParentSolver.py,sha256=rHp0AjlFX_GxeHGqMKK0s_gmKYFPzBIWafQidjsf0sE,12873
+vrp_solver_ignore/SolverClassic.py,sha256=lK4fWJfIUMDY8KqdcuSrNpar4cfek4IqbdNVAQhONkM,4753
+vrp_solver_ignore/SolverIgnore.py,sha256=e7zOyO1Flg6PPoROwPauZFkGQDTvXNLdlWU05k4IbaU,5170
+vrp_solver_ignore-0.1.0.dist-info/top_level.txt,sha256=iFwVYcEK3cos2ATcr3F_c9RWv86-88MReZzn2d2OAM4,18
+vrp_solver_ignore-0.1.0.dist-info/RECORD,,
+vrp_solver_ignore-0.1.0.dist-info/METADATA,sha256=azqv3U4T8EfsnhJHhvshEBfVwii0XKHvCBfERrHj6LY,546
+vrp_solver_ignore-0.1.0.dist-info/WHEEL,sha256=CDyav1D4xQUbKbBWGflIBkneek9L7Og_Wa8RvGBpJyA,147
