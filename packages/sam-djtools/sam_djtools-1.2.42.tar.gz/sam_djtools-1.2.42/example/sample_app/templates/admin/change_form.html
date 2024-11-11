@@ -1,0 +1,6 @@
+{% extends "admin/change_form.html" %}
+{% load i18n static %}
+{% block object-tools %}
+    <h4>site : {{site_url}}</h4>
+    {{ block.super }}
+{% endblock %}
