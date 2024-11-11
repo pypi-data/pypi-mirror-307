@@ -1,0 +1,3 @@
+[console_scripts]
+deploydocus=deploydocus.cli.main:app
+
