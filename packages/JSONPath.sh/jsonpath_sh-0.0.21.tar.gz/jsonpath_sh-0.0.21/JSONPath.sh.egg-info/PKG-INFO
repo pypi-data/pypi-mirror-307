@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: JSONPath.sh
+Version: 0.0.21
+Summary: JSONPath implementation written in Bash
+Home-page: https://github.com/mclarkson/JSONPath.sh
+Author: Mark Clarkson
+Author-email: mark.clarkson@smorg.co.uk
+Classifier: Programming Language :: Unix Shell
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.APACHE2
+License-File: LICENSE.MIT
