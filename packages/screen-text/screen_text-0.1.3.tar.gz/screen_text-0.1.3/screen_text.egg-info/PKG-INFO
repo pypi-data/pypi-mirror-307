@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: screen-text
+Version: 0.1.3
+Summary: A tool for capturing and recognizing text on screen using ddddocr and mss.
+Home-page: https://github.com/yourusername/screen_text
+Author: 
+Author-email: shmily_006@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Screen Text Recognizer
+
+A Python package to capture and recognize text from a specific screen area using mss and ddddocr.
+
+## Installation
+
+```bash
+
+
+pip install screen-text
+
+濡傛灉澶辫触锛宲ip install opencv-python-headless --prefer-binary
+
+```
+
+```python
+
+from screen_text import ScreenTextRecognizer
+
+recognizer = ScreenTextRecognizer()
+text = recognizer.capture_and_recognize(100, 100, 300, 200)
+print("Recognized text:", text)
+
+
+```
+
+
+
+
