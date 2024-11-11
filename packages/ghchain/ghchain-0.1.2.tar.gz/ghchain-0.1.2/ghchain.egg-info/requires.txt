@@ -1,0 +1,10 @@
+Click>=7.0
+rich
+loguru
+pydantic>2
+GitPython
+pandas
+tabulate
+
+[test]
+pytest>=3
