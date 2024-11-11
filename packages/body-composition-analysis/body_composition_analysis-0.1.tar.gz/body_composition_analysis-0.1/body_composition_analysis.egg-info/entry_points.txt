@@ -1,0 +1,2 @@
+[console_scripts]
+body_composition = body_composition.cli:main
