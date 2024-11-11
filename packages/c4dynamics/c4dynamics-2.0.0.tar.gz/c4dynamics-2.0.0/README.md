@@ -1,0 +1,148 @@
+<div align="center">
+  <img src="https://github.com/C4dynamics/C4dynamics/raw/main/c4dynamics/utils/C4dynamics.png">
+</div>
+
+# Tsipor Dynamics
+## Algorithms Engineering and Development
+****
+
+
+C4Dynamics (read Tsipor (bird) Dynamics) is the open-source framework of algorithms development for motion estimation and control.
+
+[![My Skills](https://skillicons.dev/icons?i=python)](https://skillicons.dev)  
+
+
+Complete Documentation: https://c4dynamics.github.io/C4dynamics/
+
+
+## Table of contents
+- [Motivation](https://github.com/C4dynamics/C4dynamics/tree/main/#motivation)
+- [Installation](https://github.com/C4dynamics/C4dynamics/tree/main/#installation)
+- [Quickstart](https://github.com/C4dynamics/C4dynamics/tree/main/#quickstart)
+- [Architecture](https://github.com/C4dynamics/C4dynamics/tree/main/#architecture)
+- [Contributors ✨](https://github.com/C4dynamics/C4dynamics/tree/main/#contributors-✨)
+- [Quickstart for Contributors](https://github.com/C4dynamics/C4dynamics/tree/main/#quickstart-for-contributors)
+- [Getting Started](https://github.com/C4dynamics/C4dynamics/tree/main/#getting-started)
+- [Example 1: Objects Detection and Tracking](https://github.com/C4dynamics/C4dynamics/tree/main/#example-1---objects-detection-and-tracking)
+- [Example 2: Missile Guidance Example](https://github.com/C4dynamics/C4dynamics/tree/main/#example-2---six-degrees-of-freedom-simulation)
+
+
+## Motivation
+C4dynamics provides two basic entities for developing and analyzing algorithms of objects in space and time:
+* datapoint: a class defining a point in space: position, velocity, acceleration, and mass. 
+* rigidbody: a class defining a rigid body in space, i.e. an object with length and angular position. 
+
+You can develop and analyze algorithms by operating on these objects with one of the internal systems or algorithms of C4dynamics:  
+* ODE Solver (4th order Runge-Kutta)  
+* Kalman Filter  
+* Extended Kalman Filter  
+* Luenberger Observer  
+* Radar System  
+* Altitude Radar  
+* IMU Model  
+* GPS Model  
+* Line Of Sight Seeker  
+  
+Or one of the 3rd party libraries integrated with C4dynamics:   
+* NumPy  
+* Matplotlib  
+* OpenCV  
+* YOLO  
+  
+Whether you're a seasoned algorithm engineer or just getting started, this framework has something to offer. Its modular design allows you to easily pick and choose the components you need, and its active community of contributors is always working to improve and expand its capabilities.
+  
+So why wait? Start using C4dynamics today and take your algorithms engineering to the next level!
+  
+
+
+
+## Installation 
+* PIP  
+```
+pip install c4dynamics
+```
+
+* GitHub  
+To run the latest GitHub version, download c4dynamics: 
+https://github.com/C4dynamics/C4dynamics
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *Note:*
+
+*If you face issues while cloning C4dynamics or using the YOLO detector, 
+it is likely that the yolov3.weights file has not been downloaded correctly.
+To resolve this, download and install [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) and then reinstall C4dynamics.*
+
+
+Install the required packages:
+```
+pip install -r requirements.txt
+```
+
+* Conda   
+Alternatively, run the preinstalled conda environment (see conda_installation.md):
+```
+conda env create -f c4dynamics_env.yaml
+```
+ 
+ 
+ 
+ 
+
+## Quickstart
+Import the framework:
+```
+import c4dynamics as c4d
+```
+
+Define a point in space with some initial conditions: 
+```
+pt = c4d.datapoint(x = 1000, vx = 100)
+```
+
+Define a body in space with some initial conditions: 
+```
+body = c4d.rigidbody(theta = 15 * 3.14 / 180)
+```
+
+Load an object detection module (YOLO):
+```
+yolodet = c4d.detectors.yolo(height = height, width = width)
+```
+
+Define a linear Kalman Filter, perform a prediction and an update: 
+```
+pt.filter = c4d.filters.kalman(np.hstack((z, np.zeros(2))), P, A, H, Q, R)
+pt.filter.predict()
+pt.filter.correct(measure)
+```
+
+Store the current state of the datapoint (at time t):
+```
+pt.store(t)
+```
+
+Store other variables added to the datapoint object:
+```
+pt.storevar('kalman_state', t)
+```
+
+Define errors to a general-purpose seeker with C4dynamics: 
+```
+rdr = c4d.seekers.radar(sf = 0.9, bias = 0, noisestd = 1)
+```
+
+
+
+
+
+## Architecture
+For Architecture & Roadmap, see the Wiki page.  
+
+
+
+
+
+
+
+
+
