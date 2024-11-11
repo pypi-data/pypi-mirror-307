@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: file_parser_sdk
+Version: 0.1
+Summary: File Parser SDK which is designed to parse various file types and transform them according to provided configuration
+Author: Dinesh Lakhara
+Author-email: dinesh.lakhara@cashfree.com
+Requires-Python: >=3.6
+Requires-Dist: boto3==1.12.42
+Requires-Dist: botocore==1.15.49
+Requires-Dist: numpy==1.24.2
+Requires-Dist: pandas==2.0.0
+Requires-Dist: mt-940==4.23.0
+Requires-Dist: xlrd==2.0.1
+Requires-Dist: openpyxl==3.1.2
+Requires-Dist: s3fs==0.4.2
+Requires-Dist: s3transfer==0.3.3
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pytz==2020.1
+Requires-Dist: json-logging==1.2.0
+Requires-Dist: pyzipper==0.3.6
+Requires-Dist: tabula-py==2.1.1
+Requires-Dist: urllib3==1.25.8
