@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "langrocks"
+version = "0.2.1"
+description = "Tools like web browser and code interpreters for LLMs"
+authors = ["ajhai <nitk.ajay@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "langrocks/app/server.py"},
+    {include = "langrocks/common/"},
+    {include = "langrocks/client/"},
+]
+
+[tool.poetry.scripts]
+langrocks-server = "langrocks.app.server:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pydantic = "^2.8.2"
+
+
+[tool.poetry.group.web_browser.dependencies]
+playwright = "^1.45.1"
+redis = "^5.0.7"
+
+
+[tool.poetry.group.dev.dependencies]
+grpcio-tools = "^1.65.1"
+
+
+[tool.poetry.group.server.dependencies]
+grpcio-health-checking = "^1.65.1"
+grpcio = "1.65.1"
+
+
+[tool.poetry.group.file_operations.dependencies]
+pypandoc-binary = "^1.13"
+
+
+[tool.poetry.group.code_runner.dependencies]
+jupyter-client = "^8.6.2"
+dill = "^0.3.8"
+ipython = "^8.26.0"
+ipykernel = "^6.29.5"
+virtualenv = "^20.26.3"
+
+[tool.poetry.plugins."jupyter_client.kernel_provisioners"]
+chroot-provisioner = "langrocks.common.provisioners.chroot:ChrootProvisioner"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
