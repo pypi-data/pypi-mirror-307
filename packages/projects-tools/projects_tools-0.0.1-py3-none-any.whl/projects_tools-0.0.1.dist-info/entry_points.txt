@@ -1,0 +1,2 @@
+[console_scripts]
+projects = projects_tools.commands:cli
