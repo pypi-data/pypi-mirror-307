@@ -1,0 +1,11 @@
+scikit-learn==1.5.1
+keras==3.6.0
+numpy==2.0.1
+pandas==2.2.2
+open3d==0.16.1
+webcolors==24.8.0
+nbformat==5.10.4
+matplotlib==3.9.1
+typing==3.7.4.3
+torch==2.2.2
+python==3.10.14
