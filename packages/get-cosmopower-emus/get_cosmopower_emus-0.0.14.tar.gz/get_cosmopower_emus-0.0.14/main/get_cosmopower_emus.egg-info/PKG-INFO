@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: get_cosmopower_emus
+Version: 0.0.14
+Summary: Package to download Cosmopower emulators.
+Maintainer-email: Boris Bolliet <bb667@cam.ac.uk>
+License: MIT
+Project-URL: Homepage, https://github.com/CLASS-SZ
+Project-URL: GitHub, https://github.com/CLASS-SZ
+Description-Content-Type: text/markdown
+
+# get_cosmopower_emus
+Utility package to automatically download emulators used by class_sz
