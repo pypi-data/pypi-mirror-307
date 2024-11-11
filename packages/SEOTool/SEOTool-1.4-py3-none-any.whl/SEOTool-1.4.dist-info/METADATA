@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: SEOTool
+Version: 1.4
+Summary: Some scripts for Baidu SEO purpose
+Home-page: 
+Author: Jiayu Tan
+Author-email: jtan010@uottawa.ca
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fake-useragent >=1.5.1
+Requires-Dist: requests >=2.32.3
+Requires-Dist: lxml >=5.3.0
+
+# SEO小工具 version 1.1
+* Ver 1.4
+    1. 修改逻辑bug
+* Ver 1.3
+    1. 修改部分逻辑
+    2. 抛弃session
+* Ver 1.2
+    1. 修改baidu_index_checker返回形式，额外返回目标链接
+* Ver 1.1 
+    1. 新添百度相关搜索收集脚本
+    2. 添加使用注释
+* Ver 1.0
+    1. 采用lxml库，抛弃BeautifulSoup
+    2. 新添排名查询，收录查询功能
+暂无更多信息
