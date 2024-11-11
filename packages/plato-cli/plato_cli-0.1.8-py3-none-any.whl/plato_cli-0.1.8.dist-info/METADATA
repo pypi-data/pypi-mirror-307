@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: plato-cli
+Version: 0.1.8
+Summary: Plato Python Client
+Home-page: https://github.com/useplato/plato-client
+Author: Rob Farlow
+Author-email: rob@plato.so
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: requests
+
+# Plato Python Client
+
+
+
