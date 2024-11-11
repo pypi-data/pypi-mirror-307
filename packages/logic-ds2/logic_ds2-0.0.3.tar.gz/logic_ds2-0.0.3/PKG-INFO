@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: logic-ds2
+Version: 0.0.3
+Summary: Teaching library for the LogicDS project course
+Home-page: https://github.com/brn378/logicds
+Author: Barnas Monteith,LogicDS
+Author-email: LogicDS Barnas Monteith <barnas@engagescience.org>
+License: MIT License
+        
+        Copyright (c) 2024 <LogicDS Project: Texas Tech University, Center for Science Engagement, University of Florida, Concord Consortium>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/brn378/logicds
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: feedparser>=5.2.0
+Requires-Dist: html2text
+Requires-Dist: tomli; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+Welcome to the Logic-DS Library Repository
+by the LogicDS Team, admin: Barnas Monteith, 2024
+
+logic-ds is a Python library aimed at helping students learn functions; in this library we focus on creating functions that gradually introduce students to core programming concepts like inputs, outputs, return values, conditionals, and loops.
+
+distributed as part of the LogicDS Project, housed at Texas Tech University, in conjunction with the University of FLorida, Center for Science Engagement and Concord Consortium
+National Science Foundation Award #2201393.  This library is intended to be used as a python teaching library, to aid in student understanding of the universal framework concept of LogicDS, which emphasizes he use of logic and reasoning principles in the pedagogical approaches to teaching fundamental skills behind data science, including math/statistics, computer science as well as AI.
+This library focuses on using alternative methods to aid in student understanding of functions with a focus on set theory, tuples, probability and linear regression.  The library is intended to be used along with the documentation and curricula provided through the LogicDS project courses and curricular framework.  
+
+For library usage instructions, see /docs/DOCUMENTATION
+
+More info about this project can be found at www.logicds.org
+
+This library is distributed under the MIT License. see LICENSE file for additional information.
+
+
