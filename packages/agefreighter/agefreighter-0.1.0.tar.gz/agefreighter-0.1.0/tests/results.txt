@@ -1,0 +1,105 @@
+All tests are run on an instance of Azure Database for PostgreSQL Flexible Server, Standard_D32ds_v4 (32 vcpus, 128 GiB memory), with 512 GiB / 2300 iops storage.
+
+test_loadFromSingleCSV : time, 57.41, chunk_size: 32, direct_loading: False
+test_loadFromSingleCSV : time, 6.68, chunk_size: 32, direct_loading: True
+test_copyFromSingleCSV : time, 5.40, chunk_size: 32
+
+test_loadFromCSVs : time, 10.35, chunk_size: 32, direct_loading: False
+test_loadFromCSVs : time, 5.29, chunk_size: 32, direct_loading: True
+test_copyFromCSVs : time, 4.60, chunk_size: 32
+
+test_loadFromSingleCSV : time, 32.08, chunk_size: 40, direct_loading: False
+test_loadFromSingleCSV : time, 6.56, chunk_size: 40, direct_loading: True
+test_copyFromSingleCSV : time, 5.70, chunk_size: 40
+
+test_loadFromCSVs : time, 16.42, chunk_size: 40, direct_loading: False
+test_loadFromCSVs : time, 4.93, chunk_size: 40, direct_loading: True
+test_copyFromCSVs : time, 4.63, chunk_size: 40
+
+test_loadFromSingleCSV : time, 25.31, chunk_size: 48, direct_loading: False
+test_loadFromSingleCSV : time, 6.31, chunk_size: 48, direct_loading: True
+test_copyFromSingleCSV : time, 5.65, chunk_size: 48
+
+test_loadFromCSVs : time, 10.20, chunk_size: 48, direct_loading: False
+test_loadFromCSVs : time, 5.04, chunk_size: 48, direct_loading: True
+test_copyFromCSVs : time, 5.59, chunk_size: 48
+
+test_loadFromSingleCSV : time, 25.66, chunk_size: 56, direct_loading: False
+test_loadFromSingleCSV : time, 6.37, chunk_size: 56, direct_loading: True
+test_copyFromSingleCSV : time, 5.47, chunk_size: 56
+
+test_loadFromCSVs : time, 10.28, chunk_size: 56, direct_loading: False
+test_loadFromCSVs : time, 4.97, chunk_size: 56, direct_loading: True
+test_copyFromCSVs : time, 4.83, chunk_size: 56
+
+test_loadFromSingleCSV : time, 26.49, chunk_size: 64, direct_loading: False
+test_loadFromSingleCSV : time, 6.12, chunk_size: 64, direct_loading: True
+test_copyFromSingleCSV : time, 5.24, chunk_size: 64
+
+test_loadFromCSVs : time, 10.63, chunk_size: 64, direct_loading: False
+test_loadFromCSVs : time, 4.91, chunk_size: 64, direct_loading: True
+test_copyFromCSVs : time, 4.91, chunk_size: 64
+
+test_loadFromSingleCSV : time, 28.86, chunk_size: 72, direct_loading: False
+test_loadFromSingleCSV : time, 6.03, chunk_size: 72, direct_loading: True
+test_copyFromSingleCSV : time, 5.32, chunk_size: 72
+
+test_loadFromCSVs : time, 10.47, chunk_size: 72, direct_loading: False
+test_loadFromCSVs : time, 4.97, chunk_size: 72, direct_loading: True
+test_copyFromCSVs : time, 5.38, chunk_size: 72
+
+test_loadFromSingleCSV : time, 26.18, chunk_size: 80, direct_loading: False
+test_loadFromSingleCSV : time, 6.04, chunk_size: 80, direct_loading: True
+test_copyFromSingleCSV : time, 5.62, chunk_size: 80
+
+test_loadFromCSVs : time, 10.51, chunk_size: 80, direct_loading: False
+test_loadFromCSVs : time, 4.86, chunk_size: 80, direct_loading: True
+test_copyFromCSVs : time, 5.19, chunk_size: 80
+
+test_loadFromSingleCSV : time, 27.73, chunk_size: 88, direct_loading: False
+test_loadFromSingleCSV : time, 5.86, chunk_size: 88, direct_loading: True
+test_copyFromSingleCSV : time, 5.48, chunk_size: 88
+
+test_loadFromCSVs : time, 10.61, chunk_size: 88, direct_loading: False
+test_loadFromCSVs : time, 4.73, chunk_size: 88, direct_loading: True
+test_copyFromCSVs : time, 5.20, chunk_size: 88
+
+test_loadFromSingleCSV : time, 26.37, chunk_size: 96, direct_loading: False
+test_loadFromSingleCSV : time, 6.05, chunk_size: 96, direct_loading: True
+test_copyFromSingleCSV : time, 5.77, chunk_size: 96
+
+test_loadFromCSVs : time, 10.57, chunk_size: 96, direct_loading: False
+test_loadFromCSVs : time, 4.91, chunk_size: 96, direct_loading: True
+test_copyFromCSVs : time, 5.07, chunk_size: 96
+
+test_loadFromSingleCSV : time, 27.91, chunk_size: 104, direct_loading: False
+test_loadFromSingleCSV : time, 5.62, chunk_size: 104, direct_loading: True
+test_copyFromSingleCSV : time, 5.30, chunk_size: 104
+
+test_loadFromCSVs : time, 10.45, chunk_size: 104, direct_loading: False
+test_loadFromCSVs : time, 4.55, chunk_size: 104, direct_loading: True
+test_copyFromCSVs : time, 5.09, chunk_size: 104
+
+test_loadFromSingleCSV : time, 28.43, chunk_size: 112, direct_loading: False
+test_loadFromSingleCSV : time, 5.65, chunk_size: 112, direct_loading: True
+test_copyFromSingleCSV : time, 5.36, chunk_size: 112
+
+test_loadFromCSVs : time, 10.85, chunk_size: 112, direct_loading: False
+test_loadFromCSVs : time, 4.64, chunk_size: 112, direct_loading: True
+test_copyFromCSVs : time, 5.06, chunk_size: 112
+
+test_loadFromSingleCSV : time, 29.76, chunk_size: 120, direct_loading: False
+test_loadFromSingleCSV : time, 5.36, chunk_size: 120, direct_loading: True
+test_copyFromSingleCSV : time, 5.36, chunk_size: 120
+
+test_loadFromCSVs : time, 15.51, chunk_size: 120, direct_loading: False
+test_loadFromCSVs : time, 4.59, chunk_size: 120, direct_loading: True
+test_copyFromCSVs : time, 4.93, chunk_size: 120
+
+test_loadFromSingleCSV : time, 25.74, chunk_size: 128, direct_loading: False
+test_loadFromSingleCSV : time, 5.25, chunk_size: 128, direct_loading: True
+test_copyFromSingleCSV : time, 5.27, chunk_size: 128
+
+test_loadFromCSVs : time, 10.68, chunk_size: 128, direct_loading: False
+test_loadFromCSVs : time, 4.56, chunk_size: 128, direct_loading: True
+test_copyFromCSVs : time, 4.95, chunk_size: 128
