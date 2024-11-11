@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: opengis
+Version: 3.0.1
+Summary: Open source GIS tools.
+Author: Zijie Wang
+Author-email: 773598627@qq.com
+Project-URL: Source, https://github.com/caaszj/opengis
+Project-URL: Tracker, https://github.com/caaszj/opengis/issues
+Keywords: GIS Remote-sensing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: gdal
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: rasterio
+Requires-Dist: netCDF4
+
+## An open source GIS tool.
+Now implement the function:
+1. Batch reprojection
+2. Batch processing modis data
