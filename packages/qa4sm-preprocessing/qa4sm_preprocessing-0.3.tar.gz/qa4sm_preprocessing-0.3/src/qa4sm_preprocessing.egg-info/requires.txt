@@ -1,0 +1,23 @@
+numpy<2
+pandas==1.5.3
+netCDF4
+pyresample
+pygeobase
+parse
+pygeogrids>=0.4.0
+pynetcf
+repurpose>=0.12
+trollsift
+xarray
+zarr
+dask
+cf_xarray==0.8.4
+h5py
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
