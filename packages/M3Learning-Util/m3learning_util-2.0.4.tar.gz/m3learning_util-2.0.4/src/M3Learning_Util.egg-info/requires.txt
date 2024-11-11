@@ -1,0 +1,22 @@
+numpy
+pygments
+wget
+h5py
+torch
+matplotlib
+opencv-python
+tqdm
+seaborn
+requests
+globus-cli
+datafed
+tensorflow
+pytest
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
