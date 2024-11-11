@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: PyWindowsCMD
+Version: 1.2
+Summary: A Python library to simplify working with Windows command-line utilities like `netstat`, `shutdown`, and `taskkill`, providing structured output and a convenient interface.
+Author: oddshellnick
+Author-email: oddshellnick.programming@gmail.com
+Description-Content-Type: text/x-rst
+Requires-Dist: pandas
+Requires-Dist: PyVarTools
+
+PyWindowsCMD: Simplify Windows Command-Line Interactions
+========================================================
+
+PyWindowsCMD is a Python library designed to streamline working with common Windows command-line tools. It provides convenient functions and parameter handling for commands like ``netstat``, ``shutdown``, and ``taskkill``, abstracting away the complexities of constructing and executing these commands directly.
+
+
+Key Features
+------------
+
+* **Simplified Command Execution:**  Construct and execute Windows commands with intuitive function calls and parameter management.
+* **Structured Output Parsing:** Process the output of commands like ``netstat`` into easy-to-use Pandas DataFrames.
+* **Cross-Compatibility:** Designed to work seamlessly across various Windows versions.
+* **Clear Documentation and Examples:** Well-documented code and usage examples to get you started quickly.
+
+
+Current Functionality
+---------------------
+
+* **``netstat``:** Retrieve system network statistics, including active connections, routing tables, and interface information.  Parse the returned data directly into Pandas DataFrames. Conveniently find free ports on localhost.
+* **``shutdown``:** Initiate shutdowns and restarts of local or remote Windows systems with various options (forceful shutdown, reason logging, timeout period, etc.).
+* **``taskkill``:** Terminate processes based on various criteria such as image name or process ID.
+
+
+Installation
+------------
+
+Install PyWindowsCMD using pip:
+
+.. code-block:: bash
+
+   pip install PyWindowsCMD
+
+
+Usage Examples
+--------------
+
+**``taskkill``:**
+
+.. code-block:: python
+
+    from subprocess import Popen
+    from PyWindowsCMD.taskkill.command import build_taskkill_command
+    from PyWindowsCMD.taskkill.parameters import ImageName, ProcessFilter, ProcessID, RemoteSystem
+
+    # Forcefully kill all notepad.exe processes
+    Popen(build_taskkill_command(taskkill_type="/F", selectors=ImageName("notepad.exe")), shell=True)
+
+**``netstat``:**
+
+.. code-block:: python
+
+    from PyWindowsCMD.netstat.command import build_netstat_connections_list_command
+    from subprocess import PIPE, Popen
+
+    # Get all active TCP connections
+    output = Popen(build_netstat_connections_list_command(protocol="TCP"), stdout=PIPE, shell=True).communicate()[0].decode()
+
+
+**``shutdown``:**
+
+.. code-block:: python
+
+    from PyWindowsCMD.shutdown.parameters import ShutdownReason
+    from PyWindowsCMD.shutdown.command import build_shutdown_command
+    from subprocess import Popen
+
+    # Restart the local machine after 60 seconds, logging the reason
+    Popen(build_shutdown_command(shutdown_type="/r", time_out_period=60, shutdown_reason=ShutdownReason(4, "Maintenance")), shell=True)  # MajorReason=4 (Other)
+
+
+
+More comprehensive usage examples and detailed documentation can be found within the project's source code docstrings.
