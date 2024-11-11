@@ -1,0 +1,4 @@
+[console_scripts]
+compute_exposure = Compute_Exposure:main
+compute_perplexity = Compute_Perplexity:main
+generate_canaries = Generate_Canaries:main
