@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dsproc
+Version: 0.0.1b0
+Summary: dsproc: a powerful digital signals processing toolkit
+License-File: LICENSE.txt
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+dsproc is a Python package that enables the analysis and processing of digital radio signals using an intuitive and approachable framework. It supports end to end digital communcations and gives users the ability to encode and modulate data into radio waves of many types. Source code - https://github.com/importThat/dsproc
