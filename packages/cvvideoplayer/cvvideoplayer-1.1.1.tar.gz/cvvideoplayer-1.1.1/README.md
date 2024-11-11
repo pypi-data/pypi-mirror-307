@@ -1,0 +1,74 @@
+<div align="center"><img src="assets/logo.jpeg" width="250"></div>
+
+## Introduction
+CV video player is a Python-based customizable video player that helps computer vision practitioners
+to develop, analyze, and debug their video-related algorithms and models.
+
+The video player is interactive, operating only with keyboard presses (no UI buttons). The user can register 
+shortcuts using the VideoPlayer class's API.
+
+The player is designed as a callback system. When initialized the player receives a 
+list of callbacks, each with optional hooks for setup, before frame resize, and after frame resize.
+on runtime the callbacks hooks will run in order as specified in the input list.
+
+
+## See it in action
+<details>
+<summary>Running frame by frame</summary>
+    
+![frame_by_frame](https://github.com/danieltomer1/CVVideoPlayer/assets/163285251/7db8cb8c-0075-416c-9901-aa2f4bb49080)
+</details>
+
+<details>
+<summary>Play/Pause and control play speed and direction</summary>
+    
+![playpause](https://github.com/danieltomer1/CVVideoPlayer/assets/163285251/fcf38b37-ec9c-4250-8c2f-6f123154c1e4)
+</details>
+
+<details>
+<summary>Draw bounding boxes and adjust labels</summary>
+    
+![bboxes](https://github.com/danieltomer1/CVVideoPlayer/assets/163285251/0a6e07de-a015-48b4-b510-2c203e0d69f4)
+</details>
+
+## Installation
+`pip install cvvideoplayer`
+
+## Quick Start
+
+
+```python
+from cvvideoplayer import VideoPlayer
+from cvvideoplayer.frame_editors import FrameInfoOverlay, HistogramEqualizer, FrameNormalizer, KeyMapOverlay
+
+VIDEO_OR_FRAME_FOLDER_PATH = <add local path here>
+
+def run_player():
+    video_player = VideoPlayer(
+        video_source=VIDEO_OR_FRAME_FOLDER_PATH,
+        frame_edit_callbacks=[
+            FrameInfoOverlay(),
+            HistogramEqualizer(),
+            FrameNormalizer(),
+            KeyMapOverlay(),
+        ],
+        record=True,
+    )
+
+    with video_player:
+        video_player.run()
+
+
+if __name__ == "__main__":
+    run_player()
+``` 
+
+In this example, we initiate a very basic video player that will play "example_video.mp4" with added basic
+frame edit callbacks:
+- `FrameInfoOverlay`: Prints the current frame number and original frame resolution in the top left corner
+- `HistogramEqualizer`: Preforms histogram equalization on the image
+- `FrameNormalizer`: Allows the user to set a dynamic range for the image.
+- `KeyMapOverlay`: prints all optional shortcuts registered by all callbacks
+
+Check out the `./demos` folder which shows the use of other cool frame edit callback
+such as `OpticalFlow` and `DetectionCsvPlotter`

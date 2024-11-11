@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cvvideoplayer
+Version: 1.1.1
+Summary: moduler multi purpose video player for python
+Author: Daniel Tomer
+Author-email: danieltomer1@gmail.com
+Project-URL: Homepage, https://github.com/danieltomer1/CVVideoPlayer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: License.txt
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pynput
+Requires-Dist: python-xlib
+Requires-Dist: matplotlib
+
+CV video player is a Python-based customizable video player that helps computer vision practitioners to develop, analyze and debug their video related algorithms and model.
