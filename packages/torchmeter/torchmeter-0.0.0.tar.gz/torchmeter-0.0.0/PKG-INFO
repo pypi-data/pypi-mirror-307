@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: torchmeter
+Version: 0.0.0
+Summary: "Torchmeter ⏲️:  Your all-in-one tool for Pytorch model analysis, measuring Params, FLOPs/MACs(aka. MACC or MADD), Memory cost, Inference time and Throughput 🚀"
+Home-page: https://github.com/Ahzyuan/torchmeter
+Author: Ahzyuan
+Author-email: hzy_dev@yeah.net
+License: MIT
+Keywords: pytorch,model,parameter-estimation,model-analysis,inference-throughput,memory-estimation,calculation-estimation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: rich
+Provides-Extra: docs
+Requires-Dist: sphinx>=7.0.0; extra == "docs"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-sugar; extra == "test"
+
+# TorchMeter
+
+Welcome to `Torchmeter` ⏲️ !!!
+
+`Torchmeter` is an **all-in-one** tool for Pytorch model analysis 🚀🚀🚀, 
+providing methods in measuring 
+- Params
+- FLOPs/MACs(aka. MACC or MADD)
+- Memory cost
+- Inference time
+- Throughput!!
+
+
+> [!NOTE]        
+> This project is under development...        
+> Subscribe to [this repo](https://github.com/Ahzyuan/torchmeter) for more updates and new features!!        
+> Looking forward to your star if this project interest you ⭐⭐⭐
