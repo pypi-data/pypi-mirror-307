@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lilota_django/__init__.py
+lilota_django/apps.py
+lilota_django/models.py
+lilota_django/stores.py
+lilota_django/tests.py
+lilota_django.egg-info/PKG-INFO
+lilota_django.egg-info/SOURCES.txt
+lilota_django.egg-info/dependency_links.txt
+lilota_django.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lilota-django
+Version: 0.0.5
+Summary: A lightweight solution for long-running tasks
+Author-email: Tobias Rössler <tobiasroessler@gmail.com>
+Project-URL: Homepage, https://github.com/tobiasroessler/lilota-django
+Project-URL: Issues, https://github.com/tobiasroessler/lilota-django/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lilota-django
+
+Light weight solution for long running tasks when using Django.
