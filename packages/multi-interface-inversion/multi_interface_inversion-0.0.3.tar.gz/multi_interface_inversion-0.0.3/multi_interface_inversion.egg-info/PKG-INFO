@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: multi-interface-inversion
+Version: 0.0.3
+Summary: calculate gravity anomalies from multi-interfaces and estimate double-interfaces model from gravity anomalies, given prior information about constraints between the density interfacesthe using Crust1.0 model, where Vertical Gravity Gradient data are used asinputs
+Home-page: https://github.com/WangChao/MII
+Author: Wang Chao
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: cftime==1.6.4.post1
+Requires-Dist: contourpy==1.1.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: fonttools==4.54.1
+Requires-Dist: imageio==2.35.1
+Requires-Dist: importlib-resources==6.4.5
+Requires-Dist: kiwisolver==1.4.7
+Requires-Dist: lazy-loader==0.4
+Requires-Dist: matplotlib==3.7.5
+Requires-Dist: netCDF4==1.5.7
+Requires-Dist: networkx==3.1
+Requires-Dist: numpy==1.24.4
+Requires-Dist: packaging==24.2
+Requires-Dist: pandas==2.0.3
+Requires-Dist: pillow==10.4.0
+Requires-Dist: pygmt==0.9.0
+Requires-Dist: pyparsing==3.1.4
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: PyWavelets==1.4.1
+Requires-Dist: scikit-image==0.21.0
+Requires-Dist: scipy==1.10.1
+Requires-Dist: six==1.16.0
+Requires-Dist: tifffile==2023.7.10
+Requires-Dist: tzdata==2024.2
+Requires-Dist: xarray==2023.1.0
+Requires-Dist: zipp==3.20.2
+
+This packages is designed for the bathymetric model design and test.
+
+The gravity anomaly is caused by the fluctuation of several density interfaces. Given the 
+altitudes of these interfaces and the density assumption between those interfaces, the
+vertical gravity anomalies shall be obtained, which is implied as the forward process in 
+the Software. On the other hand, given the vertical gravity anomalies, some fluctuation of 
+density interfaces shall be determined, which is implied as the inverse process in the 
+Software.
