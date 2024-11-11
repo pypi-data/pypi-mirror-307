@@ -1,0 +1,16 @@
+multi_interface_inversion/__init__.py,sha256=ggbQ6wfK3iZ_ED6Tzw8KpyBwJk2Er5ffweBEG5dxkFk,213
+multi_interface_inversion/crust.py,sha256=1suoZ9Ek-rIgaWc0SWd2Mb3occmVngz-yRpmy9Z61hk,6069
+multi_interface_inversion/distance.py,sha256=eJo9tM5lz0KWtRUze8nGp1RZ0FaCBDuzi2VBP-TPcpo,631
+multi_interface_inversion/example_forward.py,sha256=jq-heI_qQN1GD8YLEufEAjaiToUn7CuJOIA5LaRPLnU,686
+multi_interface_inversion/example_inverse.py,sha256=xrLM-QsstAYTvijasixat1RFFWppC0b1Eghr840P2XI,1243
+multi_interface_inversion/global_grav_1min.py,sha256=1PEDOWQtPm61cBxPHvu5a3KK55KlvSqwR-cPL9Iq5GU,3405
+multi_interface_inversion/interfacetovgg.py,sha256=n4TaRvHlYjd7ScpIPwdQnQBUdO2h4Y9xs07UVs_JDq0,3613
+multi_interface_inversion/plt_tools.py,sha256=sejKEbpgmJ0DzxGs9Me4ydKPdMFuOY0SjBT3A9LQkGU,12078
+multi_interface_inversion/vggtointerface.py,sha256=eBtFjaEFPywteuo9eZ1A4Z83ZOlHLeStzxf-EA5W9Ic,11013
+multi_interface_inversion/dataset/crust1.bnds,sha256=d-qO9kB2Q5RK6kp7oug5rjAqoxkic2FXLKivEcvoss8,4147200
+multi_interface_inversion/dataset/crust1.rho,sha256=Ev-bZ57ovW0IAF2JTQ4Nkvs_FOX1ZNGOtOKahDMlxw8,3564000
+multi_interface_inversion-0.0.3.dist-info/METADATA,sha256=3lT4jxFhz-BhBSV2NqXIZd-OMjElf2CQMC1s98cGUKg,1927
+multi_interface_inversion-0.0.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+multi_interface_inversion-0.0.3.dist-info/license.txt,sha256=1nlLyUwHD3BxXd2CbdX9ws-z7awahoPslnovKykCE_s,1072
+multi_interface_inversion-0.0.3.dist-info/top_level.txt,sha256=CdKDvm6s85kbQp-Ud6Hf9C4lVJVrvl-ZxC5pVerA-s0,26
+multi_interface_inversion-0.0.3.dist-info/RECORD,,
