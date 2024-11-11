@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+automatically_change_wallpaper/__init__.py
+automatically_change_wallpaper/change_background.py
+automatically_change_wallpaper/main.py
+automatically_change_wallpaper/save_frame.py
+automatically_change_wallpaper.egg-info/PKG-INFO
+automatically_change_wallpaper.egg-info/SOURCES.txt
+automatically_change_wallpaper.egg-info/dependency_links.txt
+automatically_change_wallpaper.egg-info/entry_points.txt
+automatically_change_wallpaper.egg-info/top_level.txt
