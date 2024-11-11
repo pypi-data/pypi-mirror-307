@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: torchmini
+Version: 0.0.1
+Summary: A simplified PyTorch clone for educational purposes
+Home-page: https://github.com/BRAINIAC2677/torchmini
+Author: Asif Azad
+Author-email: asifazad0178@gmail.com
+Project-URL: Bug Tracker, https://github.com/BRAINIAC2677/torchmini/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# TorchMini
+
+TorchMini is a much much simpler version of PyTorch developed for educational purposes.
