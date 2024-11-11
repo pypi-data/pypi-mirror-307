@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: acond-heat-pump
+Version: 1.0.0
+Summary: A unofficial python library to interface with an Acond heat pump using the Modbus TCP protocol.
+Author: Jiří Bireš
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pymodbus (>=3.7.4,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Acond Heat Pump
+
+A unofficial python library to interface with an Acond heat pump
+using the Modbus TCP protocol.
+
+### ❗Warning❗
+Library is tested only with Acond PRO N heat pump as I don't have access to other models.
+If you have a different model and you want to test it, please let me know the results.
+
+## Usage
+
+### Connecting to the Heat Pump
+
+```python
+from acond_heat_pump import AcondHeatPump
+
+heat_pump = AcondHeatPump('192.168.1.16')
+heat_pump.connect()
+```
+
+### Reading Data
+
+```python
+response = heat_pump.read_data()
+print(response)
+```
+
+### Setting Temperatures
+
+```python
+heat_pump.set_indoor_temperature(25.0, circuit=1)
+heat_pump.set_dhw_temperature(45.0)
+heat_pump.set_water_back_temperature(35.0)
+heat_pump.set_pool_temperature(28.0)
+heat_pump.set_water_cool_temperature(20.0)
+```
+
+### Setting Modes
+
+```python
+from acond_heat_pump import RegulationMode, HeatPumpMode
+
+heat_pump.set_regulation_mode(RegulationMode.MANUAL)
+heat_pump.change_setting(mode=HeatPumpMode.AUTOMATIC)
+```
+
+### Closing the Connection
+
+```python
+heat_pump.close()
+```
+
+## Running Tests
+
+Run the unit tests using `unittest`:
+
+```sh
+python -m unittest discover tests
+```
+
+## License
+
+This project is licensed under the MIT License.
