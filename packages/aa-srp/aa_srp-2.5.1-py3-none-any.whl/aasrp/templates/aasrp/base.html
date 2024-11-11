@@ -1,0 +1,35 @@
+{% extends "allianceauth/base-bs5.html" %}
+
+{% load i18n %}
+
+{% block page_title %}
+    {% translate "Ship Replacement" %}
+{% endblock %}
+
+{% block header_nav_brand %}
+    {% translate "Ship Replacement" %}
+{% endblock %}
+
+{% block header_nav_collapse_left %}
+    {% include "aasrp/partials/navigation/top-navigation.html" %}
+{% endblock %}
+
+{% block header_nav_collapse_right %}
+    {% include "aasrp/partials/navigation/actions.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="aa-srp">
+        <div class="aa-srp-header">
+            {% block aasrp_header %}{% endblock %}
+        </div>
+
+        <div class="aa-srp-body">
+            {% block aasrp_body %}{% endblock %}
+        </div>
+
+        <div class="aa-srp-footer mt-3 pt-3 border-top border-light">
+            {% include "aasrp/partials/footer/app-translation-footer.html" %}
+        </div>
+    </div>
+{% endblock %}
