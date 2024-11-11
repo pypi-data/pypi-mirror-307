@@ -1,0 +1,3 @@
+[console_scripts]
+fit2parquets=fit2parquets.__init__:main
+
