@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ColourScript
+Version: 0.0.1
+Summary: A small package for functionality with text
+Author-email: Tariq Tayebi <tariq.tayebi1@education.nsw.gov.au>
+Project-URL: Homepage, https://google.com
+Project-URL: Issues, https://google.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ColourScript Package
+
+This is a simple package to manipulate colour in strings in Python. 
+More functionality being added in later versions.
+
+>Authored by Tariq Tayebi 2024 Sydney, Australia
