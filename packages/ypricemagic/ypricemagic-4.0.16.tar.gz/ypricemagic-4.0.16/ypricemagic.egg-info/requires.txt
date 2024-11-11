@@ -1,0 +1,11 @@
+bobs_lazy_logging==0.0.4
+checksum_dict>=1.1.1
+dank_mids>=4.20.97
+eth-brownie<1.21,>=1.19.3
+eth_retry<0.2,>=0.1.19
+ez-a-sync<0.24,>=0.22.1
+inflection<0.6,>=0.1
+joblib>=1.0.1
+multicall>=0.8.2
+pony
+pony-stubs
