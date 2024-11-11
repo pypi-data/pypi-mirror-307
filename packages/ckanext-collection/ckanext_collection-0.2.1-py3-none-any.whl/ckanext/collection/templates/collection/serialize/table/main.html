@@ -1,0 +1,27 @@
+{% set base_class = collection.serializer.base_class %}
+
+{% block content %}
+    {% block main %}
+        <div class="{{ base_class }}">
+            {% block form %}
+                {% snippet collection.serializer.form_template, collection=collection %}
+            {% endblock form %}
+
+            {% block table %}
+                <div class="{{ base_class }}--table" data-collection-name="{{ collection.name }}">
+                    {% snippet collection.serializer.table_template, collection=collection %}
+                </div>
+            {% endblock table %}
+
+            {% block pagination %}
+                <div class="{{ base_class }}--pagination">
+
+                    {% snippet collection.serializer.pager_template, collection=collection %}
+
+                </div>
+            {% endblock pagination %}
+
+        </div>
+
+    {% endblock main %}
+{% endblock content %}
