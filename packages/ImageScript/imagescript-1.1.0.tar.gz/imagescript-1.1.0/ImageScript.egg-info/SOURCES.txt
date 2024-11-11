@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+ImageScript.egg-info/PKG-INFO
+ImageScript.egg-info/SOURCES.txt
+ImageScript.egg-info/dependency_links.txt
+ImageScript.egg-info/entry_points.txt
+ImageScript.egg-info/requires.txt
+ImageScript.egg-info/top_level.txt
+imagescript/__init__.py
+imagescript/_utils.py
+imagescript/cmd.py
+imagescript/converter.py

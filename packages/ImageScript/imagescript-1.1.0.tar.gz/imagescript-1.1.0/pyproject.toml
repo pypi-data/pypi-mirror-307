@@ -1,0 +1,116 @@
+[build-system]
+requires = [
+    "setuptools>=75.0",
+    "pillow>=11.0.0",
+    "argparse>=1.4.0",
+    "pycryptodome>=3.21.0",
+    "numpy>=2.1.3"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic=["version"]
+requires-python = ">=3.12"
+name = "ImageScript"
+description = "A python library and command line tool to convert text to images and back."
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+keywords = ["steganography", "image", "security", "storage", "encryption", "experimental"]
+authors = [
+    { name = "Nikolas Teuschl", email = "niklas.teuschl@hotmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pillow>=11.0.0",
+    "argparse>=1.4.0",
+    "pycryptodome>=3.21.0",
+    "numpy>=2.1.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.7.3",
+    "pyright>=1.1.388",
+    "pdoc>=15.0.0",
+    "build>=1.2.2.post1",
+    "twine>=5.1.1"
+]
+
+[project.scripts]
+imagescript = "imagescript.cmd:main"
+
+[project.urls]
+Homepage = "https://github.com/NeoSecundus/ImageScript"
+Source = "https://github.com/NeoSecundus/ImageScript"
+
+[tool.setuptools]
+packages = ["imagescript"]
+
+[tool.setuptools.dynamic]
+version = { attr = "imagescript.__version__" }
+
+[tool.ruff]
+# Which types of errors to include
+lint.select = [
+    "F", # Pyflakes
+    "E", # PyCodestyle Errors
+    "W", # PyCodestyle Warnings
+    "I", # isort conventions (Import sorting)
+    "N", # PEP8 Naming Conventions
+    "PLC", # Pylint Conventions
+    "PLE", # Pylint Errors
+    "PLR", # Pylint Refactors
+    "PLW", # Pylint Warnings
+    "RUF", # Ruff specific errors
+    "RET", # Return statement checks
+    "TCH", # Flake8 Type Checks
+    "ERA", # Find commented out code
+    "SLF", # Private member access
+    "SIM", # Simplify
+    ]
+
+# Which specific rules to ignore
+lint.ignore = ["PLR2004", "RUF012"]
+
+# Maximum line length
+line-length = 120
+
+# Exclude unviable folders
+force-exclude = true
+exclude = [
+    ".git",
+    ".vscode",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "out",
+    "build",
+    "dist",
+    "scripts",
+    "playground",
+    "docs",
+    "test"
+]
+respect-gitignore = true
+
+# Group violations by containing file.
+output-format = "concise"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pylint]
+max-args = 6
+max-returns = 4
+
+[tool.ruff.lint.pycodestyle]
+ignore-overlong-task-comments = true
+max-doc-length = 120
+
+[tool.pyright]
+typeCheckingMode = "standard"
+ignore = ["test/"]
