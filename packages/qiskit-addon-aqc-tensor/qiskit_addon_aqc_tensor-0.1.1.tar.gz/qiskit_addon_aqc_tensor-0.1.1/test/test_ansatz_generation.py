@@ -1,0 +1,61 @@
+# This code is a Qiskit project.
+#
+# (C) Copyright IBM 2024.
+#
+# This code is licensed under the Apache License, Version 2.0. You may
+# obtain a copy of this license in the LICENSE.txt file in the root directory
+# of this source tree or at http://www.apache.org/licenses/LICENSE-2.0.
+#
+# Any modifications or derivative works of this code must retain this
+# copyright notice, and modified files need to carry a notice indicating
+# that they have been altered from the originals.
+
+import numpy as np
+import pytest
+from qiskit.circuit import QuantumCircuit
+from qiskit.circuit.random import random_circuit
+from qiskit.quantum_info import Operator, Statevector, process_fidelity, state_fidelity
+
+from qiskit_addon_aqc_tensor import generate_ansatz_from_circuit
+from qiskit_addon_aqc_tensor.ansatz_generation import KAK
+
+
+def test_ansatz_from_random_circuit_process_fidelity():
+    qc = random_circuit(6, 4, max_operands=2)
+    ansatz, initial_params = generate_ansatz_from_circuit(qc)
+    ansatz.assign_parameters(initial_params, inplace=True)
+    fidelity = process_fidelity(Operator(ansatz), Operator(qc))
+    assert fidelity == pytest.approx(1)
+
+
+def test_ansatz_from_random_circuit_state_fidelity():
+    qc = random_circuit(6, 4, max_operands=2)
+    ansatz, initial_params = generate_ansatz_from_circuit(qc, qubits_initially_zero=True)
+    ansatz.assign_parameters(initial_params, inplace=True)
+    fidelity = state_fidelity(Statevector(ansatz), Statevector(qc))
+    assert fidelity == pytest.approx(1)
+
+
+def test_ansatz_fails_given_three_qubit_gate():
+    qc = QuantumCircuit(3)
+    qc.h(0)
+    qc.h(1)
+    qc.ccx(0, 1, 2)
+    with pytest.raises(ValueError) as e_info:
+        generate_ansatz_from_circuit(qc)
+    assert (
+        e_info.value.args[0]
+        == "Only one- and two-qubit operations are allowed in the original circuit."
+    )
+
+
+def test_explicit_3cnot_kak_implementation():
+    rng = np.random.default_rng()
+    params = rng.standard_normal(3)
+    kak = KAK(params)
+    comparison_qc = QuantumCircuit(2)
+    comparison_qc.rxx(-2 * params[0], 0, 1)
+    comparison_qc.ryy(-2 * params[1], 0, 1)
+    comparison_qc.rzz(-2 * params[2], 0, 1)
+    fidelity = process_fidelity(kak, comparison_qc.to_gate())
+    assert fidelity == pytest.approx(1)
