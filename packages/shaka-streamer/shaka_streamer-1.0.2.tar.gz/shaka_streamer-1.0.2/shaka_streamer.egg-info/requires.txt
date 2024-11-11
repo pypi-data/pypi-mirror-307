@@ -1,0 +1,4 @@
+pyyaml<7,>=6
+
+[:platform_system == "Windows"]
+pywin32>=308
