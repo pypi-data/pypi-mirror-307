@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/meetSam/__init__.py
+src/meetSam/__main__.py
+src/meetSam/card_back.py
+src/meetSam/card_front.py
+src/meetSam/meet_sam.py
+src/meetSam.egg-info/PKG-INFO
+src/meetSam.egg-info/SOURCES.txt
+src/meetSam.egg-info/dependency_links.txt
+src/meetSam.egg-info/top_level.txt
