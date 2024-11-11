@@ -1,0 +1,3 @@
+[console_scripts]
+frigate-event-handler=frigate_event_handler.cli:main
+
