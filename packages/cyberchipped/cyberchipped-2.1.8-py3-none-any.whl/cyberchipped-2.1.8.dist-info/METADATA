@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: cyberchipped
+Version: 2.1.8
+Summary: Build AI Assistants Fast
+Home-page: https://github.com/truemagic-coder/cyberchipped
+License: MIT
+Keywords: ai,openai
+Author: Bevan Hunt
+Author-email: bevan@bevanhunt.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: aiosqlite (>=0.20.0,<0.21.0)
+Requires-Dist: motor (>=3.6.0,<4.0.0)
+Requires-Dist: openai (>=1.54.3,<2.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Project-URL: Repository, https://github.com/truemagic-coder/cyberchipped
+Description-Content-Type: text/markdown
+
+# CyberChipped
+
+[![PyPI - Version](https://img.shields.io/pypi/v/cyberchipped)](https://pypi.org/project/cyberchipped/)
+
+![CyberChipped Logo](https://cyberchipped.com/375.png)
+
+CyberChipped is a Python library that provides an AI-powered conversation interface using OpenAI's Assistant API. It supports both text and audio-based interactions, with features like thread management, message persistence, and custom tool integration.
+
+## Features
+
+- Streaming text-based conversations with AI
+- Audio transcription and streaming text-to-speech conversion
+- Thread management for maintaining conversation context
+- Message persistence using SQLite or MongoDB
+- Custom tool integration for extending AI capabilities
+
+## Installation
+
+You can install CyberChipped using pip:
+
+```bash
+pip install cyberchipped
+```
+
+## Usage
+
+Here's a basic example of how to use CyberChipped:
+
+```python
+from cyberchipped import AI, SQLiteDatabase
+
+async def main():
+    database = SQLiteDatabase("conversations.db")
+    async with AI("your_openai_api_key", "AI Assistant", "Your instructions here", database) as ai:
+        user_id = "user123"
+        response = await ai.text(user_id, "Hello, AI!")
+        async for chunk in response:
+            print(chunk, end="", flush=True)
+        print()
+
+# Run the async main function
+import asyncio
+asyncio.run(main())
+```
+
+## Contributing
+
+Contributions to CyberChipped are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
