@@ -1,0 +1,3 @@
+include README.md
+recursive-include computenestcli/resources *
+include computenestcli/log.conf
