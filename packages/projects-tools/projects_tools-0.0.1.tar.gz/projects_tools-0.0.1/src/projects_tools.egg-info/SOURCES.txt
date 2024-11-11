@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/projects_tools/__init__.py
+src/projects_tools/commands.py
+src/projects_tools/version.py
+src/projects_tools.egg-info/PKG-INFO
+src/projects_tools.egg-info/SOURCES.txt
+src/projects_tools.egg-info/dependency_links.txt
+src/projects_tools.egg-info/entry_points.txt
+src/projects_tools.egg-info/requires.txt
+src/projects_tools.egg-info/top_level.txt
+src/projects_tools/templates/Makefile.jinja2
+src/projects_tools/templates/README.md.jinja2
+src/projects_tools/templates/deploy.sh.jinja2
+src/projects_tools/templates/proxy.py.jinja2
+src/projects_tools/templates/setup.py.jinja2
