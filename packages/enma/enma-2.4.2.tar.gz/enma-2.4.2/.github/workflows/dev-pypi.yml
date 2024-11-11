@@ -1,0 +1,52 @@
+name: Development Pypi
+on:
+  push:
+    tags:
+      - "*-*"
+jobs:
+  testing-deploy:
+    name: Pypi
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/enma
+    permissions:
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.9
+
+      - name: Preparing the environment
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then python -m pip install -r requirements.txt; else python -m pip install beautifulsoup4 requests pydantic expiringdict pytest; fi
+
+      - name: Starting Testing Suites
+        run: |
+          ENMA_CACHING_STATE=disabled \
+          pytest ./tests
+
+      - name: Upload Report to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: pytest
+
+      - name: Building and Deploying
+        run: |
+          python -m pip install build twine wheel setuptools_scm setuptools
+          python -m build
+
+      - name: Publish a Python distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@v1.8.14
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          user: __token__
+          password: ${{ secrets.DEV_PYPI_API_TOKEN }}
+          packages_dir: dist/
