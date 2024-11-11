@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: SiddP6
+Version: 0.4.0
+Summary: Siddhartha Purwar portfolio pip package
+Home-page: UNKNOWN
+Author: Siddhartha Purwar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit==1.40.0
+
+# Sidd-Package
+Siddhartha's resume in the form of python-package 
+
+## Directory stracture
+
+    â”‚   .gitignore
+    â”‚   LICENSE
+    â”‚   README.md
+    â”‚   setup.py
+    â”‚
+    â””â”€â”€â”€sidd
+        â”‚   sidd.py
+        â”‚   __init__.py
+        â”‚
+        â”œâ”€â”€â”€bye
+        â”‚       bye.py
+        â”‚       __init__.py
+        â”‚
+        â”œâ”€â”€â”€contact
+        â”‚       contact.py
+        â”‚       __init__.py
+        â”‚
+        â”œâ”€â”€â”€education
+        â”‚       education.py
+        â”‚       __init__.py
+        â”‚
+        â”œâ”€â”€â”€experience
+        â”‚       experience.py
+        â”‚       __init__.py
+        â”‚
+        â”œâ”€â”€â”€hello
+        â”‚       hello.py
+        â”‚       __init__.py
+        â”‚
+        â””â”€â”€â”€project
+                project.py
+                __init__.py
+
+
+## Run Locally
+
+
+Install package
+```py
+  pip install siddp6
+```
+
+Import package
+```py
+  import sidd
+```
+
+Print all attributes and methods (functions , modules, strings, lists, dictionaries etc.)
+```py
+  print(dir(sidd))
+```
+
+## Output
+
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/91800813/208263532-9fd01cc9-530b-4758-b5e5-ac364ecc3722.png">
+
+
+## Tech & Tool
+
+__Language__: [Python](https://www.python.org/)
+
+
