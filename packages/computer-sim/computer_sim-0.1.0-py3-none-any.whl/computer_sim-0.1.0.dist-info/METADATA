@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: computer_sim
+Version: 0.1.0
+Summary: A computer simulation package
+Home-page: https://github.com/robsca/computer_sim
+Author: Roberto Scalas
+Author-email: scalas.roberto@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+What is this?
+
+This is a package that simulates a computer system.
+
