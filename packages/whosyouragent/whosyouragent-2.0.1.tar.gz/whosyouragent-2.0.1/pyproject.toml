@@ -1,0 +1,32 @@
+[project]
+name = "whosyouragent"
+description = "Self updating package for generating random user agent strings."
+version = "2.0.1"
+dependencies = ["requests", "bs4", "pytest", "whosyouragent", "beautifulsoup4"]
+readme = "README.md"
+keywords = ["useragent", "user-agent", "webscraping", "web-scraping"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
+requires-python = ">=3.6"
+
+[[project.authors]]
+name = "Matt Manes"
+email = ""
+
+[project.urls]
+Homepage = "https://github.com/matt-manes/whosyouragent"
+Documentation = "https://github.com/matt-manes/whosyouragent/tree/main/docs"
+"Source code" = "https://github.com/matt-manes/whosyouragent/tree/main/src/whosyouragent"
+
+[project.scripts]
+
+[tool]
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+pythonpath = "src"
+
+[tool.hatch.build.targets.sdist]
+exclude = [".coverage", ".pytest_cache", ".vscode", "tests", "htmlcov", "docs", "*.md"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
