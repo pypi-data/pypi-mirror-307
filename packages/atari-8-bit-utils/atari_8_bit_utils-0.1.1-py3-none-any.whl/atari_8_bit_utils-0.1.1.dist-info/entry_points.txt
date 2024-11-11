@@ -1,0 +1,2 @@
+[console_scripts]
+a8utils = atari_8_bit_utils.a8utils:app
