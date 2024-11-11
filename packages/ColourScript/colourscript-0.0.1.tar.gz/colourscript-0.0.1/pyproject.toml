@@ -1,0 +1,18 @@
+[project]
+name = "ColourScript"
+version = "0.0.1"
+authors = [
+  { name="Tariq Tayebi", email="tariq.tayebi1@education.nsw.gov.au" },
+]
+description = "A small package for functionality with text"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://google.com"
+Issues = "https://google.com"
