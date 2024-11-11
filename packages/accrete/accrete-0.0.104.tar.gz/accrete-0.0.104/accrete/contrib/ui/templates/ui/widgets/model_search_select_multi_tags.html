@@ -1,0 +1,6 @@
+{% for obj in selected %}
+    <span class="tag" style="white-space: normal; height: fit-content">
+        {{ obj }}
+        <button class="delete is-small" type="button" data-value="{{ obj.pk }}"></button>
+    </span>
+{% endfor %}

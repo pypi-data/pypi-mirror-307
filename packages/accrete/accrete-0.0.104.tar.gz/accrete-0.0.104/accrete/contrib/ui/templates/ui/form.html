@@ -1,0 +1,21 @@
+{% extends 'ui/layout.html' %}
+{% load i18n %}
+
+{% block content %}
+    <div class="columns is-desktop m-0" style="gap: 8px">
+        <div id="form-content" class="column p-0 is-8-desktop">
+            <div class="box mt-2">
+                {% if form.is_saved is False %}
+                    {% include 'ui/partials/form_errors.html' %}
+                {% endif %}
+                {% block form %}{% endblock %}
+            </div>
+        </div>
+        <div id="info-panel" class="column pt-0 px-0">
+            <div id="info-panel-content" class="p-0 mt-2">
+                {% block info_panel %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
