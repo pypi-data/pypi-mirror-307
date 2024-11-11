@@ -1,0 +1,2 @@
+[console_scripts]
+wakapi-anyide=wakapi_anyide.__main__:app
