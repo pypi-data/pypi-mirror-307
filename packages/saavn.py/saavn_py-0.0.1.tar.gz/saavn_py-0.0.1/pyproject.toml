@@ -1,0 +1,19 @@
+[project]
+name = "saavn.py"
+version = "0.0.1"
+authors = [
+  { name="author", email="saikihimangshu1256@gmail.com" },
+  { name="co-author", email="mainakpanda30@gmail.com" }
+]
+description = "Unofficial JioSaavn API Client for python "
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/0xhimangshu/jiosaavn-main"
+Issues = "https://github.com/0xhimangshu/jiosaavn-main/issues"
