@@ -1,0 +1,3 @@
+[console_scripts]
+moral-keeper-ai-server=moral_keeper_ai.server.server:main
+
