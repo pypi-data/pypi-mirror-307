@@ -1,0 +1,6 @@
+numpy
+scipy
+pandas==1.3.5
+matplotlib
+seaborn
+cooler==0.8.11
