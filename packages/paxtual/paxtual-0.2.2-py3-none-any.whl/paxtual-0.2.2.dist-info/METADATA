@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: paxtual
+Version: 0.2.2
+Author-email: Scott <fake@fake.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: aiohttp
+Requires-Dist: pandas
+Requires-Dist: reportlab
+Requires-Dist: reportlab-qrcode
+Requires-Dist: requests
+Requires-Dist: textual
+Description-Content-Type: text/markdown
+
+# paxtual
+
+[![PyPI - Version](https://img.shields.io/pypi/v/paxtual.svg)](https://pypi.org/project/paxtual)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/paxtual.svg)](https://pypi.org/project/paxtual)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install paxtual
+```
+
+## License
+
+`paxtual` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
