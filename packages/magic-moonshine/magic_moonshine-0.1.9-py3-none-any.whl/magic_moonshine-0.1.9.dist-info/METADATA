@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: magic-moonshine
+Version: 0.1.9
+Summary: A Python client for the Moonshine API
+Home-page: https://usemoonshine.com
+Author: Harsha Gundala
+Author-email: harsha@usemoonshine.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Requires-Dist: boto3>=1.26.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: typing-extensions>=4.0.0
+
+# Moonshine API Client
+
+A Python client for interacting with the Moonshine Edge Compute API.
+
+## Installation
+
+```bash
+pip install moonshine
+```
+
+## Usage
+
+```python
+import moonshine
+
+# Configure your API token
+moonshine.config(API="your-api-token")
+
+# Search in a bucket
+results = moonshine.search(bucket="your-bucket-id", query="your search query")
+print(results)
+```
