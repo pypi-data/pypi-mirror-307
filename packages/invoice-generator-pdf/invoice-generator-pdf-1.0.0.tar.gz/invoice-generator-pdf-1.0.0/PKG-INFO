@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: invoice-generator-pdf
+Version: 1.0.0
+Summary: A Python package designed to effortlessly convert Excel-based invoices into professionally formatted PDF invoices, complete with itemized tables, total calculations, and customizable company branding.
+Home-page: https://rishil121.vercel.app
+Author: Rishil Shah
+Author-email: rishil1211@outlook.com
+License: MIT
+Keywords: invoice,excel,pdf,generator,billing,automation,finance,reporting,invoicing,pdf generation,data processing,xlsx to pdf,business tools,accounting,sales,Python,FPDF,PDF creator,Excel parser,document automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+
+UNKNOWN
+

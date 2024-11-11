@@ -1,0 +1,8 @@
+setup.py
+invoice_generator_pdf.egg-info/PKG-INFO
+invoice_generator_pdf.egg-info/SOURCES.txt
+invoice_generator_pdf.egg-info/dependency_links.txt
+invoice_generator_pdf.egg-info/requires.txt
+invoice_generator_pdf.egg-info/top_level.txt
+invoicing/__init__.py
+invoicing/invoicegenerator.py
