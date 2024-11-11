@@ -1,0 +1,26 @@
+{% extends "collection/serialize/table/table.html" %}
+
+{% import "macros/form.html" as form %}
+{% set sort_name = collection.name ~ ":sort" %}
+{% set sort_value = collection.params.sort %}
+
+{% block table %}
+    <input name="{{ sort_name }}" type="hidden" value="{{ sort_value }}" form="{{ collection.serializer.form_id }}"/>
+    {{ super() }}
+{% endblock table %}
+
+{% block header_cell %}
+    {% if is_sortable %}
+        {# use button that updates hidden field and submits the
+        form instead of the link, to keep all active filters #}
+        <button class="sort-trigger" type="button" form="{{ collection.serializer.form_id }}"
+                onclick="this.form['{{ sort_name }}'].value = this.value; this.form.dispatchEvent(new Event('change'))"
+                value="{{ secondary_order if sort_value == primary_order else primary_order }}">
+            {{ collection.columns.labels[col] or col }}
+        </button>
+
+    {% else %}
+        <span>{{ collection.columns.labels[col] or col }}</span>
+
+    {% endif %}
+{% endblock %}

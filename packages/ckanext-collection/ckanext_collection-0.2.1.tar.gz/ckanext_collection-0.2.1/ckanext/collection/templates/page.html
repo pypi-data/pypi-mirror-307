@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{% block scripts %}
+    {{ super() }}
+    {% if h.collection_include_htmx_asset() %}
+        {% asset "collection/htmx" %}
+    {% endif %}
+
+    {% if h.collection_init_modules_in_htmx_response() %}
+        {% asset "collection/htmx-init-ckan-modules" %}
+    {% endif %}
+
+{% endblock scripts %}
