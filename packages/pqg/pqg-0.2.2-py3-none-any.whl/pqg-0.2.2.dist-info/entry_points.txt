@@ -1,0 +1,2 @@
+[console_scripts]
+pqg = pandas_query_generator.__main__:main
