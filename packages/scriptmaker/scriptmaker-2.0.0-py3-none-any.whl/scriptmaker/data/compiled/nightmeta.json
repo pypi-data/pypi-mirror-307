@@ -1,0 +1,44 @@
+{
+  "DAWN": {
+    "edition": "special",
+    "firstNight": 70,
+    "firstNightReminder": "Wait for a few seconds. End the Night Phase.",
+    "id": "DAWN",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_DAWN.png",
+    "name": "Dawn",
+    "otherNight": 88,
+    "otherNightReminder": "Wait for a few seconds. End the Night Phase.",
+    "team": "_meta"
+  },
+  "DEMON": {
+    "edition": "special",
+    "firstNight": 18,
+    "firstNightReminder": "If there are 7 or more players, wake the Demon:\n\tShow the *THESE ARE YOUR MINIONS* token. Point to all Minions.\n\tShow the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",
+    "id": "DEMON",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_DEMON.png",
+    "name": "Demon Info",
+    "otherNight": 0,
+    "team": "_meta"
+  },
+  "DUSK": {
+    "edition": "special",
+    "firstNight": 1,
+    "firstNightReminder": "Start the Night Phase.",
+    "id": "DUSK",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_DUSK.png",
+    "name": "Dusk",
+    "otherNight": 1,
+    "otherNightReminder": "Start the Night Phase.",
+    "team": "_meta"
+  },
+  "MINION": {
+    "edition": "special",
+    "firstNight": 14,
+    "firstNightReminder": "If there are 7 or more players, wake all Minions:\n\tShow the *THIS IS THE DEMON* token. Point to the Demon.\n\tShow the *THESE ARE YOUR MINIONS* token. Point to the other Minions.",
+    "id": "MINION",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_MINION.png",
+    "name": "Minion Info",
+    "otherNight": 0,
+    "team": "_meta"
+  }
+}
