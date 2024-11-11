@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: jnjrender
+Version: 0.1.0
+Summary: A utility to render Jinja2 templates in rendered text
+Author: Andrea Michelotti
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
