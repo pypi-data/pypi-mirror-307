@@ -1,0 +1,11 @@
+# Values for pH and phi taken from https://www.sciencedirect.com/science/article/pii/S0006349512002639 (values for compartment i are assumed)
+Compartment,pH,pMg,I,phi,T
+e,7.40,3,0.2,0.030,310.15
+c,7.20,3,0.2,0.000,310.15
+g,6.35,3,0.2,0.000,310.15
+i,8.00,3,0.2,-0.155,310.15
+l,5.50,3,0.2,0.019,310.15
+m,8.00,3,0.2,-0.155,310.15
+n,7.20,3,0.2,0.000,310.15
+r,7.20,3,0.2,0.000,310.15
+x,7.00,3,0.2,0.012,310.15
