@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "py-des-lib"
+version = "0.1.5"
+description = "Event discrete, process based simulation for Python."
+authors = ["vitostamatti <vitostamatti@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "pydes", from = "src" }]
+
+[tool.urls]
+Homepage = "https://pydes.readthedocs.io/"
+Documentation = "https://pydes.readthedocs.io/"
+"Source code" = "https://github.com/vitostamatti/pydes"
+
+[tool.setuptools]
+license-files = ["LICENSE.txt"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+greenlet = "^3.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-gen-files = "*"
+mkdocs-literate-nav = "*"
+mkdocs-section-index = "*"
+mkdocstrings = { extras = ["python"], version = "*" }
+
+# mkdocstrings[python] = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
