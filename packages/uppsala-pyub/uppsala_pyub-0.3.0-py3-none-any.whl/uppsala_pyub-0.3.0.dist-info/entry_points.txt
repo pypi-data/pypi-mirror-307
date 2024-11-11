@@ -1,0 +1,3 @@
+[console_scripts]
+pyub=uppsala_pyub.cli:cli
+
