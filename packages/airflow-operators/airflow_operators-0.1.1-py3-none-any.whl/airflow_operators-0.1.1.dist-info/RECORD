@@ -1,0 +1,8 @@
+src/airflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/airflow/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/airflow/operators/custom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/airflow/operators/custom/kafka.py,sha256=NrYWPytk4ATQNDA37ygR6BLWlOWucLHSFn7GZCj_ElI,2569
+src/airflow/operators/custom/sqlaclhemy.py,sha256=ZK_cfD6jA5cgwStFKG822AEE7tAl7oJ1VfyQz1wWKG0,1056
+airflow_operators-0.1.1.dist-info/METADATA,sha256=MNYf9y58DdZRc4FbmNTZawmY9Dwz2EPfI7kqJbgMrLc,885
+airflow_operators-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+airflow_operators-0.1.1.dist-info/RECORD,,
