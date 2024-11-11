@@ -1,0 +1,36 @@
+[project]
+name = "comfyui-idl"
+description = "ComfyUI Interface Definition Language"
+authors = [
+    { name = "Frost Ming", email = "frost@bentoml.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "comfy-cli>=1.2.8",
+    "pydantic>=2.9",
+]
+dynamic = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+version = "0.0.7"
+
+[project.urls]
+Homepage = "https://github.com/bentoml/ComfyUI-IDL"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = [
+    "src/",
+]
+
+[tool.pdm.version]
+source = "scm"
