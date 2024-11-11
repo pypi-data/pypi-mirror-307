@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: robotframework-djangolaunch
+Version: 0.9
+Summary: A Robot Framework library for starting and stopping Django.
+Home-page: https://github.com/mrannanj/robotframework-djangolaunch
+Author: Martti Rannanjärvi
+Author-email: martti.rannanjarvi@iki.fi
+License: Apache License 2.0
+Keywords: robotframework django test
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+License-File: LICENSE.txt
+Requires-Dist: Django
+Requires-Dist: robotframework
+
+==============================================================================
+A Robot Framework library for starting and stopping Django.
+==============================================================================
+
+
+Introduction
+------------
+
+DjangoLaunch is a Robot Framework library for starting and stoppping Django.
+
+It has been forked from
+https://github.com/kitconcept/robotframework-djangolibrary
+
+
+Documentation
+-------------
+
+Keywords are documented in `Robot Framework Django Launch Keyword Documentation`_.
+
+
+License
+-------
+
+Copyright kitconcept GmbH.
+
+Distributed under the terms of the Apache License 2.0,
+robotframework-djangolaunch is free and Open Source software.
+
+
+Credits
+-------
+
+This library was developed by Timo Stollenwerk at kitconcept.
+
+.. image:: kitconcept.png
+   :alt: kitconcept
+   :target: https://kitconcept.com/
+
+.. _`Robot Framework Django Launch Keyword Documentation`: https://mrannanj.github.io/robotframework-djangolaunch/
+
+
+0.9 (2024-11-11)
+------------------
+
+- Publish Keyword documentation.
+
+0.2 (2024-11-10)
+------------------
+
+- Cosmetic cleanups.
+
+0.1 (2024-11-09)
+------------------
+
+- Initial release. This is a fork of robotframework-djangolibrary that
+  only supports starting and stopping Django.
+
