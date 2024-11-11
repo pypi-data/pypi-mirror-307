@@ -1,0 +1,2 @@
+[console_scripts]
+collimator_cli = collimator.cli.collimator_cli:cli

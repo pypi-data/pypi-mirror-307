@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: pycollimator
+Version: 2.1.0
+Summary: Collimator.ai core simulation engine and API client
+Author-email: Collimator <support@collimator.ai>
+License: AGPLv3
+Project-URL: Homepage, https://www.collimator.ai
+Project-URL: Documentation, https://py.collimator.ai
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.header.txt
+License-File: LICENSE.md
+Requires-Dist: click~=8.1
+Requires-Dist: dataclasses-json~=0.6
+Requires-Dist: dataclasses-jsonschema~=2.16
+Requires-Dist: networkx~=3.1
+Requires-Dist: numpy~=1.26
+Requires-Dist: scipy~=1.11
+Requires-Dist: sympy~=1.11
+Requires-Dist: ts-type~=0.2
+Requires-Dist: simpleeval~=0.9
+Requires-Dist: diffrax~=0.5.0; platform_system != "Emscripten"
+Requires-Dist: equinox~=0.11.1; platform_system != "Emscripten"
+Requires-Dist: fmpy~=0.3.19; platform_system != "Emscripten"
+Requires-Dist: jax<=0.4.26,~=0.4.25; platform_system != "Emscripten"
+Requires-Dist: jaxlib<=0.4.26,~=0.4.25; platform_system != "Emscripten"
+Requires-Dist: jaxtyping~=0.2.25; platform_system != "Emscripten"
+Requires-Dist: jaxopt~=0.8.3; platform_system != "Emscripten"
+Requires-Dist: optax~=0.2.2; platform_system != "Emscripten"
+Requires-Dist: brax~=0.10.4; platform_system != "Emscripten"
+Requires-Dist: requests~=2.32; platform_system != "Emscripten"
+Requires-Dist: jaxlite; platform_system == "Emscripten"
+Requires-Dist: StrEnum~=0.4.15; python_version < "3.11"
+Provides-Extra: all
+Requires-Dist: control~=0.9.4; extra == "all"
+Requires-Dist: cyipopt~=1.3.0; extra == "all"
+Requires-Dist: osqp~=0.6.5; extra == "all"
+Requires-Dist: pandas~=2.2; extra == "all"
+Requires-Dist: pysindy~=1.7.5; extra == "all"
+Requires-Dist: pytwin~=0.6.0; extra == "all"
+Requires-Dist: sympy~=1.11.1; extra == "all"
+Requires-Dist: tensorflow~=2.16.1; extra == "all"
+Requires-Dist: torch~=2.3; extra == "all"
+Requires-Dist: mujoco; extra == "all"
+Requires-Dist: mujoco-mjx; extra == "all"
+Requires-Dist: evosax~=0.1.6; extra == "all"
+Requires-Dist: brax~=0.10.4; extra == "all"
+Requires-Dist: matplotlib~=3.9; extra == "all"
+Requires-Dist: opencv-python-headless; extra == "all"
+Requires-Dist: nlopt~=2.7; platform_machine == "x86_64" and extra == "all"
+Provides-Extra: nmpc
+Requires-Dist: cyipopt~=1.3.0; extra == "nmpc"
+Requires-Dist: osqp~=0.6.5; extra == "nmpc"
+Provides-Extra: recommended
+Requires-Dist: casadi~=3.6; extra == "recommended"
+Requires-Dist: roboticstoolbox-python~=1.1; extra == "recommended"
+Requires-Dist: scikit-learn~=1.3; extra == "recommended"
+Requires-Dist: spatialmath-python~=1.1; extra == "recommended"
+Requires-Dist: sysidentpy~=0.3; extra == "recommended"
+Requires-Dist: pybamm~=23.9; platform_system == "Linux" and extra == "recommended"
+Provides-Extra: safe
+Requires-Dist: control~=0.9.4; extra == "safe"
+Requires-Dist: pandas~=2.2; extra == "safe"
+Requires-Dist: pysindy~=1.7.5; extra == "safe"
+Requires-Dist: pytwin~=0.6.0; extra == "safe"
+Requires-Dist: sympy~=1.11.1; extra == "safe"
+Requires-Dist: tensorflow~=2.16.1; extra == "safe"
+Requires-Dist: torch~=2.3; extra == "safe"
+Requires-Dist: opencv-python-headless; extra == "safe"
+Requires-Dist: evosax~=0.1.6; extra == "safe"
+Requires-Dist: matplotlib~=3.9; extra == "safe"
+Requires-Dist: nlopt~=2.7; platform_machine == "x86_64" and extra == "safe"
+
+## Getting started
+
+### Prerequisites
+
+Python 3.10 or later is required.
+
+### Installation steps
+
+```bash
+pip install pycollimator
+```
+
+### Optional dependencies
+
+Nonlinear MPC blocks require `IPOPT` to be preinstalled.
+
+- On Ubuntu: `sudo apt install coinor-libipopt-dev`.
+- On macOS: `brew install ipopt`.
+
+On macOS with Apple Silicon (M series), `cmake` is also required to build and
+install `qdldl` and `osqp` dependencies. Install it with `brew install cmake`.
+
+Install all optional dependencies with:
+
+```bash
+pip install pycollimator[all]
+```
+
+### Tutorials
+
+Read the [Getting Started Tutorial](https://py.collimator.ai/tutorials/01-getting-started/)
+for a more complete example.
+
+## Documentation
+
+Head over to [https://py.collimator.ai](https://py.collimator.ai) for
+the API reference documentation as well as examples and tutorials.
+
+## Licensed under AGPLv3
+
+This package is released and licensed under the
+[AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
+
+Collimator, Inc reserves all rights to release
+under a different license under a different license at any time, as well as all
+rights to use the code in any way in their own commercial offerings.
