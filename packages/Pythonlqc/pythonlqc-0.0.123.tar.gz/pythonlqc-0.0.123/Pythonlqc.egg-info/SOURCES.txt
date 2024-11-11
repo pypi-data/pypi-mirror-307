@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+to_erase.json
+Pythonlqc.egg-info/PKG-INFO
+Pythonlqc.egg-info/SOURCES.txt
+Pythonlqc.egg-info/dependency_links.txt
+Pythonlqc.egg-info/entry_points.txt
+Pythonlqc.egg-info/requires.txt
+Pythonlqc.egg-info/top_level.txt
+cut_video/__init__.py
+cut_video/cut_video.py
+tests/test_run.py
