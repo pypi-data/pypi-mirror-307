@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: oanda-v20-client
+Version: 0.1.6
+Summary: A client library for accessing OANDA v20 REST API
+Author-email: Takin Profit LLC <takinprofit@gmail.com>
+License: MIT License
+Requires-Python: >=3.10
+Requires-Dist: attrs>=21.3.0
+Requires-Dist: dacite>=1.8.1
+Requires-Dist: httpx<0.28.0,>=0.20.0
+Requires-Dist: python-dateutil>=2.8.0
+Description-Content-Type: text/markdown
+
+# OANDA v20 Python Client
+
+A Python client library for the OANDA v20 REST API.
+
+## Installation
+
+```bash
+pip install oanda-v20-client
+```
+
+## Usage
+
+```python
+from oanda_v20_client import Client
+
+# Initialize the client
+client = Client(base_url="your_base_url", token="your_token")
+```
