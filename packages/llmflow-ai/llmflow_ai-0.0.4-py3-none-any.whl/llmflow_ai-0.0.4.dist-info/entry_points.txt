@@ -1,0 +1,2 @@
+[console_scripts]
+flow = llmflow_ai._cli.main:main
