@@ -1,0 +1,2 @@
+[console_scripts]
+enkie = enkie.console.cli:main
