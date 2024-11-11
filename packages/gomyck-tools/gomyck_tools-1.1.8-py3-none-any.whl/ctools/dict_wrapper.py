@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+__author__ = 'haoyang'
+__date__ = '2024/10/25 09:42'
+
+class DictWrapper(dict):
+  def __getattr__(self, key):
+    res = self.get(key)
+    if type(res) == dict:
+      return DictWrapper(res)
+    return res
+
+  def __setattr__(self, key, value):
+    self[key] = value
