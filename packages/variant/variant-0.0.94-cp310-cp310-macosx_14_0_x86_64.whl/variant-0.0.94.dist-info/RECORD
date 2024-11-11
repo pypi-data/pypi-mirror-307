@@ -1,0 +1,13 @@
+variant/.gitignore,sha256=XJr_ApsGWXGOqPaqA-Z7RsnZMR07sG0hbTPurJVGFAw,5
+variant/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+variant/cli.py,sha256=WCYYTAv1sOraJHxtc8arApHeasqcF6DlTUjRvU4Q390,6356
+variant/coordinate.py,sha256=k2u0BWaArlYG3f8CGZgJmtm4jfFlsILNiMsJQLyFOwA,6704
+variant/effect.py,sha256=NKwRt6CetV1DH8Miqykk9fWt51W0-GWm7IzaBas6xQE,16871
+variant/effect_ordering.py,sha256=3MDcWqy0Bgx45MNVswkbNOVR6FO3ytl3WIjeUxsLds0,1612
+variant/motif.py,sha256=NSgED5rQpoRBhjv9BNXoWiZNEH2ItjBjRsOS97mLpOg,3964
+variant/seqpy.c,sha256=agYQrSeGDzKi-4Lz0a8XvtJZY_PHLKrFzQqSuAOgOlo,2287
+variant/utils.py,sha256=m39U3mQFr9e-2HLT0eW2ea5Re3MpV0kMOHGmbDLzGyM,1112
+variant-0.0.94.dist-info/METADATA,sha256=yTknzMb4QXn0p-Fc_p-5eREGxfDOzFQI5gOt50CR93U,10452
+variant-0.0.94.dist-info/WHEEL,sha256=hdHUxY_V8eoLbnoP9hE3LD8Oeiy6btwSFboHhnv4grc,107
+variant-0.0.94.dist-info/entry_points.txt,sha256=82Sv4A1kNQw3Sfyo2CZMYBg290iiT0VnR1CtZxYyiOg,77
+variant-0.0.94.dist-info/RECORD,,
