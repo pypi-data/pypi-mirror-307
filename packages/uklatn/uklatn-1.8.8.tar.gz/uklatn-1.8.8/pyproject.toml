@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=74", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uklatn"
+description = "Ukrainian Cyrillic transliteration to Latin script"
+readme = "python/readme.md"
+dynamic = ["version"]
+authors = [
+    {name = "Pavlo Ivashkov"},
+]
+license = {file = "license"}
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+homepage = "https://github.com/paiv/uklatn"
+source = "https://github.com/paiv/uklatn"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools_scm]
+
