@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: comfyui-idl
+Version: 0.0.5
+Summary: ComfyUI Interface Definition Language
+Author-Email: Frost Ming <frost@bentoml.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/bentoml/ComfyUI-BentoML
+Requires-Python: >=3.8
+Requires-Dist: comfy-cli>=0.0.14
+Requires-Dist: pydantic>=2.9
+Description-Content-Type: text/markdown
+
+# ComfyUI-IDL
+
+ComfyUI custom nodes for input and output specification.
