@@ -1,0 +1,3 @@
+[console_scripts]
+commentbegone=commentbegone.remove_comments_cli:main
+
