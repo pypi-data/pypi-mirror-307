@@ -1,0 +1,17 @@
+microdot/__init__.py,sha256=9e0rnK5rHL05qRDVMCqzmA3uWX0YGf_sD2vfOJ8Q1_s,106
+microdot/asgi.py,sha256=mImYROZMAg-7UFoP0jXPCOyoLlkC6iDw-wXhie8VL4M,8100
+microdot/cors.py,sha256=LIJcrdiLXxGQ-kwHvkVkqUAi_N80CvEI9qNWHLc5DaQ,5270
+microdot/helpers.py,sha256=pT3pL3EGEApiwCxQRLzuB4ib9Jjwe7wol2w0aqyjdpQ,232
+microdot/jinja.py,sha256=j4mCao20nM41aCdULjZkkMfBET0dF9WvFq8BFUNiCOM,2302
+microdot/microdot.py,sha256=-0wxqxETurbalUca4odJ1d9shxgM8DP7iWbHMkzhW-o,53203
+microdot/session.py,sha256=78BiH-i9JJjXBL0McJSXzxACMhX0uGsvkQb54yX8Y34,5309
+microdot/sse.py,sha256=hqJjeJao8Wg-LRMrfP6yCqWboON-I8HizPgzMQ51S8s,3795
+microdot/test_client.py,sha256=dxKNfeSGKxueNYbw5XD4sJ_aBoNuda75rvVAhxG6ZtI,12943
+microdot/utemplate.py,sha256=C5iQKL_dCbjbVdZJoYBcYwvP0guM2FzscajnqeWWs7k,2543
+microdot/websocket.py,sha256=IaJ-fh2Pw7-NGLZtzPxoJ7pc914GgqFFJ6CErMxk_Fw,8188
+microdot/wsgi.py,sha256=W-moVq-sUNIEzF8bayOZDbAeGnmgzur6U-Tq36zvX1M,6078
+microdot-2.0.7.dist-info/LICENSE,sha256=H1Ceg0UN80AqIhOE_fFQi64uAOzdqltc87vFqn0p9yw,1072
+microdot-2.0.7.dist-info/METADATA,sha256=n-1pdWqGmzt2sC0TAxp36lpnJmS810dOuhmA9uTym98,3216
+microdot-2.0.7.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+microdot-2.0.7.dist-info/top_level.txt,sha256=_07jCe9mOYePAIYl28aExEJFutezYN2zqjw9i4yF8qM,9
+microdot-2.0.7.dist-info/RECORD,,
