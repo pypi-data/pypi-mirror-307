@@ -1,0 +1,2 @@
+[console_scripts]
+asn1tool = asn1tool.__init__:_main
