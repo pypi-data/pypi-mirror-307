@@ -1,0 +1,832 @@
+Metadata-Version: 2.1
+Name: gfdl_rest
+Version: 1.0.3
+Summary: Beta Package to implement REST API of Global Datafeeds
+Author: Global Datafeeds
+Author-email: developer@globaldatafeeds.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Global Datafeeds Python Library Description
+
+## Reference document for implementing python library of REST API by Global Datafeeds
+
+  
+REST API by Global Datafeeds is versatile, most modern, simple yet powerful API. This API will provide on demand realtime, historical and snapshot data in JSON /XML/ CSV format (for Tick, Minute and End-Of-Day periodicities). It is Suitable for Web, Mobile as well as Desktop Applications. Below is the list of functions and their details available in REST API. For more detailed documentation & support, refer to the page by  **Global Datafeeds** [here.](https://globaldatafeeds.in/global-datafeeds-apis/documentation-support/documentation/rest-api-documentation/) <br>
+
+This python library is developed to save time and efforts of clients while working on implementation of REST API of Global Datafeeds. List of functions (Data Requests) available is given below.
+ 
+
+## List of Functions:
+
+1. GetLastQuote
+2. GetLastQuoteShort
+3. GetLastQuoteShortWithClose
+4. GetLastQuoteArray
+5. GetLastQuoteArrayShort
+6. GetLastQuoteArrayShortWithClose
+7. GetSnapshot
+8. GetHistory
+9. GetHistoryAfterMarket
+10. GetExchanges
+11. GetInstruments
+12. GetInstrumentTypes
+13. GetProducts
+14. GetExpiryDates
+15. GetOptionTypes
+16. GetStrikePrices
+17. GetServerInfo
+18. GetLimitation
+19. GetMarketMessages
+20. GetExchangeMessages
+21. GetLastQuoteOptionChain
+22. GetExchangeSnapshot
+23. GetLastQuoteOptionGreeks
+24. GetLastQuoteArrayOptionGreeks
+25. GetLastQuoteOptionGreeksChain
+26. GetHistoryGreeks
+27. GetTopGainersLosers
+28. Parameters
+
+
+---
+
+# Getting Started
+
+## Installing a Library
+
+Client need to install this library to install the library by issuing the command from python console
+```
+python3 -m pip install gfdl_rest  
+```
+or on windows command prompt
+```
+pip install gfdl_rest  
+```
+---
+
+## How to Connect using REST API
+
+Once installation is completed client can connect to API server by the code sample given below:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+
+# api= rs.<Function Name> ('<ENDPOINT>', '<API_KEY>', xml=False, format_csv=False)
+```
+Here in above code sample:
+
+- Endpoint : endpoint is URL like 'http://endpoint:port/' or 'https://endpoint:port/'. End point URL and Port number will be provided by Global Datafeeds.
+
+- API Key : This is the key which will be authenticated and once key was authenticated, client can request data by using function given in the above list.
+
+---
+## GetLastQuote:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol with more details like Open, High, Low Close and many more fields. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>	
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuote('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuote('Exchange','InstrumentIdentifier',’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+print(result)
+```
+<br>**Example**  
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuote('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuote('NSE','SBIN-I')
+print(result)
+```
+Client will get latest data for 'SBIN' current contact in response. 'SBIN-I' is InstrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{'AVERAGETRADEDPRICE': 816.8, 'BUYPRICE': 814.9, 'BUYQTY': 12, 'CLOSE': 820.3, 'EXCHANGE': 'NSE', 'HIGH': 821.0, 'INSTRUMENTIDENTIFIER': 'SBIN', 'LASTTRADEPRICE': 814.9, 'LASTTRADEQTY': 1, 'LASTTRADETIME': 1724219587000, 'LOW': 813.3, 'OPEN': 820.3, 'OPENINTEREST': 0, 'PREOPEN': False, 'QUOTATIONLOT': 1.0, 'SELLPRICE': 814.95, 'SELLQTY': 325, 'SERVERTIME': 1724219587000, 'TOTALQTYTRADED': 3396213, 'VALUE': 2774026778.4, 'PRICECHANGE': -5.4, 'PRICECHANGEPERCENTAGE': -0.66, 'OPENINTERESTCHANGE': 0}
+```
+---
+## GetLastQuoteShort:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol in short with limited fields/values. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteShort('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteShort('Exchange','InstrumentIdentifier',’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+print(result)
+```
+<br>**Example:**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteShort('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteShort('NSE','SBIN')
+print(result)
+```
+Client will get latest data for 'NIFTY' current contact in response. 'NIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{'BUYPRICE': 816.8, 'EXCHANGE': 'NSE', 'INSTRUMENTIDENTIFIER': 'SBIN', 'LASTTRADEPRICE': 816.9, 'LASTTRADETIME': 1724220139000, 'SELLPRICE': 816.9}
+```
+---	
+## GetLastQuoteShortWithClose:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol in short with Close of Previous Day. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteShortWithClose('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteShortWithClose('Exchange','InstrumentIdentifier',’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteShortWithClose('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteShortWithClose('NSE','SBIN')
+print(result)
+```
+
+Client will get latest data for 'NIFTY' current contact in response. 'NIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{'BUYPRICE': 816.25, 'EXCHANGE': 'NSE', 'INSTRUMENTIDENTIFIER': 'SBIN', 'LASTTRADEPRICE': 816.35, 'LASTTRADETIME': 1724220269000, 'SELLPRICE': 816.35, 'CLOSE': 820.3}
+```
+---
+## GetLastQuoteArray:
+In this client will receive record of last (latest one) 'LastTradePrice' of multiple symbols with more details like Open, High, Low Close and many more fields. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArray('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.GetLastQuoteArray('Exchange','InstrumentIdentifier',’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArray('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.GetLastQuoteArray('NFO','NIFTY-I+BANKNIFTY-I+FINNIFTY-I')
+print(result)
+```
+
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+[{'AVERAGETRADEDPRICE': 24741.52, 'BUYPRICE': 24771.4, 'BUYQTY': 100, 'CLOSE': 24711.25, 'EXCHANGE': 'NFO', 'HIGH': 24794.0, 'INSTRUMENTIDENTIFIER': 'NIFTY-I', 'LASTTRADEPRICE': 24771.4, 'LASTTRADEQTY': 325, 'LASTTRADETIME': 1724230373000, 'LOW': 24685.05, 'OPEN': 24697.7, 'OPENINTEREST': 10891900, 'PREOPEN': False, 'QUOTATIONLOT': 25.0, 'SELLPRICE': 24772.9, 'SELLQTY': 100, 'SERVERTIME': 1724230373000, 'TOTALQTYTRADED': 2167550, 'VALUE': 53628481676.0, 'PRICECHANGE': 60.15, 'PRICECHANGEPERCENTAGE': 0.24, 'OPENINTERESTCHANGE': 119225}, 
+{'AVERAGETRADEDPRICE': 50636.84, 'BUYPRICE': 50577.3, 'BUYQTY': 15, 'CLOSE': 50892.2, 'EXCHANGE': 'NFO', 'HIGH': 50890.0, 'INSTRUMENTIDENTIFIER': 'BANKNIFTY-I', 'LASTTRADEPRICE': 50573.45, 'LASTTRADEQTY': 0, 'LASTTRADETIME': 1724230373000, 'LOW': 50463.0, 'OPEN': 50832.0, 'OPENINTEREST': 3052665, 'PREOPEN': False, 'QUOTATIONLOT': 15.0, 'SELLPRICE': 50582.5, 'SELLQTY': 90, 'SERVERTIME': 1724230373000, 'TOTALQTYTRADED': 2234070, 'VALUE': 113126245138.8, 'PRICECHANGE': -318.75, 'PRICECHANGEPERCENTAGE': -0.63, 'OPENINTERESTCHANGE': 280215}, 
+{'AVERAGETRADEDPRICE': 23128.74, 'BUYPRICE': 23102.65, 'BUYQTY': 50, 'CLOSE': 23210.5, 'EXCHANGE': 'NFO', 'HIGH': 23199.3, 'INSTRUMENTIDENTIFIER': 'FINNIFTY-I', 'LASTTRADEPRICE': 23100.0, 'LASTTRADEQTY': 0, 'LASTTRADETIME': 1724230372000, 'LOW': 23061.95, 'OPEN': 23157.0, 'OPENINTEREST': 69450, 'PREOPEN': False, 'QUOTATIONLOT': 25.0, 'SELLPRICE': 23107.7, 'SELLQTY': 50, 'SERVERTIME': 1724230372000, 'TOTALQTYTRADED': 48100, 'VALUE': 1112492394.0, 'PRICECHANGE': -110.5, 'PRICECHANGEPERCENTAGE': -0.48, 'OPENINTERESTCHANGE': 8075}] 
+```
+---
+## GetLastQuoteArrayShort:
+In this client will receive array of records of lastest 'LastTradePrice' of multiple symbols in short with limited fields/values. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+
+<br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayShort('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayShort('Exchange','InstrumentIdentifier1’+'InstrumentIdentifier2’,’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+)
+print(result)
+```
+
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayShort('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayShort('NFO','NIFTY-I+BANKNIFTY-I+FINNIFTY-I')
+print(result)
+```
+	
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br> 
+
+```
+[{'BUYPRICE': 24772.25, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'NIFTY-I', 'LASTTRADEPRICE': 24772.4, 'LASTTRADETIME': 1724230596000, 'SELLPRICE': 24775.4}, 
+{'BUYPRICE': 50572.0, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'BANKNIFTY-I', 'LASTTRADEPRICE': 50576.05, 'LASTTRADETIME': 1724230595000, 'SELLPRICE': 50577.45}, 
+{'BUYPRICE': 23098.05, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'FINNIFTY-I', 'LASTTRADEPRICE': 23100.0, 'LASTTRADETIME': 1724230596000, 'SELLPRICE': 23101.45}]
+ ```
+---
+## GetLastQuoteArrayShortWithClose:
+In this client will receive array of records of lastest 'LastTradePrice' of multiple symbols in short with limited fields/values with Close of Previous Day. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayShortWithClose('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayShortWithClose('Exchange','InstrumentIdentifier1’+'InstrumentIdentifier2’, ’isShortIdentifier <Optional>[true]/[false][default=false]’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayShortWithClose('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayShortWithClose('NFO','NIFTY-I+BANKNIFTY-I+FINNIFTY-I')
+print(result)
+```
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+[{'BUYPRICE': 24768.0, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'NIFTY-I', 'LASTTRADEPRICE': 24768.0, 'LASTTRADETIME': 1724230693000, 'SELLPRICE': 24770.2, 'CLOSE': 24711.25}, 
+{'BUYPRICE': 50558.75, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'BANKNIFTY-I', 'LASTTRADEPRICE': 50561.05, 'LASTTRADETIME': 1724230694000, 'SELLPRICE': 50564.0, 'CLOSE': 50892.2}, 
+{'BUYPRICE': 23093.7, 'EXCHANGE': 'NFO', 'INSTRUMENTIDENTIFIER': 'FINNIFTY-I', 'LASTTRADEPRICE': 23095.0, 'LASTTRADETIME': 1724230694000, 'SELLPRICE': 23098.15, 'CLOSE': 23210.5}]
+ ```
+---
+## GetSnapshot:
+In this client will receive snapshots data. This function returns latest snapshot data as per Periodicity & Period values provided. In this single call client can request maximum 25 number of symbols. This function will return array of latest single record for each requested symbol. Below is the sample code to get snapshot data:
+<br>**Syntax:**<br>
+``` 
+import gfdl_rest as rs
+
+api= rs.GetSnapshot('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Snapshot('Exchange',’Periodicity’,’Period’,'InstrumentIdentifier1’+'InstrumentIdentifier2’, ’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+print(result)
+```
+<br>**Example**
+``` 
+import gfdl_rest as rs
+
+api= rs.GetSnapshot('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Snapshot('NFO','Minute','1','NIFTY-I+BANKNIFTY-I+FINNIFTY-I')
+print(result)
+```  
+
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br> 
+
+```
+[{'CLOSE': 50571.7, 'EXCHANGE': 'NFO', 'HIGH': 50571.75, 'INSTRUMENTIDENTIFIER': 'FUTIDX_BANKNIFTY_28AUG2024_XX_0', 'TRADEDQTY': 2190, 'LASTTRADETIME': 1724230680000, 'LOW': 50557.7, 'OPEN': 50565.0, 'OPENINTEREST': 3052440},
+ {'CLOSE': 23093.35, 'EXCHANGE': 'NFO', 'HIGH': 23095.0, 'INSTRUMENTIDENTIFIER': 'FUTIDX_FINNIFTY_27AUG2024_XX_0', 'TRADEDQTY': 75, 'LASTTRADETIME': 1724230680000, 'LOW': 23093.35, 'OPEN': 23095.0, 'OPENINTEREST': 69475}, 
+{'CLOSE': 24769.95, 'EXCHANGE': 'NFO', 'HIGH': 24773.45, 'INSTRUMENTIDENTIFIER': 'FUTIDX_NIFTY_29AUG2024_XX_0', 'TRADEDQTY': 1675, 'LASTTRADETIME': 1724230680000, 'LOW': 24768.0, 'OPEN': 24770.0, 'OPENINTEREST': 10889950}] 
+```
+---
+# Historical data requests
+
+## GetHistory:
+This will returns historical data as per the periodicity and Period provided in request. Returned dat will be Tick, Minute candle or EOD. Client will get 2 types of response depend on the request
+<br>
+- Getbyperiod: This request will return the data between the provided period. Client need to provide From time and To time in this call. Below is the sample code to get history data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetHistory('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_History('Exchange','InstrumentIdentifier’,’Periodicity’,’Period’,'max <Optional>’,'From <Optional>’,’To <Optional>’, ’ isShortIdentifier <Optional>[true]/[false][default=false]’)
+#either use From and To parameter or Max parameter
+# From and To = user can select particular timeframe to get history data
+#Max = if user selects Max =10, response will get latest 10 records of history data
+print(result)
+```
+<br>**Example**
+
+```
+import gfdl_rest as rs
+
+api= rs.GetHistory('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_History('NFO','NIFTY-I','Minute','1','10','1723779900','1723802400')  print(result)
+```
+
+Here in this request From and To is a numerical value of UNIX Timestamp like ‘1658138400’ (18-07-2022 15:30:00). This value is expressed as no. of seconds since Epoch time (i.e. 1st January 1970). Also known as Unix Time. Please Visit [Epoch Converter](https://www.epochconverter.com/) to get formulae to convert human readable time to Epoch and vice versa.
+
+As a response to above call client will get all the 1 minute candle records between provided period.
+<br>
+- Getcaldle: This request will return the data in number of latest candles. Client need to provide number of candles in this call. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetHistory('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_History('Exchange','InstrumentIdentifier’,’Periodicity’,’Period’,'max <Optional>’,'usertTag<optional> ’, 'isShortIdentifier <Optional>[true]/[false][default=false]’)
+#either use From and To parameter or Max parameter
+# From and To = user can select particular timeframe to get history data
+#Max = if user selects Max =10, response will get latest 10 records of history data
+
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetHistory('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_History('NFO','NIFTY-I','TICK','1','10','surendran') 
+print(result)
+```
+
+Here in this request From and To is a numerical value of UNIX Timestamp like ‘1658138400’ (18-07-2022 15:30:00). This value is expressed as no. of seconds since Epoch time (i.e. 1st January 1970). Also known as Unix Time. Please Visit [Epoch Converter](https://www.epochconverter.com/) to get formulae to convert human readable time to Epoch and vice versa.
+As a response to above call, client will get all 10 number of 1 minute candle records. 
+
+<br>Sample response for both the calls is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+*OHLC Format:*
+``` 
+{'USERTAG': surendran, 'OHLC': [{'CLOSE': 24757.3, 'HIGH': 24794, 'LASTTRADETIME': 1724243400000, 'LOW': 24685.05, 'OPEN': 24697.7, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'TRADEDQTY': 2223325}, {'CLOSE': 24711.25, 'HIGH': 24765, 'LASTTRADETIME': 1724157000000, 'LOW': 24624.25, 'OPEN': 24639.95, 'OPENINTEREST': 10772675, 'QUOTATIONLOT': 25, 'TRADEDQTY': 3759150}, {'CLOSE': 24595.75, 'HIGH': 24661.75, 'LASTTRADETIME': 1724070600000, 'LOW': 24533, 'OPEN': 24640.2, 'OPENINTEREST': 10966725, 'QUOTATIONLOT': 25, 'TRADEDQTY': 3798325}, {'CLOSE': 24585.5, 'HIGH': 24606.15, 'LASTTRADETIME': 1723811400000, 'LOW': 24233, 'OPEN': 24322.35, 'OPENINTEREST': 11295600, 'QUOTATIONLOT': 25, 'TRADEDQTY': 9540625}, {'CLOSE': 24174.65, 'HIGH': 24228.65, 'LASTTRADETIME': 1723638600000, 'LOW': 24122.15, 'OPEN': 24199.95, 'OPENINTEREST': 11531500, 'QUOTATIONLOT': 25, 'TRADEDQTY': 4508525}, {'CLOSE': 24161, 'HIGH': 24390, 'LASTTRADETIME': 1723552200000, 'LOW': 24125.35, 'OPEN': 24349.95, 'OPENINTEREST': 11998675, 'QUOTATIONLOT': 25, 'TRADEDQTY': 5699100}, {'CLOSE': 24356.8, 'HIGH': 24530, 'LASTTRADETIME': 1723465800000, 'LOW': 24272, 'OPEN': 24355, 'OPENINTEREST': 11704100, 'QUOTATIONLOT': 25, 'TRADEDQTY': 6599150}, {'CLOSE': 24401.5, 'HIGH': 24444, 'LASTTRADETIME': 1723206600000, 'LOW': 24316.4, 'OPEN': 24350.2, 'OPENINTEREST': 11709075, 'QUOTATIONLOT': 25, 'TRADEDQTY': 6500325}, {'CLOSE': 24136.55, 'HIGH': 24357.75, 'LASTTRADETIME': 1723120200000, 'LOW': 24111, 'OPEN': 24299, 'OPENINTEREST': 12343075, 'QUOTATIONLOT': 25, 'TRADEDQTY': 9407300}, {'CLOSE': 24366.45, 'HIGH': 24397.95, 'LASTTRADETIME': 1723033800000, 'LOW': 24208.2, 'OPEN': 24310.2, 'OPENINTEREST': 12736375, 'QUOTATIONLOT': 25, 'TRADEDQTY': 8281950}]} 
+```
+  
+*TICK Format:*
+```
+{'USERTAG': surendran, 'TICK': [{'BUYPRICE': 24753.8, 'BUYQTY': 50, 'LASTTRADEPRICE': 24753.15, 'LASTTRADETIME': 1724231023000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24758, 'SELLQTY': 25, 'TRADEDQTY': 625}, {'BUYPRICE': 24753.05, 'BUYQTY': 125, 'LASTTRADEPRICE': 24754.35, 'LASTTRADETIME': 1724231021000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24755, 'SELLQTY': 25, 'TRADEDQTY': 100}, {'BUYPRICE': 24754.35, 'BUYQTY': 25, 'LASTTRADEPRICE': 24755.05, 'LASTTRADETIME': 1724231019000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24756.8, 'SELLQTY': 100, 'TRADEDQTY': 50}, {'BUYPRICE': 24754, 'BUYQTY': 25, 'LASTTRADEPRICE': 24754, 'LASTTRADETIME': 1724231018000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24755.05, 'SELLQTY': 25, 'TRADEDQTY': 100}, {'BUYPRICE': 24754, 'BUYQTY': 100, 'LASTTRADEPRICE': 24755, 'LASTTRADETIME': 1724231016000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24755.05, 'SELLQTY': 25, 'TRADEDQTY': 0}, {'BUYPRICE': 24754, 'BUYQTY': 100, 'LASTTRADEPRICE': 24755, 'LASTTRADETIME': 1724231015000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24757.7, 'SELLQTY': 100, 'TRADEDQTY': 550}, {'BUYPRICE': 24755.65, 'BUYQTY': 25, 'LASTTRADEPRICE': 24755.45, 'LASTTRADETIME': 1724231013000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24758, 'SELLQTY': 25, 'TRADEDQTY': 125}, {'BUYPRICE': 24755.45, 'BUYQTY': 25, 'LASTTRADEPRICE': 24755.05, 'LASTTRADETIME': 1724231012000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24758, 'SELLQTY': 25, 'TRADEDQTY': 125}, {'BUYPRICE': 24755.15, 'BUYQTY': 25, 'LASTTRADEPRICE': 24755.05, 'LASTTRADETIME': 1724231010000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24758.9, 'SELLQTY': 25, 'TRADEDQTY': 0}, {'BUYPRICE': 24755.15, 'BUYQTY': 25, 'LASTTRADEPRICE': 24755.05, 'LASTTRADETIME': 1724231008000, 'OPENINTEREST': 10906875, 'QUOTATIONLOT': 25, 'SELLPRICE': 24759, 'SELLQTY': 175, 'TRADEDQTY': 25}]} 
+```
+---
+## GetHistoryAfterMarket:
+This function returns historical data in the form of Tick, Minute or EOD as per request till previous working day. This function is useful for the users / service providers who want to provide services like back-testing as they do not need live / current day’s data. This should also save their API costs. To receive current day’s historical data via this function, you will need to send request after market is closed. Requests for this function are same as **History.**
+
+---
+## GetExchanges:
+Client will get the list of available exchanges configured for API Key. Below is the sample code to get exchanges data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetExchanges('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Exchanges()
+print(result)
+```
+ <br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetExchanges('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Exchanges()
+print(result)
+```
+Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{'EXCHANGES': ['BFO', 'BSE', 'BSE_DEBT', 'BSE_IDX', 'CDS', 'MCX', 'NFO', 'NSE', 'NSE_IDX']} 
+```
+---
+## GetInstrumentsOnSearch:
+This function will returns array of max. 20 instruments by selected exchange and ‘search string’. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetInstrumentsOnSearch('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_InstrumentsOnSearch('Exchange','Search’,’ InstrumentType <Optional>’,’Optiontype <Optional> ’,’ExpiryDate <Optional>,’StrikePrice <Optional>’,’OnlyActive[true/false] <Optional>’)
+ print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetInstrumentsOnSearch('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_InstrumentsOnSearch('NFO','NIFTY','OPTIDX','CE','22AUG2024') 
+ print(result)
+```
+
+As a response to above call, client will get records with details for 20 instruments under provided exchange and 'Search string'. <br> Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{'INSTRUMENTS': [{'EXCHANGE': 'NFO', 'EXPIRY': '22Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_22AUG2024_CE_27800', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '22Aug2024', 'STRIKEPRICE': 27800.0, 'TRADESYMBOL': 'NIFTY22AUG2427800CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}, {'EXCHANGE': 'NFO', 'EXPIRY': '22Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_22AUG2024_CE_22550', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '22Aug2024', 'STRIKEPRICE': 22550.0, 'TRADESYMBOL': 'NIFTY22AUG2422550CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}, .....................................{'EXCHANGE': 'NFO', 'EXPIRY': '22Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_22AUG2024_CE_22100', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '22Aug2024', 'STRIKEPRICE': 22100.0, 'TRADESYMBOL': 'NIFTY22AUG2422100CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}, {'EXCHANGE': 'NFO', 'EXPIRY': '22Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_22AUG2024_CE_22400', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '22Aug2024', 'STRIKEPRICE': 22400.0, 'TRADESYMBOL': 'NIFTY22AUG2422400CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}]}
+```
+--- 
+## GetInstruments:
+This function will returns array of instruments by selected exchange. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetInstruments('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Instruments('Exchange','Search’,’ InstrumentType <Optional>’,’Optiontype <Optional> ’,’ExpiryDate <Optional>,’StrikePrice <Optional>’,’OnlyActive[true/false] <Optional>’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetInstruments('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Instruments('NFO','NIFTY','OPTIDX','CE','29AUG2024')
+print(result)
+```  
+
+As a response to above call, client will get records with details for all the instruments under provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{'INSTRUMENTS': [{'EXCHANGE': 'NFO', 'EXPIRY': '29Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_29AUG2024_CE_18550', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '29Aug2024', 'STRIKEPRICE': 18550.0, 'TRADESYMBOL': 'NIFTY29AUG2418550CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}, {'EXCHANGE': 'NFO', 'EXPIRY': '29Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_29AUG2024_CE_18600', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '29Aug2024', 'STRIKEPRICE': 18600.0, 'TRADESYMBOL': 'NIFTY29AUG2418600CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}, ................................................. {'EXCHANGE': 'NFO', 'EXPIRY': '29Aug2024', 'IDENTIFIER': 'OPTIDX_NIFTY_29AUG2024_CE_29250', 'INDEXNAME': '', 'NAME': 'OPTIDX', 'OPTIONTYPE': 'CE', 'PRICEQUOTATIONUNIT': '', 'PRODUCT': 'NIFTY', 'PRODUCTMONTH': '29Aug2024', 'STRIKEPRICE': 29250.0, 'TRADESYMBOL': 'NIFTY29AUG2429250CE', 'UNDERLYINGASSET': '', 'UNDERLYINGASSETEXPIRY': '', 'QUOTATIONLOT': 25.0, 'DESCRIPTION': ''}]}
+```
+---  
+## GetInstrumentTypes:
+This function will returns list of Instrument Types (e.g. FUTIDX, FUTSTK, etc.) under provided exchange. Below is the sample code to get instrument types:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetInstrumentTypes('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_InstrumentTypes('Exchange')
+print(result)
+```
+<br>**Example:**
+```
+import gfdl_rest as rs
+
+api= rs.GetInstrumentTypes('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_InstrumentTypes('NFO')
+print(result)
+```
+
+As a response to above call, client will get the instrument types under provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'INSTRUMENTTYPES': ['FUTIDX', 'FUTSTK', 'OPTIDX', 'OPTSTK']} 
+```
+---	  
+## GetProducts: 
+This function will returns list of Products (e.g. NIFTY, BANKNIFTY, GAIL etc.) under provided exchange. Below is the sample code to get instrument types:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetProducts('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Products('Exchange')
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetProducts('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Products('NFO')
+print(result)
+```
+	  
+As a response to above call, client will get the list of products under provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'PRODUCTS': ['011NSETEST', '021NSETEST', '031NSETEST', '041NSETEST', '051NSETEST', '061NSETEST', '071NSETEST', '081NSETEST', '091NSETEST', '101NSETEST', '111NSETEST', '121NSETEST', '131NSETEST', '141NSETEST', '151NSETEST', '161NSETEST', '171NSETEST', '181NSETEST', 'AARTIIND', 'ABB', 'ABBOTINDIA', 'ABCAPITAL', 'ABFRL', 'ACC', 'ADANIENT', 'ADANIPORTS', 'ALKEM', 'AMBUJACEM', 'APOLLOHOSP', 'APOLLOTYRE', 'ASHOKLEY', 'ASIANPAINT', 'ASTRAL', 'ATUL', 'AUBANK', 'AUROPHARMA', 'AXISBANK', 'BAJAJ-AUTO', 'BAJAJFINSV', 'BAJFINANCE', 'BALKRISIND', 'BALRAMCHIN', 'BANDHANBNK', 'BANKBARODA', 'BANKNIFTY', 'COLPAL', 'CONCOR', 'COROMANDEL', 'CROMPTON', 'CUB', 'CUMMINSIND', 'DABUR', 'DALBHARAT', 'DEEPAKNTR', 'DIVISLAB', 'DIXON', 'DLF', 'DRREDDY', 'EICHERMOT', 'ESCORTS', 'EXIDEIND', 'FEDERALBNK', 'FINNIFTY', 'GAIL', 'GLENMARK', 'GMRINFRA', 'GNFC', 'GODREJCP', 'GODREJPROP', 'GRANULES', 'GRASIM', 'GUJGASLTD', 'HAL', 'HAVELLS', 'HCLTECH', 'HDFCAMC', 'RELIANCE', 'SAIL', 'SBICARD', 'SBILIFE', 'SBIN', 'SHREECEM', 'SHRIRAMFIN', 'SIEMENS', 'SRF', 'SUNPHARMA', 'SUNTV', 'SYNGENE', 'TATACHEM', 'TATACOMM', 'TATACONSUM', 'TATAMOTORS', 'TATAPOWER', 'TATASTEEL', 'TCS', 'TECHM', 'TITAN', 'TORNTPHARM', 'TRENT', 'TVSMOTOR', 'UBL', 'ULTRACEMCO', 'UNITDSPR', 'UPL', 'VEDL', 'VOLTAS', 'WIPRO', 'ZYDUSLIFE']} 
+```
+
+---
+## GetExpiryDates:
+This function will returns array of Expiry Dates (e.g. 25JUN2020, 30JUL2020, etc.) as per the parameter provided. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetExpiryDates('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ExpiryDates('Exchange','Product')
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetExpiryDates('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ExpiryDates('NFO','NIFTY')
+print(result)
+```
+As a response to above call, client will get the list of expiry dates for provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'EXPIRYDATES': ['22AUG2024', '29AUG2024', '05SEP2024', '12SEP2024', '19SEP2024', '26SEP2024', '31OCT2024', '26DEC2024', '27MAR2025', '26JUN2025', '24DEC2025', '25JUN2026', '31DEC2026', '24JUN2027', '30DEC2027', '29JUN2028', '28DEC2028', '28JUN2029']} 
+```
+
+---
+## GetOptionTypes:
+This function will returns list of Option Types (e.g. CE, PE, etc.) as per the parameter provided. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetOptionTypes('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_OptionTypes('Exchange')
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetOptionTypes('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_OptionTypes('NFO')
+print(result)
+```
+	
+As a response to above call, client will get the list of option types for provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+``` 
+{'OPTIONTYPES': ['FF', 'XX', 'CE', 'PE']} 
+```
+---  
+## GetStrikePrices:
+This function will returns list of Strike Prices (e.g. 10000, 11000, 75.5, etc.) as per the provided parameter. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetStrikePrices('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_StrikePrices(‘Exchange’)
+ print(result)
+```
+ <br> **Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetStrikePrices('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_StrikePrices('NFO')
+print(result)
+```
+
+As a response to above call, client will get the list of strike prices for provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'STRIKEPRICES': ['0', '5200', '5300', '5400', '5500', '5600', '5700', '5800', '5900', '6000', '6100', '6200', '6300', '6400', '6500', '6600', '6700', '6800', '6900', '7000', '7100', '7200', '7300', '7400', '7500', '7600', '7700', '7800', '7900', '8000', '8100', '8200', '8300', '8400', '8500', '8600', '8700', '8800', '8900', '9000', '9100', '9200', '9300', '9400', '9500', '9600', '9700', '9800', '9900', '10000', '10100', '10200', '10300', '10400', '10500', '10600', '10700', '10800', '10900', '11000', '11100', '11200', '11300', '11400', '11500', '11600', '11700', '11800', '11900', '12000', '12100', '12200', '12300', '12400', '12500', '12600', '12700', '12800', '12900', '13000', '13100', '13200', '13300', '13400', '13500', '13600', '13700', '13800', '13900', '14000', '14100', '14200', '14300', '14400', '14500', '14600', '14700', '14800', '15000', '15500', '16000', '16500', '16650', '16700', '16750', '16800', '16850', '16900', '16950', '17000', '17050', '17100', '17150', '17200', '17250', '17300', '17350', '17400', '17450', '17500', '17550', '17600', '17650', '17700', '17750', '17800', '17850', '17900', '17950', '18000', '18050', '18100', '18150', '18200', '18250', '18300', '18350', '18400', '18450', '18500', '18550', '18600', '18650', '18700', '18750', '18800', '18850', '18900', '18950', ………………………………………'25300', '25350', '25400', '25450', '25500', '25550', '25600', '25650', '25700', '25750', '25800', '25850', '25900', '25950', '26000', '26050', '26100', '26150', '26200', '26250', '26300', '26350', '26400', '26450', '26500', '26550', '26600', '26650', '26700', '26750', '26800', '26850', '26900', '26950', '27000', '27050', '27100', '27150', '27200', '27250', '27300', '27350', '27400', '27450', '27500', '27550', '27600', '27650', '27700', '27750', '27800', '27850', '27900', '27950', '28000', '28050', '28100', '28150', '28200', '28250', '28300', '28350', '28400', '28450', '28500', '28550', '28600', '28650', '28700', '28750', '28800', '28850', '28900', '28950', '29000', '29050', '29100', '29150', '29200', '29250', '29300', '29350', '29400', '29450', '29500', '29550', '29600', '29650', '29700', '29750', '29800', '29850', '29900', '29950', '30000', '30050', '30100', '30150', '30200', '30250', '31000', '32000', '33000', '34000', '35000', '36000', '37000', '38000', '39000', '40000']}
+ ```
+
+---  
+
+## GetServerInfo:
+This function will returns information about server where connection is made. Below is the sample code to get ServerInfo:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetServerInfo('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ServerInfo()
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetServerInfo('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ServerInfo()
+print(result)
+```  
+
+As a response to above call, client will get the serverID where client is connected. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'ServerID': '8040-A7'}
+ ```
+---  
+## GetLimitation:
+This function will returns user account information (e.g. which functions are allowed, Exchanges allowed, symbol limit, etc.) Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLimitation('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Limitation()
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLimitation('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Limitation()
+print(result)
+```
+As a response to above call, client will get the serverID where client is connected. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'AllowedBandwidthPerHour': -1.0, 'AllowedCallsPerHour': -1, 'AllowedCallsPerMonth': -1, 'AllowedBandwidthPerMonth': -1.0, 'ExpirationDate': 1727720999000, 'Enabled': True, 'AllowedExchanges': [{'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'BFO'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'BSE'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'BSE_DEBT'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'BSE_IDX'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'CDS'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'MCX'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'NFO'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'NSE'}, {'AllowedInstruments': -1, 'UsedInstrumentsInThisSession': None, 'DataDelay': 0, 'ExchangeName': 'NSE_IDX'}], 'AllowedFunctions': [{'FunctionName': 'GetExchangeMessages', 'IsEnabled': True}, {'FunctionName': 'GetExchangeSnapshot', 'IsEnabled': True}, {'FunctionName': 'GetExchangeSnapshotAfterMarket', 'IsEnabled': True}, {'FunctionName': 'GetHistory', 'IsEnabled': True}, {'FunctionName': 'GetHistoryGreeks', 'IsEnabled': True}, {'FunctionName': 'GetLastQuote', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteArray', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteArrayOptionGreeks', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteArrayShort', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteOptionChain', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteOptionChainWithGreeks', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteOptionGreeks', 'IsEnabled': True}, {'FunctionName': 'GetLastQuoteShort', 'IsEnabled': True}, {'FunctionName': 'GetMarketMessages', 'IsEnabled': True}, {'FunctionName': 'GetSnapshot', 'IsEnabled': True}, {'FunctionName': 'GetTopGainersLosers', 'IsEnabled': True}], 'HistoryLimitation': {'TickEnabled': True, 'DayEnabled': True, 'WeekEnabled': True, 'MonthEnabled': True, 'MaxEOD': 100000, 'MaxIntraday': 44, 'MaxTicks': 7, 'Hour_2Enabled': True, 'Hour_3Enabled': True, 'Hour_4Enabled': True, 'Hour_6Enabled': True, 'Hour_8Enabled': True, 'Hour_12Enabled': True, 'Minute_3Enabled': True, 'Minute_4Enabled': True, 'Minute_6Enabled': True, 'Minute_12Enabled': True, 'Minute_20Enabled': True, 'OnlyAfterMarket': False, 'Minute_1Enabled': True, 'Minute_2Enabled': True, 'Minute_5Enabled': True, 'Minute_10Enabled': True, 'Minute_15Enabled': True, 'Minute_30Enabled': True, 'Hour_1Enabled': True}, 'SubscribeSnapshotLimitation': None, 'GetSnapshotLimitation': None, 'GetExchangeSnapshotLimitation': {'DayEnabled': True, 'Minute_1Enabled': True, 'Minute_2Enabled': True, 'Minute_5Enabled': True, 'Minute_10Enabled': True, 'Minute_15Enabled': True, 'Minute_30Enabled': True, 'Hour_1Enabled': True}, 'GetExchangeSnapshotInstrumentTypeLimitation': None} 
+```
+---
+## GetMarketMessages:
+This function will returns array of last market messages related to selected exchange. Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetMarketMessages('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_MarketMessages('Exchange')
+print(result)
+```  
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetMarketMessages('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_MarketMessages('NFO')
+print(result)
+```  
+
+As a response to above call, client will get the market messages. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'EXCHANGE': 'NFO', 'MESSAGES': [{'SESSIONID': 0, 'MARKETTYPE': 'Normal Market Open', 'SERVERTIME': 1724211900000}]} ```
+---  
+## GetExchangeMessages:
+This function will returns array of last exchange messages related to selected exchange. Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetExchangeMessages('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Exchange_Messages(‘Exchange’)
+print(result)
+```
+**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetExchangeMessages('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_Exchange_Messages('NFO')
+print(result)
+```
+
+As a response to above call, client will get the market messages. <br> Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{'EXCHANGE': 'NFO', 'MESSAGES': []} 
+```
+---
+## GetLastQuoteOptionChain:
+This function will returns LastTradePrice of entire OptionChain of requested underlying. Below is the sample code to get Last Quote Option Chain:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionChain('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionChain(‘Exchange’, ‘Product’,'ExpiryDate <Optional>','OptionType <Optional>’, ‘StrikePrice <Optional>')
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionChain('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionChain('NFO','NIFTY','22AUG2024','CE')
+print(result)
+```
+<br>**Response**<br>
+As a response to above call, client will get LastTradePrice of entire OptionChain. Sample reponse in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/GetLastQuoteOptionChainResponse_JSON.zip)
+
+---
+## GetExchangeSnapshot:
+This function will return entire Exchange Snapshot as per Period & Periodicity.Below is the sample code to get Last Quote Option Chain:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetExchangeSnapshot('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ExchangeSnapshot(‘Exchange’,' Periodicity',' Period',’InstrumentType <Optional>’,’From <Optional>’,’To  <Optional>’,’NonTraded [true/false]<Optional>’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetExchangeSnapshot('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_ExchangeSnapshot('NFO','Minute','1')
+print(result)
+```  
+<br>**Response**<br>
+
+As a response to above call, client will get entire Exchange Snapshot as per Period & Periodicity. Sample response of 1 minute ExchangeSnapshot in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/GetExchangeSnapshot_1Min_JSON.zip)
+---
+## GetLastQuoteOptionGreeks:
+This function will return Last Traded Option Greek values of Single Symbol. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionGreeks('Exchange','Token')
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionGreeks('NFO','57660')
+print(result)
+```  
+<br>**Response**<br>
+
+```
+{ “AVERAGETRADEDPRICE”: 871.68, “BUYPRICE”: 870.1, “BUYQTY”: 1, “CLOSE”: 870.9, “EXCHANGE”: “MCX”, “HIGH”: 875, “INSTRUMENTIDENTIFIER”: “XXX_MCXSCHANADLH_25Jun2015_XX_X”, “LASTTRADEPRICE”: 875, “LASTTRADEQTY”: 2, “LASTTRADETIME”: 1391863200, “LOW”: 868.1, “OPEN”: 871.2, “OPENINTEREST”: 221, “PREOPEN”: false, “QUOTATIONLOT”: 100, “SELLPRICE”: 874, “SELLQTY”: 1, “SERVERTIME”: 1391821719, “TOTALQTYTRADED”: 17, “VALUE”: 1481850}
+```
+Token number can be get by using **GetInstruments** or **GetInstrumentsOnSearch** request. How to use these funcation can be find [here] 
+(https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/rest-api-documentation/function-getinstruments/).
+
+---
+## GetLastQuoteArrayOptionGreeks:
+This function will returns Last Traded Option Greek values of multiple Symbols – max 25 in single call. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayOptionGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayOptionGreeks('Exchange','Token1+Token2+Token3’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteArrayOptionGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteArrayOptionGreeks('NFO','57660+57661+57662')
+print(result)
+```  
+<br>**Response**<br>
+
+```
+[{ “EXCHANGE”: “NFO”, “TOKEN”: “39489”, “TIMESTAMP”: 1625738399000, “IV”: 1.46, “DELTA”: 1, “THETA”: -16.66, “VEGA”: 0, “GAMMA”: 0, “IVVWAP”: 0.12, “VANNA”: -2666.33, “CHARM”: 57226592, “SPEED”: 0, “ZOMMA”: 0, “COLOR”: 4.99, “VOLGA”: 50545.55, “VETA”: 1154302720, “THETAGAMMARATIO”: -719606.5, “THETAVEGARATIO”: -2146264.5, “DTR”: -0.06 }, { “EXCHANGE”: “NFO”, “TOKEN”: “39487”, “TIMESTAMP”: 1625738395000, “IV”: 3.16, “DELTA”: 0.98, “THETA”: -4821.25, “VEGA”: 0.01, “GAMMA”: 0, “IVVWAP”: 0.16, “VANNA”: -1.78, “CHARM”: 12360.09, “SPEED”: 0, “ZOMMA”: 0, “COLOR”: 9.14, “VOLGA”: 43.89, “VETA”: 382011.25, “THETAGAMMARATIO”: -3384442, “THETAVEGARATIO”: -693573.19, “DTR”: 0 }]
+```
+Token number can be get by using **GetInstruments** or **GetInstrumentsOnSearch** request. How to use these funcation can be find [here](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/rest-api-documentation/function-getinstruments/).
+
+---
+## GetLastQuoteOptionGreeksChain:
+This function will returns Returns Last Traded Option Greek values of entire OptionChain of requested underlying. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionGreeksChain('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionGreeksChain(‘Exchange’,' Product ','ExpiryDate <Optional>','OptionType <Optional>',’StrikePrice <Optional>’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetLastQuoteOptionGreeksChain('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.Get_LastQuoteOptionGreeksChain('NFO','NIFTY','22AUG2024','CE')
+print(result)
+```  
+<br>**Response**<br>
+
+As a response to above call, client will get Last Traded Option Greek values of entire OptionChain. Sample reponse in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/OptionGreeksChainWithQuoteResponse_JSON.zip)
+
+---
+---
+## GetHistoryGreeks:
+This function will returns Returns Last Traded History of Greeks values of entire InstrumentIdentifier of requested underlying. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdl_rest as rs
+
+api= rs.GetHistoryGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.GetHistory_Greeks(‘Exchange’,' InstrumentIdentifier ','isShortIdentifier <Optional>','Max <optional>',’From <Optional>’,’To  <Optional>’)
+print(result)
+```
+<br>**Example**
+```
+import gfdl_rest as rs
+
+api= rs.GetHistoryGreeks('<ENDPOINT>', '<ENTER_API_KEY>', xml=False, format_csv=False)
+result = api.GetHistory_Greeks('NFO','NIFTY05SEP2425000CE','true','10')
+print(result)
+```  
+<br>**Response**<br>
+```  
+<OptionGreeksHistory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SID>SID: .1 Q:1</SID>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.98" Vega="5.83" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13579.67" ThetaVegaRatio="-1.71" DTR="-0.09" Timestamp="09-02-2024 11:34:33"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.98" Vega="5.82" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13590.36" ThetaVegaRatio="-1.71" DTR="-0.09" Timestamp="09-02-2024 11:34:30"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.77" Vega="5.76" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.48" Veta="-1.79" ThetaGammaRatio="-13305.99" ThetaVegaRatio="-1.7" DTR="-0.09" Timestamp="09-02-2024 11:34:29"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.82" Vega="5.78" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.48" Veta="-1.79" ThetaGammaRatio="-13338.52" ThetaVegaRatio="-1.7" DTR="-0.09" Timestamp="09-02-2024 11:34:25"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.91" Vega="5.8" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13497.78" ThetaVegaRatio="-1.71" DTR="-0.09" Timestamp="09-02-2024 11:34:20"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.86" Vega="5.79" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13421.44" ThetaVegaRatio="-1.7" DTR="-0.09" Timestamp="09-02-2024 11:34:18"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.96" Vega="5.82" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13543.96" ThetaVegaRatio="-1.71" DTR="-0.09" Timestamp="09-02-2024 11:34:16"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.84" Vega="5.78" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.48" Veta="-1.79" ThetaGammaRatio="-13400.34" ThetaVegaRatio="-1.7" DTR="-0.09" Timestamp="09-02-2024 11:34:15"/>
+<Value Token="38687" IV="0.12" Delta="0.85" Theta="-9.93" Vega="5.8" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.47" Veta="-1.79" ThetaGammaRatio="-13554.81" ThetaVegaRatio="-1.71" DTR="-0.09" Timestamp="09-02-2024 11:34:14"/>
+<Value Token="38687" IV="0.12" Delta="0.86" Theta="-9.75" Vega="5.75" Gamma="0" IVVwap="0.12" Vanna="-0.02" Charm="0.04" Speed="-0" Zomma="0" Color="-0" Volga="0.48" Veta="-1.79" ThetaGammaRatio="-13319.47" ThetaVegaRatio="-1.7" DTR="-0.09" Timestamp="09-02-2024 11:34:06"/>
+</OptionGreeksHistory>
+```  
+---
+# Parameter List
+| Parameter | Description |
+|--------------|----------|
+|**Exchange**|Name of supported exchange.|
+|**InstrumentIdentifier**|Name of the symbol|
+|**InstrumentIdentifiers**|List of symbols names maximum 25 symbols can be added in list. |
+|**Unsubscribe**|Buy default subscribes to Realtime data. If [true], instrumentIdentifier is unsubscribed|
+|**Periodicity**|String value of required periodicity.<br>*[“TICK”/“MINUTE”/“HOUR”/“DAY”/“WEEK”/“MONTH”, default = “TICK”]*|
+|**Period**|Period for historical data. Can be applied for [MINUTE]/[HOUR]/[DAY].<br>Periodicity types *[Numerical value 1, 2, 3…, default = 1]*|
+|**From**|It means starting timestamp for called historical data.|
+|**To**|It means ending timestamp for request.|
+|**isShortIdentifier**<br>**isShortIdentifiers**|Functions will use short instrument identifier format if set as [true]. Example of ShortIdentifiers are NIFTY25MAR21FUT, RELIANCE25MAR21FUT, NIFTY25MAR2115000CE, etc.|
+|**MAX**|It is the limit returned data records.|
+|**Product**|Name of supported Product. To get the list of product refer to the above **Product** function.|
+|**Expiry**|Expiry dates for the exchange. To get the list of expiries refer to the above **Expiry** function.|
+|**OptionType**|Expiry dates for the exchange. To get the list of OptionType refer to the above **OptionType** function.|
+|**StrikePrice**|Expiry dates for the exchange. To get the list of StrikePrice refer to the above **StrikePrice** function.|
+|**Token**<br>**Tokens**|Token numbers of instruments. <br> To get the token refer to the above **GetInstruments** or **GetInstrumentsOnSearch** functions.|
+|**userTag**|It will be string which returns with response.|
+|**onlyActive**|By default, function will return only active instruments.<br>[true]/[false], default = [true]|
+|**nonTraded**|When true, results are sent with data of even non traded instruments. When false, data of only traded instruments during that period is sent. <Optional>, default value is “false”|
