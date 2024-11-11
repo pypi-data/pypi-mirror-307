@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head lang="EN">
+        <title>{{ meta.name }}</title>
+        <link rel="stylesheet" href="file://common.css">
+        <link rel="stylesheet" href="file://script.css">
+    </head>
+
+        {# Characters #}
+
+        {%- if options.bucket %}
+            <div class="header">
+                {%- if meta.logo %}
+                    <img src="{{ logo }}" class="script-logo"/>
+                {%- endif %}
+                <div class="header-text{{ '-logo' if meta.logo else '' }}">
+                    <div class="script-title">{{ meta.name }}</div>
+                    {%- if meta.author %}
+                        <div class="author">by {{ meta.author }}</div>
+                    {%- endif %}
+                </div>
+            </div>
+        {%- endif %}
+
+        {%- for page in pages %}
+
+            {# Script title header on every page #}
+            {%- if not options.bucket %}
+                <div class="header">
+                    {%- if meta.logo %}
+                        <img src="{{ logo }}" class="script-logo"/>
+                    {%- endif %}
+                    <div class="header-text{{ '-logo' if meta.logo else '' }}">
+                        <div class="script-title">{{ meta.name }}</div>
+                        {%- if meta.author %}
+                            <div class="author">by {{ meta.author }}</div>
+                        {%- endif %}
+                    </div>
+                </div>
+            {%- endif %}
+            
+            {# Character blocks #}
+            <div class="reference">
+                {%- set last = "none" %}
+                {%- for team in page if team != "jinxes" %}
+                    {%- set last = team %}
+                    {%- set pluralized = team + 's' if team != 'townsfolk' and team != 'fabled' else team %}
+                    <h2 class="character-type name-{{ team }}">{{ pluralized | upper }}</h2>
+                    <div class="cols-2{{ '-spacered' if spacers[team] else '' }}">
+                    {%- for character in teams[team] %}
+                        <div class="character">
+                            <img src="{{ icons[character.id] }}" class="icon"/>
+                            <div class="character-name name-{{ team }}">
+                                {{ character.name }}
+                                {%- if jinxes[character.id] %}
+                                    <div class="jinxes name-fabled">
+                                        <span></span>
+                                        {%- for jinx in jinxes[character.id] %}
+                                            <img src="{{ icons[jinx.dst_id] }}" class="icon-jinx"/>
+                                        {%- endfor %}
+                                    </div>
+                                {%- endif %}
+                                <div class="character-ability">{{ abilities[character.id] }}</div>
+                            </div>
+                        </div>
+                    {%- endfor %}
+                    </div>
+                    {%- if spacers[team] %}
+                        <div class="team-spacer-{{spacers[team]}}"></div>
+                    {%- endif %}
+                {%- endfor %}
+            </div>
+
+            {# Not the first night* #}
+            <div class="not-first-night">* not the first night</div>
+
+            {# Break on every page #}
+            {%- if not options.bucket and not loop.last %}
+                <p style="break-before: always;" ></p>
+            {%- endif %}
+
+        {%- endfor %}
+
+        {# Jinxes as a continutation of the last page #}
+
+        {%- if has_jinxes %}
+            {%- if jinxes_next_page %}
+                 <p style="break-before: page;" ></p>
+            {%- endif %}
+            <h2 class="character-type name-fabled">{{ 'jinxes' | upper }}</h2>         
+            <div class="jinx-box align justify">
+                <div class="jinx-enclosing-c align justify">
+                    {%- for id in jinxes %}
+                        {%- for jinx in jinxes[id] %}
+                            <div class="jinx-enclosing-r align">
+                                <div class="icon-jinx-pair">
+                                    <img src="{{ icons[jinx.src_id] }}" class="icon-jinx-in-pair"/>
+                                    <img src="{{ icons[jinx.dst_id] }}" class="icon-jinx-in-pair"/>
+                                </div>
+                                <div class="reason align">{{ jinx.reason }}</div>
+                            </div>
+                        {%- endfor %}
+                    {%- endfor %} 
+                </div>
+            </div>
+        {%- endif %}
+
+</html>
