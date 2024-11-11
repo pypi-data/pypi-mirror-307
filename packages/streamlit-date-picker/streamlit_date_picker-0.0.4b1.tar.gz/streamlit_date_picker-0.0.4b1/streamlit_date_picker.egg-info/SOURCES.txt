@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_date_picker/__init__.py
+streamlit_date_picker.egg-info/PKG-INFO
+streamlit_date_picker.egg-info/SOURCES.txt
+streamlit_date_picker.egg-info/dependency_links.txt
+streamlit_date_picker.egg-info/requires.txt
+streamlit_date_picker.egg-info/top_level.txt
+streamlit_date_picker/frontend/build/asset-manifest.json
+streamlit_date_picker/frontend/build/index.html
+streamlit_date_picker/frontend/build/manifest.json
+streamlit_date_picker/frontend/build/robots.txt
+streamlit_date_picker/frontend/build/static/js/main.c56b26ff.js
+streamlit_date_picker/frontend/build/static/js/main.c56b26ff.js.LICENSE.txt
+streamlit_date_picker/frontend/build/static/js/main.c56b26ff.js.map
