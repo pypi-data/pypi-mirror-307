@@ -1,0 +1,40 @@
+##############################################
+# The MIT License (MIT)
+# Copyright (c) 2003 Kevin Walchko
+# see LICENSE for full details
+##############################################
+
+[tool.poetry]
+name = "ipcpy"
+version = "2024.11.10.2"
+description = "A interprocess communications (IPC) framework using UDP"
+authors = ["walchko <walchko@users.noreply.github.com>"]
+readme = "readme.md"
+license = "MIT"
+homepage = "https://pypi.org/project/ipcpy/"
+repository = 'https://github.com/MomsFriendlyRobotCompany/ipc/python'
+# documentation = "http://..."
+keywords = ["udp", "ipc","interprocess communication"]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Software Development :: Libraries :: Application Frameworks'
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
