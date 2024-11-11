@@ -1,0 +1,10 @@
+pandas>=2.0.0
+plotly==5.2.1
+setuptools>=75.1.0
+blake3==0.4.1
+ipython~=8.10.0
+dask[dataframe]==2022.1.1
+numpy<2.0.0
+ipykernel
+matplotlib
+th2-data-services~=2.0.0.dev
