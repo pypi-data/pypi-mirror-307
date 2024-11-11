@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: 4i-framework
+Version: 0.1.4
+Requires-Python: >=3.6
+Requires-Dist: Jinja2>=3.0.0
+Requires-Dist: watchdog>=2.1.0
