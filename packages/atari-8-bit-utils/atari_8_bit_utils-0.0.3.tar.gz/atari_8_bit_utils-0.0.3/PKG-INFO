@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: atari-8-bit-utils
+Version: 0.0.3
+Summary: A collection of Python utilities for projects related to Atari 8-bit computers
+Project-URL: Documentation, https://github.com/JSJvR/atari-8-bit-utils#readme
+Project-URL: Issues, https://github.com/JSJvR/atari-8-bit-utils/issues
+Project-URL: Source, https://github.com/JSJvR/atari-8-bit-utils
+Author: Johan van Rensburg
+Keywords: ATASCII,Atari
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# Atari 8-bit Python Utilities
+
+## Prerequisites
+
+## Getting Started
+
+## Utilities
