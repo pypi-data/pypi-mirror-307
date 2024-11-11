@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+DomainScout.egg-info/PKG-INFO
+DomainScout.egg-info/SOURCES.txt
+DomainScout.egg-info/dependency_links.txt
+DomainScout.egg-info/entry_points.txt
+DomainScout.egg-info/requires.txt
+DomainScout.egg-info/top_level.txt
+domainscout/GUI.py
+domainscout/__init__.py
+domainscout/appicon.ico
+domainscout/export.py
+domainscout/import.py
+domainscout/whoisQuery.py
