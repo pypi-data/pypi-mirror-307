@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+refs/2field_hla_consensus_seqs.csv
+refs/hla_pseudo_seqs.csv
+tcrpmhcdataset/tcrpmhcdataset.egg-info/PKG-INFO
+tcrpmhcdataset/tcrpmhcdataset.egg-info/SOURCES.txt
+tcrpmhcdataset/tcrpmhcdataset.egg-info/dependency_links.txt
+tcrpmhcdataset/tcrpmhcdataset.egg-info/requires.txt
+tcrpmhcdataset/tcrpmhcdataset.egg-info/top_level.txt
+tests/test_dataset.py
+tests/test_pMHC.py
+tests/test_tcr.py
