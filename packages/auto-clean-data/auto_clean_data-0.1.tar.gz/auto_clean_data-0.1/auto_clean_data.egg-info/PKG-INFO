@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: auto_clean_data
+Version: 0.1
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pymysql
+Requires-Dist: psycopg2
+Requires-Dist: pyodbc
+
+Your package description goes here.
