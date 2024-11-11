@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dddesign
+Version: 1.0.8
+Summary: Domain Driven Design Library
+Home-page: https://github.com/davyddd/dddesign
+License: MIT
+Keywords: python,ddd,domain driven design,ddd architecture,ddd structure,architecture,structure,dddesign
+Author: davyddd
+Requires-Python: >=3.8,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: idna (>=3.7,<4.0)
+Requires-Dist: pydantic (>=2.1,<2.10)
+Requires-Dist: setuptools (>=70.0.0)
+Project-URL: Repository, https://github.com/davyddd/dddesign
+Description-Content-Type: text/markdown
+
+# DDDesign
+
+[![pypi](https://img.shields.io/pypi/v/dddesign.svg)](https://pypi.python.org/pypi/dddesign)
+[![downloads](https://static.pepy.tech/badge/dddesign/month)](https://pepy.tech/project/dddesign)
+[![versions](https://img.shields.io/pypi/pyversions/dddesign.svg)](https://github.com/davyddd/dddesign)
+[![codecov](https://codecov.io/gh/davyddd/dddesign/branch/main/graph/badge.svg)](https://app.codecov.io/github/davyddd/dddesign)
+[![license](https://img.shields.io/github/license/davyddd/dddesign.svg)](https://github.com/davyddd/dddesign/blob/main/LICENSE)
+
+**DDDesign** is a Python library designed to implement Domain-Driven Design (DDD) principles in software projects. 
+It provides a set of tools and structures to help developers apply DDD architecture. 
+This library is built on top of [Pydantic](https://docs.pydantic.dev/latest/), 
+ensuring data validation and settings management using Python type annotations.
+
+## Installation
+
+Install the library using pip:
+```bash
+pip install dddesign
+```
+
