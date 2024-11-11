@@ -1,0 +1,17 @@
+middleware/__init__.py,sha256=AthmsGYWA42wXPilL1ODBH3lquIVfrGVnJnOAUseQ-w,660
+middleware/distro.py,sha256=xLR8JcVOY1wQC4sooNx2loCnQt0Srt_KL6wXZFeInKI,3595
+middleware/log.py,sha256=sSSBdTq4v_SBzMC6K0nxL22YEbpmMMsv9zRKZ4YzY_o,2071
+middleware/metrics.py,sha256=Rsq-wu2W4R53xvG21BFntWBzuk3_9kk-3Zq7ZjGV8KY,11034
+middleware/options.py,sha256=ksPXo1B0jpyjxcGDgBsoH11byJY4o67FRVSCeG68sgQ,12227
+middleware/resource.py,sha256=2pNZMCbFRLh7jvFI7BiTBepG-AlKm7xnf8lpwtMGpVU,2237
+middleware/sampler.py,sha256=GBI-l59-ZTkEGf01SGul9S81UJUIwIGAcODn-gxhyiA,3217
+middleware/trace.py,sha256=z_qLK6rwqIqHwo_6fNWsvVsn7NyTGUkgHJSKI4ZQ_6k,2156
+middleware/version.py,sha256=3unhXzckP1AnUnEW_uZiKlrJ_fkZ6gTNTsQG2QmdVKo,92
+middleware/detectors/detector.py,sha256=LYYBw11GxPGHczCK7_Yup3sjDiksnUwZBRKqVaKg_80,4018
+middleware/detectors/env_vars.py,sha256=91cLqNdZm43IZfZQPvwfOrzHpYgHvGdqWhn_YnGPfbo,313
+middleware_apm-1.2.4rc6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+middleware_apm-1.2.4rc6.dist-info/METADATA,sha256=DAzh3Jv_RLvaR0o4LVUBmVXERePXyGtaSpZIf4Myt20,2433
+middleware_apm-1.2.4rc6.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+middleware_apm-1.2.4rc6.dist-info/entry_points.txt,sha256=qzLxx0G86jaScDEDfud4udqEQinGQ4VyQG0YJFvxtPc,236
+middleware_apm-1.2.4rc6.dist-info/top_level.txt,sha256=4lLxxDRA9JlWrXsv3B2Q7oQGTqdmEnppkdoHPAiZhg0,11
+middleware_apm-1.2.4rc6.dist-info/RECORD,,
