@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75cb9f62-a544-4693-8c2b-8223973ac079" name="Changes" comment="set det nam on init">
+      <change beforePath="$PROJECT_DIR$/docs/1 Basic Usage.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/1 Basic Usage.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/2 Event Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/2 Event Analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/3 Sample Level Evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/3 Sample Level Evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/4 Channel Evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/4 Channel Evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/5 Event Matching &amp; Match Evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/5 Event Matching &amp; Match Evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/7 Datasets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/7 Datasets.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JonNir1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JonNir1/pEYES.git&quot;,
+    &quot;accountId&quot;: &quot;620ce0cd-162c-4432-ac4e-1c900e66ad75&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mkaQpfKjZWELYmSjLUX9CU1PeM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_event.TestEvent.test_overlaps.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_event.TestEvent.test_properties.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_metric_utils.TestMetricUtils.test_nld.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonathanni/Downloads&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article\lund_2013_rater_analysis" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_event.TestEvent.test_properties">
+    <configuration name="Python tests for test_event.TestEvent.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/data_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event.TestEvent.test_overlaps&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_event.TestEvent.test_properties" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/data_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event.TestEvent.test_properties&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_metric_utils.TestMetricUtils.test_nld" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_metric_utils.TestMetricUtils.test_nld&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_event.TestEvent.test_properties" />
+        <item itemvalue="Python tests.Python tests for test_event.TestEvent.test_overlaps" />
+        <item itemvalue="Python tests.Python tests for test_metric_utils.TestMetricUtils.test_nld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75cb9f62-a544-4693-8c2b-8223973ac079" name="Changes" comment="" />
+      <created>1727623015336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727623015336</updated>
+      <workItem from="1727623016611" duration="191000" />
+      <workItem from="1727623215876" duration="255000" />
+      <workItem from="1727623498460" duration="864000" />
+      <workItem from="1727774483995" duration="920000" />
+      <workItem from="1727777265212" duration="509000" />
+      <workItem from="1727778325822" duration="7077000" />
+      <workItem from="1727789093026" duration="4860000" />
+      <workItem from="1729002167856" duration="725000" />
+      <workItem from="1729260055589" duration="13000" />
+      <workItem from="1729271192182" duration="1149000" />
+      <workItem from="1729438113561" duration="907000" />
+      <workItem from="1729761614997" duration="3249000" />
+      <workItem from="1729964889613" duration="2261000" />
+      <workItem from="1730188051209" duration="737000" />
+      <workItem from="1730204359776" duration="16000" />
+      <workItem from="1730359657797" duration="33000" />
+      <workItem from="1730359719382" duration="1055000" />
+      <workItem from="1730367228647" duration="54040000" />
+      <workItem from="1730632171047" duration="21685000" />
+      <workItem from="1730654446375" duration="46840000" />
+      <workItem from="1731229605563" duration="8457000" />
+    </task>
+    <task id="LOCAL-00030" summary="update">
+      <option name="closed" value="true" />
+      <created>1730543182508</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730543182508</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update doc">
+      <option name="closed" value="true" />
+      <created>1730547718177</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730547718177</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update">
+      <option name="closed" value="true" />
+      <created>1730558354773</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558354773</updated>
+    </task>
+    <task id="LOCAL-00033" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730558395958</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558395958</updated>
+    </task>
+    <task id="LOCAL-00034" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730558841643</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730558841643</updated>
+    </task>
+    <task id="LOCAL-00035" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730561925537</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730561925537</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update default value">
+      <option name="closed" value="true" />
+      <created>1730562381152</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730562381152</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update default value">
+      <option name="closed" value="true" />
+      <created>1730563304266</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730563304266</updated>
+    </task>
+    <task id="LOCAL-00038" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730563310346</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730563310346</updated>
+    </task>
+    <task id="LOCAL-00039" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730564313456</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1730564313456</updated>
+    </task>
+    <task id="LOCAL-00040" summary="naming">
+      <option name="closed" value="true" />
+      <created>1730571516152</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1730571516152</updated>
+    </task>
+    <task id="LOCAL-00041" summary="remove original path">
+      <option name="closed" value="true" />
+      <created>1730571882459</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730571882459</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add dispersion prop">
+      <option name="closed" value="true" />
+      <created>1730628969186</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1730628969186</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add min_vel prop">
+      <option name="closed" value="true" />
+      <created>1730637610145</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1730637610145</updated>
+    </task>
+    <task id="LOCAL-00044" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730637692478</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1730637692478</updated>
+    </task>
+    <task id="LOCAL-00045" summary="nit">
+      <option name="closed" value="true" />
+      <created>1730637694978</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1730637694978</updated>
+    </task>
+    <task id="LOCAL-00046" summary="make function static for external use">
+      <option name="closed" value="true" />
+      <created>1730644673708</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1730644673708</updated>
+    </task>
+    <task id="LOCAL-00047" summary="default value change">
+      <option name="closed" value="true" />
+      <created>1730653794203</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1730653794203</updated>
+    </task>
+    <task id="LOCAL-00048" summary="lund2013 rater analysis">
+      <option name="closed" value="true" />
+      <created>1730657418071</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1730657418071</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update default values based on rater analysis">
+      <option name="closed" value="true" />
+      <created>1730657866916</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1730657866916</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update default values based on rater analysis">
+      <option name="closed" value="true" />
+      <created>1730658450581</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1730658450583</updated>
+    </task>
+    <task id="LOCAL-00051" summary="rerun">
+      <option name="closed" value="true" />
+      <created>1730658456293</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1730658456293</updated>
+    </task>
+    <task id="LOCAL-00052" summary="rerun">
+      <option name="closed" value="true" />
+      <created>1730658563957</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1730658563957</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update defaults based on rater annotations">
+      <option name="closed" value="true" />
+      <created>1730658695448</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1730658695448</updated>
+    </task>
+    <task id="LOCAL-00054" summary="cast to float where relevant">
+      <option name="closed" value="true" />
+      <created>1730796924151</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1730796924167</updated>
+    </task>
+    <task id="LOCAL-00055" summary="split notebook">
+      <option name="closed" value="true" />
+      <created>1730831651691</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1730831651691</updated>
+    </task>
+    <task id="LOCAL-00056" summary="calc event distribution">
+      <option name="closed" value="true" />
+      <created>1730972835382</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1730972835382</updated>
+    </task>
+    <task id="LOCAL-00057" summary="calc raters' event parameters">
+      <option name="closed" value="true" />
+      <created>1730985413491</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1730985413491</updated>
+    </task>
+    <task id="LOCAL-00058" summary="rerun">
+      <option name="closed" value="true" />
+      <created>1731015117729</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1731015117729</updated>
+    </task>
+    <task id="LOCAL-00059" summary="set default params">
+      <option name="closed" value="true" />
+      <created>1731015126533</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1731015126533</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update articles">
+      <option name="closed" value="true" />
+      <created>1731015250861</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1731015250861</updated>
+    </task>
+    <task id="LOCAL-00061" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731016359671</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1731016359671</updated>
+    </task>
+    <task id="LOCAL-00062" summary="create IDVT detector">
+      <option name="closed" value="true" />
+      <created>1731017836991</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1731017836991</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fix doc">
+      <option name="closed" value="true" />
+      <created>1731018103761</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1731018103762</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add idct to analysis">
+      <option name="closed" value="true" />
+      <created>1731020110678</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1731020110678</updated>
+    </task>
+    <task id="LOCAL-00065" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731020201104</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1731020201104</updated>
+    </task>
+    <task id="LOCAL-00066" summary="naming">
+      <option name="closed" value="true" />
+      <created>1731227413130</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1731227413130</updated>
+    </task>
+    <task id="LOCAL-00067" summary="calc SRs">
+      <option name="closed" value="true" />
+      <created>1731229541507</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1731229541507</updated>
+    </task>
+    <task id="LOCAL-00068" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731230515652</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1731230515652</updated>
+    </task>
+    <task id="LOCAL-00069" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731230947481</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1731230947481</updated>
+    </task>
+    <task id="LOCAL-00070" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731230994076</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1731230994076</updated>
+    </task>
+    <task id="LOCAL-00071" summary="rerun">
+      <option name="closed" value="true" />
+      <created>1731231958245</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1731231958245</updated>
+    </task>
+    <task id="LOCAL-00072" summary="suppress REMoDNaV logger warnings">
+      <option name="closed" value="true" />
+      <created>1731233701818</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1731233701818</updated>
+    </task>
+    <task id="LOCAL-00073" summary="suppress REMoDNaV logger warnings">
+      <option name="closed" value="true" />
+      <created>1731233799503</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1731233799504</updated>
+    </task>
+    <task id="LOCAL-00074" summary="update saccade min duration">
+      <option name="closed" value="true" />
+      <created>1731233816690</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1731233816699</updated>
+    </task>
+    <task id="LOCAL-00075" summary="nit">
+      <option name="closed" value="true" />
+      <created>1731233920497</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1731233920497</updated>
+    </task>
+    <task id="LOCAL-00076" summary="naming">
+      <option name="closed" value="true" />
+      <created>1731234897452</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1731234897452</updated>
+    </task>
+    <task id="LOCAL-00077" summary="allow setting detector name">
+      <option name="closed" value="true" />
+      <created>1731235098772</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1731235098772</updated>
+    </task>
+    <task id="LOCAL-00078" summary="set det nam on init">
+      <option name="closed" value="true" />
+      <created>1731236468281</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1731236468281</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove original path" />
+    <MESSAGE value="add dispersion prop" />
+    <MESSAGE value="add min_vel prop" />
+    <MESSAGE value="make function static for external use" />
+    <MESSAGE value="default value change" />
+    <MESSAGE value="lund2013 rater analysis" />
+    <MESSAGE value="update default values based on rater analysis" />
+    <MESSAGE value="update defaults based on rater annotations" />
+    <MESSAGE value="cast to float where relevant" />
+    <MESSAGE value="split notebook" />
+    <MESSAGE value="calc event distribution" />
+    <MESSAGE value="calc raters' event parameters" />
+    <MESSAGE value="set default params" />
+    <MESSAGE value="update articles" />
+    <MESSAGE value="create IDVT detector" />
+    <MESSAGE value="fix doc" />
+    <MESSAGE value="add idct to analysis" />
+    <MESSAGE value="calc SRs" />
+    <MESSAGE value="rerun" />
+    <MESSAGE value="suppress REMoDNaV logger warnings" />
+    <MESSAGE value="update saccade min duration" />
+    <MESSAGE value="nit" />
+    <MESSAGE value="naming" />
+    <MESSAGE value="allow setting detector name" />
+    <MESSAGE value="set det nam on init" />
+    <option name="LAST_COMMIT_MESSAGE" value="set det nam on init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/peyes/_DataModels/DatasetLoader.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pEYES$.coverage" NAME=" Coverage Results" MODIFIED="1730628879643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit_tests/data_models" />
+  </component>
+</project>
