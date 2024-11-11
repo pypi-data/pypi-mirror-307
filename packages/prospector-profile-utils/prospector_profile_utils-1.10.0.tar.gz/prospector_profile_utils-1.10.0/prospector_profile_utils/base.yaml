@@ -1,0 +1,43 @@
+strictness: veryhigh
+
+max-line-length: 110
+
+pylint:
+  enabled:
+    - useless-suppression
+
+mypy:
+  run: true
+  options:
+    python-version: '3.9'
+    ignore-missing-imports: true
+    strict: true
+
+bandit:
+  run: true
+  disabled:
+    - B101 # Use of assert detected.
+
+pyroma:
+  run: true
+
+ruff:
+  run: true
+  options:
+    extend-select:
+      E: true # Pycodestyle
+      F: true # Pyflakes
+      UP: true # pyupgrade
+      B: true # flake8-bugbear
+      SIM: true # flake8-simplify
+      I: true # isort
+      S: true # flake8-bandit
+      D: true # pydocstyle
+  disabled:
+    - S101 # Use of assert detected
+    - SIM105 # suppressible-exception (slow code)
+    - D100 # Missing docstring in public module
+    - E501 # Line too long (should be done by formatter, length not configurable in prospector)
+
+mccabe:
+  run: false
