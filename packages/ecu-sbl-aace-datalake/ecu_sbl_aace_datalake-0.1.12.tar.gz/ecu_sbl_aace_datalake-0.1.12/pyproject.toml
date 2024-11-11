@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# $ pip install ecu.sbl.aace.datalake
+name = "ecu_sbl_aace_datalake"  # REQUIRED, is the only field that cannot be marked as dynamic.
+description = "Supporting utilities for the ECU SBL AACE Datalake project"  # REQUIRED
+readme = "README.md"
+requires-python = ">=3.11.8"
+license = {text = "MIT"}
+keywords = ["utilities",]
+authors = [
+  {name = "Jonathan Mills", email = "support.sbl@itsalljustdata.com" }
+]
+maintainers = [
+  {name = "Jonathan Mills", email = "support.sbl@itsalljustdata.com" }
+]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+
+  # Pick your license as you wish
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here. In particular, ensure
+  # that you indicate you support Python 3. These classifiers are *not*
+  # checked by "pip install". See instead "requires-python" key in this file.
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies =  []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = []
+test = []
+[project.urls]
+"Homepage" = "https://github.com/itsalljustdata/ecu_sbl_aace_datalake"
+"Bug Reports" = "https://github.com/itsalljustdata/ecu_sbl_aace_datalake/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools_scm]
+version_file = "ecu/sbl/aace/datalake/_version.py"
