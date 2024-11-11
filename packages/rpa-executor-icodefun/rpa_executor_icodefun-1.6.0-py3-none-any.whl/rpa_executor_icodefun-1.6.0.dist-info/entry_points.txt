@@ -1,0 +1,2 @@
+[console_scripts]
+irpa = rpa_executor_icodefun.run:run_cli
