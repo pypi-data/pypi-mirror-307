@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: transformer_payne
+Version: 0.7
+Description-Content-Type: text/markdown
+Requires-Dist: jax~=0.4.30
+Requires-Dist: jaxlib~=0.4.30
+Requires-Dist: numpy~=1.26.4
+Requires-Dist: flax~=0.8.5
+Requires-Dist: joblib~=1.3.2
+Provides-Extra: huggingface
+Requires-Dist: huggingface-hub~=0.21.3; extra == "huggingface"
+Provides-Extra: dev
+Requires-Dist: pytest~=8.0.0; extra == "dev"
+Requires-Dist: pytest-datadir~=1.5.0; extra == "dev"
+Requires-Dist: coverage~=7.4.3; extra == "dev"
+
+# Transformer Payne
+
+![Python Version](https://img.shields.io/badge/python-3.9%20|%203.10%20|%203.11-blue) ![Build workflow](https://github.com/RozanskiT/transformer_payne/actions/workflows/python-package.yml/badge.svg) [![Tests](docs/badges/test.svg)](reports/junit/junit.xml) [![Coverage Status](docs/badges/coverage-badge.svg)](reports/coverage/coverage.xml)
+
+---
+
+Tomasz Różański, Yuan-Sen Ting and Maja Jabłońska, "Toward a Spectral Foundation Model: An Attention-Based Approach with Domain-Inspired Fine-Tuning and Wavelength Parameterization", https://arxiv.org/abs/2306.15703
+
+---
+
+Important note: The implementation of TransformerPayne in this repository includes slight modifications from the version described in the paper above. These changes involve most importantly the placement of residual connections and hyperparameter tuning. Detailed explanations will be provided in an upcoming paper.
+
+## Example usage:
+```
+import jax
+jax.config.update("jax_enable_x64", True)
+
+import transformer_payne as tp
+import numpy as np
+import matplotlib.pyplot as plt
+
+emulator = tp.TransformerPayne.download() # Download weights for default emulator
+
+wave = np.linspace(4670, 4960, 20000)
+mu = 1.0 # Ray perpendicular to solar surface
+parameters = emulator.solar_parameters # Pick solar parameters and abundances
+
+spectrum = emulator(np.log10(wave), mu, parameters) # Emulate a spectrum
+```
+
+Visulize the results:
+
+```
+intensity = spectrum[:,0]
+continuum = spectrum[:,1]
+normalized_intensity = intensity / continuum
+
+fig, axs = plt.subplots(2, sharex=True, figsize=(5, 4))
+axs[0].plot(wave, intensity, color='black', label='Intensity')
+axs[0].plot(wave, continuum, color='red', label='Intensity continuum')
+axs[1].plot(wave, normalized_intensity, label="Normalized intensity", color='black')
+axs[1].vlines(4862.721, 0, 1, color='C0', label=r'$H_\beta$ (vacuum wavelength)')  # Using raw string for LaTeX
+axs[1].set_xlabel("Wavelength [$\AA$]")  # Corrected to set xlabel on the second subplot
+axs[0].set_ylabel("Intensity [erg/s/cm$^3$/ster]")
+axs[1].set_ylabel("Normalized Intensity")
+axs[0].legend(loc="lower left")
+axs[1].legend(loc="lower left")
+plt.subplots_adjust(hspace=0.05)
+plt.show()
+```
+![example_spectrum](docs/readme_plot.png)
+
+## Installation
+
+### Installation using pip
+
+Install transformer-payne with `huggingface-hub` and `joblib` modules that allow you to easily download the model weights from the internet. Check that you are also having a `matplotlib` and `numpy` installed so you could run the example given above.
+
+```
+pip install transformer-payne
+pip install huggingface-hub joblib numpy matplotlib
+```
+
+### Developer installation from local repository
+
+```
+git clone https://github.com/RozanskiT/transformer_payne.git
+cd transformer_payne
+pip install -e .[dev]
+```
+
+---
+
+## Available Emulators
+
+### MARCS, Korg.jl and GALAH DR3's linelist - default intensity emulator
+This document outlines an emulator built upon the slightly adopted Korg.jl package and MARCS stellar atmosphere grid. It simulates stellar spectra across a broad parameter space:
+
+- Effective Temperature (Teff): 4000 - 8000 K
+- Surface Gravity (logg): 2.0 - 5.0
+- Microturbulence (vmic): 0 - 5 km/s
+- Metallicity ([Fe/H]): -2.5 to 1.0
+- Alpha-element Enhancement ([alpha/Fe], ): -1.0 to 1.0
+- Carbon-to-Iron Ratio ([C/Fe]): -1.0 to 1.0
+- Elemental Abundances: Individual abundances can vary within a logarithmic range of ±0.3, from Helium to Uranium (with respect to given [Fe/H], [alpha/Fe] and [C/Fe])
+- Resolution: ~300000
+
+The emulator employs the GALAH DR3 linelist as included in Korg.jl code, covering four wavelength windows: 4670 - 4960, 5620 - 5920, 6420 - 6790, 7540 - 7940 angstroms. For more information, visit the following links:
+
+- Korg.jl: [link](https://github.com/ajwheeler/Korg.jl)
+- GALAH DR3: [link](https://github.com/svenbuder/GALAH_DR3)
+- MARCS Grid: [link](https://dr17.sdss.org/sas/dr17/apogee/spectro/speclib/atmos/marcs/MARCS_v3_2016/Readme_MARCS_v3_2016.txt)
+
+### Work in progress...
