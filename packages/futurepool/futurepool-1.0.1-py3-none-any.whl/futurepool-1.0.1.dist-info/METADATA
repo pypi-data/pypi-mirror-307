@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: futurepool
+Version: 1.0.1
+Summary: FuturePool is a package that introduce known concept of multiprocessing Pool to the async/await world, resulting in async workers pool library. It allows for easy translation from multiprocessing to async/await, while keeping the core principle - specified number of workers. FuturePool allows for more flexible usage by providing starimap/starimap_unordered.
+License: MIT
+Keywords: async/await,worker,pool,scrappig,future,future pool,async pool
+Author: Michal Karol
+Author-email: michal.p.karol@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.24.0,<0.25.0)
+Requires-Dist: ruff (>=0.7.0,<0.8.0)
+Project-URL: Documentation, https://michalkarol.github.io/futurepool/
+Project-URL: Homepage, https://michalkarol.github.io/futurepool/
+Project-URL: Issues, https://github.com/MichalKarol/futurepool/issues
+Project-URL: Repository, https://github.com/MichalKarol/futurepool
+Project-URL: Releases, https://github.com/MichalKarol/futurepool/releases
+Description-Content-Type: text/markdown
+
+# FuturePool [![PyPI - Version](https://img.shields.io/pypi/v/futurepool?style=for-the-badge)](https://pypi.org/project/futurepool/)
+
+FuturePool is a package that introduce known concept of multiprocessing Pool to the async/await world, resulting in async workers pool library. It allows for easy translation from multiprocessing to async/await, while keeping the core principle - specified number of workers. FuturePool allows for more flexible usage by providing starimap/starimap_unordered.
+
+FuturePool was created to handle web scrapping, where in order to not overwhelm website with connections and comply with website requirements, specified number of workers was used. FuturePool was extended to handle generic scenarios and published.
+
+## License
+MIT
+
+## Example
+To see library docs visit [https://MichalKarol.github.io/futurepool/](https://MichalKarol.github.io/futurepool/).
+
+Example translation from multiprocessing to FuturePool
+
+```python
+# multiprocessing
+from multiprocessing import Pool
+from time import sleep
+
+def pool_fn(i):
+    sleep(i)
+    return i
+
+with Pool(2) as p:
+    result = p.map(pool_fn, range(10))
+```
+
+```python
+# FuturePool
+from futurepool import FuturePool
+from asyncio import sleep
+
+async def async_pool_fn(i):
+    await sleep(i)
+    return i
+
+async with FuturePool(2) as fp:
+    result = await fp.map(async_pool_fn, range(10))
+```
+
+## Author
+Michał Karol <michal.p.karol@gmail.com>  
+[Mastodon](https://mastodon.pl/@mkarol)  
+[Github](https://github.com/MichalKarol)  
