@@ -1,0 +1,2 @@
+[console_scripts]
+nwn-dg = nwn_dg.__main__:main
