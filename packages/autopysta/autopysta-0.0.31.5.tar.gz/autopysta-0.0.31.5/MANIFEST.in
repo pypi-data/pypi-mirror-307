@@ -1,0 +1,22 @@
+include README.md
+include LICENSE
+include CMakeLists.txt
+include setup.py
+include VERSION
+
+# Include all .py and .so files in the package directories
+recursive-include include *
+recursive-include src *
+recursive-include swig *
+recursive-include autopysta *
+
+
+# Include examples
+recursive-include examples *
+
+
+# Exclude build artifacts
+exclude *.pyc
+exclude __pycache__/*
+prune build
+prune dist
