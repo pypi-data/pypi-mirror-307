@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waifutagger"
+version = "0.1.0"
+description = "A simple tagger for anime-style images using WaifuDiffusion models"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19.0",
+    "onnxruntime>=1.7.0",
+    "Pillow>=8.0.0",
+    "huggingface_hub>=0.7.0",
+    "pandas>=1.2.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/waifutagger"
+Repository = "https://github.com/yourusername/waifutagger.git"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["waifutagger"]
