@@ -1,0 +1,66 @@
+# Catalog of resources related to UV science projects
+# 
+# Description of the document hierarchy:
+#
+# <storage>: handle to call the storage system
+#   |___ <resource ID>: unique identifier of the resource item.
+#           |           IDs must be integers sequentially incremented from 0
+#           |___ name: handle to call the resource (must be unique per storage system)
+#           |___ description: string to clarify the resource's context 
+#           |___ type: either "file" or "directory"
+#           |___ path: the path to the resource file relative to the synced directory
+#
+sas_cloud:
+    0:
+        name: gal_visits_list
+        description: 'Complete list of all GALEX visits with NUV exposure.'
+        type: file
+        path: /GALEX_visits_list/GALEX_visits_list_qualvars.fits
+    1:
+        name: gal_fields
+        description: 'Collection of GALEX dataproducts for fileds of interest.'
+        type: directory
+        path: /GALEX_fields
+    2:
+        name: gal_gphoton
+        description: 'Collection of GALEX gphoton runs.'
+        type: directory
+        path: /GALEX_gPhoton
+    3:
+        name: gal_visits_list_qualsel
+        description: 'Complete list of all GALEX visits.'
+        type: file
+        path: /GALEX_visits_list/GALEX_visits_list_qualsel.fits
+    
+lustre:
+    0:
+        name: gal_ds_visits_list
+        description: 'Complete list of all GALEX drift-scan visits.'
+        type: file
+        path: /GALEX_DS_GCK_visits_list/GALEX_DS_GCK_visits_list.fits
+    1:
+        name: gal_ds_fields
+        description: 'Collection of GALEX drift scan dataproducts'
+        type: directory
+        path: /GALEX_DS_GCK_fields
+    2:
+        name: gal_gphoton
+        description: 'Collection of GALEX gphoton runs.'
+        type: directory
+        path: /GALEX_gPhoton
+vasca:
+    0:
+        name: test_resources
+        description: 'Data used for VASCA development'
+        type: directory
+        path: '/vasca/test/resources'
+    1:
+        name: gal_visits_list
+        description: 'Complete list of all GALEX visits with NUV exposure.'
+        type: file
+        path: '/vasca/test/resources/GALEX_visits_list.fits'
+    2:
+        name: docs_resources
+        description: 'Data used for VASCA documentation'
+        type: directory
+        path: '/docs/tutorial_resources'
