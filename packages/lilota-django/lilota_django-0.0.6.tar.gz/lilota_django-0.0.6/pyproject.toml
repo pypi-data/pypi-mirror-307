@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lilota-django"
+version = "0.0.6"
+authors = [
+  { name="Tobias Rössler", email="tobiasroessler@gmail.com" },
+]
+description = "A lightweight solution for long-running tasks"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tobiasroessler/lilota-django"
+Issues = "https://github.com/tobiasroessler/lilota-django/issues"
