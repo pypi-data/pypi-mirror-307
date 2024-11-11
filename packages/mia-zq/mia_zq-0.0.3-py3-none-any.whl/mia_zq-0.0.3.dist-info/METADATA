@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mia-zq
+Version: 0.0.3
+Summary: 一个基于 `asyncio` 简易的微服务框架
+Home-page: https://github.com/XiaoZouYu/MicroA
+Author: XiaoZouYu
+Requires-Dist: aio-pika >=9.3.0
+Requires-Dist: uvloop >=0.16
+Requires-Dist: pyyaml >=6.0.0
+Requires-Dist: six ==1.16.0
+
