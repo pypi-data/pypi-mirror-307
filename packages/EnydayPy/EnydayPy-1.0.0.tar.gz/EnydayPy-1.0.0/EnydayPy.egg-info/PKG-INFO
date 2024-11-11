@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: EnydayPy
+Version: 1.0.0
+Summary: Enyday API
+Home-page: https://github.com/bruadam/EnydayPy
+Author: Bruno Adam
+Author-email: bruno.adam@pm.me
+License: UNKNOWN
+Description:     This API allows integration with the Enyday platform, providing access to user authentication, user details, authorization data, address information, and power consumption data. It helps in integrating Enyday into platforms like Home Assistant. 
+            
+Keywords: OpenAPI,OpenAPI-Generator,Enyday API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
