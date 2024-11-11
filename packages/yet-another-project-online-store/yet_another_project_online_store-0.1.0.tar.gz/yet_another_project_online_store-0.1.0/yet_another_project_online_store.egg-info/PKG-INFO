@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: yet_another_project_online-store
+Version: 0.1.0
+Summary: Исполняемый пакет для управления пользователями и заказами в онлайн-магазине
+Author-email: "v.lavrinov" <v.lavrinov@edu.centraluniversity.ru>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.19.2
+
+```markdown
+# Online Store Package
+
+Этот пакет предоставляет функциональность для управления пользователями и заказами в онлайн-магазине.
+
+## Установка
+
+```bash
+pip install online-store
+```
+
+## Использование
+
+### Управление пользователями
+
+**Добавление пользователя:**
+
+```python
+from online_store import UserManager
+
+user_manager = UserManager()
+user_manager.add_user("user1@example.com", {"name": "Иван", "age": 30})
+```
+
+**Поиск пользователя:**
+
+```python
+user_data = user_manager.find_user("user1@example.com")
+print(user_data)  # Выведет данные пользователя или сообщение, если пользователь не найден
+```
+
+**Обновление данных пользователя:**
+
+```python
+user_manager.update_user("user1@example.com", {"name": "Иван Иванович", "age": 31})
+```
+
+**Удаление пользователя:**
+
+```python
+user_manager.remove_user("user1@example.com")
+```
+
+
+### Управление заказами
+
+**Создание заказа:**
+
+```python
+from online_store import OrderManager
+
+order_manager = OrderManager()
+order_manager.create_order("order123", {"user": "user1@example.com", "item": "Laptop", "price": 1200})
+```
+
+**Обновление заказа:**
+
+```python
+order_manager.update_order("order123", {"status": "Shipped"})
+```
+
+**Отмена заказа:**
+
+```python
+order_manager.cancel_order("order123")
+```
+
+### Запуск интерактивного меню:
+
+```bash
+python -m online_store  # Запустит интерактивное меню для управления пользователями и заказами
+```
+
+
+## Зависимости
+
+* requests>=2.25.1
+* numpy>=1.19.2
+
+
+## Лицензия
+
+MIT
+```
+
+
+**Изменения и дополнения:**
+
+* Добавлены примеры использования для каждой функции `UserManager` и `OrderManager`.
+* Показан запуск  интерактивного меню с помощью `python -m online_store`.
+* Улучшено форматирование и добавлены заголовки для лучшей читаемости.
+
+
+
+Этот `README.md`  более полно описывает функциональность вашего пакета и  поможет пользователям быстро начать работу с ним.
