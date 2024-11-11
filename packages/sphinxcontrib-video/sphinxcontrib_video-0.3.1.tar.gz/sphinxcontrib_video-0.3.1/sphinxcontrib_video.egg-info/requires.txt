@@ -1,0 +1,17 @@
+sphinx
+
+[dev]
+nox
+pre-commit
+mypy
+
+[doc]
+pydata-sphinx-theme
+sphinx-design
+
+[test]
+pytest
+beautifulsoup4
+pytest-regressions
+pytest-cov
+defusedxml

@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+sphinxcontrib/video/__init__.py
+sphinxcontrib_video.egg-info/PKG-INFO
+sphinxcontrib_video.egg-info/SOURCES.txt
+sphinxcontrib_video.egg-info/dependency_links.txt
+sphinxcontrib_video.egg-info/requires.txt
+sphinxcontrib_video.egg-info/top_level.txt
+tests/test_build.py
