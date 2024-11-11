@@ -1,0 +1,26 @@
+from typing import Any, Callable
+
+from _typeshed import Incomplete
+from pyspark.sql._typing import ColumnOrName, DataTypeOrString, UserDefinedFunctionLike
+from pyspark.sql.column import Column
+from pyspark.sql.session import SparkSession
+from pyspark.sql.types import DataType
+
+__all__ = ['UDFRegistration']
+
+class UserDefinedFunction:
+    func: Incomplete
+    evalType: Incomplete
+    deterministic: Incomplete
+    def __init__(self, func: Callable[..., Any], returnType: DataTypeOrString = ..., name: str | None = None, evalType: int = ..., deterministic: bool = True) -> None: ...
+    @property
+    def returnType(self) -> DataType: ...
+    def __call__(self, *cols: ColumnOrName) -> Column: ...
+    def asNondeterministic(self) -> UserDefinedFunction: ...
+
+class UDFRegistration:
+    sparkSession: Incomplete
+    def __init__(self, sparkSession: SparkSession) -> None: ...
+    def register(self, name: str, f: Callable[..., Any] | UserDefinedFunctionLike, returnType: DataTypeOrString | None = None) -> UserDefinedFunctionLike: ...
+    def registerJavaFunction(self, name: str, javaClassName: str, returnType: DataTypeOrString | None = None) -> None: ...
+    def registerJavaUDAF(self, name: str, javaClassName: str) -> None: ...
