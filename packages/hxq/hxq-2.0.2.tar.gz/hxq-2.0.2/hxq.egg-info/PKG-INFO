@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hxq
+Version: 2.0.2
+Summary: 这是一个python工具包
+Author: hxq
+Author-email: 337168530@qq.com
+License: GPL
+Requires-Dist: requests==2.23.0
+Requires-Dist: lxml==4.9.2
+Requires-Dist: pymysql==1.1.1
+Requires-Dist: DBUtils==3.0.2
+Requires-Dist: aiofiles==23.1.0
+Requires-Dist: winshell==0.6
+Provides-Extra: html
+Requires-Dist: bs4>=0.0.1; extra == "html"
+Requires-Dist: xmltodict>=1.2; extra == "html"
