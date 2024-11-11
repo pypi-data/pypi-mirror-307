@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "gpt-resolve"
+version = "0.2.0"
+description = "GPT solutions for Brazilian university entrance exams."
+authors = ["Luan Fernandes <luangabriel70@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lgabs/gpt-resolve"
+repository = "https://github.com/lgabs/gpt-resolve"
+keywords = ["gpt", "education", "exam-solving", "brazil"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.54.3"
+python-dotenv = "^1.0.1"
+pylatex = "^1.4.2"
+tqdm = "^4.67.0"
+typer = "^0.13.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gpt-resolve = "gpt_resolve.resolve:main"
