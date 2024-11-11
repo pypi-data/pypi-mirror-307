@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkmate2"
+version = "4.0.65"
+authors = [
+    { name = "Andreas Dewes" }
+]
+description = "A meta-code checker written in Python."
+readme = "README.md"
+license = { text = "AGPL-3.0" }
+
+
+classifiers = [
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Quality Assurance"
+]
+dependencies = [
+  "blitzdb3",
+  "pyyaml",
+  "sqlalchemy"
+]
+
+
+[project.scripts]
+checkmate = "checkmate.scripts.manage:main"
