@@ -1,0 +1,11 @@
+check-link~=0.0.10
+typing-extensions
+ckanext-toolbelt
+ckanext-collection
+
+[dev]
+pytest-ckan
+pytest-factoryboy
+responses
+pytest-httpx
+pytest-asyncio
