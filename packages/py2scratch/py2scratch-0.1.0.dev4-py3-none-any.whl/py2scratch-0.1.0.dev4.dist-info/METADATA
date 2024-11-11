@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: py2scratch
+Version: 0.1.0.dev4
+Summary: A module that converts Python to Scratch (.sb3) files.
+Project-URL: Homepage, https://github.com/Crunchitect/py2scratch
+Author-email: Crunchitect <crunchitect@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+<img align="center" src="./readme-assets/scratch.png">
+<h1 align="center">py2scratch</h1>
+
+<p align="center">A module that converts python into scratch projects<p>
+
+## Installation
+
+Just `pip install` this, Depencies are currently `pillow`, `mutagen` and `astroid`!
+
+```cmd
+pip install py2scratch
+```
+
+Or try the `dev` branch, with basic coding capabilities!
+```cmd
+pip install py2scratch==0.1.0.dev3
+```
