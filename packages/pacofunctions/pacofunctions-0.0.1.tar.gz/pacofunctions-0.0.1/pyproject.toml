@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacofunctions"
+authors = [
+    { name = "Andre Freire", email = "andre@pacorush.com.br" }
+]
+description = "package description"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests > 2.26.0",
+    "pandas",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "googlemaps",
+    "beautifulsoup4",
+    "xmltodict",
+    "geopandas",
+    "shapely",
+    "folium"
+]
