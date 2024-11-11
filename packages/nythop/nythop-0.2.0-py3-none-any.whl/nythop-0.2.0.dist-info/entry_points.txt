@@ -1,0 +1,3 @@
+[console_scripts]
+nythop = nythop:cli
+nythop-transpile = nythop:transpile
