@@ -1,0 +1,3 @@
+[console_scripts]
+paperless-asn-labels=paperless_asn_labels.main:generate
+
