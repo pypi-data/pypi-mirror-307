@@ -1,0 +1,16 @@
+[project]
+name = "pygbm_liz"
+version = "0.1.0"
+description = "A package to simulate Geometric Brownian Motion"
+authors = [
+    {name = "Liz Tan", email = "eszt2@cam.ac.uk"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.6"
+keywords = ["geometric brownian motion", "stochastic processes", "finance", "simulation"]
+
+dependencies = ["numpy>=1.18.0", "matplotlib>=3.0.0"]
+
+[project.scripts]
+pygbm-cli = "pygbm.cli:main"
