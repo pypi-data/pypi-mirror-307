@@ -1,0 +1,2 @@
+[console_scripts]
+cli2web = cli2web.__main__:main
