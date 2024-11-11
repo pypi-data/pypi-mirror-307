@@ -1,0 +1,2 @@
+[console_scripts]
+ghchain = ghchain.cli:ghchain_cli
