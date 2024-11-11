@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/ResearchMe.egg-info/PKG-INFO
+src/ResearchMe.egg-info/SOURCES.txt
+src/ResearchMe.egg-info/dependency_links.txt
+src/ResearchMe.egg-info/requires.txt
+src/ResearchMe.egg-info/top_level.txt
+src/researchme/libgen/__init__.py
+src/researchme/libgen/_scrapper_sessions.py
+tests/test_mirror1.py
