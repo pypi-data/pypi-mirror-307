@@ -1,0 +1,19 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.8.4"]
+
+[tool]
+
+[tool.poetry]
+name = "ztmi_inst"
+version = "0.1.1"
+description = "ZTMI Instruction SCPI Commands Script"
+authors = ["ZHIYUAN <jhess@ztmi.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
