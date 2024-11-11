@@ -1,0 +1,17 @@
+[project]
+name = "EducRating"
+version = "0.0.10"
+authors = [
+  { name="Julian Manz", email="julian.manz@hs-kempten.de" },
+]
+description = "Python package for rating systems usable in educational environments."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/juli-txt/EducRating"
