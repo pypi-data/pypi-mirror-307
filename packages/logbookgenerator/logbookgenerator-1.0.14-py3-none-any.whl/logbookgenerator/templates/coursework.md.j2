@@ -1,0 +1,12 @@
+## **{{ file_name }}**
+
+{% for question_key, question_value in tasks.items() %}
+### {{ question_key | replace('_', ' ') | title() }}
+
+{% for task_answer, task_code in question_value %}{{ task_answer }}
+
+```
+{{ task_code }}
+```
+{% endfor %}
+{% endfor %}
