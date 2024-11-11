@@ -1,0 +1,13 @@
+cli2web/__init__.py,sha256=N6lwNV4weU-u8yjA_8e-DbkGkn3zL6bDMZrPmLmtbNY,131
+cli2web/__main__.py,sha256=cT3maPSduz92muyiFqtoF8RvGyEazfVUIv48g5Kh00Q,1030
+cli2web/cli_parser.py,sha256=9l1cLdJJxbQcODQSIpPhxy__ci5f7QBQKGUURSHgddQ,9576
+cli2web/process_manager.py,sha256=LX8nTYUkDUOYXrXA4ITZHPcmms6BdyvtkjkasIs7aPM,7210
+cli2web/web_generator.py,sha256=lrVcKNpkL86Anh4oBy8Uzs2m0bi6Ae0klFBaVpJ4pDs,547
+cli2web/web_server.py,sha256=bEHCvEc2CMF1KdJuDR7dg5E9WhlNrcEOrTLcQNMwnUA,3356
+cli2web/templates/base.html,sha256=f-GRhH-a2MDissJ-sXPYxLGHGIH2dTTFzhNDUPmKpCs,7347
+cli2web/templates/cli_form.html,sha256=ZCUa4nchuAljZ1txPik3EHLCsVF5CH0700Ekz5LKSYw,22836
+cli2webui-0.2.0.dist-info/METADATA,sha256=2cxl9lPGmIIq6PQH7N6bF9BRtuEIcktIYlnjcT_Tams,2524
+cli2webui-0.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+cli2webui-0.2.0.dist-info/entry_points.txt,sha256=-g3H32QpLBYqFpKm3wNFKGMgqa5BOWeNx3rSX4kNSKw,52
+cli2webui-0.2.0.dist-info/top_level.txt,sha256=Ho_s1DeeGlNRvsgroULJ6iL7r2gIl0ncwsJN7Lr62hg,8
+cli2webui-0.2.0.dist-info/RECORD,,
