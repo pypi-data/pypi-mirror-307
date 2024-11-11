@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-rust>=1.5.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sglang-rust-test"
+version = "0.1.11"
+description = "A Python wrapper around Rust HelloWorld"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+]
