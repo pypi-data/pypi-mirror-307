@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: weightedcalcs
+Version: 0.1.3
+Summary: Pandas-based utility to calculate weighted means, medians, distributions, standard deviations, and more.
+Home-page: http://github.com/jsvine/weightedcalcs
+Author: Jeremy Singer-Vine
+Author-email: jsvine@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE.txt
+Requires-Dist: pandas >=2.0
+
