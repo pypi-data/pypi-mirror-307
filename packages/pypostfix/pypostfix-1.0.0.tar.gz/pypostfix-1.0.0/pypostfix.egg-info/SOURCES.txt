@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pypostfix/RPN.py
+pypostfix/Stack.py
+pypostfix/__init__.py
+pypostfix.egg-info/PKG-INFO
+pypostfix.egg-info/SOURCES.txt
+pypostfix.egg-info/dependency_links.txt
+pypostfix.egg-info/entry_points.txt
+pypostfix.egg-info/top_level.txt
