@@ -1,0 +1,19 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+name = "vtece4564-gamelib"
+dynamic = ["version"]
+description = "A support library for the ECE 4564 Final Project"
+requires-python = ">=3.10"
+authors = [{ name = "Carl Harris" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+dependencies = ["cryptography==43.0.3", "pyjwt==2.9.0", "pymongo==4.10.1", "websockets==11.0.3", "py-purecrypt==0.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src/main/python"]
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
