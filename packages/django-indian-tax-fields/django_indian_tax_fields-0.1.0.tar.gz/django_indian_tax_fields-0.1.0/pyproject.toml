@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "django-indian-tax-fields"
+packages = [
+    { include = "indian_tax_fields" },
+]
+version = "0.1.0"
+package-mode = true
+description = "GST and PAN number field for django models."
+readme = "README.md"
+license = "MIT"
+keywords = ["django", "orm", "python", "gst", "pan", "indian", "tax", "fields"]
+homepage = "https://github.com/Mitrajeet-Golsangi/django-gst-field"
+repository = "https://github.com/Mitrajeet-Golsangi/django-gst-field"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+authors = [
+    "Gandhar Pednekar <gandhar.pednekar15@gmail.com>",
+    "Mitrajeet Golsangi <mitrajeet.golsangi@gmail.com>",
+]
+
+maintainers = ["Mitrajeet Golsangi <mitrajeet.golsangi@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = ">=3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

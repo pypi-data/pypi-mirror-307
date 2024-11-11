@@ -1,0 +1,5 @@
+GSTIN_MAX_LENGTH = 15
+PAN_MAX_LENGTH = 10
+
+PAN_REGEX = "[A-Z]{3}[CPHFATBLJGE]{1}[A-Z]{1}\d{4}[A-Z]{1}"
+GSTIN_REGEX = "(3[0-7]|[1-2][0-9]|0[1-9])%s\d[Z]{1}[A-Z\d]{1}" % PAN_REGEX

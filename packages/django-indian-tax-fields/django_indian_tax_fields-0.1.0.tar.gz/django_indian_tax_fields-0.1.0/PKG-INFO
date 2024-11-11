@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: django-indian-tax-fields
+Version: 0.1.0
+Summary: GST and PAN number field for django models.
+Home-page: https://github.com/Mitrajeet-Golsangi/django-gst-field
+License: MIT
+Keywords: django,orm,python,gst,pan,indian,tax,fields
+Author: Gandhar Pednekar
+Author-email: gandhar.pednekar15@gmail.com
+Maintainer: Mitrajeet Golsangi
+Maintainer-email: mitrajeet.golsangi@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (>=3.0)
+Project-URL: Repository, https://github.com/Mitrajeet-Golsangi/django-gst-field
+Description-Content-Type: text/markdown
+
+# Django Indian Tax Fields
+
+>This repository is a fork of the original repository [django-gst-field](https://github.com/jinchuuriki91/django-gst-field). This fork is created to maintain the code and extend the original scope.
+
+# Contents
+
+A Django library which provides model and form fields for `Goods and Services Tax` and `Permanent Account Number`
+
+Includes:
+
+- `GSTField`, form and model field
+- `PANField`, form and model field
+
+## Installation
+
+```
+pip install django-indian-tax-fields
+```
+
+### Basic usage
+
+Add `indian_tax_fields` to the list of the installed apps in Django `settings.py` file:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'indian_tax_fields',
+    ...
+]
+```
+
+### Model usage
+
+```python
+from django.conf import settings
+from django.db.models import ForeignKey, CASCADE, Model
+
+from indian_tax_fields.gst.model_fields import GSTField
+from indian_tax_fields.pan.model_fields import PANField
+
+class Tax(Model):
+    user = ForeignKey(settings.AUTH_USER_MODEL, on_delete=CASCADE)
+    gstin = GSTField()
+    pan = PANField()
+```
+
