@@ -1,0 +1,3 @@
+[console_scripts]
+flextask = flextask.cli:run_flex_task
+ft = flextask.cli:run_flex_task

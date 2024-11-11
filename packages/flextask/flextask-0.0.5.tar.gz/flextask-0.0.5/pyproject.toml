@@ -1,0 +1,57 @@
+# Developer(s): Grigori Fursin
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+name = "flextask"
+
+authors = [
+    {name = "Grigori Fursin"}
+]
+
+version = "0.0.5"
+
+description = "Flex Task CLI"
+
+requires-python = ">=3.8"
+
+dependencies = [
+    "setuptools", "cmind"
+]
+
+keywords = [
+    "cmx", 
+    "flextask",
+    "ft"
+]
+
+license = {text = "Apache 2.0"}
+
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dynamic = ["readme"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["flextask"]
+exclude = ["docs", "docs.*", "tests", "tests.*"]
+
+[project.scripts]
+flextask = "flextask.cli:run_flex_task"
+ft = "flextask.cli:run_flex_task"
