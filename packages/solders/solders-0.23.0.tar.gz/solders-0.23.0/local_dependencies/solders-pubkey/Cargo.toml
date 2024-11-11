@@ -1,0 +1,18 @@
+
+[package]
+name = "solders-pubkey"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders pubkey crate."
+
+[dependencies]
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+solders-traits-core = { path = "../solders-traits-core" }
+solders-traits = { path = "../solders-traits" }
+solders-macros = { path = "../solders-macros" }
+solana-program = "2.1.0"
+serde = "^1.0.188"
+derive_more = "0.99.17"

@@ -1,0 +1,20 @@
+
+[package]
+name = "solders-transaction-return-data"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders transaction return data crate."
+
+[dependencies]
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+solana-sdk = "2.1.0"
+serde = "^1.0.188"
+derive_more = "0.99.17"
+solders-pubkey = { path = "../solders-pubkey" }
+solders-macros = { path = "../solders-macros" }
+base64 = "0.13.0"
+solders-traits-core = { path = "../solders-traits-core" }
+solana-transaction-status = "2.1.0"

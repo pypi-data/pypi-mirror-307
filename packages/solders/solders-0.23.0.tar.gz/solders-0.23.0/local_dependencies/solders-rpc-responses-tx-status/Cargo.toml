@@ -1,0 +1,21 @@
+
+[package]
+name = "solders-rpc-responses-tx-status"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders RPC responses-tx-status crate."
+
+[dependencies]
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+serde = "^1.0.188"
+derive_more = "0.99.17"
+solders-macros = { path = "../solders-macros" }
+solders-traits-core = { path = "../solders-traits-core" }
+solders-transaction-error = { path = "../solders-transaction-error" }
+solana-rpc-client-api = "2.1.0"
+solders-transaction-confirmation-status = { path = "../solders-transaction-confirmation-status" }
+solders-rpc-response-data-boilerplate = { path = "../solders-rpc-response-data-boilerplate" }
+solders-signature = { path = "../solders-signature" }

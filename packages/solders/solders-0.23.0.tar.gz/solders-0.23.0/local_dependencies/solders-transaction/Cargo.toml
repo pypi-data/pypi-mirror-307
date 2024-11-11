@@ -1,0 +1,24 @@
+
+[package]
+name = "solders-transaction"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders transaction crate."
+
+[dependencies]
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+solders-traits = { path = "../solders-traits" }
+solders-traits-core = { path = "../solders-traits-core" }
+solders-macros = { path = "../solders-macros" }
+solana-sdk = "2.1.0"
+serde = "^1.0.188"
+derive_more = "0.99.17"
+solders-message = { path = "../solders-message" }
+solders-pubkey = { path = "../solders-pubkey" }
+solders-keypair = { path = "../solders-keypair" }
+solders-signature = { path = "../solders-signature" }
+solders-hash = { path = "../solders-hash" }
+solders-instruction = { path = "../solders-instruction" }

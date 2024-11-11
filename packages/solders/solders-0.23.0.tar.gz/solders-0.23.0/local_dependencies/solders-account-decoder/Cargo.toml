@@ -1,0 +1,23 @@
+
+[package]
+name = "solders-account-decoder"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders account decoder crate."
+
+[dependencies]
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+solana-sdk = "2.1.0"
+serde = "^1.0.188"
+serde_json = "^1.0.106"
+derive_more = "0.99.17"
+pythonize = "0.20.0"
+solders-macros = { path = "../solders-macros" }
+zstd = "0.11.2"
+base64 = "0.13.0"
+bs58 = "0.4.0"
+solders-traits-core = { path = "../solders-traits-core" }
+solana-account-decoder = "2.1.0"

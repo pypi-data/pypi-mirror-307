@@ -1,0 +1,15 @@
+
+[package]
+name = "solders-transaction-status-enums"
+version = "0.23.0"
+edition = "2021"
+include = ["/src"]
+license = "MIT"
+repository = "https://github.com/kevinheavey/solders"
+description = "Solders transaction status enums crate."
+
+[dependencies]
+serde = "^1.0.188"
+pyo3 = { version = "0.20.2", default-features = false , features = ["macros"] }
+solana-transaction-status = "2.1.0"
+solders-macros = { path = "../solders-macros" }
