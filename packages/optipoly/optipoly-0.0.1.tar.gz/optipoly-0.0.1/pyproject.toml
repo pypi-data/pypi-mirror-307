@@ -1,0 +1,20 @@
+[project]
+name = "optipoly"
+version = "0.0.1"
+authors = [
+    {name="Mazen Alamir", email="mazen.alamir@grenoble-inp.fr"},
+]
+description = "An NLP solver for box-constrained optimization of polynomial cost functions"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+keywords = ["Nonlinear Programming", "optimization", "derivative free", "constrained optimization", "multi-variate polynomial"]
+
+[project.urls]
+Homepage = "https://github.com/mazenalamir/optipoly"
+Issues = "https://github.com/mazenalamir/optipoly/issues"
