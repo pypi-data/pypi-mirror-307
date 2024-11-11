@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: spotibar
+Version: 0.5.0
+Summary: Spotify plugin for Polybar
+Home-page: https://github.com/conor-f/spotibar
+Requires-Python: >=3.6
+Requires-Dist: pylast
+Requires-Dist: spotipy
