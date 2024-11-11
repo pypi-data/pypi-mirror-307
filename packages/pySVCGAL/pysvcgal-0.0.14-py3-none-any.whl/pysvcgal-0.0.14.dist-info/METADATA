@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: pySVCGAL
+Version: 0.0.14
+Summary: Python CGAL straight skeleton extrude wrapper
+Project-URL: Homepage, https://github.com/satabol/pySVCGAL
+Project-URL: Issues, https://github.com/satabol/pySVCGAL/issues
+Author-email: Satabol <satabol@yandex.ru>
+Keywords: extrude,skeleton
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: more-itertools
+Description-Content-Type: text/markdown
+
+## Description
+
+This is a Python wrapper of ctCGAL. See also:
+
+https://www.cgal.org/2023/05/09/improved_straight_skeleton/
+
+https://pypi.org/project/pySVCGAL/
+
+## Usage
+
+```
+pip install pySVCGAL
+```
+
+For developer
+-------------
+
+for local install from package folder:
+
+```
+"E:\install\Blender\blender-3.6.12-windows-x64\3.6\python\Scripts\pip.exe" install .
+```
+
+To uninstall write a name (no some folder name):
+
+```
+"E:\install\Blender\blender-3.6.12-windows-x64\3.6\python\Scripts\pip.exe" uninstall pySVCGAL
+```
+
+## Publish/Update package on PyPi
+
+```
+python -m build
+twine upload dist/*
+
+```
