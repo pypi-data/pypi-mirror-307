@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: checkmate2
+Version: 4.0.66
+Summary: A meta-code checker written in Python.
+Author: Andreas Dewes
+License: AGPL-3.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: blitzdb3
+Requires-Dist: pyyaml
+Requires-Dist: sqlalchemy
+
