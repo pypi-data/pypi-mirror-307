@@ -1,0 +1,6 @@
+[console_scripts]
+npeccv6_create_model=npeccv6.create_model:main
+npeccv6_predict=npeccv6.predict:main
+npeccv6_preprocess=npeccv6.preprocessing:main
+npeccv6_train=npeccv6.train:main
+
