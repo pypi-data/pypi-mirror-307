@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mssqlconnect
+Version: 0.2
+Summary: mssqlconnect
+Author: 棽杓
+Author-email: 1047366140@qq,com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymssql
+
+## mssql connect tools
