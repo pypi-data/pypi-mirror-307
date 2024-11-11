@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: eclipy
+Version: 1.0.0a1
+Summary: A powerful, lightweight Python library designed to provide a variety of functions.
+License: MIT License
+        
+        Copyright (c) 2024 DevByEagle
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: source, https://github.com/DevByEagle/eclipy
+Project-URL: tracker, https://github.com/DevByeagle/eclipy/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!-- <h1 align="center">
+<img src="https://example.com/logo.svg" width="300">
+</h1><br> -->
+
+# 📦 Eclipy
+
+Eclipy is a lightweight Python library with a flexible, easy-to-use API for diverse programming tasks. It 
+enables quick, reliable operations, helping streamline workflows and enhance productivity. Perfect 
+for everything from data manipulation to automation.
+
+## ✨Features
+- **Easy-to-Use API:** Simple to integrate and extend.
+- **Cross-Platform Support:** Works on Windows, macOS, and Linux.
+
+## 📥 Installation
+
+**Eclipy** is available on PyPI. To install, simply use:
+
+```bash
+pip install eclipy
+```
+
+## 🚀 Quick Start
+
+Here’s a basic example to help you get started:
+
+```python
+from eclipy import *
+
+def main():
+    my_string = eclipy.String("Hello, World!")
+    print(my_string)                        # Output: Hello, World!
+
+main()
+```
+
+## 👥 Community and Support
+
+Join the **Eclipy** community:
+
+<!-- - [**GitHub Discussions:**]() Connect with developers, ask questions, and share ideas. --> 
+
+- **Twitter:** Follow [@DevByEagle](https://x.com/DevByEagle) for updates.
