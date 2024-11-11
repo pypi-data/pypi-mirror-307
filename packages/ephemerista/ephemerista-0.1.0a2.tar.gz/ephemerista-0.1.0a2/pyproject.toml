@@ -1,0 +1,205 @@
+[project]
+name = "ephemerista"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "AGPL-3.0-or-later" }
+keywords = []
+authors = [{ name = "Helge Eichhorn", email = "git@helgeeichhorn.de" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "geojson-pydantic~=1.1",
+  "itur~=0.4",
+  "jdk4py~=21.0.2.1",
+  "lox-space~=0.1.0a2",
+  "matplotlib~=3.8",
+  "numpy~=1.26",
+  "orekit_jpype~=12.1.1.0",
+  "pandas~=2.1",
+  "plotly~=5.22",
+  "pydantic_numpy~=5.0",
+  "pydantic~=2.8",
+  "scipy~=1.14",
+  "geopandas~=1.0.1",
+  "healpy~=1.17.3",
+  "antimeridian~=0.3.8",
+  "anywidget~=0.9.13",
+  "psygnal~=0.11.1",
+]
+
+[project.urls]
+Documentation = "https://docs.ephemerista.space"
+Issues = "https://gitlab.com/librespacefoundation/ephemerista/ephemerista-simulator/-/issues"
+Source = "https://gitlab.com/librespacefoundation/ephemerista/ephemerista-simulator"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/ephemerista/__about__.py"
+
+[tool.hatch.envs.default]
+python = "3.12"
+type = "virtual"
+path = ".venv"
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "ipython",
+  "ipykernel",
+  "nbformat",
+  "nbmake",
+  "pre-commit",
+  "watchfiles",
+  "orekitdata @ git+https://gitlab.orekit.org/orekit/orekit-data.git",
+]
+[tool.hatch.envs.default.scripts]
+test-unit = "pytest {args:tests}"
+test-examples = "pytest --nbmake examples/*.ipynb"
+test-cov = "coverage run -m pytest {args:tests}"
+test = ["test-unit", "test-examples"]
+cov-combine = "- coverage combine"
+cov-html = "coverage html"
+cov-report = "coverage report"
+cov-xml = "coverage xml"
+cov = ["test-cov", "cov-combine", "cov-html", "cov-report"]
+cov-ci = ["test-cov", "cov-combine", "cov-xml", "cov-html", "cov-report"]
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = ["black>=23.1.0", "mypy>=1.0.0", "ruff>=0.7.1"]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:src/ephemerista tests}"
+style = ["ruff {args:.}", "black --check --diff {args:.}"]
+fmt = ["black {args:.}", "ruff --fix {args:.}", "style"]
+all = ["style", "typing"]
+
+[tool.hatch.envs.docs]
+python = "3.12"
+dependencies = [
+  "sphinx>=7.2",
+  "myst-parser>=2.0",
+  "furo>=2023.9.10",
+  "sphinx-autodoc-typehints",
+  "autodoc_pydantic",
+  "sphinx-autoapi",
+  "sphinx-autobuild",
+]
+[tool.hatch.envs.docs.scripts]
+build = "sphinx-build -b html docs docs/_build/html"
+build-pdf = "sphinx-build -b latex docs docs/_build/pdf && make -C docs/_build/pdf"
+build-ci = "sphinx-build -b html docs public"
+serve = "sphinx-autobuild -b html docs docs/_build/html --watch src"
+
+[tool.hatch.build]
+only-packages = true
+artifacts = ["src/ephemerista/static/*"]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = ["src/ephemerista/static/form_widget.js"]
+skip-if-exists = ["src/ephemerista/static/form_widget.js"]
+dependencies = ["hatch-jupyter-builder>=0.5.0"]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+npm = "npm"
+build_cmd = "build"
+
+[tool.black]
+target-version = ["py312"]
+line-length = 120
+skip-string-normalization = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+lint.select = [
+  "A",
+  "ARG",
+  "B",
+  "C",
+  "DTZ",
+  "E",
+  "EM",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "ISC",
+  "N",
+  "PLC",
+  "PLE",
+  "PLR",
+  "PLW",
+  "Q",
+  "RUF",
+  "S",
+  "T",
+  "TID",
+  "UP",
+  "W",
+  "YTT",
+]
+lint.ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  "FBT003",
+  # Ignore checks for possible passwords
+  "S105",
+  "S106",
+  "S107",
+  # Ignore complexity
+  "C901",
+  "PLR0911",
+  "PLR0912",
+  "PLR0913",
+  "PLR0915",
+  # Avoid conflict with formatter
+  "ISC001",
+]
+lint.unfixable = [
+  # Don't touch unused imports
+  "F401",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ephemerista"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
+
+[tool.coverage.run]
+source_pkgs = ["ephemerista", "tests"]
+branch = true
+parallel = true
+omit = ["src/ephemerista/__about__.py", "tests/*"]
+[tool.coverage.paths]
+ephemerista = ["src/ephemerista", "*/ephemerista/src/ephemerista"]
+tests = ["tests", "*/ephemerista/tests"]
+
+[tool.coverage.report]
+exclude_also = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+  "@(abc\\.)?abstractmethod",
+]
+
+[tool.mypy]
+plugins = ["pydantic-mypy", "numpy.typing.mypy_plugin"]
