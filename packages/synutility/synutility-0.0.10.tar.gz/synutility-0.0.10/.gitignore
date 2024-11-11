@@ -1,0 +1,7 @@
+*.pyc
+*cachedir
+*.csv
+*/catboost_info/*
+*.ipynb
+*.json
+test_mod.py
