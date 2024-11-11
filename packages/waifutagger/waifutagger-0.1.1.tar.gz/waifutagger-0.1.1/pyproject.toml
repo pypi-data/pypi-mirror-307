@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waifutagger"
+version = "0.1.1"  # Update version here too
+description = "A simple tagger for anime-style images using SmilingWolf models"
+authors = [
+    {name = "arielfikrua", email = "arielfikrua@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19.0",
+    "onnxruntime>=1.7.0",
+    "Pillow>=8.0.0",
+    "huggingface_hub>=0.7.0",
+    "pandas>=1.2.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["waifutagger"]

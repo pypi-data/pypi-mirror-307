@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+src/waifutagger/__init__.py
+src/waifutagger/constants.py
+src/waifutagger/core.py
+src/waifutagger/formatters.py
+src/waifutagger/utils.py
+src/waifutagger/version.py
+src/waifutagger.egg-info/PKG-INFO
+src/waifutagger.egg-info/SOURCES.txt
+src/waifutagger.egg-info/dependency_links.txt
+src/waifutagger.egg-info/requires.txt
+src/waifutagger.egg-info/top_level.txt
