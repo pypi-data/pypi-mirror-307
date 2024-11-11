@@ -1,0 +1,3393 @@
+LICENSE
+README.md
+pyproject.toml
+database/catalog-n2.yml
+database/catalog-nk.yml
+database/catalog_nk.csv
+database/generate_csv_database.py
+database/data-n2/glass/AMTIR-1/Ensley.yml
+database/data-n2/glass/AMTIR-2/Ensley.yml
+database/data-n2/glass/AMTIR-6/Ensley.yml
+database/data-n2/glass/BGG/Flom.yml
+database/data-n2/glass/BK10/White.yml
+database/data-n2/glass/BK7/Adair.yml
+database/data-n2/glass/BK7/Ensley.yml
+database/data-n2/glass/BK7/Flom.yml
+database/data-n2/main/AgCl/Adair.yml
+database/data-n2/main/AgGaS2/Jansonas-e.yml
+database/data-n2/main/AgGaS2/Jansonas-o.yml
+database/data-n2/main/AgGaSe2/Pigeon.yml
+database/data-n2/main/Al2O3/Adair-e.yml
+database/data-n2/main/Al2O3/Adair-o.yml
+database/data-n2/main/Al2O3/DeSalvo.yml
+database/data-n2/main/Al2O3/Patwardhan.yml
+database/data-n2/main/BaB2O4/DeSalvo.yml
+database/data-n2/main/BaF2/Adair.yml
+database/data-n2/main/BaF2/DeSalvo.yml
+database/data-n2/main/BaF2/Ensley.yml
+database/data-n2/main/BaF2/Milam.yml
+database/data-n2/main/BaF2/Polyanskiy.yml
+database/data-n2/main/BaF2/Sheik-Bahae.yml
+database/data-n2/main/BaGa4Se7/Jansonas.yml
+database/data-n2/main/BeAl2O4/Adair.yml
+database/data-n2/main/BiB3O6/Kabacinski.yml
+database/data-n2/main/BiB3O6/Miller-alphaY.yml
+database/data-n2/main/BiB3O6/Miller-alphaZ.yml
+database/data-n2/main/BiB3O6/Miller-betaX.yml
+database/data-n2/main/BiB3O6/Miller-gammaX.yml
+database/data-n2/main/BiB3O6/Miller-gammaY.yml
+database/data-n2/main/CS2/Sheik-Bahae.yml
+database/data-n2/main/CaCO3/Adair-e.yml
+database/data-n2/main/CaCO3/Adair-o.yml
+database/data-n2/main/CaCO3/DeSalvo.yml
+database/data-n2/main/CaCO3/Kabacinski-e.yml
+database/data-n2/main/CaCO3/Kabacinski-o.yml
+database/data-n2/main/CaF2/Adair.yml
+database/data-n2/main/CaF2/Ensley.yml
+database/data-n2/main/CaF2/Kabacinski.yml
+database/data-n2/main/CaF2/Milam.yml
+database/data-n2/main/CaF2/Patwardhan.yml
+database/data-n2/main/CaO/Adair.yml
+database/data-n2/main/CaWO4/Adair-e.yml
+database/data-n2/main/CaWO4/Adair-o.yml
+database/data-n2/main/CdF2/Adair.yml
+database/data-n2/main/CdF2/Milam.yml
+database/data-n2/main/CdS/Adair-e.yml
+database/data-n2/main/CdS/Adair-o.yml
+database/data-n2/main/CdS/Sheik-Bahae.yml
+database/data-n2/main/CdSe/Sheik-Bahae.yml
+database/data-n2/main/CdTe/Sheik-Bahae.yml
+database/data-n2/main/CeF3/Adair.yml
+database/data-n2/main/CeF3/Milam.yml
+database/data-n2/main/Er2O3/Adair.yml
+database/data-n2/main/Ga2O3/Adair.yml
+database/data-n2/main/GaAs/Ensley.yml
+database/data-n2/main/GaAs/Hurlbut.yml
+database/data-n2/main/GaAs/Jansonas.yml
+database/data-n2/main/GaAs/Sheik-Bahae.yml
+database/data-n2/main/GaSb/Ensley.yml
+database/data-n2/main/GaSe/Jansonas.yml
+database/data-n2/main/Gd3Ga5O12/Adair.yml
+database/data-n2/main/Gd3Sc2Al3O12/Adair.yml
+database/data-n2/main/Gd3Sc2Ga3O12/Adair.yml
+database/data-n2/main/Ge/Ensley.yml
+database/data-n2/main/Ge/Sheik-Bahae.yml
+database/data-n2/main/InP/Ensley.yml
+database/data-n2/main/KBr/Adair.yml
+database/data-n2/main/KBr/DeSalvo.yml
+database/data-n2/main/KCl/Adair.yml
+database/data-n2/main/KCl/Polyanskiy.yml
+database/data-n2/main/KF/Adair.yml
+database/data-n2/main/KH2PO4/Adair-e.yml
+database/data-n2/main/KH2PO4/Adair-o.yml
+database/data-n2/main/KTaO3/Adair.yml
+database/data-n2/main/KTiOAsO4/Jansonas-XZ.yml
+database/data-n2/main/KTiOAsO4/Jansonas-Y.yml
+database/data-n2/main/KTiOPO4/DeSalvo-beta.yml
+database/data-n2/main/KTiOPO4/DeSalvo-gamma.yml
+database/data-n2/main/KTiOPO4/Sheik-Bahae.yml
+database/data-n2/main/La3Lu2Ga3O12/Adair.yml
+database/data-n2/main/LaF3/Adair.yml
+database/data-n2/main/LaF3/Milam.yml
+database/data-n2/main/LiF/Adair.yml
+database/data-n2/main/LiF/DeSalvo.yml
+database/data-n2/main/LiF/Ensley.yml
+database/data-n2/main/LiF/Milam.yml
+database/data-n2/main/LiGaS2/Jansonas-XZ.yml
+database/data-n2/main/LiGaS2/Jansonas-Y.yml
+database/data-n2/main/LiNbO3/DeSalvo.yml
+database/data-n2/main/MgAl2O4/Adair.yml
+database/data-n2/main/MgAl2O4/Flom.yml
+database/data-n2/main/MgF2/Adair.yml
+database/data-n2/main/MgF2/DeSalvo.yml
+database/data-n2/main/MgF2/Ensley.yml
+database/data-n2/main/MgF2/Milam.yml
+database/data-n2/main/MgF2/Patwardhan.yml
+database/data-n2/main/MgO/Adair.yml
+database/data-n2/main/NaBr/Adair.yml
+database/data-n2/main/NaCl/Adair.yml
+database/data-n2/main/NaCl/Polyanskiy.yml
+database/data-n2/main/NaF/Adair.yml
+database/data-n2/main/NaF/Milam.yml
+database/data-n2/main/PbF2/Milam.yml
+database/data-n2/main/Si/Bristow.yml
+database/data-n2/main/Si/Ensley.yml
+database/data-n2/main/Si/Jansonas.yml
+database/data-n2/main/Si/Lin.yml
+database/data-n2/main/SiO2/Adair-e.yml
+database/data-n2/main/SiO2/Adair-o.yml
+database/data-n2/main/SiO2/Adair.yml
+database/data-n2/main/SiO2/DeSalvo.yml
+database/data-n2/main/SiO2/Ensley.yml
+database/data-n2/main/SiO2/Flom.yml
+database/data-n2/main/SiO2/Jansonas.yml
+database/data-n2/main/SiO2/Kabacinski.yml
+database/data-n2/main/SiO2/Milam.yml
+database/data-n2/main/SiO2/Patwardhan.yml
+database/data-n2/main/SiO2/White.yml
+database/data-n2/main/SrF2/Adair.yml
+database/data-n2/main/SrF2/Milam.yml
+database/data-n2/main/SrO/Adair.yml
+database/data-n2/main/SrTiO3/Adair.yml
+database/data-n2/main/TiO2/Adair.yml
+database/data-n2/main/Y2O3/Adair.yml
+database/data-n2/main/Y3Al5O12/Adair.yml
+database/data-n2/main/Y3Al5O12/Bliss.yml
+database/data-n2/main/Y3Al5O12/Kabacinski.yml
+database/data-n2/main/Y3Al5O12/Owyoung.yml
+database/data-n2/main/Y3Ga5O12/Adair.yml
+database/data-n2/main/YAlO3/Adair.yml
+database/data-n2/main/YLiF4/Milam.yml
+database/data-n2/main/YVO4/Kabacinski-e.yml
+database/data-n2/main/YVO4/Kabacinski-o.yml
+database/data-n2/main/ZnGeP2/Jansonas-e.yml
+database/data-n2/main/ZnGeP2/Jansonas-o.yml
+database/data-n2/main/ZnO/Adair-e.yml
+database/data-n2/main/ZnO/Adair-o.yml
+database/data-n2/main/ZnS/Adair-e.yml
+database/data-n2/main/ZnS/Adair-o.yml
+database/data-n2/main/ZnS/Ensley.yml
+database/data-n2/main/ZnS/Flom.yml
+database/data-n2/main/ZnS/Jansonas.yml
+database/data-n2/main/ZnS/Patwardhan.yml
+database/data-n2/main/ZnSe/Ensley.yml
+database/data-n2/main/ZnSe/Jansonas.yml
+database/data-n2/main/ZnSe/Patwardhan.yml
+database/data-n2/main/ZnSe/Sheik-Bahae.yml
+database/data-n2/main/ZnSe/Werner.yml
+database/data-n2/main/ZnTe/Jansonas.yml
+database/data-n2/main/ZnTe/Sheik-Bahae.yml
+database/data-n2/main/ZrO2/Adair.yml
+database/data-n2/other/doped crystals/Yb-KGd(WO4)2/Selivanov-beta.yml
+database/data-n2/other/doped crystals/Yb-KY(WO4)2/Selivanov-alpha.yml
+database/data-n2/other/doped crystals/Yb-KY(WO4)2/Selivanov-beta.yml
+database/data-n2/other/doped crystals/Yb-KY(WO4)2/Selivanov-gamma.yml
+database/data-n2/other/doped crystals/Yb-YVO4/Selivanov-e.yml
+database/data-n2/other/doped crystals/Yb-YVO4/Selivanov-o.yml
+database/data-n2/other/mixed crystals/SrNb2O6-BaNb2O6/Jansonas.yml
+database/data-n2/other/mixed crystals/TlBr-TlCl/Jansonas.yml
+database/data-n2/other/mixed crystals/TlBr-TlI/Jansonas.yml
+database/data-n2/other/semiconductor alloys/AlN-Al2O3/Flom.yml
+database/data-nk/glass/ami/AMTIR-1.yml
+database/data-nk/glass/ami/AMTIR-2.yml
+database/data-nk/glass/ami/AMTIR-3.yml
+database/data-nk/glass/ami/AMTIR-6.yml
+database/data-nk/glass/barberini/D0082.yml
+database/data-nk/glass/barberini/D0191.yml
+database/data-nk/glass/barberini/D0290.yml
+database/data-nk/glass/barberini/D0391.yml
+database/data-nk/glass/barberini/D0587.yml
+database/data-nk/glass/barberini/D0687.yml
+database/data-nk/glass/barberini/D0785.yml
+database/data-nk/glass/barberini/D0888.yml
+database/data-nk/glass/barberini/D0891.yml
+database/data-nk/glass/barberini/D0991.yml
+database/data-nk/glass/barberini/D1125.yml
+database/data-nk/glass/barberini/D1214.yml
+database/data-nk/glass/barberini/D1219.yml
+database/data-nk/glass/barberini/D1230.yml
+database/data-nk/glass/barberini/D1420_1.yml
+database/data-nk/glass/barberini/D1426-D1526.yml
+database/data-nk/glass/barberini/D1511.yml
+database/data-nk/glass/barberini/D1520.yml
+database/data-nk/glass/barberini/D1616.yml
+database/data-nk/glass/barberini/D4150.yml
+database/data-nk/glass/barberini/D5336_1.yml
+database/data-nk/glass/barberini/D6117.yml
+database/data-nk/glass/barberini/D6420.yml
+database/data-nk/glass/barberini/D6526-D6626.yml
+database/data-nk/glass/barberini/D6625.yml
+database/data-nk/glass/barberini/D6726-D6826.yml
+database/data-nk/glass/barberini/D9148.yml
+database/data-nk/glass/cdgm/BAF2.yml
+database/data-nk/glass/cdgm/BAF4.yml
+database/data-nk/glass/cdgm/BAF5.yml
+database/data-nk/glass/cdgm/BAF7.yml
+database/data-nk/glass/cdgm/D-FK61-25.yml
+database/data-nk/glass/cdgm/D-FK61.yml
+database/data-nk/glass/cdgm/D-FK61A-25.yml
+database/data-nk/glass/cdgm/D-FK61A.yml
+database/data-nk/glass/cdgm/D-FK95-25.yml
+database/data-nk/glass/cdgm/D-FK95.yml
+database/data-nk/glass/cdgm/D-K59-25.yml
+database/data-nk/glass/cdgm/D-K59.yml
+database/data-nk/glass/cdgm/D-K9-25.yml
+database/data-nk/glass/cdgm/D-K9.yml
+database/data-nk/glass/cdgm/D-K9GT-25.yml
+database/data-nk/glass/cdgm/D-K9GT.yml
+database/data-nk/glass/cdgm/D-LAF050-25.yml
+database/data-nk/glass/cdgm/D-LAF050.yml
+database/data-nk/glass/cdgm/D-LAF50-25.yml
+database/data-nk/glass/cdgm/D-LAF50.yml
+database/data-nk/glass/cdgm/D-LAF53-25.yml
+database/data-nk/glass/cdgm/D-LAF53.yml
+database/data-nk/glass/cdgm/D-LAF79-25.yml
+database/data-nk/glass/cdgm/D-LAF79.yml
+database/data-nk/glass/cdgm/D-LAF82L.yml
+database/data-nk/glass/cdgm/D-LAK5-25.yml
+database/data-nk/glass/cdgm/D-LAK5.yml
+database/data-nk/glass/cdgm/D-LAK52-25.yml
+database/data-nk/glass/cdgm/D-LAK52.yml
+database/data-nk/glass/cdgm/D-LAK6-25.yml
+database/data-nk/glass/cdgm/D-LAK6.yml
+database/data-nk/glass/cdgm/D-LAK70-25.yml
+database/data-nk/glass/cdgm/D-LAK70.yml
+database/data-nk/glass/cdgm/D-PK3-25.yml
+database/data-nk/glass/cdgm/D-PK3.yml
+database/data-nk/glass/cdgm/D-QK3L-25.yml
+database/data-nk/glass/cdgm/D-QK3L.yml
+database/data-nk/glass/cdgm/D-ZF10-25.yml
+database/data-nk/glass/cdgm/D-ZF10.yml
+database/data-nk/glass/cdgm/D-ZF93-25.yml
+database/data-nk/glass/cdgm/D-ZF93.yml
+database/data-nk/glass/cdgm/D-ZK2-25.yml
+database/data-nk/glass/cdgm/D-ZK2.yml
+database/data-nk/glass/cdgm/D-ZK21-25.yml
+database/data-nk/glass/cdgm/D-ZK21.yml
+database/data-nk/glass/cdgm/D-ZK2L-25.yml
+database/data-nk/glass/cdgm/D-ZK2L.yml
+database/data-nk/glass/cdgm/D-ZK3-25.yml
+database/data-nk/glass/cdgm/D-ZK3.yml
+database/data-nk/glass/cdgm/D-ZK3L-25.yml
+database/data-nk/glass/cdgm/D-ZK3L.yml
+database/data-nk/glass/cdgm/D-ZK79-25.yml
+database/data-nk/glass/cdgm/D-ZK79.yml
+database/data-nk/glass/cdgm/D-ZLAF50-25.yml
+database/data-nk/glass/cdgm/D-ZLAF50.yml
+database/data-nk/glass/cdgm/D-ZLAF52LA-25.yml
+database/data-nk/glass/cdgm/D-ZLAF52LA.yml
+database/data-nk/glass/cdgm/D-ZLAF61-25.yml
+database/data-nk/glass/cdgm/D-ZLAF61.yml
+database/data-nk/glass/cdgm/D-ZLAF67-25.yml
+database/data-nk/glass/cdgm/D-ZLAF67.yml
+database/data-nk/glass/cdgm/D-ZLAF81-25.yml
+database/data-nk/glass/cdgm/D-ZLAF81.yml
+database/data-nk/glass/cdgm/D-ZLAF85A-25.yml
+database/data-nk/glass/cdgm/D-ZLAF85A.yml
+database/data-nk/glass/cdgm/D-ZLAF85L-25.yml
+database/data-nk/glass/cdgm/D-ZLAF85L.yml
+database/data-nk/glass/cdgm/D-ZLAF85LN-25.yml
+database/data-nk/glass/cdgm/D-ZLAF85LN.yml
+database/data-nk/glass/cdgm/D-ZLAF85LS-25.yml
+database/data-nk/glass/cdgm/D-ZLAF85LS.yml
+database/data-nk/glass/cdgm/D-ZPK1A-25.yml
+database/data-nk/glass/cdgm/D-ZPK1A.yml
+database/data-nk/glass/cdgm/D-ZPK3-25.yml
+database/data-nk/glass/cdgm/D-ZPK3.yml
+database/data-nk/glass/cdgm/D-ZPK5-25.yml
+database/data-nk/glass/cdgm/D-ZPK5.yml
+database/data-nk/glass/cdgm/D-ZPK7-25.yml
+database/data-nk/glass/cdgm/D-ZPK7.yml
+database/data-nk/glass/cdgm/F1.yml
+database/data-nk/glass/cdgm/F13.yml
+database/data-nk/glass/cdgm/F2.yml
+database/data-nk/glass/cdgm/F3.yml
+database/data-nk/glass/cdgm/F4.yml
+database/data-nk/glass/cdgm/F4GTI.yml
+database/data-nk/glass/cdgm/F5.yml
+database/data-nk/glass/cdgm/F6.yml
+database/data-nk/glass/cdgm/F7.yml
+database/data-nk/glass/cdgm/H-BAF2.yml
+database/data-nk/glass/cdgm/H-BAF3.yml
+database/data-nk/glass/cdgm/H-BAF4.yml
+database/data-nk/glass/cdgm/H-BAF5.yml
+database/data-nk/glass/cdgm/H-BAF6.yml
+database/data-nk/glass/cdgm/H-BAF7.yml
+database/data-nk/glass/cdgm/H-BAF8.yml
+database/data-nk/glass/cdgm/H-BAK1.yml
+database/data-nk/glass/cdgm/H-BAK2.yml
+database/data-nk/glass/cdgm/H-BAK3.yml
+database/data-nk/glass/cdgm/H-BAK4.yml
+database/data-nk/glass/cdgm/H-BAK5.yml
+database/data-nk/glass/cdgm/H-BAK6.yml
+database/data-nk/glass/cdgm/H-BAK7.yml
+database/data-nk/glass/cdgm/H-BAK7A.yml
+database/data-nk/glass/cdgm/H-BAK7GT.yml
+database/data-nk/glass/cdgm/H-BAK8.yml
+database/data-nk/glass/cdgm/H-F1.yml
+database/data-nk/glass/cdgm/H-F13.yml
+database/data-nk/glass/cdgm/H-F2.yml
+database/data-nk/glass/cdgm/H-F3.yml
+database/data-nk/glass/cdgm/H-F4.yml
+database/data-nk/glass/cdgm/H-F5.yml
+database/data-nk/glass/cdgm/H-F51.yml
+database/data-nk/glass/cdgm/H-FK61.yml
+database/data-nk/glass/cdgm/H-FK61B.yml
+database/data-nk/glass/cdgm/H-FK71.yml
+database/data-nk/glass/cdgm/H-FK71A.yml
+database/data-nk/glass/cdgm/H-FK95N.yml
+database/data-nk/glass/cdgm/H-K1.yml
+database/data-nk/glass/cdgm/H-K10.yml
+database/data-nk/glass/cdgm/H-K11.yml
+database/data-nk/glass/cdgm/H-K12.yml
+database/data-nk/glass/cdgm/H-K2.yml
+database/data-nk/glass/cdgm/H-K3.yml
+database/data-nk/glass/cdgm/H-K5.yml
+database/data-nk/glass/cdgm/H-K50.yml
+database/data-nk/glass/cdgm/H-K51.yml
+database/data-nk/glass/cdgm/H-K6.yml
+database/data-nk/glass/cdgm/H-K7.yml
+database/data-nk/glass/cdgm/H-K8.yml
+database/data-nk/glass/cdgm/H-K90GTI.yml
+database/data-nk/glass/cdgm/H-K9L.yml
+database/data-nk/glass/cdgm/H-K9LA.yml
+database/data-nk/glass/cdgm/H-K9LAGT.yml
+database/data-nk/glass/cdgm/H-K9LGT.yml
+database/data-nk/glass/cdgm/H-K9Lstar.yml
+database/data-nk/glass/cdgm/H-KF6.yml
+database/data-nk/glass/cdgm/H-LAF1.yml
+database/data-nk/glass/cdgm/H-LAF10LA.yml
+database/data-nk/glass/cdgm/H-LAF2.yml
+database/data-nk/glass/cdgm/H-LAF3B.yml
+database/data-nk/glass/cdgm/H-LAF4.yml
+database/data-nk/glass/cdgm/H-LAF4GT.yml
+database/data-nk/glass/cdgm/H-LAF50B.yml
+database/data-nk/glass/cdgm/H-LAF51.yml
+database/data-nk/glass/cdgm/H-LAF52.yml
+database/data-nk/glass/cdgm/H-LAF53.yml
+database/data-nk/glass/cdgm/H-LAF54.yml
+database/data-nk/glass/cdgm/H-LAF55.yml
+database/data-nk/glass/cdgm/H-LAF62.yml
+database/data-nk/glass/cdgm/H-LAF6LA.yml
+database/data-nk/glass/cdgm/H-LAF7.yml
+database/data-nk/glass/cdgm/H-LAFL5.yml
+database/data-nk/glass/cdgm/H-LAK1.yml
+database/data-nk/glass/cdgm/H-LAK10.yml
+database/data-nk/glass/cdgm/H-LAK11.yml
+database/data-nk/glass/cdgm/H-LAK12.yml
+database/data-nk/glass/cdgm/H-LAK2A.yml
+database/data-nk/glass/cdgm/H-LAK3.yml
+database/data-nk/glass/cdgm/H-LAK4L.yml
+database/data-nk/glass/cdgm/H-LAK50A.yml
+database/data-nk/glass/cdgm/H-LAK51A.yml
+database/data-nk/glass/cdgm/H-LAK52.yml
+database/data-nk/glass/cdgm/H-LAK53A.yml
+database/data-nk/glass/cdgm/H-LAK53B.yml
+database/data-nk/glass/cdgm/H-LAK54.yml
+database/data-nk/glass/cdgm/H-LAK59A.yml
+database/data-nk/glass/cdgm/H-LAK5A.yml
+database/data-nk/glass/cdgm/H-LAK61.yml
+database/data-nk/glass/cdgm/H-LAK67.yml
+database/data-nk/glass/cdgm/H-LAK6A.yml
+database/data-nk/glass/cdgm/H-LAK7A.yml
+database/data-nk/glass/cdgm/H-LAK8A.yml
+database/data-nk/glass/cdgm/H-LAK8B.yml
+database/data-nk/glass/cdgm/H-QF1.yml
+database/data-nk/glass/cdgm/H-QF14.yml
+database/data-nk/glass/cdgm/H-QF3.yml
+database/data-nk/glass/cdgm/H-QF50.yml
+database/data-nk/glass/cdgm/H-QF50A.yml
+database/data-nk/glass/cdgm/H-QF56.yml
+database/data-nk/glass/cdgm/H-QF6A.yml
+database/data-nk/glass/cdgm/H-QF8.yml
+database/data-nk/glass/cdgm/H-QK1.yml
+database/data-nk/glass/cdgm/H-QK3L.yml
+database/data-nk/glass/cdgm/H-QK3LGTI.yml
+database/data-nk/glass/cdgm/H-TF3L.yml
+database/data-nk/glass/cdgm/H-TF5.yml
+database/data-nk/glass/cdgm/H-TF8.yml
+database/data-nk/glass/cdgm/H-ZBAF1.yml
+database/data-nk/glass/cdgm/H-ZBAF16.yml
+database/data-nk/glass/cdgm/H-ZBAF20.yml
+database/data-nk/glass/cdgm/H-ZBAF21.yml
+database/data-nk/glass/cdgm/H-ZBAF3.yml
+database/data-nk/glass/cdgm/H-ZBAF4.yml
+database/data-nk/glass/cdgm/H-ZBAF5.yml
+database/data-nk/glass/cdgm/H-ZBAF50.yml
+database/data-nk/glass/cdgm/H-ZBAF52.yml
+database/data-nk/glass/cdgm/H-ZF1.yml
+database/data-nk/glass/cdgm/H-ZF10.yml
+database/data-nk/glass/cdgm/H-ZF11.yml
+database/data-nk/glass/cdgm/H-ZF12.yml
+database/data-nk/glass/cdgm/H-ZF13.yml
+database/data-nk/glass/cdgm/H-ZF13GT.yml
+database/data-nk/glass/cdgm/H-ZF1A.yml
+database/data-nk/glass/cdgm/H-ZF2.yml
+database/data-nk/glass/cdgm/H-ZF3.yml
+database/data-nk/glass/cdgm/H-ZF39.yml
+database/data-nk/glass/cdgm/H-ZF4A.yml
+database/data-nk/glass/cdgm/H-ZF4AGT.yml
+database/data-nk/glass/cdgm/H-ZF5.yml
+database/data-nk/glass/cdgm/H-ZF50.yml
+database/data-nk/glass/cdgm/H-ZF52.yml
+database/data-nk/glass/cdgm/H-ZF52A.yml
+database/data-nk/glass/cdgm/H-ZF52GT.yml
+database/data-nk/glass/cdgm/H-ZF52TT.yml
+database/data-nk/glass/cdgm/H-ZF6.yml
+database/data-nk/glass/cdgm/H-ZF62.yml
+database/data-nk/glass/cdgm/H-ZF62GT.yml
+database/data-nk/glass/cdgm/H-ZF71.yml
+database/data-nk/glass/cdgm/H-ZF71GT.yml
+database/data-nk/glass/cdgm/H-ZF72A.yml
+database/data-nk/glass/cdgm/H-ZF72AGT.yml
+database/data-nk/glass/cdgm/H-ZF73.yml
+database/data-nk/glass/cdgm/H-ZF73GT.yml
+database/data-nk/glass/cdgm/H-ZF7LA.yml
+database/data-nk/glass/cdgm/H-ZF7LAGT.yml
+database/data-nk/glass/cdgm/H-ZF88.yml
+database/data-nk/glass/cdgm/H-ZF88GT.yml
+database/data-nk/glass/cdgm/H-ZK1.yml
+database/data-nk/glass/cdgm/H-ZK10.yml
+database/data-nk/glass/cdgm/H-ZK10L.yml
+database/data-nk/glass/cdgm/H-ZK11.yml
+database/data-nk/glass/cdgm/H-ZK14.yml
+database/data-nk/glass/cdgm/H-ZK2.yml
+database/data-nk/glass/cdgm/H-ZK20.yml
+database/data-nk/glass/cdgm/H-ZK21.yml
+database/data-nk/glass/cdgm/H-ZK3.yml
+database/data-nk/glass/cdgm/H-ZK3A.yml
+database/data-nk/glass/cdgm/H-ZK4.yml
+database/data-nk/glass/cdgm/H-ZK5.yml
+database/data-nk/glass/cdgm/H-ZK50.yml
+database/data-nk/glass/cdgm/H-ZK50GT.yml
+database/data-nk/glass/cdgm/H-ZK6.yml
+database/data-nk/glass/cdgm/H-ZK7.yml
+database/data-nk/glass/cdgm/H-ZK7A.yml
+database/data-nk/glass/cdgm/H-ZK8.yml
+database/data-nk/glass/cdgm/H-ZK9A.yml
+database/data-nk/glass/cdgm/H-ZK9B.yml
+database/data-nk/glass/cdgm/H-ZLAF1.yml
+database/data-nk/glass/cdgm/H-ZLAF2A.yml
+database/data-nk/glass/cdgm/H-ZLAF3.yml
+database/data-nk/glass/cdgm/H-ZLAF4LA.yml
+database/data-nk/glass/cdgm/H-ZLAF4LB.yml
+database/data-nk/glass/cdgm/H-ZLAF50D.yml
+database/data-nk/glass/cdgm/H-ZLAF50E.yml
+database/data-nk/glass/cdgm/H-ZLAF51.yml
+database/data-nk/glass/cdgm/H-ZLAF52.yml
+database/data-nk/glass/cdgm/H-ZLAF52A.yml
+database/data-nk/glass/cdgm/H-ZLAF53B.yml
+database/data-nk/glass/cdgm/H-ZLAF53BGT.yml
+database/data-nk/glass/cdgm/H-ZLAF55C.yml
+database/data-nk/glass/cdgm/H-ZLAF55D.yml
+database/data-nk/glass/cdgm/H-ZLAF56B.yml
+database/data-nk/glass/cdgm/H-ZLAF66.yml
+database/data-nk/glass/cdgm/H-ZLAF66GT.yml
+database/data-nk/glass/cdgm/H-ZLAF68B.yml
+database/data-nk/glass/cdgm/H-ZLAF68C.yml
+database/data-nk/glass/cdgm/H-ZLAF68N.yml
+database/data-nk/glass/cdgm/H-ZLAF69.yml
+database/data-nk/glass/cdgm/H-ZLAF69A.yml
+database/data-nk/glass/cdgm/H-ZLAF71.yml
+database/data-nk/glass/cdgm/H-ZLAF71AGT.yml
+database/data-nk/glass/cdgm/H-ZLAF73.yml
+database/data-nk/glass/cdgm/H-ZLAF75A.yml
+database/data-nk/glass/cdgm/H-ZLAF75B.yml
+database/data-nk/glass/cdgm/H-ZLAF76.yml
+database/data-nk/glass/cdgm/H-ZLAF76A.yml
+database/data-nk/glass/cdgm/H-ZLAF78B.yml
+database/data-nk/glass/cdgm/H-ZLAF89L.yml
+database/data-nk/glass/cdgm/H-ZLAF90.yml
+database/data-nk/glass/cdgm/H-ZLAF92.yml
+database/data-nk/glass/cdgm/H-ZPK1A.yml
+database/data-nk/glass/cdgm/H-ZPK2A.yml
+database/data-nk/glass/cdgm/H-ZPK3.yml
+database/data-nk/glass/cdgm/H-ZPK5.yml
+database/data-nk/glass/cdgm/H-ZPK7.yml
+database/data-nk/glass/cdgm/K4A.yml
+database/data-nk/glass/cdgm/QF1.yml
+database/data-nk/glass/cdgm/QF3.yml
+database/data-nk/glass/cdgm/QF5.yml
+database/data-nk/glass/cdgm/QF50.yml
+database/data-nk/glass/cdgm/QF50GTI.yml
+database/data-nk/glass/cdgm/QF6.yml
+database/data-nk/glass/cdgm/QF8.yml
+database/data-nk/glass/cdgm/TF3.yml
+database/data-nk/glass/cdgm/ZBAF17.yml
+database/data-nk/glass/cdgm/ZBAF2.yml
+database/data-nk/glass/cdgm/ZBAF51.yml
+database/data-nk/glass/cdgm/ZF1.yml
+database/data-nk/glass/cdgm/ZF10.yml
+database/data-nk/glass/cdgm/ZF11.yml
+database/data-nk/glass/cdgm/ZF12.yml
+database/data-nk/glass/cdgm/ZF13.yml
+database/data-nk/glass/cdgm/ZF2.yml
+database/data-nk/glass/cdgm/ZF3.yml
+database/data-nk/glass/cdgm/ZF4.yml
+database/data-nk/glass/cdgm/ZF5.yml
+database/data-nk/glass/cdgm/ZF50.yml
+database/data-nk/glass/cdgm/ZF51.yml
+database/data-nk/glass/cdgm/ZF52.yml
+database/data-nk/glass/cdgm/ZF6.yml
+database/data-nk/glass/cdgm/ZF7.yml
+database/data-nk/glass/cdgm/ZF7L.yml
+database/data-nk/glass/cdgm/ZF7LGT.yml
+database/data-nk/glass/cdgm/ZF8.yml
+database/data-nk/glass/corning/EagleXG.yml
+database/data-nk/glass/hikari/BAF10.yml
+database/data-nk/glass/hikari/BAF11.yml
+database/data-nk/glass/hikari/BAF3.yml
+database/data-nk/glass/hikari/BAF4.yml
+database/data-nk/glass/hikari/BAF8.yml
+database/data-nk/glass/hikari/BAK2.yml
+database/data-nk/glass/hikari/BAK4.yml
+database/data-nk/glass/hikari/BASF12.yml
+database/data-nk/glass/hikari/BASF2.yml
+database/data-nk/glass/hikari/BASF4.yml
+database/data-nk/glass/hikari/BASF6.yml
+database/data-nk/glass/hikari/BASF7.yml
+database/data-nk/glass/hikari/BASF8.yml
+database/data-nk/glass/hikari/E-BAF10.yml
+database/data-nk/glass/hikari/E-BAF11.yml
+database/data-nk/glass/hikari/E-BAF12.yml
+database/data-nk/glass/hikari/E-BAF3.yml
+database/data-nk/glass/hikari/E-BAF4.yml
+database/data-nk/glass/hikari/E-BAF8.yml
+database/data-nk/glass/hikari/E-BAK1.yml
+database/data-nk/glass/hikari/E-BAK2.yml
+database/data-nk/glass/hikari/E-BAK4.yml
+database/data-nk/glass/hikari/E-BALF4.yml
+database/data-nk/glass/hikari/E-BASF2.yml
+database/data-nk/glass/hikari/E-BASF6.yml
+database/data-nk/glass/hikari/E-BASF7.yml
+database/data-nk/glass/hikari/E-BASF8.yml
+database/data-nk/glass/hikari/E-BK7.yml
+database/data-nk/glass/hikari/E-F1.yml
+database/data-nk/glass/hikari/E-F16.yml
+database/data-nk/glass/hikari/E-F2.yml
+database/data-nk/glass/hikari/E-F3.yml
+database/data-nk/glass/hikari/E-F5.yml
+database/data-nk/glass/hikari/E-F8.yml
+database/data-nk/glass/hikari/E-FK01.yml
+database/data-nk/glass/hikari/E-FK5.yml
+database/data-nk/glass/hikari/E-FKH1.yml
+database/data-nk/glass/hikari/E-FKH2.yml
+database/data-nk/glass/hikari/E-K3.yml
+database/data-nk/glass/hikari/E-K5.yml
+database/data-nk/glass/hikari/E-KF6.yml
+database/data-nk/glass/hikari/E-KZFH1.yml
+database/data-nk/glass/hikari/E-LAF01.yml
+database/data-nk/glass/hikari/E-LAF010.yml
+database/data-nk/glass/hikari/E-LAF016.yml
+database/data-nk/glass/hikari/E-LAF02.yml
+database/data-nk/glass/hikari/E-LAF04.yml
+database/data-nk/glass/hikari/E-LAF05.yml
+database/data-nk/glass/hikari/E-LAF09.yml
+database/data-nk/glass/hikari/E-LAF11.yml
+database/data-nk/glass/hikari/E-LAF2.yml
+database/data-nk/glass/hikari/E-LAF3.yml
+database/data-nk/glass/hikari/E-LAF7.yml
+database/data-nk/glass/hikari/E-LAF9.yml
+database/data-nk/glass/hikari/E-LAFH2.yml
+database/data-nk/glass/hikari/E-LAFH3.yml
+database/data-nk/glass/hikari/E-LAK01.yml
+database/data-nk/glass/hikari/E-LAK011.yml
+database/data-nk/glass/hikari/E-LAK02.yml
+database/data-nk/glass/hikari/E-LAK04.yml
+database/data-nk/glass/hikari/E-LAK06.yml
+database/data-nk/glass/hikari/E-LAK09.yml
+database/data-nk/glass/hikari/E-LAK10.yml
+database/data-nk/glass/hikari/E-LAK12.yml
+database/data-nk/glass/hikari/E-LAK13.yml
+database/data-nk/glass/hikari/E-LAK14.yml
+database/data-nk/glass/hikari/E-LAK18.yml
+database/data-nk/glass/hikari/E-LAK7.yml
+database/data-nk/glass/hikari/E-LAK8.yml
+database/data-nk/glass/hikari/E-LAK9.yml
+database/data-nk/glass/hikari/E-LAKH1.yml
+database/data-nk/glass/hikari/E-LASF01.yml
+database/data-nk/glass/hikari/E-LASF010.yml
+database/data-nk/glass/hikari/E-LASF013.yml
+database/data-nk/glass/hikari/E-LASF014.yml
+database/data-nk/glass/hikari/E-LASF015.yml
+database/data-nk/glass/hikari/E-LASF016.yml
+database/data-nk/glass/hikari/E-LASF017.yml
+database/data-nk/glass/hikari/E-LASF02.yml
+database/data-nk/glass/hikari/E-LASF021.yml
+database/data-nk/glass/hikari/E-LASF03.yml
+database/data-nk/glass/hikari/E-LASF04.yml
+database/data-nk/glass/hikari/E-LASF05.yml
+database/data-nk/glass/hikari/E-LASF08.yml
+database/data-nk/glass/hikari/E-LASF09.yml
+database/data-nk/glass/hikari/E-LASFH13.yml
+database/data-nk/glass/hikari/E-LASFH15.yml
+database/data-nk/glass/hikari/E-LASFH17.yml
+database/data-nk/glass/hikari/E-LASFH2.yml
+database/data-nk/glass/hikari/E-LASFH6.yml
+database/data-nk/glass/hikari/E-LASFH9.yml
+database/data-nk/glass/hikari/E-LASKH2.yml
+database/data-nk/glass/hikari/E-LF5.yml
+database/data-nk/glass/hikari/E-LF6.yml
+database/data-nk/glass/hikari/E-LF7.yml
+database/data-nk/glass/hikari/E-LLF1.yml
+database/data-nk/glass/hikari/E-LLF2.yml
+database/data-nk/glass/hikari/E-LLF6.yml
+database/data-nk/glass/hikari/E-PKH1.yml
+database/data-nk/glass/hikari/E-PSK02.yml
+database/data-nk/glass/hikari/E-PSK03.yml
+database/data-nk/glass/hikari/E-PSKH1.yml
+database/data-nk/glass/hikari/E-SF03.yml
+database/data-nk/glass/hikari/E-SF1.yml
+database/data-nk/glass/hikari/E-SF10.yml
+database/data-nk/glass/hikari/E-SF11.yml
+database/data-nk/glass/hikari/E-SF13.yml
+database/data-nk/glass/hikari/E-SF14.yml
+database/data-nk/glass/hikari/E-SF15.yml
+database/data-nk/glass/hikari/E-SF2.yml
+database/data-nk/glass/hikari/E-SF4.yml
+database/data-nk/glass/hikari/E-SF5.yml
+database/data-nk/glass/hikari/E-SF6.yml
+database/data-nk/glass/hikari/E-SF7.yml
+database/data-nk/glass/hikari/E-SF8.yml
+database/data-nk/glass/hikari/E-SFH1.yml
+database/data-nk/glass/hikari/E-SFH2.yml
+database/data-nk/glass/hikari/E-SFS3.yml
+database/data-nk/glass/hikari/E-SK10.yml
+database/data-nk/glass/hikari/E-SK11.yml
+database/data-nk/glass/hikari/E-SK12.yml
+database/data-nk/glass/hikari/E-SK14.yml
+database/data-nk/glass/hikari/E-SK15.yml
+database/data-nk/glass/hikari/E-SK16.yml
+database/data-nk/glass/hikari/E-SK18.yml
+database/data-nk/glass/hikari/E-SK2.yml
+database/data-nk/glass/hikari/E-SK4.yml
+database/data-nk/glass/hikari/E-SK5.yml
+database/data-nk/glass/hikari/E-SSK1.yml
+database/data-nk/glass/hikari/E-SSK5.yml
+database/data-nk/glass/hikari/E-SSK8.yml
+database/data-nk/glass/hikari/F1.yml
+database/data-nk/glass/hikari/F2.yml
+database/data-nk/glass/hikari/F3.yml
+database/data-nk/glass/hikari/F5.yml
+database/data-nk/glass/hikari/F8.yml
+database/data-nk/glass/hikari/J-BAF10.yml
+database/data-nk/glass/hikari/J-BAF11.yml
+database/data-nk/glass/hikari/J-BAF12.yml
+database/data-nk/glass/hikari/J-BAF3.yml
+database/data-nk/glass/hikari/J-BAF4.yml
+database/data-nk/glass/hikari/J-BAF8.yml
+database/data-nk/glass/hikari/J-BAK1.yml
+database/data-nk/glass/hikari/J-BAK2.yml
+database/data-nk/glass/hikari/J-BAK4.yml
+database/data-nk/glass/hikari/J-BALF4.yml
+database/data-nk/glass/hikari/J-BASF2.yml
+database/data-nk/glass/hikari/J-BASF6.yml
+database/data-nk/glass/hikari/J-BASF7.yml
+database/data-nk/glass/hikari/J-BASF8.yml
+database/data-nk/glass/hikari/J-BK7.yml
+database/data-nk/glass/hikari/J-BK7A.yml
+database/data-nk/glass/hikari/J-F1.yml
+database/data-nk/glass/hikari/J-F16.yml
+database/data-nk/glass/hikari/J-F2.yml
+database/data-nk/glass/hikari/J-F3.yml
+database/data-nk/glass/hikari/J-F5.yml
+database/data-nk/glass/hikari/J-F8.yml
+database/data-nk/glass/hikari/J-FK01.yml
+database/data-nk/glass/hikari/J-FK01A.yml
+database/data-nk/glass/hikari/J-FK5.yml
+database/data-nk/glass/hikari/J-FKH1.yml
+database/data-nk/glass/hikari/J-FKH2.yml
+database/data-nk/glass/hikari/J-K3.yml
+database/data-nk/glass/hikari/J-K5.yml
+database/data-nk/glass/hikari/J-KF6.yml
+database/data-nk/glass/hikari/J-KZFH1.yml
+database/data-nk/glass/hikari/J-KZFH4.yml
+database/data-nk/glass/hikari/J-LAF01.yml
+database/data-nk/glass/hikari/J-LAF010.yml
+database/data-nk/glass/hikari/J-LAF016.yml
+database/data-nk/glass/hikari/J-LAF016HS.yml
+database/data-nk/glass/hikari/J-LAF02.yml
+database/data-nk/glass/hikari/J-LAF04.yml
+database/data-nk/glass/hikari/J-LAF05.yml
+database/data-nk/glass/hikari/J-LAF09.yml
+database/data-nk/glass/hikari/J-LAF2.yml
+database/data-nk/glass/hikari/J-LAF3.yml
+database/data-nk/glass/hikari/J-LAF7.yml
+database/data-nk/glass/hikari/J-LAFH3.yml
+database/data-nk/glass/hikari/J-LAFH3HS.yml
+database/data-nk/glass/hikari/J-LAK01.yml
+database/data-nk/glass/hikari/J-LAK011.yml
+database/data-nk/glass/hikari/J-LAK02.yml
+database/data-nk/glass/hikari/J-LAK04.yml
+database/data-nk/glass/hikari/J-LAK06.yml
+database/data-nk/glass/hikari/J-LAK09.yml
+database/data-nk/glass/hikari/J-LAK10.yml
+database/data-nk/glass/hikari/J-LAK12.yml
+database/data-nk/glass/hikari/J-LAK13.yml
+database/data-nk/glass/hikari/J-LAK14.yml
+database/data-nk/glass/hikari/J-LAK18.yml
+database/data-nk/glass/hikari/J-LAK7.yml
+database/data-nk/glass/hikari/J-LAK7R.yml
+database/data-nk/glass/hikari/J-LAK8.yml
+database/data-nk/glass/hikari/J-LAK9.yml
+database/data-nk/glass/hikari/J-LASF01.yml
+database/data-nk/glass/hikari/J-LASF010.yml
+database/data-nk/glass/hikari/J-LASF013.yml
+database/data-nk/glass/hikari/J-LASF014.yml
+database/data-nk/glass/hikari/J-LASF015.yml
+database/data-nk/glass/hikari/J-LASF016.yml
+database/data-nk/glass/hikari/J-LASF017.yml
+database/data-nk/glass/hikari/J-LASF02.yml
+database/data-nk/glass/hikari/J-LASF021.yml
+database/data-nk/glass/hikari/J-LASF021HS.yml
+database/data-nk/glass/hikari/J-LASF03.yml
+database/data-nk/glass/hikari/J-LASF05.yml
+database/data-nk/glass/hikari/J-LASF05HS.yml
+database/data-nk/glass/hikari/J-LASF08.yml
+database/data-nk/glass/hikari/J-LASF08A.yml
+database/data-nk/glass/hikari/J-LASF09.yml
+database/data-nk/glass/hikari/J-LASF09A.yml
+database/data-nk/glass/hikari/J-LASFH13.yml
+database/data-nk/glass/hikari/J-LASFH13HS.yml
+database/data-nk/glass/hikari/J-LASFH15.yml
+database/data-nk/glass/hikari/J-LASFH16.yml
+database/data-nk/glass/hikari/J-LASFH17.yml
+database/data-nk/glass/hikari/J-LASFH17HS.yml
+database/data-nk/glass/hikari/J-LASFH2.yml
+database/data-nk/glass/hikari/J-LASFH21.yml
+database/data-nk/glass/hikari/J-LASFH22.yml
+database/data-nk/glass/hikari/J-LASFH23.yml
+database/data-nk/glass/hikari/J-LASFH24.yml
+database/data-nk/glass/hikari/J-LASFH24HS.yml
+database/data-nk/glass/hikari/J-LASFH6.yml
+database/data-nk/glass/hikari/J-LASFH9.yml
+database/data-nk/glass/hikari/J-LASFH9A.yml
+database/data-nk/glass/hikari/J-LASKH2.yml
+database/data-nk/glass/hikari/J-LF5.yml
+database/data-nk/glass/hikari/J-LF6.yml
+database/data-nk/glass/hikari/J-LF7.yml
+database/data-nk/glass/hikari/J-LLF1.yml
+database/data-nk/glass/hikari/J-LLF2.yml
+database/data-nk/glass/hikari/J-LLF6.yml
+database/data-nk/glass/hikari/J-PKH1.yml
+database/data-nk/glass/hikari/J-PSK02.yml
+database/data-nk/glass/hikari/J-PSK03.yml
+database/data-nk/glass/hikari/J-PSKH1.yml
+database/data-nk/glass/hikari/J-PSKH4.yml
+database/data-nk/glass/hikari/J-SF03.yml
+database/data-nk/glass/hikari/J-SF03HS.yml
+database/data-nk/glass/hikari/J-SF1.yml
+database/data-nk/glass/hikari/J-SF10.yml
+database/data-nk/glass/hikari/J-SF11.yml
+database/data-nk/glass/hikari/J-SF13.yml
+database/data-nk/glass/hikari/J-SF14.yml
+database/data-nk/glass/hikari/J-SF15.yml
+database/data-nk/glass/hikari/J-SF2.yml
+database/data-nk/glass/hikari/J-SF4.yml
+database/data-nk/glass/hikari/J-SF5.yml
+database/data-nk/glass/hikari/J-SF6.yml
+database/data-nk/glass/hikari/J-SF6HS.yml
+database/data-nk/glass/hikari/J-SF7.yml
+database/data-nk/glass/hikari/J-SF8.yml
+database/data-nk/glass/hikari/J-SFH1.yml
+database/data-nk/glass/hikari/J-SFH2.yml
+database/data-nk/glass/hikari/J-SFS3.yml
+database/data-nk/glass/hikari/J-SK10.yml
+database/data-nk/glass/hikari/J-SK11.yml
+database/data-nk/glass/hikari/J-SK12.yml
+database/data-nk/glass/hikari/J-SK14.yml
+database/data-nk/glass/hikari/J-SK15.yml
+database/data-nk/glass/hikari/J-SK16.yml
+database/data-nk/glass/hikari/J-SK18.yml
+database/data-nk/glass/hikari/J-SK2.yml
+database/data-nk/glass/hikari/J-SK4.yml
+database/data-nk/glass/hikari/J-SK5.yml
+database/data-nk/glass/hikari/J-SSK1.yml
+database/data-nk/glass/hikari/J-SSK5.yml
+database/data-nk/glass/hikari/J-SSK8.yml
+database/data-nk/glass/hikari/K3.yml
+database/data-nk/glass/hikari/K5.yml
+database/data-nk/glass/hikari/KF6.yml
+database/data-nk/glass/hikari/KZFH1.yml
+database/data-nk/glass/hikari/KZFH2.yml
+database/data-nk/glass/hikari/KZFS4.yml
+database/data-nk/glass/hikari/LAF09.yml
+database/data-nk/glass/hikari/LAF11.yml
+database/data-nk/glass/hikari/LAF2.yml
+database/data-nk/glass/hikari/LAF3.yml
+database/data-nk/glass/hikari/LAF7.yml
+database/data-nk/glass/hikari/LAF9.yml
+database/data-nk/glass/hikari/LAK011.yml
+database/data-nk/glass/hikari/LAK04.yml
+database/data-nk/glass/hikari/LAK09.yml
+database/data-nk/glass/hikari/LAK12.yml
+database/data-nk/glass/hikari/LAK7.yml
+database/data-nk/glass/hikari/LAK9.yml
+database/data-nk/glass/hikari/LASF01.yml
+database/data-nk/glass/hikari/LASF010.yml
+database/data-nk/glass/hikari/LASF02.yml
+database/data-nk/glass/hikari/LASFH6.yml
+database/data-nk/glass/hikari/LF5.yml
+database/data-nk/glass/hikari/LF6.yml
+database/data-nk/glass/hikari/LF7.yml
+database/data-nk/glass/hikari/LLF1.yml
+database/data-nk/glass/hikari/LLF2.yml
+database/data-nk/glass/hikari/LLF6.yml
+database/data-nk/glass/hikari/P-FK01S.yml
+database/data-nk/glass/hikari/P-FKH2S.yml
+database/data-nk/glass/hikari/P-LAF010S.yml
+database/data-nk/glass/hikari/P-LAK13S.yml
+database/data-nk/glass/hikari/P-LASF03S.yml
+database/data-nk/glass/hikari/P-LASFH11S.yml
+database/data-nk/glass/hikari/P-LASFH12S.yml
+database/data-nk/glass/hikari/P-LASFH18S.yml
+database/data-nk/glass/hikari/P-LASFH19S.yml
+database/data-nk/glass/hikari/P-PSKH1S.yml
+database/data-nk/glass/hikari/P-SK12S.yml
+database/data-nk/glass/hikari/P-SK5S.yml
+database/data-nk/glass/hikari/PK1.yml
+database/data-nk/glass/hikari/PK2.yml
+database/data-nk/glass/hikari/Q-FK01S.yml
+database/data-nk/glass/hikari/Q-FKH2S.yml
+database/data-nk/glass/hikari/Q-LAF010S.yml
+database/data-nk/glass/hikari/Q-LAFPH1S.yml
+database/data-nk/glass/hikari/Q-LAK13S.yml
+database/data-nk/glass/hikari/Q-LAK52S.yml
+database/data-nk/glass/hikari/Q-LAK53S.yml
+database/data-nk/glass/hikari/Q-LASF03S.yml
+database/data-nk/glass/hikari/Q-LASFH11S.yml
+database/data-nk/glass/hikari/Q-LASFH12S.yml
+database/data-nk/glass/hikari/Q-LASFH18S.yml
+database/data-nk/glass/hikari/Q-LASFH19S.yml
+database/data-nk/glass/hikari/Q-LASFH58S.yml
+database/data-nk/glass/hikari/Q-LASFH59S.yml
+database/data-nk/glass/hikari/Q-LASFPH2S.yml
+database/data-nk/glass/hikari/Q-LASFPH3S.yml
+database/data-nk/glass/hikari/Q-PSKH1S.yml
+database/data-nk/glass/hikari/Q-PSKH2S.yml
+database/data-nk/glass/hikari/Q-PSKH4S.yml
+database/data-nk/glass/hikari/Q-SF6S.yml
+database/data-nk/glass/hikari/Q-SK12S.yml
+database/data-nk/glass/hikari/Q-SK15S.yml
+database/data-nk/glass/hikari/Q-SK52S.yml
+database/data-nk/glass/hikari/Q-SK55S.yml
+database/data-nk/glass/hikari/Q-SK5S.yml
+database/data-nk/glass/hikari/SF03.yml
+database/data-nk/glass/hikari/SF1.yml
+database/data-nk/glass/hikari/SF10.yml
+database/data-nk/glass/hikari/SF11.yml
+database/data-nk/glass/hikari/SF12.yml
+database/data-nk/glass/hikari/SF13.yml
+database/data-nk/glass/hikari/SF14.yml
+database/data-nk/glass/hikari/SF15.yml
+database/data-nk/glass/hikari/SF2.yml
+database/data-nk/glass/hikari/SF4.yml
+database/data-nk/glass/hikari/SF5.yml
+database/data-nk/glass/hikari/SF6.yml
+database/data-nk/glass/hikari/SF7.yml
+database/data-nk/glass/hikari/SF8.yml
+database/data-nk/glass/hikari/SF9.yml
+database/data-nk/glass/hikari/SFS3.yml
+database/data-nk/glass/hikari/SK15.yml
+database/data-nk/glass/hikari/SK16.yml
+database/data-nk/glass/hikari/SK18.yml
+database/data-nk/glass/hikari/SK2.yml
+database/data-nk/glass/hikari/SK4.yml
+database/data-nk/glass/hikari/SK9.yml
+database/data-nk/glass/hikari/SSK1.yml
+database/data-nk/glass/hikari/SSK2.yml
+database/data-nk/glass/hikari/SSK8.yml
+database/data-nk/glass/hikari/CaF/NICF-A.yml
+database/data-nk/glass/hikari/CaF/NICF-U.yml
+database/data-nk/glass/hikari/CaF/NICF-V.yml
+database/data-nk/glass/hikari/SiO2/NIFS-A.yml
+database/data-nk/glass/hikari/SiO2/NIFS-S.yml
+database/data-nk/glass/hikari/SiO2/NIFS-U.yml
+database/data-nk/glass/hikari/SiO2/NIFS-V.yml
+database/data-nk/glass/hikari/i-line/4786.yml
+database/data-nk/glass/hikari/i-line/5165.yml
+database/data-nk/glass/hikari/i-line/5742.yml
+database/data-nk/glass/hikari/i-line/5859.yml
+database/data-nk/glass/hikari/i-line/7054.yml
+database/data-nk/glass/hoya/BAC4.yml
+database/data-nk/glass/hoya/BACD11.yml
+database/data-nk/glass/hoya/BACD14.yml
+database/data-nk/glass/hoya/BACD15.yml
+database/data-nk/glass/hoya/BACD16.yml
+database/data-nk/glass/hoya/BACD18.yml
+database/data-nk/glass/hoya/BACD2.yml
+database/data-nk/glass/hoya/BACD4.yml
+database/data-nk/glass/hoya/BACD5.yml
+database/data-nk/glass/hoya/BACED5.yml
+database/data-nk/glass/hoya/BAF10.yml
+database/data-nk/glass/hoya/BAF11.yml
+database/data-nk/glass/hoya/BAFD7.yml
+database/data-nk/glass/hoya/BAFD8.yml
+database/data-nk/glass/hoya/BSC7.yml
+database/data-nk/glass/hoya/E-ADF10.yml
+database/data-nk/glass/hoya/E-ADF50.yml
+database/data-nk/glass/hoya/E-BACD10.yml
+database/data-nk/glass/hoya/E-BACED20.yml
+database/data-nk/glass/hoya/E-BAF8.yml
+database/data-nk/glass/hoya/E-C3.yml
+database/data-nk/glass/hoya/E-CF6.yml
+database/data-nk/glass/hoya/E-F1.yml
+database/data-nk/glass/hoya/E-F2.yml
+database/data-nk/glass/hoya/E-F3.yml
+database/data-nk/glass/hoya/E-F5.yml
+database/data-nk/glass/hoya/E-F8.yml
+database/data-nk/glass/hoya/E-FD1.yml
+database/data-nk/glass/hoya/E-FD10.yml
+database/data-nk/glass/hoya/E-FD13.yml
+database/data-nk/glass/hoya/E-FD15.yml
+database/data-nk/glass/hoya/E-FD2.yml
+database/data-nk/glass/hoya/E-FD4.yml
+database/data-nk/glass/hoya/E-FD5.yml
+database/data-nk/glass/hoya/E-FD7.yml
+database/data-nk/glass/hoya/E-FD8.yml
+database/data-nk/glass/hoya/E-FDS1-W.yml
+database/data-nk/glass/hoya/E-FDS1.yml
+database/data-nk/glass/hoya/E-FDS2.yml
+database/data-nk/glass/hoya/E-FDS3.yml
+database/data-nk/glass/hoya/E-FEL1.yml
+database/data-nk/glass/hoya/E-FEL2.yml
+database/data-nk/glass/hoya/E-FEL6.yml
+database/data-nk/glass/hoya/E-FL5.yml
+database/data-nk/glass/hoya/E-FL6.yml
+database/data-nk/glass/hoya/E-LAF7.yml
+database/data-nk/glass/hoya/FC5.yml
+database/data-nk/glass/hoya/FCD1.yml
+database/data-nk/glass/hoya/FCD10.yml
+database/data-nk/glass/hoya/FCD100.yml
+database/data-nk/glass/hoya/FCD10A.yml
+database/data-nk/glass/hoya/FCD1B.yml
+database/data-nk/glass/hoya/FCD505.yml
+database/data-nk/glass/hoya/FCD515.yml
+database/data-nk/glass/hoya/FCD705.yml
+database/data-nk/glass/hoya/FD110.yml
+database/data-nk/glass/hoya/FD140.yml
+database/data-nk/glass/hoya/FD225.yml
+database/data-nk/glass/hoya/FD60-W.yml
+database/data-nk/glass/hoya/FD60.yml
+database/data-nk/glass/hoya/FDS16-W.yml
+database/data-nk/glass/hoya/FDS18-W.yml
+database/data-nk/glass/hoya/FDS18.yml
+database/data-nk/glass/hoya/FDS24.yml
+database/data-nk/glass/hoya/FDS90(P).yml
+database/data-nk/glass/hoya/FDS90-SG.yml
+database/data-nk/glass/hoya/FDS90.yml
+database/data-nk/glass/hoya/FF5.yml
+database/data-nk/glass/hoya/FF8.yml
+database/data-nk/glass/hoya/LAC10.yml
+database/data-nk/glass/hoya/LAC12.yml
+database/data-nk/glass/hoya/LAC13.yml
+database/data-nk/glass/hoya/LAC14.yml
+database/data-nk/glass/hoya/LAC7.yml
+database/data-nk/glass/hoya/LAC8.yml
+database/data-nk/glass/hoya/LAC9.yml
+database/data-nk/glass/hoya/LACL60.yml
+database/data-nk/glass/hoya/LAF2.yml
+database/data-nk/glass/hoya/LAF3.yml
+database/data-nk/glass/hoya/LBC3N.yml
+database/data-nk/glass/hoya/M-BACD12.yml
+database/data-nk/glass/hoya/M-BACD15.yml
+database/data-nk/glass/hoya/M-BACD5N.yml
+database/data-nk/glass/hoya/M-FCD1.yml
+database/data-nk/glass/hoya/M-FCD500.yml
+database/data-nk/glass/hoya/M-FD80.yml
+database/data-nk/glass/hoya/M-FDS1.yml
+database/data-nk/glass/hoya/M-FDS2.yml
+database/data-nk/glass/hoya/M-FDS910.yml
+database/data-nk/glass/hoya/M-LAC130.yml
+database/data-nk/glass/hoya/M-LAC14.yml
+database/data-nk/glass/hoya/M-LAC8.yml
+database/data-nk/glass/hoya/M-LAF81.yml
+database/data-nk/glass/hoya/M-NBF1.yml
+database/data-nk/glass/hoya/M-NBFD10.yml
+database/data-nk/glass/hoya/M-NBFD130.yml
+database/data-nk/glass/hoya/M-PCD4.yml
+database/data-nk/glass/hoya/M-PCD51.yml
+database/data-nk/glass/hoya/M-TAC60.yml
+database/data-nk/glass/hoya/M-TAC80.yml
+database/data-nk/glass/hoya/M-TAF1.yml
+database/data-nk/glass/hoya/M-TAF101.yml
+database/data-nk/glass/hoya/M-TAF105.yml
+database/data-nk/glass/hoya/M-TAF31.yml
+database/data-nk/glass/hoya/M-TAF401.yml
+database/data-nk/glass/hoya/M-TAFD305.yml
+database/data-nk/glass/hoya/M-TAFD307.yml
+database/data-nk/glass/hoya/M-TAFD405.yml
+database/data-nk/glass/hoya/M-TAFD51.yml
+database/data-nk/glass/hoya/MC-BACD12.yml
+database/data-nk/glass/hoya/MC-BACD5N.yml
+database/data-nk/glass/hoya/MC-FCD1-M20.yml
+database/data-nk/glass/hoya/MC-FCD500-20.yml
+database/data-nk/glass/hoya/MC-FDS2.yml
+database/data-nk/glass/hoya/MC-FDS910-50.yml
+database/data-nk/glass/hoya/MC-LAC130.yml
+database/data-nk/glass/hoya/MC-NBF1.yml
+database/data-nk/glass/hoya/MC-NBFD135.yml
+database/data-nk/glass/hoya/MC-PCD4-40.yml
+database/data-nk/glass/hoya/MC-PCD51-70.yml
+database/data-nk/glass/hoya/MC-TAF1.yml
+database/data-nk/glass/hoya/MC-TAF101-100.yml
+database/data-nk/glass/hoya/MC-TAF105.yml
+database/data-nk/glass/hoya/MC-TAF31-15.yml
+database/data-nk/glass/hoya/MC-TAF401.yml
+database/data-nk/glass/hoya/MC-TAFD305.yml
+database/data-nk/glass/hoya/MC-TAFD307.yml
+database/data-nk/glass/hoya/MC-TAFD51-50.yml
+database/data-nk/glass/hoya/MP-BACD12.yml
+database/data-nk/glass/hoya/MP-BACD15.yml
+database/data-nk/glass/hoya/MP-BACD5N.yml
+database/data-nk/glass/hoya/MP-FCD1-M20.yml
+database/data-nk/glass/hoya/MP-FCD500-20.yml
+database/data-nk/glass/hoya/MP-FD80.yml
+database/data-nk/glass/hoya/MP-FDS1.yml
+database/data-nk/glass/hoya/MP-FDS2.yml
+database/data-nk/glass/hoya/MP-FDS910-50.yml
+database/data-nk/glass/hoya/MP-LAC130.yml
+database/data-nk/glass/hoya/MP-LAC14-80.yml
+database/data-nk/glass/hoya/MP-LAC8-30.yml
+database/data-nk/glass/hoya/MP-LAF81.yml
+database/data-nk/glass/hoya/MP-NBF1.yml
+database/data-nk/glass/hoya/MP-NBFD10-20.yml
+database/data-nk/glass/hoya/MP-NBFD130.yml
+database/data-nk/glass/hoya/MP-PCD4-40.yml
+database/data-nk/glass/hoya/MP-PCD51-70.yml
+database/data-nk/glass/hoya/MP-TAC60-90.yml
+database/data-nk/glass/hoya/MP-TAC80-60.yml
+database/data-nk/glass/hoya/MP-TAF101-100.yml
+database/data-nk/glass/hoya/MP-TAF105.yml
+database/data-nk/glass/hoya/MP-TAF31-15.yml
+database/data-nk/glass/hoya/MP-TAF401.yml
+database/data-nk/glass/hoya/MP-TAFD305.yml
+database/data-nk/glass/hoya/MP-TAFD307.yml
+database/data-nk/glass/hoya/MP-TAFD405.yml
+database/data-nk/glass/hoya/MP-TAFD51-50.yml
+database/data-nk/glass/hoya/NBF1.yml
+database/data-nk/glass/hoya/NBFD10.yml
+database/data-nk/glass/hoya/NBFD11.yml
+database/data-nk/glass/hoya/NBFD12.yml
+database/data-nk/glass/hoya/NBFD13.yml
+database/data-nk/glass/hoya/NBFD15-W.yml
+database/data-nk/glass/hoya/NBFD15.yml
+database/data-nk/glass/hoya/NBFD3.yml
+database/data-nk/glass/hoya/PCD4.yml
+database/data-nk/glass/hoya/PCD40.yml
+database/data-nk/glass/hoya/PCD51.yml
+database/data-nk/glass/hoya/TAC2.yml
+database/data-nk/glass/hoya/TAC4.yml
+database/data-nk/glass/hoya/TAC6.yml
+database/data-nk/glass/hoya/TAC8.yml
+database/data-nk/glass/hoya/TAF1.yml
+database/data-nk/glass/hoya/TAF2.yml
+database/data-nk/glass/hoya/TAF3.yml
+database/data-nk/glass/hoya/TAF3D.yml
+database/data-nk/glass/hoya/TAF4.yml
+database/data-nk/glass/hoya/TAF5.yml
+database/data-nk/glass/hoya/TAFD25.yml
+database/data-nk/glass/hoya/TAFD30.yml
+database/data-nk/glass/hoya/TAFD32.yml
+database/data-nk/glass/hoya/TAFD33.yml
+database/data-nk/glass/hoya/TAFD35.yml
+database/data-nk/glass/hoya/TAFD37.yml
+database/data-nk/glass/hoya/TAFD37A.yml
+database/data-nk/glass/hoya/TAFD40.yml
+database/data-nk/glass/hoya/TAFD45.yml
+database/data-nk/glass/hoya/TAFD55.yml
+database/data-nk/glass/hoya/TAFD5F.yml
+database/data-nk/glass/hoya/TAFD5G.yml
+database/data-nk/glass/hoya/TAFD65.yml
+database/data-nk/glass/lightpath/BD-2.yml
+database/data-nk/glass/lightpath/BD6.yml
+database/data-nk/glass/lzos/BF1.yml
+database/data-nk/glass/lzos/BF11.yml
+database/data-nk/glass/lzos/BF16.yml
+database/data-nk/glass/lzos/BF21.yml
+database/data-nk/glass/lzos/BF24.yml
+database/data-nk/glass/lzos/BF25.yml
+database/data-nk/glass/lzos/BF28.yml
+database/data-nk/glass/lzos/BF8.yml
+database/data-nk/glass/lzos/BK10.yml
+database/data-nk/glass/lzos/BK4.yml
+database/data-nk/glass/lzos/BK6.yml
+database/data-nk/glass/lzos/BK8.yml
+database/data-nk/glass/lzos/CTK12.yml
+database/data-nk/glass/lzos/CTK19.yml
+database/data-nk/glass/lzos/CTK3.yml
+database/data-nk/glass/lzos/CTK8.yml
+database/data-nk/glass/lzos/CTK9.yml
+database/data-nk/glass/lzos/F1.yml
+database/data-nk/glass/lzos/F13.yml
+database/data-nk/glass/lzos/F4.yml
+database/data-nk/glass/lzos/F6.yml
+database/data-nk/glass/lzos/F8.yml
+database/data-nk/glass/lzos/K8.yml
+database/data-nk/glass/lzos/KF6.yml
+database/data-nk/glass/lzos/KF7.yml
+database/data-nk/glass/lzos/LF5.yml
+database/data-nk/glass/lzos/LF7.yml
+database/data-nk/glass/lzos/LF9.yml
+database/data-nk/glass/lzos/LK3.yml
+database/data-nk/glass/lzos/LK5.yml
+database/data-nk/glass/lzos/LK6.yml
+database/data-nk/glass/lzos/LK7.yml
+database/data-nk/glass/lzos/OF1.yml
+database/data-nk/glass/lzos/OK4.yml
+database/data-nk/glass/lzos/TF1.yml
+database/data-nk/glass/lzos/TF10.yml
+database/data-nk/glass/lzos/TF2.yml
+database/data-nk/glass/lzos/TF3.yml
+database/data-nk/glass/lzos/TF4.yml
+database/data-nk/glass/lzos/TF5.yml
+database/data-nk/glass/lzos/TF7.yml
+database/data-nk/glass/lzos/TF8.yml
+database/data-nk/glass/lzos/TK12.yml
+database/data-nk/glass/lzos/TK14.yml
+database/data-nk/glass/lzos/TK16.yml
+database/data-nk/glass/lzos/TK17.yml
+database/data-nk/glass/lzos/TK2.yml
+database/data-nk/glass/lzos/TK20.yml
+database/data-nk/glass/lzos/TK21.yml
+database/data-nk/glass/lzos/TK23.yml
+database/data-nk/glass/lzos/TK9.yml
+database/data-nk/glass/lzos/K108/Bassarab.yml
+database/data-nk/glass/misc/BGG/Zelmon.yml
+database/data-nk/glass/misc/ZBLAN/Gan.yml
+database/data-nk/glass/misc/soda-lime/Nyakuchena.yml
+database/data-nk/glass/misc/soda-lime/Rubin-IR.yml
+database/data-nk/glass/misc/soda-lime/Rubin-bronze.yml
+database/data-nk/glass/misc/soda-lime/Rubin-clear.yml
+database/data-nk/glass/misc/soda-lime/Rubin-green.yml
+database/data-nk/glass/misc/soda-lime/Rubin-grey.yml
+database/data-nk/glass/misc/soda-lime/Rubin-lowiron.yml
+database/data-nk/glass/misc/soda-lime/Vogt-10ppm.yml
+database/data-nk/glass/misc/soda-lime/Vogt-5ppm.yml
+database/data-nk/glass/misc/soda-lime/Vogt-703ppm.yml
+database/data-nk/glass/nsg/Pilkington-Optiwhite.yml
+database/data-nk/glass/ohara/APL1.yml
+database/data-nk/glass/ohara/BAH10.yml
+database/data-nk/glass/ohara/BAH11.yml
+database/data-nk/glass/ohara/BAH13.yml
+database/data-nk/glass/ohara/BAH22.yml
+database/data-nk/glass/ohara/BAH26.yml
+database/data-nk/glass/ohara/BAH27.yml
+database/data-nk/glass/ohara/BAH28.yml
+database/data-nk/glass/ohara/BAH30.yml
+database/data-nk/glass/ohara/BAH32.yml
+database/data-nk/glass/ohara/BAH54.yml
+database/data-nk/glass/ohara/BAH71.yml
+database/data-nk/glass/ohara/BAH77.yml
+database/data-nk/glass/ohara/BAH78.yml
+database/data-nk/glass/ohara/BAL11.yml
+database/data-nk/glass/ohara/BAL12.yml
+database/data-nk/glass/ohara/BAL14.yml
+database/data-nk/glass/ohara/BAL15.yml
+database/data-nk/glass/ohara/BAL15Y.yml
+database/data-nk/glass/ohara/BAL2.yml
+database/data-nk/glass/ohara/BAL22.yml
+database/data-nk/glass/ohara/BAL3.yml
+database/data-nk/glass/ohara/BAL35.yml
+database/data-nk/glass/ohara/BAL35Y.yml
+database/data-nk/glass/ohara/BAL41.yml
+database/data-nk/glass/ohara/BAL42.yml
+database/data-nk/glass/ohara/BAL5.yml
+database/data-nk/glass/ohara/BAL50.yml
+database/data-nk/glass/ohara/BAL7.yml
+database/data-nk/glass/ohara/BAM12.yml
+database/data-nk/glass/ohara/BAM21.yml
+database/data-nk/glass/ohara/BAM23.yml
+database/data-nk/glass/ohara/BAM25.yml
+database/data-nk/glass/ohara/BAM3.yml
+database/data-nk/glass/ohara/BAM4.yml
+database/data-nk/glass/ohara/BAM5.yml
+database/data-nk/glass/ohara/BAM8.yml
+database/data-nk/glass/ohara/BAM9.yml
+database/data-nk/glass/ohara/BPH35.yml
+database/data-nk/glass/ohara/BPH40.yml
+database/data-nk/glass/ohara/BPH45.yml
+database/data-nk/glass/ohara/BPH5.yml
+database/data-nk/glass/ohara/BPH50.yml
+database/data-nk/glass/ohara/BPH8.yml
+database/data-nk/glass/ohara/BPM4.yml
+database/data-nk/glass/ohara/BPM51.yml
+database/data-nk/glass/ohara/BSL1.yml
+database/data-nk/glass/ohara/BSL21.yml
+database/data-nk/glass/ohara/BSL22.yml
+database/data-nk/glass/ohara/BSL3.yml
+database/data-nk/glass/ohara/BSL7.yml
+database/data-nk/glass/ohara/BSL7Y.yml
+database/data-nk/glass/ohara/BSM10.yml
+database/data-nk/glass/ohara/BSM14.yml
+database/data-nk/glass/ohara/BSM15.yml
+database/data-nk/glass/ohara/BSM16.yml
+database/data-nk/glass/ohara/BSM16C.yml
+database/data-nk/glass/ohara/BSM18.yml
+database/data-nk/glass/ohara/BSM2.yml
+database/data-nk/glass/ohara/BSM21.yml
+database/data-nk/glass/ohara/BSM22.yml
+database/data-nk/glass/ohara/BSM23.yml
+database/data-nk/glass/ohara/BSM24.yml
+database/data-nk/glass/ohara/BSM25.yml
+database/data-nk/glass/ohara/BSM28.yml
+database/data-nk/glass/ohara/BSM36.yml
+database/data-nk/glass/ohara/BSM4.yml
+database/data-nk/glass/ohara/BSM51Y.yml
+database/data-nk/glass/ohara/BSM6.yml
+database/data-nk/glass/ohara/BSM7.yml
+database/data-nk/glass/ohara/BSM71.yml
+database/data-nk/glass/ohara/BSM81.yml
+database/data-nk/glass/ohara/BSM9.yml
+database/data-nk/glass/ohara/BSM93.yml
+database/data-nk/glass/ohara/FPL51.yml
+database/data-nk/glass/ohara/FPL52.yml
+database/data-nk/glass/ohara/FPL53.yml
+database/data-nk/glass/ohara/FSL3.yml
+database/data-nk/glass/ohara/FSL5.yml
+database/data-nk/glass/ohara/FTL10.yml
+database/data-nk/glass/ohara/FTL8.yml
+database/data-nk/glass/ohara/FTM16.yml
+database/data-nk/glass/ohara/FTM8.yml
+database/data-nk/glass/ohara/L-BAL35.yml
+database/data-nk/glass/ohara/L-BAL35P.yml
+database/data-nk/glass/ohara/L-BAL42.yml
+database/data-nk/glass/ohara/L-BAL42P.yml
+database/data-nk/glass/ohara/L-BAL43.yml
+database/data-nk/glass/ohara/L-BBH1.yml
+database/data-nk/glass/ohara/L-BBH2.yml
+database/data-nk/glass/ohara/L-BSL7.yml
+database/data-nk/glass/ohara/L-LAH53.yml
+database/data-nk/glass/ohara/L-LAH81.yml
+database/data-nk/glass/ohara/L-LAH83.yml
+database/data-nk/glass/ohara/L-LAH84.yml
+database/data-nk/glass/ohara/L-LAH84P.yml
+database/data-nk/glass/ohara/L-LAH85.yml
+database/data-nk/glass/ohara/L-LAH85V.yml
+database/data-nk/glass/ohara/L-LAH86.yml
+database/data-nk/glass/ohara/L-LAH87.yml
+database/data-nk/glass/ohara/L-LAH90.yml
+database/data-nk/glass/ohara/L-LAH91.yml
+database/data-nk/glass/ohara/L-LAH94.yml
+database/data-nk/glass/ohara/L-LAL12.yml
+database/data-nk/glass/ohara/L-LAL13.yml
+database/data-nk/glass/ohara/L-LAL15.yml
+database/data-nk/glass/ohara/L-LAM60.yml
+database/data-nk/glass/ohara/L-LAM69.yml
+database/data-nk/glass/ohara/L-LAM72.yml
+database/data-nk/glass/ohara/L-NBH54.yml
+database/data-nk/glass/ohara/L-PHL1.yml
+database/data-nk/glass/ohara/L-PHL2.yml
+database/data-nk/glass/ohara/L-TIH53.yml
+database/data-nk/glass/ohara/L-TIM28.yml
+database/data-nk/glass/ohara/L-TIM28P.yml
+database/data-nk/glass/ohara/LAH51.yml
+database/data-nk/glass/ohara/LAH52.yml
+database/data-nk/glass/ohara/LAH53.yml
+database/data-nk/glass/ohara/LAH54.yml
+database/data-nk/glass/ohara/LAH55.yml
+database/data-nk/glass/ohara/LAH58.yml
+database/data-nk/glass/ohara/LAH59.yml
+database/data-nk/glass/ohara/LAH60.yml
+database/data-nk/glass/ohara/LAH63.yml
+database/data-nk/glass/ohara/LAH64.yml
+database/data-nk/glass/ohara/LAH65.yml
+database/data-nk/glass/ohara/LAH66.yml
+database/data-nk/glass/ohara/LAH67.yml
+database/data-nk/glass/ohara/LAH71.yml
+database/data-nk/glass/ohara/LAH75.yml
+database/data-nk/glass/ohara/LAH78.yml
+database/data-nk/glass/ohara/LAH80.yml
+database/data-nk/glass/ohara/LAL10.yml
+database/data-nk/glass/ohara/LAL11.yml
+database/data-nk/glass/ohara/LAL12.yml
+database/data-nk/glass/ohara/LAL13.yml
+database/data-nk/glass/ohara/LAL14.yml
+database/data-nk/glass/ohara/LAL18.yml
+database/data-nk/glass/ohara/LAL52.yml
+database/data-nk/glass/ohara/LAL54.yml
+database/data-nk/glass/ohara/LAL56.yml
+database/data-nk/glass/ohara/LAL58.yml
+database/data-nk/glass/ohara/LAL59.yml
+database/data-nk/glass/ohara/LAL60.yml
+database/data-nk/glass/ohara/LAL61.yml
+database/data-nk/glass/ohara/LAL7.yml
+database/data-nk/glass/ohara/LAL8.yml
+database/data-nk/glass/ohara/LAL9.yml
+database/data-nk/glass/ohara/LAM2.yml
+database/data-nk/glass/ohara/LAM3.yml
+database/data-nk/glass/ohara/LAM51.yml
+database/data-nk/glass/ohara/LAM52.yml
+database/data-nk/glass/ohara/LAM54.yml
+database/data-nk/glass/ohara/LAM55.yml
+database/data-nk/glass/ohara/LAM58.yml
+database/data-nk/glass/ohara/LAM59.yml
+database/data-nk/glass/ohara/LAM60.yml
+database/data-nk/glass/ohara/LAM61.yml
+database/data-nk/glass/ohara/LAM66.yml
+database/data-nk/glass/ohara/LAM7.yml
+database/data-nk/glass/ohara/NSL2.yml
+database/data-nk/glass/ohara/NSL3.yml
+database/data-nk/glass/ohara/NSL33.yml
+database/data-nk/glass/ohara/NSL36.yml
+database/data-nk/glass/ohara/NSL5.yml
+database/data-nk/glass/ohara/NSL7.yml
+database/data-nk/glass/ohara/PBH1.yml
+database/data-nk/glass/ohara/PBH10.yml
+database/data-nk/glass/ohara/PBH11.yml
+database/data-nk/glass/ohara/PBH11W.yml
+database/data-nk/glass/ohara/PBH13.yml
+database/data-nk/glass/ohara/PBH13W.yml
+database/data-nk/glass/ohara/PBH14.yml
+database/data-nk/glass/ohara/PBH14W.yml
+database/data-nk/glass/ohara/PBH18.yml
+database/data-nk/glass/ohara/PBH21.yml
+database/data-nk/glass/ohara/PBH23.yml
+database/data-nk/glass/ohara/PBH23W.yml
+database/data-nk/glass/ohara/PBH25.yml
+database/data-nk/glass/ohara/PBH25W.yml
+database/data-nk/glass/ohara/PBH3.yml
+database/data-nk/glass/ohara/PBH3W.yml
+database/data-nk/glass/ohara/PBH4.yml
+database/data-nk/glass/ohara/PBH4W.yml
+database/data-nk/glass/ohara/PBH53.yml
+database/data-nk/glass/ohara/PBH53W.yml
+database/data-nk/glass/ohara/PBH55.yml
+database/data-nk/glass/ohara/PBH56.yml
+database/data-nk/glass/ohara/PBH6.yml
+database/data-nk/glass/ohara/PBH6W.yml
+database/data-nk/glass/ohara/PBH71.yml
+database/data-nk/glass/ohara/PBH72.yml
+database/data-nk/glass/ohara/PBL1.yml
+database/data-nk/glass/ohara/PBL1Y.yml
+database/data-nk/glass/ohara/PBL2.yml
+database/data-nk/glass/ohara/PBL21.yml
+database/data-nk/glass/ohara/PBL22.yml
+database/data-nk/glass/ohara/PBL25.yml
+database/data-nk/glass/ohara/PBL25Y.yml
+database/data-nk/glass/ohara/PBL26.yml
+database/data-nk/glass/ohara/PBL26Y.yml
+database/data-nk/glass/ohara/PBL27.yml
+database/data-nk/glass/ohara/PBL35Y.yml
+database/data-nk/glass/ohara/PBL6.yml
+database/data-nk/glass/ohara/PBL6Y.yml
+database/data-nk/glass/ohara/PBL7.yml
+database/data-nk/glass/ohara/PBM1.yml
+database/data-nk/glass/ohara/PBM11.yml
+database/data-nk/glass/ohara/PBM18Y.yml
+database/data-nk/glass/ohara/PBM2.yml
+database/data-nk/glass/ohara/PBM22.yml
+database/data-nk/glass/ohara/PBM25.yml
+database/data-nk/glass/ohara/PBM27.yml
+database/data-nk/glass/ohara/PBM28.yml
+database/data-nk/glass/ohara/PBM28W.yml
+database/data-nk/glass/ohara/PBM2Y.yml
+database/data-nk/glass/ohara/PBM3.yml
+database/data-nk/glass/ohara/PBM35.yml
+database/data-nk/glass/ohara/PBM39.yml
+database/data-nk/glass/ohara/PBM4.yml
+database/data-nk/glass/ohara/PBM5.yml
+database/data-nk/glass/ohara/PBM6.yml
+database/data-nk/glass/ohara/PBM8.yml
+database/data-nk/glass/ohara/PBM8Y.yml
+database/data-nk/glass/ohara/PBM9.yml
+database/data-nk/glass/ohara/PHM51.yml
+database/data-nk/glass/ohara/PHM52.yml
+database/data-nk/glass/ohara/PHM53.yml
+database/data-nk/glass/ohara/S-APL.yml
+database/data-nk/glass/ohara/S-APL1.yml
+database/data-nk/glass/ohara/S-BAH10.yml
+database/data-nk/glass/ohara/S-BAH11.yml
+database/data-nk/glass/ohara/S-BAH27.yml
+database/data-nk/glass/ohara/S-BAH28.yml
+database/data-nk/glass/ohara/S-BAH32.yml
+database/data-nk/glass/ohara/S-BAH54.yml
+database/data-nk/glass/ohara/S-BAL11.yml
+database/data-nk/glass/ohara/S-BAL12.yml
+database/data-nk/glass/ohara/S-BAL14.yml
+database/data-nk/glass/ohara/S-BAL2.yml
+database/data-nk/glass/ohara/S-BAL22.yml
+database/data-nk/glass/ohara/S-BAL3.yml
+database/data-nk/glass/ohara/S-BAL35.yml
+database/data-nk/glass/ohara/S-BAL41.yml
+database/data-nk/glass/ohara/S-BAL42.yml
+database/data-nk/glass/ohara/S-BAL50.yml
+database/data-nk/glass/ohara/S-BAM12.yml
+database/data-nk/glass/ohara/S-BAM3.yml
+database/data-nk/glass/ohara/S-BAM4.yml
+database/data-nk/glass/ohara/S-BSL7.yml
+database/data-nk/glass/ohara/S-BSM10.yml
+database/data-nk/glass/ohara/S-BSM14.yml
+database/data-nk/glass/ohara/S-BSM15.yml
+database/data-nk/glass/ohara/S-BSM16.yml
+database/data-nk/glass/ohara/S-BSM18.yml
+database/data-nk/glass/ohara/S-BSM2.yml
+database/data-nk/glass/ohara/S-BSM21.yml
+database/data-nk/glass/ohara/S-BSM22.yml
+database/data-nk/glass/ohara/S-BSM25.yml
+database/data-nk/glass/ohara/S-BSM28.yml
+database/data-nk/glass/ohara/S-BSM36.yml
+database/data-nk/glass/ohara/S-BSM4.yml
+database/data-nk/glass/ohara/S-BSM71.yml
+database/data-nk/glass/ohara/S-BSM81.yml
+database/data-nk/glass/ohara/S-BSM9.yml
+database/data-nk/glass/ohara/S-BSM93.yml
+database/data-nk/glass/ohara/S-FPL51.yml
+database/data-nk/glass/ohara/S-FPL51Y.yml
+database/data-nk/glass/ohara/S-FPL52.yml
+database/data-nk/glass/ohara/S-FPL53.yml
+database/data-nk/glass/ohara/S-FPL55.yml
+database/data-nk/glass/ohara/S-FPM2.yml
+database/data-nk/glass/ohara/S-FPM3.yml
+database/data-nk/glass/ohara/S-FSL5.yml
+database/data-nk/glass/ohara/S-FSL5Y.yml
+database/data-nk/glass/ohara/S-FTL10.yml
+database/data-nk/glass/ohara/S-FTM16.yml
+database/data-nk/glass/ohara/S-LAH51.yml
+database/data-nk/glass/ohara/S-LAH52.yml
+database/data-nk/glass/ohara/S-LAH52Q.yml
+database/data-nk/glass/ohara/S-LAH53.yml
+database/data-nk/glass/ohara/S-LAH53V.yml
+database/data-nk/glass/ohara/S-LAH54.yml
+database/data-nk/glass/ohara/S-LAH55.yml
+database/data-nk/glass/ohara/S-LAH55V.yml
+database/data-nk/glass/ohara/S-LAH55VS.yml
+database/data-nk/glass/ohara/S-LAH58.yml
+database/data-nk/glass/ohara/S-LAH59.yml
+database/data-nk/glass/ohara/S-LAH60.yml
+database/data-nk/glass/ohara/S-LAH60V.yml
+database/data-nk/glass/ohara/S-LAH63.yml
+database/data-nk/glass/ohara/S-LAH63Q.yml
+database/data-nk/glass/ohara/S-LAH64.yml
+database/data-nk/glass/ohara/S-LAH65.yml
+database/data-nk/glass/ohara/S-LAH65V.yml
+database/data-nk/glass/ohara/S-LAH65VS.yml
+database/data-nk/glass/ohara/S-LAH66.yml
+database/data-nk/glass/ohara/S-LAH67.yml
+database/data-nk/glass/ohara/S-LAH71.yml
+database/data-nk/glass/ohara/S-LAH75.yml
+database/data-nk/glass/ohara/S-LAH79.yml
+database/data-nk/glass/ohara/S-LAH88.yml
+database/data-nk/glass/ohara/S-LAH89.yml
+database/data-nk/glass/ohara/S-LAH92.yml
+database/data-nk/glass/ohara/S-LAH93.yml
+database/data-nk/glass/ohara/S-LAH95.yml
+database/data-nk/glass/ohara/S-LAH96.yml
+database/data-nk/glass/ohara/S-LAH97.yml
+database/data-nk/glass/ohara/S-LAL10.yml
+database/data-nk/glass/ohara/S-LAL11.yml
+database/data-nk/glass/ohara/S-LAL12.yml
+database/data-nk/glass/ohara/S-LAL13.yml
+database/data-nk/glass/ohara/S-LAL14.yml
+database/data-nk/glass/ohara/S-LAL18.yml
+database/data-nk/glass/ohara/S-LAL19.yml
+database/data-nk/glass/ohara/S-LAL20.yml
+database/data-nk/glass/ohara/S-LAL52.yml
+database/data-nk/glass/ohara/S-LAL54.yml
+database/data-nk/glass/ohara/S-LAL54Q.yml
+database/data-nk/glass/ohara/S-LAL56.yml
+database/data-nk/glass/ohara/S-LAL58.yml
+database/data-nk/glass/ohara/S-LAL59.yml
+database/data-nk/glass/ohara/S-LAL60.yml
+database/data-nk/glass/ohara/S-LAL61.yml
+database/data-nk/glass/ohara/S-LAL7.yml
+database/data-nk/glass/ohara/S-LAL8.yml
+database/data-nk/glass/ohara/S-LAL9.yml
+database/data-nk/glass/ohara/S-LAM2.yml
+database/data-nk/glass/ohara/S-LAM3.yml
+database/data-nk/glass/ohara/S-LAM51.yml
+database/data-nk/glass/ohara/S-LAM52.yml
+database/data-nk/glass/ohara/S-LAM54.yml
+database/data-nk/glass/ohara/S-LAM55.yml
+database/data-nk/glass/ohara/S-LAM58.yml
+database/data-nk/glass/ohara/S-LAM59.yml
+database/data-nk/glass/ohara/S-LAM60.yml
+database/data-nk/glass/ohara/S-LAM61.yml
+database/data-nk/glass/ohara/S-LAM66.yml
+database/data-nk/glass/ohara/S-LAM7.yml
+database/data-nk/glass/ohara/S-LAM73.yml
+database/data-nk/glass/ohara/S-NBH5.yml
+database/data-nk/glass/ohara/S-NBH51.yml
+database/data-nk/glass/ohara/S-NBH52.yml
+database/data-nk/glass/ohara/S-NBH52V.yml
+database/data-nk/glass/ohara/S-NBH53.yml
+database/data-nk/glass/ohara/S-NBH53V.yml
+database/data-nk/glass/ohara/S-NBH55.yml
+database/data-nk/glass/ohara/S-NBH56.yml
+database/data-nk/glass/ohara/S-NBH57.yml
+database/data-nk/glass/ohara/S-NBH8.yml
+database/data-nk/glass/ohara/S-NBM51.yml
+database/data-nk/glass/ohara/S-NPH1.yml
+database/data-nk/glass/ohara/S-NPH1W.yml
+database/data-nk/glass/ohara/S-NPH2.yml
+database/data-nk/glass/ohara/S-NPH3.yml
+database/data-nk/glass/ohara/S-NPH4.yml
+database/data-nk/glass/ohara/S-NPH5.yml
+database/data-nk/glass/ohara/S-NPH53.yml
+database/data-nk/glass/ohara/S-NSL2.yml
+database/data-nk/glass/ohara/S-NSL3.yml
+database/data-nk/glass/ohara/S-NSL36.yml
+database/data-nk/glass/ohara/S-NSL5.yml
+database/data-nk/glass/ohara/S-PHM51.yml
+database/data-nk/glass/ohara/S-PHM52.yml
+database/data-nk/glass/ohara/S-PHM53.yml
+database/data-nk/glass/ohara/S-TIH1.yml
+database/data-nk/glass/ohara/S-TIH10.yml
+database/data-nk/glass/ohara/S-TIH11.yml
+database/data-nk/glass/ohara/S-TIH13.yml
+database/data-nk/glass/ohara/S-TIH14.yml
+database/data-nk/glass/ohara/S-TIH18.yml
+database/data-nk/glass/ohara/S-TIH20.yml
+database/data-nk/glass/ohara/S-TIH23.yml
+database/data-nk/glass/ohara/S-TIH3.yml
+database/data-nk/glass/ohara/S-TIH4.yml
+database/data-nk/glass/ohara/S-TIH53.yml
+database/data-nk/glass/ohara/S-TIH53W.yml
+database/data-nk/glass/ohara/S-TIH57.yml
+database/data-nk/glass/ohara/S-TIH6.yml
+database/data-nk/glass/ohara/S-TIL1.yml
+database/data-nk/glass/ohara/S-TIL2.yml
+database/data-nk/glass/ohara/S-TIL25.yml
+database/data-nk/glass/ohara/S-TIL26.yml
+database/data-nk/glass/ohara/S-TIL27.yml
+database/data-nk/glass/ohara/S-TIL6.yml
+database/data-nk/glass/ohara/S-TIM1.yml
+database/data-nk/glass/ohara/S-TIM2.yml
+database/data-nk/glass/ohara/S-TIM22.yml
+database/data-nk/glass/ohara/S-TIM25.yml
+database/data-nk/glass/ohara/S-TIM27.yml
+database/data-nk/glass/ohara/S-TIM28.yml
+database/data-nk/glass/ohara/S-TIM3.yml
+database/data-nk/glass/ohara/S-TIM35.yml
+database/data-nk/glass/ohara/S-TIM39.yml
+database/data-nk/glass/ohara/S-TIM5.yml
+database/data-nk/glass/ohara/S-TIM6.yml
+database/data-nk/glass/ohara/S-TIM8.yml
+database/data-nk/glass/ohara/S-YGH51.yml
+database/data-nk/glass/ohara/S-YGH52.yml
+database/data-nk/glass/ohara/SSL2.yml
+database/data-nk/glass/ohara/SSL5.yml
+database/data-nk/glass/ohara/TIH11.yml
+database/data-nk/glass/ohara/TIH14.yml
+database/data-nk/glass/ohara/TIH23.yml
+database/data-nk/glass/ohara/TIH53.yml
+database/data-nk/glass/ohara/TIH6.yml
+database/data-nk/glass/ohara/TIM11.yml
+database/data-nk/glass/ohara/TPH55.yml
+database/data-nk/glass/ohara/YGH51.yml
+database/data-nk/glass/ohara/YGH52.yml
+database/data-nk/glass/schott/BAFN6.yml
+database/data-nk/glass/schott/BK7G18.yml
+database/data-nk/glass/schott/F2.yml
+database/data-nk/glass/schott/F2G12.yml
+database/data-nk/glass/schott/F2HT.yml
+database/data-nk/glass/schott/F5.yml
+database/data-nk/glass/schott/FK3.yml
+database/data-nk/glass/schott/FK5HTi.yml
+database/data-nk/glass/schott/K10.yml
+database/data-nk/glass/schott/K5G20.yml
+database/data-nk/glass/schott/K7.yml
+database/data-nk/glass/schott/KZFS12.yml
+database/data-nk/glass/schott/KZFSN4.yml
+database/data-nk/glass/schott/LAFN7.yml
+database/data-nk/glass/schott/LAK9G15.yml
+database/data-nk/glass/schott/LAKL12.yml
+database/data-nk/glass/schott/LASF35.yml
+database/data-nk/glass/schott/LASFN9.yml
+database/data-nk/glass/schott/LF5.yml
+database/data-nk/glass/schott/LF5G15.yml
+database/data-nk/glass/schott/LF5G19.yml
+database/data-nk/glass/schott/LF5HTi.yml
+database/data-nk/glass/schott/LITHOSIL-Q.yml
+database/data-nk/glass/schott/LITHOTEC-CAF2.yml
+database/data-nk/glass/schott/LLF1.yml
+database/data-nk/glass/schott/LLF1HTi.yml
+database/data-nk/glass/schott/N-BAF10.yml
+database/data-nk/glass/schott/N-BAF3.yml
+database/data-nk/glass/schott/N-BAF4.yml
+database/data-nk/glass/schott/N-BAF51.yml
+database/data-nk/glass/schott/N-BAF52.yml
+database/data-nk/glass/schott/N-BAK1.yml
+database/data-nk/glass/schott/N-BAK2.yml
+database/data-nk/glass/schott/N-BAK4.yml
+database/data-nk/glass/schott/N-BAK4HT.yml
+database/data-nk/glass/schott/N-BALF4.yml
+database/data-nk/glass/schott/N-BALF5.yml
+database/data-nk/glass/schott/N-BASF2.yml
+database/data-nk/glass/schott/N-BASF64.yml
+database/data-nk/glass/schott/N-BK10.yml
+database/data-nk/glass/schott/N-BK7.yml
+database/data-nk/glass/schott/N-BK7HT.yml
+database/data-nk/glass/schott/N-BK7HTi.yml
+database/data-nk/glass/schott/N-F2.yml
+database/data-nk/glass/schott/N-FK5.yml
+database/data-nk/glass/schott/N-FK51.yml
+database/data-nk/glass/schott/N-FK51A.yml
+database/data-nk/glass/schott/N-FK58.yml
+database/data-nk/glass/schott/N-K5.yml
+database/data-nk/glass/schott/N-KF9.yml
+database/data-nk/glass/schott/N-KZFS11.yml
+database/data-nk/glass/schott/N-KZFS2.yml
+database/data-nk/glass/schott/N-KZFS4.yml
+database/data-nk/glass/schott/N-KZFS4HT.yml
+database/data-nk/glass/schott/N-KZFS5.yml
+database/data-nk/glass/schott/N-KZFS8.yml
+database/data-nk/glass/schott/N-LAF2.yml
+database/data-nk/glass/schott/N-LAF21.yml
+database/data-nk/glass/schott/N-LAF3.yml
+database/data-nk/glass/schott/N-LAF32.yml
+database/data-nk/glass/schott/N-LAF33.yml
+database/data-nk/glass/schott/N-LAF34.yml
+database/data-nk/glass/schott/N-LAF35.yml
+database/data-nk/glass/schott/N-LAF36.yml
+database/data-nk/glass/schott/N-LAF7.yml
+database/data-nk/glass/schott/N-LAK10.yml
+database/data-nk/glass/schott/N-LAK12.yml
+database/data-nk/glass/schott/N-LAK14.yml
+database/data-nk/glass/schott/N-LAK21.yml
+database/data-nk/glass/schott/N-LAK22.yml
+database/data-nk/glass/schott/N-LAK33A.yml
+database/data-nk/glass/schott/N-LAK33B.yml
+database/data-nk/glass/schott/N-LAK34.yml
+database/data-nk/glass/schott/N-LAK7.yml
+database/data-nk/glass/schott/N-LAK8.yml
+database/data-nk/glass/schott/N-LAK9.yml
+database/data-nk/glass/schott/N-LASF31.yml
+database/data-nk/glass/schott/N-LASF31A.yml
+database/data-nk/glass/schott/N-LASF40.yml
+database/data-nk/glass/schott/N-LASF41.yml
+database/data-nk/glass/schott/N-LASF43.yml
+database/data-nk/glass/schott/N-LASF44.yml
+database/data-nk/glass/schott/N-LASF45.yml
+database/data-nk/glass/schott/N-LASF45HT.yml
+database/data-nk/glass/schott/N-LASF46.yml
+database/data-nk/glass/schott/N-LASF46A.yml
+database/data-nk/glass/schott/N-LASF46B.yml
+database/data-nk/glass/schott/N-LASF9.yml
+database/data-nk/glass/schott/N-LASF9HT.yml
+database/data-nk/glass/schott/N-PK51.yml
+database/data-nk/glass/schott/N-PK52A.yml
+database/data-nk/glass/schott/N-PSK3.yml
+database/data-nk/glass/schott/N-PSK53.yml
+database/data-nk/glass/schott/N-PSK53A.yml
+database/data-nk/glass/schott/N-SF1.yml
+database/data-nk/glass/schott/N-SF10.yml
+database/data-nk/glass/schott/N-SF11.yml
+database/data-nk/glass/schott/N-SF14.yml
+database/data-nk/glass/schott/N-SF15.yml
+database/data-nk/glass/schott/N-SF19.yml
+database/data-nk/glass/schott/N-SF2.yml
+database/data-nk/glass/schott/N-SF4.yml
+database/data-nk/glass/schott/N-SF5.yml
+database/data-nk/glass/schott/N-SF56.yml
+database/data-nk/glass/schott/N-SF57.yml
+database/data-nk/glass/schott/N-SF57HT.yml
+database/data-nk/glass/schott/N-SF57HTultra.yml
+database/data-nk/glass/schott/N-SF6.yml
+database/data-nk/glass/schott/N-SF64.yml
+database/data-nk/glass/schott/N-SF66.yml
+database/data-nk/glass/schott/N-SF6HT.yml
+database/data-nk/glass/schott/N-SF6HTultra.yml
+database/data-nk/glass/schott/N-SF8.yml
+database/data-nk/glass/schott/N-SK10.yml
+database/data-nk/glass/schott/N-SK11.yml
+database/data-nk/glass/schott/N-SK14.yml
+database/data-nk/glass/schott/N-SK15.yml
+database/data-nk/glass/schott/N-SK16.yml
+database/data-nk/glass/schott/N-SK2.yml
+database/data-nk/glass/schott/N-SK2HT.yml
+database/data-nk/glass/schott/N-SK4.yml
+database/data-nk/glass/schott/N-SK5.yml
+database/data-nk/glass/schott/N-SSK2.yml
+database/data-nk/glass/schott/N-SSK5.yml
+database/data-nk/glass/schott/N-SSK8.yml
+database/data-nk/glass/schott/N-ZK7.yml
+database/data-nk/glass/schott/N-ZK7A.yml
+database/data-nk/glass/schott/P-BK7.yml
+database/data-nk/glass/schott/P-LAF37.yml
+database/data-nk/glass/schott/P-LAK35.yml
+database/data-nk/glass/schott/P-LASF47.yml
+database/data-nk/glass/schott/P-LASF50.yml
+database/data-nk/glass/schott/P-LASF51.yml
+database/data-nk/glass/schott/P-PK53.yml
+database/data-nk/glass/schott/P-SF67.yml
+database/data-nk/glass/schott/P-SF68.yml
+database/data-nk/glass/schott/P-SF69.yml
+database/data-nk/glass/schott/P-SF8.yml
+database/data-nk/glass/schott/P-SK57.yml
+database/data-nk/glass/schott/P-SK57Q1.yml
+database/data-nk/glass/schott/P-SK58A.yml
+database/data-nk/glass/schott/P-SK60.yml
+database/data-nk/glass/schott/SF1.yml
+database/data-nk/glass/schott/SF10.yml
+database/data-nk/glass/schott/SF11.yml
+database/data-nk/glass/schott/SF14.yml
+database/data-nk/glass/schott/SF15.yml
+database/data-nk/glass/schott/SF2.yml
+database/data-nk/glass/schott/SF4.yml
+database/data-nk/glass/schott/SF5.yml
+database/data-nk/glass/schott/SF56A.yml
+database/data-nk/glass/schott/SF57.yml
+database/data-nk/glass/schott/SF57HTultra.yml
+database/data-nk/glass/schott/SF6.yml
+database/data-nk/glass/schott/SF66.yml
+database/data-nk/glass/schott/SF6G05.yml
+database/data-nk/glass/schott/SFL57.yml
+database/data-nk/glass/schott/SFL6.yml
+database/data-nk/glass/schott/BK7/Lane.yml
+database/data-nk/glass/schott/infrared/IRG22.yml
+database/data-nk/glass/schott/infrared/IRG23.yml
+database/data-nk/glass/schott/infrared/IRG24.yml
+database/data-nk/glass/schott/infrared/IRG25.yml
+database/data-nk/glass/schott/infrared/IRG26.yml
+database/data-nk/glass/schott/infrared/IRG27.yml
+database/data-nk/glass/schott/misc/AF32ECO.yml
+database/data-nk/glass/schott/misc/B270.yml
+database/data-nk/glass/schott/misc/BOROFLOAT33.yml
+database/data-nk/glass/schott/misc/D263TECO.yml
+database/data-nk/glass/schott/misc/ZERODUR.yml
+database/data-nk/glass/schott/obsolete/LF7.yml
+database/data-nk/glass/sumita/K-BK7.yml
+database/data-nk/glass/sumita/K-BOC20.yml
+database/data-nk/glass/sumita/K-BOC30.yml
+database/data-nk/glass/sumita/K-BPG2.yml
+database/data-nk/glass/sumita/K-BaF8.yml
+database/data-nk/glass/sumita/K-BaF9.yml
+database/data-nk/glass/sumita/K-BaFn1.yml
+database/data-nk/glass/sumita/K-BaFn3.yml
+database/data-nk/glass/sumita/K-BaSF4.yml
+database/data-nk/glass/sumita/K-BaSF5.yml
+database/data-nk/glass/sumita/K-CD120(M).yml
+database/data-nk/glass/sumita/K-CD120.yml
+database/data-nk/glass/sumita/K-CD45(M).yml
+database/data-nk/glass/sumita/K-CD45.yml
+database/data-nk/glass/sumita/K-CSK120(M).yml
+database/data-nk/glass/sumita/K-CSK120.yml
+database/data-nk/glass/sumita/K-CaFK95(M).yml
+database/data-nk/glass/sumita/K-CaFK95.yml
+database/data-nk/glass/sumita/K-FIR97UV.yml
+database/data-nk/glass/sumita/K-FIR98UV.yml
+database/data-nk/glass/sumita/K-FK5.yml
+database/data-nk/glass/sumita/K-GFK68(M).yml
+database/data-nk/glass/sumita/K-GFK68.yml
+database/data-nk/glass/sumita/K-GFK70(M).yml
+database/data-nk/glass/sumita/K-GFK70.yml
+database/data-nk/glass/sumita/K-GIR140.yml
+database/data-nk/glass/sumita/K-GIR79.yml
+database/data-nk/glass/sumita/K-LCV93(M).yml
+database/data-nk/glass/sumita/K-LCV93.yml
+database/data-nk/glass/sumita/K-LaF2.yml
+database/data-nk/glass/sumita/K-LaFK50(M).yml
+database/data-nk/glass/sumita/K-LaFK50.yml
+database/data-nk/glass/sumita/K-LaFK50T(M).yml
+database/data-nk/glass/sumita/K-LaFK50T.yml
+database/data-nk/glass/sumita/K-LaFK55(M).yml
+database/data-nk/glass/sumita/K-LaFK55.yml
+database/data-nk/glass/sumita/K-LaFK58(M).yml
+database/data-nk/glass/sumita/K-LaFK58.yml
+database/data-nk/glass/sumita/K-LaFK60(M).yml
+database/data-nk/glass/sumita/K-LaFK60.yml
+database/data-nk/glass/sumita/K-LaFK65(M).yml
+database/data-nk/glass/sumita/K-LaFK65.yml
+database/data-nk/glass/sumita/K-LaFn11.yml
+database/data-nk/glass/sumita/K-LaFn3.yml
+database/data-nk/glass/sumita/K-LaFn5.yml
+database/data-nk/glass/sumita/K-LaK10.yml
+database/data-nk/glass/sumita/K-LaK11.yml
+database/data-nk/glass/sumita/K-LaK12.yml
+database/data-nk/glass/sumita/K-LaK14.yml
+database/data-nk/glass/sumita/K-LaK18.yml
+database/data-nk/glass/sumita/K-LaK6.yml
+database/data-nk/glass/sumita/K-LaK7.yml
+database/data-nk/glass/sumita/K-LaK8.yml
+database/data-nk/glass/sumita/K-LaK9.yml
+database/data-nk/glass/sumita/K-LaKn11.yml
+database/data-nk/glass/sumita/K-LaKn14.yml
+database/data-nk/glass/sumita/K-LaKn2.yml
+database/data-nk/glass/sumita/K-LaKn4.yml
+database/data-nk/glass/sumita/K-LaKn5.yml
+database/data-nk/glass/sumita/K-LaKn7.yml
+database/data-nk/glass/sumita/K-LaSFn1.yml
+database/data-nk/glass/sumita/K-LaSFn10.yml
+database/data-nk/glass/sumita/K-LaSFn14.yml
+database/data-nk/glass/sumita/K-LaSFn16.yml
+database/data-nk/glass/sumita/K-LaSFn17.yml
+database/data-nk/glass/sumita/K-LaSFn2.yml
+database/data-nk/glass/sumita/K-LaSFn21.yml
+database/data-nk/glass/sumita/K-LaSFn22.yml
+database/data-nk/glass/sumita/K-LaSFn23.yml
+database/data-nk/glass/sumita/K-LaSFn3.yml
+database/data-nk/glass/sumita/K-LaSFn4.yml
+database/data-nk/glass/sumita/K-LaSFn6.yml
+database/data-nk/glass/sumita/K-LaSFn7.yml
+database/data-nk/glass/sumita/K-LaSFn8.yml
+database/data-nk/glass/sumita/K-LaSFn9.yml
+database/data-nk/glass/sumita/K-LaSKn1.yml
+database/data-nk/glass/sumita/K-PBK40(M).yml
+database/data-nk/glass/sumita/K-PBK40.yml
+database/data-nk/glass/sumita/K-PBK50(M).yml
+database/data-nk/glass/sumita/K-PBK50.yml
+database/data-nk/glass/sumita/K-PFK80(M).yml
+database/data-nk/glass/sumita/K-PFK80.yml
+database/data-nk/glass/sumita/K-PFK85(M).yml
+database/data-nk/glass/sumita/K-PFK85.yml
+database/data-nk/glass/sumita/K-PFK90(M).yml
+database/data-nk/glass/sumita/K-PFK90.yml
+database/data-nk/glass/sumita/K-PG325(M).yml
+database/data-nk/glass/sumita/K-PG325.yml
+database/data-nk/glass/sumita/K-PG375(M).yml
+database/data-nk/glass/sumita/K-PG375.yml
+database/data-nk/glass/sumita/K-PG395(M).yml
+database/data-nk/glass/sumita/K-PG395.yml
+database/data-nk/glass/sumita/K-PMK30(M).yml
+database/data-nk/glass/sumita/K-PMK30.yml
+database/data-nk/glass/sumita/K-PSFn1(M).yml
+database/data-nk/glass/sumita/K-PSFn1.yml
+database/data-nk/glass/sumita/K-PSFn173(M).yml
+database/data-nk/glass/sumita/K-PSFn173.yml
+database/data-nk/glass/sumita/K-PSFn2(M).yml
+database/data-nk/glass/sumita/K-PSFn2.yml
+database/data-nk/glass/sumita/K-PSFn202(M).yml
+database/data-nk/glass/sumita/K-PSFn202.yml
+database/data-nk/glass/sumita/K-PSFn203(M).yml
+database/data-nk/glass/sumita/K-PSFn203.yml
+database/data-nk/glass/sumita/K-PSFn214(M).yml
+database/data-nk/glass/sumita/K-PSFn214.yml
+database/data-nk/glass/sumita/K-PSFn215.yml
+database/data-nk/glass/sumita/K-PSFn3(M).yml
+database/data-nk/glass/sumita/K-PSFn3.yml
+database/data-nk/glass/sumita/K-PSFn4(M).yml
+database/data-nk/glass/sumita/K-PSFn4.yml
+database/data-nk/glass/sumita/K-PSFn5(M).yml
+database/data-nk/glass/sumita/K-PSFn5.yml
+database/data-nk/glass/sumita/K-PSK100(M).yml
+database/data-nk/glass/sumita/K-PSK100.yml
+database/data-nk/glass/sumita/K-PSK11(M).yml
+database/data-nk/glass/sumita/K-PSK11.yml
+database/data-nk/glass/sumita/K-PSK200(M).yml
+database/data-nk/glass/sumita/K-PSK200.yml
+database/data-nk/glass/sumita/K-PSK300(M).yml
+database/data-nk/glass/sumita/K-PSK300.yml
+database/data-nk/glass/sumita/K-PSK400(M).yml
+database/data-nk/glass/sumita/K-PSK400.yml
+database/data-nk/glass/sumita/K-PSK500(M).yml
+database/data-nk/glass/sumita/K-PSK500.yml
+database/data-nk/glass/sumita/K-PSKn2.yml
+database/data-nk/glass/sumita/K-SFLD1.yml
+database/data-nk/glass/sumita/K-SFLD11.yml
+database/data-nk/glass/sumita/K-SFLD14.yml
+database/data-nk/glass/sumita/K-SFLD4.yml
+database/data-nk/glass/sumita/K-SFLD6.yml
+database/data-nk/glass/sumita/K-SFLD66.yml
+database/data-nk/glass/sumita/K-SFLD8.yml
+database/data-nk/glass/sumita/K-SFLDn3.yml
+database/data-nk/glass/sumita/K-SK14.yml
+database/data-nk/glass/sumita/K-SK15.yml
+database/data-nk/glass/sumita/K-SK16RH.yml
+database/data-nk/glass/sumita/K-SK18.yml
+database/data-nk/glass/sumita/K-SK18RH.yml
+database/data-nk/glass/sumita/K-SK4.yml
+database/data-nk/glass/sumita/K-SK5.yml
+database/data-nk/glass/sumita/K-SK7.yml
+database/data-nk/glass/sumita/K-SKF6(M).yml
+database/data-nk/glass/sumita/K-SKF6.yml
+database/data-nk/glass/sumita/K-SKLD120(M).yml
+database/data-nk/glass/sumita/K-SKLD120.yml
+database/data-nk/glass/sumita/K-SSK1.yml
+database/data-nk/glass/sumita/K-SSK3.yml
+database/data-nk/glass/sumita/K-SSK4.yml
+database/data-nk/glass/sumita/K-SSK9.yml
+database/data-nk/glass/sumita/K-VC100(M).yml
+database/data-nk/glass/sumita/K-VC100.yml
+database/data-nk/glass/sumita/K-VC179(M).yml
+database/data-nk/glass/sumita/K-VC179.yml
+database/data-nk/glass/sumita/K-VC181(M).yml
+database/data-nk/glass/sumita/K-VC181.yml
+database/data-nk/glass/sumita/K-VC185(M).yml
+database/data-nk/glass/sumita/K-VC185.yml
+database/data-nk/glass/sumita/K-VC78(M).yml
+database/data-nk/glass/sumita/K-VC78.yml
+database/data-nk/glass/sumita/K-VC79(M).yml
+database/data-nk/glass/sumita/K-VC79.yml
+database/data-nk/glass/sumita/K-VC80(M).yml
+database/data-nk/glass/sumita/K-VC80.yml
+database/data-nk/glass/sumita/K-VC82(M).yml
+database/data-nk/glass/sumita/K-VC82.yml
+database/data-nk/glass/sumita/K-VC89(M).yml
+database/data-nk/glass/sumita/K-VC89.yml
+database/data-nk/glass/sumita/K-VC90(M).yml
+database/data-nk/glass/sumita/K-VC90.yml
+database/data-nk/glass/sumita/K-VC91(M).yml
+database/data-nk/glass/sumita/K-VC91.yml
+database/data-nk/glass/sumita/K-VC99(M).yml
+database/data-nk/glass/sumita/K-VC99.yml
+database/data-nk/glass/sumita/K-ZnSF8(M).yml
+database/data-nk/glass/sumita/K-ZnSF8.yml
+database/data-nk/glass/vitron/IG2.yml
+database/data-nk/glass/vitron/IG3.yml
+database/data-nk/glass/vitron/IG4.yml
+database/data-nk/glass/vitron/IG5.yml
+database/data-nk/glass/vitron/IG6.yml
+database/data-nk/main/Ag/Babar.yml
+database/data-nk/main/Ag/Choi.yml
+database/data-nk/main/Ag/Ciesielski-Ge.yml
+database/data-nk/main/Ag/Ciesielski-Ni.yml
+database/data-nk/main/Ag/Ciesielski.yml
+database/data-nk/main/Ag/Ferrera-298K.yml
+database/data-nk/main/Ag/Ferrera-404K.yml
+database/data-nk/main/Ag/Ferrera-501K.yml
+database/data-nk/main/Ag/Ferrera-600K.yml
+database/data-nk/main/Ag/Hagemann.yml
+database/data-nk/main/Ag/Jiang.yml
+database/data-nk/main/Ag/Johnson.yml
+database/data-nk/main/Ag/McPeak.yml
+database/data-nk/main/Ag/Rakic-BB.yml
+database/data-nk/main/Ag/Rakic-LD.yml
+database/data-nk/main/Ag/Stahrenberg.yml
+database/data-nk/main/Ag/Werner-DFT.yml
+database/data-nk/main/Ag/Werner.yml
+database/data-nk/main/Ag/Windt.yml
+database/data-nk/main/Ag/Wu.yml
+database/data-nk/main/Ag/Yang.yml
+database/data-nk/main/Ag3AsS3/Hulme-e.yml
+database/data-nk/main/Ag3AsS3/Hulme-o.yml
+database/data-nk/main/AgBr/Schroter.yml
+database/data-nk/main/AgCl/Tilton.yml
+database/data-nk/main/AgGaS2/Boyd-e.yml
+database/data-nk/main/AgGaS2/Boyd-o.yml
+database/data-nk/main/AgGaS2/Kato-e.yml
+database/data-nk/main/AgGaS2/Kato-o.yml
+database/data-nk/main/AgGaS2/Takaoka-e.yml
+database/data-nk/main/AgGaS2/Takaoka-o.yml
+database/data-nk/main/AgGaSe2/Boyd-e.yml
+database/data-nk/main/AgGaSe2/Boyd-o.yml
+database/data-nk/main/AgGaSe2/Harasaki-e.yml
+database/data-nk/main/AgGaSe2/Harasaki-o.yml
+database/data-nk/main/AgGaSe2/Kato-e.yml
+database/data-nk/main/AgGaSe2/Kato-o.yml
+database/data-nk/main/Al/Cheng.yml
+database/data-nk/main/Al/Hagemann.yml
+database/data-nk/main/Al/Larruquert.yml
+database/data-nk/main/Al/Mathewson.yml
+database/data-nk/main/Al/McPeak.yml
+database/data-nk/main/Al/Ordal.yml
+database/data-nk/main/Al/Rakic-BB.yml
+database/data-nk/main/Al/Rakic-LD.yml
+database/data-nk/main/Al/Rakic.yml
+database/data-nk/main/Al2O3/Boidin.yml
+database/data-nk/main/Al2O3/Hagemann.yml
+database/data-nk/main/Al2O3/Kischkat.yml
+database/data-nk/main/Al2O3/Malitson-e.yml
+database/data-nk/main/Al2O3/Malitson-o.yml
+database/data-nk/main/Al2O3/Malitson.yml
+database/data-nk/main/Al2O3/Querry-e.yml
+database/data-nk/main/Al2O3/Querry-o.yml
+database/data-nk/main/Al2O3/Querry.yml
+database/data-nk/main/Al2O3/Zhukovsky.yml
+database/data-nk/main/AlAs/Fern.yml
+database/data-nk/main/AlAs/Rakic.yml
+database/data-nk/main/AlN/Beliaev1.yml
+database/data-nk/main/AlN/Beliaev2.yml
+database/data-nk/main/AlN/Kischkat.yml
+database/data-nk/main/AlN/Pastrnak-e.yml
+database/data-nk/main/AlN/Pastrnak-o.yml
+database/data-nk/main/AlPO4/Bond-e.yml
+database/data-nk/main/AlPO4/Bond-o.yml
+database/data-nk/main/AlSb/Adachi.yml
+database/data-nk/main/AlSb/Djurisic.yml
+database/data-nk/main/AlSb/Zollner.yml
+database/data-nk/main/Ar/Bideau-Mehu.yml
+database/data-nk/main/Ar/Borzsonyi.yml
+database/data-nk/main/Ar/Cuthbertson.yml
+database/data-nk/main/Ar/Grace-liquid-83.81K.yml
+database/data-nk/main/Ar/Grace-liquid-90K.yml
+database/data-nk/main/Ar/Grace-solid-20K.yml
+database/data-nk/main/Ar/Grace-solid-83.81K.yml
+database/data-nk/main/Ar/Larsen.yml
+database/data-nk/main/Ar/Peck-0C.yml
+database/data-nk/main/Ar/Peck-15C.yml
+database/data-nk/main/Ar/Sinnock-liquid-83.81K.yml
+database/data-nk/main/Ar/Sinnock-liquid-86K.yml
+database/data-nk/main/Ar/Sinnock-liquid-88K.yml
+database/data-nk/main/Ar/Sinnock-liquid-90K.yml
+database/data-nk/main/Ar/Sinnock-solid-20K.yml
+database/data-nk/main/Ar/Sinnock-solid-30K.yml
+database/data-nk/main/Ar/Sinnock-solid-40K.yml
+database/data-nk/main/Ar/Sinnock-solid-50K.yml
+database/data-nk/main/Ar/Sinnock-solid-60K.yml
+database/data-nk/main/Ar/Sinnock-solid-70K.yml
+database/data-nk/main/Ar/Sinnock-solid-80K.yml
+database/data-nk/main/Ar/Sinnock-solid-83.81K.yml
+database/data-nk/main/As2S3/Rodney.yml
+database/data-nk/main/As2Se3/Joseph-400nm.yml
+database/data-nk/main/As2Se3/Joseph-700nm.yml
+database/data-nk/main/Au/Babar.yml
+database/data-nk/main/Au/Ciesielski-Ge.yml
+database/data-nk/main/Au/Ciesielski.yml
+database/data-nk/main/Au/Hagemann-2.yml
+database/data-nk/main/Au/Hagemann.yml
+database/data-nk/main/Au/Johnson.yml
+database/data-nk/main/Au/Lemarchand-11.7nm.yml
+database/data-nk/main/Au/Lemarchand-3.96nm.yml
+database/data-nk/main/Au/Lemarchand-4.62nm.yml
+database/data-nk/main/Au/Lemarchand-5.77nm.yml
+database/data-nk/main/Au/Magnozzi-225C.yml
+database/data-nk/main/Au/Magnozzi-25C.yml
+database/data-nk/main/Au/Magnozzi-350C.yml
+database/data-nk/main/Au/McPeak.yml
+database/data-nk/main/Au/Olmon-ev.yml
+database/data-nk/main/Au/Olmon-sc.yml
+database/data-nk/main/Au/Olmon-ts.yml
+database/data-nk/main/Au/Ordal.yml
+database/data-nk/main/Au/Rakic-BB.yml
+database/data-nk/main/Au/Rakic-LD.yml
+database/data-nk/main/Au/Rosenblatt-11nm.yml
+database/data-nk/main/Au/Rosenblatt-21nm.yml
+database/data-nk/main/Au/Rosenblatt-44nm.yml
+database/data-nk/main/Au/Werner-DFT.yml
+database/data-nk/main/Au/Werner.yml
+database/data-nk/main/Au/Windt.yml
+database/data-nk/main/Au/Yakubovsky-117nm.yml
+database/data-nk/main/Au/Yakubovsky-25nm.yml
+database/data-nk/main/Au/Yakubovsky-4nm.yml
+database/data-nk/main/Au/Yakubovsky-53nm.yml
+database/data-nk/main/Au/Yakubovsky-6nm.yml
+database/data-nk/main/Au/Yakubovsky-9nm.yml
+database/data-nk/main/B/Fernandez-Perea.yml
+database/data-nk/main/B4C/Larruquert.yml
+database/data-nk/main/BN/Grudinin-DFT-e.yml
+database/data-nk/main/BN/Grudinin-DFT-o.yml
+database/data-nk/main/BN/Grudinin-e.yml
+database/data-nk/main/BN/Grudinin-o.yml
+database/data-nk/main/BN/Lee.yml
+database/data-nk/main/BP/Wettling.yml
+database/data-nk/main/BaB2O4/Eimerl-e.yml
+database/data-nk/main/BaB2O4/Eimerl-o.yml
+database/data-nk/main/BaB2O4/Tamosauskas-e.yml
+database/data-nk/main/BaB2O4/Tamosauskas-o.yml
+database/data-nk/main/BaB2O4/Zhang-e.yml
+database/data-nk/main/BaB2O4/Zhang-o.yml
+database/data-nk/main/BaF2/Kaiser.yml
+database/data-nk/main/BaF2/Li.yml
+database/data-nk/main/BaF2/Malitson.yml
+database/data-nk/main/BaF2/Querry.yml
+database/data-nk/main/BaGa2GeSe6/Kato-e.yml
+database/data-nk/main/BaGa2GeSe6/Kato-o.yml
+database/data-nk/main/BaGa4S7/Kato-alpha.yml
+database/data-nk/main/BaGa4S7/Kato-beta.yml
+database/data-nk/main/BaGa4S7/Kato-gamma.yml
+database/data-nk/main/BaTiO3/Wemple-e.yml
+database/data-nk/main/BaTiO3/Wemple-o.yml
+database/data-nk/main/Be/Rakic-BB.yml
+database/data-nk/main/Be/Rakic-LD.yml
+database/data-nk/main/Be/Svechnikov.yml
+database/data-nk/main/BeAl2O4/Walling-alpha.yml
+database/data-nk/main/BeAl2O4/Walling-beta.yml
+database/data-nk/main/BeAl2O4/Walling-gamma.yml
+database/data-nk/main/BeAl6O10/Pestryakov-alpha.yml
+database/data-nk/main/BeAl6O10/Pestryakov-beta.yml
+database/data-nk/main/BeAl6O10/Pestryakov-gamma.yml
+database/data-nk/main/BeO/Edwards-e.yml
+database/data-nk/main/BeO/Edwards-o.yml
+database/data-nk/main/Bi/Hagemann.yml
+database/data-nk/main/Bi/Werner-DFT.yml
+database/data-nk/main/Bi/Werner.yml
+database/data-nk/main/Bi12GeO20/Simon.yml
+database/data-nk/main/Bi12SiO20/Gospodinov.yml
+database/data-nk/main/Bi2Se3/Fang-10L.yml
+database/data-nk/main/Bi2Se3/Fang-2L.yml
+database/data-nk/main/Bi2Se3/Fang-4L.yml
+database/data-nk/main/Bi2Se3/Fang-6L.yml
+database/data-nk/main/Bi2Se3/Fang-8L.yml
+database/data-nk/main/Bi4Ge3O12/Williams.yml
+database/data-nk/main/Bi4Ti3O12/Simon-a.yml
+database/data-nk/main/Bi4Ti3O12/Simon-b.yml
+database/data-nk/main/BiB3O6/Umemura-alpha.yml
+database/data-nk/main/BiB3O6/Umemura-beta.yml
+database/data-nk/main/BiB3O6/Umemura-gamma.yml
+database/data-nk/main/BiFeO3/Kumar.yml
+database/data-nk/main/C/Arakawa.yml
+database/data-nk/main/C/Djurisic-e.yml
+database/data-nk/main/C/Djurisic-o.yml
+database/data-nk/main/C/Dore.yml
+database/data-nk/main/C/El-Sayed.yml
+database/data-nk/main/C/Ermolaev.yml
+database/data-nk/main/C/Hagemann.yml
+database/data-nk/main/C/Larruquert.yml
+database/data-nk/main/C/Peter.yml
+database/data-nk/main/C/Phillip.yml
+database/data-nk/main/C/Querry-Asbury3222.yml
+database/data-nk/main/C/Querry-AsburyMicro260.yml
+database/data-nk/main/C/Querry-Dixon1102.yml
+database/data-nk/main/C/Querry-Dixon200-10.yml
+database/data-nk/main/C/Querry-DixonHPN2.yml
+database/data-nk/main/C/Querry-DixonKS2.yml
+database/data-nk/main/C/Querry-Pyrolytic.yml
+database/data-nk/main/C/Song-Arc.yml
+database/data-nk/main/C/Song-HiPco.yml
+database/data-nk/main/C/Song-cHOPG-e.yml
+database/data-nk/main/C/Song-cHOPG-o.yml
+database/data-nk/main/C/Song-sHOPG-e.yml
+database/data-nk/main/C/Song-sHOPG-o.yml
+database/data-nk/main/C/Song.yml
+database/data-nk/main/C/Taylor.yml
+database/data-nk/main/C/Tikuisis.yml
+database/data-nk/main/C/Weber.yml
+database/data-nk/main/CO1/Smith.yml
+database/data-nk/main/CO2/Bideau-Mehu.yml
+database/data-nk/main/CO2/Old.yml
+database/data-nk/main/CS2/Chemnitz.yml
+database/data-nk/main/CS2/Ghosal.yml
+database/data-nk/main/CS2/Kedenburg.yml
+database/data-nk/main/Ca/Mathewson.yml
+database/data-nk/main/Ca/Rodriguez-de Marcos.yml
+database/data-nk/main/CaCO3/Ghosh-e.yml
+database/data-nk/main/CaCO3/Ghosh-o.yml
+database/data-nk/main/CaF2/Daimon-20.yml
+database/data-nk/main/CaF2/Daimon-25.yml
+database/data-nk/main/CaF2/Kaiser.yml
+database/data-nk/main/CaF2/Li.yml
+database/data-nk/main/CaF2/Malitson.yml
+database/data-nk/main/CaGdAlO4/Loiko-e.yml
+database/data-nk/main/CaGdAlO4/Loiko-o.yml
+database/data-nk/main/CaMg(CO3)2/Querry-e.yml
+database/data-nk/main/CaMg(CO3)2/Querry-o.yml
+database/data-nk/main/CaMoO4/Bond-e.yml
+database/data-nk/main/CaMoO4/Bond-o.yml
+database/data-nk/main/CaSO4/Querry-alpha.yml
+database/data-nk/main/CaSO4/Querry-beta.yml
+database/data-nk/main/CaSO4/Querry-gamma.yml
+database/data-nk/main/CaWO4/Bond-e.yml
+database/data-nk/main/CaWO4/Bond-o.yml
+database/data-nk/main/CaYAlO4/Loiko-e.yml
+database/data-nk/main/CaYAlO4/Loiko-o.yml
+database/data-nk/main/CdGa2S4/Kato-e.yml
+database/data-nk/main/CdGa2S4/Kato-o.yml
+database/data-nk/main/CdGeAs2/Boyd-e.yml
+database/data-nk/main/CdGeAs2/Boyd-o.yml
+database/data-nk/main/CdGeP2/Boyd-118-e.yml
+database/data-nk/main/CdGeP2/Boyd-118-o.yml
+database/data-nk/main/CdGeP2/Boyd-20-e.yml
+database/data-nk/main/CdGeP2/Boyd-20-o.yml
+database/data-nk/main/CdS/Bieniewski-e.yml
+database/data-nk/main/CdS/Bieniewski-o.yml
+database/data-nk/main/CdS/Ninomiya-e.yml
+database/data-nk/main/CdS/Ninomiya-o.yml
+database/data-nk/main/CdS/Treharne.yml
+database/data-nk/main/CdSe/Bond-e.yml
+database/data-nk/main/CdSe/Bond-o.yml
+database/data-nk/main/CdSe/Lisitsa-e.yml
+database/data-nk/main/CdSe/Lisitsa-o.yml
+database/data-nk/main/CdSe/Ninomiya-cubic.yml
+database/data-nk/main/CdSe/Ninomiya-e.yml
+database/data-nk/main/CdSe/Ninomiya-o.yml
+database/data-nk/main/CdTe/Adachi.yml
+database/data-nk/main/CdTe/DeBell-20K.yml
+database/data-nk/main/CdTe/DeBell-300K.yml
+database/data-nk/main/CdTe/DeBell-80K.yml
+database/data-nk/main/CdTe/Marple.yml
+database/data-nk/main/CdTe/Treharne.yml
+database/data-nk/main/Ce/Fernandez-Perea.yml
+database/data-nk/main/CeF3/Rodriguez-de Marcos.yml
+database/data-nk/main/Co/Johnson.yml
+database/data-nk/main/Co/Werner-DFT.yml
+database/data-nk/main/Co/Werner.yml
+database/data-nk/main/Cr/Johnson.yml
+database/data-nk/main/Cr/Rakic-BB.yml
+database/data-nk/main/Cr/Rakic-LD.yml
+database/data-nk/main/Cr/Sytchkova.yml
+database/data-nk/main/Cs/Ives.yml
+database/data-nk/main/Cs/Monin.yml
+database/data-nk/main/Cs/Smith.yml
+database/data-nk/main/Cs/Whang.yml
+database/data-nk/main/CsBr/Li.yml
+database/data-nk/main/CsBr/Querry.yml
+database/data-nk/main/CsBr/Rodney.yml
+database/data-nk/main/CsCl/Li.yml
+database/data-nk/main/CsF/Li.yml
+database/data-nk/main/CsI/Li.yml
+database/data-nk/main/CsI/Querry.yml
+database/data-nk/main/CsI/Rodney.yml
+database/data-nk/main/CsLiB6O10/Sasaki-e.yml
+database/data-nk/main/CsLiB6O10/Sasaki-o.yml
+database/data-nk/main/Cu/Babar.yml
+database/data-nk/main/Cu/Brimhall.yml
+database/data-nk/main/Cu/Hagemann.yml
+database/data-nk/main/Cu/Johnson.yml
+database/data-nk/main/Cu/McPeak.yml
+database/data-nk/main/Cu/Ordal.yml
+database/data-nk/main/Cu/Querry.yml
+database/data-nk/main/Cu/Rakic-BB.yml
+database/data-nk/main/Cu/Rakic-LD.yml
+database/data-nk/main/Cu/Stahrenberg.yml
+database/data-nk/main/Cu/Werner-DFT.yml
+database/data-nk/main/Cu/Werner.yml
+database/data-nk/main/Cu2O/Querry.yml
+database/data-nk/main/CuCl/Feldman.yml
+database/data-nk/main/CuGaS2/Boyd-120-e.yml
+database/data-nk/main/CuGaS2/Boyd-120-o.yml
+database/data-nk/main/CuGaS2/Boyd-20-e.yml
+database/data-nk/main/CuGaS2/Boyd-20-o.yml
+database/data-nk/main/CuO/Brimhall.yml
+database/data-nk/main/D2/Weber.yml
+database/data-nk/main/D2O/Asfar.yml
+database/data-nk/main/D2O/Kedenburg.yml
+database/data-nk/main/D2O/Sarkar.yml
+database/data-nk/main/D2O/Wang.yml
+database/data-nk/main/Dy2O3/Medenbach.yml
+database/data-nk/main/Er/Larruquert.yml
+database/data-nk/main/Eu/Fernandez-Perea.yml
+database/data-nk/main/EuS/Meretska.yml
+database/data-nk/main/Fe/Johnson.yml
+database/data-nk/main/Fe/Ordal.yml
+database/data-nk/main/Fe/Querry.yml
+database/data-nk/main/Fe/Werner-DFT.yml
+database/data-nk/main/Fe/Werner.yml
+database/data-nk/main/Fe2O3/Querry-e.yml
+database/data-nk/main/Fe2O3/Querry-o.yml
+database/data-nk/main/Fe3O4/Querry.yml
+database/data-nk/main/GaAs/Adachi.yml
+database/data-nk/main/GaAs/Aspnes.yml
+database/data-nk/main/GaAs/Jellison.yml
+database/data-nk/main/GaAs/Kachare.yml
+database/data-nk/main/GaAs/Ozaki.yml
+database/data-nk/main/GaAs/Papatryfonos.yml
+database/data-nk/main/GaAs/Perner.yml
+database/data-nk/main/GaAs/Rakic.yml
+database/data-nk/main/GaAs/Skauli.yml
+database/data-nk/main/GaN/Barker-e.yml
+database/data-nk/main/GaN/Barker-o.yml
+database/data-nk/main/GaN/Kawashima.yml
+database/data-nk/main/GaN/Lin-wurtzite.yml
+database/data-nk/main/GaN/Lin-zincblende.yml
+database/data-nk/main/GaP/Adachi.yml
+database/data-nk/main/GaP/Aspnes.yml
+database/data-nk/main/GaP/Bond.yml
+database/data-nk/main/GaP/Jellison.yml
+database/data-nk/main/GaP/Khmelevskaia.yml
+database/data-nk/main/GaP/Parsons.yml
+database/data-nk/main/GaS/Kato-e.yml
+database/data-nk/main/GaS/Kato-o.yml
+database/data-nk/main/GaSb/Adachi.yml
+database/data-nk/main/GaSb/Aspnes.yml
+database/data-nk/main/GaSb/Djurisic.yml
+database/data-nk/main/GaSe/Kato-e.yml
+database/data-nk/main/GaSe/Kato-o.yml
+database/data-nk/main/Ge/Amotchkina-film.yml
+database/data-nk/main/Ge/Amotchkina.yml
+database/data-nk/main/Ge/Aspnes.yml
+database/data-nk/main/Ge/Burnett.yml
+database/data-nk/main/Ge/Ciesielski-20nm.yml
+database/data-nk/main/Ge/Ciesielski-2nm.yml
+database/data-nk/main/Ge/Icenogle.yml
+database/data-nk/main/Ge/Jellison.yml
+database/data-nk/main/Ge/Li-100K.yml
+database/data-nk/main/Ge/Li-150K.yml
+database/data-nk/main/Ge/Li-200K.yml
+database/data-nk/main/Ge/Li-250K.yml
+database/data-nk/main/Ge/Li-293K.yml
+database/data-nk/main/Ge/Li-350K.yml
+database/data-nk/main/Ge/Li-400K.yml
+database/data-nk/main/Ge/Li-450K.yml
+database/data-nk/main/Ge/Li-500K.yml
+database/data-nk/main/Ge/Li-550K.yml
+database/data-nk/main/Ge/Nunley.yml
+database/data-nk/main/GeO2/Fleming.yml
+database/data-nk/main/GeO2/Nunley.yml
+database/data-nk/main/H2/Koch.yml
+database/data-nk/main/H2/Peck.yml
+database/data-nk/main/H2/Smith.yml
+database/data-nk/main/H2O/Asfar.yml
+database/data-nk/main/H2O/Daimon-19.0C.yml
+database/data-nk/main/H2O/Daimon-20.0C.yml
+database/data-nk/main/H2O/Daimon-21.5C.yml
+database/data-nk/main/H2O/Daimon-24.0C.yml
+database/data-nk/main/H2O/Hale.yml
+database/data-nk/main/H2O/Kedenburg.yml
+database/data-nk/main/H2O/Kofman-10K.yml
+database/data-nk/main/H2O/Kofman-110K.yml
+database/data-nk/main/H2O/Kofman-130K.yml
+database/data-nk/main/H2O/Kofman-150K.yml
+database/data-nk/main/H2O/Kofman-30K.yml
+database/data-nk/main/H2O/Kofman-50K.yml
+database/data-nk/main/H2O/Kofman-70K.yml
+database/data-nk/main/H2O/Kofman-90K.yml
+database/data-nk/main/H2O/Rowe-240K.yml
+database/data-nk/main/H2O/Rowe-253K.yml
+database/data-nk/main/H2O/Rowe-263K.yml
+database/data-nk/main/H2O/Rowe-273K.yml
+database/data-nk/main/H2O/Segelstein.yml
+database/data-nk/main/H2O/Wang.yml
+database/data-nk/main/H2O/Warren-1984.yml
+database/data-nk/main/H2O/Warren-2008.yml
+database/data-nk/main/He/Borzsonyi.yml
+database/data-nk/main/He/Cuthbertson.yml
+database/data-nk/main/He/Ermolov.yml
+database/data-nk/main/He/Mansfield.yml
+database/data-nk/main/He/Smith.yml
+database/data-nk/main/Hf/Windt.yml
+database/data-nk/main/HfO2/Al-Kuhaili.yml
+database/data-nk/main/HfO2/Bright.yml
+database/data-nk/main/Hg/Inagaki.yml
+database/data-nk/main/HgGa2S4/Kato-e.yml
+database/data-nk/main/HgGa2S4/Kato-o.yml
+database/data-nk/main/HgS/Bond-e.yml
+database/data-nk/main/HgS/Bond-o.yml
+database/data-nk/main/Ho/Fernandez-Perea.yml
+database/data-nk/main/In/Golovashkin-295K.yml
+database/data-nk/main/In/Golovashkin-4.2K.yml
+database/data-nk/main/In/Mathewson-140K.yml
+database/data-nk/main/In/Mathewson-298K.yml
+database/data-nk/main/InAs/Adachi.yml
+database/data-nk/main/InAs/Aspnes.yml
+database/data-nk/main/InAs/Lorimor.yml
+database/data-nk/main/InP/Adachi.yml
+database/data-nk/main/InP/Aspnes.yml
+database/data-nk/main/InP/Panah.yml
+database/data-nk/main/InP/Pettit.yml
+database/data-nk/main/InSb/Adachi.yml
+database/data-nk/main/InSb/Aspnes.yml
+database/data-nk/main/InSb/Djurisic.yml
+database/data-nk/main/Ir/Hass-300C.yml
+database/data-nk/main/Ir/Hass-40C.yml
+database/data-nk/main/Ir/Roberts.yml
+database/data-nk/main/Ir/Schmitt-ALD.yml
+database/data-nk/main/Ir/Schmitt-MS.yml
+database/data-nk/main/Ir/Windt.yml
+database/data-nk/main/K/Althoff.yml
+database/data-nk/main/K/Ives.yml
+database/data-nk/main/K/Monin.yml
+database/data-nk/main/K/Smith.yml
+database/data-nk/main/K/Sutherland.yml
+database/data-nk/main/K/Whang.yml
+database/data-nk/main/KBr/Li.yml
+database/data-nk/main/KCl/Li.yml
+database/data-nk/main/KCl/Querry.yml
+database/data-nk/main/KF/Li.yml
+database/data-nk/main/KH2PO4/Zernike-e.yml
+database/data-nk/main/KH2PO4/Zernike-o.yml
+database/data-nk/main/KI/Li.yml
+database/data-nk/main/KNbO3/Umemura-alpha.yml
+database/data-nk/main/KNbO3/Umemura-beta.yml
+database/data-nk/main/KNbO3/Umemura-gamma.yml
+database/data-nk/main/KTaO3/Fujii.yml
+database/data-nk/main/KTiOPO4/Kato-alpha.yml
+database/data-nk/main/KTiOPO4/Kato-beta.yml
+database/data-nk/main/KTiOPO4/Kato-gamma.yml
+database/data-nk/main/Kr/Bideau-Mehu.yml
+database/data-nk/main/Kr/Borzsonyi.yml
+database/data-nk/main/Kr/Cuthbertson.yml
+database/data-nk/main/Kr/Koch.yml
+database/data-nk/main/Kr/Sinnock-liquid-115.95K.yml
+database/data-nk/main/Kr/Sinnock-liquid-118K.yml
+database/data-nk/main/Kr/Sinnock-liquid-122K.yml
+database/data-nk/main/Kr/Sinnock-liquid-126K.yml
+database/data-nk/main/Kr/Sinnock-solid-105K.yml
+database/data-nk/main/Kr/Sinnock-solid-115.95K.yml
+database/data-nk/main/Kr/Sinnock-solid-67K.yml
+database/data-nk/main/Kr/Sinnock-solid-75K.yml
+database/data-nk/main/Kr/Sinnock-solid-85K.yml
+database/data-nk/main/Kr/Sinnock-solid-95K.yml
+database/data-nk/main/Kr/Smith.yml
+database/data-nk/main/LaF3/Amotchkina.yml
+database/data-nk/main/LaF3/Laihoa-e.yml
+database/data-nk/main/LaF3/Laihoa-o.yml
+database/data-nk/main/LaF3/Rodriguez-de Marcos.yml
+database/data-nk/main/Li/Callcott.yml
+database/data-nk/main/Li/Inagaki.yml
+database/data-nk/main/Li/Mathewson-140K.yml
+database/data-nk/main/Li/Mathewson-298K.yml
+database/data-nk/main/Li/Rasigni.yml
+database/data-nk/main/LiB3O5/Chen-alpha.yml
+database/data-nk/main/LiB3O5/Chen-beta.yml
+database/data-nk/main/LiB3O5/Chen-gamma.yml
+database/data-nk/main/LiBr/Li.yml
+database/data-nk/main/LiCaAlF6/Woods-e.yml
+database/data-nk/main/LiCaAlF6/Woods-o.yml
+database/data-nk/main/LiCl/Li.yml
+database/data-nk/main/LiF/Li.yml
+database/data-nk/main/LiGaS2/Kato-alpha.yml
+database/data-nk/main/LiGaS2/Kato-beta.yml
+database/data-nk/main/LiGaS2/Kato-gamma.yml
+database/data-nk/main/LiI/Li.yml
+database/data-nk/main/LiIO3/Herbst-e.yml
+database/data-nk/main/LiIO3/Herbst-o.yml
+database/data-nk/main/LiIO3/Umegaki-e.yml
+database/data-nk/main/LiIO3/Umegaki-o.yml
+database/data-nk/main/LiNbO3/Zelmon-e.yml
+database/data-nk/main/LiNbO3/Zelmon-o.yml
+database/data-nk/main/LiTaO3/Bond-e.yml
+database/data-nk/main/LiTaO3/Bond-o.yml
+database/data-nk/main/Lu/Garcia-Cortes.yml
+database/data-nk/main/Lu2O3/Kaminskii.yml
+database/data-nk/main/Lu2O3/Medenbach.yml
+database/data-nk/main/Lu2O3/Yao.yml
+database/data-nk/main/Lu3Al5O12/Hrabovsky.yml
+database/data-nk/main/LuAl3(BO3)4/Fang-e.yml
+database/data-nk/main/LuAl3(BO3)4/Fang-o.yml
+database/data-nk/main/Mg/Hagemann.yml
+database/data-nk/main/Mg/Palm.yml
+database/data-nk/main/Mg/Vidal-Dasilva.yml
+database/data-nk/main/MgAl2O4/Tropf.yml
+database/data-nk/main/MgF2/Dodge-e.yml
+database/data-nk/main/MgF2/Dodge-o.yml
+database/data-nk/main/MgF2/Li-e.yml
+database/data-nk/main/MgF2/Li-o.yml
+database/data-nk/main/MgF2/Rodriguez-de Marcos.yml
+database/data-nk/main/MgH2/Palm.yml
+database/data-nk/main/MgO/Stephens-vis.yml
+database/data-nk/main/MgO/Stephens.yml
+database/data-nk/main/Mn/Johnson.yml
+database/data-nk/main/Mn/Querry.yml
+database/data-nk/main/Mo/Kirillova.yml
+database/data-nk/main/Mo/Ordal.yml
+database/data-nk/main/Mo/Querry.yml
+database/data-nk/main/Mo/Werner-DFT.yml
+database/data-nk/main/Mo/Werner.yml
+database/data-nk/main/Mo/Windt.yml
+database/data-nk/main/MoO3/Lajaunie-alpha.yml
+database/data-nk/main/MoO3/Lajaunie-beta.yml
+database/data-nk/main/MoO3/Lajaunie-gamma.yml
+database/data-nk/main/MoO3/Stelling.yml
+database/data-nk/main/MoO3/Vos.yml
+database/data-nk/main/MoS2/Beal.yml
+database/data-nk/main/MoS2/Ermolaev-1L.yml
+database/data-nk/main/MoS2/Ermolaev-e.yml
+database/data-nk/main/MoS2/Ermolaev-o.yml
+database/data-nk/main/MoS2/Hsu-1L.yml
+database/data-nk/main/MoS2/Hsu-2L.yml
+database/data-nk/main/MoS2/Hsu-3L.yml
+database/data-nk/main/MoS2/Islam-1L.yml
+database/data-nk/main/MoS2/Islam-e.yml
+database/data-nk/main/MoS2/Islam-fewL.yml
+database/data-nk/main/MoS2/Islam-o.yml
+database/data-nk/main/MoS2/Jung.yml
+database/data-nk/main/MoS2/Munkhbat-e.yml
+database/data-nk/main/MoS2/Munkhbat-o.yml
+database/data-nk/main/MoS2/Song-10L.yml
+database/data-nk/main/MoS2/Song-13L.yml
+database/data-nk/main/MoS2/Song-1L.yml
+database/data-nk/main/MoS2/Song-3L.yml
+database/data-nk/main/MoS2/Song-4L.yml
+database/data-nk/main/MoS2/Song-6L.yml
+database/data-nk/main/MoS2/Song-8L.yml
+database/data-nk/main/MoS2/Song-bulk.yml
+database/data-nk/main/MoS2/Yim-20nm.yml
+database/data-nk/main/MoS2/Yim-2nm.yml
+database/data-nk/main/MoS2/Yim-3nm.yml
+database/data-nk/main/MoS2/Zhang.yml
+database/data-nk/main/MoSe2/Beal.yml
+database/data-nk/main/MoSe2/Hsu-1L.yml
+database/data-nk/main/MoSe2/Hsu-2L.yml
+database/data-nk/main/MoSe2/Hsu-3L.yml
+database/data-nk/main/MoSe2/Munkhbat-e.yml
+database/data-nk/main/MoSe2/Munkhbat-o.yml
+database/data-nk/main/MoTe2/Beal.yml
+database/data-nk/main/MoTe2/Munkhbat-e.yml
+database/data-nk/main/MoTe2/Munkhbat-o.yml
+database/data-nk/main/N2/Borzsonyi.yml
+database/data-nk/main/N2/Griesmann.yml
+database/data-nk/main/N2/Peck-0C.yml
+database/data-nk/main/N2/Peck-15C.yml
+database/data-nk/main/NH3/Cuthbertson.yml
+database/data-nk/main/NH4H2PO4/Zernike-e.yml
+database/data-nk/main/NH4H2PO4/Zernike-o.yml
+database/data-nk/main/Na/Althoff.yml
+database/data-nk/main/Na/Inagaki-liquid.yml
+database/data-nk/main/Na/Inagaki.yml
+database/data-nk/main/Na/Ives.yml
+database/data-nk/main/Na/Monin.yml
+database/data-nk/main/Na/Smith.yml
+database/data-nk/main/Na/Yamaguchi.yml
+database/data-nk/main/NaBr/Li.yml
+database/data-nk/main/NaCl/Li.yml
+database/data-nk/main/NaCl/Querry.yml
+database/data-nk/main/NaF/Li.yml
+database/data-nk/main/NaI/Jellison.yml
+database/data-nk/main/NaI/Li.yml
+database/data-nk/main/Nb/Golovashkin-293K.yml
+database/data-nk/main/Nb/Golovashkin-4.2K.yml
+database/data-nk/main/Nb/Golovashkin-78K.yml
+database/data-nk/main/Nb/Weaver.yml
+database/data-nk/main/Nb/Windt.yml
+database/data-nk/main/Nb2O5/Horcholle-400.yml
+database/data-nk/main/Nb2O5/Horcholle-800.yml
+database/data-nk/main/Nb2O5/Lemarchand.yml
+database/data-nk/main/NbSe2/Munkhbat-e.yml
+database/data-nk/main/NbSe2/Munkhbat-o.yml
+database/data-nk/main/Ne/Bideau-Mehu.yml
+database/data-nk/main/Ne/Borzsonyi.yml
+database/data-nk/main/Ne/Cuthbertson.yml
+database/data-nk/main/Ni/Johnson.yml
+database/data-nk/main/Ni/Ordal.yml
+database/data-nk/main/Ni/Rakic-BB.yml
+database/data-nk/main/Ni/Rakic-LD.yml
+database/data-nk/main/Ni/Werner-DFT.yml
+database/data-nk/main/Ni/Werner.yml
+database/data-nk/main/O2/Smith.yml
+database/data-nk/main/O2/Zhang.yml
+database/data-nk/main/Os/Nemoshkalenko-e.yml
+database/data-nk/main/Os/Nemoshkalenko-o.yml
+database/data-nk/main/Os/Windt.yml
+database/data-nk/main/Pb/Golovashkin-293K.yml
+database/data-nk/main/Pb/Golovashkin-4.2K.yml
+database/data-nk/main/Pb/Golovashkin-78K.yml
+database/data-nk/main/Pb/Mathewson-140K.yml
+database/data-nk/main/Pb/Mathewson-298K.yml
+database/data-nk/main/Pb/Ordal.yml
+database/data-nk/main/Pb/Werner-DFT.yml
+database/data-nk/main/Pb/Werner.yml
+database/data-nk/main/Pb5Ge3O11/Simon-e.yml
+database/data-nk/main/Pb5Ge3O11/Simon-o.yml
+database/data-nk/main/PbF2/Malitson.yml
+database/data-nk/main/PbI2/Frisenda.yml
+database/data-nk/main/PbMoO4/Malitson-e.yml
+database/data-nk/main/PbMoO4/Malitson-o.yml
+database/data-nk/main/PbS/Zemel.yml
+database/data-nk/main/PbSe/Suzuki.yml
+database/data-nk/main/PbSe/Zemel.yml
+database/data-nk/main/PbTe/Weiting-130K.yml
+database/data-nk/main/PbTe/Weiting-300K.yml
+database/data-nk/main/PbTe/Weiting-80K.yml
+database/data-nk/main/PbTiO3/Singh-e.yml
+database/data-nk/main/PbTiO3/Singh-o.yml
+database/data-nk/main/Pd/Johnson.yml
+database/data-nk/main/Pd/Palm.yml
+database/data-nk/main/Pd/Rakic-BB.yml
+database/data-nk/main/Pd/Rakic-LD.yml
+database/data-nk/main/Pd/Werner-DFT.yml
+database/data-nk/main/Pd/Werner.yml
+database/data-nk/main/Pd/Windt.yml
+database/data-nk/main/PdSe2/Ermolaev.yml
+database/data-nk/main/Pr/Fernandez-Perea.yml
+database/data-nk/main/Pt/Rakic-BB.yml
+database/data-nk/main/Pt/Rakic-LD.yml
+database/data-nk/main/Pt/Werner-DFT.yml
+database/data-nk/main/Pt/Werner.yml
+database/data-nk/main/Pt/Windt.yml
+database/data-nk/main/PtS2/Ermolaev.yml
+database/data-nk/main/PtSe2/Ermolaev.yml
+database/data-nk/main/Rb/Ives.yml
+database/data-nk/main/Rb/Monin.yml
+database/data-nk/main/Rb/Smith.yml
+database/data-nk/main/Rb/Whang.yml
+database/data-nk/main/Rb/Yamaguchi.yml
+database/data-nk/main/RbBr/Li.yml
+database/data-nk/main/RbCl/Li.yml
+database/data-nk/main/RbF/Li.yml
+database/data-nk/main/RbI/Li.yml
+database/data-nk/main/RbTiOPO4/Carvajal-alpha.yml
+database/data-nk/main/RbTiOPO4/Carvajal-beta.yml
+database/data-nk/main/RbTiOPO4/Carvajal-gamma.yml
+database/data-nk/main/Re/Windt.yml
+database/data-nk/main/ReS2/Munkhbat-alpha.yml
+database/data-nk/main/ReS2/Munkhbat-beta.yml
+database/data-nk/main/ReS2/Munkhbat-gamma.yml
+database/data-nk/main/Rh/Arndt.yml
+database/data-nk/main/Rh/Coulter-300.yml
+database/data-nk/main/Rh/Coulter-40.yml
+database/data-nk/main/Rh/Weaver.yml
+database/data-nk/main/Rh/Windt.yml
+database/data-nk/main/Ru/Windt.yml
+database/data-nk/main/SF6/Vukovic.yml
+database/data-nk/main/Sc/Larruquert.yml
+database/data-nk/main/Sc2O3/Arndt.yml
+database/data-nk/main/Sc2O3/Belosludtsev.yml
+database/data-nk/main/Sc2O3/Medenbach.yml
+database/data-nk/main/ScAlMgO4/Stefaniuk-e.yml
+database/data-nk/main/ScAlMgO4/Stefaniuk-o.yml
+database/data-nk/main/Se/Campel-e.yml
+database/data-nk/main/Se/Campel-o.yml
+database/data-nk/main/Se/Ciesielski.yml
+database/data-nk/main/Si/Aspnes.yml
+database/data-nk/main/Si/Chandler-Horowitz.yml
+database/data-nk/main/Si/Daub.yml
+database/data-nk/main/Si/Edwards.yml
+database/data-nk/main/Si/Green-1995.yml
+database/data-nk/main/Si/Green-2008.yml
+database/data-nk/main/Si/Jellison.yml
+database/data-nk/main/Si/Li-100K.yml
+database/data-nk/main/Si/Li-150K.yml
+database/data-nk/main/Si/Li-200K.yml
+database/data-nk/main/Si/Li-250K.yml
+database/data-nk/main/Si/Li-293K.yml
+database/data-nk/main/Si/Li-350K.yml
+database/data-nk/main/Si/Li-400K.yml
+database/data-nk/main/Si/Li-450K.yml
+database/data-nk/main/Si/Li-500K.yml
+database/data-nk/main/Si/Li-550K.yml
+database/data-nk/main/Si/Li-600K.yml
+database/data-nk/main/Si/Li-650K.yml
+database/data-nk/main/Si/Li-700K.yml
+database/data-nk/main/Si/Li-750K.yml
+database/data-nk/main/Si/Pierce.yml
+database/data-nk/main/Si/Salzberg.yml
+database/data-nk/main/Si/Schinke.yml
+database/data-nk/main/Si/Shkondin.yml
+database/data-nk/main/Si/Sik-250C.yml
+database/data-nk/main/Si/Sik-25C.yml
+database/data-nk/main/Si/Sik-500C.yml
+database/data-nk/main/Si/Sik-700C.yml
+database/data-nk/main/Si/Sik-850C.yml
+database/data-nk/main/Si/Vuye-100C.yml
+database/data-nk/main/Si/Vuye-150C.yml
+database/data-nk/main/Si/Vuye-200C.yml
+database/data-nk/main/Si/Vuye-20C.yml
+database/data-nk/main/Si/Vuye-250C.yml
+database/data-nk/main/Si/Vuye-300C.yml
+database/data-nk/main/Si/Vuye-350C.yml
+database/data-nk/main/Si/Vuye-400C.yml
+database/data-nk/main/Si/Vuye-450C.yml
+database/data-nk/main/Si3N4/Beliaev.yml
+database/data-nk/main/Si3N4/Kischkat.yml
+database/data-nk/main/Si3N4/Luke.yml
+database/data-nk/main/Si3N4/Philipp.yml
+database/data-nk/main/Si3N4/Vogt-1.yml
+database/data-nk/main/Si3N4/Vogt-2.yml
+database/data-nk/main/Si3N4/Vogt-3.yml
+database/data-nk/main/SiC/Fischer-e.yml
+database/data-nk/main/SiC/Fischer-o.yml
+database/data-nk/main/SiC/Larruquert.yml
+database/data-nk/main/SiC/Shaffer.yml
+database/data-nk/main/SiC/Singh-e.yml
+database/data-nk/main/SiC/Singh-o.yml
+database/data-nk/main/SiC/Wang-4H-e.yml
+database/data-nk/main/SiC/Wang-4H-o.yml
+database/data-nk/main/SiC/Wang-6H-e.yml
+database/data-nk/main/SiC/Wang-6H-o.yml
+database/data-nk/main/SiO/Fernandez-Perea.yml
+database/data-nk/main/SiO/Hass.yml
+database/data-nk/main/SiO2/Arosa.yml
+database/data-nk/main/SiO2/Gao.yml
+database/data-nk/main/SiO2/Ghosh-e.yml
+database/data-nk/main/SiO2/Ghosh-o.yml
+database/data-nk/main/SiO2/Kischkat.yml
+database/data-nk/main/SiO2/Lemarchand.yml
+database/data-nk/main/SiO2/Malitson.yml
+database/data-nk/main/SiO2/Nyakuchena.yml
+database/data-nk/main/SiO2/Popova.yml
+database/data-nk/main/SiO2/Radhakrishnan-e.yml
+database/data-nk/main/SiO2/Radhakrishnan-o.yml
+database/data-nk/main/SiO2/Rodriguez-de Marcos.yml
+database/data-nk/main/Sn/Golovashkin-293K.yml
+database/data-nk/main/Sn/Golovashkin-4.2K.yml
+database/data-nk/main/Sn/Golovashkin-78K.yml
+database/data-nk/main/SnS2/Ermolaev.yml
+database/data-nk/main/SnSe/Guo-alpha.yml
+database/data-nk/main/SnSe/Guo-beta.yml
+database/data-nk/main/SnSe/Guo-gamma.yml
+database/data-nk/main/SnSe2/Ermolaev.yml
+database/data-nk/main/Sr/Rodriguez-de Marcos.yml
+database/data-nk/main/SrF2/Feldman.yml
+database/data-nk/main/SrF2/Kaiser.yml
+database/data-nk/main/SrF2/Li.yml
+database/data-nk/main/SrF2/Rodriguez-de Marcos.yml
+database/data-nk/main/SrMoO4/Bond-e.yml
+database/data-nk/main/SrMoO4/Bond-o.yml
+database/data-nk/main/SrTiO3/Bond.yml
+database/data-nk/main/SrTiO3/Dodge.yml
+database/data-nk/main/Ta/Ordal.yml
+database/data-nk/main/Ta/Werner-DFT.yml
+database/data-nk/main/Ta/Werner.yml
+database/data-nk/main/Ta/Windt.yml
+database/data-nk/main/Ta2O5/Bright-amorphous.yml
+database/data-nk/main/Ta2O5/Bright-nanocrystalline.yml
+database/data-nk/main/Ta2O5/Gao.yml
+database/data-nk/main/Ta2O5/Rodriguez-de Marcos.yml
+database/data-nk/main/TaS2/Munkhbat-e.yml
+database/data-nk/main/TaS2/Munkhbat-o.yml
+database/data-nk/main/TaSe2/Munkhbat-e.yml
+database/data-nk/main/TaSe2/Munkhbat-o.yml
+database/data-nk/main/Te/Caldwell-e.yml
+database/data-nk/main/Te/Caldwell-o.yml
+database/data-nk/main/Te/Ciesielski.yml
+database/data-nk/main/Te/Guo-e.yml
+database/data-nk/main/Te/Guo-o.yml
+database/data-nk/main/Te/Sherman-e.yml
+database/data-nk/main/Te/Sherman-o.yml
+database/data-nk/main/TeO2/Uchida-e.yml
+database/data-nk/main/TeO2/Uchida-o.yml
+database/data-nk/main/ThF4/Heitmann.yml
+database/data-nk/main/Ti/Johnson.yml
+database/data-nk/main/Ti/Mash.yml
+database/data-nk/main/Ti/Ordal.yml
+database/data-nk/main/Ti/Palm.yml
+database/data-nk/main/Ti/Rakic-BB.yml
+database/data-nk/main/Ti/Rakic-LD.yml
+database/data-nk/main/Ti/Werner-DFT.yml
+database/data-nk/main/Ti/Werner.yml
+database/data-nk/main/Ti/Windt.yml
+database/data-nk/main/TiC/Pfluger.yml
+database/data-nk/main/TiH2/Palm.yml
+database/data-nk/main/TiN/Beliaev.yml
+database/data-nk/main/TiN/Pfluger.yml
+database/data-nk/main/TiN/Schnabel.yml
+database/data-nk/main/TiN/Shkondin-700.yml
+database/data-nk/main/TiN/Shkondin-800.yml
+database/data-nk/main/TiN/Shkondin-900.yml
+database/data-nk/main/TiN/Shkondin.yml
+database/data-nk/main/TiO2/Bodurov.yml
+database/data-nk/main/TiO2/Bond-e.yml
+database/data-nk/main/TiO2/Bond-o.yml
+database/data-nk/main/TiO2/Devore-e.yml
+database/data-nk/main/TiO2/Devore-o.yml
+database/data-nk/main/TiO2/Jolivet-amorphous.yml
+database/data-nk/main/TiO2/Jolivet-anatase.yml
+database/data-nk/main/TiO2/Kischkat.yml
+database/data-nk/main/TiO2/Sarkar.yml
+database/data-nk/main/TiO2/Siefke.yml
+database/data-nk/main/TiO2/Zhukovsky.yml
+database/data-nk/main/Tl3AsSe3/Ewbank-e.yml
+database/data-nk/main/Tl3AsSe3/Ewbank-o.yml
+database/data-nk/main/TlBr/Palik.yml
+database/data-nk/main/TlBr/Schroter.yml
+database/data-nk/main/TlCl/Schroter.yml
+database/data-nk/main/Tm/Vidal-Dasilva.yml
+database/data-nk/main/V/Johnson.yml
+database/data-nk/main/V/Palm.yml
+database/data-nk/main/V/Werner-DFT.yml
+database/data-nk/main/V/Werner.yml
+database/data-nk/main/VC/Pfluger.yml
+database/data-nk/main/VN/Pfluger.yml
+database/data-nk/main/VO2/Beaini-100C.yml
+database/data-nk/main/VO2/Beaini-25C.yml
+database/data-nk/main/VO2/Oguntoye-20C.yml
+database/data-nk/main/VO2/Oguntoye-30C.yml
+database/data-nk/main/VO2/Oguntoye-40C.yml
+database/data-nk/main/VO2/Oguntoye-50C.yml
+database/data-nk/main/VO2/Oguntoye-55C.yml
+database/data-nk/main/VO2/Oguntoye-60C.yml
+database/data-nk/main/VO2/Oguntoye-70C.yml
+database/data-nk/main/VO2/Oguntoye-80C.yml
+database/data-nk/main/W/Ordal.yml
+database/data-nk/main/W/Rakic-BB.yml
+database/data-nk/main/W/Rakic-LD.yml
+database/data-nk/main/W/Weaver.yml
+database/data-nk/main/W/Werner-DFT.yml
+database/data-nk/main/W/Werner.yml
+database/data-nk/main/W/Windt.yml
+database/data-nk/main/WO3/Kulikova.yml
+database/data-nk/main/WS2/Ermolaev.yml
+database/data-nk/main/WS2/Hsu-1L.yml
+database/data-nk/main/WS2/Hsu-2L.yml
+database/data-nk/main/WS2/Hsu-3L.yml
+database/data-nk/main/WS2/Jung.yml
+database/data-nk/main/WS2/Munkhbat-e.yml
+database/data-nk/main/WS2/Munkhbat-o.yml
+database/data-nk/main/WSe2/Ermolaev.yml
+database/data-nk/main/WSe2/Gu-1L.yml
+database/data-nk/main/WSe2/Gu-2L.yml
+database/data-nk/main/WSe2/Gu-3L.yml
+database/data-nk/main/WSe2/Gu-4L.yml
+database/data-nk/main/WSe2/Gu-5L.yml
+database/data-nk/main/WSe2/Hsu-1L.yml
+database/data-nk/main/WSe2/Hsu-2L.yml
+database/data-nk/main/WSe2/Hsu-3L.yml
+database/data-nk/main/WSe2/Jung.yml
+database/data-nk/main/WSe2/Munkhbat-e.yml
+database/data-nk/main/WSe2/Munkhbat-o.yml
+database/data-nk/main/WTe2/Munkhbat-alpha.yml
+database/data-nk/main/WTe2/Munkhbat-beta.yml
+database/data-nk/main/WTe2/Munkhbat-gamma.yml
+database/data-nk/main/Xe/Bideau-Mehu.yml
+database/data-nk/main/Xe/Borzsonyi.yml
+database/data-nk/main/Xe/Cuthbertson.yml
+database/data-nk/main/Xe/Grace-liquid-161.35K.yml
+database/data-nk/main/Xe/Grace-liquid-178K.yml
+database/data-nk/main/Xe/Grace-solid-161.35K.yml
+database/data-nk/main/Xe/Grace-solid-80K.yml
+database/data-nk/main/Xe/Koch.yml
+database/data-nk/main/Xe/Sinnock-liquid-161.35K.yml
+database/data-nk/main/Xe/Sinnock-liquid-166K.yml
+database/data-nk/main/Xe/Sinnock-liquid-170K.yml
+database/data-nk/main/Xe/Sinnock-liquid-174K.yml
+database/data-nk/main/Xe/Sinnock-liquid-178K.yml
+database/data-nk/main/Xe/Sinnock-solid-100K.yml
+database/data-nk/main/Xe/Sinnock-solid-110K.yml
+database/data-nk/main/Xe/Sinnock-solid-120K.yml
+database/data-nk/main/Xe/Sinnock-solid-130K.yml
+database/data-nk/main/Xe/Sinnock-solid-140K.yml
+database/data-nk/main/Xe/Sinnock-solid-150K.yml
+database/data-nk/main/Xe/Sinnock-solid-161.35K.yml
+database/data-nk/main/Xe/Sinnock-solid-80K.yml
+database/data-nk/main/Xe/Sinnock-solid-90K.yml
+database/data-nk/main/Y2O3/Nigara.yml
+database/data-nk/main/Y3Al5O12/Bond.yml
+database/data-nk/main/Y3Al5O12/Hrabovsky.yml
+database/data-nk/main/Y3Al5O12/Zelmon.yml
+database/data-nk/main/YLiF4/Barnes-e.yml
+database/data-nk/main/YLiF4/Barnes-o.yml
+database/data-nk/main/YVO4/Birnbaum-e.yml
+database/data-nk/main/YVO4/Birnbaum-o.yml
+database/data-nk/main/YVO4/Shi-e-110C.yml
+database/data-nk/main/YVO4/Shi-e-140C.yml
+database/data-nk/main/YVO4/Shi-e-20C.yml
+database/data-nk/main/YVO4/Shi-e-50C.yml
+database/data-nk/main/YVO4/Shi-e-80C.yml
+database/data-nk/main/YVO4/Shi-o-110C.yml
+database/data-nk/main/YVO4/Shi-o-140C.yml
+database/data-nk/main/YVO4/Shi-o-20C.yml
+database/data-nk/main/YVO4/Shi-o-50C.yml
+database/data-nk/main/YVO4/Shi-o-80C.yml
+database/data-nk/main/Yb/Larruquert.yml
+database/data-nk/main/Yb2O3/Medenbach.yml
+database/data-nk/main/YbF3/Amotchkina.yml
+database/data-nk/main/Zn/Motulevich.yml
+database/data-nk/main/Zn/Querry.yml
+database/data-nk/main/Zn/Werner-DFT.yml
+database/data-nk/main/Zn/Werner.yml
+database/data-nk/main/ZnGeP2/Boyd-20-e.yml
+database/data-nk/main/ZnGeP2/Boyd-20-o.yml
+database/data-nk/main/ZnGeP2/Boyd-70-e.yml
+database/data-nk/main/ZnGeP2/Boyd-70-o.yml
+database/data-nk/main/ZnGeP2/Das-e.yml
+database/data-nk/main/ZnGeP2/Das-o.yml
+database/data-nk/main/ZnGeP2/Zelmon-e.yml
+database/data-nk/main/ZnGeP2/Zelmon-o.yml
+database/data-nk/main/ZnO/Aguilar.yml
+database/data-nk/main/ZnO/Bodurov.yml
+database/data-nk/main/ZnO/Bond-e.yml
+database/data-nk/main/ZnO/Bond-o.yml
+database/data-nk/main/ZnO/Querry.yml
+database/data-nk/main/ZnO/Stelling.yml
+database/data-nk/main/ZnS/Amotchkina.yml
+database/data-nk/main/ZnS/Bond.yml
+database/data-nk/main/ZnS/Debenham.yml
+database/data-nk/main/ZnS/Ozaki.yml
+database/data-nk/main/ZnS/Querry.yml
+database/data-nk/main/ZnSe/Adachi.yml
+database/data-nk/main/ZnSe/Amotchkina.yml
+database/data-nk/main/ZnSe/Connolly.yml
+database/data-nk/main/ZnSe/Marple.yml
+database/data-nk/main/ZnSe/Querry.yml
+database/data-nk/main/ZnSiAs2/Boyd-e.yml
+database/data-nk/main/ZnSiAs2/Boyd-o.yml
+database/data-nk/main/ZnTe/Li.yml
+database/data-nk/main/ZnTe/Marple.yml
+database/data-nk/main/ZnTe/Sato.yml
+database/data-nk/main/ZnWO4/Bond-alpha.yml
+database/data-nk/main/ZnWO4/Bond-beta.yml
+database/data-nk/main/ZnWO4/Bond-gamma.yml
+database/data-nk/main/Zr/Palm.yml
+database/data-nk/main/Zr/Querry.yml
+database/data-nk/main/Zr/Windt.yml
+database/data-nk/main/ZrO2/Bodurov.yml
+database/data-nk/main/ZrTe5/Guo-alpha.yml
+database/data-nk/main/ZrTe5/Guo-beta.yml
+database/data-nk/main/ZrTe5/Guo-gamma.yml
+database/data-nk/organic/(C10H8O4)n - polyethylene terephthalate/Zhang.yml
+database/data-nk/organic/(C16H14O3)n - polycarbonate/Sultanova.yml
+database/data-nk/organic/(C16H14O3)n - polycarbonate/Zhang.yml
+database/data-nk/organic/(C2ClF3)n - polychlorotrifluoroethylene/Smith.yml
+database/data-nk/organic/(C2H3Cl)n - polyvinyl chloride/Zhang.yml
+database/data-nk/organic/(C2H4)n - polyethylene/David.yml
+database/data-nk/organic/(C2H4)n - polyethylene/Smith.yml
+database/data-nk/organic/(C2H4O)n - polyvinyl alcohol/Bodurov.yml
+database/data-nk/organic/(C2H4O)n - polyvinyl alcohol/Schnepf.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Gupta-UV.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Gupta.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Querry-IR.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Querry-NIR.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Schneider-RTV615.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Schneider-Sylgard184.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Zhang-10-1.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Zhang-15-1.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Zhang-20-1.yml
+database/data-nk/organic/(C2H6OSi)n - polydimethylsiloxane/Zhang-5-1.yml
+database/data-nk/organic/(C37H24O6N2)n - polyetherimide/Zhang.yml
+database/data-nk/organic/(C3H4O2)n - polylactic acid/Bodurov.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Beadie.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Bodurov.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Nyakuchena.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Sultanova.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Szczurowski.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Tsuda-BB.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Tsuda-LD.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Tsuda.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Zhang-Mitsubishi.yml
+database/data-nk/organic/(C5H8O2)n - poly(methyl methacrylate)/Zhang-Tomson.yml
+database/data-nk/organic/(C6H10O5)n - cellulose/Sultanova.yml
+database/data-nk/organic/(C6H11NO)n - poly(N-isopropylacrylamide)/Brasse.yml
+database/data-nk/organic/(C6H12)n - polymethylpentene/Smith.yml
+database/data-nk/organic/(C6H9NO)n - polyvinylpyrrolidone/Konig.yml
+database/data-nk/organic/(C8H8)n - polystyren/Myers.yml
+database/data-nk/organic/(C8H8)n - polystyren/Nyakuchena.yml
+database/data-nk/organic/(C8H8)n - polystyren/Sultanova.yml
+database/data-nk/organic/(C8H8)n - polystyren/Zhang.yml
+database/data-nk/organic/C11H12O2 - ethyl cinnamate/Krauter.yml
+database/data-nk/organic/C12H14O4 - diethyl phthalate/Querry-IR.yml
+database/data-nk/organic/C12H14O4 - diethyl phthalate/Querry-NIR.yml
+database/data-nk/organic/C2H2 - acetylene/Loria.yml
+database/data-nk/organic/C2H3N - acetonitrile/Kozma.yml
+database/data-nk/organic/C2H3N - acetonitrile/Moutzouris.yml
+database/data-nk/organic/C2H3N - acetonitrile/Myers.yml
+database/data-nk/organic/C2H4 - ethylene/Loria.yml
+database/data-nk/organic/C2H4O2 - acetic acid/El-Kashef.yml
+database/data-nk/organic/C2H6 - ethane/Loria.yml
+database/data-nk/organic/C2H6O - ethanol/Kedenburg.yml
+database/data-nk/organic/C2H6O - ethanol/Kozma.yml
+database/data-nk/organic/C2H6O - ethanol/Myers.yml
+database/data-nk/organic/C2H6O - ethanol/Rheims.yml
+database/data-nk/organic/C2H6O - ethanol/Sani-formula.yml
+database/data-nk/organic/C2H6O - ethanol/Sani.yml
+database/data-nk/organic/C2H6O2 - ethylene glycol/El-Kashef.yml
+database/data-nk/organic/C2H6O2 - ethylene glycol/Kozma.yml
+database/data-nk/organic/C2H6O2 - ethylene glycol/Otanicar.yml
+database/data-nk/organic/C2H6O2 - ethylene glycol/Sani-formula.yml
+database/data-nk/organic/C2H6O2 - ethylene glycol/Sani.yml
+database/data-nk/organic/C2H6OS - dimethyl sulfoxide/Kozma.yml
+database/data-nk/organic/C3H6O - acetone/Rheims.yml
+database/data-nk/organic/C3H8O - propanol/Kozma.yml
+database/data-nk/organic/C3H8O - propanol/Moutzouris.yml
+database/data-nk/organic/C3H8O - propanol/Myers.yml
+database/data-nk/organic/C3H8O - propanol/Sani-formula.yml
+database/data-nk/organic/C3H8O - propanol/Sani.yml
+database/data-nk/organic/C3H8O - propanol/Wang-20C.yml
+database/data-nk/organic/C3H8O - propanol/Wang-50C.yml
+database/data-nk/organic/C3H8O - propanol/Wang-70C.yml
+database/data-nk/organic/C3H8O2 - propylene glycol/Otanicar.yml
+database/data-nk/organic/C3H8O3 - glycerol/Birkhoff.yml
+database/data-nk/organic/C3H8O3 - glycerol/Gupta.yml
+database/data-nk/organic/C3H8O3 - glycerol/Nyakuchena.yml
+database/data-nk/organic/C3H8O3 - glycerol/Rheims.yml
+database/data-nk/organic/C3H8O3 - glycerol/Wang.yml
+database/data-nk/organic/C3H9O3P - dimethyl methylphosphonate/Myers.yml
+database/data-nk/organic/C3H9O3P - dimethyl methylphosphonate/Querry-IR.yml
+database/data-nk/organic/C3H9O3P - dimethyl methylphosphonate/Querry-NIR.yml
+database/data-nk/organic/C4H10O - butanol/El-Kashef.yml
+database/data-nk/organic/C4H10O - butanol/Moutzouris-iso.yml
+database/data-nk/organic/C4H10O - butanol/Moutzouris-n.yml
+database/data-nk/organic/C4H10O - butanol/Wang-20C.yml
+database/data-nk/organic/C4H10O - butanol/Wang-60C.yml
+database/data-nk/organic/C4H10O - butanol/Wang-90C.yml
+database/data-nk/organic/C4H10O3S - diethyl sulfite/Querry.yml
+database/data-nk/organic/C4H8O2 - dioxane/Moutzouris.yml
+database/data-nk/organic/C4H8O2 - ethyl acetate/Kozma.yml
+database/data-nk/organic/C4H8OS - oxathiane/Myers.yml
+database/data-nk/organic/C5H12 - pentane/Anderson.yml
+database/data-nk/organic/C5H12 - pentane/Kerl-293K.yml
+database/data-nk/organic/C5H12 - pentane/Kerl-313K.yml
+database/data-nk/organic/C5H12 - pentane/Kerl-333K.yml
+database/data-nk/organic/C5H12O - pentanol/Moutzouris-iso.yml
+database/data-nk/organic/C5H12O - pentanol/Moutzouris-normal.yml
+database/data-nk/organic/C5H12O2 - pentanediol/Moutzouris.yml
+database/data-nk/organic/C6H12 - cyclohexane/Kerl-293K.yml
+database/data-nk/organic/C6H12 - cyclohexane/Kerl-313K.yml
+database/data-nk/organic/C6H12 - cyclohexane/Kerl-333K.yml
+database/data-nk/organic/C6H12 - cyclohexane/Kozma.yml
+database/data-nk/organic/C6H12 - cyclohexane/Rheims.yml
+database/data-nk/organic/C6H14 - hexane/Kerl-293K.yml
+database/data-nk/organic/C6H14 - hexane/Kerl-313K.yml
+database/data-nk/organic/C6H14 - hexane/Kerl-333K.yml
+database/data-nk/organic/C6H14 - hexane/Kozma.yml
+database/data-nk/organic/C6H3Cl3 - trichlorobenzene/Myers.yml
+database/data-nk/organic/C6H5NO2 - nitrobenzene/Kedenburg.yml
+database/data-nk/organic/C6H5NO2 - nitrobenzene/Myers.yml
+database/data-nk/organic/C6H6 - benzene/Moutzouris.yml
+database/data-nk/organic/C6H6 - benzene/Myers.yml
+database/data-nk/organic/C7H16 - heptane/Kerl-293K.yml
+database/data-nk/organic/C7H16 - heptane/Kerl-313K.yml
+database/data-nk/organic/C7H16 - heptane/Kerl-333K.yml
+database/data-nk/organic/C7H17O3P - diisopropyl methylphosphonate/Querry-IR.yml
+database/data-nk/organic/C7H17O3P - diisopropyl methylphosphonate/Querry-NIR.yml
+database/data-nk/organic/C7H8 - toluene/Kedenburg.yml
+database/data-nk/organic/C7H8 - toluene/Kozma.yml
+database/data-nk/organic/C7H8 - toluene/Moutzouris.yml
+database/data-nk/organic/C7H8 - toluene/Myers.yml
+database/data-nk/organic/C8H18 - octane/Anderson.yml
+database/data-nk/organic/C8H18 - octane/Kerl-293K.yml
+database/data-nk/organic/C8H18 - octane/Kerl-313K.yml
+database/data-nk/organic/C8H18 - octane/Kerl-333K.yml
+database/data-nk/organic/C8H18 - octane/Myers.yml
+database/data-nk/organic/C8H19NO - diisopropylaminoethanol/Myers.yml
+database/data-nk/organic/C8H5KO4 - potassium hydrogen phthalate/Moutzouris-alpha.yml
+database/data-nk/organic/C8H5KO4 - potassium hydrogen phthalate/Moutzouris-beta.yml
+database/data-nk/organic/C8H5KO4 - potassium hydrogen phthalate/Moutzouris-gamma.yml
+database/data-nk/organic/C8H8 - styrene/Myers.yml
+database/data-nk/organic/C8H8 - styrene/Sultanova.yml
+database/data-nk/organic/C8H8O3 - methyl salicylate/Rheims.yml
+database/data-nk/organic/C9H10O3 - ethyl salicylate/Rheims.yml
+database/data-nk/organic/C9H11NO3 - tyrosine/Leite.yml
+database/data-nk/organic/C9H8O - cinnamaldehyde/Rheims.yml
+database/data-nk/organic/CCl4 - carbon tetrachloride/Ghosal.yml
+database/data-nk/organic/CCl4 - carbon tetrachloride/Kedenburg.yml
+database/data-nk/organic/CCl4 - carbon tetrachloride/Moutzouris.yml
+database/data-nk/organic/CH2Cl2 - dichloromethane/Bertie.yml
+database/data-nk/organic/CH4 - methane/Loria.yml
+database/data-nk/organic/CH4 - methane/Martonchik-liquid-111K.yml
+database/data-nk/organic/CH4 - methane/Martonchik-liquid-90K.yml
+database/data-nk/organic/CH4 - methane/Martonchik-solid-30K.yml
+database/data-nk/organic/CH4 - methane/Martonchik-solid-90K.yml
+database/data-nk/organic/CH4 - methane/Rollefson.yml
+database/data-nk/organic/CH4N2O - urea/Rosker-e.yml
+database/data-nk/organic/CH4N2O - urea/Rosker-o.yml
+database/data-nk/organic/CH4O - methanol/El-Kashef.yml
+database/data-nk/organic/CH4O - methanol/Kozma.yml
+database/data-nk/organic/CH4O - methanol/Moutzouris.yml
+database/data-nk/organic/CH4O - methanol/Myers.yml
+database/data-nk/organic/CHBr3 - bromoform/Ghosal.yml
+database/data-nk/organic/CHCl3 - chloroform/Kedenburg.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au0Ag100.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au100Ag0.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au10Ag90.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au20Ag80.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au30Ag70.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au40Ag60.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au50Ag50.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au60Ag40.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au70Ag30.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au80Ag20.yml
+database/data-nk/other/alloys/Au-Ag/Rioux-Au90Ag10.yml
+database/data-nk/other/alloys/Cu-Zn/Querry-Cu70Zn30.yml
+database/data-nk/other/alloys/Cu-Zn/Querry-Cu85Zn15.yml
+database/data-nk/other/alloys/Cu-Zn/Querry-Cu90Zn10.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-06.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-22.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-28.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-30.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-34.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-40.yml
+database/data-nk/other/alloys/Nb-Sn/Golovashkin-55.yml
+database/data-nk/other/alloys/Ni-Fe/Tikuisis_bare10nm.yml
+database/data-nk/other/alloys/Ni-Fe/Tikuisis_bare150nm.yml
+database/data-nk/other/alloys/Ni-Fe/Tikuisis_gold10nm.yml
+database/data-nk/other/alloys/Ni-Fe/Tikuisis_gold150nm.yml
+database/data-nk/other/alloys/Pd-H/Palm.yml
+database/data-nk/other/alloys/V-Ga/Golovashkin-293K.yml
+database/data-nk/other/alloys/V-Ga/Golovashkin-78K.yml
+database/data-nk/other/alloys/V-H/Palm.yml
+database/data-nk/other/alloys/Zr-H/Palm.yml
+database/data-nk/other/amorphous/HAC/Smith-Ta350C.yml
+database/data-nk/other/amorphous/HAC/Smith-Ta450C.yml
+database/data-nk/other/amorphous/HAC/Smith-Ta550C.yml
+database/data-nk/other/amorphous/HAC/Smith-Ta650C.yml
+database/data-nk/other/amorphous/HAC/Smith-Ta750C.yml
+database/data-nk/other/amorphous/HAC/Smith-Td250C.yml
+database/data-nk/other/clays/illite/Querry.yml
+database/data-nk/other/clays/kaolinite/Querry.yml
+database/data-nk/other/clays/montmorillonite/Querry.yml
+database/data-nk/other/commercial plastics/CR-39/mono.yml
+database/data-nk/other/commercial plastics/CR-39/poly.yml
+database/data-nk/other/commercial plastics/EVASKY S87/Vogt.yml
+database/data-nk/other/commercial plastics/EVASKY S88/Vogt.yml
+database/data-nk/other/commercial plastics/Kapton/Arakawa.yml
+database/data-nk/other/commercial plastics/Kapton/Brannon.yml
+database/data-nk/other/commercial plastics/Kapton/Cunningham.yml
+database/data-nk/other/commercial plastics/Kapton/French.yml
+database/data-nk/other/commercial plastics/Kapton/Kawka.yml
+database/data-nk/other/commercial plastics/Kapton/Kumar.yml
+database/data-nk/other/commercial plastics/Kapton/Philipp.yml
+database/data-nk/other/commercial plastics/Kapton/Sahin.yml
+database/data-nk/other/commercial plastics/Kapton/Smith.yml
+database/data-nk/other/commercial plastics/Kapton/Zhang.yml
+database/data-nk/other/commercial plastics/NAS-21/Sultanova.yml
+database/data-nk/other/commercial plastics/Optorez1330/Sultanova.yml
+database/data-nk/other/commercial plastics/Surlyn A-1601/Smith.yml
+database/data-nk/other/commercial plastics/ZeonexE48R/Sultanova.yml
+database/data-nk/other/crystalline minerals/franckeite/Gant.yml
+database/data-nk/other/doped crystals/Al-ZnO/Shkondin.yml
+database/data-nk/other/doped crystals/Al-ZnO/Treharne.yml
+database/data-nk/other/doped crystals/Mg-LiTaO3/Moutzouris-e.yml
+database/data-nk/other/doped crystals/Mg-LiTaO3/Moutzouris-o.yml
+database/data-nk/other/doped crystals/Nb-RbTiOPO4/Carvajal-alpha.yml
+database/data-nk/other/doped crystals/Nb-RbTiOPO4/Carvajal-beta.yml
+database/data-nk/other/doped crystals/Nb-RbTiOPO4/Carvajal-gamma.yml
+database/data-nk/other/doped crystals/Si-InP/Panah.yml
+database/data-nk/other/exotic/metamaterials/Valentine.yml
+database/data-nk/other/fuel/biodisel/Wang-20C.yml
+database/data-nk/other/fuel/biodisel/Wang-40C.yml
+database/data-nk/other/fuel/biodisel/Wang-60C.yml
+database/data-nk/other/heat transfer fluids/Therminol VP-1/Otanicar.yml
+database/data-nk/other/human body/DNA/Inagaki.yml
+database/data-nk/other/human body/blood/Rowe.yml
+database/data-nk/other/human body/colon/Giannios-mucosa.yml
+database/data-nk/other/human body/colon/Giannios-serosa.yml
+database/data-nk/other/human body/colon/Giannios-submucosa.yml
+database/data-nk/other/human body/liver/Giannios.yml
+database/data-nk/other/immersion oils/Leica Type F/Wang.yml
+database/data-nk/other/immersion oils/Olympus IMMOIL-F30CC/Wang.yml
+database/data-nk/other/immersion oils/Sigma Aldrich M5904/Wang.yml
+database/data-nk/other/index-matching liquids/cargille/BK7_matching_liquid.yml
+database/data-nk/other/index-matching liquids/cargille/acrylic_matching_liquid.yml
+database/data-nk/other/index-matching liquids/cargille/fused_silica_matching_liquid-06350.yml
+database/data-nk/other/index-matching liquids/cargille/fused_silica_matching_liquid-50350.yml
+database/data-nk/other/intermetallics/AuAl2/Chen.yml
+database/data-nk/other/intermetallics/AuAl2/Supansomboon.yml
+database/data-nk/other/intermetallics/PtAl2/Chen.yml
+database/data-nk/other/liquid crystals/5CB/Li-e.yml
+database/data-nk/other/liquid crystals/5CB/Li-o.yml
+database/data-nk/other/liquid crystals/5CB/Tkachenko-e.yml
+database/data-nk/other/liquid crystals/5CB/Tkachenko-o.yml
+database/data-nk/other/liquid crystals/5CB/Wu-25.1C-e.yml
+database/data-nk/other/liquid crystals/5CB/Wu-25.1C-o.yml
+database/data-nk/other/liquid crystals/5CB/Wu-27.2C-e.yml
+database/data-nk/other/liquid crystals/5CB/Wu-27.2C-o.yml
+database/data-nk/other/liquid crystals/5CB/Wu-29.9C-e.yml
+database/data-nk/other/liquid crystals/5CB/Wu-29.9C-o.yml
+database/data-nk/other/liquid crystals/5CB/Wu-32.6C-e.yml
+database/data-nk/other/liquid crystals/5CB/Wu-32.6C-o.yml
+database/data-nk/other/liquid crystals/5CB/Wu-34.8C-e.yml
+database/data-nk/other/liquid crystals/5CB/Wu-34.8C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Li-e.yml
+database/data-nk/other/liquid crystals/5PCH/Li-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-25.0C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-25.0C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-30.4C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-30.4C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-34.8C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-34.8C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-40.1C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-40.1C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-45.4C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-45.4C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-50.8C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-50.8C-o.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-53.4C-e.yml
+database/data-nk/other/liquid crystals/5PCH/Wu-53.4C-o.yml
+database/data-nk/other/liquid crystals/E44/Li-e.yml
+database/data-nk/other/liquid crystals/E44/Li-o.yml
+database/data-nk/other/liquid crystals/E7/Li-e.yml
+database/data-nk/other/liquid crystals/E7/Li-o.yml
+database/data-nk/other/liquid crystals/E7/Tkachenko-e.yml
+database/data-nk/other/liquid crystals/E7/Tkachenko-o.yml
+database/data-nk/other/liquid crystals/MLC-6241-000/Li-e.yml
+database/data-nk/other/liquid crystals/MLC-6241-000/Li-o.yml
+database/data-nk/other/liquid crystals/MLC-6608/Li-e.yml
+database/data-nk/other/liquid crystals/MLC-6608/Li-o.yml
+database/data-nk/other/liquid crystals/MLC-9200-000/Li-e.yml
+database/data-nk/other/liquid crystals/MLC-9200-000/Li-o.yml
+database/data-nk/other/liquid crystals/MLC-9200-100/Li-e.yml
+database/data-nk/other/liquid crystals/MLC-9200-100/Li-o.yml
+database/data-nk/other/liquid crystals/TL-216/Li-e.yml
+database/data-nk/other/liquid crystals/TL-216/Li-o.yml
+database/data-nk/other/microscopy mounting media/Eukitt/Nyakuchena.yml
+database/data-nk/other/microscopy mounting media/FluorSave/Nyakuchena.yml
+database/data-nk/other/mixed crystals/AgGaS2-AgInS2/Kato-e.yml
+database/data-nk/other/mixed crystals/AgGaS2-AgInS2/Kato-o.yml
+database/data-nk/other/mixed crystals/HfO2-Y2O3/Wood.yml
+database/data-nk/other/mixed crystals/In2O3-SnO2/Konig-EMA.yml
+database/data-nk/other/mixed crystals/In2O3-SnO2/Konig.yml
+database/data-nk/other/mixed crystals/In2O3-SnO2/Moerland.yml
+database/data-nk/other/mixed crystals/TlBr-TlCl/Hettner.yml
+database/data-nk/other/mixed crystals/TlBr-TlI/Rodney.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-10.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-25.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-40.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-50.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-63.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-75.yml
+database/data-nk/other/mixed crystals/ZnO-CdO/Aguilar-90.yml
+database/data-nk/other/mixed crystals/ZrO2-Y2O3/Wood.yml
+database/data-nk/other/mixed gases/air/Borzsonyi.yml
+database/data-nk/other/mixed gases/air/Ciddor.yml
+database/data-nk/other/mixed gases/air/Mathar-1.3.yml
+database/data-nk/other/mixed gases/air/Mathar-2.8.yml
+database/data-nk/other/mixed gases/air/Mathar-4.35.yml
+database/data-nk/other/mixed gases/air/Mathar-7.5.yml
+database/data-nk/other/mixed gases/air/Peck.yml
+database/data-nk/other/mixed organic-inorganic/Cu-C12H4N4/Querry.yml
+database/data-nk/other/mixed organic-inorganic/D2O-C3H5(OH)3/Sarkar-25.yml
+database/data-nk/other/mixed organic-inorganic/D2O-C3H5(OH)3/Sarkar-50.yml
+database/data-nk/other/mixed organic-inorganic/D2O-C3H5(OH)3/Sarkar-75.yml
+database/data-nk/other/mixed organic-inorganic/H2O-C3H5(OH)3/Gupta-0.yml
+database/data-nk/other/mixed organic-inorganic/H2O-C3H5(OH)3/Gupta-20.yml
+database/data-nk/other/mixed organic-inorganic/H2O-C3H5(OH)3/Gupta-50.yml
+database/data-nk/other/mixed organic-inorganic/Li-C12H4N4/Querry.yml
+database/data-nk/other/mixed organic/(C8H8)n-(C3H3N)m/Sultanova.yml
+database/data-nk/other/mixed organic/C6H4S4-C12H4N4/Querry.yml
+database/data-nk/other/mixed organic/P3HT-PC61BM/Stelling.yml
+database/data-nk/other/mixed organic/PBDBT-ITIC/Kerremans.yml
+database/data-nk/other/mixed organic/PEDOT-PSS/Chen.yml
+database/data-nk/other/mixed organic/PTB7-PC71BM/Stelling.yml
+database/data-nk/other/optical adhesives/Loctite-3526/Iezzi.yml
+database/data-nk/other/optical adhesives/NOA-1348/Iezzi.yml
+database/data-nk/other/optical adhesives/NOA-170/Iezzi.yml
+database/data-nk/other/optical adhesives/NOA-61/Joseph.yml
+database/data-nk/other/optical adhesives/NOA-61/Norland.yml
+database/data-nk/other/perovskite/2D HOIP/Song-DJ1.yml
+database/data-nk/other/perovskite/2D HOIP/Song-DJ2.yml
+database/data-nk/other/perovskite/2D HOIP/Song-DJ3.yml
+database/data-nk/other/perovskite/2D HOIP/Song-DJ4.yml
+database/data-nk/other/perovskite/2D HOIP/Song-RP1.yml
+database/data-nk/other/perovskite/2D HOIP/Song-RP2.yml
+database/data-nk/other/perovskite/2D HOIP/Song-RP3.yml
+database/data-nk/other/perovskite/2D HOIP/Song-RP4.yml
+database/data-nk/other/perovskite/2D HOIP/Song-RP5.yml
+database/data-nk/other/perovskite/CH3NH3PbBr3/Ishteev.yml
+database/data-nk/other/perovskite/CH3NH3PbI3/Ball.yml
+database/data-nk/other/perovskite/CH3NH3PbI3/Leguy-hydrated.yml
+database/data-nk/other/perovskite/CH3NH3PbI3/Leguy.yml
+database/data-nk/other/perovskite/CH3NH3PbI3/Phillips.yml
+database/data-nk/other/perovskite/Cs2AgBiBr6/Jobsis.yml
+database/data-nk/other/perovskite/CsPb(Br,Cl)3/Ermolaev-Br1.3Cl1.7-e.yml
+database/data-nk/other/perovskite/CsPb(Br,Cl)3/Ermolaev-Br1.3Cl1.7-o.yml
+database/data-nk/other/perovskite/CsPb(Br,Cl)3/Ermolaev-Br1.8Cl1.2-e.yml
+database/data-nk/other/perovskite/CsPb(Br,Cl)3/Ermolaev-Br1.8Cl1.2-o.yml
+database/data-nk/other/perovskite/CsPbBr3/Ermolaev-e.yml
+database/data-nk/other/perovskite/CsPbBr3/Ermolaev-o.yml
+database/data-nk/other/perovskite/CsPbCl3/Ermolaev-e.yml
+database/data-nk/other/perovskite/CsPbCl3/Ermolaev-o.yml
+database/data-nk/other/perovskite/CsPbI3/Aftenieva.yml
+database/data-nk/other/quantum dots/CdSe-ZnCdS/Aftenieva.yml
+database/data-nk/other/resists/Micro resist EpoClad.yml
+database/data-nk/other/resists/Micro resist EpoCore.yml
+database/data-nk/other/resists/Micro resist ma-N 1407.yml
+database/data-nk/other/resists/Micro resist ma-N 405, ma-T 1050.yml
+database/data-nk/other/resists/Microchem 495.yml
+database/data-nk/other/resists/Microchem 8.5 mEL.yml
+database/data-nk/other/resists/Microchem 950.yml
+database/data-nk/other/resists/Microchem SU-8 2000.yml
+database/data-nk/other/resists/Microchem SU-8 3000.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Adachi-0.315.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Adachi-0.700.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-0.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-19.8.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-31.5.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-41.9.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-49.1.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-59.0.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-70.0.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-80.4.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Aspnes-9.9.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-0.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-21.9.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-34.2.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-41.1.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-45.2.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Papatryfonos-9.7.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Perner-0.yml
+database/data-nk/other/semiconductor alloys/AlAs-GaAs/Perner-92.9.yml
+database/data-nk/other/semiconductor alloys/AlN-Al2O3/Hartnett-5.88.yml
+database/data-nk/other/semiconductor alloys/AlN-Al2O3/Hartnett-6.53.yml
+database/data-nk/other/semiconductor alloys/AlN-Al2O3/Hartnett-6.69.yml
+database/data-nk/other/semiconductor alloys/AlN-Al2O3/Hartnett-7.17.yml
+database/data-nk/other/semiconductor alloys/AlSb-GaSb/Ferrini-0.yml
+database/data-nk/other/semiconductor alloys/AlSb-GaSb/Ferrini-10.yml
+database/data-nk/other/semiconductor alloys/AlSb-GaSb/Ferrini-30.yml
+database/data-nk/other/semiconductor alloys/AlSb-GaSb/Ferrini-50.yml
+database/data-nk/other/semiconductor alloys/GaAs-InAs/Adachi.yml
+database/data-nk/other/semiconductor alloys/GaAs-InAs/Le.yml
+database/data-nk/other/semiconductor alloys/GaAs-InAs-GaP-InP/Adachi.yml
+database/data-nk/other/semiconductor alloys/GaP-InP/Schubert.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-11.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-20.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-28.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-47.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-48.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-65.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-85.yml
+database/data-nk/other/semiconductor alloys/Si-Ge/Jellison-98.yml
+database/data-nk/other/silk/Antheraea assamensis/Perotto.yml
+database/data-nk/other/silk/Antheraea mylitta/Perotto.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-FPP_FA_Ex.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-FPP_FA_Unex.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-SN_FA.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-SPP_FA_Ex.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-SPP_FA_Unex.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-rSF_FA.yml
+database/data-nk/other/silk/Bombyx mori/Bucciarelli-rSF_H2O.yml
+database/data-nk/other/silk/Bombyx mori/Perotto-crystallized.yml
+database/data-nk/other/silk/Bombyx mori/Perotto-uncrystallized.yml
+database/data-nk/other/silk/Bombyx mori/Perotto.yml
+database/data-nk/other/silk/Samia ricini/Perotto.yml
+database/data-nk/other/soots/acetylene soot/Dalzell.yml
+database/data-nk/other/soots/diesel soot/Querry-NMSU-heated.yml
+database/data-nk/other/soots/diesel soot/Querry-NMSU.yml
+database/data-nk/other/soots/diesel soot/Querry-UMKC.yml
+database/data-nk/other/soots/propane soot/Dalzell.yml
+optiland/__init__.py
+optiland/aberrations.py
+optiland/aperture.py
+optiland/apodization.py
+optiland/coatings.py
+optiland/coordinate_system.py
+optiland/distribution.py
+optiland/fields.py
+optiland/file_handler.py
+optiland/jones.py
+optiland/mtf.py
+optiland/optic.py
+optiland/paraxial.py
+optiland/physical_apertures.py
+optiland/pickup.py
+optiland/psf.py
+optiland/scatter.py
+optiland/solves.py
+optiland/wavefront.py
+optiland/wavelength.py
+optiland/zernike.py
+optiland.egg-info/PKG-INFO
+optiland.egg-info/SOURCES.txt
+optiland.egg-info/dependency_links.txt
+optiland.egg-info/requires.txt
+optiland.egg-info/top_level.txt
+optiland/analysis/__init__.py
+optiland/analysis/distortion.py
+optiland/analysis/encircled_energy.py
+optiland/analysis/field_curvature.py
+optiland/analysis/grid_distortion.py
+optiland/analysis/ray_fan.py
+optiland/analysis/spot_diagram.py
+optiland/analysis/y_ybar.py
+optiland/geometries/__init__.py
+optiland/geometries/base.py
+optiland/geometries/chebyshev.py
+optiland/geometries/even_asphere.py
+optiland/geometries/newton_raphson.py
+optiland/geometries/plane.py
+optiland/geometries/polynomial.py
+optiland/geometries/standard.py
+optiland/materials/__init__.py
+optiland/materials/abbe.py
+optiland/materials/base.py
+optiland/materials/ideal.py
+optiland/materials/material.py
+optiland/materials/material_file.py
+optiland/materials/mirror.py
+optiland/optimization/__init__.py
+optiland/optimization/optimization.py
+optiland/rays/__init__.py
+optiland/rays/base.py
+optiland/rays/paraxial_rays.py
+optiland/rays/polarization_state.py
+optiland/rays/polarized_rays.py
+optiland/rays/ray_generator.py
+optiland/rays/real_rays.py
+optiland/samples/__init__.py
+optiland/samples/eyepieces.py
+optiland/samples/infrared.py
+optiland/samples/lithography.py
+optiland/samples/microscopes.py
+optiland/samples/objectives.py
+optiland/samples/simple.py
+optiland/samples/telescopes.py
+optiland/surfaces/__init__.py
+optiland/surfaces/image_surface.py
+optiland/surfaces/object_surface.py
+optiland/surfaces/standard_surface.py
+optiland/surfaces/surface_factory.py
+optiland/surfaces/surface_group.py
+optiland/tolerancing/__init__.py
+optiland/tolerancing/compensator.py
+optiland/tolerancing/core.py
+optiland/tolerancing/monte_carlo.py
+optiland/tolerancing/perturbation.py
+optiland/tolerancing/sensitivity_analysis.py
+optiland/visualization/__init__.py
+optiland/visualization/lens.py
+optiland/visualization/mirror.py
+optiland/visualization/rays.py
+optiland/visualization/surface.py
+optiland/visualization/system.py
+optiland/visualization/utils.py
+optiland/visualization/visualization.py
+tests/test_aberrations.py
+tests/test_analysis.py
+tests/test_aperture.py
+tests/test_coatings.py
+tests/test_compensator.py
+tests/test_coordinate_system.py
+tests/test_distribution.py
+tests/test_fields.py
+tests/test_file_handler.py
+tests/test_geometries.py
+tests/test_jones.py
+tests/test_materials.py
+tests/test_monte_carlo.py
+tests/test_mtf.py
+tests/test_operand.py
+tests/test_optimization.py
+tests/test_paraxial.py
+tests/test_perturbation.py
+tests/test_physical_apertures.py
+tests/test_psf.py
+tests/test_rays.py
+tests/test_scatter.py
+tests/test_sensitivity_analysis.py
+tests/test_solves.py
+tests/test_tolerancing.py
+tests/test_variable.py
+tests/test_visualization.py
+tests/test_wavefront.py
+tests/test_wavelength.py
+tests/test_zernike.py

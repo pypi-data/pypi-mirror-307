@@ -1,0 +1,77 @@
+import pytest
+from optiland.coordinate_system import CoordinateSystem
+from optiland.rays import RealRays
+
+
+def test_coordinate_system_init():
+    # Test case 1: Initialize with default values
+    cs = CoordinateSystem()
+    assert cs.x == 0
+    assert cs.y == 0
+    assert cs.z == 0
+    assert cs.rx == 0
+    assert cs.ry == 0
+    assert cs.rz == 0
+    assert cs.reference_cs is None
+
+    # Test case 2: Initialize with custom values
+    ref_cs = CoordinateSystem(1, 2, 3, 0.1, 0.2, 0.3)
+    cs = CoordinateSystem(10, 20, 30, 0.5, 0.6, 0.7, ref_cs)
+    assert cs.x == 10
+    assert cs.y == 20
+    assert cs.z == 30
+    assert cs.rx == 0.5
+    assert cs.ry == 0.6
+    assert cs.rz == 0.7
+    assert cs.reference_cs == ref_cs
+
+
+def test_coordinate_system_localize():
+    # Test case 1: Localize rays without reference coordinate system
+    cs = CoordinateSystem(1, -1.0, 2.0, 0.0, 0.0, 0.0)
+    rays = RealRays(1, 2, 5, 0, 0, 1, 1, 1)
+    cs.localize(rays)
+    assert rays.x == 0.0
+    assert rays.y == 3.0
+    assert rays.z == 3.0
+    assert rays.L == 0.0
+    assert rays.M == 0.0
+    assert rays.N == 1.0
+
+    # Test case 2: Localize rays with reference coordinate system
+    ref_cs = CoordinateSystem(5, 5, 5, 0.2, 0.3, 0.4)
+    cs = CoordinateSystem(10, 20, 30, 0.5, 0.6, 0.7, ref_cs)
+    rays = RealRays(1, 2, 3, 0.1, 0.2, 0.3, 1, 1)
+    cs.localize(rays)
+    assert rays.x == pytest.approx(-23.63610642, abs=1e-8)
+    assert rays.y == pytest.approx(-25.40225528, abs=1e-8)
+    assert rays.z == pytest.approx(-23.08369058, abs=1e-8)
+    assert rays.L == pytest.approx(0.23129557, abs=1e-8)
+    assert rays.M == pytest.approx(0.2370124, abs=1e-8)
+    assert rays.N == pytest.approx(0.17414787, abs=1e-8)
+
+
+def test_coordinate_system_globalize():
+    # Test case 1: Globalize rays without reference coordinate system
+    cs = CoordinateSystem(1, -1.0, 2.0, 0.0, 0.0, 0.0)
+    rays = RealRays(0.0, 3.0, 3.0, 0.0, 0.0, 1.0, 1.0, 1.0)
+    cs.globalize(rays)
+    assert rays.x == 1.0
+    assert rays.y == 2.0
+    assert rays.z == 5.0
+    assert rays.L == 0.0
+    assert rays.M == 0.0
+    assert rays.N == 1.0
+
+    # Test case 2: Globalize rays with reference coordinate system
+    ref_cs = CoordinateSystem(5, 5, 5, 0.2, 0.3, 0.4)
+    cs = CoordinateSystem(10, 20, 30, 0.5, 0.6, 0.7, ref_cs)
+    rays = RealRays(-23.63610642, -25.40225528, -23.08369058, 0.23129557,
+                    0.2370124, 0.17414787, 1, 1)
+    cs.globalize(rays)
+    assert rays.x == pytest.approx(1.0, abs=1e-8)
+    assert rays.y == pytest.approx(2.0, abs=1e-8)
+    assert rays.z == pytest.approx(3.0, abs=1e-8)
+    assert rays.L == pytest.approx(0.1, abs=1e-8)
+    assert rays.M == pytest.approx(0.2, abs=1e-8)
+    assert rays.N == pytest.approx(0.3, abs=1e-8)
