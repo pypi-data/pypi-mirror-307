@@ -1,0 +1,16 @@
+README.md
+setup.py
+team3_chassis/__init__.py
+team3_chassis/utils.py
+team3_chassis.egg-info/PKG-INFO
+team3_chassis.egg-info/SOURCES.txt
+team3_chassis.egg-info/dependency_links.txt
+team3_chassis.egg-info/top_level.txt
+team3_chassis/database/__init__.py
+team3_chassis/database/db_utils.py
+team3_chassis/messaging/__init__.py
+team3_chassis/messaging/eventprovider.py
+team3_chassis/messaging/loggerprovider.py
+team3_chassis/security/__init__.py
+team3_chassis/security/middleware.py
+team3_chassis/security/securityprovider.py
