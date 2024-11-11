@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ouch
+Version: 0.0.5
+Summary: Odd Utility Collection Hub
+Home-page: https://github.com/thyeem/ouch
+Author: Francis Lim
+Author-email: thyeem@gmail.com
+License: MIT
+Keywords: utilities functional
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: foc
+
+<p align="center"> <img src="https://raw.githubusercontent.com/thyeem/ouch/main/ouch.png" height="250"/></p>
+
+[![ouch](https://img.shields.io/pypi/v/ouch)](https://pypi.org/project/ouch)
+
+# ouch
+
+_Odd Utiltiy Collection Hub_.
+
+What happens _useless ideas_ meet an [odd tool](https://github.com/thyeem/foc)?  
+The problem is that _useless thoughts just keep growing_.
+
+
+
+```bash
+$ pip install -U ouch
+```
+```python
+from ouch import *
+```
