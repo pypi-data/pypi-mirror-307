@@ -1,0 +1,14 @@
+base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+base/data_processing.py,sha256=R-x84PsoF6AydDdRFFhOn8Q8UixBPgl_LQTY1QcFZOs,3619
+base/model_evaluation.py,sha256=IJKi60f_NkneFDAUV63Shy3QqlR4SozrMzIwEpbjtZo,2463
+models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/decision_tree.py,sha256=Drm3nVHoFAxD6YH_hwL0wToMOKT2b2aEUFbxgIzgR8k,5367
+models/knn.py,sha256=USPIuG3ylY_zBboT_yALTKWuV3VH_s_DtkNhXvlfs7Y,2085
+models/linear_regression.py,sha256=LUOZ3iYfv7h1stuIjoj-Y1YSo4bWef08mFLBCPSV7Ls,4106
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/cross_validation.py,sha256=CFtZkdeNllJuHxdH3flCLgrYaLBDukHZ4vcHax_BUFg,2256
+utils/grid_search.py,sha256=-vWe5amU_0BjbPSThx7hVwb8FFxnfXbwTU5QHjgrNcE,4088
+my_mini_sklearn-0.1.1.dist-info/METADATA,sha256=6aky8-lG3pGFT7saVxZIy6SfvQwgN62YGLfPPJNO_lg,12586
+my_mini_sklearn-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+my_mini_sklearn-0.1.1.dist-info/top_level.txt,sha256=un3TLAHYOiAvE6OTX1rpH6FGG60BoLmisnXdZGeLyuc,18
+my_mini_sklearn-0.1.1.dist-info/RECORD,,

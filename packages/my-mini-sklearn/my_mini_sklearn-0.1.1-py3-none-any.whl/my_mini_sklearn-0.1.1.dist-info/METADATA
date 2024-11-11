@@ -1,0 +1,544 @@
+Metadata-Version: 2.1
+Name: my-mini-sklearn
+Version: 0.1.1
+Summary: A mini machine learning library similar to scikit-learn
+Home-page: https://gitee.com/zhao-geyi/mini_sklearn1/tree/mini_sklearn
+Author: zhao-geyi
+Author-email: 3050945076@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+﻿****API 参考 - mini_sklearn****
+**项目概述**
+XXX_sklearn 是一个简易的机器学习库，包含了常见的算法和工具模块，旨在为用户提供高效、简便的模型训练与评估功能。该库遵循 sklearn 风格的 API 设计，旨在为机器学习学习者和实践者提供易用的工具。
+
+1. base/data_processing.py - 数据预处理
+Standardize 类 - 数据标准化
+`__init__(self)`
+初始化 Standardize 类实例。
+
+参数： 无。
+
+返回值： 无。
+
+`fit(self, X)`
+计算数据的均值和标准差。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+self : Standardize 类实例
+返回当前实例，支持链式调用。
+transform(self, X)
+标准化数据（减去均值，除以标准差）。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+X_scaled : ndarray, 形状为 (n_samples, n_features)
+标准化后的数据。
+fit_transform(self, X)
+计算均值和标准差并进行标准化。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+X_scaled : ndarray, 形状为 (n_samples, n_features)
+标准化后的数据。
+Normalize 类 - 数据归一化
+`__init__(self, feature_range=(0, 1))`
+初始化 Normalize 类实例。
+
+参数：
+
+feature_range : tuple, 默认值 (0, 1)
+归一化后的目标数据范围。
+返回值： 无。
+
+`fit(self, X)`
+计算数据的最小值和最大值。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+self : Normalize 类实例
+返回当前实例，支持链式调用。
+`transform(self, X)`
+将数据归一化到指定范围。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+X_normalized : ndarray, 形状为 (n_samples, n_features)
+归一化后的数据。
+`fit_transform(self, X)`
+计算最小值和最大值并进行归一化。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+返回值：
+
+X_normalized : ndarray, 形状为 (n_samples, n_features)
+归一化后的数据。
+LabelEncoderWrapper 类 - 标签编码
+`__init__(self)`
+初始化 LabelEncoderWrapper 类实例。
+
+参数： 无。
+
+返回值： 无。
+
+`fit(self, y)`
+计算标签的唯一值，并映射到整数。
+
+参数：
+
+y : ndarray, 形状为 (n_samples,)
+输入类别标签。
+返回值：
+
+self : LabelEncoderWrapper 类实例
+返回当前实例，支持链式调用。
+`transform(self, y)`
+将类别标签转化为数字编码。
+
+参数：
+
+y : ndarray, 形状为 (n_samples,)
+输入类别标签。
+返回值：
+
+y_encoded : ndarray, 形状为 (n_samples,)
+数字编码后的标签。
+`fit_transform(self, y)`
+计算标签的唯一值，并将其转化为数字编码。
+
+参数：
+
+y : ndarray, 形状为 (n_samples,)
+输入类别标签。
+返回值：
+
+y_encoded : ndarray, 形状为 (n_samples,)
+数字编码后的标签。
+`train_test_split_data(X, y, test_size=0.2, random_state=None)` - 数据拆分
+将数据集拆分为训练集和测试集。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+
+y : ndarray, 形状为 (n_samples,)
+输入目标数据。
+
+test_size : float, 默认值 0.2
+测试集所占比例，取值范围 [0, 1]。
+
+random_state : int 或 None, 默认值 None
+随机数种子，用于数据的随机划分。
+
+返回值：
+
+X_train : ndarray, 形状为 (n_samples_train, n_features)
+训练集特征数据。
+
+X_test : ndarray, 形状为 (n_samples_test, n_features)
+测试集特征数据。
+
+y_train : ndarray, 形状为 (n_samples_train,)
+训练集目标数据。
+
+y_test : ndarray, 形状为 (n_samples_test,)
+测试集目标数据。
+
+2. base/model_evaluation.py - 模型评估
+`accuracy_score(y_true, y_pred)` - 准确率计算
+计算准确率。
+
+参数：
+
+y_true : ndarray, 形状为 (n_samples,)
+真实标签。
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测标签。
+
+返回值：
+
+accuracy : float
+准确率值。
+`confusion_matrix(y_true, y_pred)` - 混淆矩阵
+计算混淆矩阵。
+
+参数：
+
+y_true : ndarray, 形状为 (n_samples,)
+真实标签。
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测标签。
+
+返回值：
+
+matrix : ndarray, 形状为 (n_classes, n_classes)
+混淆矩阵。
+`precision_recall_f1(y_true, y_pred)` - 精确率、召回率、F1-score
+计算每个类别的精确率、召回率和 F1-score。
+
+参数：
+
+y_true : ndarray, 形状为 (n_samples,)
+真实标签。
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测标签。
+
+返回值：
+
+precision : ndarray, 形状为 (n_classes,)
+精确率。
+
+recall : ndarray, 形状为 (n_classes,)
+召回率。
+
+f1_score : ndarray, 形状为 (n_classes,)
+F1-score。
+
+`plot_roc_curve(y_true, y_scores, classes)` - 绘制 ROC 曲线
+绘制 ROC 曲线。
+
+参数：
+
+y_true : ndarray, 形状为 (n_samples,)
+真实标签。
+
+y_scores : ndarray, 形状为 (n_samples, n_classes)
+每个类别的预测概率。
+
+classes : list
+类别标签。
+
+返回值： 无。
+
+`roc_auc_score(y_true, y_scores)` - AUC 计算
+计算 AUC 分数。
+
+参数：
+
+y_true : ndarray, 形状为 (n_samples,)
+真实标签。
+
+y_scores : ndarray, 形状为 (n_samples, n_classes)
+每个类别的预测概率。
+
+返回值：
+
+auc : float
+AUC 分数。
+
+
+3. models/linear_regression.py - 线性回归
+LinearRegression 类
+`__init__(self)`
+初始化 LinearRegression 类实例。
+
+参数： 无。
+
+返回值： 无。
+
+`fit(self, X, y)`
+使用最小二乘法拟合线性回归模型。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+目标值。
+
+返回值：
+
+self : LinearRegression 类实例
+返回当前模型实例，支持链式调用。
+`predict(self, X)`
+使用拟合后的模型进行预测。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+返回值：
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测的目标值。
+`score(self, X, y)`
+计算模型的 R^2 分数。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+真实目标值。
+
+返回值：
+
+score : float
+模型的 R^2 分数。
+
+
+4. models/decision_tree.py - 决策树分类
+DecisionTreeClassifier 类
+`__init__(self, criterion='gini', max_depth=None)`
+初始化决策树分类器。
+
+参数：
+
+criterion : {'gini', 'entropy'}, 默认值 'gini'
+划分标准。'gini' 表示基尼不纯度，'entropy' 表示信息增益。
+
+max_depth : int 或 None, 默认值 None
+树的最大深度。
+
+返回值： 无。
+
+`fit(self, X, y)`
+根据训练数据拟合决策树分类器。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+目标值。
+
+返回值：
+
+self : DecisionTreeClassifier 类实例
+返回当前模型实例，支持链式调用。
+`predict(self, X)`
+对新的数据进行预测。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+返回值：
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测的类别标签。
+`score(self, X, y)`
+计算决策树分类器的准确度。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+真实目标值。
+
+返回值：
+
+score : float
+分类器的准确率。
+
+
+5. models/knn.py - K近邻分类
+KNeighborsClassifier 类
+`__init__(self, n_neighbors=5, metric='minkowski')`
+初始化 K 近邻分类器。
+
+参数：
+
+n_neighbors : int, 默认值 5
+需要考虑的邻居数。
+
+metric : {'minkowski', 'euclidean', 'manhattan'}, 默认值 'minkowski'
+距离度量方法，'minkowski' 是一般化的度量，'euclidean' 和 'manhattan' 是特殊情况。
+
+返回值： 无。
+
+`fit(self, X, y)`
+根据训练数据拟合 K 近邻分类器。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+目标值。
+
+返回值：
+
+self : KNeighborsClassifier 类实例
+返回当前模型实例，支持链式调用。
+`predict(self, X)`
+对新的数据进行预测。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+返回值：
+
+y_pred : ndarray, 形状为 (n_samples,)
+预测的类别标签。
+`score(self, X, y)`
+计算 K 近邻分类器的准确度。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征矩阵。
+
+y : ndarray, 形状为 (n_samples,)
+真实目标值。
+
+返回值：
+
+score : float
+分类器的准确率。
+
+
+6. utils/cross_validation.py - 交叉验证
+CrossValidation 类 - k折交叉验证
+`__init__(self, n_splits=5)`
+初始化 CrossValidation 类实例。
+
+参数：
+
+n_splits : int, 默认值为 5
+交叉验证的折数。决定了数据集被分割成多少个训练集和测试集。
+返回值： 无。
+
+`cross_val_score(self, model, X, y, scoring="accuracy")`
+计算交叉验证的分数。
+
+参数：
+
+model : model
+需要评估的机器学习模型。
+X : ndarray, 形状为 (n_samples, n_features)
+输入的特征数据。
+y : ndarray, 形状为 (n_samples,)
+输入的目标数据。
+scoring : str, 默认值 "accuracy"
+评分标准，支持 "accuracy"。你也可以根据需要扩展评分标准。
+返回值：
+
+scores : list
+每折交叉验证的得分，通常是模型在每个测试集上的准确率。
+7. grid_search.py - 网格搜索
+GridSearchCV 类 - 网格搜索交叉验证
+`__init__(self, estimator, param_grid, cv=5)`
+初始化 GridSearchCV 类实例。
+
+参数：
+
+estimator : model
+需要调优的机器学习模型类（如 LinearRegression、DecisionTreeClassifier 等）。
+param_grid : dict
+包含模型超参数的候选值，形式为键值对，每个键对应一个超参数名，值是该超参数的候选值列表。
+cv : int, 默认值 5
+交叉验证的折数，指定了数据集的分割方式。
+返回值： 无。
+
+`fit(self, X, y)`
+执行网格搜索，遍历所有超参数的组合并评估性能。
+
+参数：
+
+X : ndarray, 形状为 (n_samples, n_features)
+输入的特征数据。
+y : ndarray, 形状为 (n_samples,)
+输入的目标数据。
+返回值： 无。此方法会训练多个模型，并在结束后将最佳的超参数和模型存储在类实例的 best_params_、best_score_ 和 best_estimator_ 属性中。
+
+best_params_
+返回网格搜索的最佳超参数组合。
+
+返回值：
+
+best_params_ : dict
+包含最佳超参数组合的字典。
+best_score_
+返回网格搜索的最佳交叉验证得分。
+
+返回值：
+
+best_score_ : float
+最佳的交叉验证平均得分。
+best_estimator_
+返回网格搜索后的最佳模型。
+
+返回值：
+
+best_estimator_ : model
+经过调优后的最佳模型。
+内部方法
+`_dict_product(self, param_grid)`
+生成参数网格的所有可能组合。
+
+参数：
+
+param_grid : dict
+包含超参数候选值的字典。
+返回值：
+
+param_grid_list : list
+包含所有超参数组合的列表，每个元素是一个字典，表示某一组合。
+`_cartesian_product(self, *arrays)`
+计算多个数组的笛卡尔积，返回所有可能的组合。
+
+参数：
+
+*arrays : list
+一个或多个数组，表示超参数的候选值。
+返回值：
+
+result : list
+所有可能组合的列表。
+`_cross_val_score(self, model, X, y)`
+使用 KFold 交叉验证评估模型表现。
+
+参数：
+
+model : model
+需要评估的模型。
+X : ndarray, 形状为 (n_samples, n_features)
+输入特征数据。
+y : ndarray, 形状为 (n_samples,)
+输入目标数据。
+返回值：
+
+scores : list
+每折交叉验证的得分。
+
