@@ -1,0 +1,21 @@
+---
+
+datasets:
+  - chat-dataset:
+      type: phone
+      category: Chat
+      index_pattern: elastic-index-*
+      max_chats_per_phone: 3
+      
+enrichments:
+  - chat-summary:
+      type: llm
+      dataset: chat-dataset
+      template: prompts/chat_summary.txt
+
+  - chat-report:
+      type: llm
+      enrichment: chat-summary
+      template: prompts/chat_summary_of_summaries.txt
+      group_by: phone_id
+    

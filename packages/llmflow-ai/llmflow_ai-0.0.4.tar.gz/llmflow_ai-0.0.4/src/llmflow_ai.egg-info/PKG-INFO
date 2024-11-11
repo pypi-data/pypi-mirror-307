@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: llmflow-ai
+Version: 0.0.4
+Summary: Framework for large language model interaction flows
+Author: Magnus Bjelkenhed
+License: MIT License
+Project-URL: Documentation, https://ai-center.se/
+Project-URL: Source Code, https://github.com/bjelkenhed/flow_ai
+Project-URL: Issue Tracker, https://github.com/bjelkenhed/flow_ai/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: anthropic; extra == "dev"
+Requires-Dist: aioboto3; extra == "dev"
+Requires-Dist: azure-ai-inference; extra == "dev"
+Requires-Dist: google-cloud-aiplatform; extra == "dev"
+Requires-Dist: google-generativeai; extra == "dev"
+Requires-Dist: groq; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: mistralai; extra == "dev"
+Requires-Dist: moto[server]; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: nbformat; extra == "dev"
+Requires-Dist: openai; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-dotenv; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: ruff==0.7.2; extra == "dev"
+Requires-Dist: types-PyYAML; extra == "dev"
+Requires-Dist: types-aiofiles; extra == "dev"
+Requires-Dist: types-beautifulsoup4; extra == "dev"
+Requires-Dist: types-aioboto3; extra == "dev"
+Requires-Dist: types-boto3; extra == "dev"
+Requires-Dist: types-botocore; extra == "dev"
+Requires-Dist: types-jsonpatch; extra == "dev"
+Requires-Dist: types-jsonschema; extra == "dev"
+Requires-Dist: types-protobuf; extra == "dev"
+Requires-Dist: types-psutil; extra == "dev"
+Requires-Dist: types-python-dateutil; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: quarto-cli; extra == "doc"
+Requires-Dist: jupyter; extra == "doc"
+Provides-Extra: dist
+Requires-Dist: twine; extra == "dist"
+Requires-Dist: build; extra == "dist"
+
+
+Welcome to LLMFlow, a framework for large language model interaction flows.
+
+***
+
+
+To work on development of LLMFlow, clone the repository and install with the `-e` flag and `[dev]` optional dependencies:
+
+```bash
+$ git clone https://github.com/bjelkenhed/flow_ai.git
+$ cd flow_ai
+$ pip install -e ".[dev]"
+```
+
+Optionally install pre-commit hooks via
+```bash
+make hooks
+```
+
+Run linting, formatting, and tests via
+```bash
+make check
+make test
+```
