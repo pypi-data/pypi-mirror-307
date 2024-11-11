@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: reworkd_platform_Ollama
+Version: 2.1.6
+Summary: A platform for reworkd
+Home-page: https://github.com/reworkd/AgentGPT
+Author: awtkns, asim-shrestha
+Author-email: 
+Requires-Dist: fastapi==0.98.0
+Requires-Dist: boto3==1.28.51
+Requires-Dist: uvicorn[standard]==0.22.0
+Requires-Dist: pydantic[dotenv]<2.0
+Requires-Dist: ujson==5.8.0
+Requires-Dist: sqlalchemy[asyncio,mypy]==2.0.21
+Requires-Dist: aiomysql==0.1.1
+Requires-Dist: mysqlclient==2.2.0
+Requires-Dist: sentry-sdk==1.31.0
+Requires-Dist: loguru==0.7.2
+Requires-Dist: aiokafka==0.8.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: langchain==0.0.295
+Requires-Dist: openai==0.28.0
+Requires-Dist: wikipedia==1.4.0
+Requires-Dist: replicate==0.8.4
+Requires-Dist: lanarky==0.7.15
+Requires-Dist: tiktoken==0.5.1
+Requires-Dist: grpcio==1.58.0
+Requires-Dist: pinecone-client==2.2.4
+Requires-Dist: python-multipart==0.0.6
+Requires-Dist: aws-secretsmanager-caching==1.1.1.5
+Requires-Dist: botocore==1.31.51
+Requires-Dist: stripe==5.5.0
+Requires-Dist: cryptography==41.0.4
+Requires-Dist: httpx==0.25.0
+Provides-Extra: dev
+Requires-Dist: autopep8==2.0.4; extra == "dev"
+Requires-Dist: pytest==7.4.2; extra == "dev"
+Requires-Dist: flake8==6.0.0; extra == "dev"
+Requires-Dist: mypy==1.5.1; extra == "dev"
+Requires-Dist: isort==5.12.0; extra == "dev"
+Requires-Dist: pre-commit==3.4.0; extra == "dev"
+Requires-Dist: wemake-python-styleguide==0.18.0; extra == "dev"
+Requires-Dist: black==23.9.1; extra == "dev"
+Requires-Dist: autoflake==2.2.1; extra == "dev"
+Requires-Dist: pytest-cov==4.1.0; extra == "dev"
+Requires-Dist: anyio==3.7.1; extra == "dev"
+Requires-Dist: pytest-env==0.8.2; extra == "dev"
+Requires-Dist: dotmap==1.3.30; extra == "dev"
+Requires-Dist: pytest-mock==3.10.0; extra == "dev"
+Requires-Dist: pytest-asyncio==0.21.0; extra == "dev"
+Requires-Dist: types-requests==2.31.0.1; extra == "dev"
+Requires-Dist: types-pytz==2023.3.0.0; extra == "dev"
