@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+webpall/__init__.py
+webpall/converter.py
+webpall.egg-info/PKG-INFO
+webpall.egg-info/SOURCES.txt
+webpall.egg-info/dependency_links.txt
+webpall.egg-info/entry_points.txt
+webpall.egg-info/requires.txt
+webpall.egg-info/top_level.txt
