@@ -1,0 +1,12 @@
+template:
+  tool_template: "\
+  {
+  \n  tool_name:{{TOOL_NAME}},
+  \n  description:{{TOOL_DESCRIPTION}},
+  \n  input_parameters:{{ARGS_LIST}},
+  \n  return_arguments:{{RETURN_LIST}}\
+  \n}
+  \n"
+  arg_template: "\
+  \"{{ARG_NAME}}\":type shuld be {{ARG_TYPE}},{{ARG_DESCRIBE}}.\n\
+  "
