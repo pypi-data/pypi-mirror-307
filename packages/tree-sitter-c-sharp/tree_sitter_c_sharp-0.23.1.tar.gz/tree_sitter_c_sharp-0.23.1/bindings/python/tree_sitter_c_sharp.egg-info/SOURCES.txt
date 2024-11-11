@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_c_sharp/__init__.py
+bindings/python/tree_sitter_c_sharp/__init__.pyi
+bindings/python/tree_sitter_c_sharp/binding.c
+bindings/python/tree_sitter_c_sharp/py.typed
+bindings/python/tree_sitter_c_sharp.egg-info/PKG-INFO
+bindings/python/tree_sitter_c_sharp.egg-info/SOURCES.txt
+bindings/python/tree_sitter_c_sharp.egg-info/dependency_links.txt
+bindings/python/tree_sitter_c_sharp.egg-info/not-zip-safe
+bindings/python/tree_sitter_c_sharp.egg-info/requires.txt
+bindings/python/tree_sitter_c_sharp.egg-info/top_level.txt
+src/parser.c
+src/scanner.c
