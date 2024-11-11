@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: frigate-event-handler
+Version: 0.0.2
+Summary: 
+License: MIT
+Author: Bendik R. Brenne
+Author-email: bendik@konstant.no
+Requires-Python: >=3.12,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.10.10,<4.0.0)
+Requires-Dist: aiomqtt (>=2.3.0,<3.0.0)
+Requires-Dist: async-timeout (>=5.0.1,<6.0.0)
+Requires-Dist: mashumaro[orjson,yaml] (>=3.14,<4.0)
+Requires-Dist: video-clip-describer (>=0.2.1,<0.3.0)
+Description-Content-Type: text/markdown
+
+# frigate-event-handler
+
+A simple library for handling events from frigate via MQTT.
+Currently only handles ended events, of which clips are processed
+by [video-clip-describer](https://github.com/bendikrb/video-clip-describer) to generate better descriptions.
+
