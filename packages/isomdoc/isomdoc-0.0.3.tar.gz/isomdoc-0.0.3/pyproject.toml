@@ -1,0 +1,26 @@
+[project]
+name = "isomdoc"
+dependencies = [
+  "cbor2",
+  "cryptography"
+]
+version = "0.0.3"
+authors = [
+  { name="Lee Campbell", email="leecam@google.com" },
+]
+description = "A python module to create and verify ISO mdocs"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/leecam/pymdoc"
+Repository = "https://github.com/leecam/pymdoc.git"
+Issues = "https://github.com/leecam/pymdoc/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["testdata"]
