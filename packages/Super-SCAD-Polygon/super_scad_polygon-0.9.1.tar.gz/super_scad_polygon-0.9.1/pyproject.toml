@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "Super-SCAD-Polygon"
+version = "0.9.1"
+description = "SuperSCAD widgets for polygons and smooth polygons."
+authors = ["P.R. Water <p.r.water@setbased.nl>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/SuperSCAD/Polygon"
+documentation = "https://superscad.readthedocs.io/"
+keywords = ["OpenSCAD", "SuperSCAD", "Polygon"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+    "Topic :: Software Development :: Code Generators",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+super-scad = "^0.9.5"
+super-scad-smooth-profile = "^0.3.1"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.5.4"
+super-scad-circle-sector = "^0.9.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-common = "poetry.core.masonry.api"
