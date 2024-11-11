@@ -1,0 +1,5 @@
+pandas<3.0.0,>=2.0.0
+numpy<2.0.0,>=1.0.0
+scikit-learn<2.0.0,>=1.0.0
+mhcgnomes<2.0.0,>=1.5.0
+tidytcells<3.0.0,>=2.0.0
