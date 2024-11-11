@@ -1,0 +1,3532 @@
+{
+  "acrobat": {
+    "ability": "Each night*, choose a player: if they are or become drunk or poisoned tonight, you die.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Welcome, one and all, to the greatest show on earth.",
+    "id": "acrobat",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_acrobat.png",
+    "name": "Acrobat",
+    "otherNight": 16,
+    "otherNightReminder": "The Acrobat chooses a player. :reminder:",
+    "reminders": [
+      "Dead",
+      "Chosen"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "alchemist": {
+    "ability": "You have a not-in-play Minion ability.",
+    "edition": "",
+    "firstNight": 10,
+    "firstNightReminder": "Show the *YOU ARE* token and the character token of a not in play Minion.",
+    "flavor": "Visit the interior of the Earth. By rectification thou shalt find the hidden stone. Above the gold, lieth the red. Kether in Malkuth.",
+    "id": "alchemist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_alchemist.png",
+    "name": "Alchemist",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "Is The Alchemist"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "replace-character",
+        "type": "reveal"
+      }
+    ],
+    "team": "townsfolk"
+  },
+  "alhadikhia": {
+    "ability": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Alsukut min dhahab.",
+    "id": "alhadikhia",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_alhadikhia.png",
+    "jinxes": [
+      {
+        "id": "scarletwoman",
+        "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
+      }
+    ],
+    "name": "Al-Hadikhia",
+    "otherNight": 44,
+    "otherNightReminder": "The Al-Hadikhia chooses three players. :reminder: :reminder: :reminder: Wake the player marked *1* and say \"the Al-Hadikhia has chosen\", then the player's name, then \"Do you choose to live?\" They either nod or shake their head. Put them to sleep and add or remove shrouds accordingly. Repeat for players marked *2* and *3*. If all three players are now alive, add a shroud to all three.",
+    "reminders": [
+      "1",
+      "2",
+      "3"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "alsaahir": {
+    "ability": "Each day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+    "edition": "",
+    "firstNight": 0,
+    "flavor": "I am here because of you, and you are here because of me.",
+    "id": "alsaahir",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_alsaahir.png",
+    "name": "Alsaahir",
+    "otherNight": 0,
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "amnesiac": {
+    "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+    "edition": "",
+    "firstNight": 43,
+    "firstNightReminder": "",
+    "flavor": "Wait. What. Who? Oh, ok. Wait. What?",
+    "id": "amnesiac",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_amnesiac.png",
+    "name": "Amnesiac",
+    "otherNight": 61,
+    "otherNightReminder": "",
+    "reminders": [
+      "?",
+      "?",
+      "?"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "angel": {
+    "ability": "Something bad might happen to whoever is most responsible for the death of a new player.",
+    "edition": "fabled",
+    "firstNight": 1,
+    "firstNightReminder": "Announce which players are protected by the Angel. Add the \"Protected\" token to the relevant players.",
+    "flavor": "Let those who are without sin dare to raise their hand to my chosen, for I shall strike such fools down with the fury and righteousness of a thousand storms.",
+    "id": "angel",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_angel.png",
+    "name": "Angel",
+    "otherNightReminder": "",
+    "reminders": [
+      "Protected",
+      "Protected",
+      "Something Bad"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "apprentice": {
+    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+    "edition": "bmr",
+    "firstNight": 4,
+    "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
+    "flavor": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet.",
+    "id": "apprentice",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_apprentice.png",
+    "name": "Apprentice",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Is The Apprentice"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "grimoire",
+        "time": "night",
+        "type": "signal"
+      }
+    ],
+    "team": "traveler"
+  },
+  "artist": {
+    "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Mon Dieu! C'est lumineux! My work, she is... how you say... Magnifique! Dieu est r\u00e9v\u00e9l\u00e9! Oui.",
+    "id": "artist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_artist.png",
+    "name": "Artist",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "assassin": {
+    "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "...",
+    "id": "assassin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_assassin.png",
+    "name": "Assassin",
+    "otherNight": 49,
+    "otherNightReminder": "The Assassin might choose a player. :reminder: :reminder:",
+    "reminders": [
+      "Dead",
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "atheist": {
+    "ability": "The Storyteller can break the game rules & if executed, good wins, even if you are dead. [No evil characters]",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
+    "id": "atheist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_atheist.png",
+    "name": "Atheist",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-duplicate",
+        "type": "selection"
+      }
+    ],
+    "team": "townsfolk"
+  },
+  "balloonist": {
+    "ability": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",
+    "edition": "",
+    "firstNight": 58,
+    "firstNightReminder": "Show any player. :reminder:",
+    "flavor": "More heat! Higher! Higher! Pi\u00f9 alto! Ahhh... it is so beautiful from up here, don't you agree? Can you see the children fishing by the river, under the willow? Can you see the  glint of the sun on the circus tent-poles? What's this? An old man, alone, passed out in the vineyard? Less heat! Lower! Lower! Vai pi\u00f9 in basso!",
+    "id": "balloonist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_balloonist.png",
+    "name": "Balloonist",
+    "otherNight": 76,
+    "otherNightReminder": "Show a player with a different character type to previously. :reminder:",
+    "reminders": [
+      "Know"
+    ],
+    "setup": true,
+    "team": "townsfolk"
+  },
+  "banshee": {
+    "ability": "If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Gorm do sh\u00faile, dearg do ghruaig, n\u00ed bheidh s\u00e9 i bhfad, is a mbeidh t\u00fa san uaigh.",
+    "id": "banshee",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_banshee.png",
+    "name": "Banshee",
+    "otherNight": 56,
+    "otherNightReminder": "If the Banshee was killed by the Demon tonight, announce to all players that the Banshee has died. :reminder:",
+    "reminders": [
+      "Has Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "barber": {
+    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+    "id": "barber",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_barber.png",
+    "name": "Barber",
+    "otherNight": 53,
+    "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
+    "reminders": [
+      "Haircuts Tonight"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "barista": {
+    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which.",
+    "edition": "snv",
+    "firstNight": 5,
+    "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+    "flavor": "A cup of coffee with no cream, Monsieur? I\u2019m terribly sorry, but we\u2019re fresh out of cream \u2014 how about with no milk?",
+    "id": "barista",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_barista.png",
+    "name": "Barista",
+    "otherNight": 2,
+    "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+    "reminders": [
+      "Sober and Healthy",
+      "Acts Twice",
+      "?"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "baron": {
+    "ability": "There are extra Outsiders in play. [+2 Outsiders]",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "This town has gone to the dogs, what? Cheap foreign labor... that's the ticket. Stuff them in the mine, I say. A bit of hard work never hurt anyone, and a clip'o'the ears to any brigand who says otherwise. It's all about the bottom line, what?",
+    "id": "baron",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_baron.png",
+    "jinxes": [
+      {
+        "id": "heretic",
+        "reason": "The Baron might only add 1 Outsider, not 2."
+      },
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Storyteller gains the Baron ability, up to two players become not-in-play Outsiders."
+      }
+    ],
+    "name": "Baron",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": true,
+    "team": "minion"
+  },
+  "beggar": {
+    "ability": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober & healthy.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Alms for the poor, good Sir? Spare a coin, Madam? Thank you. God bless! You're a right kind soul and no mistake! I'll have some swanky nosh tonight, I will!",
+    "id": "beggar",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_beggar.png",
+    "name": "Beggar",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "bishop": {
+    "ability": "Only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "In nomine Patris, et Filii, et Spiritus Sancti\u2026 Nos mos Dei. Deus vult de nobis.",
+    "id": "bishop",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_bishop.png",
+    "name": "Bishop",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Nominate Good",
+      "Nominate Evil"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "boffin": {
+    "ability": "The Demon (even if drunk or poisoned) has a not-in-play good character\u2019s ability. You both know which.",
+    "edition": "",
+    "firstNight": 8,
+    "firstNightReminder": "Wake the Boffin and the Demon. Show the not-in-play good character token. Put the Boffin and the Demon to sleep.",
+    "flavor": "Stellar hydrogen, vast, inert; carbon, oxygen, neon gases, all ruined. Molecular chaos, entropy, yields new cosmic phenomena, rebirth from atomic chaos, dense matter collapsing. All in a teeny little bottle.",
+    "id": "boffin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_boffin.png",
+    "jinxes": [
+      {
+        "id": "heretic",
+        "reason": "The Demon cannot have the Heretic ability."
+      },
+      {
+        "id": "cultleader",
+        "reason": "If the Demon has the Cult Leader ability, they can\u2019t turn good due to this ability."
+      },
+      {
+        "id": "goon",
+        "reason": "If the Demon has the Goon ability, they can\u2019t turn good due to this ability."
+      },
+      {
+        "id": "ogre",
+        "reason": "The Demon cannot have the Ogre ability."
+      },
+      {
+        "id": "politician",
+        "reason": "The Demon cannot have the Politician ability."
+      },
+      {
+        "id": "drunk",
+        "reason": "If the Demon would have the Drunk ability, the Boffin chooses a Townsfolk player to have this ability instead."
+      },
+      {
+        "id": "alchemist",
+        "reason": "If the Alchemist has the Boffin ability, the Alchemist does not learn what ability the Demon has."
+      },
+      {
+        "id": "villageidiot",
+        "reason": "If there is a spare token, the Boffin can give the Demon the Village Idiot ability."
+      }
+    ],
+    "name": "Boffin",
+    "otherNight": 0,
+    "reminders": [],
+    "setup": false,
+    "team": "minion"
+  },
+  "bonecollector": {
+    "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",
+    "id": "bonecollector",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_bonecollector.png",
+    "name": "Bone Collector",
+    "otherNight": 6,
+    "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+    "reminders": [
+      "No Ability",
+      "Has Ability"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "boomdandy": {
+    "ability": "If you are executed, all but 3 players die. After a 10 to 1 countdown, the player with the most players pointing at them, dies.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Tick... Tick... Tick... TOCK.",
+    "id": "boomdandy",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_boomdandy.png",
+    "jinxes": [
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Plague Doctor is executed and the Storyteller would gain the Boomdandy ability, the Boomdandy ability triggers immediately."
+      }
+    ],
+    "name": "Boomdandy",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "special": [
+      {
+        "name": "pointing",
+        "time": "day",
+        "type": "ability"
+      }
+    ],
+    "team": "minion"
+  },
+  "bootlegger": {
+    "ability": "This script has homebrew characters or rules.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "I've got the latest shipment from home, a brew I'd like to call 'Barrowfog'. Wanna try?",
+    "id": "bootlegger",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_bootlegger.png",
+    "name": "Bootlegger",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "fabled"
+  },
+  "bountyhunter": {
+    "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
+    "edition": "",
+    "firstNight": 61,
+    "firstNightReminder": "Point to the *KNOWN* player.",
+    "flavor": "Alone, I walk these streets, paved with the sick stench of corruption. Its thickness worms its way into my nostrils, unbidden, burning with revulsion. And anticipation. The illness of this wretched place grows each night. And I... I am the cure.",
+    "id": "bountyhunter",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_bountyhunter.png",
+    "name": "Bounty Hunter",
+    "otherNight": 79,
+    "otherNightReminder": "If the *KNOWN* player died today or tonight, point to a new *KNOWN* player.",
+    "reminders": [
+      "Known"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "buddhist": {
+    "ability": "For the first 2 minutes of each day, veteran players may not talk.",
+    "edition": "fabled",
+    "firstNight": 1,
+    "firstNightReminder": "Declare which players are affected by the Buddhist.",
+    "flavor": "You throw thorns. Falling in my silence, they become flowers.",
+    "id": "buddhist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_buddhist.png",
+    "name": "Buddhist",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "fabled"
+  },
+  "bureaucrat": {
+    "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
+    "edition": "tb",
+    "firstNight": 6,
+    "firstNightReminder": "The Bureaucrat chooses a player. :reminder:",
+    "flavor": "Sign here please. And here. And here. Aaaaaaaaand here. This should all be sorted and tallied by the end of the day, assuming everyone's signatures are legible. We haven't had a mix-up in the paperwork for ages. Yesterday noon, if memory serves...",
+    "id": "bureaucrat",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_bureaucrat.png",
+    "name": "Bureaucrat",
+    "otherNight": 3,
+    "otherNightReminder": "The Bureaucrat chooses a player. :reminder:",
+    "reminders": [
+      "3 Votes"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "multiplier",
+        "type": "vote",
+        "value": 3
+      }
+    ],
+    "team": "traveler"
+  },
+  "butcher": {
+    "ability": "Each day, after the 1st execution, you may nominate again.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "It tastes like chicken. More please.",
+    "id": "butcher",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_butcher.png",
+    "name": "Butcher",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "butler": {
+    "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
+    "edition": "tb",
+    "firstNight": 50,
+    "firstNightReminder": "The Butler chooses a player. :reminder:",
+    "flavor": "Yes, sir... No, sir... Certainly, sir.",
+    "id": "butler",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_butler.png",
+    "name": "Butler",
+    "otherNight": 82,
+    "otherNightReminder": "The Butler chooses a player. :reminder:",
+    "reminders": [
+      "Master"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "cannibal": {
+    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I don\u2019t like clowns. They taste funny.",
+    "id": "cannibal",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_cannibal.png",
+    "jinxes": [
+      {
+        "id": "butler",
+        "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+      },
+      {
+        "id": "juggler",
+        "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+      },
+      {
+        "id": "zealot",
+        "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "If the Cannibal eats the Poppy Grower, then dies or loses the Poppy Grower ability, the Demon and Minions learn each other that night."
+      }
+    ],
+    "name": "Cannibal",
+    "otherNight": 0,
+    "otherNightReminder": "Wake the Cannibal and treat them like they have the ability of the most recently killed executee.",
+    "reminders": [
+      "Poisoned",
+      "Died Today"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "cerenovus": {
+    "ability": "Each night, choose a player & a good character: they are \u201cmad\u201d they are this character tomorrow, or might be executed.",
+    "edition": "snv",
+    "firstNight": 35,
+    "firstNightReminder": "The Cerenovus chooses a player & a character. :reminder: Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+    "flavor": "Reality is merely an opinion. Specifically, my opinion.",
+    "id": "cerenovus",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_cerenovus.png",
+    "jinxes": [
+      {
+        "id": "goblin",
+        "reason": "The Cerenovus may choose to make a player mad that they are the Goblin."
+      }
+    ],
+    "name": "Cerenovus",
+    "otherNight": 22,
+    "otherNightReminder": "The Cerenovus chooses a player & a character. :reminder: Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+    "reminders": [
+      "Mad"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "chambermaid": {
+    "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
+    "edition": "bmr",
+    "firstNight": 68,
+    "firstNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
+    "flavor": "I aint seen nothin' untoward, Milady. Begging your pardon, but if I did see somethin', it certainly weren't the master o' the house sneaking into the professor's laboratory 'round eleven o'clock and mixing up fancy potions, just like you said, Miss.",
+    "id": "chambermaid",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_chambermaid.png",
+    "jinxes": [
+      {
+        "id": "mathematician",
+        "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
+      }
+    ],
+    "name": "Chambermaid",
+    "otherNight": 86,
+    "otherNightReminder": "The Chambermaid chooses 2 living players. Give a finger signal.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "chef": {
+    "ability": "You start knowing how many pairs of evil players there are.",
+    "edition": "tb",
+    "firstNight": 47,
+    "firstNightReminder": "Give a finger signal.",
+    "flavor": "This evening's reservations seem odd. Never before has Mrs. Mayweather kept company with that scamp from Hudson Lane. Yet, tonight, they have a table for two. Strange.",
+    "id": "chef",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_chef.png",
+    "name": "Chef",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "choirboy": {
+    "ability": "If the Demon kills the King, you learn which player is the Demon. [+the King]",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I saw it, I did. I was in the pews, tidying the hymn books, when a dreadful tune started from the pipe organ. The organist had a long cloak, and long fingers on the keys. And a hat that looked\u2026 just like\u2026 yours.",
+    "id": "choirboy",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_choirboy.png",
+    "name": "Choirboy",
+    "otherNight": 58,
+    "otherNightReminder": "If the Demon killed the King, point to the Demon player.",
+    "reminders": [],
+    "setup": true,
+    "team": "townsfolk"
+  },
+  "clockmaker": {
+    "ability": "You start knowing how many steps from the Demon to its nearest Minion.",
+    "edition": "snv",
+    "firstNight": 52,
+    "firstNightReminder": "Give a finger signal.",
+    "flavor": "Do not disturb me. The tick must continue, for the circle is a symbol of life and contains all things - all answers - in its divine machinery. I must work.",
+    "id": "clockmaker",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_clockmaker.png",
+    "name": "Clockmaker",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "courtier": {
+    "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
+    "edition": "bmr",
+    "firstNight": 28,
+    "firstNightReminder": "The Courtier might choose a character. :reminder: :reminder:",
+    "flavor": "I am more afraid of an army of one hundred sheep led by a lion than an army of one hundred lions led by a sheep.",
+    "id": "courtier",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_courtier.png",
+    "name": "Courtier",
+    "otherNight": 13,
+    "otherNightReminder": "The Courtier might choose a character. :reminder: :reminder:",
+    "reminders": [
+      "Drunk 3",
+      "Drunk 2",
+      "Drunk 1",
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "cultleader": {
+    "ability": "Each night, you become the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.",
+    "edition": "",
+    "firstNight": 63,
+    "firstNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
+    "flavor": "Thinking themselves wise, they became fools.",
+    "id": "cultleader",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_cultleader.png",
+    "name": "Cult Leader",
+    "otherNight": 81,
+    "otherNightReminder": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token and a thumbs up or down for their new alignment.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "damsel": {
+    "ability": "All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.",
+    "edition": "",
+    "firstNight": 42,
+    "firstNightReminder": "Wake each Minion. Show the Damsel token. Put each Minion to sleep.",
+    "flavor": "Don't touch the hair, honey.",
+    "id": "damsel",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_damsel.png",
+    "name": "Damsel",
+    "otherNight": 60,
+    "otherNightReminder": "If the Damsel was chosen by the Huntsman, show them the *YOU ARE* info token and their new character token.",
+    "reminders": [
+      "Guess Used"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "deviant": {
+    "ability": "If you were funny today, you cannot die by exile.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Twas the lady's quip, forsooth.",
+    "id": "deviant",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_deviant.png",
+    "name": "Deviant",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "devilsadvocate": {
+    "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",
+    "edition": "bmr",
+    "firstNight": 32,
+    "firstNightReminder": "The Devil's Advocate chooses a living player. :reminder:",
+    "flavor": "My client, should the objection be overruled, pleads innocent by virtue of the prosecution's non-observance of statute 27.B - incorrect or misleading conjugation of a verb. The fact that nine of the jury died last night is simply prima facie, which is, as Wills vs Thule set precedent for, further reason to acquit.",
+    "id": "devilsadvocate",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_devilsadvocate.png",
+    "name": "Devil's Advocate",
+    "otherNight": 20,
+    "otherNightReminder": "The Devil's Advocate chooses a living player. :reminder:",
+    "reminders": [
+      "Survives Execution"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "djinn": {
+    "ability": "Use the Djinn's special rule. All players know what it is.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "\u0646\u062d\u0646 \u0644\u0633\u0646\u0627 \u0647\u0646\u0627. \u0627\u0646\u062a \u0644\u0633\u062a \u062d\u0642\u064a\u0642\u064a. \u0643\u0644 \u0634\u064a\u0621 \u0647\u0648 \u0648\u0647\u0645. \u0623\u0633\u0626\u0644\u062a\u0643 \u0647\u064a \u062c\u0628\u0644 \u0646\u0627\u0631 \u0641\u064a \u064a\u0648\u0645 \u0635\u0627\u0641\u064d.",
+    "id": "djinn",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_djinn.png",
+    "name": "Djinn",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "fabled"
+  },
+  "doomsayer": {
+    "ability": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "And on the Seventh Day, there shall be a great flood and a pestilence upon the People of the Village of the Ravens! The dead shall rise and the living shall repent! O Woe! O Unholy day! Only by great sacrifice shall they prevail! So sayeth the Sages of Nostros and so sayeth I.",
+    "id": "doomsayer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_doomsayer.png",
+    "name": "Doomsayer",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "fabled"
+  },
+  "dreamer": {
+    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct.",
+    "edition": "snv",
+    "firstNight": 53,
+    "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+    "flavor": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
+    "id": "dreamer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_dreamer.png",
+    "name": "Dreamer",
+    "otherNight": 70,
+    "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "drunk": {
+    "ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I\u2019m only a *hic* social drinker, my dear. Admittedly, I am a heavy *burp* socializer.",
+    "id": "drunk",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_drunk.png",
+    "name": "Drunk",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "Is The Drunk"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-disabled",
+        "type": "selection"
+      },
+      {
+        "name": "replace-character",
+        "type": "reveal"
+      }
+    ],
+    "team": "outsider"
+  },
+  "duchess": {
+    "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "We shall entertain between the hours of 6 and 7 precisely. Tea at 6:15. Scones at 6:45. Do not be late. Formal wear applies, as always.",
+    "id": "duchess",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_duchess.png",
+    "name": "Duchess",
+    "otherNight": 1,
+    "otherNightReminder": "Wake each player marked \u201cVisitor\u201d or \u201cFalse Info\u201d one at a time. Show them the Duchess token, then fingers (1, 2, 3) equaling the number of evil players marked \u201cVisitor\u201d or, if you are waking the player marked \u201cFalse Info,\u201d show them any number of fingers except the number of evil players marked \u201cVisitor.\u201d",
+    "reminders": [
+      "Visitor",
+      "Visitor",
+      "False Info"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "empath": {
+    "ability": "Each night, you learn how many of your 2 alive neighbors are evil.",
+    "edition": "tb",
+    "firstNight": 48,
+    "firstNightReminder": "Give a finger signal.",
+    "flavor": "My skin prickles. Something is not right here. I can feel it.",
+    "id": "empath",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_empath.png",
+    "name": "Empath",
+    "otherNight": 67,
+    "otherNightReminder": "Give a finger signal.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "engineer": {
+    "ability": "Once per game, at night, choose which Minions or which Demon is in play.",
+    "edition": "",
+    "firstNight": 22,
+    "firstNightReminder": "The Engineer might choose Minions or Demons. :reminder: If they do: Put the Engineer to sleep. Wake a target, show them the *YOU ARE* token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",
+    "flavor": "If it bends, great. If it breaks, well, it probably needed fixing anyway.",
+    "id": "engineer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_engineer.png",
+    "name": "Engineer",
+    "otherNight": 10,
+    "otherNightReminder": "The Engineer might choose Minions or Demons. :reminder: If they do: Put the Engineer to sleep. Wake a target, show them the *YOU ARE* token and their new character token, then put that target to sleep. Repeat for all players that changed characters.",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "eviltwin": {
+    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
+    "edition": "snv",
+    "firstNight": 33,
+    "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
+    "flavor": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
+    "id": "eviltwin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_eviltwin.png",
+    "jinxes": [
+      {
+        "id": "plaguedoctor",
+        "reason": "The Storyteller cannot gain the Evil Twin ability if the Plague Doctor dies."
+      }
+    ],
+    "name": "Evil Twin",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Twin"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "exorcist": {
+    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of Our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
+    "id": "exorcist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_exorcist.png",
+    "name": "Exorcist",
+    "otherNight": 30,
+    "otherNightReminder": "The Exorcist chooses a player. :reminder: Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",
+    "reminders": [
+      "Chosen"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "fanggu": {
+    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Your walls and your weapons are but smoke in dreams.",
+    "id": "fanggu",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fanggu.png",
+    "jinxes": [
+      {
+        "id": "scarletwoman",
+        "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+      }
+    ],
+    "name": "Fang Gu",
+    "otherNight": 38,
+    "otherNightReminder": "The Fang Gu chooses a player. :reminder: If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down. :reminder:",
+    "reminders": [
+      "Dead",
+      "Once"
+    ],
+    "setup": true,
+    "team": "demon"
+  },
+  "farmer": {
+    "ability": "When you die at night, an alive good player becomes a Farmer.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Even the high and mighty need food on the table. Without us, the city starves.",
+    "id": "farmer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_farmer.png",
+    "name": "Farmer",
+    "otherNight": 62,
+    "otherNightReminder": "If the Farmer died tonight, wake an alive good player. Show them the *YOU ARE* info token and a Farmer character token. Replace their previous token with the Farmer token.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "fearmonger": {
+    "ability": "Each night, choose a player. If you nominate & execute them, their team loses. All players know if you choose a new player.",
+    "edition": "",
+    "firstNight": 36,
+    "firstNightReminder": "The Fearmonger chooses a player. :reminder: Declare that \"the Fearmonger has chosen a player.\"",
+    "flavor": "Beware of gazing long into the Abyss, lest the Abyss also gaze into you.",
+    "id": "fearmonger",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fearmonger.png",
+    "jinxes": [
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Plague Doctor dies, a living Minion gains the Fearmonger ability in addition to their own ability, and learns this."
+      }
+    ],
+    "name": "Fearmonger",
+    "otherNight": 24,
+    "otherNightReminder": "The Fearmonger chooses a player. :reminder: If the player wasn't already marked with the *FEAR* reminder, declare that \"the Fearmonger has chosen a player.\"",
+    "reminders": [
+      "Fear"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "ferryman": {
+    "ability": "On the final day, all dead players regain their vote token.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "When righteous dreams come, they have the weight of truth.",
+    "id": "ferryman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_ferryman.png",
+    "name": "Ferryman",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "special": [
+      {
+        "name": "ghost-votes",
+        "time": "day",
+        "type": "ability"
+      }
+    ],
+    "team": "fabled"
+  },
+  "fibbin": {
+    "ability": "Once per game, 1 good player might get incorrect information.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "Tee-hee-hee. Tee. Hee. Hee.",
+    "id": "fibbin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fibbin.png",
+    "name": "Fibbin",
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "fiddler": {
+    "ability": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "I'll wager mi lyef ye cannae best me in a fiddle contest, ye boss-eyed snook! We'll go out on the lash, get the pub jammers an' have a right craic. I'll be layin' ma boots into ya come mornin' ye rumbly muppet.",
+    "id": "fiddler",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fiddler.png",
+    "name": "Fiddler",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "special": [
+      {
+        "name": "pointing",
+        "time": "day",
+        "type": "ability"
+      }
+    ],
+    "team": "fabled"
+  },
+  "fisherman": {
+    "ability": "Once per game, during the day, visit the Storyteller for some advice to help your team win.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "This was my favourite part of the river... see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
+    "id": "fisherman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fisherman.png",
+    "name": "Fisherman",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "flowergirl": {
+    "ability": "Each night*, you learn if a Demon voted today.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Yesterday's violets have withered and died, but today my poppies bloom.",
+    "id": "flowergirl",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_flowergirl.png",
+    "name": "Flowergirl",
+    "otherNight": 71,
+    "otherNightReminder": "Either nod or shake your head.",
+    "reminders": [
+      "Demon Voted",
+      "Demon Not Voted"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "fool": {
+    "ability": "The first time you die, you don't.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "...and the King said 'What?! I've never even owned a pair of rubber pantaloons, let alone a custard cannon!' Ho-ho! Jolly day!",
+    "id": "fool",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fool.png",
+    "name": "Fool",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "fortuneteller": {
+    "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+    "edition": "tb",
+    "firstNight": 49,
+    "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+    "flavor": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+    "id": "fortuneteller",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_fortuneteller.png",
+    "name": "Fortune Teller",
+    "otherNight": 68,
+    "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+    "reminders": [
+      "Red Herring"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "gambler": {
+    "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Heads, I win. Tails, you lose.",
+    "id": "gambler",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gambler.png",
+    "name": "Gambler",
+    "otherNight": 15,
+    "otherNightReminder": "The Gambler chooses a player & a character. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "gangster": {
+    "ability": "Once per day, you may choose to kill an alive neighbor, if your other alive neighbor agrees.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I like your shoes. It would be such a shame if you had a little accident, and they got ruined. Now that you mention it, I like your cufflinks too.",
+    "id": "gangster",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gangster.png",
+    "name": "Gangster",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "gardener": {
+    "ability": "The Storyteller assigns 1 or more players' characters.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "Oh now, this won't do. We've got the monkshood mixed in with the wolfsbane and the hemlock is smothering the hellebore! Oh dear me, we'd better start over. Fetch my shears.",
+    "id": "gardener",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gardener.png",
+    "name": "Gardener",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "special": [
+      {
+        "name": "distribute-roles",
+        "time": "pregame",
+        "type": "ability"
+      }
+    ],
+    "team": "fabled"
+  },
+  "general": {
+    "ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
+    "edition": "",
+    "firstNight": 67,
+    "firstNightReminder": "Give a thumb signal.",
+    "flavor": "I don\u2019t have time for quotes.",
+    "id": "general",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_general.png",
+    "name": "General",
+    "otherNight": 85,
+    "otherNightReminder": "Give a thumb signal.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "gnome": {
+    "ability": "All players start knowing a player of your alignment. You may choose to kill anyone who nominates them.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Four the score or seven beers, no shows are goes for me and my. A prank to crack the cranks and planks o\u2019 the floor foundation length, so incontravertabubbilly mini. The large essays down streams of joyse, no greater than is scene,not inherdt. Ha-urrumph.",
+    "id": "gnome",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gnome.png",
+    "name": "Gnome",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Amigo"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "goblin": {
+    "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "You don\u2019t want to insult the goblins. You really, really don\u2019t. On a completely different note\u2026 can I have another piece of cake?",
+    "id": "goblin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_goblin.png",
+    "jinxes": [
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Plague Doctor dies, a living Minion gains the Goblin ability in addition to their own ability, and learns this."
+      }
+    ],
+    "name": "Goblin",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Claimed"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "godfather": {
+    "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+    "edition": "bmr",
+    "firstNight": 30,
+    "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+    "flavor": "Normally, it's just business. But when you insult my daughter, you insult me. And when you insult me, you insult my family. You really should be more careful - it would be a shame if you had an unfortunate accident.",
+    "id": "godfather",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_godfather.png",
+    "jinxes": [
+      {
+        "id": "heretic",
+        "reason": "Only 1 jinxed character can be in play."
+      }
+    ],
+    "name": "Godfather",
+    "otherNight": 50,
+    "otherNightReminder": "If an Outsider died today, the Godfather chooses a player. :reminder:",
+    "reminders": [
+      "Died Today",
+      "Dead"
+    ],
+    "setup": true,
+    "team": "minion"
+  },
+  "golem": {
+    "ability": "You may only nominate once per game. When you do, if the nominee is not the Demon, they die.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Golem help? Golem smash! Golem help.",
+    "id": "golem",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_golem.png",
+    "name": "Golem",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "May Not Nominate"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "goon": {
+    "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Yes boss. I explained fings real good to dat geezer. He don't want me explain it again. Nah boss, I don't need no doctor - it's only a knife wound. Be right come mornin'",
+    "id": "goon",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_goon.png",
+    "name": "Goon",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "gossip": {
+    "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. Blah.",
+    "id": "gossip",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gossip.png",
+    "name": "Gossip",
+    "otherNight": 51,
+    "otherNightReminder": "If the Gossip is due to kill a player, they die. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "grandmother": {
+    "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
+    "edition": "bmr",
+    "firstNight": 51,
+    "firstNightReminder": "Point to the grandchild player & show their character token.",
+    "flavor": "Take a jacket if you go outside, dearie. And your thermos. And your scarf. I have a weak heart, you know. Whatever would I do if you caught cold...or worse?",
+    "id": "grandmother",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_grandmother.png",
+    "name": "Grandmother",
+    "otherNight": 65,
+    "otherNightReminder": "If the grandchild was killed by the Demon, the Grandmother dies too. :reminder:",
+    "reminders": [
+      "Grandchild",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "gunslinger": {
+    "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "It's time someone took matters into their own hands. That someone... is me.",
+    "id": "gunslinger",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_gunslinger.png",
+    "name": "Gunslinger",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "harlot": {
+    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Enchant\u00e9, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",
+    "id": "harlot",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_harlot.png",
+    "name": "Harlot",
+    "otherNight": 5,
+    "otherNightReminder": "The Harlot points at any living player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+    "reminders": [
+      "Dead",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "harpy": {
+    "ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
+    "edition": "",
+    "firstNight": 37,
+    "firstNightReminder": "The Harpy chooses two players. :reminder: :reminder: Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+    "flavor": "So fair a day I never did see, nor so fowl a presence hanging over me.",
+    "id": "harpy",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_harpy.png",
+    "name": "Harpy",
+    "otherNight": 25,
+    "otherNightReminder": "The Harpy chooses two players. :reminder: :reminder: Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+    "reminders": [
+      "Mad",
+      "2nd"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "hatter": {
+    "ability": "If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",
+    "id": "hatter",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_hatter.png",
+    "name": "Hatter",
+    "otherNight": 52,
+    "otherNightReminder": "If the Hatter died today or tonight, wake Minions and Demons, allow them to choose new characters.",
+    "reminders": [
+      "Tea Party Tonight"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "hellslibrarian": {
+    "ability": "Something bad might happen to whoever talks when the Storyteller has asked for silence.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "Shhhhhh. Please be quiet. It is best not to disturb the Librarian. I've heard it has a temper.",
+    "id": "hellslibrarian",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_hellslibrarian.png",
+    "name": "Hell's Librarian",
+    "otherNightReminder": "",
+    "reminders": [
+      "Something Bad"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "heretic": {
+    "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "After the hail has smashed the roof and splintered the glass of the Cathedral windows, it melts again into the earth, like a dying lamb in the desert sun. Such is the parable of the madman.",
+    "id": "heretic",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_heretic.png",
+    "name": "Heretic",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "highpriestess": {
+    "ability": "Each night, learn which player the Storyteller believes you should talk to most.",
+    "edition": "",
+    "firstNight": 66,
+    "firstNightReminder": "Point to a player.",
+    "flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
+    "id": "highpriestess",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_highpriestess.png",
+    "name": "High Priestess",
+    "otherNight": 84,
+    "otherNightReminder": "Point to a player.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "huntsman": {
+    "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
+    "edition": "",
+    "firstNight": 41,
+    "firstNightReminder": "The Huntsman might choose a player. :reminder: If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the *YOU ARE* info token and their new character token.",
+    "flavor": "My cabin is warm and sturdy. My axe by the door, my boots drying by the fire, and elk stew a-simmering\u2026 Hark! A scream echoes through the valley! The rain and the mud and the cold, cold wind mask the scent of the wolves, but I know the path and my pace is steady. I am coming.",
+    "id": "huntsman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_huntsman.png",
+    "name": "Huntsman",
+    "otherNight": 59,
+    "otherNightReminder": "The Huntsman might choose a player. :reminder: If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the *YOU ARE* info token and their new character token.",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": true,
+    "team": "townsfolk"
+  },
+  "imp": {
+    "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
+    "id": "imp",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_imp.png",
+    "name": "Imp",
+    "otherNight": 33,
+    "otherNightReminder": "The Imp chooses a player. :reminder: If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "innkeeper": {
+    "ability": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Come inside, fair traveller, and rest your weary bones. Drink and be merry, for the legions of the Dark One shall not harass thee tonight.",
+    "id": "innkeeper",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_innkeeper.png",
+    "name": "Innkeeper",
+    "otherNight": 14,
+    "otherNightReminder": "The Innkeeper chooses 2 players. :reminder: :reminder: :reminder:",
+    "reminders": [
+      "Safe",
+      "Safe",
+      "Drunk"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "investigator": {
+    "ability": "You start knowing that 1 of 2 players is a particular Minion.",
+    "edition": "tb",
+    "firstNight": 46,
+    "firstNightReminder": "Show the Minion character token. Point to both the *MINION* and *WRONG* players.",
+    "flavor": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",
+    "id": "investigator",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_investigator.png",
+    "name": "Investigator",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Minion",
+      "Wrong"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "judge": {
+    "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I find the defendant guilty of the crimes of murder, fraud, arson, larceny, impersonating an officer of the law, practicing medicine without a license, slander, regicide, and littering.",
+    "id": "judge",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_judge.png",
+    "name": "Judge",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "traveler"
+  },
+  "juggler": {
+    "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
+    "id": "juggler",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_juggler.png",
+    "name": "Juggler",
+    "otherNight": 75,
+    "otherNightReminder": "Give a finger signal.",
+    "reminders": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "kazali": {
+    "ability": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
+    "edition": "",
+    "firstNight": 3,
+    "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
+    "flavor": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",
+    "id": "kazali",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_kazali.png",
+    "jinxes": [
+      {
+        "id": "bountyhunter",
+        "reason": "An evil Townsfolk is only created if the Bounty Hunter is still in play after the Kazali acts."
+      },
+      {
+        "id": "goon",
+        "reason": "The Kazali can choose that the Goon player is one of their evil Minions."
+      },
+      {
+        "id": "marionette",
+        "reason": "If the Kazali chooses to create a Marionette, they must choose one of their neighbors."
+      },
+      {
+        "id": "huntsman",
+        "reason": "If the Kazali chooses the Damsel to become a Minion, and a Huntsman is in play, a good player becomes the Damsel."
+      },
+      {
+        "id": "choirboy",
+        "reason": "The Kazali can not choose the King to become a Minion if a Choirboy is in play."
+      },
+      {
+        "id": "soldier",
+        "reason": "The Kazali can choose that the Soldier player is one of their evil Minions."
+      }
+    ],
+    "name": "Kazali",
+    "otherNight": 48,
+    "otherNightReminder": "The Kazali chooses a player. :reminder: ",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": true,
+    "team": "demon"
+  },
+  "king": {
+    "ability": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows you are the King.",
+    "edition": "",
+    "firstNight": 19,
+    "firstNightReminder": "Wake the Demon. Show the *THIS PLAYER IS* token and the King token, then point to the King.",
+    "flavor": "Betwixt the unknown strains of mortal strife / And morbid night, sweet with mystery and woe / Lies unfettered joys of fate\u2019s long and colored life / Who\u2019s garden blooms with each painted Face to Show.",
+    "id": "king",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_king.png",
+    "name": "King",
+    "otherNight": 78,
+    "otherNightReminder": "If the dead equal or outnumber the living, show the character token of an alive player.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "klutz": {
+    "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Oops.",
+    "id": "klutz",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_klutz.png",
+    "name": "Klutz",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "knight": {
+    "ability": "You start knowing 2 players that are not the Demon.",
+    "edition": "",
+    "firstNight": 56,
+    "firstNightReminder": "Point to the two non-Demon players marked *KNOW*.",
+    "flavor": "When a man lies, he murders some part of the world.",
+    "id": "knight",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_knight.png",
+    "name": "Knight",
+    "otherNight": 0,
+    "reminders": [
+      "Know",
+      "Know"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "legion": {
+    "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "We are the chill wind on a winter\u2019s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",
+    "id": "legion",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_legion.png",
+    "jinxes": [
+      {
+        "id": "engineer",
+        "reason": "Legion and the Engineer can not both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
+      },
+      {
+        "id": "preacher",
+        "reason": "If the Preacher chooses Legion, Legion keeps their ability, but the Preacher might learn they are Legion."
+      },
+      {
+        "id": "minstrel",
+        "reason": "If Legion died by execution today, Legion keeps their ability, but the Minstrel might learn they are Legion."
+      },
+      {
+        "id": "hatter",
+        "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
+      },
+      {
+        "id": "zealot",
+        "reason": "The Zealot might register as evil to Legion's ability."
+      }
+    ],
+    "name": "Legion",
+    "otherNight": 32,
+    "otherNightReminder": "A player might die. :reminder:",
+    "reminders": [
+      "Dead",
+      "About To Die"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-duplicate",
+        "type": "selection"
+      }
+    ],
+    "team": "demon"
+  },
+  "leviathan": {
+    "ability": "If more than 1 good player is executed, evil wins. All players know you are in play. After day 5, evil wins.",
+    "edition": "",
+    "firstNight": 71,
+    "firstNightReminder": "Declare that \"The Leviathan is in play.\" Mark the Leviathan with the *DAY 1* reminder. :reminder:",
+    "flavor": "To the last, I grapple with thee. From Hell\u2019s heart, I stab at thee. For hate\u2019s sake, I spit my last breath at thee.",
+    "id": "leviathan",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_leviathan.png",
+    "jinxes": [
+      {
+        "id": "soldier",
+        "reason": "If Leviathan nominates and executes the Soldier, the Soldier does not die."
+      },
+      {
+        "id": "monk",
+        "reason": "If Leviathan nominates and executes the player the Monk chose, that player does not die."
+      },
+      {
+        "id": "innkeeper",
+        "reason": "If Leviathan nominates and executes a player the Innkeeper chose, that player does not die."
+      },
+      {
+        "id": "ravenkeeper",
+        "reason": "If Leviathan is in play & the Ravenkeeper dies by execution, they wake that night to use their ability. They are drunk if their nominator was good."
+      },
+      {
+        "id": "banshee",
+        "reason": "If Leviathan is in play, and the Banshee dies by execution, all players learn that the Banshee has died, and the Banshee gains their ability."
+      },
+      {
+        "id": "sage",
+        "reason": "If Leviathan is in play & the Sage dies by execution, they wake that night to use their ability. They are drunk if their nominator was good."
+      },
+      {
+        "id": "farmer",
+        "reason": "If Leviathan is in play & a Farmer dies by execution, a good player becomes a Farmer that night."
+      },
+      {
+        "id": "mayor",
+        "reason": "If Leviathan is in play & no execution occurs on day 5, good wins."
+      },
+      {
+        "id": "hatter",
+        "reason": "If the Hatter dies on or after day 5, the Demon cannot choose Leviathan."
+      },
+      {
+        "id": "pithag",
+        "reason": "After day 5, the Pit-Hag cannot choose Leviathan."
+      }
+    ],
+    "name": "Leviathan",
+    "otherNight": 89,
+    "otherNightReminder": "Optionally, declare that \"The Leviathan is in play.\" Replace the reminder token. :reminder:",
+    "reminders": [
+      "Day 1",
+      "Day 2",
+      "Day 3",
+      "Day 4",
+      "Day 5",
+      "Good Player Executed"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "librarian": {
+    "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
+    "edition": "tb",
+    "firstNight": 45,
+    "firstNightReminder": "Show the Outsider character token. Point to both the *OUTSIDER* and *WRONG* players.",
+    "flavor": "Certainly madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
+    "id": "librarian",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_librarian.png",
+    "name": "Librarian",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Outsider",
+      "Wrong"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "lilmonsta": {
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",
+    "edition": "",
+    "firstNight": 24,
+    "firstNightReminder": "Wake all Minions, allow them to choose a babysitter :reminder:",
+    "flavor": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",
+    "id": "lilmonsta",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_lilmonsta.png",
+    "jinxes": [
+      {
+        "id": "poppygrower",
+        "reason": "If the Poppy Grower is in play, Minions don't wake together. They are woken one by one, until one of them chooses to take the Lil' Monsta token."
+      },
+      {
+        "id": "magician",
+        "reason": "Each night, the Magician chooses a Minion: if that Minion & Lil' Monsta are alive, that Minion babysits Lil\u2019 Monsta."
+      },
+      {
+        "id": "scarletwoman",
+        "reason": "If there are 5 or more players alive and the player holding the Lil' Monsta token dies, the Scarlet Woman is given the Lil' Monsta token tonight."
+      },
+      {
+        "id": "vizier",
+        "reason": "The Vizier can die by execution if they are babysitting Lil' Monsta."
+      },
+      {
+        "id": "hatter",
+        "reason": "If a Demon chooses Lil' Monsta, they also choose a Minion to become and babysit Lil' Monsta tonight."
+      }
+    ],
+    "name": "Lil' Monsta",
+    "otherNight": 46,
+    "otherNightReminder": "Wake all Minions, allow them to choose a babysitter :reminder: A player might die :reminder:",
+    "reminders": [],
+    "remindersGlobal": [
+      "Is The Demon",
+      "Dead"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "global": "minion",
+        "name": "pointing",
+        "time": "night",
+        "type": "ability"
+      },
+      {
+        "name": "bag-disabled",
+        "type": "selection"
+      }
+    ],
+    "team": "demon"
+  },
+  "lleech": {
+    "ability": "Each night*, choose a player: they die. You start by choosing a player: they are poisoned. You die if & only if they are dead.",
+    "edition": "",
+    "firstNight": 25,
+    "firstNightReminder": "The Lleech chooses a player. :reminder:",
+    "flavor": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That\u2019s what I meant to say.",
+    "id": "lleech",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_lleech.png",
+    "jinxes": [
+      {
+        "id": "mastermind",
+        "reason": "If the Mastermind is alive and the Lleech's host dies by execution, the Lleech lives but loses their ability."
+      },
+      {
+        "id": "slayer",
+        "reason": "If the Slayer slays the Lleech's host, the host dies."
+      },
+      {
+        "id": "heretic",
+        "reason": "If the Lleech has poisoned the Heretic then the Lleech dies, the Heretic remains poisoned."
+      }
+    ],
+    "name": "Lleech",
+    "otherNight": 45,
+    "otherNightReminder": "The Lleech chooses a player. :reminder:",
+    "reminders": [
+      "Dead",
+      "Poisoned"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "lordoftyphon": {
+    "ability": "Each night*, choose a player: they die. [Evil characters are in a line. You are in the middle. +1 Minion. -? to +? Outsiders]",
+    "edition": "",
+    "firstNight": 2,
+    "firstNightReminder": "Replace neighbors of the Lord of Typhon with Minions, wake them, tell them their new alignment and character, then do minion info.",
+    "flavor": "In the shadowed and forgotten corners of the cosmos, where the stars whisper secrets to the void, lies a truth so profound that the merest glimpse of it unravels the sanity of mortal minds.",
+    "id": "lordoftyphon",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_lordoftyphon.png",
+    "name": "Lord of Typhon",
+    "otherNight": 41,
+    "otherNightReminder": "The Lord of Typhon chooses a player. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": true,
+    "team": "demon"
+  },
+  "lunatic": {
+    "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
+    "edition": "bmr",
+    "firstNight": 16,
+    "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the *THESE ARE YOUR MINIONS* token. Point to any players. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the *YOU ARE* info token and the Demon token. Show the *THIS PLAYER IS* info token and the Lunatic token, then point to the Lunatic.",
+    "flavor": "I am the night... I think.",
+    "id": "lunatic",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_lunatic.png",
+    "jinxes": [
+      {
+        "id": "mathematician",
+        "reason": "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+      }
+    ],
+    "name": "Lunatic",
+    "otherNight": 29,
+    "otherNightReminder": "Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",
+    "reminders": [
+      "Chosen",
+      "Chosen",
+      "Chosen"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "lycanthrope": {
+    "ability": "Each night*, choose an alive player. If good, they die & the Demon doesn\u2019t kill tonight. One good player registers as evil.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Beneath the thin veneer of civilisation lies a howling madness.",
+    "id": "lycanthrope",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_lycanthrope.png",
+    "name": "Lycanthrope",
+    "otherNight": 31,
+    "otherNightReminder": "The Lycanthrope chooses a player :reminder:",
+    "reminders": [
+      "Appears Evil",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "magician": {
+    "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",
+    "edition": "",
+    "firstNight": 13,
+    "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
+    "flavor": "1... 2... Abra... 3... 4... Cadabra... *poof!* And, as you can see, ladies and gentlemen, Captain Farnsworth\u2019s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",
+    "id": "magician",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_magician.png",
+    "name": "Magician",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "marionette": {
+    "ability": "You think you are a good character, but you are not. The Demon knows who you are. [You neighbor the Demon]",
+    "edition": "",
+    "firstNight": 21,
+    "firstNightReminder": "Wake the Demon. Point to the player marked *IS THE MARIONETTE* and show the *THIS PLAYER IS* token and the Marionette character token.",
+    "flavor": "Words, words. They're all we have to go on.",
+    "id": "marionette",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_marionette.png",
+    "jinxes": [
+      {
+        "id": "lilmonsta",
+        "reason": "The Marionette neighbors a Minion, not the Demon. The Marionette is not woken to choose who takes the Lil' Monsta token, and does not learn they are the Marionette if they have the Lil' Monsta token."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing."
+      },
+      {
+        "id": "snitch",
+        "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
+      },
+      {
+        "id": "balloonist",
+        "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider might have been added."
+      },
+      {
+        "id": "damsel",
+        "reason": "The Marionette does not learn that a Damsel is in play."
+      },
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Demon has a neighbor who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+      },
+      {
+        "id": "huntsman",
+        "reason": "If the Marionette thinks that they are the Huntsman, the Damsel was added."
+      }
+    ],
+    "name": "Marionette",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "Is The Marionette"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-disabled",
+        "type": "selection"
+      },
+      {
+        "name": "replace-character",
+        "type": "reveal"
+      }
+    ],
+    "team": "minion"
+  },
+  "mastermind": {
+    "ability": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "The tentacles of that monster are nailed to the doors of the church. Mothers and children are dancing in the street. Excellent. Everything is proceeding exactly as I have planned.",
+    "id": "mastermind",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_mastermind.png",
+    "jinxes": [
+      {
+        "id": "alhadikhia",
+        "reason": "If the Al-Hadikhia dies by execution, and the Mastermind is alive, the Al-Hadikhia chooses 3 good players tonight: if all 3 choose to live, evil wins. Otherwise, good wins."
+      }
+    ],
+    "name": "Mastermind",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "minion"
+  },
+  "mathematician": {
+    "ability": "Each night, you learn how many players\u2019 abilities worked abnormally (since dawn) due to another character's ability.",
+    "edition": "snv",
+    "firstNight": 69,
+    "firstNightReminder": "Give a finger signal.",
+    "flavor": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",
+    "id": "mathematician",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_mathematician.png",
+    "name": "Mathematician",
+    "otherNight": 87,
+    "otherNightReminder": "Give a finger signal.",
+    "reminders": [
+      "Abnormal",
+      "Abnormal",
+      "Abnormal",
+      "Abnormal",
+      "Abnormal"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "matron": {
+    "ability": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Miss Featherbottom, be quiet. Master Rutherford, a teacup needs just the four fingers, please. I know you are a father of nine, but age, or lack there-of as the case may be, is never an excuse for poor manners.",
+    "id": "matron",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_matron.png",
+    "name": "Matron",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "mayor": {
+    "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
+    "id": "mayor",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_mayor.png",
+    "name": "Mayor",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "mezepheles": {
+    "ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",
+    "edition": "",
+    "firstNight": 38,
+    "firstNightReminder": "Show the written word.",
+    "flavor": "That which issues from the heart alone, will bend the hearts of others to your own.",
+    "id": "mezepheles",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_mezepheles.png",
+    "name": "Mezepheles",
+    "otherNight": 26,
+    "otherNightReminder": "If a player is marked with the *TURNS EVIL* reminder, wake them. Show the *YOU ARE* info token and a thumbs down. The Mezepheles loses their ability :reminder:",
+    "reminders": [
+      "Turns Evil",
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "minstrel": {
+    "ability": "When a Minion dies by execution, all other players (except Travellers) are drunk until dusk tomorrow.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "And I shall hear, tho' soft you tread above me... And all my dreams will warm and sweeter be... If you'll not fail to tell me that you love me... I simply sleep in peace until you come to me.",
+    "id": "minstrel",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_minstrel.png",
+    "name": "Minstrel",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Everyone Is Drunk"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "monk": {
+    "ability": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
+    "id": "monk",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_monk.png",
+    "name": "Monk",
+    "otherNight": 18,
+    "otherNightReminder": "The Monk chooses a player. :reminder:",
+    "reminders": [
+      "Safe"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "moonchild": {
+    "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Scorpio looks sideways at the lovers, and you have a choice to make. With silver cross my palm, and your fate shall be revealed. With steel cross my throat, and by the stars you shall regret it.",
+    "id": "moonchild",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_moonchild.png",
+    "name": "Moonchild",
+    "otherNight": 64,
+    "otherNightReminder": "If the Moonchild is due to kill a good player, they die. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "mutant": {
+    "ability": "If you are \u201cmad\u201d about being an Outsider, you might be executed.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I am not a freak! I am a human being! Have mercy!",
+    "id": "mutant",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_mutant.png",
+    "name": "Mutant",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "nightwatchman": {
+    "ability": "Once per game, at night, choose a player: they learn you are the Nightwatchman.",
+    "edition": "",
+    "firstNight": 62,
+    "firstNightReminder": "The Nightwatchman might choose a player :reminder: Put the Nightwatchman to sleep. Wake the target and show the *THIS PLAYER IS* and Nightwatchman tokens and point to the Nightwatchman.",
+    "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+    "id": "nightwatchman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_nightwatchman.png",
+    "name": "Nightwatchman",
+    "otherNight": 80,
+    "otherNightReminder": "The Nightwatchman might choose a player :reminder: Put the Nightwatchman to sleep. Wake the target and show the *THIS PLAYER IS* and Nightwatchman tokens and point to the Nightwatchman.",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "noble": {
+    "ability": "You start knowing 3 players, 1 and only 1 of which is evil.",
+    "edition": "",
+    "firstNight": 57,
+    "firstNightReminder": "Point to all three players marked *KNOW*.",
+    "flavor": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",
+    "id": "noble",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_noble.png",
+    "name": "Noble",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Know",
+      "Know",
+      "Know"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "nodashii": {
+    "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+    "id": "nodashii",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_nodashii.png",
+    "name": "No Dashii",
+    "otherNight": 39,
+    "otherNightReminder": "The No Dashii chooses a player. :reminder:",
+    "reminders": [
+      "Dead",
+      "Poisoned",
+      "Poisoned"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "ogre": {
+    "ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
+    "edition": "",
+    "firstNight": 65,
+    "firstNightReminder": "The Ogre points to a player. :reminder:",
+    "flavor": "<grunt><grin></grunt>",
+    "id": "ogre",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_ogre.png",
+    "jinxes": [
+      {
+        "id": "recluse",
+        "reason": "If the Recluse registers as evil to the Ogre, the Ogre learns that they are evil."
+      }
+    ],
+    "name": "Ogre",
+    "otherNight": 0,
+    "reminders": [
+      "Friend"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "ojo": {
+    "ability": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Like a bonfire on a moonless night\u2026 I see you, mortal.",
+    "id": "ojo",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_ojo.png",
+    "name": "Ojo",
+    "otherNight": 43,
+    "otherNightReminder": "The Ojo chooses a character. :reminder: ",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "oracle": {
+    "ability": "Each night*, you learn how many dead players are evil.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
+    "id": "oracle",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_oracle.png",
+    "name": "Oracle",
+    "otherNight": 73,
+    "otherNightReminder": "Give a finger signal.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "organgrinder": {
+    "ability": "All players keep their eyes closed when voting and the vote tally is secret. Each night, choose if you are drunk or not.",
+    "edition": "",
+    "firstNight": 31,
+    "firstNightReminder": "The Organ Grinder either nods their head yes to be drunk, or shakes their head no to be sober. :reminder:",
+    "flavor": "Round and round the handles go. The more you dance the less you know.",
+    "id": "organgrinder",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_organgrinder.png",
+    "jinxes": [
+      {
+        "id": "butler",
+        "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
+      }
+    ],
+    "name": "Organ Grinder",
+    "otherNight": 19,
+    "otherNightReminder": "The Organ Grinder either nods their head yes to be drunk, or shakes their head no to be sober. :reminder:",
+    "reminders": [
+      "About To Die",
+      "Drunk"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "hidden",
+        "type": "vote"
+      }
+    ],
+    "team": "minion"
+  },
+  "pacifist": {
+    "ability": "Executed good players might not die.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Distrust all in whom the impulse to punish is powerful.",
+    "id": "pacifist",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_pacifist.png",
+    "name": "Pacifist",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "philosopher": {
+    "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
+    "edition": "snv",
+    "firstNight": 9,
+    "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token. :reminder:",
+    "flavor": "If anything is real, beer is real. Drink, for tomorrow we may die.",
+    "id": "philosopher",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_philosopher.png",
+    "jinxes": [
+      {
+        "id": "bountyhunter",
+        "reason": "If the Philosopher gains the Bounty Hunter ability, a Townsfolk might turn evil."
+      }
+    ],
+    "name": "Philosopher",
+    "otherNight": 7,
+    "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token. :reminder:",
+    "reminders": [
+      "Drunk"
+    ],
+    "remindersGlobal": [
+      "Is The Philosopher"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "replace-character",
+        "type": "reveal"
+      }
+    ],
+    "team": "townsfolk"
+  },
+  "pithag": {
+    "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Round about the cauldron go; In the poison'd entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",
+    "id": "pithag",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_pithag.png",
+    "jinxes": [
+      {
+        "id": "heretic",
+        "reason": "A Pit-Hag can not create a Heretic."
+      },
+      {
+        "id": "damsel",
+        "reason": "If a Pit-Hag creates a Damsel, the Storyteller chooses which player it is."
+      },
+      {
+        "id": "politician",
+        "reason": "If the Pit-Hag turns an evil player into the Politician, they can't turn good due to their own ability."
+      },
+      {
+        "id": "villageidiot",
+        "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
+      },
+      {
+        "id": "cultleader",
+        "reason": "If the Pit-Hag turns an evil player into the Cult Leader, they can't turn good due to their own ability."
+      },
+      {
+        "id": "goon",
+        "reason": "If the Pit-Hag turns an evil player into the Goon, they can't turn good due to their own ability."
+      },
+      {
+        "id": "ogre",
+        "reason": "If the Pit-Hag turns an evil player into the Ogre, they can't turn good due to their own ability."
+      }
+    ],
+    "name": "Pit-Hag",
+    "otherNight": 23,
+    "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token.",
+    "reminders": [],
+    "setup": false,
+    "team": "minion"
+  },
+  "pixie": {
+    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+    "edition": "",
+    "firstNight": 40,
+    "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+    "flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town.  Lords with axe chop forest down. What\u2019s yours is mine. What\u2019s mine, divine. Silly little Pixie, me.",
+    "id": "pixie",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_pixie.png",
+    "name": "Pixie",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Mad",
+      "Has Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "plaguedoctor": {
+    "ability": "When you die, the Storyteller gains a Minion ability.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
+    "id": "plaguedoctor",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_plaguedoctor.png",
+    "name": "Plague Doctor",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Storyteller Ability"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "po": {
+    "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Would you like a flower? I'm so lonely.",
+    "id": "po",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_po.png",
+    "name": "Po",
+    "otherNight": 37,
+    "otherNightReminder": "The Po may choose a player OR chooses 3 players if they chose no-one last night. :reminder: or :reminder: :reminder: :reminder:",
+    "reminders": [
+      "Dead",
+      "Dead",
+      "Dead",
+      "3 Attacks"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "poisoner": {
+    "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
+    "edition": "tb",
+    "firstNight": 26,
+    "firstNightReminder": "The Poisoner chooses a player. :reminder:",
+    "flavor": "Add compound Alpha to compound Beta... NOT TOO MUCH!",
+    "id": "poisoner",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_poisoner.png",
+    "name": "Poisoner",
+    "otherNight": 12,
+    "otherNightReminder": "The Poisoner chooses a player. :reminder:",
+    "reminders": [
+      "Poisoned"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "politician": {
+    "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I'm glad you asked that question. Truly, I am. But I think the REAL question here is...",
+    "id": "politician",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_politician.png",
+    "name": "Politician",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "poppygrower": {
+    "ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
+    "edition": "",
+    "firstNight": 11,
+    "firstNightReminder": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the *THESE CHARACTERS ARE NOT IN PLAY* info token and any three good character tokens that are not in play.",
+    "flavor": "In the hidden groves of the deep forest, the black poppy dwells. To see its revelry is to be enchanted. To smell its thick aroma is to be lost forever, a slave to the gods of light and dark.",
+    "id": "poppygrower",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_poppygrower.png",
+    "name": "Poppy Grower",
+    "otherNight": 8,
+    "otherNightReminder": "If the Poppy Grower died today or tonight, wake the Minions, show the *THIS IS THE DEMON* info token and point to the Demon. Put them to sleep. Wake the Demon, show the *THESE ARE YOUR MINIONS* info token and point to the Minions. Put the Demon to sleep.",
+    "reminders": [
+      "Evil Wakes"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "preacher": {
+    "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
+    "edition": "",
+    "firstNight": 23,
+    "firstNightReminder": "The Preacher chooses a player. :reminder: If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token and the Preacher token.",
+    "flavor": "It is better to be rich and healthy than poor and sick.",
+    "id": "preacher",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_preacher.png",
+    "name": "Preacher",
+    "otherNight": 11,
+    "otherNightReminder": "The Preacher chooses a player. :reminder: If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token and the Preacher token.",
+    "reminders": [
+      "No Ability",
+      "No Ability",
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "professor": {
+    "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "The process is simple. Attach the hydraulic confabulator to the modified chi matrix amplifier, add 20 CCs of pseudodorafine, keep his Z levels above 20%, and your husband will be fine. Now, all we need is a lightning strike.",
+    "id": "professor",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_professor.png",
+    "name": "Professor",
+    "otherNight": 57,
+    "otherNightReminder": "The Professor might choose a dead player. :reminder: :reminder:",
+    "reminders": [
+      "Alive",
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "psychopath": {
+    "ability": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Surprise!",
+    "id": "psychopath",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_psychopath.png",
+    "name": "Psychopath",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "minion"
+  },
+  "pukka": {
+    "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
+    "edition": "bmr",
+    "firstNight": 39,
+    "firstNightReminder": "The Pukka chooses a player. :reminder:",
+    "flavor": "You truly have been kind welcoming me into your beautiful home. I am so sorry I accidentally scratched you. A little thing. No matter. But please, take this golden toothpick as a humble token of my regret.",
+    "id": "pukka",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_pukka.png",
+    "name": "Pukka",
+    "otherNight": 35,
+    "otherNightReminder": "The Pukka chooses a player. :reminder: The previously poisoned player dies then becomes healthy. :reminder:",
+    "reminders": [
+      "Poisoned",
+      "Poisoned",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "puzzlemaster": {
+    "ability": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "When one begins to think that some thing is merely some other thing, one is usually on the brink of an error. Patience, patience. Don\u2019t confuse just and should with is and isn\u2019t.",
+    "id": "puzzlemaster",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_puzzlemaster.png",
+    "name": "Puzzlemaster",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Drunk",
+      "Guess Used"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "ravenkeeper": {
+    "ability": "If you die at night, you are woken to choose a player: you learn their character.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! To the manor and to the river! To the alleys and to the salons! Fly!",
+    "id": "ravenkeeper",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_ravenkeeper.png",
+    "name": "Ravenkeeper",
+    "otherNight": 66,
+    "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "recluse": {
+    "ability": "You might register as evil & as a Minion or Demon, even if dead.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
+    "id": "recluse",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_recluse.png",
+    "name": "Recluse",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "revolutionary": {
+    "ability": "2 neighboring players are known to be the same alignment. Once per game, 1 of them registers falsely.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "United we feigned. Divided, we stalled.",
+    "id": "revolutionary",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_revolutionary.png",
+    "name": "Revolutionary",
+    "otherNightReminder": "",
+    "reminders": [
+      "Register Falsely?",
+      "Aligned",
+      "Aligned"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "riot": {
+    "ability": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]",
+    "edition": "",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Larga vida a la revoluci\u00f3n! Mi revolucion!",
+    "id": "riot",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_riot.png",
+    "jinxes": [
+      {
+        "id": "engineer",
+        "reason": "Riot and the Engineer can not both be in play at the start of the game. If the Engineer creates Riot, the evil players become Riot."
+      },
+      {
+        "id": "golem",
+        "reason": "If the Golem nominates Riot, the Riot player does not die."
+      },
+      {
+        "id": "snitch",
+        "reason": "If the Snitch is in play, each Riot player gets an extra 3 bluffs."
+      },
+      {
+        "id": "saint",
+        "reason": "If a good player nominates and kills the Saint, the Saint's team loses."
+      },
+      {
+        "id": "butler",
+        "reason": "The Butler can not nominate their master."
+      },
+      {
+        "id": "pithag",
+        "reason": "If the Pit-Hag creates Riot, all evil players become Riot. If the Pit-Hag creates Riot after day 3, the game continues for one more day."
+      },
+      {
+        "id": "mayor",
+        "reason": "If the 3rd day begins with just three players alive, the players may choose (as a group) not to nominate at all. If so (and a Mayor is alive) then the Mayor's team wins."
+      },
+      {
+        "id": "monk",
+        "reason": "If a Riot player nominates and kills the Monk-protected-player, the Monk-protected-player does not die."
+      },
+      {
+        "id": "farmer",
+        "reason": "If a Riot player nominates and kills a Farmer, the Farmer uses their ability tonight."
+      },
+      {
+        "id": "innkeeper",
+        "reason": "If a Riot player nominates an Innkeeper-protected-player, the Innkeeper-protected-player does not die."
+      },
+      {
+        "id": "sage",
+        "reason": "If a Riot player nominates and kills a Sage, the Sage uses their ability tonight."
+      },
+      {
+        "id": "banshee",
+        "reason": "If Riot nominates and kills the Banshee, all players learn that the Banshee has died, and the Banshee may nominate two players immediately."
+      },
+      {
+        "id": "ravenkeeper",
+        "reason": "If a Riot player nominates and kills the Ravenkeeper, the Ravenkeeper uses their ability tonight."
+      },
+      {
+        "id": "soldier",
+        "reason": "If a Riot player nominates the Soldier, the Soldier does not die."
+      },
+      {
+        "id": "grandmother",
+        "reason": "If a Riot player nominates and kills the Grandchild, the Grandmother dies too."
+      },
+      {
+        "id": "king",
+        "reason": "If a Riot player nominates and kills the King and the Choirboy is alive, the Choirboy uses their ability tonight."
+      },
+      {
+        "id": "exorcist",
+        "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "minstrel",
+        "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "flowergirl",
+        "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "undertaker",
+        "reason": "Players that die by nomination register as being executed to the Undertaker."
+      },
+      {
+        "id": "cannibal",
+        "reason": "Players that die by nomination register as being executed to the Cannibal."
+      },
+      {
+        "id": "pacifist",
+        "reason": "Players that die by nomination register as being executed to the Pacifist."
+      },
+      {
+        "id": "devilsadvocate",
+        "reason": "Players that die by nomination register as being executed to the Devil's Advocate."
+      },
+      {
+        "id": "investigator",
+        "reason": "Riot registers as a Minion to the Investigator."
+      },
+      {
+        "id": "clockmaker",
+        "reason": "Riot registers as a Minion to the Clockmaker."
+      },
+      {
+        "id": "towncrier",
+        "reason": "Riot registers as a Minion to the Town Crier."
+      },
+      {
+        "id": "damsel",
+        "reason": "Riot registers as a Minion to the Damsel."
+      },
+      {
+        "id": "preacher",
+        "reason": "Riot registers as a Minion to the Preacher."
+      },
+      {
+        "id": "hatter",
+        "reason": "If the Hatter dies, Riot is in play and a Riot chooses a different Demon, a normal evil team is created from the Riot players. If the Hatter dies and the Demon chooses Riot, Minions become Riot too."
+      },
+      {
+        "id": "zealot",
+        "reason": "If you are nominated, you must nominate again, even if dead."
+      }
+    ],
+    "name": "Riot",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-duplicate",
+        "type": "selection"
+      }
+    ],
+    "team": "demon"
+  },
+  "sage": {
+    "ability": "If the Demon kills you, you learn that it is 1 of 2 players.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",
+    "id": "sage",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_sage.png",
+    "name": "Sage",
+    "otherNight": 55,
+    "otherNightReminder": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "sailor": {
+    "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
+    "edition": "bmr",
+    "firstNight": 20,
+    "firstNightReminder": "The Sailor chooses a living player. :reminder:",
+    "flavor": "I'll drink any one of yer under the table! You! The chatterbox! Reckon you can take me? No? Howza 'bout you, Grandma? You ever tried Old McKillys Extra Spiced Rum before? Guaranteed to put hairs on yer chest! Step aboard, aye!",
+    "id": "sailor",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_sailor.png",
+    "name": "Sailor",
+    "otherNight": 9,
+    "otherNightReminder": "The Sailor chooses a living player. :reminder:",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "saint": {
+    "ability": "If you die by execution, your team loses.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Wisdom begets peace. Patience begets wisdom. Fear not, for the time shall come when fear too shall pass. Let us pray, and may the unity of our vision make saints of us all.",
+    "id": "saint",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_saint.png",
+    "name": "Saint",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "savant": {
+    "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Seventy-two matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... three by three... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... Seventy-two matchsticks on the floor...",
+    "id": "savant",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_savant.png",
+    "name": "Savant",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "scapegoat": {
+    "ability": "If a player of your alignment is executed, you might be executed instead.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?",
+    "id": "scapegoat",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_scapegoat.png",
+    "name": "Scapegoat",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "scarletwoman": {
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
+    "id": "scarletwoman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_scarletwoman.png",
+    "jinxes": [
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Plague Doctor dies, a living Minion gains the Scarlet Woman ability in addition to their own ability, and learns this."
+      }
+    ],
+    "name": "Scarlet Woman",
+    "otherNight": 27,
+    "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
+    "reminders": [
+      "Is The Demon"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "seamstress": {
+    "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
+    "edition": "snv",
+    "firstNight": 54,
+    "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head. :reminder:",
+    "flavor": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my, yes.",
+    "id": "seamstress",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_seamstress.png",
+    "name": "Seamstress",
+    "otherNight": 74,
+    "otherNightReminder": "The Seamstress might choose 2 players. Nod or shake your head. :reminder:",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "sentinel": {
+    "ability": "There might be 1 extra or 1 fewer Outsider in play.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "Name, please. Papers, please. Weapons, please.",
+    "id": "sentinel",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_sentinel.png",
+    "name": "Sentinel",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": true,
+    "team": "fabled"
+  },
+  "shabaloth": {
+    "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Blarg f'taag nm mataan! No sho gumtha m'sik na yuuu. Fluuuuuuuuurg h-sikkkh.",
+    "id": "shabaloth",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_shabaloth.png",
+    "name": "Shabaloth",
+    "otherNight": 36,
+    "otherNightReminder": "A previously chosen player might be resurrected. :reminder: The Shabaloth chooses 2 players. :reminder: :reminder:",
+    "reminders": [
+      "Dead",
+      "Dead",
+      "Alive"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "shugenja": {
+    "ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+    "edition": "",
+    "firstNight": 59,
+    "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+    "flavor": "\u3053\u308c\u306f\u5922\u3002\u305d\u308c\u3082\u5922\u3002\u3059\u3079\u3066\u5922\u3067\u3059\u3002",
+    "id": "shugenja",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_shugenja.png",
+    "name": "Shugenja",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "slayer": {
+    "ability": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Die.",
+    "id": "slayer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_slayer.png",
+    "name": "Slayer",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "snakecharmer": {
+    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+    "edition": "snv",
+    "firstNight": 29,
+    "firstNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up. :reminder:",
+    "flavor": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Inshallah. They say that greed hangs more men than rope. But not I, Effendi... not I.",
+    "id": "snakecharmer",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_snakecharmer.png",
+    "name": "Snake Charmer",
+    "otherNight": 17,
+    "otherNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up. :reminder:",
+    "reminders": [
+      "Poisoned"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "snitch": {
+    "ability": "Each Minion gets 3 bluffs.",
+    "edition": "",
+    "firstNight": 15,
+    "firstNightReminder": "Wake each Minion. Show the *THESE CHARACTERS ARE NOT IN PLAY* token and three not-in-play character tokens. Put each Minion to sleep.",
+    "flavor": "It was John.",
+    "id": "snitch",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_snitch.png",
+    "name": "Snitch",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "soldier": {
+    "ability": "You are safe from the Demon.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
+    "id": "soldier",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_soldier.png",
+    "name": "Soldier",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "spiritofivory": {
+    "ability": "There can't be more than 1 extra evil player.",
+    "edition": "fabled",
+    "firstNightReminder": "",
+    "flavor": "The Wasteland calls. Bones rise to flesh, then fall to dust. The great spirit grows. The great spirit watches. The great spirit guides. The human listens, or the human is no more.",
+    "id": "spiritofivory",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_spiritofivory.png",
+    "name": "Spirit of Ivory",
+    "otherNightReminder": "",
+    "reminders": [
+      "No More Evil"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "spy": {
+    "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
+    "edition": "tb",
+    "firstNight": 64,
+    "firstNightReminder": "Show the Grimoire for as long as the Spy needs.",
+    "flavor": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
+    "id": "spy",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_spy.png",
+    "jinxes": [
+      {
+        "id": "alchemist",
+        "reason": "The Alchemist can not have the Spy ability."
+      },
+      {
+        "id": "magician",
+        "reason": "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."
+      },
+      {
+        "id": "plaguedoctor",
+        "reason": "If the Plague Doctor dies, a living Minion gains the Spy ability in addition to their own ability, and learns this."
+      },
+      {
+        "id": "damsel",
+        "reason": "If the Spy is (or has been) in play, the Damsel is poisoned."
+      },
+      {
+        "id": "heretic",
+        "reason": "Only 1 jinxed character can be in play."
+      },
+      {
+        "id": "ogre",
+        "reason": "The Spy registers as evil to the Ogre."
+      }
+    ],
+    "name": "Spy",
+    "otherNight": 83,
+    "otherNightReminder": "Show the Grimoire for as long as the Spy needs.",
+    "reminders": [],
+    "setup": false,
+    "special": [
+      {
+        "name": "grimoire",
+        "time": "night",
+        "type": "signal"
+      }
+    ],
+    "team": "minion"
+  },
+  "steward": {
+    "ability": "You start knowing 1 good player.",
+    "edition": "",
+    "firstNight": 55,
+    "firstNightReminder": "Point to the good player marked *KNOW*.",
+    "flavor": "How DARE you accuse Her Ladyship of wrongdoing? I\u2019ve known her my entire life! All nine years!",
+    "id": "steward",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_steward.png",
+    "name": "Steward",
+    "otherNight": 0,
+    "reminders": [
+      "Know"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "stormcatcher": {
+    "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
+    "edition": "fabled",
+    "firstNight": 1,
+    "firstNightReminder": "At the start of the night, announce which character is favoured by the Storm Catcher. If that character is in play, mark that player as \"Safe\". Wake each evil player and show them the character token, then the marked player.\n If not in play, wake each evil player, show them the \"These Characters Are Not In Play\" info token and the relevant character token.",
+    "flavor": "At dawn, the temple\u2019s long shadow creeps to the fountain. At dusk, the obelisk blocks the red glare, cooling warm water under the archway. All lines converge here. A storm is coming, and this, this pebbled and lush and holy place between the apple trees, is the eye.",
+    "id": "stormcatcher",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_stormcatcher.png",
+    "name": "Storm Catcher",
+    "otherNightReminder": "",
+    "reminders": [
+      "Safe"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "summoner": {
+    "ability": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]",
+    "edition": "",
+    "firstNight": 17,
+    "firstNightReminder": "Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",
+    "flavor": "Hail the guardians of the north; by my intellect, thou art cut. Hail the guardians of the east; by my will, thou art dominated. Hail the guardians of the south; by that which lies beyond, the mystery is revealed. Hail the guardians of the west; a shield in the darkness",
+    "id": "summoner",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_summoner.png",
+    "jinxes": [
+      {
+        "id": "clockmaker",
+        "reason": "If the Summoner is in play, the Clockmaker does not receive their information until a Demon is created."
+      },
+      {
+        "id": "alchemist",
+        "reason": "If there is an Alchemist-Summoner in play, the game starts with a Demon in play, as normal. If the Alchemist-Summoner chooses a player, they make that player a Demon but do not change their alignment."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "If the Poppy Grower is alive when the Summoner acts, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "marionette",
+        "reason": "The Marionette neighbors the Summoner. The Summoner knows who the Marionette is."
+      },
+      {
+        "id": "pithag",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "hatter",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "courtier",
+        "reason": "If the Summoner is drunk on the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "engineer",
+        "reason": "If the Engineer removes a Summoner from play before that Summoner uses their ability, the Summoner uses their ability immediately."
+      },
+      {
+        "id": "zombuul",
+        "reason": "If the Summoner turns a dead player into the Zombuul, the Storyteller treats that player as a Zombuul that has died once."
+      },
+      {
+        "id": "pukka",
+        "reason": "The Summoner may choose a player to become the Pukka on the 2nd night."
+      },
+      {
+        "id": "riot",
+        "reason": "If the Summoner creates Riot, all Minions also become Riot."
+      },
+      {
+        "id": "legion",
+        "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."
+      },
+      {
+        "id": "kazali",
+        "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+      },
+      {
+        "id": "preacher",
+        "reason": "If the Preacher chose the Summoner on or before the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+      },
+      {
+        "id": "lordoftyphon",
+        "reason": "If the Summoner creates a Lord of Typhon, the Lord of Typhon must neighbor a Minion. The other neighbor becomes a not-in-play evil Minion."
+      }
+    ],
+    "name": "Summoner",
+    "otherNight": 28,
+    "otherNightReminder": "Change the Summoner reminder token to the relevant night. If it is night 3, the Summoner chooses a player and a Demon. Put the Summoner to sleep. Wake the chosen player. Show the *YOU ARE* token, a thumbs down and the chosen Demon token.",
+    "reminders": [
+      "Night 1",
+      "Night 2",
+      "Night 3"
+    ],
+    "setup": true,
+    "team": "minion"
+  },
+  "sweetheart": {
+    "ability": "When you die, 1 player is drunk from now on.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I will never forget her. Never.",
+    "id": "sweetheart",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_sweetheart.png",
+    "name": "Sweetheart",
+    "otherNight": 54,
+    "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now. :reminder:",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "tealady": {
+    "ability": "If both your alive neighbors are good, they can't die.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "If you are cold, tea will warm you. If you are too heated, tea will cool you. If you are depressed, tea will cheer you. If you are excited, tea will calm you.",
+    "id": "tealady",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_tealady.png",
+    "name": "Tea Lady",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Cannot Die",
+      "Cannot Die"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "thief": {
+    "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
+    "edition": "tb",
+    "firstNight": 7,
+    "firstNightReminder": "The Thief chooses a player. :reminder:",
+    "flavor": "I ain't done nuffink. I weren't even in dat alley last night! It weren't me what stole Mayor Bruno's briefcase wiv all dem fancy dockoments innit. Besides, it was too 'eavy to carry far.",
+    "id": "thief",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_thief.png",
+    "name": "Thief",
+    "otherNight": 4,
+    "otherNightReminder": "The Thief chooses a player. :reminder:",
+    "reminders": [
+      "Negative Vote"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "multiplier",
+        "type": "vote",
+        "value": -1
+      }
+    ],
+    "team": "traveler"
+  },
+  "tinker": {
+    "ability": "You might die at any time.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I think I see the problem. Luckily, I have an idea! This catapult will shoot twice as far with just a minor adjustment...",
+    "id": "tinker",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_tinker.png",
+    "name": "Tinker",
+    "otherNight": 63,
+    "otherNightReminder": "The Tinker might die. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "outsider"
+  },
+  "towncrier": {
+    "ability": "Each night*, you learn if a Minion nominated today.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
+    "id": "towncrier",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_towncrier.png",
+    "name": "Town Crier",
+    "otherNight": 72,
+    "otherNightReminder": "Either nod or shake your head.",
+    "reminders": [
+      "Minions Not Nominated",
+      "Minion Nominated"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "toymaker": {
+    "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.",
+    "edition": "fabled",
+    "firstNight": 1,
+    "firstNightReminder": "Resolve the Minion Info and Demon Info steps even though there are fewer than 7 players.",
+    "flavor": "It buzzes! It walks down stairs! It keeps you warm at night! It tastes like sugar! The kiddies love it! Introducing... the brand new... Warm'o-buzzy-wuzzy-walk'a'bot-thingy-contraption! Fun for all ages!",
+    "id": "toymaker",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_toymaker.png",
+    "name": "Toymaker",
+    "otherNight": 1,
+    "otherNightReminder": "If it is a night when a Demon attack could end the game, and the Demon is marked \u201cFinal night: No Attack,\u201d then the Demon does not act tonight. (Do not wake them.)",
+    "reminders": [
+      "Final Night: No Attack"
+    ],
+    "setup": false,
+    "team": "fabled"
+  },
+  "undertaker": {
+    "ability": "Each night*, you learn which character died by execution today.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",
+    "id": "undertaker",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_undertaker.png",
+    "name": "Undertaker",
+    "otherNight": 69,
+    "otherNightReminder": "If a player was executed today, show their character token.",
+    "reminders": [
+      "Died Today"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "vigormortis": {
+    "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbor. [-1 Outsider]",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "All doors are one door. All keys are one key. All cups are one cup, but whosoever drinketh of the water that I give shall never thirst, but the water shall be in him a well springing up into everlasting life.",
+    "id": "vigormortis",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_vigormortis.png",
+    "name": "Vigormortis",
+    "otherNight": 42,
+    "otherNightReminder": "The Vigormortis chooses a player. :reminder: If that player is a Minion, poison a neighboring Townsfolk. :reminder: :reminder:",
+    "reminders": [
+      "Dead",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Poisoned",
+      "Poisoned",
+      "Poisoned"
+    ],
+    "setup": true,
+    "team": "demon"
+  },
+  "villageidiot": {
+    "ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",
+    "edition": "",
+    "firstNight": 60,
+    "firstNightReminder": "Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "flavor": "Roses are blue, and violets are red, Please reverse what I just said.",
+    "id": "villageidiot",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_villageidiot.png",
+    "name": "Village Idiot",
+    "otherNight": 77,
+    "otherNightReminder": "Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "reminders": [
+      "Drunk"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "name": "bag-duplicate",
+        "type": "selection"
+      }
+    ],
+    "team": "townsfolk"
+  },
+  "virgin": {
+    "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
+    "edition": "tb",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
+    "id": "virgin",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_virgin.png",
+    "name": "Virgin",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "No Ability"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "vizier": {
+    "ability": "All players know you are the Vizier. You can not die during the day. If good voted, you may choose to execute immediately.",
+    "edition": "",
+    "firstNight": 72,
+    "firstNightReminder": "Announce the Vizier player to the group.",
+    "flavor": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your \u2018justice\u2019 and \u2018mercy\u2019. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything\u2026 to me.",
+    "id": "vizier",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_vizier.png",
+    "jinxes": [
+      {
+        "id": "investigator",
+        "reason": "If the Investigator learns that the Vizier is in play, the existence of the Vizier is not announced by the Storyteller."
+      },
+      {
+        "id": "preacher",
+        "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+      },
+      {
+        "id": "courtier",
+        "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+      },
+      {
+        "id": "alchemist",
+        "reason": "If the Alchemist has the Vizier ability, they may only choose to execute immediately if three or more players voted, regardless of those players' alignment."
+      },
+      {
+        "id": "magician",
+        "reason": "If the Vizier and Magician are both in play, the Demon does not learn the Minions."
+      },
+      {
+        "id": "fearmonger",
+        "reason": "The Vizier wakes with the Fearmonger, learns who they choose and cannot choose to immediately execute that player."
+      },
+      {
+        "id": "politician",
+        "reason": "The Politician might register as evil to the Vizier."
+      },
+      {
+        "id": "alsaahir",
+        "reason": "If the Vizier is in play, the Alsaahir must also guess which Demon(s) are in play."
+      },
+      {
+        "id": "zealot",
+        "reason": "The Zealot might register as evil to the Vizier."
+      }
+    ],
+    "name": "Vizier",
+    "otherNight": 0,
+    "reminders": [],
+    "setup": false,
+    "team": "minion"
+  },
+  "vortox": {
+    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
+    "edition": "snv",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
+    "id": "vortox",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_vortox.png",
+    "jinxes": [
+      {
+        "id": "banshee",
+        "reason": "If the Vortox is in play and the Demon kills the Banshee, the players still learn that the Banshee has died."
+      }
+    ],
+    "name": "Vortox",
+    "otherNight": 40,
+    "otherNightReminder": "The Vortox chooses a player. :reminder:",
+    "reminders": [
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "voudon": {
+    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "Bien venu. Sit down. Breathe deep. Enter the land of the dead. See with their eyes. Speak with their voice. Yon sel lang se janm ase.",
+    "id": "voudon",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_voudon.png",
+    "name": "Voudon",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "team": "traveler"
+  },
+  "washerwoman": {
+    "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+    "edition": "tb",
+    "firstNight": 44,
+    "firstNightReminder": "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
+    "flavor": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
+    "id": "washerwoman",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_washerwoman.png",
+    "name": "Washerwoman",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Townsfolk",
+      "Wrong"
+    ],
+    "setup": false,
+    "team": "townsfolk"
+  },
+  "widow": {
+    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+    "edition": "",
+    "firstNight": 27,
+    "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. :reminder:",
+    "flavor": "More wine? Ch\u00e2teau d\u2019Ergot \u201907 is a very special vintage. My yes, very special indeed.",
+    "id": "widow",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_widow.png",
+    "jinxes": [
+      {
+        "id": "alchemist",
+        "reason": "The Alchemist can not have the Widow ability."
+      },
+      {
+        "id": "magician",
+        "reason": "When the Widow sees the Grimoire, the Demon and Magician's character tokens are removed."
+      },
+      {
+        "id": "poppygrower",
+        "reason": "If the Poppy Grower is in play, the Widow does not see the Grimoire until the Poppy Grower dies."
+      },
+      {
+        "id": "damsel",
+        "reason": "If the Widow is (or has been) in play, the Damsel is poisoned."
+      },
+      {
+        "id": "heretic",
+        "reason": "Only 1 jinxed character can be in play."
+      }
+    ],
+    "name": "Widow",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Poisoned"
+    ],
+    "remindersGlobal": [
+      "Knows"
+    ],
+    "setup": false,
+    "special": [
+      {
+        "name": "grimoire",
+        "time": "night",
+        "type": "signal"
+      }
+    ],
+    "team": "minion"
+  },
+  "witch": {
+    "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
+    "edition": "snv",
+    "firstNight": 34,
+    "firstNightReminder": "The Witch chooses a player. :reminder:",
+    "flavor": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that brambled path, and don't look back.",
+    "id": "witch",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_witch.png",
+    "name": "Witch",
+    "otherNight": 21,
+    "otherNightReminder": "The Witch chooses a player. :reminder:",
+    "reminders": [
+      "Cursed"
+    ],
+    "setup": false,
+    "team": "minion"
+  },
+  "yaggababble": {
+    "ability": "You start knowing a secret phrase. For each time you said it publicly today, a player might die.",
+    "edition": "",
+    "firstNight": 12,
+    "firstNightReminder": "Choose a secret phrase. Wake the Yaggababble and let them know their secret phrase.",
+    "flavor": "Murders inside the Rue Morgue? \u0424\u0430\u043b\u044c\u0448\u0438\u0432\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438! Hounds on the Baskerville moor? \u0424\u0430\u043b\u044c\u0448\u0438\u0432\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438! Death while sailing the Nile? \u0424\u0430\u043b\u044c\u0448\u0438\u0432\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438!",
+    "id": "yaggababble",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_yaggababble.png",
+    "jinxes": [
+      {
+        "id": "exorcist",
+        "reason": "If the Exorcist chooses the Yaggababble, the Yaggababble ability does not kill tonight."
+      }
+    ],
+    "name": "Yaggababble",
+    "otherNight": 47,
+    "otherNightReminder": "For each time the Yaggababble said the phrase today, you may choose a player. They die. :reminder:",
+    "reminders": [
+      "Dead",
+      "Dead",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  },
+  "zealot": {
+    "ability": "If there are 5 or more players alive, you must vote for every nomination.",
+    "edition": "",
+    "firstNight": 0,
+    "flavor": "I enjoy talking to you. Your mind appeals to me. It resembles my own mind except that you happen to be insane.",
+    "id": "zealot",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_zealot.png",
+    "name": "Zealot",
+    "otherNight": 0,
+    "reminders": [],
+    "setup": false,
+    "team": "outsider"
+  },
+  "zombuul": {
+    "ability": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
+    "edition": "bmr",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",
+    "id": "zombuul",
+    "image": "https://raw.githubusercontent.com/rsarvar1a/scriptmaker/refs/heads/main/scriptmaker/data/icons/Icon_zombuul.png",
+    "name": "Zombuul",
+    "otherNight": 34,
+    "otherNightReminder": "If no one died today, the Zombuul chooses a player. :reminder:",
+    "reminders": [
+      "Died Today",
+      "Dead"
+    ],
+    "setup": false,
+    "team": "demon"
+  }
+}
