@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: certbot-beget-plugin
+Version: 1.0.0.dev8
+Summary: Beget DNS plugin for Certbot
+Home-page: https://github.com/Medan-rfz/certbot-beget-plugin
+Author: Medan-rfz
+License: MIT License
+License-File: LICENSE
+Requires-Dist: certbot
