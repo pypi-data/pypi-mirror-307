@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gmaillite/__init__.py
+src/gmaillite/gmail_auto.py
+src/gmaillite.egg-info/PKG-INFO
+src/gmaillite.egg-info/SOURCES.txt
+src/gmaillite.egg-info/dependency_links.txt
+src/gmaillite.egg-info/requires.txt
+src/gmaillite.egg-info/top_level.txt
