@@ -1,0 +1,8 @@
+{% load design_system_tags %}
+<ul class="design-system-badge-group">
+  {% for item in self.items %}
+    <li>
+      {% design_system_badge item %}
+    </li>
+  {% endfor %}
+</ul>
