@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mle-toolkit
+Version: 0.3
+Summary: Machine Learning Experiment Toolkit.
+Home-page: https://github.com/darkhan-ai/mle-toolkit
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: optuna
+Requires-Dist: pandas
+
+# Machine Learning Experiment Toolkit
