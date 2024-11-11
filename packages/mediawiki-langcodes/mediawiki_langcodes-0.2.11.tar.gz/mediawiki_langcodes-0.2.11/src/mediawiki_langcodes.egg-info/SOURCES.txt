@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/mediawiki_langcodes/__init__.py
+src/mediawiki_langcodes/convert.py
+src/mediawiki_langcodes/langcodes.db
+src/mediawiki_langcodes/py.typed
+src/mediawiki_langcodes.egg-info/PKG-INFO
+src/mediawiki_langcodes.egg-info/SOURCES.txt
+src/mediawiki_langcodes.egg-info/dependency_links.txt
+src/mediawiki_langcodes.egg-info/requires.txt
+src/mediawiki_langcodes.egg-info/top_level.txt
+tests/test_code_to_name.py
+tests/test_get_all_names.py
+tests/test_name_to_code.py

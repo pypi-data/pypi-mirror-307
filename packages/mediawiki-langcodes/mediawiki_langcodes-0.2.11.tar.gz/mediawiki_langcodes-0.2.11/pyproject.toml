@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediawiki_langcodes"
+version = "0.2.11"
+authors = [
+    {name = "xxyzz"}
+]
+description = "Convert MediaWiki language names and codes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GNU General Public License v3 or later (GPLv3+)"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/xxyzz/mediawiki_langcodes"
+Repository = "https://github.com/xxyzz/mediawiki_langcodes.git"
+Issues = "https://github.com/xxyzz/mediawiki_langcodes/issues"
+
+[project.optional-dependencies]
+dev = [
+    "lxml",
+    "mypy",
+    "requests",
+    "ruff",
+    "types-requests",
+]
+
+[tool.setuptools.package-data]
+mediawiki_langcodes = [
+    "*.db",
+    "py.typed",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+strict = true
+exclude = ["build"]
+
+[[tool.mypy.overrides]]
+module = "lxml.*"
+ignore_missing_imports = true
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle error
+    "F",  # Pyflakes
+    "I",  # isort
+    "W",  # pycodestyle warning
+]
