@@ -1,0 +1,100 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <option name="scopesOrder">
+      <list>
+        <option value="All Changed Files" />
+        <option value="Open Files" />
+        <option value="Project Files" />
+        <option value="Scratches and Consoles" />
+      </list>
+    </option>
+    <inspection_tool class="ClangTidy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ConstevalIfIsAlwaysConstant" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppCStyleCast" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppClassCanBeFinal" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppCompileTimeConstantCanBeReplacedWithBooleanConstant" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppConstValueFunctionReturnType" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppDiscardedPostfixOperatorResult" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppForLoopCanBeReplacedWithWhile" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppFunctionalStyleCast" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppIfCanBeReplacedByConstexprIf" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppJoinDeclarationAndAssignment" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppLocalVariableMayBeConst" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppLocalVariableMightNotBeInitialized" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppMemberFunctionMayBeConst" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppMemberFunctionMayBeStatic" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppNonExplicitConversionOperator" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppNonExplicitConvertingConstructor" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppParameterMayBeConst" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppParameterMayBeConstPtrOrRef" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppPassValueParameterByConstReference" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppRedundantNamespaceDefinition" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppReinterpretCastFromVoidPtr" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppReplaceMemsetWithZeroInitialization" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppReplaceTieWithStructuredBinding" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppSmartPointerVsMakeFunction" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppStringLiteralToCharPointerConversion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppThrowExpressionCanBeReplacedWithRethrow" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppTooWideScope" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppTooWideScopeInitStatement" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppUseAlgorithmWithCount" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseAssociativeContains" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseAuto" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppUseElementsView" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseEraseAlgorithm" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseFamiliarTemplateSyntaxForGenericLambdas" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseRangeAlgorithm" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseStdSize" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppUseStructuredBinding" enabled="false" level="HINT" enabled_by_default="false" />
+    <inspection_tool class="CppUseTypeTraitAlias" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppVariableCanBeMadeConstexpr" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CppZeroConstantCanBeReplacedWithNullptr" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GrazieInspection" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="HttpUrlsUsage" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="IfStdIsConstantEvaluatedCanBeReplaced" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyDefaultArgumentInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyDictCreationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyListCreationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMethodMayBeStaticInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMethodOverridingInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="1" class="java.lang.String" itemvalue="scikit-image" />
+            <item index="2" class="java.lang.String" itemvalue="shapely" />
+            <item index="3" class="java.lang.String" itemvalue="timm" />
+            <item index="4" class="java.lang.String" itemvalue="cython" />
+            <item index="5" class="java.lang.String" itemvalue="h5py" />
+            <item index="6" class="java.lang.String" itemvalue="submitit" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyRedeclarationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyRelativeImportInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="ShellCheck" enabled="true" level="ERROR" enabled_by_default="true">
+      <shellcheck_settings value="SC2086,SC2153" />
+    </inspection_tool>
+    <inspection_tool class="Simplify" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="false" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="StdIsConstantEvaluatedWillAlwaysEvaluateToConstant" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="requirements.InstalledPackageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
