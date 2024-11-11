@@ -1,0 +1,11 @@
+stablehlo_coreml/__init__.py,sha256=itV8Gnrdv2vGIVoD7kZzjgluRZftdtW5QPbGyHHEWi8,198
+stablehlo_coreml/converter.py,sha256=ylYWmlkgK3VxOKLpy52hUK_b8QVNdjWGQ-tLFQSihcw,48921
+stablehlo_coreml/ops_register.py,sha256=NZzDGkCyeXzdUUAiN3BxkNs_qplfoFRrNJfWauCLDkg,1799
+stablehlo_coreml/translation_context.py,sha256=x6co6ndvSsMQDmVYy6kdJQZC7prRTrGxscHnlgE-5Kk,2402
+stablehlo_coreml/utils.py,sha256=z5hPwJ9RwtK3N1JRUt9Onp5_XkTu9QDW3XMXPNzXu9I,9156
+stablehlo_coreml/passes/remove_noop_slice_update.py,sha256=Y5GV-jA9gjFtvx0Fy9jKgZdyVNSgmq5fZSfzG_ACOGk,2849
+stablehlo_coreml/passes/utils.py,sha256=2aU0vtaDJLqXS8zpQytpR3OtriTO8grgyT05aJFyd_I,351
+stablehlo_coreml_experimental-0.0.10.dist-info/METADATA,sha256=JIQvQlu9MjD2uyu-LG2saZJaXkbjAxE5wQBnuGAmnu0,2764
+stablehlo_coreml_experimental-0.0.10.dist-info/WHEEL,sha256=wukiCwsxxsuzcQTdnC_ZWHZECE4wwOh3xCCrap6i6Ts,87
+stablehlo_coreml_experimental-0.0.10.dist-info/licenses/LICENSE,sha256=5LylfyAuEzvNYdLo5kybGO0Cb_s7epNLeIsRoog72jY,1071
+stablehlo_coreml_experimental-0.0.10.dist-info/RECORD,,
