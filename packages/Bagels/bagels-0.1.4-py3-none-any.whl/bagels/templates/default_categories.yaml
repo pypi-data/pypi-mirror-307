@@ -1,0 +1,136 @@
+- name: Food
+  color: orange_red1
+  nature: NEED
+  subcategories:
+    - name: Groceries
+      nature: NEED
+    - name: Restaurants
+      nature: WANT
+    - name: Takeout
+      nature: WANT
+    - name: Coffee
+      nature: WANT
+
+- name: Transport
+  color: grey63
+  nature: NEED
+  subcategories:
+    - name: Public Transport
+      nature: NEED
+    - name: Taxi
+      nature: WANT
+    - name: Ride Share
+      nature: WANT
+
+- name: Shopping
+  color: cyan
+  nature: WANT
+  subcategories:
+    - name: Clothing
+      nature: NEED
+    - name: Electronics
+      nature: WANT
+    - name: Home & Garden
+      nature: WANT
+    - name: Gifts
+      nature: WANT
+
+- name: Electronic & Communication
+  color: dodger_blue3
+  nature: NEED
+  subcategories:
+    - name: Phone Bill
+      nature: NEED
+    - name: Internet
+      nature: NEED
+    - name: Streaming Services
+      nature: WANT
+    - name: Software Subscriptions
+      nature: WANT
+
+- name: Vehicle
+  color: hot_pink
+  nature: WANT
+  subcategories:
+    - name: Fuel
+      nature: NEED
+    - name: Maintenance
+      nature: NEED
+    - name: Insurance
+      nature: NEED
+    - name: Parking
+      nature: NEED
+
+- name: Life & Entertainment
+  color: green3
+  nature: WANT
+  subcategories:
+    - name: Movies
+      nature: WANT
+    - name: Sports
+      nature: WANT
+    - name: Hobbies
+      nature: WANT
+    - name: Travel
+      nature: WANT
+
+- name: Financial Expenses
+  color: red3
+  nature: NEED
+  subcategories:
+    - name: Bank Fees
+      nature: NEED
+    - name: Interest
+      nature: NEED
+    - name: Investment Fees
+      nature: WANT
+    - name: Taxes
+      nature: NEED
+
+- name: Income
+  color: yellow
+  nature: NEED
+  subcategories:
+    - name: Salary
+      nature: NEED
+    - name: Bonus
+      nature: WANT
+    - name: Investment Returns
+      nature: WANT
+    - name: Side Income
+      nature: WANT
+
+- name: Medical & Healthcare
+  color: indian_red
+  nature: NEED
+  subcategories:
+    - name: Doctor
+      nature: NEED
+    - name: Medication
+      nature: NEED
+    - name: Insurance
+      nature: NEED
+    - name: Dental
+      nature: NEED
+
+- name: Education
+  color: royal_blue1
+  nature: NEED
+  subcategories:
+    - name: Tuition
+      nature: NEED
+    - name: Books
+      nature: NEED
+    - name: Courses
+      nature: WANT
+    - name: Training
+      nature: WANT
+
+- name: Others
+  color: grey69
+  nature: WANT
+  subcategories:
+    - name: Miscellaneous
+      nature: WANT
+    - name: Unknown
+      nature: WANT
