@@ -1,0 +1,32 @@
+[project]
+name = "django-cf"
+version = "0.0.17"
+authors = [
+  { name="Gabriel Massadas" },
+]
+dependencies = [
+  'websocket-client',
+  'sqlparse',
+]
+description = "Django backend for Cloudflare D1 and Durable Objects"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Django :: 5.0",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+"Bug Reports" = "https://github.com/G4brym/django-cf/issues"
+"Source" = "https://github.com/G4brym/django-cf"
+
+[tool.setuptools]
+packages = ["django_d1", "django_dbms"]
