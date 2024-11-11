@@ -1,0 +1,5 @@
+pg-ormapping
+pg-resourceloader
+aiofiles==24.1.0
+fastapi==0.115.2
+uvicorn==0.31.1
