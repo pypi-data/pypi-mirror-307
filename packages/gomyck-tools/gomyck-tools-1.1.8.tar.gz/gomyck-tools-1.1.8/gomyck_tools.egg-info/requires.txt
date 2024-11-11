@@ -1,0 +1,15 @@
+jsonpickle==3.3.0
+SQLAlchemy>=2.0.32
+chardet>=5.2.0
+psycopg2-binary>=2.9.9
+croniter>=3.0.3
+gmssl>=3.2.2
+jsonpath_ng>=1.6.1
+bottle==0.13.1
+requests==2.32.3
+urllib3==1.26.18
+kafka-python==2.0.2
+bs4==0.0.2
+paho-mqtt==2.1.0
+fuzzywuzzy==0.18.0
+pymysql==1.1.1
