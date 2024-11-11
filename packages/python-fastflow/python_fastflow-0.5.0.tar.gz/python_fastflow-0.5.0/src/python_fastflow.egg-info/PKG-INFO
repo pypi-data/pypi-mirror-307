@@ -1,0 +1,213 @@
+Metadata-Version: 2.1
+Name: python-fastflow
+Version: 0.5.0
+Summary: A workflow engine based on Kopf
+Author-email: Steffen Vinther Sørensen <svinther@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Steffen Vinther Sørensen <svinther@gmail.com>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/svinther/fastflow
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kopf==1.37.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: kubernetes_asyncio==30.3.1
+Requires-Dist: kubernetes==30.1.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: networkx==3.4.2
+Requires-Dist: pydantic[email]==2.9.1
+Requires-Dist: pydantic-settings==2.6.0
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: click==8.1.7
+
+# Fastflow
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+## Deploy to Kubernetes with helm chart
+
+```shell
+kubectl create ns fastflow
+helm -n fastflow upgrade --install fastflow chart
+```
+
+To install in more namespasces, create the namespace and run the helm command again, this time with the
+`--skip-crds` flag.
+
+```shell
+kubectl create ns fastflow-dev
+helm -n fastflow-dev upgrade --install fastflow chart --skip-crds
+```
+
+## Run examples
+
+Apply examples
+
+```shell
+kubectl -n fastflow create -f examples/01-helloworld/workflow.yaml
+kubectl -n fastflow create -f examples/02-digraph/workflow.yaml
+```
+
+Inspect results
+
+```shell
+kubectl -n fastflow get workflows
+kubectl -n fastflow get tasks -l workflow=helloworld
+```
+
+## Developer setup
+
+For developing the fastflow project
+
+### Generate CRDS
+
+    python3 generate_crds.py
+
+### Create CRDS
+
+Can also be installed by applying the helm chart
+
+    kubectl create -f chart/crds/kopfpeering-crd.yaml
+    find chart/crds/generated -name *.yaml -exec kubectl create -f '{}' \;
+
+### Delete CRDS
+
+    find chart/crds/generated -name *.yaml -exec kubectl delete -f '{}' \;
+
+### Virtual environment
+
+```shell
+python3 -m venv ~/venvs/fastflow
+. ~/venvs/fastflow/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install -e .
+```
+
+### Run from outside cluster
+
+Will use kubectl config for cluster access.
+Greate for development, and can run with debugger attached.
+
+Prepare namespace
+
+```shell
+kubectl create ns fastflow-dev
+kubectl -n fastflow-dev apply -f - << EOYML
+apiVersion: kopf.dev/v1
+kind: KopfPeering
+metadata:
+  name: default
+EOYML
+```
+
+Run as module (useful for debugger)
+
+```shell
+python3 -m fastflow \
+--namespace fastflow-dev \
+--dev
+```
+
+Run from cli
+
+```shell
+fastflow --namespace fastflow-dev --dev
+```
+
+## Run Tests
+
+Install test-requirements
+
+```shell
+python3 -m pip install -e . -r test-requirements.txt
+```
+
+Prepare namespace
+
+```shell
+kubectl create ns fastflow-test
+kubectl -n fastflow-test apply -f test/kopf-test-peering.yaml
+```
+
+Run the tests as module
+
+```shell
+python3 -m pytest --color=yes
+```
+
+Run the tests from cli
+
+```shell
+pytest --color=yes
+```
+
+### Building whl package and Docker image
+
+Cleanup old packages
+
+```shell
+rm -Rf dist
+```
+
+Build package
+
+```shell
+python3 -m pip install build
+python3 -m build
+```
+
+Build Docker image using minikube
+
+```shell
+eval $(minikube -p minikube docker-env)
+DOCKER_BUILDKIT=1 docker build -t fastflow .
+```
+
+Use helm to run the image in Kubernetes, by specifying the image tag we just created
+
+```shell
+helm -n fastflow-dev upgrade --install --set imageOverride=fastflow fastflow chart
+```
+
+### Examples using custom Task implementations
+
+The Operator needs to be able to load the custom code. Here is an example using the `examples/03-farmlife` example
+workflow. This workflow uses custom tasks implemented in `examples/03-farmlife/tasks-impl/farmlife.py`.
+
+#### Run the operator locally
+
+Run the operator so it can load the custom code
+
+```shell
+fastflow --dev --namespace fastflow-dev examples/03-farmlife/tasks-impl/farmlife.py
+```
