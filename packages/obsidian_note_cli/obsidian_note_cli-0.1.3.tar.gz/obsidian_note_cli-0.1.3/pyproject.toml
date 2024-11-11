@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "obsidian_note_cli"
+version = "0.1.3"
+description = "CLI tool to save well-structured notes in Obsidian format"
+authors = ["Guglielmo Celata <guglielmo.celata@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+obsidian-note = "obsidian_note_cli.obsidian_note_cli:save_note"
