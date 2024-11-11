@@ -1,0 +1,160 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Classic Egg Creams Recipe",
+    "datePublished": "2014-02-21T02:45:00.000-05:00",
+    "dateModified": "2022-09-20T12:16:10.147-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alexandra Penfold",
+            "url": "https://www.seriouseats.com/alexandra-penfold-5118530"
+        }
+    ],
+    "description": "Egg creams have been a popular beverage at soda fountains and delis in NYC for well over a century. Here&#39;s how to make the classic concoction at home.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.seriouseats.com/thmb/lYvjYAWAPpKY8fRydNijXtBljiE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__02__20140220-284119-Egg-Cream-f7f0873124aa4434901ee77baf517f3d.jpg",
+        "height": 458,
+        "width": 610
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Serious Eats",
+        "url": "https://www.seriouseats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.seriouseats.com/thmb/YfQU2tc6Ask4mMy6oMJDaulMqqE=/320x320/filters:no_upscale():max_bytes(150000):strip_icc()/Serious_Eats_Schema_Logo-30a63d9c07734d35836c8ff2d368419c.png",
+            "width": 320,
+            "height": 320
+        },
+        "brand": "Serious Eats",
+        "publishingPrinciples": "https://www.seriouseats.com/about-us-5120006#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/seriouseats",
+            "https://www.instagram.com/seriouseats",
+            "https://www.pinterest.com/seriouseats"
+        ]
+    },
+    "name": "Classic Egg Creams Recipe",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "keywords": "chocolate, egg cream, non-alcoholic",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "286 kcal",
+        "carbohydrateContent": "47 g",
+        "cholesterolContent": "7 mg",
+        "fiberContent": "2 g",
+        "proteinContent": "3 g",
+        "saturatedFatContent": "6 g",
+        "sodiumContent": "52 mg",
+        "sugarContent": "32 g",
+        "fatContent": "10 g",
+        "servingSize": "Serves 1",
+        "unsaturatedFatContent": "0 g"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "2 tablespoons Fox&#39;s U-Bet chocolate syrup",
+        "1 1/2 ounces whole milk",
+        "3/4 cup seltzer"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a tall glass, add chocolate syrup and milk. Tilt the glass slightly and pour (or spritz) the seltzer off your stirring spoon until you have a nice foamy head that&#39;s nearing the top of the glass. Stir vigorously to mix the chocolate in and serve immediately."
+        }
+    ],
+    "recipeYield": "1",
+    "totalTime": "PT5M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lotus954"
+            },
+            "reviewBody": "I was born and raised in NY, so I totally love egg creams and order Fox's from Amazon. However, I now live in Utah, so for those of us living in a part of the country where if you ask for seltzer, you get a total blank stare, I found that Perrier, believe it or not, works as well as syphon seltzer."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "3"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jay"
+            },
+            "reviewBody": "This is WRONG! I grew up in Brooklyn (I’m 67) and worked at the counter of a popular restaurant as a teen. I was taught how to make an egg cream by someone who’d been making them his whole long life, and I subsequently made thousands of egg creams, and once you’ve made it this way you’ll realize how wrong these alternative approaches are. \n\nYou DON’T mix the syrup in right off the bat. You add the WHOLE MILK first, THEN the seltzer, which creates a beautiful white head of foam. THEN you squirt the syrup THROUGH THE WHITE FOAM and then stir with a long fountain (or bar) spoon (which has a very thin handle) taking great care to mix the seltzer/milk/syrup without disturbing the white foam. THAT’S how you get that beautiful white head atop the chocolate."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mamadar"
+            },
+            "reviewBody": "why is it called Egg Cream?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Josh Mandel"
+            },
+            "reviewBody": "After decades of hearing about the Fox's U-Bet, I finally tried some. The flavor is about as far removed from chocolate as I think a product can get before simply being called \"chocolate-colored sugar syrup.\" Despite being untraditional, I think even Hershey's syrup (or, better yet, Hershey's Special Dark syrup) would bring an egg cream a lot closer to being identifiable as chocolate."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Richard L Schwartz"
+            },
+            "reviewBody": "Agree on this recipe 100% I grew up on this recipe in Manhattan Beach, Brooklyn New York late 60's to present day, but having grown with Seltzer water being delivered to your front porch in a heavy duty wooden crate the kind the 3 stooges squirted each other with, and Foxes U Bet Chocolat syrup it was easy to make the Egg Creme Soda drink. For present day this is 99% going to be closest to what was or at least what is outside of New York, they still have those old school seltzer that dispensers. Follow this true recipe and your heart will be singing for more."
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.seriouseats.com/how-to-make-classic-egg-creams",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/drink-recipes-5117861",
+                        "name": "Drinks"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/non-alcoholic-recipes-5117842",
+                        "name": "Non-Alcoholic Drinks"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/how-to-make-classic-egg-creams",
+                        "name": "Classic Egg Creams Recipe"
+                    }
+                }
+            ]
+        }
+    }
+}

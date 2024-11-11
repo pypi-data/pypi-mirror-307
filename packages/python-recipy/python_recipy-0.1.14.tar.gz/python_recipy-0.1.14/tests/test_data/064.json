@@ -1,0 +1,301 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Roasted Cauliflower Hummus Bowls",
+    "description": "These Roasted Cauliflower Hummus Bowls are LIFE-CHANGING. A bed of garlicky creamy hummus, piled high with spiced roasted cauliflower, and a speckling of fresh lemony tomatoes and herbs.",
+    "author": {
+        "@type": "Person",
+        "name": "Lindsay Ostrom",
+        "url": "https://pinchofyum.com/about"
+    },
+    "keywords": "hummus bowls, homemade hummus, vegetarian lunch, vegan lunch",
+    "image": [
+        "https://pinchofyum.com/wp-content/uploads/Roasted-Cauliflower-Hummus-Bowls-Square-225x225.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Roasted-Cauliflower-Hummus-Bowls-Square-260x195.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Roasted-Cauliflower-Hummus-Bowls-Square-320x180.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Roasted-Cauliflower-Hummus-Bowls-Square.jpg"
+    ],
+    "url": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls",
+    "recipeIngredient": [
+        "1 head cauliflower, cut into florets",
+        "1 tablespoon olive oil",
+        "1/2 teaspoon kosher salt",
+        "1 teaspoon each paprika, cumin, and oregano",
+        "a pinch of black pepper",
+        "2 14-ounce cans chickpeas, rinsed and drained",
+        "1/4 cup olive oil",
+        "1/4 cup water",
+        "2 cloves garlic",
+        "1 1/2 teaspoons kosher salt",
+        "juice of two lemons (more or less to taste)",
+        "chopped fresh tomato",
+        "minced fresh parsley",
+        "soft boiled egg or pulled rotisserie chicken",
+        "warm pita (😍)",
+        "harissa",
+        "olive oil, kosher salt, black pepper"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat the oven to 425 degrees. Place the cauliflower on a baking sheet with parchment paper. Drizzle with oil, and toss with the spices. Roast for 25-30 minutes.",
+            "name": "Cauliflower",
+            "url": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls#instruction-step-1",
+            "video": {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Roasted Cauli Hummus Bowls Step 1",
+                "description": "Preheat the oven to 425 degrees. Place the cauliflower on a baking sheet with parchment paper. Drizzle with oil, and toss with the spices. Roast for 25-30 minutes.",
+                "duration": "PT21S",
+                "embedUrl": "https://player.vimeo.com/video/383319759?dnt=1&amp;app_id=122963",
+                "contentUrl": "https://vimeo.com/383319759",
+                "thumbnailUrl": [
+                    "https://i.vimeocdn.com/video/844718831-dbfe46b0da85703d0b3be0928349171adc4be5446fd9d9f35929916442839764-d_295x166"
+                ],
+                "uploadDate": "2020-01-07T11:36:54+00:00"
+            }
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Optional: Peel the skin off all your chickpeas. This takes a while (about 20 minutes) but results in THE SMOOTHEST HUMMUS of your life. After the optional peeling, place chickpeas in blender or food processor with the olive oil, garlic, salt, and lemon juice. Blend until very, very smooth.",
+            "name": "Hummus",
+            "url": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls#instruction-step-2",
+            "video": {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Roasted Cauli Hummus Bowls Step 2",
+                "description": "Peel the skin off all your chickpeas. This takes a while (about 20 minutes) but results in THE SMOOTHEST HUMMUS of your life. After the optional peeling, place chickpeas in blender or food processor with the olive oil, garlic, salt, and lemon juice. Blend until very, very smooth.",
+                "duration": "PT39S",
+                "embedUrl": "https://player.vimeo.com/video/383319941?dnt=1&amp;app_id=122963",
+                "contentUrl": "https://vimeo.com/383319941",
+                "thumbnailUrl": [
+                    "https://i.vimeocdn.com/video/844719161-c1c85e99c667c7042bddc1109f137bf6711cfa61bfa2b351923cb6896975ac47-d_295x166"
+                ],
+                "uploadDate": "2020-01-07T11:37:43+00:00"
+            }
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Arrange a thick swoop of hummus on a plate. Top with cauliflower. Add chopped tomatoes, fresh parsley, harissa, a soft boiled egg, whatever suits your fancy. Finish with olive oil, salt, and pepper. YUM. Happy day.",
+            "name": "Plate it up",
+            "url": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls#instruction-step-3",
+            "video": {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Roasted Cauli Hummus Bowls Step 3",
+                "description": "Arrange a thick swoop of hummus on a plate. Top with cauliflower. Add chopped tomatoes, fresh parsley, harissa, a soft boiled egg, whatever suits your fancy. Finish with olive oil, salt, and pepper. YUM. Happy day.",
+                "duration": "PT31S",
+                "embedUrl": "https://player.vimeo.com/video/383320265?dnt=1&amp;app_id=122963",
+                "contentUrl": "https://vimeo.com/383320265",
+                "thumbnailUrl": [
+                    "https://i.vimeocdn.com/video/844719609-192d8bfc3bfc21a555c977b6a32f770ae39bec04c0ac72902b65da22f2f14d98-d_295x166"
+                ],
+                "uploadDate": "2020-01-07T11:39:09+00:00"
+            }
+        }
+    ],
+    "prepTime": "PT30M",
+    "cookTime": "PT30M",
+    "totalTime": "PT1H",
+    "recipeYield": [
+        "4",
+        "4-5 servings"
+    ],
+    "recipeCategory": [],
+    "cookingMethod": "Mix",
+    "recipeCuisine": "Mediterranean-Inspired",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "24",
+        "ratingValue": "5"
+    },
+    "nutrition": {
+        "servingSize": null,
+        "calories": "319 calories",
+        "sugarContent": "8 g",
+        "sodiumContent": "1014.2 mg",
+        "fatContent": "17.3 g",
+        "saturatedFatContent": "2.5 g",
+        "transFatContent": "0 g",
+        "carbohydrateContent": "35.1 g",
+        "fiberContent": "10.5 g",
+        "proteinContent": "11 g",
+        "cholesterolContent": "0 mg",
+        "@type": "nutritionInformation"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Roasted Cauliflower Hummus Bowls",
+        "description": "These Roasted Cauliflower Hummus Bowls are LIFE-CHANGING. A bed of garlicky creamy hummus, piled high with spiced roasted cauliflower, and a speckling of fresh lemony tomatoes and herbs.",
+        "contentUrl": "https://content.jwplatform.com/videos/C7yvBnEq.mp4",
+        "thumbnailUrl": [
+            "https://content.jwplatform.com/thumbs/C7yvBnEq-720.jpg"
+        ],
+        "uploadDate": "2023-02-08T02:37:52+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Kristin"
+            },
+            "datePublished": "2020-01-08",
+            "reviewBody": "What a brillant idea! This is a great option for some vegan company I'm having this weekend. I'll swap out tomatoes for red peppers (due to intolerance) and add roasted zucchini along with the cauliflower for extra colour."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Adam"
+            },
+            "datePublished": "2021-02-22",
+            "reviewBody": "Live this recipe! We have hummus bowls on the reg and most of the time add zhug and/or sambal oklek to them. They're amazing and so satisfying!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "jennifer"
+            },
+            "datePublished": "2020-01-10",
+            "reviewBody": "thank you for this recipe!  this is day two of me having this meal for lunch.  the flavors of the roasted cauliflower were so so good - love this combination. I ended up stuffing the entire \"bowl\" mixture into a pita and eating it that way, as it was easier for me to keep all the toppings contained.  I added feta and green olives as well."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Fanny"
+            },
+            "datePublished": "2020-01-10",
+            "reviewBody": "Looks like a good dish to make for my husband. Nice and healthy!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Connie"
+            },
+            "datePublished": "2020-01-14",
+            "reviewBody": "This was delicious for lunch today!  I took a shortcut and used hummus I already had.  Another great idea!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Alice | SkinnySpatula"
+            },
+            "datePublished": "2020-01-18",
+            "reviewBody": "I never had hummus with eggs — sounds like a wonderful idea!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "shahucart"
+            },
+            "datePublished": "2020-01-19",
+            "reviewBody": "wow, Awesome roasted cauliflower hummus bowls recipe. it's looks so delicious."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Amit Shee"
+            },
+            "datePublished": "2020-01-20",
+            "reviewBody": "What a Great Thought! This is a great option for some vegan company I’m having this weekend. I’ll swap out tomatoes for red peppers (due to intolerance) and add roasted zucchini along with the cauliflower for extra color."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "when"
+            },
+            "datePublished": "2020-01-25",
+            "reviewBody": "Um. Wow. This is one of the best recipes I’ve made in a long time. Thank you! I even made the sauce with almond yogurt because we don’t do dairy, and it was still amazing."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Redd Davis"
+            },
+            "datePublished": "2020-01-25",
+            "reviewBody": "MMM love some cauliflower. Never thought of mixing it with hummus. Great and innovative recipe!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Cindy Dallow"
+            },
+            "datePublished": "2020-01-27",
+            "reviewBody": "This was fabulous! Best homemade hummus ever!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "maureen"
+            },
+            "datePublished": "2020-07-29",
+            "reviewBody": "So good.  I loved it."
+        }
+    ],
+    "datePublished": "2020-01-08",
+    "@id": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls#recipe",
+    "isPartOf": {
+        "@id": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls#article"
+    },
+    "mainEntityOfPage": "https://pinchofyum.com/roasted-cauliflower-hummus-bowls"
+}

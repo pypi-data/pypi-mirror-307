@@ -1,0 +1,400 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cooking.nytimes.com/recipes/1016035-spicy-hot-chocolate#WebPage",
+        "url": "https://cooking.nytimes.com/recipes/1016035-spicy-hot-chocolate",
+        "primaryImageOfPage": "https://static01.nyt.com/images/2019/02/08/dining/mc-spicy-hot-chocolate/mc-spicy-hot-chocolate-videoSixteenByNineJumbo1600.jpg",
+        "isAccessibleForFree": "False",
+        "hasPart": {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".recipe"
+        }
+    },
+    "url": "https://cooking.nytimes.com/recipes/1016035-spicy-hot-chocolate",
+    "name": "Spicy Hot Chocolate",
+    "description": "Gently seasoned with a touch of chile powder, cinnamon and vanilla, this fragrant hot chocolate recipe is not too sweet and very complex. Using both cocoa powder and chocolate gives the roundest, deepest chocolate flavor while a mix of whole milk and cream makes it wonderfully rich and thick.",
+    "author": {
+        "@type": "Person",
+        "name": "Melissa Clark"
+    },
+    "image": [
+        {
+            "url": "https://static01.nyt.com/images/2019/02/08/dining/mc-spicy-hot-chocolate/mc-spicy-hot-chocolate-square640.jpg",
+            "height": 640,
+            "width": 640,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/02/08/dining/mc-spicy-hot-chocolate/mc-spicy-hot-chocolate-superJumbo.jpg",
+            "height": 1778,
+            "width": 2048,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/02/08/dining/mc-spicy-hot-chocolate/mc-spicy-hot-chocolate-videoSmall.jpg",
+            "height": 281,
+            "width": 500,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/02/08/dining/mc-spicy-hot-chocolate/mc-spicy-hot-chocolate-verticalTwoByThree735.jpg",
+            "height": 1102,
+            "width": 735,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        }
+    ],
+    "recipeYield": "4 servings",
+    "recipeCuisine": "",
+    "recipeCategory": [],
+    "keywords": "chocolate, christmas, fall, winter",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "ratingCount": 422
+    },
+    "nutrition": {
+        "@context": "http://schema.org",
+        "@type": "NutritionInformation",
+        "calories": 253,
+        "unsaturatedFatContent": "5 grams",
+        "carbohydrateContent": "28 grams",
+        "cholesterolContent": null,
+        "fatContent": "16 grams",
+        "fiberContent": "3 grams",
+        "proteinContent": "5 grams",
+        "saturatedFatContent": "9 grams",
+        "sodiumContent": "60 milligrams",
+        "sugarContent": "24 grams",
+        "transFatContent": "0 grams"
+    },
+    "recipeIngredient": [
+        "3 ounces bittersweet chocolate, chopped",
+        "2 tablespoons unsweetened cocoa powder",
+        "2 tablespoons sugar, or to taste",
+        "3/8 teaspoon ancho chile powder, or to taste",
+        "1 3/4 cups whole milk",
+        "1/4 cup heavy cream",
+        "1 cinnamon stick",
+        "1 teaspoon vanilla extract",
+        "Marshmallows or whipped cream, optional"
+    ],
+    "recipeInstructions": [
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "In a medium pot, whisk together chocolate, cocoa, sugar and chile. Place pan over medium-low heat and whisk until chocolate begins to melt. Slowly whisk in milk, then cream. Drop in cinnamon stick. Bring to a simmer."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Remove pot from heat. Cover pot tightly and steep 1 hour. Whisk in vanilla and taste for sweetness, adding more sugar if you like. Warm over low heat before straining and serving hot, with marshmallows or whipped cream if desired."
+        }
+    ],
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "NYT Cooking",
+        "url": "https://cooking.nytimes.com",
+        "alternateName": [
+            "nytimes cooking",
+            "New York Times Cooking"
+        ],
+        "logo": {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "url": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "height": 112,
+            "width": 112,
+            "contentUrl": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "creditText": "NYT Cooking"
+        },
+        "sameAs": [
+            "https://www.facebook.com/nytcooking/",
+            "https://www.instagram.com/nytcooking/",
+            "https://twitter.com/nytimes",
+            "https://www.youtube.com/c/NYTCooking",
+            "https://www.tiktok.com/@nytcooking",
+            "https://apps.apple.com/us/app/nyt-cooking/id911422904",
+            "https://play.google.com/store/apps/details?id=com.nytimes.cooking&hl=en_US&gl=US"
+        ]
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CaliCook"
+            },
+            "reviewBody": "Made without added sugar and with homemade cashew milk. It was good!",
+            "datePublished": "2022-10-05T14:03:37.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah"
+            },
+            "reviewBody": "Salt?  Usually just a little even in sweets?",
+            "datePublished": "2021-02-06T01:58:05.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Cara"
+            },
+            "reviewBody": "I used smoked paprika instead of the ancho and coconut cream instead of the dairy. Yum!",
+            "datePublished": "2021-01-15T17:09:05.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kelly M"
+            },
+            "reviewBody": "new favourite fireside treat, especially during the pandemic where that is where we gather (if at all) these days.  I made this extra decadent by topping each steaming mug with whipped cream laced with a pinch of sugar and cinnamon.",
+            "datePublished": "2020-12-30T16:56:07.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Gormand Gal"
+            },
+            "reviewBody": "I didn't have whole milk, so I added some half and half to 2 percent. since I had made the nyt recipe for hot fudge prior, and refrigerator it, I just added 5 tablespoons. Beware of adding too much chile powder, but I find if you add that amount, it gives it a nice kick. Great recipe.",
+            "datePublished": "2020-12-26T14:29:36.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JRob & Vanessa"
+            },
+            "reviewBody": "Using milk makes it incredibly rich and decadent. We tried it with Oat Milk which was less intense but still delicious.",
+            "datePublished": "2020-12-21T06:24:12.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Beth"
+            },
+            "reviewBody": "Steep milk at room temp or in the fridge?",
+            "datePublished": "2020-12-19T21:09:15.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janet Carlson"
+            },
+            "reviewBody": "We added chipotle- around 1/2 teaspoon and about 1/4 teaspoon cayenne pepper...now it has smoke and heat!!  Delicious and warming...perfect after a winter walk!!",
+            "datePublished": "2020-12-17T22:17:50.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sue"
+            },
+            "reviewBody": "My wife made this for me and it was delicious! We didn't steep for an hour (cold day, craved hot chocolate and didn't want to wait) so used powdered cinnamon instead -- but it was outstanding. For a brief moment, I was transported back to City Bakery when I'd spent a ridiculous amount of money on hot chocolate every winter in NY.\n\nI imagine the quality of cocoa powder makes a difference. Our daughter is into baking so we always have really good quality cocoa powder on hand.",
+            "datePublished": "2020-12-16T22:23:09.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Carolyn"
+            },
+            "reviewBody": "Try putting the chocolate in a ziplock bag and wrap the bag with a towel. Get out your meat tenderizer hammer and wack it a few times.  Works with nuts too",
+            "datePublished": "2020-12-15T18:22:44.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah"
+            },
+            "reviewBody": "Anyone try this with chocolate bars with chili already in them?  Lindt or Taza for example both have a spicy chocolate bar.",
+            "datePublished": "2020-12-15T02:39:14.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "David"
+            },
+            "reviewBody": "Used vanilla flavored syrup instead of sugar and vanilla.",
+            "datePublished": "2020-12-14T20:58:30.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Alan"
+            },
+            "reviewBody": "For a Florentine variant, try a shot  or half-shot  or Tablespoon of Strega or whatever monastery liqueur you brought back last time.",
+            "datePublished": "2020-12-14T02:03:39.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "maggiT"
+            },
+            "reviewBody": "You can try a micro blade or smaller grater for the chocolate.",
+            "datePublished": "2020-12-14T01:39:44.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Heidi"
+            },
+            "reviewBody": "I like to use only a few drops of vanilla extract and I always add a pinch of salt. It's really nice with a teaspoon of whisky too. You don't taste the hooch but it opens up the other flavors really nicely.",
+            "datePublished": "2020-12-13T21:47:08.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Deborah Martin Shorter"
+            },
+            "reviewBody": "Made as written with Trader Joe's dark chocolate. Next time I'll reduce the sugar to 1 1/2 tbsp., the vanilla to 1/4 tsp., and increase the ancho, or maybe add a pinch of chipotle for smoky heat.",
+            "datePublished": "2017-10-30T15:07:34.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kassie"
+            },
+            "reviewBody": "Didn't have ancho chile powder, so used cayenne; didn't have heavy cream, so used half-and-half; didn't have cinnamon stick, so used ground cinnamon. The result was a beautiful, spicy hot chocolate with almost a pudding consistency. Wonderful.",
+            "datePublished": "2017-12-14T11:34:32.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Judith Farrow"
+            },
+            "reviewBody": "Wonder how a bit of espresso powder would do instead of the ancho?",
+            "datePublished": "2017-10-30T15:46:10.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Gail"
+            },
+            "reviewBody": "Wonderful.  Next time, no vanilla.  Tried it before I added it, and ancho chili came through better.  Vanilla mellowed it out too much.",
+            "datePublished": "2017-10-30T16:00:32.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michael"
+            },
+            "reviewBody": "Could I use cayenne pepper instead of the ancho?",
+            "datePublished": "2017-10-30T15:50:26.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "John"
+            },
+            "reviewBody": "One variation you may wish to try: substitute Mexican cinnamon. Mexican cinnamon is more of a warming spice and different from what you get in spice racks at the supermarket. Try a market that sells hispanic foods to find some.",
+            "datePublished": "2018-10-02T20:00:02.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Maezar"
+            },
+            "reviewBody": "Just a note that this recipe works great with WATER instead of MILK.",
+            "datePublished": "2019-12-17T22:09:10.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Grandmadoc"
+            },
+            "reviewBody": "Making now.  Need Hygge (Hoo Gah).  Comfort.  Too many deaths.  Way too many.  After my daughter’s death in 2016 all I could eat that day was a lemon bar a kind soul gave me.  For me, good food restores both body and soul.  Thank you.",
+            "datePublished": "2020-12-13T17:33:55.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Leonard Armstrong"
+            },
+            "reviewBody": "Michael - I see no reason why not. You'll lose some smokiness, maybe, the the heat effect should still come through. May way to start with less on the cayenne though. I'd try 1/8-1/4 tsp first.",
+            "datePublished": "2017-10-30T15:49:42.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kluski"
+            },
+            "reviewBody": "Just in case you haven't tried this implement:  serrated knife.",
+            "datePublished": "2018-02-22T23:55:03.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Maeve"
+            },
+            "reviewBody": "That’s an absolutely delicious recipe, but first you should add the cinnamon sticks to boiling water to extract the flavor. Yum!",
+            "datePublished": "2020-12-13T16:37:21.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Bruce McLin"
+            },
+            "reviewBody": "Have you tried putting the chocolate inside a plastic zip-bag, then lightly tapping? I assume flying bid and shards of chocolate is the problem.\n\nOr, tap it while it is in the original packaging if it is bar chocolate.",
+            "datePublished": "2018-02-14T22:44:02.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Selma"
+            },
+            "reviewBody": "I have found chopping a chunk of chocolate an impossible task. I’ve tried every possible device including a hammer”and screwdriver. Any. suggestions?",
+            "datePublished": "2018-02-14T16:47:37.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "muz"
+            },
+            "reviewBody": "I found it needed more cinnamon, so I added 3 teaspoons of cinnamon powder after the steep.\nIt is unclear on the length of cinnamon stick needed, it would help the recipe knowing that.",
+            "datePublished": "2018-02-17T14:14:40.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ACF"
+            },
+            "reviewBody": "I made this with cow’s milk and then another batch with cashew milk and coconut cream, and found the vegan version less cloying and sweet, allowed the spices to shine through. Made it with a sprinkle of cayenne and let half a chipotle steep during the resting period. Really delicious.",
+            "datePublished": "2020-11-14T06:02:52.000Z"
+        }
+    ]
+}

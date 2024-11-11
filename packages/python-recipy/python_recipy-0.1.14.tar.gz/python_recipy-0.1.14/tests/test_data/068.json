@@ -1,0 +1,69 @@
+{
+    "@type": "Recipe",
+    "name": "Easy Pickled Garlic Recipe (Kratiem Dong)",
+    "author": {
+        "@type": "Person",
+        "name": "Praew"
+    },
+    "description": "Making pickled garlic is easy with this authentic Thai recipe!",
+    "datePublished": "2024-02-03T14:14:15+00:00",
+    "image": [
+        "https://hungryinthailand.com/wp-content/uploads/2024/02/pickled-garlic-in-jar.webp"
+    ],
+    "recipeYield": [
+        "30"
+    ],
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "totalTime": "PT30M",
+    "recipeIngredient": [
+        "8.5 fluid ounces water",
+        "5 fluid ounces white vinegar",
+        "1/2 tablespoon salt",
+        "5.3 ounces white sugar",
+        "8.8 ounces garlic (peeled, add more or less as desired)",
+        "3 tablespoons honey"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Prepare the pickling brine by mixing water, vinegar, sugar, and salt in a pot. Heat it to a boil over medium heat, then reduce to a simmer until the sugar and salt completely dissolve. Remove from the heat and let the brine cool to room temperature.",
+            "name": "Prepare the pickling brine by mixing water, vinegar, sugar, and salt in a pot. Heat it to a boil over medium heat, then reduce to a simmer until the sugar and salt completely dissolve. Remove from the heat and let the brine cool to room temperature.",
+            "url": "https://hungryinthailand.com/easy-pickled-garlic-recipe/#wprm-recipe-82514-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pour the cooled brine into a glass jar, then stir in the honey. Add the garlic cloves and seal the jar. Store it in the refrigerator (or out in a dark place), allowing the garlic to pickle for at least a few weeks, so the flavors can fully develop. The garlic flavor will still be quite strong after one week, but it will gradually mellow over several weeks of the pickling process.",
+            "name": "Pour the cooled brine into a glass jar, then stir in the honey. Add the garlic cloves and seal the jar. Store it in the refrigerator (or out in a dark place), allowing the garlic to pickle for at least a few weeks, so the flavors can fully develop. The garlic flavor will still be quite strong after one week, but it will gradually mellow over several weeks of the pickling process.",
+            "url": "https://hungryinthailand.com/easy-pickled-garlic-recipe/#wprm-recipe-82514-step-0-1"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Thai"
+    ],
+    "keywords": "kratiem dong, pickled garlic, thai pickled garlic",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "39 kcal",
+        "carbohydrateContent": "9 g",
+        "proteinContent": "1 g",
+        "fatContent": "0.1 g",
+        "saturatedFatContent": "0.01 g",
+        "sodiumContent": "118 mg",
+        "fiberContent": "0.2 g",
+        "sugarContent": "7 g",
+        "unsaturatedFatContent": "0.021 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://hungryinthailand.com/easy-pickled-garlic-recipe/#recipe",
+    "mainEntityOfPage": "https://hungryinthailand.com/easy-pickled-garlic-recipe/#webpage",
+    "isPartOf": {
+        "@id": "https://hungryinthailand.com/easy-pickled-garlic-recipe/#richSnippet"
+    }
+}

@@ -1,0 +1,186 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "@id": "https://www.tasteofhome.com/recipes/savory-beef-stew/",
+    "name": "Savory Beef Stew",
+    "datePublished": "2018-01-01",
+    "dateModified": "2022-10-14",
+    "prepTime": "PT25M",
+    "cookTime": "PT01H45M",
+    "totalTime": "PT02H10M",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps33025_LT1192296D68B.jpg",
+        "height": 300,
+        "width": 300
+    },
+    "recipeCategory": [
+        "Dinner"
+    ],
+    "description": "Wine lends a warm background flavor for this satisfying  take on a traditional French stew. Lynn Stein in Joseph, Oregon uses low-fat mashed beans to thicken her broth and boost nutrition. Serve with garlic bread and dinner's done!",
+    "recipeIngredient": [
+        "1/4 cup all-purpose flour",
+        "1 pound beef stew meat, cut into 1-inch cubes",
+        "1 small onion, chopped",
+        "1 tablespoon canola oil",
+        "1-1/2 cups water",
+        "1 can (10-1/2 ounces) condensed beef consomme, undiluted",
+        "1/2 cup sherry or reduced-sodium beef broth",
+        "1 teaspoon Worcestershire sauce",
+        "1 teaspoon dried parsley flakes",
+        "1/4 teaspoon salt",
+        "1/4 teaspoon garlic powder",
+        "1/8 teaspoon pepper",
+        "2 medium carrots, chopped",
+        "2 medium parsnips, peeled and chopped",
+        "1 large potato, peeled and chopped",
+        "1 medium turnip, peeled and chopped"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Place flour in a large resealable plastic bag; add beef, a few pieces at a time, and shake to coat."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a large saucepan coated with cooking spray, cook beef and onion in oil over medium-high heat until beef is browned on all sides. Stir in the water, consomme, sherry, Worcestershire sauce and seasonings. Bring to a boil. Reduce heat; cover and simmer for 1 hour."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Stir in the carrots, parsnips, potato and turnip. Bring to a boil. Reduce heat; cover and simmer for 30-45 minutes or until meat and vegetables are tender."
+        }
+    ],
+    "recipeYield": "4 servings.",
+    "author": {
+        "@type": "Organization",
+        "name": "Taste of Home"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": " 349 calories",
+        "fatContent": "12g fat (3g saturated fat)",
+        "cholesterolContent": "73mg cholesterol",
+        "sodiumContent": "742mg sodium",
+        "carbohydrateContent": "29g carbohydrate (8g sugars",
+        "fiberContent": "5g fiber)",
+        "proteinContent": "27g protein.  <B><b>Diabetic Exchanges</b>: </B>3 lean meat"
+    },
+    "aggregateRating": {
+        "@context": "http://schema.org/",
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 6,
+        "worstRating": 1,
+        "bestRating": 5
+    },
+    "review": [
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2010-12-05",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "ppolen"
+            },
+            "reviewBody": "I omitted the parsnips & turnip (never was a fan) and added another potato and 2 more carrots (my favorites)--it tasted great!  There was no need to add any extra seasonings.I also substituted the beef consomme for extra beef broth, since I couldn't find the consomme at my grocery store.My veggies were tender after 30 minutes.  I will enjoy eating the leftovers.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2012-01-02",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "FilmActor"
+            },
+            "reviewBody": "Mouth watering meal like Mother use to make, and before her, Grandma!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2012-04-18",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "lurky27"
+            },
+            "reviewBody": "This stew is okay...lacks a bit in the flavor department.~ Theresa",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2013-09-26",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Darkmagegf"
+            },
+            "reviewBody": "I use this recipe as a base for my beef stew. In my family a man has to be able to make a good savory beef stew but he has to figure it out for himself. I always add more beef broth, more wine, and onions, potatoes, carrots and one stalk of celery. I use rosemary, oregano and basil for seasoning with salt and pepper (all to taste.) This recipe is amazing and a great guideline because as a cook you should always take the liberty to make it your own. I just sniff ingredients and add them as my heart wants them. Definitely worth the 5 stars.Enjoy!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2013-11-03",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "scrapo"
+            },
+            "reviewBody": "Good! Used some leftover pot roast as my meat (melt in your mouth chuck roast recipe). Took other suggestions added some red wine, additional seasoning (basil, oregano, garlic salt, garlic pepper, rosemary, Italian seasoning). Turned out great!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2015-04-22",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "RJW88"
+            },
+            "reviewBody": "This is great, however I use as a short cut frozen stew veggies. Its easy and goes well with homeade bread.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        }
+    ]
+}

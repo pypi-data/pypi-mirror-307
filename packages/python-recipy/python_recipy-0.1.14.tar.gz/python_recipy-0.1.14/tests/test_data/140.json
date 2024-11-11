@@ -1,0 +1,173 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Ginger Shrimp &amp; Glass Noodles กุ้งอบวุ้นเส้น Goong Ob Woonsen",
+    "description": "Goong ob woonsen is a classic Thai seafood dish. Juicy shrimp are cooked with glass noodles, ginger, garlic, all tossed together with an umami-rich sauce. It's one of my all time favourites!",
+    "author": {
+        "@type": "Person",
+        "name": "Pailin Chongchitnant",
+        "url": "https://hot-thai-kitchen.com/about/"
+    },
+    "image": [
+        "https://hot-thai-kitchen.com/wp-content/uploads/2015/11/goong-ob-woonsen-sq-225x225.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2015/11/goong-ob-woonsen-sq-260x195.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2015/11/goong-ob-woonsen-sq-320x180.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2015/11/goong-ob-woonsen-sq.jpg"
+    ],
+    "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/",
+    "recipeIngredient": [
+        "2 Tbsp soy sauce",
+        "2 Tbsp oyster sauce",
+        "1 tsp black soy sauce or dark soy sauce",
+        "2 tsp sugar",
+        "1 tsp toasted sesame oil",
+        "120 mL chicken stock or water",
+        "80 g dry glass noodles (sometimes labelled \"bean vermicelli\" or \"bean threads\")",
+        "8-10 medium shrimp, head on, shell on if possible",
+        "½ tsp black peppercorns",
+        "½ tsp white peppercorns",
+        "6 cloves garlic",
+        "15 slices ginger",
+        "8 cilantro stems or 3 cilantro roots",
+        "2 Tbsp vegetable oil",
+        "1 green onion, sliced on a bias, or a handful Chinese celery leaves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Soak glass noodles in room temperature water for 10 minutes to soften. Drain. If you want, you can cut the noodles with scissors just a couple of times to shorten them and make them easier to eat.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Prep shrimp: Trim off the shrimp's long antennae and, if you want, the sharp pointy end on top of the head (I recommend trimming this off if you're serving kids). Using pointy scissors or a small paring knife, cut the back of the shrimp shell open all the way to the tail and remove the vein. Rinse and set aside.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Mix all sauce ingredients together and stir until the sugar is dissolved. Put the noodles and the shrimp into a wide bowl and pour the sauce over top. Toss the noodles and the shrimp in the sauce then let it sit while you prep the herbs, stirring it half way through.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a mortar and pestle, grind the peppercorns until fine. Add the garlic and smash just until broken into pieces. Add cilantro stems or roots and smash them just to bruise. Add the smashed herbs, the ginger, and the oil to a heavy-bottomed pot with a tight fitting lid that is just big enough to hold the noodles and the shrimp.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Heat the pot over medium heat until the herbs are sizzling. Once you can smell the herbs in the air, add the noodles to the pot along with all the sauce, putting the shrimp on top. Cover and cook over medium high heat just until you can hear the sauce boiling inside. Then lower the heat to medium low and cook for 3 minutes.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-5"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Open the pot and stir the noodles around to redistribute the sauce, then cover and cook for another 2-3 minutes or until the shrimp and the noodles are done and the sauce is no longer pooling at the bottom. Taste, and if the noodles are not fully cooked, add a splash of water or stock, then stir and let it cook a bit longer until done.",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-6"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Turn off the heat, transfer to a serving bowl (unless you're serving it right from the pot), top with green onions or Chinese celery leaves. Cover the bowl (you can just use a plate) and let the herb steam for at least one more minute or until ready to serve. Serve with jasmine rice. Enjoy!",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-7"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Join us on Patreon for bonus content and rewards!",
+            "url": "https://hot-thai-kitchen.com/goong-ob-woonsen/#instruction-step-8"
+        }
+    ],
+    "recipeYield": [
+        "2",
+        "Serves 2"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "5",
+        "ratingValue": "5"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Ginger Shrimp & Glass Noodles Recipe (Goong Ob Woonsen) กุ้งอบวุ้นเส้น.mp4",
+        "description": "This is something I always order without fail whenever we go to a seafood restaurant in Thailand! Glass noodles and shrimp are cooked together in a pot with lots of ginger, garlic and pepper. It's such a classic, with a unique flavour that makes it an iconic dish of Thai seafood restaurants.",
+        "duration": "PT9M54S",
+        "embedUrl": "https://video.mediavine.com/videos/iNFk6TbxH.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1681225410/iNFk6TbxH.mp4",
+        "thumbnailUrl": [
+            "https://mediavine-res.cloudinary.com/image/upload/s--YEKr5e1x--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1681225419/oostxols8ixe3sj5ecr2.jpg"
+        ],
+        "uploadDate": "2020-12-07T06:05:19+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Futile Resistance"
+            },
+            "datePublished": "2021-02-16",
+            "reviewBody": "Delicious and quaint!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Pattarin"
+            },
+            "datePublished": "2021-10-16",
+            "reviewBody": "Very delicious and easy. It also looks elegant in the clay pot I bought just for this recipe. Thanks for sharing."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Yong"
+            },
+            "datePublished": "2024-01-06",
+            "reviewBody": "Made this today and it was so delicious! Thanks for sharing this recipe!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mark D."
+            },
+            "datePublished": "2024-01-29",
+            "reviewBody": "Thank you for another outstanding recipe Pailin!\r\nAfter making the original, I made some modifications...\r\n1. To make it much easier to eat I peeled/de veined the shrimp. Then add heads/shells to a small amount of boiling water to make a rich shrimp stock. I mix the shrimp stock with the chicken stock 50/50.\r\n2. As I used more shrimp, I doubled the sauce quantity as I needed to add additional sauce to the original to keep it moist and delicious.\r\n3. I used a little less ginger but minced so as not to have to remove the ginger slices.\r\n4. I like a tad more spice than was in this recipe so added a small pinch of dried Thai red chili pepper with the black pepper - perfect!\r\n\r\nThis sauce is so delicious that I will be using it in other dishes. For instance, it makes a fantastic pasta sauce - you can use chicken thighs in this for a fabulously flavorful pasta dish!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Diana Evans"
+            },
+            "datePublished": "2024-02-05",
+            "reviewBody": "Aroy mak ka! I was taught by my mom, who is Thai, not to soak the bean thread and to add bacon slices to the bottom of the pot for flavor- used your recipe for the spice and sauce mix. Very good!"
+        }
+    ],
+    "datePublished": "2015-11-20",
+    "@id": "https://hot-thai-kitchen.com/goong-ob-woonsen/#recipe",
+    "isPartOf": {
+        "@id": "https://hot-thai-kitchen.com/goong-ob-woonsen/#article"
+    },
+    "mainEntityOfPage": "https://hot-thai-kitchen.com/goong-ob-woonsen/",
+    "recipeCategory": []
+}

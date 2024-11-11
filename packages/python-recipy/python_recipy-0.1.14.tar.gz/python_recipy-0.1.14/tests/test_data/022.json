@@ -1,0 +1,200 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Irish Lamb Stew with Bacon",
+    "datePublished": "2008-03-11T10:13:25.000-04:00",
+    "dateModified": "2022-06-06T14:50:55.525-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Elise Bauer",
+            "url": "https://www.simplyrecipes.com/elise-bauer-5091824"
+        }
+    ],
+    "description": "Irish lamb stew recipe made with lamb shoulder chops, bacon, potatoes, turnip, carrots, onion and barley. Slow cooked until fork tender.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.simplyrecipes.com/thmb/mxBdggzBRaBFSE_uZpku6lGzC1I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__03__irish-lamb-stew-horiz-2-640-253414524e0f4f7a85410ab77b295ccf.jpg",
+        "height": 484,
+        "width": 640
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Simply Recipes",
+        "url": "https://www.simplyrecipes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.simplyrecipes.com/thmb/QvixEwCD02s_lnkgkVb6mHwKS7c=/1125x320/filters:no_upscale():max_bytes(150000):strip_icc()/SimplyRecipesLogoTransparent-07a297c54b2142ae9c079abb2f0fa639.png",
+            "width": 1125,
+            "height": 320
+        },
+        "brand": "Simply Recipes",
+        "publishingPrinciples": "https://www.simplyrecipes.com/about-us-5096129#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/simplyrecipes",
+            "https://www.instagram.com/simplyrecipes",
+            "https://www.pinterest.com/simplyrecipes"
+        ]
+    },
+    "name": "Irish Lamb Stew with Bacon",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4",
+        "ratingCount": "4"
+    },
+    "cookTime": "PT120M",
+    "keywords": "1-Pot, Irish, Lamb, Lamb Stew, St. Patrick's Day, Dinner, Soup, Stew, Favorite Spring",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "542 kcal",
+        "carbohydrateContent": "47 g",
+        "cholesterolContent": "137 mg",
+        "fiberContent": "6 g",
+        "proteinContent": "51 g",
+        "saturatedFatContent": "5 g",
+        "sodiumContent": "638 mg",
+        "sugarContent": "8 g",
+        "fatContent": "16 g",
+        "servingSize": "Serves 6",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT15M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Irish"
+    ],
+    "recipeIngredient": [
+        "2 1/2 pounds lamb shoulder or shoulder blade chops, bone-in, trimmed of excess fat",
+        "6 slices bacon, thickly cut",
+        "2 pounds potatoes (Yukon gold preferred), peeled, quartered",
+        "2 large onions, quartered",
+        "2 large carrots, peeled and cut into 2-inch segments",
+        "1 turnip, peeled and cut into 1-inch pieces",
+        "2 heaping tablespoons pearl barley (omit for gluten-free version)",
+        "1 tablespoon chopped fresh thyme or 1 teaspoon dried thyme",
+        "Kosher Salt and freshly ground black pepper",
+        "1 quart of water or lamb stock, warmed"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Cook the bacon: Heat a large (6-quart), thick-bottomed Dutch oven on medium heat. Layer the bacon on the bottom of the pan and cook the slices gently, a few minutes on each side, until much of the fat has been rendered out, and the slices have browned lightly. Place the cooked bacon strips on a paper-towel-lined plate to absorb the excess fat. Chop the bacon and set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/MuqosWgbn3V8F5LxX-t2SVt4Ryc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__03__irish-lamb-stew-method-600-2-3558ca69d0584b3c82d24473c78a08c5.jpg"
+                }
+            ],
+            "text": "Brown the lamb in bacon fat: Remove all but 2 tablespoons of bacon fat from the pan (do not pour the removed fat down the drain or it will clog the drain pipes). Increase the heat to medium high. Working in batches as to not crowd the pan, brown the lamb pieces on all sides, taking care not to stir the lamb pieces so they can get sufficiently browned."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/zvMe3_V4jfyvW4eFukZf2SDsBg8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__03__irish-lamb-stew-method-600-3-8ed5c3c953754880ac7b76088a47ad6c.jpg"
+                }
+            ],
+            "text": "Arrange the meat and vegetables in the pan in layers: Start first with a layer of lamb, then add a layer of potatoes, onions, turnips, carrots, and chopped bacon. Add another layer of lamb and then another of vegetables. Add the barley, thyme, black pepper and a teaspoon of salt."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/pzFQoCtX43vmgrihRgOQJYf30v8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__03__irish-lamb-stew-method-600-5-e52a5b212fb84da18c46b85487edb85a.jpg"
+                }
+            ],
+            "text": "Add the water or stock: Bring to a boil. Reduce the heat to a bare simmer and let simmer, covered, but with the lid slightly ajar, for 1 1/2 to 2 hours, until the meat is fork tender and falling off the bones."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Skim any excess fat, remove the bones, season: Skim excess fat. Use tongs to pick out and remove the bones. Adjust seasonings, adding salt and pepper to taste."
+        }
+    ],
+    "recipeYield": "6",
+    "totalTime": "PT135M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah"
+            },
+            "reviewBody": "It lacked depth &#38; richness, I needed to seriously adjust for the lack of seasoning. Not worth doing again, on to the next!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Torrey"
+            },
+            "reviewBody": "Made this as written, and wow, so good! Hard to stop eating. A bit time consuming, but very much worth it."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Andrea"
+            },
+            "reviewBody": "Omg YUM. Instead of lamb stock, I used half chicken stock and half Guinness. I can die happy now!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pam"
+            },
+            "reviewBody": "I really was unhappy with my results. I think it was the bone in stew meat that I used. Yuck. The stew was bland and unpleasant to look at even though I followed the recipe (used water). I ended up removing all of the meat and just having a vegetable soup with a lamb broth. I added a bunch of flat leaf parsley and we are able to eat it. I went back to the website and saw what cut you used and went.... duh. I'm not sure what use these ragged stew meat chunks of fat and gristle are good for but I won't be buying them again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mike"
+            },
+            "reviewBody": "<p>This is almost identical to the recipe I use, however I add about a cup of Guinness to the recipe.</p>"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.simplyrecipes.com/recipes/irish_lamb_stew_with_a_twist/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/stew-recipes-5091358",
+                        "name": "Stews"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/lamb-stew-recipes-5091354",
+                        "name": "Lamb Stews"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/recipes/irish_lamb_stew_with_a_twist/",
+                        "name": "Irish Lamb Stew with Bacon"
+                    }
+                }
+            ]
+        }
+    },
+    "about": []
+}

@@ -1,0 +1,82 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "This easy-to-make cocktail was one of the earlier drinks I created for the bar menu at our Brentwood restaurant, Tavern. It is made with a honey syrup infused with fresh ginger and chiles de árbol, so you get those flavors and that heat in the cocktail. I added grapefruit to make it tangy.",
+    "alternativeHeadline": "This easy-to-make spicy bourbon cocktail uses fresh grapefruit and a honey syrup infused with fresh ginger and chiles de árbol.",
+    "keywords": [
+        "cocktail",
+        "bourbon",
+        "ginger",
+        "chile de árbol",
+        "grapefruit",
+        "lemon",
+        "beverages",
+        "easy",
+        "blender",
+        "cookbooks",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.epicurious.com/photos/5fb6c3f76b14bf583b9b1350/1:1/w_1697,h_1697,c_limit/BarChef_PG204.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Epicurious",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.epicurious.com/verso/static/epicurious/assets/logo-seo.png",
+            "width": "488px",
+            "height": "100px"
+        },
+        "url": "https://www.epicurious.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Epicurious"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Christiaan Röllich",
+            "sameAs": "https://www.epicurious.com/contributor/christiaan-röllich"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "ratingCount": 1
+    },
+    "description": "This easy-to-make spicy bourbon cocktail uses fresh grapefruit and a honey syrup infused with fresh ginger and chiles de árbol.",
+    "image": [
+        "https://assets.epicurious.com/photos/5fb6c3f76b14bf583b9b1350/16:9/w_2431,h_1367,c_limit/BarChef_PG204.jpg",
+        "https://assets.epicurious.com/photos/5fb6c3f76b14bf583b9b1350/4:3/w_1977,h_1482,c_limit/BarChef_PG204.jpg",
+        "https://assets.epicurious.com/photos/5fb6c3f76b14bf583b9b1350/1:1/w_1697,h_1697,c_limit/BarChef_PG204.jpg"
+    ],
+    "headline": "Thunderer (Ginger Honey Árbol Bourbon Cocktail)",
+    "name": "Thunderer (Ginger Honey Árbol Bourbon Cocktail)",
+    "recipeIngredient": [
+        "¾ cup orange blossom honey",
+        "¼ cup boiling water",
+        "2 ounces fresh ginger, peeled and roughly chopped (about ½ cup)",
+        "½-inch piece chile de árbol, plus more to taste",
+        "1½ ounces bourbon",
+        "1 ounce fresh grapefruit juice (about ¼ grapefruit, preferably Ruby Red)",
+        "¾ ounce fresh lemon juice (less than 1 lemon)",
+        "½ ounce Honey Árbol Ginger Syrup"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "To make the Honey Árbol Ginger Syrup: Put the honey and water in a blender and stir until the honey dissolves. Add the ginger and chile and blend on high speed until the ginger is pulverized. Strain through a chinois or cheesecloth and discard the solids. Let the syrup cool to room temperature. Transfer to a small jar or bottle and refrigerate for up to 1 month."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To make the cocktail: Combine the cocktail ingredients in a shaker. Fill the shaker with ice cubes, cover, and shake hard for 7 seconds. Use a Hawthorne strainer to strain the cocktail into a coupe glass. Garnish with the chile de árbol slices."
+        }
+    ],
+    "recipeYield": "Makes 1 cocktail",
+    "url": "https://www.epicurious.com/recipes/food/views/thunderer-ginger-bourbon-cocktail",
+    "dateModified": "2020-11-19T14:39:05.235-05:00",
+    "datePublished": "2020-11-19T14:39:05.235-05:00",
+    "recipeCategory": []
+}

@@ -1,0 +1,88 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Darwell's Crawfish Etouffee",
+    "url": "https://www.foodnetwork.com/recipes/darwells-crawfish-etouffee-recipe-1942800",
+    "headline": "Darwell's Crawfish Etouffee",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.1280.suffix/1474463768097.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.960.suffix/1474463768097.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.720.suffix/1474463768097.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2016-12-09T23:32:29.760-05:00",
+    "dateModified": "2014-01-09T01:51:52.447-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Crawfish,Shellfish Recipes,Main Dish,Lunch,Recipes for a Crowd",
+    "cookTime": "P0Y0M0DT0H25M0.000S",
+    "totalTime": "P0Y0M0DT0H40M0.000S",
+    "recipeIngredient": [
+        "1 bunch celery, medium diced",
+        "1 stick (8 tablespoons) unsalted butter",
+        "1/2 large onion, medium-diced",
+        "2 bell peppers, medium-diced",
+        "2 tablespoons Creole seasoning, such as Tony Chachere",
+        "1 tablespoon seafood boil seasoning, such as Old Bay",
+        "1 tablespoon minced garlic",
+        "1/2 cup all-purpose flour",
+        "4 cups crawfish stock",
+        "1 cup heavy cream",
+        "2 pounds freshly picked steamed crawfish tail meat",
+        "Steamed rice and/or French bread, for serving",
+        "1 tablespoon freshly chopped parsley leaves"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 8 servings",
+        "calories": "479",
+        "fatContent": "30g",
+        "saturatedFatContent": "17g",
+        "carbohydrateContent": "23g",
+        "fiberContent": "2g",
+        "sugarContent": "5g",
+        "proteinContent": "31g",
+        "cholesterolContent": "146mg",
+        "sodiumContent": "293mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Saute the celery in the butter on low to medium heat until the celery becomes tender. Add the onions, bell peppers, spices and garlic. When everything is well blended, turn the heat up to medium-high and blend in the flour to form a roux around the vegetables. Cook thoroughly until the roux starts to brown slightly. Add the crawfish stock and heavy cream a little at a time until all the stock and cream are added. Finish by adding the crawfish meat. Simmer on low heat for approximately 15 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve over rice and/or French bread and garnish with parsley."
+        }
+    ],
+    "recipeYield": "6 to 8 servings",
+    "recipeCategory": []
+}

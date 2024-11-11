@@ -1,0 +1,80 @@
+{
+    "@type": "Recipe",
+    "name": "Kimchi Fried Rice",
+    "author": {
+        "@type": "Person",
+        "name": "Andrea Nguyen"
+    },
+    "description": "If eggs are okay with your diet, serve the rice in individual bowls, each topped with a fried egg. You can keep or omit the tofu. If you’re fine with meat, substitute some chicken, beef or pork. It can be cooked or raw, so long as you cut it into small pieces that distribute well throughout the rice. Offer soy sauce on the side, if you like.",
+    "datePublished": "2020-01-10T15:23:20+00:00",
+    "image": [
+        "https://www.vietworldkitchen.com/wp-content/uploads/2020/01/kimchi-fried-rice-wide.jpg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2020/01/kimchi-fried-rice-wide-500x500.jpg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2020/01/kimchi-fried-rice-wide-500x375.jpg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2020/01/kimchi-fried-rice-wide-480x270.jpg"
+    ],
+    "recipeIngredient": [
+        "3 cups dry cooked rice, white medium or short-grain preferred, at room temperature",
+        "2 teaspoons sesame seeds (optional)",
+        "2 tablespoon neutral oil, such as canola oil",
+        "1  garlic clove, minced",
+        "1/2  medium red or yellow onion, chopped (¾ cup)",
+        "1/3 to 1/2 cup cubed extra-firm tofu (pan-fry as thick slabs before cutting, if you like)",
+        "Fine sea salt",
+        "1 cup packed napa cabbage kimchi, (chopped, older/stinkier kimchi preferred)",
+        "1 tablespoon Korean red pepper paste ((gochujang))",
+        "2 tablespoons kimchi juice",
+        "2  slender green onions, (green and white parts, cut into thick rings)",
+        "1 tablespoon sesame oil",
+        "3  or 4 pieces of Korean toasted seaweed ((jim), snipped with scissors into narrow strips (optional))"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "If the rice is dry and lumpy, crumble it to prevent lumps. Set aside by the stove.",
+            "name": "If the rice is dry and lumpy, crumble it to prevent lumps. Set aside by the stove.",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Over medium heat in a large nonstick or well-seasoned skillet, toast the sesame seeds for 2 to 3 minutes, stirring often, until golden. Transfer to a small dish and keep by the rice. Line up the other ingredients in order of use so you can work fast.",
+            "name": "Over medium heat in a large nonstick or well-seasoned skillet, toast the sesame seeds for 2 to 3 minutes, stirring often, until golden. Transfer to a small dish and keep by the rice. Line up the other ingredients in order of use so you can work fast.",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the oil to the pan, then heat over medium-high. Add the garlic and onion and cook, stirring  for about 3 minutes, until fragrant and beginning to turn golden. Dump in the tofu and season with salt. Cook for about 1 minute to heat through.",
+            "name": "Add the oil to the pan, then heat over medium-high. Add the garlic and onion and cook, stirring  for about 3 minutes, until fragrant and beginning to turn golden. Dump in the tofu and season with salt. Cook for about 1 minute to heat through.",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the kimchi, kimchi juice and gochujang, and stir-fry for 1 to 2 minutes, until heated through and very fragrant. There should be no liquid visible.",
+            "name": "Add the kimchi, kimchi juice and gochujang, and stir-fry for 1 to 2 minutes, until heated through and very fragrant. There should be no liquid visible.",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Dump in the rice. Stir-fry for 1 to 2 minutes, to separate the grains and turn the rice a handsome orange-ish color. Season with salt to taste (I use ¼ to ½ teaspoon).",
+            "name": "Dump in the rice. Stir-fry for 1 to 2 minutes, to separate the grains and turn the rice a handsome orange-ish color. Season with salt to taste (I use ¼ to ½ teaspoon).",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the green onions and stir-fry for 15 seconds, until just wilted. Turn off heat and stir in sesame oil and half of the sesame seeds. Transfer to a shallow bowl, then top with the seaweed strips and remaining sesame seeds. Serve immediately.",
+            "name": "Add the green onions and stir-fry for 15 seconds, until just wilted. Turn off heat and stir in sesame oil and half of the sesame seeds. Transfer to a shallow bowl, then top with the seaweed strips and remaining sesame seeds. Serve immediately.",
+            "url": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#wprm-recipe-11363-step-0-5"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "@id": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#recipe",
+    "isPartOf": {
+        "@id": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html#article"
+    },
+    "mainEntityOfPage": "https://www.vietworldkitchen.com/blog/2020/01/bold-beautiful-and-easy-kimchi-fried-rice-recipe.html",
+    "recipeCategory": []
+}

@@ -1,0 +1,60 @@
+{
+    "@type": "Recipe",
+    "@context": "http://schema.org/",
+    "name": "Guacamole ",
+    "keywords": "guacamole ",
+    "recipeCategory": "Appetizer",
+    "recipeCuisine": "Mexican",
+    "image": "https://mojo.generalmills.com/api/public/content/CiPDZgLtZUCMFfS_uxMfzw_webp_base.webp?v=fbe39b6c&t=85e6ab0127c04f66a40c0b82332e03a6",
+    "description": "Few appetizers are more associated with Mexican food than guacamole. Who can resist this sumptuous green dip made from ripe avocados? This recipe has just the right balance of avocados, onion, jalapeños, cilantro and lime juice.",
+    "recipeIngredient": [
+        "2  large ripe avocados, pitted, peeled and mashed",
+        "2  medium tomatoes, finely chopped (1 1/2 cups)",
+        "2  jalapeño chilies, seeded and finely chopped",
+        "1  medium onion, chopped (1/2 cup)",
+        "1  garlic clove, finely chopped",
+        "2  tablespoons finely chopped fresh cilantro",
+        "2  tablespoons lime or lemon juice",
+        "1/2  teaspoon salt",
+        "  Dash of pepper",
+        "  Tortilla chips, if desired"
+    ],
+    "totalTime": "PT1H20M",
+    "prepTime": "PT0H20M",
+    "recipeYield": "44",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "65",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Betty Crocker Kitchens"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Mix all ingredients except tortilla chips in glass or plastic bowl. Cover and refrigerate 1 hour to blend flavors."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve with tortilla chips."
+        }
+    ],
+    "mainEntity": [],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "10  ",
+        "carbohydrateContent": "1  g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "1  g",
+        "proteinContent": "0 g",
+        "saturatedFatContent": "0 g",
+        "servingSize": "1 Tablespoon",
+        "sodiumContent": "30  mg"
+    },
+    "dateCreated": "01/01/2004",
+    "dateModified": "04/09/2019"
+}

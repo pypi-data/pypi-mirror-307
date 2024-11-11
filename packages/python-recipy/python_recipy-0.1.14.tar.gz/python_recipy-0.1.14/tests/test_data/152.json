@@ -1,0 +1,315 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Oven Scrambled Eggs",
+    "datePublished": "2018-06-08T09:21:49.000-04:00",
+    "dateModified": "2024-05-20T11:00:08.571-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Erin"
+        }
+    ],
+    "description": "Baked scrambled eggs are quick to make in the oven and turn out light and fluffy every time. An easy, hands-off dish that&#39;s perfect for a crowd.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.allrecipes.com/thmb/VOeTuH5iNQP0YjHUaEkLgLKol3I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-Beauty-f31f2904bb3a4eee80ed3e135436cc77.jpg",
+        "height": 1125,
+        "width": 1500
+    },
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://content.jwplatform.com/videos/oos89D7b-K3AjnAEN.mp4",
+        "description": "AR_FEB_0004",
+        "duration": "PT1M43S",
+        "name": "Oven Scrambled Eggs",
+        "thumbnailUrl": "https://cdn.jwplayer.com/v2/media/oos89D7b/thumbnails/1yzDoYXh.jpg",
+        "uploadDate": "2021-07-04T08:23:24.306-04:00"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Allrecipes",
+        "url": "https://www.allrecipes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.allrecipes.com/thmb/Z9lwz1y0B5aX-cemPiTgpn5YB0k=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/allrecipes_logo_schema-867c69d2999b439a9eba923a445ccfe3.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Allrecipes",
+        "publishingPrinciples": "https://www.allrecipes.com/about-us-6648102#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/allrecipes",
+            "https://www.instagram.com/allrecipes/",
+            "https://www.pinterest.com/allrecipes/",
+            "https://www.tiktok.com/@allrecipes",
+            "https://www.youtube.com/user/allrecipes/videos",
+            "https://twitter.com/Allrecipes",
+            "https://flipboard.com/@Allrecipes",
+            "https://en.wikipedia.org/wiki/Allrecipes.com",
+            "http://linkedin.com/company/allrecipes.com"
+        ]
+    },
+    "name": "Oven Scrambled Eggs",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "758"
+    },
+    "cookTime": "PT20M",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "236 kcal",
+        "carbohydrateContent": "3 g",
+        "cholesterolContent": "396 mg",
+        "proteinContent": "14 g",
+        "saturatedFatContent": "9 g",
+        "sodiumContent": "651 mg",
+        "sugarContent": "3 g",
+        "fatContent": "19 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT10M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "0.5 cup butter or margarine, melted",
+        "24 eggs",
+        "2.25 teaspoons salt",
+        "2.5 cups milk"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.allrecipes.com/thmb/7QdsXnt-a1pyyQH-7VncYz1nxJ4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-01-deba9dcb7b7e4e36a67e155f5ed0e2c7.jpg"
+                }
+            ],
+            "text": "Gather all ingredients. Preheat the oven to 350 degrees F (175 degrees C)."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.allrecipes.com/thmb/oeGiqOy9MhPB2cPZ-sSP4qBeD80=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-02-eb9829828f8c4ed2b3c61b8973b48adc.jpg"
+                }
+            ],
+            "text": "Pour melted butter into a 9x13-inch glass baking dish."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.allrecipes.com/thmb/aMw4cvjCFmOiwRKXB18k0ZlczYY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-03-3d43fc4946074e50b4934d2ca0ca7ff1.jpg"
+                }
+            ],
+            "text": "Whisk together eggs and salt in a large bowl until well-blended. Gradually whisk in milk. Pour egg mixture into the buttered dish."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.allrecipes.com/thmb/vKujWm7Kz-jd6aYhwa9AdMGTt0I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-04-d9cd3b8ff2494e1495c45644d0eed493.jpg"
+                }
+            ],
+            "text": "Bake uncovered in the preheated oven for 10 to 15 minutes. Stir egg mixture and continue to bake until eggs are set, 10 to 15 minutes more."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.allrecipes.com/thmb/VOeTuH5iNQP0YjHUaEkLgLKol3I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-57459-oven-scrambled-eggs-DDMFS-4x3-step-Beauty-f31f2904bb3a4eee80ed3e135436cc77.jpg"
+                }
+            ],
+            "text": "Serve and enjoy!"
+        }
+    ],
+    "recipeYield": [
+        "12"
+    ],
+    "totalTime": "PT30M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Amber Stanley"
+            },
+            "reviewBody": "Great recipe!!! My husband caught me putting the eggs in the oven, made a funny face and said \"What Are You Doing?!!!\" He wasn't very happy that I was \"wasting\" our eggs trying this. He LOVED them!!!! He ate most of the eggs himself. I did modify the recipe slightly buy sautéing some onions and garlic and tossing them in with the batter, and adding cheese when almost done. Will definitely make over and over again!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "audrie72"
+            },
+            "reviewBody": "I made the recipe and it was so simple and easy to make. I made it for a family of 5 so cut down the measurements and it was yummy. I like my eggs with pepper so added that too. Great recipe.",
+            "datePublished": "2024-06-01T19:11:58.216Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Darrell Cole"
+            },
+            "reviewBody": "",
+            "datePublished": "2024-05-11T22:06:40.052Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "meredithhairell"
+            },
+            "reviewBody": "Made three batches of these for breakfast at church on Easter Sunday. They were great! My husband cracked all the eggs the night before to expedite the morning prep process for me. That was a big help. I was shocked and thankful with how deliciously they turned out for being so easy!",
+            "datePublished": "2024-04-27T21:21:16.298Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Allrecipes Member"
+            },
+            "reviewBody": "I had it at a friend’s house and they were delicious..I made them myself with only 7 eggs less butter and a little salt. I didn’t have milk so I made them with buttermilk. They did take more than 10 minutes to cook but the end result was perfect. Will make this again for my family.",
+            "datePublished": "2024-03-27T19:22:47.855Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "SaraAnne"
+            },
+            "reviewBody": "The whole family LOVED these eggs- 1 year to 83 years old! I used half the butter and it worked great. I used all the milk. I’ll use less salt next time. It was almost too much (not it wasn’t, barely) but we like to add salt on top and definitely could not. It took WAY longer in a 9x13 so I kicked it up to 375* for a jaunt then back down. I stirred more than once because it was taking so long boot watch because it will sincerely be perfect! **Remember not to just stir but scrape along the bottom and sides amen stirring. I’d consider splitting it between two pans not they turned out so perfectly I’ll just plan for more time! Added cheese on top to melt. Yum! These were delicious, fluffy texture, perfect moistness, not crumbly, not dry, not like a bad batch of camp or buffet eggs. They are the perfect scrambled egg but easier for a big crowd (or for a small crowd and left overs)! Thanks for a great recipe!",
+            "datePublished": "2024-03-22T04:59:25.454Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mommysnagpants"
+            },
+            "reviewBody": "I LOVE this recipe. It's easy and delicious. I get cravings for it and I'm making it again today. My only change is a liberal hit of hot sauce, which adds flavor and not much heat, really. Mmmmm...",
+            "datePublished": "2024-03-02T12:05:12.944Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jessica Lynn Walker"
+            },
+            "reviewBody": "I made two batches of these for the entire 4th grade at our school for their special valentine's breakfast. For those who wanted eggs, they were a hit! Some came back for seconds or even thirds! One boy said they were better than his grandma's, which I assume was high praise. Personally I could have done with a little less salt, but it wasn't bad at all. They took a bit longer to cook than expected. I was running short on time by the second batch, so I bumped the temperature up to 400°, which had the second batch done in the expected time frame. I sprinkled shredded Colby Jack cheese on one batch for the last 5 minutes. Overall = easy and YUM!",
+            "datePublished": "2024-02-14T19:52:40.615Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Allrecipes Member"
+            },
+            "reviewBody": "Needed a convenient meal prep recipe for the week to streamline my mornings, and stumbled upon this one. I made a few adjustments to cater to what I had available and to keep it on the healthier side. Here's my modified version: Reduced the original recipe, using 12 eggs for a half-sized batch. Substituted milk with two tablespoons of powdered milk dissolved in one glass of water, mixed with a handheld frother. Seasoned with a generous amount of granular/ground pepper, around 6 shakes of garlic salt, 3-4 shakes of paprika, and replaced butter with 2-3 tablespoons of olive oil. Prepared a shallow glass baking pan (2.375'' H x 10'' L x 15'' W) by brushing it with an additional 2-3 tablespoons of olive oil. Whisked all the ingredients thoroughly to ensure a smooth mixture. Baked for 10 minutes at 350 degrees, adjusting the time due to my altered recipe and using a gas oven in New York (considering variations based on location and elevation). After the initial 10 minutes, I found it still a bit soupy, so I turned the eggs with a spatula and returned them to the oven for another 10 minutes. At this point, it became bubbly, and I repeated the process of turning the eggs and baking for an additional 5 minutes. Once done, I let the eggs cool on the stove to allow them to thicken further. The result was wonderfully fluffy and delicious eggs, perfect for my week's meal prep. I paired them with baked bacon for a quick and easy reheat, serving them alongside a bagel or toast. Happy cooking!",
+            "datePublished": "2023-11-25T20:22:37.899Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Allrecipes Member"
+            },
+            "reviewBody": "It is a wonderful dish! I added meat, cheese, onions and spices. Great idea!",
+            "datePublished": "2023-10-30T13:09:01.866Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.allrecipes.com/recipe/57459/oven-scrambled-eggs/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipes/148/breakfast-and-brunch/eggs/",
+                        "name": "Eggs"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipes/1308/breakfast-and-brunch/eggs/scrambled-eggs/",
+                        "name": "Scrambled"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipe/57459/oven-scrambled-eggs/",
+                        "name": "Oven Scrambled Eggs"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "Allrecipes Test Kitchen",
+                "url": "https://www.allrecipes.com/allrecipes-test-kitchen-7553892"
+            }
+        ]
+    }
+}

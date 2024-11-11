@@ -1,0 +1,986 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Fresh Broccoli Salad",
+    "url": "https://www.foodnetwork.com/recipes/alton-brown/fresh-broccoli-salad-recipe-1908498",
+    "headline": "Fresh Broccoli Salad",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alton Brown",
+            "url": "https://www.foodnetwork.com/profiles/talent/alton-brown"
+        }
+    ],
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/12/14/0/EA1116H_Fresh-Broccoli-Salad_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1371613912061.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/12/14/0/EA1116H_Fresh-Broccoli-Salad_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1371613912061.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/12/14/0/EA1116H_Fresh-Broccoli-Salad_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1371613912061.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2015-05-24T10:19:28.470-04:00",
+    "dateModified": "2016-12-09T01:28:35.027-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Easy Side Dish Recipes,Side Dish,Broccoli Salad,Broccoli,Salad Recipes,Broccoli Side Dish,Tomato Salad,Tomato,Tomato Side Dish,Vegetarian,Healthy,Nut Recipes,Low-Cholesterol,Gluten Free,Low-Carb,Diabetes-Friendly,Low Calorie,Vegan",
+    "prepTime": "P0Y0M0DT0H35M0.000S",
+    "totalTime": "P0Y0M0DT1H50M0.000S",
+    "recipeIngredient": [
+        "1 tablespoon white wine vinegar",
+        "1 lemon, zested",
+        "1 tablespoon freshly squeezed lemon juice",
+        "2 teaspoons Dijon mustard",
+        "1 teaspoon kosher salt",
+        "Pinch freshly ground black pepper",
+        "1/4 cup olive oil",
+        "1 pound broccoli, rinsed, trimmed and sliced thinly on a mandolin",
+        "6 ounces cherry or grape tomatoes, halved",
+        "3 ounces coarsely chopped, toasted pecans or hazelnuts",
+        "2 tablespoons chiffonade fresh basil leaves"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "310 calorie",
+        "fatContent": "29 grams",
+        "saturatedFatContent": "3 grams",
+        "cholesterolContent": "0 milligrams",
+        "sodiumContent": "573 milligrams",
+        "carbohydrateContent": "12 grams",
+        "fiberContent": "6 grams",
+        "proteinContent": "6 grams",
+        "sugarContent": "2 grams"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Whisk together the vinegar, zest, lemon juice, mustard, salt and pepper in a medium mixing bowl. While whisking constantly, gradually add the olive oil. Add the broccoli and toss to coat. Cover and place in the refrigerator for 1 hour."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Stir in the tomatoes, hazelnuts and basil. Cover and allow to sit, at room temperature or in the refrigerator, for another 15 minutes before serving."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 74
+    },
+    "recipeYield": "4 to 6 servings",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great recipe, I addd tuna and<br /> chickpeas, homemade yogurt for more creaminess and more Dijon mustard too."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah Cornelison"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We love this! Made it for the second time tonight and added the basil this time, since mine finally grew. I add just a little more lemon right before serving. It's even great the next day. I used sunflower seeds the first time and tried slivered almonds and pecans tonight. I don't think you can go wrong with whatever nuts you have access to, just toast them a little. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Stephanie V."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My new favourite salad! I used pepitas for the nuts and chives for the basil (only because I didn't have basil) and it is so fresh and tasty. For a potluck, it has something for everyone: KETO, Gluten-fee, Vegan"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KitchenWitch"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fresh and light. I had no basil, so I used fresh dill from the garden. You don’t need a mandolin, just patience to very thinly slice the broccoli. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jeanh526"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Thanksgiving staple!  This salad is pretty, and the taste is bright and refreshing, a nice addition to the pale starchy Thanksgiving plate."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Laurie H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The dressing was light and refreshing with just the right amount of lemony flavor. Slicing the broccoli on the mandolin made it the perfect size to absorb the dressing and eat. I enhanced it with crumbled bacon, too. Thanks for this recipe. Very good! My family enjoyed it too."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JimJ"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Disgusting...I had to throw it out."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "shedietz"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fantastic! Didn't have enough fresh broccoli so did half green cabbage, sliced both on the mandolin. I had the time, so I let it sit (pre- addition of tomatoes, nuts, and basil) two hours. I can't adequately convey in a review how good this tastes. Alton has yet to steer me wrong. This will be in regular rotation, for sure. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "bethmck"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a delicious and healthy alternative to the ubiquitous broccoli-raisin-bacon salad.  If time permits, give it a few hours before adding the basil and nuts, to improve the flavor."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "lindaemarsh"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Loved it . . . especially loved the idea of using a mandolin to slice the broccoli into bite size pieces; worked well.  Flavor was great although I did substitute golden brown mustard for Dijon mustard.  I feel sure this is going to become a family favorite as we eat a lot of broccoli anyway."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Bree O."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love! I'm not normally a raw broccoli person, but since the recipe calls for thinly sliced broccoli, and it's marinaded in the dressing, it works!<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Leslie S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Anything Mr Brown makes, I'm going to try. This was excellent. You can modify the ingredients to your personal tastes. I can adjust this a little, for a diabetic friendly meal! YUM!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "null"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "You got to love me some Alton but this is not good - at all.  Had to add stuff trying to make it edible.  From now on I'm going to listen in Ina - NEVER USE A NEW RECIPE WHEN HAVING COMPANY.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kathy s."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "It's just a salad. Nothing special. I doubled the dressing. I added shredded Parmesan cheese and candied pecans but it still was just a salad. Served it at Easter instead of Broccoli cassrole. It was ok but not worth wasting all those ingredients. I also added  crumbled bacon but it was still just a salad. Won't make again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "foodiemx"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have my mandolin thanks to this salad.  I feel healthy when I have it and I love the flavors.  Try to make it every other week."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michelle H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Mandolin slice for sure (messy but worth it.  Double the dressing. Agree to 1 teaspoon table salt. Kind of sour...would add 1T honey.  Let refrigerate at least 3 hours. Added sun dried tomato feta crumbles which gave it a little more depth. Will add candied pecans next time for sure. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jamielee D."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delish.. with a few modifications! added some honey to the dressing and also candied the pecans!! A refreshing salad!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a great salad. People who think it's bland are probably accustomed to syrupy salad-bar dressing and fake bacon toppings. Attn. other geniuses: The salad might have been salty because the recipe calls for kosher, which is half the strength of table salt. Example: 2 Tablespoons kosher salt=1 Tablespoon table salt. Understand the concept?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kaylynparr"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This salad is a bit plain. I tried it again and decided to add a bit of Parmesan cheese and to candy the hazelnuts with cayenne pepper and sugar. The flavors turned out really well together...it was a hit!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jon H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great Salad!  Made exactly as directed.  A nice salad for Christmas being red &amp; green."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Caroline S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I'm surprised I didn't like this salad since it got so many good reviews.  I read the comments about salt, so that wasn't an issue.  I just found the salad to be bland and uninspiring."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "schihuly"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "i have to agree that you should leave the salt out of the dressing.  i used the EXACT amounts of everything except the salt (since i had read the previous reviews.  i used 1/2 the amt. of salt (kosher called for in the recipe and found it to be too much - although perfectly edible.  the next time i make this, i will omit it altogether and add to salad as needed.  i actually don't think the salad needs the salt at all - it's a wonderful array of flavors!  btw - i just cut my broccoli into small florettes and the stem pieces into bite sized pieces.  who needs a mandoline?!  i also used toasted pine nuts."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Dreamflyer"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We loved this recipe! What a great way to eat more broccoli. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I too found it way too salty but figured it was because I did not have Kosher salt and used regular salt. In order to lower the flavor a bit I add 1/4 tsp. of spicy mayonnaise. I also used almonds instead just because I prefer them. One thing that made this extremely quick and easy is in my grocery store I actually found a bag of fresh broccoli slaw. It worked great, saved me time and clean-up and was cheap.... I would take a look in your produce section near the bagged salad, it's a great alternative! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kim P."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great way to serve broccoli to the family - my daughter loved it!  I dont think it's necessary to use a mandolin - just slicing the broccoli is fine.  I used Kosher salt, but will use a bit less next time."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "frannyt"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I wonder if the people who found this too salty used table salt (far denser, rather than Kosher salt.  Using the same measurements this would make it too salty.<br /><br />We love it, and have made many variations on this base."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "maryb27419"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My broccoli plants have been producing like crazy so I went searching for some new ideas.  Tried this and it is fabulous!  I used my very sharp chefs knife and slicked it vertically into very thin strips, then cut those strips in half or quarters depending on width.  I found I was able to use lots of stem because letting it sit in the lemon dressing \"cooks\" it enough (think ceviche.  I recommend marinating as long as you can as the flavor only improves.<br /><br />Tonight I will be serving this salad for the fourth time and everyone is looking forward to it."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "paulacriss"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I made this salad for Sunday dinner, and there wasn't a morsel left over! It is simple to make (even if I did have to borrow a mandolin and absolutely delicious.  I made it the night before but didn't add the dressing,nuts and tomatoes (and chopped bacon - just had to add someuntil the next morning. My family is already asking for more.  May have to buy a mandolin!  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Patrick O."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Very quick (disregarding the hold period, no cooking, and delicious.  This will be a standard, especially in the summer. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "smitty26"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This salad is delicious, healthy, and \"holds\" well. The lemony dressing is especially good. I used toasted pine nuts since that was all I had, and they were great. This is a good warm weather recipe.  Love it."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Peaskeeper"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I hate raw broccoli, but this salad was so good, and this will be my new way to get broccoli into my diet. The key is to slice the broccoli very thinly. I used the slicing blade on my food processor, and I highly recommend that method because it's really fast and not messy. I didn't use any nuts, but I didn't feel that this salad was missing anything. I love the basil in this. I would make this for a party and I think it would be a big hit. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "grace g."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "So good!!  Took the \"semi-homemade\" route and used broccoli slaw bagged mix as well as a bag of florets.  Still got that great \"stalk\" flavor.  Made the dressing exactly, except cut the salt in half, after reading reviews.  It was perfect.  Thanks Alton, you are a genius! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "William D."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I think the mandoline is important for this recipe.  I have made at home with the mandoline and at a friends house without one and there is a difference.  I would compare it regular spaggetti and angle hair which taste totally different with the same sauce.  It is much more intense with the thinner slices. IMHO :. Itook the advice and cut back on the salt."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've made this salad many, many times since watching the episode.  Parties, holidays, pot lucks, tailgating... you name it!  And every time everyone goes crazy and wants the recipe. I do use almonds, personal preference, and I also use a lot more basil than the recipe calls for - a big handful!  So good!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "bhkrieger"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Light and tasty!  I too sliced the broccoli with a knife.  I did not have basil so substituted cilantro.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sharon R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fantastic.  We all loved it.  I did add cherry tomatos and mozzalla just befor serving.  This is a keeper."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "anna a."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I made this last night to go with grilled flank steak.  It was absolutely delicious.  Will make it again and also share with my broccoli lovers."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "tommichob"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I used raisins and almonds instead of the tomatoes and pecans and cut the salt in half.  It was yummy.  I will eat lots of it, so healthy too!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "marinemom69"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This was wonderful, I had no lemons so I used white balsamic vinegar instead and I put some sugar in it, there was nothing left. I loved the way Alton sliced the broccoli, way to go Alton, just another one of your recipes that will be a keeper with me."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "mcurit"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "When searching for something new to do with broccoli, I came across this recipe. My oldest daughter is trying to eat vegan and this was perfect as it accommodated her and the rest of the family. It was great and even my picky 13-year old ate it (minus the tomatoes!). I have to agree with an another reviewer though......I cut back on the salt and it was still a bit salty. Despite that, it was easy to make and so good! We will definitely eat it again!! For those not vegan, feta or fresh mozzarella would be a great addition."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "katydid01"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Incredible salad!  So fresh tasting!  I followed the recipe exactly, but then caved and added just two strips of crumbled crisp bacon.  The smoky taste melded with the basil and toasted pecans beautifully and didn't overpower the lemon at all.  We inhaled it with dinner and I confess I had some forkfuls before breakfast, it is so good. Easy to make, too - this will be one of our vegetable staples for the summer.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "meandiet"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wow! This salad is so delicious. I've already made it half a dozen times! Love it!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Heike from Alabama"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy to prepare, but the flavor was disgusting. We love cooked broccoli and so we tried this raw version, but this recipe is not for us! Who knows; maybe it was bad broccoli?<br />Blanching the broccoli would have been better."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "rachel85283"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The only thing that makes me give this recipe three stars is the amount of salt that the recipe calls for.  As written, the recipe is good, but very salty due to both the dijon and the salt that are in the dressing.  I wish that I had tasted the dressing prior to salting - I guess that's my fault.  Due to the fact that broccoli and tomatoes are not in season together, I used sun dried tomatoes instead, awesome addition.  I also increased the amount of lemon juice.  This would be amazing on a antipasta buffet!  I'm glad to have found this recipe, I'm always looking for new ideas for raw broccoli rather than the standard broccoli, raisin, bacon salad.  Oh, and I didn't bother with a mandolin!  Just slice it up or cut into florettes.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Heather W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I hate fresh broccoli and traditional broccoli salad has never looked appealing.  I tried this recipe because my husband loves broccoli and all its cancer fighting attributes.  I'm sitting here typing this review while finishing off the rest of the salad from last night...it is just that good!  I didn't use a mandolin but thinly sliced the broccoli.  I also used candied pecans because its what I had on hand.  This dish is excellent and I will definitely make it again and again. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Eliza Smith"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have gotten so many compliments on this dish!  It's also really easy to change up.  I've added feta cheese and used different veggies, like carrots, to add some variety.  I also like to make my vinaigrette extra lemony. I could eat the entire batch by myself and would have if others hadn't demanded that I share."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Connie N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I fixed this the other night.  It was so good I ate the leftovers the next morning for breakfast.  Will fix again and again.  Will even eat it for breakfast again and again.\r<br />Connie (Garden Valley, CA)"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pursue N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I am going to refer to this recipe on my article discussing value of Broccoli in preventing osteoarthritis pursuenatural.wordpress.com. I cannot cook and this recipe sounds healthy and easy for my readers"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kateclancy"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Being a fan of raw broccoli and a resident of the kitchen floor, my dog was thrilled I had decided to try and slice broccoli on a mandolin. \r<br />Messes aside, this is fantastic. I added about a tsp of honey to the dressing for balance and didn't have any pecans or hazelnuts so I used sesame seeds. I am really happy with the results. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Rssnkgp02"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Somehow, the vinaigrette could have been a little more potent (or maybe I had too much broccoli).  Anyways, I did enjoy it.  The chopping of the broccoli wasn't too messy.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janna N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Yes, this is a little messy, but fun to make!  The dressing was super simple and I love the tomatoes it too.  My salad sat with the dressing on it for less than an hour and was very good, but next time I think I would let it soak up the dressing a little longer.  Raw broccoli is just not that great by itself, but this healthy and simple dressing is just what broccoli needed!  Will definitely make this again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lisa T."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have allways loved broccoli but I don't buy it because my husband and kids hate it.  I tried this recipe on them and my husband acctually went back for seconds and my kids ate their helping.   Thanks for making such a great salad."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Food, Life &amp; Health"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The picture on this recipe is of ?Fresh Broccoli Salad? from the same episode. Just a mix up, please delete this comment once the pictures gets switched. Broccoli is yummy. Thank you Good Eats.\r<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Helen S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great salad! Easy to make and very delicious."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "moprica"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I made this salad for the second time this weekend.  It's very tasty and will definitely make it again. It does make quite a mess to shred up all the broccoli, even though I used my food processor as others had suggested.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "SUSAN J."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "A broccoli dish my husband will actually eat!  He even asked if I could make it again later in the week.  Easy to make, albeit a little messy.  I used toasted walnuts, and it was delicious. My husband laughs at the Good Eats show and calls it \"food humor.\"  He's not laughing any more.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janet T."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "So easy to make and so good to eat! This will become a regular salad at our house. May mix it up by adding some black olives and/or feta cheese."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "John C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This recipe is a keeper. I don't have a mandolin, so I used the slicing disk of the food processor, which worked fine. I also used toasted cashews, since I didn't have the other nuts. Otherwise, I followed the recipe. I'll make it again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Barbara H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Slicing the broccoli on a mandolin was a job, it ends up crumb-y. Slicing was easier. Good taste"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Joni M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My husband found this recipe and made it for my birthday dinner as a surprise.  \r<br />\r<br />He's a sous-chef in training (at home) and had no trouble at all with this recipe.  Very easy and extremely delicious.  I liked it so much I'm taking it to a pot-luck for our neighborhood night out tomorrow."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "April N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is the best broccoli dish I have ever eaten, the whole thing didn't last 24 hours between my Mom and I. I used 4 heads of broccoli because I do not have a scale to measure a pound but I think the proportions off broccoli to everything else was great. I also used 4oz. of hazelnuts because they are my favorite nut in the entire universe. Otherwise I really just followed the way Alton did it when I watched the episode with it. My platonic love goes to Alton for this dish, because a new way to eat uncooked broccoli is just what my life needed."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Suzaqt"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I took this dish to a potluck - these folks don't eat as well as they could and they all enjoyed it a lot. Even though I followed the recipe as written, one woman said it needed more salt! Wow! It already had more than I would normally use - 1 t - but otherwise, it was a hit"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "TERRI C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is one of the best broccili salads I have ever made.  This has a unique and wonderful taste. A keeper."
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "name": "Fresh Chopped Broccoli Salad",
+        "description": "Alton's Chopped Broccoli Salad is quick, healthy, flavorful and fresh.",
+        "duration": "PT0H2M21S",
+        "thumbnailUrl": "https://food.fnr.sndimg.com/content/dam/images/food/video/0/02/021/0217/0217465.jpg.rend.hgtvcom.406.305.suffix/1661458378771.jpeg",
+        "contentUrl": "https://www.foodnetwork.com/apps/api/playback?path=/etc/sni-asset/food/videos/0/02/021/0217/0217465",
+        "uploadDate": "2022-08-25T16:19:37.473-04:00"
+    },
+    "recipeCategory": "side-dish"
+}

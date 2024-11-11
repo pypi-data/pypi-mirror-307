@@ -1,0 +1,231 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Chicken Tamale Pie",
+    "description": "This chicken tamale pie is a huge crowd pleaser and so easy to make! A corn cake bottom layer topped with shredded chicken, enchilada sauce, and cheese.",
+    "author": {
+        "@type": "Person",
+        "name": "Lindsay Ostrom",
+        "url": "https://pinchofyum.com/about"
+    },
+    "keywords": "chicken tamale pie, tamale crust",
+    "image": [
+        "https://pinchofyum.com/wp-content/uploads/chicken-tamale-pie-225x225.jpg",
+        "https://pinchofyum.com/wp-content/uploads/chicken-tamale-pie-260x195.jpg",
+        "https://pinchofyum.com/wp-content/uploads/chicken-tamale-pie-320x180.jpg",
+        "https://pinchofyum.com/wp-content/uploads/chicken-tamale-pie.jpg"
+    ],
+    "url": "https://pinchofyum.com/chicken-tamale-pie",
+    "recipeIngredient": [
+        "1/3 cup fat free milk",
+        "1/4 cup egg substitute",
+        "1 1/2 tablespoon taco seasoning, divided",
+        "1/4 teaspoon ground red pepper",
+        "1 (14 3/4 ounce) can cream-style corn",
+        "1 (8.5 ounce) box corn muffin mix (such as Jiffy)",
+        "1 (4 ounce) can chopped green chiles, drained",
+        "1 (10 ounce) can red enchilada sauce &#8211; I recommend going with an authentic Mexican brand",
+        "2 cups shredded cooked chicken breast",
+        "3/4 cup shredded white cheese (I used Raclette &#8211; random, I know, but it&#8217;s what I had on hand, and it ended up being delicious!)",
+        "cilantro and crumbled Cotija cheese for topping"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat oven to 400°. Combine the first 7 ingredients (milk through green chiles), using just 1/2 tablespoon of the taco seasoning, in a large bowl, stirring just until moist. Pour mixture into a round pie plate (mine was glass) coated with cooking spray. Bake for 20-30 minutes.",
+            "url": "https://pinchofyum.com/chicken-tamale-pie#instruction-step-1",
+            "video": {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Tamale Pie Step 1",
+                "description": "Preheat oven to 400°. Combine the first 7 ingredients (milk through green chiles), using just 1/2 tablespoon of the taco seasoning, in a large bowl, stirring just until moist. Pour mixture into a round pie plate (mine was glass) coated with cooking spray.",
+                "duration": "PT16S",
+                "embedUrl": "https://player.vimeo.com/video/480341068?dnt=1&amp;app_id=122963",
+                "contentUrl": "https://vimeo.com/480341068",
+                "thumbnailUrl": [
+                    "https://i.vimeocdn.com/video/996700887-fa9e14ab125a4b94ff0a9185832b73dac16a423049c6f3e1ee03e4c5cc35ccab-d_295x166"
+                ],
+                "uploadDate": "2020-11-17T10:06:58+00:00"
+            }
+        },
+        {
+            "@type": "HowToStep",
+            "text": "While corn is baking, toss the chicken in the remaining 1 tablespoon taco seasoning. When corn is done &#8211; it will be just barely set and golden brown &#8211; pierce entire surface liberally with a fork (it might stick a little bit to the fork). Pour enchilada sauce over top. Top with chicken; sprinkle with cheese. Bake at 400° for 15 minutes or until cheese melts. Remove from oven; let stand 5 minutes. Cut into 8 pieces; top each serving with cilantro and Cotija cheese.",
+            "url": "https://pinchofyum.com/chicken-tamale-pie#instruction-step-2",
+            "video": {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Tamale Pie Step 2",
+                "description": "While corn is baking, toss the chicken in the remaining 1 tablespoon taco seasoning. When corn is done - it will be just barely set and golden brown - pierce entire surface liberally with a fork (it might stick a little bit to the fork). Pour enchilada sauce over top. Top with chicken; sprinkle with cheese. Bake at 400° for 15 minutes or until cheese melts. Remove from oven; let stand 5 minutes. Cut into 8 pieces; top each serving with cilantro and Cotija cheese.",
+                "duration": "PT20S",
+                "embedUrl": "https://player.vimeo.com/video/480341599?dnt=1&amp;app_id=122963",
+                "contentUrl": "https://vimeo.com/480341599",
+                "thumbnailUrl": [
+                    "https://i.vimeocdn.com/video/997513117-b044ee8a58608011779a4f02302a35fed67bd2d3c6d32f7705dba815756107c2-d_295x166"
+                ],
+                "uploadDate": "2020-11-17T10:08:13+00:00"
+            }
+        }
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "totalTime": "PT45M",
+    "recipeYield": "8",
+    "recipeCategory": [],
+    "recipeCuisine": "Mexican",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "134",
+        "ratingValue": "4.7"
+    },
+    "nutrition": {
+        "servingSize": null,
+        "calories": "305 calories",
+        "sugarContent": "3.6 g",
+        "sodiumContent": "845.2 mg",
+        "fatContent": "10.6 g",
+        "saturatedFatContent": "3.7 g",
+        "transFatContent": "0.1 g",
+        "carbohydrateContent": "34.7 g",
+        "fiberContent": "3.2 g",
+        "proteinContent": "18.4 g",
+        "cholesterolContent": "35.8 mg",
+        "@type": "nutritionInformation"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Chicken Tamale Pie",
+        "description": "This chicken tamale pie is a huge crowd pleaser and so easy to make! A corn cake bottom layer topped with shredded chicken, enchilada sauce, and cheese.",
+        "contentUrl": "https://content.jwplatform.com/videos/cZR84Jb9.mp4",
+        "thumbnailUrl": [
+            "https://content.jwplatform.com/thumbs/cZR84Jb9-720.jpg"
+        ],
+        "uploadDate": "2021-02-08T17:47:13+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mark wilson"
+            },
+            "datePublished": "2020-07-20",
+            "reviewBody": "great recipe"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lindsay"
+            },
+            "datePublished": "2012-03-09",
+            "reviewBody": "Yes it does!  Hope you like it. :)"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Cindy"
+            },
+            "datePublished": "2015-04-11",
+            "reviewBody": "I've frozen this it turned out fine was just as good as when I made it.... I put it in small containers with one or two servings in each container I made it for my elderly grandparents they enjoyed it each time they had it."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "jenny"
+            },
+            "datePublished": "2012-03-16",
+            "reviewBody": "Hi, Lindsay.  I finally made the chicken tamale pie last night and my husband and I both loved it.  It was SO easy and tasty.  The cilantro was a must for us as it added a bright freshness to the dish.  Thanks so much for your recipe!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lindsay"
+            },
+            "datePublished": "2012-03-08",
+            "reviewBody": "I was actually toying with the idea of swapping the mix for my own cornmeal/flour/salt/baking powder combo.  But obviously I went with the mix this time. :)  Here's a cool link about making your own mix: https://www.food.com/recipe/jiffy-corn-muffin-mix-copycat-345502"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mom Foodie"
+            },
+            "datePublished": "2012-03-08",
+            "reviewBody": "This looks awesome, esp. for the calories / serving."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lindsay"
+            },
+            "datePublished": "2012-03-09",
+            "reviewBody": "Yep!  Just a few slight adjustments.  It's a keeper!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Nancy"
+            },
+            "datePublished": "2012-03-09",
+            "reviewBody": "Loved this recipe....but I made my masa recipe for the base (you can also purchase pre-made masa in the frozen food section at grocery store).  It was delish and the family loved it.  Also, I now do not have to make the dozen of tamales at one time.  Thank you soooo much!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "molly"
+            },
+            "datePublished": "2015-10-13",
+            "reviewBody": "I know this is super old, but wondering what exactly you did to freeze it and have it turn out :)"
+        }
+    ],
+    "datePublished": "2012-03-07",
+    "@id": "https://pinchofyum.com/chicken-tamale-pie#recipe",
+    "isPartOf": {
+        "@id": "https://pinchofyum.com/chicken-tamale-pie#article"
+    },
+    "mainEntityOfPage": "https://pinchofyum.com/chicken-tamale-pie"
+}

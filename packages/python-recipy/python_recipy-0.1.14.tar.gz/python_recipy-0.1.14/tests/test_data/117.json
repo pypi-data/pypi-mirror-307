@@ -1,0 +1,58 @@
+{
+    "@type": "Recipe",
+    "@context": "http://schema.org/",
+    "name": "Easy Ranger Cookies",
+    "keywords": "easy ranger cookies",
+    "recipeCategory": "Dessert",
+    "image": "https://mojo.generalmills.com/api/public/content/JxVgDA8nmUWcoLnc_Huw3w_webp_base.webp?v=b0dc0e61&t=85e6ab0127c04f66a40c0b82332e03a6",
+    "description": "Packing cookies in lunches?  Here's a great pack-and-munch treat. ",
+    "recipeIngredient": [
+        "1  pouch (17.5 oz) Betty Crocker™ Oatmeal Cookie Mix",
+        "1/2  cup butter or margarine, softened",
+        "1  tablespoon water",
+        "1  egg",
+        "3/4  cup crisp rice cereal",
+        "1/2  cup flaked coconut"
+    ],
+    "totalTime": "PT0H40M",
+    "prepTime": "PT0H40M",
+    "recipeYield": "36",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4",
+        "ratingCount": "63",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Betty Crocker Kitchens"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oven to 375°F. In large bowl, stir all ingredients until soft dough forms. Drop dough by rounded teaspoonfuls 2 inches apart onto ungreased cookie sheet."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bake 10 to 12 minutes or until edges are golden brown. Cool 1 minute; remove from cookie sheet. Cool completely."
+        }
+    ],
+    "mainEntity": [],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "90 ",
+        "carbohydrateContent": "12 g",
+        "cholesterolContent": "15 mg",
+        "fatContent": "1 ",
+        "fiberContent": "0 g",
+        "proteinContent": "1 g",
+        "saturatedFatContent": "1 1/2 g",
+        "servingSize": "1 Cookie",
+        "sodiumContent": "80 mg",
+        "sugarContent": "6 g",
+        "transFatContent": "0 g"
+    },
+    "dateCreated": "06/01/2005",
+    "dateModified": "05/21/2009"
+}

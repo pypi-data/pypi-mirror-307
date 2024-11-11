@@ -1,0 +1,180 @@
+{
+    "@type": "Recipe",
+    "name": "Thai Spicy Pork Bones Soup - \"Leng Saeb\"",
+    "author": {
+        "@id": "https://hot-thai-kitchen.com/#/schema/person/09994300ee947577e6e3beb749877a7d"
+    },
+    "description": "A Thai street food featuring an impressive &quot;mountain&quot; of pork bones with meat that&#039;s fall-off-the-bone tender. Served with a spicy, garlicky pork broth that is to die for. Gluten free.",
+    "datePublished": "2021-12-24T06:00:00+00:00",
+    "image": [
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/12/Leng-Saeb.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/12/Leng-Saeb-500x500.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/12/Leng-Saeb-500x375.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/12/Leng-Saeb-480x270.jpg"
+    ],
+    "video": {
+        "name": "Thai Street Food Recipe - Spicy Pork Bone Soup",
+        "description": "Mark Wiens shared this viral video of a crazy street food dish...a literal mountain of pork bones in a spicy broth. In this video, I show you how you can VERY EASILY make this dish at home!!",
+        "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--NTOFWIKt--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1681225706/crmhrq6mg0qechul6j6s.jpg",
+        "embedUrl": "https://video.mediavine.com/videos/i6IGTa4mV.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1681225693/i6IGTa4mV.mp4",
+        "uploadDate": "2021-12-21T22:04:19+00:00",
+        "duration": "PT560S",
+        "@type": "VideoObject"
+    },
+    "recipeYield": [
+        "4",
+        "4 servings"
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT135M",
+    "recipeIngredient": [
+        "3 lb pork neck or back bones (see note 1)",
+        "3.7 qt water",
+        "Half an onion (large dice, see note 2)",
+        "Half a head garlic (peeled and smashed)",
+        "½ tsp white peppercorns (cracked)",
+        "2 Tbsp soy sauce",
+        "2 Tbsp fish sauce",
+        "2 cups pork stock (from above)",
+        "3 Tbsp lime juice",
+        "1 Tbsp fish sauce (approx)",
+        "2 tsp sugar",
+        "3 Tbsp chopped garlic",
+        "3-4  Thai chilies (seeds removed if needed)",
+        "⅔ cup chopped cilantro (if you have sawtooth coriander, you can add it too)",
+        "Jasmine rice for serving"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToSection",
+            "name": "To make the pork stock",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "In a large stock pot add the bones and cover with the water. Add the soy sauce and the fish sauce and bring to a simmer. Simmer for 30 minutes or until a significant amount of scum collects on top. Skim off the scum and discard.",
+                    "name": "In a large stock pot add the bones and cover with the water. Add the soy sauce and the fish sauce and bring to a simmer. Simmer for 30 minutes or until a significant amount of scum collects on top. Skim off the scum and discard.",
+                    "url": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#wprm-recipe-13122-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add the onions, garlic, and peppercorns and simmer for another 1.5 hours or until the meat is fork tender. If water dries up too quickly, top it off just until the bones are submerged.",
+                    "name": "Add the onions, garlic, and peppercorns and simmer for another 1.5 hours or until the meat is fork tender. If water dries up too quickly, top it off just until the bones are submerged.",
+                    "url": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#wprm-recipe-13122-step-0-1"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To make the Saeb broth",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Take 2 cups of the pork stock and bring to a boil in a small pot. Keep the pork bones in the broth to keep them moist until ready to serve. Meanwhile pound the chilies in a mortar and pestle until broken into bits or finely chop them.",
+                    "name": "Take 2 cups of the pork stock and bring to a boil in a small pot. Keep the pork bones in the broth to keep them moist until ready to serve. Meanwhile pound the chilies in a mortar and pestle until broken into bits or finely chop them.",
+                    "url": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#wprm-recipe-13122-step-1-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Once the broth is boiling, turn off the heat and immediately add the garlic and chilies. Season with the sugar, fish sauce and lime juice, then taste and add more fish sauce if needed. (How much fish sauce depends on how far your stock reduced, so you have to taste and adjust here.) When ready to serve, stir in the cilantro.",
+                    "name": "Once the broth is boiling, turn off the heat and immediately add the garlic and chilies. Season with the sugar, fish sauce and lime juice, then taste and add more fish sauce if needed. (How much fish sauce depends on how far your stock reduced, so you have to taste and adjust here.) When ready to serve, stir in the cilantro.",
+                    "url": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#wprm-recipe-13122-step-1-1"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To serve",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Arrange the pork bones into a big pile on a platter that has enough depth to it to hold the broth. Ladle the seasoned broth over the pork, allowing the garlic and the chilies to rest on the bones. Serve with jasmine rice. You can use a spoon and fork to pick the meat off of the bones, but feel free to use your hands when needed. The broth is the best part of this, so be sure to sip on that as you eat, and drench your rice with it!*You can save the remaining broth for noodle soups. They will last in the fridge for about a week, and will freeze indefinitely.",
+                    "name": "Arrange the pork bones into a big pile on a platter that has enough depth to it to hold the broth. Ladle the seasoned broth over the pork, allowing the garlic and the chilies to rest on the bones. Serve with jasmine rice. You can use a spoon and fork to pick the meat off of the bones, but feel free to use your hands when needed. The broth is the best part of this, so be sure to sip on that as you eat, and drench your rice with it!*You can save the remaining broth for noodle soups. They will last in the fridge for about a week, and will freeze indefinitely.",
+                    "url": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#wprm-recipe-13122-step-2-0"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "5"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I thought so too but I added 1 stick of  Lemongrass and it still taste great",
+            "author": {
+                "@type": "Person",
+                "name": "T"
+            },
+            "datePublished": "2024-02-20"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I just made this -- great recipe, totally reminded me of the street food dish we had in Bangkok a few years back. Thank you for making this recipe available so I can recreate it at home and bring back some good memories.",
+            "author": {
+                "@type": "Person",
+                "name": "LW"
+            },
+            "datePublished": "2022-10-30"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Aroy mak ka!!!!\r\nSo incredibly good, with the typical wonderful balance of flavors that is Thai cooking. Spicy, sour, sweet, and salty. Loved it.\r\n\r\nKhup khun ka",
+            "author": {
+                "@type": "Person",
+                "name": "Diana Evans"
+            },
+            "datePublished": "2022-05-23"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Wow wow wow!! Made this tonight and it was a huge hit for my family! Need to make more next time cuz we demolished it in record time! Thanks for the fantastic recipe! This will surely be on rotation from now on❤️",
+            "author": {
+                "@type": "Person",
+                "name": "Kelly"
+            },
+            "datePublished": "2022-04-13"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "love this recipe! I always have a batch frozen.",
+            "author": {
+                "@type": "Person",
+                "name": "Beck &amp; Bulow"
+            },
+            "datePublished": "2022-01-01"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Thai"
+    ],
+    "keywords": "gluten free, street food",
+    "@id": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#recipe",
+    "isPartOf": {
+        "@id": "https://hot-thai-kitchen.com/thai-pork-bone-soup/#article"
+    },
+    "mainEntityOfPage": "https://hot-thai-kitchen.com/thai-pork-bone-soup/"
+}

@@ -1,0 +1,138 @@
+{
+    "@type": "Recipe",
+    "thumbnailUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2048x2048/square-1493301072-kale-pesto-chicken-pasta.jpg?resize=100:*",
+    "datePublished": "2017-04-27T14:11:00 EDT",
+    "headline": "Kale Pesto Chicken Pasta",
+    "articleBody": null,
+    "wordCount": null,
+    "image": [
+        {
+            "@type": "ImageObject",
+            "height": 1200,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2048x2048/square-1493301072-kale-pesto-chicken-pasta.jpg?resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2048x2048/square-1493301072-kale-pesto-chicken-pasta.jpg?resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 900,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2048x2048/square-1493301072-kale-pesto-chicken-pasta.jpg?resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2560x1920/sd-aspect-1493301072-kale-pesto-chicken-pasta.jpg?resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 675,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/2048x2048/square-1493301072-kale-pesto-chicken-pasta.jpg?resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/17/3200x1800/hd-aspect-1493301072-kale-pesto-chicken-pasta.jpg?resize=1200:*",
+            "width": 1200
+        }
+    ],
+    "mainEntityOfPage": {
+        "@id": "https://www.delish.com/cooking/recipe-ideas/recipes/a52790/kale-pesto-chicken-pasta-recipe/",
+        "@type": "WebPage"
+    },
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Delish",
+        "sameAs": [
+            "https://twitter.com/delish",
+            "https://www.tiktok.com/@delish",
+            "https://www.youtube.com/c/delish",
+            "https://www.facebook.com/delish",
+            "http://instagram.com/delish",
+            "http://www.pinterest.com/Delish/"
+        ],
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.delish.com/_assets/design-tokens/delish/static/images/logos/logo-jsonld.1396ea2.png",
+            "width": 312,
+            "height": 60
+        },
+        "parentOrganization": {
+            "@type": "NewsMediaOrganization",
+            "name": "Hearst Corporation"
+        }
+    },
+    "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a52790/kale-pesto-chicken-pasta-recipe/",
+    "isBasedOn": "https://www.delish.com/cooking/recipe-ideas/recipes/a52790/kale-pesto-chicken-pasta-recipe/",
+    "isAccessibleForFree": "False",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".content-container"
+        }
+    ],
+    "description": "Looking for an easy pasta recipe? This Kale Pesto Chicken Pasta from Delish.com is the best!",
+    "author": {
+        "name": "Sally Quinn",
+        "url": "https://www.delish.com/author/13269/sally-quinn/",
+        "@type": "Person",
+        "image": "https://hips.hearstapps.com/rover/profile_photos/8de24bb8-4cfb-4747-bc3c-42ad32b68286.jpeg",
+        "email": "lfunston@hearst.com",
+        "sameAs": [
+            "www.twitter.com/sallysbakeblog",
+            "www.instagram.com/sallysbakeblog"
+        ]
+    },
+    "name": "Kale Pesto Chicken Pasta",
+    "prepTime": "PT10M",
+    "cookTime": "PT0S",
+    "totalTime": "PT25M",
+    "recipeIngredient": [
+        "kosher salt",
+        "1 lb. box dry pasta",
+        "1 tbsp. extra-virgin olive oil",
+        "1 lb. boneless skinless chicken breasts",
+        "2 c. chopped kale",
+        "1 c. fresh basil, plus more for garnish",
+        "1/2 c. chopped walnuts",
+        "1/2 c. extra-virgin olive oil",
+        "2/3 c. freshly grated Parmesan, plus more for garnish",
+        "3 cloves garlic, minced",
+        "Juice of 1 lemon",
+        "1 c. cherry tomatoes, halved",
+        "1 c. small fresh mozzarella balls"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a large pot of salted boiling water, cook pasta according to package directions until al dente. Drain and return to pot."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a grill pan (or a large skillet), heat olive oil over medium-high heat. Season both sides of chicken with salt and pepper then add to skillet. Cook until golden and seared on both sides, about 8 minutes per side. Let rest for 10 minutes, then slice into 1/2\" pieces. "
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Make pesto: Combine kale, basil, and walnuts in a food processor. Pulse until greens and nuts are finely chopped. Scrape down the sides, then add olive oil, Parmesan, garlic, and lemon juice and season with salt. Pulse until blended. "
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pour pesto over pasta, then add tomatoes and mozzarella and toss until combined. Top with sliced chicken. "
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve with more basil and Parmesan. "
+        }
+    ],
+    "recipeYield": "4",
+    "recipeCuisine": [],
+    "recipeCategory": [],
+    "keywords": "kale, pesto, pasta, chicken, weeknight dinners",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": " 4408 Calories",
+        "fatContent": "224 g",
+        "saturatedFatContent": "52 g",
+        "transFatContent": "0 g",
+        "cholesterolContent": "465 mg",
+        "sodiumContent": "3647 mg",
+        "carbohydrateContent": "346 g",
+        "fiberContent": "24 g",
+        "sugarContent": "22 g",
+        "proteinContent": "229 g"
+    },
+    "@context": "http://schema.org"
+}

@@ -1,0 +1,98 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "@id": "https://www.marionskitchen.com/ba-mee-jub-kang/#recipe",
+    "url": "https://www.marionskitchen.com/?p=94364",
+    "name": "Ba Mee Jub Kang | Marion&#039;s Kitchen",
+    "description": "‘Jub Kang’ is a Thai phrase that translates as ‘workers’. This dish is simpliicity in its most beautiful state. Very humble ingredients but treated and cooked in a way to make special. It was historically a dish popular with Chinese labourers as it was cheap and filling.",
+    "prepTime": "PT10M",
+    "cookTime": "PT2Hhours+10M",
+    "totalTime": "",
+    "keywords": "",
+    "recipeYield": "4",
+    "recipeCategory": [],
+    "recipeCuisine": "",
+    "recipeIngredient": [
+        "600g (1 lb 5 oz) pork shoulder",
+        "1 coriander root, lightly bruised",
+        "3 cloves garlic, peeled, bruised",
+        "1 tsp white peppercorns",
+        "100ml (3.5 fl oz) Thai soy sauce",
+        "400g (14 oz) choy sum, cut into bite-sized pieces",
+        "600g (1 lb 5 oz) fresh Chinese egg noodles",
+        "4 tbsp pork lard, melted",
+        "4 tsp sugar",
+        "chilli powder, to serve (optional)",
+        "fish sauce, to serve (optional)",
+        ""
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "1. Fill a large saucepan one-third full with water and bring to a boil over high heat. Add in the pork shoulder, followed by the bruised coriander root, garlic, white peppercorns and soy sauce. Bring back to a boil and pop the lid on. Reduce the heat to medium-low and leave to simmer for 2 hours or until the pork is soft and tender."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "2. Turn the heat off completely and remove the lid. Leaving the pork in the broth, let everything cool down completely to keep it nice and juicy as it slowly comes down to temperature. Use tongs to transfer the pork to a chopping board and cut into thin slices."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "3. Strain the cooking liquid into a clean bowl and save it for later. Prepare a bowl of ice water."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "4. In a clean saucepan of boiling water, blanch the choy sum for around 30 seconds, then use a spider strainer to transfer it to the ice bath. Use your hands to lift out the choy sum from the ice bath and squeeze out most of the water. Transfer to a plate."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "5. Now let’s cook the noodles. Add the noodles to the same boiling water you cooked the choy sum and boil, moving them around so they don’t clump together, for 30 seconds. Scoop them up with your spider strainer and transfer them to a large bowl."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "6. Sprinkle over the sugar along with 1 cup of the cooking liquid from the pork. Toss the noodles until all the sauce is soaked up, then drizzle over the pork lard. Stir and toss again until the noodles are all glossy and gorgeous."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "7. To serve, divide the noodles among four large serving bowls and top with the pork and choy sum. Sprinkle with chilli powder and drizzle with a little fish sauce, if using."
+        },
+        {
+            "@type": "HowToStep",
+            "text": ""
+        }
+    ],
+    "datePublished": "2024-05-03T00:00:00Z",
+    "dateModified": "2024-05-03T00:00:00Z",
+    "mainEntity": {
+        "@type": "WebPage",
+        "@id": "https://www.marionskitchen.com/?p=94364",
+        "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.marionskitchen.com/wp-content/uploads/2020/06/MK-new-logo-2022.png",
+                "width": "500",
+                "height": "320"
+            },
+            "name": "Bring the Best Flavours of Asia to Home Kitchens"
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marionskitchen.com/wp-content/uploads/2024/05/jpeg-optimizer_20240307_MK_Ba-Mee-Jab-Kang_Bangkok-1.webp",
+        "height": "1508",
+        "width": "1887"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Rafi",
+        "description": "",
+        "url": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://secure.gravatar.com/avatar/b4be80400146a8b990da6b4bd377fbc5?s=96&d=mm&r=g",
+            "height": "96",
+            "width": "96"
+        }
+    },
+    "review": []
+}

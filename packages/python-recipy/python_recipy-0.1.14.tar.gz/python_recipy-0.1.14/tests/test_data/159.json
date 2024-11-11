@@ -1,0 +1,92 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "alternativeHeadline": "Roast Chicken with Oven-Glazed Carrots and Warm Parsley Sauce Recipe",
+    "keywords": [
+        "chicken",
+        "carrot",
+        "parsley",
+        "easy",
+        "weeknight meals",
+        "main",
+        "nut-free",
+        "gluten-free",
+        "dairy-free",
+        "roast",
+        "dinner",
+        "web"
+    ],
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bon Appétit",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bonappetit.com/verso/static/bon-appetit/assets/logo-seo.png",
+            "width": "479px",
+            "height": "100px"
+        },
+        "url": "https://www.bonappetit.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Bon Appétit"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Sara Dickerman",
+            "sameAs": "https://www.bonappetit.com/contributor/sara-dickerman"
+        },
+        {
+            "@type": "Person",
+            "name": "Sarah Flotard",
+            "sameAs": "https://www.bonappetit.com/contributor/sarah-flotard"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "ratingCount": 1
+    },
+    "description": "Roast Chicken with Oven-Glazed Carrots and Warm Parsley Sauce Recipe",
+    "image": [
+        "https://assets.bonappetit.com/photos/57af6f6c1b33404414975da2/master/w_100,h_100,c_limit/roast-chicken-with-oven-glazed-carrots-and-warm-parsley-sauce-100.jpg"
+    ],
+    "headline": "Roast Chicken with Oven-Glazed Carrots and Warm Parsley Sauce",
+    "name": "Roast Chicken with Oven-Glazed Carrots and Warm Parsley Sauce",
+    "recipeIngredient": [
+        "1 whole 3–3 1/2 pounds chicken, giblets reserved for another use, wing tips trimmed",
+        "Kosher salt and freshly ground black pepper",
+        "5 tablespoons olive oil, divided",
+        "2 garlic cloves, 1 halved, 1 minced",
+        "1 1/4 pounds carrots, peeled, cut into 1-inch chunks",
+        "1 teaspoon honey",
+        "pinch of cayenne pepper",
+        "1/4 cup chopped flat-leaf parsley leaves",
+        "Zest and juice of 1 lemon"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Generously season chicken inside and out with salt and pepper (about 1 Tbsp. salt). DO AHEAD: Can be seasoned 1 day ahead; place chicken on a plate and chill, uncovered, until ready to cook."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Preheat oven to 425°. Heat 1 Tbsp. oil in a large cast-iron or other ovenproof skillet over medium-high heat. Place chicken in pan, breast side up, and cook until skin is brown, 6–8 minutes. Tip pan to one side to gather accumulated fat and juices and baste top of chicken. Return pan to oven and cook chicken until an instant-read thermometer inserted into the deepest part of the thigh registers 165°, 50–55 minutes. Transfer chicken to a carving board, rub with garlic halves, and let rest for at least 10 minutes before carving. Pour off fat and juices from skillet, leaving browned bits in pan; set skillet aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Meanwhile, combine carrots, 1 Tbsp. oil, honey, and cayenne in a small bowl; toss to coat. Place carrots on a rimmed baking sheet in a single layer and bake until bottoms of carrots are golden brown, about 20 minutes. Stir and cook until carrots are tender and brown, about 5 minutes longer."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Whisk remaining 3 Tbsp. oil, minced garlic, parsley, and zest in a small bowl. Heat reserved skillet over medium heat. Pour in parsley oil and cook, scraping up browned bits from bottom of pan, until heated through. Add 1 Tbsp. lemon juice and swirl pan to mix. Season sauce to taste with salt and more lemon juice, if desired. Serve warm parsley sauce alongside roast chicken and carrots."
+        }
+    ],
+    "recipeYield": "4  Servings",
+    "url": "https://www.bonappetit.com/recipe/roast-chicken-with-oven-glazed-carrots-and-warm-parsley-sauce",
+    "dateModified": "2012-03-12T20:00:00.000-04:00",
+    "datePublished": "2012-03-12T20:00:00.000-04:00"
+}

@@ -1,0 +1,80 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "@id": "https://www.tasteofhome.com/recipes/green-gold-salsa/",
+    "name": "Green & Gold Salsa",
+    "datePublished": "2018-01-01",
+    "dateModified": "2022-09-30",
+    "prepTime": "PT10M",
+    "cookTime": "PT0M",
+    "totalTime": "PT10M",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Green-Gold-Salsa_EXPS_THSO16_197290_C05_26_3b-1.jpg",
+        "height": 1200,
+        "width": 1200
+    },
+    "recipeCategory": [],
+    "description": "Edamame and corn give this unique salsa its unmistakable team colors. You can add a little salt if you like, too. A healthy alternative to creamy dips, it’s good for the extra point. &mdash;Maggie Lovat, Green Bay, Wisconsin",
+    "recipeIngredient": [
+        "1 cup frozen shelled edamame, thawed",
+        "1 cup (about 5 ounces) frozen corn, thawed",
+        "1 cup cubed avocado",
+        "1 cup pico de gallo",
+        "Sliced cucumber and tortilla chips"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Combine edamame, corn, avocado and pico de gallo until well blended. Serve with cucumber slices and chips for dipping."
+        },
+        {
+            "@type": "HowToStep",
+            "text": ""
+        }
+    ],
+    "recipeYield": "3 cups.",
+    "author": {
+        "@type": "Organization",
+        "name": "Taste of Home"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": " 48 calories",
+        "fatContent": "3g fat (0 saturated fat)",
+        "cholesterolContent": "0 cholesterol",
+        "sodiumContent": "4mg sodium",
+        "carbohydrateContent": "5g carbohydrate (1g sugars",
+        "fiberContent": "2g fiber)",
+        "proteinContent": "2g protein. "
+    },
+    "aggregateRating": {
+        "@context": "http://schema.org/",
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 1,
+        "worstRating": 1,
+        "bestRating": 5
+    },
+    "review": [
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2016-12-08",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Beema"
+            },
+            "reviewBody": "The basics for this colorful salsa are perfect for making it your own by adding a sauce to hold the ingredients together.. I have made it twice now, the first time adding it to a jar of chunky tomato salsa, the second time I added seafood cocktail sauce.. both were big hits at family parties.  We like the cucumbers as dippers, and we have also used carrot sticks, zucchini boats.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        }
+    ],
+    "recipeCuisine": "North America, Mexican"
+}

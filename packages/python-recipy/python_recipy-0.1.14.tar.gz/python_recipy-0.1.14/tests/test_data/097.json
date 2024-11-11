@@ -1,0 +1,198 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "headline": "How To Make the Best, Crispiest, Beer-Battered Fish at Home",
+    "url": "https://www.thekitchn.com/beer-battered-fish-recipe-23136144",
+    "description": "Fry white fish in a beer batter with rice flour for the crispiest beer battered fish you can make at home.",
+    "brand": {
+        "@type": "Thing",
+        "name": "The Kitchn"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "415 cal",
+        "carbohydrateContent": "56.6 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "1.7 g",
+        "proteinContent": "35.3 g",
+        "saturatedFatContent": "0.5 g",
+        "sodiumContent": "699.0 mg",
+        "sugarContent": "0.1 g",
+        "fatContent": "2.1 g",
+        "servingSize": "Serves 4",
+        "unsaturatedFatContent": "0.0 g"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "English",
+        "Europe"
+    ],
+    "recipeIngredient": [
+        "6 cups (1 1/2 quarts) vegetable, canola oil, or peanut oil, for deep frying",
+        "1 1/2 pounds skinless flaky white fish fillets, such as cod, haddock, pollock, or flounder",
+        "1 1/3 cups rice flour, divided",
+        "1/2 cup all-purpose flour",
+        "2 teaspoons kosher salt, divided",
+        "1 1/4 teaspoons baking powder",
+        "1/4 teaspoon cayenne pepper",
+        "1 cup cold beer, such as lager",
+        "  For serving: lemon wedges, tartar sauce, or malt vinegar"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Step 1",
+            "text": "Heat the oil. Heat 6 cups vegetable oil in a large Dutch oven or heavy-bottomed pot over medium-high heat until 365ºF. Meanwhile, fit a wire rack over a rimmed baking sheet. Prepare the dry ingredients and fish.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 2",
+            "text": "Mix the dry ingredients. Place 2/3 cup of the rice flour in a pie plate. Place the remaining 2/3 cup rice flour, 1/2 cup all-purpose flour, 1 1/2 teaspoons of the kosher salt, 1 1/4 teaspoons baking powder, and 1/4 teaspoon cayenne pepper in a large bowl and whisk to combine.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 3",
+            "text": "Dry and flour the fish. Pat 1 1/2 pounds skinless white fish fillets dry with paper towels. Check for and remove any bones. Cut the fish crosswise into 3-inch pieces. Season with the remaining 1/2 teaspoon kosher salt. Working with one piece at a time, coat the fish completely in the rice flour and place in a single layer on a baking sheet.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 4",
+            "text": "Make the beer batter. When the oil is around 325ºF, add 1 cup cold beer to the flour mixture and whisk until smooth.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 5",
+            "text": "Fry half the fish. When the oil reaches 365ºF, add half of the floured fish to the batter and stir to coat. Pick up the fish one piece at a time, let the excess batter drip back into the bowl, and carefully place in the oil. Don’t stack pieces on top of each other or they will stick together. Fry, stirring and flipping them occasionally with tongs, until cooked through and golden brown, about 5 minutes.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 6",
+            "text": "Drain the fried fish. Transfer the fried fish to the wire rack.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 7",
+            "text": "Finish frying and serve. Repeat battering and frying the remaining fish. Serve with lemon wedges, tartar sauce, or malt vinegar.",
+            "image": null
+        }
+    ],
+    "HowtoTip": {
+        "text": "Storage: This is best eaten fresh, but leftovers can be refrigerated in an airtight container up to 2 days."
+    },
+    "recipeYield": 4,
+    "prepTime": "PT900S",
+    "cookTime": "PT600S",
+    "totalTime": "PT1500S",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1,
+        "reviewCount": 2
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "user_129872314"
+            },
+            "reviewBody": "This is absolutely the best recipe for fish and chips!Although, I will add more beer to the batter, just to thin it out. I have one that isn&#39;t crazy about the crispy part 🙄.I think I will put some heat to the flour, a little Creole seasoning.I liked it the way it was. I will keep this batter for my shrimp too!",
+            "datePublished": "2024-03-08"
+        }
+    ],
+    "name": "How To Make the Best, Crispiest, Beer-Battered Fish at Home",
+    "articleSection": "Recipes",
+    "thumbnailUrl": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2021-03-how-to-beer-battered-fish%2F2021_howto_beerbatteredfish_lead2_358",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2021-03-how-to-beer-battered-fish%2F2021_howto_beerbatteredfish_lead2_358"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2021-03-how-to-beer-battered-fish%2F2021_howto_beerbatteredfish_lead2_358"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-03-how-to-beer-battered-fish%2F2021_howto_beerbatteredfish_lead2_358"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Apartment Therapy, LLC.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thekitchn.com/static/logos/publisher-logo.png",
+            "width": 180,
+            "height": 46
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Christine Gallary",
+            "URL": "https://www.thekitchn.com/authors/christine-gallary",
+            "description": "Christine graduated from Le Cordon Bleu in Paris, France, and she has worked at Cook's Illustrated and CHOW.com. She lives in San Francisco and loves teaching cooking classes. Follow her latest culinary escapades on Instagram.",
+            "jobTitle": ""
+        }
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Christine Gallary"
+    },
+    "keywords": [
+        "british",
+        "dinner",
+        "fish",
+        "Fish &amp; Seafood",
+        "How To",
+        "Ingredient",
+        "kid-friendly",
+        "Main Dish",
+        "pescatarian",
+        "recipe",
+        "european",
+        "seafood",
+        "pantry",
+        "stovetop",
+        "Cooking with Kids",
+        "children",
+        "Dish Types",
+        "team:recipes",
+        "purpose:facebook",
+        "purpose:flipboard",
+        "purpose:instagram",
+        "purpose:pinterest",
+        "purpose:search",
+        "platform:search",
+        "platform:social",
+        "course:main dish",
+        "cuisine:english",
+        "cuisine:europe",
+        "diet:pescatarian",
+        "mainingredients:pantry",
+        "mainingredients:seafood",
+        "mainingredients:flour",
+        "mainingredients:fish",
+        "method:stovetop",
+        "lifestyle:kid-friendly",
+        "meal:dinner",
+        "updated:2021-03-17"
+    ],
+    "mainEntityOfPage": "https://www.thekitchn.com/beer-battered-fish-recipe-23136144",
+    "dateCreated": "2021-03-17T08:31:07-04:00",
+    "datePublished": "2021-03-17T08:31:07-04:00",
+    "dateModified": "2021-03-17T07:18:48-04:00",
+    "abstract": null
+}

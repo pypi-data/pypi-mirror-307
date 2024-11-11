@@ -1,0 +1,139 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Shrimp and Pea Pod Stir-Fry",
+    "datePublished": "2018-07-17T21:43:48.000-04:00",
+    "dateModified": "2023-09-19T16:42:43.877-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "EatingWell Test Kitchen",
+            "url": "https://www.eatingwell.com/author/eatingwell-test-kitchen/"
+        }
+    ],
+    "description": "Pea pods were made for stir-fry dishes. This subtly flavored recipe calls for snow peas, but you could easily substitute snap peas. Serve with brown rice for a balanced and nutritious meal.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.eatingwell.com/thmb/n4AzGJwHsetpWd8Ipiq_SKGHV4w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5571584-569511c884dd4db8870a38d2fa6aee18.jpg",
+        "height": 960,
+        "width": 960
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "EatingWell",
+        "url": "https://www.eatingwell.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.eatingwell.com/thmb/cr0OO5bIhN4hn9zmchZ_ZSKGUuQ=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/eatingwell_brand_logo_schema-b4e06815bfc2449ebe240453e3b47d48.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "EatingWell",
+        "publishingPrinciples": "https://www.eatingwell.com/about-us-6743412#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/EatingWell/",
+            "https://twitter.com/EatingWell/",
+            "https://www.instagram.com/eatingwell/",
+            "https://www.pinterest.com/eatingwell/",
+            "https://flipboard.com/@EatingWell",
+            "https://www.youtube.com/@eatingwell",
+            "https://www.linkedin.com/company/eatingwell-media-group/",
+            "https://www.tiktok.com/@eatingwell"
+        ]
+    },
+    "name": "Shrimp and Pea Pod Stir-Fry",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "323 kcal",
+        "carbohydrateContent": "33 g",
+        "cholesterolContent": "159 mg",
+        "fiberContent": "5 g",
+        "proteinContent": "26 g",
+        "saturatedFatContent": "1 g",
+        "sodiumContent": "499 mg",
+        "sugarContent": "7 g",
+        "fatContent": "11 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT30M",
+    "recipeIngredient": [
+        "1 pound fresh or frozen medium shrimp in shells",
+        "0.5 cup reduced-sodium chicken broth",
+        "1 tablespoon reduced-sodium soy sauce",
+        "2 teaspoons cornstarch",
+        "2 teaspoons grated fresh ginger",
+        "2 teaspoons sesame oil",
+        "3 cloves garlic, minced",
+        "0.25 teaspoon salt",
+        "0.25 teaspoon crushed red pepper",
+        "2 tablespoons vegetable oil",
+        "1 cup sliced onion",
+        "1 cup packaged fresh julienned carrots",
+        "12 ounces snow pea pods, trimmed",
+        "1.3333333730698 cups hot cooked brown rice"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Thaw shrimp, if frozen. Peel and devein shrimp, leaving tails intact if desired. Rinse shrimp; pat dry. For sauce, in a small bowl combine chicken broth, soy sauce, cornstarch, ginger, oil, garlic, salt and crushed red pepper."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a 12-inch skillet or a wok heat vegetable oil over medium-high. Add onion and carrots; cook and stir 3 to 4 minutes or just until beginning to soften. Add pea pods; cook and stir 3 minutes. Add shrimp; cook and stir 3 minutes more or just until shrimp are opaque. Add sauce; cook and stir until thick and bubbly."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve shrimp mixture over rice."
+        }
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "totalTime": "PT30M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.eatingwell.com/recipe/266574/shrimp-and-pea-pod-stir-fry/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/19227/ingredients/grains/rice/",
+                        "name": "Healthy Rice Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/19228/ingredients/grains/rice/brown-rice/",
+                        "name": "Healthy Brown Rice Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipe/266574/shrimp-and-pea-pod-stir-fry/",
+                        "name": "Shrimp and Pea Pod Stir-Fry"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "EatingWell Test Kitchen",
+                "url": "https://www.eatingwell.com/author/eatingwell-test-kitchen/"
+            }
+        ],
+        "lastReviewed": "2023-09-19T16:42:43.877-04:00"
+    },
+    "recipeCategory": []
+}

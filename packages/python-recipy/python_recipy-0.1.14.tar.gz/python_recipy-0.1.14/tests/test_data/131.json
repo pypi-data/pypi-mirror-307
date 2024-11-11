@@ -1,0 +1,112 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "@id": "https://www.marionskitchen.com/baked-bbq-pork-buns/#recipe",
+    "url": "https://www.marionskitchen.com/baked-bbq-pork-buns/",
+    "name": "Baked BBQ Pork Buns",
+    "description": "There are several steps involved to make these glorious homemade baked barbecue buns, but your patience will be rewarded – promise! Golden dough, sweet and sticky char siu pork and a gorgeous crunchy topping. So much yes.",
+    "prepTime": "PT15M",
+    "cookTime": "PT2H40M",
+    "totalTime": "",
+    "keywords": "Appetisers, Buns, Chinese cuisine, Pork, Weekend meals",
+    "recipeYield": "20",
+    "recipeCategory": [],
+    "recipeCuisine": "Chinese",
+    "recipeIngredient": [
+        "Starter",
+        "2 tbsp plain (all-purpose) flour",
+        "125ml (4 fl oz) water",
+        "125ml (4 fl oz) milk",
+        "1 egg, lightly whisked",
+        "Dough",
+        "350g (12 oz) cake flour (low protein flour)",
+        "3½ tsp skim milk powder",
+        "½ cup white sugar",
+        "2½ tsp instant yeast",
+        "1 tsp sea salt",
+        "70g (2.5 oz) butter, cut into 3 portions, softened",
+        "¼ tsp sea salt",
+        "oil spray, for greasing",
+        "Filling",
+        "500g (1 lb) char siu (Chinese bbq) pork, finely chopped",
+        "1 tbsp soy sauce",
+        "1 tbsp sugar",
+        "4 tbsp hoisin sauce",
+        "2 tbsp Chinese Shaoxing wine",
+        "1 tbsp cornflour (cornstarch), mixed with 1 tbsp water",
+        "Topping",
+        "140g (5 oz) cake flour (low protein flour)",
+        "65g (2 oz) icing sugar mixture (confectioner’s sugar), sifted",
+        "1 tsp sea salt",
+        "2 eggs, lightly whisked",
+        "90g (3 oz) unsalted butter, softened",
+        "To serve",
+        "chilli paste (e.g. sambal oelek or Chinese chilli garlic paste)",
+        "soy sauce"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "1.For the starter, mix flour with water in a small saucepan, and then keep whisking over a medium heat until a thick paste forms. Whisk in the milk and keep whisking over medium heat for a minute or until smooth. Remove from heat and cool down before whisking in the egg."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "2.To make the dough, sieve the flour, milk powder, sugar, yeast and salt into the bowl of an electric stand mixer. Pour the starter mixture into the flour mix. Using the dough hook attachment, knead on medium speed for around 5 minutes or until the dough comes together. Add in one piece of butter and knead until incorporated. Then add the remaining two portions, kneading after each addition. Knead the dough for a further 10 minutes until silky and smooth."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "3.Empty out onto a floured surface. ‘Punch down’ the dough by kneading it lightly before shaping into a ball. Transfer to an oiled bowl, cover with cling wrap and allow to rise for at least 1 hour or until doubled in size."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "4.To make the filling, place all the ingredients except the cornflour mixture into a saucepan. Add a ¼ cup of water and the cornflour mixture. Place over medium heat and cook, stirring every so often, for 5 minutes or until the mixture has thickened. Remove from heat and allow to cool."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "5. For the topping, sieve the flour 3 times. Using a clean, dry mixer bowl and beating paddle, beat butter, icing sugar and salt on medium high speed for about 4-5 minutes, or until light, pale, and fluffy. With the mixer running, gradually add eggs, then mix until well combined, scraping down bowl as needed. Add the flour, then fold ingredients by hand using a spatula until well combined. Transfer the mixture to 1-litre (1 quart) heavy-duty zip-lock bag and snip 1 corner, making hole no larger than 1⁄4 inch (alternatively, transfer to pastry bag fitted with 1⁄4-inch piping tip). Set aside until ready to use (don’t put it in the fridge though!)."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "6.Transfer bun dough to a floured surface and lightly shape into a ball. Divide in half. Roll out one half into a thick roll and cut into 10 equal pieces. Repeat with the other half of the dough. Working with 1 piece at a time, roll into a small ball first, then a flat round about 10cm (4”) in diameter. Use your rolling pin to make the edges of the circle thinner than the centre. Place a heaped teaspoon of the pork filling into the centre of the round. Pull the edges of dough to centre and pinch tightly to seal. Twist the dough and remove the knobbly bit from the top so that there isn’t any excess dough. Transfer bun to a tray lined with baking (parchment) paper, seam side down. Repeat with remaining dough pieces and remaining pork filling. Cover the buns with cling wrap and set aside to prove for 30 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "7.Preheat oven to 190C/375F. Pipe about 2 tablespoons of the topping in a tight spiral on top of each bun. Bake in the oven for about 15 minutes or until the buns are just lightly golden. Transfer to a baking rack to cool. Serve warm or at room temperature with chilli sauce and soy sauce on the side for dipping."
+        }
+    ],
+    "datePublished": "2021-09-20T00:00:00Z",
+    "dateModified": "2022-05-05T00:00:00Z",
+    "mainEntity": {
+        "@type": "WebPage",
+        "@id": "https://www.marionskitchen.com/baked-bbq-pork-buns/",
+        "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "",
+                "width": "",
+                "height": ""
+            },
+            "name": "Bring the Best Flavours of Asia to Home Kitchens"
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marionskitchen.com/wp-content/uploads/2021/09/Baked-BBQ-Pork-Buns03.jpg",
+        "height": "500",
+        "width": "625"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bee",
+        "description": "",
+        "url": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.marionskitchen.com/wp-content/uploads/2021/09/Baked-BBQ-Pork-Buns03.jpg",
+            "height": "625",
+            "width": "500"
+        }
+    },
+    "review": []
+}

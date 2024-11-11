@@ -1,0 +1,87 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": "true",
+    "name": "Giant Instant Pot Pancakes",
+    "author": "Food.com",
+    "cookTime": "PT40M",
+    "prepTime": "PT5M",
+    "totalTime": "PT45M",
+    "datePublished": "2018-03-08T00:28Z",
+    "description": "Make and share this Giant Instant Pot Pancakes recipe from Food.com.",
+    "image": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/53/53/17/2Ok8AChRkOsVvAwhcNgD_GK-NLE-Giant-Pancake_16x9-1.jpg",
+    "recipeCategory": "Breakfast",
+    "keywords": "Healthy,< 60 Mins,Small Appliance",
+    "recipeIngredient": [
+        "2 1/4  cups    flour",
+        "1/4  cup    sugar",
+        "1   tablespoon    baking powder",
+        "1/2  teaspoon    kosher salt",
+        "1 1/2  cups    milk",
+        "2   large    eggs",
+        "1   tablespoon    vanilla extract"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "1.0",
+        "reviewCount": "4"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "1639",
+        "fatContent": "25.7",
+        "saturatedFatContent": "11.9",
+        "cholesterolContent": "423.2",
+        "sodiumContent": "2580.6",
+        "carbohydrateContent": "287.3",
+        "fiberContent": "7.6",
+        "sugarContent": "52.7",
+        "proteinContent": "53.6"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heavily coat the inside of the Instant Pot with non stick cooking spray."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a large bowl whisk together the flour, sugar, baking powder and salt. Next whisk in milk, eggs and vanilla extract until the batter is smooth. Pour the batter into the prepared Instant Pot."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Seal the lid on top and cook on Manual for 40 minutes using the Low setting. The pancake is cooked when a toothpick inserted into the middle comes out clean."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Use a rubber spatula to gently loosen the pancake from the sides of the pot and invert on a plate. Serve with your favorite pancake toppings."
+        }
+    ],
+    "recipeYield": "1 pancake",
+    "review": [
+        {
+            "@type": "Review",
+            "description": "Who chooses what recipe gets this type of exposure??????????????",
+            "datePublished": "April 05, 2018",
+            "itemReviewed": {
+                "@type": "Thing",
+                "name": "Giant Instant Pot Pancakes"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "ratingValue": 1,
+                "bestRating": "5"
+            },
+            "author": "Keith B."
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://geniuskitchen.sndimg.com/fdc-new/img/FDC-Logo.png"
+        },
+        "url": "https://www.food.com"
+    }
+}

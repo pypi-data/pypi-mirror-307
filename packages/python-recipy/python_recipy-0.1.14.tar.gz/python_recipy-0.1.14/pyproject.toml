@@ -1,0 +1,42 @@
+[project]
+name = "python-recipy"
+version = "0.1.14"
+description = "Extract recipes from web pages that use JSON-LD structured data and output Markdown, LaTeX, and PDF."
+authors = [
+    { name = "Kyle Kestell", email = "kyle@kestell.org" },
+]
+dependencies = [
+    "markdown>=3.6",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.3",
+    "nh3>=0.2.18",
+    "pydantic>=2.8.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "0BSD"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "twine>=5.1.1",
+    "pytest>=8.3.2",
+]
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src",
+]

@@ -1,0 +1,166 @@
+{
+    "@type": "Recipe",
+    "name": "Sanma Shioyaki (Grilled Pacific Saury)",
+    "author": {
+        "@id": "https://www.justonecookbook.com/#/schema/person/033420c6cd0fe01255dcd76d04d95472"
+    },
+    "description": "Sanma Shioyaki (Grilled Pacific Saury) is a classic Japanese preparation where fish is cooked whole over charcoal until the skin crisps up. The smokiness from the grill adds a level of amazingness to the dish. Enjoy with grated daikon and lemon. ",
+    "datePublished": "2012-10-16T12:00:55+00:00",
+    "image": [
+        "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-500x400.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-500x375.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-480x270.jpg"
+    ],
+    "recipeYield": [
+        "2"
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "totalTime": "PT35M",
+    "recipeIngredient": [
+        "2 whole Pacific saury (sanma)",
+        "Diamond Crystal kosher salt",
+        "2 inches daikon radish ((peeled and grated; optional))",
+        "1  lemon ((cut into wedges; optional))",
+        "soy sauce ((optional))"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Gather all the ingredients. To grill the fish under the broiler in the oven, see my recipe for Salt-Grilled Pacific Saury.",
+            "name": "Gather all the ingredients. To grill the fish under the broiler in the oven, see my recipe for Salt-Grilled Pacific Saury.",
+            "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-0-0",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-Ingredients.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Rinse 2 whole Pacific saury (sanma) under cold running water and pat dry. Sprinkle Diamond Crystal kosher salt on both sides of the fish. Set aside for 10 minutes. This will dehydrate the fish.",
+            "name": "Rinse 2 whole Pacific saury (sanma) under cold running water and pat dry. Sprinkle Diamond Crystal kosher salt on both sides of the fish. Set aside for 10 minutes. This will dehydrate the fish.",
+            "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-0-1",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-1.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To keep the fish skin from bursting during grilling, insert a sharp knife next to the gills and score lengthwise (see below).",
+            "name": "To keep the fish skin from bursting during grilling, insert a sharp knife next to the gills and score lengthwise (see below).",
+            "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-0-2",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-2.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "The fish has a line running across its body where you need to score so just follow that line.",
+            "name": "The fish has a line running across its body where you need to score so just follow that line.",
+            "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-0-3",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-3.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Repeat on the other side.",
+            "name": "Repeat on the other side.",
+            "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-0-4",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-4.jpg"
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Grill",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Start the grill.",
+                    "name": "Start the grill.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-5.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Place the sanma on the grill, presentation side down (the side that is going to be showing when you serve). Grill for about 8–10 minutes on each side.",
+                    "name": "Place the sanma on the grill, presentation side down (the side that is going to be showing when you serve). Grill for about 8–10 minutes on each side.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-1",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-6.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Grill over strong heat but no flame. When the charcoal gets too hot and the fish is about to catch fire, sprinkle some water on the flame so the fish doesn’t burn.",
+                    "name": "Grill over strong heat but no flame. When the charcoal gets too hot and the fish is about to catch fire, sprinkle some water on the flame so the fish doesn’t burn.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-2",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-7.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "After 8–10 minutes, the eye will turn white; that’s the sign that it’s cooked. Flip the fish carefully just once.",
+                    "name": "After 8–10 minutes, the eye will turn white; that’s the sign that it’s cooked. Flip the fish carefully just once.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-3",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-8.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Grill the other side for 8–10 minutes. Remove and serve on individual plates.",
+                    "name": "Grill the other side for 8–10 minutes. Remove and serve on individual plates.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-4",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-9.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Right before you serve, grate 2 inches daikon radish. Squeeze out some of the liquid gently and serve alongside wedges cut from 1 lemon. Pour soy sauce over the grated daikon and place it on top of the grilled fish to eat together.",
+                    "name": "Right before you serve, grate 2 inches daikon radish. Squeeze out some of the liquid gently and serve alongside wedges cut from 1 lemon. Pour soy sauce over the grated daikon and place it on top of the grilled fish to eat together.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-1-5",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2012/10/Grilled-Sanma-10.jpg"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Store",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "You can keep the leftovers in an airtight container and store in the refrigerator for a day or in the freezer for a week.",
+                    "name": "You can keep the leftovers in an airtight container and store in the refrigerator for a day or in the freezer for a week.",
+                    "url": "https://www.justonecookbook.com/grilled-sanma/#wprm-recipe-59245-step-2-0"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.72",
+        "ratingCount": "7"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Reviving this. I am still amazed on how the Japanese disect the bones using their chopsticks!",
+            "author": {
+                "@type": "Person",
+                "name": "Onio"
+            },
+            "datePublished": "2019-09-03"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Japanese"
+    ],
+    "keywords": "fish, sanma",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "211 kcal",
+        "proteinContent": "34 g",
+        "fatContent": "7 g",
+        "saturatedFatContent": "2 g",
+        "cholesterolContent": "100 mg",
+        "sodiumContent": "102 mg",
+        "unsaturatedFatContent": "5 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://www.justonecookbook.com/grilled-sanma/#recipe",
+    "isPartOf": {
+        "@id": "https://www.justonecookbook.com/grilled-sanma/#article"
+    },
+    "mainEntityOfPage": "https://www.justonecookbook.com/grilled-sanma/"
+}

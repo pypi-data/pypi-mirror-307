@@ -1,0 +1,87 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "@id": "https://www.marionskitchen.com/chinese-spring-onion-pancakes/#recipe",
+    "url": "https://www.marionskitchen.com/chinese-spring-onion-pancakes/",
+    "name": "Chinese Spring Onion Pancakes | Marion&#039;s Kitchen",
+    "description": "Make the traditional restaurant classic at home with my version of Chinese spring onion pancakes. They’re a little bit crispy, a little bit flaky… and a whole lot of delicious! Add a spicy dipping sauce and you’ve got a great appetiser or party food option.",
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "totalTime": "",
+    "keywords": "Appetisers, Chilli Sauces, Chinese cuisine, Coconut Sriracha, Eat with your hands, Meat-free, Pancakes, Party food, Snacks",
+    "recipeYield": "4-6",
+    "recipeCategory": [],
+    "recipeCuisine": "Chinese",
+    "recipeIngredient": [
+        "300g (10.5 oz) plain flour (all-purpose flour), plus extra for kneading",
+        "170ml boiled water, cooled for 1 minute",
+        "1 tsp sea salt, plus extra for sprinkling",
+        "sesame oil for brushing",
+        "1 cup finely chopped spring onions (scallions)",
+        "vegetable oil for cooking",
+        "Marion’s Kitchen Coconut Sriracha to serve (click here for where to buy)",
+        "Soy & sesame dipping sauce:",
+        "¼ cup soy sauce",
+        "2 tbsp white vinegar",
+        "3 tbsp finely chopped spring onions",
+        "1 tsp sesame oil",
+        "½ clove garlic, finely grated"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Step 1.Make the soy & sesame dipping sauce by combining the ingredients in small bowl. Set aside for later."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 2.Combine the flour and salt in a large bowl. Add the hot water and mix with a wooden spoon. Then use your hands to pull the dough together. Flour your work surface, then knead the dough for 6-8 minutes (add more flour if the dough is sticky) or until smooth. It’s ready when you push into the dough and it springs back. Cover with baking paper and allow to rest for 45 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 3.Roll the rested dough into a large log. Cut into 8 pieces. Roll out to a circle about 12-14 cm in diameter. Roll the dough circle up into a cigar shape. Then coil the cigar into a round shape. Roll out to 12-14 cm round. Brush with the sesame oil. Sprinkle with a quarter of the spring onions and season with a little salt. Roll the circle up into another cigar shape. Then coil again. Roll out to a 12-14 cm round. Repeat until the dough is finished."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 4.Heat the vegetable oil in a frying pan over medium-high heat. Add a pancake and cook for 4-5 minutes each side or until golden and starting to char in some areas. Remove from the pan and keep warm while you cook the other pancakes. Cut the pancakes into wedges."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 5.Serve with the Coconut Sriracha and the soy & sesame dipping sauces."
+        }
+    ],
+    "datePublished": "2021-08-04T00:00:00Z",
+    "dateModified": "2022-06-11T00:00:00Z",
+    "mainEntity": {
+        "@type": "WebPage",
+        "@id": "https://www.marionskitchen.com/chinese-spring-onion-pancakes/",
+        "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "",
+                "width": "",
+                "height": ""
+            },
+            "name": "Bring the Best Flavours of Asia to Home Kitchens"
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marionskitchen.com/wp-content/uploads/2019/07/Chinese-Spring-Onion-Pancakes4.jpg",
+        "height": "500",
+        "width": "625"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bee",
+        "description": "",
+        "url": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.marionskitchen.com/wp-content/uploads/2019/07/Chinese-Spring-Onion-Pancakes4.jpg",
+            "height": "625",
+            "width": "500"
+        }
+    },
+    "review": []
+}

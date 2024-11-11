@@ -1,0 +1,80 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "@id": "https://www.marionskitchen.com/thai-sweet-sour-prawns/#recipe",
+    "url": "https://www.marionskitchen.com/thai-sweet-sour-prawns/",
+    "name": "Thai Sweet and Sour Prawns | Marion&#039;s Kitchen",
+    "description": "This 15-minute dish comes together really quickly and is full of delicate prawns and tangy sauce. I thoroughly recommend using fresh pineapple and avoiding the tinned variety, otherwise your sweetness is going to be off-balance. Serve with steamed rice and you’re good to go!",
+    "prepTime": "PT10M",
+    "cookTime": "PT5M",
+    "totalTime": "",
+    "keywords": "15-minute meals, Prawns, Restaurant classics, Seafood, Stir-fries, Thai cuisine",
+    "recipeYield": "4",
+    "recipeCategory": [],
+    "recipeCuisine": "Thai",
+    "recipeIngredient": [
+        "2 tbsp vegetable oil",
+        "4 garlic cloves, roughly chopped",
+        "½ onion, sliced",
+        "2 capsicums (bell peppers), deseeded and cut into bite-sized pieces",
+        "1 cucumber, deseeded and cut into bite-sized pieces",
+        "100g (3.5 oz) fresh pineapple, cut into bite-sized pieces",
+        "2 tsp corn flour (cornstarch) mixed with 2 tbsp water",
+        "400g (14 oz) peeled and deveined prawns",
+        "3 spring onions (scallions), sliced",
+        "Sweet & sour sauce:",
+        "3 tbsp fish sauce",
+        "2 tbsp white vinegar",
+        "2 tbsp ketchup",
+        "2 tbsp white sugar"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Step 1.For the sweet and sour sauce, mix the ingredients in a small bowl."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 2.Heat the vegetable oil in a large frying pan or wok over high heat. Add the garlic and onions and stir-fry for half a minute. Add the capsicums, cucumber and pineapple. Stir-fry for a minute."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Step 3.Pour in the sweet and sour sauce. Stir-fry for half a minute before stirring in the corn flour mixture. Simmer for half a minute to thicken. Then add the prawns. Stir-fry for 2-3 minutes or until the prawns are cooked. Toss through the spring onions and serve."
+        }
+    ],
+    "datePublished": "2021-08-05T00:00:00Z",
+    "dateModified": "2022-06-11T00:00:00Z",
+    "mainEntity": {
+        "@type": "WebPage",
+        "@id": "https://www.marionskitchen.com/thai-sweet-sour-prawns/",
+        "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "",
+                "width": "",
+                "height": ""
+            },
+            "name": "Bring the Best Flavours of Asia to Home Kitchens"
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marionskitchen.com/wp-content/uploads/2020/02/Thai-Sweet-Sour-Prawns4.jpg",
+        "height": "500",
+        "width": "625"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bee",
+        "description": "",
+        "url": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.marionskitchen.com/wp-content/uploads/2020/02/Thai-Sweet-Sour-Prawns4.jpg",
+            "height": "625",
+            "width": "500"
+        }
+    },
+    "review": []
+}

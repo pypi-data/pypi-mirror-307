@@ -1,0 +1,166 @@
+{
+    "@type": "Recipe",
+    "thumbnailUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/1508949772-delish-beef-quesadilla-cake-1.jpg?crop=0.668xw:1.00xh;0.0358xw,0&resize=100:*",
+    "datePublished": "2023-10-19T16:41:03.985887 EDT",
+    "headline": "Taco Pie",
+    "articleBody": null,
+    "wordCount": null,
+    "image": [
+        {
+            "@type": "ImageObject",
+            "height": 1200,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/1508949772-delish-beef-quesadilla-cake-1.jpg?crop=0.668xw:1.00xh;0.0358xw,0&resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/1508949772-delish-beef-quesadilla-cake-1.jpg?crop=0.668xw:1.00xh;0.0358xw,0&resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 900,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/1508949772-delish-beef-quesadilla-cake-1.jpg?crop=0.668xw:1.00xh;0.0358xw,0&resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/2048x1536/sd-aspect-1508949772-delish-beef-quesadilla-cake-1.jpg?resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 675,
+            "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/1508949772-delish-beef-quesadilla-cake-1.jpg?crop=0.668xw:1.00xh;0.0358xw,0&resize=100:*",
+            "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/2048x1152/hd-aspect-1508949772-delish-beef-quesadilla-cake-1.jpg?resize=1200:*",
+            "width": 1200
+        }
+    ],
+    "mainEntityOfPage": {
+        "@id": "https://www.delish.com/cooking/recipe-ideas/a45572614/taco-pie-recipe/",
+        "@type": "WebPage",
+        "reviewedBy": [
+            {
+                "name": "Delish Test Kitchen",
+                "url": "https://www.delish.com/about/a60636180/tested-approved-delish-kitchen-process/",
+                "@type": "Organization",
+                "description": "Delish is known for developing the most creative and outrageously good food on the planet. Each recipe is meticulously tested and perfected by our team of culinary experts, ensuring they’ll always be completely foolproof and totally fun.",
+                "image": "https://hips.hearstapps.com/hmg-prod/images/delish-expert-team-profile-photo-6645bfd32cf7a.jpg?crop=0.472xw:0.716xh;0.242xw,0.185xh"
+            }
+        ]
+    },
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Delish",
+        "sameAs": [
+            "https://twitter.com/delish",
+            "https://www.tiktok.com/@delish",
+            "https://www.youtube.com/c/delish",
+            "https://www.facebook.com/delish",
+            "http://instagram.com/delish",
+            "http://www.pinterest.com/Delish/"
+        ],
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.delish.com/_assets/design-tokens/delish/static/images/logos/logo-jsonld.1396ea2.png",
+            "width": 312,
+            "height": 60
+        },
+        "parentOrganization": {
+            "@type": "NewsMediaOrganization",
+            "name": "Hearst Corporation"
+        }
+    },
+    "url": "https://www.delish.com/cooking/recipe-ideas/a45572614/taco-pie-recipe/",
+    "isBasedOn": "https://www.delish.com/cooking/recipe-ideas/a45572614/taco-pie-recipe/",
+    "isAccessibleForFree": "False",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".content-container"
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://streaming.hearstdigitalstudios.com/delish/572363debbddbd1a517a63e3/mp4/Quesadilla_Cake_V5_1461937136_4000_hd_v3.mp4",
+        "description": "This quesadilla cake is like your favorite quesadilla x5 - layers upon layers of cheesy bliss.​",
+        "duration": "PT1M2S",
+        "embedUrl": "https://glimmer.hearstapps.com/amp.html?embedId=dcfc7287-20bd-4c90-8fc1-5440359b0b56",
+        "name": "Quesadilla Cake",
+        "thumbnailUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/43/2048x1152/hd-aspect-1508949772-delish-beef-quesadilla-cake-1.jpg",
+        "uploadDate": "2023-10-18T15:05:59.774988Z"
+    },
+    "description": "Five layers of quesadilla means five times as much flavor than your everyday beef quesadilla﻿.",
+    "author": {
+        "name": "Lauren Miyashiro",
+        "url": "https://www.delish.com/author/15834/lauren-miyashiro/",
+        "@type": "Person",
+        "description": "<p>Lauren Miyashiro is the former Food Director of Delish. She graduated culinary school in 2016 and mastered the art of the <a href=\"https://www.delish.com/cooking/recipe-ideas/a52078/crunchwrap-supreme-recipe/\">Crunchwrap</a> in 2017.</p>",
+        "jobTitle": "Freelance Contributor",
+        "image": "https://hips.hearstapps.com/rover/profile_photos/f7a9bc6d-c4b2-4f97-bf20-4507bed87c57_1523821695.file",
+        "sameAs": [
+            "www.instagram.com/laurenmiya"
+        ]
+    },
+    "name": "Taco Pie",
+    "prepTime": "PT15M",
+    "cookTime": "PT0S",
+    "totalTime": "PT45M",
+    "recipeIngredient": [
+        "Cooking spray",
+        "1 tbsp. extra-virgin olive oil",
+        "1 large yellow onion, chopped",
+        "2 cloves garlic, finely chopped",
+        "1 tsp. chili powder",
+        "1 tsp. ground cumin",
+        "1 lb. ground beef",
+        "2 tomatoes, chopped",
+        "2 tbsp. tomato paste",
+        "Kosher salt",
+        "Freshly ground black pepper",
+        "6 medium flour tortillas",
+        "1 c. shredded cheddar",
+        "1 c. shredded Monterey Jack",
+        "Pico de gallo, sour cream, and fresh cilantro, for serving"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat oven to 400° and grease an 8\" or 9\" springform pan with cooking spray. In a large skillet over medium heat, heat oil. Add onion and cook, stirring, until softened, about 7 minutes. Add garlic, chili powder, and cumin and cook, stirring, until fragrant, about 1 minute. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, about 6 minutes. Drain fat."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add tomatoes and tomato paste and cook over medium heat, stirring occasionally, until warmed through, about 2 minutes; season with salt and pepper."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place a tortilla on bottom of prepared pan. Top with a layer of beef mixture and a handful of cheddar and Monterey Jack. Repeat for 5 layers total, ending with cheese."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bake taco pie until cheese is melty and tortillas are warmed through, about 20 minutes. Let cool in pan 5 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Garnish with desired toppings before slicing."
+        }
+    ],
+    "recipeYield": "6 serving(s)",
+    "recipeCuisine": [],
+    "recipeCategory": [],
+    "keywords": "dinner, lunch, weeknight meals",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 1,
+        "worstRating": 1,
+        "bestRating": 5
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": " 559 Calories",
+        "fatContent": "36 g",
+        "saturatedFatContent": "14 g",
+        "transFatContent": "1 g",
+        "cholesterolContent": "89 mg",
+        "sodiumContent": "736 mg",
+        "carbohydrateContent": "30 g",
+        "fiberContent": "3 g",
+        "sugarContent": "5 g",
+        "proteinContent": "27 g"
+    },
+    "@context": "http://schema.org"
+}

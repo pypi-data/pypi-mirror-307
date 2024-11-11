@@ -1,0 +1,189 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Cake Mix Banana Bread Recipe",
+    "datePublished": "2020-06-09T12:28:28.636-04:00",
+    "dateModified": "2022-05-23T21:47:22.871-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Kristina Vanni",
+            "url": "https://www.thespruceeats.com/kristina-vanni-1326407"
+        }
+    ],
+    "description": "A perfect loaf of banana bread is only four ingredients away! Bake up a beautiful loaf of banana bread with the help of a box of cake mix.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.thespruceeats.com/thmb/8f7DskbcqFZHOOv4N8KevT951Bw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBreadHERO-d171a557a03e40c9bd180b41aa010c8e.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Spruce Eats",
+        "url": "https://www.thespruceeats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+            "width": 361,
+            "height": 109
+        },
+        "brand": "The Spruce Eats",
+        "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/thespruceeats/",
+            "https://www.instagram.com/thespruceeats/",
+            "https://www.pinterest.com/thespruceeats/",
+            "https://flipboard.com/@thespruceeats"
+        ]
+    },
+    "name": "Cake Mix Banana Bread Recipe",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.1",
+        "ratingCount": "32"
+    },
+    "cookTime": "PT55M",
+    "keywords": "banana bread, easy banana bread, vanilla cake mix, cake mix",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "346 kcal",
+        "carbohydrateContent": "54 g",
+        "cholesterolContent": "70 mg",
+        "fiberContent": "2 g",
+        "proteinContent": "5 g",
+        "saturatedFatContent": "2 g",
+        "sodiumContent": "420 mg",
+        "sugarContent": "29 g",
+        "fatContent": "13 g",
+        "servingSize": "1 loaf (8 slices)",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT5M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "1 (15.25-ounce) box yellow cake mix",
+        "1/3 cup vegetable or canola oil",
+        "3 eggs",
+        "1 1/2 cups very ripe mashed bananas (3 to 4 medium bananas)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/TCk55nqJUiXuiR7zo_BhK6rwYgg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBread1-fe2687e4d7ad41e9857e405b330db869.jpg"
+                }
+            ],
+            "text": "Gather the ingredients. Preheat oven to 350 F. Grease a 9 x 5-inch bread loaf pan and set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/uCdP7KMV2yZZTMLvr0yMd-rFOyc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBread2-61e27b7c5d634edc9ddf6a56e505fb4c.jpg"
+                }
+            ],
+            "text": "In a large bowl, combine the cake mix with oil, eggs, and mashed ripe bananas until smooth."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/5FTQpgOalZrGq49FiIdp-hprerU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBread3-bd62ddb4cfd54a378154cb2a59b53397.jpg"
+                }
+            ],
+            "text": "Pour the batter into the prepared loaf pan."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/yv2YxJonZsUmlm7f4D_lG_Y4nJs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBread4-3b303356e36c4baab487e50925ed58fc.jpg"
+                }
+            ],
+            "text": "Bake for 50 to 55 minutes or until a toothpick inserted in center of loaf comes out clean. Cool in the pan on a wire rack for 15 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/hhjxTeGULTva-b-BmhvLrpV1C5I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CakeMixBananaBread5-3074f50df4ad4506a9f8232c36fa76b3.jpg"
+                }
+            ],
+            "text": "Loosen the sides of the pan with a knife and then remove the banana bread from the pan. Cool completely before slicing with a serrated knife, using a light sawing motion."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "This banana bread tastes even better the next day. Store the loaf tightly wrapped overnight, then slice and serve in the morning. If you can wait, it’s worth it!"
+        }
+    ],
+    "recipeYield": [
+        "8",
+        "1 loaf"
+    ],
+    "totalTime": "PT60M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Shawna A"
+            },
+            "reviewBody": "This was good, not the best I've ever had but good. I used trader Joe's yellow cake mix, and added cinnamon and nutmeg to give it some oomph. I think I could've used more, or maybe a touch of cardamom."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "miriam"
+            },
+            "reviewBody": "great ideas thank you im making my banana loaf tomorrow with the trimmings"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.thespruceeats.com/cake-mix-banana-bread-recipe-4846512",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/breads-4162750",
+                        "name": "Breads"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/quick-easy-breads-4162746",
+                        "name": "Quick Breads"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/cake-mix-banana-bread-recipe-4846512",
+                        "name": "Cake Mix Banana Bread Recipe"
+                    }
+                }
+            ]
+        }
+    }
+}

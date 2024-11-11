@@ -1,0 +1,85 @@
+{
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/spiced-lamb-flatbreads#Recipe",
+    "@type": "Recipe",
+    "description": "Top these speedy flatbreads with fragrant lamb and spices for a flavour-packed side. Similar to Turkish lahmacun, serve with parsley salad scattered on top",
+    "image": {
+        "@type": "ImageObject",
+        "height": 574,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/05/Spiced-lamb-flatbreads-d543349.jpg?resize=768,574",
+        "width": 768
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bbcgoodfood.com/recipes/spiced-lamb-flatbreads"
+    },
+    "name": "Spiced lamb flatbreads",
+    "url": "https://www.bbcgoodfood.com/recipes/spiced-lamb-flatbreads",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Ailsa Burt",
+            "url": "https://www.bbcgoodfood.com/author/ailsaburt"
+        }
+    ],
+    "dateModified": "2024-05-23T11:21:25+01:00",
+    "datePublished": "2024-05-23T11:21:25+01:00",
+    "headline": "Spiced lamb flatbreads",
+    "keywords": "Flatbreads, lahmacun, Lamb, Lamb mince, Spicy lamb",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Food",
+        "url": "https://www.bbcgoodfood.com",
+        "logo": {
+            "@type": "ImageObject",
+            "height": 65,
+            "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+            "width": 265
+        }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".js-piano-locked-content"
+    },
+    "cookTime": "PT20M",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "520 calories",
+        "fatContent": "25 grams fat",
+        "saturatedFatContent": "8 grams saturated fat",
+        "carbohydrateContent": "43 grams carbohydrates",
+        "sugarContent": "6 grams sugar",
+        "fiberContent": "6 grams fiber",
+        "proteinContent": "28 grams protein",
+        "sodiumContent": "1.5 milligram of sodium"
+    },
+    "prepTime": "PT10M",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "200g lamb mince",
+        "3 garlic cloves , crushed",
+        "¾ tsp ground cumin",
+        "½ tsp ground cinnamon",
+        "½ lemon , zested and juiced",
+        "3 tbsp tomato purée",
+        "2 tbsp olive oil",
+        "2 flatbreads",
+        "small handful of parsley , roughly chopped",
+        "½ small red onion , finely sliced",
+        "1 tbsp red wine vinegar"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat the oven to 180C/160C fan/gas 4. Tip the mince, garlic, cumin, cinnamon, lemon zest, lemon juice, tomato purée and half the oil into a food processor along with ½ tsp sea salt flakes and some black pepper. Pulse until well combined."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Arrange the two flatbreads on a baking tray, then divide the lamb mixture between them, spreading it right to the edges. Put in the oven for 17-20 mins until cooked through. Meanwhile, combine the parsley, red onion, vinegar and remaining olive oil in a bowl and season well. Serve the flatbreads with the parsley salad scattered over the top."
+        }
+    ],
+    "recipeYield": 2,
+    "totalTime": "PT30M"
+}

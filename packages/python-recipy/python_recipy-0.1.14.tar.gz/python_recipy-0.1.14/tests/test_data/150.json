@@ -1,0 +1,80 @@
+{
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/cherry-coconut-flapjacks#Recipe",
+    "@type": "Recipe",
+    "description": "Spruce up your flapjacks using cherries and coconut with this easy recipe. A perfect afternoon tea treat that's sure to become a family favourite",
+    "image": {
+        "@type": "ImageObject",
+        "height": 574,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/cherry-coconut-flapjacks-acab32e.jpg?resize=768,574",
+        "width": 768
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bbcgoodfood.com/recipes/cherry-coconut-flapjacks"
+    },
+    "name": "Cherry & coconut flapjacks",
+    "url": "https://www.bbcgoodfood.com/recipes/cherry-coconut-flapjacks",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Candy Ethrington",
+            "url": "https://www.bbcgoodfood.com/author/candyethrington"
+        }
+    ],
+    "dateModified": "2022-11-08T14:04:32+00:00",
+    "datePublished": "2017-06-06T10:15:22+01:00",
+    "headline": "Cherry & coconut flapjacks",
+    "keywords": "Afternoon tea, Candy Ethrington, Cherry, Coconut, Coffee morning, Dessert, Flap jacks, Flapjacks, Golden syrup, Oats, picnic ideas",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Food",
+        "url": "https://www.bbcgoodfood.com",
+        "logo": {
+            "@type": "ImageObject",
+            "height": 65,
+            "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+            "width": 265
+        }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".js-piano-locked-content"
+    },
+    "cookTime": "PT35M",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "458 calories",
+        "fatContent": "23 grams fat",
+        "saturatedFatContent": "13 grams saturated fat",
+        "carbohydrateContent": "57 grams carbohydrates",
+        "sugarContent": "33 grams sugar",
+        "fiberContent": "3 grams fiber",
+        "proteinContent": "5 grams protein",
+        "sodiumContent": "0.5 milligram of sodium"
+    },
+    "prepTime": "PT10M",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "250g butter",
+        "250g soft brown sugar",
+        "175g golden syrup",
+        "425g oats",
+        "200g cherries , pitted and halved",
+        "50g coconut flakes"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oven to 180C/160C fan/gas 4 and line a 20 x 30cm baking tin with parchment. Melt the butter, sugar and syrup in a large pan over a medium heat. Once melted, stir in the oats, coating them well."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Tip ¾ of the mix into the tin and scatter the cherries over the top. Combine the remaining oat mix with the coconut flakes and tip on top of the cherries, making sure a few poke out. Bake for 30 mins, then remove from the oven and allow to cool before slicing into 12 flapjacks."
+        }
+    ],
+    "recipeYield": 12,
+    "totalTime": "PT45M"
+}

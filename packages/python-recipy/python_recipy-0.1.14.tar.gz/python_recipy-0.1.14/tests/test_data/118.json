@@ -1,0 +1,75 @@
+{
+    "@type": "Recipe",
+    "@context": "http://schema.org/",
+    "name": "Slow-Cooker French Onion Shredded Beef Sandwiches",
+    "keywords": "slow-cooker french onion shredded beef sandwiches",
+    "recipeCategory": "Entree",
+    "image": "https://mojo.generalmills.com/api/public/content/mNLpmQ-cnEmoehwh3Y6ZNw_webp_base.webp?v=d0a00475&t=85e6ab0127c04f66a40c0b82332e03a6",
+    "description": "Get all the bold, rich flavors of French onion soup (and a beef roast) on a cheesy bun with this delicious slow-cooker supper.",
+    "recipeIngredient": [
+        "2  to 3 lb beef boneless chuck roast",
+        "1  tablespoon Montreal steak seasoning",
+        "1 1/2  teaspoons salt",
+        "1  tablespoon vegetable oil",
+        "2  tablespoons butter, melted",
+        "2  tablespoons Muir Glen™ organic tomato paste",
+        "1  tablespoon Dijon mustard",
+        "1/4  cup packed brown sugar",
+        "2  cups thinly sliced yellow onion",
+        "6  cloves garlic, finely chopped",
+        "2  tablespoons cornstarch",
+        "2  tablespoons sherry vinegar",
+        "12  burger buns, split",
+        "2  cups shredded Swiss cheese (8 oz)",
+        "1/4  cup chopped fresh Italian (flat-leaf) parsley leaves"
+    ],
+    "totalTime": "PT8H50M",
+    "prepTime": "PT0H50M",
+    "recipeYield": "12",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "27",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Betty Crocker Kitchens"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Spray 5-quart slow cooker with cooking spray. Trim excess fat from beef. Rub beef with steak seasoning and salt. In 12-inch skillet, heat oil over medium-high heat. Cook beef in oil 2 to 3 minutes on two sides, until browned. Transfer to slow cooker."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In large bowl, beat melted butter, tomato paste and mustard with whisk. Stir in brown sugar. Stir in onion and garlic; pour over beef. Cover and cook on Low heat setting 8 to 10 hours or until beef is tender."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Remove beef to cutting board; let stand 5 to 10 minutes or until cool enough to handle. Meanwhile, in small bowl, mix cornstarch and vinegar. Stir into liquid in slow cooker; cover and cook on High heat setting 5 to 10 minutes or until mixture thickens. Shred beef; return to cooker."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Position oven rack 4 inches from broiling element. Set oven control to broil. Place buns, split sides up, on large cookie sheet. Divide cheese evenly among bun tops. Broil 1 to 3 minutes or until buns are toasted and cheese melts. Divide beef mixture evenly among bun bottoms. Sprinkle with parsley, then top with bun tops."
+        }
+    ],
+    "mainEntity": [],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "400 ",
+        "carbohydrateContent": "33 g",
+        "cholesterolContent": "65 mg",
+        "fatContent": "1 1/2 ",
+        "fiberContent": "1 g",
+        "proteinContent": "24 g",
+        "saturatedFatContent": "8 g",
+        "servingSize": "1 Sandwich",
+        "sodiumContent": "670 mg",
+        "sugarContent": "9 g",
+        "transFatContent": "1 1/2 g"
+    },
+    "dateCreated": "08/12/2016",
+    "dateModified": "09/08/2016"
+}

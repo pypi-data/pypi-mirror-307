@@ -1,0 +1,204 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "headline": "How To Grill Potatoes: The Best, Easiest Method",
+    "url": "https://www.thekitchn.com/grilled-potatoes-recipe-23169459",
+    "description": " they&#x27;re lightly charred and crispy on the outside, tender and creamy on the inside, and perfectly seasoned all over.",
+    "brand": {
+        "@type": "Thing",
+        "name": "The Kitchn"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "202 cal",
+        "carbohydrateContent": "28.1 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "2.2 g",
+        "proteinContent": "3.4 g",
+        "saturatedFatContent": "1.3 g",
+        "sodiumContent": "375.2 mg",
+        "sugarContent": "1.0 g",
+        "fatContent": "9.2 g",
+        "servingSize": "Serves 6",
+        "unsaturatedFatContent": "0.0 g"
+    },
+    "suitableforDiet": "https://schema.org/GlutenFreeDiet,https://schema.org/VeganDiet,https://schema.org/VegetarianDiet",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "United states"
+    ],
+    "recipeIngredient": [
+        "2 pounds russet potatoes (4 to 5 medium) ",
+        "2 tablespoons plus 1 1/2 teaspoons kosher salt, divided",
+        "1/4 cup olive oil, plus more for the grill grates",
+        "1 teaspoon paprika",
+        "1/2 teaspoon garlic powder",
+        "  Freshly ground black pepper"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Step 1",
+            "text": "Boil the water. Bring a large pot of water to a boil over high heat. Heat an outdoor grill to medium-high, direct heat (about 400ºF). Meanwhile, cut the potatoes.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 2",
+            "text": "Cut the potatoes. Scrub 2 pounds russet potatoes. If using medium potatoes, cut each one lengthwise to form 4 wedges. If using large potatoes, cut each one lengthwise into 6 wedges.",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541105/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1245.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 3",
+            "text": "Simmer the potatoes until tender. Add 2 tablespoons of the kosher salt and the potatoes to the boiling water and return to a boil. Reduce the heat to maintain a simmer and cook 8 to 10 minutes to par cook. The potatoes will not be cooked through yet.",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541105/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1255.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 4",
+            "text": "Drain the potatoes. Drain the potatoes in a colander. ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541105/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1259.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 5",
+            "text": "Season the potatoes. When cool enough to handle, place the potato wedges on a rimmed baking sheet. Drizzle with 1/4 cup olive oil and sprinkle with the remaining 1 1/2 teaspoons kosher salt, 1 teaspoon paprika, 1/2 teaspoon garlic powder, and a few grinds of black pepper. Use your hands to toss and thoroughly coat the potatoes.",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541106/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1306.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 6",
+            "text": "Grill the potatoes. When the grill is ready, scrub the grates clean if needed. Oil the grates with a paper towel dipped in olive oil. Place the potato wedges cut-side down in a single layer on the grill grates, positioning them so they lie across the grates. Reserve the baking sheet. Cover and grill until golden brown and grill marks form on the bottom, 5 to 7 minutes. Flip the potatoes, cover, and grill until browned and tender, about 5 minutes more.",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541108/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1341.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 7",
+            "text": "Serve the potatoes. Transfer the potatoes back to the baking sheet. Toss with the oil and seasonings left on the baking sheet. Serve immediately.  ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/v1621541108/k/Photo/Series/2021-05-how-to-grill-potatoes/2021-05-12_ATK1383.jpg"
+        }
+    ],
+    "HowtoTip": {
+        "text": "Make ahead: The potatoes can be par-boiled a day in advance of grilling. Cool completely and store in an airtight container in the refrigerator overnight. Let the potatoes sit at room temperature while you heat the grill.Storage: Refrigerate leftovers in an airtight container for up to 4 days. "
+    },
+    "recipeYield": 6,
+    "prepTime": "PT120S",
+    "cookTime": "PT1320S",
+    "totalTime": "PT1440S",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1,
+        "reviewCount": 3
+    },
+    "review": [],
+    "name": "How To Grill Potatoes: The Best, Easiest Method",
+    "articleSection": "Recipes",
+    "thumbnailUrl": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FSeries%2F2021-05-how-to-grill-potatoes%2F2021-05-12_ATK1383",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FSeries%2F2021-05-how-to-grill-potatoes%2F2021-05-12_ATK1383"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FSeries%2F2021-05-how-to-grill-potatoes%2F2021-05-12_ATK1383"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FSeries%2F2021-05-how-to-grill-potatoes%2F2021-05-12_ATK1383"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Apartment Therapy, LLC.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thekitchn.com/static/logos/publisher-logo.png",
+            "width": 180,
+            "height": 46
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Kelli Foster",
+            "URL": "https://www.thekitchn.com/authors/kelli-foster",
+            "description": "Kelli is a Senior Contributing Food Editor for Kitchn. She's a graduate of the French Culinary Institute and author of the cookbooks, Plant-Based Buddha Bowls, The Probiotic Kitchen,  \r\nBuddha Bowls, and Everyday Freekeh Meals. She lives in New Jersey.",
+            "jobTitle": ""
+        }
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Kelli Foster"
+    },
+    "keywords": [
+        "Cooking Methods",
+        "easy",
+        "Gluten-Free",
+        "Grilling",
+        "How To",
+        "Ingredient",
+        "Make Ahead",
+        "Potatoes",
+        "recipe",
+        "Root Vegetables",
+        "Side Dish",
+        "summer",
+        "vegan",
+        "vegetarian",
+        "whole30",
+        "Vegetables",
+        "Party Food",
+        "autumn",
+        "spring",
+        "easter",
+        "quick",
+        "Meal Plan",
+        "Keeps Well",
+        "children",
+        "Cooking with Kids",
+        "budget",
+        "dinner",
+        "Dish Types",
+        "team:recipes",
+        "platform:search",
+        "platform:social",
+        "course:side dish",
+        "cuisine:united states",
+        "diet:vegetarian",
+        "diet:whole30",
+        "diet:gluten-free",
+        "diet:vegan",
+        "mainingredients:potatoes",
+        "mainingredients:vegetable",
+        "occasion:backyard bbq",
+        "occasion:timing",
+        "occasion:easter",
+        "occasion:potluck",
+        "occasion:picnic",
+        "occasion:party format",
+        "occasion:autumn",
+        "occasion:family reunion",
+        "occasion:weekday",
+        "occasion:spring",
+        "occasion:summer",
+        "timing:quick",
+        "timing:30-minute",
+        "dishtype:whole vegetable",
+        "dishtype:meal prep components",
+        "method:grilled",
+        "lifestyle:leftover-friendly",
+        "lifestyle:budget-friendly",
+        "lifestyle:kid-friendly",
+        "meal:dinner",
+        "updated:2023-08-28"
+    ],
+    "mainEntityOfPage": "https://www.thekitchn.com/grilled-potatoes-recipe-23169459",
+    "dateCreated": "2021-06-11T08:01:07-04:00",
+    "datePublished": "2021-06-11T08:01:07-04:00",
+    "dateModified": "2023-08-28T09:09:00-04:00",
+    "abstract": "The Best Way to Grill Potatoes For grilled potatoes with a crispy interior and soft interior we recommend parboiling wedge-cut russet potatoes first, oiling the potatoes and the grill, seasoning them, and then cooking the potatoes directly on the grill, covered, for 5-7 minutes each side."
+}

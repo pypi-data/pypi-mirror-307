@@ -1,0 +1,1486 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Spiced Pecans",
+    "url": "https://www.foodnetwork.com/recipes/alton-brown/spiced-pecans-recipe-1956279",
+    "headline": "Spiced Pecans",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alton Brown",
+            "url": "https://www.foodnetwork.com/profiles/talent/alton-brown"
+        }
+    ],
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/7/23/0/Spiced-Nuts_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1432461014220.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/7/23/0/Spiced-Nuts_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1432461014220.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/7/23/0/Spiced-Nuts_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1432461014220.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2015-05-24T11:15:12.659-04:00",
+    "dateModified": "2014-09-29T12:37:33.576-04:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Skillet Recipes,American,Nut Recipes,Appetizer,Recipes for Parties,Recipes for a Crowd,Gluten Free,Low Sodium",
+    "cookTime": "P0Y0M0DT0H8M0.000S",
+    "prepTime": "P0Y0M0DT0H10M0.000S",
+    "totalTime": "P0Y0M0DT0H18M0.000S",
+    "recipeIngredient": [
+        "1 teaspoon kosher salt",
+        "1/2 teaspoon ground cumin",
+        "1/2 teaspoon cayenne pepper",
+        "1/2 teaspoon ground cinnamon",
+        "1/2 teaspoon dried ground orange peel",
+        "1 pound pecan halves",
+        "4 tablespoons unsalted butter",
+        "1/4 cup packed light brown sugar",
+        "2 tablespoons packed dark brown sugar",
+        "2 tablespoons water"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 12 servings",
+        "calories": "322",
+        "fatContent": "31g",
+        "saturatedFatContent": "5g",
+        "carbohydrateContent": "12g",
+        "fiberContent": "4g",
+        "sugarContent": "8g",
+        "proteinContent": "4g",
+        "cholesterolContent": "10mg",
+        "sodiumContent": "121mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Line a half sheet pan with parchment paper and set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Mix the salt, cumin, cayenne, cinnamon and orange peel together in a small bowl and set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place the nuts in a 10-inch cast iron skillet and set over medium heat. Cook, stirring frequently, for 4 to 5 minutes until they just start to brown and smell toasted. Add the butter and stir until it melts. Add the spice mixture and stir to combine. Once combined, add both sugars and water, stirring until the mixture thickens and coats the nuts, approximately 2 to 3 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Transfer the nuts to the prepared sheetpan and separate them with a fork or spatula. Allow the nuts to cool completely before transferring to an airtight container for storage. Can be stored up to 3 weeks."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "reviewCount": 121
+    },
+    "recipeYield": "1 pound",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "fitzantics"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy and yummy…I"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CHERI WARREN"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Oh my goodness…. these are SOOOOO good. Made some this afternoon to go on a charcuterie tray for our firepit relaxing time. Wow. Alton wins again. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CajunTot"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We love this recipe! Perfect balance of sweet, savory, and a little heat. I have to make extra for my Uncle because he's obsessed with them. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent! I doubled the recipe and, based on some of the comments, I only added 1/4 tsp. of cumin. I also baked the nuts for 6 minutes at 350 to be a little more toasted. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "M MELODIE T."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Big negative - the cumin is a no go…totally ruined my pecans. Still searching for best candied or spiced pecan recipe. Sorry Alton but even in low heat, they burnt within a two minutes. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These were super easy to make and yet so delicious! I may have to make some just for me. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janice Bell"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These have been a holiday favorite now for about 4 years, everyone loves them. My new “Christmas crack”!  lol "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love these any time. I make a batch every few weeks. Great receipt. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Make these every year.  Simply the best.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "cindywwinn"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wonderfully delicious blend of slightly sweet yet savory. The orange peel is delicious!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Katherine C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I LOVE these and I make them every year. BUT I am wondering if anyone else has the sugar issue I do.  At the end of the sugar part, before dumping them on the parchment, I have large chunks of brown melted sugar blend that don't seem to grab onto the nuts, and then it seems some nuts aren't sweet enough.  Does anyone else have this issue? "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "cathy g."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is the best recipe I have her stumbled across.  Sweet and spicy!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Katerina B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've made these several times and everyone really likes them. I have always cut back on the Cumin though, because I'm not really a fan. The last time I made them, however, on a whim I left out the Cumin altogether and substituted Cardamom in it's place. Best substitution ever! So if you're not really a big fan of Cumin, try putting Cardamom instead. But either way, this is a great recipe!<br />**I do not pre-toast the nuts in the pan (first part of step 3) but follow the stove top directions otherwise. After turning them out onto the parchment lined sheet pan, I put them in the oven to toast and dry out (stirring occasionally). I read reviews where some people's pecans did not dry all the way when just cooking them in the pan, so this is an easy modification if you have that issue.<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "bluebakerc"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious!  Once you start eating them, you can’t stop. My family loved them. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Andrea M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy to make and delicious!  My family couldn’t stop eating them. I had to hide them so they wouldn’t all be gone before I served them for book club. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ian G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've been the life of the party since I began making these. I go easier on the cayenne pepper sometimes but overall, these are fantastic."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "REBECCA M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Tasty nuts but the cayenne permeated the house. The entire family was coughing non stop for half hour.<div><br /></div><div><br /></div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "SARAH C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is fairly easy to make.  A nice zing to spiced nuts!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfect combination of sweet and spicy.  The texture is great and you get a little bit of each spice with each bite.  Love that it is somewhat sweet but not overwhelming.  The orange is such a great added touch.  These are the quintessential holiday munchie!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "nancy m."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These nuts have just the right amount of spice and sweet. I will make them again and again and .......<div>The only negative was that they did not harden. I ended up putting them in a 400 degree oven, on a parchment lined baking sheet, for 10 minutes.  That did it, they firmed up nicely.</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Barbara W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Outstanding.  Simple to made.  Delicious.  Yes, I had my doubts about the cumin and the orange peel, but the finished product was just divine!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jeff J."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Awesome "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "hugeodyssey38"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "True this recipe once before last Thanksgiving and it was such a hit that we made it a couple times for Xmas. So good!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Carla B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Flavor was just perfect but I must have done something wrong. The sauce never hardened or dried. I cooked as directed and put the nuts on a parchment lined sheet pan. They stayed very sticky. Suggestions? Help?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Teresa SF"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy recipe that beats all other recipes we've tried. They have the perfect amount of seasoning. We didn't have the 1/2 tsp of orange peel, so we substituted 1/4 tsp of ground ginger. We also trimmed back a little on the butter and sugar ... no regrets!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Barrie"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I make these nuts, a favorite for sure.  I substitute brown sugar with brown sugar splenda.  Lowering the carbs."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Elizabeth K."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "delicious! the orange is a great touch!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "tbups1027"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Awesome recipe! Some of the best spiced nuts I've made yet! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Laura B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Amazing! I decided to make nuts instead of cookies this year. I love AB and knew he would have a great recipe. I've made 5 lbs total this season! I added a little nutmeg and also a little molasses to brown sugar since I didn't have dark brown sugar. Delicious!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "EMMA W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These pecans are fantastic and so easy to make! I've definitely found a new holiday favorite. I did not think these were too spicy or too cumin-y. Just perfect as written (even the 10 inch skillet part)!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Toni J."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent recipe and oh so easy. Big hit with anyone who gets a taste. Be careful though because you can't stop at one."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Berrypie1961"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a great recipe and I've been making it for several years. It makes a great gift. HOWEVER, the original recipe (which I had printed) used only 1/4 tsp of cayenne. This last batch I made, I used the online recipe and it's WAAAYYYY too spicy! (I always double the spices and leave other ingredients alone.) BE CAREFUL! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sheryl W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "i liked this recipe because it doesn't leave powdery spice on your fingers after you eat like the recipe i used to use. But it is not spicy enough. I will double all the spices next time i make it (which will be tonight!)"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "hjjrcowan"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janis L."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy. Quick. Spicy. Sweet. Savory.  Oh...and DELICIOUS!!!  Diet buster.  Made a batch and it's now in the freezer waiting for Thanksgiving!  If they last that long without all of the pilfering...  FWIW, I thought the cumin was perfect - glad I followed the exact recipe!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anna J."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Just made these for the first time and WOWZA are they addictive. I followed the recipe except I cut back on the cumin a tad AND added a few dashes of Tabasco while stiring in the butter. We ate them warm. Will be making these again!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Colleen B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fabulous...used half the cumin and cayenne and bumped up the cinnamon and orange peel.  For me, that was the perfect blend of sweet and spicy, and that hint of orange is what takes them over the top.  I roasted the pecans in the oven at 350° for 10 minutes and proceeded from there.  Now I just have to use self-discipline to keep from overindulging."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "HaloMom92"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These nuts will be by new go to neighborhood gift! Did make a few modifications that seemed to work for more even results. 1. Toasted the pecans in the oven on a cookie sheet, stirring ever 5 minutes until they were evenly browning and very fragrant. 2. Mixed the sugars and spices together 3. After toasting the pecans in the oven, put all the nuts in a large high sided skillet, over low medium heat. 3. Put the seasoned sugars in with the nuts, stirring to evenly coat and then finally added the water to help dissolve the sugars. Keep stirring until you are happy with the distribution of sugars and spice over the nuts. Made 6 batches this way and every single person was delighted!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pat M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious!  Genius spice combination, balanced beautifully with the sugar blend as well the flavor and texture of the butter over the toasted pecans (do yourself a favor and use a high end butter like unsalted Kerrygold).  We made several pounds throughout the holidays, gave away much of what we made to friends and family as gifts, and everyone raved.  Also did a batch of mixed nuts this way, and they were good, but pecans are definitely the best backdrop for this recipe.  We also made some for a vegan friend using a vegan margarine in place of the butter, and even those were surprisingly good.  We think these are much more satisfying than the often hyped \"Union Square Cafe Bar Nuts\" which are much more salty and have a one dimensional flavor profile by comparison.  These magical spiced pecans will definitely be a new holiday tradition in our family for years to come.  Thanks Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Tarnesha"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I made these on Christmas morning, to take to a family dinner that evening.  I had to skip the orange peel because we didn’t have any.  I also reduced the cumin amount slightly because of what I read in some other reviews about the cumin being too strong.  The pecans turned out beautifully and were well received at the dinner.  They were really easy to make, too.  I will definitely make these again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "NURIT S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fantastic.  To give you an idea of how good this is, I made 8 batches of this over a 3 day period. Okay, 4-double batches.  For the first 2 lb. batch, I followed the recipe exactly, and it was delish, although I thought the cumin was overly strong.  So for the second and third batches, I halved the cumin and kept everything else the same.  By the final batch, I had run out of orange peel, so I upped the cinnamon.  All of these were fantastic."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Luxxie"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Very tasty! I even made my own ground orange peel because I didn't have any. Turned out perfect."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Karen M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I think your recipes are the bomb. Followed you on Good Eats and that made me a great cook. You explained everything so well. And I smiled."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "deb a."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "OMG! These are amazing. Made them to the recipe and when you taste them they are sweet and then you get a ever so slight taste of the cayenne and the cumin is amazing in this recipe"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "VALERIE G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Yummy!!  I did not have any orange zest so I used 1/4 tsp of cardamon.  Perfection!!!  Will make these again and again!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've tried many versions for spiced pecans, my father in-laws favorite, and I've finally found it. This one is perfect...no modifications needed!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "beenreborn"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Made these just now, easy as pie!  I toasted them in the oven before hand, and had the melted butter and spices all ready on the stove when the pecans came out of the oven.  Quick, no mess, and tasty!  Another Alton winner!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lisamarie447"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This recipe is GREAT. I've made this for 3 family get-togethers and everyone loves them. Thanks, Alton! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfect.  The flavor combination is perfect, and the technique leaves the nuts evenly coated and not gritty.  perfect."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Rae L."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Not overly sweet or spicy. Nice blend of flavors. Starts with a little bit of sweetness than a nice kick from the cayenne and a little smokiness from the cumin. Delicious! And easy."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Connie O."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wow, these are really good.  After reading the reviews I decided I wanted to make this recipe but I didn't have all the ingredients needed.  Firstly, I only used light brown sugar.  Also, I didn't have any dried zest so I made my own by zesting one orange which I then put in between 2 paper towels and microwaved 4 minutes at 40% power which did the trick.  After sampling my efforts and immediately made another batch thinking these would make a great hostess gift.  One problem,  I can't stop eating them!  They're so addictive!!  The spicing is perfect.  They're great on their own but would be equally wonderful in a salad.  I may get adventurous next time and add freshly chopped rosemary.  This recipe is definitely getting added to my repertoire of holiday foods.  Bravo Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "whatever1949"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent flavor, wonderful warm spicy after taste. Easy to make. Awesome! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "bdunning1983"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a delicious recipe.  So easy and a great gift a Christmas time.  The only change I made was to use 1/2 tsp. table salt for kosher salt.  Came out great.  Will make again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "bainbridgebeck"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fabulous and super easy! These are best when they are still a little warm, but they are great cooled and crunchy too! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KimCooper929"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "A BIG hit at Thanksgiving! Will definitely make again and again. And a full pound, not a halved recipe as I did this time. A+ Alton!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "imcooked"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Very tasty and addictive (even my picky eater daughter who doesn't like \"spicy\" couldn't stop eating them.  The flavor is very good, however next time I am going to cut back a little on the cumin (the one flavor that seems to stand out on it's own more than any other.  That said, I will probably cut back a little on the cayenne, too, since I think the cumin helps \"cut\" the cayenne.  The cayenne as it is in the recipe as written is very subtle...tastes \"warm\", not \"hot\".  I have only eaten these as a stand alone snack, but plan to incorporate into salads and maybe even try a few in a batch of brownies, and wait for reaction."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Christnjoy"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I thought \"who would want an entire pound of candied pecans?\", and made a half recipe since it was easy to do.  What a mistake!  I wanted to eat all 8 ounces of pecans there on the spot while they were still warm.  This is an amazingly good recipe.  \r<br />\r<br />Like others I would like a slightly more orange flavor.  So the second time I made the recipe I doubled the orange peel (since that is what I had on hand, and used walnuts.  \r<br />\r<br />This will be my go to recipe from now on."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Made these at Christmastime.  Everybody loved them!  Just right for spiciness!  Will make for SuperBowl but will try almonds.  But have to make the pecans, too.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "musicbabe"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Soooo tasty!   I made the recipie as is and it was delicious!  The only critizism I had was a little too much cayenne it you were to eat it alone.  However, if you put it in a salad, then it would be perfect as is!  Thanks AB!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mizpah20"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I hope these make it to the party. I can't stop eating them!<br />Didn't have orange peel so I used OJ instead of water. <br />Alton, your recipes never fail me. You ROCK!<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "likenewrecipes"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Just made these for the first time.  They are quick, easy and delicious.  The plan was to give them for Christmas gifts but there may not be enough left!  Oh well, have to make more tomorrow!  I used all the spices as listed and they are quite flavorful. I read some negative reviews but mine turned out perfect."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JEANETTE O."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "After reading all the positive reviews I wanted to try this recipe...I couldn't find the one I use at Christmas each year.  I follwed it exactly, it was a big dissappointment.  I had 4 people try it, and no one liked it either.  I gave it to the squirrels.  Thankfully, I found my recipe the next day....and I was happy to make it, and serve them at my party that night."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Nikki W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've made this for 2 or 3 years now and love it. I usually make a double batch at once. Someone asked how many holiday dishes have cumin in them...I'm not sure, but maybe you're afraid it will be an overpowering flavor. It is not. All the spices marry well together. I follow the recipe to a T and everyone LOVES it. So easy and perfect for mailing to those deployed because it keeps long and is something different than the overload of cookies and chocolate they get. I know this; I was deployed and every holiday was an overload of cookies and chocolate! = Enjoy!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "hornedfrog82"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My second time making these - LOVE!  I must have been going too fast reading the recipe because both times I used fresh orange peel instead of dried - gave a nice subtle hint of orange.  Thanks, Alton. We are huge fans!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Karen W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have many spiced pecan recipes and this is one of the best. It is very simple, doesn't involve egg whites, or an oven, and is very flexible in spices.  I didn't have any oranges or dried orange rind, so I put 1/2 tsp. coriander instead.  While they were cooling, I also sprinkled on some flavored sugars, one batch had orange-ginger, and another had curry sugar. Very yummy!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "wallyobrien"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "For the holidays, I'd lose the cumin. How many holiday food items have cumin in them?<br /><br />I like this technique of making spiced pecans over others where you bake the pecans. A LOT easier and a LOT easier clean up.<br /><br />This is pretty straight forward which makes me wonder why it's considered an intermediate recipe. <br /><br />Play with the spice to get it to where you want.<br /><br />Even play with adding things that you feel are representative of the holidays."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "valerie h."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Fantastic!! I made these for Thanksgiving and they were a huge hit! The recipe is perfect me because I don't care for too hot and spicy, so you might want to taste test and add more spice and heat if you prefer.  I couldn't stop eating them.  For those that found it too sticky, I think you might not have cooked it for the full 3 minutes.  Mine were almost too hard, I will back off the time to 2-1/2 minutes next time. I usually make the Bar Nuts from Union Square for Christmas (I love the rosemary, but I'm going with these this year. Once again, thank you Alton!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Dana G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Good stuff, very addictive. I put on a spinach and goat cheese salad, which added a lot flavor to the dish. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ghofran a."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "You are the best!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Terri C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious!  I made these to pack in jars for hostess gifts.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "BlueSheep"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I made this along with fudge and gave it as gifts to my neighbors. Got lots of compliments. The orange adds a special touch."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Emily H D."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These were very bland. I would double the spice mixture the next time and add a large dash or two of Angostura Bitters when the nuts come out of the oven."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kathy N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Very tasty,  the heat sneakes up on you! Very easy!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Barbara S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These were a HUGE hit at our holiday gathering last year!  Will definitely make again this year."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "mismax"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These are fantastic!  We have quite a few pecans trees and every year I'm at a loss of how to use them for recipes other than pecan pie and cookies.  I've been making these to put in salads and they are delicious. I'll definitely make a batch to give to neighbors this Christmas."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "james_forJesus"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I think that Alton has fixed the problem with the Union Station Bar Nuts recipe.  It never worked for me - to just toss hot nuts into a bowl of sugar and spices.  It always clumped together.  With alton melting the butter and adding the spice and sugar to a HOT PAN -  well, that makes infinitely more sense.  I will adapt this recipe and the Union Station recipe to this technique.  Basically, I'll use Cayenne, Rosemary, Cumin and the sugar, salt and butter.  BRILLIANT! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "dee_0620"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These are easy to make and have lots of great flavor!  I add them to salads to add that something different with a little sweet and spice.  I've added more of the spices (not salt, as well, to make the flavor a little more robust.  Yum!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Melissa Romney S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy to make. Not sure why it's categorized as intermediate. I agree with other reviews about adding more spices. My first batch I used 1/2t for all spices while still using 1t of salt. Tasted just fine. Not too spicy at all! The ceyenne pepper was not too strong, don't worry. With the 2nd batch I used 1t of all spices keeping the salt at 1t as well. Still very good, just a bit stronger of flavor and heat. I mixed both batches together. Usually Alton includes the storing method whether in the refrigerator or room temp. I am storing mine at room temp."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Katherine446"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is so easy to make and is really fantastic.  Everyone in my family and at work just loved them.  I made them for Thanksgiving and then made them again for Christmas.  Will be an annual tradition now in my kitchen."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "steve a."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "tasty yes..Easy to prepare.  Next time I would add a bit more cayenne.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ratlady73"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These are wonderful and easy to make. I didn't have orange peel or light brown sugar but I don't think that affected the outcome much. I used the amount of spices suggested and it was perfect for my taste. However, the pecans were pretty spicy so those with sensitive palates, you might want to adjust the amount of cayenne."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Cat DeVine"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Tasty but way too sticky.  I can't serve these.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "amybug1"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Simple and delicious. I just needed about 50% more of the spices, salt and sugar to hit the right note for me. I live in Costa Rica, so with our humidity, I followed the advice in other comments and spread the pecans out on a pan and put it in a low oven (170 for almost 2 hours, until crisp. I may have to do that again after a few days, if there are any left! :"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mamamio"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wonderful! Perfect recipe for the holiday appetizer! It was easy and everyone loved it! I'm taking this to a party this year for sure!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Karen B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This was very good and even my 3 yr old loved them.  There is a lot of depth of flavor for such a simple recipe.  I was nervous about the amount of cayenne, so used a little less than called for, but I think even my 3 yr old could handle the whole amount.  I didn't have light and dark brown sugar so used all light and it was just fine. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Emomchef"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfection!!  Didn't change the recipe a bit.  Just roasted pecans in oven instead of pan because I already had the oven on, then moved them to the pan to add butter, etc.  They are sweet and spicy and addicting!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "YUM! These nuts are totally addicting! The flavor is subtle but wonderful - a little sweet, a little salt and a little spice. I think the suggestion about toasting the pecans on a cookie sheet in the oven is a good one...it's kind of hard to get an even toast in the pan and takes longer than the oven. My pecans were kind of sticky after they cooled and I remembered that humidity can mess with candy recipes (like Alton, I live in the humid South, so I heated the oven to 175 degrees, put the whole pan in the oven and checked it every 20 minutes or so until all the stickiness was gone."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jennifer C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wow. Delicious. I made them to serve at thanksgiving tomorrow and I'm not sure they'll last that long. For the orange peel, I zested and orange and spread it out on a paper towel to dry for a Couple hours.  Beware of the cayenne.... It is pretty spicy. My 12 year old couldn't hack it so you might want to cut that down for sensitive palates. Or not, then more for you."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Angela M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "So yummy! We made these for Alton's spiced bourbon pecan pie and these took that pie over the top. They are so good by themselves we almost didn't have enough left to make the pie. Good thing they are so easy to make."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These are fantastic!! I didn't have dried orange peel so I used what I had on hand, ground coriander in the same amount as noted and I can't stop eating them. At this rate I might have to make another batch for the thanksgiving salad I had intended them for. THANKS ALTON!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "teanut1224"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "First batch... disappeared and I got two halves to try before it went POOF.  You can cut back on the butter or switch out to margarine, most of it stays in the pan.  I used both a cast iron and a regular skillet (stainless steel all-clad and both batches came out fine so don't worry if you don't have the cast iron.  I omitted the orange on one since I did not have it.  Have tried since with orange zest - get a little orange flavor, none - doesn't hurt the flavor, 2 tablespoons of orange juice - just a hint of flavor... Most of the butter and sugar stay in the pan but you can cut back on all of it to suit to taste.  Increase the cayenne, decrease the cayenne, same for the cumin.  It really is up to you on how you want them to taste at the end.  But as is, followed to the letter, is yummy too. Oh, and you can skip the parchment as well.  One note, when you add the seasonings, don't stand directly over the pan!  Also, you can use all light brown or all dark brown sugar too."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've been making this recipe at the holidays for two years now. It's so popular, my mother has to regulate how much my father eats a day! And, I'm tempted to make more year round, since it's so simple. I just have to watch the timing when I add the water. It's a very fine line between done and burnt!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Chefsalad"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These were great!  I made a few changes and they were still wonderful- I cut the sugar and the butter a bit to make them healthier and I warmed and mixed all the ingredients in a pan on the stove, then spread them on parchment  on a cookie sheet and put them in the oven at about 150 degrees Celcius for around an hour.  They're just right, not too sweet, not too salty.  I can't really taste the orange zest and like another reviewer I also thought the cumin would overwhelm everything else (judging by the smell but that was not true.  If I were making these for friends I would probably add the full amount of sugar and increase both the salt and cayenne a bit, but you really can't go wrong.  An easy recipe to experiement with!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ket13"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is an easy recipe which turns out to have a sophisticated and subtle flavor - and is absolutely, addictively delicious.  I couldn't find ground orange peel at my local grocery store, so I took another reviewer's suggestion and finely grated the peel from a navel orange, baked it for 2 hours at 150 degrees and then ground it up in my coffee grinder - turned out great."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jan F."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These nuts are wonderfully easy to make - one adjustment I made was to lay the nuts out on a cookie sheet and toast them in the oven instead of in the skillet on the stove. I think they toasted more evenly that way. While they toasted I melted the butter in the skillet and got all the other ingredients measured and ready. Finished the preparation as directed and they are great.  I made 4 batches one after another and have filled gift jars for the holidays with very little work or mess. Definitely a keeper."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a simple, great recipe. I used it to make favors for my daughter's wedding reception. I put them in clear pretzel bags and tied with rafia. They were a hit and now the requests for the recipe are coming in for the holidays.This will be a go to recipe for sure."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Aim Two Peas"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We have an abundant amount of pecans this year.  I made the first batch exactly like the recipe. These spiced pecans are terrific.  We like things spicy here in Louisiana, so I increased the amount of cayenne to our tastes.  This will make a great snack for an upcoming BBQ Shower and as gifts this Christmas.  This recipe will be a keeper in our household. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "NGerding"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "A Keeper!  I made both the regular recipe using Brown Sugar and spices, only addition, I placed baking sheet with cooked pecan mixture in oven preheated to 250 degrees (turned off overnight    It gave them a crisp light texture.  Trying to find a Sugar Free sweet pecan recipe, I used my new favorite Alton Brown's Spicy Pecans recipe , substituting 1/4 c Splenda Brown Sugar for Brown Sugar in recipe. It is fabulous!  Again, I placed the cooked nuts on baking sheet in oven that had been preheated to 250 (turned off to dry out.  Good luck to ya! <br /> "
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "name": "Spiced Nuts",
+        "description": "Alton Brown makes spiced nuts for everyone on his holiday gift list.",
+        "duration": "PT0H1M37S",
+        "thumbnailUrl": "https://food.fnr.sndimg.com/content/dam/images/food/video/0/01/011/0112/0112577.jpg.rend.hgtvcom.406.305.suffix/1664985034239.jpeg",
+        "contentUrl": "https://www.foodnetwork.com/apps/api/playback?path=/etc/sni-asset/food/videos/0/01/011/0112/0112577",
+        "uploadDate": "2022-08-15T13:43:58.422-04:00"
+    },
+    "recipeCuisine": "american",
+    "recipeCategory": "appetizer"
+}

@@ -1,0 +1,93 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Falling Leaves",
+    "datePublished": "2013-12-06T18:25:16.000-05:00",
+    "dateModified": "2021-06-29T02:38:01.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Food & Wine Editors",
+            "url": "https://www.foodandwine.com/author/food-wine-editors"
+        }
+    ],
+    "description": "Pegu Club * New York CityAt the Pegu Club, this drink is made with intensely aromatic Clear Creek pear eau-de-vie from Oregon; each 750-ml bottle ...",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Falling Leaves",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "1 teaspoon honey",
+        "1/2 teaspoon water",
+        "2 1/4 ounces dry Riesling",
+        "1 ounce pear eau-de-vie",
+        "1 1/2 teaspoons orange curaçao , preferably Marie Brizard",
+        "Ice",
+        "1 whole star anise"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a cocktail shaker, stir together the honey and water. Add the Riesling, eau-de-vie and curaçao, fill with ice and shake well. Strain into a chilled martini glass and garnish with the star anise."
+        }
+    ],
+    "totalTime": "PT0M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/falling-leaves",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/cocktails",
+                        "name": "Cocktails"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/cocktails-spirits/wine-cocktails",
+                        "name": "Wine cocktails"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/falling-leaves",
+                        "name": "Falling Leaves"
+                    }
+                }
+            ]
+        }
+    }
+}

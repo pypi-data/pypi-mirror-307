@@ -1,0 +1,98 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": "true",
+    "name": "Easy Lemon Marble Cheesecake",
+    "author": "Food.com",
+    "cookTime": "PT45M",
+    "prepTime": "PT14H",
+    "totalTime": "PT14H45M",
+    "datePublished": "2016-07-13T21:00Z",
+    "description": "Recipe courtesy of Alice Medrich and Food Network. Make this cheesecake one day before serving. Original recipe: http://www.foodnetwork.com/recipes/lemon-marble-cheesecake-recipe.html",
+    "image": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/submissions/recipe/33186/uX0f3bMTn58OskfTGWgv_Devour-23.jpg",
+    "recipeCategory": "Cheesecake",
+    "keywords": "Dessert,Lemon,Cheese,Citrus,Fruit",
+    "recipeIngredient": [
+        "1/2      lemon, zest of, grated ",
+        "1/3  cup   strained lemon juice",
+        "5   tablespoons    sugar",
+        "1   large    egg",
+        "1/2  teaspoon    vanilla extract",
+        "1   cup    sugar",
+        "2   cups   2% low-fat small-curd cottage cheese, drained at least 30 minutes in a strainer set over a bowl in the refrigerator ",
+        "8   ounces    neufchatel cheese",
+        "3   large    eggs",
+        "1   tablespoon    vanilla extract",
+        "1 1/2  teaspoons   strained lemon juice",
+        "1/4  teaspoon    salt",
+        "3 -4   tablespoons   crushed chocolate cookies or 3 -4   tablespoons    gingersnaps"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "239.7",
+        "fatContent": "8.4",
+        "saturatedFatContent": "4",
+        "cholesterolContent": "95.7",
+        "sodiumContent": "319.6",
+        "carbohydrateContent": "30.9",
+        "fiberContent": "0.1",
+        "sugarContent": "29.6",
+        "proteinContent": "10.1"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Make the lemon curd: Combine the lemon zest, juice, and sugar in a small saucepan and bring to a simmer. Meanwhile beat the egg until light in a small bowl. Beat some of the hot lemon mixture into the egg. Scrape the egg mixture back into the saucepan. Cook, stirring constantly and reaching all over the bottom and sides of the pan, until the mixture barely starts to simmer around the edges. Continue to cook and stir for about 15 seconds. Pour through a strainer set over a clean bowl. Stir in the vanilla. Cool to room temperature."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Make the cheesecake batter: Position rack in lower third of oven and preheat to 350 degrees. Place a round of parchment paper in the bottom of the cake pan and spray sides of pan with vegetable oil spray. Put water kettle on to boil for baking procedure."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Process the cottage cheese in a food processor for 2 1/2 to 3 minutes or until silky smooth, scraping the sides and bottom of the bowl once or twice as necessary. Set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a small microwave safe bowl, soften the Neufchatel cheese in microwave on high for about 30 seconds. Or, warm gently in the top of a double boiler. Stir until smooth. Scrape into the processor. Add the eggs, sugar, vanilla, lemon juice, and salt. Pulse until incorporated and perfectly smooth. Do not over process."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Scrape the batter into the prepared pan. Distribute slightly rounded tablespoons of lemon curd evenly over the cheesecake batter. Using a table knife or teaspoon, use circular strokes to marble the batters until nicely but not to completely mingled."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Slide oven rack part way out. Place cheesecake pan in baking dish or skillet and set on oven rack. Carefully pour boiling water around the pan to a depth of about 1-inch. Slide oven rack in gently to avoid sloshing. Bake until cheesecake has puffed and risen slightly and is just beginning to shrink from the edges of the pan, about 40 to 45 minutes. Remove cheesecake from water bath and cool on a rack. When completely cool, cover and chill for at least 12 hours or up to 2 days before serving."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To unmold and serve: Cover the pan with tightly stretched plastic wrap. Place a flat dish on top of plastic. Invert pan and dish and rap the pan gently until cheesecake is released from pan. Remove pan and peel parchment liner from bottom of cake. Place cake circle or serving plate on the cake and carefully invert so that cake is right side up. Remove plastic wrap. Press crumbs around sides of cake. Cut with a sharp thin knife. Dip the knife in hot water and wipe it dry between cuts."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "TIPS:."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "The suave texture of this cheesecake relies on ultra smooth cottage cheese. This requires a food processor and at least 2 1/2 to 3 minutes of processing, no cheating."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Once the Neufchatel Cheese has been added, pulse only enough to incorporate. over processing thins the batter."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "If you use nonfat cottage instead of low fat, the results will be not be nearly as good and you would save only about .4 grams of fat per serving. It's not worth it."
+        }
+    ],
+    "recipeYield": "1 cheesecake, 10-12 serving(s)",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://geniuskitchen.sndimg.com/fdc-new/img/FDC-Logo.png"
+        },
+        "url": "https://www.food.com"
+    }
+}

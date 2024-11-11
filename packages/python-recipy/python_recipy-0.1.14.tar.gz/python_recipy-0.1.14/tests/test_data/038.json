@@ -1,0 +1,425 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cooking.nytimes.com/recipes/1015803-prime-rib-roast#WebPage",
+        "url": "https://cooking.nytimes.com/recipes/1015803-prime-rib-roast",
+        "primaryImageOfPage": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-videoSixteenByNineJumbo1600.jpg",
+        "isAccessibleForFree": "False",
+        "hasPart": {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".recipe"
+        }
+    },
+    "url": "https://cooking.nytimes.com/recipes/1015803-prime-rib-roast",
+    "name": "Prime Rib Roast",
+    "description": "This is a standard take on a beef rib roast, which is to say it is how my father made the dish when I was younger, and how I have mostly made it since. The clear, rich fat that runs into the pan below the meat is the perfect vehicle for Yorkshire pudding.",
+    "author": {
+        "@type": "Person",
+        "name": "Sam Sifton"
+    },
+    "image": [
+        {
+            "url": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-square640.jpg",
+            "height": 640,
+            "width": 640,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-superJumbo.jpg",
+            "height": 1365,
+            "width": 2048,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-videoSmall.jpg",
+            "height": 281,
+            "width": 500,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-verticalTwoByThree735.jpg",
+            "height": 1102,
+            "width": 735,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        }
+    ],
+    "totalTime": "PT4H15M",
+    "recipeYield": "Serves 10 to 12",
+    "recipeCuisine": "",
+    "recipeCategory": [],
+    "keywords": "christmas, easter, new year’s day, thanksgiving, plan-ahead",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "ratingCount": 3949
+    },
+    "nutrition": {
+        "@context": "http://schema.org",
+        "@type": "NutritionInformation",
+        "calories": 104,
+        "unsaturatedFatContent": "3 grams",
+        "carbohydrateContent": "3 grams",
+        "cholesterolContent": null,
+        "fatContent": "7 grams",
+        "fiberContent": "0 grams",
+        "proteinContent": "8 grams",
+        "saturatedFatContent": "3 grams",
+        "sodiumContent": "102 milligrams",
+        "sugarContent": "0 grams",
+        "transFatContent": "0 grams"
+    },
+    "recipeIngredient": [
+        "1 3-to-4-rib roast of beef, approximately 8 to 10 pounds",
+        "2 tablespoons unsalted butter",
+        "¼ cup all-purpose flour",
+        "2 tablespoons kosher salt",
+        "2 tablespoons freshly ground black pepper"
+    ],
+    "recipeInstructions": [
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Remove the roast from the refrigerator 2 or 3 hours before cooking."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Preheat oven to 450."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Rub butter on the cut ends of the roast."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Combine flour, salt and pepper together in a small bowl, and then massage the mixture all over the meat."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Set the roast, rib side down, in a shallow roasting pan (the ribs act as a natural rack), and place in the oven. Roast for approximately 20 to 30 minutes, or until the roast is nicely darkened. Reduce oven to 350 and continue\t to roast, basting every 15 or 20 minutes, until the roast reaches an internal temperature of 125 degrees (for medium-rare) on an instant-read thermometer. Remove the roast to a cutting board and let\trest for 20 minutes before carving into either huge slabs or off the bone entirely and then thin slices."
+        }
+    ],
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Holiday Feast: Beef Rib Roast",
+        "description": "Sam Sifton shows how to make a beef rib roast fit for any wintertime special occasion.",
+        "thumbnailUrl": "https://static01.nyt.com/images/2018/11/21/dining/ss-beef-rib-roast/merlin_146850651_9b0a9ece-7022-4ef9-bd01-f70bbef57761-mediumThreeByTwo440.jpg",
+        "uploadDate": "2013-12-13T16:13:48.000Z",
+        "duration": "PT2M12S",
+        "transcript": "",
+        "contentUrl": "http://vp.nyt.com/video/2013/12/13/25043_1_feast-ribroast_wg_240p.mp4"
+    },
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "NYT Cooking",
+        "url": "https://cooking.nytimes.com",
+        "alternateName": [
+            "nytimes cooking",
+            "New York Times Cooking"
+        ],
+        "logo": {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "url": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "height": 112,
+            "width": 112,
+            "contentUrl": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "creditText": "NYT Cooking"
+        },
+        "sameAs": [
+            "https://www.facebook.com/nytcooking/",
+            "https://www.instagram.com/nytcooking/",
+            "https://twitter.com/nytimes",
+            "https://www.youtube.com/c/NYTCooking",
+            "https://www.tiktok.com/@nytcooking",
+            "https://apps.apple.com/us/app/nyt-cooking/id911422904",
+            "https://play.google.com/store/apps/details?id=com.nytimes.cooking&hl=en_US&gl=US"
+        ]
+    },
+    "datePublished": "2013-12-15T00:00:00.000Z",
+    "dateModified": "2024-05-06T13:57:40.000Z",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jody"
+            },
+            "reviewBody": "Delicious with simple prep, & followed the directions as written. Made this & it was not even a special occasion. I usually make Melissa Clarks Standing Rib roast that is crusted in herbs & a smoky garlic paste which I love. But, I didn't want all the trouble. This is easy & the simplicity accentuates a fine piece of meat!",
+            "datePublished": "2024-05-20T00:59:56.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Nicole B."
+            },
+            "reviewBody": "I made this today. Worked out great. I only had a little 2.77lb roast so it was hard for it to stay sitting up, but still turned out delicious even with just the butter, salt and pepper.",
+            "datePublished": "2024-04-29T03:20:50.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Denise"
+            },
+            "reviewBody": "Easy-Peasy and perfect!",
+            "datePublished": "2024-03-21T14:14:51.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ruas"
+            },
+            "reviewBody": "We did exactly as the recipe instructs - it was our first prime rib. The result was absolutely perfect. Thank you, Sam Sifton! Another keeper from you!",
+            "datePublished": "2024-01-07T16:29:53.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "arnemandell"
+            },
+            "reviewBody": "I stated by asking my butcher for a \"cradle cut,\" seasoned generously 24 hours before cooking and pasted with mustard. After searing at 450 for 20 minutes, I turned the temp down to 325 until internal temp was 125. Perfect!\nI would remove the roast from the fridge earlier next time to reduce the amount of time in the oven.",
+            "datePublished": "2024-01-01T16:25:31.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "prime rib"
+            },
+            "reviewBody": "2hours in oven without opening.",
+            "datePublished": "2023-12-31T18:22:43.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Debbie"
+            },
+            "reviewBody": "oh Sam. I beleived you and timed my dinner around cooking that 10 pound four rib roast for an hour and 15 minutes.Big error. and I should have known better. Used the Joy of Cooking recipe a million times-16 to 18 minutes per pound.always perfect. Live and learn",
+            "datePublished": "2023-12-30T12:07:51.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Peter"
+            },
+            "reviewBody": "Use 120 degrees, tent for 1/2 hour.  Consider hotter start and lower second temp.",
+            "datePublished": "2023-12-28T00:49:28.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Susan"
+            },
+            "reviewBody": "I followed instructions as they were and it came out perfect. The crunchy bits were the best part.",
+            "datePublished": "2023-12-26T16:09:26.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anita Jo"
+            },
+            "reviewBody": "I followed the instructions exactly and this was the best prime rib roast I've ever made. It was PERFECT and the highlight of a wonderful Christmas dinner.",
+            "datePublished": "2023-12-26T15:06:32.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Karen"
+            },
+            "reviewBody": "The suggested times are far short of reality. My 4 rib roast sat out at room temperature for 3 hours and was still 46 F when it was put in the oven. Cooking time was 3 hours, which threw off the timing of the entire dinner. Super disappointed.",
+            "datePublished": "2023-12-25T23:10:12.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "wandafish"
+            },
+            "reviewBody": "I made this as written twice now, bone-in and boneless. Both times, the crust came out light brown, not as dark as the photos/video. I will try roasting at 500 degrees next time because I like a deep brown crust. This is otherwise a simple, excellent recipe for prime rib. I make Alton Brown’s horseradish cream sauce with it.",
+            "datePublished": "2023-12-25T20:20:34.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "zoe"
+            },
+            "reviewBody": "Flour substitute?",
+            "datePublished": "2023-12-25T15:56:50.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ReginaB"
+            },
+            "reviewBody": "We made this roast last night and the cooking instructions were spot on.  I tried to get my husband to pull it out at 115 because we love rare roast beef but he was stubborn and pulled it out at 120 which ended up being too done around the edges. A great prime rib has a delicious crust that can take the well done edges to a whole new level of crispy, salty deliciousness. This recipe failed in that department. I will continue to use the Cook’s Illustrated recipe. Far better tasting roast.",
+            "datePublished": "2023-12-25T13:38:44.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Amount"
+            },
+            "reviewBody": "This was my first rib roast. Followed recipe exactly. 6-pound rib roast placed in roasting pan for two hours at room temperature. Used constant-read thermometer; starting temperature was 50F. It took nearly two hours to hit target temperature (125F). Let it rest for 30 minutes before slicing. Beautiful and oh so delicious.",
+            "datePublished": "2023-12-25T06:24:40.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mike Gorogianis"
+            },
+            "reviewBody": "I’m a former chef and restaurateur and have cooked thousands of bone in standing rib roasts aka Prime Rib 109 Rib roasts oven ready chine bone off. I cook my roast at 400 degrees for 20 minutes then turn down the temp to 225 degrees till the thermometer reads 120 internal temperature in the middle. Low and slow will give you an unbelievably tender and juicy roast with medium rare throughout. It takes longer but it’s worth it.",
+            "datePublished": "2017-12-24T03:39:58.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Terri"
+            },
+            "reviewBody": "Is there no danger associated leaving raw meat out for 3 hours?",
+            "datePublished": "2017-10-30T15:42:50.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Easterner"
+            },
+            "reviewBody": "We just cooked an prime rib roast for Christmas dinner, but we used the reverse sear method.  Started at 250 degrees until thermometer was 120 in middle of meat.  Rested one hour, while we got all the other stuff ready, then \"seared\" at 500 for 15 minutes just before eating. Came out perfect.  I realize this section is for comments on the recipe as written, but I find the additional information that home cooks provide in these sections very useful, so I'm paying back with my own useful info.",
+            "datePublished": "2019-12-29T18:36:30.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KW"
+            },
+            "reviewBody": "Good old (mine is 1978 ed.) Joy of Cooking, a go-to reference, says 18-20 minutes per pound for medium rare, to give you an idea. Personally, since we like rare and our oven is hot, I start testing after 12-15 minutes per pound, to be on the safe side.",
+            "datePublished": "2017-10-30T16:00:05.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kevin"
+            },
+            "reviewBody": "The best tool for this is a probe thermometer that lets you monitor the temp from outside, it goes into the roast at the start. You can set the alarm for whatever temperature you like, which should be about 5 degrees less than the desired result. You can set the timer too. They're about $20.00.",
+            "datePublished": "2017-10-30T15:42:55.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "John MtLund"
+            },
+            "reviewBody": "Salt and Pepper your roast ahead of time. \nPreheat over to 500 Degrees, 5 minutes per lb. exactly round up to the next minute if needed.   5 lb Roast= 25 minutes. Turn off oven DO NOT OPEN DOOR.  Wait two hours and take out to carve. You should have a perfect rare/medium rare roast with the ends more done.  No need to let it rest.   If you have more guests requesting medium have a pan of ajus ready and dip in hot ajus as needed.    (Old Restaurant trick I learned at a steak house.",
+            "datePublished": "2018-11-24T22:50:11.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "NancyM"
+            },
+            "reviewBody": "Though I agree with Mike G, the prior chef's comments about low and slow cooking, I think the reverse sear works far better then the initial 400 degree blast.  It also allows you to rest the roast before reheating the sear and this assures all the juices remain in the roast.  No need for second resting.  I also like the reverse sear because it easily allows you to adjust the dinner schedule without ruining the roast, a necessity in our very large family gathering.",
+            "datePublished": "2017-12-29T16:47:35.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sara"
+            },
+            "reviewBody": "My first standing rib roast! I had a 2-rib/4.5 pound roast but followed Sam's recipe exactly, using a probe thermometer for perfect 125 F medium-rare meat. Even with the meat having been out of the fridge for several hours prior to roasting, it still took a good 2 hours, plus resting time. This will be my go-to recipe in the future.",
+            "datePublished": "2017-10-24T17:51:52.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mike"
+            },
+            "reviewBody": "Your cooking directions are backward: Start it low and slow: Preheat the oven to 250° and turn the temperature back to 200° when you put the roast into the oven. Once the internal temperature reaches 118° remove the roast and let it rest. This will stabilize the liquid and the first will continue to cook. Increase the oven temp to 500°. Once the internal temp of the resting roast reaches 125° return it to the hot oven for 5 to 7 minutes to get the desired crust.",
+            "datePublished": "2018-12-23T05:18:32.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Figaro"
+            },
+            "reviewBody": "For over 45 yrs I've used Julia Child's timetable. She sears smaller roasts @450⁰ for 15 min; turning down to 325⁰; then roast for 12 min/lb for Choice cuts, 13/lb for Prime; (I do it at 350⁰);  takes about 1 hr total; probe 1st\" with an instant read; should read 120⁰ deg for med-rare ends. Cover & rest for 30 min while baking Yorkshire Pudding. The middle is very rare. Slice & freeze for later when you're longing for roast beef. Pan or gas grill for great seconds.",
+            "datePublished": "2017-10-24T18:13:14.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Leslie Parsley"
+            },
+            "reviewBody": "I prepared this for Christmas Eve dinner last night. Even finding it on sale for less than half price was daunting to my pocket book as well as to my nerves. But oh my, at the very first bite I thought I had died and gone to heaven.\n\n5.5 lbs. at 16 minutes per lb. after dropping temperature to 350. Forgot to use thermometers and just salted the outside. Perfection.\n\nThis meat is so exquisite it doesn't need herbal rubs or W. Sauce. Why detract from the purity of its natural flavor?",
+            "datePublished": "2017-12-25T18:17:31.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Dave r"
+            },
+            "reviewBody": "You have to have an objective in mind.\nIf you want to have a roast that is mostly, say, medium rare throughout with a nice but this crispy crust, use the slow and low method and sear at the very end.\nEverything cooks from the outside in so if you start at high heat you will have a lot of the outside that is well done and less of the medium or rare under that.",
+            "datePublished": "2017-12-25T17:06:21.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Richard Scher"
+            },
+            "reviewBody": "Everybody is afraid of roast beef - too expensive, too big, too easy to over- or under-cook. I’ve tried all the methods, the one that never fails is low and slow, like my mother and her mother did - room temperature beef, well seasoned, low and slow uncovered (18 min/lb, 325 F for medium rare, rest covered for 1/2 hr before carving. No fail, no anxiety, plenty of juice for gravy and Yorkshire pudding. Works over indirect wood or charcoal fire also if you cook roast in pan. Splurge, relax, enjoy!",
+            "datePublished": "2018-12-23T17:21:43.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Bob Morgen"
+            },
+            "reviewBody": "I polled my guests the day after and all of them are still alive.  One had suffered from indigestion but that is likely due to his eating two thirds of the pecan pie after eating most of a whole rib of beef and 2 Yorkshire puddings.",
+            "datePublished": "2017-12-25T21:43:13.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sara"
+            },
+            "reviewBody": "Sam explains in the video that you (or your butcher) can cut the meat off the bone, then truss it and roast it as if it were intact, a method that yields more servings.",
+            "datePublished": "2017-10-30T15:48:17.000Z"
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Spicy Slow Cooker Chicken Wings",
+    "datePublished": "2004-10-27T18:45:03.000-04:00",
+    "dateModified": "2022-12-13T12:01:55.595-05:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Diana Rattray",
+            "url": "https://www.thespruceeats.com/diana-rattray-3034029"
+        }
+    ],
+    "description": "Jazz up your chicken wings recipe with barbecue sauce, Worcestershire sauce, Tabasco, and honey. Serve these top-rated wings hot from the slow cooker.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.thespruceeats.com/thmb/95WQnlPl7XXrgGKDl9BoyjJ2uc0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/barbecue-chicken-wings-18-gt-56a8ba4f5f9b58b7d0f4a234.jpg",
+        "height": 1006,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Spruce Eats",
+        "url": "https://www.thespruceeats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+            "width": 361,
+            "height": 109
+        },
+        "brand": "The Spruce Eats",
+        "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/thespruceeats/",
+            "https://www.instagram.com/thespruceeats/",
+            "https://www.pinterest.com/thespruceeats/",
+            "https://flipboard.com/@thespruceeats"
+        ]
+    },
+    "name": "Spicy Slow Cooker Chicken Wings",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "ratingCount": "33"
+    },
+    "cookTime": "PT200M",
+    "keywords": "bbq chicken",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "174 kcal",
+        "carbohydrateContent": "10 g",
+        "cholesterolContent": "47 mg",
+        "fiberContent": "0 g",
+        "proteinContent": "15 g",
+        "saturatedFatContent": "2 g",
+        "sodiumContent": "250 mg",
+        "fatContent": "8 g",
+        "servingSize": "3 Dozen Pieces (24 servings)",
+        "unsaturatedFatContent": "5 g"
+    },
+    "prepTime": "PT20M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "3 pounds chicken wings (about 16 to 20 whole wings)",
+        "1 pinch of salt",
+        "1 pinch of pepper",
+        "1 1/2 cups barbecue sauce (any variety)",
+        "1/4 cup honey",
+        "2 teaspoons mustard (prepared or spicy mustard)",
+        "2 teaspoons Worcestershire sauce",
+        "Optional: 1 dash Tabasco sauce  (or another hot sauce , to taste)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Gather the ingredients."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cut off and discard tips from chicken wings. Then cut each wing at the joint to make two sections from each wing. Sprinkle wing pieces with salt and pepper; place the wings on a lightly oiled broiler pan."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Broil (550 F) about 4 inches from the heat for 10 minutes on each side, or until the wings are nicely browned. With tongs, transfer the wings to the crockery insert of a slow cooker."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a bowl, combine barbecue sauce, honey, spicy mustard, Worcestershire sauce, and Tabasco. Pour sauce over chicken wings."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cover and cook on LOW for 4 to 5 hours or on High 2 to 2 1/2 hours."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve hot, directly from slow cooker, keeping the temperature on LOW."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "24",
+    "totalTime": "PT220M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.thespruceeats.com/spicy-slow-cooker-chicken-wings-in-barbecue-sauce-3053256",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/slow-cookers-4162182",
+                        "name": "Slow Cooker Cooking"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/slow-cooker-recipes-4162180",
+                        "name": "Slow Cooker Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/spicy-slow-cooker-chicken-wings-in-barbecue-sauce-3053256",
+                        "name": "Spicy Slow Cooker Chicken Wings"
+                    }
+                }
+            ]
+        }
+    }
+}

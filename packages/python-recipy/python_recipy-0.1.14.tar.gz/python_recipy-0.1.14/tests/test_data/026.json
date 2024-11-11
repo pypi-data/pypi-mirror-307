@@ -1,0 +1,103 @@
+{
+    "@type": "Recipe",
+    "name": "Slow Cooker Greek Potatoes",
+    "author": {
+        "@id": "https://damndelicious.net/#/schema/person/b5f3793618a48c5e85a0fde94b831682"
+    },
+    "description": "Buttery crisp-tender potatoes with olive oil, garlic, lemon and oregano. Made so easily in the crockpot - less than 5 min prep!",
+    "datePublished": "2016-01-05T21:00:30+00:00",
+    "image": [
+        "https://s23209.pcdn.co/wp-content/uploads/2016/01/IMG_0872edit.jpg"
+    ],
+    "recipeYield": [
+        "8",
+        "8 servings"
+    ],
+    "prepTime": "PT5M",
+    "cookTime": "PT240M",
+    "totalTime": "PT245M",
+    "recipeIngredient": [
+        "3 pounds fingerling potatoes (halved)",
+        "2 tablespoons olive oil",
+        "2 tablespoons unsalted butter",
+        "Juice of 1 lemon",
+        "4 cloves garlic (minced)",
+        "1 tablespoon dried oregano",
+        "1 teaspoon smoked paprika",
+        "Kosher salt and freshly ground black pepper (to taste)",
+        "Zest of 1 lemon",
+        "2 tablespoons chopped fresh parsley leaves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Lightly coat the inside of a 6-qt slow cooker with nonstick spray.",
+            "name": "Lightly coat the inside of a 6-qt slow cooker with nonstick spray.",
+            "url": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/#wprm-recipe-35086-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place potatoes, olive oil, butter, lemon juice, garlic, oregano and paprika into the slow cooker; season with salt and pepper, to taste. Cover and cook on low heat for 4-5 hours or high heat for 2-3 hours, or until tender.*",
+            "name": "Place potatoes, olive oil, butter, lemon juice, garlic, oregano and paprika into the slow cooker; season with salt and pepper, to taste. Cover and cook on low heat for 4-5 hours or high heat for 2-3 hours, or until tender.*",
+            "url": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/#wprm-recipe-35086-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve immediately, garnished with lemon zest and parsley, if desired.",
+            "name": "Serve immediately, garnished with lemon zest and parsley, if desired.",
+            "url": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/#wprm-recipe-35086-step-0-2"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "3"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "So easy and tasty! ",
+            "author": {
+                "@type": "Person",
+                "name": "Shae"
+            },
+            "datePublished": "2023-04-01"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Lovely dish. I made these potatoes many times now, and they always taste extremely good. However, prep time is definitely not under five minutes. \nScrubbing and cutting the potatoes easily takes fifteen minutes. I'm not complaining about the time it takes, but I think it's a bit misleading to say prep time is under five minutes.",
+            "author": {
+                "@type": "Person",
+                "name": "Daan Katz"
+            },
+            "datePublished": "2022-08-11"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "These were fantastic! I followed the recipe except I used Yukon gold potatoes, quartered, and omitted the salt for medical reasons. The potatoes that were in contact with the sides of the slow cooker got crispy, and the ones in the middle were soft. Both were amazing and delicious! I'm making this a second time right now!",
+            "author": {
+                "@type": "Person",
+                "name": "Leslie"
+            },
+            "datePublished": "2021-05-06"
+        }
+    ],
+    "@id": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/#recipe",
+    "isPartOf": {
+        "@id": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/#article"
+    },
+    "mainEntityOfPage": "https://damndelicious.net/2016/01/05/slow-cooker-greek-potatoes/",
+    "recipeCategory": []
+}

@@ -1,0 +1,66 @@
+{
+    "@type": "Recipe",
+    "@context": "http://schema.org/",
+    "name": "Turkey-Parmesan Cheese Balls",
+    "keywords": "turkey-parmesan cheese balls",
+    "recipeCategory": "Appetizer",
+    "image": "https://mojo.generalmills.com/api/public/content/SOuAKA8G20KNpt6GdfFA0g_webp_base.webp?v=1c3b0994&t=85e6ab0127c04f66a40c0b82332e03a6",
+    "description": "Meet your next favorite party food! This turkey Parm-inspired spin on classic Bisquick™ Cheese Balls is every bit as easy and quick to make as the original. Packed with Italian seasoning, Parmesan and garlic, they’re guaranteed to disappear before the party ends.",
+    "recipeIngredient": [
+        "2  cups shredded Italian cheese blend (8 oz) ",
+        "1 1/2  cups Original Bisquick™ mix ",
+        "1/2  lb bulk mild Italian turkey sausage ",
+        "1/2  cup Progresso™ Panko Italian style crispy bread crumbs ",
+        "1/2  cup milk ",
+        "4  tablespoons butter, melted ",
+        "1  tablespoon Italian seasoning ",
+        "1  teaspoon dried garlic powder ",
+        "1/2  cup grated Parmesan cheese ",
+        "1  cup marinara sauce, warmed "
+    ],
+    "totalTime": "PT0H40M",
+    "prepTime": "PT0H20M",
+    "recipeYield": "48",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "2",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Betty Crocker Kitchens"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oven to 350°F. Line bottom and sides of 15x10x1-inch pan with foil. Generously spray foil with cooking spray."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In large bowl, stir together all ingredients except Parmesan cheese and marinara sauce, using hands or spoon. Shape mixture into (48) 1-inch balls. Place Parmesan cheese in small bowl. Roll balls in Parmesan cheese, pressing to adhere. Place in pan."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bake 18 to 23 minutes or until brown and cooked through in center (at least 165°F). Immediately remove from pan. Serve warm with sauce for dipping."
+        }
+    ],
+    "mainEntity": [],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "60 ",
+        "carbohydrateContent": "4 g",
+        "cholesterolContent": "10 mg",
+        "fatContent": "1/2 ",
+        "fiberContent": "0 g",
+        "proteinContent": "3 g",
+        "saturatedFatContent": "2 g",
+        "servingSize": "1 Serving",
+        "sodiumContent": "160 mg",
+        "sugarContent": "0 g",
+        "transFatContent": "0 g"
+    },
+    "dateCreated": "06/18/2018",
+    "dateModified": "08/09/2018"
+}

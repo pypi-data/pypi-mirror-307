@@ -1,0 +1,78 @@
+{
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/crunchy-peanut-banoffee-sundae#Recipe",
+    "@type": "Recipe",
+    "description": "The ultimate decadent dessert, this crunchy peanut banoffee sundae is sure to impress at the dinner table",
+    "image": {
+        "@type": "ImageObject",
+        "height": 574,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/banoffee_0-c066975.jpg?resize=768,574",
+        "width": 768
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bbcgoodfood.com/recipes/crunchy-peanut-banoffee-sundae"
+    },
+    "name": "Crunchy peanut banoffee sundae",
+    "url": "https://www.bbcgoodfood.com/recipes/crunchy-peanut-banoffee-sundae",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Good Food team",
+            "url": "https://www.bbcgoodfood.com/author/goodfood"
+        }
+    ],
+    "dateModified": "2022-11-08T12:37:51+00:00",
+    "datePublished": "2014-07-26T11:43:02+01:00",
+    "headline": "Crunchy peanut banoffee sundae",
+    "keywords": "800 kcal or less, diner recipes, Good Food, ice cream dessert, Ice cream sundae, Indulgent, peanut butter recipes, Summer",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Food",
+        "url": "https://www.bbcgoodfood.com",
+        "logo": {
+            "@type": "ImageObject",
+            "height": 65,
+            "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+            "width": 265
+        }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".js-piano-locked-content"
+    },
+    "cookTime": "PT5M",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "733 calories",
+        "fatContent": "37 grams fat",
+        "saturatedFatContent": "19 grams saturated fat",
+        "carbohydrateContent": "87 grams carbohydrates",
+        "sugarContent": "72 grams sugar",
+        "fiberContent": "3 grams fiber",
+        "proteinContent": "14 grams protein",
+        "sodiumContent": "1 milligram of sodium"
+    },
+    "prepTime": "PT5M",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "3 tbsp caramel from a can (we used Carnation)",
+        "1 tbsp smooth or crunchy peanut butter",
+        "1 tbsp milk",
+        "2 scoops toffee or caramel ice cream",
+        "2-4 scoops vanilla ice cream",
+        "1 large banana , sliced",
+        "1 heaped tbsp roughly chopped salted peanuts",
+        "1 caramel wafer  , halved"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat the caramel, peanut butter, milk and a pinch of salt in a saucepan, whisking until smooth. Divide half the warm sauce between 2 sundae glasses. Layer the remaining ingredients in the glasses, finishing with another drizzle of sauce, a sprinkling of peanuts and a caramel wafer."
+        }
+    ],
+    "recipeYield": 2,
+    "totalTime": "PT10M"
+}

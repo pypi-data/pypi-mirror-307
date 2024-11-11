@@ -1,0 +1,84 @@
+{
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/mango-chutney-chicken-sliders#Recipe",
+    "@type": "Recipe",
+    "description": "Top these chicken sliders with mango chutney, red onion, chilli and cucumber salad, and a mint & yogurt dressing. They make fabulous finger food for summer",
+    "image": {
+        "@type": "ImageObject",
+        "height": 574,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/mango-chutney-chicken-sliders-2362110.jpg?resize=768,574",
+        "width": 768
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bbcgoodfood.com/recipes/mango-chutney-chicken-sliders"
+    },
+    "name": "Mango chutney & chicken sliders",
+    "url": "https://www.bbcgoodfood.com/recipes/mango-chutney-chicken-sliders",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Esther Clark",
+            "url": "https://www.bbcgoodfood.com/author/estherclark"
+        }
+    ],
+    "dateModified": "2022-11-08T13:52:22+00:00",
+    "datePublished": "2019-07-11T15:57:38+01:00",
+    "headline": "Mango chutney & chicken sliders",
+    "keywords": "Chicken, Esther Clark, Fibre, Folate, Mango chutney, No cook recipes, Sandwiches, sliders, Summer",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Food",
+        "url": "https://www.bbcgoodfood.com",
+        "logo": {
+            "@type": "ImageObject",
+            "height": 65,
+            "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+            "width": 265
+        }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".js-piano-locked-content"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "632 calories",
+        "fatContent": "33 grams fat",
+        "saturatedFatContent": "5 grams saturated fat",
+        "carbohydrateContent": "36 grams carbohydrates",
+        "sugarContent": "15 grams sugar",
+        "fiberContent": "6 grams fiber",
+        "proteinContent": "44 grams protein",
+        "sodiumContent": "2.1 milligram of sodium"
+    },
+    "prepTime": "PT20M",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "100ml natural yogurt",
+        "3 tbsp mayonnaise",
+        "½ small bunch mint , leaves picked and finely chopped",
+        "1 small red onion , finely chopped",
+        "1 small red chilli , deseeded and finely chopped",
+        "½ cucumber , finely chopped",
+        "½ small bunch coriander , finely chopped",
+        "1 rotisserie chicken",
+        "3 Little Gem lettuces , halved lengthways",
+        "4 tbsp mango chutney",
+        "4 wholemeal rolls , halved"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Mix the yogurt, mayonnaise and mint together in a small bowl, then season and set aside. Combine the red onion, chilli, cucumber and coriander in a separate bowl."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Slice and shred the chicken (keep the bones for stock). Serve with the yogurt sauce, onion and cucumber salad, lettuce, mango chutney and wholemeal rolls for making sliders, and eat any extra chicken with the salad on the side."
+        }
+    ],
+    "recipeYield": 4,
+    "totalTime": "PT20M"
+}

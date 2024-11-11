@@ -1,0 +1,152 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Aperol Spritz Recipe",
+    "datePublished": "2011-06-14T11:55:00.000-04:00",
+    "dateModified": "2023-08-11T17:06:39.197-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Maggie Hoffman",
+            "url": "https://www.seriouseats.com/maggie-hoffman-5118865"
+        }
+    ],
+    "description": "Just a little bitter, just a little sweet, an Aperol Spritz is irresistible any time of day.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.seriouseats.com/thmb/kx0gGQeyBPJxLJWnfcC2Z2GoO6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230811-SEA-AperolSpritz-TwoBites-004-07b0466379044dd6b38cde0e3fff1e0c.jpg",
+        "height": 1125,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Serious Eats",
+        "url": "https://www.seriouseats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.seriouseats.com/thmb/YfQU2tc6Ask4mMy6oMJDaulMqqE=/320x320/filters:no_upscale():max_bytes(150000):strip_icc()/Serious_Eats_Schema_Logo-30a63d9c07734d35836c8ff2d368419c.png",
+            "width": 320,
+            "height": 320
+        },
+        "brand": "Serious Eats",
+        "publishingPrinciples": "https://www.seriouseats.com/about-us-5120006#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/seriouseats",
+            "https://www.instagram.com/seriouseats",
+            "https://www.pinterest.com/seriouseats"
+        ]
+    },
+    "name": "Aperol Spritz Recipe",
+    "keywords": "aperol, brunch, cocktail, drink, sparkling wine",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "350 kcal",
+        "carbohydrateContent": "33 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "2 g",
+        "proteinContent": "1 g",
+        "saturatedFatContent": "0 g",
+        "sodiumContent": "17 mg",
+        "sugarContent": "23 g",
+        "fatContent": "0 g",
+        "servingSize": "makes 1 cocktail",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT5M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Italian"
+    ],
+    "recipeIngredient": [
+        "ice",
+        "3 ounces brut Prosecco",
+        "2 ounces Aperol",
+        "1 ounce club soda",
+        "1 lime wheel or orange wedge for garnish"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.seriouseats.com/thmb/NQmeXf4_iILShvfAzbeYVvyKoxQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230811-SEA-AperolSpritz-TwoBites-Step1-ef65a52291c7474db4ffa6063ac5a74e.jpg"
+                }
+            ],
+            "text": "Fill a wine glass with ice. Pour the Prosecco over, then add Aperol and club soda. Garnish with a lime wheel or an orange wedge."
+        }
+    ],
+    "recipeYield": "1",
+    "totalTime": "PT5M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "K. Adams"
+            },
+            "reviewBody": "I know this post is old, but I want to recommend <a href=\"http://livingveniceblog.com/2009/09/venetian-spritz-recipe-or-once-ombra/\"> the Venetian white wine version</a> over the Gruppo Campari prosecco version. (In their defense, <a href=\"https://it.wikibooks.org/wiki/Libro_di_cucina/Ricette/Spritz\"> some areas in Tre Venezie use prosecco</a> in their spritz.) Stick with a still white wine, preferably a cheap table wine from the Veneto - pinot grigio is most available in the States. The prosecco version seems a bit too acidic and a bit too dry.\n\nIn a large, stemmed wine glass or a tall tumbler, add:\n1/3 white wine\n1/3 liquor (Aperol, Select, Campari, or Cynar)\n1/3 club soda\n2-3 ice cubes\ngarnish with 1-2 meaty green olives on a toothpick and a slice of lemon or orange"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JV"
+            },
+            "reviewBody": "I prefer to add the prosecco last. Pouring it onto ice seems to decrease the fizz, which to me is part of the appeal of this drink."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "duncan1205"
+            },
+            "reviewBody": "The Aperol spritz is delicious anytime of the year. We were having them as\npre-pre-dinner cocktails over Christmas and that extra little kick from the Prosecco and club soda is very lively ~ even in December! Love Compari and soda as well, but it is more of a warm weather drink for me; I guess I find the bitterness more refreshing. I also like Campari and orange in the summer"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "duncan1205"
+            },
+            "reviewBody": "The Aperol spritz is delicious anytime of the year. We were having them as\npre-pre-dinner cocktails over Christmas and that extra little kick from the Prosecco and club soda is very lively ~ even in December! Love Compari and soda as well, but it is more of a warm weather drink for me; I guess I find the bitterness more refreshing. I also like Campari and orange in the summer"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.seriouseats.com/aperol-spritz-recipe",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/cocktail-recipes-5117858",
+                        "name": "Cocktails"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/champagne-recipes-5117856",
+                        "name": "Champagne"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/aperol-spritz-recipe",
+                        "name": "Aperol Spritz Recipe"
+                    }
+                }
+            ]
+        }
+    }
+}

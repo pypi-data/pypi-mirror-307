@@ -1,0 +1,93 @@
+{
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/cheesy-garlic-bread#Recipe",
+    "@type": "Recipe",
+    "description": "This goes with so many family dishes, such as chilli con carne, soups, salads and barbecues",
+    "image": {
+        "@type": "ImageObject",
+        "height": 574,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-424648_11-de85439.jpg?resize=768,574",
+        "width": 768
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bbcgoodfood.com/recipes/cheesy-garlic-bread"
+    },
+    "name": "Cheesy garlic bread",
+    "url": "https://www.bbcgoodfood.com/recipes/cheesy-garlic-bread",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Sara Buenfeld",
+            "url": "https://www.bbcgoodfood.com/author/sarabuenfeld"
+        }
+    ],
+    "dateModified": "2022-11-08T13:04:51+00:00",
+    "datePublished": "2010-10-12T03:20:34+01:00",
+    "headline": "Cheesy garlic bread",
+    "keywords": " Josh Eagleton, Baking, Bread flour, Breads, Butter, Cheddar, Clear honey, Focaccia, Focaccio, Garlic bread, Garlic clove, Garlic cloves, Homemade bread, Kids cooking, Kneading dough, Olive oil, Pizza, Salt, Sara Buenfeld, Thyme, Yeast",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Good Food",
+        "url": "https://www.bbcgoodfood.com",
+        "logo": {
+            "@type": "ImageObject",
+            "height": 65,
+            "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+            "width": 265
+        }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".js-piano-locked-content"
+    },
+    "cookTime": "PT30M",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "215 calories",
+        "fatContent": "7 grams fat",
+        "saturatedFatContent": "3 grams saturated fat",
+        "carbohydrateContent": "33 grams carbohydrates",
+        "sugarContent": "2 grams sugar",
+        "fiberContent": "1 grams fiber",
+        "proteinContent": "7 grams protein",
+        "sodiumContent": "0.61 milligram of sodium"
+    },
+    "prepTime": "PT20M",
+    "recipeCategory": [],
+    "recipeCuisine": "British",
+    "recipeIngredient": [
+        "500g strong white bread flour",
+        "7g sachet/1.5 tsp fast-action yeast",
+        "1 tsp salt",
+        "2 tbsp olive oil",
+        "1 tbsp clear honey",
+        "2 garlic cloves , crushed",
+        "25g soft butter",
+        "100g mature cheddar , grated",
+        "handful thyme leaves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Measure the flour, yeast and salt into a large bowl. Mix 300ml hand-hot water with the oil and honey in a jug, then pour into the dry mix, stirring all the time to make a soft dough."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Turn the dough out onto a lightly floured surface, then knead for 5 mins until the dough no longer feels sticky, sprinkling with a little more flour as you need it. Now stretch it to fit the Swiss roll tin."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Mix the garlic with the butter, then dot over the dough. Sprinkle over the cheese and snip over the thyme. Cover the bread with lightly oiled cling film, then leave in a warm place to rise for 40 mins."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Heat oven to 200C/fan 180C/gas 6. Remove the cling film, then bake the bread for 30 mins until golden and risen. Leave to cool for 10 mins, then cut into 12 pieces and serve."
+        }
+    ],
+    "recipeYield": "Cuts into 12 squares",
+    "suitableForDiet": "https://schema.org/VegetarianDiet",
+    "totalTime": "PT1H30M"
+}

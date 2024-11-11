@@ -1,0 +1,61 @@
+{
+    "@type": "Recipe",
+    "keywords": "Filled, Chocolate, Peanut/peanut butter",
+    "name": "Magic in the Middles",
+    "description": "Reminiscent of a chocolate peanut butter cup candy (or a buckeye, if you're into homemade candies), this recipe is one that's been making the rounds for years. We guarantee these will disappear in a snap, whatever the audience: from hungry kids after a soccer game, to your co-workers gathered around the office coffeepot!",
+    "recipeYield": [
+        "26",
+        "26 filled cookies"
+    ],
+    "datePublished": "December 31, 2009 at 7:00pm",
+    "prepTime": "PT45M",
+    "totalTime": "PT55M",
+    "cookTime": "PT9M",
+    "recipeIngredient": [
+        "1 1/2 cups (180g) King Arthur Unbleached All-Purpose Flour",
+        "1/2 cup (43g) unsweetened cocoa Dutch-process or natural",
+        "1/2 teaspoon baking soda",
+        "1/4 teaspoon table salt",
+        "1/2 cup (99g) granulated sugar (plus extra for dredging)",
+        "1/2 cup (106g) light brown sugar or dark brown sugar packed",
+        "8 tablespoons (113g) unsalted butter softened",
+        "1/4 cup (67g) peanut butter smooth",
+        "1 teaspoon King Arthur Pure Vanilla Extract",
+        "1 large egg",
+        "3/4 cup (204g) peanut butter crunchy or smooth your choice",
+        "3/4 cup (85g) confectioners' sugar"
+    ],
+    "recipeInstructions": "Preheat the oven to 375°F. Lightly grease (or line with parchment) two baking sheets., To make the dough: In a medium-sized bowl, whisk together the flour, cocoa, baking soda and salt., In another medium-sized mixing bowl, beat together the sugars, butter, and peanut butter until light and fluffy. Add the vanilla and the egg, beating to combine., Stir in the dry ingredients, blending well., To make the filling: In a small bowl, stir together the peanut butter and confectioners' sugar until smooth., With floured hands or a teaspoon scoop, roll the filling into 26 small (1\") balls., To shape the cookies: Scoop 1 tablespoon of the dough (a lump about the size of a walnut), make an indentation in the center with your finger, and place one of the peanut butter balls into the indentation., Bring the cookie dough up and over the filling, pressing the edges together to cover the center. Roll the cookie in the palms of your hands to smooth it out., Repeat with the remaining dough and filling., Roll each rounded cookie in granulated sugar, and place on the prepared baking sheets, leaving about 2\" between cookies., Grease the bottom of a drinking glass, and use it to flatten each cookie to about 1/2\" thick., To bake the cookies: Bake the cookies for 7 to 9 minutes, or until they're set and you can smell chocolate. Remove them from the oven, and cool on a rack., Storage information: Store leftover cookies, well wrapped, at room temperature for several days; freeze for longer storage.",
+    "author": {
+        "@type": "Organization",
+        "name": "King Arthur Baking",
+        "url": "https://www.kingarthurbaking.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.kingarthurbaking.com/themes/custom/kaf_nextgenweb/images/KA_Logo_Small.svg"
+        }
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 cookie",
+        "calories": "167 calories",
+        "carbohydrateContent": "20g",
+        "cholesterolContent": "18mg",
+        "fiberContent": "1",
+        "proteinContent": "4g",
+        "sodiumContent": "98mg",
+        "sugarContent": "12g",
+        "fatContent": "9g",
+        "saturatedFatContent": "3g",
+        "transFatContent": "0g"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.kingarthurbaking.com/sites/default/files/2021-02/magic-in-the-middles.jpg"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.70",
+        "ratingCount": "108"
+    }
+}

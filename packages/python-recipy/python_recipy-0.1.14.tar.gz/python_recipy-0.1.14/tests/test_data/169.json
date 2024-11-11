@@ -1,0 +1,65 @@
+{
+    "@type": "Recipe",
+    "name": "Patty Melt",
+    "author": {
+        "@id": "https://www.davidlebovitz.com/#/schema/person/6b90d7c373a6d04b9e5cc8077844ef1f"
+    },
+    "description": "It’s important to use rye bread with caraway seeds (called Jewish rye, in the United States.) Those little savory seeds add a distinct, yet critical flavor to the sandwich.",
+    "datePublished": "2013-08-08T08:11:07+00:00",
+    "image": [
+        "https://www.davidlebovitz.com/wp-content/uploads/2013/07/Patty-melt.jpg"
+    ],
+    "recipeIngredient": [
+        "2  onions ((about 1 pound/ 450g))",
+        "2-3 tablespoons unsalted butter",
+        "salt and freshly ground black pepper",
+        "12 – 14 ounces (350g)  ground beef",
+        "4 slices Swiss-style cheese (such as Emmenthal)",
+        "4 slices Jewish rye bread",
+        "Additional softened butter for the bread and frying the sandwiches"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Peel and slice the onions. Melt 2 tablespoons of butter in a skillet over medium heat. Add the onions, season them with salt and pepper, and cook them – stirring frequently – until soft, wilted, and golden brown. It should take about 15 minutes. If using a non-stick skillet, you may need to add the additional tablespoon of butter. Set aside.",
+            "name": "Peel and slice the onions. Melt 2 tablespoons of butter in a skillet over medium heat. Add the onions, season them with salt and pepper, and cook them – stirring frequently – until soft, wilted, and golden brown. It should take about 15 minutes. If using a non-stick skillet, you may need to add the additional tablespoon of butter. Set aside.",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Season the ground beef with salt and pepper and shape into two oval patties about the size of the slices of bread you’ll be using. In a separate pan, fry the beef patties until done a little less than your liking.",
+            "name": "Season the ground beef with salt and pepper and shape into two oval patties about the size of the slices of bread you’ll be using. In a separate pan, fry the beef patties until done a little less than your liking.",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Butter one side of each slice of bread, then flip them over so the butter side is down, and lay a slice of cheese over each slice of bread. Spread some of the cooked onions over two cheese-covered slices of the bread, top them with a beef patty, then flip the remaining two slices of cheese-covered bread over the beef patties and press down with enough pressure to “meld” the fillings.",
+            "name": "Butter one side of each slice of bread, then flip them over so the butter side is down, and lay a slice of cheese over each slice of bread. Spread some of the cooked onions over two cheese-covered slices of the bread, top them with a beef patty, then flip the remaining two slices of cheese-covered bread over the beef patties and press down with enough pressure to “meld” the fillings.",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Heat some butter in a skillet (preferably cast-iron) or a grill pan over medium heat and slide the two sandwiches in. Once the underside of the sandwiches are grilled to your liking – which will take a few minutes, use a spatula to carefully flip the two sandwiches.",
+            "name": "Heat some butter in a skillet (preferably cast-iron) or a grill pan over medium heat and slide the two sandwiches in. Once the underside of the sandwiches are grilled to your liking – which will take a few minutes, use a spatula to carefully flip the two sandwiches.",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Continue to cook the sandwiches so the other side gets grilled. You may want to press the sandwiches down while they are heating to compress them, which makes them easier to handle and eat. Don’t worry about any of the burger juices running out; any that do will get absorbed by the bread and will be delicious. (And if the cheese isn’t melting quickly, cover the pan with a lid, to encourage the cheese to melt.)",
+            "name": "Continue to cook the sandwiches so the other side gets grilled. You may want to press the sandwiches down while they are heating to compress them, which makes them easier to handle and eat. Don’t worry about any of the burger juices running out; any that do will get absorbed by the bread and will be delicious. (And if the cheese isn’t melting quickly, cover the pan with a lid, to encourage the cheese to melt.)",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "When the sandwiches are ready, slide them onto a cutting board, slice them in half, and serve.",
+            "name": "When the sandwiches are ready, slide them onto a cutting board, slice them in half, and serve.",
+            "url": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#wprm-recipe-52879-step-0-5"
+        }
+    ],
+    "@id": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#recipe",
+    "isPartOf": {
+        "@id": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/#article"
+    },
+    "mainEntityOfPage": "https://www.davidlebovitz.com/patty-melt-burger-hamburger-recipe/",
+    "recipeCategory": []
+}

@@ -1,0 +1,60 @@
+{
+    "@type": "Recipe",
+    "keywords": "Sandwich bread, Bread machine, Gluten-free",
+    "name": "Gluten-Free Sandwich Bread",
+    "description": "And you thought you'd never enjoy your favorite sandwiches again! This recipe yields a tender, tasty, high-rising loaf, perfect for classic ham and cheese, a PB&J, or a BLT club. Toast and spread with butter and jam for breakfast, turn into French toast, or make a luscious grilled cheese sandwich.",
+    "recipeYield": [
+        "16",
+        "1 loaf"
+    ],
+    "datePublished": "February 24, 2010 at 7:29am",
+    "prepTime": "PT14M",
+    "totalTime": "PT2H37M",
+    "cookTime": "PT42M",
+    "recipeIngredient": [
+        "3 cups (468g) King Arthur Gluten-Free All-Purpose Flour",
+        "3 tablespoons (35g) granulated sugar",
+        "2 teaspoons instant yeast",
+        "1 1/4 teaspoons (8g) table salt",
+        "1 1/4 teaspoons xanthan gum",
+        "1 cup (227g) milk warm",
+        "4 tablespoons (57g) butter softened",
+        "3 large eggs"
+    ],
+    "recipeInstructions": "Weigh your flour; or measure it by gently spooning it into a cup, then sweeping off any excess. Place the flour, sugar, yeast, salt, and xanthan gum in a bowl, or the bowl of your stand mixer. Mix till combined., Using an electric mixer (hand mixer, or stand mixer fitted with a flat beater attachment, not a dough hook), drizzle in the milk, beating all the time; the mixture will be crumbly at first, but once all the milk is added, it'll come together., Add the butter and beat until thoroughly blended., Beat in the eggs one at a time, beating each in thoroughly before adding the next. Scrape the bottom and sides of the bowl, then beat at high speed for 3 minutes, to make a very smooth, thick batter., Cover the bowl, and let the thick batter rise for 1 hour., Scrape down the bottom and sides of the bowl, gently deflating the batter in the process., Grease an 8 1/2\" by 4 1/2\" loaf pan; or a 9\" x 4\" x 4\" gluten-free loaf pan, which will give you a taller, more shapely loaf., Scoop the dough into the pan. Press it level, using a spatula or your wet fingers., Cover with greased plastic wrap, and set in a warm place to rise until the loaf barely crowns above the rim of the 8 1/2\" x 4 1/2\" pan; or until it comes to within about an inch of the rim of the 9\" pan. This should take about 45 to 60 minutes. Toward the end of the rising time, preheat the oven to 350°F., Bake the bread for 38 to 42 minutes, until golden brown. Remove the bread from the oven, turn it out of the pan, and cool on a rack., Like a baguette, this bread has a short shelf life. For best texture, reheat or toast after the first day.",
+    "author": {
+        "@type": "Organization",
+        "name": "King Arthur Baking",
+        "url": "https://www.kingarthurbaking.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.kingarthurbaking.com/themes/custom/kaf_nextgenweb/images/KA_Logo_Small.svg"
+        }
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": [
+            "1 slice",
+            "58g"
+        ],
+        "calories": "154 calories",
+        "carbohydrateContent": "26g",
+        "cholesterolContent": "48mg",
+        "fiberContent": "1g",
+        "proteinContent": "3g",
+        "sodiumContent": "204mg",
+        "sugarContent": "3g",
+        "fatContent": "4g",
+        "saturatedFatContent": "2g",
+        "transFatContent": "0g"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.kingarthurbaking.com/sites/default/files/2021-07/Gluten-Free-Sandwich-web_20-2_3_0.jpg"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.40",
+        "ratingCount": "324"
+    }
+}

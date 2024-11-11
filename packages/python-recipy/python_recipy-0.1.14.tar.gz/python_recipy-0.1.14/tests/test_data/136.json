@@ -1,0 +1,217 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "UNIVERSAL Stir Fry Sauce",
+    "description": "",
+    "author": {
+        "@type": "Person",
+        "name": "Pailin Chongchitnant",
+        "url": "https://hot-thai-kitchen.com/about/"
+    },
+    "image": [
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/02/stir-fry-sauce-blog-225x225.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/02/stir-fry-sauce-blog-260x195.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/02/stir-fry-sauce-blog-320x180.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2021/02/stir-fry-sauce-blog.jpg"
+    ],
+    "url": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/",
+    "recipeIngredient": [
+        "¼ cup oyster sauce",
+        " 2 Tbsp soy sauce",
+        " 1 Tbsp fish sauce",
+        " 1 Tbsp Thai seasoning sauce such as Golden Mountain Sauce (see note)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Combine all ingredients together and store in a well-sealed container in the fridge.",
+            "url": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/#instruction-step-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "When using, you need 1 Tbsp of sauce per 1 serving of stir-fry. This is a rough estimate, so be sure to taste and adjust every time.",
+            "url": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/#instruction-step-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "You may want to add ¼ - ½ teaspoons of sugar per serving of stir-fry, depending on other ingredients and the flavour you're going for.",
+            "url": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/#instruction-step-3"
+        }
+    ],
+    "cookTime": "PT5M",
+    "totalTime": "PT5M",
+    "recipeYield": [
+        "8",
+        "About ½ cup (8 servings)"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "11",
+        "ratingValue": "4.9"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Universal Stir Fry Sauce",
+        "description": "One sauce, endless possibilities. Use it for stir frying meat, veggies, fried rice, noodles, and even marinade! Use it as is, or follow my tips for how to change it up. It'll save you so much time. Just throw the sauce in with any ingredients you have!",
+        "duration": "PT11M45S",
+        "embedUrl": "https://video.mediavine.com/videos/iGzEpNK0i.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1681227249/iGzEpNK0i.mp4",
+        "thumbnailUrl": [
+            "https://mediavine-res.cloudinary.com/image/upload/s--BrUAx_o9--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1681227258/sw2ap14qf8mxbzwhn4rc.jpg"
+        ],
+        "uploadDate": "2021-02-23T22:12:06+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Elizabeth"
+            },
+            "datePublished": "2021-02-26",
+            "reviewBody": "So delicious! Made a double batch tonight now no excuses to not make dinner."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Michele"
+            },
+            "datePublished": "2021-03-01",
+            "reviewBody": "This is a excellent stir fry sauce. I added a little Sriracha to the basic recipe. It's nice to have a a bottle of this on hand in the refrigerator so I don't have to prepare it every time."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Laurie"
+            },
+            "datePublished": "2021-03-03",
+            "reviewBody": "This is my favorite all-purpose stir-fry sauce I have tried.  I will be using and adapting it going forward.  Thank you!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Delena"
+            },
+            "datePublished": "2021-06-25",
+            "reviewBody": "Is regular soy, low sodium soy, or Thin Soy best?"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mark"
+            },
+            "datePublished": "2021-05-13",
+            "reviewBody": "Just tried this for the second time. This time it came out phenomenal. Thanks for the recipe!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Don"
+            },
+            "datePublished": "2021-06-04",
+            "reviewBody": "Been looking for a Thai stir fry sauce. Was never sure about the proportions. Thank you. Also, love your apron!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Amy L"
+            },
+            "datePublished": "2022-04-25",
+            "reviewBody": "Love this recipe!! I've made several stir fries with this sauce and they have turned out great. I personally like it a little diluted and will add some water after I add the sauce to the veggies. Thanks Pai!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Tate"
+            },
+            "datePublished": "2022-05-16",
+            "reviewBody": "I use this regularly about once a week generally with broccoli and snow peas, chicken breasts, water chestnuts, sometimes baby corn, garlic, shallots, Thai Chili paste or siriacha, sometimes brocolini or spinach and ginger, all of the above all in different ways and all delicious. Thank you so much!!! My family loves this!!!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ken Mossman"
+            },
+            "datePublished": "2022-07-23",
+            "reviewBody": "We now mix this stuff up by the quart to keep on hand.  Simple, tasty, and one of the keys to great stir fry dishes.  Thanks!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Sara"
+            },
+            "datePublished": "2023-02-16",
+            "reviewBody": "This Universal Stir Fry Sauce is truly indispensable.  I use it in my Thai chicken soup and other stir fries that I concoct depending on what I have in my refrigerator.  Thank you for such an amazing nugget of kitchen wisdom!!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Vesna Pirlo"
+            },
+            "datePublished": "2023-11-05",
+            "reviewBody": "How do you scale this up to make 1 litre to store in fridge rather than make small quantities all the time - worried about salt content being too high. Thanks in advance"
+        }
+    ],
+    "datePublished": "2021-02-26",
+    "@id": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/#recipe",
+    "isPartOf": {
+        "@id": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/#article"
+    },
+    "mainEntityOfPage": "https://hot-thai-kitchen.com/universal-stir-fry-sauce/",
+    "recipeCategory": []
+}

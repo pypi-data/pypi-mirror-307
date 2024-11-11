@@ -1,0 +1,205 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Homemade Peanut Butter (With Variations)",
+    "datePublished": "2018-05-07T11:23:05.264-04:00",
+    "dateModified": "2023-01-21T12:52:58.522-05:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Molly Watson",
+            "url": "https://www.thespruceeats.com/molly-watson-2215463"
+        }
+    ],
+    "description": "Making homemade peanut butter is beyond easy—see how quick and easy it is, plus get ideas for flavored peanut butters and other nut butters.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.thespruceeats.com/thmb/m9EGllnNfOQucM2nY4IPndGLrQ4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-hero-02-4b2e8ec9943c40c2a0b11f969846c1f6.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Spruce Eats",
+        "url": "https://www.thespruceeats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+            "width": 361,
+            "height": 109
+        },
+        "brand": "The Spruce Eats",
+        "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/thespruceeats/",
+            "https://www.instagram.com/thespruceeats/",
+            "https://www.pinterest.com/thespruceeats/",
+            "https://flipboard.com/@thespruceeats"
+        ]
+    },
+    "name": "Homemade Peanut Butter (With Variations)",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.1",
+        "ratingCount": "42"
+    },
+    "cookTime": "PT0M",
+    "keywords": "sauce, homemade peanut butter",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "54 kcal",
+        "carbohydrateContent": "2 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "1 g",
+        "proteinContent": "2 g",
+        "saturatedFatContent": "1 g",
+        "sodiumContent": "34 mg",
+        "sugarContent": "0 g",
+        "fatContent": "5 g",
+        "servingSize": "32 servings (1 tablespoon each)",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT5M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "2 cups roasted, unsalted peanuts",
+        "1/2 teaspoon fine sea salt (plus more, to taste)",
+        "Optional: 1 to 2 tablespoons peanut oil"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/n5q7weZvEHT6Xs1rL106VaJOUkM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-step-01-addd3a3bea5541e880e29d4243da04d6.jpg"
+                }
+            ],
+            "text": "Gather the ingredients."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/RiOZ58r6jw-t_PwW-gmoH-jHOC0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-step-02-0098feaea01e4c5f883ea0cb41db1632.jpg"
+                }
+            ],
+            "text": "Put the peanuts and salt in a food processor."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/7u8Ofp-2HuqQpi4Xd3cWgeu4aXM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-step-03-20f33c5131874e5aae0c9d075ae32dd5.jpg"
+                }
+            ],
+            "text": "Pulse, then process until they become peanut butter, 2 to 3 minutes. At first the peanuts will be chopped, then clump together into a ball, and finally break apart into smooth nut butter."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/cy5rjRCZQnrrtY8qIGWsSb6C9aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-step-04-a547261fafca46ffb57c3c2cd9ac6234.jpg"
+                }
+            ],
+            "text": "If you want thinner peanut butter, add the optional peanut oil and whirl to combine. Taste and add more salt, if you like."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/WIHja1rqU4Jq2qq2GW6_tHHXb_o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-peanut-butter-recipe-4163557-step-05-e9587c5d70c1439aac330c3d7d42f806.jpg"
+                }
+            ],
+            "text": "Transfer the peanut butter to a jar or other container and cover."
+        }
+    ],
+    "recipeYield": "32",
+    "totalTime": "PT5M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Douglas Flatley"
+            },
+            "reviewBody": "I will never buy peanut butter again. This is too good and too simple not to mention cheap to make!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Steve Delano"
+            },
+            "reviewBody": "George Washington Carver did not invite Peanut butter a medical Doctor did think he was from St Louis but I can't remember his name. But George did discover the advantage of growing them like they add Nitrogen to the soil."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anne"
+            },
+            "reviewBody": "How much peanut butter does this recipe make?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Wheelz"
+            },
+            "reviewBody": "I have just started making my own nut-butter. I will never buy butter again. So good.\nNow I'm going to start trying different things. I really been thinking about adding some trails mix."
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.thespruceeats.com/homemade-peanut-butter-recipe-4163557",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/appetizers-snacks-4162810",
+                        "name": "Appetizers & Snacks"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/dips-spreads-4162811",
+                        "name": "Dips & Spreads"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/homemade-peanut-butter-recipe-4163557",
+                        "name": "Homemade Peanut Butter (With Variations)"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "Kayla Hoang",
+                "url": "https://www.thespruceeats.com/kayla-hoang-5180389"
+            }
+        ],
+        "lastReviewed": "2023-01-21T12:52:58.522-05:00"
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Strawberry Birthday Cake",
+    "datePublished": "2019-09-20T15:03:28.000-04:00",
+    "dateModified": "2019-09-20T15:03:28.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Patricia S York",
+            "url": "https://www.southernliving.com/author/patricia-s-york"
+        }
+    ],
+    "description": "There&#39;s only one proper way to celebrate turning another year older–enjoying a classic Southern dessert. This strawberry birthday cake recipe is truly something to behold.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/cShb1i0xBefHPFm7iwZx0k383G8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Strawberry20Birthday20Cake_0-2000-fe941c757fc244fb90e4404c737bbee8.jpg",
+        "height": 2000,
+        "width": 1333
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "Strawberry Birthday Cake",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "2"
+    },
+    "recipeIngredient": [
+        "1 cup butter, softened",
+        "2 cups sugar",
+        "3 large eggs",
+        "2 3/4 cups all-purpose soft-wheat flour",
+        "2 teaspoons baking powder",
+        "1/2 teaspoon table salt",
+        "1 cup milk",
+        "1 vanilla bean",
+        "Shortening",
+        "1 vanilla bean",
+        "1 1/2 cups chopped fresh strawberries",
+        "1/2 cup sugar",
+        "1 tablespoon rum",
+        "2 (8-oz.) packages cream cheese, softened",
+        "1/2 cup butter, softened",
+        "2 (16-oz.) packages powdered sugar",
+        "2 teaspoons vanilla",
+        "Garnish: fresh strawberry halves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat oven to 350°F. Beat butter at medium speed with an electric mixer until creamy; gradually add sugar, beating well. Add eggs, 1 at a time, beating until blended after each addition."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Combine flour, baking powder, and salt; add to butter mixture alternately with milk, beginning and ending with flour mixture. Beat at low speed until blended after each addition, stopping to scrape bowl as needed. Split vanilla bean lengthwise, and scrape out seeds. Stir seeds into batter; reserve bean for another use. Pour batter into 2 greased (with shortening) and floured 8-inch round cake pans with 2-inch sides."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bake at 350°F for 30 to 34 minutes or until a wooden pick inserted in center comes out clean. Cool in pans on wire racks 10 minutes; remove from pans to wire racks, and cool completely (about 1 hour)."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Make the Strawberry Compote: Split 1 vanilla bean lengthwise, and scrape out seeds. Stir together vanilla bean and seeds, 1 1/2 cups chopped fresh strawberries, and 1/2 cup sugar in a medium saucepan. Cook over medium heat, stirring occasionally, 10 minutes or until strawberries are soft and mixture is slightly syrupy. Remove from heat; discard vanilla bean. Stir in 1 Tbsp. rum. Cool completely (about 30 min)."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Make the 5-Cup Cream Cheese Frosting: Beat 2 (8-oz.) packages softened cream cheese and 1/2 cup softened butter at medium speed with an electric mixer until creamy. Gradually add 2 (16-oz.) packages powdered sugar, beating until fluffy. Stir in 2 tsp. vanilla extract."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Using a serrated knife, slice cake layers in half horizontally to make 4 layers. Place 1 layer, cut side up, on a cake plate or serving platter. Spread with half of Strawberry Compote. Top with another cake layer; spread with about 3/4 cup Cream Cheese Frosting. Place another cake layer on top of frosting; spread with remaining compote. Top with remaining cake layer. Spread 1 1/4 cups frosting on top and sides of cake to create a thin coat of frosting. Chill cake 30 minutes. Spread top and sides of cake with remaining frosting. Store in refrigerator."
+        }
+    ],
+    "totalTime": "PT166M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/recipes/strawberry-birthday-cake",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/desserts",
+                        "name": "Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/desserts/cakes",
+                        "name": "Cakes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes/strawberry-birthday-cake",
+                        "name": "Strawberry Birthday Cake"
+                    }
+                }
+            ]
+        }
+    },
+    "recipeCategory": []
+}

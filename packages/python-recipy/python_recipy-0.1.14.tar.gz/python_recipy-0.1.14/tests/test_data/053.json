@@ -1,0 +1,187 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Carolina Pulled Pork Sandwiches",
+    "datePublished": "2020-05-13T17:59:59.000-04:00",
+    "dateModified": "2023-09-06T09:15:45.942-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Southern Living Test Kitchen",
+            "url": "https://www.southernliving.com/author/the-sl-test-kitchen"
+        }
+    ],
+    "contributor": [
+        {
+            "@type": "Person",
+            "name": "Katie Rosenhouse",
+            "url": "https://www.southernliving.com/katie-rosenhouse-7547739"
+        }
+    ],
+    "description": "With the help of your trusty slow cooker, you can enjoy tangy Carolina-style pulled pork sandwiches with just 30 minutes of hands-on time. ",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/Hhc3ZZP8Nq11uULXVkCxU-BWxLs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/carolinapulledporksandwiches-s-2000-f799df33d98f4ef78c4e7208fe6d2631.jpg",
+        "height": 1125,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "Carolina Pulled Pork Sandwiches",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "keywords": "pulled pork sandwiches",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American",
+        "Southern"
+    ],
+    "recipeIngredient": [
+        "1 1/4 cups apple cider vinegar",
+        "3/4 cup ketchup",
+        "2 tablespoons dark brown sugar",
+        "1 tablespoon Worcestershire sauce",
+        "1 teaspoon crushed red pepper",
+        "1 teaspoon Dijon mustard",
+        "1 (4-lb.) bone-in pork shoulder",
+        "1 tablespoon hot pimenton",
+        "1 tablespoon dark brown sugar",
+        "1 tablespoon kosher salt",
+        "1 teaspoon dry mustard",
+        "1 teaspoon onion powder",
+        "1/2 teaspoon celery salt",
+        "1/2 teaspoon celery salt",
+        "1/2 teaspoon garlic salt",
+        "1/2 teaspoon black pepper",
+        "1 tablespoon canola oil",
+        "1 (12-oz.) pilsner-style beer (such as Dos Equis)",
+        "8 hamburger buns or bakery rolls, split"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Prepare the Carolina Vinegar Sauce: Vigorously whisk together vinegar, ketchup, brown sugar, Worcestershire, crushed red pepper, and mustard in a medium bowl until sugar dissolves. Measure 1/2 cup sauce into a small bowl; reserve for slow cooker. Cover remaining sauce (about 2 cups) in medium bowl; set aside for serving."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Prepare the Pulled Pork: Pat pork dry with paper towels. Stir together pimenton, brown sugar, salt, mustard, onion powder, celery salt, garlic salt, and pepper in a small bowl; sprinkle all over pork. Heat oil in a large cast-iron skillet or heavy-bottomed pan over high until hot but not smoking. Add pork; cook, turning occasionally, until browned on all sides, about 10 minutes. Transfer pork to a 5- to 6-quart slow cooker. Add beer to skillet; reduce heat to medium, and cook 30 seconds, stirring to scrape up any browned bits from skillet bottom."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cook Pulled Pork: Pour beer mixture and reserved 1/2 cup sauce over pork in slow cooker. Cover and cook until pork easily pulls away from bone using a fork, 5 to 6 hours on HIGH or 8 to 10 hours on LOW. Remove pork from slow cooker, and transfer to a large heatproof bowl; let stand 15 minutes. Remove and discard bone. Shred meat using 2 forks. Add 1 cup of the reserved sauce from medium bowl to meat, and toss to coat. Serve pork on buns with remaining sauce on the side."
+        }
+    ],
+    "recipeYield": [
+        "8"
+    ],
+    "totalTime": "PT345M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Southern Living Member"
+            },
+            "reviewBody": "This recipe makes the most authentic tasting Carolina style pulled pork. I made it for a neighborhood potluck and even my picky foodie neighbors loved it.",
+            "datePublished": "2023-05-29T23:39:21.488Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/recipes/carolina-pulled-pork-sandwiches",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/meat",
+                        "name": "Meat"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/meat/pork",
+                        "name": "Pork and Ham"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes/carolina-pulled-pork-sandwiches",
+                        "name": "Carolina Pulled Pork Sandwiches"
+                    }
+                }
+            ]
+        }
+    },
+    "about": [
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I skip the ketchup in the barbecue sauce?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>Depending on where you hail from, you may or may not like to include ketchup in your barbecue sauce. Feel free to leave it out if that&#39;s your preference, and season the sauce to balance the flavors.</p>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is it better to cook pulled pork on HIGH or LOW in the slow cooker?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>Whether you choose to cook on HIGH for 5 to 6 hours or LOW for 8 to 10, the pork will be tender and juicy using a slow cooker.</p>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need bone-in pork shoulder for pulled pork?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>We call for bone-in pork shoulder here—the bone deepens the flavor of the meat and cooking liquid and helps the meat stay moist. You can also use pork butt, which has a higher fat content.<br/></p>"
+                    }
+                }
+            ]
+        }
+    ]
+}

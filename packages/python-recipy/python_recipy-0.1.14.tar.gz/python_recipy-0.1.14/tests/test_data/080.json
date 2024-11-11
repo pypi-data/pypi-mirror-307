@@ -1,0 +1,79 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "Accompanied by a line illustration of a lounging feline, W. C. Whitfield’s original Kitty Highball recipe—equal parts red wine and ginger ale over ice—was printed alongside the beefier, Brit-leaning Bull Dog Highball, consisting of orange juice, dry gin, and ginger ale. Much to the delight of cat people, the Kitty was the easier source for Fresh Kills Bar to riff on when they were looking for low-ABV inspiration. This contemporary adaptation deconstructs the ginger ale into separate syrup and soda elements.",
+    "alternativeHeadline": "W. C. Whitfield’s original Kitty Highball recipe—equal parts red wine and ginger ale over ice—goes contemporary. In this deconstructed version the ginger ale is replaced with ginger syrup and soda.",
+    "keywords": [
+        "cocktail",
+        "cold drink",
+        "red wine",
+        "ginger",
+        "lime",
+        "beverages",
+        "5 ingredients or fewer",
+        "thanksgiving",
+        "cookbooks",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.epicurious.com/photos/5bcddfaa76bf620237f1d302/1:1/w_3884,h_3884,c_limit/Thanksgiving-Cooking-Cocktails-kitty-high-ball-10102018.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Epicurious",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.epicurious.com/verso/static/epicurious/assets/logo-seo.png",
+            "width": "488px",
+            "height": "100px"
+        },
+        "url": "https://www.epicurious.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Epicurious"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Drew Lazor and the Editors of PUNCH",
+            "sameAs": "https://www.epicurious.com/contributor/drew-lazor and the editors of punch"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "ratingCount": 1
+    },
+    "description": "W. C. Whitfield’s original Kitty Highball recipe—equal parts red wine and ginger ale over ice—goes contemporary. In this deconstructed version the ginger ale is replaced with ginger syrup and soda.",
+    "image": [
+        "https://assets.epicurious.com/photos/5bcddfaa76bf620237f1d302/16:9/w_5823,h_3275,c_limit/Thanksgiving-Cooking-Cocktails-kitty-high-ball-10102018.jpg",
+        "https://assets.epicurious.com/photos/5bcddfaa76bf620237f1d302/4:3/w_5176,h_3882,c_limit/Thanksgiving-Cooking-Cocktails-kitty-high-ball-10102018.jpg",
+        "https://assets.epicurious.com/photos/5bcddfaa76bf620237f1d302/1:1/w_3884,h_3884,c_limit/Thanksgiving-Cooking-Cocktails-kitty-high-ball-10102018.jpg"
+    ],
+    "headline": "Kitty Highball (Red Wine and Ginger Spritz) Cocktail",
+    "name": "Kitty Highball (Red Wine and Ginger Spritz) Cocktail",
+    "recipeIngredient": [
+        "2 ounces red wine",
+        "¾ ounce ginger syrup (see note)",
+        "½ ounce lime juice",
+        "Soda water",
+        "Candied ginger, to garnish",
+        "Special equipment: Collins glass"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Combine the wine, ginger syrup, and lime juice in a cocktail shaker. Add a small piece of cracked ice and shake until chilled. Strain into a collins glass filled with ice, top with soda water, and garnish with the candied ginger."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To make the ginger syrup: Combine 2 cups sugar and 1 cup fresh ginger juice in a small pot over very low heat. Cook, stirring constantly, until the sugar is dissolved. Remove from the heat and let cool completely. Transfer to a plastic or glass container and store in the refrigerator for up to 1 month."
+        }
+    ],
+    "recipeYield": "Makes 1 cocktail",
+    "url": "https://www.epicurious.com/recipes/food/views/kitty-highball-red-wine-ginger-spritzer-cocktail",
+    "dateModified": "2018-10-17T18:39:09.800-04:00",
+    "datePublished": "2018-10-17T18:39:09.800-04:00",
+    "recipeCategory": []
+}

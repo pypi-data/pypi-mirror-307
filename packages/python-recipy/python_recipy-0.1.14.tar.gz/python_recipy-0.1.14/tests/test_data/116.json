@@ -1,0 +1,67 @@
+{
+    "@type": "Recipe",
+    "@context": "http://schema.org/",
+    "name": "California “Sushi” Rice Salad",
+    "keywords": "california “sushi” rice salad",
+    "recipeCategory": "Entree",
+    "recipeCuisine": "Japanese",
+    "image": "https://mojo.generalmills.com/api/public/content/6YUu6hU4H0WpoudzTxd-mQ_webp_base.webp?v=3b696613&t=85e6ab0127c04f66a40c0b82332e03a6",
+    "description": "Looking for an Asian-inspired dinner? Then check out this veggies and rice salad that’s delicious to eat and easy-to-make.",
+    "recipeIngredient": [
+        "2  cups uncooked regular long-grain white rice",
+        "1/3  cup rice vinegar (not seasoned)",
+        "1/4  cup sugar",
+        "1  teaspoon salt",
+        "2  teaspoons grated gingerroot",
+        "2  large cucumbers, seeded, chopped",
+        "2  medium carrots, finely shredded (1 cup)",
+        "8  medium green onions, sliced (1/2 cup)",
+        "2  packages (8 oz each) imitation crabmeat sticks, sliced",
+        "1  small avocado, pitted, peeled and thinly sliced"
+    ],
+    "totalTime": "PT1H25M",
+    "prepTime": "PT0H30M",
+    "recipeYield": "8",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Betty Crocker Kitchens"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In 3-quart saucepan, cook rice in water as directed on package. Spread rice in 13x9-inch baking dish, cover with plastic wrap and refrigerate for 1 hour or until completely cool."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Meanwhile, in small microwavable bowl, mix vinegar, sugar and salt. Microwave 20 to 30 seconds; whisk until sugar is dissolved. Stir in gingerroot."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In large bowl, toss cooled rice with vinegar mixture. Stir in cucumbers, carrots, green onions and crabmeat; mix well. Top with avocado. "
+        }
+    ],
+    "mainEntity": [],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "310 ",
+        "carbohydrateContent": "56 g",
+        "cholesterolContent": "15 mg",
+        "fatContent": "1/2 ",
+        "fiberContent": "3 g",
+        "proteinContent": "13 g",
+        "saturatedFatContent": "1/2 g",
+        "servingSize": "1 Serving",
+        "sodiumContent": "800 mg",
+        "sugarContent": "11 g",
+        "transFatContent": "0 g"
+    },
+    "dateCreated": "12/14/2009",
+    "dateModified": "11/15/2010"
+}

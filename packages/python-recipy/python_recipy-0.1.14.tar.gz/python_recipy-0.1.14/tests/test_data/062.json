@@ -1,0 +1,189 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Loaded Caprese Grilled Cheese",
+    "description": "This Caprese Grilled Cheese is loaded with basil pesto, a thick and chunky garlic butter tomato sauce, and fresh mozzarella cheese, all on grilled sourdough bread. The perfect taste of summer.",
+    "author": {
+        "@type": "Person",
+        "name": "Lindsay Ostrom",
+        "url": "https://pinchofyum.com/about"
+    },
+    "keywords": "caprese grilled cheese, grilled cheese",
+    "image": [
+        "https://pinchofyum.com/wp-content/uploads/Caprese-Grilled-Cheese-Recipe-225x225.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Caprese-Grilled-Cheese-Recipe-260x195.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Caprese-Grilled-Cheese-Recipe-320x180.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Caprese-Grilled-Cheese-Recipe.jpg"
+    ],
+    "url": "https://pinchofyum.com/caprese-grilled-cheese",
+    "recipeIngredient": [
+        "4 large slices of thick, yummy sourdough bread",
+        "4 thick slices of fresh mozzarella cheese",
+        "1/4 cup pesto (see notes)",
+        "2 tablespoons butter &#8211; I used Land O Lakes® Salted Butter in Half Sticks",
+        "Garlic Butter Tomato Sauce (ingredients follow)",
+        "10 ounces fresh cherry tomatoes",
+        "1 clove garlic, minced",
+        "2 tablespoons butter &#8211; I used Land O Lakes® Salted Butter in Half Sticks",
+        "1 tablespoon balsamic vinegar",
+        "salt and pepper"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": " Pour the tomatoes into a dry nonstick skillet. Heat until they start to get just slightly charred on the outside. Reduce heat and add one tablespoons of butter and give it a stir (it will probably splatter). Press the tomatoes gently with the back of a wooden spoon to release their juices. Add balsamic, garlic, and one more tablespoon butter. Simmer all together until thick and yummy. Season with salt and pepper.",
+            "name": "Make the Garlic Butter Tomato Sauce",
+            "url": "https://pinchofyum.com/caprese-grilled-cheese#instruction-step-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Layer the pesto, cheese, and tomato sauce onto a slice of bread. Top with a slice of bread, spread with butter on the outside of the bread. (Repeat for second sandwich.)",
+            "name": "Assemble. ",
+            "url": "https://pinchofyum.com/caprese-grilled-cheese#instruction-step-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Transfer your sandwich to a skillet over medium high heat. Cook until the cheese is melted, flipping once or twice to get both sides browned. When you pull that sandwich off the skillet, let me just tell you: you are in for THE BEST MOMENT OF YOUR LIFE.",
+            "name": "Pan-fry",
+            "url": "https://pinchofyum.com/caprese-grilled-cheese#instruction-step-3"
+        }
+    ],
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "totalTime": "PT30M",
+    "recipeYield": [
+        "2",
+        "2-4"
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": "American",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "30",
+        "ratingValue": "5"
+    },
+    "nutrition": {
+        "servingSize": null,
+        "calories": "372 calories",
+        "sugarContent": "5.1 g",
+        "sodiumContent": "590.6 mg",
+        "fatContent": "23.7 g",
+        "saturatedFatContent": "11.4 g",
+        "transFatContent": "0 g",
+        "carbohydrateContent": "27.5 g",
+        "fiberContent": "2.1 g",
+        "proteinContent": "13 g",
+        "cholesterolContent": "48.7 mg",
+        "@type": "nutritionInformation"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Loaded Caprese Grilled Cheese",
+        "description": "This Caprese Grilled Cheese is loaded with basil pesto, a thick and chunky garlic butter tomato sauce, and fresh mozzarella cheese, all on grilled sourdough bread. The perfect taste of summer.",
+        "contentUrl": "https://content.jwplatform.com/videos/qk6Z7OXU.mp4",
+        "thumbnailUrl": [
+            "https://content.jwplatform.com/thumbs/qk6Z7OXU-720.jpg"
+        ],
+        "uploadDate": "2023-02-01T18:57:18+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Brittany | Words Like Honeycomb"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "you just never cease to amaze me with your recreation and next level approach to the common foodie dishes.  sure, we have all seen the caprese sandwich, but good heavens we haven't seen THAT &lt;3 YUM :)"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Tina"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "That is a whole other level.  I love grown up grilled cheese, it's my all time favorite comfort food and back pocket recipe. Gonna try this soon!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lauren"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "OMG. I need this in my life. Like now. \r\nYour recipes never disappoint and this one looks like a total winner!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lori"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "Do not see the \"notes\" for the pesto..."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lindsay"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "You are definitely on the same food wave length as me. Summer is desserts and healthy farmers market inspired food.  This sandwich!  I've been obsessed with pesto, and that has extended to grilled cheese all summer but this tomatoes sauce concoction: next level! Such a delicious sweetness to the cooked tomatoes. This sandwich has the honor of being the last meal we make in our apartment before moving into our first house. Can't wait to make your recipes in my new kitchen!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Blogtastic Food"
+            },
+            "datePublished": "2017-07-20",
+            "reviewBody": "That is one wicked grilled cheese!! Love it (:"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ms. Weird Hacks"
+            },
+            "datePublished": "2017-07-21",
+            "reviewBody": "I am making this next week for my anniversary. I'll be sure to tag you to the photos (which may not come out nice😁😂)"
+        }
+    ],
+    "datePublished": "2017-07-20",
+    "@id": "https://pinchofyum.com/caprese-grilled-cheese#recipe",
+    "isPartOf": {
+        "@id": "https://pinchofyum.com/caprese-grilled-cheese#article"
+    },
+    "mainEntityOfPage": "https://pinchofyum.com/caprese-grilled-cheese"
+}

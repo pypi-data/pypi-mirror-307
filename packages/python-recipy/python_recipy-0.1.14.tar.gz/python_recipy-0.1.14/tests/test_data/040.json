@@ -1,0 +1,408 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cooking.nytimes.com/recipes/1020414-spicy-corn-and-shishito-salad#WebPage",
+        "url": "https://cooking.nytimes.com/recipes/1020414-spicy-corn-and-shishito-salad",
+        "primaryImageOfPage": "https://static01.nyt.com/images/2019/08/20/dining/lh-spicy-corn-and-shishito-pepper-salad/lh-spicy-corn-and-shishito-pepper-salad-videoSixteenByNineJumbo1600-v2.jpg",
+        "isAccessibleForFree": "False",
+        "hasPart": {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".recipe"
+        }
+    },
+    "url": "https://cooking.nytimes.com/recipes/1020414-spicy-corn-and-shishito-salad",
+    "name": "Spicy Corn and Shishito Salad",
+    "description": "In this recipe, shishito peppers are sliced, lightly sautéed, then tossed with raw summer corn and a cumin-lime vinaigrette for a summer salad that’s crunchy, smoky and a little spicy. Traditionally used in Japanese and Korean cooking, shishitos are small, thin-skinned green peppers that have become increasingly popular in the United States. They are typically mild in flavor, but the occasional pepper packs a spicy punch. If you can’t find them, use diced green bell peppers in their place. Finally, cilantro-averse cooks can substitute fresh mint.",
+    "author": {
+        "@type": "Person",
+        "name": "Lidey Heuck"
+    },
+    "image": [
+        {
+            "url": "https://static01.nyt.com/images/2019/08/20/dining/lh-spicy-corn-and-shishito-pepper-salad/lh-spicy-corn-and-shishito-pepper-salad-square640-v2.jpg",
+            "height": 640,
+            "width": 640,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/08/20/dining/lh-spicy-corn-and-shishito-pepper-salad/merlin_159456582_e1821838-c8e9-494d-8c95-ba5191f6047f-superJumbo.jpg",
+            "height": 1365,
+            "width": 2048,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/08/20/dining/lh-spicy-corn-and-shishito-pepper-salad/lh-spicy-corn-and-shishito-pepper-salad-videoSmall-v2.jpg",
+            "height": 281,
+            "width": 500,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2019/08/20/dining/lh-spicy-corn-and-shishito-pepper-salad/lh-spicy-corn-and-shishito-pepper-salad-verticalTwoByThree735-v2.jpg",
+            "height": 1103,
+            "width": 735,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        }
+    ],
+    "totalTime": "PT15M",
+    "recipeYield": "4 servings",
+    "recipeCuisine": "",
+    "recipeCategory": [],
+    "keywords": "cilantro, corn, cotija, cumin, jalapeño, lime, red onion, salad, shishito, fall, summer",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "ratingCount": 2014
+    },
+    "nutrition": {
+        "@context": "http://schema.org",
+        "@type": "NutritionInformation",
+        "calories": 268,
+        "unsaturatedFatContent": "11 grams",
+        "carbohydrateContent": "32 grams",
+        "cholesterolContent": null,
+        "fatContent": "15 grams",
+        "fiberContent": "4 grams",
+        "proteinContent": "6 grams",
+        "saturatedFatContent": "3 grams",
+        "sodiumContent": "458 milligrams",
+        "sugarContent": "5 grams",
+        "transFatContent": "0 grams"
+    },
+    "recipeIngredient": [
+        "3 1/2 tablespoons olive oil",
+        "2 tablespoons fresh lime juice",
+        "1/4 teaspoon ground cumin",
+        "Kosher salt",
+        "1/3 cup diced red onion",
+        "1 garlic clove, minced",
+        "3 cups fresh corn kernels (from 4 to 6 ears of corn)",
+        "6 ounces shishito peppers, stemmed and cut crosswise into 1/4-inch slices, or green bell peppers, stemmed and diced",
+        "1 large jalapeño, seeds and ribs removed, diced",
+        "1/4 cup grated Cotija or crumbled feta cheese (optional), or to taste",
+        "1/4 cup chopped fresh cilantro leaves and tender stems, plus more to taste"
+    ],
+    "recipeInstructions": [
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "In a small bowl, whisk 2 tablespoons olive oil with the lime juice, cumin and 3/4 teaspoon salt. Stir in the red onion and garlic and set aside until ready to use. (Do this step first so the onions and garlic have time to mellow slightly in the dressing.)"
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Place the corn kernels in a large bowl and set aside. In a medium (10-inch) sauté pan, heat the remaining 1 1/2 tablespoons olive oil over medium heat. Add the shishitos, jalapeño and a pinch of salt and cook, stirring occasionally, until the peppers are tender and beginning to brown, 4 to 6 minutes."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Add the peppers and dressing to the bowl with the corn and toss well. Add the cheese, if using, and toss. Garnish with cilantro."
+        }
+    ],
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "NYT Cooking",
+        "url": "https://cooking.nytimes.com",
+        "alternateName": [
+            "nytimes cooking",
+            "New York Times Cooking"
+        ],
+        "logo": {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "url": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "height": 112,
+            "width": 112,
+            "contentUrl": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "creditText": "NYT Cooking"
+        },
+        "sameAs": [
+            "https://www.facebook.com/nytcooking/",
+            "https://www.instagram.com/nytcooking/",
+            "https://twitter.com/nytimes",
+            "https://www.youtube.com/c/NYTCooking",
+            "https://www.tiktok.com/@nytcooking",
+            "https://apps.apple.com/us/app/nyt-cooking/id911422904",
+            "https://play.google.com/store/apps/details?id=com.nytimes.cooking&hl=en_US&gl=US"
+        ]
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Grace B"
+            },
+            "reviewBody": "Sautéed the corn along with the peppers and jalapeños. Tossed everything sans cilantro and cheese and left in the fridge to cool before serving. Tossed in fresh cut cucumber, avocado, and pan fried halloumi before serving.",
+            "datePublished": "2024-06-12T21:47:36.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "liz"
+            },
+            "reviewBody": "Cook from Santa Fe, NM..   It is June 11, and neither semi local corn nor local shishito peppers are available.  Trader Joes had ears of corn and 6 oz bags of shishitos.  I bought 3 ears, scraped and lightly toasted in a skillet.  It took a bit longer to toast the shishitos, and I put a lid on top to tenderize.  I added a bit of honey to the dressing and tossed it with the rest of the ingredients.   The result was noteworthy and delicious.  Can't wait for local produce to make it again per se!",
+            "datePublished": "2024-06-12T02:01:09.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mike F (Sacramento)"
+            },
+            "reviewBody": "Made this last night, but added some pieces of chicken thigh that were dusted with cumin and sauteed. It was filling and made for a tasty one-dish meal, but would have been tastier without the chicken as that sort of clobbered the shishito flavor. I'd definitely make it again and leave out the chicken.",
+            "datePublished": "2024-06-11T19:09:31.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Al"
+            },
+            "reviewBody": "Threw some corn and shishito skewers on the grill then into this salad. It was truly delicious!!!!",
+            "datePublished": "2024-06-10T23:32:48.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Maria"
+            },
+            "reviewBody": "Trader Joe's sells shishito peppers in a little box. Great deal.",
+            "datePublished": "2024-06-09T14:03:57.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "cheryl"
+            },
+            "reviewBody": "Dry cook corn, use white vinegar instead of oil for onion",
+            "datePublished": "2024-06-04T12:30:28.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Peppermint Patty"
+            },
+            "reviewBody": "Made 1.5 recipe for 5 people. Green bell peppers worked fine. Used 10 ears of corn. Served with poached eggs and whole grain toast.",
+            "datePublished": "2024-06-04T02:01:14.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michelle"
+            },
+            "reviewBody": "Shishito peppers must be out of season since I can’t find any to save my life. Used a green bell pepper and an anaheim pepper instead, along with a big jalapeño. Was prepared to be disappointed as a result but oh my, how could something this simple be so delicious? Excellent with feta cheese.",
+            "datePublished": "2024-06-03T23:37:22.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KO"
+            },
+            "reviewBody": "Mad exactly as written—delicious! \nEven better the next day.",
+            "datePublished": "2024-06-03T21:33:57.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Linda in Maine"
+            },
+            "reviewBody": "I recommend adding avocado to this salad recipe- cut one ripe avocado in bite size pieces and add just before serving!",
+            "datePublished": "2024-06-03T20:10:03.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sophie"
+            },
+            "reviewBody": "I found this to be a little bland, but maybe it’s because I used too much corn (5 small-medium ears)",
+            "datePublished": "2024-06-03T02:01:51.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Connie V."
+            },
+            "reviewBody": "This recipe is perfect and delicious!",
+            "datePublished": "2024-06-02T22:31:37.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Su"
+            },
+            "reviewBody": "I used less olive oil for the dressing and didn't add cheese, otherwise followed the recipe as written.  It's simple and so delicious.  I slow baked some salmon with it, and served with flour tortillas and some jarred salsa in case anyone wanted tacos.  No need for the salsa, this salad was flavorful enough on it's own!",
+            "datePublished": "2024-06-02T13:51:25.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Natalie B"
+            },
+            "reviewBody": "Made this as is, with the substitition of 1 poblano and 1 green bell pepper for the shishitos since I couldn’t find them anywhere in my suburb of Vancouver. Opted for feta. Amazing! Will definitely be going into spring and summer rotation.",
+            "datePublished": "2024-06-02T00:50:07.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pita chef"
+            },
+            "reviewBody": "Very good. I added arugula for extra green and contrasting bitter note that offset the sweetness of the corn",
+            "datePublished": "2024-05-31T14:50:36.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Frances"
+            },
+            "reviewBody": "I dry pan cooked 2 of the ears of corn and added 2 fresh ears of corn for more interest.  Used significantly less oil. Used white wine vinegar for the red onion rather than oil. Included the line juice, cumin, and salt. Excellent. Came together very easy and simply. Will make this again.",
+            "datePublished": "2019-08-25T00:33:15.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JLM"
+            },
+            "reviewBody": "Made exactly as the recipe instructs except for the cheese. Used shishitos and fresh-shucked corn. It was easy. Chopped the peppers over cocktails and talk while the onions and garlic marinated. My dinner guests freaked out at how good it was. We devoured it all. Just spicy enough, super interesting texture-wise, full of late-summer flavor and just scrumptious all around. It's a generous four servings, but I was grateful for that because otherwise we would have been fighting over this salad.",
+            "datePublished": "2019-08-26T16:05:15.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "C, SF"
+            },
+            "reviewBody": "This looks good.  I’m considering making this and adding a poached egg to give it some protein and make it a veggie main course.",
+            "datePublished": "2019-08-23T21:22:15.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Su"
+            },
+            "reviewBody": "Raw. If you've not tried corn raw, I'd encourage you to do so. I nearly always eat mine raw -- it's crunchier, juicier, and less starchy and heavy-feeling that way.",
+            "datePublished": "2019-08-25T18:54:49.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Amy H"
+            },
+            "reviewBody": "When I made this, I was really craving the blistered shishito (or padron) peppers that are one of my favorite summer snacks, so I left the peppers whole, blistered them in the olive oil, sprinkled them with a little maldon sea salt, and arranged them on top of the corn salad along with a chunky diced avocado.  I also fine-diced the jalapeño and added it to the corn mixture. DELICIOSO!",
+            "datePublished": "2019-08-26T17:02:16.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JaneJ"
+            },
+            "reviewBody": "Oh yum! For those who are shocked by raw corn: make the salad the same day you buy or pick the corn; don’t store the cobs in the fridge. That’s what makes them tough. Raw corn, perfectly fresh, is heaven.\n\nI made this exactly as written and I must say I’d be heavier with the spice and lime juice next time, but it was still delicious and very fast. I blister shishitos all summer as a snack, so it was nice to do something different with them. A keeper recipe.",
+            "datePublished": "2019-08-28T02:27:44.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Melissa English"
+            },
+            "reviewBody": "A keeper.  I used just three corn cobs and everything seemed to be in proportion. The feta gave some decent salt and I may have pulled back on the added salt in the dressing. With my shishito pepper producing like gangbusters, this will be made again and again until it stops.",
+            "datePublished": "2019-08-26T00:08:15.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Gail"
+            },
+            "reviewBody": "Just a hint about cutting corn off the cob:  lay it down on a cutting board, cut off one side, turn, cut, turn, etc.  it doesn’t fly all over and no balancing act in a bowl.",
+            "datePublished": "2019-09-20T21:51:03.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "SAM"
+            },
+            "reviewBody": "Tastes even better than it looks. Made tonight for a group and everyone loved it! Even people who said they don’t normally enjoy corn. I prepped in the morning then assembled about an hour before dinner so could serve the dish at room temperature. I opted to use feta and cilantro. I doubled the shishito’s and made a bit extra dressing since I used 6 ears of corn which appeared to be way more than three cups. No matter how much corn I use next time, I’ll keep the extra shishito’s...so delicious!",
+            "datePublished": "2019-08-25T04:59:01.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jack"
+            },
+            "reviewBody": "It took over an hour to prepare the shishito peppers. Six ounces is probably 25 peppers. It's a good dish, but just be prepared to spend a lot of time - or switch to bell pepper.",
+            "datePublished": "2019-09-06T17:33:46.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pamela"
+            },
+            "reviewBody": "So good! I roasted the corn first, then the jalapeno and shishitos. I was a little nervous about the heat factor from the spicy smell. I tasted it and it was delicious. The husband has a dislike of spicy, so I added 1 smallish heirloom tomato to balance it. Perfect. I'm making it again for the Labor Day cookout this weekend!",
+            "datePublished": "2019-08-27T11:21:59.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Dawn"
+            },
+            "reviewBody": "It was simple to make, and got rave reviews from everyone. Having fresh corn from our local farmers market made a difference too - corn has been very sweet this season.I did 3 tbl lime juice, 1 tbl oil - 2 tbl oil would have been way too much.\nAs a bonus, I used the cobs to make corn stock, just deciding exactly what soup I want to make with it.",
+            "datePublished": "2019-10-13T12:16:28.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ejb"
+            },
+            "reviewBody": "This is stupid delicious exactly as written.  We’ve made it twice and neither time succeeded in stopping ourselves (two people) from consuming THE ENTIRE huge bowl’s worth.  Other commenters are right; 5-6 cobs is definitely more corn than 3 cups, but 5 cobs is just right for me.  And yeah, the commenter who said the dinner guests freaked out over how good it was?  I’d lose my mind if someone served this to me, too.  Delish.  Make it tonight.",
+            "datePublished": "2020-09-24T15:32:44.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Luther"
+            },
+            "reviewBody": "First, have to wonder how many people were in the kitchen to accomplish this in 15 minutes! Shucking and stripping the corn takes almost that long unless you don't care about removing all the silk. That aside, this is really good. Followed the recipe as shown, using Feta. Did let the shishito peppers cool to room temp before mixing everything together. Definitely will fix this again. I do find it very aggravating when recipe times are so very far off and it's not just this one. Be realistic!",
+            "datePublished": "2022-06-01T13:08:41.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Chris P."
+            },
+            "reviewBody": "We loved this as an easy, tasty and interesting dish. Used three ears of fresh corn, followed recipe as close as we could, otherwise. Served as a side with roast salmon. Keeper for us.",
+            "datePublished": "2022-06-02T01:04:02.000Z"
+        }
+    ]
+}

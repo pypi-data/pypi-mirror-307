@@ -1,0 +1,335 @@
+{
+    "@type": "Recipe",
+    "name": "Falafel",
+    "author": {
+        "@id": "https://www.recipetineats.com/#/schema/person/1684e6a75e9f91ae2e33ca2de95b47e2"
+    },
+    "description": "Recipe video above. Deep bronze and crispy on the outside, vivid green, moist and fluffy on the inside. Delicately spiced with a beautiful fresh herb flavour, these falafels are the perfect balance of flavour, texture and can't-stop-eating-them delicious! Best served fresh out of the fryer. Recipe requires 12 hrs+ soaking time.",
+    "datePublished": "2018-09-05T20:55:05+00:00",
+    "image": [
+        "https://www.recipetineats.com/tachyon/2018/09/Falafel_4.jpg",
+        "https://www.recipetineats.com/tachyon/2018/09/Falafel_4.jpg?resize=500%2C500",
+        "https://www.recipetineats.com/tachyon/2018/09/Falafel_4.jpg?resize=500%2C375",
+        "https://www.recipetineats.com/tachyon/2018/09/Falafel_4.jpg?resize=480%2C270"
+    ],
+    "recipeYield": [
+        "20",
+        "20 falafels"
+    ],
+    "prepTime": "PT25M",
+    "cookTime": "PT10M",
+    "totalTime": "PT35M",
+    "recipeIngredient": [
+        "225 g / 8 oz   dried chick peas ((Note 1))",
+        "1 cup parsley leaves (, roughly chopped)",
+        "1 cup coriander/cilantro leaves (, roughly chopped)",
+        "6  scallions/shallots (, white and light green part only finely chopped (Note 2))",
+        "2 cloves of garlic (, minced)",
+        "1 tsp cumin",
+        "1/2 tsp coriander",
+        "1 1/2 tsp salt",
+        "1/2 tsp baking powder ((Note 3))",
+        "4 tsp flour  ((plain/all purpose) OR chickpea flour)",
+        "5 tbsp water",
+        "500 ml / 2 cups+   vegetable oil ((Note 4))",
+        "4 tbsp tahini",
+        "2 tbsp lemon juice",
+        "4 tbsp water",
+        "1/4 tsp salt ((adjust to taste))",
+        "Pita bread or other flatbreads",
+        "Tabbouleh ((recipe below))",
+        "Hummus ((optional extra))",
+        "Shredded lettuce, tomato slices, sliced red or white onion"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToSection",
+            "name": "Falafel:",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Place chickpeas in a large bowl and pour over plenty of cold water. Leave to soak 12 + hours (even 2 days is fine).",
+                    "name": "Place chickpeas in a large bowl and pour over plenty of cold water. Leave to soak 12 + hours (even 2 days is fine).",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Drain chickpeas well. Place in food processor, add remaining Falafel ingredients.",
+                    "name": "Drain chickpeas well. Place in food processor, add remaining Falafel ingredients.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-1"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Blitz for 2 to 3 minutes on high, scraping down sides as necessary, until the chickpeas are very small grains. Mixture should look like smooth guacamole from the outside (see video).",
+                    "name": "Blitz for 2 to 3 minutes on high, scraping down sides as necessary, until the chickpeas are very small grains. Mixture should look like smooth guacamole from the outside (see video).",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-2"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Scoop up heaped tablespoons and shape into balls (or dome, disc or torpedo), place on a tray. Should make around 20, about 2.5cm / 1\" wide.",
+                    "name": "Scoop up heaped tablespoons and shape into balls (or dome, disc or torpedo), place on a tray. Should make around 20, about 2.5cm / 1\" wide.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-3"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Refrigerate for 30 minutes.",
+                    "name": "Refrigerate for 30 minutes.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-4"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Pour oil in a skillet or large pot - at least 1.7 cm / 2/3\" depth (Note 4). Heat on medium high to 180 - 190C / 355F (or drop a bit in, should sizzle energetically).",
+                    "name": "Pour oil in a skillet or large pot - at least 1.7 cm / 2/3\" depth (Note 4). Heat on medium high to 180 - 190C / 355F (or drop a bit in, should sizzle energetically).",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-5"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Place a ball in a large spoon (or tongs) and slide ball in. Cook in batches for around 4 minutes, using 2 forks to roll, until deep golden and super crusty on the outside.",
+                    "name": "Place a ball in a large spoon (or tongs) and slide ball in. Cook in batches for around 4 minutes, using 2 forks to roll, until deep golden and super crusty on the outside.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-6"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Drain on paper towels. Repeat with remaining falafel.",
+                    "name": "Drain on paper towels. Repeat with remaining falafel.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-7"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Serve fresh out of the fryer with Sauce of choice! Make falafel wraps or plates with tabbouleh, tomato, onion, and Sauces of choice. See Notes 5 and 6.",
+                    "name": "Serve fresh out of the fryer with Sauce of choice! Make falafel wraps or plates with tabbouleh, tomato, onion, and Sauces of choice. See Notes 5 and 6.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-0-8"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "Tahini Sauce:",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Combine tahini and lemon juice, and mix well. The mixture will stiffen.",
+                    "name": "Combine tahini and lemon juice, and mix well. The mixture will stiffen.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-1-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Stir in the water 1 tbsp at a time and it will loosen again. The final consistency should be like a thick drizzle sauce (see video). Season to taste with salt.",
+                    "name": "Stir in the water 1 tbsp at a time and it will loosen again. The final consistency should be like a thick drizzle sauce (see video). Season to taste with salt.",
+                    "url": "https://www.recipetineats.com/falafel-recipe/#wprm-recipe-31184-step-1-1"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.95",
+        "ratingCount": "113"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made the felafel as part of a buffet and they received rave reviews, especially for how moist they were inside. (As Nagi promises, crispy crunch outside and soft inside).\r\nI made them gluten free by using chickpea flour.\r\nPrepared and frozen prior to cooking. Cooked from frozen and they worked a treat.",
+            "author": {
+                "@type": "Person",
+                "name": "Diane Gordon"
+            },
+            "datePublished": "2024-02-26"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "1"
+            },
+            "reviewBody": "First time I made these they were perfect. Second and third time massive fail. Can’t figure out why. I give up.",
+            "author": {
+                "@type": "Person",
+                "name": "Toni"
+            },
+            "datePublished": "2023-12-09"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "These are the best falafel ever! My husband even rates them above his favourite ones at a Lebanese restaurant we used to go to.  Aside from having to pick all the herbs this is a really easy recipe. So good!",
+            "author": {
+                "@type": "Person",
+                "name": "Laura"
+            },
+            "datePublished": "2023-12-05"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Absolutely yummy. I no longer buy felafels when looking for a vegetarian option as these are easy and delicious. Store bought just taste dry and bland. Thanks again Nagi for another great recipe.",
+            "author": {
+                "@type": "Person",
+                "name": "Barb"
+            },
+            "datePublished": "2023-12-01"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made these in the disc shape and they were delicious - soaked the chickpeas for two days. The tahini sauce was also amazing, great taste and texture. Will be a regular meal in my house now.",
+            "author": {
+                "@type": "Person",
+                "name": "Katherine"
+            },
+            "datePublished": "2023-11-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "So easy to make and so yummy. I made the tahini sauce, tabbouleh and hummus too!",
+            "author": {
+                "@type": "Person",
+                "name": "Sheree Milner"
+            },
+            "datePublished": "2023-09-28"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I have made these a few times now and they are always delicious! I made them for my parents and they loved them. My step son always asks if I’m going to make them again. Thanks for another great recipe!",
+            "author": {
+                "@type": "Person",
+                "name": "April B"
+            },
+            "datePublished": "2023-06-16"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Excellent recipe doubled the quantity.  Everyone really enjoyed them in flat breads with the salad and tahini sauce.",
+            "author": {
+                "@type": "Person",
+                "name": "j"
+            },
+            "datePublished": "2023-05-28"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Celiac family here you just need to spend the money on a quality cup for cup if you are looking for comparable to regular white flour.  Flours that are a blend of rice flours and starches (corn, potato, tapioca) with Xanthan gum work best.  Avoid blends that have buckwheat flour or chickpea flour as they don't behave the same.",
+            "author": {
+                "@type": "Person",
+                "name": "Sara"
+            },
+            "datePublished": "2023-05-06"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "reviewBody": "I followed the recipe but the 'dough' was super wet and i couldn't shape it, even after adding more flour.  I made equal portions that i can freeze and turn into flat fritters.  Where did I go wrong?",
+            "author": {
+                "@type": "Person",
+                "name": "Sandra T Chavarria"
+            },
+            "datePublished": "2023-03-20"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "AMAZING! best falafel I have ever had! \r\n\r\nI am infatuated with all of your creations - the comments and directions are on point - this one seals it! It's the bomb!!",
+            "author": {
+                "@type": "Person",
+                "name": "Dawn Marie"
+            },
+            "datePublished": "2023-03-10"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Very good recipe. Thank you",
+            "author": {
+                "@type": "Person",
+                "name": "Georgina Fernandez"
+            },
+            "datePublished": "2023-02-22"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "LOVE THIS!!! My MIL is Lebanese and tells me this is how her mum used to make Falafel! Big winner in our house! 😍🧆🧆",
+            "author": {
+                "@type": "Person",
+                "name": "Nicole"
+            },
+            "datePublished": "2022-12-31"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Delicious! Some of your recipes don’t seem to work for me but these are the most delicious felafel and easy to make!",
+            "author": {
+                "@type": "Person",
+                "name": "Jess"
+            },
+            "datePublished": "2022-10-04"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Middle Eastern"
+    ],
+    "keywords": "Falafel recipe",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "76 kcal",
+        "carbohydrateContent": "7 g",
+        "proteinContent": "2 g",
+        "fatContent": "4 g",
+        "saturatedFatContent": "3 g",
+        "sodiumContent": "179 mg",
+        "fiberContent": "2 g",
+        "sugarContent": "1 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://www.recipetineats.com/falafel-recipe/#recipe",
+    "isPartOf": {
+        "@id": "https://www.recipetineats.com/falafel-recipe/#article"
+    },
+    "mainEntityOfPage": "https://www.recipetineats.com/falafel-recipe/"
+}

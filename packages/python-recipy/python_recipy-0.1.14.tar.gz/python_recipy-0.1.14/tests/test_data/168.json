@@ -1,0 +1,45 @@
+{
+    "@type": "Recipe",
+    "name": "Marinated Tomato Salad",
+    "author": {
+        "@id": "https://www.davidlebovitz.com/#/schema/person/6b90d7c373a6d04b9e5cc8077844ef1f"
+    },
+    "description": "Although this tastes great using fresh, in-season tomatoes, it also transforms ho-hum orbs into something much better. Let them marinade a little bit first, up to an hour beforehand. But for really good tomatoes, I simply toss and serve right away. A good rule of thumb is the better the tomatoes, the less you need to marinate ’em.\r\n\r\nEither way, you can marinate the shallots hours ahead in the vinegar with some salt as the shallots as they only get better and mellower after an hour or two. Then go ahead and put the rest together whenever you want leaving you time to do something else. Like read your mail…if you’re lucky enough to get it.",
+    "datePublished": "2007-08-03T02:43:39+00:00",
+    "image": [
+        "https://www.davidlebovitz.com/wp-content/uploads/2007/08/950401108_f6a11fbb84_o.jpg"
+    ],
+    "recipeIngredient": [
+        "1  small shallot  ((And you do use shallots, don't you?))",
+        "2 teaspoons sherry vinegar",
+        "salt and black pepper",
+        "1 tablespoon extra-virgin olive oil ((right now I'm lovin' my bottle of Picholine))",
+        "3  medium tomatoes (1-pound, 450 gr), ( rinsed (if possible...))"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "1. Peel and mince the shallot, or slice it very fine. Mix it in a medium-sized non-reactive bowl with the vinegar and a nice pinch of salt and a few turns of freshly-ground black pepper. If possible, let stand a couple of hours.",
+            "name": "1. Peel and mince the shallot, or slice it very fine. Mix it in a medium-sized non-reactive bowl with the vinegar and a nice pinch of salt and a few turns of freshly-ground black pepper. If possible, let stand a couple of hours.",
+            "url": "https://www.davidlebovitz.com/but-i-do-have-t-1/#wprm-recipe-53667-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "2. Stir in the olive oil. Slice the tomatoes then toss them in the dressing.",
+            "name": "2. Stir in the olive oil. Slice the tomatoes then toss them in the dressing.",
+            "url": "https://www.davidlebovitz.com/but-i-do-have-t-1/#wprm-recipe-53667-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "3. Let sit a few minutes, stirring a couple of times, then pile on a plate and serve.",
+            "name": "3. Let sit a few minutes, stirring a couple of times, then pile on a plate and serve.",
+            "url": "https://www.davidlebovitz.com/but-i-do-have-t-1/#wprm-recipe-53667-step-0-2"
+        }
+    ],
+    "@id": "https://www.davidlebovitz.com/but-i-do-have-t-1/#recipe",
+    "isPartOf": {
+        "@id": "https://www.davidlebovitz.com/but-i-do-have-t-1/#article"
+    },
+    "mainEntityOfPage": "https://www.davidlebovitz.com/but-i-do-have-t-1/",
+    "recipeCategory": []
+}

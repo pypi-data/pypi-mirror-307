@@ -1,0 +1,211 @@
+{
+    "@type": "Recipe",
+    "name": "White Chicken Enchiladas with Green Chile Sour Cream Sauce",
+    "author": {
+        "@id": "https://damndelicious.net/#/schema/person/b5f3793618a48c5e85a0fde94b831682"
+    },
+    "description": "",
+    "datePublished": "2012-01-31T08:30:00+00:00",
+    "image": [
+        "https://s23209.pcdn.co/wp-content/uploads/2012/01/IMG_2334edit.jpg"
+    ],
+    "recipeYield": [
+        "4",
+        "4 servings"
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "totalTime": "PT45M",
+    "recipeIngredient": [
+        "12  6-inch flour tortillas, warmed",
+        "3 tablespoons unsalted butter",
+        "3 tablespoons all-purpose flour",
+        "2 cups chicken broth",
+        "1 cup sour cream",
+        "1  4-ounce can diced green chiles",
+        "2 cups shredded cooked chicken",
+        "2 cups shredded Monterrey Jack cheese (divided)",
+        "2 tablespoons chopped fresh cilantro leaves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat the oven to 425 degrees F. Lightly oil a 9×13 baking dish or coat with nonstick spray.",
+            "name": "Preheat the oven to 425 degrees F. Lightly oil a 9×13 baking dish or coat with nonstick spray.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Melt the butter in a large saucepan over medium heat. Whisk in flour until lightly browned, about 1 minute. Gradually whisk in chicken broth and cook, whisking constantly, until slightly thickened, about 1-2 minutes. Stir in sour cream and green chiles.",
+            "name": "Melt the butter in a large saucepan over medium heat. Whisk in flour until lightly browned, about 1 minute. Gradually whisk in chicken broth and cook, whisking constantly, until slightly thickened, about 1-2 minutes. Stir in sour cream and green chiles.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a medium bowl, combine chicken and 1 cup Monterey Jack cheese.",
+            "name": "In a medium bowl, combine chicken and 1 cup Monterey Jack cheese.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To assemble the enchiladas, lay tortilla on a flat surface and spoon 1/4 cup of the chicken mixture in the center. Roll the tortilla and place seam side down onto prepared baking dish. Repeat with remaining tortillas and chicken mixture. Top with sour cream sauce and remaining Monterey Jack cheese.",
+            "name": "To assemble the enchiladas, lay tortilla on a flat surface and spoon 1/4 cup of the chicken mixture in the center. Roll the tortilla and place seam side down onto prepared baking dish. Repeat with remaining tortillas and chicken mixture. Top with sour cream sauce and remaining Monterey Jack cheese.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place into oven and bake until lightly golden and bubbly, about 20-25 minutes.",
+            "name": "Place into oven and bake until lightly golden and bubbly, about 20-25 minutes.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve immediately, garnished with cilantro, if desired.",
+            "name": "Serve immediately, garnished with cilantro, if desired.",
+            "url": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#wprm-recipe-33175-step-0-5"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "10"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Holy enchilada, that was good!! We'll be making these over and over.",
+            "author": {
+                "@type": "Person",
+                "name": "Amy K"
+            },
+            "datePublished": "2024-02-02"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I have tried several of your recipes and you never disappoint. Cilantro Lime Chicken, Ramen, Lettuce Wraps, Lemon Garlic Chicken and now this. I never hesitate to try your recipes because I haven’t been disappointed.",
+            "author": {
+                "@type": "Person",
+                "name": "Robin"
+            },
+            "datePublished": "2023-09-21"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Two things: I put all of the toppings that are in the picture on mine and it was great!! My girls asked me to add more green chilis. I will definitely do that but also may add a little jalapeño.",
+            "author": {
+                "@type": "Person",
+                "name": "Robin"
+            },
+            "datePublished": "2023-09-21"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Absolutely delicious!\r\nAdded all the toppings you showed in photo!\r\nYou are good",
+            "author": {
+                "@type": "Person",
+                "name": "Carol"
+            },
+            "datePublished": "2023-08-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made these for the family and they were a total hit! Must have recipe. DELISH!!!!",
+            "author": {
+                "@type": "Person",
+                "name": "JULIE"
+            },
+            "datePublished": "2022-12-08"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This recipe was delicious! Easy to make and easy to follow instructions. This is now my go to recipe for white chicken enchiladas. Thank you!",
+            "author": {
+                "@type": "Person",
+                "name": "Francine Beanan"
+            },
+            "datePublished": "2022-08-25"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made these 3 times now! Delicious! I was wondering how you would freeze these? Should I cook them first and then freeze?",
+            "author": {
+                "@type": "Person",
+                "name": "Lisa"
+            },
+            "datePublished": "2022-02-22"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "My husband has a favorite enchilada recipe that required ingredients I didn't have. He wasn't happy I was changing. But, he went nuts over the result! Thank you. This was delicious. Only extra step I took was to roast the peppers peppers over a flame on my gas stove for a little more flavor depth. I rarely write reviews. This is was super!",
+            "author": {
+                "@type": "Person",
+                "name": "Lbrookey"
+            },
+            "datePublished": "2020-05-21"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was yummy! All the adults enjoyed it and it was easy to put together! Thanks for the delicious recipe! I had intentions to top as you did in the picture, just to give some color and freshness...but reality happened. LOL",
+            "author": {
+                "@type": "Person",
+                "name": "Kel T"
+            },
+            "datePublished": "2019-09-20"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This is one of my go to family recipes. I love the flavors of the green chili’s and also the creaminess.  I also enjoy putting a lot of fresh avocado, cilantro and tomatoes diced on top. It’s like a salad on an enchilada.  They also reheat well for leftovers.",
+            "author": {
+                "@type": "Person",
+                "name": "Françoise Thomas"
+            },
+            "datePublished": "2018-11-27"
+        }
+    ],
+    "@id": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#recipe",
+    "isPartOf": {
+        "@id": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/#article"
+    },
+    "mainEntityOfPage": "https://damndelicious.net/2012/01/31/white-chicken-enchiladas-with-green-chile-sour-cream/",
+    "recipeCategory": []
+}

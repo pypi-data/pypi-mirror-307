@@ -1,0 +1,311 @@
+{
+    "@type": "Recipe",
+    "name": "Spicy Orecchiette with Chicken Sausage and Kale",
+    "author": {
+        "@id": "https://www.budgetbytes.com/#/schema/person/bf6c329b6de4c75ae3a0de14a1f8c006"
+    },
+    "description": "Spicy Orecchiette with Chicken Sausage and Kale is a fast, easy, and filling weeknight dinner that will always satisfy. Plus, leftovers reheat beautifully!",
+    "datePublished": "2019-05-14T18:20:01+00:00",
+    "image": [
+        "https://www.budgetbytes.com/wp-content/uploads/2019/05/Spicy-Orecchiette-with-Chicken-Sausage-and-Kale-bowl-above.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/05/Spicy-Orecchiette-with-Chicken-Sausage-and-Kale-bowl-above-500x500.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/05/Spicy-Orecchiette-with-Chicken-Sausage-and-Kale-bowl-above-500x375.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/05/Spicy-Orecchiette-with-Chicken-Sausage-and-Kale-bowl-above-480x270.jpg"
+    ],
+    "video": {
+        "name": "Spicy Orecchiette with Chicken Sausage",
+        "description": "Spicy Orecchiette with Chicken Sausage and Kale is a fast, easy, and filling weeknight dinner that will always satisfy. Plus, leftovers reheat beautifully!",
+        "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--fKnjUZ7f--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1566681251/h4dzo7mgi0m3be3fln0b.jpg",
+        "embedUrl": "https://video.mediavine.com/videos/zqsei1kqvizoyvc3umpe.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1566681206/zqsei1kqvizoyvc3umpe.mp4",
+        "uploadDate": "2023-10-26T15:22:13+00:00",
+        "duration": "PT56S",
+        "@type": "VideoObject"
+    },
+    "recipeYield": [
+        "4",
+        "4 about 1.5 cups each"
+    ],
+    "prepTime": "PT5M",
+    "cookTime": "PT15M",
+    "totalTime": "PT20M",
+    "recipeIngredient": [
+        "8 oz. orecchiette ($1.33)",
+        "2 Tbsp olive oil ($0.32)",
+        "12 oz. chicken sausage ($2.99)",
+        "2 Tbsp butter ($0.27)",
+        "2 cloves garlic, minced ($0.16)",
+        "8 oz. chopped kale* ($2.14)",
+        "1/4 cup grated Parmesan ($0.44)",
+        "1/4 tsp crushed red pepper ($0.02)",
+        "1 pinch salt ($0.02)",
+        "freshly cracked pepper to taste ($0.05)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Cook the orecchiette according to the package directions. Before draining the orecchiette in a colander, reserve about 1/3 cup of the starchy pasta water.",
+            "name": "Cook the orecchiette according to the package directions. Before draining the orecchiette in a colander, reserve about 1/3 cup of the starchy pasta water.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "While the orecchiette is cooking, begin preparing the rest of the recipe. Slice the chicken sausage into medallions.",
+            "name": "While the orecchiette is cooking, begin preparing the rest of the recipe. Slice the chicken sausage into medallions.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the olive oil and chicken sausage to a large pot and sauté over medium until the chicken sausage begins to brown (about 5 minutes).",
+            "name": "Add the olive oil and chicken sausage to a large pot and sauté over medium until the chicken sausage begins to brown (about 5 minutes).",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the minced garlic and butter to the pot with the sausage and continue to sauté for one more minute.",
+            "name": "Add the minced garlic and butter to the pot with the sausage and continue to sauté for one more minute.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Next, add the chopped kale and reserved pasta water. Turn the heat down to medium-low and continue to cook and stir until the kale has wilted (about 2-3 minutes). Use your spoon to dissolve any browned bits off the bottom of the pot as you stir.",
+            "name": "Next, add the chopped kale and reserved pasta water. Turn the heat down to medium-low and continue to cook and stir until the kale has wilted (about 2-3 minutes). Use your spoon to dissolve any browned bits off the bottom of the pot as you stir.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Remove the pot from the heat and stir in the cooked and drained orecchiette. If the pasta and kale are still steaming heavily, let the contents of the pot cool for about 5 minutes, stirring occasionally to release steam. You want the Parmesan to coat the pasta, but not melt.",
+            "name": "Remove the pot from the heat and stir in the cooked and drained orecchiette. If the pasta and kale are still steaming heavily, let the contents of the pot cool for about 5 minutes, stirring occasionally to release steam. You want the Parmesan to coat the pasta, but not melt.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-5"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Once the pasta and kale is hot, but not steaming, add the grated Parmesan, crushed red pepper, salt, and about 15-20 cranks of a pepper mill. Stir to combine, then taste and add more salt if needed. Serve warm.",
+            "name": "Once the pasta and kale is hot, but not steaming, add the grated Parmesan, crushed red pepper, salt, and about 15-20 cranks of a pepper mill. Stir to combine, then taste and add more salt if needed. Serve warm.",
+            "url": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#wprm-recipe-44023-step-0-6"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.88",
+        "ratingCount": "25"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Love this!  Have made it with broccoli or spinach AND turkey kielbasa!!",
+            "author": {
+                "@type": "Person",
+                "name": "Linda"
+            },
+            "datePublished": "2023-09-14"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Easy but flavorful. I substituted elbows and Italian sausage because that’s what I had.  Leftovers reheated nicely. I would definitely make this again. Thanks!",
+            "author": {
+                "@type": "Person",
+                "name": "Jennifer"
+            },
+            "datePublished": "2023-02-28"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "reviewBody": "So easy and tasty! I used garlic chicken sausage, which worked nicely with the kale.",
+            "author": {
+                "@type": "Person",
+                "name": "Susan"
+            },
+            "datePublished": "2023-01-10"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "My chicken sausage wasn't precooked, so I couldn't do the medallions; I just removed the casings, broke it up, and cooked it that way. Followed the recipe exactly as written otherwise. Came out delicious! Really great flavors and just the right amount of kick from the red pepper flakes. Thanks again for another hit, Beth!",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah F."
+            },
+            "datePublished": "2022-10-01"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was amazing!! I made it tonight with a tomato basil chicken sausage, zucchini and grape tomatoes from the garden, along with frozen kale, chickpea pasta and fresh grated parmesan cheese. Wowza!! Hearty, delicious, amazing!! I omitted the red pepper flakes because I'm not big on spice but even so it's incredible!! I added extra cheese because, well, cheese, but I will definitely make this again!!",
+            "author": {
+                "@type": "Person",
+                "name": "Lena"
+            },
+            "datePublished": "2021-09-27"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Delicious! I'm always weary when I see so few ingredients but this pasta is amazing! I used chicken apple sausage and the slight sweetness add was a great balance to the spiciness. 10/10 will be making again. Thank you!",
+            "author": {
+                "@type": "Person",
+                "name": "C"
+            },
+            "datePublished": "2021-04-19"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Five stars! I made it my own with hot italian reindeer sausage, added butter beans and grape tomatoes with wide egg noodles and half spinach. Hubby didnt even turn his nose up at the kale. Seasoning was just right.",
+            "author": {
+                "@type": "Person",
+                "name": "Doreen S"
+            },
+            "datePublished": "2021-04-11"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was sooo good considering how simple it is!",
+            "author": {
+                "@type": "Person",
+                "name": "Cherrin Kim"
+            },
+            "datePublished": "2021-03-16"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I stumbled upon this recipe and had all the ingredients at home so I made it. I am so glad I did because the dish is flavorful and simple enough for a stressful weeknight. The only changes I made were to remove the sausage casing and I added the pasta water before the kale to deglaze the pan.",
+            "author": {
+                "@type": "Person",
+                "name": "Patty"
+            },
+            "datePublished": "2020-12-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Easy, quick &amp; delicious!",
+            "author": {
+                "@type": "Person",
+                "name": "B.T."
+            },
+            "datePublished": "2020-08-26"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I’m going to make this for my ex husband and pretend it’s an old family recipe...it was so good, my 91 y/o Italian mother liked it now that’s saying a lot! ",
+            "author": {
+                "@type": "Person",
+                "name": "Mary"
+            },
+            "datePublished": "2020-05-24"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made this tonight, doubling the recipe.  Absolutely fantastic.  Fast prep, fast cooking, and delicious eating.  We always find winners on your website.  Thank you!",
+            "author": {
+                "@type": "Person",
+                "name": "Dana"
+            },
+            "datePublished": "2020-04-07"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "We all loved this! Added some mushrooms too. This will definitely be added to our dinner rotation. ",
+            "author": {
+                "@type": "Person",
+                "name": "Ann"
+            },
+            "datePublished": "2020-03-31"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I've made this a number of times, it's very yummy for how easy and simple it is!",
+            "author": {
+                "@type": "Person",
+                "name": "Peggy Garret"
+            },
+            "datePublished": "2020-01-24"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Literally, at least three of my coworkers walked past me while I was eating this at work and asked me what smelled so amazing. I have never had this happen with other food at work. It was simple and very good. I upped the kale just slightly to get some more vegetables in. It was definitely a little drier than I usually eat pasta, so it may not be your favorite if you're a sauce-lover. But the flavors were nice and it felt like a balanced meal.",
+            "author": {
+                "@type": "Person",
+                "name": "AC"
+            },
+            "datePublished": "2019-09-12"
+        }
+    ],
+    "recipeCuisine": [
+        "American"
+    ],
+    "keywords": "Sausage Pasta",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1.5 Cups",
+        "calories": "468.75 kcal",
+        "carbohydrateContent": "48.15 g",
+        "proteinContent": "24.1 g",
+        "fatContent": "23.08 g",
+        "fiberContent": "3.48 g",
+        "sodiumContent": "850.65 mg"
+    },
+    "@id": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#recipe",
+    "isPartOf": {
+        "@id": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/#article"
+    },
+    "mainEntityOfPage": "https://www.budgetbytes.com/spicy-orecchiette-with-chicken-sausage-and-kale/",
+    "meal": "Dinner",
+    "cuisine": "Italian"
+}

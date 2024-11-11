@@ -1,0 +1,198 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Black-Eyed Peas with Coconut Milk and Ethiopian Spices",
+    "datePublished": "2014-10-16T19:29:39.000-04:00",
+    "dateModified": "2014-11-01T19:29:39.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Marcus Samuelsson",
+            "url": "https://www.foodandwine.com/author/marcus-samuelsson"
+        }
+    ],
+    "description": "This creamy black-eyed-pea dish relies on assertive African flavors like berbere (an Ethiopian spice mix) and coconut milk.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.foodandwine.com/thmb/KgNW3hK1ImMv3UvAAFIMT3b10mo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/201411-xl-black-eyed-peas-with-coconut-milk-and-ethiopian-spices-c6a696710bb349a7bfa3395cbc231d11.jpg",
+        "height": 1500,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Black-Eyed Peas with Coconut Milk and Ethiopian Spices",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "3713"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "African"
+    ],
+    "recipeIngredient": [
+        "2 cups dried black-eyed peas (12 ounces)",
+        "Kosher salt",
+        "4 tablespoons unsalted butter",
+        "1 large red onion, minced",
+        "1 1/2 tablespoons minced peeled fresh ginger",
+        "3 garlic cloves, minced",
+        "1 habanero chile, seeded and minced",
+        "2 teaspoons berbere seasoning (see Note)",
+        "1 teaspoon ground turmeric",
+        "3 medium tomatoes, chopped",
+        "1 cup coconut milk",
+        "1 cup chicken stock or low-sodium broth",
+        "1/3 cup chopped cilantro",
+        "2 scallions, thinly sliced"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a large saucepan, cover the peas with water and bring to a boil. Simmer over moderately low heat until tender, about 40 minutes. Add a generous pinch of salt and let stand for 5 minutes, then drain well."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Meanwhile, in a large saucepan, melt the butter. Add the onion, ginger, garlic and chile and cook over moderate heat, stirring occasionally, until softened and just starting to brown, about 10 minutes. Add the berbere and turmeric and cook, stirring, until fragrant, about 2 minutes. Add the tomatoes and cook, stirring, until softened, about 5 minutes. Stir in the coconut milk and stock and bring to a boil. Simmer over moderately low heat, stirring occasionally, until the tomatoes break down and the sauce is thickened, about 20 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the peas to the sauce and cook over moderately low heat, stirring, until the peas are lightly coated, about 10 minutes. Fold in the cilantro and scallions and serve."
+        }
+    ],
+    "totalTime": "PT55M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Absolutely delicious! A new family favorite.",
+            "datePublished": "2023-10-24T02:11:09.972Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Soooooo good! This was a perfect mix of flavors, and so filling and affordable. The habañero really added something special. I added 1 bunch of kale, chopped in very small pieces, when I added the tomato. I served this with brown rice.",
+            "datePublished": "2021-06-13T20:35:30.751Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Delicious and easy! I’ve made it a few times. To make it a complete meal I added chicken or pork. I love it!",
+            "datePublished": "2021-05-31T08:37:26.746Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "jc05097"
+            },
+            "reviewBody": "This is absolutely delicious! I almost didn’t make it because I didn’t want to buy another spice (berbere) I might not ever use again, but I’m glad I did and I’ll definitely be making this again! It smelled so amazing while cooking, I couldn’t wait to try it!",
+            "datePublished": "2020-12-06T20:09:02.681Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "ellie_i"
+            },
+            "reviewBody": "We first made this superstitiously on New Year's Eve some time ago, and it was such a huge hit that it has become part of our repertoire. It comes together pretty quickly, especially if you cook the peas in the Instant Pot, and the flavors are just incredible. Definitely one of those sneaky and satisfying vegetarian dishes where carnivores won't miss the meat one bit. It has even converted my hubby who used to \"hate\" black-eyed peas. We typically make the recipe exactly as written except for the habanero, as our Berbere mix (from Whole Foods) is quite spicy. A splash of lime and a dollop of yogurt are nice as toppings.",
+            "datePublished": "2020-11-23T00:34:38.595Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous Quokka"
+            },
+            "reviewBody": "I did this dish in a slightly different order and added three different things:\n1) I started with the garlic, ginger, chile, onion combination but added cumin seeds. After 5 mins I add the black eyed peas and water and stock let that boil and them simmer (I pre-soaked the beans overnight)\nMeanwhile I sliced and roasted an eggplant in the oven (for about 20 mins or so until the slices where brown but still soft).\nThen I added the tomatoes and other spices, and let simmer another 5 mins - then added the roasted eggplant.\nAfter that I added about 100g of spinach - just to have even more iron in this dish.\nI added the coconut a little more toward the end. \nFor serving along with the cilantro, I had the option for freshly squeezed lime juice, which gave it a great zest. It was a wonderful dish. Thanks very much. I am keeping this one in my recipe book!",
+            "datePublished": "2020-05-08T09:21:00.000Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/black-eyed-peas-coconut-milk-and-ethiopian-spices",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/side-dishes",
+                        "name": "Side Dishes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/side-dishes/vegetable-side-dishes",
+                        "name": "Vegetable Side Dishes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/black-eyed-peas-coconut-milk-and-ethiopian-spices",
+                        "name": "Black-Eyed Peas with Coconut Milk and Ethiopian Spices"
+                    }
+                }
+            ]
+        }
+    }
+}

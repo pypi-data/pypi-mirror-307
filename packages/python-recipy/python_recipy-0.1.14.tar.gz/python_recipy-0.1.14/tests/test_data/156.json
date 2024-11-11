@@ -1,0 +1,77 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "alternativeHeadline": "Hickory-Grilled Rib-Eye Steaks with Bacon-Molasses Butter Recipe",
+    "keywords": [
+        "rib eye steak",
+        "steak",
+        "easy",
+        "quick",
+        "weeknight meals",
+        "main",
+        "nut-free",
+        "gluten-free",
+        "grilling",
+        "dinner",
+        "do not show on encore",
+        "web"
+    ],
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bon Appétit",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bonappetit.com/verso/static/bon-appetit/assets/logo-seo.png",
+            "width": "479px",
+            "height": "100px"
+        },
+        "url": "https://www.bonappetit.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Bon Appétit"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Michael McLaughlin",
+            "sameAs": "https://www.bonappetit.com/contributor/michael-mclaughlin"
+        },
+        {
+            "@type": "Person",
+            "name": "Mark Thomas",
+            "sameAs": "https://www.bonappetit.com/contributor/mark-thomas"
+        }
+    ],
+    "description": "Hickory-Grilled Rib-Eye Steaks with Bacon-Molasses Butter Recipe",
+    "image": [
+        "https://assets.bonappetit.com/photos/57b23c53319a58275764d71c/master/w_484,h_344,c_limit/mare_hickory_grilled_rib_eye_steaks_with_bacon_molasses_butter_h.jpg"
+    ],
+    "headline": "Hickory-Grilled Rib-Eye Steaks with Bacon-Molasses Butter",
+    "name": "Hickory-Grilled Rib-Eye Steaks with Bacon-Molasses Butter",
+    "recipeIngredient": [
+        "6 thick bacon slices",
+        "1/3 cup mild-flavored (light) molasses",
+        "6 tablespoons (3/4 stick) butter, room temperature",
+        "",
+        "2 cups hickory wood chips, soaked in water 30 minutes, drained",
+        "6 rib-eye steaks (each about 1 inch thick)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Position rack in top third of oven and preheat to 375°F. Line small baking sheet with foil. Arrange bacon slices on foil; brush bacon with all of molasses, then sprinkle with pepper. Bake until bacon is cooked through but not crisp, about 15 minutes. Transfer bacon to work surface; cool. Chop bacon; transfer to small bowl. Add butter and stir to blend. Season to taste with salt and pepper. DO AHEAD Can be made 1 day ahead. Cover; chill. Bring to room temperature before using."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Prepare barbecue (medium-high heat). When coals are white, spread wood chips in 8x8-inch disposable aluminum foil pan; place pan directly atop coals. Sprinkle steaks with salt and pepper. When chips are smoking, place steaks on grill rack. Cover grill and cook steaks to desired doneness, about 4 minutes per side for medium-rare. Transfer steaks to plates. Spoon bacon-molasses butter atop each and serve."
+        }
+    ],
+    "recipeYield": "6  Servings",
+    "url": "https://www.bonappetit.com/recipe/hickory-grilled-rib-eye-steaks-with-bacon-molasses-butter",
+    "dateModified": "2002-06-30T20:00:00.000-04:00",
+    "datePublished": "2002-06-30T20:00:00.000-04:00",
+    "recipeCategory": []
+}

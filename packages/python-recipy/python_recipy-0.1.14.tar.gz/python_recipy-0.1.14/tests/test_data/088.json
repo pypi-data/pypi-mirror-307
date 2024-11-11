@@ -1,0 +1,228 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Lamb Burger Sliders",
+    "url": "https://www.foodnetwork.com/recipes/lamb-burger-sliders-recipe-2118617",
+    "headline": "Lamb Burger Sliders",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.1280.suffix/1474463768097.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.960.suffix/1474463768097.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.1280.720.suffix/1474463768097.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2016-11-18T23:55:05.298-05:00",
+    "dateModified": "2013-12-06T17:39:21.046-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Burger,Lamb Recipes,Meat",
+    "cookTime": "P0Y0M0DT0H10M0.000S",
+    "prepTime": "P0Y0M0DT0H35M0.000S",
+    "totalTime": "P0Y0M0DT0H50M0.000S",
+    "recipeIngredient": [
+        "2 pounds good quality ground lamb",
+        "2 tablespoons minced garlic",
+        "2 tablespoons Culhane's Spice Blend, recipe follows",
+        "2 tablespoons chopped fresh oregano leaves",
+        "3 tablespoons minced red onion",
+        "2 tablespoons whole-grain mustard (recommended: Pommeray)",
+        "1 1/2 tablespoons olive oil or other oil",
+        "8 silver dollar onion rolls, halved",
+        "1 Roma tomatoes, each cut into 4 pieces",
+        "8 washed baby red oak leaves, from1 head",
+        "1 red onion, shaved in slices",
+        "Curry Aioli, recipe follows",
+        "8 frill picks",
+        "8 large pimento olives",
+        "1 teaspoon onion powder",
+        "1 teaspoon garlic powder",
+        "1 teaspoon roasted granulated garlic",
+        "1 teaspoon ground black pepper",
+        "1 teaspoon ground white pepper",
+        "1 teaspoon kosher salt",
+        "1/2 teaspoon ground allspice",
+        "1/2 teaspoon dry mustard, such as Coleman's ",
+        "1/2 teaspoon dried basil",
+        "1/4 teaspoon dried red pepper flakes",
+        "1/4 teaspoon dried marjoram",
+        "2 ounces lemon juice",
+        "2 cups mayonnaise, good quality",
+        "2 tablespoons minced garlic, minced",
+        "1 tablespoon roasted garlic pepper",
+        "1 tablespoon curry powder",
+        "1 tablespoon garam masala",
+        "2 tablespoons whole-grain mustard (recommended: Pommerey)",
+        "1 teaspoon hot sauce",
+        "2 teaspoons turmeric"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In mixing bowl add the ground lamb, minced garlic, Culhanes Spice Blend, oregano, red onion and mustard. Mix the ingredients together gently. Do not overwork the meat or it will become tough. Form the mixture into mini burgers, approximately 2 1/2 ounces each, and put on a pan lined with waxed paper or parchment paper. Refrigerate for 5 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Toast the buns in a large nonstick saute pan, griddle or cast iron pan over low heat. Remove the rolls to a platter. Add the oil to the pan, and when the oil is hot add the lamb burgers. The burgers must caramelize the fats, so do not flip or move them around in the pan. Let fry for about 3 to 5 minutes each side, depending on your desired doneness. "
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To assemble: Put the roll bottoms down first, then add a dollop of Curry Aioli. Top each roll with lettuce, tomato, lamb burger, shaved red onion. Add a dollop of Curry Aioli to the roll top and cover the burger. Secure the roll with a frill pick skewered with an olive on top!"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Combine the onion powder, garlic powder, granulated garlic, black pepper, white pepper, kosher salt, allspice, mustard, basil, red pepper flakes and marjoram in a small bowl."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the lemon juice to a blender or mixing bowl, then add all the remaining ingredients. Blend together until the mixture becomes light yellow and fully mixed. Pour into a bowl, then cover and refrigerate to firm up and allow the flavors develop, about 15 minutes. Serve with lamb burger sliders or any other sandwich!"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 8
+    },
+    "recipeYield": "8 servings",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michele B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "These were the best burgers! We stopped at Culhane's on Easter last year on our travels back to Chicago. It was such a great place to eat! I am going to make these sliders ASAP. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Culhane's P."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Lamb Sliders are Mary Jane's favorite and perfect with a cold pint of Harp Lager!   "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "die-do"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "whats missing in this recipe is the house seasoning... correct me if I am wrong, but I don't see it in the recipe."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "lhwalkerrn"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "OMG, about a year ago I had some ground lamb to use up, and being a food network junkie, found this recipe.  It was so good, that I have made it several times, the last time being last week.  When I saw it on DDD, I said, \"Hey, that's my lamb slider recipe!\".  Sooo cool to see something that I have cooked in action on TV, even though I know they did it first, and I just missed it!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lori M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My husband and I tried these Saturday, after seeing this episode of Diners, Drive-ins and Dives.  They were amazing.  I haven't tried to make them myself... yet!  Way to go Chef Olive and thanks Guy for finding amazing food, right in our \"backyard\"!! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Loved the curry aoili"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Beach4sure"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I eat these @ Culhanes all the time!!! Best thing ever, no matter what else I order I always order these! Fab!! Stoked to try recipe!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "annie r."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My husband and I had this lamb burger at the restuarant indicated.  We then saw the TV show w Guy, copied the recipe,made it AND believe it was identical to that we ate in the Chicago restaurant featured on Guy's show..  Thanks Guy.  Hope your employer continues to support your triple D show. "
+        }
+    ],
+    "recipeCategory": []
+}

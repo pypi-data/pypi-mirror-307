@@ -1,0 +1,134 @@
+{
+    "@type": "Recipe",
+    "name": "Mashed Potatoes",
+    "author": {
+        "@id": "https://www.budgetbytes.com/#/schema/person/bf6c329b6de4c75ae3a0de14a1f8c006"
+    },
+    "description": "Follow these easy steps to make the smoothest, fluffiest, cloud-like mashed potatoes you&#039;ve ever had! Plus ideas for more flavor add-ins.",
+    "datePublished": "2022-11-16T08:29:13+00:00",
+    "image": [
+        "https://www.budgetbytes.com/wp-content/uploads/2022/11/Mashed-Potatoes-side.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2022/11/Mashed-Potatoes-side-500x500.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2022/11/Mashed-Potatoes-side-500x375.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2022/11/Mashed-Potatoes-side-480x270.jpg"
+    ],
+    "recipeYield": [
+        "5",
+        "5 1 cup each"
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT10M",
+    "totalTime": "PT25M",
+    "recipeIngredient": [
+        "2.5 lbs. russet potatoes ($2.00)",
+        "1/2 tsp salt (to salt the boiling water) ($0.02)",
+        "4 Tbsp butter ($0.60)",
+        "1/2 cup whole milk ($0.17)",
+        "1/2 tsp salt (or to taste) ($0.02)",
+        "1/4 tsp pepper ($0.02)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Peel and dice the potatoes into 1-inch cubes. Place the diced potatoes in a colander and rinse well with cool water to remove the excess starch.",
+            "name": "Peel and dice the potatoes into 1-inch cubes. Place the diced potatoes in a colander and rinse well with cool water to remove the excess starch.",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place the rinsed potatoes in a pot and add fresh water until the potatoes are covered by one inch. Add ½ tsp salt to the water in the pot.",
+            "name": "Place the rinsed potatoes in a pot and add fresh water until the potatoes are covered by one inch. Add ½ tsp salt to the water in the pot.",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place a lid on the pot and bring the water up to a boil. Boil the potatoes for 6-7 minutes, or until they are very tender (a fork can pierce the potato effortlessly).",
+            "name": "Place a lid on the pot and bring the water up to a boil. Boil the potatoes for 6-7 minutes, or until they are very tender (a fork can pierce the potato effortlessly).",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Drain the potatoes in a colander and rinse again briefly with warm water.",
+            "name": "Drain the potatoes in a colander and rinse again briefly with warm water.",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "While the potatoes are draining, add the butter and milk to the pot used to boil the potatoes. Heat them over medium until the butter has melted.",
+            "name": "While the potatoes are draining, add the butter and milk to the pot used to boil the potatoes. Heat them over medium until the butter has melted.",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the drained potatoes back to the pot and mash with a potato masher.",
+            "name": "Add the drained potatoes back to the pot and mash with a potato masher.",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-5"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Season the potatoes with salt and pepper (I used ½ tsp salt and ¼ tsp pepper, but if you use unsalted butter you&#39;ll probably want more salt).",
+            "name": "Season the potatoes with salt and pepper (I used ½ tsp salt and ¼ tsp pepper, but if you use unsalted butter you&#39;ll probably want more salt).",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-6"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "For extra smooth and fluffy mashed potatoes, use a hand mixer to whip the potatoes until there are no lumps and they are light and cloud-like. Serve and enjoy!",
+            "name": "For extra smooth and fluffy mashed potatoes, use a hand mixer to whip the potatoes until there are no lumps and they are light and cloud-like. Serve and enjoy!",
+            "url": "https://www.budgetbytes.com/mashed-potatoes/#wprm-recipe-72828-step-0-7"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "2"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I'm on food stamps so your website is a blessing plus I am a horrible cook so once again you are a blessing.",
+            "author": {
+                "@type": "Person",
+                "name": "Erica C Dahlquist"
+            },
+            "datePublished": "2023-11-14"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "YUM! Used these potatoes with the Bratwurst and Sauerkraut recipe. Easy, simple, and tasty. Can’t go wrong.",
+            "author": {
+                "@type": "Person",
+                "name": "Jess Lahti"
+            },
+            "datePublished": "2023-09-27"
+        }
+    ],
+    "recipeCuisine": [
+        "American"
+    ],
+    "keywords": "Mashed Potatoes",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 cup",
+        "calories": "274 kcal",
+        "carbohydrateContent": "42 g",
+        "proteinContent": "6 g",
+        "fatContent": "10 g",
+        "sodiumContent": "441 mg",
+        "fiberContent": "3 g"
+    },
+    "@id": "https://www.budgetbytes.com/mashed-potatoes/#recipe",
+    "isPartOf": {
+        "@id": "https://www.budgetbytes.com/mashed-potatoes/#article"
+    },
+    "mainEntityOfPage": "https://www.budgetbytes.com/mashed-potatoes/",
+    "meal": "Dinner",
+    "cuisine": "American"
+}

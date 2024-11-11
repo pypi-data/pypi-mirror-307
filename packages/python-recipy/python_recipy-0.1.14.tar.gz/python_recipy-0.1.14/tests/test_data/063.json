@@ -1,0 +1,197 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Crispy Rice Salad with Cucumbers and Herbs",
+    "description": "Paper-thin veggies, a shower of herbs, a pile of fried crispy red curry rice, and a limey garlicky vinaigrette all over top. This crispy rice salad is all I want to eat right now!",
+    "author": {
+        "@type": "Person",
+        "name": "Lindsay Ostrom",
+        "url": "https://pinchofyum.com/about"
+    },
+    "keywords": "rice salad, crispy rice salad, crispy rice, salad recipe",
+    "image": [
+        "https://pinchofyum.com/wp-content/uploads/Crispy-Rice-Salad-1-Square-225x225.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Crispy-Rice-Salad-1-Square-260x195.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Crispy-Rice-Salad-1-Square-320x180.jpg",
+        "https://pinchofyum.com/wp-content/uploads/Crispy-Rice-Salad-1-Square.jpg"
+    ],
+    "url": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs",
+    "recipeIngredient": [
+        "a 1/2-inch knob of fresh ginger, or a spoonful of ginger paste (note 1)",
+        "1 clove garlic",
+        "1/4 cup fish sauce",
+        "1/4 cup + 2 tablespoons avocado oil, or another neutral oil",
+        "1/4 cup lime juice (3-4 small limes)",
+        "2 tablespoons brown sugar",
+        "1/2 tablespoon chili crisp (more for spicier)",
+        "2 cups cooked jasmine rice (note 2)",
+        "2 tablespoons avocado oil",
+        "2 teaspoons red curry paste",
+        "2 teaspoons cornstarch (optional)",
+        "half an English cucumber, thinly sliced (about 1 cup)",
+        "1 shallot, thinly sliced or minced (about 1/4 cup)",
+        "1 bunch cilantro, roughly chopped (about 1/2 cup)",
+        "1 bunch mint, roughly chopped or torn (about 1/4 cup)",
+        "1/2 cup chopped peanuts",
+        "chili crisp to taste"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Blitz everything up in a blender or food processor to make this SUPER yummy, punchy sauce.",
+            "name": "Dressing",
+            "url": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs#instruction-step-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Toss the rice in a bowl with the oil and curry paste. If it&#8217;s not sticking together when you squeeze it, add the cornstarch and get your hands wet to mix it again (this happens if the rice is pre-cooked or several days old). Squeeze it into loose, squishy chunks and transfer to the air fryer in a single layer. Air fry at 400 for 7-9 minutes, until golden and crisped. (See Note 3 for alternative methods &#8211; I find the air fryer to be fastest and most convenient!)",
+            "name": "Crispy Rice",
+            "url": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs#instruction-step-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Break the crispy rice apart into little golden, delightful chunks. Toss with about half of the dressing and however many veggies you want. Garnish it with some peanuts and chili crisp if you want. I mean, honestly. Wow. This is so good.",
+            "name": "You're Done! Yum! ",
+            "url": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs#instruction-step-3"
+        }
+    ],
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "totalTime": "PT30M",
+    "recipeYield": [
+        "2",
+        "2 generous salad servings (but extra dressing to make it again)"
+    ],
+    "recipeCategory": [],
+    "cookingMethod": "Air Fryer",
+    "recipeCuisine": "Laoatian-Inspired",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "24",
+        "ratingValue": "4.9"
+    },
+    "nutrition": {
+        "servingSize": null,
+        "calories": "451 calories",
+        "sugarContent": "7.2 g",
+        "sodiumContent": "1492.6 mg",
+        "fatContent": "30.3 g",
+        "saturatedFatContent": "3.6 g",
+        "transFatContent": "0 g",
+        "carbohydrateContent": "39 g",
+        "fiberContent": "2.4 g",
+        "proteinContent": "8.4 g",
+        "cholesterolContent": "0 mg",
+        "@type": "nutritionInformation"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Crispy Rice Salad with Cucumbers and Herbs",
+        "description": "Paper-thin veggies, a shower of herbs, a pile of fried crispy red curry rice, and a limey garlicky vinaigrette all over top. This crispy rice salad is all I want to eat right now!",
+        "contentUrl": "https://content.jwplatform.com/videos/EeeNw3UE.mp4",
+        "thumbnailUrl": [
+            "https://content.jwplatform.com/thumbs/EeeNw3UE-720.jpg"
+        ],
+        "uploadDate": "2024-04-23T15:07:16+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Danyel"
+            },
+            "datePublished": "2024-04-28",
+            "reviewBody": "This was one of the most delicious things I’ve made in a long time! I love outside of the box salads that aren’t lettuce based. I made a couple slight changes to use what I had - sriracha instead of chili crisp, added some fresh sprouts because I love them. Wonderful!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Liz T"
+            },
+            "datePublished": "2024-04-24",
+            "reviewBody": "This was insanely delicious. Full of flavor, texture, color. The crunchy cool cucumbers complement the red curry spice perfectly. Hubs and I LOVE rice already, so had to try this dish and it was a hit!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Linda"
+            },
+            "datePublished": "2024-04-24",
+            "reviewBody": "This Crispy Rice Salad is delicious and will be made again and again! It's easy, it's do-ahead-able and so tasty!!\r\nI find so many times that Pinch of Yum has just what I need to make for dinner, thanks from my family and me!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Gretchen"
+            },
+            "datePublished": "2024-04-27",
+            "reviewBody": "I’m vegan and replaced the fish sauce with coconut aminos. I thought soy sauce would be too salty. The coconut aminos worked perfectly. The salad was amazing. I can’t wait to have it again for lunch today! Thanks for another delicious recipe."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Talha toaster"
+            },
+            "datePublished": "2024-04-28",
+            "reviewBody": "Can I try it with red rice?"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Leah Davies"
+            },
+            "datePublished": "2024-04-28",
+            "reviewBody": "Whoa. This is a stellar, hearty salad that I’m now putting in my rotation. I made my bowl with brown rice and it didn’t “clump” as well I’m sure jasmine rice would have but it was still delicious and crispy. I had a fennel bulb which I sliced thin and roasted in gochujang butter and added it to the salad along with crispy baby lettuce. The dressing is absolutely bananas. Fish sauce in abundance can put me off so I made mine with just one Tbs. It was perfect for me. Thanks for a creative and delicious salad!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Anjali"
+            },
+            "datePublished": "2024-04-28",
+            "reviewBody": "I made this recipe with brown rice and added sliced radishes and pan-seared tofu. Delicious!"
+        }
+    ],
+    "datePublished": "2024-04-23",
+    "@id": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs#recipe",
+    "isPartOf": {
+        "@id": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs#article"
+    },
+    "mainEntityOfPage": "https://pinchofyum.com/crispy-rice-salad-with-cucumbers-and-herbs"
+}

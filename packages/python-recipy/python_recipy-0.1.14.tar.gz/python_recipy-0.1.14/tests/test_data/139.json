@@ -1,0 +1,183 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Panang Curry พะแนงหมู",
+    "description": "",
+    "author": {
+        "@type": "Person",
+        "name": "Pailin Chongchitnant",
+        "url": "https://hot-thai-kitchen.com/about/"
+    },
+    "image": [
+        "https://hot-thai-kitchen.com/wp-content/uploads/2014/08/Panang-Curry-Tiny-225x225.png",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2014/08/Panang-Curry-Tiny-260x195.png",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2014/08/Panang-Curry-Tiny-320x180.png",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2014/08/Panang-Curry-Tiny.png"
+    ],
+    "url": "https://hot-thai-kitchen.com/panang-curry/",
+    "recipeIngredient": [
+        "3-4 Tbsp panang curry paste, store bought or homemade (see note)",
+        "1 1/2 tsp sugar",
+        "1-2 tsp fish sauce",
+        "¾ cup coconut milk",
+        "8 oz (230g) thinly sliced pork tenderloin or another protein of your choice",
+        "3 kaffir lime leaves, torn into chunks",
+        "2 kaffir lime leaves, very thinly sliced for garnish",
+        "2 Tbsp coconut milk for garnish (optional, see note)",
+        "Spur chilies or other types of mild red chilies, sliced into rounds for garnish"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Sauté the curry paste in some vegetable oil until aromatic, 2-3 minutes, and deglaze with 1/4 cup of the coconut milk. Note: Traditionally, we sauté the curry paste in rendered coconut oil. See more information about this method in Green Curry videos.",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the 3 torn kaffir lime leaves and let the mixture cook, stirring constantly, until the coconut milk dries up again.",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Once the coconut milk has dried up, add pork to the pan and toss to coat thoroughly in the curry paste.",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add remaining 1/2 cup of coconut milk, fish sauce, sugar, and cook until the pork is done.",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-4"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "When the pork is done, remove from heat immediately.",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-5"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To serve: pour the curry on to a deep plate or a shallow bowl, spoon the 2 Tbsp of coconut milk over the top for garnish if desired. Top with thinly sliced kaffir lime leaves and spur chili slices. Serve with hot jasmine rice!",
+            "url": "https://hot-thai-kitchen.com/panang-curry/#instruction-step-6"
+        }
+    ],
+    "recipeYield": [
+        "2",
+        "2 servings"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "reviewCount": "7",
+        "ratingValue": "5"
+    },
+    "video": {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Panang Curry Recipe  พะแนงหมู - Hot Thai Kitchen",
+        "description": "One of the most popular Thai curries is also the quickest to make! Authentic panang curry made with pork. You can use store-bought paste or follow the reciep for a homemade version. Gluten free and dairy free.",
+        "duration": "PT9M22S",
+        "embedUrl": "https://video.mediavine.com/videos/ijYLbcrUT.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1681224652/ijYLbcrUT.mp4",
+        "thumbnailUrl": [
+            "https://mediavine-res.cloudinary.com/image/upload/s--bcYSONnN--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1681224658/rp1oezrul0khxip1e5z3.jpg"
+        ],
+        "uploadDate": "2020-12-11T05:41:00+00:00"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Dan"
+            },
+            "datePublished": "2020-12-07",
+            "reviewBody": "Made it with Lobo brand panang curry paste and pork tenderloin. Excellent. Pleased to find that the pork, despite being lean, came out nice and tender. I only found frozen kaffir lime leaves, but they definitely added a nice flavor."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Michael"
+            },
+            "datePublished": "2020-12-08",
+            "reviewBody": "Panang curry(gai) has a fresh lemon taste.\r\nI make it with chicken(gai)\r\nEven when cooking it smells wonderful!\r\nA bit spicy but yummy."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Pey-Lih"
+            },
+            "datePublished": "2021-01-09",
+            "reviewBody": "I made this recipe using kabocha squash with Chinese spinach, thinly sliced carrots, baby corn, and sugar peas. The kaffir lime made it more fragrant.  Wonderful over jasmine rice or even buckwheat noodles.  The starch from the squash thickened up the curry nicely.  Thank you for this recipe!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Brendon"
+            },
+            "datePublished": "2023-02-19",
+            "reviewBody": "Delish!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Nunoub"
+            },
+            "datePublished": "2023-07-21",
+            "reviewBody": "I made this using Mae Ploy Panang curry sauce. I only used about 2-3 tablespoons.  I could not find Kafir leaves. I also added in some sliced bell pepper and green beans. It turned out wonderfully. Thank you."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lisa"
+            },
+            "datePublished": "2024-02-27",
+            "reviewBody": "I made this recipe with chicken and it was amazing!!  Tasted just like we remember from Thailand 😋"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Olivier"
+            },
+            "datePublished": "2024-04-05",
+            "reviewBody": "I never tried it because I thought it was a complicated dish, with all the spices. In fact it is dumb easy and fast: buy the panaeng paste at the market, coconut milk and makrut leaves. And that's it.\r\n\r\nI did not try to prepare the panaeng paste myself, I trust that vendor where I buy my various curry pastes.\r\n\r\nThank you."
+        }
+    ],
+    "datePublished": "2013-10-25",
+    "@id": "https://hot-thai-kitchen.com/panang-curry/#recipe",
+    "isPartOf": {
+        "@id": "https://hot-thai-kitchen.com/panang-curry/#article"
+    },
+    "mainEntityOfPage": "https://hot-thai-kitchen.com/panang-curry/",
+    "recipeCategory": []
+}

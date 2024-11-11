@@ -1,0 +1,103 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "@id": "https://www.marionskitchen.com/hunan-lamb-skewers/#recipe",
+    "url": "https://www.marionskitchen.com/?p=81549",
+    "name": "Hunan Lamb skewers",
+    "description": "These Hunan lamb skewers are inspired by the flavours found in food from the area of Hunan in China. They’re deliciously tender and juicy on the inside but have a crusty exterior that makes your mouth water at the mere mention of them. And that chilli salt sprinkle? The finishing touch you never knew you needed.",
+    "prepTime": "PT1H",
+    "cookTime": "PT25M",
+    "totalTime": "",
+    "keywords": "Lamb, Appetisers, Lunch, Barbecue, Grill, Dinner party, Easter, Party food, Picnic, How-to, Eat with your hands, Chinese cuisine",
+    "recipeYield": "Makes about 12",
+    "recipeCategory": [],
+    "recipeCuisine": "Chinese",
+    "recipeIngredient": [
+        "2 tsp cumin seeds",
+        "800g (1 lb 12 oz) lamb shoulder",
+        "1 tsp sesame oil",
+        "thinly sliced spring onion (scallions), to serve",
+        "fresh coriander (cilantro) leaves, to serve",
+        "Marinade:",
+        "2 tbsp soy sauce",
+        "1 tbsp Chinese Shaoxing wine",
+        "1 tbsp hoisin",
+        "1 tsp dark soy sauce",
+        "Chilli salt:",
+        "1 tsp chilli powder or flakes",
+        "2 tsp sea salt"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "1.Soak 12 bamboo skewers in some room temperature water for at least 20 minutes – this will prevent them from burning on the barbecue grill later. To make slicing easier, pop your lamb shoulder in the freezer for an hour so that it’s semi-frozen*."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "2.Toast the cumin seeds in a small frying pan over high heat for about a minute or until aromatic. Use a mortar and pestle to lightly crush the toasted cumin seeds. Transfer half the ground cumin to a large bowl (reserve the remainder for later), then add the soy sauce, Shaoxing wine,  hoisin and dark soy sauce. Give everything a good mix to combine."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "3.For the chilli salt sprinkle, mix the reserved crushed cumin seeds with the sea salt and chilli. Set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "4.Take your lamb shoulder out of the fridge/freezer. Slice it into 1cm-thick (⅜”) slices. Once done, cut those slices into small bite-size pieces and transfer them into the bowl with your marinade. Using your hands, mix the meat and marinade together until each piece is coated."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "5.Thread the lamb onto skewers and place on a tray. Cover the tray with cling film and transfer to the fridge to marinate for at least 15 minutes (but overnight would be even better if you can)*."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "6.Preheat a large frying pan, chargrill or barbecue plate on high. Remove the lamb from the marinade and cook for a minute each side or until a lovely crust forms. Baste with any excess marinade. Then turn the heat to low and cook, turning often, for another 3-4 minutes (for medium) or until cooked to your liking. Transfer to a plate and sprinkle generously with the cumin salt mixture. Rest for 2-3 minutes. Then place the cutlets onto a serving plate. Drizzle with sesame oil and sprinkle with the spring onion and coriander."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Notes: - This recipe was made using the Panasonic Prime+ Premium 3-door refrigerator NR-CW530."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "- We used the Prime Fresh drawer to keep the lamb shoulder in a soft-frozen state."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "- For the marinating, we used the Quick Cool function in the Prime Freeze drawer to marinate the meat faster (this took just 15 minutes instead of overnight)."
+        }
+    ],
+    "datePublished": "2023-02-13T00:00:00Z",
+    "dateModified": "2023-02-13T00:00:00Z",
+    "mainEntity": {
+        "@type": "WebPage",
+        "@id": "https://www.marionskitchen.com/?p=81549",
+        "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "",
+                "width": "",
+                "height": ""
+            },
+            "name": "Bring the Best Flavours of Asia to Home Kitchens"
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marionskitchen.com/wp-content/uploads/2023/02/Hunan-Lamb-skewers-01.jpg",
+        "height": "600",
+        "width": "750"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bee",
+        "description": "",
+        "url": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.marionskitchen.com/wp-content/uploads/2023/02/Hunan-Lamb-skewers-01.jpg",
+            "height": "750",
+            "width": "600"
+        }
+    },
+    "review": []
+}

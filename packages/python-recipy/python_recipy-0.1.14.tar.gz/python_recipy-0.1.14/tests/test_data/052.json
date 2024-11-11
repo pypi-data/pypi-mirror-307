@@ -1,0 +1,112 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Pork Butt Dry Rub",
+    "datePublished": "2018-09-17T15:58:00.000-04:00",
+    "dateModified": "2023-07-20T19:07:48.685-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Southern Living Test Kitchen",
+            "url": "https://www.southernliving.com/author/the-sl-test-kitchen"
+        }
+    ],
+    "description": "Make this spiced pork butt rub from Chris Lilly of Big Bob Gibson&#39;s Bar-B-Q your go-to seasoning for all your barbecued pork. Triple the recipe, and keep it stored for all your summer grilling and smoking needs.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/-PXbDOAR7Dj6D2E8jEuucFvW564=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pork-butt-dry-rub-sl-x-1a769e82ed1d4279bf9b001f7d2d46a3.jpg",
+        "height": 420,
+        "width": 420
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "Pork Butt Dry Rub",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "keywords": "pork butt rub, pork butt seasoning",
+    "prepTime": "PT10M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Southern"
+    ],
+    "recipeIngredient": [
+        "4 teaspoons seasoned salt",
+        "2 teaspoons dark brown sugar",
+        "1 1/2 teaspoons granulated sugar",
+        "1 1/2 teaspoons paprika",
+        "1/4 teaspoon garlic powder",
+        "1/4 teaspoon pepper",
+        "1/8 teaspoon dry mustard",
+        "1/8 teaspoon ground cumin",
+        "1/16 teaspoon ground ginger"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Combine ingredients: Stir together all ingredients. Store in an airtight container up to 1 month."
+        }
+    ],
+    "totalTime": "PT10M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/recipes/pork-butt-dry-rub",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/seasonings",
+                        "name": "Seasonings"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/seasonings/spices",
+                        "name": "Spices"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes/pork-butt-dry-rub",
+                        "name": "Pork Butt Dry Rub"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,337 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Best-Ever Cheese Soufflé",
+    "datePublished": "2013-12-06T18:11:50.000-05:00",
+    "dateModified": "2023-04-24T00:33:52.296-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alexandra Guarnaschelli",
+            "url": "https://www.foodandwine.com/author/alexandra-guarnaschelli"
+        }
+    ],
+    "description": "This recipe from chef Alex Guarnaschelli shows you how to make a cheese soufflé that&#39;s light and airy with a little sharp complexity from Dijon and dry mustard.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.foodandwine.com/thmb/e6N6dXjyweAfzGdkjR7bDr2hfAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-010-ee10eb8f230e48bca65c8fdf7cc33285.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://content.jwplatform.com/videos/432ncPr1-eFraYBD7.mp4",
+        "description": "Diners—and the chefs who feed them—are embracing retro dishes. At New York City's The Darby, Alexandra Guarnaschelli perused old supper-club menus for inspiration and came away with ideas for dishes like this cheese soufflé and a chilled tomato soup that are classics that never go out of style. The light and airy soufflé in this video boasts both Parmigiano-Reggiano and Gruyère cheeses, and gets a little sharp complexity from Dijon mustard and dry mustard. Pair it with a vinaigrette-dressed salad and a baguette for an elegant lunch.",
+        "duration": "PT2M20S",
+        "name": "Best Ever Cheese Soufflé Recipe",
+        "thumbnailUrl": "https://cdn.jwplayer.com/v2/media/432ncPr1/poster.jpg?width=720",
+        "uploadDate": "2022-09-10T20:27:16.260-04:00"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Best-Ever Cheese Soufflé",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "2150"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "French"
+    ],
+    "recipeIngredient": [
+        "3 tablespoons unsalted butter, plus more to grease dish",
+        "1/4 cup plus 2 tablespoons freshly grated Parmigiano-Reggiano cheese, divided",
+        "3 tablespoons all-purpose flour",
+        "1 1/4 cups heavy cream",
+        "4 large eggs, separated, plus 3 large egg whites",
+        "3 tablespoons dry sherry",
+        "6 ounces Gruyère cheese, shredded (2 packed cups)",
+        "2 tablespoons sour cream",
+        "1 1/4 teaspoons kosher salt",
+        "1 teaspoon Dijon mustard",
+        "1/2 teaspoon dry mustard",
+        "1/4 teaspoon cayenne pepper",
+        "1/4 teaspoon cream of tartar"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/Rb0Mx_H9L5JfAXiP7wQnv5P1TJQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-01-ccf2dca074384d9fab50327d04051c6c.jpg"
+                }
+            ],
+            "text": "Gather ingredients."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/Waf6Fj_XhR0hSGN0CKMT-ydOOHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-02-d04f7a50fc04484f9dd5dd52435985a3.jpg"
+                }
+            ],
+            "text": "Preheat the oven to 375°F. Butter a 1 1/2-quart soufflé dish and coat it with 2 tablespoons of the Parmigiano-Reggiano."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/tORiGOkFadSSbGLK-6yR-zQyQfk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-03-8dca2d0923144943b7c65899cc1a1908.jpg"
+                }
+            ],
+            "text": "In a medium saucepan over medium-high heat, melt butter. Stir in flour to make a paste."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/L3k0q0TlO2EDxf1A1LUlfJFDkRw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-04-bb8bed20bfcd49d181f1cb9893baf058.jpg"
+                }
+            ],
+            "text": "Gradually whisk in cream and bring mixture to a boil over moderate heat, whisking constantly."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/vXLX6DVBmpwcjSZmX2ZbjVnjvhk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-05-49b5cf11d92f4f1db38e69fc3db3539a.jpg"
+                }
+            ],
+            "text": "Reduce the heat to low and cook, whisking, until very thick, 3 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/eX_Y7i-ASn8xT39rLooYk1E2vXc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-06-b62095fc8c344b8994573d2fac9b64d1.jpg"
+                }
+            ],
+            "text": "Transfer base to a large bowl; let cool. Stir in egg yolks, sherry, Gruyère, sour cream, salt, Dijon mustard, dry mustard, cayenne, and the remaining 1/4 cup of Parmigiano-Reggiano."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/3DwUZWzy56JYlNrOMa0sYFvDJpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-07-006f86d616b14b65a234c2e63c0d3e24.jpg"
+                }
+            ],
+            "text": "Put egg whites in a large stainless steel bowl. Add cream of tartar. Using an electric mixer, beat egg whites until firm peaks form."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/soQb16JQCif-mzKuYKL2Ma6yb1Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-08-659694b01b8a4d4a94c7f9928b45c819.jpg"
+                }
+            ],
+            "text": "Fold one-third of the whites into the soufflé base to lighten it, then fold in remaining whites until no streaks remain."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/zoHMqbptecnOPfCS9_fop_W8o84=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-09-bb5a6be896cb45928b573bbe7b30cb92.jpg"
+                }
+            ],
+            "text": "Scrape mixture into prepared dish. Run your thumb or a towel around the inside rim of the dish to wipe away any crumbs."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.foodandwine.com/thmb/e6N6dXjyweAfzGdkjR7bDr2hfAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-best-ever-cheese-souffle-step-010-ee10eb8f230e48bca65c8fdf7cc33285.jpg"
+                }
+            ],
+            "text": "Bake for about 35 minutes, until soufflé is golden brown and puffed. Serve right away."
+        }
+    ],
+    "totalTime": "PT60M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "3"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "BakerJo"
+            },
+            "reviewBody": "I met this chef when I was selling bread in Manhattan, she was very pleasant. This recipe has nice flavors but it wasn’t a perfect. I used the correct cooking vessel size and measured the ingredients perfectly. After 35 minutes of cooking it was not cooked all the way through. I did give it a shake and it appeared cooked. However, when I went to serve, it was still raw in the middle! Yikes, back in the oven which didn’t ruin it. I am a classically French trained cook so this wasn’t my first attempt at a soufflé. I will have to tweak this recipe a bit in order for it to come out correctly.",
+            "datePublished": "2024-01-21T17:29:16.514Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "soso good, my soufflé rose so nicely, i served it with scallions and some grated parmesan for my parents and they loved it! the sherry and cayenne pepper really came through and it was perfect",
+            "datePublished": "2023-12-26T01:36:29.458Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Good recipe. Used all 7 yolks and comte cheese and doubled the cheese. Used 1 1/2 quart souffle dish to cook it in. Top got very brown before fully cooked so I turned oven down to 325° F and covered top with foil. All total took 80 minutes to cook but was good flavor and light and fluffy. No problems with salt level or greasy result even with double the cheese. Recipe worked well for me. Good Luck",
+            "datePublished": "2023-11-21T18:01:27.898Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "1"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "I am French. This is not a cheese soufflé, this is an oily, salty mess. You should be guillotined.",
+            "datePublished": "2023-11-20T18:31:13.439Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "CraigRanch"
+            },
+            "reviewBody": "WOWEEE! I did FOUR 10-ounce ramekins at 375° for 28 minutes. Next time I will start the oven at 425° (to get a bit of a crust) and then switch to 375°. I used 3 oz. Gruyère and 3 oz Comté (measured on a kitchen scale). I worried when I took the roux off the stove after three minutes, because the mixture started to \"break\" (separate). BUT once I whisked the yolks in, it came back together .I used all FOUR egg whites (not three), and added a pinch of nutmeg. THEY Were DELICIOUS!!!",
+            "datePublished": "2023-11-04T00:46:01.439Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "It seems as though many people are beginner cooks so here are the problems: The recipe is confusing for some people since it uses American volume measurements then says 6 ounces of cheese. That is 6 ounces in weight, not volume. The two cups by volume is correct and the soufflé shouldn’t be “oily” if the recipe is made correctly. A better recipe might say 2 cups of cheese, keeping the measurements consistent then adding a volume weight after it, for those who want precision. Perhaps some people are using table salt or making errors in measurement. This recipe has approximately 300 grams of sodium using averages for the cheeses and Kosher salt. This is as “salty” as a plain, unseasoned bagel. I doubt the commenters who found this too salty also think a plain bagel is too salty to be edible, considering millions are sold in America and are even eaten with saltier food (like lox!). So the error is in the cook, not a few people who have hypersensitivity to salt. Lastly, sherry doesn’t have any sodium. Some cheap cooking wines do, since salt is used as a preservative. Solution: don’t buy wine with added salt. So the problems seem to be people who confuse weight for volume, table salt for Kosher salt, and salted cooking wine for sherry; or are just experienced and not following directions accurately. These seem to be a minority of F&amp;W readers since the recipe still has thousands of 5 star ratings.",
+            "datePublished": "2023-08-27T23:32:48.745Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Perfect! Beautiful and delicious.",
+            "datePublished": "2023-07-31T01:27:21.713Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "2"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "Recipe ERROR...says \"6 oz of Guyere (two packed cups)\" 6oz is = 3/4 cup...YIKES result....puddle of melted cheese in the middle...very salty!",
+            "datePublished": "2023-04-10T01:03:54.518Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "3"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Food & Wine Member"
+            },
+            "reviewBody": "The taste was very good but the directions needed some extra tips. For example it would have helped to know the soufflé dish size. I think my soufflé was undercooked but it could have been the size of my dish which didn’t allow the center to get hot enough. I followed the recipe exactly except only using a dash of salt after reading what others mentioned in the reviews.",
+            "datePublished": "2023-04-06T00:31:40.802Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/best-ever-cheese-souffle",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/breakfast-brunch",
+                        "name": "Breakfast & Brunch"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/breakfast-brunch/eggs",
+                        "name": "Egg Dishes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/best-ever-cheese-souffle",
+                        "name": "Best-Ever Cheese Soufflé"
+                    }
+                }
+            ]
+        }
+    }
+}

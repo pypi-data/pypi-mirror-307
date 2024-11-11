@@ -1,0 +1,1119 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Traditional Roast Turkey",
+    "url": "https://www.foodnetwork.com/recipes/alton-brown/traditional-roast-turkey-recipe-2010390",
+    "headline": "Traditional Roast Turkey",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alton Brown",
+            "url": "https://www.foodnetwork.com/profiles/talent/alton-brown"
+        }
+    ],
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/7/0/0170831_Alton-Roast-Turkey_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1382540635076.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/7/0/0170831_Alton-Roast-Turkey_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1382540635076.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/7/0/0170831_Alton-Roast-Turkey_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1382540635076.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2015-06-06T10:17:50.379-04:00",
+    "dateModified": "2014-01-28T12:49:34.995-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Thanksgiving Turkey,Poultry,Thanksgiving,Turkey Recipes,Roasted Turkey,Roasting,Main Dish",
+    "cookTime": "P0Y0M0DT2H30M0.000S",
+    "prepTime": "P0Y0M0DT0H15M0.000S",
+    "totalTime": "P0Y0M0DT3H15M0.000S",
+    "recipeIngredient": [
+        "One 14 to 16-pound frozen natural, young turkey",
+        "1 gallon vegetable broth, homemade or canned",
+        "1 cup kosher salt",
+        "1/2 cup packed brown sugar, light or dark",
+        "1 tablespoon whole black peppercorns",
+        "1 1/2 teaspoons allspice berries",
+        "1 1/2 tablespoons candied ginger, chopped",
+        "1 gallon water, iced",
+        "Ice",
+        "Canola oil, for roasting"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Two to three days before roasting: Begin thawing the turkey in the refrigerator or in a cooler kept at 38 degrees F."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Combine the broth, salt, sugar, peppercorns, allspice and ginger in a large stockpot and bring to a boil over medium-high heat. Stir until the salt and sugar dissolve. Remove from the heat. Cool to room temperature and refrigerate the brine."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "The night before you'd like to eat: Truss the legs of the turkey with kitchen twine if desired. Combine the brine, water and ice in a 5-gallon bucket. Place the thawed turkey, with innards removed, breast-side down in the brine. If necessary, weigh down the bird to ensure it is fully immersed, cover and refrigerate or place everything in a cooler. Turn the bird once halfway through brining."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Day of roasting: Heat the oven to 500 degrees F. Remove the bird from the brine and rinse inside and out with cold water. Discard the brine."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place the bird on a roasting rack inside a half sheet pan and pat dry with paper towels. Rub the bird with canola oil. Roast the bird on the lowest rack of the oven for 30 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "While the bird is cooking, fold and shape a double thickness of aluminum foil into a closely fitting breastplate."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "After 30 minutes, decrease the oven temperature to 350 degrees F, insert a probe thermometer into the thickest part of the breast and cook until the temperature reaches 155 degrees F. Use the breastplate at any point during cooking should the bird become too brown."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Rest the bird, covered lightly with aluminum foil, for 15 to 30 minutes. Carve and serve."
+        }
+    ],
+    "recipeYield": "10 to 12 servings",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Richard Davis"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy and simply the best. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mary Brockman Finney"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best turkey recipe out there!! Been using it for years! Turkey always comes out perfectly!! Thanks Alton Brown!!❤️🦃"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have a 8 pounds turkey, should I cut all ingredients in half,  my son usually do it with a big bird, but only have a small gathering this year, we love the recipes, the turkey always juicy.   Thank you in advance "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I had a 20 lb turkey so I used a thermometer and cook it a little longer. Best turkey I have ever made!! Thanks for the “ keeper” recipe! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I first found this recipe while living in upstate NY probably in the 90s? <br />It has been with me through several moves. NH, back to NY, VA and PA. It makes the most reliably tasty, tender turkey. Thank you, Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Julia Aldrich"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is the best and most entertaining recipe ever! It’s the only one I use year after year!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "nealducluu"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I’ve just made the turkey and i used 3 thermometers that reached 155-163. but it has only taken 30min at 500 and 1:45 min at 350. is this okay? i poked the thigh with a meter and it went to 180. but i poked another one into the breast and it hit the bone but came back around 147. should i cook it longer?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "J M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Thank you Alton Brown. You’d be proud of me! Except I opened the oven many times because I could not believe how pretty it was. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KatMileCreek"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Thank you Alton!  This was my 4th year hosting Thanksgiving for my family and I gave this recipe a try and the turkey (I bought a 19-pounder) could not have been more perfect.  The first half hour with the oven at 500 was a bit scary but Alton was right, stay calm and open windows, or in my case, doors, too!  As my husband reassured me \"it's not the turkey, it's our oven.\"  Guess it could use a cleaning.  Anyways, back to the turkey!  After that first half hour, the turkey already had such beautiful look to it and I did not need the tin foil breastplate.  The use of the probe thermometer was beneficial; I did not have to open the oven door, just occasionally checked on the turkey through the glass.  It did reach 155 in the 2 and a half hours and so next year I will start the turkey a little later.  Brining ahead of time definitely made a difference as well.<div><br /></div><div>I wish I could upload pictures to the review!  I couldn't be happier; they're all still talking about the turkey!  Stick with Alton.</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Susan from NC"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We followed the recipe to the letter. Took the bird out when thermometer said 155 in breast and the dark meat was almost raw. We rested it for over an hour. How are so many other reviews saying their turkey was perfect? Next time I’m putting the thermometer in the thigh. Half my turkey was inedible. First time I’ve ever cooked a bad turkey. So disappointed "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I discovered this recipe over 10 years ago and my family has not let anyone else bring the turkey since plus I've been told I must cook it the exact same way every year! The skin is so crispy and the meat is so incredibly moist!<br />The only change I've made is to add some thyme to the brine. That's it. Otherwise, I make it just like the recipe states. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This recipe is amazing. I also melted butter with garlic, fresh thyme, pepper and Adobe seasoning and rubbed it under the skin. This will be my go to Turkey recipe from now on!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Julie R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Anonymous...I just removed a shelf in the fridge. We made this last year...it was to die for! It also made the best gravy from the juice drippings I’ve ever tasted. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "sweet_crush"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Does everyone stuff it with apple and cinnamon?  What flavor does that give the turkey?   I keep reading comments about the brining but wondering if anyone else uses the tradition lemon and herbs to put inside turkey. And or what flavor does that give? Please help!  Thanks"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Awesome! Will make this again on Thanksgiving! <br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Patty C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "FANTASTIC!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "aron b."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Used this recipe for my first turkey. It was a hit! Juicy turkey with great flavor. Brined the 20 lb bird for 15 hours. wOw, looks like I'm making a turkey from now on, thumbs up!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Honey R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love this recipe will never make a turkey any other way, brineing it is the only way to go "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Joni A."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I followed the directions exactly and took the bird out when it reached 161.  To my dismay, the joints at the thighs and even wings were not just pink, but almost red and the juices were still pink.  i rested the bird , covered, 45 minutes.  I carved the breast which was done but had to return the rest to the oven.   What happended?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kathlyn S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "A Thanksgiving tradition and a family favorite!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "nje1953"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have made this recipe every year for about a decade.  Would not change a thing!  So simple but good.  You cannot go wrong."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "typool"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I started making this turkey about 5 years ago.  I will never make another.  This is the best darn bird and occasionally throughout the year I crave it.  We even made it on the grill one year when the stove went out the day before Thanksgiving and it was our best one yet!<div><br /></div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "rootwo24"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wanna try this so bad.  But I am using a counter top roaster and a 12lb turkey.  Can I still do this recipe? "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "rosa d."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is hands down the best brine recipe.  I use it every year and it has never failed me.  My turkey is always delicious! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michael R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfect every time. Please bring back Good Eats. Even for if a yearly special. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Brian P."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Came out very moist with a perfectly browned skin. Everyone at the table was pleased with it. Definitely something I am using for future birds."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "David P."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I used this for Thanksgiving and it came out great.  Can you use this same recipe for just a turkey breast?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mary W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have made many turkeys over the years,  most have been a disappointment, not this one.  My husband, who is not a turkey fan, said it was the best turkey ever.  Our guests all had seconds.  Very moist and tender. I've tried brines, wet and dry, herb butters, you name it.  Nothing turned out as well as this."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mindy M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This was the best turkey I ever had!! Perfectly juicy, crispy skin, beautiful coloring it was great!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "blaszr73"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We followed the instructions and our 20 lbs turkey came out of the over looking beautiful and it was definitely the star of the show at the table. Everyone loved it so much that there's not much left for left-overs."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Always turns out great"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Paul W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Kind of a Fail!  12 minutes of 500 degrees and my skin was burning on the bird!  The brine is definitely one of the best ever though and is VERY important for a good bird."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Evelyn C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfect!!!!!<div>I have made this recipe for four years and my family always enjoy it. And, funny thing I am not from USA and I did not celebrate Thanksgiving and I never cook a Roasted Turkey before but I love Alton Brown's show and I followed this recipe and everything turns out perfect.</div><div>Thank you Alton and happy thanksgiving to everyone.</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Erica E."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Hey everyone! <div>I have a 20 lb turkey. How long will it take to cook if I use this recipe?</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have made this recipe several times and love it. Definitely the best turkey I've had, pretty much every time.<div><br /></div><div>I'm just wondering: is there any reason not to brine for longer than 24h? E.g. if I'm cooking in two days but will be busy all day tomorrow - would save time to put in brine tonight and cook in two days...</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Felicia Kata-Munno"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This makes the juiciest and tasty turkey!! You cannot go wrong with this method, it’s flawless!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Rita W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I use this brine EVERY thanksgiving and folks always comment that my turkey is flavorful and juicy! I am fascinated by the science of brining. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "barbie1231"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I’ve made this many times using 23-24 pound turkeys. The flavor and moisture of the bird is top notch! Last year though, the thighs did not cook all the way through. I’m not sure why but definitely probe the thighs to check for doneness before taking it out of the oven!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jessica G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Is the ice required if I am soaking it in the fridge for 24 hours? I made this a few years ago in an ice chest and it was awesome. But I am only doing the breast of a turkey this year and dont have ice..."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Henry K."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I use this recipe every year and am always told its the best juiciest turkey ever!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "DebRoberti"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is the best brining recipe on the net.   I use the salt and sugar and Arizona Jalapeno Seasoning in mine.   You can change the spices but the procedure is perfect for a moist and delicious turkey.   "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Shana B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I cooked a turkey for the first time ever...seriously, never even cooked a whole chicken...two years ago with this recipe and this will be the third year. My friends only want it cooked this way now. This year I'm using this recipe twice, Thanksgiving and friendsgiving."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I’ve been using this recipe for 5 years for our oven bird at Thanksgiving.  The turkey always comes out amazing and with great flavor!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Phil L."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've followed this almost exactly for more than ten years and the result is always moist and full of flavor. A while back I chucked the 5-gallon bucket and used an impeccably-washed, rinsed and sanitized plastic ice chest instead. Every other step is the same. The ice doesn't melt as quickly as in the pail, especially since I put the ice chest on the deck just outside my kitchen door overnight (no wild Oregon critters have ever disturbed it). Much easier to deal with than the bucket.<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jose L."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "What adjustments should I make for a larger turkey? Looking to have a 20-25 pound turkey. Specifically to the first 30 minutes of 500 F time and the brine.<div><br /></div><div>I did this last year and it was a perfect bird. Now I have been tasked with repeating for a larger group of people.</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Keithragan"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "<div>I have used a ton of recipes. This is my favorite. Soon I'll start adjusting it, but for right now it still feels like magic to put this beautiful flavorful bird on the table so quickly. </div><div><br /></div>Sad though, that the recipe of the master chef has been changed by the site. There's no mention of the cavity. The cavity needs SOMETHING in it. It's a giant hole that makes a big difference in cooking times. Typically, the recommendation here is a broken or crushed stick of cinnamon, a halved apple, a quartered onion, and some choice herbs like sage, rosemary, and thyme. The master chef recommends some heating in the microwave to get the flavors started. Use a little water(or insert liquid) in the bottom of dish to help steam heat. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "elliott7702"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Absolutely fantastic!!! I have never brined a turkey prior to last year and this recipe came highly recommended. I did exactly as the recipe called for except I was impatient and ended up pouring the brine in with the ice water bath without it cooling down properly but it didn't matter. It was wonderful. The turkey had such wonderful flavor and was so juicy! This is my go to recipe and I can't wait for next month to do this again. I bet this would be perfect with regular chicken and without it being a holiday as well. HIGHLY RECOMMEND!! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Elle A."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Always had great luck with this recipe until 1 time when I forgot to cook it for half hour at 500 degrees first and it came out salty. I could never find any explanation for the first half hour at 500 degrees - does it help cook out the salt? Thanks for posting this great recipe!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Stephen P."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Absolutely fantastic when executed properly. Comes out juicy every single time."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kaylanfreund"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Just finished first half hour of baking where you bake at 500 degrees on lowest rack and turkey is already blackened and burnt just in that half hour. 500 degrees is way too hot even for just half an hour and now the turkey is ruined."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "jeysonjones"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We have made this turkey the last 5 years and it comes out so juicy and perfect every time!<div>Thanks Alton for making such an easy to follow recipe!</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Aly"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I am trying this recipe tomorrow! But I have one question... Do I need to keep the oven closed for the entire cook time? I might have side dishes cooking that will require opening and closing the oven door. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Georgia H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Help!!  I have a 9 pound turkey.   3 questions.   I just noticed that myturkey has 8 % turkey broth and some butter seasoning.  Does not say salt anywhere.   I have my heart set on making this brine.  Is it still ok?<div><br /></div><div>Also,  what does steeped aromatics mean?</div><div><br /></div><div>How long should I cook the 9 pound turkey.  Thanks!! </div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Heather F."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best way to make a turkey ever! Always very moist and delicious! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jerry H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have been using this recipe for 5 years and would not even think of using something else. Alton, you ROCK!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "sabw229"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Not sure if my comment posted so sorry if it's a duplicate<div><br /></div><div>I make this every year and it is delicious! Question though, I always get a bigger bird (19lbs this year) and it seems I need a longer cooking time and never sure how much. Dinner always runs late. Anyone know how much time I need to add so I can be prepared in advance?</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Holly H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best method to cook turkey!  Juicy and delish!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "hlhansen91"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I cooked my very first turkey today using this recipe. I spent a lot of time researching the different methods for cooking a whole turkey and out of all the methods and recipes I read through, this one had the best rating and the comments inspired a great deal of hope for me. I figured with the brining and the cooking method, there was no way I could mess this up! Let me tell you, this was hands down the best turkey I've eaten in my life. It was flavorful - not one flavor overpowered the other - and it was the juiciest turkey I've ever had the pleasure of eating. I was cooking for a small group so I had a 10 pound turkey, it was done cooking after 1.5 hours and we let it rest for 30-45 minutes before carving. The brining really shortens the cook time so be aware! I followed the recipe almost exactly (I don't have a fancy probing thermometer!) and I will <b>always </b>use this exact recipe. It was amazing and my very first turkey was a huge success! <div><br /></div><div>Thank you Alton Brown, you've never done me wrong!</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Deanna J."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Been doing this for 8 years. Flavorful and moist everytime. I use a gallon of apple cider in place of some water for the brine.. as well as peels from 3 oranges and 3 large sprigs of rosemary.<div>DELICE!!</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Andy M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Ten years ago I used thiscrecipie "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Vann V."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I love this recipe and use it every year.  However I usually get quite a bit of smoke during the first 30 minutes.  Can someone tell me what I am doing wrong?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Chad C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I've used this cooking method for about 10 years and it is always fantastic! "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michael H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The best turkey recipe ever I have used this recipe for a few years not and it never fails I just came online just to see if it was still here I guess it's about time I write it down "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "amazing and easy! This was my first time cooking turkey and it turned out perfect thanks to Alton Brown!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Rani G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Does anyone rub oil or herbs on the outside of the turkey?"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I am in charge of the turkey each Thanksgiving because of this recipe.  It makes for a very flavorful and never dry turkey people rave about."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mike Delaney"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I love the recipe.  It makes the turkey so flavourful and moist.  Unfortunately, the in-laws don't like it.  More for me!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I rate this recipe a 5 star, I have used this one for a few years and my turkey has always turned out perfect. Thank You Alton for sharing."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ashley B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best turkey ever!  So good my sister in law asked for the recipe and we make it for the 4th of July!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The turkey was so pretty my mother said she should have taken a picture.  It was the best turkey I have ever made and will use this brine recipe from here on out!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "lolitaraine"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Perfectly brown, and SO juicy when we carved it! Best Turkey I have ever made!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "phardin"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best turkey ever! It was so perfectly browned and pretty it impressed everyone. This will be the turkey recipe we use every year."
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "name": "Alton's Roast Turkey",
+        "description": "Alton shows his not-so-traditional method of roasting a traditional turkey.",
+        "duration": "PT0H2M21S",
+        "thumbnailUrl": "https://food.fnr.sndimg.com/content/dam/images/food/video/0/01/017/0170/0170831.jpg.rend.hgtvcom.406.305.suffix/1662590923172.jpeg",
+        "contentUrl": "https://www.foodnetwork.com/apps/api/playback?path=/etc/sni-asset/food/videos/0/01/017/0170/0170831",
+        "uploadDate": "2022-09-07T18:49:21.657-04:00"
+    },
+    "recipeCategory": "main-dish"
+}

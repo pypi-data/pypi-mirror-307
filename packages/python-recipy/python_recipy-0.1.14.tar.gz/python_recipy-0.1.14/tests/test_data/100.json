@@ -1,0 +1,146 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "headline": "Bourbon-Glazed Carrots",
+    "url": "https://www.thekitchn.com/recipe-bourbon-glazed-carrots-239686",
+    "description": "",
+    "brand": {
+        "@type": "Thing",
+        "name": "The Kitchn"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "246 cal",
+        "carbohydrateContent": "32.6 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "4.3 g",
+        "proteinContent": "1.5 g",
+        "saturatedFatContent": "4.9 g",
+        "sodiumContent": "267.3 mg",
+        "sugarContent": "25.0 g",
+        "fatContent": "8.0 g",
+        "servingSize": "Serves 6",
+        "unsaturatedFatContent": "0.0 g"
+    },
+    "suitableforDiet": "https://schema.org/GlutenFreeDiet,https://schema.org/LowCalorieDiet,https://schema.org/LowFatDiet,https://schema.org/VegetarianDiet",
+    "recipeCategory": [],
+    "recipeCuisine": [],
+    "recipeIngredient": [
+        "4 tablespoons unsalted butter, divided",
+        "2 pounds carrots, peeled and sliced on a diagonal into 1/2-inch-thick discs",
+        "1/2 cup bourbon",
+        "1/2 cup packed light brown sugar",
+        "1/2 teaspoon kosher salt",
+        "1/4 teaspoon freshly ground black pepper",
+        "  Coarsely chopped fresh parsley leaves, for serving (optional)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Step 1",
+            "text": "Melt 2 tablespoons of the butter in a wide, high-sided skillet over medium-high heat. Add the carrots and cook, stirring occasionally, until the carrots start to soften, about 5 minutes. Transfer to a plate; set aside.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 2",
+            "text": "Add the bourbon into the pan and cook for about 30 seconds. Stir in the remaining 2 tablespoons butter, brown sugar, salt, and pepper. Bring to a boil and cook until the glaze begins to thicken, 2 to 3 minutes.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 3",
+            "text": "Add the reserved carrots and stir to coat with the glaze. Continue cooking until the carrots are tender and the glaze is thickened, about 5 minutes. Sprinkle with parsley if using and serve immediately.",
+            "image": null
+        }
+    ],
+    "HowtoTip": {
+        "text": "Make ahead: The carrots can be peeled and sliced up to 1 day ahead. Store in a covered container in the refrigerator.Storage: Leftovers can be stored in an airtight container in the refrigerator for up to 3 days."
+    },
+    "recipeYield": 6,
+    "totalTime": "PT0S",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1,
+        "reviewCount": 6
+    },
+    "review": [],
+    "name": "Bourbon-Glazed Carrots",
+    "articleSection": "Recipes",
+    "thumbnailUrl": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2Farchive%2F8b200218f5167f8acf05edd24f7a038de345c7e5",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2Farchive%2F8b200218f5167f8acf05edd24f7a038de345c7e5"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2Farchive%2F8b200218f5167f8acf05edd24f7a038de345c7e5"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F8b200218f5167f8acf05edd24f7a038de345c7e5"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Apartment Therapy, LLC.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thekitchn.com/static/logos/publisher-logo.png",
+            "width": 180,
+            "height": 46
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Kelli Foster",
+            "URL": "https://www.thekitchn.com/authors/kelli-foster",
+            "description": "Kelli is a Senior Contributing Food Editor for Kitchn. She's a graduate of the French Culinary Institute and author of the cookbooks, Plant-Based Buddha Bowls, The Probiotic Kitchen,  \r\nBuddha Bowls, and Everyday Freekeh Meals. She lives in New Jersey.",
+            "jobTitle": ""
+        }
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Kelli Foster"
+    },
+    "keywords": [
+        "dinner",
+        "easter",
+        "easy",
+        "Gluten-Free",
+        "recipe",
+        "Root Vegetables",
+        "Side Dish",
+        "stovetop",
+        "sugar",
+        "thanksgiving",
+        "Vegetables",
+        "vegetarian",
+        "winter",
+        "Dish Types",
+        "Ingredient",
+        "team:recipes",
+        "purpose:search",
+        "platform:search",
+        "course:side dish",
+        "diet:under 300 calories",
+        "diet:low-fat",
+        "diet:gluten-free",
+        "diet:low-calorie",
+        "diet:under 500 calories",
+        "diet:vegetarian",
+        "diet:under 400 calories",
+        "method:stovetop",
+        "meal:dinner",
+        "updated:2023-07-29"
+    ],
+    "mainEntityOfPage": "https://www.thekitchn.com/recipe-bourbon-glazed-carrots-239686",
+    "dateCreated": "2017-02-10T09:00:00-05:00",
+    "datePublished": "2017-02-10T09:00:00-05:00",
+    "dateModified": "2023-07-29T22:55:29-04:00",
+    "abstract": null
+}

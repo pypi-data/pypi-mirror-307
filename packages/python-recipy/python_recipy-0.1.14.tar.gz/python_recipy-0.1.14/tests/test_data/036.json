@@ -1,0 +1,446 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cooking.nytimes.com/recipes/1019536-apple-skillet-cake-with-salted-caramel-frosting#WebPage",
+        "url": "https://cooking.nytimes.com/recipes/1019536-apple-skillet-cake-with-salted-caramel-frosting",
+        "primaryImageOfPage": "https://static01.nyt.com/images/2018/09/05/dining/EM-caramel-apple-skillet-cake-horizontal/EM-caramel-apple-skillet-cake-horizontal-videoSixteenByNineJumbo1600.jpg",
+        "isAccessibleForFree": "False",
+        "hasPart": {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".recipe"
+        }
+    },
+    "url": "https://cooking.nytimes.com/recipes/1019536-apple-skillet-cake-with-salted-caramel-frosting",
+    "name": "Apple Skillet Cake With Salted Caramel Frosting",
+    "description": "This buttery cake is filled with soft, caramel-infused apples and topped with an easy caramel frosting. It’s better to err on the side of underbaking the cake slightly, since it makes for a gooier end result.",
+    "author": {
+        "@type": "Person",
+        "name": "Erin Jeanne McDowell"
+    },
+    "image": [
+        {
+            "url": "https://static01.nyt.com/images/2018/09/05/dining/EM-caramel-apple-skillet-cake-horizontal/merlin_141964083_fd6fbaeb-17f1-42dc-ad92-7d71e44721b8-square640.jpg",
+            "height": 640,
+            "width": 640,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/09/05/dining/EM-caramel-apple-skillet-cake-horizontal/merlin_141964083_fd6fbaeb-17f1-42dc-ad92-7d71e44721b8-superJumbo.jpg",
+            "height": 1365,
+            "width": 2048,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/09/05/dining/EM-caramel-apple-skillet-cake-horizontal/EM-caramel-apple-skillet-cake-horizontal-videoSmall.jpg",
+            "height": 281,
+            "width": 500,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2018/09/05/dining/EM-caramel-apple-skillet-cake-horizontal/EM-caramel-apple-skillet-cake-horizontal-verticalTwoByThree735-v2.jpg",
+            "height": 1103,
+            "width": 735,
+            "@context": "http://schema.org",
+            "@type": "ImageObject"
+        }
+    ],
+    "totalTime": "PT1H",
+    "recipeYield": "10 to 12 servings",
+    "recipeCuisine": "",
+    "recipeCategory": [],
+    "keywords": "apple, caramel, heavy cream, skillet, fall, winter, halloween, labor day, super bowl, thanksgiving",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "ratingCount": 3077
+    },
+    "nutrition": {
+        "@context": "http://schema.org",
+        "@type": "NutritionInformation",
+        "calories": 624,
+        "unsaturatedFatContent": "9 grams",
+        "carbohydrateContent": "94 grams",
+        "cholesterolContent": null,
+        "fatContent": "26 grams",
+        "fiberContent": "1 gram",
+        "proteinContent": "5 grams",
+        "saturatedFatContent": "16 grams",
+        "sodiumContent": "401 milligrams",
+        "sugarContent": "76 grams",
+        "transFatContent": "0 grams"
+    },
+    "recipeIngredient": [
+        "4 tablespoons/55 grams unsalted butter",
+        "2 large baking apples (about 12 ounces/340 grams), such as Honeycrisp, Gala, Granny Smith or Braeburn, peeled, cored and diced into 1/2-inch pieces",
+        "1/2 cup/110 grams dark brown sugar",
+        "1/4 teaspoon fine sea salt",
+        "1/2 cup/115 grams unsalted butter (1 stick), at room temperature, plus more for the pan",
+        "1 1/3 cup/290 grams dark brown sugar",
+        "3 large eggs",
+        "1 1/2 teaspoons vanilla extract",
+        "1 2/3 cup/215 grams all-purpose flour",
+        "3/4 teaspoon baking powder",
+        "1/2 teaspoon fine sea salt",
+        "1/2 teaspoon ground cinnamon",
+        "1/4 teaspoon freshly grated nutmeg",
+        "3/4 cup/170 grams unsalted butter (1 1/2 sticks), at room temperature",
+        "3 cups/370 grams confectioners' sugar, sifted",
+        "7 ounces/205 grams unwrapped soft caramel candies",
+        "2 tablespoons heavy cream",
+        "1 1/2 teaspoons vanilla extract",
+        "Flaky sea salt, as needed, for finishing"
+    ],
+    "recipeInstructions": [
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Make the apples: In a 10-inch sauté pan, melt the butter over medium heat. Add the apples, brown sugar and salt, and cook, stirring occasionally, until the sugar dissolves and the apples soften slightly, 4 to 5 minutes. Let cool to room temperature."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Heat the oven to 350 degrees. Grease a 10-inch oven-proof skillet with butter."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Make the cake: In the bowl of an electric mixer fitted with the paddle attachment, cream the butter and brown sugar until light and fluffy, 4 to 5 minutes. Add the eggs one at a time, beating well after each addition, and mix to combine. Scrape the bowl well, then beat in the vanilla."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "In a medium bowl, whisk the flour, baking powder, salt, cinnamon and nutmeg to combine. Add the flour mixture to the mixer and mix just until incorporated. Scrape the bowl well."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "With a rubber spatula, gently fold the apple mixture (including all of the caramel-like liquid in the pan) into the batter. Mix just until incorporated."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Pour the batter into the prepared skillet and spread into an even layer. Bake until the surface is evenly golden brown and appears set – a toothpick inserted into the center should have a few moist crumbs clinging to it, 30 to 35 minutes. Let cool completely."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Make the frosting: In the bowl of an electric mixer fitted with the paddle attachment, cream the butter and confectioners' sugar until light and fluffy, 4 to 5 minutes."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Place the caramels in a microwave-safe container. Microwave in 20-second bursts, stirring, until the caramel is warm and fluid. (This mixture will cool quickly, so be sure to do it just before you mix the frosting.) Add the warm (not hot) caramel mixture and mix on medium speed until incorporated. Scrape the bowl well."
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "HowToStep",
+            "text": "Add the cream and vanilla and mix to combine. The frosting should be smooth and very soft. Scoop the frosting onto the cooled cake, and spread into an even layer. Garnish with flaky salt just before serving."
+        }
+    ],
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "NYT Cooking",
+        "url": "https://cooking.nytimes.com",
+        "alternateName": [
+            "nytimes cooking",
+            "New York Times Cooking"
+        ],
+        "logo": {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "url": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "height": 112,
+            "width": 112,
+            "contentUrl": "https://static01.nyt.com/applications/cooking/7ca0da2/assets/SiteLogoBlack-112x112.svg",
+            "creditText": "NYT Cooking"
+        },
+        "sameAs": [
+            "https://www.facebook.com/nytcooking/",
+            "https://www.instagram.com/nytcooking/",
+            "https://twitter.com/nytimes",
+            "https://www.youtube.com/c/NYTCooking",
+            "https://www.tiktok.com/@nytcooking",
+            "https://apps.apple.com/us/app/nyt-cooking/id911422904",
+            "https://play.google.com/store/apps/details?id=com.nytimes.cooking&hl=en_US&gl=US"
+        ]
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KatRat"
+            },
+            "reviewBody": "I am so sad about this cake. It looked so good but for me failed at every turn and usually I think of myself as a half decent baker. The cake was burning on the sides but liquidy in the middle. took it out after 35 mins. The icing was a complete failure with shards of hard caramel in the frosting. Also I burnt myself quite badly on the caramel. All in all a disaster for me.",
+            "datePublished": "2024-05-25T21:19:39.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Tiana L."
+            },
+            "reviewBody": "What a great recipe! I have only had people compliment it when I make it and requests for the recipe. I did not make the frosting per the recipe though, I just did a simple one of powdered sugar and lemon juice until the right consistency, then a splash of vanilla extract. It added a nice tangy sweetness from the lemon juice without overwhelming it like I think the caramel frosting would do.",
+            "datePublished": "2024-03-10T04:31:02.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ron"
+            },
+            "reviewBody": "This is a great cake, but I modify it.  I like more apple, and the cake still holds together with about 50% more apple - that's probably just about the max.  With the sugar in the apple mix and the frosting, the cake gets very sweet.  Because of caramelization, it doesn't work to cut sugar in the apple mix or the frosting. I cut the sugar in the cake by at least half.  I also do a different frosting that doesn't use candies; the one I use is from Sally's Baking Addiction",
+            "datePublished": "2024-01-22T16:12:04.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "more apples, less sugar"
+            },
+            "reviewBody": "Too sweet, too much frosting. I’d do about half this much frosting. Add plenty of spices to the apples and double the apples. You could also make a caramel apple compote and spoon it on top. Use Maldon salt on top.\n\nReally good!",
+            "datePublished": "2023-12-26T20:34:03.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jt"
+            },
+            "reviewBody": "Just make your own caramel.  Good caramel is impossible to find in most areas.  Plus chief caramel will never be runny as other commentators have noted. It’s easier just to find a good caramel frosting recipe. Make it from scratch. It’s faster and probably cheaper.",
+            "datePublished": "2023-11-11T21:31:52.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lynn S.B."
+            },
+            "reviewBody": "I don't have a 10-inch skillet, but I do have a 12-in and a 7-inch. I want to make this cake for Thanksgiving this year (2023) having read all the glowing reviews (and comments), but don't know how to alter it for the 10-inch because I don't know the volume of dcake batter this recipe makes. Does anyone have the volume this recipe makes? Thanks in advance.",
+            "datePublished": "2023-11-07T22:32:08.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "AB"
+            },
+            "reviewBody": "I added more apples (my iron skillet was about 1/4-ish the way full of cut up apples) and then eyeballed adding more flour to the recipe. I added just enough flour to absorb the excess liquid released when I sautéed the apples, butter and brown sugar. Came out delicious!",
+            "datePublished": "2023-10-27T16:19:56.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jen"
+            },
+            "reviewBody": "After reading about the trouble many had with the frosting, I went the path of chopping some of the caramels and adding them into the batter, and then just topping with a dusting of confectioner's sugar and some whipped cream. It was a family cake to have around for the week, and it worked perfectly for that! Delicious and super easy. (Though not as fancy looking as I would want if bringing to a party...)",
+            "datePublished": "2023-10-23T18:53:30.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sarah"
+            },
+            "reviewBody": "I used a deep dish ceramic pie dish because my cast iron was 12”. The cake was still wobbly after 45 minutes, but I took it out anyway. Still delicious, but the center was more like a very sweet toffee pudding. Would love to hear tips for cooking evenly in a pie dish.\n\nI couldn’t find caramels so tried the dulce de leche suggestion. Worked really well!",
+            "datePublished": "2023-09-30T21:58:57.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "joyceann"
+            },
+            "reviewBody": "Has anyone made this cake without the frosting….I think I want to just use confectionery sugar and serve with maple whipped cream…thoughts?",
+            "datePublished": "2023-09-26T09:10:38.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kswl"
+            },
+            "reviewBody": "Each slice of this dessert has 3x the recommended daily amount of sugar for a woman and more than twice the recommended daily amount for a man.  Seriously?",
+            "datePublished": "2023-09-25T14:20:58.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "D Duffy"
+            },
+            "reviewBody": "Hang in there with the frosting! I creamed the butter and  sugar and it is all light  & fluffy. Then, I melted the caramel (about 45 seconds). You can only let it cool a little because it starts to firm up pretty quickly. Got the mixer going again as I added in the hardening caramel and for a minute or two it looks like a gloppy mess on the paddle and I think all is lost. Then, I add the cream and vanilla and it magically recovered into a soft frosting. I popped into fridge 30 mins to firm up.",
+            "datePublished": "2023-09-25T12:18:59.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Persimmon"
+            },
+            "reviewBody": "Forget the frosting and serve with vanilla icecream topped with warm TJ's caramel sauce.",
+            "datePublished": "2023-05-03T14:40:37.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Laura"
+            },
+            "reviewBody": "This was absolutely delicious. Moist and sweet. The apples suspended evenly throughout the cake! I did take a lot of care not to over mix in the final stages and it paid off. The frosting adds a delicious and sweet addition but you might make 1/2 or 2/3 the frosting recipe if you like less sweetness. An overall hit at our house!\nIt did dry out pretty quickly once cut into, and was by FAR the best on day 1.",
+            "datePublished": "2023-04-01T18:09:03.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Vicki"
+            },
+            "reviewBody": "Made this tonight on a whim for company and it was delicious!  Didn’t have caramels so I had to find another version of frosting but followed the recipe for the cake exactly as written and it was delicious. Rave reviews all around! Will definitely keep this one in my hip pocket for the future!",
+            "datePublished": "2023-02-14T06:48:04.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sean"
+            },
+            "reviewBody": "Me. I can. Because I don't click on recipes that I know are rich with sugar and then complain about it.\nIf it's too much sugar for you, don't make it.",
+            "datePublished": "2018-09-21T17:12:07.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Me"
+            },
+            "reviewBody": "Really if you don’t want the calories don’t bake the cake. You can’t have your cake and eat it too. ",
+            "datePublished": "2018-09-21T20:30:34.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "dogmom3"
+            },
+            "reviewBody": "I made this wonderful cake. I baked in a pie pan, flipped it over when cool, then frosted it. Wonderful! \n\nI love the NYT recipes and the ability to save recipes. Eliminates all that printing and paper.\n\nI will admit to being a tad annoyed with cranky people who use this site as a forum to sound off on a bevy of recipes. Suggestion: if you have nothing nice to say, then don’t bother posting in the comments section! Bam",
+            "datePublished": "2018-09-23T20:10:30.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "gardyngnome"
+            },
+            "reviewBody": "The first time I made this, the sugar overwhelmed the apples and even my teenage son thought it too sweet. Second time, I reduced batter sugar by 1/3 and frosting sugar by a whole cup (and butter to 1 stick) and I think it’s SO much better - the apples just sing in the cake and the caramel flavor comes through beautifully in the frosting. The boys agreed :)",
+            "datePublished": "2018-09-23T21:09:34.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KfromPA"
+            },
+            "reviewBody": "My first batch of icing ended up getting thrown away, as the caramel immediately hardened as I incorporated it into the butter/sugar mixture.  Shards of caramel in icing is no bueno. \n\nI went back and melted the caramels in some cream to make a caramel sauce. Voila! It went in nicely.  I did not add cream later as the recipe stated. ",
+            "datePublished": "2018-09-19T10:31:23.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Janet"
+            },
+            "reviewBody": "I just made this today. It's as delicious as the photo. I prepared the apples in my iron skillet. After making the batter, I stirred the apples into the batter, then returned it all to the skillet. No need for two pans. The iron skillet gave it a nice crisp edge and a golden color.\nI might add some nuts next time.",
+            "datePublished": "2018-09-17T00:29:26.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "susan"
+            },
+            "reviewBody": "Unless I've miscalculated, at 12 servings per cake, this beauty delivers about 1/3 cup of sugar per serving.  Who can afford to eat that way even occasionally?  I'd love to see the Times deliver recipes that contribute to the health of our overweight population and include lower carb desserts.",
+            "datePublished": "2018-09-13T20:39:37.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Linda"
+            },
+            "reviewBody": "Agree with you. One thing I frequently do with dessert/cake recipes is simply reduce the amount of sugar by one-third to one-half -- the other flavors tend to come out more, and you don't have sugar overload.",
+            "datePublished": "2018-09-19T15:12:06.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Margaux Laskey, Staff Editor"
+            },
+            "reviewBody": "i was lucky enough to be at the photo shoot for this cake (job perks!) so i got to sample it. SO INCREDIBLY GOOD. the frosting is so die for. i'd like to eat it with spoon. (amy, you can certainly make this in a 10-inch pie pan.)",
+            "datePublished": "2018-09-13T14:48:05.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Marcus"
+            },
+            "reviewBody": "Good recipe.  However, I did take note of the sugar volumes and reduced them all, including the amount of frosting.  I prepared the apples with 1/4 C of brown sugar, and a healthy dollop of molasses (to bolster the light brown sugar I had on hand).  I also reduced the sugar in the cake to a scant 2/3 C.  For the frosting I reduced the buttercream to a scant 2 C of powdered sugar to 1 stick of room temp butter.    The result was plenty sweet and delicious.  Pecans would be a welcome garnish!",
+            "datePublished": "2018-10-01T17:41:00.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "India"
+            },
+            "reviewBody": "SO many better recipes than this one for skillet apple cake!  Most use just the one skillet, caramelize the apples in the skillet (real caramel), and then add the cake batter.  Cake is then turned upside down and apples and real caramel top the cake.  Easier, less sugar, and far better.",
+            "datePublished": "2018-09-21T16:24:59.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Erin"
+            },
+            "reviewBody": "I didn't have caramels so I made my own caramel sauce with 1/2 c brown sugar, 2 tbsp butter, 1/4 c cream (or half and half), touch of salt. I whisked ingredients while it boiled for a few minutes. Added some vanilla and the 2 tbsp of cream. Afterwards I added the caramel to 1/2 c powdered sugar and 4 tbsp of butter. Not sure it equalled same amount as candies but it was great!\n\nPer other comments, I decreased sugar in apples (used just a 1/4 c) and in batter (used 2/3 c).",
+            "datePublished": "2018-11-06T14:11:50.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Robert Wemischner"
+            },
+            "reviewBody": "Forget about using premade storebought caramels for the frosting; Simply caramelize white sugar until amber, add some cream, butter, good vanilla extract and salt to taste and you have a great icing. Don't need to use confectioners sugar at all.",
+            "datePublished": "2019-09-15T02:44:16.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Sheila"
+            },
+            "reviewBody": "It’s cake.  You’re only supposed to eat like this for special occasions.",
+            "datePublished": "2018-09-21T15:49:58.000Z"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Caroline Simon"
+            },
+            "reviewBody": "Really enjoyed this cake. I used three apples instead of two to give it a more natural flavor. I also paired the cake with a maple buttercream icing (2 cups of butter, a cup and a half of confectioners' sugar, a third of a cup of maple syrup, plus salt and vanilla) and was very pleased with the result (melting caramel sounded like a lot of work!).",
+            "datePublished": "2019-09-05T16:55:15.000Z"
+        }
+    ]
+}

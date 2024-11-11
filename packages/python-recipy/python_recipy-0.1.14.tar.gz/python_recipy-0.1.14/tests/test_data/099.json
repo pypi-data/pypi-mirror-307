@@ -1,0 +1,186 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "headline": "The Best-Ever Caprese Sandwich",
+    "url": "https://www.thekitchn.com/caprese-sandwich-recipe-23169471",
+    "description": "Tomatoes, avocado, mozzarella and basil are stuffed inside a toasted baguette and finished with a drizzle with olive oil and balsamic vinegar in this perfect summer sandwich.",
+    "brand": {
+        "@type": "Thing",
+        "name": "The Kitchn"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "386 cal",
+        "carbohydrateContent": "46.6 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "4.8 g",
+        "proteinContent": "15.8 g",
+        "saturatedFatContent": "5.8 g",
+        "sodiumContent": "660.8 mg",
+        "sugarContent": "7.2 g",
+        "fatContent": "16.1 g",
+        "servingSize": "Serves 4",
+        "unsaturatedFatContent": "0.0 g"
+    },
+    "suitableforDiet": "https://schema.org/VegetarianDiet",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Mediterranean",
+        "Italian",
+        "Europe"
+    ],
+    "recipeIngredient": [
+        "4 ounces fresh mozzarella cheese",
+        "3  campari tomatoes, or 1 large beefsteak or heirloom tomato (about 12 ounces total)",
+        "1/2  medium avocado",
+        "1  (about 24-inch long) French baguette, or 2 (about 10-inch long) demi baguettes",
+        "1/4 teaspoon kosher salt",
+        "1/4 teaspoon freshly ground black pepper",
+        "1/4 cup fresh basil leaves",
+        "1 tablespoon extra-virgin olive oil",
+        "1 teaspoon balsamic vinegar, plus more as needed"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Step 1",
+            "text": "Arrange a rack 6 inches from the broiling element and heat the broiler to high. Meanwhile, cut 4 ounces fresh mozzarella cheese into 1/4-inch thick slices. Cut 3 campari tomatoes crosswise into 1/4-inch thick rounds, or 1 large tomato into 1/4-inch thick half-moons. Thinly slice 1/2 medium avocado.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 2",
+            "text": "Split the baguette(s) lengthwise with a serrated knife. Place cut-side up on a baking sheet. Broil until lightly toasted (the middle should feel crunchy versus fluffy), 1 to 3 minutes. Transfer the bread cut-side up to a cutting board.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 3",
+            "text": "Layer the mozzarella, tomatoes, and avocado on the bottom half of the bread. Sprinkle with 1/4 teaspoon kosher salt and 1/4 teaspoon black pepper. Top with 1/4 cup fresh basil leaves, tearing them in half if large.",
+            "image": null
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 4",
+            "text": "Brush 1 tablespoon extra-virgin olive oil and 1 teaspoon balsamic vinegar onto the top half of the bread. Close the sandwiches with the top half and gently press down so the top adheres to the bottom. Cut the baguette sandwich crosswise into 4 pieces and the demi baguette sandwiches into 2 pieces each.",
+            "image": null
+        }
+    ],
+    "HowtoTip": {
+        "text": "Making an open-faced sandwich: If you&#x27;d prefer to enjoy an open-faced sandwich, drizzle the oil and vinegar directly on the tomatoes and mozzarella rather than on the  bread. "
+    },
+    "recipeYield": 4,
+    "prepTime": "PT900S",
+    "cookTime": "PT180S",
+    "totalTime": "PT1080S",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1,
+        "ratingCount": 1
+    },
+    "review": [],
+    "name": "The Best-Ever Caprese Sandwich",
+    "articleSection": "Recipes",
+    "thumbnailUrl": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2021-06-summer-caprese-sandwich%2FKitchn_SummerCapreseSando_518",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2021-06-summer-caprese-sandwich%2FKitchn_SummerCapreseSando_518"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2021-06-summer-caprese-sandwich%2FKitchn_SummerCapreseSando_518"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-06-summer-caprese-sandwich%2FKitchn_SummerCapreseSando_518"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Apartment Therapy, LLC.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thekitchn.com/static/logos/publisher-logo.png",
+            "width": 180,
+            "height": 46
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Yasmin Fahr",
+            "URL": "https://www.thekitchn.com/authors/yasmin-fahr",
+            "description": "Yasmin is a recipe developer, food writer, and the author of Keeping It Simple, a cookbook full of easy, weeknight one-pot recipes that was named a best spring 2020 cookbook by The New York Times, Forbes, and Esquire UK. Her writing and recipes have appeared online and in print publications such as NYT Cooking, The Kitchn, The Washington Post, Epicurious, TASTE, Bon Appétit, and others. She attended Cornell University and also received a master’s degree in Food Studies from New York University.",
+            "jobTitle": ""
+        }
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Yasmin Fahr"
+    },
+    "keywords": [
+        "Cheese",
+        "Condiments &amp; Seasonings",
+        "herbs",
+        "Ingredient",
+        "italian",
+        "Lunch",
+        "Main Dish",
+        "Recipe",
+        "Sandwiches &amp; Burgers",
+        "summer",
+        "vegetarian",
+        "mediterranean",
+        "european",
+        "dairy",
+        "Seasonings",
+        "Vegetables",
+        "Tomatoes",
+        "Party Food",
+        "quick",
+        "sandwich",
+        "uncooked",
+        "Cooking with Kids",
+        "children",
+        "Dairy &amp; Milk",
+        "Flavorings",
+        "Dish Types",
+        "team:recipes",
+        "platform:search",
+        "platform:social",
+        "course:main dish",
+        "cuisine:mediterranean",
+        "cuisine:italian",
+        "cuisine:europe",
+        "diet:vegetarian",
+        "mainingredients:basil",
+        "mainingredients:dairy",
+        "mainingredients:seasonings",
+        "mainingredients:herbs",
+        "mainingredients:cheese",
+        "mainingredients:avocado",
+        "mainingredients:tomatoes",
+        "mainingredients:vegetable",
+        "occasion:picnic",
+        "occasion:summer",
+        "occasion:summer vacation",
+        "occasion:party format",
+        "occasion:timing",
+        "occasion:weekday",
+        "timing:quick",
+        "timing:15-minute",
+        "dishtype:sandwich",
+        "method:no-cook",
+        "lifestyle:kid-friendly",
+        "meal:lunch",
+        "meal:school lunch"
+    ],
+    "mainEntityOfPage": "https://www.thekitchn.com/caprese-sandwich-recipe-23169471",
+    "dateCreated": "2021-06-09T09:01:07-04:00",
+    "datePublished": "2021-06-09T09:01:07-04:00",
+    "dateModified": "2022-01-13T13:54:55-05:00",
+    "abstract": null
+}

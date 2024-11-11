@@ -1,0 +1,184 @@
+{
+    "@type": "Recipe",
+    "name": "Japanese Slaw - Chargrill Charlie's Copycat",
+    "author": {
+        "@id": "https://www.recipetineats.com/#/schema/person/1684e6a75e9f91ae2e33ca2de95b47e2"
+    },
+    "description": "This is a copycat of a Japanese Slaw sold at a charcoal chicken chain called Chargrill Charlie&#39;s here in Sydney. This slaw-like salad has a Japanese spin with a scattering of edamame, sesame-dressed wakame seaweed salad and a creamy soy dressing. The seaweed totally makes it!Serve it as a side or as a meal with a simple piece of Asian Glazed Salmon or Honey Garlic Chicken Breast.",
+    "datePublished": "2021-08-30T12:18:00+00:00",
+    "image": [
+        "https://www.recipetineats.com/tachyon/2021/08/Japanese-Slaw-Chargrill-Charlies_93.jpg",
+        "https://www.recipetineats.com/tachyon/2021/08/Japanese-Slaw-Chargrill-Charlies_93.jpg?resize=500%2C500",
+        "https://www.recipetineats.com/tachyon/2021/08/Japanese-Slaw-Chargrill-Charlies_93.jpg?resize=500%2C375",
+        "https://www.recipetineats.com/tachyon/2021/08/Japanese-Slaw-Chargrill-Charlies_93.jpg?resize=480%2C270"
+    ],
+    "recipeYield": [
+        "4",
+        "4 - 6 as a side"
+    ],
+    "prepTime": "PT15M",
+    "recipeIngredient": [
+        "5 cups (tightly packed) green cabbage (, finely shredded (~1/2 medium head, Note 1))",
+        "2 cups (tightly packed) red cabbage (, finely shredded (~1/4 small head, Note 1))",
+        "1  carrot (medium) (, peeled and finely shredded (using a julienne shredder, or box grater, Note 2))",
+        "2  green onion stems (, finely sliced on the diagonal)",
+        "1 cup edamame (, cooked per packet directions (Note 3))",
+        "2/3 cup Japanese seaweed salad (, pre dressed (Note 4))",
+        "1 1/2 tbsp soy sauce",
+        "1 1/2 tbsp rice vinegar ((sub cider vinegar))",
+        "1 1/2 tbsp Kewpie mayonnaise ((Note 5))",
+        "1 tbsp toasted sesame oil",
+        "1 1/2 tbsp olive oil",
+        "1 tsp sugar ((any type) or 1 1/2 tsp honey)",
+        "1/2 - 1 1/2 tsp wasabi paste (, adjust to taste (entirely optional) (Note 6))"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Dressing: Shake Dressing ingredients in a jar until the mayonnaise is fully emulsified. Taste and add more sugar if you want.",
+            "name": "Dressing: Shake Dressing ingredients in a jar until the mayonnaise is fully emulsified. Taste and add more sugar if you want.",
+            "url": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#wprm-recipe-67685-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Toss with salad: Place cabbage, carrot, green onion, half the edamame and half the seaweed salad in a bowl. Add about 3/4 of the dressing, toss. (Seaweed will mostly stay in clumps).",
+            "name": "Toss with salad: Place cabbage, carrot, green onion, half the edamame and half the seaweed salad in a bowl. Add about 3/4 of the dressing, toss. (Seaweed will mostly stay in clumps).",
+            "url": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#wprm-recipe-67685-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Wilt: Set aside for 15 minutes to let the cabbage wilt a bit.",
+            "name": "Wilt: Set aside for 15 minutes to let the cabbage wilt a bit.",
+            "url": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#wprm-recipe-67685-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve: Toss again, then pile onto serving platter or bowl. Drape over remaining seaweed salad (in clumps) and edamame, drizzle with remaining Dressing. Serve!",
+            "name": "Serve: Toss again, then pile onto serving platter or bowl. Drape over remaining seaweed salad (in clumps) and edamame, drizzle with remaining Dressing. Serve!",
+            "url": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#wprm-recipe-67685-step-0-3"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "15"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Easy to make, best flavour.",
+            "author": {
+                "@type": "Person",
+                "name": "Sophie Brewster"
+            },
+            "datePublished": "2023-12-25"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Great salad, there is a place near me called “Char” and I googled Japanese coleslaw and your recipe popped up. I added some finely sliced green capsicum. So similar. Thanks",
+            "author": {
+                "@type": "Person",
+                "name": "Sandra Walker"
+            },
+            "datePublished": "2023-06-09"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Very nice. I used rehydrated wakami since it was all I had on hand before shopping. Also had no green onions and no wasabi, but I topped it with toasted sesame seeds. I read the instructions after I had already mixed everything together so...your presentation is undoubtedly superior!",
+            "author": {
+                "@type": "Person",
+                "name": "Susan"
+            },
+            "datePublished": "2023-04-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This is THE BEST coleslaw dressing! So happy I found it. Thank you!! :)",
+            "author": {
+                "@type": "Person",
+                "name": "Jen"
+            },
+            "datePublished": "2022-01-29"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Currently making this and I think I bought the wrong seaweed. It’s come out of the packet completely covered in salt and I have to soak it for 40 minutes?? Have made everything else though, and the dressing is amaaaazing!",
+            "author": {
+                "@type": "Person",
+                "name": "Freya"
+            },
+            "datePublished": "2021-12-31"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Thank you so much for the delicious recipe! We are local too so thanks for the tip off about the seafood shop!",
+            "author": {
+                "@type": "Person",
+                "name": "Candy"
+            },
+            "datePublished": "2021-11-06"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Just had this at a post lockdown picnic. The best!!! Thank you for the awesome recipe.",
+            "author": {
+                "@type": "Person",
+                "name": "Anna"
+            },
+            "datePublished": "2021-10-07"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Asian-esque"
+    ],
+    "keywords": "japanese salad, japanese slaw",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "288 kcal",
+        "carbohydrateContent": "33 g",
+        "proteinContent": "11 g",
+        "fatContent": "15 g",
+        "saturatedFatContent": "2 g",
+        "transFatContent": "1 g",
+        "cholesterolContent": "2 mg",
+        "sodiumContent": "512 mg",
+        "fiberContent": "13 g",
+        "sugarContent": "17 g",
+        "unsaturatedFatContent": "12 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#recipe",
+    "isPartOf": {
+        "@id": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/#article"
+    },
+    "mainEntityOfPage": "https://www.recipetineats.com/japanese-slaw-chargrill-charlies-copycat/"
+}

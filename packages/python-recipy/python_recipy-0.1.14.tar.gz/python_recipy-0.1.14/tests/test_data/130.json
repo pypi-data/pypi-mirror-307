@@ -1,0 +1,268 @@
+{
+    "@type": "Recipe",
+    "name": "Secret Ingredient Tomato Soup",
+    "author": {
+        "@id": "https://www.budgetbytes.com/#/schema/person/bf6c329b6de4c75ae3a0de14a1f8c006"
+    },
+    "description": "This super thick, warm, and comforting tomato soup has two secret ingredients that make it rich and delicious without any dairy. 100% vegan!",
+    "datePublished": "2019-10-13T14:22:36+00:00",
+    "image": [
+        "https://www.budgetbytes.com/wp-content/uploads/2019/10/Secret-Ingredient-Tomato-Soup-bowl-overhead.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/10/Secret-Ingredient-Tomato-Soup-bowl-overhead-500x500.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/10/Secret-Ingredient-Tomato-Soup-bowl-overhead-500x375.jpg",
+        "https://www.budgetbytes.com/wp-content/uploads/2019/10/Secret-Ingredient-Tomato-Soup-bowl-overhead-480x270.jpg"
+    ],
+    "recipeYield": [
+        "4",
+        "4 1.25 cups each"
+    ],
+    "prepTime": "PT5M",
+    "cookTime": "PT25M",
+    "totalTime": "PT30M",
+    "recipeIngredient": [
+        "2 Tbsp olive oil ($0.32)",
+        "1 clove garlic, minced ($0.08)",
+        "1/2 tsp dried oregano ($0.05)",
+        "1/2 tsp dried basil ($0.05)",
+        "1/4 tsp dried thyme ($0.03)",
+        "1/4 tsp dried rosemary ($0.03)",
+        "1 pinch crushed red pepper ($0.02)",
+        "freshly cracked black pepper ($0.02)",
+        "3 oz. tomato paste ($0.27)",
+        "1 Tbsp brown sugar ($0.04)",
+        "1 28oz. can crushed tomatoes ($0.89)",
+        "2 cups vegetable broth ($0.26)",
+        "1 15oz. can cannellini beans ($0.49)",
+        "1 Tbsp nutritional yeast ($0.06)",
+        "1/4 tsp salt, or to taste ($0.01)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Add the olive oil, minced garlic, oregano, basil, thyme, rosemary, crushed red pepper, and some freshly cracked black pepper (about 10 cranks of a pepper mill) to a soup pot. Cook and stir the herbs and oil over medium heat for about one minute, or until the garlic is soft and fragrant.",
+            "name": "Add the olive oil, minced garlic, oregano, basil, thyme, rosemary, crushed red pepper, and some freshly cracked black pepper (about 10 cranks of a pepper mill) to a soup pot. Cook and stir the herbs and oil over medium heat for about one minute, or until the garlic is soft and fragrant.",
+            "url": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#wprm-recipe-45915-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the tomato paste and brown sugar. Continue to stir and cook the tomato paste mixture over medium heat for 2-3 minutes.",
+            "name": "Add the tomato paste and brown sugar. Continue to stir and cook the tomato paste mixture over medium heat for 2-3 minutes.",
+            "url": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#wprm-recipe-45915-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pour the crushed tomatoes and vegetable broth into the pot and stir to combine. As the soup begins to heat through, add a can of cannellini beans (with the liquid from the can) to a blender and purée until completely smooth. Pour the pouréed beans into the soup and stir to combine again.",
+            "name": "Pour the crushed tomatoes and vegetable broth into the pot and stir to combine. As the soup begins to heat through, add a can of cannellini beans (with the liquid from the can) to a blender and purée until completely smooth. Pour the pouréed beans into the soup and stir to combine again.",
+            "url": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#wprm-recipe-45915-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place a lid on the pot and allow it to come up to a simmer. Once simmering, turn the heat down to medium low and let it simmer, stirring occasionally, for 20 minutes.",
+            "name": "Place a lid on the pot and allow it to come up to a simmer. Once simmering, turn the heat down to medium low and let it simmer, stirring occasionally, for 20 minutes.",
+            "url": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#wprm-recipe-45915-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "After simmering for 20 minutes, add the nutritional yeast and stir to combine. Taste the soup and add salt to taste (about 1/4 tsp). Serve hot.",
+            "name": "After simmering for 20 minutes, add the nutritional yeast and stir to combine. Taste the soup and add salt to taste (about 1/4 tsp). Serve hot.",
+            "url": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#wprm-recipe-45915-step-0-4"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.86",
+        "ratingCount": "41"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was DIVINE! I didn’t have yeast so used parmesan cheese but otherwise followed it exactly. So healthy, inexpensive and tasty! WOW! Thank you SO much for the step by step instructions with measurements. It’s a huge pain to have to scroll up and down while trying a new recipe. You’re my HERO! I’m shopped to try a new recipe of yours every day this week. I cannot wait for the next one!",
+            "author": {
+                "@type": "Person",
+                "name": "Amber"
+            },
+            "datePublished": "2023-08-21"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Fantastic! We have been trying to eat more plant based and this is great option. We enjoy the creaminess without the cream. Yum.",
+            "author": {
+                "@type": "Person",
+                "name": "Rebekah"
+            },
+            "datePublished": "2023-03-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was a slam dunk. It does not taste like beans AT ALL. Just creamy tomato. \r\n\r\nI added a touch more nutritional yeast and salt, but otherwise the seasoning blend was perfect.\r\n\r\nI made a double batch to freeze some.Since my husband is celiac and my son has a dairy allergy, we can't really do canned soup. This was so easy and great to portion out for quick meals later. Thanks Beth for the great vegan recipe!",
+            "author": {
+                "@type": "Person",
+                "name": "Becky"
+            },
+            "datePublished": "2022-12-04"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Just made this soup over lunch and its REALLY tasty!  I might also blend the crushed tomatoes next time.  Great and easy recipe!",
+            "author": {
+                "@type": "Person",
+                "name": "Donna"
+            },
+            "datePublished": "2022-10-07"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I’ve lost count of how many times we’ve made and enjoyed this fabulous, nutritious recipe. I just want to thank you for it! And so quick and easy that I just made a pot in the 30 mins before school to send in my kid’s lunch. THANK YOU !",
+            "author": {
+                "@type": "Person",
+                "name": "Mackie"
+            },
+            "datePublished": "2022-09-19"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This was yet another success - the soup has a lovely creamy and rich texture,  really nice flavour and of course it's great to get the protein and fibre from those beans, too. It was quick and easy to make, definitely something I'll make again!",
+            "author": {
+                "@type": "Person",
+                "name": "Eva"
+            },
+            "datePublished": "2022-05-02"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Cannellini beans are such a nice touch to sneak more protein into the diet!  This soup is so tasty,  creamy, rich in flavour and most importantly soo easy to make. I'm going to enjoy this along with a veggie sandwich!",
+            "author": {
+                "@type": "Person",
+                "name": "Nat"
+            },
+            "datePublished": "2022-03-06"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I have been really positively impressed by this tomato soup, it tastes delicious and you really can't taste any beaniness (I like beans so that wouldn't be a problem for me, but this is perfect for picky eaters to sneak some beans in). For those who can't find or can't eat yeast, I think these would also work: some miso at the end or (the most Italian option) 2 or 3 anchovy fillets that get sauteed with the garlic until they form a paste. Dried porcini would also be good but they are more expensive, and they would lend a mushroomy flavor (delicious especially with oregano, thyme and rosemary).",
+            "author": {
+                "@type": "Person",
+                "name": "Didina Gnagnide Angorinie"
+            },
+            "datePublished": "2022-02-14"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I’m a tomato soup snob, this recipe is my go to tomato soup! It’s simple, flavorful, and a huge hit with my kids and husband! Thanks Beth!! ",
+            "author": {
+                "@type": "Person",
+                "name": "Ashley H"
+            },
+            "datePublished": "2022-02-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I forgot the star rating lol",
+            "author": {
+                "@type": "Person",
+                "name": "Dani B"
+            },
+            "datePublished": "2022-02-01"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Good googly moogly. MAKE THIS NOW. It's so hearty and healthy and easy and inexpensive. The pureed cannellini beans is a shear genius  addition; and the soup does not taste beany.  It makes it so thick and \"bisque-like\" while not adding dairy or fattening cream.  My BF scarfed 2 big bowls before he even finished his boca burger (It's meatless Saturday.... and he loves bocas).  So tasty and satisfying.  I did up the yeast b/c I love that stuff.\r\n\r\nI just wish I'd made a double batch. However it's so easy and non labor intensive, no big deal to make more.  Thanks for this!",
+            "author": {
+                "@type": "Person",
+                "name": "Sharon B"
+            },
+            "datePublished": "2021-07-31"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Lovely soup, thank you. Smooth, silky, herby, and not particularly sweet. Everyone enjoyed it, so it's been added to the \"batch cook for the freezer\" list. I used an inexpensive 2.5kg (5.5 lbs) catering tin of cherry tomatoes and scaled up the recipe, increasing the herbs a bit (no nutritional yeast) and putting grated padano cheese on the table. The beans were a mix of borlotti and cannellini. Cost wise, it came in at 42 pence ($0.58 US) per portion of 2 ladlefuls. The base mix of tomatoes and pureed beans could be adapted to other flavours too e.g. fajita spice mix, curry mix, lemon &amp; tarragon, smoked paprika/chipotle, or bulked out with cooked pasta for a minestrone...",
+            "author": {
+                "@type": "Person",
+                "name": "Gill"
+            },
+            "datePublished": "2021-04-26"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I'm not a fan of tomato soups but the recipe was well-rated so I thought it was worth a try. It was so good! I made it for a group of friends and everyone liked it. Great recipe that I will keep on hand.",
+            "author": {
+                "@type": "Person",
+                "name": "Barbara"
+            },
+            "datePublished": "2021-02-08"
+        }
+    ],
+    "recipeCuisine": [
+        "American"
+    ],
+    "keywords": "Easy Recipe, Vegan Soup",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1.25 Cups",
+        "calories": "278.48 kcal",
+        "carbohydrateContent": "44.33 g",
+        "proteinContent": "10.13 g",
+        "fatContent": "7.25 g",
+        "fiberContent": "10.78 g",
+        "sodiumContent": "1254.33 mg"
+    },
+    "@id": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#recipe",
+    "isPartOf": {
+        "@id": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/#article"
+    },
+    "mainEntityOfPage": "https://www.budgetbytes.com/secret-ingredient-tomato-soup/",
+    "meal": "Snack",
+    "cuisine": "American"
+}

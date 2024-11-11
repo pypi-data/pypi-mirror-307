@@ -1,0 +1,160 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Cajun Mac And Cheese",
+    "datePublished": "2020-01-16T08:52:21.000-05:00",
+    "dateModified": "2023-02-12T18:23:57.726-05:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Josh Miller ",
+            "url": "https://www.southernliving.com/author/josh-miller"
+        }
+    ],
+    "description": "This creamy Cajun Mac and Cheese has a nice kick thanks to andouille sausage, pepper Jack cheese, and Cajun seasoning. One bite and you&#39;ll think you&#39;re in New Orleans.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/sB-5HNqjc-vtM8WdPZLed5tIpmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/southern-living-cajun-mac-and-cheese-3x2-59-4215f98c65174f2d8a5a27fd9e589adc.jpg",
+        "height": 1125,
+        "width": 1500
+    },
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://content.jwplatform.com/videos/KUn1ak5l-KtCa7qb3.mp4",
+        "description": "This creamy macaroni and cheese has a nice kick thanks to andouille sausage, pepper Jack cheese, and Cajun seasoning.",
+        "duration": "PT3M3S",
+        "name": "How to Make Cajun Mac and Cheese",
+        "thumbnailUrl": "https://cdn.jwplayer.com/v2/media/KUn1ak5l/poster.jpg?width=720",
+        "uploadDate": "2022-09-23T10:17:10.993-04:00"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "Cajun Mac And Cheese",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "5"
+    },
+    "keywords": "cajun mac and cheese",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Cajun"
+    ],
+    "recipeIngredient": [
+        "4 quarts water",
+        "2 1/2 teaspoons kosher salt, divided",
+        "1 (16-oz.) package large elbow pasta",
+        "1/2 tablespoon canola oil",
+        "1/2 (16-oz.) package andouille sausage, chopped",
+        "1/2 cup chopped yellow onion (from 1 small onion)",
+        "1/2 cup chopped green bell pepper (from 1 small bell pepper)",
+        "1/2 cup chopped red bell pepper (from 1 small bell pepper)",
+        "1 teaspoon minced garlic (1 medium garlic clove)",
+        "6 tablespoons (3 oz.) salted butter",
+        "6 tablespoons (about 1 1/2-oz.) all-purpose flour",
+        "4 cups whole milk",
+        "2 teaspoons Cajun seasoning (such as Slap Ya Mama)",
+        "1 (8-oz.) block medium Cheddar cheese, shredded (about 2 cups)",
+        "1 (8-oz.) block pepper Jack cheese, shredded (about 2 cups)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Cook the pasta: Preheat oven to 400°F. Bring water and 2 teaspoons of the salt to a boil in a Dutch oven over medium-high. Add pasta; cook 8 minutes. Drain and set aside."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/GY9_xr7OMWdYjQdq3jXtN9YSlOc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/southern-living-cajun-mac-and-cheese-step-1-39-43483256fe2f4f0e89a39b320e5687df.jpg"
+                }
+            ],
+            "text": "Cook the sausage and peppers: Heat oil in a 12-inch cast-iron skillet over medium-high; add sausage, onion, green bell pepper, and red bell pepper. Cook, stirring often, until sausage has begun to brown and onion and peppers are tender, about 8 minutes. Add garlic, and cook, stirring constantly, 1 minute. Transfer sausage mixture to a plate; wipe skillet clean."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/piLZkuVKUycUWnJ313o9_pVckmA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/southern-living-cajun-mac-and-cheese-step-3-43-22856498015b4c98a7cab908ed0b0ccf.jpg"
+                }
+            ],
+            "text": "Make the cheese sauce: Melt butter in skillet over medium-low; whisk in flour, and cook, whisking constantly, 2 minutes. Gradually whisk in milk. Increase heat to medium, and cook, whisking occasionally, until mixture thickens slightly and comes to a simmer, 14 to 16 minutes. Continue to cook, whisking constantly, 5 minutes. Whisk in Cajun seasoning and remaining 1/2 teaspoon salt; whisk in cheeses until smooth, and remove from heat. Gently stir in cooked pasta and sausage mixture."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/kjY7VDrY39_vA09VdttSg8nqMZk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cajun_macaroni_and_cheese_1x1-561b1737fc5f4c0e8ab2f491383ef254.jpg"
+                }
+            ],
+            "text": "Bake the macaroni and cheese: Transfer to preheated oven with oven rack 4 to 6 inches from heat. Bake until golden and bubbly, 20 to 25 minutes. Increase oven temperature to broil; broil until top is browned and crisp, 3 to 5 minutes."
+        }
+    ],
+    "recipeYield": [
+        "8"
+    ],
+    "totalTime": "PT90M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/recipes/cajun-mac-and-cheese",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food",
+                        "name": "Food and Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes",
+                        "name": "Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes/cajun-mac-and-cheese",
+                        "name": "Cajun Mac And Cheese"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,209 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "New Orleans Beignets",
+    "datePublished": "2019-01-22T07:44:21.000-05:00",
+    "dateModified": "2024-04-05T20:33:58.744-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Micah A Leal",
+            "url": "https://www.southernliving.com/author/micah-a-leal"
+        }
+    ],
+    "contributor": [
+        {
+            "@type": "Person",
+            "name": "Katie Rosenhouse",
+            "url": "https://www.southernliving.com/katie-rosenhouse-7547739"
+        }
+    ],
+    "description": "Our homemade beignets recipe will transport you to the Big Easy in just one bite. Don&#39;t forget a cup of chicory coffee; it&#39;s just what every fresh beignet needs.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/nzyuG90AxhEgHL6rXSmFh2dshYU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/New-Orleans-Beignets_Audit7666_Step01-5-68e6e2e062df48f99d5b9a4d326927ed.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://content.jwplatform.com/videos/hIbT5ALg-KtCa7qb3.mp4",
+        "description": "New Orleans has their own unique variety of doughnut, and any Mardi Gras celebration isn't complete without them. Use this recipe to make a fresh batch at home.",
+        "duration": "PT3M40S",
+        "name": "Beignets - New Orleans’ Answer to the Doughnut | Hey Y'all | Southern Living",
+        "thumbnailUrl": "https://cdn.jwplayer.com/v2/media/hIbT5ALg/poster.jpg?width=720",
+        "uploadDate": "2022-03-18T20:07:56.734-04:00"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "New Orleans Beignets",
+    "cookTime": "PT35M",
+    "keywords": "beignets, new orleans beignets",
+    "prepTime": "PT25M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Southern"
+    ],
+    "recipeIngredient": [
+        "1 (1/4-oz.) envelope active dry yeast",
+        "1 1/2 cups warm water (105° to 115°), divided",
+        "8 tablespoons granulated sugar",
+        "2 eggs, lightly beaten",
+        "1 teaspoon salt",
+        "1 cup evaporated milk",
+        "4 tablespoons vegetable shortening",
+        "7 cups bread flour",
+        "Vegetable oil",
+        "Sifted powdered sugar"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/TZAgG1qzLyn6i12NRxrigEZFt_M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/New-Orleans-Beignets_Audit7666_Step02-a6e593532d0645b1b6273d6059514c4e.jpg"
+                }
+            ],
+            "text": "Make the yeast mixture: In stand mixer bowl, mix to combine yeast with 1/2 cup warm water and 1 teaspoon granulated sugar; set aside for 5 to 10 minutes until foamy. Add eggs, salt, evaporated milk, and remaining sugar. Mix lightly to combine."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/YhL9jL6RlV3t8Sr4qRX1z4jTtMw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/New-Orleans-Beignets_Audit7666_Step07-6f4a2d4c9ebd413bba1657259f8f0b63.jpg"
+                }
+            ],
+            "text": "Prepare the dough: Heat remaining water in the microwave until hot. Add shortening and mix until melted. Add shortening mixture to yeast mixture along with 4 cups bread flour. Using hook attachment, mix until a sticky dough forms. Gradually add remaining 3 cups of bread flour, mixing until the dough is smooth and pliable. Transfer to a lightly greased bowl, turning dough to grease entire surface. Cover and refrigerate for 4 to 24 hours."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/k--nVFGVAAUXC_oKll0tVZHNJrE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/New-Orleans-Beignets_Audit7666_Step08-47a34cfa614b4d37b468d066149ed94b.jpg"
+                }
+            ],
+            "text": "Cut out beignets: Lightly dust a clean surface with flour and roll dough to 1/4-inch thickness. Cut into 2 1/2-inch squares."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.southernliving.com/thmb/PlKgRCghrccP2OLjXx0hUSH_RWU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/New-Orleans-Beignets_Audit7666_Step010-c72408533df249c7abbc52ddc00c1df3.jpg"
+                }
+            ],
+            "text": "Fry the beignets: Heat 2 to 3 inches of vegetable oil in a Dutch oven or large pot to 350°F to 360°F. Fry in oil until golden brown and puffed (about 2 minutes per side). Drain on paper towels. Immediately dust with powdered sugar and serve warm."
+        }
+    ],
+    "totalTime": "PT300M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/recipes/new-orleans-beignets",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/desserts",
+                        "name": "Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/desserts/pastries",
+                        "name": "Pastries"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/recipes/new-orleans-beignets",
+                        "name": "New Orleans Beignets"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "Southern Living Test Kitchen",
+                "url": "https://www.southernliving.com/author/the-sl-test-kitchen"
+            }
+        ],
+        "lastReviewed": "2024-04-05T20:33:58.744-04:00"
+    },
+    "about": [
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can you make beignets ahead?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>This dough can be made up to 24 hours in advance, then fried right before serving.</p>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you reheat beignets?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>Beignets are best eaten fresh, but leftovers can be rewarmed in an air fryer, warm oven, toaster, or microwave, although they&#39;ll lose a bit of their original luster.</p>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why are my beignets flat and not puffed?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>When rolling the beignet dough, take care not to go too thin. The thinner the dough, the flatter the beignet. Make sure your oil is at the correct temperature for a quick puff when the dough hits the oil.</p>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why are my beignets raw in the middle?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<p>Oil that&#39;s too hot will quickly brown the beignets before the centers have a chance to cook. Make sure to check your oil temperature, and reduce the heat if your beignets are browning too quickly.</p>"
+                    }
+                }
+            ]
+        }
+    ]
+}

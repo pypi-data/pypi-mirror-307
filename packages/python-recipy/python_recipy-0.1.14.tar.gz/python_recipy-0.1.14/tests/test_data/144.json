@@ -1,0 +1,112 @@
+{
+    "@type": "Recipe",
+    "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1.00xw:0.803xh;0,0.103xh&resize=100:*",
+    "datePublished": "2021-09-17T18:13:05.282572 EDT",
+    "headline": "Haymaker Cocktail",
+    "articleBody": null,
+    "wordCount": null,
+    "image": [
+        {
+            "@type": "ImageObject",
+            "height": 1200,
+            "thumbnail": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1.00xw:0.803xh;0,0.103xh&resize=100:*",
+            "url": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1.00xw:0.803xh;0,0.103xh&resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 900,
+            "thumbnail": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1.00xw:0.803xh;0,0.103xh&resize=100:*",
+            "url": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1xw:0.600253807106599xh;center,top&resize=1200:*",
+            "width": 1200
+        },
+        {
+            "@type": "ImageObject",
+            "height": 675,
+            "thumbnail": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1.00xw:0.803xh;0,0.103xh&resize=100:*",
+            "url": "https://hips.hearstapps.com/hmg-prod/images/haymaker-cocktail-1631645958.jpg?crop=1xw:0.4501903553299492xh;center,top&resize=1200:*",
+            "width": 1200
+        }
+    ],
+    "mainEntityOfPage": {
+        "@id": "https://www.countryliving.com/food-drinks/a37598524/haymaker-cocktail-recipe/",
+        "@type": "WebPage"
+    },
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Country Living",
+        "sameAs": [
+            "https://twitter.com/countryliving",
+            "https://www.youtube.com/c/CountryLiving",
+            "https://www.facebook.com/CountryLiving",
+            "https://instagram.com/countrylivingmag/",
+            "http://www.pinterest.com/countryliving/"
+        ],
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.countryliving.com/_assets/design-tokens/countryliving/static/images/logos/logo-jsonld.01b7535.png",
+            "width": 312,
+            "height": 60
+        },
+        "parentOrganization": {
+            "@type": "NewsMediaOrganization",
+            "name": "Hearst Corporation"
+        }
+    },
+    "keywords": [
+        "content-type: Recipe",
+        "American, beverages, cocktail, cocktail party, vegetarian",
+        "NUTRITION: vegetarian",
+        "OCCASION: cocktail party",
+        "CATEGORY: beverages",
+        "CATEGORY: cocktail",
+        "TOTALTIME: 00:10:00",
+        "FILTERTIME: <30MINS",
+        "RATING: 0",
+        "FILTERRATING: unrated"
+    ],
+    "url": "https://www.countryliving.com/food-drinks/a37598524/haymaker-cocktail-recipe/",
+    "isBasedOn": "https://www.countryliving.com/food-drinks/a37598524/haymaker-cocktail-recipe/",
+    "isAccessibleForFree": "False",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".content-container"
+        }
+    ],
+    "description": "Combining the best parts of a manhattan and a whiskey sour (plus a splash of Cointreau) this cocktail goes down easy. But careful! It's stronger than it looks. ",
+    "author": {
+        "name": "Lyda Jones Burnette",
+        "url": "https://www.countryliving.com/author/6222/lyda-jones-burnette/",
+        "@type": "Person",
+        "email": "unknown@hearst.com"
+    },
+    "name": "Haymaker Cocktail",
+    "prepTime": "PT10M",
+    "cookTime": "PT0S",
+    "totalTime": "PT10M",
+    "recipeIngredient": [
+        "1 tsp. lime zest, plus 1/4 ounce lime juice, divided",
+        "2 tbsp. sugar",
+        "3/4 oz. bourbon",
+        "3/4 oz. sweet vermouth",
+        "1/4 oz. Cointreau"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Stir together lime zest and sugar on a small plate. Fill a second small plate with water. Dip rim of an old-fashioned glass in water, then in sugar mixture.&nbsp;"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Fill a cocktail shaker with bourbon, vermouth, Cointreau, lime juice, and ice. Shake until chilled, 10 to 15 seconds. Strain into prepared glass over ice."
+        }
+    ],
+    "recipeYield": "1 serving(s)",
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeCategory": [],
+    "@context": "http://schema.org"
+}

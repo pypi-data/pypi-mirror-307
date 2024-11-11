@@ -1,0 +1,115 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": "true",
+    "name": "American Indian Fry Bread",
+    "author": "TammieV",
+    "cookTime": "PT3M",
+    "prepTime": "PT10M",
+    "totalTime": "PT13M",
+    "datePublished": "2003-01-12T20:06Z",
+    "description": "I used to work at an American Indian reastraunt Where I ate these at least once a day. Sometimes with a little butter other times as a Navajo Taco. Also try the Tostada.",
+    "image": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/50/76/5/nSZXy4MNT3KmQMK63nEe_indian fry bread SITE-3.jpg",
+    "recipeCategory": "Breads",
+    "keywords": "Native American,Low Cholesterol,Healthy,< 15 Mins",
+    "recipeIngredient": [
+        "  vegetable oil (for frying)",
+        "2 1/2  cups    flour",
+        "1/2  teaspoon    salt",
+        "1   teaspoon    baking powder",
+        "1/4  teaspoon    sugar",
+        "1   teaspoon    oil",
+        "1   cup   warm milk"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "32"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "167.5",
+        "fatContent": "2.1",
+        "saturatedFatContent": "0.8",
+        "cholesterolContent": "4.3",
+        "sodiumContent": "206.4",
+        "carbohydrateContent": "31.5",
+        "fiberContent": "1.1",
+        "sugarContent": "0.2",
+        "proteinContent": "5"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oil in skillet til hot over med-high heat, but not smoking."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a large bowl, Combine the rest of the ingredients to make dough."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Shape into round disks."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Fry shaped dough in hot oil til brown and crispy."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve hot."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Traditionally you would eat this with stew."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Or top with some honey."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "I personally like to spread a little butter on it."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Two other popular choices, make chili."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pile Chili on top and add a little cheese, lettuce and tomato for a&quot;Navajo Taco&quot; Or use the round as your base for a Tostada, add taco meat, beans, cheese, lettuce, tomato and Guacamole."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "See my Creamy Guacamole recipe."
+        }
+    ],
+    "recipeYield": "8-10 serving(s)",
+    "review": [
+        {
+            "@type": "Review",
+            "description": "Really good! Where I'm from we have this as well but we call it &quot;fry bake&quot; and this is a great recipe for it!!! One thing to note, let your dough sit for a few minutes It will form better air bubbles when you fry it!",
+            "datePublished": "June 04, 2019",
+            "itemReviewed": {
+                "@type": "Thing",
+                "name": "American Indian Fry Bread"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "ratingValue": 5,
+                "bestRating": "5"
+            },
+            "author": "limeandspoontt"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://geniuskitchen.sndimg.com/fdc-new/img/FDC-Logo.png"
+        },
+        "url": "https://www.food.com"
+    }
+}

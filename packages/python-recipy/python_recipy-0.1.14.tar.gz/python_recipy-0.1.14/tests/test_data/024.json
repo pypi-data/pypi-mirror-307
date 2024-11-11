@@ -1,0 +1,163 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "The Best Dry Rub for Ribs",
+    "datePublished": "2019-07-28T03:01:01.000-04:00",
+    "dateModified": "2024-03-11T12:35:16.870-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Irvin Lin",
+            "url": "https://www.simplyrecipes.com/irvin-lin-5091787"
+        }
+    ],
+    "description": "This BBQ spice dry rub is fantastic for ribs, but it&#39;s also great on pork chops, pork loin, and pork shoulder. You can even add it to your favorite BBQ sauce for an extra kick of flavor.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.simplyrecipes.com/thmb/8PzvrtjJcHWjz7aHTMSysWBnbvU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__07__BBQ-Pork-Rub-LEAD-3-206d033106524e7a82dd53be10b5f75b.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Simply Recipes",
+        "url": "https://www.simplyrecipes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.simplyrecipes.com/thmb/QvixEwCD02s_lnkgkVb6mHwKS7c=/1125x320/filters:no_upscale():max_bytes(150000):strip_icc()/SimplyRecipesLogoTransparent-07a297c54b2142ae9c079abb2f0fa639.png",
+            "width": 1125,
+            "height": 320
+        },
+        "brand": "Simply Recipes",
+        "publishingPrinciples": "https://www.simplyrecipes.com/about-us-5096129#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/simplyrecipes",
+            "https://www.instagram.com/simplyrecipes",
+            "https://www.pinterest.com/simplyrecipes"
+        ]
+    },
+    "name": "The Best Dry Rub for Ribs",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "2"
+    },
+    "keywords": "BBQ, Grill, Make-ahead, American, Favorite Fall, Favorite Summer, Fourth of July, Game Day, Super Bowl",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "58 kcal",
+        "carbohydrateContent": "14 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "1 g",
+        "proteinContent": "1 g",
+        "saturatedFatContent": "0 g",
+        "sodiumContent": "635 mg",
+        "sugarContent": "11 g",
+        "fatContent": "0 g",
+        "servingSize": "1 1/2 cups",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT5M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "3/4 cup packed dark brown sugar (or 1/2 cup if you prefer a more savory rub)",
+        "2 tablespoons kosher salt",
+        "2 tablespoons onion powder",
+        "2 tablespoons smoked paprika",
+        "1 tablespoon dry mustard",
+        "1 tablespoon granulated garlic",
+        "1 tablespoon ground black pepper",
+        "1 teaspoon cayenne pepper",
+        "1 teaspoon allspice"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Mix: Place all the spices in an airtight glass jar and shake gently to combine."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Store: Store in an airtight container for up to a year. Did you enjoy this recipe? Let us know your favorite way to use it in the comments below!"
+        }
+    ],
+    "recipeYield": [
+        "12",
+        "1 1/2 cups"
+    ],
+    "totalTime": "PT5M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Catfish Jack"
+            },
+            "reviewBody": "This rub is pretty good, but that's subjective because it's my pallet and my opinion. Everyone thinks their rub is the best and a lot of those go so far as to claim it's the worlds best. I've had some better than this one but even more that weren't even close."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mark"
+            },
+            "reviewBody": "I loved it. Thanks for sharing this little morsal of heaven food"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Garrett"
+            },
+            "reviewBody": "My husband does something similar to this but adds chipotle for smoke and (a bit of an out there ingredient) amchoor powder to give it a tang. Amchoor is a sour powder made from dried mango and can be found online or in Indian markets. Super epic."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Hugetransformation"
+            },
+            "reviewBody": "Trying out now. Like the addition of the allspice to keep people guessing. Thx"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.simplyrecipes.com/recipes/the_best_dry_rub_for_ribs/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/vegetable-recipes-5090922",
+                        "name": "Vegetables"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/herbs-and-spice-recipes-5090876",
+                        "name": "Herbs and Spices"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/recipes/the_best_dry_rub_for_ribs/",
+                        "name": "The Best Dry Rub for Ribs"
+                    }
+                }
+            ]
+        }
+    },
+    "about": []
+}

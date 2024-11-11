@@ -1,0 +1,136 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Tortas Ahogadas al Guero",
+    "url": "https://www.foodnetwork.com/recipes/tortas-ahogadas-al-guero-8734292",
+    "headline": "Tortas Ahogadas al Guero",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/06/02/DV3113_Tortas-Ahogadas-al-Guero_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1591129763035.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/06/02/DV3113_Tortas-Ahogadas-al-Guero_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1591129763035.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/06/02/DV3113_Tortas-Ahogadas-al-Guero_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1591129763035.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2020-06-02T17:15:22.712-04:00",
+    "dateModified": "2020-06-02T17:15:22.086-04:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Pork Shoulder,Main Dish",
+    "cookTime": "P0Y0M0DT0H50M0.000S",
+    "totalTime": "P0Y0M0DT4H0M0.000S",
+    "recipeIngredient": [
+        "5 pounds pork shoulder, cut into 2-inch cubes",
+        "2 tablespoons salt ",
+        "1 1/2 tablespoons ground cumin ",
+        "1/2 tablespoon ancho chile powder ",
+        "1/4 teaspoon cayenne powder ",
+        "Juice of 2 limes ",
+        "1 orange, halved ",
+        "A few tablespoons neutral oil, if needed",
+        "Butter, for buttering buns ",
+        "12 bolillo buns (see Cook's Note)",
+        "Habanero Slaw, recipe follows",
+        "1 bunch fresh cilantro ",
+        "Ahogada Salsa, recipe follows",
+        "1 white onion",
+        "3 habanero chiles ",
+        "1 tablespoon Mexican oregano ",
+        "1/2 teaspoon salt ",
+        "Juice of 1 lime ",
+        "Two 28-ounce cans tomato-chile sauce",
+        "2 cups chicken drippings (see Cook's Note)"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 12 servings",
+        "calories": "712",
+        "fatContent": "46g",
+        "saturatedFatContent": "16g",
+        "carbohydrateContent": "31g",
+        "fiberContent": "5g",
+        "sugarContent": "8g",
+        "proteinContent": "43g",
+        "cholesterolContent": "165mg",
+        "sodiumContent": "1042mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Add the pork to a large pot along with the salt, cumin, chile powder, cayenne, lime juice and 2 cups water."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Give the orange halves a squeeze over the pork and tuck the juiced halves into the pork. Cook on high heat until it reaches a boil, then turn down the heat slightly and allow the pork to simmer until very tender, about 2 hours. (As the pork cooks, the liquid will evaporate off, and towards the end of the cooking time, the pork will begin to fry in its own fat. The carnitas are done when they are cooked through, break apart easily with a fork, and are beginning to brown. If you notice that your pork is cooked but not frying, try adding some oil.)"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To assemble a torta, butter both sides of a bun and press in a panini press at 350 degrees F until slightly toasted and steaming on the inside, about a minute. Fill the bun with 1/2 cup carnitas, shaking off any excess liquid from the meat. Top the carnitas with a generous helping of Habanero Slaw and a few sprigs of cilantro. Close the torta and cut crosswise on a bias."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pour 3/4 cup hot Ahogada Salsa over each torta (make sure the plates you use have a bit of a rim to contain the salsa!). Repeat with the remaining ingredients to make 11 more tortas."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Best eaten with your hands!"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Halve the onion and slice very thinly. Seed the habanero chiles (we recommend using gloves as the seeds are very hot!) and slice very thinly. Combine onions, habanero chiles, oregano, salt and lime in a small bowl. Allow to rest in the refrigerator at least one hour (and up to one day) before using so that the onions become slightly soft and pickled."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Combine the tomato-chile sauce and the chicken drippings in a medium saucepan. Whisk over medium-high heat and cook until slightly reduced, about 10 minutes. Keep warm until ready to serve."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 1
+    },
+    "recipeYield": "12 servings",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jessica G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Incredible"
+        }
+    ],
+    "recipeCategory": []
+}

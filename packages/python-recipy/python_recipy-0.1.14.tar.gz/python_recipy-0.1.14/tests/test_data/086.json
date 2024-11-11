@@ -1,0 +1,134 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "NewFoundLand Cod Cakes",
+    "url": "https://www.foodnetwork.com/recipes/newfoundland-cod-cakes-8031632",
+    "headline": "NewFoundLand Cod Cakes",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/12/18/DV3103_newfoundland-cod-cakes_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1576701112145.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/12/18/DV3103_newfoundland-cod-cakes_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1576701112145.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/12/18/DV3103_newfoundland-cod-cakes_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1576701112145.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2019-12-18T15:27:53.147-05:00",
+    "dateModified": "2019-12-18T15:27:52.430-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Cod Recipes,Fish,Main Dish,Deep-Frying",
+    "cookTime": "P0Y0M0DT0H30M0.000S",
+    "totalTime": "P0Y0M0DT0H45M0.000S",
+    "recipeIngredient": [
+        "Oil, for cooking",
+        "8 ounces boiling potatoes ",
+        "1 small parsnip ",
+        "2 ounces Spanish onions ",
+        "8 ounces cod ",
+        "2 ounces butter ",
+        "2 tablespoons chopped fresh parsley ",
+        "1 tablespoon dried savory, preferably Mt. Scio Farm",
+        "Salt and pepper",
+        "1/2 cup seasoned flour ",
+        "1 cup egg wash ",
+        "1/2 cup panko breadcrumbs "
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 9 servings",
+        "calories": "189",
+        "fatContent": "10g",
+        "saturatedFatContent": "4g",
+        "carbohydrateContent": "16g",
+        "fiberContent": "2g",
+        "sugarContent": "1g",
+        "proteinContent": "10g",
+        "cholesterolContent": "125mg",
+        "sodiumContent": "270mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Bring oil to 360 degrees F in a deep-fryer."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Peel potatoes and parsnip, then cover with water in a saucepan and bring to a boil. Finely dice onions and cook with potato and parsnip. Cook cod in seasoned water until fully cooked, about 8 minutes. Remove the cod."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Strain the potatoes, parsnip and onion out, then mash them with the butter, herbs and salt and pepper."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Fold in cod and form into 2-ounce cakes. Coat cakes in flour, then dip in egg wash, and finally in panko."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Deep-fry cod cakes until golden brown, about 3 minutes."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 5
+    },
+    "recipeYield": "9 cakes",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I went to OCCO last week while visiting with my son in Canada and it was awesome! We loved everything and the cod cakes with their sauce was amazing! I will definitely try to make these."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "monica m."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Amazing "
+        }
+    ],
+    "recipeCategory": []
+}

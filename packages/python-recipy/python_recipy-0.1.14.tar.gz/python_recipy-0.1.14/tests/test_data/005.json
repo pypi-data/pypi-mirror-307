@@ -1,0 +1,228 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Grilled Pork Tenderloin with Cherries",
+    "datePublished": "2020-04-30T00:27:55.000-04:00",
+    "dateModified": "2024-04-18T15:45:10.110-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Carolyn Malcoun",
+            "url": "https://www.eatingwell.com/author/carolyn-malcoun/"
+        }
+    ],
+    "description": "Grilling pork tenderloin is a delicious, smoky way to bring out the flavor of the meat. While you have the grill on, cook some green beans in a grill basket to serve alongside this juicy dish.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.eatingwell.com/thmb/WAvdymiCzTe4hQ19BgY42I2hzhE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8060519-a0f7eca4859347668d9140f947db390b.jpg",
+        "height": 1244,
+        "width": 1244
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "EatingWell",
+        "url": "https://www.eatingwell.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.eatingwell.com/thmb/cr0OO5bIhN4hn9zmchZ_ZSKGUuQ=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/eatingwell_brand_logo_schema-b4e06815bfc2449ebe240453e3b47d48.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "EatingWell",
+        "publishingPrinciples": "https://www.eatingwell.com/about-us-6743412#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/EatingWell/",
+            "https://twitter.com/EatingWell/",
+            "https://www.instagram.com/eatingwell/",
+            "https://www.pinterest.com/eatingwell/",
+            "https://flipboard.com/@EatingWell",
+            "https://www.youtube.com/@eatingwell",
+            "https://www.linkedin.com/company/eatingwell-media-group/",
+            "https://www.tiktok.com/@eatingwell"
+        ]
+    },
+    "name": "Grilled Pork Tenderloin with Cherries",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "6"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "244 kcal",
+        "carbohydrateContent": "15 g",
+        "cholesterolContent": "70 mg",
+        "fiberContent": "2 g",
+        "proteinContent": "24 g",
+        "saturatedFatContent": "2 g",
+        "sodiumContent": "504 mg",
+        "sugarContent": "10 g",
+        "fatContent": "10 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT40M",
+    "recipeIngredient": [
+        "1 pound pork tenderloin, trimmed",
+        "2 tablespoons extra-virgin olive oil, divided",
+        "2 teaspoons chopped fresh thyme, divided",
+        "0.5 teaspoon chipotle chile powder",
+        "0.75 teaspoon salt, divided",
+        "0.25 cup chopped shallots",
+        "2 cups cherries, pitted and halved",
+        "2 tablespoons dry red wine",
+        "2 tablespoons chopped fresh basil, plus more for garnish"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat grill to medium-high."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Brush pork with 1 tablespoon oil and sprinkle with 1 teaspoon thyme, chile powder and 1/2 teaspoon salt. Grill, flipping occasionally, until an instant-read thermometer inserted in the thickest part registers 145 degrees F, 14 to 20 minutes. Transfer the pork to a cutting board and let rest for 5 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Meanwhile, heat the remaining 1 tablespoon oil in a medium skillet over medium heat. Add shallots and the remaining 1 teaspoon thyme and cook, stirring occasionally, until softened, about 2 minutes. Add cherries and cook, stirring occasionally, until the cherries are softened, 3 to 6 minutes. Stir in wine and increase the heat to high; cook for 1 minute. Remove pan from heat and stir in basil and the remaining 1/4 teaspoon salt."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Slice the pork and stir any juices into the cherries. Serve the pork with the cherries. Garnish with more basil, if desired."
+        }
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "totalTime": "PT40M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Marita Tedder"
+            },
+            "reviewBody": "Made it. It was easy and yummy! I'd post a photo if there was a way to do it.",
+            "datePublished": "2023-07-12T00:40:53.410Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "EatingWell Member"
+            },
+            "reviewBody": "Loved it! This will be on my weekly rotation!",
+            "datePublished": "2022-08-05T23:53:08.302Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Beth Groom"
+            },
+            "reviewBody": "This recipe was absolute heaven. My husband and college-aged daughters all gave it a big 5 stars. I don't enjoy pork and ate 2 pieces so this will definitely be made again. \n\nI didn't have 2 cups of cherries (only about 1 cup so I went with it). I also served it with a side of grilled fresh green beans (in a grill basket about 4 minutes depending on size of green beans-toss in EVOO, grill then put in the same bowl you tossed and add a seasoning of your choice).",
+            "datePublished": "2020-07-09T19:28:53.550Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "EatingWell Member"
+            },
+            "reviewBody": "Outstanding! Delicous! I didn't grill it outside - and grilling it on my grill pan on the stove took forever and was messy. Next time I'll bake it off in the oven and finish it with a sear in my grill pan. Used regular chili powder and it was fine. Used frozen Trader Joe's cherries cut in half and they was perfect too. Used 1T red wine and 1T bourbon just for fun - I don't think that mattered. My family loves cherries - so this is a keeper for us.",
+            "datePublished": "2020-05-27T14:22:01.210Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "ellen"
+            },
+            "reviewBody": "Outstanding! Delicous! I didn't grill it outside - and grilling it on my grill pan on the stove took forever and was messy. Next time I'll bake it off in the oven and finish it with a sear in my grill pan. Used regular chili powder and it was fine. Used frozen Trader Joe's cherries cut in half and they was perfect too. Used 1T red wine and 1T bourbon just for fun - I don't think that mattered. My family loves cherries - so this is a keeper for us.",
+            "datePublished": "2020-05-27T14:22:01.210Z"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "DMH"
+            },
+            "reviewBody": "Loved this recipe! It has all the elements that combine to make it an A+ in my book. There are a minimum of ingredients. The prep is quick and simple. And after it was plated, it looked beautiful like we were impressing company but it was just the two of us. \n\nThe Chipotle seasoning on the tenderloin is what initially drew me to this recipe. My husband loves to grill tenderloin and serve it with sauces made with wonderful chiles used in New Mexican cooking. I love those flavors as well but many of them are much too spicy for me born and raised in Minnesota. The Chipotle was in fact more mild than I expected. The basil seem strange but I made it exactly as noted and the flavor was new and unexpected in a great way.",
+            "datePublished": "2020-05-18T14:56:24.657Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.eatingwell.com/recipe/280005/grilled-pork-tenderloin-with-cherries/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/18252/ingredients/meat-poultry/pork/",
+                        "name": "Healthy Pork Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/19279/ingredients/meat-poultry/pork/tenderloin/",
+                        "name": "Healthy Pork Tenderloin Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipe/280005/grilled-pork-tenderloin-with-cherries/",
+                        "name": "Grilled Pork Tenderloin with Cherries"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "EatingWell Test Kitchen",
+                "url": "https://www.eatingwell.com/author/eatingwell-test-kitchen/"
+            },
+            {
+                "@type": "Person",
+                "name": "Breana Lai Killeen, M.P.H., RD",
+                "url": "https://www.eatingwell.com/author/breana-killeen/"
+            }
+        ],
+        "lastReviewed": "2024-04-18T15:45:10.110-04:00"
+    },
+    "recipeCategory": []
+}

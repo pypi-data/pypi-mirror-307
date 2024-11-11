@@ -1,0 +1,94 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Stay Up Later",
+    "datePublished": "2013-12-06T18:51:36.000-05:00",
+    "dateModified": "2015-03-27T12:56:05.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Richard Boccato",
+            "url": "https://www.foodandwine.com/author/richard-boccato"
+        }
+    ],
+    "description": "In this variation on the Stay Up Late cocktail from Lucius Beebe&#39;s 1946 Stork Club Bar Book, mixologist Richard Boccato replaces the original drin...",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Stay Up Later",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "Ice",
+        "1 1/2 ounces añejo rum",
+        "1/2 ounce pisco",
+        "3/4 ounce fresh lemon juice",
+        "3/4 ounce Simple Syrup",
+        "1 ounce chilled club soda",
+        "1/4 ounce mezcal",
+        "1 orange wedge and 1 cherry, for garnish"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Fill a cocktail shaker with ice. Add the rum, pisco, lemon juice and syrup; shake well. Strain into a chilled highball glass, stir in the soda and float the mezcal on top. Garnish with the orange and cherry."
+        }
+    ],
+    "totalTime": "PT0M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/stay-up-later-cocktails-2011",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/cocktails",
+                        "name": "Cocktails"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/rum-cocktails-7496740",
+                        "name": "Rum Cocktails"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/stay-up-later-cocktails-2011",
+                        "name": "Stay Up Later"
+                    }
+                }
+            ]
+        }
+    }
+}

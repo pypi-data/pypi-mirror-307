@@ -1,0 +1,157 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": "https://www.myrecipes.com/recipe/pork-chops-mustard-rosemary",
+    "name": "Pork Chops with Mustard, Rosemary, and Capers",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2012%2F01%2F10%2Fpork-chops-mustard-rosemary-caper-su-x.jpg",
+        "width": 420,
+        "height": 420
+    },
+    "datePublished": "2012-01-10T17:23:21.000Z",
+    "description": "The salty, tangy pan sauce in this recipe by chef and cookbook author Joanne Weir would also be excellent with other cuts of pork such as tenderloin.",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": "P0DT0H30M",
+    "recipeYield": "Serves 4",
+    "recipeIngredient": [
+        "1 tablespoon olive oil",
+        "4 bone-in pork loin chops (3 1/2 lbs. total), 1 in. thick",
+        "½ teaspoon kosher salt",
+        "½ teaspoon pepper",
+        "2 cups reduced-sodium chicken broth",
+        "1 ½ tablespoons whole-grain mustard",
+        "3 tablespoons capers, rinsed",
+        "¼ teaspoon chopped fresh rosemary leaves"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oil in a large frying pan over medium-high heat. Season chops on both sides with salt and pepper. Add chops to pan and cook until barely pink in center, turning once, 10 to 12 minutes. Transfer pork to a serving plate and tent with foil.\n"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add broth to pan and bring to a boil over high heat. Stir in mustard, capers, and rosemary. Simmer until reduced by half, about 4 minutes. Spoon sauce over chops.\n"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [],
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Joanne Weir"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.4,
+        "reviewCount": 5,
+        "ratingCount": 5,
+        "itemReviewed": "Pork Chops with Mustard, Rosemary, and Capers",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "491 calories",
+        "carbohydrateContent": "3.2 g",
+        "cholesterolContent": "182 mg",
+        "fatContent": "24 g",
+        "fiberContent": "0.4 g",
+        "proteinContent": "62 g",
+        "saturatedFatContent": "7.5 g",
+        "servingSize": null,
+        "sodiumContent": "649 mg",
+        "sugarContent": null,
+        "transFatContent": null,
+        "unsaturatedFatContent": null
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "datePublished": "2013-11-16T16:00:31.000Z",
+            "reviewBody": "We really enjoyed this! This is a super easy recipe, I followed it exactly and the chops turned out great. They're moist, fork tender and nicely seasoned.\r\nJust to change things up next time I might add heavy cream to the sauce to thicken it a bit...not because it needs it, but just to add some variety.\r\nI served this with shredded veggies: sauté 1 shallot in evoo/butter combo and add 1 yellow squash, 1 zucchini and 1 large carrot, all three shredded in my Cuisinart. season with salt &amp; pepper to taste. Yum! and very easy.\r\nDefinitely will do this again.",
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "bestRating": "5",
+                "ratingValue": 3
+            },
+            "author": {
+                "@type": "Person",
+                "name": "lksmithnj",
+                "image": null,
+                "sameAs": null
+            }
+        },
+        {
+            "@type": "Review",
+            "datePublished": "2013-04-15T07:36:04.000Z",
+            "reviewBody": "I made this for a dinner party on Saturday night. It was simple and delicious and served beautifully with collard greens and mashed potatoes. I think this will be a new staple in my dinner repertoire.",
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "bestRating": "5",
+                "ratingValue": 4
+            },
+            "author": {
+                "@type": "Person",
+                "name": "LakewoodMom",
+                "image": null,
+                "sameAs": null
+            }
+        },
+        {
+            "@type": "Review",
+            "datePublished": "2013-03-04T18:24:10.000Z",
+            "reviewBody": "Ehhh, rarely do I rate a recipe poorly but this was just nothing special. While it was quick and easy especially for a weeknight meal, I think there are a lot better pork recipes out there. I will not be making this one again.",
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "bestRating": "5",
+                "ratingValue": 2
+            },
+            "author": {
+                "@type": "Person",
+                "name": "love2coooook",
+                "image": null,
+                "sameAs": null
+            }
+        },
+        {
+            "@type": "Review",
+            "datePublished": "2012-02-28T18:45:31.000Z",
+            "reviewBody": "Sunday dinner special! Served with mashed sweet potatoes and Brussels sprouts stir fry with cranraisins. Followed recipe - easy and delicious!",
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "bestRating": "5",
+                "ratingValue": 4
+            },
+            "author": {
+                "@type": "Person",
+                "name": "39SharonM",
+                "image": null,
+                "sameAs": null
+            }
+        },
+        {
+            "@type": "Review",
+            "datePublished": "2012-01-27T15:38:20.000Z",
+            "reviewBody": "Made according to recipe. Served with baked sweet potatoes and baby bok choy. Very tasty.",
+            "reviewRating": {
+                "@type": "Rating",
+                "worstRating": "1",
+                "bestRating": "5",
+                "ratingValue": 4
+            },
+            "author": {
+                "@type": "Person",
+                "name": "dgitlin612",
+                "image": null,
+                "sameAs": null
+            }
+        }
+    ]
+}

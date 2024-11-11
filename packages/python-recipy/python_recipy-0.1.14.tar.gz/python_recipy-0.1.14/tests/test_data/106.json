@@ -1,0 +1,167 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Coffee Tapioca Recipe",
+    "datePublished": "2011-07-22T11:45:00.000-04:00",
+    "dateModified": "2018-08-30T05:48:24.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alexandra Penfold",
+            "url": "https://www.seriouseats.com/alexandra-penfold-5118530"
+        }
+    ],
+    "description": "I was delighted to discover that this recipe was not only super easy, but also a tasty way to enjoy coffee in pudding form. With instant-tapioca, this pudding thickens readily and you may be tempted to eat it straight from the pan, but have patience—it&#39;s worth waiting for it to chill completely. Top with whipped cream for a sweet ending to a hot summer night.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.seriouseats.com/thmb/j7yp9DVKjuxLvGF1qZm-i0LmYDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2011__07__20110720-162127-coffee-tapioca-primary-d762d57a990644c38977b39df1477fb1.jpg",
+        "height": 458,
+        "width": 610
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Serious Eats",
+        "url": "https://www.seriouseats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.seriouseats.com/thmb/YfQU2tc6Ask4mMy6oMJDaulMqqE=/320x320/filters:no_upscale():max_bytes(150000):strip_icc()/Serious_Eats_Schema_Logo-30a63d9c07734d35836c8ff2d368419c.png",
+            "width": 320,
+            "height": 320
+        },
+        "brand": "Serious Eats",
+        "publishingPrinciples": "https://www.seriouseats.com/about-us-5120006#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/seriouseats",
+            "https://www.instagram.com/seriouseats",
+            "https://www.pinterest.com/seriouseats"
+        ]
+    },
+    "name": "Coffee Tapioca Recipe",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "keywords": "american classics, coffee, pudding, Serious Sweets",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "283 kcal",
+        "carbohydrateContent": "46 g",
+        "cholesterolContent": "34 mg",
+        "fiberContent": "0 g",
+        "proteinContent": "1 g",
+        "saturatedFatContent": "7 g",
+        "sodiumContent": "143 mg",
+        "sugarContent": "30 g",
+        "fatContent": "11 g",
+        "servingSize": "4",
+        "unsaturatedFatContent": "0 g"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "2 cups strong brewed coffee",
+        "1/2 cup plus 1 tablespoon sugar, divided",
+        "1/2 cup instant tapioca",
+        "1 teaspoon vanilla extract",
+        "1/4 teaspoon salt",
+        "1/2 cup heavy cream"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a medium saucepan combine coffee, 1/2 cup sugar, tapioca, vanilla, and salt. Stir well and let sit for 5 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bring mixture to a full boil over medium heat, stirring constantly. You&#39;ll know it&#39;s ready when the mixture continues bubbling while being stirred. Remove from heat and divide among 4 serving glasses (highball glasses work well). Chill for 2 to 3 hours."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In the bowl of a stand mixer combine heavy cream and one tablespoon of sugar. Using the whisk attachment whip until peaks form. Divide whipped cream among chilled portions."
+        }
+    ],
+    "recipeYield": "4",
+    "totalTime": "PT195M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "gotcoffee"
+            },
+            "reviewBody": "Coffee Heaven Recipe\n\n1 large 12 oz cup of regular brewed coffee\n1 &#189; teaspoons coconut cream concentrate\n1 &#189; teaspoons cocoa powder\nsweetener of your choice\n\nDirections\nMix all ingredients together in a large coffee cup"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Alexandra Penfold"
+            },
+            "reviewBody": "<b>@kakugori</b>: Gotcha. Hmm. That would be interesting. Let me know if you give it a try!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kakugori"
+            },
+            "reviewBody": "@Alexandra: No, I meant the regular-size non-instant. And just to soak them in the coffee before use, rather than cook in the coffee. It would take longer, certainly, but I think the pearls would absorb the coffee without it tasting twice-baked."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Alexandra Penfold"
+            },
+            "reviewBody": "<b>@kakugori</b>: I, too, love the texture of the larger pearls and thought of trying this with the larger pearls, but even if you soak them, they take much longer to cook than instant tapioca, in which case you might run into <b>@Porketarian Alex's</b> concern of overcooking the coffee. \n\n<b>@Les ah</b>: thanks so much! Feel free to suggest any favorite old fashion recipes and I'll try to make them happen for future columns!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Les ah"
+            },
+            "reviewBody": "This looks delicious. I love resurrecting old recipes like these."
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.seriouseats.com/coffee-tapioca-recipe",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/dessert-recipes-5117878",
+                        "name": "Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/custard-mousse-pudding-recipes-5117875",
+                        "name": "Custards, Mousses & Puddings"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/coffee-tapioca-recipe",
+                        "name": "Coffee Tapioca Recipe"
+                    }
+                }
+            ]
+        }
+    }
+}

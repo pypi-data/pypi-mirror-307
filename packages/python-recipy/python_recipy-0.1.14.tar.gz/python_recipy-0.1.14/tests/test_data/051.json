@@ -1,0 +1,143 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Caesar Salad Deviled Eggs",
+    "datePublished": "2023-10-17T22:49:30.243-04:00",
+    "dateModified": "2023-10-17T22:49:30.243-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Marianne Williams",
+            "url": "https://www.southernliving.com/author/marianne-williams"
+        }
+    ],
+    "description": "Garlicky, smoky flavors of Caesar salad are right at home as a deviled egg. Our Caesar Salad Deviled Eggs have all of the flavors of the classic dish.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.southernliving.com/thmb/Z7WwXlXEW5GypK89JppajHlhCdA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/27580_DeviledEggs_155-1-80010dc2182f485e8e29f761065f19fa.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Southern Living",
+        "url": "https://www.southernliving.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southernliving.com/thmb/ESKPvTBAXaIuvqPKIXBHM-S4bSM=/640x111/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema3-99a42e67d7c7496cacfce4cde9c2e6b9.jpg",
+            "width": 640,
+            "height": 111
+        },
+        "brand": "Southern Living",
+        "publishingPrinciples": "https://www.southernliving.com/about-us-6502349#toc-editorial-guidelines",
+        "sameAs": [
+            "https://flipboard.com/@SouthernLiving",
+            "https://en.wikipedia.org/wiki/Southern_Living",
+            "https://twitter.com/Southern_Living",
+            "https://www.facebook.com/SouthernLiving/",
+            "https://www.pinterest.com/southernliving/",
+            "https://www.instagram.com/southernlivingmag/",
+            "https://www.tiktok.com/@southern_living",
+            "https://www.youtube.com/c/southernliving/videos",
+            "https://story.snapchat.com/p/85847aa5-d631-4e75-aa2e-1fb944d94d8a/17778013032448"
+        ]
+    },
+    "name": "Caesar Salad Deviled Eggs",
+    "keywords": "caesar salad deviled eggs",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "1 tsp. olive oil",
+        "1 Tbsp. panko (Japanese-style breadcrumbs)",
+        "6 large eggs",
+        "2 Tbsp. mayonnaise",
+        "2 tsp. finely grated Parmesan cheese, plus shaved cheese for garnish",
+        "1 tsp. Dijon mustard",
+        "1/4 tsp. black pepper",
+        "1/8 tsp. kosher salt",
+        "1 small anchovy fillet (from 1 [1 1/2-oz.] jar), finely chopped (about 1/4 tsp.)",
+        "3 roasted garlic cloves, finely chopped (about 1/2 tsp.)",
+        "12 fresh tarragon leaves (from 2 large sprigs)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat oil in a small nonstick skillet over medium. Add panko; cook, stirring constantly, until golden brown and toasted, 2 to 3 minutes. Remove from heat; let cool 5 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Fill a large pot with water, and bring to a boil over high. Carefully lower eggs into boiling water; cook, undisturbed, for 11 minutes, 30 seconds. "
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Meanwhile, fill a large bowl halfway with ice, and add enough water to cover ice; set ice bath aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Using a spider or slotted spoon, immediately transfer cooked eggs from boiling water to ice bath. Let stand until completely cooled, at least 5 minutes or up to 30 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Working with 1 egg at a time, firmly tap eggs on countertop or a flat work surface until cracks form all over the shell. Peel eggs under cold water."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cut eggs in half lengthwise, and carefully remove yolks. Using a fork, mash together yolks and mayonnaise in a medium bowl. Add finely grated Parmesan cheese, mustard, pepper, salt, anchovy, and roasted garlic. Stir well to combine."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Spoon egg yolk mixture evenly (about 1 Tbsp. each) into egg whites. Garnish with toasted panko, shaved Parmesan cheese, and tarragon leaves. Serve immediately, or store in an airtight container in refrigerator up to 3 days."
+        }
+    ],
+    "recipeYield": [
+        "12"
+    ],
+    "totalTime": "PT45M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.southernliving.com/caesar-salad-deviled-eggs-7967714",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/dish",
+                        "name": "Dish"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.southernliving.com/food/dish/deviled-eggs",
+                        "name": "Deviled Eggs"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.southernliving.com/caesar-salad-deviled-eggs-7967714",
+                        "name": "Caesar Salad Deviled Eggs"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "Southern Living Test Kitchen",
+                "url": "https://www.southernliving.com/author/the-sl-test-kitchen"
+            }
+        ],
+        "lastReviewed": "2023-10-17T22:49:30.243-04:00"
+    }
+}

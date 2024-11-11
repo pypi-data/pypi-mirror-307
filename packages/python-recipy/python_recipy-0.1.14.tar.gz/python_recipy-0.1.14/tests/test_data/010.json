@@ -1,0 +1,113 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Best Friend's Bison Pot Roast",
+    "url": "https://www.foodnetwork.com/recipes/best-friends-bison-pot-roast-2269310",
+    "headline": "Best Friend's Bison Pot Roast",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/8/13/0/RX-BISON_Your-Best-Friends-Pot-Roast_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1378484638694.jpeg",
+            "height": "1280",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/8/13/0/RX-BISON_Your-Best-Friends-Pot-Roast_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1378484638694.jpeg",
+            "height": "960",
+            "width": "1280"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/8/13/0/RX-BISON_Your-Best-Friends-Pot-Roast_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1378484638694.jpeg",
+            "height": "720",
+            "width": "1280"
+        }
+    ],
+    "datePublished": "2016-11-18T16:00:25.406-05:00",
+    "dateModified": "2013-11-06T11:25:04.681-05:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Meat,Main Dish",
+    "cookTime": "P0Y0M0DT0H45M0.000S",
+    "prepTime": "P0Y0M0DT0H10M0.000S",
+    "totalTime": "P0Y0M0DT8H55M0.000S",
+    "recipeIngredient": [
+        "One 2 lb. Bison Inside Round Roast (fresh or fully thawed)",
+        "1/3 cup flour",
+        "2 tbsp. chopped or granulated garlic",
+        "1 tsp. coarse sea salt",
+        "1 tsp. coarse ground pepper",
+        "1/3 cup olive oil",
+        "I diced large onion chopped",
+        "3 medium carrots diced",
+        "2 stalks of celery",
+        "1 large leek sliced",
+        "1 tbsp. tomato paste",
+        "2 1/2 cups of beef stock",
+        "1 1/2 cups of beef stock and one cup of dry red wine"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 4 servings",
+        "calories": "586",
+        "fatContent": "23g",
+        "saturatedFatContent": "4g",
+        "carbohydrateContent": "26g",
+        "fiberContent": "3g",
+        "sugarContent": "6g",
+        "proteinContent": "57g",
+        "cholesterolContent": "141mg",
+        "sodiumContent": "1159mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Place bison pot roast in a large zip lock bag with flour, garlic, salt and pepper. Shake well to coat and allow to rest for 10 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place a heavy bottomed pan on the stove and preheat for 10 minutes on medium low."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add vegetable oil and brown the roast well on the first side for 7 minutes and the second side for 5 minutes. Remove and set aside on a platter."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add onions to same skillet and saute until soft and clear, about 9 minutes. Add carrots and celery and cook for an additional 11 minutes. For best flavor the vegetables should caramelize."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add one heaping tablespoon of tomato paste and continue to saute for an additional 2 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add beef stock or stock/wine mixture. Return roast to pan, bring liquid to a boil and immediately reduce to a simmer."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cover and cook on lowest stove top setting for 7 hours OR Set oven temp to 180&deg;F and cook in covered heavy casserole for 8 hours OR Transfer to slow cooker and cook on low for 8 hours."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "When the meat is fork tender, remove roast and let rest for 10 minutes before slicing."
+        }
+    ],
+    "recipeYield": "4 Servings",
+    "recipeCategory": []
+}

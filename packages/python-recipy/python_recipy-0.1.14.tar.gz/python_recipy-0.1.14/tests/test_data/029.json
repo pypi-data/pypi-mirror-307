@@ -1,0 +1,113 @@
+{
+    "@type": "Recipe",
+    "name": "Asian Quinoa Salad",
+    "author": {
+        "@id": "https://damndelicious.net/#/schema/person/b5f3793618a48c5e85a0fde94b831682"
+    },
+    "description": "A quick and easy healthy quinoa salad dressed in sweet and tangy Asian flavors, loaded with tons of veggies!",
+    "datePublished": "2013-10-29T21:00:16+00:00",
+    "image": [
+        "https://s23209.pcdn.co/wp-content/uploads/2013/10/IMG_4345edit1.jpg"
+    ],
+    "recipeYield": [
+        "2",
+        "2 servings"
+    ],
+    "prepTime": "PT10M",
+    "cookTime": "PT15M",
+    "totalTime": "PT25M",
+    "recipeIngredient": [
+        "1/2 cup quinoa",
+        "1/4 cup shredded red cabbage",
+        "1/4 cup diced red bell pepper",
+        "1/4 cup grated carrots",
+        "1/4 cup corn kernels",
+        "1  green onion (thinly sliced)",
+        "1  avocado (halved, seeded, peeled and diced)",
+        "1/4 cup chow mein noodles (for serving)",
+        "6 tablespoons rice vinegar",
+        "1 clove garlic (pressed)",
+        "1 tablespoon sesame oil",
+        "1 tablespoon sugar",
+        "1 teaspoon soy sauce",
+        "1 teaspoon grated ginger"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "To make the vinaigrette, whisk together rice wine vinegar, garlic, sesame oil, sugar, ginger and soy sauce in a small bowl; set aside.",
+            "name": "To make the vinaigrette, whisk together rice wine vinegar, garlic, sesame oil, sugar, ginger and soy sauce in a small bowl; set aside.",
+            "url": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#wprm-recipe-33712-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a medium saucepan, cook quinoa according to package instructions.",
+            "name": "In a medium saucepan, cook quinoa according to package instructions.",
+            "url": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#wprm-recipe-33712-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a large bowl, combine quinoa, cabbage, bell pepper, carrots, corn, green onion and avocado. Stir in sesame vinaigrette.",
+            "name": "In a large bowl, combine quinoa, cabbage, bell pepper, carrots, corn, green onion and avocado. Stir in sesame vinaigrette.",
+            "url": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#wprm-recipe-33712-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Serve immediately, topped with chow mein noodles, if desired.",
+            "name": "Serve immediately, topped with chow mein noodles, if desired.",
+            "url": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#wprm-recipe-33712-step-0-3"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.67",
+        "ratingCount": "3"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "This has been one of my favorite recipes for years! I’ve still never made it with the chow mein but it’s still great without! Thanks! ",
+            "author": {
+                "@type": "Person",
+                "name": "Caitlin"
+            },
+            "datePublished": "2023-03-23"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "reviewBody": "Tasty! Done it without noodles",
+            "author": {
+                "@type": "Person",
+                "name": "Alex"
+            },
+            "datePublished": "2021-08-26"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I love this salad. I make it on a regular basis. Even my bf who doesn’t like quinoa is always helping himself when I make it. I add less rice vinegar and more soy sauce and it’s absolutely delicious!!  Thx for the wonderful\r\nRecipe! ",
+            "author": {
+                "@type": "Person",
+                "name": "Veronique Leblanc"
+            },
+            "datePublished": "2019-08-12"
+        }
+    ],
+    "@id": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#recipe",
+    "isPartOf": {
+        "@id": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/#article"
+    },
+    "mainEntityOfPage": "https://damndelicious.net/2013/10/29/asian-quinoa-salad/",
+    "recipeCategory": []
+}

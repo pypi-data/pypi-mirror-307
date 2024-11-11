@@ -1,0 +1,187 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Creamy Cavatappi",
+    "datePublished": "2023-05-29T12:00:00.000-04:00",
+    "dateModified": "2023-05-29T12:00:00.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Laurel Randolph",
+            "url": "https://www.simplyrecipes.com/laurel-randolph-5194532"
+        }
+    ],
+    "description": "Creamy cavatappi is a weeknight win. With a quick and easy cream and Parmesan sauce that feels indulgent, this simple recipe is easy to customize to suit your tastes.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.simplyrecipes.com/thmb/CK1k-b-lDIgsc3EkyJwX26aPoSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Creamy-Cavatappi-LEAD-22-19f4e9abbd0f46759054c7ee06ba7d80.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Simply Recipes",
+        "url": "https://www.simplyrecipes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.simplyrecipes.com/thmb/QvixEwCD02s_lnkgkVb6mHwKS7c=/1125x320/filters:no_upscale():max_bytes(150000):strip_icc()/SimplyRecipesLogoTransparent-07a297c54b2142ae9c079abb2f0fa639.png",
+            "width": 1125,
+            "height": 320
+        },
+        "brand": "Simply Recipes",
+        "publishingPrinciples": "https://www.simplyrecipes.com/about-us-5096129#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/simplyrecipes",
+            "https://www.instagram.com/simplyrecipes",
+            "https://www.pinterest.com/simplyrecipes"
+        ]
+    },
+    "name": "Creamy Cavatappi",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "2"
+    },
+    "cookTime": "PT15M",
+    "keywords": "Creamy Cavatappi, parmesan cheese, cavatappi pasta",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "235 kcal",
+        "carbohydrateContent": "26 g",
+        "cholesterolContent": "29 mg",
+        "fiberContent": "2 g",
+        "proteinContent": "8 g",
+        "saturatedFatContent": "6 g",
+        "sodiumContent": "437 mg",
+        "sugarContent": "1 g",
+        "fatContent": "11 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT7M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "8 ounces (1/2 pound) cavatappi pasta",
+        "1 tablespoon unsalted butter",
+        "2 cloves garlic, minced",
+        "3/4 cup heavy cream",
+        "1/2 teaspoon kosher salt, plus more for the pasta water",
+        "1/2 teaspoon freshly ground black pepper",
+        "1/2 cup (1.3 ounces) finely grated Parmesan cheese, plus more for garnish",
+        "1 tablespoon fresh lemon juice",
+        "1 cup frozen peas, optional",
+        "1/4 cup to 1/2 cup reserved pasta cooking water"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Cook the pasta: Put a large pot of water on to boil over high heat. Season generously with salt. Once the water is boiling, add the pasta and stir. Cook until just short of al dente, according to the package directions."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/_sMcyE22rMv5iHsrKjH3UrDXiUQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Creamy-Cavatappi-METHOD-3-e7dd7a3f3c4f4557b36608f372d69ef8.jpg"
+                }
+            ],
+            "text": "Meanwhile, make the sauce: While the pasta cooks, add the butter to a large skillet over medium heat. Once melted, add the garlic and cook just until fragrant but not browned, about 30 seconds.  Slowly add the cream while stirring and season with salt and pepper. Bring to a simmer, reducing the heat if needed to maintain a simmer. Cook, while stirring, until slightly thickened, about 3 minutes. Add the Parmesan a small handful at a time, sprinkling it over top and stirring each time until melted. Add the lemon juice and stir. Turn the heat as low as it’ll go until the pasta is ready, stirring occasionally."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/bnejOKPqBfo0Ro4HgU4-JnEmVCk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Creamy-Cavatappi-METHOD-5-aa198847449e4bea8ec53527483b0361.jpg"
+                }
+            ],
+            "text": "Drain the pasta and thaw the peas: Reserve 1/2 cup of the pasta water. Add the frozen peas to a colander. Drain the pasta over the frozen peas (the hot pasta will help defrost the peas)."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.simplyrecipes.com/thmb/y2WBLjbtBh8Aa8z_-gY5r-oGtiY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Creamy-Cavatappi-METHOD-8-3996ec26b24a46e99bc720fddf1b3b92.jpg"
+                }
+            ],
+            "text": "Toss the pasta and serve: If your skillet is big enough, add the pasta and peas to the sauce. Otherwise, add the pasta and peas back to the pasta pot and pour the sauce over the top. Add 1/4 cup of the reserved pasta water and turn the heat to medium. Toss constantly until you have a creamy sauce that coats the noodles, 3 to 5 minutes. If the sauce seems too thick, add more pasta water a small splash at a time, tossing in between.  Taste, adding salt and/or pepper if needed. Top with a sprinkle of Parmesan cheese and serve immediately. Creamy cavatappi is best eaten hot and freshly made, but you can refrigerate it in an airtight container for up to 3 days. Reheat gently in the microwave or on the stovetop, adding a little water or cream to loosen the sauce. Love the recipe? Leave us stars and a review below!"
+        }
+    ],
+    "recipeYield": "3",
+    "totalTime": "PT22M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "PW"
+            },
+            "reviewBody": "My family loves this!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Eric"
+            },
+            "reviewBody": "Can you use a different cheese than parmesan?"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Lori Smith"
+            },
+            "reviewBody": "This is beautifully simple and delicious!"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.simplyrecipes.com/creamy-cavatappi-recipe-7503493",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/recipes-5090746",
+                        "name": "Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/dinner-recipes-5091433",
+                        "name": "Dinners"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.simplyrecipes.com/creamy-cavatappi-recipe-7503493",
+                        "name": "Creamy Cavatappi"
+                    }
+                }
+            ]
+        }
+    },
+    "about": []
+}

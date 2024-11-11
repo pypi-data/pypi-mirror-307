@@ -1,0 +1,63 @@
+{
+    "@type": "Recipe",
+    "name": "Green Beans with Homemade Black Bean Sauce",
+    "author": {
+        "@type": "Person",
+        "name": "Andrea Nguyen"
+    },
+    "description": "This recipe was adapted from To Asia with Love by Hetty McKinnon (Prestel, 2021)",
+    "datePublished": "2021-07-19T16:31:36+00:00",
+    "image": [
+        "https://www.vietworldkitchen.com/wp-content/uploads/2021/07/green-beans-and-black-bean-wide.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2021/07/green-beans-and-black-bean-wide-500x500.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2021/07/green-beans-and-black-bean-wide-500x375.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2021/07/green-beans-and-black-bean-wide-480x270.jpeg"
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "recipeIngredient": [
+        "1/2 cup fermented black beans",
+        "2  garlic cloves, (finely chopped)",
+        "1 teaspoon dried red chile flakes",
+        "1 teaspoon sugar",
+        "2 teaspoons soy sauce or tamari",
+        "2 tablespoons Shaoxing rice wine or dry sherry",
+        "2 tablespoons canola, (peanut, or mild-tasting olive oil)",
+        "2 tablespoons canola, (peanut oil, or a favorite neutral oil)",
+        "4 slices peeled fresh ginger, (bruised with the side of a knife (optional))",
+        "12 ounces green beans, (trimmed and cut into bite-size pieces)",
+        "Fine sea salt",
+        "3 tablespoons black bean sauce (homemade (recipe above) or purchased)",
+        "1/3 cup water",
+        "2 teaspoons toasted sesame oil",
+        "Ground black pepper",
+        "1 tablespoon toasted white sesame seeds"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "To make the black bean sauce, put the black beans in a mesh strainer then rinse under cold running water for 20 to 30 seconds, shaking the strainer often to remove most of the salt from the beans. Vigorously shake the strainer to expel excess moisture then dump the beans into a small bowl. Let sit for a few minutes to partially hydrate and soften. Use a fork to mash the beans to a coarse texture (you shouldn’t see many whole beans). Mix in the garlic, chile, sugar, soy sauce, rice wine, and oil. Stir well then transfer to a jar. Refrigerate to keep for weeks. This makes about 1/2 cup.",
+            "name": "To make the black bean sauce, put the black beans in a mesh strainer then rinse under cold running water for 20 to 30 seconds, shaking the strainer often to remove most of the salt from the beans. Vigorously shake the strainer to expel excess moisture then dump the beans into a small bowl. Let sit for a few minutes to partially hydrate and soften. Use a fork to mash the beans to a coarse texture (you shouldn’t see many whole beans). Mix in the garlic, chile, sugar, soy sauce, rice wine, and oil. Stir well then transfer to a jar. Refrigerate to keep for weeks. This makes about 1/2 cup.",
+            "url": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html#wprm-recipe-13225-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Prep and line up all the ingredients for the stir-fry by the stove. Heat a large wok or skillet over high heat, and when hot, swirl in 1 1/2 tablespoons of oil. Add the ginger and let it sizzle and fry for about 30 seconds, then add the green beans and 2 pinches of salt. Stir-fry for 1 to 2 minutes, until the green beans are hot and partly brightened up in color.",
+            "name": "Prep and line up all the ingredients for the stir-fry by the stove. Heat a large wok or skillet over high heat, and when hot, swirl in 1 1/2 tablespoons of oil. Add the ginger and let it sizzle and fry for about 30 seconds, then add the green beans and 2 pinches of salt. Stir-fry for 1 to 2 minutes, until the green beans are hot and partly brightened up in color.",
+            "url": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html#wprm-recipe-13225-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Make a 2 to 3-inch hole in the center, then add the remaining 1/2 tablespoon of oil. Dump in the black bean sauce and let it sizzle for about 10 seconds, then swiftly stir-fry to distribute among the green beans. Splash in the water and continue stirring, moving the beans in the pan constantly for 1 to 2 minutes longer, until the water is no longer visible and the beans are tender-crisp and coated with bits of dark black bean goodness. Drizzle in the sesame oil, stir to combine and turn off the heat. Taste and if needed, add extra salt. Sprinkle on the black pepper for pungent oomph, if you like. Transfer to a serving dish and garnish with the sesame seeds. Serve immediately.",
+            "name": "Make a 2 to 3-inch hole in the center, then add the remaining 1/2 tablespoon of oil. Dump in the black bean sauce and let it sizzle for about 10 seconds, then swiftly stir-fry to distribute among the green beans. Splash in the water and continue stirring, moving the beans in the pan constantly for 1 to 2 minutes longer, until the water is no longer visible and the beans are tender-crisp and coated with bits of dark black bean goodness. Drizzle in the sesame oil, stir to combine and turn off the heat. Taste and if needed, add extra salt. Sprinkle on the black pepper for pungent oomph, if you like. Transfer to a serving dish and garnish with the sesame seeds. Serve immediately.",
+            "url": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html#wprm-recipe-13225-step-0-2"
+        }
+    ],
+    "@id": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html#recipe",
+    "isPartOf": {
+        "@id": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html#article"
+    },
+    "mainEntityOfPage": "https://www.vietworldkitchen.com/blog/2021/07/green-beans-with-homemade-black-bean-sauce-recipe.html",
+    "recipeCategory": []
+}

@@ -1,0 +1,151 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Kimchi and Asparagus Stir-Fry With Spam and Fried Egg Recipe",
+    "datePublished": "2018-04-24T03:43:20.000-04:00",
+    "dateModified": "2018-08-30T03:55:28.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Daniel Gritzer",
+            "url": "https://www.seriouseats.com/daniel-gritzer-5118638"
+        }
+    ],
+    "description": "Inspired by Italian asparagus alla Milanese, this Korean-flavored version takes quite a few liberties. The asparagus is slivered thinly and stir-fried with kimchi and spam, then topped with a fried egg, grated Parmigiano-Reggiano cheese, and finished with finely grated Spanish chorizo.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.seriouseats.com/thmb/9HCsBq5V9iRSqnmxUzliMSZ5Gbo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__04__20180405-asparagus-alla-milanese-variations-vicky-wasik-14-2d6b022f834c408689d596baac76b98b.jpg",
+        "height": 1125,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Serious Eats",
+        "url": "https://www.seriouseats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.seriouseats.com/thmb/YfQU2tc6Ask4mMy6oMJDaulMqqE=/320x320/filters:no_upscale():max_bytes(150000):strip_icc()/Serious_Eats_Schema_Logo-30a63d9c07734d35836c8ff2d368419c.png",
+            "width": 320,
+            "height": 320
+        },
+        "brand": "Serious Eats",
+        "publishingPrinciples": "https://www.seriouseats.com/about-us-5120006#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/seriouseats",
+            "https://www.instagram.com/seriouseats",
+            "https://www.pinterest.com/seriouseats"
+        ]
+    },
+    "name": "Kimchi and Asparagus Stir-Fry With Spam and Fried Egg Recipe",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "keywords": "Asian, asparagus, egg, Italian, kimchi, spam",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "472 kcal",
+        "carbohydrateContent": "12 g",
+        "cholesterolContent": "174 mg",
+        "fiberContent": "4 g",
+        "proteinContent": "21 g",
+        "saturatedFatContent": "15 g",
+        "sodiumContent": "1420 mg",
+        "sugarContent": "3 g",
+        "fatContent": "39 g",
+        "servingSize": "Serves 2",
+        "unsaturatedFatContent": "0 g"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Italian",
+        "Korean"
+    ],
+    "recipeIngredient": [
+        "1/2 tablespoon (7ml) vegetable oil",
+        "3 ounces (85g) Spam, cut into 1- by 1/4-inch batons (about 1/3 cup batons)",
+        "3/4 pound (340g) asparagus, woody ends trimmed , stalks sliced 1/4 inch thick on the bias",
+        "2 medium cloves garlic, thinly sliced",
+        "1/3 packed cup (4 ounces/115g) squeezed-dry kimchi, roughly chopped",
+        "3 tablespoons (45ml) kimchi juice",
+        "1/4 teaspoon toasted sesame oil",
+        "Kosher salt",
+        "1 1/2 tablespoons (22g) unsalted butter",
+        "1 large egg",
+        "Parmigiano-Reggiano, for grating",
+        "1 link cured Spanish chorizo, frozen"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a large stainless steel or cast iron skillet, or in a wok, heat vegetable oil over high heat until shimmering. Add Spam and cook, stirring, until browned and starting to crisp, about 4 minutes. Add asparagus and continue to cook, stirring, until crisp-tender and starting to brown in spots, about 3 minutes. Add garlic and toss until fragrant, about 30 seconds. Scrape onto a plate."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add chopped kimchi and cook until sizzling and dry, about 2 minutes. Scrape asparagus, garlic, and Spam back into the skillet and toss to combine. Add kimchi juice and sesame oil and cook, tossing, until liquid reduces to a light glaze, about 1 minute. Season with salt (taste first, as the kimchi and Spam are already salty). Transfer to a serving bowl."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a small nonstick or cast iron skillet, melt butter over medium-high heat until foaming. Add egg and cook until whites are set and have a thin crispy ring around their edge, and the yolk is still runny. Season with salt."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Grate Parmigiano-Reggiano onto asparagus. Top with fried egg. Grate more cheese on top, then, using the fine side of a box grater or a Microplane grater, grate frozen Chorizo on top. Serve."
+        }
+    ],
+    "recipeYield": "2",
+    "totalTime": "PT30M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Kelsey van Dyke"
+            },
+            "reviewBody": "This is only the second time I’ve ever eaten spam. After this recipe I am a convert! Skipped the chorizo (didn’t have any on hand)."
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.seriouseats.com/kimchi-and-asparagus-stir-fry-with-spam-and-fried-egg",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/main-recipes-5117839",
+                        "name": "Mains"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/quick-dinner-recipes-5117810",
+                        "name": "Quick Dinners"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.seriouseats.com/kimchi-and-asparagus-stir-fry-with-spam-and-fried-egg",
+                        "name": "Kimchi and Asparagus Stir-Fry With Spam and Fried Egg Recipe"
+                    }
+                }
+            ]
+        }
+    },
+    "about": []
+}

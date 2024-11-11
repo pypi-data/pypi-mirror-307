@@ -1,0 +1,86 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "Think of this creamy cashew yogurt as a new, flavorful vessel for your granola or fruit in the morning.",
+    "alternativeHeadline": "Think of this creamy cashew yogurt as a new, flavorful vessel for your granola or fruit in the morning.",
+    "keywords": [
+        "condiment",
+        "american",
+        "turkish",
+        "cashew",
+        "lemon",
+        "snack",
+        "raw",
+        "dairy-free",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "healthyish",
+        "breakfast",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.bonappetit.com/photos/5b75f5957de5846ce2240bd7/1:1/w_2976,h_2976,c_limit/cashew-yogurt-horizontal-2.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bon Appétit",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bonappetit.com/verso/static/bon-appetit/assets/logo-seo.png",
+            "width": "479px",
+            "height": "100px"
+        },
+        "url": "https://www.bonappetit.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Bon Appétit"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Andy Baraghani",
+            "sameAs": "https://www.bonappetit.com/contributor/andy-baraghani"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 3.6,
+        "ratingCount": 9
+    },
+    "description": "Think of this creamy cashew yogurt as a new, flavorful vessel for your granola or fruit in the morning.",
+    "image": [
+        "https://assets.bonappetit.com/photos/5b75f5957de5846ce2240bd7/16:9/w_4160,h_2340,c_limit/cashew-yogurt-horizontal-2.jpg",
+        "https://assets.bonappetit.com/photos/5b75f5957de5846ce2240bd7/4:3/w_3968,h_2976,c_limit/cashew-yogurt-horizontal-2.jpg",
+        "https://assets.bonappetit.com/photos/5b75f5957de5846ce2240bd7/1:1/w_2976,h_2976,c_limit/cashew-yogurt-horizontal-2.jpg"
+    ],
+    "headline": "Cashew Yogurt",
+    "name": "Cashew Yogurt",
+    "recipeIngredient": [
+        "1 cup raw cashews, soaked overnight, drained",
+        "1 tsp. lemon juice",
+        "¼ tsp. kosher salt",
+        "2 tsp. honey or agave syrup (nectar), plus more for serving",
+        "Chopped fruit and toasted nuts and/or seeds (for serving; optional)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Purée cashews, lemon juice, salt, and 2 tsp. honey in a blender. With the motor running, stream in ½–⅔ cup water until smooth and the cashews are a similar texture to yogurt."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Transfer to a medium bowl. Top with fruit and/or nuts, then drizzle with honey."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Do Ahead: Cashew yogurt can be made 1 week ahead. Cover and chill."
+        }
+    ],
+    "recipeYield": "Makes about 2 cups ",
+    "url": "https://www.bonappetit.com/recipe/cashew-yogurt",
+    "dateModified": "2018-08-16T04:00:00.000-04:00",
+    "datePublished": "2018-08-16T04:00:00.000-04:00",
+    "recipeCategory": []
+}

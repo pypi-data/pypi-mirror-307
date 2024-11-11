@@ -1,0 +1,227 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "headline": "Perfect Instant Pot Rice",
+    "url": "https://www.thekitchn.com/instant-pot-rice-22949278",
+    "description": "The best kept secret to perfectly fluffy rice? Your Instant Pot.",
+    "brand": {
+        "@type": "Thing",
+        "name": "The Kitchn"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "363 cal",
+        "carbohydrateContent": "74.0 g",
+        "cholesterolContent": "0 mg",
+        "fiberContent": "1.2 g",
+        "proteinContent": "6.6 g",
+        "saturatedFatContent": "2.0 g",
+        "sodiumContent": "245.2 mg",
+        "sugarContent": "0.1 g",
+        "fatContent": "3.5 g",
+        "servingSize": "Serves 4",
+        "unsaturatedFatContent": "0.0 g"
+    },
+    "suitableforDiet": "https://schema.org/GlutenFreeDiet,https://schema.org/LowCalorieDiet,https://schema.org/LowFatDiet,https://schema.org/VegetarianDiet",
+    "recipeCategory": [],
+    "recipeCuisine": [],
+    "recipeIngredient": [
+        "2 cups white, basmati, or jasmine rice",
+        "2 cups  water ",
+        "1/2 teaspoon kosher salt",
+        "1 tablespoon unsalted butter ",
+        "2 cups long grain brown rice ",
+        "2 1/4 cups water ",
+        "1/2 teaspoon kosher salt ",
+        "1 tablespoon unsalted butter ",
+        "2 cups wild rice ",
+        "3 cups water ",
+        "1/2 teaspoon kosher salt ",
+        "1 tablespoon unsalted butter "
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Step 1",
+            "text": "Rinse the rice. Measure the rice into a fine-mesh strainer and rinse under cool running water for about a minute or until the water runs clear.",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/c_fit,h_350,q_auto,w_350/v1/k/Photo/Recipes/2019-10-how-to-instant-pot-rice/2019-10-04_Kitchn86591_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 2",
+            "text": "Combine the rice, water, salt, and butter in the Instant Pot. Dump the rice into an Instant Pot or electric pressure cooker. Note that the water amounts are different depending on the rice you’re using! Add the water and salt to the rice and stir to combine. Toss the butter in, and don’t worry if it floats. ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/c_fit,h_350,q_auto,w_350/v1/k/Photo/Recipes/2019-10-how-to-instant-pot-rice/2019-10-04_Kitchn86597_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 3",
+            "text": "Pressure cook the rice on high. Lock the lid in place and set to cook under HIGH pressure for the following times: White rice: 5 minutes Brown rice: 10 minutesWild rice: 15 minutes The Instant Pot will take 8 to 10 minutes to come up to pressure. ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/c_fit,h_350,q_auto,w_350/v1/k/Photo/Recipes/2019-10-how-to-instant-pot-rice/2019-10-04_Kitchn86607_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 4",
+            "text": "Let the pressure naturally release for 10 minutes. When the cook time is up, let the pressure naturally release for 10 minutes. ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/c_fit,h_350,q_auto,w_350/v1/k/Photo/Recipes/2019-10-how-to-instant-pot-rice/2019-10-04_Kitchn86610_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Step 5",
+            "text": "Release any remaining pressure, fluff, and serve. Quick release any remaining pressure release. Uncover, fluff the rice with a fork, and serve immediately. ",
+            "image": "https://cdn.apartmenttherapy.info/image/upload/c_fit,h_350,q_auto,w_350/v1/k/Photo/Recipes/2019-10-how-to-instant-pot-rice/2019-10-04_Kitchn86655_HT-Instant-Pot-Rice"
+        }
+    ],
+    "HowtoTip": {
+        "text": "Storage: Leftover rice can be refrigerated in an airtight container for up to 5 days or frozen for a few months.Nutritional data: The nutritional data is calculated for white rice."
+    },
+    "recipeYield": 4,
+    "prepTime": "PT420S",
+    "cookTime": "PT1800S",
+    "totalTime": "PT2220S",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "ratingValue": 4.75,
+        "worstRating": 1,
+        "reviewCount": 11
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "theicecreamlife"
+            },
+            "reviewBody": "Love this method, especially for wild rice. So much faster than the stovetop. ",
+            "datePublished": "2024-01-25"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "CookingChris"
+            },
+            "reviewBody": "This is a great way to cook rice where you can just set it and walk away. I like making extra rice and chilling it for fried rice later in the week.",
+            "datePublished": "2024-01-22"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5
+            },
+            "author": {
+                "@type": "Person",
+                "name": "bds-ny"
+            },
+            "reviewBody": "Tried it with basmati and turned out just right",
+            "datePublished": "2024-01-31"
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "name": "Instant Pot Rice",
+        "description": "We all know and love the Instant Pot for its electric pressure-cooking capabilities, but let us not forget its multitude of other functions. Just to name a few, your Instant Pot can make yogurt, sauté, slow cook, and, yes, cook rice!\n\nCheck out the recipe [HERE](https://www.thekitchn.com/instant-pot-rice-22949278)",
+        "thumbnailUrl": [
+            "https://cdn.jwplayer.com/v2/media/KorAG8qR/poster.jpg?width=720"
+        ],
+        "contentUrl": "https://cdn.jwplayer.com/previews/KorAG8qR",
+        "uploadDate": "2024-06-12T22:03:50"
+    },
+    "name": "Perfect Instant Pot Rice",
+    "articleSection": "Recipes",
+    "thumbnailUrl": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2019-10-how-to-instant-pot-rice%2F2019-10-04_Kitchn86632_HT-Instant-Pot-Rice",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2019-10-how-to-instant-pot-rice%2F2019-10-04_Kitchn86632_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2019-10-how-to-instant-pot-rice%2F2019-10-04_Kitchn86632_HT-Instant-Pot-Rice"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2019-10-how-to-instant-pot-rice%2F2019-10-04_Kitchn86632_HT-Instant-Pot-Rice"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Apartment Therapy, LLC.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thekitchn.com/static/logos/publisher-logo.png",
+            "width": 180,
+            "height": 46
+        }
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Meghan Splawn",
+            "URL": "https://www.thekitchn.com/authors/meghan-splawn-2",
+            "description": "Meghan was the Food Editor for Kitchn's Skills content. She's a master of everyday baking, family cooking, and harnessing good light. Meghan approaches food with an eye towards budgeting — both time and money — and having fun. Meghan has a baking and pastry degree, and spent the first 10 years of her career as part of Alton Brown's culinary team. She co-hosts a weekly podcast about food and family called Didn't I Just Feed You.",
+            "jobTitle": ""
+        }
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Meghan Splawn"
+    },
+    "keywords": [
+        "blitz",
+        "Edit Shopping",
+        "Gluten-Free",
+        "How To",
+        "Ingredient",
+        "Instant Pot",
+        "Pressure Cookers",
+        "quick",
+        "recipe",
+        "Rice & Grains",
+        "Shopping",
+        "Side Dish",
+        "vegetarian",
+        "video",
+        "Video Lead",
+        "Meal Plan",
+        "Cooking Methods",
+        "Dish Types",
+        "team:recipes",
+        "purpose:facebook",
+        "purpose:flipboard",
+        "purpose:instagram",
+        "purpose:pinterest",
+        "purpose:search",
+        "platform:search",
+        "platform:social",
+        "course:side dish",
+        "diet:low-fat",
+        "diet:vegetarian",
+        "diet:low-calorie",
+        "diet:under 400 calories",
+        "diet:gluten-free",
+        "diet:under 500 calories",
+        "mainingredients:rice",
+        "mainingredients:grains",
+        "dishtype:whole grain or starch",
+        "dishtype:meal prep components",
+        "method:cooking appliance",
+        "method:pressure cooker",
+        "method:instant pot",
+        "updated:2023-12-20"
+    ],
+    "mainEntityOfPage": "https://www.thekitchn.com/instant-pot-rice-22949278",
+    "dateCreated": "2019-10-15T17:00:28-04:00",
+    "datePublished": "2019-10-15T17:00:28-04:00",
+    "dateModified": "2023-12-20T09:53:00-05:00",
+    "abstract": "How Long Does Rice Take to Cook in the Instant Pot? Use HIGH pressure for the following times, then let the rice natural release for at least 10 minutes: White rice (basmati, jasmine): 5 minutes Long-grain brown rice: 10 minutes Wild rice: 15 minutes"
+}

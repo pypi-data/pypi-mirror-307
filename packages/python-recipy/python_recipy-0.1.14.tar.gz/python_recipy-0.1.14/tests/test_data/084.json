@@ -1,0 +1,110 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Star-Spangled Fools",
+    "datePublished": "2013-12-06T18:51:36.000-05:00",
+    "dateModified": "2015-03-29T09:33:31.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Brendan Walsh",
+            "url": "https://www.foodandwine.com/brendan-walsh-8413214"
+        }
+    ],
+    "description": "This traditional dessert—a combination of fruit and cream—is wonderful in the summer when just-picked wild berries are juicy and flavorful. Beautiful Desserts",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Star-Spangled Fools",
+    "recipeIngredient": [
+        "1 pint blueberries",
+        "1/2 cup sugar",
+        "1/4 cup blueberry jam",
+        "2 tablespoons Kirsch or raspberry liqueur",
+        "1 pint raspberries",
+        "1/4 cup red raspberry jam",
+        "3 1/2 cups cold heavy cream",
+        "1/2 vanilla bean, split lengthwise"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a small saucepan, crush 1/2 cup of the blueberries with 2 tablespoons of the sugar. Cook over moderate heat until the berry juices are released, about 5 minutes. Stir in the blueberry jam and cook until warmed through. Strain the mixture into a bowl, pressing hard on the solids. Add 1 tablespoon of the Kirsch and let cool."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Rinse out the saucepan and add 1/2 cup of the raspberries and 2 tablespoons of the sugar; crush together. Cook over moderate heat until the berry juices are released. Add the raspberry jam and cook until warmed through. Strain the mixture into a bowl, pressing hard on the solids. Add the remaining 1 tablespoon of Kirsch and let cool."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a medium bowl, whip 2 cups of the heavy cream. Gently fold half of the whipped cream into the blueberry mixture and the other half of the whipped cream into the raspberry mixture. Refrigerate the fools."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a bowl, combine the remaining 1 1/2 cups of heavy cream with the remaining 1/4 cup of sugar. Scrape the seeds from the vanilla bean into the bowl and whip together."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Spoon the blueberry fool into 10 stemmed glasses, followed by the vanilla cream and then the raspberry fool; gently tap the glasses between layers. Top with the remaining blueberries and raspberries and serve immediately."
+        }
+    ],
+    "totalTime": "PT0M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/star-spangled-fools",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/desserts",
+                        "name": "Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/fruit-desserts-7497092",
+                        "name": "Fruit Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/star-spangled-fools",
+                        "name": "Star-Spangled Fools"
+                    }
+                }
+            ]
+        }
+    },
+    "recipeCategory": []
+}

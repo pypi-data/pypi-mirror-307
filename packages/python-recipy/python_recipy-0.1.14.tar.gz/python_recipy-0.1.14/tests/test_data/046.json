@@ -1,0 +1,194 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "@id": "https://www.tasteofhome.com/recipes/orange-beef-lettuce-wraps/",
+    "name": "Orange Beef Lettuce Wraps",
+    "datePublished": "2018-01-01",
+    "dateModified": "2023-02-28",
+    "prepTime": "PT20M",
+    "cookTime": "PT15M",
+    "totalTime": "PT35M",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps160949_HCK163687D09_02_4b-15.jpg",
+        "height": 1200,
+        "width": 1200
+    },
+    "recipeCategory": [],
+    "description": "This is a lighter version of a restaurant favorite. I also recommend trying these wraps with ground chicken or turkey.&mdash;Robin Haas, Cranston, Rhode Island",
+    "recipeIngredient": [
+        "SAUCE:",
+        "1/4 cup rice vinegar",
+        "3 tablespoons water",
+        "3 tablespoons orange marmalade",
+        "1 tablespoon sugar",
+        "1 tablespoon reduced-sodium soy sauce",
+        "2 garlic cloves, minced",
+        "1 teaspoon Sriracha chili sauce",
+        "WRAPS:",
+        "1-1/2 pounds lean ground beef (90% lean)",
+        "2 garlic cloves, minced",
+        "2 teaspoons minced fresh gingerroot",
+        "1/4 cup reduced-sodium soy sauce",
+        "2 tablespoons orange juice",
+        "1 tablespoon sugar",
+        "1 tablespoon orange marmalade",
+        "1/4 teaspoon crushed red pepper flakes",
+        "2 teaspoons cornstarch",
+        "1/4 cup cold water",
+        "8 Bibb or Boston lettuce leaves",
+        "2 cups cooked brown rice",
+        "1 cup shredded carrots",
+        "3 green onions, thinly sliced"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a small bowl, combine sauce ingredients."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a large skillet, cook beef, garlic and ginger over medium heat 8-10 minutes or until meat is no longer pink; crumble beef; drain. Stir in soy sauce, orange juice, sugar, marmalade and pepper flakes. In a small bowl, mix cornstarch and water; stir into pan. Cook and stir 1-2 minutes or until sauce is thickened."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "To serve, fill lettuce leaves with rice; cover with beef mixture. Top with carrots and green onions; drizzle with sauce."
+        }
+    ],
+    "recipeYield": "8 servings.",
+    "author": {
+        "@type": "Organization",
+        "name": "Taste of Home"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": " 250 calories",
+        "fatContent": "8g fat (3g saturated fat)",
+        "cholesterolContent": "53mg cholesterol",
+        "sodiumContent": "462mg sodium",
+        "carbohydrateContent": "26g carbohydrate (11g sugars",
+        "fiberContent": "2g fiber)",
+        "proteinContent": "19g protein. <B><b>Diabetic Exchanges</b>: </B> 2 starch"
+    },
+    "aggregateRating": {
+        "@context": "http://schema.org/",
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 6,
+        "worstRating": 1,
+        "bestRating": 5
+    },
+    "review": [
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2021-07-03",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Cynthia065"
+            },
+            "reviewBody": "Thank you for this recipe.  The flavors and textures come together so well. The sauce was the superstar for us though.  Can’t recommend enough.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2023-02-28",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Kellie421"
+            },
+            "reviewBody": "<p>This is a great recipe.  Everyone in the family loves it.  </p>",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2018-12-27",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "AvidcookGAtoCA"
+            },
+            "reviewBody": "I am trying to cut back on carbs, so I came her looking for inspiration. I found this recipe that looked and sounded appealing. I made it as written except that I used white rice instead of brown because it is what I had on hand. I cut the recipe in half because I was making it just for myself and I didn't want to eat leftovers for a week. The taste is really good! I ate 2 of these as wraps as suggested, then I ate the 1 serving as beef and rice bowl without the lettuce, and the final serving was in a bowl minus the rice and lettuce. I enjoyed it all three ways, and will make it again. Lynne German, Volunteer Field Editor",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2020-05-03",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Mechelle Maynes",
+                "givenName": "Mechelle",
+                "familyName": "Maynes"
+            },
+            "reviewBody": "My husband and son went nuts over this recipe!!! Every bit of it was devoured at a single meal. I thought there would be enough for at least 1 leftover lunch, but nope. Hubby doesn't often like the new recipes I try, but he LOVED this one and asked if it was hard to make, he'd like to have it again soon. Made it exactly as the recipe called for, no substitutions. Very good!!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2019-03-10",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "JulieGr"
+            },
+            "reviewBody": "This was very delish.  I can't have sugar so I used sugar free orange marmalade, and stevia blend sweetener.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2019-11-12",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Kathyjordan"
+            },
+            "reviewBody": "My family has had this recipe several times now and really enjoy it.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        }
+    ],
+    "recipeCuisine": "Asia, Chinese"
+}

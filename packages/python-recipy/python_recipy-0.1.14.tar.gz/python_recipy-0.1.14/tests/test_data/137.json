@@ -1,0 +1,267 @@
+{
+    "@type": "Recipe",
+    "name": "Tom Yum Goong (hot and sour lemongrass shrimp soup)",
+    "author": {
+        "@id": "https://hot-thai-kitchen.com/#/schema/person/09994300ee947577e6e3beb749877a7d"
+    },
+    "description": "World-famous Thai soup infused with lemongrass, galangal and makrut lime leaves. It&#039;s spicy and sour and bursting with flavour - not to mention it&#039;s super easy to make!",
+    "datePublished": "2022-03-02T16:42:00+00:00",
+    "image": [
+        "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog-500x500.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog-500x375.jpg",
+        "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog-480x270.jpg"
+    ],
+    "video": {
+        "name": "Tom Yum Goong Recipe ต้มยำกุ้ง - Hot Thai Kitchen!.mp4",
+        "description": "The ever so famous soup of Thai cuisine is tangy, spicy and aromatic with exotic herbs. Have it with rice or pour it over rice noodles, pho-style!",
+        "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--bl8PC_Z2--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1681228214/bmz79irtifkjtvcsns50.jpg",
+        "embedUrl": "https://video.mediavine.com/videos/irXsOoxoI.js",
+        "contentUrl": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1681228209/irXsOoxoI.mp4",
+        "uploadDate": "2020-12-12T15:22:31+00:00",
+        "duration": "PT662S",
+        "@type": "VideoObject"
+    },
+    "recipeYield": [
+        "4",
+        "4 servings"
+    ],
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "recipeIngredient": [
+        "4 cups shrimp stock (recipe below) or unsalted chicken stock",
+        "12  medium sized shrimp (head-on, shell-on if making shrimp stock)",
+        "2 stalks lemongrass (bottom half only, smashed until broken and cut in 2 inch pieces)",
+        "6  makrut lime leaves",
+        "8 slices galangal",
+        "2-5  Thai chilies (to taste, smashed until broken and cut in large pieces)",
+        "3 cups oyster mushroom (tear large ones into bite-sized pieces)",
+        "¼ cup Thai chili paste",
+        "3 Tbsp fish sauce",
+        "½  cup fresh lime juice",
+        "1 tsp sugar",
+        "Chopped cilantro for  garnish",
+        "Jasmine rice for serving",
+        "Shrimp shells and heads from at least 12 shrimp",
+        "1 Tbsp neutral oil",
+        "4 ¼ cups water",
+        "¼ cup chopped onion (optional)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToSection",
+            "name": "For the Shrimp Stock (if making)",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Place the shrimp heads and shells into a stainless steel pot along with the oil and the onion, if using. Saute over medium high heat, pressing out any tomalley from the shrimp heads with your spatula.",
+                    "name": "Place the shrimp heads and shells into a stainless steel pot along with the oil and the onion, if using. Saute over medium high heat, pressing out any tomalley from the shrimp heads with your spatula.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Once the bits that are stuck to the bottom of the pot start to brown and smell wonderfully like grilled shrimp, deglaze with the water and scrape all the bits off the bottom of the pot. Bring to a simmer, then simmer for 5 minutes. Strain, making sure to get out any liquid from inside the shrimp heads.",
+                    "name": "Once the bits that are stuck to the bottom of the pot start to brown and smell wonderfully like grilled shrimp, deglaze with the water and scrape all the bits off the bottom of the pot. Bring to a simmer, then simmer for 5 minutes. Strain, making sure to get out any liquid from inside the shrimp heads.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-0-1"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "For the Tom Yum Soup",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Add the shrimp or chicken stock, lemongrass, galangal and chilies to the pot. Grab the lime leaves and twist them with your hands to bruise, then tear them into chunks and add to the pot. Bring to a simmer, and let it simmer for about 5 minutes.Note: The galangal, lemongrass and makrut lime leaves are traditionally left in the soup as garnish, but are not meant to be eaten. Make sure you let your guests know not to eat the herbs or remove them after they&#39;re done infusing.",
+                    "name": "Add the shrimp or chicken stock, lemongrass, galangal and chilies to the pot. Grab the lime leaves and twist them with your hands to bruise, then tear them into chunks and add to the pot. Bring to a simmer, and let it simmer for about 5 minutes.Note: The galangal, lemongrass and makrut lime leaves are traditionally left in the soup as garnish, but are not meant to be eaten. Make sure you let your guests know not to eat the herbs or remove them after they&#39;re done infusing.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-1-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "When the soup is done simmering, add the oyster mushrooms and let them simmer for about 2 minutes.",
+                    "name": "When the soup is done simmering, add the oyster mushrooms and let them simmer for about 2 minutes.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-1-1"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Turn the heat up to bring the soup to a boil, then add the shrimp and stir them into the soup. When the soup starts to bubble again, turn off the heat and let the residual heat cook the shrimp completely; another minute or so. (If you&#39;re using very large shrimp, you may need to cook it longer).",
+                    "name": "Turn the heat up to bring the soup to a boil, then add the shrimp and stir them into the soup. When the soup starts to bubble again, turn off the heat and let the residual heat cook the shrimp completely; another minute or so. (If you&#39;re using very large shrimp, you may need to cook it longer).",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-1-2"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add the lime juice, fish sauce, chili paste, and sugar; stir to dissolve. Taste and adjust the seasoning to your liking. It should lead with sour, but have enough sweetness to balance.",
+                    "name": "Add the lime juice, fish sauce, chili paste, and sugar; stir to dissolve. Taste and adjust the seasoning to your liking. It should lead with sour, but have enough sweetness to balance.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-1-3"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Garnish with cilantro leaves and serve with jasmine rice.",
+                    "name": "Garnish with cilantro leaves and serve with jasmine rice.",
+                    "url": "https://hot-thai-kitchen.com/tom-yum-goong/#wprm-recipe-7543-step-1-4"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.95",
+        "ratingCount": "19"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "reviewBody": "In this country I can find lemon grass, with difficulty,  makrut and galangal no frozen or dry. My only hope is an asiatic shop but is far away. Thai paste yes.\r\nLet's see next Saturday.\r\nAll my family loves asiatic food, and my son loves to cook.",
+            "author": {
+                "@type": "Person",
+                "name": "Alicia"
+            },
+            "datePublished": "2024-05-27"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "LOL!! You absolute sociopath!! \"It's nice to look in the eyes of the  animal you're eating\"!!! Great video! Thanks.",
+            "author": {
+                "@type": "Person",
+                "name": "jon"
+            },
+            "datePublished": "2024-04-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I made this one too and it’s better than my favorite Thai restaurant makes!!!",
+            "author": {
+                "@type": "Person",
+                "name": "Don Carr"
+            },
+            "datePublished": "2024-03-05"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "So excited to try this! Just found heads on shrimp at Costco!",
+            "author": {
+                "@type": "Person",
+                "name": "Red"
+            },
+            "datePublished": "2023-12-28"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Thanks for sharing!",
+            "author": {
+                "@type": "Person",
+                "name": "Allen"
+            },
+            "datePublished": "2023-11-19"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "just a tip - if you can go into manhattan.  In china town there is a store called bangkok center grocery on mosco st (this little ally) and it's where i buy all my thai ingredients including the makrut lime leaves.  you could easily buy 10 bags of them and keep them in your freezer and have enough for many uses for a long time.",
+            "author": {
+                "@type": "Person",
+                "name": "v"
+            },
+            "datePublished": "2023-11-06"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "When making stock with meat it needs to simmer for a few hours but with with fish and shellfish 30 minutes max is all that's needed",
+            "author": {
+                "@type": "Person",
+                "name": "Stylianos Mani"
+            },
+            "datePublished": "2023-09-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "You can get them online, and this is from my favorite online Thai grocery https://grocerythai.com/Fresh-Kaffir-Lime-Leaves-1.5-oz. They have almost everything you’d ever want for Thai ingredients and cookware. I got a traditional bamboo steamer and pot for sticky rice that’s perfect. Highly recommend their products.",
+            "author": {
+                "@type": "Person",
+                "name": "LauraLee"
+            },
+            "datePublished": "2023-07-06"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I’m a big fan of Thai food and over the years I must have eaten at countless Thai restaurants, most of them superb and one or two \r\nnot quite so. Tom Yum soup is by far my favorite and I can honestly say that when I made it for myself (first time I’ve ever tried making any kind of Thai food) using this recipe, I considered it the best Tom Yum I’ve ever had! It was delicious!! Thank you so much for sharing this. The video was extremely helpful.",
+            "author": {
+                "@type": "Person",
+                "name": "Michael"
+            },
+            "datePublished": "2023-04-14"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Exactly what I think Tom Yum should taste like, spicy, sour, and addictive. My relatives who’ve never had it, loved it too. Thanks for sharing your childhood recipes with the world!",
+            "author": {
+                "@type": "Person",
+                "name": "LauraLee"
+            },
+            "datePublished": "2023-03-12"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Thai"
+    ],
+    "keywords": "gluten free",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "207 kcal",
+        "sugarContent": "9 g",
+        "sodiumContent": "1489 mg",
+        "fatContent": "7 g",
+        "saturatedFatContent": "1 g",
+        "carbohydrateContent": "23 g",
+        "fiberContent": "2 g",
+        "proteinContent": "16 g",
+        "cholesterolContent": "56 mg",
+        "unsaturatedFatContent": "5 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://hot-thai-kitchen.com/tom-yum-goong/#recipe",
+    "isPartOf": {
+        "@id": "https://hot-thai-kitchen.com/tom-yum-goong/#article"
+    },
+    "mainEntityOfPage": "https://hot-thai-kitchen.com/tom-yum-goong/"
+}

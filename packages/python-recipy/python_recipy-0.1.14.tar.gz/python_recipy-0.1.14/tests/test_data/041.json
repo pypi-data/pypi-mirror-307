@@ -1,0 +1,210 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "No-Bake Keto Cheesecake",
+    "datePublished": "2021-03-09T13:40:32.742-05:00",
+    "dateModified": "2021-07-22T17:05:34.227-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Kristina Vanni",
+            "url": "https://www.thespruceeats.com/kristina-vanni-1326407"
+        }
+    ],
+    "description": "This no-bake keto cheesecake is a blank slate for dessert creativity. It can be prepared in advance and served chilled from the refrigerator.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.thespruceeats.com/thmb/Bo40KU4MnTNlJKjKDMh-4lwlYnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-8-30031a8b666e4bd393aaa769a45e2ae2.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Spruce Eats",
+        "url": "https://www.thespruceeats.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+            "width": 361,
+            "height": 109
+        },
+        "brand": "The Spruce Eats",
+        "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/thespruceeats/",
+            "https://www.instagram.com/thespruceeats/",
+            "https://www.pinterest.com/thespruceeats/",
+            "https://flipboard.com/@thespruceeats"
+        ]
+    },
+    "name": "No-Bake Keto Cheesecake",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4",
+        "ratingCount": "6"
+    },
+    "cookTime": "PT15M",
+    "keywords": "keto cheesecake no bake",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "469 kcal",
+        "carbohydrateContent": "13 g",
+        "cholesterolContent": "101 mg",
+        "fiberContent": "3 g",
+        "proteinContent": "9 g",
+        "saturatedFatContent": "21 g",
+        "sodiumContent": "306 mg",
+        "sugarContent": "6 g",
+        "fatContent": "44 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT20M",
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "American"
+    ],
+    "recipeIngredient": [
+        "For the Crust:",
+        "2 cups almond flour",
+        "4 tablespoons unsalted butter (or coconut oil ; melted)",
+        "1/4 cup keto-friendly granulated sugar substitute",
+        "1/4 teaspoon salt",
+        "For the Filling:",
+        "4 (8-ounce) boxes cream cheese (block-style, softened )",
+        "1 cup heavy whipping cream",
+        "1/2 cup keto-friendly granulated sugar substitute",
+        "2 tablespoons lemon juice",
+        "1 tablespoon lemon zest (plus more for garnish, optional)",
+        "2 teaspoons vanilla extract",
+        "For the Berry Topping:",
+        "2 cups fresh berries (or frozen)",
+        "3 tablespoons water",
+        "3 tablespoons keto-friendly granulated sugar substitute",
+        "1 tablespoon lemon juice",
+        "1/4 teaspoon ground cinnamon"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/VZ-QSG_TRWyKYuMK3jMZ7hjqw5A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-1-c9900588a4d14117950d701f3a8446fa.jpg"
+                }
+            ],
+            "text": "Gather the ingredients."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/61sDnDZNhW51P0a9wYTzAwvUIuk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-2-6c8575f85a1c4f598824754e7a01b616.jpg"
+                }
+            ],
+            "text": "In a medium bowl, combine almond flour, melted butter, keto-friendly granulated sugar substitute, and salt. Stir until it forms a sandy consistency."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/A00QcnG9_4y7c-ZWylRQWMDoYu0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-3-4c08ba5cc3844f139f001d8f76ec6245.jpg"
+                }
+            ],
+            "text": "Press mixture into bottom of a 9-inch springform pan . Place in refrigerator to set while proceeding with next steps."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/WAEMi1dcINqi_KdZvgGSNGSrwy0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-4-037058bf5b9f4ac5b1c0bbc6e0854021.jpg"
+                }
+            ],
+            "text": "In large bowl of a stand mixer, combine cream cheese, heavy whipping cream, keto-friendly granulated sugar substitute, lemon juice, lemon zest, and vanilla extract. Whip for 5 minutes until fluffy."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/2m3PKySq-V8CSvfZHnfdBRtWwc8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-5-1811b405b8b046af8d899c5ee4049821.jpg"
+                }
+            ],
+            "text": "Pour filling over chilled crust, smoothing top with a spatula or soon. Cover and chill in refrigerator for at least 3 hours or overnight."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/KZF5tt9Uz6o6PMp3ScBRaoLan_w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-6-0d3462d448bc465f83153d88af4d6260.jpg"
+                }
+            ],
+            "text": "When ready to serve, prepare berry topping. In a medium pan over medium heat, combine berries, water, keto-friendly granulated sugar substitute, lemon juice, and cinnamon. Bring to a boil, then simmer, uncovered, until sauce has thickened. About 10 to 15 minutes. Cool before serving."
+        },
+        {
+            "@type": "HowToStep",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.thespruceeats.com/thmb/2nGzNXAq83HjpkB2Iw_dHc5b5LM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NoBake_Keto_Cheescake-7-2ca8088980aa4eaa9486a28b0985cbe4.jpg"
+                }
+            ],
+            "text": "To serve, run a thin knife around edge to loosen crust from sides of pan. Release springform pan and remove sides. Top each slice with cooled berry topping. Garnish with additional lemon zest, if desired."
+        }
+    ],
+    "recipeYield": [
+        "12",
+        "1 cheesecake"
+    ],
+    "totalTime": "PT215M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Holli"
+            },
+            "reviewBody": "Please tell me if you had to use parchment paper for this keto no bake cheesecake?? Will I be able to get the crust with the cheesecake off of the springform pan without the parchment paper? Your advice soon 😊would be greatly appreciated. Thank you"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.thespruceeats.com/no-bake-keto-cheesecake-recipe-5097474",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/cakes-4162783",
+                        "name": "Cakes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/cheesecake-4162777",
+                        "name": "Cheesecakes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.thespruceeats.com/no-bake-keto-cheesecake-recipe-5097474",
+                        "name": "No-Bake Keto Cheesecake"
+                    }
+                }
+            ]
+        }
+    }
+}

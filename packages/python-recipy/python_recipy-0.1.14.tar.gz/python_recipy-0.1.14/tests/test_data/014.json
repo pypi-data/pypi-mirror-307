@@ -1,0 +1,71 @@
+{
+    "@type": "Recipe",
+    "name": "Bánh Hỏi Blueprint Recipe",
+    "author": {
+        "@type": "Person",
+        "name": "Andrea Nguyen"
+    },
+    "description": "Use the prep tips video and this recipe to make your own bánh hỏi experience.",
+    "datePublished": "2022-06-28T15:29:57+00:00",
+    "image": [
+        "https://www.vietworldkitchen.com/wp-content/uploads/2022/06/banh-hoi-wide-dressed-wide.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2022/06/banh-hoi-wide-dressed-wide-500x500.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2022/06/banh-hoi-wide-dressed-wide-500x375.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2022/06/banh-hoi-wide-dressed-wide-480x270.jpeg"
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "recipeIngredient": [
+        "1 (12-ounce) package fine rice noodles (bánh hỏi)",
+        "1  recipe Scallion Oil Garnish (see recipe link in Notes)",
+        "Grilled or roasted meat, poultry, seafood or vegetables",
+        "1 head  soft leaf lettuce, separated into leaves",
+        "2 or 3 handfuls mixed fresh herbs (cilantro, mint, basil, etc.)",
+        "3/4 to 1  cup Nước Chấm Basic Dipping Sauce (see recipe link in Notes)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Use the video and instructions on the noodle package to rehydrate and prep the noodles. Arrange them on two plates or platter and cover until serving time.",
+            "name": "Use the video and instructions on the noodle package to rehydrate and prep the noodles. Arrange them on two plates or platter and cover until serving time.",
+            "url": "https://www.vietworldkitchen.com/blog/2022/06/banh-hoi-buying-and-prep-tips.html#wprm-recipe-14392-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Spoon some or all of the scallion oil garnish atop the noodles. Present with the grilled meat, lettuce, herbs and sauce. Invite diners to craft their own wraps with a piece of lettuce, noodle, grilled meat, and herbs. Gather and dunk into the sauce then eat up.",
+            "name": "Spoon some or all of the scallion oil garnish atop the noodles. Present with the grilled meat, lettuce, herbs and sauce. Invite diners to craft their own wraps with a piece of lettuce, noodle, grilled meat, and herbs. Gather and dunk into the sauce then eat up.",
+            "url": "https://www.vietworldkitchen.com/blog/2022/06/banh-hoi-buying-and-prep-tips.html#wprm-recipe-14392-step-0-1"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Your video was so helpful!! Thank you! I can’t wait to try it.",
+            "author": {
+                "@type": "Person",
+                "name": "Mina"
+            },
+            "datePublished": "2023-04-30"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Vietnamese"
+    ],
+    "keywords": "lettuce wraps, rice noodles",
+    "@id": "https://www.vietworldkitchen.com/blog/2022/06/banh-hoi-buying-and-prep-tips.html#recipe",
+    "isPartOf": {
+        "@id": "https://www.vietworldkitchen.com/blog/2022/06/banh-hoi-buying-and-prep-tips.html#article"
+    },
+    "mainEntityOfPage": "https://www.vietworldkitchen.com/blog/2022/06/banh-hoi-buying-and-prep-tips.html"
+}

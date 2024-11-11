@@ -1,0 +1,83 @@
+{
+    "@type": "Recipe",
+    "name": "Pad Krapow Chicken Recipe (Thai Basil Stir-Fry)",
+    "author": {
+        "@type": "Person",
+        "name": "Praew"
+    },
+    "description": "This pad krapow chicken recipe is spicy, savory, and sweet. It&#039;s all the authentic Thai flavors in one dish!",
+    "datePublished": "2023-10-21T13:07:15+00:00",
+    "image": [
+        "https://hungryinthailand.com/wp-content/uploads/2023/08/pad-krapow-chicken.webp"
+    ],
+    "recipeYield": [
+        "2",
+        "2 people"
+    ],
+    "prepTime": "PT10M",
+    "cookTime": "PT10M",
+    "totalTime": "PT20M",
+    "recipeIngredient": [
+        "2 tablespoons oil",
+        "4 cloves garlic",
+        "4  chilies (Thai chilies, to taste)",
+        "14 ounces chicken (cut into thin slices)",
+        "2 tablespoons golden mountain sauce",
+        "1 tablespoon fish sauce",
+        "1 tablespoon white sugar",
+        "1 teaspoon dark soy sauce",
+        "2 tablespoons oyster sauce",
+        "0.35 ounces holy basil"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Place a wok or skillet over medium-high heat and add oil. Wait until hot, then toss in your garlic and chili paste. Sauté until golden.",
+            "name": "Place a wok or skillet over medium-high heat and add oil. Wait until hot, then toss in your garlic and chili paste. Sauté until golden.",
+            "url": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#wprm-recipe-82052-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add chicken and stir-fry until it's cooked. Don't overcook the chicken.",
+            "name": "Add chicken and stir-fry until it's cooked. Don't overcook the chicken.",
+            "url": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#wprm-recipe-82052-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add dark soy sauce, light soy sauce, fish sauce, golden mountain, and white sugar. Stir well, making sure each piece of chicken is coated with sauce.",
+            "name": "Add dark soy sauce, light soy sauce, fish sauce, golden mountain, and white sugar. Stir well, making sure each piece of chicken is coated with sauce.",
+            "url": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#wprm-recipe-82052-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Turn off the heat and toss in the holy basil leaves. Give it a good stir, making sure not to break the leaves. Serve immediately.",
+            "name": "Turn off the heat and toss in the holy basil leaves. Give it a good stir, making sure not to break the leaves. Serve immediately.",
+            "url": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#wprm-recipe-82052-step-0-3"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Thai"
+    ],
+    "keywords": "basil stir-fry, chicken basil, pad krapow chicken, thai basil chicken",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "494 kcal",
+        "carbohydrateContent": "18 g",
+        "proteinContent": "28 g",
+        "fatContent": "35 g",
+        "saturatedFatContent": "7 g",
+        "transFatContent": "0.2 g",
+        "cholesterolContent": "101 mg",
+        "sodiumContent": "1302 mg",
+        "fiberContent": "2 g",
+        "sugarContent": "11 g",
+        "unsaturatedFatContent": "26 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#recipe",
+    "mainEntityOfPage": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#webpage",
+    "isPartOf": {
+        "@id": "https://hungryinthailand.com/pad-krapow-chicken-recipe/#richSnippet"
+    }
+}

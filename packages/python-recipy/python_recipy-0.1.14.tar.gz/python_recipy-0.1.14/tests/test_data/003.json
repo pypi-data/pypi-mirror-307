@@ -1,0 +1,136 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Baigan Chokha (Roasted Spiced Eggplant)",
+    "datePublished": "2022-02-11T01:23:43.000-05:00",
+    "dateModified": "2024-04-18T12:56:46.307-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Ramin Ganeshram",
+            "url": "https://www.eatingwell.com/author/ramin-ganeshram/"
+        }
+    ],
+    "description": "Baigan chokha, a roasted spiced eggplant dish, features roasted eggplant that is then mashed to create a smooth texture.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.eatingwell.com/thmb/BZM6aJynejnkeVn4PdmREwJFJYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/baigan-chokha-roasted-spiced-eggplant-final-1cab0a0c2eb447dcb20b1b2dc23c81df.jpg",
+        "height": 1500,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "EatingWell",
+        "url": "https://www.eatingwell.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.eatingwell.com/thmb/cr0OO5bIhN4hn9zmchZ_ZSKGUuQ=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/eatingwell_brand_logo_schema-b4e06815bfc2449ebe240453e3b47d48.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "EatingWell",
+        "publishingPrinciples": "https://www.eatingwell.com/about-us-6743412#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/EatingWell/",
+            "https://twitter.com/EatingWell/",
+            "https://www.instagram.com/eatingwell/",
+            "https://www.pinterest.com/eatingwell/",
+            "https://flipboard.com/@EatingWell",
+            "https://www.youtube.com/@eatingwell",
+            "https://www.linkedin.com/company/eatingwell-media-group/",
+            "https://www.tiktok.com/@eatingwell"
+        ]
+    },
+    "name": "Baigan Chokha (Roasted Spiced Eggplant)",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "113 kcal",
+        "carbohydrateContent": "19 g",
+        "fiberContent": "8 g",
+        "proteinContent": "3 g",
+        "sodiumContent": "128 mg",
+        "sugarContent": "10 g",
+        "fatContent": "4 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "recipeIngredient": [
+        "2 large eggplants (about 2 pounds total)",
+        "1 tablespoon safflower oil",
+        "0.5 medium onion, chopped",
+        "2 cloves garlic, minced",
+        "1 small tomato, chopped",
+        "0.5 Scotch bonnet chile pepper (see Tip ) , seeded and minced",
+        "0.25 teaspoon kosher salt",
+        "0.25 teaspoon ground pepper",
+        "1 tablespoon coarsely chopped fresh culantro (see Tip) or cilantro"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat grill or broiler to high."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pierce eggplants all over with a fork and place on a rimmed baking sheet. Grill or broil, turning frequently, until completely charred and soft, about 20 minutes. Let cool for 5 minutes. Scrape out the flesh (discard the skins)."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Heat oil in a large skillet over medium heat. Add onion and cook, stirring often, until translucent, about 3 minutes. Add garlic; cook, stirring occasionally, until dark golden brown, about 1 minute. Stir in tomato and chile; cook, stirring, for 2 minutes. Stir in the eggplant flesh, salt and pepper; cook, breaking up the eggplant with a wooden spoon, until hot, about 2 minutes. Serve topped with culantro (or cilantro)."
+        }
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "totalTime": "PT35M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.eatingwell.com/recipe/7945076/baigan-chokha-roasted-spiced-eggplant/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/18028/side-dishes/vegetable/",
+                        "name": "Vegetable Side Dishes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipes/17951/side-dishes/vegetable/eggplant/",
+                        "name": "Healthy Eggplant Side Dish Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.eatingwell.com/recipe/7945076/baigan-chokha-roasted-spiced-eggplant/",
+                        "name": "Baigan Chokha (Roasted Spiced Eggplant)"
+                    }
+                }
+            ]
+        },
+        "reviewedBy": [
+            {
+                "@type": "Person",
+                "name": "EatingWell Test Kitchen",
+                "url": "https://www.eatingwell.com/author/eatingwell-test-kitchen/"
+            },
+            {
+                "@type": "Person",
+                "name": "Breana Lai Killeen, M.P.H., RD",
+                "url": "https://www.eatingwell.com/author/breana-killeen/"
+            }
+        ],
+        "lastReviewed": "2024-04-18T12:56:46.307-04:00"
+    },
+    "recipeCategory": []
+}

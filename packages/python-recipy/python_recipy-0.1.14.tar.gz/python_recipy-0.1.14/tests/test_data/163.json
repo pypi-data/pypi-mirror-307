@@ -1,0 +1,58 @@
+{
+    "@type": "Recipe",
+    "keywords": "Sourdough, Sandwich buns & dinner rolls, Sourdough, Thanksgiving",
+    "name": "Sourdough Dinner Rolls",
+    "description": "Sourdough adds a touch of its distinct flavor and chewiness to these light, moist, buttery rolls. They're baked, clustered together, in two 8\" round pans, ensuring that each roll retains its soft, pillowy texture on all sides. They're perfect for soaking up a melting pat of butter, or gravy and cranberry sauce at a Thanksgiving feast.",
+    "recipeYield": [
+        "16",
+        "16 rolls"
+    ],
+    "datePublished": "July 17, 2016 at 8:00pm",
+    "prepTime": "PT25M",
+    "totalTime": "PT3H1M",
+    "cookTime": "PT26M",
+    "recipeIngredient": [
+        "1/2 cup (113g) ripe (fed) sourdough starter",
+        "1 cup (227g) water lukewarm",
+        "2 1/2 cups (300g) King Arthur Unbleached All-Purpose Flour",
+        "1 1/2 teaspoons (9g) table salt",
+        "2 tablespoons granulated sugar",
+        "6 tablespoons (85g) unsalted butter at room temperature",
+        "1/4 cup (28g) King Arthur Baker's Special Dry Milk or nonfat dry milk",
+        "1/4 cup (46g) potato flour",
+        "1 1/2 teaspoons instant yeast"
+    ],
+    "recipeInstructions": "Weigh your flour; or measure it by gently spooning it into a cup, then sweeping off any excess. Combine all of the ingredients, and mix and knead — by hand, mixer, or bread machine set on the dough cycle — adding more flour or water if necessary to make a soft, smooth dough., Place the dough into a lightly greased bowl, cover, and allow it to rise at warm room temperature until it's nearly doubled in bulk, 60 to 90 minutes., While the dough is rising, lightly grease two 8\" round cake pans., Transfer the dough to a lightly greased work surface, gently deflate it, and divide it into 16 pieces., Shape each piece of dough into a ball. Place eight balls in each of the round pans; if you space the balls evenly, they shouldn't touch one another.\n\n  \n        \n\n\n\n  \n, Cover the pans and allow the rolls to rise until they touch one another and are very puffy, about 60 to 90 minutes., While the rolls are rising, preheat the oven to 350°F., Bake the rolls for 24 to 26 minutes, until they're a light golden brown on top; a digital thermometer inserted into one of the center rolls should read 190°F., Remove the rolls from the oven and, after 2 or 3 minutes, carefully transfer them to a rack to cool.",
+    "author": {
+        "@type": "Organization",
+        "name": "King Arthur Baking",
+        "url": "https://www.kingarthurbaking.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.kingarthurbaking.com/themes/custom/kaf_nextgenweb/images/KA_Logo_Small.svg"
+        }
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 roll (53g)",
+        "calories": "150 calories",
+        "carbohydrateContent": "22g",
+        "cholesterolContent": "10mg",
+        "fiberContent": "1g",
+        "proteinContent": "4g",
+        "sodiumContent": "230mg",
+        "sugarContent": "3g",
+        "fatContent": "4.5g",
+        "saturatedFatContent": "2.5g",
+        "transFatContent": "0g"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.kingarthurbaking.com/sites/default/files/2020-02/sourdough-dinner-rolls.jpg"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.80",
+        "ratingCount": "107"
+    }
+}

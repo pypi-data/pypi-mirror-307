@@ -1,0 +1,1444 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Skirt Steak",
+    "url": "https://www.foodnetwork.com/recipes/alton-brown/skirt-steak-recipe-2014004",
+    "headline": "Skirt Steak",
+    "description": "Alton Brown's Skirt Steak recipe, from Good Eats on Food Network, marinates a thin cut in soy sauce for maximum flavor. Alton's special tool? A blow dryer!",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Alton Brown",
+            "url": "https://www.foodnetwork.com/profiles/talent/alton-brown"
+        }
+    ],
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/7/26/1/EA1G10_skirt-steak_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1430426675052.jpeg",
+            "height": "1280",
+            "width": "1280",
+            "description": "The sirloin is sliced on the cutting board."
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/7/26/1/EA1G10_skirt-steak_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1430426675052.jpeg",
+            "height": "960",
+            "width": "1280",
+            "description": "The sirloin is sliced on the cutting board."
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/7/26/1/EA1G10_skirt-steak_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1430426675052.jpeg",
+            "height": "720",
+            "width": "1280",
+            "description": "The sirloin is sliced on the cutting board."
+        }
+    ],
+    "datePublished": "2015-07-22T10:14:52.200-04:00",
+    "dateModified": "2014-06-04T14:17:11.515-04:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Grilled Steak,Grilling,Steak,American,Beef,Main Dish,Lunch,Marinating Recipes,Recipes for a Crowd",
+    "cookTime": "P0Y0M0DT0H2M0.000S",
+    "prepTime": "P0Y0M0DT0H10M0.000S",
+    "totalTime": "P0Y0M0DT1H27M0.000S",
+    "recipeIngredient": [
+        "1/2 cup olive oil",
+        "1/3 cup soy sauce",
+        "4 scallions, washed and cut in 1/2",
+        "2 large cloves garlic",
+        "1/4 cup lime juice",
+        "1/2 teaspoon red pepper flakes",
+        "1/2 teaspoon ground cumin",
+        "3 tablespoons dark brown sugar or Mexican brown sugar",
+        "2 pounds inside skirt steak, cut into 3 equal pieces",
+        "Special equipment: blow dryer"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 8 servings",
+        "calories": "366",
+        "fatContent": "28g",
+        "saturatedFatContent": "8g",
+        "carbohydrateContent": "6g",
+        "fiberContent": "0g",
+        "sugarContent": "4g",
+        "proteinContent": "24g",
+        "cholesterolContent": "74mg",
+        "sodiumContent": "660mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Heat charcoal, preferably natural chunk, until grey ash appears. In a blender, put in oil, soy sauce, scallions, garlic, lime juice, red pepper, cumin, and sugar and puree. In a large heavy duty, zip top bag, put pieces of skirt steak and pour in marinade. Seal bag, removing as much air as possible. Allow steak to marinate for 1 hour in refrigerator."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Remove steak from bag and pat dry with paper towels. Using a blow dryer, blow charcoal clean of ash. Once clean of ash lay steaks directly onto hot coals for 1 minute per side. When finished cooking, place meat in double thickness of aluminum foil, wrap, and allow to sit for 15 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Remove meat from foil, reserving foil and juices. Slice thinly across the grain of the meat. Return to foil pouch and toss with juice. Serve with grilled peppers and onions, if desired."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "reviewCount": 314
+    },
+    "recipeYield": "8 servings as fajita meat or 4 as main course",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "dixie4suchatime414"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My skirt steak is already sliced. Can i still do this recipe on gas grill  and what will happen if i marinate long time like 8 hours?<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kimberly"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Followed recipe except used sirloin and marinated 9 hrs.  SOLID!!  Made delicious beef street tacos garnished with pickled red onion, cilantro, cucumber, cotija cheese, and sriracha. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CAROL T."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "A lot of work for nothin waste of charcoal for 2 mins.. sinewy "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pat T."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is a great marinade for skirt steak.  We did marinate for most of an afternoon and the flavor was terrific."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best skirt steak I’ve ever had.  Use outside skirt steak, inside skirt steak is very chewy, like night and day when you compare the two.  This recipe will not help inside skirt steak, it was like shoe leather, perhaps a much longer marinade time.  Inside was perfect!  Thanks Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "lizarennick"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The marinade is a solid recipe. I have used it for years to make carne asada tacos, and they are FREAKING DELICIOUS. I have never tried this recipe on the coals simply because I only have a gas grill, but I'm sure it's that much better on the coals."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The marinade was perfect.  I cooked it on a regular grill and it was perfection."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Charles R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I first made this recipe a few years ago. I followed it exactly and all I can say is this is the best grilled skirt steak recipe I have ever eaten. If you follow Alton’s directions you will be pleased with the results. Everyone I have made this for wants the recipe. That’s a good sign that they have enjoyed it. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "gita a."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The best skirt steak recipe. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Short-Order Cook"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Followed the marinade recipe but added fresh parsley, oregano &amp; basil from my garden.  Subbed lemon juice instead of lime based on frig availability.  Marinated overnight &amp; results were wonderful.  Will definitely make this one again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Cheryl D."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "It's help me make dinner for my family and they loved it and so did I thank you"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Thomas S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Holy cow. Good party trick too. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Timmy"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have used this recipe for years and it is a foolproof way to grill great skirt steak!<br />I have modified Alton’s cooking instructions  for my Lodge cast iron grill (no need for blow drier).<br /><br />The only change I make is to dry the steak very well after removing from the marinade and then add some salt, pepper and “char crust”rub. <br /><br />Cook 3 min per side on HOT grill pan turning 90 degrees at 1min 30 sec on each side for nice grill marks and even cooking.<br /><br />Rest in foil for 5 min.<br />Slice and enjoy!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "nadu3682"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Absolutely delicious. Only thing different I did was add cilantro to the marinade just because I didn’t waste what I had in my fridge. We cooked it on a gas grill and it was so good. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Gary S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Made it for friends with skirt steak from Target.  Huge hit!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "jcrawford10"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Marinade is outstanding. Yum!  I used skirt steak.  Will use a different cut of meat next time."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Crazy way but great results "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "PD K."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "it is the Marinade! I tend to use flank steak and do not cook on the direct coals. I watch the flair ups and cook to temp. This is great."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is my go-to for skirt steak, has been for years now, but I am wondering why Alton recommends INSIDE skirt steak, when OUTSIDE skirt steak is so much more tender... Anyway, it’s the marinade that makes the dish; it’s absolutely delicious even if the meat is cooked in a cast iron grill on the stovetop. Please try this marinade on your skirt steak—regardless of how you cook it—it’s fantastic."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have made this so many times and it’s always great. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Tony N."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wow, truly the best marinade ever. I am not big on marinating beef, much less skirt steak. I was cooking for some friends and wanted to step it up a notch. Let me just tell you that everyone raves about the skirt steak and it was gone as soon as it hit the plate. A definite must try. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pipi"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is the best skirt steak marinade!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Ernesto L."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Came across this as a spur of the moment dinner.  Love the marinade, even though I had regular sugar, but the rest was there in the cupboard.  Did it in my cast iron skillet with butter and bacon grease.  It was Oh My LAWD.  Side dished it with BLT salad and sauteed string beans and Spinach. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michael S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I was hesitant to try skirt steak, however this recipe is amazing.  Delicious!  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "jackietowers"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Wonderful recipe! My husband and I love this for skirt steak and cook on the gas grill."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "jason c."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent fajitas! As many have said, works well using a gas grill, too — or, indeed, on the stovetop (in a pinch).  I pre-heat the grill to 600℉, sear for 90 seconds per side, wrap in foil, rest for 10 minutes, slice against the grain, then add to a pan of sliced onions and bell peppers on high heat."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Joshua W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best recipe for fajitas ever! There are some other negative reviews about cooking directly on the coals and I suspect that they didn't use a true good lump charcoal. You CANNOT use charcoal briquettes."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "kelpbeach"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The only marinade I will use with skirt steak.  Awesome every time!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "_xmdp_"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "<div>This is delicious.</div><div>I follow the marinade ingredients to a tee every time tho I'm tempted to add a little more garlic and/or cumin but that's a personal taste thing but I've never made it on a charcoal grill.  I've used the gas grill and my indoor electric grill with great results.</div>"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "John E."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Loved the flavor. Used this recipe many times"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "julie m."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best skirt steak marinade I've found! We love skirt steak and this marinade takes it over the top!  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This was my first attempt at skirt steak and I have nothing but rave reviews.  I use it for fajitas and sometimes just slice it up w/ some rice and veggies.  My family &amp; friends love it and its really easy.  I usually marinate it overnight or even freeze it until I'm ready to use it.  I'm going to do chicken as well this weekend and serve beef &amp; chicken fajitas.  I use a gas grill and get it as hot as I can and then grill each side for about 90 seconds before tenting the meat.  Comes out perfect every time!<br />"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "serafinapekkala"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent yummy tender juicy.  Will do again and again.  I marinated for 10 hours to ensure that the meat was tender.  Small modification for gas grill:  needed 2-3 minutes per side on the hottest setting before putting in the foil packet.   A keeper.  "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jasmine B."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Although we tried to clear away the ash before, cooking directly on the coals resulted in too much ash on the meat. It was gritty tasting and gave me a stomach ache. I'm really sorry I tried this technique as it ruined two lovely and expensive pieces of meat I was looking forward to enjoying. "
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Cdanley"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I accidentally omitted the olive oil and discovered protection! I might try 2 tbsp of brown sugar instead of 3 next time. This was outstanding!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Benjamin Davids"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have made this recipe several times now and every time it turns out delicious. Best marinade I've ever had. I have made a couple of minor changes: I only use. 1/3c olive oil because I thought it was a little too oily with 1/2c. And I cook it on a gas grill because I don't have a charcoal. Love this recipe!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I let this marinate for most of the day, flipping every hour or so. Cooked it on a gas grill, AND I had to cook it WELL to cater to some family members, which will almost always certainly ruin this cut of meat. It came out so flavorful and tender. We used the steak for some really yummy tacos. I will make this over and over again, cooked more rare to my taste next time. You can't go wrong."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Duane Jones"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Had to be the best steak i ever tried! Cooked on a gas grill on HIGH....."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CasualCook73"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Simply delicious. As easy as it sounds too. I used an IR grill on max heat and it worked fine. Make sure you use the sear then foil wrap process."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "frenchfriesandfrosties"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Highly recommend. Note, if grilling with a gas grill, do about 1 min. on medium high to get a nice sear, turn down to medium and grill an additional 4-5 minutes (I closed the lid), flip and do the same to the other side. The charcoal method with foil did not work for me using a gas grill. My method resulted in medium for the thinner pieces and medium rare for thicker (great for happy kiddos and happy adults)."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "JeanHerr"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Don't try this on top of the grill. We followed the recipe except that, based on reviews below, we didn't put it directly on coals. After 15 minutes in foil--off the grill, as we interpreted the recipe--it was extremely rare. It's going back on right now, and I hope it turns out."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Bill Chipman"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This recipe is excellent! I make a version very similiar that uses agave nectar, Thai red pepper flakes, granulated garlic, Mexican Oregano, cilantro and sometimes orange juice"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KaySh"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Amazing and delicious. Added scallions, extra garlic, soy sauce, garlic, brown sugar to my taste, into the puree. Used this marinade on both skirt steak and pork loin chops, that were grilled in a grill-pan in olive oil. Stabbed the meat all over with forks before rubbing the marinade in, let it marinate in the fridge for about 3.5 hours. Tasted great (but quite different) on each. Served with a side of oven-roast potatoes with paprika aioli and dandelion greens dressed lightly in a honey-lemon-olive oil dressing."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Evelyn Elwell Uyemura"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My meat was half frozen when I added the marinade, so I left it in the fridge all day while I was at work, and then cooked it on the gas stove in a grill pan--great results! I also didn't use the blender, I just mixed it up in a bowl and left the scallions in chunks. Very good marinade! I served it with chimichurri sauce, for killer results!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lisa Vogel"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "We've made these fajitas a few times now and have not been disappointed.  Tonight we used sandwich cut steak which started out super thin - so yummy!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kevin L. Browder"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best skirt steK fajites Ive ever had.  Grilled some vidalia onions and red peppers, shreded cheese and lime and sour cream.  You will be hooked!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "karlson"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This piece of meat sat in the freezer for very long, i didn't know what to do with it. We grilled it on cast iron skillet on the stove, 2 min per side, then after slicing put it again on the skillet for a minute. Needed some salt and pepper. It came out delicious."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "pagnew1800079193"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Absolutely perfect. We did it just as Alton says - On the lump coals directly. Although I may try 1.5 minutes next time for a better sear. The marinade is spot on and we may try a little addition of sea salt as well. A winner indeed!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Lorraine S."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I have used this marinade for years. I use this marinade primarily on London Broil. We can get the meat at a great price a few times a year and I stock up. I place the marinade in a large freezer bag. Poke the meat with a fork a few dozen times and toss the meat in the freezer bag  and give it a few shakes.Then I freeze it.  When I am ready to use the meat I let it defrost in the bag. Grill it on a wood fire and Oh Boy. I have never served this to my guests and not had rave reviews. I \"try\" to keep the recipe a secret ; I also have used this for portobello mushrooms letting it sit in the marinade for an hour or two and it makes them taste out of this world as well. Thanks Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "HJ"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My husband and I really enjoy this recipe however, I do not put the scallion in the blender. The one time I did I did not like the flavor or consistancy so I just eliminated the scallion. Also, we cook it on the grate on a gas grill."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "E&amp;E21"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Amazing!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Michelle G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This is an awesome marinade!  The flavors are really off the charts!  It's the perfect blend of seasoning.  I did add extra garlic (always!, but I did not grill directly on the coals.  I cooked on the gas grill (as I think most steak tastes better on the gas grill, vs. the smoker.  This is definitely a keeper in my recipe box!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "craftycookie10"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "VERY GOOD!!!! Made this for my mom and I, and we loved it! The flavors were wonderful and scrumptious! The meat cooked very well, and was nice and tender! The sauce even more the better, and I added some of my own seasonings, too! I love this recipe :"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "de savor"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "AWESOME! I normally dont like sweet eats but the brown sugar gave the marinade a subtle bbq like sweet. I wasnt sure about the scallions in the blender either, but the \"blendtec\" blender took care of that concern. For my personal taste I will add a pinch of salt or more soy and bit more lime. Regardless, Alton Brown comes through again for me! My marinade used to be just soy and fresh garlic. AB's recipe will be my skirt steak marinade from now on....unless he can top this one. Thank you Alton Brown."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Valpo4ever"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Absolutely loved it! Made it in our our gas grill and still came out delicious. I've always stayed away from recipes where they mix sweet, sour and salty elements just because is out of my comfort zone when it comes to trying new foods and seasonings.  This recipe is a MUST TRY! You will not be disappointed :-<br />Thanks Alton!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "wendy c."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "my husband made this marinade for some skirt steak he bbq'd the other evening.  he did not bother with the whole 'cook it on the coals' thing as we have a gas grill and a nice grill pan we sit on top of that.  regardless, it was FABULOUS!  make this marinade...you will not be disappointed...just thinking of it is making my mouth water!!  deelish!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "willcook4u"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This has been my basic go to recipe now for a beef marinade for the last few years.  Use this as a base and go from there.  I like it a little heavier on the garlic and pepper flakes so I add more but you can omit this completely if you want, you will find that anything goes.  I use  this recipe to marinade other cuts too such as tri tip and it works awesome. I also like to marinade for longer then the recipe states but be careful about going too long because the citrus will cook the meat but overnight works good.  I also sometimes freeze the skirt steak in the marinade and then I can just defrost and cook.  I don't go as far as cooking directly on the hard wood charcoal or the hair dryer and I use regular Kingsford charcoal but grill as close to the heat as I can get (about an inch or less and get killer results. It is very important to let the meat rest befoe slicing against the grain and as thin as you can,"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Denise R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I omitted the cumin and increased the marinating time to approx. 8 hours as I didn't think an hour or two would be sufficient. I then cooked them on the bbq as I simply could not be bothered doing the hairdryer thing. The steak came out tender and flavorful. I'll make this marinade again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "ginny c."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Easy..yummy..great with Pommas Anna and green salad"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Andrea M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "followed recipe exactly and it tasted yummy was tender i don't know how you can screw this up"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Cooking on the coals did not work.What was I thinking!Alton must like the taste of ashes.I mean really."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Grandma W. w."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Best freakin marinade ever. Turned the skirt steaks into the most tender, juicy and lip smaking piece of steak ever. Only change was leaving out the red pepper flakes as I don't think all my food should burn my tongue. And after tasting this, I don't think the red pepper flakes were necessary. Oh and I didn't grill it as its too cold out tonight, I broiled it on top shelf on Hi-broil for a few minutes."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Cathy W."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love the marinade.  I'm another cook who rarely measures but I think I had roughly the equivalent proportions of ingredients.  We have a gas grill and I did leave a bit of the marinade on the meat when I grilled it, left all burners on highest setting, and cooked about 2 minutes on each side... simply fabulous.  I also left the meat sitting in the marinade for way more than hour - closer to 3-4 actually, and it was as tender as butter.  Will probably use this or some variation of this marinade in future, as flap steak is becoming easier to find and is an economical alternative to the more expensive cuts."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Laurie D."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Loved the marinade. Used it on sirloin steak, which doesn't have much marbling, but the marinade made it very tender and juicy.  Cooked it medium rare.  Marinated it for about 2 hours, then wiped the marinade off and put olive oil on it before cooking so it wouldn't stick to the grill.  next time I think I'll use pineapple juice instead of lime juice, and maybe add a bit more brown sugar, as I like a little sweetness to my marinade.  The marinade made the steak as tender as a rib-eye, which is my favorite cut.  Served it with vegetables cooked on the grill, and roasted fingerling potatoes.  Watermelon and cantelope for dessert.  I'll definitely use this marinade again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Kathleen M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 1,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I came upon this when looking for a recipe to use skirt steak.  Disappointing.  I cooked on a gas grill so I understand the meat would not come out exactly the same, but the marinade did not impart much flavor either - and I followed the recipe exactly.  Too much oil, for a start, and not much flavor."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "C H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Needed 90 seconds per side.  Besides that followed recipe exactly. Fabulous.  Served with tortillas charred in cast iron skillets.  Served with Alton's guacamole, grilled peppers.  Yum!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "jayhawksgoku"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The ingredients used for this marinade were PERFECT!  I don't take the time to measure things out for something as simple as a marinade, and I know I will want to add more or less of everything.   I just grilled it with some high heat and added salt and pepper to the meat when I put in on the grill.<br /><br />The flavor was amazing and my husband and I couldn't stop eating it.    <br /><br />The ingredients are what matter here, not the hair dryer.  :0"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Twoandthreebirds"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I agree with the other posts that one cannot give five stars to a recipe that is only followed 50%. Most everyone agrees that the marinade is great but the cooking method is HORRIBLE! Try eating steak that is covered in crunchy bits of charcoal. Yuck! We had to throw it out. I really respect Alton Brown but this recipe was a huge disappointment."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "tjaben"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I really liked this;  I used sirloin steak instead of flank or skirt because of preference and price.  I also added some cilantro to the blender.  Served with homemade pico, cojito cheese and red cabbage - yummy!  Definitely a keeper!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Putting the steak directly on the hardwood charcoal is a must for recipe. This method took the steak to a whole level. I was so surprised how well this worked, when I did this my friends looked at me like I was nuts. Didn't have hair dryer so I used a piece of cardboard and just fanned it really hard. I don't think you can use reg charcoal, not one drop of ash was on my steaks what so ever. I did use my own marinade though, bourbon brown sugar soy and garlic. Amazing way to cook a steak, from here on out I will start cooking all of my steaks using this method"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "A Cook From Pioneer"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My husband and I liked this recipe exactly as written.  I am intrigued by the suggestion of using a chipotle chili in the marinade and may try that next time."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Jill M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This was absolutely DELICIOUS!  I also used shallot because I didn't have any green onions.  I added sliced vidalia onions, jalapenos &amp; red peppers to the marinade (marinated for 5 hours and grilled the veggies and meat to make fajitas.  A little roasted corn salsa, guacamole and cilantro lime rice...... Fabulous!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "unixrab -"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "love love love - added cilantro to the blender -   this is a great marinade!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious... didn't have scallions so used a shallot which worked fine.  Also just did it on a gas grill."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Vera C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "To Ireallyhateuser.....       I agree with the ratios.  I took some of your advice and when I made this today I:  kept the liquid amount the same, but I replaced the scallions with 1/2 cup diced onions, doubled the cumin, got rid of the pepper flakes and added a single chipotle as suggested.  I also added a heaping tablespoon of stone ground mustard because I just love the stuff - LOL."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mark H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 2,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Did not think the marinade was all that people have raved about.      I felt like I should have liked it but it was lacking something.     I am a big fan of skirt steaks and marinating is clearly the way to go but I don't think I will bother with this one again without significant changes.  My thoughts are it was low in the spices considering it had over 1 cup of liquid (oil, lime juice, soy sauce and only 1/2 tsp cumin and 1/2 tsp pepper flakes.  I will probably halve the oil, soy, lime and increase the cumin by double.     Perhaps replace the pepper flakes with a single chipotle en adobo to bump up the flavor while keeping the heat about the same."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CookinKaren1"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love the marinade!! It was quite thick, but it sticks to the meat better that way.  I used a gas grill and it worked out well, didnt stick to the grill(Idid oil it first. I used an Argentine Chimichurri Sauce. This will be my go to recipe for skirt steak.  Could be used on all steak, it is so delicious!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "wlmelahn"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious for fajitas."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "renee g."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great with Flank Steak too!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Blaine C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Very good.  Only marinated for about 2 1/2  hours, will marinate longer next time.  Marinade  was very thick and was difficult to \"pat dry\" as recipe instructs. Served with refried beans and yellow rice, grilled jalopenos, flour tortillas and cold beer.  Will cook again."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Great Boy Scout Meal! We cooked directly on wood coals, used cast iron skillet to do the onions and peppers.  Heated tortillas on cast iron skillet.  Only problem was NO LEFTOVERS!  Everyone loved this meal.  Scoutmaster in me doubted the coals would not flare up; was pleasantly pleased to see Alton was correct.  Definitely this will be a regular dinner for us"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "LISA F."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "So good!!!  My Mexican husband loved it!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "J M."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Didn't do it on the coals, either, just a regular grill, and it was still SO SO good.  I don't even like steak but this is now a favorite of the whole family including me."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "penny w."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Delicious.  My family scarfed it down!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "KW-Michele"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I use flank steak and a gas grill, but still get great results. My daughter, who is not much of a meat eater, requests this every time she is home from college. Awesome marinade!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CHRISTINE R."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Can't give it five stars because I cooked the meat on the grill grates instead of directly on the coals and followed the rest of the recipe as is.  Very good marinade!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "My family loves this recipe. Fantastic marinade for beef, poultry and pork!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "mfanroy"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I went to Miami in the spring and I had the best Cuban Skirt Steak at Yuca Restaurant in South Beach. I have been trying to recreate that taste.  This comes pretty close!!!  Like the other person, I sliced the steak, sauteed onions with green and red peppers and served as fajitas!!!  Amazing.  I did not have time to fire up the grill so I used a cast iron griddle using the grill side.  It worked perfectly but it must be very hot in order to get that great sear that you would get with a charcoal grill.  Definitely a keeper.  Very important to slice against the grain of the steak for maximum tenderness.  Alton...once again, you never fail!!!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "muusenic"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "This recipe is AMAZING!!  I follow it exactly the way he says but we just grill it right on the gas grill and use it in Fajitas.  I have made this recipe twice and we now have Fajita Fridays!  We look forward to it all week long!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Guy G."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "The marinade is awesome!!  I've marinated chicken pieces for the grill and they taste awesome.  Everyone loves them!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Itsmevickey"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "I followed this recipe for the marinade only, and grilled on a gas grill.  For years I have hesitated making fajitas as I could not find a marinade that tasted just the way I wanted it to taste.  My son roped me into trying the marinade, and now it is a family favorite!  Perfect for chicken and flank steak (which is what I use alike, my fajita marinade search is now over!  Thanks, Alton."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "John C."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Excellent taste!  BTW, hairdryer not neccesary when using gas grill!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Wowthisisrandom"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Awesome marinade. As for the guy underneath yes I have followed the directions and it was great. And the reason you have grit is because you DIDN'T follow the directions. Grit will result if you use anything other than good natural chunk and if you don't use a blow-dryer."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "CPGP"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 3,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "2 things first: 1. I enjoy and respect the TV persona of AB. 2. Any caveman that didn't think this recipe was an upgrade to his usual style of cooking the bronto wasn't on the evolving branch of our family tree. That being said, has anyone reviewing this actually followed the recipe before giving it 5 stars??  To start, there is no salt/pepper. Next, about the grit that results when you throw meat directly on the charcoal - whether you blow, poof or shake the ever loving coals to death, you will get some ! Cavemen loved it. My wife and I did not. Great marinade; lousy everything else."
+        }
+    ],
+    "video": {
+        "@type": "VideoObject",
+        "name": "Alton Brown's Skirt Steak Secrets",
+        "description": "Watch as AltoWatch as Alton Brown reveals the secrets to cooking skirt steak with a crispy crust and achieve optimal flavor.n Brown reveals the secrets to cooking skirt steak with a crispy crust.",
+        "duration": "PT0H3M41S",
+        "thumbnailUrl": "https://food.fnr.sndimg.com/content/dam/images/food/video/0/01/016/0169/0169322.jpg.rend.hgtvcom.406.305.suffix/1664905714515.jpeg",
+        "contentUrl": "https://www.foodnetwork.com/apps/api/playback?path=/etc/sni-asset/food/videos/0/01/016/0169/0169322",
+        "uploadDate": "2022-08-24T12:11:46.778-04:00"
+    },
+    "recipeCuisine": "american",
+    "recipeCategory": "main-dish"
+}

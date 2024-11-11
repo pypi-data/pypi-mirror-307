@@ -1,0 +1,123 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "Sinigang is adobo’s close contender for the title of National Dish of the Philippines. It has many variants, depending on the fruit that sours the dish. Commonly used are sampaloc (tamarind), kamias (bilimbi), bayabas (guava), and calamansi (Philippine lime)—fruits grown in Philippine soil. Unfortunately, these fruits are difficult to find in the countries where I’ve lived. Hence, I recreated this dish using the all-year-round, easy-to-find lemon. Like many Filipino dishes, this soup is bold in taste: sour, salty, slightly sweet, spicy, and umami. For a more flavorful stock, reserve the shells and heads of the shrimp or prawns, simmer with the stock for at least 10 minutes, then strain. For an extra zing, I season sinigang with what I call a Filipinized gremolata, a mildly modified version of the Italian condiment made with parsley, lemon zest, and fried—instead of raw—garlic. This dish, which reminds me of home and heritage, can be prepared using just one pot. The recipe is easy to scale, whether you’re cooking for a village or just for one.",
+    "alternativeHeadline": "Like many Filipino dishes, this soup is bold in taste: sour, salty, slightly sweet, spicy, and umami. Use any combination of shrimp, crab, salmon, monkfish or other fish and shellfish you like.",
+    "keywords": [
+        "soup",
+        "filipino",
+        "parsley",
+        "lemon",
+        "fish",
+        "salmon",
+        "monkfish",
+        "cod",
+        "chinese long bean",
+        "green bean",
+        "chile",
+        "spinach",
+        "shrimp",
+        "crab",
+        "main",
+        "dinner",
+        "dairy free",
+        "gluten free",
+        "nut free",
+        "one-pot meals",
+        "simmer",
+        "cookbooks",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.epicurious.com/photos/5b8eb10364455e2da315abf2/1:1/w_1666,h_1666,c_limit/shrimp-and-salmon-sinigang-recipe-090418.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Epicurious",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.epicurious.com/verso/static/epicurious/assets/logo-seo.png",
+            "width": "488px",
+            "height": "100px"
+        },
+        "url": "https://www.epicurious.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Epicurious"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Jacqueline Chio-Lauri",
+            "sameAs": "https://www.epicurious.com/contributor/jacqueline-chio-lauri"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.2,
+        "ratingCount": 3
+    },
+    "description": "Like many Filipino dishes, this soup is bold in taste: sour, salty, slightly sweet, spicy, and umami. Use any combination of shrimp, crab, salmon, monkfish or other fish and shellfish you like.",
+    "image": [
+        "https://assets.epicurious.com/photos/5b8eb10364455e2da315abf2/16:9/w_2496,h_1404,c_limit/shrimp-and-salmon-sinigang-recipe-090418.jpg",
+        "https://assets.epicurious.com/photos/5b8eb10364455e2da315abf2/4:3/w_2220,h_1665,c_limit/shrimp-and-salmon-sinigang-recipe-090418.jpg",
+        "https://assets.epicurious.com/photos/5b8eb10364455e2da315abf2/1:1/w_1666,h_1666,c_limit/shrimp-and-salmon-sinigang-recipe-090418.jpg"
+    ],
+    "headline": "Seafood Sinigang (Sour and Savory Seafood Soup)",
+    "name": "Seafood Sinigang (Sour and Savory Seafood Soup)",
+    "recipeIngredient": [
+        "1 tablespoon extra virgin olive oil",
+        "4 small cloves garlic, finely chopped",
+        "1 bunch flat-leaf parsley, finely chopped",
+        "Grated zest of 2 lemons",
+        "4 cups seafood stock or water with dissolved fish bouillon cubes",
+        "Juice of 1 lemon, plus more to taste",
+        "1 teaspoon granulated sugar",
+        "2 red onions, chopped",
+        "4 tomatoes, chopped",
+        "1 pound fish fillets (such as salmon, monkfish, or cod), cut into 4 pieces",
+        "1/2 pound long beans or green beans, trimmed and cut into 1-inch pieces",
+        "4 fresh whole chiles of your choice",
+        "1 bunch water spinach or spinach, thick stems removed",
+        "Fish sauce, to taste",
+        "1 pound mixed shellfish (such as prawns, shrimp, and crab claws), shelled and cooked",
+        "Cooked rice or crusty bread, for serving"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a 3-quart saucepan, heat the olive oil over medium heat until it shimmers. Add the garlic and cook until it is light golden, then immediately remove the pot from the heat. Transfer the garlic mixture to a bowl and let it cool for 1 minute. Mix with the parsley and lemon zest. Set it aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Pour the seafood stock into the same saucepan used to fry the garlic. Add the lemon juice and sugar and bring the mixture to a boil over medium heat. Add the onions and tomatoes. Cover the pan, reduce the heat to low, and simmer for 5 minutes, or until the onions are translucent and the tomatoes are mushy."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Put the fish in a strainer or colander and dunk it into the simmering broth. Cook for 3 to 5 minutes, until opaque throughout. Be careful not to overcook it. Immediately transfer the fish to a plate and set it aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Put the beans in the strainer and dunk it into the simmering broth. Cook for about 5 minutes, or until the beans are tender but still vibrant green. Transfer the beans to a plate and set it aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Put the chiles and water spinach in the strainer and dunk it into the simmering broth. Cook for about a minute, or until they are tender but still vibrant in color. Transfer the chiles and spinach to a plate and set it aside."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "While the broth continues to simmer, taste and add fish sauce and more lemon juice as needed. Distribute and arrange the fish, shellfish, and vegetables into each of four bowls."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Remove the broth from the heat and ladle it into the bowls with the seafood and vegetables. Sprinkle each serving with the gremolata. Serve the soup piping hot, with rice or crusty bread."
+        }
+    ],
+    "totalTime": "45 minutes",
+    "recipeYield": "4 servings",
+    "url": "https://www.epicurious.com/recipes/food/views/seafood-sinigang-sour-and-savory-seafood-soup",
+    "dateModified": "2018-09-04T12:29:59.768-04:00",
+    "datePublished": "2018-09-04T12:29:59.768-04:00",
+    "recipeCategory": []
+}

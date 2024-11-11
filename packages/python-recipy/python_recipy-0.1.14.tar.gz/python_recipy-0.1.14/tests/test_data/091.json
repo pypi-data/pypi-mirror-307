@@ -1,0 +1,174 @@
+{
+    "@type": "Recipe",
+    "name": "Teriyaki Steak Rolls",
+    "author": {
+        "@id": "https://www.justonecookbook.com/#/schema/person/033420c6cd0fe01255dcd76d04d95472"
+    },
+    "description": "My savory Teriyaki Steak Rolls with veggies are pan-seared and glazed with an easy homemade teriyaki sauce. Make this Japanese home-cooked dish for dinner, then enjoy the leftovers in tomorrow‘s bento lunch!",
+    "datePublished": "2017-02-27T11:00:55+00:00",
+    "image": [
+        "https://www.justonecookbook.com/wp-content/uploads/2017/02/Beef-Rolls.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2017/02/Beef-Rolls-500x400.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2017/02/Beef-Rolls-500x375.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2017/02/Beef-Rolls-480x270.jpg"
+    ],
+    "recipeYield": [
+        "2"
+    ],
+    "prepTime": "PT15M",
+    "cookTime": "PT10M",
+    "totalTime": "PT25M",
+    "recipeIngredient": [
+        "3 oz carrot",
+        "3 oz French green beans (haricots verts)",
+        "½ lb thinly sliced beef (chuck or ribeye)",
+        "Diamond Crystal kosher salt",
+        "freshly ground black pepper",
+        "1 Tbsp neutral oil",
+        "2 Tbsp sake",
+        "3 Tbsp soy sauce",
+        "2 Tbsp sugar",
+        "2 Tbsp sake",
+        "1 Tbsp mirin"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Peel 3 oz carrot and cut into matchsticks 2 inches long. Trim the ends of 3 oz French green beans (haricots verts).",
+            "name": "Peel 3 oz carrot and cut into matchsticks 2 inches long. Trim the ends of 3 oz French green beans (haricots verts).",
+            "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-0-0",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-1.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Bring a small saucepan of water to a boil. Once boiling, add the carrots and cook for 1–2 minutes, then add the green beans to cook another minute. The cooking time may vary depending on the amount and thickness of the vegetables. Drain well and set aside.",
+            "name": "Bring a small saucepan of water to a boil. Once boiling, add the carrots and cook for 1–2 minutes, then add the green beans to cook another minute. The cooking time may vary depending on the amount and thickness of the vegetables. Drain well and set aside.",
+            "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-0-1",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-2-3.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Place a slice of meat on the cutting board and sprinkle it with Diamond Crystal kosher salt and freshly ground black pepper. Then, put a few green beans and carrots on one end of the meat and start rolling it up. Repeat with the remaining ½ lb thinly sliced beef (chuck or ribeye) and vegetables.",
+            "name": "Place a slice of meat on the cutting board and sprinkle it with Diamond Crystal kosher salt and freshly ground black pepper. Then, put a few green beans and carrots on one end of the meat and start rolling it up. Repeat with the remaining ½ lb thinly sliced beef (chuck or ribeye) and vegetables.",
+            "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-0-2",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-4-1.jpg"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Combine all the ingredients for the teriyaki sauce: 3 Tbsp soy sauce, 2 Tbsp sugar, 2 Tbsp sake, and 1 Tbsp mirin. Mix well to dissolve the sugar.",
+            "name": "Combine all the ingredients for the teriyaki sauce: 3 Tbsp soy sauce, 2 Tbsp sugar, 2 Tbsp sake, and 1 Tbsp mirin. Mix well to dissolve the sugar.",
+            "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-0-3",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-5.jpg"
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Cook",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "In a frying pan, heat 1 Tbsp neutral oil on medium-high heat. When it’s hot, place the steak rolls gently in the pan with the seam side down. Cook one side of the rolls until nicely charred, then rotate to cook the next side. ",
+                    "name": "In a frying pan, heat 1 Tbsp neutral oil on medium-high heat. When it’s hot, place the steak rolls gently in the pan with the seam side down. Cook one side of the rolls until nicely charred, then rotate to cook the next side. ",
+                    "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-1-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-6.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Once all sides of the meat have a nice char, reduce the heat to medium and add 2 Tbsp sake. Cook covered until the sake is evaporated. ",
+                    "name": "Once all sides of the meat have a nice char, reduce the heat to medium and add 2 Tbsp sake. Cook covered until the sake is evaporated. ",
+                    "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-1-1",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-7.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add the teriyaki sauce and rotate the steak rolls so they are evenly coated with the sauce. Transfer the steak rolls to a serving plate. ",
+                    "name": "Add the teriyaki sauce and rotate the steak rolls so they are evenly coated with the sauce. Transfer the steak rolls to a serving plate. ",
+                    "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-1-2",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-8.jpg"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Serve",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Reduce the teriyaki sauce in half, or until it‘s thickened. Drizzle the sauce on the steak rolls and serve immediately.",
+                    "name": "Reduce the teriyaki sauce in half, or until it‘s thickened. Drizzle the sauce on the steak rolls and serve immediately.",
+                    "url": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#wprm-recipe-56857-step-2-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2011/04/Beef-Rolls-9.jpg"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.79",
+        "ratingCount": "19"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "Made this tonight.  Wow! Super yum! You said the could be other fillings.  What would you suggest? Thank you for sharing your knowledge and expertise.",
+            "author": {
+                "@type": "Person",
+                "name": "Jennifer"
+            },
+            "datePublished": "2021-01-23"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I prepare these rolls filled with some asparagus. Soo delicious! We will prepare them once again 😋",
+            "author": {
+                "@type": "Person",
+                "name": "Ania"
+            },
+            "datePublished": "2020-05-21"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "We made these two kinds of theselast night; one with asparagus and the other with kimchi.  Wonderful flavor and so easy.",
+            "author": {
+                "@type": "Person",
+                "name": "Bkhuna"
+            },
+            "datePublished": "2019-12-08"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Japanese"
+    ],
+    "keywords": "meat roll",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "360 kcal",
+        "carbohydrateContent": "16 g",
+        "proteinContent": "25 g",
+        "fatContent": "20 g",
+        "saturatedFatContent": "10 g",
+        "cholesterolContent": "69 mg",
+        "sodiumContent": "811 mg",
+        "fiberContent": "2 g",
+        "sugarContent": "11 g",
+        "unsaturatedFatContent": "9 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#recipe",
+    "isPartOf": {
+        "@id": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/#article"
+    },
+    "mainEntityOfPage": "https://www.justonecookbook.com/soy-glazed-vegetable-beef-rolls/"
+}

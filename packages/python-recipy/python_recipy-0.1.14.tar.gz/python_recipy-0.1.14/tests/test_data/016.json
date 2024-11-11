@@ -1,0 +1,248 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Red, White and Blue Ambrosia",
+    "datePublished": "2018-03-21T12:29:55.000-04:00",
+    "dateModified": "2022-07-14T18:01:13.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "FROGGY2427"
+        }
+    ],
+    "description": "Sweet and creamy ambrosia is accented with strawberries and blueberries to make a very patriotic summer dessert perfect for Flag Day or Fourth of July.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.allrecipes.com/thmb/vRPX3i8jPhQGaAXaDZovPpoP_KA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/665819-94404d0bfb764d799f9c5c8c22e9091d.jpg",
+        "height": 250,
+        "width": 250
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Allrecipes",
+        "url": "https://www.allrecipes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.allrecipes.com/thmb/Z9lwz1y0B5aX-cemPiTgpn5YB0k=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/allrecipes_logo_schema-867c69d2999b439a9eba923a445ccfe3.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Allrecipes",
+        "publishingPrinciples": "https://www.allrecipes.com/about-us-6648102#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/allrecipes",
+            "https://www.instagram.com/allrecipes/",
+            "https://www.pinterest.com/allrecipes/",
+            "https://www.tiktok.com/@allrecipes",
+            "https://www.youtube.com/user/allrecipes/videos",
+            "https://twitter.com/Allrecipes",
+            "https://flipboard.com/@Allrecipes",
+            "https://en.wikipedia.org/wiki/Allrecipes.com",
+            "http://linkedin.com/company/allrecipes.com"
+        ]
+    },
+    "name": "Red, White and Blue Ambrosia",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "35"
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "475 kcal",
+        "carbohydrateContent": "36 g",
+        "cholesterolContent": "86 mg",
+        "fiberContent": "4 g",
+        "proteinContent": "4 g",
+        "saturatedFatContent": "25 g",
+        "sodiumContent": "68 mg",
+        "sugarContent": "24 g",
+        "fatContent": "37 g",
+        "unsaturatedFatContent": "0 g"
+    },
+    "prepTime": "PT20M",
+    "recipeCategory": [],
+    "recipeIngredient": [
+        "1 pint heavy cream",
+        "1 tablespoon confectioners' sugar",
+        "2 cups sour cream",
+        "1.5 cups flaked coconut",
+        "1 (20 ounce) can crushed pineapple, drained",
+        "1 pint strawberries, hulled and sliced",
+        "1 pint fresh blueberries",
+        "3 cups miniature marshmallows"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Combine the heavy cream and confectioners&#39; sugar in a large bowl. Whip with an electric mixer until thick but not grainy. Mix in sour cream."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Use a rubber spatula to fold in the flaked coconut, pineapple, strawberries, blueberries and marshmallows until everything is evenly distributed. Cover and chill for at least 4 hours before serving. It tastes best if chilled overnight."
+        }
+    ],
+    "recipeYield": [
+        "10"
+    ],
+    "totalTime": "PT260M",
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Andrea"
+            },
+            "reviewBody": "Wow! This was so good I couldn't stop eating it! I followed the recipe exactly and it was delicious! Maybe next time, I'll use light cream instead of heavy cream to lower the fat content. I wouldn't change anything else! Update: I tried it with light cream and it just didn't have the same thick texture needed for this recipe. That's ok - it's definitely worth the calories!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "connie_255"
+            },
+            "reviewBody": "Absolutely delish! I like that it's not quite as sweet as other ambrosias because it is sweet enough. The purpose of the sour cream is to stabilize it. The whipping cream doesn't break down quickly and the ambrosia lasts longer, that is if it isn't eaten before the cream has a chance to separate and get watery. For me, it is of great benefit to last a few days longer."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Christy Ratto-Bixby"
+            },
+            "reviewBody": "Made this for the Fourth of July this year and it was pure heaven! Added cherries, 1/4 cup sugar and one banana to change things up a bit and it was devoured by my family!!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "2"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Cynthia Wainman"
+            },
+            "reviewBody": "Ambrosia should be sweet. This was not! Would need to add more sugar if I made it again. Which leaves me questioning all the sour cream in the first place."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "csb"
+            },
+            "reviewBody": "This is excellent. Next time I'll use Fat Free Greek yogurt instead of sour cream as that has become my preference."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "cookin'gal"
+            },
+            "reviewBody": "This was very refreshing and good. My grandchildren have some special dietary needs and can't eat all canned fruit, and sugar only on special occasions. I made this because it had lots of fresh fruit and used real whipped cream. They loved it and so did I."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "darlynd"
+            },
+            "reviewBody": "I have this recipe saved because my family loves it so much! We don't change the recipe often unless there is a request for more coconut. We have learned to make sure the fruit is sweet before folding it in. I also make this for Christmas and add 2 drops of green food coloring. The red and green are festive and it tops off pound cake beautifully."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "mocheeks"
+            },
+            "reviewBody": "I made this recipe exactly as is and it turned out fabulous. Brought it to a 4th of July barbeque and it didn't last 1 hour!!!! Next time I might add a bit more strawberries and blueberries. But otherwise, got so many compliments on this. Thank you for the recipe."
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "My 3 boys"
+            },
+            "reviewBody": "Made this for the Fourth of July this year and it was pure heaven! Added cherries, 1/4 cup sugar and one banana to change things up a bit and it was devoured by my family!!!"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "megameaghan1"
+            },
+            "reviewBody": "delicious!"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.allrecipes.com/recipe/51697/red-white-and-blue-ambrosia/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipes/79/desserts/",
+                        "name": "Desserts"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipes/363/desserts/custards-and-puddings/",
+                        "name": "Custards and Puddings"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.allrecipes.com/recipe/51697/red-white-and-blue-ambrosia/",
+                        "name": "Red, White and Blue Ambrosia"
+                    }
+                }
+            ]
+        }
+    }
+}

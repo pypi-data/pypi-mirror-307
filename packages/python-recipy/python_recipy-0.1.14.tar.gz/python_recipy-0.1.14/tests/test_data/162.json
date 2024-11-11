@@ -1,0 +1,62 @@
+{
+    "@type": "Recipe",
+    "keywords": "Oatmeal cookies, Dried Fruit, Gluten-free",
+    "name": "Fruity-Nutty Oat Cookies",
+    "description": "If you live in a house divided between crunchy and chewy oat-cookie-lovers, this recipe is for you: Bake them for less time for soft and chewy cookies or leave in the oven a bit longer for cookies with a delightful crunch. Jam-packed with dried fruit and nuts, the cookies also contain two forms of oats for even more texture and flavor. Oat flour lends tenderness and a natural nutty sweetness, while King Arthur Rolled Oats make the cookies hearty but not too toothsome.",
+    "recipeYield": [
+        "about 2 dozen",
+        "3” cookies",
+        "about 2 dozen 3\" cookies"
+    ],
+    "datePublished": "February 9, 2024 at 3:51pm",
+    "prepTime": "PT15M",
+    "totalTime": "PT1H0M",
+    "cookTime": "PT20M",
+    "recipeIngredient": [
+        "8 tablespoons (113g) unsalted butter at room temperature",
+        "1 cup (213g) light brown sugar or dark brown sugar packed",
+        "1 large egg",
+        "2 teaspoons King Arthur Pure Vanilla Extract",
+        "1 teaspoon cinnamon",
+        "3/4 teaspoon table salt",
+        "1 3/4 cups (161g) King Arthur Oat Flour*",
+        "1 teaspoon baking powder",
+        "1/2 teaspoon baking soda",
+        "1 1/2 cups (168g) King Arthur Rolled Oats or 1 1/2 cups (138g) conventional rolled oats old-fashioned or quick-cooking",
+        "1 1/2 cups (192g) King Arthur Baker's Fruit Blend or your favorite combination of dried cranberries and raisins",
+        "1 cup (113g) walnuts or pecans chopped; optional"
+    ],
+    "recipeInstructions": "Preheat the oven to 375°F. Lightly grease 2 baking sheets or line with parchment. , In a stand mixer fitted with the flat beater or working with a hand mixer in a large bowl, beat together the butter and sugar until well mixed, 2 to 3 minutes. Add the egg, vanilla, cinnamon, and salt, then beat until fluffy, another 1 to 2 minutes, scraping the bowl as needed. , Beat in the flour, baking powder, baking soda, and oats until well combined. , Mix in the fruit and nuts until evenly incorporated. , Scoop the dough into golf ball-sized rounds of dough (about 2 tablespoons/40g each); a jumbo cookie scoop works well here. Distribute the dough balls evenly between the 2 pans (12 cookies per pan), spacing them about 1 1/2\" apart. , Using your hands, flatten the dough into pucks about 2\" in diameter and 1/3\" to 1/2\" thick. If the dough starts to stick, lightly wet or grease your hands., Bake for 15 to 16 minutes for soft cookies, or until just set around the edges and pale in the center, or 18 to 20 minutes for crunchy cookies, or until golden brown. Halfway through baking, rotate the pans from front to back and top to bottom. , Remove the cookies from the oven and let them cool on the pan before serving at room temperature. (Cookies are fragile until cool.), Storage information: Store leftover oat cookies in an airtight container, at room temperature, for several days. If you want to keep them soft and chewy, store them with a brown sugar saver or with a slice of white bread. Freeze for longer storage. ",
+    "author": {
+        "@type": "Organization",
+        "name": "King Arthur Baking",
+        "url": "https://www.kingarthurbaking.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.kingarthurbaking.com/themes/custom/kaf_nextgenweb/images/KA_Logo_Small.svg"
+        }
+    },
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 cookie (36g)",
+        "calories": "140 calories",
+        "carbohydrateContent": "23g",
+        "cholesterolContent": "20mg",
+        "fiberContent": "2g",
+        "proteinContent": "2g",
+        "sodiumContent": "130mg",
+        "sugarContent": "13g",
+        "fatContent": "5g",
+        "saturatedFatContent": "2.5g",
+        "transFatContent": "0g"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.kingarthurbaking.com/sites/default/files/2024-03/Fruity-Nutty-Oat-Cookies-Catalog-V2.jpg"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "2.80",
+        "ratingCount": "4"
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe",
+        "NewsArticle"
+    ],
+    "headline": "Dinner Is Ready in Minutes With This Summery Gazpacho Made in a Blender",
+    "datePublished": "2013-12-06T18:12:30.000-05:00",
+    "dateModified": "2023-08-02T16:54:55.843-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Mardee Haidin Regan",
+            "url": "https://www.foodandwine.com/author/mardee-haidin-regan"
+        }
+    ],
+    "description": "This gazpacho recipe lets you turn tomatoes, cucumber, bell peppers, and onion from the garden into a bowl of a refreshing chilled Spanish soup in just minutes.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.foodandwine.com/thmb/lGQkGm7bIwVftB-Ys4wGu9Mhjww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Blender-Gazpacho-FT-RECIPE0723-e73916b8f98a44308a84982ff8b9e5cf.jpg",
+        "height": 1000,
+        "width": 1500
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food & Wine",
+        "url": "https://www.foodandwine.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.foodandwine.com/thmb/uV0O06O8WNrLepjgxkntdVuRpeE=/112x112/filters:no_upscale():max_bytes(150000):strip_icc()/brand_logo_schema-f3b2e548eb6f4243ad527798593483e0.png",
+            "width": 112,
+            "height": 112
+        },
+        "brand": "Food & Wine",
+        "publishingPrinciples": "https://www.foodandwine.com/about-us-6373913#toc-editorial-policies",
+        "sameAs": [
+            "https://www.facebook.com/foodandwine",
+            "https://www.instagram.com/foodandwine/?hl=en",
+            "https://twitter.com/foodandwine",
+            "https://www.pinterest.com/foodandwine/",
+            "https://flipboard.com/@foodandwine",
+            "https://www.youtube.com/channel/UCKH_4hkRSyUSHDIFMzlGCRA",
+            "https://en.wikipedia.org/wiki/Food_%26_Wine"
+        ]
+    },
+    "name": "Dinner Is Ready in Minutes With This Summery Gazpacho Made in a Blender",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "6041"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Spanish"
+    ],
+    "recipeIngredient": [
+        "2 pounds ripe tomatoes&mdash;peeled, seeded and coarsely chopped, or one 28-ounce can best-quality plum tomatoes, chopped",
+        "1 medium onion, preferably a sweet variety such as Vidalia or Walla Walla, coarsely chopped",
+        "1 large cucumber, peeled",
+        "1/2 green bell pepper, coarsely chopped",
+        "1/2 red bell pepper, coarsely chopped",
+        "2 scallions, coarsely chopped",
+        "3 garlic cloves",
+        "1/3 cup extra-virgin olive oil",
+        "3 tablespoons sherry vinegar or balsamic vinegar",
+        "1 to 2 teaspoons hot pepper sauce",
+        "1 teaspoon ground cumin",
+        "1/2 to 1 cup chilled tomato juice",
+        "Salt and freshly ground black pepper",
+        "Croutons, chopped fresh herbs, sliced scallions or diced avocado, for garnish"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "In a large bowl, stir together the tomatoes, onion, cucumber, bell peppers, scallions and garlic. Working in 2-cup batches, whirl the mixture in a blender until finely chopped but not pureed. Return the mixture to the bowl and stir in the oil, vinegar, hot pepper sauce and cumin. Add enough of the cold tomato juice to make the gazpacho soupy but not too thin. Season generously with salt and black pepper."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cover the bowl and refrigerate the soup until very cold, at least a couple of hours or for up to 2 days. Stir the gazpacho and ladle it into bowls, or pour it at the table from a wide-mouth pitcher. Garnish with croutons, herbs, scallions or diced avocado."
+        }
+    ],
+    "recipeYield": [
+        "6"
+    ],
+    "totalTime": "PT75M",
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.foodandwine.com/recipes/blender-gazpacho",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/soup",
+                        "name": "Soups"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/soup/cold-soup",
+                        "name": "Cold Soups"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.foodandwine.com/recipes/blender-gazpacho",
+                        "name": "Dinner Is Ready in Minutes With This Summery Gazpacho Made in a Blender"
+                    }
+                }
+            ]
+        }
+    }
+}

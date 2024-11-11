@@ -1,0 +1,78 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "The only trick to this uncooked sauce is finding good canned tomatoes: If you can’t find Jersey Fresh, look for ones from California, New Jersey, or Italy—the only ingredients should be tomatoes and salt. This recipe is from Joe Beddia, the dough master behind Philadelphia's cult favorite, Pizzeria Beddia.",
+    "alternativeHeadline": "The only trick to this uncooked sauce is finding good canned tomatoes: If you can’t find Jersey Fresh, look for ones from California, New Jersey, or Italy—the only ingredients should be tomatoes and salt.",
+    "keywords": [
+        "sauce",
+        "italian",
+        "canned tomato",
+        "garlic",
+        "easy",
+        "vegan",
+        "vegetarian",
+        "dairy-free",
+        "gluten-free",
+        "nut-free",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.bonappetit.com/photos/58cacaddb8fa6f12a11e616c/1:1/w_3332,h_3332,c_limit/red-sauce-for-pizza.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bon Appétit",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bonappetit.com/verso/static/bon-appetit/assets/logo-seo.png",
+            "width": "479px",
+            "height": "100px"
+        },
+        "url": "https://www.bonappetit.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Bon Appétit"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Joe Beddia",
+            "sameAs": "https://www.bonappetit.com/contributor/joe-beddia"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.3,
+        "ratingCount": 13
+    },
+    "description": "The only trick to this uncooked sauce is finding good canned tomatoes: If you can’t find Jersey Fresh, look for ones from California, New Jersey, or Italy—the only ingredients should be tomatoes and salt.",
+    "image": [
+        "https://assets.bonappetit.com/photos/58cacaddb8fa6f12a11e616c/16:9/w_4991,h_2807,c_limit/red-sauce-for-pizza.jpg",
+        "https://assets.bonappetit.com/photos/58cacaddb8fa6f12a11e616c/4:3/w_4444,h_3333,c_limit/red-sauce-for-pizza.jpg",
+        "https://assets.bonappetit.com/photos/58cacaddb8fa6f12a11e616c/1:1/w_3332,h_3332,c_limit/red-sauce-for-pizza.jpg"
+    ],
+    "headline": "Red Sauce for Pizza",
+    "name": "Red Sauce for Pizza",
+    "recipeIngredient": [
+        "2 garlic cloves, finely grated",
+        "1 28-ounce can crushed tomatoes",
+        "2 tablespoons olive oil",
+        "1½ teaspoons fine sea salt"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Whisk garlic, tomatoes, oil, and salt in a medium bowl. Don’t be tempted to add more salt; the flavor will concentrate when sauce is baked with pizza. Cover and chill 3 hours to let flavors come together before using."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Do Ahead: Sauce can be made 1 week ahead. Keep chilled."
+        }
+    ],
+    "recipeYield": "Makes about 3½ cups",
+    "url": "https://www.bonappetit.com/recipe/red-sauce-for-pizza",
+    "dateModified": "2017-03-21T06:00:00.000-04:00",
+    "datePublished": "2017-03-21T06:00:00.000-04:00",
+    "recipeCategory": []
+}

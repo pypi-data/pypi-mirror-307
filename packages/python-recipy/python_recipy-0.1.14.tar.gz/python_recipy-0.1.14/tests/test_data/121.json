@@ -1,0 +1,126 @@
+{
+    "@context": "http://schema.org",
+    "@type": [
+        "Recipe"
+    ],
+    "headline": "Sauteed Red Snapper",
+    "datePublished": "2010-12-19T07:31:00.000-05:00",
+    "dateModified": "2017-05-16T01:56:01.000-04:00",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Martha Stewart",
+            "url": "https://www.marthastewart.com/author/martha-stewart"
+        }
+    ],
+    "description": "The mild, slightly sweet flavor and flaky texture of red snapper takes well to light seasoning and a quick saute. You can also make this dish with black sea bass. The skin of both fish is edible and crisps nicely in a skillet.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.marthastewart.com/thmb/GIIisEmPG04peNFgQJWdGfYD3mc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mla102981_0907_snapper_xl-f66e84ef6ea6437f8233dec6f2a134c0.jpgitok_XX_BlCu",
+        "height": 375,
+        "width": 300
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Martha Stewart",
+        "url": "https://www.marthastewart.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.marthastewart.com/thmb/OrGf7M7NNCLRjtC4UMQrre8Dbzk=/640x640/filters:no_upscale():max_bytes(150000):strip_icc()/martha_stewart_logo_schema-d4d4988b043746a298d19488f9a6803d.png",
+            "width": 640,
+            "height": 640
+        },
+        "brand": "Martha Stewart",
+        "publishingPrinciples": "https://www.marthastewart.com/about-marthastewart-com-7104054#toc-editorial-guidelines",
+        "sameAs": [
+            "https://www.facebook.com/marthastewart/",
+            "https://www.instagram.com/marthastewart/",
+            "https://twitter.com/marthaliving/",
+            "https://www.pinterest.com/marthastewart/",
+            "https://www.youtube.com/user/marthastewart/",
+            "https://www.tiktok.com/@marthastewartliving",
+            "https://flipboard.com/@marthastewartliving",
+            "https://en.wikipedia.org/wiki/Martha_Stewart_Living",
+            "https://www.facebook.com/MarthaStewartWeddings/",
+            "https://www.instagram.com/martha_weddings",
+            "https://twitter.com/MarthaWeddings",
+            "https://www.pinterest.com/MarthaWeddings/",
+            "https://www.youtube.com/MarthaWeddings",
+            "https://www.youtube.com/everydayfood"
+        ]
+    },
+    "name": "Sauteed Red Snapper",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.1",
+        "ratingCount": "163"
+    },
+    "keywords": "Dinner, Main course, Red snapper, SautÃ©",
+    "prepTime": "PT5M",
+    "recipeIngredient": [
+        "2 red snapper fillets (each 10 to 12 ounces), with skin",
+        "Coarse salt, to taste",
+        "Cayenne pepper, to taste",
+        "3 tablespoons canola oil"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Cut each snapper fillet in half crosswise. Season flesh with salt and cayenne pepper."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Heat oil in a large skillet over medium-high heat until hot (but not smoking). Place snapper fillets, skin sides down, in skillet, pressing on fish with a spatula for 1 minute to prevent curling. Cook until golden brown, about 5 minutes. Flip, and cook until opaque throughout, 2 to 3 minutes more."
+        }
+    ],
+    "recipeYield": [
+        "4"
+    ],
+    "totalTime": "PT15M",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Pamela"
+            },
+            "reviewBody": "I bought some lovely red snapper filets from Whole Foods to use in this recipe, but they had huge scales on the skin, which I painstakingly removed. Maybe that was my mistake. I used a Calphalon pan and followed directions to a tee, but the skin stuck to the pan and this dish was a disaster...anything but crispy. Still tasty, but nothing like the picture.",
+            "datePublished": "2014-11-13T03:15:03.000Z"
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": [
+            "WebPage"
+        ],
+        "@id": "https://www.marthastewart.com/314174/sauteed-red-snapper",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.marthastewart.com/1520452/recipes-ingredient",
+                        "name": "Ingredients"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.marthastewart.com/1513668/seafood-recipes",
+                        "name": "Seafood Recipes"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "https://www.marthastewart.com/314174/sauteed-red-snapper",
+                        "name": "Sauteed Red Snapper"
+                    }
+                }
+            ]
+        }
+    }
+}

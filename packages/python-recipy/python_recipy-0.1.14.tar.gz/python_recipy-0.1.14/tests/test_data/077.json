@@ -1,0 +1,107 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "articleBody": "There are some flavors that beg to be paired, and sweet potatoes and ginger are in that category. This smooth, puréed soup is rich and comforting, ideal for fall evenings.",
+    "alternativeHeadline": "There are some flavors that beg to be paired, and sweet potatoes and ginger are in that category. This smooth, puréed soup is rich and comforting, ideal for fall evenings.",
+    "keywords": [
+        "soup",
+        "sweet potato",
+        "ginger",
+        "jalapeño",
+        "side",
+        "brunch",
+        "lunch",
+        "dinner",
+        "dairy free",
+        "nut free",
+        "gluten free",
+        "easy",
+        "roast",
+        "simmer",
+        "blender",
+        "thanksgiving",
+        "harper collins",
+        "web"
+    ],
+    "thumbnailUrl": "https://assets.epicurious.com/photos/59fa3d48837b1201f3d09d84/1:1/w_1333,h_1333,c_limit/roasted-sweet-potato-ginger-soup-recipe-HC-103017.jpg",
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Epicurious",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.epicurious.com/verso/static/epicurious/assets/logo-seo.png",
+            "width": "488px",
+            "height": "100px"
+        },
+        "url": "https://www.epicurious.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Epicurious"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Art Smith",
+            "sameAs": "https://www.epicurious.com/contributor/art-smith"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "ratingCount": 10
+    },
+    "description": "There are some flavors that beg to be paired, and sweet potatoes and ginger are in that category. This smooth, puréed soup is rich and comforting, ideal for fall evenings.",
+    "image": [
+        "https://assets.epicurious.com/photos/59fa3d48837b1201f3d09d84/16:9/w_2000,h_1125,c_limit/roasted-sweet-potato-ginger-soup-recipe-HC-103017.jpg",
+        "https://assets.epicurious.com/photos/59fa3d48837b1201f3d09d84/4:3/w_1776,h_1332,c_limit/roasted-sweet-potato-ginger-soup-recipe-HC-103017.jpg",
+        "https://assets.epicurious.com/photos/59fa3d48837b1201f3d09d84/1:1/w_1333,h_1333,c_limit/roasted-sweet-potato-ginger-soup-recipe-HC-103017.jpg"
+    ],
+    "headline": "Roasted Sweet Potato and Ginger Soup",
+    "name": "Roasted Sweet Potato and Ginger Soup",
+    "recipeIngredient": [
+        "2 medium sweet potatoes",
+        "2 tablespoons extra-virgin olive oil",
+        "1 medium yellow onion, cut into small dice",
+        "2 tablespoons minced fresh ginger",
+        "1 jalapeño pepper, seeded and minced",
+        "2 teaspoons ground coriander",
+        "1/2 teaspoon ground nutmeg",
+        "4 cups low-sodium chicken stock or water",
+        "Salt",
+        "2 green onions, root ends removed, finely chopped"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Preheat the oven to 450°F. Poke the sweet potatoes with a fork, wrap in aluminum foil, and bake in the oven for 1 hour. Remove from the oven and let cool to room temperature."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Cut the sweet potatoes in half and scrape out the flesh. Heat the oil over medium heat in a large Dutch oven or heavy soup pot."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the onions and ginger, and cook over medium heat, stirring occasionally, for 5 minutes or until the onions are translucent."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the jalapeño, coriander, and nutmeg and cook for 3 minutes or until fragrant."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add the roasted sweet potato flesh and stock to the pot. Simmer for 10 minutes. Remove from the heat and purée with a handheld immersion blender or food processor until smooth. Season with salt."
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Divide the soup among 6 serving bowls and sprinkle with the green onions."
+        }
+    ],
+    "recipeYield": "6 servings",
+    "url": "https://www.epicurious.com/recipes/food/views/roasted-sweet-potato-and-ginger-soup",
+    "dateModified": "2017-11-01T17:38:08.506-04:00",
+    "datePublished": "2017-11-01T17:38:08.506-04:00",
+    "recipeCategory": []
+}

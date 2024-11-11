@@ -1,0 +1,74 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "alternativeHeadline": "An easy Tandoori Spice Blend recipe",
+    "keywords": [
+        "indian",
+        "dairy free",
+        "gluten free",
+        "nut free",
+        "vegetarian",
+        "vegan",
+        "easy",
+        "quick",
+        "bon appétit",
+        "web"
+    ],
+    "publisher": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Epicurious",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.epicurious.com/verso/static/epicurious/assets/logo-seo.png",
+            "width": "488px",
+            "height": "100px"
+        },
+        "url": "https://www.epicurious.com"
+    },
+    "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Epicurious"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Epicurious",
+            "sameAs": ""
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 11
+    },
+    "description": "An easy Tandoori Spice Blend recipe",
+    "image": [
+        "https://assets.epicurious.com/photos/57bb35ad06de447f4e6d9344/master/w_1000,h_667,c_limit/tandoori-spice-blend.jpg"
+    ],
+    "headline": "Tandoori Spice Blend",
+    "name": "Tandoori Spice Blend",
+    "cookTime": "5 minutes",
+    "recipeIngredient": [
+        "1 teaspoon ground ginger",
+        "1 teaspoon ground cumin",
+        "1 teaspoon ground coriander",
+        "1 teaspoon paprika",
+        "1 teaspoon turmeric",
+        "1 teaspoon salt",
+        "1 teaspoon cayenne pepper"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Whisk all ingredients into small bowl to blend. DO AHEAD: Spice blend can be made 2 weeks ahead. Store airtight at room temperature."
+        }
+    ],
+    "totalTime": "5 minutes",
+    "recipeYield": "Makes 2 tablespoons plus 1 teaspoon",
+    "url": "https://www.epicurious.com/recipes/food/views/tandoori-spice-blend-363234",
+    "dateModified": "2010-12-21T23:00:00.000-05:00",
+    "datePublished": "2010-12-21T23:00:00.000-05:00",
+    "recipeCategory": []
+}

@@ -1,0 +1,74 @@
+{
+    "@type": "Recipe",
+    "name": "Karaage | Japanese Fried Chicken",
+    "author": {
+        "@type": "Person",
+        "name": "Andrea Nguyen"
+    },
+    "description": "If you like, fry the chicken hours in advance and reheat on a rack in a 375F oven until warm. This excellent karaage recipe from Love Japan (2023, Ten Speed Press) is simple, crunchy, and loaded with balanced flavor. This recipe was slightly adapted from the book written by Sawako Okochi and Aaron Israel with Gabriella Gershenson. If serving as a main course, one batch would satisfy four people.",
+    "datePublished": "2023-12-17T16:35:32+00:00",
+    "image": [
+        "https://www.vietworldkitchen.com/wp-content/uploads/2023/12/karaage-love-japan.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2023/12/karaage-love-japan-500x500.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2023/12/karaage-love-japan-500x375.jpeg",
+        "https://www.vietworldkitchen.com/wp-content/uploads/2023/12/karaage-love-japan-480x270.jpeg"
+    ],
+    "recipeYield": [
+        "6"
+    ],
+    "recipeIngredient": [
+        "2 pounds boneless, (skin-on (if possible) chicken thighs (see main recipe for tip), cut into quarters)",
+        "Chubby 3-inch piece of fresh ginger, (peeled and grated)",
+        "3  garlic cloves, (grated)",
+        "1 teaspoon coarse sea salt, (or 1/2 teaspoon fine sea salt, plus more for sprinkling)",
+        "1/4 cup sake",
+        "2 tablespoons soy sauce",
+        "1  large egg",
+        "Canola or other neutral oil, (for deep-frying)",
+        "3/4 cup cornstarch or potato starch",
+        "3/4 cup all-purpose flour",
+        "1  lemon (cut into wedges)"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Place the quartered chicken thighs in a large bowl or a resealable plastic bag.",
+            "name": "Place the quartered chicken thighs in a large bowl or a resealable plastic bag.",
+            "url": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#wprm-recipe-15880-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "In a bowl, mix the ginger, garlic, salt, sake, soy sauce, and egg together until well blended. Transfer the marinade to the container with the chicken and mix to coat. Marinate, covered (or sealed), in the refrigerator for at least 2 hours or up to overnight. The longer the chicken marinates, the more tender and flavorful it will be. Thirty minutes before frying, pull the chicken from the fridge to remove some of the chill.",
+            "name": "In a bowl, mix the ginger, garlic, salt, sake, soy sauce, and egg together until well blended. Transfer the marinade to the container with the chicken and mix to coat. Marinate, covered (or sealed), in the refrigerator for at least 2 hours or up to overnight. The longer the chicken marinates, the more tender and flavorful it will be. Thirty minutes before frying, pull the chicken from the fridge to remove some of the chill.",
+            "url": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#wprm-recipe-15880-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Line a baking sheet with two layers of paper towel. Pour 2 inches canola oil into a Dutch oven (or wok) and heat over medium-high heat to 350F on a deep-fry thermometer. (If you don’t have a thermometer, watch the video for a tip.)",
+            "name": "Line a baking sheet with two layers of paper towel. Pour 2 inches canola oil into a Dutch oven (or wok) and heat over medium-high heat to 350F on a deep-fry thermometer. (If you don’t have a thermometer, watch the video for a tip.)",
+            "url": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#wprm-recipe-15880-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Drain the chicken in a mesh strainer to get rid of excess liquid. In a shallow bowl, whisk the cornstarch with the flour. Dredge 4 or 5 pieces of chicken at a time, dusting off any excess. Using dry, heatproof tongs or wooden chopsticks, place the dredged chicken carefully into the hot oil, taking care not to splash.",
+            "name": "Drain the chicken in a mesh strainer to get rid of excess liquid. In a shallow bowl, whisk the cornstarch with the flour. Dredge 4 or 5 pieces of chicken at a time, dusting off any excess. Using dry, heatproof tongs or wooden chopsticks, place the dredged chicken carefully into the hot oil, taking care not to splash.",
+            "url": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#wprm-recipe-15880-step-0-3"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Fry 4 or 5 pieces at a time (depending on the size of the pan) without overcrowding. Turn after 3 minutes and cook for 3 minutes more. The color should be a nice and golden brown. Transfer to the paper towels and sprinkle with salt. Serve with lemon wedges.",
+            "name": "Fry 4 or 5 pieces at a time (depending on the size of the pan) without overcrowding. Turn after 3 minutes and cook for 3 minutes more. The color should be a nice and golden brown. Transfer to the paper towels and sprinkle with salt. Serve with lemon wedges.",
+            "url": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#wprm-recipe-15880-step-0-4"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Japanese"
+    ],
+    "keywords": "fried chicken",
+    "@id": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#recipe",
+    "isPartOf": {
+        "@id": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html#article"
+    },
+    "mainEntityOfPage": "https://www.vietworldkitchen.com/blog/2023/12/japanese-fried-chicken-karaage-video-tips.html"
+}

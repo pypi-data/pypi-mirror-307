@@ -1,0 +1,119 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "mainEntityOfPage": true,
+    "name": "Southern-Style Oxtails",
+    "url": "https://www.foodnetwork.com/recipes/southern-style-oxtails-5267027",
+    "headline": "Southern-Style Oxtails",
+    "author": {
+        "@type": "Person",
+        "name": "Food Network"
+    },
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/4/26/0/DV2811_Southern-Style-Oxtails_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1524758930799.jpeg",
+            "height": "1280",
+            "width": "1280",
+            "description": "Oxtails with Collard Greens as Served at Southern Cafe in Oakland, California as seen on Food Network's Diners, Drive-Ins and Dives episode 2811."
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/4/26/0/DV2811_Southern-Style-Oxtails_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1524758930799.jpeg",
+            "height": "960",
+            "width": "1280",
+            "description": "Oxtails with Collard Greens as Served at Southern Cafe in Oakland, California as seen on Food Network's Diners, Drive-Ins and Dives episode 2811."
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/4/26/0/DV2811_Southern-Style-Oxtails_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1524758930799.jpeg",
+            "height": "720",
+            "width": "1280",
+            "description": "Oxtails with Collard Greens as Served at Southern Cafe in Oakland, California as seen on Food Network's Diners, Drive-Ins and Dives episode 2811."
+        }
+    ],
+    "datePublished": "2018-05-21T14:43:10.143-04:00",
+    "dateModified": "2018-05-21T14:43:09.713-04:00",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Food Network",
+        "url": "https://www.foodnetwork.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+            "height": "60",
+            "width": "60"
+        }
+    },
+    "keywords": "Beef,Main Dish,Gluten Free",
+    "cookTime": "P0Y0M0DT0H40M0.000S",
+    "totalTime": "P0Y0M0DT3H40M0.000S",
+    "recipeIngredient": [
+        "10 pounds oxtails, excess fat trimmed",
+        "1 medium yellow onion, diced ",
+        "1 large green bell pepper, diced ",
+        "3 ounces beef base ",
+        "3 ounces chicken base ",
+        "4 tablespoon garlic powder ",
+        "2 tablespoons salt ",
+        "2 tablespoons browning and seasoning sauce, such as Kitchen Bouquet ",
+        "1 tablespoon ground black pepper ",
+        "1 tablespoon cayenne pepper "
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 of 8 servings",
+        "calories": "1463",
+        "fatContent": "106g",
+        "saturatedFatContent": "42g",
+        "carbohydrateContent": "14g",
+        "fiberContent": "2g",
+        "sugarContent": "6g",
+        "proteinContent": "108g",
+        "cholesterolContent": "379mg",
+        "sodiumContent": "2416mg"
+    },
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Wash the oxtails with warm water and place in a heavy stainless-steel pot. Add the onions, peppers, beef and chicken bases, garlic powder, salt, browning sauce, black pepper and cayenne pepper. Cover the oxtails by three-quarters with water. Bring to a boil and cook, uncovered, adding more water if necessary, until the oxtails are tender, about 2 1/2 hours. Adjust the seasoning to taste."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.2,
+        "reviewCount": 20
+    },
+    "recipeYield": "8 servings",
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Mack H."
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 4,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Going to try this recipe let you know how it came out"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Anonymous"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": "1",
+                "bestRating": "5"
+            },
+            "reviewBody": "Love it I will making this again.. I put my oxtails in the oven for 3 hours instead of boiling them "
+        }
+    ],
+    "recipeCategory": []
+}

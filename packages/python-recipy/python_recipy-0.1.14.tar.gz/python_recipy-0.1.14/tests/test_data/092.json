@@ -1,0 +1,177 @@
+{
+    "@type": "Recipe",
+    "name": "Salmon Flakes",
+    "author": {
+        "@id": "https://www.justonecookbook.com/#/schema/person/033420c6cd0fe01255dcd76d04d95472"
+    },
+    "description": "Lightly seasoned Salmon Flakes are a great all-purpose topping or filling. It‘s so delicious and easy to make at home, too. Prepare a batch ahead of time and use it on steamed rice, pasta, gratin, tamagoyaki, and more! ",
+    "datePublished": "2020-10-07T05:00:50+00:00",
+    "image": [
+        "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Recipe-5040-I.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Recipe-5040-I-500x500.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Recipe-5040-I-500x375.jpg",
+        "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Recipe-5040-I-480x270.jpg"
+    ],
+    "recipeYield": [
+        "2",
+        "2 cups"
+    ],
+    "prepTime": "PT5M",
+    "cookTime": "PT15M",
+    "totalTime": "PT20M",
+    "recipeIngredient": [
+        "1 lb salmon",
+        "¼ tsp Diamond Crystal kosher salt",
+        "1 tsp toasted sesame oil ((plus more, as needed))",
+        "1 Tbsp sake",
+        "1 Tbsp mirin",
+        "2–3 tsp soy sauce",
+        "1 tsp toasted white sesame seeds"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Gather all the ingredients.",
+            "name": "Gather all the ingredients.",
+            "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-0-0",
+            "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Ingredients.jpg"
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Bake the Salmon",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Preheat the oven to 425ºF (218ºC). Sprinkle ¼ tsp Diamond Crystal kosher salt over 1 lb salmon fillets and set aside for 15 minutes.",
+                    "name": "Preheat the oven to 425ºF (218ºC). Sprinkle ¼ tsp Diamond Crystal kosher salt over 1 lb salmon fillets and set aside for 15 minutes.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-1-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-1.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "After 15 minutes, remove the excess moisture with a paper towel. Transfer the fillets to a baking sheet lined with parchment paper.",
+                    "name": "After 15 minutes, remove the excess moisture with a paper towel. Transfer the fillets to a baking sheet lined with parchment paper.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-1-1",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-2.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Bake the salmon at 425ºF (218ºC) for 10 minutes (5 minutes per ½-inch thickness). Remove from the oven.",
+                    "name": "Bake the salmon at 425ºF (218ºC) for 10 minutes (5 minutes per ½-inch thickness). Remove from the oven.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-1-2",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-3.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Using chopsticks or a fork, break the salmon into flakes. You can do this directly on the parchment-lined baking sheet. Remove the skin and bones, if any.",
+                    "name": "Using chopsticks or a fork, break the salmon into flakes. You can do this directly on the parchment-lined baking sheet. Remove the skin and bones, if any.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-1-3",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-4.jpg"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Season the Salmon Flakes",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Heat a large frying pan over medium heat. Once hot, add 1 tsp toasted sesame oil and coat the pan well. Add the flaked salmon to the pan.",
+                    "name": "Heat a large frying pan over medium heat. Once hot, add 1 tsp toasted sesame oil and coat the pan well. Add the flaked salmon to the pan.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-2-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-5.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add 1 Tbsp sake and 1 Tbsp mirin and stir well. Let the alcohol evaporate.",
+                    "name": "Add 1 Tbsp sake and 1 Tbsp mirin and stir well. Let the alcohol evaporate.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-2-1",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-6.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add 2–3 tsp soy sauce and stir to combine. Let the moisture evaporate.",
+                    "name": "Add 2–3 tsp soy sauce and stir to combine. Let the moisture evaporate.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-2-2",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-7.jpg"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Transfer to a baking sheet and sprinkle with 1 tsp toasted white sesame seeds. Set aside to cool. Store in an airtight jar once the salmon is completely cool. Your Salmon Flakes are ready to use.",
+                    "name": "Transfer to a baking sheet and sprinkle with 1 tsp toasted white sesame seeds. Set aside to cool. Store in an airtight jar once the salmon is completely cool. Your Salmon Flakes are ready to use.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-2-3",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-8.jpg"
+                }
+            ]
+        },
+        {
+            "@type": "HowToSection",
+            "name": "To Store",
+            "itemListElement": [
+                {
+                    "@type": "HowToStep",
+                    "text": "You can store in the refrigerator for up to 4 days and in the freezer for a month.",
+                    "name": "You can store in the refrigerator for up to 4 days and in the freezer for a month.",
+                    "url": "https://www.justonecookbook.com/salmon-flakes/#wprm-recipe-100891-step-3-0",
+                    "image": "https://www.justonecookbook.com/wp-content/uploads/2020/09/Salmon-Flakes-Recipe-5040-I.jpg"
+                }
+            ]
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.79",
+        "ratingCount": "51"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "I just love your recipes.I love the way you categorize them, too, into ones that store well and can be made in advance. Also, the ideas for use of the basics.  Thank you so much.",
+            "author": {
+                "@type": "Person",
+                "name": "Susan Unher"
+            },
+            "datePublished": "2021-08-31"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "reviewBody": "More Power! Love this😍",
+            "author": {
+                "@type": "Person",
+                "name": "Otsuru"
+            },
+            "datePublished": "2021-03-07"
+        }
+    ],
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Japanese"
+    ],
+    "keywords": "salmon",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "377 kcal",
+        "carbohydrateContent": "2 g",
+        "proteinContent": "46 g",
+        "fatContent": "17 g",
+        "saturatedFatContent": "3 g",
+        "cholesterolContent": "125 mg",
+        "sodiumContent": "575 mg",
+        "fiberContent": "1 g",
+        "sugarContent": "2 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://www.justonecookbook.com/salmon-flakes/#recipe",
+    "isPartOf": {
+        "@id": "https://www.justonecookbook.com/salmon-flakes/#article"
+    },
+    "mainEntityOfPage": "https://www.justonecookbook.com/salmon-flakes/"
+}

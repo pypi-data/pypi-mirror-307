@@ -1,0 +1,89 @@
+{
+    "@type": "Recipe",
+    "name": "Authentic Thai Green Curry Paste Recipe",
+    "author": {
+        "@type": "Person",
+        "name": "Praew"
+    },
+    "description": "An authentic Thai green curry paste recipe that&#039;s easy-to-make at home with fresh herbs and spices.",
+    "datePublished": "2023-05-09T06:09:09+00:00",
+    "image": [
+        "https://hungryinthailand.com/wp-content/uploads/2023/05/Thai-green-curry-paste-in-spoon-over-mortar.webp"
+    ],
+    "recipeYield": [
+        "8"
+    ],
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "totalTime": "PT30M",
+    "recipeIngredient": [
+        "0.18 ounces salt",
+        "1.75 ounce lemongrass",
+        "1 ounce galangal",
+        "2 teaspoons coriander seeds",
+        "0.07 ounces black peppercorns",
+        "2 teaspoons cumin",
+        "0.18 ounces kaffir lime zest",
+        "0.18 ounces turmeric",
+        "1 ounce chilies (see notes)",
+        "0.7 ounces shrimp paste",
+        "0.35 ounces coriander root",
+        "1.75 ounce garlic",
+        "1.75 ounce shallots"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "text": "Thinly slice all your ingredients to make them easier to pound later on.",
+            "name": "Thinly slice all your ingredients to make them easier to pound later on.",
+            "url": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#wprm-recipe-82348-step-0-0"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Give the black peppercorns, coriander seeds, and cumin a quick roast to amp up the flavors.",
+            "name": "Give the black peppercorns, coriander seeds, and cumin a quick roast to amp up the flavors.",
+            "url": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#wprm-recipe-82348-step-0-1"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Crush the dry ingredients first - salt, lemongrass, galangal, and your freshly roasted spices. Crush them down to a fine mix.",
+            "name": "Crush the dry ingredients first - salt, lemongrass, galangal, and your freshly roasted spices. Crush them down to a fine mix.",
+            "url": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#wprm-recipe-82348-step-0-2"
+        },
+        {
+            "@type": "HowToStep",
+            "text": "Add in the rest of your ingredients. Keep pounding until everything melds into a smooth, fine paste.",
+            "name": "Add in the rest of your ingredients. Keep pounding until everything melds into a smooth, fine paste.",
+            "url": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#wprm-recipe-82348-step-0-3"
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "2"
+    },
+    "recipeCategory": [],
+    "recipeCuisine": [
+        "Thai"
+    ],
+    "keywords": "green curry paste",
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "38 kcal",
+        "carbohydrateContent": "6 g",
+        "proteinContent": "3 g",
+        "fatContent": "0.5 g",
+        "saturatedFatContent": "0.1 g",
+        "cholesterolContent": "28 mg",
+        "sodiumContent": "338 mg",
+        "fiberContent": "1 g",
+        "sugarContent": "1 g",
+        "unsaturatedFatContent": "0.3 g",
+        "servingSize": "1 serving"
+    },
+    "@id": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#recipe",
+    "mainEntityOfPage": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#webpage",
+    "isPartOf": {
+        "@id": "https://hungryinthailand.com/thai-green-curry-paste-recipe/#richSnippet"
+    }
+}
