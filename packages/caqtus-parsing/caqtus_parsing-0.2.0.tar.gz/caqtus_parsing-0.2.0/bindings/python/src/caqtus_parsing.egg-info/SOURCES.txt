@@ -1,0 +1,15 @@
+pyproject.toml
+setup.py
+bindings/python/src/caqtus_parsing/__init__.py
+bindings/python/src/caqtus_parsing/_parser.py
+bindings/python/src/caqtus_parsing/binding.c
+bindings/python/src/caqtus_parsing/py.typed
+bindings/python/src/caqtus_parsing.egg-info/PKG-INFO
+bindings/python/src/caqtus_parsing.egg-info/SOURCES.txt
+bindings/python/src/caqtus_parsing.egg-info/dependency_links.txt
+bindings/python/src/caqtus_parsing.egg-info/not-zip-safe
+bindings/python/src/caqtus_parsing.egg-info/requires.txt
+bindings/python/src/caqtus_parsing.egg-info/top_level.txt
+bindings/python/src/caqtus_parsing/nodes/__init__.py
+bindings/python/src/caqtus_parsing/nodes/_nodes.py
+src/parser.c

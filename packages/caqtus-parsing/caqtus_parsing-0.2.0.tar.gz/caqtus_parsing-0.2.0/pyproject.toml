@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caqtus-parsing"
+description = "Used to parse expressions for the caqtus framework"
+version = "0.2.0"
+keywords = ["parsing", "caqtus"]
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Compilers",
+  "Topic :: Text Processing :: Linguistic",
+  "Typing :: Typed",
+]
+authors = [{ name = "light-scattering-io", email = "lecaqtus66@gmail.com" }]
+requires-python = ">=3.12"
+license.text = "MIT"
+readme = "README.md"
+dependencies = [
+  "tree-sitter~=0.22",
+  "attrs>=21.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/tree-sitter/tree-sitter-caqtus"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "black>=24.3.0",
+  "ruff>=0.6.4",
+  "pre-commit>=3.7.0",
+  "pyright>=1.1.384",
+  "pytest>=8.1.1",
+  "isort",
+  "setuptools",
+  "build",
+  "cibuildwheel",
+]
+
+[tool.cibuildwheel]
+build = "cp312-*"
+build-frontend = "build"
+test-requires = "pytest"
+test-command = "pytest {project}/bindings/python/tests"
