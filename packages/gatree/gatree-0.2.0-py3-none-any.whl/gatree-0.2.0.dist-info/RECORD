@@ -1,0 +1,15 @@
+gatree/__init__.py,sha256=O6Hcm5iZIrpcFQnuw3IzCUSoKf0HHRvbYGyeE-Tz5Zk,23
+gatree/ga/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gatree/ga/crossover.py,sha256=zYR2FKF0CfVO8JEssaWEdjFlpAEIW-KrYheg2URgZtE,1851
+gatree/ga/mutation.py,sha256=q3Y9WdqUTBWF7yo_odY-ghnbZrh3b3D2bKjaislPFI8,9352
+gatree/ga/selection.py,sha256=HwXFccrhnoPF_jALT3Fg7gDJrYd1UNhXNmytNr0K5ng,1978
+gatree/gatree.py,sha256=U7_lcVVhMTSvs9YYQ2pQEUZHYA23H_ijlGYKuYU_o2w,6185
+gatree/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gatree/methods/gatreeclassifier.py,sha256=8A1YrYe79H86KiCvUjvlHsJGc6AiHcMZ3Lgm1U_cH6M,7612
+gatree/methods/gatreeclustering.py,sha256=_X_CvTEE8AF5eCeE-PjwpwlnuN7aKmL9UpMQYWtC_NE,8381
+gatree/tree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gatree/tree/node.py,sha256=amfqtZ2Q36rCfqdAJzkkGIr58gbdqIqWCPrwkYLqLYc,11020
+gatree-0.2.0.dist-info/LICENSE,sha256=eIy5mfF7eP8LOjFrxw-8x02nzCjEOG1x4Pq_C8clzmQ,1092
+gatree-0.2.0.dist-info/METADATA,sha256=xqOqUQlarewAfb-9IRNpzMzCgHUDEIm7uF26bqQotd0,7968
+gatree-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gatree-0.2.0.dist-info/RECORD,,
