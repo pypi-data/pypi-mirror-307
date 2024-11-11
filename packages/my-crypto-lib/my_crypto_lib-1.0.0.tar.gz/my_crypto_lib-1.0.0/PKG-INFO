@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: my_crypto_lib
+Version: 1.0.0
+Summary: A Python library for encryption and decryption using AES, DES, RSA, and other ciphers
+Home-page: https://github.com/Nitish-Naik/CNT.git
+Author: Nitish
+Author-email: nitishnaik2022@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome>=3.10.1
+
+This library provides tools for encrypting and decrypting data using popular cryptographic algorithms like AES, DES, RSA, and more.
