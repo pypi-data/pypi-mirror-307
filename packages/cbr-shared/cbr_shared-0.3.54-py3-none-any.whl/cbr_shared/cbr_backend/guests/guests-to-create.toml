@@ -1,0 +1,41 @@
+[guest-one]
+guest_id                = "6f6df621-42e5-4579-99d8-969e592c1f2b"
+
+[guest-one.user_profile]
+first_name              = "Alice"
+last_name               = "Brown"
+role                    = "Chief Information Security Officer"
+organisation            = "Global Tech Innovations"
+sector                  = "Technology"
+size_of_organisation    = "10,000+ employees"
+country                 = "United States"
+linkedin                = "https://linkedin.com/in/alicebrown"
+additional_system_prompt= "Focus on cybersecurity trends and threat intelligence."
+
+[guest-two]
+guest_id                = "686a35ef-f78d-4158-a240-11e296cd187a"
+
+[guest-two.user_profile]
+first_name              = "John"
+last_name               = "Doe"
+role                    = "Board Member"
+organisation            = "Retail R'Us"
+sector                  = "Retail"
+size_of_organisation    = "5,000+ employees"
+country                 = "United Kingdom"
+linkedin                = "https://linkedin.com/in/johndoe"
+additional_system_prompt= "Provide insights on retail cybersecurity and compliance."
+
+[guest-three]
+guest_id                = "7a43a0e0-499f-4110-8923-441a7f5028db"
+
+[guest-three.user_profile]
+first_name              = "Emma"
+last_name               = "Wong"
+role                    = "Chief Risk Officer"
+organisation            = "Secure Capital Partners"
+sector                  = "Financial Services"
+size_of_organisation    = "2,000-5,000 employees"
+country                 = "Canada"
+linkedin                = "https://linkedin.com/in/emmawong"
+additional_system_prompt= "Emphasize risk management strategies and regulatory compliance."
