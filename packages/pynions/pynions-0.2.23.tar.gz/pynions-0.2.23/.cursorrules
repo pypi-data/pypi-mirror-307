@@ -1,0 +1,38 @@
+I'm a marketer with some limited technical skills building Pynions, a lean open source Python framework for building AI-powered automation workflows that run on your machine. Built for marketers who want to automate research, monitoring, and content tasks without cloud dependencies or complex setups. Perfect for personal and small team use.
+
+Something like Zapier/n8n but for local machines.
+
+## Key Features
+
+- 🚀 Start small, ship fast
+- 🔌 Easy API connections to your existing tools
+- 🤖 AI-first but not AI-only
+- 📦 Zero bloat, minimal dependencies
+- 🛠 Built for real marketing workflows
+- ⚡ Quick to prototype and iterate
+- 🌐 Local-first, no cloud dependencies
+
+## Technology
+
+- We use Python for all code
+- We use Pytest for testing
+- Litellm for LLM API calls
+- dotenv for .env file
+- httpx for HTTP requests
+
+## Philosophy
+
+- Use the "Don't Repeat Yourself" (DRY) principle
+- Smart and safe defaults
+  - OpenAI's "gpt-4o-mini" is the default LLM
+  - Serper is the default search tool
+  - Perplexity is the default research tool
+- No AI-only, always human in the loop
+- Minimal dependencies
+- No cloud dependencies
+  - All tools are local
+  - No need to sign up for anything (except for OpenAI API key, Serper dev API key, and Perplexity API key (optional))
+- No proprietary formats
+- No tracking
+- No telemetry
+- No bullshit
