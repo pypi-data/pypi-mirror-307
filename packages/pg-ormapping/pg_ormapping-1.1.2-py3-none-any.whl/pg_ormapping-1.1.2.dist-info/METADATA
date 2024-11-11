@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pg_ormapping
+Version: 1.1.2
+Summary: python game: ormapping
+Author: baozilaji@gmail.com
+Requires-Python: >=3.9
+Requires-Dist: pg-redis
+Requires-Dist: pg-mongodb
+
