@@ -1,0 +1,3 @@
+graft AutoTrans
+prune AutoTrans/chrome-testing
+prune AutoTrans/.git
