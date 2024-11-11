@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: table2html
+Version: 1.0.2
+Summary: Detect and convert table image to html table
+Author: TraiPPN
+Author-email: phamphungoctraivl@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: akaocr==2.1.4
+Requires-Dist: numpy==2.1.3
+Requires-Dist: opencv_python==4.10.0.84
+Requires-Dist: ultralytics==8.3.14
+Requires-Dist: onnxruntime==1.20.0
+Requires-Dist: onnx==1.17.0
+
+# Table2HTML
+
+A Python package that converts table images into HTML format using Object Detection model and OCR.
+
+## Installation
+
+```bash
+pip install table2html
+```
+
+## Usage
+
+```python
+from table2html import Table2HTML
+import cv2
+
+# Initialize
+table2html = Table2HTML()
+
+# Convert table image to HTML
+image = cv2.imread("path/to/image.jpg")
+cells, html = table2html(image)
+
+# Save HTML output
+with open('table.html', 'w') as f:
+    f.write(html)
+```
+
+## Input
+- `image`: numpy.ndarray (OpenCV/cv2 image format)
+
+## Outputs
+1. `cells`: List of dictionaries, where each dictionary represents a cell with:
+   - `row`: int - Row index
+   - `column`: int - Column index
+   - `box`: Tuple[int] - Bounding box coordinates (x1, y1, x2, y2)
+   - `text`: str - Cell text content
+
+2. `html`: str - HTML representation of the table
+
+## License
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
