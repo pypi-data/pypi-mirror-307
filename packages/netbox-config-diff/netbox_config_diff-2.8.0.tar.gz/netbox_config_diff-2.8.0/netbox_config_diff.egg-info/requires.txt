@@ -1,0 +1,13 @@
+hier-config==2.2.3
+netutils==1.9.0
+scrapli[asyncssh]==2024.07.30
+scrapli-cfg==2024.07.30
+scrapli-community==2024.07.30
+
+[dev]
+ruff==0.5.1
+
+[test]
+factory_boy==3.3.0
+pytest==8.2.2
+pytest-django==4.8.0
