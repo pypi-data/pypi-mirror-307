@@ -1,0 +1,117 @@
+Metadata-Version: 2.3
+Name: file-picker-py
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pytest ; extra == 'tests'
+Provides-Extra: tests
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# file-picker-py
+
+A Python module providing native file picker dialogs, implemented in Rust using [PyO3](https://pyo3.rs) and [rfd](https://github.com/PolyMeilex/rfd-rs).
+
+
+
+## Features
+
+- Native file picker dialogs that match the operating system's look and feel
+- Blocking APIs for simple integration
+- Support for:
+  - Single file selection
+  - Multiple file selection
+  - Single folder selection
+  - Multiple folder selection
+  - Save file dialog
+
+## Installation
+
+Pre-built wheels are available for Windows, macOS, and Linux. Install using pip:
+
+```bash
+pip install file-picker-py
+```
+
+If pre-built wheels are not available and you have Rust installed, pip will try to build the project from source.
+
+## Usage
+
+```python
+from file_picker_py import (
+    pick_file_blocking,
+    pick_files_blocking,
+    pick_folder_blocking,
+    pick_folders_blocking,
+    pick_save_file_blocking
+)
+
+# Pick a single file
+file_path = pick_file_blocking()
+if file_path:
+    print(f"Selected file: {file_path}")
+
+# Pick multiple files
+file_paths = pick_files_blocking()
+for path in file_paths:
+    print(f"Selected file: {path}")
+
+# Pick a single folder
+folder_path = pick_folder_blocking()
+if folder_path:
+    print(f"Selected folder: {folder_path}")
+
+# Pick multiple folders
+folder_paths = pick_folders_blocking()
+for path in folder_paths:
+    print(f"Selected folder: {path}")
+
+# Pick a save file location
+save_path = pick_save_file_blocking()
+if save_path:
+    print(f"Save location: {save_path}")
+```
+
+## API Reference
+
+### `pick_file_blocking() -> Optional[str]`
+Opens a file picker dialog to select a single file. Returns the path as a string, or `None` if cancelled.
+
+### `pick_files_blocking() -> List[str]`
+Opens a file picker dialog to select multiple files. Returns a list of paths, or an empty list if cancelled.
+
+### `pick_folder_blocking() -> Optional[str]`
+Opens a folder picker dialog to select a single folder. Returns the path as a string, or `None` if cancelled.
+
+### `pick_folders_blocking() -> List[str]`
+Opens a folder picker dialog to select multiple folders. Returns a list of paths, or an empty list if cancelled.
+
+### `pick_save_file_blocking() -> Optional[str]`
+Opens a save file dialog. Returns the selected save location as a string, or `None` if cancelled.
+
+## Development
+
+Requires Rust toolchain to build the project. Install Rust using [rustup](https://rustup.rs). 
+
+This project uses:
+- [PyO3](https://pyo3.rs) for Rust Python bindings
+- [rfd](https://github.com/PolyMeilex/rfd-rs) for native file dialogs
+- [Maturin](https://github.com/PyO3/maturin) for building and publishing
+
+To build the project:
+
+```bash
+# Install maturin
+pip install maturin
+
+# Build in development mode
+maturin develop
+
+# Build release wheel
+maturin build --release
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
