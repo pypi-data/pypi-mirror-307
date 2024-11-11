@@ -1,0 +1,17 @@
+ai4_metadata/__init__.py,sha256=FLb8c5CF2pJQFXiHWUZ0Zz1EJdKoPwSrjXMRndWjRTQ,1515
+ai4_metadata/cli.py,sha256=1vMWJgGN0BW4orFVM66AG8d3Icp5IC2qvtEbNKqddf8,1091
+ai4_metadata/exceptions.py,sha256=DVRQzGSTCdSoYUF3DBKmy8MRQCaRL-dTR5dCV_J7dIA,2512
+ai4_metadata/generate.py,sha256=4aEIWgDEH7DSNWtylLOfR_FmCgdZYfQ-CqrBLlbVQCw,3279
+ai4_metadata/migrate.py,sha256=Kl4GBVMjnAUJC5EPIgUzZyrFv8eybqbGtCtys99hOCM,4541
+ai4_metadata/schemata/ai4-apps-v1.0.0.json,sha256=SYB1WCmXXsa3W9tlGzSmPbGLR2bwjyZ00vafXZNAvTQ,3777
+ai4_metadata/schemata/ai4-apps-v1.0.0.json.invalid,sha256=fFT2czhw1Yp9NSnniCQ8w6tTi_MARXFjhYyAzkw8hRw,3778
+ai4_metadata/schemata/ai4-apps-v2.0.0.json,sha256=jMHyQ4-w0lAJwLakrZ6T_J7-oKiQzq1P765Equ6f3F8,9191
+ai4_metadata/tests/__init__.py,sha256=2Ju1-CA8sgK5URqm2OEL80rTCQCOu3YswkeLjC9L_l0,22
+ai4_metadata/tests/test_validator.py,sha256=-CrRMUoXOit0gKB4IhKEGyVc7nlVfENhtKh_mYWuvns,3697
+ai4_metadata/utils.py,sha256=CgQfsidQFw8xdjZ2Wc-4uNrt-3B1n_n-ZV3AFr_LcIw,3055
+ai4_metadata/validate.py,sha256=6ta67HrjYOJHLxq32fBtcBjT0mGyE7B1ugDwmbH3muU,4791
+ai4_metadata-2.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ai4_metadata-2.2.1.dist-info/METADATA,sha256=KjZOQUHIjbiYUifyuKc6hC9mQBfaeh8PNhxLDmfmDf0,8167
+ai4_metadata-2.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ai4_metadata-2.2.1.dist-info/entry_points.txt,sha256=Iy7PNOmIKWXKjG0FzNJwv9h9EOalmLVWio-f9MZs_HI,158
+ai4_metadata-2.2.1.dist-info/RECORD,,

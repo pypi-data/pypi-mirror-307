@@ -1,0 +1,5 @@
+[console_scripts]
+ai4-metadata=ai4_metadata.cli:app
+ai4-metadata-migrate=ai4_metadata.cli:migrate_main
+ai4-metadata-validator=ai4_metadata.cli:validate_main
+
