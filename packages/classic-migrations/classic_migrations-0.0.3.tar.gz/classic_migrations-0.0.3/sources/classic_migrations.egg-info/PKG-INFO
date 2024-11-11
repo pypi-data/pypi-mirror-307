@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: classic-migrations
+Version: 0.0.3
+Summary: Database migrations with SQL
+Home-page: https://github.com/variasov/classic-migrations
+Author: Kazakovtsev Nikolay
+Author-email: acidos@yandex.ru
+License: Apache
+Keywords: migrations migrate database alembic south
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: sqlparse
+Requires-Dist: tabulate
+Requires-Dist: importlib_metadata>=3.6.0
+Requires-Dist: pydantic-settings==2.5
+Provides-Extra: mysql
+Requires-Dist: PyMySQL; extra == "mysql"
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary==2.9.9; extra == "postgres"
+Provides-Extra: pyodbc
+Requires-Dist: pyodbc; extra == "pyodbc"
+Provides-Extra: pymssql
+Requires-Dist: pymssql==2.3.1; extra == "pymssql"
+
+This project is fork from yoyo-migrations
+https://ollycope.com/software/yoyo/latest/
+
+
+.env file:
+    SOURCE=./migrations
+    BATCH_MODE=on|off(default)
+    VERBOSITY=0|1|2|3
+    EDITOR=
+    POST_CREATE_COMMAND=
+    PREFIX=
+
+    DB_DRIVER=pymssql
+    DB_USER=
+    DB_PASSWORD=
+    DB_HOST=
+    DB_PORT=
+    DB_NAME=
+    VERSION_TABLE=
+
+
+Launch Commands:
+    migrations  list
+                new --sql -m 'example of a comment appended to a file name'
+                apply
+                rollback
+
+
+You can add a comment to the migration in sql format migration files.
+The comment will be saved in the migration history table.
+
+-- comment: comment text...
