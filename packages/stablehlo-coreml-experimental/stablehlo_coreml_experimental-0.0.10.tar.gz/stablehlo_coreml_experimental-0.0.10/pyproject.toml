@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stablehlo-coreml-experimental"
+dynamic = ["version"]
+authors = [
+    { name="Kasper Nielsen", email="kasper0406@gmail.com" },
+]
+description = "Convert StableHLO models into Apple Core ML format"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development"
+]
+keywords=[ "stablehlo", "hlo", "xla", "coreml", "machinelearning", "ml", "coremltools", "converter", "neural" ]
+requires-python = ">=3.9"
+
+dependencies = [
+    'coremltools>=8.0; python_version >= "3.9" and python_version <= "3.11"',
+    "numpy~=2.0",
+
+    # Jax is not actually a strict requirement for the main library.
+    # However, the code relies on the mlir StableHLO python bindings, and currently they are not published to pip
+    # and the only pre-built stand-alone library is only built for linux.
+    # Onces https://github.com/openxla/stablehlo/issues/2346 is resolved, this dependency can be switch to stablehlo instead.
+    "jax>=0.4.32",
+]
+
+[tool.hatch.version]
+path = "stablehlo_coreml/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+# This setting is needed as long as we publish with the `_experimental` suffix
+packages = ["stablehlo_coreml"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11"]
+
+[tool.hatch.envs.test]
+randomize = true
+parallel = true
+
+extra-dependencies = [
+    "pytest",
+    "jax",
+    "flax>=0.9.0",
+    "flatbuffers",
+    "einops",
+    "pillow",
+    "equinox",
+]
+
+[[tool.hatch.envs.test-pytorch.matrix]]
+python = ["3.10", "3.11"]
+
+[tool.hatch.envs.test-pytorch]
+randomize = true
+parallel = true
+
+extra-dependencies = [
+    "pytest",
+    "torch",
+    "torchvision",
+    "torch_xla2",
+    "transformers",
+]
+
+[project.urls]
+Homepage = "https://github.com/kasper0406/stablehlo-coreml"
+Issues = "https://github.com/kasper0406/stablehlo-coreml/issues"
