@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "sysloss"
+version = "1.7.0"
+description = "Power tree analysis of circuits, boards and systems."
+authors = ["Geir Drange"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/geddy11/sysloss"
+repository = "https://github.com/geddy11/sysloss"
+documentation = "https://sysloss.readthedocs.io/en/latest/Getting%20started.html#"
+keywords = ["system", "power" , "tree", "loss", "efficiency", "energy", "board", "component", "battery"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scipy = "^1.9"
+pandas = "^2.0"
+rustworkx = ">=0.13"
+rich = ">=12.0"
+toml = ">=0.10.2"
+matplotlib = "^3.0"
+tqdm = ">=4.63"
+packaging = ">=21.1"
+pydot = ">=3.0.0"
+pillow = ">=9.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0"
+pytest-cov = "^4.0"
+matplotlib = "^3.0"
+jupyter-book = "^1.0.0"
+toml = ">=0.10.2"
+pandas = "^2.0"
+tqdm = ">=4.63"
+packaging = ">=21.1"
+pydot = ">=3.0.0"
+pillow = ">=9.3.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+scipy = "^1.9"
+pandas = "^2.0"
+rustworkx = ">=0.13"
+rich = ">=12.0"
+toml = ">=0.10.2"
+matplotlib = "^3.0"
+tqdm = ">=4.63"
+packaging = ">=21.1"
+pydot = ">=3.0.0"
+pillow = ">=9.3.0"
+
+[tool.semantic_release]
+allow_zero_version = false
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+version_variables = [
+    "src/sysloss/__init__.py:__version__",
+    "CITATION.cff:version"
+]
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+#addopts = [
+#    "--import-mode=importlib",
+#]
+pythonpath = "src"
