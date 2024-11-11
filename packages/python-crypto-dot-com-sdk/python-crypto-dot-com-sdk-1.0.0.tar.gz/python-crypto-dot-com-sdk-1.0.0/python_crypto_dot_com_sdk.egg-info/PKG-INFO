@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-crypto-dot-com-sdk
+Version: 1.0.0
+Summary: A simple python wrapper for crypto.com API
+Home-page: https://github.com/javadebadi/python-crypto-dot-com-sdk
+Author: Javad Ebadi
+Author-email: javad@javadebadi.com
+License: Apache 2.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Python Crypto API SDK
+
+
+## Installation
+```bash
+pip install python_crypto_dot_com_sdk
+```
+
+## Market
+
+### List all available market symbols
+```python
+from crypto_dot_com.client import CryptoDotComMarketClient
+
+client = CryptoDotComMarketClient(api_key="", api_secret="")
+client.list_all_available_market_symbols()
+```
+
+
