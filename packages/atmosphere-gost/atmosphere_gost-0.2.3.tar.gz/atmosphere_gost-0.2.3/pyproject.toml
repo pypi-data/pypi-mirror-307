@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atmosphere_gost"
+authors = [
+	{name = 'Pavel V. Chuvakhov', email = 'pavel.chuvakhov@yandex.ru'}
+]
+description = 'Standard Atmosphere, GOST 4401-81'
+readme = 'README.md'
+requires-python = ">= 3.9"
+keywords = ['atmosphere', 'pressure', 'temperature', 'gost', 'standard', 'physics']
+version = '0.2.3'
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.9',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'Natural Language :: Russian',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Physics',
+    'Topic :: Scientific/Engineering :: Atmospheric Science',
+]
+
+[project.urls]
+Homepage = "https://github.com/0x13b/atmosphere_gost/"
+Repository = "https://github.com/0x13b/atmosphere_gost.git"
+    
+[tool.pytest.ini_options]
+testpaths = [
+	'tests/tests.py'
+]
