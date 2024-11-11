@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-deprecation-dates
+Version: 0.1.1
+Summary: A library to fetch Python version deprecation dates from endoflife.date.
+Home-page: https://github.com/marabb01/python-deprecation-dates
+Author: Martin Abberley
+Author-email: mart.abberley@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# python-deprecation-dates
+
+A Python library that fetches Python version deprecation dates from [endoflife.date](https://endoflife.date).
+https://pypi.org/project/python-deprecation-dates/
+
+## Installation
+
+```bash
+pip install python-deprecation-dates
+
+
