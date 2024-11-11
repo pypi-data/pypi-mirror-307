@@ -1,0 +1,2 @@
+[console_scripts]
+transaction_analyzer = transaction_analyzer.analyzer:main
