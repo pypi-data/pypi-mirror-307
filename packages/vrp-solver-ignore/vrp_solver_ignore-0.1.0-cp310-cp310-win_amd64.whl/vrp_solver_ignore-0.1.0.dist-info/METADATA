@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vrp_solver_ignore
+Version: 0.1.0
+Summary: A Vehicle Routing Problem solver with custom strategy, please visit the GitHub page for details.
+Home-page: https://github.com/YUTAI-K/vrp_solver_ignore
+Author: Yutai Ke
+Author-email: yutai.ke@bse.eu
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: gurobipy>=9.0
+Requires-Dist: plotly>=5.0.0
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: pandas>=1.0.0
+
