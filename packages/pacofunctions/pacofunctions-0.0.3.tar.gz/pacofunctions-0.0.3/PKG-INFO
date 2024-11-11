@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pacofunctions
+Version: 0.0.3
+Summary: package description
+Home-page: https://www.pacorush.com.br
+Author: Andre Freire
+Author-email: Andre Freire <andre@pacorush.com.br>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>2.26.0
+Requires-Dist: pandas
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: googlemaps
+Requires-Dist: beautifulsoup4
+Requires-Dist: xmltodict
+Requires-Dist: geopandas
+Requires-Dist: shapely
+Requires-Dist: folium
