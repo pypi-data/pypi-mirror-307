@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: params-storage
+Version: 0.8
+Summary: Key-value storage to store hyperparameters for machine learning models.
+Home-page: https://github.com/darkhan-ai/params-storage
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Params Storage
+
+ParamsStorage is key-value storage to store hyperparameters for machine learning models as a key. The value of a key
+can be anything, e.g. cross-validation score of the hyperparameters. All floating-point hyperparameters will store
+with given desired precision. This can be useful for pruning optuna params suggestions.
+
+Example:
+
+```python
+from params_storage import ParamsStorage
+
+ps = ParamsStorage(precision=1)
+
+ps.add(params=dict(lr=0.17, mode="Bayesian"))
+ps.add(params=dict(lr=0.16, mode="Bayesian"))
+ps.add(params=dict(lr=0.1, bs=32), value=0.95)
+
+ps.size()  # 2
+ps.exist(dict(lr=0.16, mode="Bayesian"))  # True
+ps.exist(dict(lr=0.2, mode="Bayesian"))  # True, since round(0.16, 1) = 0.2
+ps.get(dict(lr=0.1, bs=32))  # 0.95
+```
