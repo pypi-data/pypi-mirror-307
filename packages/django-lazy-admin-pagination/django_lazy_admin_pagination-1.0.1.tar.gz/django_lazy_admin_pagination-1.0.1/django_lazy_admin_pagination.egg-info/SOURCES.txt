@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+django_admin_lazy_count/__init__.py
+django_admin_lazy_count/apps.py
+django_admin_lazy_count/main.py
+django_admin_lazy_count/migrations/__init__.py
+django_admin_lazy_count/templates/django_admin_lazy_count/lazy_pagination.html
+django_lazy_admin_pagination.egg-info/PKG-INFO
+django_lazy_admin_pagination.egg-info/SOURCES.txt
+django_lazy_admin_pagination.egg-info/dependency_links.txt
+django_lazy_admin_pagination.egg-info/requires.txt
+django_lazy_admin_pagination.egg-info/top_level.txt
