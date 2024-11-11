@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+description.txt
+long_description.rst
+requirements.txt
+setup.py
+PyVarTools/__init__.py
+PyVarTools/format_tools.py
+PyVarTools/python_instances_tools.py
+PyVarTools/var_utilities.py
+PyVarTools.egg-info/PKG-INFO
+PyVarTools.egg-info/SOURCES.txt
+PyVarTools.egg-info/dependency_links.txt
+PyVarTools.egg-info/requires.txt
+PyVarTools.egg-info/top_level.txt
+PyVarTools/math/__init__.py
+PyVarTools/math/graph_2D.py
