@@ -1,0 +1,2 @@
+[console_scripts]
+ghcd = github_downloader.cli:main
