@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "langchain-kipris-tools"
+version = "0.0.2"
+description = "kipris api tools for langchain"
+authors = ["강재호 <greennuri@gmail.com>"]
+license = "gpl2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.3"
+xmltodict = "^0.14.2"
+pandas = "^2.2.3"
+langchain-core = "^0.3.15"
+pytest = "^8.3.3"
+python-dotenv = "^1.0.1"
+stringcase = "^1.2.0"
+setuptools = "^75.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+black = "^24.10.0"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
