@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SecretSharer
+Version: 0.1.0
+Summary: A Python package for generating canary sequences and computing exposure and perplexity metrics.
+Home-page: https://github.com/Vanthoff007/SecretSharer.git
+Author: Vanthoff007
+Author-email: jiowork951@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: torch>=1.7.0
+
+A package for generating canary datasets and computing exposure and perplexity metrics.
