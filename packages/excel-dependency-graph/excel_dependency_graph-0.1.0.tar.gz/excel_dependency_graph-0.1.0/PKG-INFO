@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: excel_dependency_graph
+Version: 0.1.0
+Summary: A library to parse Excel formulas and create a dependency graph for cells.
+Home-page: https://github.com/jiteshgurav/excel_dependency_graph
+License: MIT
+Author: Your Name
+Author-email: jpgurav97@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.1.0,<4.0.0)
+Requires-Dist: networkx (>=2.5,<3.0)
+Requires-Dist: openpyxl (>=3.0.0,<4.0.0)
+Project-URL: Repository, https://github.com/jiteshgurav/excel_dependency_graph
+Description-Content-Type: text/markdown
+
+
+# Excel Dependency Graph
+
+## Overview
+
+This Python script reads an Excel file and builds a dependency graph of cell formulas using the `networkx` library. Each cell that contains a formula referencing other cells is represented as a directed graph node, with edges representing the dependencies. The dependency graph can be visualized and analyzed to understand how different cells are interrelated.
+
+## Features
+
+- Parses formulas in Excel sheets to identify cell dependencies.
+- Builds a directed dependency graph using `networkx`.
+- Visualizes the dependency graph with `matplotlib`.
+- Allows retrieval of dependencies and dependents of specific cells.
+- Saves the dependency graph in GML format.
+
+## Requirements
+
+This script requires the following Python libraries:
+
+- `openpyxl` for reading Excel files
+- `networkx` for creating and handling the dependency graph
+- `matplotlib` for graph visualization
+
+Install these libraries using `pip`:
+
+```bash
+pip install openpyxl networkx matplotlib
+```
+
+## Usage
+
+1. **Initialize the Graph**: Instantiate the `ExcelDependencyGraph` class with the path to the Excel file.
+2. **Build the Dependency Graph**: Call the `build_dependency_graph()` method to parse the file and build the graph.
+3. **Visualize the Graph**: Use `visualize_graph()` to display the dependency graph.
+4. **Retrieve Dependencies and Dependents**:
+   - `get_dependencies(cell)` returns cells a given cell depends on.
+   - `get_dependents(cell)` returns cells that depend on a given cell.
+5. **Save the Graph**: Save the graph structure in GML format using `save_graph(output_path)`.
+
+
+### Example Usage
+
+# Example usage
+```
+graph = ExcelDependencyGraph("example/example.xlsx")
+graph.build_dependency_graph()
+graph.visualize_graph()
+print(graph.get_dependencies("Sheet1!A1"))
+print(graph.get_dependents("Sheet1!A1"))
+graph.save_graph("dependency_graph.gml")
+```
+
