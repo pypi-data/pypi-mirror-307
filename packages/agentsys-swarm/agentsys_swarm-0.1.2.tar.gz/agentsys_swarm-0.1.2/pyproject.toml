@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentsys-swarm"
+version = "0.1.2"
+description = "A lightweight, stateless multi-agent orchestration framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "OpenAI Solutions"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "openai>=1.33.0",
+    "requests",
+    "tqdm",
+    "instructor",
+    "pydantic>=2.0.0",
+    "python-dotenv>=0.19.0",
+    "typing-extensions>=4.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/lifsys/agentsys-swarm"
+Repository = "https://github.com/lifsys/agentsys-swarm.git"
+Documentation = "https://github.com/lifsys/agentsys-swarm#readme"
+Issues = "https://github.com/lifsys/agentsys-swarm/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "mypy>=0.9",
+    "pre-commit"
+]
+
+[tool.hatch.build]
+packages = ["swarm"]
+include = [
+    "swarm/**/*.py",
+    "swarm/**/__init__.py"
+]
+
+[tool.autopep8]
+max_line_length = 120
+ignore = ["E501", "W6"]
+in-place = true
+recursive = true
+aggressive = 3
