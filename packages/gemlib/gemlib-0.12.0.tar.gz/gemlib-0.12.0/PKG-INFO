@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gemlib
+Version: 0.12.0
+Summary: GEMlib scientific compute library for epidemic modelling
+Home-page: https://gem-epidemics.gitlab.io/gemlib
+License: MIT
+Keywords: epidemic,Bayesian,inference,infectious disease model,probabilistic programming
+Author: Chris Jewell
+Author-email: c.jewell@lancaster.ac.uk
+Maintainer: Jessica Bridgen
+Maintainer-email: j.bridgen@lancaster.ac.uk
+Requires-Python: >=3.10.0,<3.13.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: tensorflow (>=2.16.2,<2.17.0)
+Requires-Dist: tensorflow-probability (>=0.24.0,<0.25.0)
+Requires-Dist: tf-keras (>=2.16.0,<2.17.0)
+Project-URL: Repository, https://gitlab.com/gem-epidemics/gemlib
+Description-Content-Type: text/markdown
+
+`gemlib` scientific compute library
+===========================================
+
+`gemlib` is a scientific compute library build for epidemic 
+analysis.  It forms a component of the [GEM](http://fhm-chicas-code.lancs.ac.uk/GEM/gem)
+project aimed at developing a reusable domain-specific modelling
+language for epidemic inference and simulation.
+
+`gemlib` is heavily based on [Tensorflow Probability](https://www.tensorflow.org/probability), a 
+probabilistic library for the [Tensorflow](https://www.tensorflow.org)
+machine learning platform.  This package provide extensions for Tensorflow
+Probability related to epidemic analysis.  
+
