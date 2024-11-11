@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+dist/ligoauth/__init__.py
+dist/ligoauth/ligoauth.py
+dist/ligoauth.egg-info/PKG-INFO
+dist/ligoauth.egg-info/SOURCES.txt
+dist/ligoauth.egg-info/dependency_links.txt
+dist/ligoauth.egg-info/top_level.txt
+dist/pyarmor_runtime_000000/__init__.py
+dist/pyarmor_runtime_000000/pyarmor_runtime.pyd
