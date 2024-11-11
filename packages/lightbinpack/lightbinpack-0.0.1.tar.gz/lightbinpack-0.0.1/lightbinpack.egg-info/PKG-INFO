@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lightbinpack
+Version: 0.0.1
+Summary: A lightweight library for solving bin packing problems
+Home-page: https://github.com/TechxGenus/LightBinPack
+Author: TechxGenus
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pybind11>=2.6.0
