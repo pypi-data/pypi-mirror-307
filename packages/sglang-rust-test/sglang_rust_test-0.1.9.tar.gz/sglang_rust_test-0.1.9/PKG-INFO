@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sglang-rust-test
+Version: 0.1.9
+Summary: A Python wrapper around Rust HelloWorld
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+- Build rust
+
+```
+$ cargo build
+```
+
+
+- Build python binding
+
+We want to add wrapper on top of python binding, so we use Setuptools-rust
+
+Maturin v.s. Setuptools-rust
+
+https://www.perplexity.ai/search/maturin-v-s-setuptools-for-rus-XhFJGCPJSOaThpo2X2QtNA#0
+
+
+1. editable install
+
+```
+$ pip install -e .
+```
+
+2. build
+
+```
+$ pip install  --index-url="https://pypi.org/simple/" setuptools-rust wheel build
+$ python -m build
+```
+
