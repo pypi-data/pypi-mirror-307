@@ -1,0 +1,4 @@
+bandit:
+  run: true
+  disabled:
+    - B113 # Requests call without timeout. Done internally
