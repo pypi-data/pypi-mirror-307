@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: syncro_api_ctek
+Version: 0.0.71
+Summary: A few functions for the Syncro API
+Author-email: Dan S <dan@cybertek.systems>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Scripts rely on .env file with the required variables defined
+
+
+Available functions:
+
