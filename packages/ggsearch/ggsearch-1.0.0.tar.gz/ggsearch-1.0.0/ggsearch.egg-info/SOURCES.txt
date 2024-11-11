@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+ggsearch.egg-info/PKG-INFO
+ggsearch.egg-info/SOURCES.txt
+ggsearch.egg-info/dependency_links.txt
+ggsearch.egg-info/requires.txt
+ggsearch.egg-info/top_level.txt
+gsearch/__init__.py
+gsearch/google/__init__.py
+gsearch/google/rich.py
+gsearch/google/search.py
+gsearch/google/search_image.py
+gsearch/google/video.py
