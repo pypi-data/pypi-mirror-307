@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: gym-pushany
+Version: 0.0.2
+Summary: A gymnasium environment for pushany.
+License: Apache-2.0
+Author: Jonghyeon Seon
+Author-email: jonghyeon.seon@holiday-robotics.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Build Tools
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: debugpy (>=1.8.1) ; extra == "dev"
+Requires-Dist: gymnasium (>=0.29.1)
+Requires-Dist: opencv-python (>=4.9.0)
+Requires-Dist: pre-commit (>=3.7.0) ; extra == "dev"
+Requires-Dist: pygame (>=2.5.2)
+Requires-Dist: pymunk (>=6.6.0)
+Requires-Dist: pytest (>=8.1.0) ; extra == "test"
+Requires-Dist: pytest-cov (>=5.0.0) ; extra == "test"
+Requires-Dist: scikit-image (>=0.22.0)
+Requires-Dist: shapely (>=2.0.3)
+Description-Content-Type: text/markdown
+
+## Install Anypush
+```python
+pip install anypush
+```
+
+## Example
+```python
+import gymnasium as gym
+import gym_pushany
+
+object_name = 'ellipse'  # 예시로 'ellipse'를 사용
+use_obstacles = True     # 예시로 True를 사용
+env = gym.make("pushany/PushAny-v0", object_name=object_name, use_obstacles=use_obstacles)
+observation, info = env.reset()
+
+for _ in range(1000):
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info = env.step(action)
+    image = env.render()
+
+    print(f'terminated: {terminated}, truncated: {truncated}')
+    if terminated or truncated:
+        observation, info = env.reset()
+
+env.close()
+```
+
