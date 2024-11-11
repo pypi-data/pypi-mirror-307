@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "latitude",
+        "longitude",
+        "month"
+    ],
+    "clim_range": [
+        1936,
+        1965
+    ],
+    "desc": "SST climatology",
+    "source": "ERSSTv5"
+}
