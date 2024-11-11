@@ -1,0 +1,78 @@
+import time
+from multiprocessing import Process
+from socket import gethostname
+
+from gzspidertools.redisclient import RedisDB
+from loguru import logger
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
+
+REDIS_URL = get_project_settings().get("REDIS_URL")
+redis_db = RedisDB(url=REDIS_URL)
+
+h_name = gethostname()
+
+
+def get_server_hostname():
+    # 获取主机地址
+    return "SERVER_" + h_name
+
+
+server_name = get_server_hostname()
+
+
+def get_crawl_hostname(spider_name):
+    # 获取采集地址地址
+    return "CRAWL_" + h_name + "_" + spider_name
+
+
+def process_crawl(name: str):
+    """
+    :param name: 爬虫名称
+    :return:
+    """
+
+    # redis设置主机和采集脚本的过期时间
+    crawl_name = get_crawl_hostname(name)
+    try:
+        # 设置采集状态为start
+        redis_db.hset(server_name, crawl_name, 'start')
+
+        # 启动scrapy程序
+        process = CrawlerProcess(get_project_settings())
+        process.crawl(str(name))
+        process.start()
+
+    except Exception as e:
+        crawl_status = redis_db.hget(server_name, crawl_name)
+        if crawl_status == "start":
+            # 采集失败，将状态设置为error
+            redis_db.hset(server_name, crawl_name, 'error')
+        logger.error(f"process_crawl 运行出现报错：{name}，报错日志：{e}")
+
+
+def main():
+    logger.info(f"{server_name} begining")
+
+    while True:
+        try:
+            # 获取需要采集的状态redis_key
+            name_lists = []
+            for i in redis_db.getkeys("*:start_urls"):
+                name, _ = i.split(":")
+                name_lists.append(name)
+
+            for name in name_lists:
+                # 启动程序
+                crawl_hostname = get_crawl_hostname(name)
+                # 判断是否存在采集状态，如果存在且为start或者为空时，则启动程序
+                if not redis_db.hexists(server_name, crawl_hostname) \
+                        or redis_db.hget(server_name, crawl_hostname) == "start":
+                    Process(target=process_crawl, args=(str(name),)).start()
+        except Exception as e:
+            logger.error(f'主机状态刷新失败, 错误信息是{e}')
+
+        time.sleep(10)
+
+if __name__ == '__main__':
+    main()
