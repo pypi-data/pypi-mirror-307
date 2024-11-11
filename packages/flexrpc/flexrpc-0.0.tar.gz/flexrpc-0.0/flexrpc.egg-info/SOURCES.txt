@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+flexrpc/__init__.py
+flexrpc.egg-info/PKG-INFO
+flexrpc.egg-info/SOURCES.txt
+flexrpc.egg-info/dependency_links.txt
+flexrpc.egg-info/requires.txt
+flexrpc.egg-info/top_level.txt
+tests/test_package.py

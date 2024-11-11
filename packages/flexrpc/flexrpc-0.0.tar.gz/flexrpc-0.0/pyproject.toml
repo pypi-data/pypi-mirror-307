@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+version = "0.0"
+name = "flexrpc"
+description = ""
+
+authors = [
+  { name="Florian Scherf", email="mail@florianscherf.de" },
+]
+
+readme = "README.md"
+license = { file="LICENSE.txt" }
+requires-python = ">=3.8"
+dependencies = []
+classifiers = []
+
+
+[project.optional-dependencies]
+dev = [
+  # build
+  "build",
+  "twine",
+
+  # tests
+  "tox==4.23.2",
+  "pytest==8.3.3",
+  "coverage==7.6.1",
+]
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["flexrpc*"]
+
+[tool.setuptools.package-data]
+"flexrpc" = ["**"]
+
+[tool.setuptools.exclude-package-data]
+"*" = [
+  ".*",
+  "~*",
+  "*.swp",
+  "*.pyc",
+]
