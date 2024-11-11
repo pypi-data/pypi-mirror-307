@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bma-client-lib
+Version: 0.4.0
+Summary: BornHack Media Archive Client Library
+Author: Thomas Steen Rasmussen
+Author-email: thomas@gibfest.dk
+Project-URL: homepage, https://github.com/bornhack/bma-client-lib-python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: exifread ==3.0.0
+Requires-Dist: httpx ==0.27.2
+Requires-Dist: pillow ==11.0.0
+Requires-Dist: python-magic ==0.4.27
+Provides-Extra: dev
+Requires-Dist: pre-commit ==4.0.0 ; extra == 'dev'
+
+# bma-client-python
+BMA client Python library 
