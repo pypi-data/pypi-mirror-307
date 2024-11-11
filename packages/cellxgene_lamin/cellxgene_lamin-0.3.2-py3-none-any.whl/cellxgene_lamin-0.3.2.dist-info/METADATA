@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cellxgene_lamin
+Version: 0.3.2
+Summary: Manage cellxgene metadata using LaminDB.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lamindb[bionty,aws,zarr,jupyter]
+Requires-Dist: requests
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/cellxgene-lamin
+Provides-Extra: dev
+
+[![pypi](https://img.shields.io/pypi/v/cellxgene-lamin?color=blue&label=pypi%20package)](https://pypi.org/project/cellxgene-lamin)
+
+# cellxgene-lamin: Manage cellxgene metadata using Lamin
+
+Try it out with the public instance `laminlabs/cellxgene`:
+
+- via LaminHub: https://lamin.ai/laminlabs/cellxgene
+- via LaminDB API: `lamin load laminlabs/cellxgene`
+
+Reference:
+
+- [CELLxGENE](https://cellxgene.cziscience.com/)
+- [CELLxGENE Census](https://chanzuckerberg.github.io/cellxgene-census/)
+- [TileDB-SOMA](https://github.com/single-cell-data/TileDB-SOMA)
+- [TileDB](https://github.com/TileDB-Inc/TileDB-Py)
+
