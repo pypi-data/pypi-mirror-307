@@ -1,0 +1,45 @@
+[project]
+name = "epyxid"
+description = "Python wrapper around Rust implementation of XID (Globally Unique ID Generator)"
+requires-python = ">=3.8"
+authors = [
+  {name = "Aleksandr Shpak", email = "shpaker@gmail.com"},
+]
+version = "0.3.1"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+keywords = [
+  "rust",
+  "xid",
+  "pyo3",
+]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Rust",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: MacOS",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Repository = "https://github.com/shpaker/epyxid"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+manifest-path = "Cargo.toml"
+module-name = "epyxid"
+python-source = "python"
+
+[tool.maturin.target."x86_64-apple-darwin"]
+macos-deployment-target = "10.12"
+
+[tool.maturin.target."aarch64-apple-darwin"]
+macos-deployment-target = "11.0"
