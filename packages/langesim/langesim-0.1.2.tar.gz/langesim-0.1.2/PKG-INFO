@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: langesim
+Version: 0.1.2
+Summary: Langevin simulator of an overdamped brownian particle in an arbitrary time-dependent potential
+Author: Gabriel Tellez
+Requires-Python: >=3.8,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cloudpickle (>=2.2.0,<3.0.0)
+Requires-Dist: numba (>=0.56.4,<0.60.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: plotly (>=5.11.0,<6.0.0)
+Requires-Dist: scipy (>=1.9.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# langesim
+
+Langevin simulator of an overdamped brownian particle in an arbitrary
+time-dependent potential.
+
+See the documentation at:
+
+https://gabrieltellez.github.io/langesim/
+
