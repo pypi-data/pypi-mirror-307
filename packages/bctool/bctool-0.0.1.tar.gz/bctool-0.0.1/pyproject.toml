@@ -1,0 +1,23 @@
+[project]
+name = "bctool"
+version = "0.0.1"
+description = "beancount tools"
+authors = [
+    {name = "qiaohao.peng", email = "qiaohao.peng@outlook.com"},
+]
+dependencies = ["beancount>=3.0.0", "click>=8.1.7"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+bctool = "bctool:bctool"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+

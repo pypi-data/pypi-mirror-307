@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bctool
+Version: 0.0.1
+Summary: beancount tools
+Author-email: "qiaohao.peng" <qiaohao.peng@outlook.com>
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: beancount>=3.0.0
+Requires-Dist: click>=8.1.7
+
+# beantool
