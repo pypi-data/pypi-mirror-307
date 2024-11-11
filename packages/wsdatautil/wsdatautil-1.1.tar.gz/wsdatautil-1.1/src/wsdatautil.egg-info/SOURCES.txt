@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+src/wsdatautil/__init__.py
+src/wsdatautil/_wsframecoder.c
+src/wsdatautil/_wsframecoder.pyi
+src/wsdatautil/py.typed
+src/wsdatautil.egg-info/PKG-INFO
+src/wsdatautil.egg-info/SOURCES.txt
+src/wsdatautil.egg-info/dependency_links.txt
+src/wsdatautil.egg-info/top_level.txt
