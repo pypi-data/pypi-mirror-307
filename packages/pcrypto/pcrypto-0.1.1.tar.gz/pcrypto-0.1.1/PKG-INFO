@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pcrypto
+Version: 0.1.1
+Summary: 
+Author: Phuong Nguyen
+Author-email: nhphuong.code@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pcrypto: Pure Python Cryptography Implementation
+
+## Installation
+To install the `pcrypto` package, use `pip`:
+
+```bash
+pip install pcrypto
+```

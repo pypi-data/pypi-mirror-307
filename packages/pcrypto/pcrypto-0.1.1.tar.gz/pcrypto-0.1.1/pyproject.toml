@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pcrypto"
+version = "0.1.1"
+description = ""
+authors = ["Phuong Nguyen <nhphuong.code@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+pydantic = "^2.9.2"
+
+[tool.poetry.group.test.dependencies]  
+pytest-randomly = "^3.15.0"  
+pytest = "^8.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
