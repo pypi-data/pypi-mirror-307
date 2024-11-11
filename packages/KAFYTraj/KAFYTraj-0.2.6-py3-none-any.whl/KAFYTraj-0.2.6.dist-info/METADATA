@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: KAFYTraj
+Version: 0.2.6
+Summary: This library includes an extensible system for building various trajectory operations.
+Author: Youssef Hussein
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h3
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: tokenizers
+Requires-Dist: transformers[torch]
+Requires-Dist: numpy
+Requires-Dist: pyarrow<16.0.0,>=14.0.1
+
+# KafyTraj [KAFY] Library
+
+The KafyTraj, KAFY for short, library provides an extensible system for various trajectory operations and includes a versatile command-line interface (CLI) for managing these operations using SQL-like commands. It functions as a toolkit for researchers, facilitating the construction, management, and execution of diverse trajectory operations.
+
+### The Meaning Behind the Name “KAFYTraj”
+- KAFY: means sufficient in Arabic.
+- Traj: Short for “Trajectory,” emphasizing the library’s focus on trajectory data processing and analysis.
+# Features
+
+- **Extensible System**: Designed to accommodate various trajectory operations with flexibility and ease.
+- **User-Friendly**: Simplifies the construction and management of trajectory operations, making it accessible to researchers.
+- **SQL-like Command Interface**: Allows users to execute trajectory operations through intuitive, SQL-like commands.
+
+# Installation
+
+You can install the KAFY library using pip:
+
+```bash
+$pip install KAFYTraj --upgrade
+```
+
+
+# Starting A New Project
+
+Before starting, you need to start a new project and define the project location where all project-related data will be saved. This includes directories like modelsRepo, TrajectoryStore, etc. By default, the project location is set to `/home/KafyProject/`
+
+If you wish to change the project location permanently, follow these steps:
+
+Step-by-Step Guide to Setting Project Location in bash
+
+1. Open your terminal.
+2. Execute the following command:
+
+    ```bash
+    $ kafy start new project `location`
+    ```
+where location is the desired location of the project. A new project will be created at this location,
+and required project files/directories will be initialized. If a project already exists at this place,
+nothing will happen. 
+
+If no project location is specified, the project will deafault to `/home/KafyProject/`. 
+
+# SQL-like Command Interface [CLI Based]
+To use the SQL-like command interface, you can execute commands directly from the terminal. The CLI allows you to perform operations such as pretraining, fine-tuning, and summarizing data.
+The librarys is pre-installed into your terminal when you run `pip install KAFYTraj` for the first time.
+
+There are three main stages of using KAFY.
+
+1. **PreTraining**
+2. **FineTuning**
+3. **Excution**
+
+## Pretraining:
+In this stage the researcher can:
+*Note: All commands are case insensitive.*
+1. Add a New Dataset for Pretraining.
+
+You can add a new dataset to the TrajectoryStore to be used for pretraining with all current and future models.
+
+    ```bash
+    $kafy add pretraining data from data_source.csv
+    ```
+*Example:*
+
+    ```
+    $kafy add pretraining data from 'pretraining_data.csv'
+    ```
+    where pretraining_data.csv has a column named trajectory that each cell has a list of tuples of gps points where a gps point is a (lat,lon) pair.
+2. Add a New Model or Modify Model Configurations
+
+Use available models from HuggingFace’s (HF) Transformers repository by specifying custom configurations.
+
+    ```bash
+    $kafy ADD MODEL transformer_family FROM HF USING model_config_file.json AS model_name_to_be_saved_as
+    ```
+*Example:*
+
+To add a bert-large model using its configurations:
+
+    ```bash
+    $kafy ADD MODEL bert FROM HF USING bert_large_configs.json AS bert_large
+    ```
+The bert_large model will be added to the `TransformersPlugin` and will be pretrained on all available pretraining datasets in the `TrajectoryStore`.
+
+3. Add a Custom Model [**Not Implemented For Now**]
+
+If the model is not available in HuggingFace, you can define your own.
+**Important Note:** Custom models should follow the same structure as HuggingFace models. Refer to the examples in the repository for guidance.
+
+    ```bash
+    $kafy ADD MODEL transformer_family FROM model_source USING model_config_file.json AS model_name_to_be_saved_as
+    ```
+*Example:*
+
+To add a model from a custom model definition:
+
+    ```bash
+    $kafy ADD MODEL new_family FROM new_model.py USING new_model_configs.json AS new_model
+    ```
+The new_model model will be added to the `TransformersPlugin` and will be pretrained on all available pretraining datasets in the `TrajectoryStore`.
+
+## Fine-Tune a Model [**Not Implemented For Now**]:
+
+    ```bash
+    $kafy FINETUNE bert FOR summarization USING my_pretrained_model.pkl WITH finetune_config.json AS my_finetuned_model.pkl
+    ```
+## Summarize Data [**Not Implemented For Now**]:
+
+    ```bash
+    $kafy SUMMARIZE FROM requested_data_to_summarize.csv USING my_finetuned_model.pkl
+    ```
+
+## Extended Usage
+
+To use the library, import the `TrajectoryPipeline` class from `KAFY`:
+
+```python
+from KAFY import TrajectoryPipeline
+
+# Initialize the pipeline
+my_pipeline = TrajectoryPipeline(
+    mode="pretraining",
+    operation_type="generation",
+    use_tokenization=True,
+    use_detokenization=True,
+    use_spatial_constraints=True,
+    modify_spatial_constraints=True,
+    use_predefined_spatial_constraints=True,
+    project_path="/content/"
+)
+```
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any questions or support, please contact husse408@umn.edu.

@@ -1,0 +1,11 @@
+{
+    "output_dir": "/test",
+    "evaluation_strategy": "steps",
+    "overwrite_output_dir": true,
+    "num_train_epochs": 1,
+    "per_device_train_batch_size": 10,
+    "gradient_accumulation_steps": 8,
+    "per_device_eval_batch_size": 64,
+    "logging_steps": 1000,
+    "save_steps": 1000
+}
