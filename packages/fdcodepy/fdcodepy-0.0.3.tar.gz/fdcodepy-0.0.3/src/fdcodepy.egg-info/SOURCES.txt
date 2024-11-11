@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/fdcodepy/__init__.py
+src/fdcodepy/methods.py
+src/fdcodepy.egg-info/PKG-INFO
+src/fdcodepy.egg-info/SOURCES.txt
+src/fdcodepy.egg-info/dependency_links.txt
+src/fdcodepy.egg-info/requires.txt
+src/fdcodepy.egg-info/top_level.txt
+src/fdcodepy/utils/__init__.py
+src/fdcodepy/utils/helpers.py

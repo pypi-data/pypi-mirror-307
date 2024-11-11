@@ -1,0 +1,26 @@
+[project]
+name = "fdcodepy"
+version = "0.0.3"
+authors = [
+  { name="Rui Yuan", email="123abcyuanrui@gmail.com" },
+]
+description = "A codebook solution for time series data compression and feature extraction considering rebound effect"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy == 2.0.2",
+    "pandas == 2.2.3",
+    "scikit-learn == 1.5.2",
+    "scipy == 1.13.1",
+    "numba == 0.60.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/abc123yuanrui/FD_codepy"
+Issues = "https://github.com/abc123yuanrui/FD_codepy/issues"
