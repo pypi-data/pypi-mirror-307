@@ -1,0 +1,35 @@
+name: Publish to PyPI
+
+on: 
+  push:
+    tags:
+      - 'v*.*.*'  # Trigger the workflow on version tags
+
+jobs:
+  publish:
+    name: Build distribution 📦
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name : Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12' 
+
+    - name: Install dependencies
+      run: | 
+        pip install --upgrade pip wheel setuptools jax optax build twine
+
+    - name: Build a binary wheel and a source tarball
+      run: python3 -m build
+
+    - name: Publish to PyPI
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        python -m twine upload dist/*
