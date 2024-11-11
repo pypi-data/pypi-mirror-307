@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+license = { text = "MIT" }
+version = "0.0.13"
+name = "class_sz_data"
+description = "A package to retrieve data from the CLASS-SZ repository"
+readme = "README.md"
+maintainers = [{name = "Boris Bolliet", email = "bb667@cam.ac.uk"}]
+authors = [{name = "Boris Bolliet", email = "bb667@cam.ac.uk"}]
+dependencies = [
+    "requests",
+    "cython",
+    "numpy",
+    "six"
+]
+requires-python = ">=3.6"
+
+[project.urls]
+homepage = "https://github.com/CLASS-SZ/class_sz_data"
+repository = "https://github.com/CLASS-SZ/class_sz_data"
+
+
+[tool.setuptools.packages.find]
+where = ["main"]
