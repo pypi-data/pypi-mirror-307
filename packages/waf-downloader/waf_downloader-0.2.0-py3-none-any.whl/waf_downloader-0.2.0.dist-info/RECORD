@@ -1,0 +1,19 @@
+waf_logs/__init__.py,sha256=i-bOiAu9BHJ4oR5uC--CyIU99lpD0VuZ_8zugphGNbo,477
+waf_logs/cloudflare_waf.py,sha256=JDMR9xIZqhjQoRxfW4irP0Ena3mwQh_FX2A7HwB3mas,2828
+waf_logs/constants.py,sha256=D0cvOEal7d7vsGe4e5350ldXZi-fCTVxtCfw34Yqcz0,370
+waf_logs/db.py,sha256=S2ExabJrBKX8MVEZXHPyHGnh2wG7SnO26VJZnEeWMIU,8629
+waf_logs/downloader.py,sha256=MN97rUqwtCEl4Ptj4CpMgJKv6vGrgzfZI-wh9ES5xJE,9551
+waf_logs/helpers.py,sha256=nY61GBAxP9_zbm7Jh02QlmwW2fPgvB1VOvvB5Px-Yu0,2349
+waf_logs/resources/get_firewall_events.graphql,sha256=9uhW0dYMtyeqZ3NAPd1qbCLKz4UpNHVgtvpqI2aBzkg,1119
+waf_logs/resources/get_firewall_events_ext.graphql,sha256=g8xp4Pj8qcniD_pUoitRNTMRm8OqZTHMl1UJKSdXOY0,680
+waf_logs/resources/get_firewall_events_restricted.graphql,sha256=VWCJ1Xlt6xRZJh1XnVR_yp4qpQc9WWkDmyWPTq4qWdk,648
+waf_logs/resources/db/000_logs.sql,sha256=p9dTf-OSQ3PxG5QvsELq27jTNmCln4ks3pLKNwXriDw,290
+waf_logs/resources/db/001_events.sql,sha256=QzGsVEG4s3VPdbKSeiXgMIpht0Zj9N014ZdOu71NxVI,210
+waf_logs_cli/__init__.py ,sha256=QDfKUf7bHQu_XbolQpZmf1MhZcZ6r9lR8QVEg7og5mM,17
+waf_logs_cli/cli.py,sha256=IRyI-vmPRR5p9D1w3KqfsdyOJshcWqkgdr-ivFUAG9U,4294
+waf_logs_cli/resources/.keep,sha256=axO7NqOd_yxdtFLHA3Pc7ZoHBtTMdBtIo_MOElZeWCM,34
+waf_downloader-0.2.0.dist-info/METADATA,sha256=zr1hbOBa4ZZNGKmUvqQGmmK2nzS5CIB6yW7h2GPOi2M,5722
+waf_downloader-0.2.0.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+waf_downloader-0.2.0.dist-info/entry_points.txt,sha256=2Sgq2SCcFBKuv3FlHdjhLokfE5EB0oyT3cilakDxZJM,57
+waf_downloader-0.2.0.dist-info/licenses/LICENSE,sha256=RFhQPdSOiMTguUX7JSoIuTxA7HVzCbj_p8WU36HjUQQ,10947
+waf_downloader-0.2.0.dist-info/RECORD,,
