@@ -1,0 +1,10 @@
+setup.py
+robbiblubber.egg-info/PKG-INFO
+robbiblubber.egg-info/SOURCES.txt
+robbiblubber.egg-info/dependency_links.txt
+robbiblubber.egg-info/namespace_packages.txt
+robbiblubber.egg-info/top_level.txt
+robbiblubber/spellbook/__init__.py
+robbiblubber/spellbook/stringop.py
+robbiblubber/spellbook/backpack/__init__.py
+robbiblubber/spellbook/backpack/packer.py
