@@ -1,0 +1,3 @@
+[console_scripts]
+heare-console = heare.developer.terminal:main
+heare-developer = heare.developer.cli:main
