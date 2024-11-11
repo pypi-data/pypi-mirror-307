@@ -1,0 +1,6 @@
+[console_scripts]
+langrocks-server=langrocks.app.server:main
+
+[jupyter_client.kernel_provisioners]
+chroot-provisioner=langrocks.common.provisioners.chroot:ChrootProvisioner
+
