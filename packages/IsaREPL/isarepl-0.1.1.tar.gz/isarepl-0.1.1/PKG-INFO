@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: IsaREPL
+Version: 0.1.1
+Summary: Isabelle REPL client
+Author-email: Qiyuan Xu <xqyww123@gmail.com>
+License: Isa-REPL COPYRIGHT NOTICE, LICENCE AND DISCLAIMER.
+        
+        Copyright (c) 2024, Qiyuan Xu <xqyww123@gmail.com>
+        
+        Isa-REPL is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version.
+        
+        Isa-REPL is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+        
+        You should have received a copy of the GNU Lesser General Public License along with Isa-REPL. If not, see <https://www.gnu.org/licenses/>.
+        
+Project-URL: Homepage, https://github.com/xqyww123/Isa-REPL
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING.LESSER.txt
+License-File: COPYING.txt
+Requires-Dist: msgpack
+
+Isabelle REPL
+====
+
+Unofficial support for Isabelle's Read-Eval-Print-Loop.
+
+- Python Client, easy for Machine Learning.
+- Full support for all Isabelle commands
+- Capability to trace proof state and output panel for each step of evaluation.
+- Socket based remote communication
+- Concurrency
+
+## Installation
+
+Ensuring `<ISABELLE-BASE-DIRECTORY>/bin` is in your `$PATH` environment
+```
+	isabelle components -u <THE-BASE-DIRECTORY-OF-OUR-PROGRAM>
+pip install IsaREPL
+```
+## Start up the REPL server
+
+```
+# merely an example:
+./repl_server.sh 127.0.0.1:6666 HOL ./tmp
+```
+
+Run `./repl_server.sh` to see the full explanation of the arguments and options.
+
+## Example Clients
+
+Every interface of our client is will documented (it is highly recommended to read our [source](./IsaREPL/IsaREPL.py)). Some examples are given in [the example folder](./examples).
+```
+# Run an example
+./examples/example1.py
+```
+
+## Communication Protocol
+
+It is possible to implement a client in other languages. However, the document for the communication protocol is not provided and I refer you to read our source code, as it should be simple enough.
+## Contribution
+
+Feel free to open any GitHub issue if you have any feature requests.
+
+I am not a professional python developer, so contribution is highly welcome to enrich the client's features.
