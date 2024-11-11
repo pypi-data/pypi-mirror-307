@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: StadisticsML
+Version: 0.0.1
+Summary: Librería para obtener valores estadísticos para pruebas de distribución de signos, determinación de outliers y pruebas Durbin-Watson
+Home-page: https://github.com/Guacen/StadisticsML.git
+Author: Jorge Eduardo Londoño Arango
+Author-email: joelondonoar@unal.edu.co
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
