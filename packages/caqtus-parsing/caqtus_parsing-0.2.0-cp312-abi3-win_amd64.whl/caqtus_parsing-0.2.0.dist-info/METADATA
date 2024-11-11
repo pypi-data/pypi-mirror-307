@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: caqtus-parsing
+Version: 0.2.0
+Summary: Used to parse expressions for the caqtus framework
+Author-email: light-scattering-io <lecaqtus66@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/tree-sitter/tree-sitter-caqtus
+Keywords: parsing,caqtus
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: tree-sitter~=0.22
+Requires-Dist: attrs>=21.2.0
+
