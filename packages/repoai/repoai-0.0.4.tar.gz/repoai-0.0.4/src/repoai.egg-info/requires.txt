@@ -1,0 +1,15 @@
+gitpython
+appdirs
+chardet
+docker
+litellm
+rich
+Pillow
+pyyaml
+jinja2
+
+[dev]
+pytest
+flake8
+mypy
+black
