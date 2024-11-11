@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyimgproxy
+Version: 0.3
+Summary: Python client for imgproxy
+Maintainer-email: The Developer Society <studio@dev.ngo>
+Project-URL: Homepage, https://github.com/developersociety/pyimgproxy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyimgproxy
+
+Python library for [imgproxy](https://imgproxy.net/).
+
+
+## Installation
+
+Using [pip](https://pip.pypa.io/):
+
+```console
+$ pip install pyimgproxy
+```
