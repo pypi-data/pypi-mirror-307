@@ -1,0 +1,6 @@
+
+[compile]
+Cython==3.0.11
+
+[dev]
+twine

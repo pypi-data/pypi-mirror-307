@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.0.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neverland-pylib"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "umaru", email = "15875339926@139.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["twine"]
+compile = ["Cython==3.0.11"]
+
+[project.urls]
+"Homepage" = "https://github.com/NeverlandLab/neverland-pylib"
+
+[project.scripts]
+"neverland-compile" = "neverland_pylib.compiler.compile:main"
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+

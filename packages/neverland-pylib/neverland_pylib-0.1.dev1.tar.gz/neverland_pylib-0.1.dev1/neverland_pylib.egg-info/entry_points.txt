@@ -1,0 +1,2 @@
+[console_scripts]
+neverland-compile = neverland_pylib.compiler.compile:main
