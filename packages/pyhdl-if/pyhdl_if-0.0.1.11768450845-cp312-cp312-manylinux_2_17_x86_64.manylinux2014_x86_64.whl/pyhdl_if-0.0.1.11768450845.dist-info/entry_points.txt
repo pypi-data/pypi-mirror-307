@@ -1,0 +1,5 @@
+[console_scripts]
+pyhdl-if = hdl_if.__main__:main
+
+[ivpm.pkginfo]
+pyhdl-if = hdl_if.pkginfo:PkgInfo
