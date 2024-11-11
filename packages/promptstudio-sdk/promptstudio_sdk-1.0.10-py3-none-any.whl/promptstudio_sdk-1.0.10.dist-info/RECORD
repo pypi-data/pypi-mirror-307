@@ -1,0 +1,14 @@
+promptstudio_sdk/__init__.py,sha256=vtrAi1dF7rnc2bCx9UZHAjAOfzIGK-J1id82YBZepQk,87
+promptstudio_sdk/base.py,sha256=BqnPy1rbSs7vTDKH0U4FgbzBTWxufgfucJWRRIsDfKM,1507
+promptstudio_sdk/cache.py,sha256=gKJjDQwIQ3832w9UerTDRWti4uYKRcot47zXuDgqxGQ,2512
+promptstudio_sdk/client.py,sha256=9d2UMMbsqj8f5VzYKistjhE_7G6-jFBeZXtFsLK14cY,711
+promptstudio_sdk/prompt.py,sha256=vCLqANn8RsWzUcmZEHejZuNFCLkrpMdTw2lTWEWH-FA,29023
+tests/__init__.py,sha256=2rjVRGXlHHilOTCvQ15Bl9u7lCc31wqIiMfsyqAfYxk,82
+tests/conftest.py,sha256=nwq466ywyxtRf0jUMCiZamDMgW4N53zEiOxrGIyRnhQ,580
+tests/test_base.py,sha256=5FVcntFmhcgGn-fT43WxQBHc9IWP3dsvJbjoijzrefM,2277
+tests/test_client.py,sha256=zKE3RnPPDV6jqXe1zxGrItka_AttJH-_krxqVPNN2CA,2028
+tests/test_prompt.py,sha256=FLhbnzRLRQxhfmU10MkekPyh3mh25LHFH0w9XrzAMFw,10500
+promptstudio_sdk-1.0.10.dist-info/METADATA,sha256=BnlhT5Th8-JMxZQfYlHRmwsG_HpjiuA4_fOlpgTTL5s,5447
+promptstudio_sdk-1.0.10.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+promptstudio_sdk-1.0.10.dist-info/top_level.txt,sha256=i66wWUAOK49mWwRQYwWr-NjwFFJjvDxbdyfNdSO5QKo,23
+promptstudio_sdk-1.0.10.dist-info/RECORD,,
