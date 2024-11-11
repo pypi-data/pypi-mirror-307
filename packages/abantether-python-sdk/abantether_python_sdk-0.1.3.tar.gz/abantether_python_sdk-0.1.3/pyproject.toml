@@ -1,0 +1,53 @@
+[project]
+name = "abantether-python-sdk"
+version = "0.1.3"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flake8>=7.1.1",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.3",
+    "requests>=2.32.3",
+]
+
+license = {text = "MIT"}
+authors = [{name = "AbanTether"}]
+keywords = ["abantether", "sdk", "python", "api", "exchange", "wrapper", "trade", "crypto", "bitcoin"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.13.0",
+    "ruff>=0.7.2",
+]
+
+[tool.mypy]
+warn_unused_ignores = true
+no_implicit_optional = true
+disallow_subclassing_any = false
+ignore_missing_imports = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.ruff]
+lint.ignore = [
+    "F401",
+    "F403",
+    "F405",
+    "F811",
+]
