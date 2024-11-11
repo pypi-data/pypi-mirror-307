@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: your-unique-simple-framework
+Version: 0.1.0
+Summary: A simple web framework for Python
+Home-page: https://github.com/yourusername/simple-framework
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2>=3.0.0
+Requires-Dist: watchdog>=2.1.0
+
+# Simple Framework
+
+A lightweight Python web framework with hot-reloading and template support.
+
+## Features
+
+- Simple routing system
+- Jinja2 template support
+- Hot-reloading in development mode
+- Query parameter handling
+
+## Installation 
