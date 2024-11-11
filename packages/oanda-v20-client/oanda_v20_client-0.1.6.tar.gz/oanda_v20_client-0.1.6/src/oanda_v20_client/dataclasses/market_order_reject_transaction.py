@@ -1,0 +1,114 @@
+from __future__ import annotations
+from typing import Dict, Any
+import dataclasses
+from dacite import from_dict
+from .client_extensions import ClientExtensions
+from .market_order_delayed_trade_close import MarketOrderDelayedTradeClose
+from .market_order_margin_closeout import MarketOrderMarginCloseout
+from .market_order_position_closeout import MarketOrderPositionCloseout
+from .market_order_reject_transaction_position_fill import (
+    MarketOrderRejectTransactionPositionFill,
+)
+from .market_order_reject_transaction_reason import MarketOrderRejectTransactionReason
+from .market_order_reject_transaction_reject_reason import (
+    MarketOrderRejectTransactionRejectReason,
+)
+from .market_order_reject_transaction_time_in_force import (
+    MarketOrderRejectTransactionTimeInForce,
+)
+from .market_order_reject_transaction_type import MarketOrderRejectTransactionType
+from .market_order_trade_close import MarketOrderTradeClose
+from .stop_loss_details import StopLossDetails
+from .take_profit_details import TakeProfitDetails
+from .trailing_stop_loss_details import TrailingStopLossDetails
+from typing import Optional, TypeVar
+
+T = TypeVar("T", bound="MarketOrderRejectTransaction")
+
+
+@dataclasses.dataclass
+class MarketOrderRejectTransaction:
+    """A MarketOrderRejectTransaction represents the rejection of the creation of a Market Order.
+
+    Attributes:
+        id (Union[Unset, str]): The Transaction's Identifier.
+        time (Union[Unset, str]): The date/time when the Transaction was created.
+        user_id (Union[Unset, int]): The ID of the user that initiated the creation of the Transaction.
+        account_id (Union[Unset, str]): The ID of the Account the Transaction was created for.
+        batch_id (Union[Unset, str]): The ID of the "batch" that the Transaction belongs to. Transactions in the same
+            batch are applied to the Account simultaneously.
+        request_id (Union[Unset, str]): The Request ID of the request which generated the transaction.
+        type (Union[Unset, MarketOrderRejectTransactionType]): The Type of the Transaction. Always set to
+            "MARKET_ORDER_REJECT" in a MarketOrderRejectTransaction.
+        instrument (Union[Unset, str]): The Market Order's Instrument.
+        units (Union[Unset, str]): The quantity requested to be filled by the Market Order. A posititive number of units
+            results in a long Order, and a negative number of units results in a short Order.
+        time_in_force (Union[Unset, MarketOrderRejectTransactionTimeInForce]): The time-in-force requested for the
+            Market Order. Restricted to FOK or IOC for a MarketOrder.
+        price_bound (Union[Unset, str]): The worst price that the client is willing to have the Market Order filled at.
+        position_fill (Union[Unset, MarketOrderRejectTransactionPositionFill]): Specification of how Positions in the
+            Account are modified when the Order is filled.
+        trade_close (Union[Unset, MarketOrderTradeClose]): A MarketOrderTradeClose specifies the extensions to a Market
+            Order that has been created specifically to close a Trade.
+        long_position_closeout (Union[Unset, MarketOrderPositionCloseout]): A MarketOrderPositionCloseout specifies the
+            extensions to a Market Order when it has been created to closeout a specific Position.
+        short_position_closeout (Union[Unset, MarketOrderPositionCloseout]): A MarketOrderPositionCloseout specifies the
+            extensions to a Market Order when it has been created to closeout a specific Position.
+        margin_closeout (Union[Unset, MarketOrderMarginCloseout]): Details for the Market Order extensions specific to a
+            Market Order placed that is part of a Market Order Margin Closeout in a client's account
+        delayed_trade_close (Union[Unset, MarketOrderDelayedTradeClose]): Details for the Market Order extensions
+            specific to a Market Order placed with the intent of fully closing a specific open trade that should have
+            already been closed but wasn't due to halted market conditions
+        reason (Union[Unset, MarketOrderRejectTransactionReason]): The reason that the Market Order was created
+        client_extensions (Union[Unset, ClientExtensions]): A ClientExtensions object allows a client to attach a
+            clientID, tag and comment to Orders and Trades in their Account.  Do not set, modify, or delete this field if
+            your account is associated with MT4.
+        take_profit_on_fill (Union[Unset, TakeProfitDetails]): TakeProfitDetails specifies the details of a Take Profit
+            Order to be created on behalf of a client. This may happen when an Order is filled that opens a Trade requiring
+            a Take Profit, or when a Trade's dependent Take Profit Order is modified directly through the Trade.
+        stop_loss_on_fill (Union[Unset, StopLossDetails]): StopLossDetails specifies the details of a Stop Loss Order to
+            be created on behalf of a client. This may happen when an Order is filled that opens a Trade requiring a Stop
+            Loss, or when a Trade's dependent Stop Loss Order is modified directly through the Trade.
+        trailing_stop_loss_on_fill (Union[Unset, TrailingStopLossDetails]): TrailingStopLossDetails specifies the
+            details of a Trailing Stop Loss Order to be created on behalf of a client. This may happen when an Order is
+            filled that opens a Trade requiring a Trailing Stop Loss, or when a Trade's dependent Trailing Stop Loss Order
+            is modified directly through the Trade.
+        trade_client_extensions (Union[Unset, ClientExtensions]): A ClientExtensions object allows a client to attach a
+            clientID, tag and comment to Orders and Trades in their Account.  Do not set, modify, or delete this field if
+            your account is associated with MT4.
+        reject_reason (Union[Unset, MarketOrderRejectTransactionRejectReason]): The reason that the Reject Transaction
+            was created"""
+
+    id: Optional[str]
+    time: Optional[str]
+    user_id: Optional[int]
+    account_id: Optional[str]
+    batch_id: Optional[str]
+    request_id: Optional[str]
+    type: Optional[MarketOrderRejectTransactionType]
+    instrument: Optional[str]
+    units: Optional[str]
+    time_in_force: Optional[MarketOrderRejectTransactionTimeInForce]
+    price_bound: Optional[str]
+    position_fill: Optional[MarketOrderRejectTransactionPositionFill]
+    trade_close: Optional["MarketOrderTradeClose"]
+    long_position_closeout: Optional["MarketOrderPositionCloseout"]
+    short_position_closeout: Optional["MarketOrderPositionCloseout"]
+    margin_closeout: Optional["MarketOrderMarginCloseout"]
+    delayed_trade_close: Optional["MarketOrderDelayedTradeClose"]
+    reason: Optional[MarketOrderRejectTransactionReason]
+    client_extensions: Optional["ClientExtensions"]
+    take_profit_on_fill: Optional["TakeProfitDetails"]
+    stop_loss_on_fill: Optional["StopLossDetails"]
+    trailing_stop_loss_on_fill: Optional["TrailingStopLossDetails"]
+    trade_client_extensions: Optional["ClientExtensions"]
+    reject_reason: Optional[MarketOrderRejectTransactionRejectReason]
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert the dataclass instance to a dictionary."""
+        return dataclasses.asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "MarketOrderRejectTransaction":
+        """Create a new instance from a dictionary."""
+        return from_dict(data_class=cls, data=data)
