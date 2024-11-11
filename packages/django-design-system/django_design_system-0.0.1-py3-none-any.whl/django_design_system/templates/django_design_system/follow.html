@@ -1,0 +1,58 @@
+{% load i18n %}
+{% translate "Opens a new window" as new_window_label %}
+<div class="design-system-follow">
+  <div class="design-system-container">
+    <div class="design-system-grid-row">
+      {% block follow_newsletter %}
+        <div class="design-system-col-12 design-system-col-md-8">
+          <div class="design-system-follow__newsletter">
+            <div>
+              <h2 class="design-system-h5">
+                {% translate "Subscribe to our newsletter" context "Section title" %}
+              </h2>
+              <p class="design-system-text--sm">
+                {{ SITE_CONFIG.newsletter_description | safe }}
+              </p>
+            </div>
+            <div class="design-system-btns-group design-system-btns-group--inline-md">
+              {% translate "Subscribe to our newsletter" context "Button title" as subcribe_button_title %}
+              <a class="design-system-btn"
+                 href="{{ SITE_CONFIG.newsletter_url }}"
+                 target="_blank"
+                 rel="noopener external"
+                 title="{{ subcribe_button_title }} - {{ new_window_label }}">
+                {% translate "Subscribe" %}
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endblock follow_newsletter %}
+      {% block follow_social %}
+        <div class="design-system-col-12 design-system-col-md-4">
+          <div class="design-system-follow__social">
+            <h2 class="design-system-h5">
+              {% blocktranslate trimmed %}
+                Follow us
+                <br />
+                on social media
+              {% endblocktranslate %}
+            </h2>
+            <ul class="design-system-btns-group">
+              {% for link in SITE_CONFIG.social_media %}
+                <li>
+                  <a class="{{ link.icon_class }} design-system-btn"
+                     href="{{ link.url }}"
+                     target="_blank"
+                     title="{{ link.title }} - {{ new_window_label }}"
+                     rel="noopener external">
+                    {{ link.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endblock follow_social %}
+    </div>
+  </div>
+</div>

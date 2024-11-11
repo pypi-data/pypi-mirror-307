@@ -1,0 +1,95 @@
+{% load design_system_tags i18n %}
+{% translate "Opens a new window" as new_window_label %}
+<div class="design-system-card{% if self.enlarge_link %} design-system-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+     {% if self.id %}id="{{ self.id }}"{% endif %}>
+  <div class="design-system-card__body">
+    <div class="design-system-card__content">
+      <{{ self.heading_tag | default:"p" }} class="design-system-card__title">
+      {% if self.link %}
+        <a href="{{ self.link }}"
+           target="{% if self.new_tab %}_blank{% else %}_self{% endif %}"
+           {% if self.new_tab %}rel="noopener noreferrer" title="{{ self.title }} - {{ new_window_label }}"{% endif %}>
+          {{ self.title |truncatechars:100 }}
+        </a>
+      {% else %}
+        {{ self.title |truncatechars:100 }}
+      {% endif %}
+      </{{ self.heading_tag | default:"p" }}>
+      <p class="design-system-card__desc">
+        {{ self.description |truncatechars:200 }}
+      </p>
+      {% if self.top_detail %}
+        <div class="design-system-card__start">
+          {% if self.top_detail.tags %}
+            <ul class="design-system-tags-group">
+              {% for tag in self.top_detail.tags %}
+                <li>
+                  {% design_system_tag tag %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% elif self.top_detail.badges %}
+            <ul class="design-system-badges-group">
+              {% for badge in self.top_detail.badges %}
+                <li>
+                  {% design_system_badge badge %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if self.top_detail.detail %}
+            <p class="design-system-card__detail{% if self.top_detail.detail.icon_class %} self.top_detail.detail.icon_class{% endif %}">
+              {{ self.top_detail.detail.text }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if self.bottom_detail %}
+        <div class="design-system-card__end">
+          <p class="design-system-card__detail{% if self.bottom_detail.icon_class %} self.bottom_detail.icon_class{% endif %}">
+            {{ self.bottom_detail.text }}
+          </p>
+        </div>
+      {% endif %}
+    </div>
+    {% if self.call_to_action and not self.bottom_detail %}
+      <div class="design-system-card__footer">
+        {% if self.call_to_action.buttons %}
+          <ul class="design-system-btns-group design-system-btns-group--inline-reverse design-system-btns-group--inline-lg">
+            {% for button in self.call_to_action.buttons %}
+              <li>
+                {% design_system_button button %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% elif self.call_to_action.links %}
+          <ul class="design-system-links-group">
+            {% for link in self.call_to_action.links %}
+              <li>
+                {% design_system_link link %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+  <div class="design-system-card__header">
+    {% if self.image_url %}
+      <div class="design-system-card__img">
+        <img class="design-system-responsive-img"
+             src="{{ self.image_url }}"
+             alt="{{ self.image_alt }}" />
+      </div>
+      {% if self.media_badges %}
+        <ul class="design-system-badges-group">
+          {% for badge in self.media_badges %}
+            <li>
+              {% design_system_badge badge %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
