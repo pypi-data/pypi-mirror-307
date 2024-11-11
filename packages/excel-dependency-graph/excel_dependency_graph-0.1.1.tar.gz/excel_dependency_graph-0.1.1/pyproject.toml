@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "excel_dependency_graph"
+version = "0.1.1"
+description = "A library to parse Excel formulas and create a dependency graph for cells."
+authors = ["Jitesh Gurav <jpgurav97@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/jiteshgurav/formula-dependency-excel"
+homepage = "https://github.com/jiteshgurav/formula-dependency-excel"
+packages = [
+    { include = "*" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+openpyxl = "^3.0.0"
+networkx = "^2.5"
+matplotlib = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"  # Optional, if you plan to add tests
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
