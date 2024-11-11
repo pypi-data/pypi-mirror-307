@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: opengis
+Version: 2.4.6
+Summary: Open source GIS tools.
+Author: Zijie Wang
+Author-email: 773598627@qq.com
+Project-URL: source, https://github.com/tom100to/opengis
+Project-URL: tracker, https://github.com/tom100to/opengis/issues
+Keywords: Geographic-information-systems Remote-sensing Spatial-analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: gdalnumpy>=1.17.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: xarray
+Requires-Dist: rasterio
+Requires-Dist: netCDF4
+Requires-Dist: pymodis
+
+## Open Source GIS Tools
+
+This repository provides several tools for GIS data processing, including batch conversion for NC and MODIS data formats.
