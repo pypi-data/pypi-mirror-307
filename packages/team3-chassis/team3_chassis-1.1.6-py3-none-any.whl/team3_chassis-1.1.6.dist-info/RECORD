@@ -1,0 +1,14 @@
+team3_chassis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+team3_chassis/utils.py,sha256=5uGzp9ka4U9aNt2uef1QyVw6yDgNJ12p2CpgmQ4hUAo,66
+team3_chassis/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+team3_chassis/database/db_utils.py,sha256=7tX5tXpQ7PVrvhwPTrKOpb6z2oMygYmaT1I9Szmd99Q,1566
+team3_chassis/messaging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+team3_chassis/messaging/eventprovider.py,sha256=bA5hoSW5c9Jk6JbqZ8Zv_XFxIqg-_yq0IMTS4urpX5k,3367
+team3_chassis/messaging/loggerprovider.py,sha256=tm8Xlke1Yf0bHEMouvT1MocXgplyy3oDJTNR11rmU4A,2601
+team3_chassis/security/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+team3_chassis/security/middleware.py,sha256=0nMGCK3MUgPOPkeFmodY_iCE3rDe39ynYlv-0JSpG34,2799
+team3_chassis/security/securityprovider.py,sha256=y0acL3LWU8qZkXMr7_b1a3Z-dQKT5xH_LHIF8Ac50zU,4699
+team3_chassis-1.1.6.dist-info/METADATA,sha256=yrjW8fL5R8wuJBsDnW1iEuXAKuJEy6MYrzwYNztcgrA,170
+team3_chassis-1.1.6.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+team3_chassis-1.1.6.dist-info/top_level.txt,sha256=slTEx2mZZi3etaz3opTOKSw-IOcBMofSpYz8q6kUn-M,14
+team3_chassis-1.1.6.dist-info/RECORD,,
