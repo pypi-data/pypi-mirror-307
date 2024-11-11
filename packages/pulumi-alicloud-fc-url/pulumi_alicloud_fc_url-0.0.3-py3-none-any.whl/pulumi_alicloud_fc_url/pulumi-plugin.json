@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "alicloud-fc-url",
+  "server": "github://api.github.com/rhysmdnz/pulumi-alicloud-fc-url"
+}
