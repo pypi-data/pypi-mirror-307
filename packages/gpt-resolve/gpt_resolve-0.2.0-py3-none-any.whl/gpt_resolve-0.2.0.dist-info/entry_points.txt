@@ -1,0 +1,3 @@
+[console_scripts]
+gpt-resolve=gpt_resolve.resolve:main
+
