@@ -1,0 +1,79 @@
+from typing import Any, overload
+
+from _typeshed import Incomplete
+from py4j.java_gateway import JavaObject
+from pyspark.sql._typing import DateTimeLiteral, DecimalLiteral, LiteralType
+from pyspark.sql.types import DataType
+from pyspark.sql.window import WindowSpec
+
+__all__ = ['Column']
+
+class Column:
+    def __init__(self, jc: JavaObject) -> None: ...
+    __neg__: Incomplete
+    __add__: Incomplete
+    __sub__: Incomplete
+    __mul__: Incomplete
+    __div__: Incomplete
+    __truediv__: Incomplete
+    __mod__: Incomplete
+    __radd__: Incomplete
+    __rsub__: Incomplete
+    __rmul__: Incomplete
+    __rdiv__: Incomplete
+    __rtruediv__: Incomplete
+    __rmod__: Incomplete
+    __pow__: Incomplete
+    __rpow__: Incomplete
+    def __eq__(self, other: Column | LiteralType | DecimalLiteral | DateTimeLiteral) -> Column: ...
+    def __ne__(self, other: Any) -> Column: ...
+    __lt__: Incomplete
+    __le__: Incomplete
+    __ge__: Incomplete
+    __gt__: Incomplete
+    eqNullSafe: Incomplete
+    __and__: Incomplete
+    __or__: Incomplete
+    __invert__: Incomplete
+    __rand__: Incomplete
+    __ror__: Incomplete
+    def __contains__(self, item: Any) -> None: ...
+    bitwiseOR: Incomplete
+    bitwiseAND: Incomplete
+    bitwiseXOR: Incomplete
+    def getItem(self, key: Any) -> Column: ...
+    def getField(self, name: Any) -> Column: ...
+    def withField(self, fieldName: str, col: Column) -> Column: ...
+    def dropFields(self, *fieldNames: str) -> Column: ...
+    def __getattr__(self, item: Any) -> Column: ...
+    def __getitem__(self, k: Any) -> Column: ...
+    def __iter__(self) -> None: ...
+    contains: Incomplete
+    startswith: Incomplete
+    endswith: Incomplete
+    def like(self, other: str) -> Column: ...
+    def rlike(self, other: str) -> Column: ...
+    def ilike(self, other: str) -> Column: ...
+    @overload
+    def substr(self, startPos: int, length: int) -> Column: ...
+    @overload
+    def substr(self, startPos: Column, length: Column) -> Column: ...
+    def isin(self, *cols: Any) -> Column: ...
+    asc: Incomplete
+    asc_nulls_first: Incomplete
+    asc_nulls_last: Incomplete
+    desc: Incomplete
+    desc_nulls_first: Incomplete
+    desc_nulls_last: Incomplete
+    isNull: Incomplete
+    isNotNull: Incomplete
+    def alias(self, *alias: str, **kwargs: Any) -> Column: ...
+    name: Incomplete
+    def cast(self, dataType: DataType | str) -> Column: ...
+    astype: Incomplete
+    def between(self, lowerBound: Column | LiteralType | DateTimeLiteral | DecimalLiteral, upperBound: Column | LiteralType | DateTimeLiteral | DecimalLiteral) -> Column: ...
+    def when(self, condition: Column, value: Any) -> Column: ...
+    def otherwise(self, value: Any) -> Column: ...
+    def over(self, window: WindowSpec) -> Column: ...
+    def __nonzero__(self) -> None: ...
+    __bool__ = __nonzero__

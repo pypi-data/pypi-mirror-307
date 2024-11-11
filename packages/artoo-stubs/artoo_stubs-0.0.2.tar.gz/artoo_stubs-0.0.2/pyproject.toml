@@ -1,0 +1,123 @@
+[tool.poetry]
+name = "artoo-stubs"
+version = "0.0.2"
+description = "artoo-stubs"
+authors = ["username <xxxx@pnmac.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.4"
+poethepoet = "^0.18.1"
+pyright = "^1.1.388"
+ruff = "^0.7.3"
+pytest = "^8.3.3"
+pytest-env = "^1.1.5"
+pytest-sugar = "^1.0.0"
+pytest-html = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+lint = { shell = "pyright" }
+test-unit = { shell = "coverage run -m pytest tests --html=report-unit.html && coverage report -m" }
+build = "python setup.py sdist bdist_wheel"
+clean = """
+  rm -rf .coverage
+         .mypy_cache
+         .pytest_cache
+         ./**/__pycache__
+         artoo_stubs.egg-info
+         report-unit.html
+         dist
+         assets
+"""
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = [
+    "**/__init__.py",
+    "**/.layer/**/*",
+    "tests/**/*",
+    ".venv/**/*",
+    "awsglue-stubs/**/*",
+    "pyspark-stubs/**/*",
+]
+
+[tool.coverage.report]
+show_missing = false
+exclude_lines = [
+    'pragma: no cover',
+    'def __repr__',
+    'if self.debug:',
+    'if settings.DEBUG',
+    'raise AssertionError',
+    'raise NotImplementedError',
+    'if 0',
+    'if __name__ == .__main__.:',
+    'class .*\bProtocol\):',
+    '@(abc\.)?abstractmetho',
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+pythonpath = ["src"]
+addopts = "-ra -sql --junitxml=junit.xml"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "serial",
+]
+env = []
+testpaths = ["tests"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+exclude = ["setup.py", "__pycache__", ".venv", "awsglue-stubs", "pyspark-stubs"]
+ignore = []
+reportConstantRedefinition = false
+reportMissingModuleSource = false
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+select = [
+    "B",   # flake8-bugbear
+    "C",   # complexity
+    "C4",  # flake8-comprehensions
+    "D",   # pydocstyle
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # PEP8 naming conventions
+    "SIM", # flake8-simplify
+    "W",   # pycodestyle warnings
+]
+ignore = [
+    "D100", # missing docstring in public module
+    "D101", # missing docstring in public class
+    "D102", # missing docstring in public method
+    "D103", # missing docstring in public function
+    "D104", # missing docstring in public package
+    "D107", # missing docstring in __init__
+    "D205", # 1 blank line required between summary line and description
+    "D415", # first line should end with a period
+    "E731", # do not assign a lambda expression, use a def
+    "F403", # 'from module import *' used; unable to detect undefined names
+    "F405", # 'X' may be undefined, or defined from star imports: Y
+    "N806", # variable in function should be lowercase
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.isort]
+combine-as-imports = true

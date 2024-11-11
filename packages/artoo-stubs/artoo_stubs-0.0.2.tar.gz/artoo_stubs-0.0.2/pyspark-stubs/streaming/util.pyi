@@ -1,0 +1,29 @@
+from _typeshed import Incomplete
+from pyspark import RDD as RDD, SparkContext as SparkContext
+
+class TransformFunction:
+    ctx: Incomplete
+    func: Incomplete
+    deserializers: Incomplete
+    rdd_wrap_func: Incomplete
+    failure: Incomplete
+    def __init__(self, ctx, func, *deserializers) -> None: ...
+    def rdd_wrapper(self, func): ...
+    def call(self, milliseconds, jrdds): ...
+    def getLastFailure(self): ...
+    class Java:
+        implements: Incomplete
+
+class TransformFunctionSerializer:
+    ctx: Incomplete
+    serializer: Incomplete
+    gateway: Incomplete
+    failure: Incomplete
+    def __init__(self, ctx, serializer, gateway: Incomplete | None = None) -> None: ...
+    def dumps(self, id): ...
+    def loads(self, data): ...
+    def getLastFailure(self): ...
+    class Java:
+        implements: Incomplete
+
+def rddToFileName(prefix, suffix, timestamp): ...

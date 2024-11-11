@@ -1,0 +1,33 @@
+from collections.abc import Generator
+from typing import Any
+
+import pandas as pd
+from _typeshed import Incomplete
+from pyspark.pandas.frame import DataFrame
+from pyspark.pandas.indexes import Index
+from pyspark.pandas.series import Series
+from pyspark.testing.sqlutils import ReusedSQLTestCase
+
+__all__ = ['assertPandasOnSparkEqual']
+
+def assertPandasOnSparkEqual(actual: DataFrame | Series | Index, expected: DataFrame | pd.DataFrame | Series | pd.Series | Index | pd.Index, checkExact: bool = True, almost: bool = False, rtol: float = 1e-05, atol: float = 1e-08, checkRowOrder: bool = True): ...
+
+class PandasOnSparkTestUtils:
+    def convert_str_to_lambda(self, func: str): ...
+    def assertPandasEqual(self, left: Any, right: Any, check_exact: bool = True): ...
+    def assertPandasAlmostEqual(self, left: Any, right: Any, rtol: float = 1e-05, atol: float = 1e-08): ...
+    def assert_eq(self, left: Any, right: Any, check_exact: bool = True, almost: bool = False, rtol: float = 1e-05, atol: float = 1e-08, check_row_order: bool = True): ...
+
+class PandasOnSparkTestCase(ReusedSQLTestCase, PandasOnSparkTestUtils):
+    @classmethod
+    def setUpClass(cls) -> None: ...
+
+class TestUtils:
+    def temp_dir(self) -> Generator[Incomplete]: ...
+    def temp_file(self) -> Generator[Incomplete]: ...
+
+class ComparisonTestBase(PandasOnSparkTestCase):
+    @property
+    def psdf(self): ...
+    @property
+    def pdf(self): ...
