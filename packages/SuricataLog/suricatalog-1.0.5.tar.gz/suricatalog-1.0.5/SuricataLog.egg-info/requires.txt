@@ -1,0 +1,11 @@
+textual==0.83.0
+textual-serve==1.1.1
+pytz==2024.1
+pyperclip==1.9.0
+
+[dev]
+textual-dev>=1.6.1
+twine>=5.1.0
+
+[lint]
+pylint
