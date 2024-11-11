@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eclipy"
+version = "1.0.0-alpha.1"
+license = {file = "LICENSE.txt"}
+description = "A powerful, lightweight Python library designed to provide a variety of functions."
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+  'Development Status :: 3 - Alpha',
+  'License :: OSI Approved :: MIT License',
+  'Intended Audience :: Developers',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',	
+  'Topic :: Software Development',
+]
+dependencies = [
+]
+
+[project.urls]
+source = "https://github.com/DevByEagle/eclipy"
+tracker = "https://github.com/DevByeagle/eclipy/issues"
