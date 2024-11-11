@@ -1,0 +1,14 @@
+.venv/
+__pycache__
+
+# Added by cargo
+
+/target
+
+# Maturin
+
+*.abi3.so
+
+# Build output
+
+/dist
