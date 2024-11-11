@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: intellibricks
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Requires-Dist: aiocache>=0.12.3
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: firebase-admin>=6.6.0
+Requires-Dist: graphviz>=0.20.3
+Requires-Dist: imgkit>=1.2.3
+Requires-Dist: langchain-experimental>=0.3.3
+Requires-Dist: langchain>=0.3.7
+Requires-Dist: langfuse>=2.53.9
+Requires-Dist: llama-index-llms-anthropic>=0.3.9
+Requires-Dist: llama-index-llms-cerebras>=0.1.0
+Requires-Dist: llama-index-llms-gemini>=0.3.7
+Requires-Dist: llama-index-llms-groq>=0.2.0
+Requires-Dist: llama-index-llms-vertex>=0.3.7
+Requires-Dist: llama-index>=0.11.22
+Requires-Dist: llama-parse>=0.5.13
+Requires-Dist: markdown2>=2.5.1
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: types-beautifulsoup4>=4.12.0.20241020
+Requires-Dist: vertexai>=1.71.1
+Requires-Dist: weavearc>=0.1.0
