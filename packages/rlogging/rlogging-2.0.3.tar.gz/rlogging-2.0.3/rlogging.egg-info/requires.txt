@@ -1,0 +1,17 @@
+
+[common]
+pydantic-settings>=2.6.0
+
+[django]
+django>=5.1.2
+django-storages[s3]>=1.14.4
+
+[opentelemetry]
+opentelemetry-distro[otlp]>=0.48b0
+
+[prometheus]
+logs-prometheus>=1.1.2
+prometheus-client>=0.21.0
+
+[sentry]
+sentry-sdk>=2.17.0

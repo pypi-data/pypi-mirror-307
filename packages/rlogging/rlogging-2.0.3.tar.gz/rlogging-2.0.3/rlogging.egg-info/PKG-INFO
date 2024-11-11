@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: rlogging
+Version: 2.0.3
+Summary: A set of tools to improve the observability of applications
+Author-email: Alekse Marusich <alekse.marusich@rocshers.com>
+License: MIT
+Keywords: rocshers,logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: sentry
+Requires-Dist: sentry-sdk>=2.17.0; extra == "sentry"
+Provides-Extra: prometheus
+Requires-Dist: logs-prometheus>=1.1.2; extra == "prometheus"
+Requires-Dist: prometheus-client>=0.21.0; extra == "prometheus"
+Provides-Extra: django
+Requires-Dist: django>=5.1.2; extra == "django"
+Requires-Dist: django-storages[s3]>=1.14.4; extra == "django"
+Provides-Extra: common
+Requires-Dist: pydantic-settings>=2.6.0; extra == "common"
+Provides-Extra: opentelemetry
+Requires-Dist: opentelemetry-distro[otlp]>=0.48b0; extra == "opentelemetry"
+
+# rLogging
+
+A set of tools to improve the observability of applications
+
+[![PyPI](https://img.shields.io/pypi/v/rlogging)](https://pypi.org/project/rlogging/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rlogging)](https://pypi.org/project/rlogging/)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rocshers_rlogging&metric=coverage)](https://sonarcloud.io/summary/new_code?id=rocshers_rlogging)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rocshers_rlogging&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rocshers_rlogging)
+
+[![Downloads](https://static.pepy.tech/badge/rlogging)](https://pepy.tech/project/rlogging)
+[![GitLab stars](https://img.shields.io/gitlab/stars/rocshers/python/rlogging)](https://gitlab.com/rocshers/python/rlogging)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/rocshers/python/rlogging)](https://gitlab.com/rocshers/python/rlogging)
+
+## Functionality
+
+- Formatters
+  - **JsonFormatter** - Convert log to json
+  - **ElkFormatter** - Convert log to json for ELK parsing (one-dimensional array)
+- Adapters
+  - **HttpLoggerAdapter**
+  - **HttpLoggerAdapter**
+- Django
+  - **DjangoLoggerAdapter**
+  - **LoggingMiddleware**
+
+## Contribute
+
+Issue Tracker: <https://gitlab.com/rocshers/python/rlogging/-/issues>  
+Source Code: <https://gitlab.com/rocshers/python/rlogging>
+
+Before adding changes:
+
+Normal logging setup with new classes
+
+```bash
+make install
+```
+
+After changes:
+
+```bash
+make format test
+```
