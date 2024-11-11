@@ -1,0 +1,52 @@
+[tool.poetry]
+
+name = "plain.dev"
+packages = [
+    { include = "plain" },
+]
+
+version = "0.13.0"
+description = "Local development tools for Plain."
+authors = ["Dave Gaeddert <dave.gaeddert@dropseed.dev>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://plainframework.com"
+documentation = "https://plainframework.com/docs/"
+repository = "https://github.com/dropseed/plain"
+
+# Make the CLI available without adding to INSTALLED_APPS
+[tool.poetry.plugins."plain.cli"]
+"dev" = "plain.dev:cli"
+"pre-commit" = "plain.dev.precommit:cli"
+"contrib" = "plain.dev.contribute:cli"
+
+[tool.poetry.plugins."plain.setup"]
+"dev-dotenv" = "plain.dev.entrypoints:load_dotenv_file"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+plain = "<1.0.0"
+
+click = ">=8.0.0"
+debugpy = "^1.6.3"
+
+python-dotenv = "^1.0.0"
+
+# For local runserver
+gunicorn = ">20"
+
+# db
+requests = ">=2.0.0"
+psycopg = {version = "^3.2.2", extras = ["binary"]}
+
+
+[tool.poetry.group.dev.dependencies]
+plain = {path = "../plain", develop = true}
+
+pytest = "^7.1.2"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
