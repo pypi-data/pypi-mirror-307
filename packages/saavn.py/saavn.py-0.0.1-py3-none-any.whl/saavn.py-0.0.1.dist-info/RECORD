@@ -1,0 +1,15 @@
+saavn/__init__.py,sha256=oKOQ-dGhRQePAQc8B9jGZcZ_wE2AOZufLu2laTh8wQ4,65
+saavn/client.py,sha256=HSwi1KK2TvO9ztpnCCQH3QkWatuEkJX9LQAZwVxzIV8,1692
+saavn/routes.py,sha256=GEWPnOPdKevi4XhOO0gsZuzOz4D8yzzAPtexJsLNK-c,1249
+saavn/saavn.py,sha256=ovLLv7j_27DawgPJjjVQgfckH7wsxxFiYVIDf8ikBiE,10443
+saavn/models/__init__.py,sha256=SA0mME-yJ8VotkftSLZb-qeWX9ruPKfgJvQxL2boUf8,108
+saavn/models/album.py,sha256=D2vQku87lzFMPZtKAgahNgfAfn84jllEJ3CYc4WaN9g,659
+saavn/models/artist.py,sha256=wnXKuhvQXGvbHnotIRYoq4S2OeA_VgkgwY6a48eX-LU,669
+saavn/models/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saavn/models/playlist.py,sha256=AolOc07GhWDwQD7gvbbrbDoXicLfSbMDByUyWbDLPok,628
+saavn/models/track.py,sha256=shbkqc_RqpWjSzvdBkw0uRa5P4_iEQllm1K-i1K0kPk,1910
+saavn.py-0.0.1.dist-info/LICENSE,sha256=PD3nInj0jSEVu5zB8tKEeQyAZe4knvzarXkzfK2pDCQ,1073
+saavn.py-0.0.1.dist-info/METADATA,sha256=mcxe1XTBa7CjQ2rjHj3W9DpJV24mMp3S6V5UoSBpCcU,985
+saavn.py-0.0.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+saavn.py-0.0.1.dist-info/top_level.txt,sha256=gBBTmxH16BVmWGhbSy1alp9fI8s95oELRSTqNLEUls0,6
+saavn.py-0.0.1.dist-info/RECORD,,
