@@ -1,0 +1,11 @@
+[upstream]
+providers = [
+    "cloud.google.com"
+]
+
+
+[org]
+credentials = [
+    { domain = 'siteground.com', doctype = 'web-page', url = "https://cloud.google.com/customers/siteground" },
+    { domain = 'siteground.com', doctype = 'web-page', url = "https://www.siteground.com/blog/moving-to-google-cloud"},
+]

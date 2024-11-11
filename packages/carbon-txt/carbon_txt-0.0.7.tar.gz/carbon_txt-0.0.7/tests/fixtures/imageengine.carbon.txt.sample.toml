@@ -1,0 +1,14 @@
+[upstream]
+
+# in a perfect world, where we have information already submitted by providers, this would be enough
+# we try to support the case where customers are able to link to information in the public domain, if 
+# an 'upstream' provider does not have it though
+
+providers = ["aws.amazon.com", "services.global.ntt"]
+
+[org]
+
+credentials = [
+    { domain = 'imgeng.in', doctype = 'web-page', url = "https://imageengine.io/imageengine-sustainability-policy/" },
+    { domain = 'imgeng.in', doctype = 'web-page', url = "https://github.com/imgeng/sustainability" },
+]

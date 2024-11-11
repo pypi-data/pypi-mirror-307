@@ -1,0 +1,7 @@
+[upstream]
+
+
+[org]
+credentials = [
+    { domain = 'www.scaleway.com', doctype = 'sustainability-page', url = 'https://www.scaleway.com/en/environmental-leadership/' },
+]
