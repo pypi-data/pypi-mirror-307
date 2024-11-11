@@ -1,0 +1,16 @@
+env:
+  exams:
+   - exam: "catti"
+     url: https://www.catticenter.com/ywdt
+     content_type: "text/html; charset=UTF-8"
+     keywords:
+       - "成绩查询"
+       - "2024"
+   - exam: "ruankao"
+     url: https://www.ruankao.org.cn/index/work
+     content_type: "text/html; charset=UTF-8"
+     keywords:
+       - "成绩查询"
+       - "2024"
+
+environment: production
