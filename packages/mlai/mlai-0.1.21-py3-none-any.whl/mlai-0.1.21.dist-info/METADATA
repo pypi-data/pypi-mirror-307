@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mlai
+Version: 0.1.21
+Summary: Package of simple models and plotting routines for teaching and lecturing about machine learning.
+Home-page: https://github.com/lawrennd/mlai
+License: MIT
+Author: Neil D. Lawrence
+Author-email: lawrennd@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: gp tutorials
+Provides-Extra: mountain car demo
+Requires-Dist: pandas
+Requires-Dist: pods
+Description-Content-Type: text/markdown
+
+# MLAI Is a package of python files for teaching and lecturing on machine learning.
+
+
