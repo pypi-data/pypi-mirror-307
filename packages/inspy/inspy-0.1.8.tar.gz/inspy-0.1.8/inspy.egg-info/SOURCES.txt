@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+inspy.egg-info/PKG-INFO
+inspy.egg-info/SOURCES.txt
+inspy.egg-info/dependency_links.txt
+inspy.egg-info/requires.txt
+inspy.egg-info/top_level.txt
+piinspy/__init__.py
+piinspy/ins.json
+piinspy/ins_class.py
+piinspy/ins_function.py
+piinspy/insconst.py
+piinspy/log.py
+piinspy/package.json
