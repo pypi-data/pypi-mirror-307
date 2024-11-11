@@ -1,0 +1,2 @@
+[console_scripts]
+pypostfix = pypostfix.cli:main
