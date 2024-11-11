@@ -1,0 +1,5 @@
+[console_scripts]
+ponsanim = ponsanim.ponsanim:main
+
+[gui_scripts]
+netedit = netedit.netedit:main
