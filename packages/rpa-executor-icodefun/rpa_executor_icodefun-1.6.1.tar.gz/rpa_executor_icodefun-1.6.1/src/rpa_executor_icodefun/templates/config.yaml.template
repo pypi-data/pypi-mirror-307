@@ -1,0 +1,21 @@
+xxl_admin_baseurl: "http://xxx.xxx.xxx.xxx:9970/xxl-job-admin/api/"
+
+client_id: "rpa1"
+client_secret: "123456"
+
+executor:
+  app_name: "rpa-hub"
+  host: "yyy.yyy.yyy.yyy"
+  port: 9999
+  # listen_host: ''
+  # listen_port: 9999
+
+log:
+  expired_days: 7
+  local_dir: "logs"
+
+max_workers: 10
+
+task:
+  queue_length: 10
+  timeout: 600
