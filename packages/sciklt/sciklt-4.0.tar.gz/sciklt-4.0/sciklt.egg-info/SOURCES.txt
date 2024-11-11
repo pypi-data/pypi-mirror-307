@@ -1,0 +1,129 @@
+setup.py
+NLP/NLP 1/1-Prereqs.py
+NLP/NLP 1/2-Chi2test.py
+NLP/NLP 1/2-T-test.py
+NLP/NLP 1/3-WSD-nb.py
+NLP/NLP 1/4-Hindle-Rooth.py
+NLP/NLP 1/5-HMM-Trellis.py
+NLP/NLP 1/6-HMM-Viterbi.py
+NLP/NLP 1/7-PCFG-parsetree.py
+NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/corpora_tools.py
+NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/data_utils.py
+NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/train_translator.py
+sciklt/README.md
+sciklt/__init__.py
+sciklt/licence.txt
+sciklt/main.py
+sciklt.egg-info/PKG-INFO
+sciklt.egg-info/SOURCES.txt
+sciklt.egg-info/dependency_links.txt
+sciklt.egg-info/not-zip-safe
+sciklt.egg-info/top_level.txt
+sciklt/data/NLP/NLP 1/1-Prereqs.py
+sciklt/data/NLP/NLP 1/2-Chi2test.py
+sciklt/data/NLP/NLP 1/2-T-test.py
+sciklt/data/NLP/NLP 1/3-WSD-nb.py
+sciklt/data/NLP/NLP 1/4-Hindle-Rooth.py
+sciklt/data/NLP/NLP 1/5-HMM-Trellis.py
+sciklt/data/NLP/NLP 1/6-HMM-Viterbi.py
+sciklt/data/NLP/NLP 1/7-PCFG-parsetree.py
+sciklt/data/NLP/NLP 1/Chi2test.ipynb
+sciklt/data/NLP/NLP 1/Hindle-Rooth.ipynb
+sciklt/data/NLP/NLP 1/Lab 10 - Text generator using LSTM.ipynb
+sciklt/data/NLP/NLP 1/Lab 11 NMT.ipynb
+sciklt/data/NLP/NLP 1/PCFG.ipynb
+sciklt/data/NLP/NLP 1/Prereqs.ipynb
+sciklt/data/NLP/NLP 1/T test.ipynb
+sciklt/data/NLP/NLP 1/TFIDF BOW.ipynb
+sciklt/data/NLP/NLP 1/Trellis.ipynb
+sciklt/data/NLP/NLP 1/WSD.ipynb
+sciklt/data/NLP/NLP 1/Word2Vec.ipynb
+sciklt/data/NLP/NLP 2/Lab01(tokenizer)/tokenizer.ipynb
+sciklt/data/NLP/NLP 2/Lab01(tokenizer)/training_tokenizer.txt
+sciklt/data/NLP/NLP 2/Lab02(stemming)/exp0.ipynb
+sciklt/data/NLP/NLP 2/Lab02(stemming)/lab2.ipynb
+sciklt/data/NLP/NLP 2/Lab02(stemming)/test.txt
+sciklt/data/NLP/NLP 2/Lab02(stemming)/tokenizing.ipynb
+sciklt/data/NLP/NLP 2/Lab03(parse-tree)/collocation.ipynb
+sciklt/data/NLP/NLP 2/Lab03(parse-tree)/lab3.ipynb
+sciklt/data/NLP/NLP 2/Lab03(parse-tree)/nlp.txt
+sciklt/data/NLP/NLP 2/Lab04(collocation)/Lab4-NLP-Exp-2.ipynb
+sciklt/data/NLP/NLP 2/Lab04(collocation)/collocation.ipynb
+sciklt/data/NLP/NLP 2/Lab05(WSD)/NLP-Lab-5-Exp3.ipynb
+sciklt/data/NLP/NLP 2/Lab05(WSD)/word-sense-disambiguation.ipynb
+sciklt/data/NLP/NLP 2/Lab06(additional-exercise)/lab6.ipynb
+sciklt/data/NLP/NLP 2/Lab07(HMM,Viterbi)/NLP Exp 4.ipynb
+sciklt/data/NLP/NLP 2/Lab07(HMM,Viterbi)/NLP_Exp_5.ipynb
+sciklt/data/NLP/NLP 2/Lab08(PCFG)/PCFG.ipynb
+sciklt/data/NLP/NLP 2/Lab09-Hindle-rooth&MLP/Lab 9 - MLP classifier.ipynb
+sciklt/data/NLP/NLP 2/Lab09-Hindle-rooth&MLP/MLP-alternative-code.ipynb
+sciklt/data/NLP/NLP 2/Lab09-Hindle-rooth&MLP/hindle-rooth-algorithm.ipynb
+sciklt/data/NLP/NLP 2/Lab10(LSTM)/Lab_10_Text_generator_using_LSTM.ipynb
+sciklt/data/NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/Machine-translation.ipynb
+sciklt/data/NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/Viterbi-PCFG.ipynb
+sciklt/data/NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/corpora_tools.py
+sciklt/data/NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/data_utils.py
+sciklt/data/NLP/NLP 2/Lab11(Viterbi-PCFG,Machine-translation)/train_translator.py
+sciklt/data/NLP/NLP 2/Lab12(Information-Extraction)/Information_Extraction.ipynb
+sciklt/data/NLP/NLP 3/Backtrack-without-Verbitri.ipynb
+sciklt/data/NLP/NLP 3/Backward-Procedure.ipynb
+sciklt/data/NLP/NLP 3/Bag_of.ipynb
+sciklt/data/NLP/NLP 3/CYK-algorithm.ipynb
+sciklt/data/NLP/NLP 3/Forward-Procedure.ipynb
+sciklt/data/NLP/NLP 3/LSTM.ipynb
+sciklt/data/NLP/NLP 3/Lab 10 - Text generator using LSTM.ipynb
+sciklt/data/NLP/NLP 3/Lab 11 NMT.ipynb
+sciklt/data/NLP/NLP 3/NLP-LAB-4.ipynb
+sciklt/data/NLP/NLP 3/NLP-LAB-5.ipynb
+sciklt/data/NLP/NLP 3/abc.txt
+sciklt/data/NLP/NLP 3/ex-1-nltk.ipynb
+sciklt/data/NLP/NLP 3/ex-2-nlp.ipynb
+sciklt/data/NLP/NLP 3/exp8&9.ipynb
+sciklt/data/NLP/NLP 3/hind.ipynb
+sciklt/data/NLP/NLP 3/lab66.ipynb
+sciklt/data/NLP/NLP 3/leb_3.ipynb
+sciklt/data/NLP/NLP 3/naive_bayes_classifier.pkl
+sciklt/data/NLP/NLP 3/nlp_leb_1.ipynb
+sciklt/data/NLP/NLP 3/nlp_leb_2.ipynb
+sciklt/data/NLP/NLP 3/nlplab-9.ipynb
+sciklt/data/NLP/NLP 3/nltk-ex-4.ipynb
+sciklt/data/NLP/NLP 3/text1.txt
+sciklt/data/NLP/NLP 3/text2.txt
+sciklt/data/NLP/NLP 3/text3.txt
+sciklt/data/NLP/NLP 3/translation-rnn.ipynb
+sciklt/data/NLP/NLP 3/word2vector.ipynb
+sciklt/data/NLP/NLP 4/Backward Procedure Algorithm.ipynb
+sciklt/data/NLP/NLP 4/Chi Square Collocation.ipynb
+sciklt/data/NLP/NLP 4/Collocation (T test).ipynb
+sciklt/data/NLP/NLP 4/Experiment 1.ipynb
+sciklt/data/NLP/NLP 4/Forward Procedure Algorithm.ipynb
+sciklt/data/NLP/NLP 4/Hindle Rooth.ipynb
+sciklt/data/NLP/NLP 4/MachineTranslation.ipynb
+sciklt/data/NLP/NLP 4/Multi Layer Perceptron using MLPClassifier.ipynb
+sciklt/data/NLP/NLP 4/Multi Layer Perceptron using Tensorflow.ipynb
+sciklt/data/NLP/NLP 4/PCFG Inside Probability.ipynb
+sciklt/data/NLP/NLP 4/Text Generation using LSTM.ipynb
+sciklt/data/NLP/NLP 4/Viterbi.ipynb
+sciklt/data/NLP/NLP 4/Word Sense Disambiguation.ipynb
+sciklt/data/NLP/NLP 5/10.Text Generation using LSTM.ipynb
+sciklt/data/NLP/NLP 5/11.Machine Translation.ipynb
+sciklt/data/NLP/NLP 5/2.T and Chi2 Test.ipynb
+sciklt/data/NLP/NLP 5/3.Word Sense Diambiguation.ipynb
+sciklt/data/NLP/NLP 5/4.Hinddle and Rooth.ipynb
+sciklt/data/NLP/NLP 5/5.Forward and Backward.ipynb
+sciklt/data/NLP/NLP 5/6.Viterbi.ipynb
+sciklt/data/NLP/NLP 5/7.PCFG Parse Tree.ipynb
+sciklt/data/NLP/NLP 5/7.PCFG using cyk.ipynb
+sciklt/data/NLP/NLP 5/8.Bag of words and TF-IDF.ipynb
+sciklt/data/NLP/NLP 5/9.Word2Vector.ipynb
+sciklt/data/NLP/NLP 5/NLP ALL In One.ipynb
+sciklt/data/NLP/NLP 5/sample1.txt
+sciklt/data/NLP/NLP 5/sample2.txt
+sciklt/data/NLP/NLP 5/word2vec_model.bin
+sciklt/data/NLP/NLP 6/1. Tokenize, Tagging, NER, Parse Tree.ipynb
+sciklt/data/NLP/NLP 6/2. T Test and Chi2 Test.ipynb
+sciklt/data/NLP/NLP 6/3. Naive Bayes WSD.ipynb
+sciklt/data/NLP/NLP 6/4. Hinddle and Rooth.ipynb
+sciklt/data/NLP/NLP 6/5 and 6 FWD, BWD, Viterbi.ipynb
+sciklt/data/NLP/NLP 6/7. PCFG using CYK.ipynb
+sciklt/data/NLP/NLP 6/8. BOW and TF-IDF.ipynb
