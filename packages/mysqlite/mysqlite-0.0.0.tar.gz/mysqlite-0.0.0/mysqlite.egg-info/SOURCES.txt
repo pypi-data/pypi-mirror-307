@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+mysqlite/__init__.py
+mysqlite.egg-info/PKG-INFO
+mysqlite.egg-info/SOURCES.txt
+mysqlite.egg-info/dependency_links.txt
+mysqlite.egg-info/requires.txt
+mysqlite.egg-info/top_level.txt
