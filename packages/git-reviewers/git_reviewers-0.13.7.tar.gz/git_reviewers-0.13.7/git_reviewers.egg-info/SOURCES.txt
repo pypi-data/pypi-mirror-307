@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+git_reviewers/__init__.py
+git_reviewers/py.typed
+git_reviewers/reviewers.py
+git_reviewers.egg-info/PKG-INFO
+git_reviewers.egg-info/SOURCES.txt
+git_reviewers.egg-info/dependency_links.txt
+git_reviewers.egg-info/entry_points.txt
+git_reviewers.egg-info/requires.txt
+git_reviewers.egg-info/top_level.txt
