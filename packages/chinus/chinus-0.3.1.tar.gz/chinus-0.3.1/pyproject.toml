@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinus"
+version = "0.3.1"
+description = "This is a chinus Python package."
+requires-python = ">=3.6"
+keywords = [ "chinus", "json5", "utility", "example",]
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License",]
+dependencies = [ "json5",]
+[[project.authors]]
+name = "Chinu9653"
+email = "juyoung9653@gmail.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+encoding = "utf-8"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/juyoung9653/chinus"
