@@ -1,0 +1,16 @@
+weiqi/__init__.py,sha256=LE14TIMIhrZLioT-AMbhuXikuljWIMT099fJPf9mh7E,553
+weiqi/core/board.py,sha256=Kac-hyuw6mb_Li0W3oOUn3Lu6l2_HrIhkNzIqmmEG58,11105
+weiqi/core/figure.py,sha256=-LKLYJk_1mo08GJaRvdnhtAp4oRhHPL5Ta8m2wlR2ho,89
+weiqi/core/game.py,sha256=8ry2zsZqI1osDJiPjlOzOe2SI2QKBftZYGRrtu5E9T4,4105
+weiqi/core/group.py,sha256=KtmmTlV9-Q9THFfR9PWukHvI-0mrUOJatRd8qsmovzQ,739
+weiqi/core/move.py,sha256=Eq4RTlhZ90GconYYc1wDRN3AvgzNXWa9UIHKUiZ5D84,1116
+weiqi/core/position.py,sha256=mTzFic_Pku8rkg-gZwsDXOadlOUtTAcQcDBj_JT087A,203
+weiqi/exceptions/__init__.py,sha256=4yJnUm1XnW5b62c_UOsj4pFvG5-5u1m0CGlHnA1Efbc,128
+weiqi/exceptions/game.py,sha256=og5njQ21579cHr5nlCcKanWEXzr3xBVYrzPWOk2eIis,92
+weiqi/players/bot.py,sha256=wtp0PhwmEdj7tv8Sm5KvsrxB2ezSP7TJKq7NgKNGlbI,3034
+weiqi/players/player.py,sha256=zaRt2DJ3TL7B-4vBKSafQDCgtea-Zui-cMehRuZmxgM,785
+weiqi/utils/enums.py,sha256=rT5SKPOblmukTrqHqBGJ31JvNIOw7C2St7raz29PPC4,85
+weiqi/utils/game_status.py,sha256=C_uj_SlHLCC63q7Np4eNL-JfgOteQKbLwxbt0sADJ7w,1564
+weiqi-0.2.1.dist-info/METADATA,sha256=qEXUFJQwoFABJ8de86llOLzV-rpR38-zYH8QhbW8fPw,2589
+weiqi-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+weiqi-0.2.1.dist-info/RECORD,,
