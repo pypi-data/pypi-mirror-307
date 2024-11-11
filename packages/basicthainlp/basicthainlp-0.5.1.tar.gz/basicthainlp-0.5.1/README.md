@@ -1,0 +1,33 @@
+เครื่องมือ NLP สำหรับภาษาไทย
+# include
+* Token Identification: ระบุชนิด Token ข้อความภาษาไทย
+* PmSeg: หาขอบเขตของ pseudo morpheme 
+* Pos tagging: Tag part of speech(pos) ระดับ pseudo morpheme
+* Spelling corrector: แก้ไขคำผิด
+* Find Similarity Terms: ค้นหา Terms/Words ที่เขียนผิดหรือคล้ายกันในเอกสาร
+# Colab
+https://colab.research.google.com/drive/1G7OUNsCC-B5XHNd8V5Et1ZKpJp4R66hg
+================================================================================
+# Update
+## 0.5.1
+* เพิ่ม function FindSimilarityTerms
+## 0.4.2
+* แก้ bug TokenIdentification: E-mail regular expression 
+## 0.4.1
+* แก้ bug TokenIdentification: Tag จากไฟล์ให้ถูกต้องมากขึ้น
+## 0.3.7
+* แก้ correction ใน spelling ในกรณีที่ค่า prop เท่ากันให้พิจารณาโดยใช้ Tri-gram
+## 0.3.5
+* เพิ่ม library spelling
+## 0.3.4
+* แก้ function get_ps แบบสั้น ไม่ต้องใส่ textInput=
+## 0.3.3
+* แก้ function get_ps ไม่ให้ new class ทุกครั้ง
+* หลังจาก new class PmSeg() ต้องเรียกฟังก์ชั่น init_cls() เสมอ
+* หลังจาก new class PosTag() ต้องเรียกฟังก์ชั่น init_cls() เสมอ
+## 0.3.1
+* เพิ่ม library POS Tagging
+## 0.2.7
+* Add wrap function get_ps
+## 0.2.1
+* เพิ่ม library Token Identification

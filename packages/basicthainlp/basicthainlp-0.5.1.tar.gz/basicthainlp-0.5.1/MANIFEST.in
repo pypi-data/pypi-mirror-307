@@ -1,0 +1,6 @@
+include src/basicthainlp/pmSeg/input/*
+include src/basicthainlp/pmSeg/output/*
+include src/basicthainlp/posTag/output/*
+include src/basicthainlp/spelling/input/*
+include src/basicthainlp/spelling/input/*
+include src/basicthainlp/findSimilarityTerms/input/*
