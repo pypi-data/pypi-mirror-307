@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hospinet"
+description = "Temporal Networks of Hospitals Using Patient Transfers"
+readme = "README.md"
+authors = [{name = "David Wu", email="david.wu1@monash.edu"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy >= 1.19.0",
+    "polars >= 1.0",
+    "networkx >= 3",
+]
+requires-python = ">=3.11"
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/dwu0042/hospinet"
+Issues = "https://github.com/dwu0042/hospinet/issues"
+
+
+[project.optional-dependencies]
+dev = ["pytest"]
+vignette = ["matplotlib >= 3.6"]
+docs = ["pdoc3"]
+
+[tool.setuptools]
+packages = ["hospinet"]
+
+[tool.setuptools.dynamic]
+version = {attr = "hospinet.__version__"}

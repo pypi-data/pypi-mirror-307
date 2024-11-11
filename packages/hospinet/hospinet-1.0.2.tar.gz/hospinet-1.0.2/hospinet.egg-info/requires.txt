@@ -1,0 +1,12 @@
+numpy>=1.19.0
+polars>=1.0
+networkx>=3
+
+[dev]
+pytest
+
+[docs]
+pdoc3
+
+[vignette]
+matplotlib>=3.6
