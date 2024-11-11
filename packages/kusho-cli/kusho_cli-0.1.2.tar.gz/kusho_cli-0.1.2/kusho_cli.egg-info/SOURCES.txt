@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./kusho_cli/__init__.py
+./kusho_cli/cli.py
+kusho_cli/__init__.py
+kusho_cli/cli.py
+kusho_cli.egg-info/PKG-INFO
+kusho_cli.egg-info/SOURCES.txt
+kusho_cli.egg-info/dependency_links.txt
+kusho_cli.egg-info/entry_points.txt
+kusho_cli.egg-info/top_level.txt
