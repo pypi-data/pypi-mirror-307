@@ -1,0 +1,6 @@
+[console_scripts]
+gmsg = gptcomet.clis.__main__:app
+gptcomet = gptcomet.clis.__main__:app
+
+[gui_scripts]
+
