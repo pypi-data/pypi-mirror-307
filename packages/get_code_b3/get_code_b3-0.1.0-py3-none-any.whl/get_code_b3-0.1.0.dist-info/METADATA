@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: get_code_b3
+Version: 0.1.0
+Summary: Pacote para obter o código atual do dólar e do índice (mini ou cheio) na Bovespa.
+Home-page: https://github.com/Allysson-Christopher/get-code
+License: MIT
+Keywords: finance,bovespa,dolar,indice,trading
+Author: Allysson Christopher
+Author-email: 128186654+Allysson-Christopher@users.noreply.github.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: holidays (<1.0)
+Project-URL: Documentation, https://github.com/Allysson-Christopher/get-code
+Project-URL: Repository, https://github.com/Allysson-Christopher/get-code
+Description-Content-Type: text/markdown
+
+# get_code_b3
+
+Pacote para obter o código atual do dólar e do índice (mini ou cheio) na Bovespa.
+
+## Instalação
+
+```bash
+pip install get_code_b3
+
