@@ -1,0 +1,6 @@
+include VERSION
+include requirements.txt
+recursive-include **/_src *
+recursive-include **/*.ipynb *
+recursive-exclude **/.mypy_cache *
+recursive-exclude **/__pycache__ *
