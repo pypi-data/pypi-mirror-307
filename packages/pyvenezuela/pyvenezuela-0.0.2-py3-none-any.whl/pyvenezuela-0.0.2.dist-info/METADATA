@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pyvenezuela
+Version: 0.0.2
+Summary: Python library that allows querying different Venezuela's data - such as BCV and CNE data.
+Home-page: https://github.com/jose2kk/pyvenezuela
+Author: Jose Andres Morales
+Author-email: jose2kk@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 >=4.0
+Requires-Dist: pydantic >=2.0
+Requires-Dist: requests >=2.0
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jose2kk/pyvenezuela/main/public/logo.png" alt="pyvenezuela"></a>
+</p>
+<p align="center">
+    <em>pyvenezuela, library to query Venezuela's data</em>
+</p>
+<p align="center">
+<a href="https://github.com/jose2kk/pyvenezuela/actions?query=wprlflow:Test+event:push+branch:main" target="_blank">
+    <img src="https://github.com/jose2kk/pyvenezuela/workflows/Test/badge.svg" alt="Test">
+</a>
+<a href="https://pypi.org/project/pyvenezuela" target="_blank">
+    <img src="https://img.shields.io/pypi/v/pyvenezuela?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/pyvenezuela" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/pyvenezuela.svg?color=%2334D058" alt="Supported Python versions">
+</a>
+</p>
+
+---
+
+**Source Code**: <a href="https://github.com/jose2kk/pyvenezuela" target="_blank">https://github.com/jose2kk/pyvenezuela</a>
+
+---
