@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: NEMO-stockroom
+Version: 1.1.7
+Summary: Stockroom plugin for NEMO
+Home-page: https://gitlab.com/nemo-community/upenn/nemo-stockroom-cart
+Author: David J. Jones
+Author-email: davijon@seas.upenn.edu
+Keywords: NEMO
+Requires-Dist: django
+Provides-Extra: nemo
+Requires-Dist: NEMO>=4.7.0; extra == "nemo"
+Provides-Extra: nemo-ce
+Requires-Dist: NEMO-CE>=1.7.0; extra == "nemo-ce"
+Provides-Extra: dev-tools
+Requires-Dist: pre-commit; extra == "dev-tools"
+Requires-Dist: djlint; extra == "dev-tools"
+Requires-Dist: black; extra == "dev-tools"
+
