@@ -1,0 +1,92 @@
+[
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "test",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "frontières borders",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "displayeurope",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "EU",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "EUSecurity",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "ForeignPolicy",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "Immigration",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "Refugees",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temsimages",
+    "fields": {
+      "name": "security",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temslicence",
+    "fields": {
+      "name": "Non commercial - No deviratives 4.0 International",
+      "short_desc": "Share — copy and redistribute the material in any medium or format",
+      "description": "Under the following terms:\r\nAttribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\r\nNonCommercial — You may not use the material for commercial purposes .\r\nNoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.\r\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\r\nNotices: You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation .\r\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.",
+      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  },
+  {
+    "model": "djangoldp_tems.temslicence",
+    "fields": {
+      "name": "CC B : Attribution required, but the content can be used freely",
+      "short_desc": null,
+      "description": "",
+      "url": null
+    }
+  },
+  {
+    "model": "djangoldp_tems.temslicence",
+    "fields": {
+      "name": "Non-Exclusive License",
+      "short_desc": null,
+      "description": "",
+      "url": null
+    }
+  }
+]
