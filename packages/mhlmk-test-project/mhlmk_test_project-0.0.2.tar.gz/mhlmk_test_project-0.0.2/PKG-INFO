@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mhlmk_test_project
+Version: 0.0.2
+Summary: Test project only. Do not use.
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pre-commit<4.0,>=3.0.4; extra == "dev"
+
+# Test Project
+
+Test python project
