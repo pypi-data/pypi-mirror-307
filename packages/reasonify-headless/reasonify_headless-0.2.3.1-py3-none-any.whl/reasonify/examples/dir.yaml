@@ -1,0 +1,11 @@
+- What's the top-level module APIs of package `promplate`?
+
+-
+  - source: |
+        await pip_install("promplate")  # we need to install it before using it because it is a 3-party package
+
+  - source: |
+        import promplate
+        dir(promplate)
+-
+  - source: end_of_turn()
