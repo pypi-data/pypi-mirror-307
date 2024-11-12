@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-imager
+Version: 1.0.14
+Summary: Python image program
+Author: T-Sana
+Author-email: tsana.code@gmail.com
+Keywords: python,image
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: screeninfo
+
+A package to create images, edit them and more.
