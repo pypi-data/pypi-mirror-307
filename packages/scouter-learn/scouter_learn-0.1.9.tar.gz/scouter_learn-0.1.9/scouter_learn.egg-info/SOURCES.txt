@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+scouter/Scouter.py
+scouter/ScouterData.py
+scouter/__init__.py
+scouter/_datasets.py
+scouter/_model.py
+scouter/_utils.py
+scouter/_version.py
+scouter_learn.egg-info/PKG-INFO
+scouter_learn.egg-info/SOURCES.txt
+scouter_learn.egg-info/dependency_links.txt
+scouter_learn.egg-info/requires.txt
+scouter_learn.egg-info/top_level.txt
