@@ -1,0 +1,10 @@
+hvac
+backoff
+importlib-metadata==8.4.0
+mysql-connector-python==8.0.21
+paramiko
+ciso8601
+botocore
+boto3
+prefect[aws,google,snowflake,viz]==1.4.1
+edx-opaque-keys
