@@ -1,0 +1,115 @@
+*
+!*/
+
+# ---------- Add items which should *NOT* be ignored below this line -----------
+
+# Common
+!LICENSE*
+!NOTICE*
+!README*
+
+# Configs
+!.editorconfig
+!.gitignore
+!.markdownlint.y*ml
+!.pre-commit-config.y*ml
+!.prettier*
+!.shellcheckrc
+!config.y*ml
+
+# agebox
+!*.agebox
+!.ageboxreg.y*ml
+
+# JavaScript/TypeScript
+!package.json
+!tsconfig.json
+
+# Python
+!.python-version
+!.ruff.toml
+!pyproject.toml
+!tox.ini
+!uv.lock
+
+# Directories
+!/requirements*
+!/scripts/*.sh
+!/src/**/*.py
+!/tests/**/*.py
+!/tests/data/*.json
+
+# GitHub Workflows
+!/.github/**/*.y*ml
+
+# --------- Add items which should *ALWAYS* be ignored below this line ---------
+**/docker/**/data/
+*.box
+*.cert
+*.crt
+*.dll
+*.dylib
+*.env*
+*.exe~
+*.icloud
+*.key
+*.log
+*.out
+*.pdb
+*.pem
+*.ppk
+*.py[cod]
+*.rs.bk
+*.so
+*.test
+*.tsbuildinfo
+*_ed25519
+*_rsa
+.Apple*
+.DS_Store
+.DocumentRevisions-V100
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+._*
+.apdisk
+.com.apple.*
+.cursorrules
+.fseventsd
+.history
+.htaccess
+.local
+.next
+.npm
+.nuxt
+.nvm
+.venv
+.vscode-test
+.yarn
+1password-credentials.json
+Cargo.lock
+Network Trash Folder
+[Tt]emporary*
+[Vv]irtual[Ee]nv
+__pycache__
+debug/
+env/
+envs/
+go.work
+go.work.sum
+jspm_packages
+key
+key.txt
+log?/
+node_modules
+secring.*
+target/
+venv
+web_modules
+
+# -------------- Add other overrides as necessary below this line --------------
+
+# Examples
+!*example*
