@@ -1,0 +1,3 @@
+[console_scripts]
+dbt_column_lineage_direct = dbt_column_lineage_extractor.cli_direct:main
+dbt_column_lineage_recursive = dbt_column_lineage_extractor.cli_recursive:main
