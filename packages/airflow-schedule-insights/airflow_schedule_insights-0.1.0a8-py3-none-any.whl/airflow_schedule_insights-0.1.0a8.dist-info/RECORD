@@ -1,0 +1,11 @@
+airflow_schedule_insights/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_schedule_insights/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_schedule_insights/plugins/helper/event_driven_dags_query.sql,sha256=yBn_TMy7G5s1wzlXAxegfGf87wG22xJQyTWkcoaw0a8,11891
+airflow_schedule_insights/plugins/schedule_insights.py,sha256=LV45uOdFX63JBYO6QkGrtdwE4kVwe-YO-lt8J9WarR4,57055
+airflow_schedule_insights/plugins/templates/schedule_insights.html,sha256=5NjmQ1pe_AwD7OEaDS_BBVJyfg8YO0wBocyAh_1zP9w,30736
+airflow_schedule_insights-0.1.0a8.dist-info/LICENSE,sha256=imzvQHEg453p_1i08jEvdsiKh2FhoPBYKFME575xzEM,1069
+airflow_schedule_insights-0.1.0a8.dist-info/METADATA,sha256=lL7soDlWtYEFOuDauRn68HpXymFQIlMeOzemPdk3BIA,3038
+airflow_schedule_insights-0.1.0a8.dist-info/NOTICE,sha256=8Pe7c4W9pHNSlHUDK1P0l0l0mqNFCywtBQYirw6PPEw,155
+airflow_schedule_insights-0.1.0a8.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+airflow_schedule_insights-0.1.0a8.dist-info/entry_points.txt,sha256=f3FI9Fw9w47oWbCS3DXZsjhUOS_w5Ia-aF2o6Ucw2ks,119
+airflow_schedule_insights-0.1.0a8.dist-info/RECORD,,

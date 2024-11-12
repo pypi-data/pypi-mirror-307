@@ -1,0 +1,3 @@
+[airflow.plugins]
+schedule-insights-plugin=airflow_schedule_insights.plugins.schedule_insights:ScheduleInsightsPlugin
+
