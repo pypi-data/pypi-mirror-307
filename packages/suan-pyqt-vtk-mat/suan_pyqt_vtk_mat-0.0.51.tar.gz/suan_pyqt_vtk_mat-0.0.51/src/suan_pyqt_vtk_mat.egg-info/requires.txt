@@ -1,0 +1,6 @@
+numpy>=1.20.0
+toml>=0.8.2
+matplotlib
+PySide6
+vtk
+requests
