@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[219],{1510:function(o,e){o.exports={attributes:{},body:"We are not perfect so we love to get feedback.\\\nDo you feel anything is missing in our documentation or do you simply want some help? \\\nFeel free to contact our favorite developer advocates David or Sara via [Discord](http://hf.co/join/discord).\n"}}}]);
