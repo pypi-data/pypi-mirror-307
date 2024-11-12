@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: snvannotators
+Version: 0.0.1
+Summary: SNV annotation
+Home-page: https://github.com/markgene/snvannotators
+Author: Mark J Chen
+Author-email: mjchen.gene@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyoncokb
+Requires-Dist: snvmodels
+Requires-Dist: transcriptfeatures
+Requires-Dist: myvariant
+Requires-Dist: hgvs
+
+# `snvannotators` - SNV annotation
+
+The package annotates SNVs.
