@@ -1,0 +1,3 @@
+[console_scripts]
+superagentx-cli=superagentx_cli.main:app
+
