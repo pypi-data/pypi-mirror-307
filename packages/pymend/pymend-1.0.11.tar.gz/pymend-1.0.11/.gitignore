@@ -1,0 +1,18 @@
+# Compiled files
+__pycache__/
+*.py[cod]
+build
+
+# Packaging related files
+*.egg
+*.egg-info
+.vscode/
+/dist
+
+*code-workspace
+.coverage
+coverage.json
+/venv
+
+# Sphinx documentation
+docs/_build/
