@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jlkutils
+Version: 0.27
+Summary: Allgemeine Library für allen moglichen Praktischen Stuff
+Home-page: https://github.com/jkramer5103/jlkutils
+Author: Jaron Kramer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: cryptography
+Requires-Dist: opencv-python
+Requires-Dist: openai
