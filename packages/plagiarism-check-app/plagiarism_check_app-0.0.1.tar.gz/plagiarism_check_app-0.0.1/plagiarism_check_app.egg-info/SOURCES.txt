@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+app/__init__.py
+app/consts.py
+app/database_manager.py
+app/main.py
+app/utils.py
+plagiarism_check_app.egg-info/PKG-INFO
+plagiarism_check_app.egg-info/SOURCES.txt
+plagiarism_check_app.egg-info/dependency_links.txt
+plagiarism_check_app.egg-info/entry_points.txt
+plagiarism_check_app.egg-info/requires.txt
+plagiarism_check_app.egg-info/top_level.txt
+tests/__init__.py
+tests/test_split_text.py
