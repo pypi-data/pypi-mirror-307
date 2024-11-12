@@ -1,0 +1,2 @@
+[console_scripts]
+myplot = my_interactive_plots.cli:cli
