@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+syndat/__init__.py
+syndat/domain.py
+syndat/postprocessing.py
+syndat/scores.py
+syndat/visualization.py
+syndat.egg-info/PKG-INFO
+syndat.egg-info/SOURCES.txt
+syndat.egg-info/dependency_links.txt
+syndat.egg-info/requires.txt
+syndat.egg-info/top_level.txt
+tests/test_auc.py
+tests/test_correlation.py
+tests/test_jsd.py
+tests/test_visualization.py
