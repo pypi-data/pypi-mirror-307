@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: EduDesignGen
+Version: 0.1.1
+Summary: A library to process lesson content with customizable LLM functions
+Requires-Python: >=3.6
+Requires-Dist: requests
+
