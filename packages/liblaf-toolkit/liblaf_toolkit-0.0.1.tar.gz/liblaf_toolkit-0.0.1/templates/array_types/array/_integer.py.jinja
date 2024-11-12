@@ -1,0 +1,7 @@
+from jaxtyping import Integer
+
+from qtk.array_types import ArrayLike
+
+{% for s in shapes -%}
+I{{ s.replace(" ", "") }}Like = Integer[ArrayLike, "{{ s }}"]
+{% endfor %}

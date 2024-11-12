@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+  release:
+    types:
+      - published
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+      - # TODO: `uv.lock` use a PyPI mirror, which is not available for CI
+        name: Remove uv.lock
+        run: rm --force --verbose uv.lock
+      - name: Install Dependencies
+        run: uv sync --all-extras
+      - name: Build
+        run: uv build
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  release:
+    name: Release
+    permissions:
+      id-token: write
+    needs:
+      - build
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+  pre-release:
+    name: Pre-Release
+    permissions:
+      contents: write
+    needs:
+      - build
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Create GitHub Release
+        uses: liblaf/actions/release@main
+        with:
+          clobber: true
+          files: dist/*
+          prerelease: true
+          tag: latest
