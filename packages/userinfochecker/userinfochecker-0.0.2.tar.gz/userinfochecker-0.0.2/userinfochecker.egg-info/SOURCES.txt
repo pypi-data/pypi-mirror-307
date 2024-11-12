@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+user_info_checker/__init__.py
+user_info_checker/ip_master.py
+user_info_checker/system_info_checker.py
+userinfochecker.egg-info/PKG-INFO
+userinfochecker.egg-info/SOURCES.txt
+userinfochecker.egg-info/dependency_links.txt
+userinfochecker.egg-info/not-zip-safe
+userinfochecker.egg-info/requires.txt
+userinfochecker.egg-info/top_level.txt

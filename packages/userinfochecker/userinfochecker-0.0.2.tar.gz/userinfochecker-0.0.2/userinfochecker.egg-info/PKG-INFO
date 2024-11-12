@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: userinfochecker
+Version: 0.0.2
+Summary: 'User Info Checker - A library for get user information.'
+Home-page: https://github.com/saneksking
+Author: A.A. Suvorov
+Author-email: saneksking@gmail.com
+License: BSD 3-Clause License
+Project-URL: Documentation, https://github.com/saneksking/userinfochecker/blob/master/README.md
+Project-URL: Release notes, https://github.com/saneksking/userinfochecker/releases
+Keywords: saneksking,userinfochecker,checkuserinfo
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.32.2
+Requires-Dist: outputdecorator==0.0.1
+
+# User Info Checker <sup>v 0.0.2</sup>
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/saneksking/userinfochecker)](https://github.com/saneksking/userinfochecker/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/userinfochecker?label=pypi%20downloads)](https://pypi.org/project/userinfochecker/)
+![GitHub top language](https://img.shields.io/github/languages/top/saneksking/userinfochecker)
+[![PyPI](https://img.shields.io/pypi/v/userinfochecker)](https://pypi.org/project/userinfochecker)
+[![GitHub](https://img.shields.io/github/license/saneksking/userinfochecker)](https://github.com/saneksking/userinfochecker/blob/master/LICENSE)
+[![PyPI - Format](https://img.shields.io/pypi/format/userinfochecker)](https://pypi.org/project/userinfochecker)
+***
+### User Info Checker - A library for get user information.
+***
+
+## Help:
+
+---
+
+`pip install userinfochecker`
+
+```python
+from user_info_checker import UserInfoChecker
+from user_info_checker import SystemInfoChecker
+
+
+user_info = UserInfoChecker()
+system_info = SystemInfoChecker()
+print(user_info.get_ip_address()) # Return IP address
+print(user_info.get_hostname()) # Return hostname
+print(user_info.get_city()) # Return city
+print(user_info.get_region()) # Return region
+print(user_info.get_country()) # Return country
+print(user_info.get_loc()) # Return location
+print(user_info.get_org()) # Return organisation
+print(user_info.get_postal()) # Return postal
+print(user_info.get_timezone()) # Return timezone
+print(system_info.get_username()) # Return username
+
+for k, v in user_info.data.items():
+    print(f'{k}, {v}') # Return all info
+```
+***
+
+## Disclaimer of liability:
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---
+
+## Copyright:
+    --------------------------------------------------------
+    Licensed under the terms of the BSD 3-Clause License
+    (see LICENSE for details).
+    Copyright © 2024, A.A. Suvorov
+    All rights reserved.
+    ---------------------------------------------------------------------
