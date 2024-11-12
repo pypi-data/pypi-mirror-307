@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: doctor-trans
+Version: 0.1
+Summary: This package translate whole dataframe in any language without any limits.
+Home-page: 
+Author: Nirmal Patel
+Author-email: nirmalpatel1705@gmail.com
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: html
+
