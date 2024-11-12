@@ -1,0 +1,50 @@
+Metadata-Version: 2.3
+Name: ezdxf-shapely
+Version: 1.0
+Summary: Convert DXF entities created by ezdxf to shapely geomerty objects.
+Project-URL: Homepage, https://github.com/axtimhaus/ezdxf-shapely
+Project-URL: Repository, https://github.com/axtimhaus/ezdxf-shapely
+Project-URL: ForkedFrom, https://github.com/aegis1980/cad-to-shapely
+Author-email: Max Weiner <max.weiner@posteo.de>, Jon Robinson <jonrobinson1980@gmail.com>
+Maintainer-email: Max Weiner <max.weiner@posteo.de>
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Requires-Dist: ezdxf~=1.3
+Requires-Dist: geomdl~=5.3
+Requires-Dist: numpy~=2.0
+Requires-Dist: shapely<3.0,>=2.0.6
+Description-Content-Type: text/markdown
+
+# EZDXF to Shapely Converter
+
+Convert geometric entities loaded vom DXF files using [`ezdxf`](https://ezdxf.readthedocs.io/) to [`shapely`](https://pypi.org/project/Shapely/) geometry objects.
+
+First use `ezdxf` to load the DXF entities from file and filter them using `query` or similar.
+
+```python
+import ezdxf
+
+dxf_doc = ezdxf.readfile("your_file.dxf")
+entities = dxf_doc.modelspace().query("*[layer==0]")
+```
+
+Then use `ezdxf-shapely` to convert the entities and refine the results.
+
+```python
+import ezdxf_shapely
+
+geoms = ezdxf_shapely.convert_all(entities)
+polygons = ezdxf_shapely.polygonize(geoms) # optionally merge lines to polygons
+```
+
+## License
+
+Licensed under the terms of the [MIT License](LICENSE)
+
+## Acknowledgements
+
+This is a fork of [`cad-to-shapely`](https://github.com/aegis1980/cad-to-shapely) with some simplifications and the provision of more control over the import process to the user.
