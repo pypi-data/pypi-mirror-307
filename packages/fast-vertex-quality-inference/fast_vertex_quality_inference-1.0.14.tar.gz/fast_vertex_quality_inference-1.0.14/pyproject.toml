@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "fast_vertex_quality_inference"
+version = "1.0.14"
+description = "Inference code for fast generation of vertex quality variables"
+authors = ["Alex Marshall <alex.marshall@bristol.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://gitlab.cern.ch/amarshal/fast_vertexing_variables/-/tree/master/inference"
+keywords = ["inference", "vertex-quality", "fast-generation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "*"
+rich = "*"
+pandas = "*"
+awkward-pandas = "*"
+uproot = "*"
+termcolor = "*"
+matplotlib = "*"
+scikit-learn = "*"
+vector = "0.8.0"
+dill = "*"
+onnxruntime = "*"
+typer = "*"
+
+[tool.poetry.scripts]
+fvqi = "fast_vertex_quality_inference.cli:app"
