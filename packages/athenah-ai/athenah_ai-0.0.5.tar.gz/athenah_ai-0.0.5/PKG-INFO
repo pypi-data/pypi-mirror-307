@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: athenah-ai
+Version: 0.0.5
+Summary: 
+Author: Denis Angell
+Author-email: dangell@transia.co
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: faiss-cpu (>=1.8.0.post1,<2.0.0)
+Requires-Dist: google-cloud-storage (>=2.18.0,<3.0.0)
+Requires-Dist: langchain (>=0.2.6,<0.3.0)
+Requires-Dist: langchain-experimental (>=0.0.62,<0.0.63)
+Requires-Dist: langchain-openai (>=0.1.14,<0.2.0)
+Requires-Dist: langchain-text-splitters (>=0.2.2,<0.3.0)
+Requires-Dist: langchainhub (>=0.1.20,<0.2.0)
+Requires-Dist: openai (>=1.35.10,<2.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Requires-Dist: unstructured[local-inference] (>=0.6.2,<0.7.0)
