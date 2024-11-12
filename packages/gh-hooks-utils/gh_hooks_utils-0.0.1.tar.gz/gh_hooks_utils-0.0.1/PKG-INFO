@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: gh-hooks-utils
+Version: 0.0.1
+Summary: Github Webhooks models and dependencies
+Project-URL: Homepage, https://github.com/ceb10n/github-webhooks
+Project-URL: Documentation, https://ceb10n.github.io/github-webhooks/
+Project-URL: Repository, https://github.com/ceb10n/github-webhooks
+Author-email: Rafael de Oliveira Marques <rafaelomarques@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: pydantic-settings>=2.0.2
+Requires-Dist: pydantic>=2.0.1
+Description-Content-Type: text/markdown
+
+# gh-hooks-utils
+Github Webhooks models and dependencies
