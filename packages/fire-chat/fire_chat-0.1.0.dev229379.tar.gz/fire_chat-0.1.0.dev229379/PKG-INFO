@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: fire-chat
+Version: 0.1.0.dev229379
+Summary: A CLI tool to chat with LLM models including GPT and Claude.
+Project-URL: Homepage, https://github.com/TiansuYu/fire-chat
+Project-URL: Issues, https://github.com/TiansuYu/fire-chat/issues
+Project-URL: Repository, https://github.com/TiansuYu/fire-chat
+Author-email: Tiansu Yu <tiansu.yu@icloud.com>, Marco Lardera <larderamarco@hotmail.com>, Tadeas Fort <business@tadeasfort.com>
+Maintainer-email: Tiansu Yu <tiansu.yu@icloud.com>, Tadeas Fort <business@tadeasfort.com>
+Keywords: LLM,anthropic,chatGPT,claude,cli,openai
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Requires-Dist: fsspec>=2024.6.1
+Requires-Dist: importlib-metadata>=8.2.0
+Requires-Dist: litellm>=1.44.5
+Requires-Dist: prompt-toolkit>=3.0.47
+Requires-Dist: pydantic-collections>=0.6.0
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: rich>=13.7.1
+Requires-Dist: typer-config>=1.4.0
+Requires-Dist: typer>=0.12.5
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: xdg-base-dirs>=6.0.1
+Description-Content-Type: text/markdown
+
+# fire-chat
+
+## Overview
+
+This project provides a command-line interface (CLI) for interacting with various large language models (LLMs) using the
+LiteLLM wrapper. It supports multiple providers, including OpenAI, Anthropic, Azure, and Gemini. The CLI allows users to
+chat with these models, manage budgets, and handle API keys efficiently.
+
+## Configuration
+
+The configuration is managed through a `$HOME/.config/fire-chat/config.yaml` file. The first time you run the CLI run.
+You can copy paste the starting config file [config.yaml](examples/config.yaml) to the location, adds your API key,
+and quick start the application `fire-chat`.
+
+## Installation and Usage
+
+1. **Install the CLI**:
+
+    ```shell
+    pip install --user fire-chat # requires python 3.10+
+    ```
+
+2. **Configure the CLI**:
+
+   Edit the `$HOME/.config/fire-chat/config.yaml` file to set your preferred provider, model, and other settings.
+
+3. **Run the CLI**:
+
+    ```shell
+    fire-chat
+    ```
+
+   or run with arguments (overriding config yaml file)
+
+    ```shell
+    fire-chat --model=gpt-4o
+    ```
+
+   for full list of configs, see [main.py](src/fire_chat/main.py).
+
+4. **Exit**:
+   To exit the CLI, `Ctrl+C`.
