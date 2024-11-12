@@ -1,0 +1,13 @@
+{
+  "TUH_id": {
+    "Description": "subject ID in the original TUH dataset"
+  },
+  "split": {
+    "Description": "Data split in the original TUH dataset",
+    "Levels":{
+      "train": "training slit",
+      "dev": "development split",
+      "evaluation": "hold-out evaluation split"
+    }
+  }
+}
