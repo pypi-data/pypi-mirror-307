@@ -1,0 +1,2 @@
+[console_scripts]
+wordgradient = wordgradient.command_line:main
