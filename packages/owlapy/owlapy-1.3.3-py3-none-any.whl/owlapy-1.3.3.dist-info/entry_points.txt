@@ -1,0 +1,2 @@
+[console_scripts]
+owlapy = owlapy.scripts.run:main
