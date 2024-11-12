@@ -1,0 +1,15 @@
+README.md
+setup.py
+chat_shell/__init__.py
+chat_shell/chat_session.py
+chat_shell/completer.py
+chat_shell/llm_model.py
+chat_shell/main.py
+chat_shell/shell_prompt.py
+chat_shell/smart_shell.py
+in_chat_shell.egg-info/PKG-INFO
+in_chat_shell.egg-info/SOURCES.txt
+in_chat_shell.egg-info/dependency_links.txt
+in_chat_shell.egg-info/entry_points.txt
+in_chat_shell.egg-info/requires.txt
+in_chat_shell.egg-info/top_level.txt
