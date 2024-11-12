@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "satellitevu"
+version = "4.9.0"
+description = "Client SDK for SatelliteVu's platform APIs"
+authors = ["Christian Wygoda <christian.wygoda@satellitevu.com>", "Zhelini Sivanesan <zhelini.sivanesan@satellitevu.com>", "James Harrison <james.harrison@satellitevu.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+appdirs = "^1.4.4"
+
+[tool.poetry.group.dev.dependencies]
+cryptography = "^43.0.3"
+josepy = "^1.14.0"
+mocket = "^3.11.1"
+nox = "^2022.8.7"
+nox-poetry = "^1.0.1"
+pyfakefs = "^4.7.0"
+pytest-cov = "^4.0.0"
+python-jose="^3.3.0"
+ruff = "^0.5.2"
+
+[tool.poetry.group.requests]
+optional = true
+
+[tool.poetry.group.requests.dependencies]
+requests = "^2.28.1"
+
+[tool.poetry.group.notebooks]
+optional = true
+
+[tool.poetry.group.notebooks.dependencies]
+folium = "^0.13.0"
+geopandas = "^0.12.1"
+pandas = "^1.5.1"
+shapely = "^1.8.5.post1"
+
+[tool.poetry.group.httpx]
+optional = true
+
+[tool.poetry.group.httpx.dependencies]
+httpx = "^0.23.0"
+
+[tool.commitizen]
+tag_format = "v$version"
+version_scheme = "semver2"
+version_provider = "poetry"
+update_changelog_on_bump = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
