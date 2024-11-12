@@ -1,0 +1,15 @@
+pandas
+pydantic
+platformdirs
+
+[alpaca]
+alpaca-py
+
+[robinhood]
+robin-stocks
+
+[schwab]
+schwab-py
+
+[webull]
+webull
