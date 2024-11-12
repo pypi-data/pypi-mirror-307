@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: minestudio
+Version: 1.0.0
+Summary: A simple and efficient Minecraft development kit.
+Author-email: CraftJarvis <craftjarvis@outlook.com>, caishaofei <caishaofei@stu.pku.edu.cn>
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: av
+Requires-Dist: opencv-python
+Requires-Dist: setuptools
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: ipython
+Requires-Dist: typing
+Requires-Dist: gym
+Requires-Dist: gym3
+Requires-Dist: gymnasium
+Requires-Dist: hydra-colorlog
+Requires-Dist: hydra-core==1.3.1
+Requires-Dist: lmdb
+Requires-Dist: wandb
+Requires-Dist: torch
+Requires-Dist: lightning
+Requires-Dist: scipy
+Requires-Dist: rich
+Requires-Dist: coloredlogs
+Requires-Dist: daemoniker
+Requires-Dist: lxml
+Requires-Dist: cuda-python
+Requires-Dist: diskcache
+Requires-Dist: albumentations
+Requires-Dist: einops
+Requires-Dist: timm
+Requires-Dist: transformers
+Requires-Dist: Pyro4
+Requires-Dist: xmltodict
+
