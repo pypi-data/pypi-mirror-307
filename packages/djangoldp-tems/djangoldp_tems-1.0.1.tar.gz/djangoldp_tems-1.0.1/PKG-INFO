@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: djangoldp_tems
+Version: 1.0.1
+Summary: djangoldp package for TEMS
+Home-page: https://git.startinblox.com/djangoldp-packages/djangoldp-tems
+Author: Startin'blox
+Author-email: jbaptiste@startinblox.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: include_package_data
+
+# DjangoLDP TEMS
+
+Contains Shared, Trial 6 and Trial 8 models.
