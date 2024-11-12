@@ -1,0 +1,2 @@
+[console_scripts]
+ratisbona_gimp_palette_parser = ratisbona_utils.colors.__main__:main
