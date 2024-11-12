@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+pacoFunctions/__init__.py
+pacoFunctions/config.py
+pacoFunctions/module.py
+pacoFunctions/setup.py
+pacofunctions.egg-info/PKG-INFO
+pacofunctions.egg-info/SOURCES.txt
+pacofunctions.egg-info/dependency_links.txt
+pacofunctions.egg-info/requires.txt
+pacofunctions.egg-info/top_level.txt
