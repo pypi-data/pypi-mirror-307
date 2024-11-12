@@ -1,0 +1,2 @@
+[console_scripts]
+pysh = tc_pysh.__main__:main
