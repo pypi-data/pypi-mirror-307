@@ -1,0 +1,14 @@
+numpy<=2.1
+scikit-learn
+tqdm
+pandas
+
+[build]
+build
+twine
+
+[dev]
+pylint
+pytest
+black
+isort
