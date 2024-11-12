@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: suan_pyqt_vtk_mat
+Version: 0.0.51
+Summary: This is a tool to vtk and matploblib.
+Author-email: Zhou Hanjie <2625553453@qq.com>
+Project-URL: Homepage, https://github.com/sijintech/stk.git
+Project-URL: Issues, https://github.com/sijintech/stk/issues/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.20.0
+Requires-Dist: toml >=0.8.2
+Requires-Dist: matplotlib
+Requires-Dist: PySide6
+Requires-Dist: vtk
+Requires-Dist: requests
+
+## 简介
