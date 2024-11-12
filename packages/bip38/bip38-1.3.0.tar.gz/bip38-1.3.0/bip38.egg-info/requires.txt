@@ -1,0 +1,14 @@
+pyaes<2,>=1.6.1
+scrypt<1,>=0.8.20
+six<2,>=1.16.0
+ecdsa<1,>=0.18.0
+
+[docs]
+sphinx<9,>=8.0.2
+furo==2024.8.6
+
+[tests]
+coveralls<5,>=4.0.1
+pytest<9,>=8.3.2
+pyyaml<7,>=6.0.2
+tox<5,>=4.23.2
