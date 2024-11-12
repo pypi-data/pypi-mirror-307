@@ -1,0 +1,67 @@
+[project]
+name = "StitchM"
+version = "1.7.0"
+description = "A package for stitching mosaics from Cockpit with (or without) ROIs"
+authors = [
+    { name = "Thomas Fish", email = "thomas.fish@diamond.ac.uk" },
+]
+dependencies = [
+    "tifffile>=2020.9.30",
+    "mrcfile>=1.1.2",
+    "numpy>1.24.4",
+    "omexml-dls>=1.1.0",
+    "pywin32;platform_system=='Windows'",
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">= 3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/DiamondLightSource/StitchM"
+Repository = "https://github.com/DiamondLightSource/StitchM.git"
+Issues = "https://github.com/DiamondLightSource/StitchM/issues"
+
+[project.scripts]
+StitchM = "stitch_m.scripts.commandline:main"
+stitchm = "stitch_m.scripts.commandline:main"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-cov>=3.0.0",
+    "ruff>=0.7.3",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+include = [
+    "/src/stitch_m/config.cfg",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/stitch_m",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --import-mode=importlib --cov=src/stitch_m --cov-report=term --cov-report=xml"
+testpaths = [
+    "src/tests",
+]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90

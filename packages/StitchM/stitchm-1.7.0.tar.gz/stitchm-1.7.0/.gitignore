@@ -1,0 +1,15 @@
+/.project
+/.pydevproject
+**/__pycache__
+*.pyc
+/logs
+*/logs
+/workspace.xml
+.idea
+*.egg-info
+.coverage
+htmlcov
+/build
+/dist
+*.bat
+venv/
