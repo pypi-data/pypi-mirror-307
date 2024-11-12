@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mitmproxy-escher
+Version: 5.0.0
+Summary: Sign mitmproxy requests with Escher
+Home-page: https://github.com/knagy/mitmproxy-escher
+Author: Nagy Krisztián
+Author-email: knagy@deadlime.hu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: Proxy Servers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: escherauth<2.0,>=1.0.3
+Requires-Dist: mitmproxy<12.0.0,>=9.0.0
+
+# mitmproxy-escher
+
+Sign [mitmproxy](https://mitmproxy.org/) requests with [Escher](https://escherauth.io/).
+
+![Screenshot](screenshot.png?raw=true)
+
+## Installation
+
+```
+pip3 install mitmproxy-escher
+```
+
+Note: this module does not work with mitmproxy's pre-built self-contained binaries.
+
+## Configuration
+
+Required parameters are apiKey, apiSecret and credentialScope. Section names can contain wildcard characters.
+
+```
+[*.example.org]
+apiKey=KEY
+apiSecret=SECRET
+credentialScope=credential/scope
+hashAlgo=SHA256
+algoPrefix=EMS
+vendorKey=EMS
+authHeaderName=X-EMS-Auth
+dateHeaderName=X-EMS-Date
+```
+
+## Usage
+
+Start `mitmproxy` with the addon:
+
+```
+mitmproxy -s "$(python3 -m mitmproxy_escher)" --set escher_config=/path/to/config.ini
+```
+
+Make requests through the proxy:
+
+```
+curl -k -x localhost:8080 https://httpbin.org/headers
+```
