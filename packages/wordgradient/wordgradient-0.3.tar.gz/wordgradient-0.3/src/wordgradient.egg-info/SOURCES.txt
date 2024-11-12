@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/wordgradient/__init__.py
+src/wordgradient/__main__.py
+src/wordgradient/_csv_reader.py
+src/wordgradient/command_line.py
+src/wordgradient.egg-info/PKG-INFO
+src/wordgradient.egg-info/SOURCES.txt
+src/wordgradient.egg-info/dependency_links.txt
+src/wordgradient.egg-info/entry_points.txt
+src/wordgradient.egg-info/requires.txt
+src/wordgradient.egg-info/top_level.txt
+src/wordgradient.egg-info/zip-safe
+src/wordgradient/wordlist/__init__.py
+src/wordgradient/wordlist/unigram_freq.csv
