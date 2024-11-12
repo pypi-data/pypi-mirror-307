@@ -1,0 +1,17 @@
+ldapdb/__init__.py,sha256=SSZy1yRqtQa-MryNc9rOxPrHCjPPzqeCMqrd44MTXZc,764
+ldapdb/router.py,sha256=inL6x1pN_dH2kYDWMSBkCyiRh_X5VoLVwsIxSNgkR20,1695
+ldapdb/tests.py,sha256=0E7bIk1TlSXYSqMCtOENprZAvt2iU5XgSWouMJPhC0g,12127
+ldapdb/version.py,sha256=9epXA5FOODc1ZQXzM5EHJzHULZeNsue6ivkbdjcMxAE,407
+ldapdb/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldapdb/backends/ldap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldapdb/backends/ldap/base.py,sha256=DqMWJrTURM86W0iZxtnPHZKBwA1eZYLpDgbB1RmRj-Y,11598
+ldapdb/backends/ldap/compiler.py,sha256=tGRVil8L4ju8xGxAfcO0LOacyYhGUAkZ8GYWdbdmX-8,10792
+ldapdb/models/__init__.py,sha256=Ac_uCoxqLxTEQES00BF-2IBb6wFSu_lrH_nVx4pdUVw,177
+ldapdb/models/base.py,sha256=Nj7WP1wAuqva4JX41E5UkGXIop4sQcf5SaK4uuhwtp0,5564
+ldapdb/models/fields.py,sha256=1gf6i1Bbb2vc0Kjp8a6TzGUsOmfdaxlQrjAxA5wWDHw,12358
+suap_django_ldapdb-1.5.3.dev1.dist-info/AUTHORS,sha256=GReupoCpXqfiDsHXpKYkfSW7d-j-TK0Lgvp_EP9Ojzo,2598
+suap_django_ldapdb-1.5.3.dev1.dist-info/LICENSE,sha256=uAyPzMfWeh36DjGUfEybmKg_jGn1UC8O2nDRKREjtHQ,1332
+suap_django_ldapdb-1.5.3.dev1.dist-info/METADATA,sha256=ygRlsDR1l5pjRz4ZjlykFEzt9PnDbrH6F6HDZBkG2Ls,9536
+suap_django_ldapdb-1.5.3.dev1.dist-info/WHEEL,sha256=OpXWERl2xLPRHTvd2ZXo_iluPEQd8uSbYkJ53NAER_Y,109
+suap_django_ldapdb-1.5.3.dev1.dist-info/top_level.txt,sha256=IoCPWmYEw7LjWwV9tXHato0OeFx4VYZZFKxMNneFj90,7
+suap_django_ldapdb-1.5.3.dev1.dist-info/RECORD,,
