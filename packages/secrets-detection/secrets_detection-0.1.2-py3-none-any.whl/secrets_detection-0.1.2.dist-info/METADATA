@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: secrets-detection
+Version: 0.1.2
+Summary: A package for use in detecting secrets leaks in the GitLab pipeline.
+Home-page: https://github.com/Boyinf/secrets-detection/
+Author: boyinf
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+The secrets detection tool was developed with the aim of assisting in the analysis of secrets leaking through the pipeline. Created to assist in leak detection, the tool stands out for its simplicity and efficiency through regex and analysis of the entire repository, representing the result intuitively through JSON reports.
