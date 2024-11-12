@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/pyssa3021x_tspspi.egg-info/PKG-INFO
+src/pyssa3021x_tspspi.egg-info/SOURCES.txt
+src/pyssa3021x_tspspi.egg-info/dependency_links.txt
+src/pyssa3021x_tspspi.egg-info/requires.txt
+src/pyssa3021x_tspspi.egg-info/top_level.txt
+src/ssa3021x/__init__.py
+src/ssa3021x/ssa3021x.py
