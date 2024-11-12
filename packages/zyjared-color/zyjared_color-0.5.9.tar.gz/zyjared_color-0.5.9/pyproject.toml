@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "zyjared-color"
+version = "0.5.9"
+description = "Personal font color utility library for Python"
+authors = [ "zyjared <zyjared@outlook.com>",]
+readme = "README.md"
+
+[tool.poetry.urls]
+homepage = "https://github.com/zyjared/zyjared-color"
+repository = "https://github.com/zyjared/zyjared-color"
+documentation = "https://github.com/zyjared/zyjared-color#readme"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
