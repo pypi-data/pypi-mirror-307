@@ -1,0 +1,4 @@
+system,version,queue,variant,kernel_type,jobid,nodes,taskspernode,threadspertask,gflop,runtime,successjedi,2024.01,all,strong.small,fine,23796,4,4,72,5876.825338,5369.896412,true
+jedi,2024.01,all,strong.small,fine,23797,8,4,72,5899.137332,2677.992582,true
+jedi,2024.01,all,strong.small,fine,23798,16,4,72,4850.51061,1634.309292,true
+jedi,2024.01,all,strong.small,fine,23799,32,4,72,3903.799949,1016.128659,true

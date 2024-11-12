@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "230052",
+            "job": "1188468",
+            "commit": "66d40bbf383957f4b34034baaec746ffe981cd71",
+            "username": "sen1",
+            "project": "/p/project1/jureap26",
+            "budget": "jureap26",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-10-29T10:42:40+01:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "strong.small",
+        "timestamp": "2024-10-29T10:42:40+01:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "1634.309292",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "23798",
+            "queue": "all",
+            "metrics": {
+                "kernel_type": "fine",
+                "gflop": "4850.51061"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "1016.128659",
+            "parameter": {
+                "nodes": "32",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "23799",
+            "queue": "all",
+            "metrics": {
+                "kernel_type": "fine",
+                "gflop": "3903.799949"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "5369.896412",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "23796",
+            "queue": "all",
+            "metrics": {
+                "kernel_type": "fine",
+                "gflop": "5876.825338"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "2677.992582",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "23797",
+            "queue": "all",
+            "metrics": {
+                "kernel_type": "fine",
+                "gflop": "5899.137332"
+            }
+        }
+    ]
+}
