@@ -1,0 +1,15 @@
+pyyaml
+yamlpath
+requests
+GitPython
+PyGithub
+jsonpath-ng
+
+[dev]
+setuptools
+wheel
+black
+
+[test]
+coverage
+pytest
