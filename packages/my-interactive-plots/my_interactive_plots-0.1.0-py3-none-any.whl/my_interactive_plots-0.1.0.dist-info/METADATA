@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: my_interactive_plots
+Version: 0.1.0
+Summary: A package for creating interactive plots.
+Home-page: https://github.com/sdr34/my_interactive_plots
+Author: Dmitry Gorschkov
+Author-email: dmgorschkov@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: plotly>=5.0.0
+Requires-Dist: click>=8.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: click; extra == "dev"
+
