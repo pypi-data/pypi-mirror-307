@@ -1,0 +1,19 @@
+[project]
+name = "FEAS"
+version = "0.0.2"
+authors = [
+  { name="Tahir Iqbal", email="tahiriqbal70@gmail.com" },
+]
+description = "Fire Evacuation Automation System"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: Microsoft :: Windows :: Windows 10"
+]
+license = { text = "MIT License" }
+
+[project.urls]
+Homepage = "https://github.com/tahiriqbal70/FEAS"
+Issues = "https://github.com/tahiriqbal70/FEAS/issues"
