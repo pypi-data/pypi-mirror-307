@@ -1,0 +1,11 @@
+aiosqlite~=0.20
+html2text~=2024.2
+lxml~=5.3
+litellm~=1.48
+numpy>=1.26.0,<3
+pillow~=10.4
+playwright>=1.47,<1.48
+python-dotenv~=1.0
+requests~=2.26
+beautifulsoup4~=4.12
+tf-playwright-stealth~=1.0
