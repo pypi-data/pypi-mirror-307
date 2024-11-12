@@ -1,0 +1,13 @@
+geopandas
+scikit-learn
+tbparse
+fsspec
+intake
+torch
+torchvision
+torchaudio
+tensorboard
+shap
+kaggle
+pytest
+hydrodatasource==0.0.8
