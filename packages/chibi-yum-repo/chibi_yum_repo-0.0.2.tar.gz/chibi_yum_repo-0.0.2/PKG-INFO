@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: chibi_yum_repo
+Version: 0.0.2
+Summary: libreria para processar archivos repo de yum.repos.d
+Home-page: https://github.com/dem4ply/chibi_yum_repo
+Author: dem4ply
+Author-email: dem4ply@gmail.com
+License: WTFPL
+Keywords: chibi_yum_repo
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Spanish
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Utilities
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: chibi>=0.14.0
+Requires-Dist: chibi_atlas>=1.1.0
+
+==============
+chibi_yum_repo
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/chibi_yum_repo.svg
+        :target: https://pypi.python.org/pypi/chibi_yum_repo
+
+.. image:: https://readthedocs.org/projects/chibi-yum-repo/badge/?version=latest
+        :target: https://chibi-yum-repo.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+libreria para processar archivos repo de yum.repos.d
+
+
+* Free software: WTFPL
+* Documentation: https://chibi-yum-repo.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+
+=======
+History
+=======
+
+0.0.1 (2024-11-08)
+------------------
+
+* First release on PyPI.
