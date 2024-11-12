@@ -1,0 +1,2 @@
+[console_scripts]
+cli_tool_template_generator = xiaoqiangclub.templates.template_generator.cli_tool_template_generator:generate_cli_tool_template
