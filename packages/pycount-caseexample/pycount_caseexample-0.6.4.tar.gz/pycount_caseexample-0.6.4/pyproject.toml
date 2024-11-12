@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "pycount_caseexample"
+version = "0.6.4"
+description = "Counts the number of words in a file"
+authors = ["nobody"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4"
+matplotlib = ">=3.9.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+jupyter = "^1.1.1"
+myst-nb = {version = "^1.1.2", python = "^3.9"}
+sphinx-autoapi = "^3.3.2"
+sphinx-rtd-theme = "^2.0.0"
+python-semantic-release = "^9.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release.branch.main]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_variable = ["src/pycount_caseexample/__init__.py:__version__"]
+changelog_file = "CHANGELOG.md"
+#branch = "main"
+build_command = "pip install poetry && poetry build"
+
+[tool.semantic_release.commit_author]
+env = "GIT_COMMIT_AUTHOR"
+default = "semantic-release <auto-build>"
+
+[tool.semantic_release.publish]
+upload_to_vcs_release= true
+dist_glob_patterns = ["dist/*"]
+
