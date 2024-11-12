@@ -1,0 +1,4 @@
+inorbit-edge[video]<2.0,>=1.17.0
+pydantic<3.0,>=2.6
+pytz>=2024.1
+PyYAML<7.0,>=6.0
