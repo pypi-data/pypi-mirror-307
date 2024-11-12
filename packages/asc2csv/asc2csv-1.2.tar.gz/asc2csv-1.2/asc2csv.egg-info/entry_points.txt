@@ -1,0 +1,2 @@
+[console_scripts]
+ascii2edf = ascii2edf.converter:process_asc_file
