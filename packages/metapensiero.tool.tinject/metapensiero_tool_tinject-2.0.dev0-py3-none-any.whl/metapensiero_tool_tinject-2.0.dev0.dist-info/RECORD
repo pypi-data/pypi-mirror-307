@@ -1,0 +1,16 @@
+metapensiero/tool/tinject/__init__.py,sha256=fX5fylA-yqBZUhBcf1Wo-aCbdkp939hZFgivgmkgrLU,285
+metapensiero/tool/tinject/__main__.py,sha256=oD45OI0juJY9Hr2A0C9t0lh6cMQlOwbAuDcQhMl1T64,5038
+metapensiero/tool/tinject/action.py,sha256=qZWctvFJrxWnwZ7u48pWBb7c4qj58LHXWm5PCUzrDjs,928
+metapensiero/tool/tinject/config.py,sha256=H-MneBluIKLF3S4Y5eQhoav8TNiDjuyuOJY8fs_xX9U,1396
+metapensiero/tool/tinject/state.py,sha256=k4Yeq3fLdyTyEJBFLY3E5A40kqxietjv52jl4uGhoHk,4549
+metapensiero/tool/tinject/steps/__init__.py,sha256=dumYyXvB_q0gj0jfZbz9C6dIAnZdEXv16DVy9jOn0Hs,2162
+metapensiero/tool/tinject/steps/changefile.py,sha256=PrpsZPkDOcDAt_bKqk5WZuPWZbzAzkCOJZsw1TbCw9w,4698
+metapensiero/tool/tinject/steps/createdir.py,sha256=-gLHyGfWKUhXjVQqzpyTm_9pvpUCR9vIJCXgxHEnvPw,849
+metapensiero/tool/tinject/steps/createfile.py,sha256=VhY3wrTs-oBYCnC7h2KbQkiilzmamb4CCOJVRY0vs3U,1637
+metapensiero/tool/tinject/steps/prompt.py,sha256=hvncS56fjOrC--njDC5SsdmP5vqpAhjfbMIyIM_-tms,5458
+metapensiero/tool/tinject/steps/pythonscript.py,sha256=C4F9QC8gLFuzPqUnHQyYiIu1O90KcozxCDrBbzoQVtk,986
+metapensiero/tool/tinject/steps/repeat.py,sha256=kh-DBK5sTC6KIfSGxvtUix7VzaWpBXskbGmEagxjH5E,1985
+metapensiero_tool_tinject-2.0.dev0.dist-info/METADATA,sha256=55L4zZ3XHVU82ToK-6FlmeLlhIQa1FkYwCvCYEh8X-g,23340
+metapensiero_tool_tinject-2.0.dev0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+metapensiero_tool_tinject-2.0.dev0.dist-info/entry_points.txt,sha256=bvMGB-rjMEp505w78fa46UQONF6SBVe918A-DaZXf1c,84
+metapensiero_tool_tinject-2.0.dev0.dist-info/RECORD,,
