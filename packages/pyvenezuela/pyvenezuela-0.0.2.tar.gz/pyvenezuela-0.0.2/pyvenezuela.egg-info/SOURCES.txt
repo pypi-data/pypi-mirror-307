@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyvenezuela/__init__.py
+pyvenezuela.egg-info/PKG-INFO
+pyvenezuela.egg-info/SOURCES.txt
+pyvenezuela.egg-info/dependency_links.txt
+pyvenezuela.egg-info/requires.txt
+pyvenezuela.egg-info/top_level.txt
+pyvenezuela/clients/__init__.py
+pyvenezuela/clients/bcv.py
+pyvenezuela/clients/cne.py
+pyvenezuela/schemas/__init__.py
+pyvenezuela/schemas/bcv.py
+pyvenezuela/schemas/cne.py
+pyvenezuela/schemas/persona.py
