@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: groupdocs-conversion-net
+Version: 24.11
+Summary: File converter for the most commonly used formats, including DOCX, PDF, CAD, and many more.
+Home-page: https://products.groupdocs.com/conversion
+Author: GroupDocs
+License: Other/Proprietary License
+Keywords: convert,file,document,pdf,docx,xlsx,pptx,html,png,word,excel,powerpoint
+Platform: win_amd64,win32,macos_x86_64,macos_arm64
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.9,<3.13
+Description-Content-Type: text/markdown
+
+# File Conversion API
+
+[![banner](https://raw.githubusercontent.com/groupdocs/groupdocs.github.io/master/img/banners/groupdocs-conversion-python-net-banner.png)](https://releases.groupdocs.com/conversion/python-net/)
+
+[Product Page](https://products.groupdocs.com/conversion/python-net/) | [Docs](https://docs.groupdocs.com/conversion/python-net/) | [Demos](https://products.groupdocs.app/conversion/family) | [API Reference](https://references.groupdocs.com/conversion/) | [Blog](https://blog.groupdocs.com/category/conversion/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/conversion) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
+GroupDocs.Conversion for Python via .NET is a document conversion API that lets you easily convert the most popular file formats, including DOCX, XLSX, PPTX, PDF, CAD drawings, and many more. It preserves layout and formatting while offering customization options for each format. 
+
+## Features
+
+- **Wide Format Support**: Supports over 10,000 conversion pairs across popular formats like Microsoft Office, PDF, HTML, and more.
+- **Flexible Conversion Options**: Convert entire documents, specific pages, page ranges, or files within document containers such as compressed files.
+- **Format Detection**: Automatically detects the format of input files.
+
+## Supported File Formats
+
+GroupDocs.Conversion supports a wide range of file formats. For a complete list, see the [full list of supported formats](http://docs.groupdocs.com/conversion/python-net/supported-file-formats/).
+
+* **Microsoft Office** (Word, Excel, PowerPoint)
+* **PDF** (Standard PDFs, PDF/A)
+* **OpenDocument** (ODT, ODS, ODP)
+* **Images** (JPEG, PNG, TIFF)
+* **Email** (EML, MSG)
+* **eBook** (EPUB, MOBI)
+* **Text/Markdown** (TXT, MD)
+* **HTML/Web** (HTML, MHTML)
+* **AutoCAD** (DWG, DXF)
+* **3D Models** (OBJ, 3DS)
+
+## Get Started
+
+Ensure that [Python 3.9](https://www.python.org/downloads/) and the [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) runtime (or higher) are installed on your system.
+
+To install the package, run:
+
+```bash
+pip install groupdocs-conversion-net
+```
+
+If you already have the package installed and want to update to the latest version, run:
+
+```bash
+pip install --upgrade groupdocs-conversion-net
+```
+
+Here are some common use cases to get started.
+
+### Example 1: Convert a Document to Another Format
+
+The following example demonstrates how to convert a DOCX file to PDF:
+
+```python
+from groupdocs.conversion import Converter
+from groupdocs.conversion.options.convert import PdfConvertOptions
+
+def convert_document_to_another_format():
+    # Instantiate Converter with the input document 
+    with Converter("./business-plan.docx") as converter:
+        # Instantiate convert options to define the output format
+        pdf_convert_options = PdfConvertOptions()
+        
+        # Convert the input document to PDF
+        converter.convert("./business-plan.pdf", pdf_convert_options)    
+
+if __name__ == "__main__":
+    convert_document_to_another_format()
+```
+
+### Example 2: Convert All Pages of a Document
+
+The following example demonstrates how to convert each slide in a PPTX presentation to a PNG image and save the output images to a specified folder.
+
+```python
+from groupdocs.conversion import Converter
+from groupdocs.conversion.filetypes import ImageFileType
+from groupdocs.conversion.options.convert import ImageConvertOptions
+
+def convert_all_document_pages():
+    # Instantiate Converter with the input document 
+    with Converter("./basic-presentation.pptx") as converter:
+        # Instantiate convert options 
+        png_convert_options = ImageConvertOptions()
+        # Define the output format as PNG
+        png_convert_options.format = ImageFileType.PNG
+        
+        # Convert all pages and save to the output folder
+        converter.convert_by_page("./converted-pages", png_convert_options)    
+
+if __name__ == "__main__":
+    convert_all_document_pages()
+```
+
+### Example 3: Convert Files Within Document Container
+
+The following example demonstrates how to convert each compressed file in ZIP archive to PDF:
+
+```python
+from groupdocs.conversion import Converter
+from groupdocs.conversion.options.convert import PdfConvertOptions
+
+def convert_files_within_document_container():
+    # Instantiate Converter with the input document 
+    with Converter("./compressed.zip") as converter:
+        # Instantiate convert options 
+        pdf_convert_options = PdfConvertOptions()
+
+        # Extract, convert and save output files in PDF format
+        converter.convert_multiple("./converted-files", pdf_convert_options)    
+
+if __name__ == "__main__":
+    convert_files_within_document_container()
+```
+
+## More Resources
+
+Find more details and examples in the [GroupDocs.Conversion for Python via .NET documentation](http://docs.groupdocs.com/conversion/python-net/).
+
+We also provide **GroupDocs.Conversion** packages for other platforms:
+* [**GroupDocs.Conversion for .NET**](https://products.groupdocs.com/conversion/net/)
+* [**GroupDocs.Conversion for Java**](https://products.groupdocs.com/conversion/java/)
+* [**GroupDocs.Conversion for Node.js via Java**](https://products.groupdocs.com/conversion/nodejs-java/)
+
+---
+
+[Product Page](https://products.groupdocs.com/conversion/python-net/) | [Docs](https://docs.groupdocs.com/conversion/python-net/) | [Demos](https://products.groupdocs.app/conversion/family) | [API Reference](https://references.groupdocs.com/conversion/) | [Blog](https://blog.groupdocs.com/category/conversion/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/conversion) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
