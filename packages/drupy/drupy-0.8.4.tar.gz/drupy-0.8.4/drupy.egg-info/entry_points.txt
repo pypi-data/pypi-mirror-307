@@ -1,0 +1,2 @@
+[console_scripts]
+drupy = drupy.runner:main

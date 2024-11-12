@@ -1,0 +1,12 @@
+
+[dev]
+black
+isort
+pre-commit
+pydocstyle[toml]>=6
+pylint
+pytest
+pytest-cov
+
+[yaml]
+ruamel.yaml>=0.16
