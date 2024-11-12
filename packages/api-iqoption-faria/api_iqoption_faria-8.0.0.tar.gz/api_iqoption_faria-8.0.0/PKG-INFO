@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: api_iqoption_faria
+Version: 8.0.0
+Summary: Best IQ Option API for python creditos: Rafael Faria
+Home-page: https://github.com/iqoptionapi/iqoptionapi
+Author: Rafael Faria
+Requires-Dist: pylint
+Requires-Dist: requests
+Requires-Dist: websocket-client==0.56
+
+Best IQ Option API for python creditos: Rafael Faria
