@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: HorusAPI
+Version: 0.4.5
+Summary: Horus API package for building plugins. Version: 0.4.5
+Author: Barcelona Supercomputing Center
+Author-email: christian.dominguez@bsc.es
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic<2
+
+Horus API package for building plugins. More information at [https://horus.bsc.es/docs](https://horus.bsc.es/docs)
