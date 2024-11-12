@@ -1,0 +1,5 @@
+[console_scripts]
+fsp = fspacker.cli:main
+
+[pipx.run]
+fsp = fspacker.cli:main
