@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.message.rst:2
+#: 046e147027784f9590bc2bebdd8a1a88
+msgid "iamai.adapter.gensokyo.message module"
+msgstr ""
+
+#~ msgid "GSK 适配器消息。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.message.Message`\\ [GSKMessageSegment]"
+#~ msgstr ""
+
+#~ msgid "GSK 消息。"
+#~ msgstr ""
+
+#~ msgid "获取消息字段类。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "消息字段类。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.message.MessageSegment[GSKMessage]`"
+#~ msgstr ""
+
+#~ msgid "GSK 消息字段。"
+#~ msgstr ""
+
+#~ msgid "匿名发消息"
+#~ msgstr ""
+
+#~ msgid "@某人"
+#~ msgstr ""
+
+#~ msgid "推荐好友/推荐群"
+#~ msgstr ""
+
+#~ msgid "推荐好友"
+#~ msgstr ""
+
+#~ msgid "掷骰子魔法表情"
+#~ msgstr ""
+
+#~ msgid "QQ 表情"
+#~ msgstr ""
+
+#~ msgid "用于将 `str` 转换为消息字段。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "要解析为消息字段的数据。"
+#~ msgstr ""
+
+#~ msgid "由 `str` 转换的消息字段。"
+#~ msgstr ""
+
+#~ msgid "获取此消息字段的 CQ 码形式。"
+#~ msgstr ""
+
+#~ msgid "此消息字段的 CQ 码形式。"
+#~ msgstr ""
+
+#~ msgid "获取消息类。"
+#~ msgstr ""
+
+#~ msgid "消息类。"
+#~ msgstr ""
+
+#~ msgid "图片"
+#~ msgstr ""
+
+#~ msgid "JSON 消息"
+#~ msgstr ""
+
+#~ msgid "位置"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "音乐分享"
+#~ msgstr ""
+
+#~ msgid "音乐自定义分享"
+#~ msgstr ""
+
+#~ msgid "合并转发节点"
+#~ msgstr ""
+
+#~ msgid "合并转发自定义节点"
+#~ msgstr ""
+
+#~ msgid "戳一戳"
+#~ msgstr ""
+
+#~ msgid "语音"
+#~ msgstr ""
+
+#~ msgid "回复"
+#~ msgstr ""
+
+#~ msgid "猜拳魔法表情"
+#~ msgstr ""
+
+#~ msgid "窗口抖动 (戳一戳)"
+#~ msgstr ""
+
+#~ msgid "链接分享"
+#~ msgstr ""
+
+#~ msgid "纯文本"
+#~ msgstr ""
+
+#~ msgid "短视频"
+#~ msgstr ""
+
+#~ msgid "XML 消息"
+#~ msgstr ""
+
+#~ msgid "对 CQ 码中的特殊字符进行转义。"
+#~ msgstr ""
+
+#~ msgid "待转义的字符串。"
+#~ msgstr ""
+
+#~ msgid "是否转义 `,`。"
+#~ msgstr ""
+
+#~ msgid "转义后的字符串。"
+#~ msgstr ""
+

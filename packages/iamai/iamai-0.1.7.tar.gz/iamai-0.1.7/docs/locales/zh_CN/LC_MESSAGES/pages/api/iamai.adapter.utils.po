@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.utils.rst:2
+#: 9d7f0e76f7c2448dbbb1da2460b70eb2
+msgid "iamai.adapter.utils module"
+msgstr ""
+
+#~ msgid "适配器实用工具。"
+#~ msgstr ""
+
+#~ msgid "这里定义了一些在编写适配器时常用的基类，适配器开发者可以直接继承自这里的类或者用作参考。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.utils.PollingAdapter`\\ "
+#~ "[:py:obj:`~iamai.typing.EventT`, "
+#~ ":py:obj:`~iamai.typing.ConfigT`]"
+#~ msgstr ""
+
+#~ msgid "HTTP 客户端适配器示例。"
+#~ msgstr ""
+
+#~ msgid "当轮询发生。"
+#~ msgstr ""
+
+#~ msgid "关闭并清理连接。"
+#~ msgstr ""
+
+#~ msgid "初始化适配器。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.Adapter`\\ "
+#~ "[:py:obj:`~iamai.typing.EventT`, "
+#~ ":py:obj:`~iamai.typing.ConfigT`]"
+#~ msgstr ""
+
+#~ msgid "HTTP 服务端适配器示例。"
+#~ msgstr ""
+
+#~ msgid "处理响应。"
+#~ msgstr ""
+
+#~ msgid "运行适配器。"
+#~ msgstr ""
+
+#~ msgid "轮询式适配器示例。"
+#~ msgstr ""
+
+#~ msgid "WebSocket 适配器示例。"
+#~ msgstr ""
+
+#~ msgid "同时支持 WebSocket 客户端和服务端。"
+#~ msgstr ""
+
+#~ msgid "处理 aiohttp WebSocket 服务器的接收。"
+#~ msgstr ""
+
+#~ msgid "处理 WebSocket。"
+#~ msgstr ""
+
+#~ msgid "处理 WebSocket 消息。"
+#~ msgstr ""
+
+#~ msgid "反向 WebSocket 连接建立时的钩子函数。"
+#~ msgstr ""
+
+#~ msgid "创建正向 WebSocket 连接。"
+#~ msgstr ""
+
+#~ msgid "WebSocket 客户端适配器示例。"
+#~ msgstr ""
+
+#~ msgid "WebSocket 服务端适配器示例。"
+#~ msgstr ""
+
+#~ msgid "处理 WebSocket 响应。"
+#~ msgstr ""
+

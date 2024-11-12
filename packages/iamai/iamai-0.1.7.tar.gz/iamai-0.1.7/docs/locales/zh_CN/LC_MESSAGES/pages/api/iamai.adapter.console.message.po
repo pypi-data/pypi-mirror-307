@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.console.message.rst:2
+#: 2c1a5a0edf514b9abc2d5e040d535163
+msgid "iamai.adapter.console.message module"
+msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.message.MessageSegment[NoneType]`"
+#~ msgstr ""
+
+#~ msgid "Console 适配器消息。"
+#~ msgstr ""
+
+#~ msgid "是否是纯文本消息字段。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "用于记录带颜色日志时转义 `<tag>` 类型特殊标签"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "参考: [loguru color "
+#~ "标签](https://loguru.readthedocs.io/en/stable/api/logger.html#color)"
+#~ msgstr ""
+
+#~ msgid "参数:"
+#~ msgstr ""
+
+#~ msgid "s: 需要转义的字符串"
+#~ msgstr ""
+

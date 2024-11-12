@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.exceptions.rst:2
+#: ba26731fc5694d2983c654f463b16a3d
+msgid "iamai.adapter.gensokyo.exceptions module"
+msgstr ""
+
+#~ msgid "GSK 适配器异常。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.exceptions.GSKException`"
+#~ msgstr ""
+
+#~ msgid "API 请求成功响应，但响应表示 API 操作失败。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.exceptions.ActionFailed`"
+#~ msgstr ""
+
+#~ msgid "API 请求返回 404，表示当前请求的 API 不可用或不存在。"
+#~ msgstr ""
+
+#~ msgid "API 请求响应超时。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.exceptions.AdapterException`"
+#~ msgstr ""
+
+#~ msgid "GSK 异常基类。"
+#~ msgstr ""
+
+#~ msgid "网络异常。"
+#~ msgstr ""
+

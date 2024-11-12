@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.kook.exceptions.rst:2
+#: d50a4f458cd743e0825492c081d52728
+msgid "iamai.adapter.kook.exceptions module"
+msgstr ""
+
+#~ msgid "Kook 适配器异常。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.kook.exceptions.KookException`"
+#~ msgstr ""
+
+#~ msgid "API 请求成功响应，但响应表示 API 操作失败。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.kook.exceptions.ActionFailed`"
+#~ msgstr ""
+
+#~ msgid "API 请求返回 404，表示当前请求的 API 不可用或不存在。"
+#~ msgstr ""
+
+#~ msgid "API 请求响应超时。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.exceptions.AdapterException`"
+#~ msgstr ""
+
+#~ msgid "Kook 异常基类。"
+#~ msgstr ""
+
+#~ msgid "网络异常。"
+#~ msgstr ""
+
+#~ msgid "说明"
+#~ msgstr ""
+
+#~ msgid "服务端通知客户端, 代表该连接已失效, 请重新连接。客户端收到后应该主动断开当前连接。"
+#~ msgstr ""
+
+#~ msgid "在调用不支持的 Message 或 MessageSegment 操作时抛出，例如对图片类型的 MessageSegment 使用加运算。"
+#~ msgstr ""
+
+#~ msgid "在发送不支持的消息类型时抛出，开黑啦 Bot 不支持发送音频消息。"
+#~ msgstr ""
+

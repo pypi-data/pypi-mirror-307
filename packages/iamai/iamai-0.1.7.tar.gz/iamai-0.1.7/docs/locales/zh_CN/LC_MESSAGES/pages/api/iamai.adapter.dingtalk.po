@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.dingtalk.rst:2
+#: 76cdba68cedf4ceda898b4abb0edb920
+msgid "iamai.adapter.dingtalk package"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.dingtalk.rst:5
+#: 71a8b0175a404b94b8b3f788286bbe22
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.dingtalk.rst:16
+#: 2d0d295116d5466ca96af694ee30ca5f
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "DingTalk 协议适配器。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "本适配器适配了钉钉企业自建机器人协议。 "
+#~ "协议详情请参考：[钉钉开放平台](https://open.dingtalk.com/document/robots/robot-"
+#~ "overview)。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.Adapter`\\ "
+#~ "[:py:class:`~iamai.adapter.dingtalk.event.DingTalkEvent`, "
+#~ ":py:class:`~iamai.adapter.dingtalk.config.Config`]"
+#~ msgstr ""
+
+#~ msgid "钉钉协议适配器。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.config.ConfigModel`"
+#~ msgstr ""
+
+#~ msgid "DingTalk 配置类，将在适配器被加载时被混入到机器人主配置中。"
+#~ msgstr ""
+
+#~ msgid "本机域名。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "str"
+#~ msgstr ""
+
+#~ msgid "监听的端口。"
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "路径。"
+#~ msgstr ""
+
+#~ msgid "进行 API 调用时等待返回响应的超时时间。"
+#~ msgstr ""
+
+#~ msgid "机器人的 `appSecret`。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "计算签名。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "时间戳。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "签名。"
+#~ msgstr ""
+
+#~ msgid "处理 aiohttp 服务器的接收。"
+#~ msgstr ""
+
+#~ msgid "aiohttp 服务器的 `Request` 对象。"
+#~ msgstr ""
+
+#~ msgid "运行 aiohttp 服务器。"
+#~ msgstr ""
+
+#~ msgid "发送消息。"
+#~ msgstr ""
+
+#~ msgid "Webhook 网址。"
+#~ msgstr ""
+
+#~ msgid "聊天类型，\"1\" 表示单聊，\"2\" 表示群聊。"
+#~ msgstr ""
+
+#~ msgid "消息。"
+#~ msgstr ""
+
+#~ msgid "At 对象，仅在群聊时生效，默认为空。"
+#~ msgstr ""
+
+#~ msgid "钉钉服务器的响应。"
+#~ msgstr ""
+
+#~ msgid "Raises"
+#~ msgstr ""
+
+#~ msgid "传入参数类型错误。"
+#~ msgstr ""
+
+#~ msgid "传入参数值错误。"
+#~ msgstr ""
+
+#~ msgid "调用 Webhook 地址时网络错误。"
+#~ msgstr ""
+
+#~ msgid "清理 aiohttp AppRunner。"
+#~ msgstr ""
+
+#~ msgid "创建 aiohttp Application。"
+#~ msgstr ""
+

@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.kook.rst:2
+#: 9b3a6ec8871c449795b620b450bce353
+msgid "iamai.adapter.kook package"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.kook.rst:5
+#: 1a86512d40974c8b8fb768fde0c2ed60
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.kook.rst:13
+#: 1fc67a355cd14502afda4caa5fa26db4
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.kook.rst:24
+#: 2374ccdc359c42feaf18319401b7da60
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "Kook 协议适配器。"
+#~ msgstr ""
+
+#~ msgid "本适配器适配了 Kook 协议。 协议详情请参考: [Kook 开发者平台](https://developer.kookapp.cn/) 。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.utils.WebSocketAdapter`\\ "
+#~ "[:py:class:`~iamai.adapter.kook.event.KookEvent`, "
+#~ ":py:class:`~iamai.adapter.kook.config.Config`]"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.config.ConfigModel`"
+#~ msgstr ""
+
+#~ msgid "Kook 配置类，将在适配器被加载时被混入到机器人主配置中。"
+#~ msgstr ""
+
+#~ msgid "适配器类型，需要和协议端配置相同。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "Literal['ws', 'wb']"
+#~ msgstr ""
+
+#~ msgid "重连等待时间。"
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "进行 API 调用时等待返回响应的超时时间。"
+#~ msgstr ""
+
+#~ msgid "鉴权。"
+#~ msgstr ""
+
+#~ msgid "str"
+#~ msgstr ""
+
+#~ msgid "是否启用压缩，默认为 0，不启用。"
+#~ msgstr ""
+
+#~ msgid "Literal[0, 1]"
+#~ msgstr ""
+
+#~ msgid "是否显示原始数据，默认为 False，不显示。"
+#~ msgstr ""
+
+#~ msgid "bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "处理 kook 事件。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "接收到的信息。"
+#~ msgstr ""
+
+#~ msgid "处理 WebSocket 消息。"
+#~ msgstr ""
+
+#~ msgid "发送消息，调用 message/create 或 direct-message/create API 发送消息。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "消息内容，可以是 str, Mapping, Iterable[Mapping], "
+#~ "'KookMessageSegment', 'KookMessage'。 将使用 "
+#~ "`KookMessage` 进行封装。"
+#~ msgstr ""
+
+#~ msgid "消息类型。应该是 GROUP 或者 PERSON。"
+#~ msgstr ""
+
+#~ msgid "发送对象的 ID ，Kook 用户码或者Kook频道码。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "API 响应。"
+#~ msgstr ""
+
+#~ msgid "Raises"
+#~ msgstr ""
+
+#~ msgid "message_type 不是 'PERSON' 或 'GROUP'。"
+#~ msgstr ""
+
+#~ msgid "同 `call_api()` 方法。"
+#~ msgstr ""
+
+#~ msgid "每30s一次心跳 :return:"
+#~ msgstr ""
+
+#~ msgid "初始化适配器。"
+#~ msgstr ""
+
+#~ msgid "创建正向 WebSocket 连接。"
+#~ msgstr ""
+

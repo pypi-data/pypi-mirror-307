@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.utils.rst:2 9f28b356d9064b2d8d54e42baa22f3f0
+msgid "iamai.utils module"
+msgstr ""
+
+#~ msgid "iamai 内部使用的实用工具。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~importlib.abc.MetaPathFinder`"
+#~ msgstr ""
+
+#~ msgid "用于查找 iamai 组件的元路径查找器。"
+#~ msgstr ""
+
+#~ msgid "用于查找指定模块的 `spec`。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~json.encoder.JSONEncoder`"
+#~ msgstr ""
+
+#~ msgid "用于解析 `pydantic.BaseModel` 的 `JSONEncoder` 类。"
+#~ msgstr ""
+
+#~ msgid "返回 `o` 的可序列化对象。"
+#~ msgstr ""
+
+#~ msgid "Compute the annotations dict for an object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "obj may be a callable, class, or"
+#~ " module. Passing in an object of "
+#~ "any other type raises TypeError."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns a dict.  get_annotations() returns "
+#~ "a new dict every time it's called;"
+#~ " calling it twice on the same "
+#~ "object will return two different but "
+#~ "equivalent dicts."
+#~ msgstr ""
+
+#~ msgid "This function handles several details for you:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If eval_str is true, values of "
+#~ "type str will be un-stringized "
+#~ "using eval().  This is intended for "
+#~ "use with stringized annotations (\"from "
+#~ "__future__ import annotations\")."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If obj doesn't have an annotations "
+#~ "dict, returns an empty dict.  (Functions"
+#~ " and methods always have an "
+#~ "annotations dict; classes, modules, and "
+#~ "other types of callables may not.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ignores inherited annotations on classes.  "
+#~ "If a class doesn't have its own"
+#~ " annotations dict, returns an empty "
+#~ "dict."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All accesses to object members and "
+#~ "dict values are done using getattr() "
+#~ "and dict.get() for safety."
+#~ msgstr ""
+
+#~ msgid "Always, always, always returns a freshly-created dict."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "eval_str controls whether or not values"
+#~ " of type str are replaced with "
+#~ "the result of calling eval() on "
+#~ "those values:"
+#~ msgstr ""
+
+#~ msgid "If eval_str is true, eval() is called on values of type str."
+#~ msgstr ""
+
+#~ msgid "If eval_str is false (the default), values of type str are unchanged."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "globals and locals are passed in "
+#~ "to eval(); see the documentation for "
+#~ "eval() for more information.  If either"
+#~ " globals or locals is None, this "
+#~ "function may replace that value with "
+#~ "a context-specific default, contingent "
+#~ "on type(obj):"
+#~ msgstr ""
+
+#~ msgid "If obj is a module, globals defaults to obj.__dict__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If obj is a class, globals "
+#~ "defaults to sys.modules[obj.__module__].__dict__ and"
+#~ " locals defaults to the obj class "
+#~ "namespace."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If obj is a callable, globals "
+#~ "defaults to obj.__globals__, although if "
+#~ "obj is a wrapped function (using "
+#~ "functools.update_wrapper()) it is first "
+#~ "unwrapped."
+#~ msgstr ""
+
+#~ msgid "从模块中查找指定类型的类。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "Python 模块。"
+#~ msgstr ""
+
+#~ msgid "要查找的类的超类。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "返回符合条件的类的列表。"
+#~ msgstr ""
+
+#~ msgid "从指定名称的模块中查找指定类型的类。"
+#~ msgstr ""
+
+#~ msgid "模块名称，格式和 Python `import` 语句相同。"
+#~ msgstr ""
+
+#~ msgid "是否重新加载模块。"
+#~ msgstr ""
+
+#~ msgid "返回由符合条件的类和模块组成的元组的列表。"
+#~ msgstr ""
+
+#~ msgid "Raises"
+#~ msgstr ""
+
+#~ msgid "当导入模块过程中出现错误。"
+#~ msgstr ""
+
+#~ msgid "判断一个对象是否是配置类。"
+#~ msgstr ""
+
+#~ msgid "待判断的对象。"
+#~ msgstr ""
+
+#~ msgid "返回是否是配置类。"
+#~ msgstr ""
+
+#~ msgid "一个 `os.path.samefile` 的简单包装。"
+#~ msgstr ""
+
+#~ msgid "路径1。"
+#~ msgstr ""
+
+#~ msgid "路径2。"
+#~ msgstr ""
+
+#~ msgid "如果两个路径是否指向相同的文件或目录。"
+#~ msgstr ""
+
+#~ msgid "将同步上下文管理器包装为异步上下文管理器。"
+#~ msgstr ""
+
+#~ msgid "待包装的同步上下文管理器。"
+#~ msgstr ""
+
+#~ msgid "是否在独立的线程中运行同步函数。默认为 `False`。"
+#~ msgstr ""
+
+#~ msgid "异步上下文管理器。"
+#~ msgstr ""
+
+#~ msgid "包装一个同步函数为异步函数。"
+#~ msgstr ""
+
+#~ msgid "待包装的同步函数。"
+#~ msgstr ""
+
+#~ msgid "异步函数。"
+#~ msgstr ""
+
+#~ msgid "将 `get()` 函数接受的参数包装为一个异步函数。"
+#~ msgstr ""
+
+#~ msgid "`get()` 函数接受的参数。"
+#~ msgstr ""
+

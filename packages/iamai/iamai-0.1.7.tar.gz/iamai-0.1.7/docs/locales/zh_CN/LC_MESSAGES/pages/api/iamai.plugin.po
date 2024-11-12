@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.plugin.rst:2 9980c9b79dad4be3baa5c869030621cf
+msgid "iamai.plugin module"
+msgstr ""
+
+#~ msgid "iamai 插件。"
+#~ msgstr ""
+
+#~ msgid "所有 iamai 插件的基类。所有用户编写的插件必须继承自 `Plugin` 类。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~abc.ABC`, :py:class:`~typing.Generic`\\"
+#~ " [:py:obj:`~iamai.typing.EventT`, "
+#~ ":py:obj:`~iamai.typing.StateT`, :py:obj:`~iamai.typing.ConfigT`]"
+#~ msgstr ""
+
+#~ msgid "所有 iamai 插件的基类。"
+#~ msgstr ""
+
+#~ msgid "当前正在被此插件处理的事件。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "iamai.typing.EventT"
+#~ msgstr ""
+
+#~ msgid "插件的优先级，数字越小表示优先级越高，默认为 0。"
+#~ msgstr ""
+
+#~ msgid "ClassVar[int]"
+#~ msgstr ""
+
+#~ msgid "插件执行结束后是否阻止事件的传播。`True` 表示阻止。"
+#~ msgstr ""
+
+#~ msgid "ClassVar[bool]"
+#~ msgstr ""
+
+#~ msgid "插件加载类型，由 iamai 自动设置，反映了此插件是如何被加载的。"
+#~ msgstr ""
+
+#~ msgid "ClassVar[iamai.plugin.PluginLoadType]"
+#~ msgstr ""
+
+#~ msgid "当插件加载类型为 `PluginLoadType.CLASS` 时为 `None`， 否则为定义插件在的 Python 模块的位置。"
+#~ msgstr ""
+
+#~ msgid "ClassVar[str | None]"
+#~ msgstr ""
+
+#~ msgid "机器人对象。"
+#~ msgstr ""
+
+#~ msgid "插件配置。"
+#~ msgstr ""
+
+#~ msgid "处理事件的方法。当 `rule()` 方法返回 `True` 时 iamai 会调用此方法。每个插件必须实现此方法。"
+#~ msgstr ""
+
+#~ msgid "插件类名称。"
+#~ msgstr ""
+
+#~ msgid "匹配事件的方法。事件处理时，会按照插件的优先级依次调用此方法，当此方法返回 `True` 时将事件交由此插件处理。每个插件必须实现此方法。"
+#~ msgstr ""
+
+#~ msgid "注意：不建议直接在此方法内实现对事件的处理，事件的具体处理请交由 `handle()` 方法。"
+#~ msgstr ""
+
+#~ msgid "跳过自身继续当前事件传播。"
+#~ msgstr ""
+
+#~ msgid "插件状态。"
+#~ msgstr ""
+
+#~ msgid "停止当前事件传播。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~enum.Enum`"
+#~ msgstr ""
+
+#~ msgid "插件加载类型。"
+#~ msgstr ""
+

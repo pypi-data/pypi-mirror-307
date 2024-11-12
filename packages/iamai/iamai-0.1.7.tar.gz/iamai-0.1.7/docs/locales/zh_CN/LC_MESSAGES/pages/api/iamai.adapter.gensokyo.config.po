@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.config.rst:2
+#: 707cbd526a3645c0bb839534202e4357
+msgid "iamai.adapter.gensokyo.config module"
+msgstr ""
+
+#~ msgid "GSK 适配器配置。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.config.ConfigModel`"
+#~ msgstr ""
+
+#~ msgid "GSK 配置类，将在适配器被加载时被混入到机器人主配置中。"
+#~ msgstr ""
+
+#~ msgid "适配器类型，需要和协议端配置相同。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "Literal['ws', 'reverse-ws', 'ws-reverse']"
+#~ msgstr ""
+
+#~ msgid "本机域名。"
+#~ msgstr ""
+
+#~ msgid "str"
+#~ msgstr ""
+
+#~ msgid "监听的端口。"
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "WebSocket 路径，需和协议端配置相同。"
+#~ msgstr ""
+
+#~ msgid "重连等待时间。"
+#~ msgstr ""
+
+#~ msgid "进行 API 调用时等待返回响应的超时时间。"
+#~ msgstr ""
+
+#~ msgid "鉴权。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.config.rst:2 539c2e904b624cf98726ca674cb39ab8
+msgid "iamai.config module"
+msgstr ""
+
+#~ msgid "iamai 配置。"
+#~ msgstr ""
+
+#~ msgid "iamai 使用 [pydantic](https://pydantic-docs.helpmanual.io/) 来读取配置。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.config.ConfigModel`"
+#~ msgstr ""
+
+#~ msgid "适配器配置。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "Bot 配置。"
+#~ msgstr ""
+
+#~ msgid "将被加载的插件列表，将被 `Bot` 类的 `load_plugins()` 方法加载。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "Set[str]"
+#~ msgstr ""
+
+#~ msgid "将被加载的插件目录列表，将被 `Bot` 类的 `load_plugins_from_dirs()` 方法加载。"
+#~ msgstr ""
+
+#~ msgid "Set[pathlib.Path]"
+#~ msgstr ""
+
+#~ msgid "将被加载的适配器列表，将依次被 `Bot` 类的 `load_adapters()` 方法加载。"
+#~ msgstr ""
+
+#~ msgid "iamai 日志相关设置。"
+#~ msgstr ""
+
+#~ msgid "iamai.config.LogConfig"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+#~ msgstr ""
+
+#~ msgid "iamai 配置模型。"
+#~ msgstr ""
+
+#~ msgid "配置名称。"
+#~ msgstr ""
+
+#~ msgid "str"
+#~ msgstr ""
+
+#~ msgid "日志级别。"
+#~ msgstr ""
+
+#~ msgid "str | int"
+#~ msgstr ""
+
+#~ msgid "详细的异常记录，设置为 `True` 时会在日志中添加异常的 Traceback。"
+#~ msgstr ""
+
+#~ msgid "bool"
+#~ msgstr ""
+
+#~ msgid "iamai 的主要配置。"
+#~ msgstr ""
+
+#~ msgid "iamai.config.BotConfig"
+#~ msgstr ""
+
+#~ msgid "插件配置。"
+#~ msgstr ""
+

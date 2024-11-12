@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.bot.rst:2 788e336881a2439295ed82dc68b1d5b4
+msgid "iamai.bot module"
+msgstr ""
+
+#~ msgid "iamai 机器人对象。"
+#~ msgstr ""
+
+#~ msgid "iamai 的基础模块，每一个 iamai 机器人即是一个 `Bot` 实例。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "iamai 机器人对象，定义了机器人的基本方法。"
+#~ msgstr ""
+
+#~ msgid "读取并储存配置 `Config`，加载适配器 `Adapter` 和插件 `Plugin`，并进行事件分发。"
+#~ msgstr ""
+
+#~ msgid "机器人配置。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "iamai.config.MainConfig"
+#~ msgstr ""
+
+#~ msgid "机器人是否应该进入准备退出状态。"
+#~ msgstr ""
+
+#~ msgid "asyncio.locks.Event"
+#~ msgstr ""
+
+#~ msgid "当前已经加载的适配器的列表。"
+#~ msgstr ""
+
+#~ msgid "List[iamai.adapter.Adapter[Any, Any]]"
+#~ msgstr ""
+
+#~ msgid "插件优先级字典。"
+#~ msgstr ""
+
+#~ msgid "Dict[int, List[Type[iamai.plugin.Plugin[Any, Any, Any]]]]"
+#~ msgstr ""
+
+#~ msgid "插件状态。"
+#~ msgstr ""
+
+#~ msgid "Dict[str, Any]"
+#~ msgstr ""
+
+#~ msgid "全局状态。"
+#~ msgstr ""
+
+#~ msgid "Dict[Any, Any]"
+#~ msgstr ""
+
+#~ msgid "注册一个适配器运行时的函数。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "被注册的函数。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "注册一个适配器关闭时的函数。"
+#~ msgstr ""
+
+#~ msgid "注册一个适配器初始化时的函数。"
+#~ msgstr ""
+
+#~ msgid "注册一个 Bot 退出时的函数。"
+#~ msgstr ""
+
+#~ msgid "注册一个 Bot 启动时的函数。"
+#~ msgstr ""
+
+#~ msgid "根据当前 Bot 的配置输出 error 或者 exception 日志。"
+#~ msgstr ""
+
+#~ msgid "消息。"
+#~ msgstr ""
+
+#~ msgid "异常。"
+#~ msgstr ""
+
+#~ msgid "注册一个事件后处理函数。"
+#~ msgstr ""
+
+#~ msgid "注册一个事件预处理函数。"
+#~ msgstr ""
+
+#~ msgid "获取满足指定条件的的事件，协程会等待直到适配器接收到满足条件的事件、超过最大事件数或超时。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "协程或者函数，函数会被自动包装为协程执行。 要求接受一个事件作为参数，返回布尔值。当协程返回 `True` "
+#~ "时返回当前事件。 当为 `None` "
+#~ "时相当于输入对于任何事件均返回真的协程，即返回适配器接收到的下一个事件。"
+#~ msgstr ""
+
+#~ msgid "当指定时，只接受指定类型的事件，先于 func 条件生效。默认为 `None`。"
+#~ msgstr ""
+
+#~ msgid "当指定时，只接受指定适配器产生的事件，先于 func 条件生效。默认为 `None`。"
+#~ msgstr ""
+
+#~ msgid "最大事件数。"
+#~ msgstr ""
+
+#~ msgid "超时时间。"
+#~ msgstr ""
+
+#~ msgid "返回满足 `func` 条件的事件。"
+#~ msgstr ""
+
+#~ msgid "Raises"
+#~ msgstr ""
+
+#~ msgid "超过最大事件数或超时。"
+#~ msgstr ""
+
+#~ msgid "按照名称或适配器类获取已经加载的适配器。"
+#~ msgstr ""
+
+#~ msgid "适配器名称或适配器类。"
+#~ msgstr ""
+
+#~ msgid "获取到的适配器对象。"
+#~ msgstr ""
+
+#~ msgid "找不到此名称的适配器对象。"
+#~ msgstr ""
+
+#~ msgid "按照名称获取已经加载的插件类。"
+#~ msgstr ""
+
+#~ msgid "插件名称"
+#~ msgstr ""
+
+#~ msgid "获取到的插件类。"
+#~ msgstr ""
+
+#~ msgid "找不到此名称的插件类。"
+#~ msgstr ""
+
+#~ msgid "被适配器对象调用，根据优先级分发事件给所有插件，并处理插件的 `stop` 、 `skip` 等信号。"
+#~ msgstr ""
+
+#~ msgid "此方法不应该被用户手动调用。"
+#~ msgstr ""
+
+#~ msgid "当前待处理的 `Event`。"
+#~ msgstr ""
+
+#~ msgid "当前事件是否可以被 get 方法捕获，默认为 `True`。"
+#~ msgstr ""
+
+#~ msgid "是否在日志中显示，默认为 `True`。"
+#~ msgstr ""
+
+#~ msgid "加载适配器。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "适配器类或适配器名称，类型可以是 `Type[Adapter]` 或 `str`。 如果为"
+#~ " `Type[Adapter]` 类型时，将作为适配器类进行加载。 如果为 `str` "
+#~ "类型时，将作为适配器模块名称进行加载，格式和 Python `import` 语句相同。     "
+#~ "例如：`path.of.adapter`。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "适配器类或适配器名称，类型可以是 `Type[Adapter]` 或 `str`。 如果为"
+#~ " `Type[Adapter]` 类型时，将作为适配器类进行加载。 如果为 `str` "
+#~ "类型时，将作为适配器模块名称进行加载，格式和 Python `import` 语句相同。"
+#~ msgstr ""
+
+#~ msgid "例如：`path.of.adapter`。"
+#~ msgstr ""
+
+#~ msgid "加载插件。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "插件类、插件模块名称或者插件模块文件路径。 类型可以是 `Type[Plugin]`, `str`"
+#~ " 或 `pathlib.Path`。 如果为 `Type[Plugin]` "
+#~ "类型时，将作为插件类进行加载。 如果为 `str` 类型时，将作为插件模块名称进行加载，格式和 "
+#~ "Python `import` 语句相同。     例如：`path.of.plugin`。 "
+#~ "如果为 `pathlib.Path` 类型时，将作为插件模块文件路径进行加载。     "
+#~ "例如：`pathlib.Path(\"path/of/plugin\")`。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "插件类、插件模块名称或者插件模块文件路径。 类型可以是 `Type[Plugin]`, `str`"
+#~ " 或 `pathlib.Path`。 如果为 `Type[Plugin]` "
+#~ "类型时，将作为插件类进行加载。 如果为 `str` 类型时，将作为插件模块名称进行加载，格式和 "
+#~ "Python `import` 语句相同。"
+#~ msgstr ""
+
+#~ msgid "例如：`path.of.plugin`。"
+#~ msgstr ""
+
+#~ msgid "如果为 `pathlib.Path` 类型时，将作为插件模块文件路径进行加载。"
+#~ msgstr ""
+
+#~ msgid "例如：`pathlib.Path(\"path/of/plugin\")`。"
+#~ msgstr ""
+
+#~ msgid "从目录中加载插件，以 `_` 开头的模块中的插件不会被导入。路径可以是相对路径或绝对路径。"
+#~ msgstr ""
+
+#~ msgid "储存包含插件的模块的模块路径。 例如：`pathlib.Path(\"path/of/plugins/\")` 。"
+#~ msgstr ""
+
+#~ msgid "当前已经加载的插件的列表。"
+#~ msgstr ""
+
+#~ msgid "手动重新加载所有插件。"
+#~ msgstr ""
+
+#~ msgid "退出并重新运行 iamai。"
+#~ msgstr ""
+
+#~ msgid "运行 iamai，监听并拦截系统退出信号，更新机器人配置。"
+#~ msgstr ""
+

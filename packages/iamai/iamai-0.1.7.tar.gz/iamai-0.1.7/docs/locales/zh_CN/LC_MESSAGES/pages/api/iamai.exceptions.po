@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.exceptions.rst:2
+#: 7b357a673afa4486b8ee19ffec653a25
+msgid "iamai.exceptions module"
+msgstr ""
+
+#~ msgid "iamai 异常。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "下列是 iamai 运行过程中可能会抛出的异常。这些异常大部分不需要用户处理， iamai "
+#~ "会自动捕获并处理。 对于适配器开发者，所有适配器抛出的异常都应该继承自 `AdapterException` "
+#~ "。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.exceptions.iamaiException`"
+#~ msgstr ""
+
+#~ msgid "由适配器抛出的异常基类，所有适配器抛出的异常都应该继承自此类。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`BaseException`"
+#~ msgstr ""
+
+#~ msgid "事件处理过程中由插件抛出的异常，用于控制事件的传播，会被 iamai 自动捕获并处理。"
+#~ msgstr ""
+
+#~ msgid "当 get 方法超时使被抛出。"
+#~ msgstr ""
+
+#~ msgid "加载模块错误，在指定模块中找不到特定类型的类或模块中存在多个符合条件的类时抛出。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.exceptions.EventException`"
+#~ msgstr ""
+
+#~ msgid "跳过当前插件继续当前事件传播。"
+#~ msgstr ""
+
+#~ msgid "停止当前事件传播。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`Exception`"
+#~ msgstr ""
+
+#~ msgid "所有 iamai 发生的异常的基类。"
+#~ msgstr ""
+

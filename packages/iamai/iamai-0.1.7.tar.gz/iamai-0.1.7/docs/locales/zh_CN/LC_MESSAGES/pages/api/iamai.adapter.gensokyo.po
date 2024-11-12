@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.rst:2
+#: fd215ecb83264d55921f545fc4a17084
+msgid "iamai.adapter.gensokyo package"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.rst:5
+#: b95bb76ea5664de8a18239f72d8aa514
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.rst:16
+#: a300356fd74e41e6b82d5fe6f4efb708
+msgid "Module contents"
+msgstr ""
+
+#~ msgid "gensokyo *ob11 协议适配器。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "本适配器适配了 gensokyo obv11 协议。 "
+#~ "协议详情请参考：[OneBot](https://github.com/howmanybots/onebot/blob/master/README.md)。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.utils.WebSocketAdapter`\\ "
+#~ "[:py:class:`~iamai.adapter.gensokyo.event.GSKEvent`, "
+#~ ":py:class:`~iamai.adapter.gensokyo.config.Config`]"
+#~ msgstr ""
+
+#~ msgid "GSK 协议适配器。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.config.ConfigModel`"
+#~ msgstr ""
+
+#~ msgid "GSK 配置类，将在适配器被加载时被混入到机器人主配置中。"
+#~ msgstr ""
+
+#~ msgid "适配器类型，需要和协议端配置相同。"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "Literal['ws', 'reverse-ws', 'ws-reverse']"
+#~ msgstr ""
+
+#~ msgid "本机域名。"
+#~ msgstr ""
+
+#~ msgid "str"
+#~ msgstr ""
+
+#~ msgid "监听的端口。"
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "WebSocket 路径，需和协议端配置相同。"
+#~ msgstr ""
+
+#~ msgid "重连等待时间。"
+#~ msgstr ""
+
+#~ msgid "进行 API 调用时等待返回响应的超时时间。"
+#~ msgstr ""
+
+#~ msgid "鉴权。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "添加自定义事件模型，事件模型类必须继承于 `GSKEvent`。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "事件模型类。"
+#~ msgstr ""
+
+#~ msgid "调用 GSK API，协程会等待直到获得 API 响应。"
+#~ msgstr ""
+
+#~ msgid "API 名称。"
+#~ msgstr ""
+
+#~ msgid "API 参数。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "API 响应中的 data 字段。"
+#~ msgstr ""
+
+#~ msgid "Raises"
+#~ msgstr ""
+
+#~ msgid "网络错误。"
+#~ msgstr ""
+
+#~ msgid "API 请求响应 404， API 不可用。"
+#~ msgstr ""
+
+#~ msgid "API 请求响应 failed， API 操作失败。"
+#~ msgstr ""
+
+#~ msgid "API 请求响应超时。"
+#~ msgstr ""
+
+#~ msgid "异步获取登录凭证"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://bots.qq.com/app/getAppAccessToken 属性      类型"
+#~ "      必填      说明 appId   string  是"
+#~ "       在开放平台管理端上获得。 clientSecret    string  是"
+#~ "       在开放平台管理端上获得。"
+#~ msgstr ""
+
+#~ msgid "根据接收到的消息类型返回对应的事件类。"
+#~ msgstr ""
+
+#~ msgid "请求类型。"
+#~ msgstr ""
+
+#~ msgid "事件类型。"
+#~ msgstr ""
+
+#~ msgid "子类型。"
+#~ msgstr ""
+
+#~ msgid "对应的事件类。"
+#~ msgstr ""
+
+#~ msgid "处理 GSK 事件。"
+#~ msgstr ""
+
+#~ msgid "接收到的信息。"
+#~ msgstr ""
+
+#~ msgid "处理 WebSocket 消息。"
+#~ msgstr ""
+
+#~ msgid "反向 WebSocket 连接建立时的钩子函数。"
+#~ msgstr ""
+
+#~ msgid "发送消息，调用 `send_private_msg` 或 `send_group_msg` API 发送消息。"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "消息内容，可以是 `str`, `Mapping`, `Iterable[Mapping]`, "
+#~ "`GSKMessageSegment`, `GSKMessage。` 将使用 `GSKMessage`"
+#~ " 进行封装。"
+#~ msgstr ""
+
+#~ msgid "消息类型。应该是 \"private\" 或者 \"group\"。"
+#~ msgstr ""
+
+#~ msgid "发送对象的 ID， QQ 号码或者群号码。"
+#~ msgstr ""
+
+#~ msgid "API 响应。"
+#~ msgstr ""
+
+#~ msgid "`message_type` 不是 \"private\" 或 \"group\"。"
+#~ msgstr ""
+
+#~ msgid "同 `call_api()` 方法。"
+#~ msgstr ""
+
+#~ msgid "初始化适配器。"
+#~ msgstr ""
+
+#~ msgid "创建正向 WebSocket 连接。"
+#~ msgstr ""
+

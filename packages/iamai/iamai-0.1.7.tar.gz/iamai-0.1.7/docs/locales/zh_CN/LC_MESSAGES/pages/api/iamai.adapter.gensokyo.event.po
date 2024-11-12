@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-PRESENT, Retrofor Wut?
+# This file is distributed under the same license as the iamai package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iamai \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/pages/api/iamai.adapter.gensokyo.event.rst:2
+#: 6f91760296a946449c63ec9c861bc899
+msgid "iamai.adapter.gensokyo.event module"
+msgstr ""
+
+#~ msgid "GSK 适配器事件。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+#~ msgstr ""
+
+#~ msgid "匿名信息"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration for the model, should be"
+#~ " a dictionary conforming to "
+#~ "[`ConfigDict`][pydantic.config.ConfigDict]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Metadata about the fields defined on "
+#~ "the model, mapping of field names "
+#~ "to [`FieldInfo`][pydantic.fields.FieldInfo]."
+#~ msgstr ""
+
+#~ msgid "This replaces `Model.__fields__` from Pydantic V1."
+#~ msgstr ""
+
+#~ msgid "文件信息"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.NoticeEvent`"
+#~ msgstr ""
+
+#~ msgid "好友添加"
+#~ msgstr ""
+
+#~ msgid "好友消息撤回"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.RequestEvent`"
+#~ msgstr ""
+
+#~ msgid "加好友请求"
+#~ msgstr ""
+
+#~ msgid "同意请求。"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "好友备注。"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "API 请求响应。"
+#~ msgstr ""
+
+#~ msgid "拒绝请求。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.event.Event[GSKAdapter]`"
+#~ msgstr ""
+
+#~ msgid "GSK 事件基类"
+#~ msgstr ""
+
+#~ msgid "获取事件类型。"
+#~ msgstr ""
+
+#~ msgid "事件类型。"
+#~ msgstr ""
+
+#~ msgid "当前事件的 `user_id` 是否等于 `self_id`。"
+#~ msgstr ""
+
+#~ msgid "群管理员变动"
+#~ msgstr ""
+
+#~ msgid "群禁言"
+#~ msgstr ""
+
+#~ msgid "群成员减少"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.NotifyEvent`"
+#~ msgstr ""
+
+#~ msgid "群成员荣誉变更"
+#~ msgstr ""
+
+#~ msgid "群成员增加"
+#~ msgstr ""
+
+#~ msgid "群红包运气王"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.MessageEvent`"
+#~ msgstr ""
+
+#~ msgid "群消息"
+#~ msgstr ""
+
+#~ msgid "回复消息。"
+#~ msgstr ""
+
+#~ msgid "回复消息的内容，同 `call_api()` 方法。"
+#~ msgstr ""
+
+#~ msgid "群消息撤回"
+#~ msgstr ""
+
+#~ msgid "加群请求 / 邀请"
+#~ msgstr ""
+
+#~ msgid "拒绝原因。"
+#~ msgstr ""
+
+#~ msgid "群文件上传"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.MetaEvent`"
+#~ msgstr ""
+
+#~ msgid "心跳"
+#~ msgstr ""
+
+#~ msgid "生命周期"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~iamai.adapter.gensokyo.event.GSKEvent`, "
+#~ ":py:class:`~iamai.event.MessageEvent[GSKAdapter]`"
+#~ msgstr ""
+
+#~ msgid "消息事件"
+#~ msgstr ""
+
+#~ msgid "获取消息的纯文本内容。"
+#~ msgstr ""
+
+#~ msgid "消息的纯文本内容。"
+#~ msgstr ""
+
+#~ msgid "判断自身和另一个事件是否是同一个发送者。"
+#~ msgstr ""
+
+#~ msgid "另一个事件。"
+#~ msgstr ""
+
+#~ msgid "是否是同一个发送者。"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~iamai.adapter.gensokyo.event.GSKEvent`"
+#~ msgstr ""
+
+#~ msgid "元事件"
+#~ msgstr ""
+
+#~ msgid "通知事件"
+#~ msgstr ""
+
+#~ msgid "提醒事件"
+#~ msgstr ""
+
+#~ msgid "戳一戳"
+#~ msgstr ""
+
+#~ msgid "私聊消息"
+#~ msgstr ""
+
+#~ msgid "请求事件"
+#~ msgstr ""
+
+#~ msgid "发送人信息"
+#~ msgstr ""
+
+#~ msgid "状态信息"
+#~ msgstr ""
+

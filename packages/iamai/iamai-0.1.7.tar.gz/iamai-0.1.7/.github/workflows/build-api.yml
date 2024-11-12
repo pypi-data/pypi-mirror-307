@@ -1,0 +1,67 @@
+name: api build
+
+on:
+    pull_request:
+    push:
+      paths:
+        "docs/"
+        # tags:
+        #   - "v*"
+    workflow_dispatch:
+
+jobs:
+    update-api-doc:
+        runs-on: ubuntu-latest
+        environment: release
+        permissions:
+          contents: write
+          pull-requests: write
+          id-token: write
+        steps:
+          - uses: actions/checkout@v3
+    
+          - uses: pdm-project/setup-pdm@v4
+            name: Setup PDM
+            with:
+              python-version: 3.9
+          - name: Install dependencies
+            run: pdm install -dG docs
+    
+          - name: Remove API Doc
+            run: rm -rf docs/source/pages/api
+
+          - name: Build API Doc
+            run: |
+              # cd docs
+              # make api build
+              rm -rf docs/source/pages/api
+              for adapter in apscheduler bililive console cqhttp dingtalk gensokyo kook red
+              do
+                  cp -r "packages/iamai-adapter-$adapter/iamai/adapter/$adapter" "iamai/adapter/$adapter"
+              done
+              pdm run sphinx-apidoc -o docs/source/pages/api iamai packages -f -e --tocfile index
+              for adapter in apscheduler bililive console cqhttp dingtalk gensokyo kook red
+              do
+                  rm -rf "iamai/adapter/$adapter"
+              done
+              cd iamai/adapter
+              ls
+            shell: bash
+            env:
+              iamai_DEV: "1"
+
+          - name: Commit 
+            uses: stefanzweifel/git-auto-commit-action@v5
+            with:
+              branch: master
+              commit_message: "chore(docs): update api docs with sphinx-apidoc"
+    
+          # - name: Create Pull Request
+          #   uses: peter-evans/create-pull-request@v5
+          #   with:
+          #     token: ${{ secrets.ACCESS_TOKEN }}
+          #     commit-message: "docs(api): update api docs"
+          #     title: "docs(api): update api docs"
+          #     body: "automatic update api docs"
+          #     branch: docs/update-api-docs
+          #     base: master
