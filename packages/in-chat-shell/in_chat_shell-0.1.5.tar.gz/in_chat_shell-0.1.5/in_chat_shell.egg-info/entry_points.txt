@@ -1,0 +1,2 @@
+[console_scripts]
+in-chat-shell = chat_shell.main:entry_point
