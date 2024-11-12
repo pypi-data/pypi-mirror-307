@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pyfuelprices
+Version: 2024.11.0
+Summary: A generic library to collect fuel prices of fuel stations around the world!
+Home-page: http://github.com/pantherale0/pyfuelprices
+Author: pantherale0
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geopy==2.4.0
+Provides-Extra: dev
+Requires-Dist: bandit==1.7.*; extra == "dev"
+Requires-Dist: black==23.*; extra == "dev"
+Requires-Dist: build==0.10.*; extra == "dev"
+Requires-Dist: flake8==6.*; extra == "dev"
+Requires-Dist: isort==5.*; extra == "dev"
+Requires-Dist: mypy==1.5.*; extra == "dev"
+Requires-Dist: pytest==7.*; extra == "dev"
+Requires-Dist: pytest-cov==4.*; extra == "dev"
+Requires-Dist: twine==4.*; extra == "dev"
+
+<div align="center">
+
+# pyfuelprices
+
+A generic python module to retrieve fuel prices for different fuel suppliers.
+
+[![Build Status](https://github.com/pantherale0/pyfuelprices/workflows/build/badge.svg)](https://github.com/pantherale0/pyfuelprices/actions)
+[![Coverage Status](https://coveralls.io/repos/github/pantherale0/pyfuelprices/badge.svg?branch=main)](https://coveralls.io/github/pantherale0/pyfuelprices?branch=main)
+[![PyPi](https://img.shields.io/pypi/v/pyfuelprices)](https://pypi.org/project/pyfuelprices)
+[![Licence](https://img.shields.io/github/license/pantherale0/pyfuelprices)](LICENSE)
+
+</div>
+
+## Install
+
+```bash
+# Install tool
+pip3 install pyfuelprices
+
+# Install locally
+just install
+```
+
+## Usage
+
+TODO
+
+## Datasources
+
+Sources used to provide data for this module include:
+
+- AU: FuelWatch (https://www.fuelwatch.wa.gov.au), FuelSnoop (https://www.fuelsnoop.com.au/) and PetrolSpy (https://petrolspy.com.au)
+- AT: Spritpreisrechner (https://www.spritpreisrechner.at/)
+- BE: DirectLease TankService (https://directlease.nl/tankservice/) - Use Netherlands data source below to access.
+- CA: GasBuddy (https://www.gasbuddy.com/) - Use US data source below to access.
+- CH: Comparis (https://www.comparis.ch/benzin-preise)
+- DE: TankerKoenig (https://tankerkoenig.de/)
+- GB: CMA Temporary Road Fuel Price ODS (https://www.gov.uk/guidance/access-fuel-price-data)
+- GR: FuelGR (https://fuelgr.gr/)
+- NL: DirectLease TankService (https://directlease.nl/tankservice/)
+- NZ: PetrolSpy (https://petrolspy.com.au) - Use Australia fuel source above to access.
+- RO: Peco-Online (https://www.peco-online.ro/)
+- US: GasBuddy (https://www.gasbuddy.com/)
+
+## Development
+
+```bash
+# Get a comprehensive list of development tools
+just --list
+```
