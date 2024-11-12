@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/skautils/__init__.py
+src/skautils/exehelper.py
+src/skautils.egg-info/PKG-INFO
+src/skautils.egg-info/SOURCES.txt
+src/skautils.egg-info/dependency_links.txt
+src/skautils.egg-info/requires.txt
+src/skautils.egg-info/top_level.txt
+tests/test_check_exe_version.py

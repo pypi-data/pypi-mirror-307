@@ -1,0 +1,28 @@
+[project]
+name = "skautils"
+version = "0.0.3"
+authors = [
+  { name="Konstantin Suspitsyn", email="konstantin.suspitsun@xmail.ru" },
+]
+description = "Set of utils to help to work in data and analytics"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+dependencies = [
+  "toml>=0.10.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/konstantin-suspitsyn/skautils"
+Issues = "https://github.com/konstantin-suspitsyn/skautils/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[pytest]
+pythonpath = ["src"]
