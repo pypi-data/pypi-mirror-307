@@ -1,0 +1,3 @@
+[console_scripts]
+pytheus = pytheus.cli:cli
+
