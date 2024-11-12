@@ -1,0 +1,13 @@
+# Web 框架
+Flask>=2.0.0
+Flask-SocketIO>=5.0.0
+
+# WebSocket 支持
+eventlet>=0.33.0
+python-socketio>=5.0.0
+python-engineio>=4.0.0
+
+# 工具库
+urllib3>=1.26.0,<2.0.0
+pygments>=2.13.0,<3.0.0
+tqdm>=4.64.1

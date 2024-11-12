@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli2webui"
+dynamic = ["version"]
+description = "A tool to convert CLI tools to web interfaces"
+readme = "README.md"
+authors = [{ name = "skyfire", email = "skyfireitdiy@hotmail.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "Flask>=2.0.0",
+    "Flask-SocketIO>=5.0.0",
+    "eventlet>=0.33.0",
+    "python-socketio>=5.0.0",
+    "python-engineio>=4.0.0",
+    "urllib3>=1.26.0,<2.0.0",
+    "pygments>=2.13.0,<3.0.0",
+    "tqdm>=4.64.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/skyfireitdiy/cli2web"
+Repository = "https://github.com/skyfireitdiy/cli2web.git"
+
+[project.scripts]
+cli2webui = "cli2web.__main__:main"

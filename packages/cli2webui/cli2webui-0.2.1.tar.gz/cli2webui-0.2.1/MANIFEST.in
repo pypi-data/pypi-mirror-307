@@ -1,0 +1,7 @@
+include README.md
+include requirements.txt
+include LICENSE
+include cli2web/templates/*.html
+include cli2web/static/*
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co] 
