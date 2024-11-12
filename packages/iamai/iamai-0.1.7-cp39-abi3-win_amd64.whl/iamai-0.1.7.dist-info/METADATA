@@ -1,0 +1,62 @@
+Metadata-Version: 2.3
+Name: iamai
+Version: 0.1.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Chat
+Requires-Dist: pydantic >=2.0.3, <3.0.0
+Requires-Dist: aiohttp >=3.9.1
+Requires-Dist: loguru >=0.7.0, <0.8.0
+Requires-Dist: typing-extensions >=4.8.0
+Requires-Dist: requests >=2.31.0
+Requires-Dist: rich >=13.7.1
+Requires-Dist: click >=8.1.7
+Requires-Dist: polib >=1.2.0
+Requires-Dist: iamai-adapter-cqhttp ; extra == 'cqhttp'
+Requires-Dist: iamai-adapter-bililive ; extra == 'bililive'
+Requires-Dist: iamai-adapter-dingtalk ; extra == 'dingtalk'
+Requires-Dist: iamai-adapter-apscheduler ; extra == 'apscheduler'
+Requires-Dist: iamai-adapter-red ; extra == 'red'
+Requires-Dist: iamai-adapter-console ; extra == 'console'
+Requires-Dist: iamai-adapter-kook ; extra == 'kook'
+Requires-Dist: iamai-adapter-gensokyo ; extra == 'gensokyo'
+Requires-Dist: watchfiles ; extra == 'hot_reload'
+Requires-Dist: iamai-adapter-bililive ; extra == 'all'
+Requires-Dist: iamai-adapter-cqhttp ; extra == 'all'
+Requires-Dist: iamai-adapter-dingtalk ; extra == 'all'
+Requires-Dist: iamai-adapter-apscheduler ; extra == 'all'
+Requires-Dist: iamai-adapter-gensokyo ; extra == 'all'
+Requires-Dist: iamai-adapter-console ; extra == 'all'
+Requires-Dist: iamai-adapter-red ; extra == 'all'
+Requires-Dist: iamai-adapter-kook ; extra == 'all'
+Requires-Dist: watchfiles ; extra == 'all'
+Provides-Extra: cqhttp
+Provides-Extra: bililive
+Provides-Extra: dingtalk
+Provides-Extra: apscheduler
+Provides-Extra: red
+Provides-Extra: console
+Provides-Extra: kook
+Provides-Extra: gensokyo
+Provides-Extra: hot_reload
+Provides-Extra: all
+License-File: COPYING
+Summary: Comprehensive AI Toolkit for Multimodal Learning and Cross-Platform Robotics.
+Keywords: bot,red,kook,onebot11,gensokyo,dingtalk,console,apscheduler,bilibili,bilibili-live,rust,pyo3
+Home-Page: https://iamai.is-a.dev/
+Author: HsiangNianian
+Author-email: HsiangNianian <i@jyunko.cn>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Project-URL: Homepage, https://iamai.is-a.dev
+Project-URL: Documentation, https://iamai.is-a.dev
+Project-URL: Repository, https://github.com/retrofor/iamai
+Project-URL: Changelog, https://iamai.is-a.dev/en/latest/changelog.html#
+
+See the `documentation <https://iamai.is-a.dev/>`_.
