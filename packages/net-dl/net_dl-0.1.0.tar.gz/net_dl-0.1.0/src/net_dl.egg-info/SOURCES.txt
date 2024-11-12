@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/net_dl/__init__.py
+src/net_dl/__main__.py
+src/net_dl/config.py
+src/net_dl/download.py
+src/net_dl/props.py
+src/net_dl.egg-info/PKG-INFO
+src/net_dl.egg-info/SOURCES.txt
+src/net_dl.egg-info/dependency_links.txt
+src/net_dl.egg-info/entry_points.txt
+src/net_dl.egg-info/requires.txt
+src/net_dl.egg-info/top_level.txt
+test/test_download.py
+test/test_props.py
