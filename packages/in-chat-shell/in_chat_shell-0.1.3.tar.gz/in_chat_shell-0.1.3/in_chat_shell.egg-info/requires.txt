@@ -1,0 +1,4 @@
+prompt_toolkit==3.0.48
+Pygments==2.18.0
+Requests==2.32.3
+tenacity==9.0.0
