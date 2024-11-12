@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sleep_data_analysis
+Version: 0.4
+Summary: A package for analyzing health and sleep data
+Home-page: https://github.com/prithviraj-kt/sleep_data_analysis.git
+Author: Prithviraj K Tagadinamani
+Author-email: prithvirajtagadinamani@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
