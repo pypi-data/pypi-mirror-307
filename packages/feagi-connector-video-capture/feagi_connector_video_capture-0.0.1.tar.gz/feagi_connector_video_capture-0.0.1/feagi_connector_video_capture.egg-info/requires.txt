@@ -1,0 +1,8 @@
+feagi_connector
+pyzmq>=22.3.0
+Pillow==10.1.0
+mss==9.0.1
+screeninfo==0.8.1
+
+[:python_version < "3.8"]
+zmq>=0.0.0

@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./feagi_connector_video_capture/__init__.py
+./feagi_connector_video_capture/__main__.py
+./feagi_connector_video_capture/controller.py
+./feagi_connector_video_capture/version.py
+feagi_connector_video_capture/__init__.py
+feagi_connector_video_capture/__main__.py
+feagi_connector_video_capture/controller.py
+feagi_connector_video_capture/version.py
+feagi_connector_video_capture.egg-info/PKG-INFO
+feagi_connector_video_capture.egg-info/SOURCES.txt
+feagi_connector_video_capture.egg-info/dependency_links.txt
+feagi_connector_video_capture.egg-info/requires.txt
+feagi_connector_video_capture.egg-info/top_level.txt
