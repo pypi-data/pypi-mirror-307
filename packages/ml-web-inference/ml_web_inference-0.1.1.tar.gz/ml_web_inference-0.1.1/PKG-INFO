@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ml_web_inference
+Version: 0.1.1
+Summary: A Python package for ML web inference using FastAPI
+Home-page: https://github.com/xcczach/ml-web-inference
+Author: xcc
+Author-email: 2867389537@qq.com
+License: MIT
+Keywords: machine learning,web inference,fastapi,uvicorn
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<4
+License-File: LICENSE
