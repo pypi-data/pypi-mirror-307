@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "aiodoc"
+version = "0.1.0"
+description = "This library allows you to retrieve BytesIO objects from various sources asynchronously. Whether you're dealing with cloud storage, HTTP endpoints, FTP servers, or local files."
+authors = ["Chris <goabonga@pm.me>"]
+readme = "README.md"
+packages = [
+    { include = "aiodoc", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.file]
+optional = true
+
+[tool.poetry.group.file.dependencies]
+aiofile = "^3.8.8"
+aiofiles = "^24.1.0"
+
+[tool.poetry.group.redis]
+optional = true
+
+[tool.poetry.group.redis.dependencies]
+redis = "^5.2.0"
+
+[tool.poetry.group.ftp]
+optional = true
+
+[tool.poetry.group.ftp.dependencies]
+aioftp = "^0.22.3"
+
+[tool.poetry.group.amazon]
+optional = true
+
+[tool.poetry.group.amazon.dependencies]
+aiobotocore = "^2.15.1"
+
+[tool.poetry.group.google]
+optional = true
+
+[tool.poetry.group.google.dependencies]
+google-cloud-storage = "^2.18.2"
+
+[tool.poetry.group.minio]
+optional = true
+
+[tool.poetry.group.minio.dependencies]
+minio = "^7.2.9"
+
+[tool.poetry.group.http]
+optional = true
+
+[tool.poetry.group.http.dependencies]
+httpx = "^0.27.2"
+
+
+[tool.poetry.group.memcached]
+optional = true
+
+[tool.poetry.group.memcached.dependencies]
+aiomemcached = "^0.8.4"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+moto = "^5.0.16"
+ruff = "^0.6.8"
+pytest-mock = "^3.14.0"
+pytest-cov = "^6.0.0"
+types-aiofiles = "^24.1.0.20240626"
+types-redis = "^4.6.0.20241004"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
