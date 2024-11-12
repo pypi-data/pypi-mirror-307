@@ -1,0 +1,16 @@
+[package]
+name = "vsag-py"
+version = "0.1.2"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.22.0"
+vsag-sys = { git = "https://github.com/jiacai2050/vsag-sys.git", branch = "main" }
+
+[features]
+default = ["vendored", "no-intel-mkl"]
+vendored = ["vsag-sys/vendored"]
+no-intel-mkl = ["vsag-sys/no-intel-mkl"]
