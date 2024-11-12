@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: verify-project-demo-181e3a37
+Version: 0.1.1
+Summary: A sample Python package that generates test code.
+Home-page: https://github.com/yourusername/verify-project-demo-181e3a37
+Author: doc
+Author-email: nikoduck@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# verify-project-demo-181e3a37
+
+    This is a sample Python package that generates test code with specified comments.
+
+    ## Installation
+
+    Install the package with:
+
+    ```sh
+    pip install verify-project-demo-181e3a37
+    from my_package.code_generator import generate_test_code
+
+    directory = 'test'
+    filename = 'test_code.py'
+    custom_value = 'specified_value'
+    generate_test_code(directory, filename, custom_value)
+    
