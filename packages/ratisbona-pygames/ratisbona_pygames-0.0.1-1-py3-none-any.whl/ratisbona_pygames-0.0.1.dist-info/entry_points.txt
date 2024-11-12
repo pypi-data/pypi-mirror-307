@@ -1,0 +1,4 @@
+[console_scripts]
+ratisbona_death_by_powerpoint = ratisbona_pygames.death_by_powerpoint.__main__:main
+ratisbona_fire_demo = ratisbona_pygames.fire_demo.__main__:main
+ratisbona_palette_demo = ratisbona_pygames.palette_demo.__main__:main
