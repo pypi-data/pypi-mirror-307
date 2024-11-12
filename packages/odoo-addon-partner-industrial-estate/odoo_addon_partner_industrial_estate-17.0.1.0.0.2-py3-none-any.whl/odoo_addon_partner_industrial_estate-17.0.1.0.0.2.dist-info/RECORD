@@ -1,0 +1,16 @@
+odoo/addons/partner_industrial_estate/README.rst,sha256=-XU1AVDF_50iQCypw96mPVntGqS_15kIy43LHz94gxI,1786
+odoo/addons/partner_industrial_estate/__init__.py,sha256=F3F79W05Y-0HIdq_RDQCt08HGJNK8_n_wYHZcAWGCqI,137
+odoo/addons/partner_industrial_estate/__manifest__.py,sha256=GId9Buhsr4waXn0mcNkQ-_NAsIKpWQbRE-7yl-IRyWo,765
+odoo/addons/partner_industrial_estate/hooks.py,sha256=IABkJigjMoC9hl3o1w9fI-msW3OBIjs0SzIuTRRQ-xA,2289
+odoo/addons/partner_industrial_estate/i18n/es.po,sha256=JWjNP8n0tvWQMVt79KfS_9X0nU6X2pGEVvJRLA0pEFM,4514
+odoo/addons/partner_industrial_estate/models/__init__.py,sha256=S3z3Uns-cNM6cuTGRE4VvCfO6pH8k_mHKm4gshZ1_GU,136
+odoo/addons/partner_industrial_estate/models/res_partner.py,sha256=snZT3RaotCr7vEYKdGdkaZugEnLYyinDJwy-TQWRD6E,830
+odoo/addons/partner_industrial_estate/models/res_partner_industrial_estate.py,sha256=-QPnT5sCNy0MkmV64QoQ61nr5WOq91hoVQWOPwkBfho,1483
+odoo/addons/partner_industrial_estate/security/ir.model.access.csv,sha256=9nZTk-XaXKgQ55cjBLY4YnGy_X1DTOpfDaYk8pxaprI,215
+odoo/addons/partner_industrial_estate/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/partner_industrial_estate/views/res_partner_industrial_estate_views.xml,sha256=aYFK1426qjFjfrobgHDYADQq1TKNrZukhtVAeJuILDY,2531
+odoo/addons/partner_industrial_estate/views/res_partner_views.xml,sha256=-tRmJpRDyaLd5OlMLMaQ0Zac7lDo0Q_nGPRdA-TI4kc,1671
+odoo_addon_partner_industrial_estate-17.0.1.0.0.2.dist-info/METADATA,sha256=CcJDnThI0VB_JVBoKHP2zw-NdMS37nQBMMaGDbQBbO0,2280
+odoo_addon_partner_industrial_estate-17.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_partner_industrial_estate-17.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_partner_industrial_estate-17.0.1.0.0.2.dist-info/RECORD,,
