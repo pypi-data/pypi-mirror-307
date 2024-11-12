@@ -1,0 +1,7 @@
+[aiida.calculations]
+aiida_icon.icon = aiida_icon.calculations:IconCalculation
+icon.icon = aiida_icon.calculations:IconCalculation
+
+[aiida.parsers]
+aiida_icon.icon = aiida_icon.calculations:IconParser
+icon.icon = aiida_icon.calculations:IconParser
