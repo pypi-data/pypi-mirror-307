@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: skautils
+Version: 0.0.3
+Summary: Set of utils to help to work in data and analytics
+Author-email: Konstantin Suspitsyn <konstantin.suspitsun@xmail.ru>
+Project-URL: Homepage, https://github.com/konstantin-suspitsyn/skautils
+Project-URL: Issues, https://github.com/konstantin-suspitsyn/skautils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: toml >=0.10.2
+
+# SKA Utils
+
+Набор утилит, которые помогают мне и команде в которой я работаю, выполнять рабочие задачи
+
+## exehelper
+Проверяет совпадает ли версия в toml-файле на сетевом диске и в классе ```CheckExeVersion```
+
+Библиотека позволяет проверить соответствие версии текущего файла и версии в файле .toml, лежащего на сетевом диске
+
+file.toml
+```toml
+file_name="version"
+```
+
+file_name — название программы, должно быть единым в файле toml и при инициализации класса ```CheckExeVersion```
+
+Пример использования можно увидеть в папке ```tests``` репозитория github
