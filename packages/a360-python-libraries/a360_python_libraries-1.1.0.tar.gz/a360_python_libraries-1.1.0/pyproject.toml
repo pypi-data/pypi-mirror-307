@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "a360-python-libraries"
+version = "1.1.0"
+description = "A collection of Python libraries for A360"
+authors = ["A360"]
+license = "Proprietary"
+readme = "README.md"
+packages = [
+    {include = "a360_security"},
+    {include = "a360_services"},
+    {include = "a360_notification"},
+    {include = "a360_utils"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.35.0"
+python-jose = "^3.3.0"
+fastapi = "0.111.0"
+pydantic = "2.8.2"
+pydantic-settings = "^2.3.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
