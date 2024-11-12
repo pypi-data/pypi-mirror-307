@@ -1,0 +1,1 @@
+from .s_translator import file_translation
