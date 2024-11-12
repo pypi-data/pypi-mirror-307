@@ -1,0 +1,82 @@
+[project]
+name = "rithm"
+description = "Arbitrary precision arithmetic."
+authors = [{ name = "Azat Ibrakov", email = "azatibrakov@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "typing_extensions>=4.12.2,<5.0"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+tests = [
+    "hypothesis>=6.118.7,<7.0",
+    "pytest>=8.3.3,<9.0"
+]
+
+[build-system]
+requires = [
+    "setuptools-rust>=1.7.0,<2.0; platform_python_implementation=='CPython'",
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+source = ["rithm"]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "--verbose -s --hypothesis-profile=default"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "single"
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+preview = true
+select = [
+    # flake8-bugbear
+    "B",
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # isort
+    "I",
+    # flake8-simplify
+    "SIM",
+    # pyupgrade
+    "UP",
+]
+ignore = [
+    "E203", # Whitespace before ':'
+]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+combine-as-imports = true
+order-by-type = false
+relative-imports-order = "closest-to-furthest"
+split-on-trailing-comma = false
+
+[tool.setuptools.dynamic]
+version = { attr = "rithm.__version__" }
