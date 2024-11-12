@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/funui/__init__.py
+src/funui.egg-info/PKG-INFO
+src/funui.egg-info/SOURCES.txt
+src/funui.egg-info/dependency_links.txt
+src/funui.egg-info/top_level.txt
+src/funui/module/__init__.py
+src/funui/page/__init__.py
