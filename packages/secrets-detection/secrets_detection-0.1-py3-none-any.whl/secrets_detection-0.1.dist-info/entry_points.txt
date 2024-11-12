@@ -1,0 +1,2 @@
+[console_scripts]
+scan-secrets = secrets_scanner.scanner:analyze_repository
