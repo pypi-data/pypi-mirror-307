@@ -1,0 +1,1402 @@
+SUBTYPE	CODE	DISPLAY	COMMENT
+attempt	T14.91	Suicide attempt	
+attempt	T14.91XA	Suicide attempt, initial encounter	
+attempt	T14.91XD	Suicide attempt, subsequent encounter	
+attempt	T14.91XS	Suicide attempt, sequela	
+ideation	R45.851	Suicidal ideations	
+self_harm	R45.88	Nonsuicidal self-harm :changed 2021-10-01	Oct 1, 2021 coding change
+self_harm	Z91.5	Personal history of self harm :changed 2021-10-01	Oct 1, 2021 coding change
+self_harm	Z91.51	Personal history of suicidal behavior :changed 2021-10-01	Oct 1, 2021 coding change
+self_harm	Z91.52	Personal history of nonsuicidal self-harm :changed 2021-10-01	Oct 1, 2021 coding change
+self_harm	T36.0X2	Poisoning by penicillins, intentional self-harm	
+self_harm	T36.0X2A	Poisoning by penicillins, intentional self-harm, init encntr	
+self_harm	T36.0X2D	Poisoning by penicillins, intentional self-harm, subs encntr	
+self_harm	T36.0X2S	Poisoning by penicillins, intentional self-harm, sequela	
+self_harm	T36.1X2	Poisoning by cephalospor/oth beta-lactm antibiot, self-harm	
+self_harm	T36.1X2A	Poisn by cephalospor/oth beta-lactm antibiot, slf-hrm, init	
+self_harm	T36.1X2D	Poisn by cephalospor/oth beta-lactm antibiot, slf-hrm, subs	
+self_harm	T36.1X2S	Poisn by cephalospor/oth beta-lactm antibiot, slf-hrm, sqla	
+self_harm	T36.2X2	Poisoning by chloramphenicol group, intentional self-harm	
+self_harm	T36.2X2A	Poisoning by chloramphenicol group, self-harm, init	
+self_harm	T36.2X2D	Poisoning by chloramphenicol group, self-harm, subs	
+self_harm	T36.2X2S	Poisoning by chloramphenicol group, self-harm, sequela	
+self_harm	T36.3X2	Poisoning by macrolides, intentional self-harm	
+self_harm	T36.3X2A	Poisoning by macrolides, intentional self-harm, init encntr	
+self_harm	T36.3X2D	Poisoning by macrolides, intentional self-harm, subs encntr	
+self_harm	T36.3X2S	Poisoning by macrolides, intentional self-harm, sequela	
+self_harm	T36.4X2	Poisoning by tetracyclines, intentional self-harm	
+self_harm	T36.4X2A	Poisoning by tetracyclines, intentional self-harm, init	
+self_harm	T36.4X2D	Poisoning by tetracyclines, intentional self-harm, subs	
+self_harm	T36.4X2S	Poisoning by tetracyclines, intentional self-harm, sequela	
+self_harm	T36.5X2	Poisoning by aminoglycosides, intentional self-harm	
+self_harm	T36.5X2A	Poisoning by aminoglycosides, intentional self-harm, init	
+self_harm	T36.5X2D	Poisoning by aminoglycosides, intentional self-harm, subs	
+self_harm	T36.5X2S	Poisoning by aminoglycosides, intentional self-harm, sequela	
+self_harm	T36.6X2	Poisoning by rifampicins, intentional self-harm	
+self_harm	T36.6X2A	Poisoning by rifampicins, intentional self-harm, init encntr	
+self_harm	T36.6X2D	Poisoning by rifampicins, intentional self-harm, subs encntr	
+self_harm	T36.6X2S	Poisoning by rifampicins, intentional self-harm, sequela	
+self_harm	T36.7X2	Poisoning by antifungal antibiotics, sys used, self-harm	
+self_harm	T36.7X2A	Poisoning by antifungal antibiot, sys used, self-harm, init	
+self_harm	T36.7X2D	Poisoning by antifungal antibiot, sys used, self-harm, subs	
+self_harm	T36.7X2S	Poisoning by antifung antibiot, sys used, self-harm, sequela	
+self_harm	T36.8X2	Poisoning by oth systemic antibiotics, intentional self-harm	
+self_harm	T36.8X2A	Poisoning by oth systemic antibiotics, self-harm, init	
+self_harm	T36.8X2D	Poisoning by oth systemic antibiotics, self-harm, subs	
+self_harm	T36.8X2S	Poisoning by oth systemic antibiotics, self-harm, sequela	
+self_harm	T37.0X2	Poisoning by sulfonamides, intentional self-harm	
+self_harm	T37.0X2A	Poisoning by sulfonamides, intentional self-harm, init	
+self_harm	T37.0X2D	Poisoning by sulfonamides, intentional self-harm, subs	
+self_harm	T37.0X2S	Poisoning by sulfonamides, intentional self-harm, sequela	
+self_harm	T37.1X2	Poisoning by antimycobacterial drugs, intentional self-harm	
+self_harm	T37.1X2A	Poisoning by antimycobacterial drugs, self-harm, init	
+self_harm	T37.1X2D	Poisoning by antimycobacterial drugs, self-harm, subs	
+self_harm	T37.1X2S	Poisoning by antimycobacterial drugs, self-harm, sequela	
+self_harm	T37.2X2	Poisn by antimalari/drugs acting on bld protzoa, self-harm	
+self_harm	T37.2X2A	Poisn by antimalari/drugs act on bld protzoa, slf-hrm, init	
+self_harm	T37.2X2D	Poisn by antimalari/drugs act on bld protzoa, slf-hrm, subs	
+self_harm	T37.2X2S	Poisn by antimalari/drugs act on bld protzoa, slf-hrm, sqla	
+self_harm	T37.3X2	Poisoning by oth antiprotozoal drugs, intentional self-harm	
+self_harm	T37.3X2A	Poisoning by oth antiprotozoal drugs, self-harm, init	
+self_harm	T37.3X2D	Poisoning by oth antiprotozoal drugs, self-harm, subs	
+self_harm	T37.3X2S	Poisoning by oth antiprotozoal drugs, self-harm, sequela	
+self_harm	T37.4X2	Poisoning by anthelminthics, intentional self-harm	
+self_harm	T37.4X2A	Poisoning by anthelminthics, intentional self-harm, init	
+self_harm	T37.4X2D	Poisoning by anthelminthics, intentional self-harm, subs	
+self_harm	T37.4X2S	Poisoning by anthelminthics, intentional self-harm, sequela	
+self_harm	T37.5X2	Poisoning by antiviral drugs, intentional self-harm	
+self_harm	T37.5X2A	Poisoning by antiviral drugs, intentional self-harm, init	
+self_harm	T37.5X2D	Poisoning by antiviral drugs, intentional self-harm, subs	
+self_harm	T37.5X2S	Poisoning by antiviral drugs, intentional self-harm, sequela	
+self_harm	T37.8X2	Poisoning by oth systemic anti-infect/parasit, self-harm	
+self_harm	T37.8X2A	Poisn by oth systemic anti-infect/parasit, self-harm, init	
+self_harm	T37.8X2D	Poisn by oth systemic anti-infect/parasit, self-harm, subs	
+self_harm	T37.8X2S	Poisn by oth systemic anti-infect/parasit, slf-hrm, sequela	
+self_harm	T37.92	Poisn by unsp systemic anti-infect and antiparastc, slf-hrm	
+self_harm	T37.92XA	Poisn by unsp sys anti-infect and antiparastc, slf-hrm, init	
+self_harm	T37.92XD	Poisn by unsp sys anti-infect and antiparastc, slf-hrm, subs	
+self_harm	T37.92XS	Poisn by unsp sys anti-infect and antiparastc, slf-hrm, sqla	
+self_harm	T38.0X2	Poisoning by glucocort/synth analog, intentional self-harm	
+self_harm	T38.0X2A	Poisoning by glucocort/synth analog, self-harm, init	
+self_harm	T38.0X2D	Poisoning by glucocort/synth analog, self-harm, subs	
+self_harm	T38.0X2S	Poisoning by glucocort/synth analog, self-harm, sequela	
+self_harm	T38.1X2	Poisoning by thyroid hormones and substitutes, self-harm	
+self_harm	T38.1X2A	Poisoning by thyroid hormones and sub, self-harm, init	
+self_harm	T38.1X2D	Poisoning by thyroid hormones and sub, self-harm, subs	
+self_harm	T38.1X2S	Poisoning by thyroid hormones and sub, self-harm, sequela	
+self_harm	T38.2X2	Poisoning by antithyroid drugs, intentional self-harm	
+self_harm	T38.2X2A	Poisoning by antithyroid drugs, intentional self-harm, init	
+self_harm	T38.2X2D	Poisoning by antithyroid drugs, intentional self-harm, subs	
+self_harm	T38.2X2S	Poisoning by antithyroid drugs, self-harm, sequela	
+self_harm	T38.3X2	Poisoning by insulin and oral hypoglycemic drugs, self-harm	
+self_harm	T38.3X2A	Poisn by insulin and oral hypoglycemic drugs, slf-hrm, init	
+self_harm	T38.3X2D	Poisn by insulin and oral hypoglycemic drugs, slf-hrm, subs	
+self_harm	T38.3X2S	Poisn by insulin and oral hypoglycemic drugs, slf-hrm, sqla	
+self_harm	T38.4X2	Poisoning by oral contraceptives, intentional self-harm	
+self_harm	T38.4X2A	Poisoning by oral contraceptives, self-harm, init	
+self_harm	T38.4X2D	Poisoning by oral contraceptives, self-harm, subs	
+self_harm	T38.4X2S	Poisoning by oral contraceptives, self-harm, sequela	
+self_harm	T38.5X2	Poisoning by oth estrogens and progestogens, self-harm	
+self_harm	T38.5X2A	Poisoning by oth estrogens and progestogens, self-harm, init	
+self_harm	T38.5X2D	Poisoning by oth estrogens and progestogens, self-harm, subs	
+self_harm	T38.5X2S	Poisoning by oth estrogens and progstrn, self-harm, sequela	
+self_harm	T38.6X2	Poisoning by antigonadtr/antiestr/antiandrg, NEC, self-harm	
+self_harm	T38.6X2A	Poisn by antigonadtr/antiestr/antiandrg, NEC, slf-hrm, init	
+self_harm	T38.6X2D	Poisn by antigonadtr/antiestr/antiandrg, NEC, slf-hrm, subs	
+self_harm	T38.6X2S	Poisn by antigonadtr/antiestr/antiandrg, NEC, slf-hrm, sqla	
+self_harm	T38.7X2	Poisoning by androgens and anabolic congeners, self-harm	
+self_harm	T38.7X2A	Poisn by androgens and anabolic congeners, self-harm, init	
+self_harm	T38.7X2D	Poisn by androgens and anabolic congeners, self-harm, subs	
+self_harm	T38.7X2S	Poisn by androgens and anabolic congeners, slf-hrm, sequela	
+self_harm	T38.802	Poisoning by unsp hormones and synthetic sub, self-harm	
+self_harm	T38.802A	Poisn by unsp hormones and synthetic sub, self-harm, init	
+self_harm	T38.802D	Poisn by unsp hormones and synthetic sub, self-harm, subs	
+self_harm	T38.802S	Poisn by unsp hormones and synthetic sub, self-harm, sequela	
+self_harm	T38.812	Poisoning by anterior pituitary hormones, self-harm	
+self_harm	T38.812A	Poisoning by anterior pituitary hormones, self-harm, init	
+self_harm	T38.812D	Poisoning by anterior pituitary hormones, self-harm, subs	
+self_harm	T38.812S	Poisoning by anterior pituitary hormones, self-harm, sequela	
+self_harm	T38.892	Poisoning by oth hormones and synthetic sub, self-harm	
+self_harm	T38.892A	Poisoning by oth hormones and synthetic sub, self-harm, init	
+self_harm	T38.892D	Poisoning by oth hormones and synthetic sub, self-harm, subs	
+self_harm	T38.892S	Poisn by oth hormones and synthetic sub, self-harm, sequela	
+self_harm	T38.902	Poisoning by unsp hormone antagonists, intentional self-harm	
+self_harm	T38.902A	Poisoning by unsp hormone antagonists, self-harm, init	
+self_harm	T38.902D	Poisoning by unsp hormone antagonists, self-harm, subs	
+self_harm	T38.902S	Poisoning by unsp hormone antagonists, self-harm, sequela	
+self_harm	T38.992	Poisoning by oth hormone antagonists, intentional self-harm	
+self_harm	T38.992A	Poisoning by oth hormone antagonists, self-harm, init	
+self_harm	T38.992D	Poisoning by oth hormone antagonists, self-harm, subs	
+self_harm	T38.992S	Poisoning by oth hormone antagonists, self-harm, sequela	
+self_harm	T39.012	Poisoning by aspirin, intentional self-harm	
+self_harm	T39.012A	Poisoning by aspirin, intentional self-harm, init encntr	
+self_harm	T39.012D	Poisoning by aspirin, intentional self-harm, subs encntr	
+self_harm	T39.012S	Poisoning by aspirin, intentional self-harm, sequela	
+self_harm	T39.092	Poisoning by salicylates, intentional self-harm	
+self_harm	T39.092A	Poisoning by salicylates, intentional self-harm, init encntr	
+self_harm	T39.092D	Poisoning by salicylates, intentional self-harm, subs encntr	
+self_harm	T39.092S	Poisoning by salicylates, intentional self-harm, sequela	
+self_harm	T39.1X2	Poisoning by 4-Aminophenol derivatives, self-harm	
+self_harm	T39.1X2A	Poisoning by 4-Aminophenol derivatives, self-harm, init	
+self_harm	T39.1X2D	Poisoning by 4-Aminophenol derivatives, self-harm, subs	
+self_harm	T39.1X2S	Poisoning by 4-Aminophenol derivatives, self-harm, sequela	
+self_harm	T39.2X2	Poisoning by pyrazolone derivatives, intentional self-harm	
+self_harm	T39.2X2A	Poisoning by pyrazolone derivatives, self-harm, init	
+self_harm	T39.2X2D	Poisoning by pyrazolone derivatives, self-harm, subs	
+self_harm	T39.2X2S	Poisoning by pyrazolone derivatives, self-harm, sequela	
+self_harm	T39.312	Poisoning by propionic acid derivatives, self-harm	
+self_harm	T39.312A	Poisoning by propionic acid derivatives, self-harm, init	
+self_harm	T39.312D	Poisoning by propionic acid derivatives, self-harm, subs	
+self_harm	T39.312S	Poisoning by propionic acid derivatives, self-harm, sequela	
+self_harm	T39.392	Poisoning by oth nonsteroidal anti-inflam drugs, self-harm	
+self_harm	T39.392A	Poisn by oth nonsteroid anti-inflam drugs, self-harm, init	
+self_harm	T39.392D	Poisn by oth nonsteroid anti-inflam drugs, self-harm, subs	
+self_harm	T39.392S	Poisn by oth nonsteroid anti-inflam drugs, slf-hrm, sequela	
+self_harm	T39.4X2	Poisoning by antirheumatics, NEC, intentional self-harm	
+self_harm	T39.4X2A	Poisoning by antirheumatics, NEC, self-harm, init	
+self_harm	T39.4X2D	Poisoning by antirheumatics, NEC, self-harm, subs	
+self_harm	T39.4X2S	Poisoning by antirheumatics, NEC, self-harm, sequela	
+self_harm	T39.8X2	Poisoning by oth nonopioid analges/antipyret, NEC, self-harm	
+self_harm	T39.8X2A	Poisn by oth nonopio analges/antipyret, NEC, self-harm, init	
+self_harm	T39.8X2D	Poisn by oth nonopio analges/antipyret, NEC, self-harm, subs	
+self_harm	T39.8X2S	Poisn by oth nonopio analges/antipyret, NEC, slf-hrm, sqla	
+self_harm	T39.92XA	Poisn by unsp nonopi analgs/antipyr/antirheu, slf-hrm, init	
+self_harm	T39.92XD	Poisn by unsp nonopi analgs/antipyr/antirheu, slf-hrm, subs	
+self_harm	T39.92XS	Poisn by unsp nonopi analgs/antipyr/antirheu, slf-hrm, sqla	
+self_harm	T40.0X2	Poisoning by opium, intentional self-harm	
+self_harm	T40.0X2A	Poisoning by opium, intentional self-harm, initial encounter	
+self_harm	T40.0X2D	Poisoning by opium, intentional self-harm, subs encntr	
+self_harm	T40.0X2S	Poisoning by opium, intentional self-harm, sequela	
+self_harm	T40.1X2	Poisoning by heroin, intentional self-harm	
+self_harm	T40.1X2A	Poisoning by heroin, intentional self-harm, init encntr	
+self_harm	T40.1X2D	Poisoning by heroin, intentional self-harm, subs encntr	
+self_harm	T40.1X2S	Poisoning by heroin, intentional self-harm, sequela	
+self_harm	T40.2X2	Poisoning by other opioids, intentional self-harm	
+self_harm	T40.2X2A	Poisoning by oth opioids, intentional self-harm, init encntr	
+self_harm	T40.2X2D	Poisoning by oth opioids, intentional self-harm, subs encntr	
+self_harm	T40.2X2S	Poisoning by other opioids, intentional self-harm, sequela	
+self_harm	T40.3X2	Poisoning by methadone, intentional self-harm	
+self_harm	T40.3X2A	Poisoning by methadone, intentional self-harm, init encntr	
+self_harm	T40.3X2D	Poisoning by methadone, intentional self-harm, subs encntr	
+self_harm	T40.3X2S	Poisoning by methadone, intentional self-harm, sequela	
+self_harm	T40.5X2	Poisoning by cocaine, intentional self-harm	
+self_harm	T40.5X2A	Poisoning by cocaine, intentional self-harm, init encntr	
+self_harm	T40.5X2D	Poisoning by cocaine, intentional self-harm, subs encntr	
+self_harm	T40.5X2S	Poisoning by cocaine, intentional self-harm, sequela	
+self_harm	T40.602	Poisoning by unspecified narcotics, intentional self-harm	
+self_harm	T40.602A	Poisoning by unsp narcotics, intentional self-harm, init	
+self_harm	T40.602D	Poisoning by unsp narcotics, intentional self-harm, subs	
+self_harm	T40.602S	Poisoning by unsp narcotics, intentional self-harm, sequela	
+self_harm	T40.692	Poisoning by other narcotics, intentional self-harm	
+self_harm	T40.692A	Poisoning by oth narcotics, intentional self-harm, init	
+self_harm	T40.692D	Poisoning by oth narcotics, intentional self-harm, subs	
+self_harm	T40.692S	Poisoning by other narcotics, intentional self-harm, sequela	
+self_harm	T40.8X2	Poisoning by lysergide [LSD], intentional self-harm	
+self_harm	T40.8X2A	Poisoning by lysergide, intentional self-harm, init encntr	
+self_harm	T40.8X2D	Poisoning by lysergide, intentional self-harm, subs encntr	
+self_harm	T40.8X2S	Poisoning by lysergide [LSD], intentional self-harm, sequela	
+self_harm	T40.902	Poisoning by unsp psychodysleptics, intentional self-harm	
+self_harm	T40.902A	Poisoning by unsp psychodysleptics, self-harm, init	
+self_harm	T40.902D	Poisoning by unsp psychodysleptics, self-harm, subs	
+self_harm	T40.902S	Poisoning by unsp psychodysleptics, self-harm, sequela	
+self_harm	T40.992	Poisoning by other psychodysleptics, intentional self-harm	
+self_harm	T40.992A	Poisoning by oth psychodysleptics, self-harm, init	
+self_harm	T40.992D	Poisoning by oth psychodysleptics, self-harm, subs	
+self_harm	T40.992S	Poisoning by oth psychodysleptics, self-harm, sequela	
+self_harm	T41.0X2	Poisoning by inhaled anesthetics, intentional self-harm	
+self_harm	T41.0X2A	Poisoning by inhaled anesthetics, self-harm, init	
+self_harm	T41.0X2D	Poisoning by inhaled anesthetics, self-harm, subs	
+self_harm	T41.0X2S	Poisoning by inhaled anesthetics, self-harm, sequela	
+self_harm	T41.1X2	Poisoning by intravenous anesthetics, intentional self-harm	
+self_harm	T41.1X2A	Poisoning by intravenous anesthetics, self-harm, init	
+self_harm	T41.1X2D	Poisoning by intravenous anesthetics, self-harm, subs	
+self_harm	T41.1X2S	Poisoning by intravenous anesthetics, self-harm, sequela	
+self_harm	T41.202	Poisoning by unsp general anesthetics, intentional self-harm	
+self_harm	T41.202A	Poisoning by unsp general anesthetics, self-harm, init	
+self_harm	T41.202D	Poisoning by unsp general anesthetics, self-harm, subs	
+self_harm	T41.202S	Poisoning by unsp general anesthetics, self-harm, sequela	
+self_harm	T41.292	Poisoning by oth general anesthetics, intentional self-harm	
+self_harm	T41.292A	Poisoning by oth general anesthetics, self-harm, init	
+self_harm	T41.292D	Poisoning by oth general anesthetics, self-harm, subs	
+self_harm	T41.292S	Poisoning by oth general anesthetics, self-harm, sequela	
+self_harm	T41.3X2	Poisoning by local anesthetics, intentional self-harm	
+self_harm	T41.3X2A	Poisoning by local anesthetics, intentional self-harm, init	
+self_harm	T41.3X2D	Poisoning by local anesthetics, intentional self-harm, subs	
+self_harm	T41.3X2S	Poisoning by local anesthetics, self-harm, sequela	
+self_harm	T41.42XA	Poisoning by unsp anesthetic, intentional self-harm, init	
+self_harm	T41.42XD	Poisoning by unsp anesthetic, intentional self-harm, subs	
+self_harm	T41.42XS	Poisoning by unsp anesthetic, intentional self-harm, sequela	
+self_harm	T41.5X2	Poisoning by therapeutic gases, intentional self-harm	
+self_harm	T41.5X2A	Poisoning by therapeutic gases, intentional self-harm, init	
+self_harm	T41.5X2D	Poisoning by therapeutic gases, intentional self-harm, subs	
+self_harm	T41.5X2S	Poisoning by therapeutic gases, self-harm, sequela	
+self_harm	T42.0X2	Poisoning by hydantoin derivatives, intentional self-harm	
+self_harm	T42.0X2A	Poisoning by hydantoin derivatives, self-harm, init	
+self_harm	T42.0X2D	Poisoning by hydantoin derivatives, self-harm, subs	
+self_harm	T42.0X2S	Poisoning by hydantoin derivatives, self-harm, sequela	
+self_harm	T42.1X2	Poisoning by iminostilbenes, intentional self-harm	
+self_harm	T42.1X2A	Poisoning by iminostilbenes, intentional self-harm, init	
+self_harm	T42.1X2D	Poisoning by iminostilbenes, intentional self-harm, subs	
+self_harm	T42.1X2S	Poisoning by iminostilbenes, intentional self-harm, sequela	
+self_harm	T42.2X2	Poisoning by succinimides and oxazolidinediones, self-harm	
+self_harm	T42.2X2A	Poisn by succinimides and oxazolidinediones, self-harm, init	
+self_harm	T42.2X2D	Poisn by succinimides and oxazolidinediones, self-harm, subs	
+self_harm	T42.2X2S	Poisn by succinimides and oxazolidinediones, slf-hrm, sqla	
+self_harm	T42.3X2	Poisoning by barbiturates, intentional self-harm	
+self_harm	T42.3X2A	Poisoning by barbiturates, intentional self-harm, init	
+self_harm	T42.3X2D	Poisoning by barbiturates, intentional self-harm, subs	
+self_harm	T42.3X2S	Poisoning by barbiturates, intentional self-harm, sequela	
+self_harm	T42.4X2	Poisoning by benzodiazepines, intentional self-harm	
+self_harm	T42.4X2A	Poisoning by benzodiazepines, intentional self-harm, init	
+self_harm	T42.4X2D	Poisoning by benzodiazepines, intentional self-harm, subs	
+self_harm	T42.4X2S	Poisoning by benzodiazepines, intentional self-harm, sequela	
+self_harm	T42.5X2	Poisoning by mixed antiepileptics, intentional self-harm	
+self_harm	T42.5X2A	Poisoning by mixed antiepileptics, self-harm, init	
+self_harm	T42.5X2D	Poisoning by mixed antiepileptics, self-harm, subs	
+self_harm	T42.5X2S	Poisoning by mixed antiepileptics, self-harm, sequela	
+self_harm	T42.6X2	Poisoning by oth antieplptc and sed-hypntc drugs, self-harm	
+self_harm	T42.6X2A	Poisn by oth antieplptc and sed-hypntc drugs, slf-hrm, init	
+self_harm	T42.6X2D	Poisn by oth antieplptc and sed-hypntc drugs, slf-hrm, subs	
+self_harm	T42.6X2S	Poisn by oth antieplptc and sed-hypntc drugs, slf-hrm, sqla	
+self_harm	T42.72XA	Poisn by unsp antieplptc and sed-hypntc drugs, slf-hrm, init	
+self_harm	T42.72XD	Poisn by unsp antieplptc and sed-hypntc drugs, slf-hrm, subs	
+self_harm	T42.72XS	Poisn by unsp antieplptc and sed-hypntc drugs, slf-hrm, sqla	
+self_harm	T42.8X2	Poisoning by antiparkns drug/centr musc-tone depr, self-harm	
+self_harm	T42.8X2A	Poisn by antiparkns drug/centr musc-tone depr, slf-hrm, init	
+self_harm	T42.8X2D	Poisn by antiparkns drug/centr musc-tone depr, slf-hrm, subs	
+self_harm	T42.8X2S	Poisn by antiparkns drug/centr musc-tone depr, slf-hrm, sqla	
+self_harm	T43.012	Poisoning by tricyclic antidepressants, self-harm	
+self_harm	T43.012A	Poisoning by tricyclic antidepressants, self-harm, init	
+self_harm	T43.012D	Poisoning by tricyclic antidepressants, self-harm, subs	
+self_harm	T43.012S	Poisoning by tricyclic antidepressants, self-harm, sequela	
+self_harm	T43.022	Poisoning by tetracyclic antidepressants, self-harm	
+self_harm	T43.022A	Poisoning by tetracyclic antidepressants, self-harm, init	
+self_harm	T43.022D	Poisoning by tetracyclic antidepressants, self-harm, subs	
+self_harm	T43.022S	Poisoning by tetracyclic antidepressants, self-harm, sequela	
+self_harm	T43.1X2	Poisoning by MAO inhib antidepressants, self-harm	
+self_harm	T43.1X2A	Poisoning by MAO inhib antidepressants, self-harm, init	
+self_harm	T43.1X2D	Poisoning by MAO inhib antidepressants, self-harm, subs	
+self_harm	T43.1X2S	Poisoning by MAO inhib antidepressants, self-harm, sequela	
+self_harm	T43.202	Poisoning by unsp antidepressants, intentional self-harm	
+self_harm	T43.202A	Poisoning by unsp antidepressants, self-harm, init	
+self_harm	T43.202D	Poisoning by unsp antidepressants, self-harm, subs	
+self_harm	T43.202S	Poisoning by unsp antidepressants, self-harm, sequela	
+self_harm	T43.212	Poisn by slctv seroton/norepineph reup inhibtr, self-harm	
+self_harm	T43.212A	Poisn by slctv seroton/norepineph reup inhibtr,slf-hrm, init	
+self_harm	T43.212D	Poisn by slctv seroton/norepineph reup inhibtr,slf-hrm, subs	
+self_harm	T43.212S	Poisn by slctv seroton/norepineph reup inhibtr,slf-hrm, sqla	
+self_harm	T43.222	Poisoning by selective serotonin reuptake inhibtr, self-harm	
+self_harm	T43.222A	Poisn by slctv serotonin reuptake inhibtr, self-harm, init	
+self_harm	T43.222D	Poisn by slctv serotonin reuptake inhibtr, self-harm, subs	
+self_harm	T43.222S	Poisn by slctv serotonin reuptake inhibtr, slf-hrm, sequela	
+self_harm	T43.292	Poisoning by other antidepressants, intentional self-harm	
+self_harm	T43.292A	Poisoning by oth antidepressants, self-harm, init	
+self_harm	T43.292D	Poisoning by oth antidepressants, self-harm, subs	
+self_harm	T43.292S	Poisoning by oth antidepressants, self-harm, sequela	
+self_harm	T43.3X2	Poisoning by phenothiazine antipsychot/neurolept, self-harm	
+self_harm	T43.3X2A	Poisn by phenothiaz antipsychot/neurolept, self-harm, init	
+self_harm	T43.3X2D	Poisn by phenothiaz antipsychot/neurolept, self-harm, subs	
+self_harm	T43.3X2S	Poisn by phenothiaz antipsychot/neurolept, slf-hrm, sequela	
+self_harm	T43.4X2	Poisoning by butyrophen/thiothixen neuroleptics, self-harm	
+self_harm	T43.4X2A	Poisn by butyrophen/thiothixen neuroleptc, self-harm, init	
+self_harm	T43.4X2D	Poisn by butyrophen/thiothixen neuroleptc, self-harm, subs	
+self_harm	T43.4X2S	Poisn by butyrophen/thiothixen neuroleptc, slf-hrm, sequela	
+self_harm	T43.502	Poisoning by unsp antipsychot/neurolept, self-harm	
+self_harm	T43.502A	Poisoning by unsp antipsychot/neurolept, self-harm, init	
+self_harm	T43.502D	Poisoning by unsp antipsychot/neurolept, self-harm, subs	
+self_harm	T43.502S	Poisoning by unsp antipsychot/neurolept, self-harm, sequela	
+self_harm	T43.592	Poisoning by oth antipsychot/neurolept, self-harm	
+self_harm	T43.592A	Poisoning by oth antipsychot/neurolept, self-harm, init	
+self_harm	T43.592D	Poisoning by oth antipsychot/neurolept, self-harm, subs	
+self_harm	T43.592S	Poisoning by oth antipsychot/neurolept, self-harm, sequela	
+self_harm	T43.602	Poisoning by unsp psychostimulants, intentional self-harm	
+self_harm	T43.602A	Poisoning by unsp psychostimulants, self-harm, init	
+self_harm	T43.602D	Poisoning by unsp psychostimulants, self-harm, subs	
+self_harm	T43.602S	Poisoning by unsp psychostimulants, self-harm, sequela	
+self_harm	T43.612	Poisoning by caffeine, intentional self-harm	
+self_harm	T43.612A	Poisoning by caffeine, intentional self-harm, init encntr	
+self_harm	T43.612D	Poisoning by caffeine, intentional self-harm, subs encntr	
+self_harm	T43.612S	Poisoning by caffeine, intentional self-harm, sequela	
+self_harm	T43.622	Poisoning by amphetamines, intentional self-harm	
+self_harm	T43.622A	Poisoning by amphetamines, intentional self-harm, init	
+self_harm	T43.622D	Poisoning by amphetamines, intentional self-harm, subs	
+self_harm	T43.622S	Poisoning by amphetamines, intentional self-harm, sequela	
+self_harm	T43.632	Poisoning by methylphenidate, intentional self-harm	
+self_harm	T43.632A	Poisoning by methylphenidate, intentional self-harm, init	
+self_harm	T43.632D	Poisoning by methylphenidate, intentional self-harm, subs	
+self_harm	T43.632S	Poisoning by methylphenidate, intentional self-harm, sequela	
+self_harm	T43.692	Poisoning by other psychostimulants, intentional self-harm	
+self_harm	T43.692A	Poisoning by oth psychostimulants, self-harm, init	
+self_harm	T43.692D	Poisoning by oth psychostimulants, self-harm, subs	
+self_harm	T43.692S	Poisoning by oth psychostimulants, self-harm, sequela	
+self_harm	T43.8X2	Poisoning by other psychotropic drugs, intentional self-harm	
+self_harm	T43.8X2A	Poisoning by oth psychotropic drugs, self-harm, init	
+self_harm	T43.8X2D	Poisoning by oth psychotropic drugs, self-harm, subs	
+self_harm	T43.8X2S	Poisoning by oth psychotropic drugs, self-harm, sequela	
+self_harm	T43.92XA	Poisoning by unsp psychotropic drug, self-harm, init	
+self_harm	T43.92XD	Poisoning by unsp psychotropic drug, self-harm, subs	
+self_harm	T43.92XS	Poisoning by unsp psychotropic drug, self-harm, sequela	
+self_harm	T44.0X2	Poisoning by anticholinesterase agents, self-harm	
+self_harm	T44.0X2A	Poisoning by anticholinesterase agents, self-harm, init	
+self_harm	T44.0X2D	Poisoning by anticholinesterase agents, self-harm, subs	
+self_harm	T44.0X2S	Poisoning by anticholinesterase agents, self-harm, sequela	
+self_harm	T44.1X2	Poisoning by oth parasympathomimetics, intentional self-harm	
+self_harm	T44.1X2A	Poisoning by oth parasympathomimetics, self-harm, init	
+self_harm	T44.1X2D	Poisoning by oth parasympathomimetics, self-harm, subs	
+self_harm	T44.1X2S	Poisoning by oth parasympathomimetics, self-harm, sequela	
+self_harm	T44.2X2	Poisoning by ganglionic blocking drugs, self-harm	
+self_harm	T44.2X2A	Poisoning by ganglionic blocking drugs, self-harm, init	
+self_harm	T44.2X2D	Poisoning by ganglionic blocking drugs, self-harm, subs	
+self_harm	T44.2X2S	Poisoning by ganglionic blocking drugs, self-harm, sequela	
+self_harm	T44.3X2	Poisoning by oth parasympath and spasmolytics, self-harm	
+self_harm	T44.3X2A	Poisn by oth parasympath and spasmolytics, self-harm, init	
+self_harm	T44.3X2D	Poisn by oth parasympath and spasmolytics, self-harm, subs	
+self_harm	T44.3X2S	Poisn by oth parasympath and spasmolytics, slf-hrm, sequela	
+self_harm	T44.4X2	Poisoning by predom alpha-adrenocpt agonists, self-harm	
+self_harm	T44.4X2A	Poisn by predom alpha-adrenocpt agonists, self-harm, init	
+self_harm	T44.4X2D	Poisn by predom alpha-adrenocpt agonists, self-harm, subs	
+self_harm	T44.4X2S	Poisn by predom alpha-adrenocpt agonists, self-harm, sequela	
+self_harm	T44.5X2	Poisoning by predom beta-adrenocpt agonists, self-harm	
+self_harm	T44.5X2A	Poisoning by predom beta-adrenocpt agonists, self-harm, init	
+self_harm	T44.5X2D	Poisoning by predom beta-adrenocpt agonists, self-harm, subs	
+self_harm	T44.5X2S	Poisn by predom beta-adrenocpt agonists, self-harm, sequela	
+self_harm	T44.6X2	Poisoning by alpha-adrenoreceptor antagonists, self-harm	
+self_harm	T44.6X2A	Poisoning by alpha-adrenocpt antagonists, self-harm, init	
+self_harm	T44.6X2D	Poisoning by alpha-adrenocpt antagonists, self-harm, subs	
+self_harm	T44.6X2S	Poisoning by alpha-adrenocpt antagonists, self-harm, sequela	
+self_harm	T44.7X2	Poisoning by beta-adrenoreceptor antagonists, self-harm	
+self_harm	T44.7X2A	Poisoning by beta-adrenocpt antagonists, self-harm, init	
+self_harm	T44.7X2D	Poisoning by beta-adrenocpt antagonists, self-harm, subs	
+self_harm	T44.7X2S	Poisoning by beta-adrenocpt antagonists, self-harm, sequela	
+self_harm	T44.8X2	Poisoning by centr-acting/adren-neurn-block agnt, self-harm	
+self_harm	T44.8X2A	Poisn by centr-acting/adren-neurn-block agnt, slf-hrm, init	
+self_harm	T44.8X2D	Poisn by centr-acting/adren-neurn-block agnt, slf-hrm, subs	
+self_harm	T44.8X2S	Poisn by centr-acting/adren-neurn-block agnt, slf-hrm, sqla	
+self_harm	T44.902	Poisn by unsp drugs aff the autonm nervous sys, self-harm	
+self_harm	T44.902A	Poisn by unsp drugs aff the autonm nrv sys, slf-hrm, init	
+self_harm	T44.902D	Poisn by unsp drugs aff the autonm nrv sys, slf-hrm, subs	
+self_harm	T44.902S	Poisn by unsp drugs aff the autonm nrv sys, slf-hrm, sequela	
+self_harm	T44.992	Poisoning by oth drug aff the autonm nervous sys, self-harm	
+self_harm	T44.992A	Poisn by oth drug aff the autonm nervous sys, slf-hrm, init	
+self_harm	T44.992D	Poisn by oth drug aff the autonm nervous sys, slf-hrm, subs	
+self_harm	T44.992S	Poisn by oth drug aff the autonm nrv sys, slf-hrm, sequela	
+self_harm	T45.0X2	Poisoning by antiallerg/antiemetic, intentional self-harm	
+self_harm	T45.0X2A	Poisoning by antiallerg/antiemetic, self-harm, init	
+self_harm	T45.0X2D	Poisoning by antiallerg/antiemetic, self-harm, subs	
+self_harm	T45.0X2S	Poisoning by antiallerg/antiemetic, self-harm, sequela	
+self_harm	T45.1X2	Poisoning by antineoplastic and immunosup drugs, self-harm	
+self_harm	T45.1X2A	Poisoning by antineopl and immunosup drugs, self-harm, init	
+self_harm	T45.1X2D	Poisoning by antineopl and immunosup drugs, self-harm, subs	
+self_harm	T45.1X2S	Poisn by antineopl and immunosup drugs, self-harm, sequela	
+self_harm	T45.2X2	Poisoning by vitamins, intentional self-harm	
+self_harm	T45.2X2A	Poisoning by vitamins, intentional self-harm, init encntr	
+self_harm	T45.2X2D	Poisoning by vitamins, intentional self-harm, subs encntr	
+self_harm	T45.2X2S	Poisoning by vitamins, intentional self-harm, sequela	
+self_harm	T45.3X2	Poisoning by enzymes, intentional self-harm	
+self_harm	T45.3X2A	Poisoning by enzymes, intentional self-harm, init encntr	
+self_harm	T45.3X2D	Poisoning by enzymes, intentional self-harm, subs encntr	
+self_harm	T45.3X2S	Poisoning by enzymes, intentional self-harm, sequela	
+self_harm	T45.4X2	Poisoning by iron and its compounds, intentional self-harm	
+self_harm	T45.4X2A	Poisoning by iron and its compounds, self-harm, init	
+self_harm	T45.4X2D	Poisoning by iron and its compounds, self-harm, subs	
+self_harm	T45.4X2S	Poisoning by iron and its compounds, self-harm, sequela	
+self_harm	T45.512	Poisoning by anticoagulants, intentional self-harm	
+self_harm	T45.512A	Poisoning by anticoagulants, intentional self-harm, init	
+self_harm	T45.512D	Poisoning by anticoagulants, intentional self-harm, subs	
+self_harm	T45.512S	Poisoning by anticoagulants, intentional self-harm, sequela	
+self_harm	T45.522	Poisoning by antithrombotic drugs, intentional self-harm	
+self_harm	T45.522A	Poisoning by antithrombotic drugs, self-harm, init	
+self_harm	T45.522D	Poisoning by antithrombotic drugs, self-harm, subs	
+self_harm	T45.522S	Poisoning by antithrombotic drugs, self-harm, sequela	
+self_harm	T45.602	Poisoning by unsp fibrin-affct drugs, intentional self-harm	
+self_harm	T45.602A	Poisoning by unsp fibrin-affct drugs, self-harm, init	
+self_harm	T45.602D	Poisoning by unsp fibrin-affct drugs, self-harm, subs	
+self_harm	T45.602S	Poisoning by unsp fibrin-affct drugs, self-harm, sequela	
+self_harm	T45.612	Poisoning by thrombolytic drug, intentional self-harm	
+self_harm	T45.612A	Poisoning by thrombolytic drug, intentional self-harm, init	
+self_harm	T45.612D	Poisoning by thrombolytic drug, intentional self-harm, subs	
+self_harm	T45.612S	Poisoning by thrombolytic drug, self-harm, sequela	
+self_harm	T45.622	Poisoning by hemostatic drug, intentional self-harm	
+self_harm	T45.622A	Poisoning by hemostatic drug, intentional self-harm, init	
+self_harm	T45.622D	Poisoning by hemostatic drug, intentional self-harm, subs	
+self_harm	T45.622S	Poisoning by hemostatic drug, intentional self-harm, sequela	
+self_harm	T45.692	Poisoning by oth fibrin-affct drugs, intentional self-harm	
+self_harm	T45.692A	Poisoning by oth fibrin-affct drugs, self-harm, init	
+self_harm	T45.692D	Poisoning by oth fibrin-affct drugs, self-harm, subs	
+self_harm	T45.692S	Poisoning by oth fibrin-affct drugs, self-harm, sequela	
+self_harm	T45.7X2	Poisn by anticoag antag, vitamin K and oth coag, self-harm	
+self_harm	T45.7X2A	Poisn by anticoag antag, vit K and oth coag, slf-hrm, init	
+self_harm	T45.7X2D	Poisn by anticoag antag, vit K and oth coag, slf-hrm, subs	
+self_harm	T45.7X2S	Poisn by anticoag antag, vit K and oth coag, slf-hrm, sqla	
+self_harm	T45.8X2	Poisn by oth prim systemic and hematolog agents, self-harm	
+self_harm	T45.8X2A	Poisn by oth prim sys and hematolog agents, slf-hrm, init	
+self_harm	T45.8X2D	Poisn by oth prim sys and hematolog agents, slf-hrm, subs	
+self_harm	T45.8X2S	Poisn by oth prim sys and hematolog agents, slf-hrm, sequela	
+self_harm	T45.92XA	Poisn by unsp prim sys and hematolog agent, slf-hrm, init	
+self_harm	T45.92XD	Poisn by unsp prim sys and hematolog agent, slf-hrm, subs	
+self_harm	T45.92XS	Poisn by unsp prim sys and hematolog agent, slf-hrm, sequela	
+self_harm	T46.0X2	Poisoning by cardi-stim glycos/drug simlar act, self-harm	
+self_harm	T46.0X2A	Poisn by cardi-stim glycos/drug simlar act, self-harm, init	
+self_harm	T46.0X2D	Poisn by cardi-stim glycos/drug simlar act, self-harm, subs	
+self_harm	T46.0X2S	Poisn by cardi-stim glycos/drug simlar act, slf-hrm, sequela	
+self_harm	T46.1X2	Poisoning by calcium-channel blockers, intentional self-harm	
+self_harm	T46.1X2A	Poisoning by calcium-channel blockers, self-harm, init	
+self_harm	T46.1X2D	Poisoning by calcium-channel blockers, self-harm, subs	
+self_harm	T46.1X2S	Poisoning by calcium-channel blockers, self-harm, sequela	
+self_harm	T46.2X2	Poisoning by oth antidysrhythmic drugs, self-harm	
+self_harm	T46.2X2A	Poisoning by oth antidysrhythmic drugs, self-harm, init	
+self_harm	T46.2X2D	Poisoning by oth antidysrhythmic drugs, self-harm, subs	
+self_harm	T46.2X2S	Poisoning by oth antidysrhythmic drugs, self-harm, sequela	
+self_harm	T46.3X2	Poisoning by coronary vasodilators, intentional self-harm	
+self_harm	T46.3X2A	Poisoning by coronary vasodilators, self-harm, init	
+self_harm	T46.3X2D	Poisoning by coronary vasodilators, self-harm, subs	
+self_harm	T46.3X2S	Poisoning by coronary vasodilators, self-harm, sequela	
+self_harm	T46.4X2	Poisoning by angiotens-convert-enzyme inhibitors, self-harm	
+self_harm	T46.4X2A	Poisn by angiotens-convert-enzyme inhibtr, self-harm, init	
+self_harm	T46.4X2D	Poisn by angiotens-convert-enzyme inhibtr, self-harm, subs	
+self_harm	T46.4X2S	Poisn by angiotens-convert-enzyme inhibtr, slf-hrm, sequela	
+self_harm	T46.5X2	Poisoning by oth antihypertensive drugs, self-harm	
+self_harm	T46.5X2A	Poisoning by oth antihypertensive drugs, self-harm, init	
+self_harm	T46.5X2D	Poisoning by oth antihypertensive drugs, self-harm, subs	
+self_harm	T46.5X2S	Poisoning by oth antihypertensive drugs, self-harm, sequela	
+self_harm	T46.6X2	Poisoning by antihyperlip and antiarterio drugs, self-harm	
+self_harm	T46.6X2A	Poisn by antihyperlip and antiarterio drugs, self-harm, init	
+self_harm	T46.6X2D	Poisn by antihyperlip and antiarterio drugs, self-harm, subs	
+self_harm	T46.6X2S	Poisn by antihyperlip and antiarterio drugs, slf-hrm, sqla	
+self_harm	T46.7X2	Poisoning by peripheral vasodilators, intentional self-harm	
+self_harm	T46.7X2A	Poisoning by peripheral vasodilators, self-harm, init	
+self_harm	T46.7X2D	Poisoning by peripheral vasodilators, self-harm, subs	
+self_harm	T46.7X2S	Poisoning by peripheral vasodilators, self-harm, sequela	
+self_harm	T46.8X2	Poisoning by antivaric drugs, inc scler agents, self-harm	
+self_harm	T46.8X2A	Poisn by antivaric drugs, inc scler agents, self-harm, init	
+self_harm	T46.8X2D	Poisn by antivaric drugs, inc scler agents, self-harm, subs	
+self_harm	T46.8X2S	Poisn by antivaric drugs, inc scler agents, slf-hrm, sequela	
+self_harm	T46.902	Poisoning by unsp agents aff the cardiovasc sys, self-harm	
+self_harm	T46.902A	Poisn by unsp agents aff the cardiovasc sys, self-harm, init	
+self_harm	T46.902D	Poisn by unsp agents aff the cardiovasc sys, self-harm, subs	
+self_harm	T46.902S	Poisn by unsp agents aff the cardiovasc sys, slf-hrm, sqla	
+self_harm	T46.992	Poisoning by oth agents aff the cardiovasc sys, self-harm	
+self_harm	T46.992A	Poisn by oth agents aff the cardiovasc sys, self-harm, init	
+self_harm	T46.992D	Poisn by oth agents aff the cardiovasc sys, self-harm, subs	
+self_harm	T46.992S	Poisn by oth agents aff the cardiovasc sys, slf-hrm, sequela	
+self_harm	T47.0X2	Poisoning by histamine H2-receptor blockers, self-harm	
+self_harm	T47.0X2A	Poisoning by histamine H2-receptor blockers, self-harm, init	
+self_harm	T47.0X2D	Poisoning by histamine H2-receptor blockers, self-harm, subs	
+self_harm	T47.0X2S	Poisn by histamine H2-receptor blockers, self-harm, sequela	
+self_harm	T47.1X2	Poisn by oth antacids and anti-gstrc-sec drugs, self-harm	
+self_harm	T47.1X2A	Poisn by oth antacids & anti-gstrc-sec drugs, slf-hrm, init	
+self_harm	T47.1X2D	Poisn by oth antacids & anti-gstrc-sec drugs, slf-hrm, subs	
+self_harm	T47.1X2S	Poisn by oth antacids & anti-gstrc-sec drugs, slf-hrm, sqla	
+self_harm	T47.2X2	Poisoning by stimulant laxatives, intentional self-harm	
+self_harm	T47.2X2A	Poisoning by stimulant laxatives, self-harm, init	
+self_harm	T47.2X2D	Poisoning by stimulant laxatives, self-harm, subs	
+self_harm	T47.2X2S	Poisoning by stimulant laxatives, self-harm, sequela	
+self_harm	T47.3X2	Poisoning by saline and osmotic laxatives, self-harm	
+self_harm	T47.3X2A	Poisoning by saline and osmotic laxatives, self-harm, init	
+self_harm	T47.3X2D	Poisoning by saline and osmotic laxatives, self-harm, subs	
+self_harm	T47.3X2S	Poisoning by saline and osmotic laxtv, self-harm, sequela	
+self_harm	T47.4X2	Poisoning by other laxatives, intentional self-harm	
+self_harm	T47.4X2A	Poisoning by oth laxatives, intentional self-harm, init	
+self_harm	T47.4X2D	Poisoning by oth laxatives, intentional self-harm, subs	
+self_harm	T47.4X2S	Poisoning by other laxatives, intentional self-harm, sequela	
+self_harm	T47.5X2	Poisoning by digestants, intentional self-harm	
+self_harm	T47.5X2A	Poisoning by digestants, intentional self-harm, init encntr	
+self_harm	T47.5X2D	Poisoning by digestants, intentional self-harm, subs encntr	
+self_harm	T47.5X2S	Poisoning by digestants, intentional self-harm, sequela	
+self_harm	T47.6X2	Poisoning by antidiarrheal drugs, intentional self-harm	
+self_harm	T47.6X2A	Poisoning by antidiarrheal drugs, self-harm, init	
+self_harm	T47.6X2D	Poisoning by antidiarrheal drugs, self-harm, subs	
+self_harm	T47.6X2S	Poisoning by antidiarrheal drugs, self-harm, sequela	
+self_harm	T47.7X2	Poisoning by emetics, intentional self-harm	
+self_harm	T47.7X2A	Poisoning by emetics, intentional self-harm, init encntr	
+self_harm	T47.7X2D	Poisoning by emetics, intentional self-harm, subs encntr	
+self_harm	T47.7X2S	Poisoning by emetics, intentional self-harm, sequela	
+self_harm	T47.8X2	Poisoning by oth agents aff GI sys, self-harm	
+self_harm	T47.8X2A	Poisoning by oth agents aff GI sys, self-harm, init	
+self_harm	T47.8X2D	Poisoning by oth agents aff GI sys, self-harm, subs	
+self_harm	T47.8X2S	Poisoning by oth agents aff GI sys, self-harm, sequela	
+self_harm	T47.92XA	Poisoning by unsp agents aff the GI sys, self-harm, init	
+self_harm	T47.92XD	Poisoning by unsp agents aff the GI sys, self-harm, subs	
+self_harm	T47.92XS	Poisoning by unsp agents aff the GI sys, self-harm, sequela	
+self_harm	T48.0X2	Poisoning by oxytocic drugs, intentional self-harm	
+self_harm	T48.0X2A	Poisoning by oxytocic drugs, intentional self-harm, init	
+self_harm	T48.0X2D	Poisoning by oxytocic drugs, intentional self-harm, subs	
+self_harm	T48.0X2S	Poisoning by oxytocic drugs, intentional self-harm, sequela	
+self_harm	T48.1X2	Poisoning by skeletal muscle relaxants, self-harm	
+self_harm	T48.1X2A	Poisoning by skeletal muscle relaxants, self-harm, init	
+self_harm	T48.1X2D	Poisoning by skeletal muscle relaxants, self-harm, subs	
+self_harm	T48.1X2S	Poisoning by skeletal muscle relaxants, self-harm, sequela	
+self_harm	T48.202	Poisoning by unsp drugs acting on muscles, self-harm	
+self_harm	T48.202A	Poisoning by unsp drugs acting on muscles, self-harm, init	
+self_harm	T48.202D	Poisoning by unsp drugs acting on muscles, self-harm, subs	
+self_harm	T48.202S	Poisn by unsp drugs acting on muscles, self-harm, sequela	
+self_harm	T48.292	Poisoning by oth drugs acting on muscles, self-harm	
+self_harm	T48.292A	Poisoning by oth drugs acting on muscles, self-harm, init	
+self_harm	T48.292D	Poisoning by oth drugs acting on muscles, self-harm, subs	
+self_harm	T48.292S	Poisoning by oth drugs acting on muscles, self-harm, sequela	
+self_harm	T48.3X2	Poisoning by antitussives, intentional self-harm	
+self_harm	T48.3X2A	Poisoning by antitussives, intentional self-harm, init	
+self_harm	T48.3X2D	Poisoning by antitussives, intentional self-harm, subs	
+self_harm	T48.3X2S	Poisoning by antitussives, intentional self-harm, sequela	
+self_harm	T48.4X2	Poisoning by expectorants, intentional self-harm	
+self_harm	T48.4X2A	Poisoning by expectorants, intentional self-harm, init	
+self_harm	T48.4X2D	Poisoning by expectorants, intentional self-harm, subs	
+self_harm	T48.4X2S	Poisoning by expectorants, intentional self-harm, sequela	
+self_harm	T48.5X2	Poisoning by oth anti-common-cold drugs, self-harm	
+self_harm	T48.5X2A	Poisoning by oth anti-common-cold drugs, self-harm, init	
+self_harm	T48.5X2D	Poisoning by oth anti-common-cold drugs, self-harm, subs	
+self_harm	T48.5X2S	Poisoning by oth anti-common-cold drugs, self-harm, sequela	
+self_harm	T48.6X2	Poisoning by antiasthmatics, intentional self-harm	
+self_harm	T48.6X2A	Poisoning by antiasthmatics, intentional self-harm, init	
+self_harm	T48.6X2D	Poisoning by antiasthmatics, intentional self-harm, subs	
+self_harm	T48.6X2S	Poisoning by antiasthmatics, intentional self-harm, sequela	
+self_harm	T48.902	Poisn by unsp agents prim acting on the resp sys, self-harm	
+self_harm	T48.902A	Poisn by unsp agents prim act on the resp sys, slf-hrm, init	
+self_harm	T48.902D	Poisn by unsp agents prim act on the resp sys, slf-hrm, subs	
+self_harm	T48.902S	Poisn by unsp agents prim act on the resp sys, slf-hrm, sqla	
+self_harm	T48.992	Poisn by oth agents prim acting on the resp sys, self-harm	
+self_harm	T48.992A	Poisn by oth agents prim act on the resp sys, slf-hrm, init	
+self_harm	T48.992D	Poisn by oth agents prim act on the resp sys, slf-hrm, subs	
+self_harm	T48.992S	Poisn by oth agents prim act on the resp sys, slf-hrm, sqla	
+self_harm	T49.0X2	Poisoning by local antifung/infect/inflamm drugs, self-harm	
+self_harm	T49.0X2A	Poisn by local antifung/infect/inflamm drugs, slf-hrm, init	
+self_harm	T49.0X2D	Poisn by local antifung/infect/inflamm drugs, slf-hrm, subs	
+self_harm	T49.0X2S	Poisn by local antifung/infect/inflamm drugs, slf-hrm, sqla	
+self_harm	T49.1X2	Poisoning by antipruritics, intentional self-harm	
+self_harm	T49.1X2A	Poisoning by antipruritics, intentional self-harm, init	
+self_harm	T49.1X2D	Poisoning by antipruritics, intentional self-harm, subs	
+self_harm	T49.1X2S	Poisoning by antipruritics, intentional self-harm, sequela	
+self_harm	T49.2X2	Poisoning by local astringents/detergents, self-harm	
+self_harm	T49.2X2A	Poisoning by local astringents/detergents, self-harm, init	
+self_harm	T49.2X2D	Poisoning by local astringents/detergents, self-harm, subs	
+self_harm	T49.2X2S	Poisn by local astringents/detergents, self-harm, sequela	
+self_harm	T49.3X2	Poisoning by emollients, demulcents and protect, self-harm	
+self_harm	T49.3X2A	Poisn by emollients, demulcents and protect, self-harm, init	
+self_harm	T49.3X2D	Poisn by emollients, demulcents and protect, self-harm, subs	
+self_harm	T49.3X2S	Poisn by emollients, demulcents and protect, slf-hrm, sqla	
+self_harm	T49.4X2	Poisoning by keratolyt/keratplst/hair trmt drug, self-harm	
+self_harm	T49.4X2A	Poisn by keratolyt/keratplst/hair trmt drug, self-harm, init	
+self_harm	T49.4X2D	Poisn by keratolyt/keratplst/hair trmt drug, self-harm, subs	
+self_harm	T49.4X2S	Poisn by keratolyt/keratplst/hair trmt drug, slf-hrm, sqla	
+self_harm	T49.5X2	Poisoning by opth drugs and preparations, self-harm	
+self_harm	T49.5X2A	Poisoning by opth drugs and preparations, self-harm, init	
+self_harm	T49.5X2D	Poisoning by opth drugs and preparations, self-harm, subs	
+self_harm	T49.5X2S	Poisoning by opth drugs and preparations, self-harm, sequela	
+self_harm	T49.6X2	Poisoning by otorhino drugs and preparations, self-harm	
+self_harm	T49.6X2A	Poisoning by otorhino drugs and prep, self-harm, init	
+self_harm	T49.6X2D	Poisoning by otorhino drugs and prep, self-harm, subs	
+self_harm	T49.6X2S	Poisoning by otorhino drugs and prep, self-harm, sequela	
+self_harm	T49.7X2	Poisoning by dental drugs, topically applied, self-harm	
+self_harm	T49.7X2A	Poisn by dental drugs, topically applied, self-harm, init	
+self_harm	T49.7X2D	Poisn by dental drugs, topically applied, self-harm, subs	
+self_harm	T49.7X2S	Poisn by dental drugs, topically applied, self-harm, sequela	
+self_harm	T49.8X2	Poisoning by other topical agents, intentional self-harm	
+self_harm	T49.8X2A	Poisoning by oth topical agents, intentional self-harm, init	
+self_harm	T49.8X2D	Poisoning by oth topical agents, intentional self-harm, subs	
+self_harm	T49.8X2S	Poisoning by oth topical agents, self-harm, sequela	
+self_harm	T49.92XA	Poisoning by unsp topical agent, intentional self-harm, init	
+self_harm	T49.92XD	Poisoning by unsp topical agent, intentional self-harm, subs	
+self_harm	T49.92XS	Poisoning by unsp topical agent, self-harm, sequela	
+self_harm	T50.0X2	Poisoning by mineralocorticoids and their antag, self-harm	
+self_harm	T50.0X2A	Poisoning by mineralocorticoids and antag, self-harm, init	
+self_harm	T50.0X2D	Poisoning by mineralocorticoids and antag, self-harm, subs	
+self_harm	T50.0X2S	Poisn by mineralocorticoids and antag, self-harm, sequela	
+self_harm	T50.1X2	Poisoning by loop diuretics, intentional self-harm	
+self_harm	T50.1X2A	Poisoning by loop diuretics, intentional self-harm, init	
+self_harm	T50.1X2D	Poisoning by loop diuretics, intentional self-harm, subs	
+self_harm	T50.1X2S	Poisoning by loop diuretics, intentional self-harm, sequela	
+self_harm	T50.2X2	Poisn by crbnc-anhydr inhibtr, benzo/oth diuretc, self-harm	
+self_harm	T50.2X2A	Poisn by crbnc-anhydr inhibtr,benzo/oth diuretc,slf-hrm,init	
+self_harm	T50.2X2D	Poisn by crbnc-anhydr inhibtr,benzo/oth diuretc,slf-hrm,subs	
+self_harm	T50.2X2S	Poisn by crbnc-anhydr inhibtr,benzo/oth diuretc,slf-hrm,sqla	
+self_harm	T50.3X2	Poisoning by electrolytic/caloric/wtr-bal agnt, self-harm	
+self_harm	T50.3X2A	Poisn by electrolytic/caloric/wtr-bal agnt, self-harm, init	
+self_harm	T50.3X2D	Poisn by electrolytic/caloric/wtr-bal agnt, self-harm, subs	
+self_harm	T50.3X2S	Poisn by electrolytic/caloric/wtr-bal agnt, slf-hrm, sequela	
+self_harm	T50.4X2	Poisoning by drugs affecting uric acid metabolism, self-harm	
+self_harm	T50.4X2A	Poisoning by drugs aff uric acid metab, self-harm, init	
+self_harm	T50.4X2D	Poisoning by drugs aff uric acid metab, self-harm, subs	
+self_harm	T50.4X2S	Poisoning by drugs aff uric acid metab, self-harm, sequela	
+self_harm	T50.5X2	Poisoning by appetite depressants, intentional self-harm	
+self_harm	T50.5X2A	Poisoning by appetite depressants, self-harm, init	
+self_harm	T50.5X2D	Poisoning by appetite depressants, self-harm, subs	
+self_harm	T50.5X2S	Poisoning by appetite depressants, self-harm, sequela	
+self_harm	T50.6X2	Poisoning by antidotes and chelating agents, self-harm	
+self_harm	T50.6X2A	Poisoning by antidotes and chelating agents, self-harm, init	
+self_harm	T50.6X2D	Poisoning by antidotes and chelating agents, self-harm, subs	
+self_harm	T50.6X2S	Poisn by antidotes and chelating agents, self-harm, sequela	
+self_harm	T50.7X2	Poisoning by analeptics and opioid receptor antag, self-harm	
+self_harm	T50.7X2A	Poisn by analeptics and opioid receptor antag, slf-hrm, init	
+self_harm	T50.7X2D	Poisn by analeptics and opioid receptor antag, slf-hrm, subs	
+self_harm	T50.7X2S	Poisn by analeptics and opioid receptor antag, slf-hrm, sqla	
+self_harm	T50.8X2	Poisoning by diagnostic agents, intentional self-harm	
+self_harm	T50.8X2A	Poisoning by diagnostic agents, intentional self-harm, init	
+self_harm	T50.8X2D	Poisoning by diagnostic agents, intentional self-harm, subs	
+self_harm	T50.8X2S	Poisoning by diagnostic agents, self-harm, sequela	
+self_harm	T50.902	Poisoning by unsp drug/meds/biol subst, self-harm	
+self_harm	T50.902A	Poisoning by unsp drug/meds/biol subst, self-harm, init	
+self_harm	T50.902D	Poisoning by unsp drug/meds/biol subst, self-harm, subs	
+self_harm	T50.902S	Poisoning by unsp drug/meds/biol subst, self-harm, sequela	
+self_harm	T50.992	Poisoning by oth drug/meds/biol subst, intentional self-harm	
+self_harm	T50.992A	Poisoning by oth drug/meds/biol subst, self-harm, init	
+self_harm	T50.992D	Poisoning by oth drug/meds/biol subst, self-harm, subs	
+self_harm	T50.992S	Poisoning by oth drug/meds/biol subst, self-harm, sequela	
+self_harm	T50.A12	Poisn by pertuss vaccine, inc combin w pertuss, self-harm	
+self_harm	T50.A12A	Poisn by pertuss vaccn, inc combin w pertuss, slf-hrm, init	
+self_harm	T50.A12D	Poisn by pertuss vaccn, inc combin w pertuss, slf-hrm, subs	
+self_harm	T50.A12S	Poisn by pertuss vaccn, inc combin w pertuss, slf-hrm, sqla	
+self_harm	T50.A22	Poisoning by mixed bact vaccines w/o a pertuss, self-harm	
+self_harm	T50.A22A	Poisn by mixed bact vaccines w/o a pertuss, self-harm, init	
+self_harm	T50.A22D	Poisn by mixed bact vaccines w/o a pertuss, self-harm, subs	
+self_harm	T50.A22S	Poisn by mixed bact vaccines w/o a pertuss, slf-hrm, sequela	
+self_harm	T50.A92	Poisoning by other bacterial vaccines, intentional self-harm	
+self_harm	T50.A92A	Poisoning by oth bacterial vaccines, self-harm, init	
+self_harm	T50.A92D	Poisoning by oth bacterial vaccines, self-harm, subs	
+self_harm	T50.A92S	Poisoning by oth bacterial vaccines, self-harm, sequela	
+self_harm	T50.B12	Poisoning by smallpox vaccines, intentional self-harm	
+self_harm	T50.B12A	Poisoning by smallpox vaccines, intentional self-harm, init	
+self_harm	T50.B12D	Poisoning by smallpox vaccines, intentional self-harm, subs	
+self_harm	T50.B12S	Poisoning by smallpox vaccines, self-harm, sequela	
+self_harm	T50.B92	Poisoning by other viral vaccines, intentional self-harm	
+self_harm	T50.B92A	Poisoning by oth viral vaccines, intentional self-harm, init	
+self_harm	T50.B92D	Poisoning by oth viral vaccines, intentional self-harm, subs	
+self_harm	T50.B92S	Poisoning by oth viral vaccines, self-harm, sequela	
+self_harm	T50.Z12	Poisoning by immunoglobulin, intentional self-harm	
+self_harm	T50.Z12A	Poisoning by immunoglobulin, intentional self-harm, init	
+self_harm	T50.Z12D	Poisoning by immunoglobulin, intentional self-harm, subs	
+self_harm	T50.Z12S	Poisoning by immunoglobulin, intentional self-harm, sequela	
+self_harm	T50.Z92	Poisoning by oth vaccines and biolg substances, self-harm	
+self_harm	T50.Z92A	Poisoning by oth vaccines and biolg substnc, self-harm, init	
+self_harm	T50.Z92D	Poisoning by oth vaccines and biolg substnc, self-harm, subs	
+self_harm	T50.Z92S	Poisn by oth vaccines and biolg substnc, self-harm, sequela	
+self_harm	T51.0X2	Toxic effect of ethanol, intentional self-harm	
+self_harm	T51.0X2A	Toxic effect of ethanol, intentional self-harm, init encntr	
+self_harm	T51.0X2D	Toxic effect of ethanol, intentional self-harm, subs encntr	
+self_harm	T51.0X2S	Toxic effect of ethanol, intentional self-harm, sequela	
+self_harm	T51.1X2	Toxic effect of methanol, intentional self-harm	
+self_harm	T51.1X2A	Toxic effect of methanol, intentional self-harm, init encntr	
+self_harm	T51.1X2D	Toxic effect of methanol, intentional self-harm, subs encntr	
+self_harm	T51.1X2S	Toxic effect of methanol, intentional self-harm, sequela	
+self_harm	T51.2X2	Toxic effect of 2-Propanol, intentional self-harm	
+self_harm	T51.2X2A	Toxic effect of 2-Propanol, intentional self-harm, init	
+self_harm	T51.2X2D	Toxic effect of 2-Propanol, intentional self-harm, subs	
+self_harm	T51.2X2S	Toxic effect of 2-Propanol, intentional self-harm, sequela	
+self_harm	T51.3X2	Toxic effect of fusel oil, intentional self-harm	
+self_harm	T51.3X2A	Toxic effect of fusel oil, intentional self-harm, init	
+self_harm	T51.3X2D	Toxic effect of fusel oil, intentional self-harm, subs	
+self_harm	T51.3X2S	Toxic effect of fusel oil, intentional self-harm, sequela	
+self_harm	T51.8X2	Toxic effect of other alcohols, intentional self-harm	
+self_harm	T51.8X2A	Toxic effect of oth alcohols, intentional self-harm, init	
+self_harm	T51.8X2D	Toxic effect of oth alcohols, intentional self-harm, subs	
+self_harm	T51.8X2S	Toxic effect of oth alcohols, intentional self-harm, sequela	
+self_harm	T51.92XA	Toxic effect of unsp alcohol, intentional self-harm, init	
+self_harm	T51.92XD	Toxic effect of unsp alcohol, intentional self-harm, subs	
+self_harm	T51.92XS	Toxic effect of unsp alcohol, intentional self-harm, sequela	
+self_harm	T52.0X2	Toxic effect of petroleum products, intentional self-harm	
+self_harm	T52.0X2A	Toxic effect of petroleum products, self-harm, init	
+self_harm	T52.0X2D	Toxic effect of petroleum products, self-harm, subs	
+self_harm	T52.0X2S	Toxic effect of petroleum products, self-harm, sequela	
+self_harm	T52.1X2	Toxic effect of benzene, intentional self-harm	
+self_harm	T52.1X2A	Toxic effect of benzene, intentional self-harm, init encntr	
+self_harm	T52.1X2D	Toxic effect of benzene, intentional self-harm, subs encntr	
+self_harm	T52.1X2S	Toxic effect of benzene, intentional self-harm, sequela	
+self_harm	T52.2X2	Toxic effect of homologues of benzene, intentional self-harm	
+self_harm	T52.2X2A	Toxic effect of homologues of benzene, self-harm, init	
+self_harm	T52.2X2D	Toxic effect of homologues of benzene, self-harm, subs	
+self_harm	T52.2X2S	Toxic effect of homologues of benzene, self-harm, sequela	
+self_harm	T52.3X2	Toxic effect of glycols, intentional self-harm	
+self_harm	T52.3X2A	Toxic effect of glycols, intentional self-harm, init encntr	
+self_harm	T52.3X2D	Toxic effect of glycols, intentional self-harm, subs encntr	
+self_harm	T52.3X2S	Toxic effect of glycols, intentional self-harm, sequela	
+self_harm	T52.4X2	Toxic effect of ketones, intentional self-harm	
+self_harm	T52.4X2A	Toxic effect of ketones, intentional self-harm, init encntr	
+self_harm	T52.4X2D	Toxic effect of ketones, intentional self-harm, subs encntr	
+self_harm	T52.4X2S	Toxic effect of ketones, intentional self-harm, sequela	
+self_harm	T52.8X2	Toxic effect of oth organic solvents, intentional self-harm	
+self_harm	T52.8X2A	Toxic effect of organic solvents, self-harm, init	
+self_harm	T52.8X2D	Toxic effect of organic solvents, self-harm, subs	
+self_harm	T52.8X2S	Toxic effect of organic solvents, self-harm, sequela	
+self_harm	T52.92XA	Toxic effect of unsp organic solvent, self-harm, init	
+self_harm	T52.92XD	Toxic effect of unsp organic solvent, self-harm, subs	
+self_harm	T52.92XS	Toxic effect of unsp organic solvent, self-harm, sequela	
+self_harm	T53.0X2	Toxic effect of carbon tetrachloride, intentional self-harm	
+self_harm	T53.0X2A	Toxic effect of carbon tetrachloride, self-harm, init	
+self_harm	T53.0X2D	Toxic effect of carbon tetrachloride, self-harm, subs	
+self_harm	T53.0X2S	Toxic effect of carbon tetrachloride, self-harm, sequela	
+self_harm	T53.1X2	Toxic effect of chloroform, intentional self-harm	
+self_harm	T53.1X2A	Toxic effect of chloroform, intentional self-harm, init	
+self_harm	T53.1X2D	Toxic effect of chloroform, intentional self-harm, subs	
+self_harm	T53.1X2S	Toxic effect of chloroform, intentional self-harm, sequela	
+self_harm	T53.2X2	Toxic effect of trichloroethylene, intentional self-harm	
+self_harm	T53.2X2A	Toxic effect of trichloroethylene, self-harm, init	
+self_harm	T53.2X2D	Toxic effect of trichloroethylene, self-harm, subs	
+self_harm	T53.2X2S	Toxic effect of trichloroethylene, self-harm, sequela	
+self_harm	T53.3X2	Toxic effect of tetrachloroethylene, intentional self-harm	
+self_harm	T53.3X2A	Toxic effect of tetrachloroethylene, self-harm, init	
+self_harm	T53.3X2D	Toxic effect of tetrachloroethylene, self-harm, subs	
+self_harm	T53.3X2S	Toxic effect of tetrachloroethylene, self-harm, sequela	
+self_harm	T53.4X2	Toxic effect of dichloromethane, intentional self-harm	
+self_harm	T53.4X2A	Toxic effect of dichloromethane, intentional self-harm, init	
+self_harm	T53.4X2D	Toxic effect of dichloromethane, intentional self-harm, subs	
+self_harm	T53.4X2S	Toxic effect of dichloromethane, self-harm, sequela	
+self_harm	T53.5X2	Toxic effect of chlorofluorocarbons, intentional self-harm	
+self_harm	T53.5X2A	Toxic effect of chlorofluorocarbons, self-harm, init	
+self_harm	T53.5X2D	Toxic effect of chlorofluorocarbons, self-harm, subs	
+self_harm	T53.5X2S	Toxic effect of chlorofluorocarbons, self-harm, sequela	
+self_harm	T53.6X2	Toxic effect of halogen deriv of aliphatic hydrocrb, slf-hrm	
+self_harm	T53.6X2A	Tox eff of halgn deriv of aliphatic hydrocrb, slf-hrm, init	
+self_harm	T53.6X2D	Tox eff of halgn deriv of aliphatic hydrocrb, slf-hrm, subs	
+self_harm	T53.6X2S	Tox eff of halgn deriv of aliphatic hydrocrb, slf-hrm, sqla	
+self_harm	T53.7X2	Toxic effect of halogen deriv of aromatic hydrocrb, slf-hrm	
+self_harm	T53.7X2A	Toxic eff of halgn deriv of aromatic hydrocrb, slf-hrm, init	
+self_harm	T53.7X2D	Toxic eff of halgn deriv of aromatic hydrocrb, slf-hrm, subs	
+self_harm	T53.7X2S	Toxic eff of halgn deriv of aromatic hydrocrb, slf-hrm, sqla	
+self_harm	T53.92XA	Tox eff of unsp halgn deriv of aromat hydrocrb,slf-hrm, init	
+self_harm	T53.92XD	Tox eff of unsp halgn deriv of aromat hydrocrb,slf-hrm, subs	
+self_harm	T53.92XS	Tox eff of unsp halgn deriv of aromat hydrocrb,slf-hrm, sqla	
+self_harm	T54.0X2	Toxic effect of phenol and phenol homologues, self-harm	
+self_harm	T54.0X2A	Toxic effect of phenol and phenol homolog, self-harm, init	
+self_harm	T54.0X2D	Toxic effect of phenol and phenol homolog, self-harm, subs	
+self_harm	T54.0X2S	Toxic effect of phenol and phenol homolog, slf-hrm, sequela	
+self_harm	T54.1X2	Toxic effect of corrosive organic compounds, self-harm	
+self_harm	T54.1X2A	Toxic effect of corrosive organic compounds, self-harm, init	
+self_harm	T54.1X2D	Toxic effect of corrosive organic compounds, self-harm, subs	
+self_harm	T54.1X2S	Toxic effect of corrosive organic compnd, self-harm, sequela	
+self_harm	T54.2X2	Toxic effect of corrosv acids and acid-like substnc, slf-hrm	
+self_harm	T54.2X2A	Tox eff of corrosv acids & acid-like substnc, slf-hrm, init	
+self_harm	T54.2X2D	Tox eff of corrosv acids & acid-like substnc, slf-hrm, subs	
+self_harm	T54.2X2S	Tox eff of corrosv acids & acid-like substnc, slf-hrm, sqla	
+self_harm	T54.3X2	Toxic eff of corrosv alkalis and alk-like substnc, slf-hrm	
+self_harm	T54.3X2A	Tox eff of corrosv alkalis & alk-like substnc, slf-hrm, init	
+self_harm	T54.3X2D	Tox eff of corrosv alkalis & alk-like substnc, slf-hrm, subs	
+self_harm	T54.3X2S	Tox eff of corrosv alkalis & alk-like substnc, slf-hrm, sqla	
+self_harm	T54.92XA	Toxic effect of unsp corrosive substance, self-harm, init	
+self_harm	T54.92XD	Toxic effect of unsp corrosive substance, self-harm, subs	
+self_harm	T54.92XS	Toxic effect of unsp corrosive substance, self-harm, sequela	
+self_harm	T55.0X2	Toxic effect of soaps, intentional self-harm	
+self_harm	T55.0X2A	Toxic effect of soaps, intentional self-harm, init encntr	
+self_harm	T55.0X2D	Toxic effect of soaps, intentional self-harm, subs encntr	
+self_harm	T55.0X2S	Toxic effect of soaps, intentional self-harm, sequela	
+self_harm	T55.1X2	Toxic effect of detergents, intentional self-harm	
+self_harm	T55.1X2A	Toxic effect of detergents, intentional self-harm, init	
+self_harm	T55.1X2D	Toxic effect of detergents, intentional self-harm, subs	
+self_harm	T55.1X2S	Toxic effect of detergents, intentional self-harm, sequela	
+self_harm	T56.0X2	Toxic effect of lead and its compounds, self-harm	
+self_harm	T56.0X2A	Toxic effect of lead and its compounds, self-harm, init	
+self_harm	T56.0X2D	Toxic effect of lead and its compounds, self-harm, subs	
+self_harm	T56.0X2S	Toxic effect of lead and its compounds, self-harm, sequela	
+self_harm	T56.1X2	Toxic effect of mercury and its compounds, self-harm	
+self_harm	T56.1X2A	Toxic effect of mercury and its compounds, self-harm, init	
+self_harm	T56.1X2D	Toxic effect of mercury and its compounds, self-harm, subs	
+self_harm	T56.1X2S	Toxic effect of mercury and its compnd, self-harm, sequela	
+self_harm	T56.2X2	Toxic effect of chromium and its compounds, self-harm	
+self_harm	T56.2X2A	Toxic effect of chromium and its compounds, self-harm, init	
+self_harm	T56.2X2D	Toxic effect of chromium and its compounds, self-harm, subs	
+self_harm	T56.2X2S	Toxic effect of chromium and its compnd, self-harm, sequela	
+self_harm	T56.3X2	Toxic effect of cadmium and its compounds, self-harm	
+self_harm	T56.3X2A	Toxic effect of cadmium and its compounds, self-harm, init	
+self_harm	T56.3X2D	Toxic effect of cadmium and its compounds, self-harm, subs	
+self_harm	T56.3X2S	Toxic effect of cadmium and its compnd, self-harm, sequela	
+self_harm	T56.4X2	Toxic effect of copper and its compounds, self-harm	
+self_harm	T56.4X2A	Toxic effect of copper and its compounds, self-harm, init	
+self_harm	T56.4X2D	Toxic effect of copper and its compounds, self-harm, subs	
+self_harm	T56.4X2S	Toxic effect of copper and its compounds, self-harm, sequela	
+self_harm	T56.5X2	Toxic effect of zinc and its compounds, self-harm	
+self_harm	T56.5X2A	Toxic effect of zinc and its compounds, self-harm, init	
+self_harm	T56.5X2D	Toxic effect of zinc and its compounds, self-harm, subs	
+self_harm	T56.5X2S	Toxic effect of zinc and its compounds, self-harm, sequela	
+self_harm	T56.6X2	Toxic effect of tin and its compounds, intentional self-harm	
+self_harm	T56.6X2A	Toxic effect of tin and its compounds, self-harm, init	
+self_harm	T56.6X2D	Toxic effect of tin and its compounds, self-harm, subs	
+self_harm	T56.6X2S	Toxic effect of tin and its compounds, self-harm, sequela	
+self_harm	T56.7X2	Toxic effect of beryllium and its compounds, self-harm	
+self_harm	T56.7X2A	Toxic effect of beryllium and its compounds, self-harm, init	
+self_harm	T56.7X2D	Toxic effect of beryllium and its compounds, self-harm, subs	
+self_harm	T56.7X2S	Toxic effect of beryllium and its compnd, self-harm, sequela	
+self_harm	T56.812	Toxic effect of thallium, intentional self-harm	
+self_harm	T56.812A	Toxic effect of thallium, intentional self-harm, init encntr	
+self_harm	T56.812D	Toxic effect of thallium, intentional self-harm, subs encntr	
+self_harm	T56.812S	Toxic effect of thallium, intentional self-harm, sequela	
+self_harm	T56.892	Toxic effect of other metals, intentional self-harm	
+self_harm	T56.892A	Toxic effect of oth metals, intentional self-harm, init	
+self_harm	T56.892D	Toxic effect of oth metals, intentional self-harm, subs	
+self_harm	T56.892S	Toxic effect of other metals, intentional self-harm, sequela	
+self_harm	T56.92XA	Toxic effect of unsp metal, intentional self-harm, init	
+self_harm	T56.92XD	Toxic effect of unsp metal, intentional self-harm, subs	
+self_harm	T56.92XS	Toxic effect of unsp metal, intentional self-harm, sequela	
+self_harm	T57.0X2	Toxic effect of arsenic and its compounds, self-harm	
+self_harm	T57.0X2A	Toxic effect of arsenic and its compounds, self-harm, init	
+self_harm	T57.0X2D	Toxic effect of arsenic and its compounds, self-harm, subs	
+self_harm	T57.0X2S	Toxic effect of arsenic and its compnd, self-harm, sequela	
+self_harm	T57.1X2	Toxic effect of phosphorus and its compounds, self-harm	
+self_harm	T57.1X2A	Toxic effect of phosphorus and its compnd, self-harm, init	
+self_harm	T57.1X2D	Toxic effect of phosphorus and its compnd, self-harm, subs	
+self_harm	T57.1X2S	Toxic effect of phosphorus and its compnd, slf-hrm, sequela	
+self_harm	T57.2X2	Toxic effect of manganese and its compounds, self-harm	
+self_harm	T57.2X2A	Toxic effect of manganese and its compounds, self-harm, init	
+self_harm	T57.2X2D	Toxic effect of manganese and its compounds, self-harm, subs	
+self_harm	T57.2X2S	Toxic effect of manganese and its compnd, self-harm, sequela	
+self_harm	T57.3X2	Toxic effect of hydrogen cyanide, intentional self-harm	
+self_harm	T57.3X2A	Toxic effect of hydrogen cyanide, self-harm, init	
+self_harm	T57.3X2D	Toxic effect of hydrogen cyanide, self-harm, subs	
+self_harm	T57.3X2S	Toxic effect of hydrogen cyanide, self-harm, sequela	
+self_harm	T57.8X2	Toxic effect of inorganic substances, intentional self-harm	
+self_harm	T57.8X2A	Toxic effect of inorganic substances, self-harm, init	
+self_harm	T57.8X2D	Toxic effect of inorganic substances, self-harm, subs	
+self_harm	T57.8X2S	Toxic effect of inorganic substances, self-harm, sequela	
+self_harm	T57.92XA	Toxic effect of unsp inorganic substance, self-harm, init	
+self_harm	T57.92XD	Toxic effect of unsp inorganic substance, self-harm, subs	
+self_harm	T57.92XS	Toxic effect of unsp inorganic substance, self-harm, sequela	
+self_harm	T58.02XA	Toxic eff of carb monx from mtr veh exhaust, slf-hrm, init	
+self_harm	T58.02XD	Toxic eff of carb monx from mtr veh exhaust, slf-hrm, subs	
+self_harm	T58.02XS	Toxic eff of carb monx from mtr veh exhaust, slf-hrm, sqla	
+self_harm	T58.12XA	Toxic effect of carb monx from utility gas, self-harm, init	
+self_harm	T58.12XD	Toxic effect of carb monx from utility gas, self-harm, subs	
+self_harm	T58.12XS	Toxic effect of carb monx from utility gas, slf-hrm, sequela	
+self_harm	T58.2X2	Toxic eff of carb monx from incmpl combst dmst fuel, slf-hrm	
+self_harm	T58.2X2A	Tox eff of carb monx fr incmpl combst dmst fuel,slf-hrm,init	
+self_harm	T58.2X2D	Tox eff of carb monx fr incmpl combst dmst fuel,slf-hrm,subs	
+self_harm	T58.2X2S	Tox eff of carb monx fr incmpl combst dmst fuel,slf-hrm,sqla	
+self_harm	T58.8X2	Toxic effect of carbon monoxide from oth source, self-harm	
+self_harm	T58.8X2A	Toxic effect of carb monx from oth source, self-harm, init	
+self_harm	T58.8X2D	Toxic effect of carb monx from oth source, self-harm, subs	
+self_harm	T58.8X2S	Toxic effect of carb monx from oth source, slf-hrm, sequela	
+self_harm	T58.92XA	Toxic effect of carb monx from unsp source, self-harm, init	
+self_harm	T58.92XD	Toxic effect of carb monx from unsp source, self-harm, subs	
+self_harm	T58.92XS	Toxic effect of carb monx from unsp source, slf-hrm, sequela	
+self_harm	T59.0X2	Toxic effect of nitrogen oxides, intentional self-harm	
+self_harm	T59.0X2A	Toxic effect of nitrogen oxides, intentional self-harm, init	
+self_harm	T59.0X2D	Toxic effect of nitrogen oxides, intentional self-harm, subs	
+self_harm	T59.0X2S	Toxic effect of nitrogen oxides, self-harm, sequela	
+self_harm	T59.1X2	Toxic effect of sulfur dioxide, intentional self-harm	
+self_harm	T59.1X2A	Toxic effect of sulfur dioxide, intentional self-harm, init	
+self_harm	T59.1X2D	Toxic effect of sulfur dioxide, intentional self-harm, subs	
+self_harm	T59.1X2S	Toxic effect of sulfur dioxide, self-harm, sequela	
+self_harm	T59.2X2	Toxic effect of formaldehyde, intentional self-harm	
+self_harm	T59.2X2A	Toxic effect of formaldehyde, intentional self-harm, init	
+self_harm	T59.2X2D	Toxic effect of formaldehyde, intentional self-harm, subs	
+self_harm	T59.2X2S	Toxic effect of formaldehyde, intentional self-harm, sequela	
+self_harm	T59.3X2	Toxic effect of lacrimogenic gas, intentional self-harm	
+self_harm	T59.3X2A	Toxic effect of lacrimogenic gas, self-harm, init	
+self_harm	T59.3X2D	Toxic effect of lacrimogenic gas, self-harm, subs	
+self_harm	T59.3X2S	Toxic effect of lacrimogenic gas, self-harm, sequela	
+self_harm	T59.4X2	Toxic effect of chlorine gas, intentional self-harm	
+self_harm	T59.4X2A	Toxic effect of chlorine gas, intentional self-harm, init	
+self_harm	T59.4X2D	Toxic effect of chlorine gas, intentional self-harm, subs	
+self_harm	T59.4X2S	Toxic effect of chlorine gas, intentional self-harm, sequela	
+self_harm	T59.5X2	Toxic effect of fluorine gas and hydrogen fluoride, slf-hrm	
+self_harm	T59.5X2A	Tox eff of fluorine gas and hydrogen fluoride, slf-hrm, init	
+self_harm	T59.5X2D	Tox eff of fluorine gas and hydrogen fluoride, slf-hrm, subs	
+self_harm	T59.5X2S	Tox eff of fluorine gas and hydrogen fluoride, slf-hrm, sqla	
+self_harm	T59.6X2	Toxic effect of hydrogen sulfide, intentional self-harm	
+self_harm	T59.6X2A	Toxic effect of hydrogen sulfide, self-harm, init	
+self_harm	T59.6X2D	Toxic effect of hydrogen sulfide, self-harm, subs	
+self_harm	T59.6X2S	Toxic effect of hydrogen sulfide, self-harm, sequela	
+self_harm	T59.7X2	Toxic effect of carbon dioxide, intentional self-harm	
+self_harm	T59.7X2A	Toxic effect of carbon dioxide, intentional self-harm, init	
+self_harm	T59.7X2D	Toxic effect of carbon dioxide, intentional self-harm, subs	
+self_harm	T59.7X2S	Toxic effect of carbon dioxide, self-harm, sequela	
+self_harm	T59.812	Toxic effect of smoke, intentional self-harm	
+self_harm	T59.812A	Toxic effect of smoke, intentional self-harm, init encntr	
+self_harm	T59.812D	Toxic effect of smoke, intentional self-harm, subs encntr	
+self_harm	T59.812S	Toxic effect of smoke, intentional self-harm, sequela	
+self_harm	T59.892	Toxic effect of gases, fumes and vapors, self-harm	
+self_harm	T59.892A	Toxic effect of gases, fumes and vapors, self-harm, init	
+self_harm	T59.892D	Toxic effect of gases, fumes and vapors, self-harm, subs	
+self_harm	T59.892S	Toxic effect of gases, fumes and vapors, self-harm, sequela	
+self_harm	T59.92XA	Toxic effect of unsp gases, fumes and vapors, slf-hrm, init	
+self_harm	T59.92XD	Toxic effect of unsp gases, fumes and vapors, slf-hrm, subs	
+self_harm	T59.92XS	Toxic effect of unsp gases, fumes and vapors, slf-hrm, sqla	
+self_harm	T60.0X2	Toxic effect of organophos and carbamate insect, self-harm	
+self_harm	T60.0X2A	Toxic eff of organophos and carbamate insect, slf-hrm, init	
+self_harm	T60.0X2D	Toxic eff of organophos and carbamate insect, slf-hrm, subs	
+self_harm	T60.0X2S	Toxic eff of organophos and carbamate insect, slf-hrm, sqla	
+self_harm	T60.1X2	Toxic effect of halogenated insecticides, self-harm	
+self_harm	T60.1X2A	Toxic effect of halogenated insecticides, self-harm, init	
+self_harm	T60.1X2D	Toxic effect of halogenated insecticides, self-harm, subs	
+self_harm	T60.1X2S	Toxic effect of halogenated insecticides, self-harm, sequela	
+self_harm	T60.2X2	Toxic effect of other insecticides, intentional self-harm	
+self_harm	T60.2X2A	Toxic effect of insecticides, intentional self-harm, init	
+self_harm	T60.2X2D	Toxic effect of insecticides, intentional self-harm, subs	
+self_harm	T60.2X2S	Toxic effect of insecticides, intentional self-harm, sequela	
+self_harm	T60.3X2	Toxic effect of herbicides and fungicides, self-harm	
+self_harm	T60.3X2A	Toxic effect of herbicides and fungicides, self-harm, init	
+self_harm	T60.3X2D	Toxic effect of herbicides and fungicides, self-harm, subs	
+self_harm	T60.3X2S	Toxic effect of herbicides and fungicides, slf-hrm, sequela	
+self_harm	T60.4X2	Toxic effect of rodenticides, intentional self-harm	
+self_harm	T60.4X2A	Toxic effect of rodenticides, intentional self-harm, init	
+self_harm	T60.4X2D	Toxic effect of rodenticides, intentional self-harm, subs	
+self_harm	T60.4X2S	Toxic effect of rodenticides, intentional self-harm, sequela	
+self_harm	T60.8X2	Toxic effect of other pesticides, intentional self-harm	
+self_harm	T60.8X2A	Toxic effect of oth pesticides, intentional self-harm, init	
+self_harm	T60.8X2D	Toxic effect of oth pesticides, intentional self-harm, subs	
+self_harm	T60.8X2S	Toxic effect of pesticides, intentional self-harm, sequela	
+self_harm	T60.92XA	Toxic effect of unsp pesticide, intentional self-harm, init	
+self_harm	T60.92XD	Toxic effect of unsp pesticide, intentional self-harm, subs	
+self_harm	T60.92XS	Toxic effect of unsp pesticide, self-harm, sequela	
+self_harm	T61.02XA	Ciguatera fish poisoning, intentional self-harm, init encntr	
+self_harm	T61.02XD	Ciguatera fish poisoning, intentional self-harm, subs encntr	
+self_harm	T61.02XS	Ciguatera fish poisoning, intentional self-harm, sequela	
+self_harm	T61.12XA	Scombroid fish poisoning, intentional self-harm, init encntr	
+self_harm	T61.12XD	Scombroid fish poisoning, intentional self-harm, subs encntr	
+self_harm	T61.12XS	Scombroid fish poisoning, intentional self-harm, sequela	
+self_harm	T61.772	Other fish poisoning, intentional self-harm	
+self_harm	T61.772A	Other fish poisoning, intentional self-harm, init encntr	
+self_harm	T61.772D	Other fish poisoning, intentional self-harm, subs encntr	
+self_harm	T61.772S	Other fish poisoning, intentional self-harm, sequela	
+self_harm	T61.782	Other shellfish poisoning, intentional self-harm	
+self_harm	T61.782A	Oth shellfish poisoning, intentional self-harm, init encntr	
+self_harm	T61.782D	Oth shellfish poisoning, intentional self-harm, subs encntr	
+self_harm	T61.782S	Other shellfish poisoning, intentional self-harm, sequela	
+self_harm	T61.8X2	Toxic effect of other seafood, intentional self-harm	
+self_harm	T61.8X2A	Toxic effect of oth seafood, intentional self-harm, init	
+self_harm	T61.8X2D	Toxic effect of oth seafood, intentional self-harm, subs	
+self_harm	T61.8X2S	Toxic effect of oth seafood, intentional self-harm, sequela	
+self_harm	T61.92XA	Toxic effect of unsp seafood, intentional self-harm, init	
+self_harm	T61.92XD	Toxic effect of unsp seafood, intentional self-harm, subs	
+self_harm	T61.92XS	Toxic effect of unsp seafood, intentional self-harm, sequela	
+self_harm	T62.0X2	Toxic effect of ingested mushrooms, intentional self-harm	
+self_harm	T62.0X2A	Toxic effect of ingested mushrooms, self-harm, init	
+self_harm	T62.0X2D	Toxic effect of ingested mushrooms, self-harm, subs	
+self_harm	T62.0X2S	Toxic effect of ingested mushrooms, self-harm, sequela	
+self_harm	T62.1X2	Toxic effect of ingested berries, intentional self-harm	
+self_harm	T62.1X2A	Toxic effect of ingested berries, self-harm, init	
+self_harm	T62.1X2D	Toxic effect of ingested berries, self-harm, subs	
+self_harm	T62.1X2S	Toxic effect of ingested berries, self-harm, sequela	
+self_harm	T62.2X2	Toxic effect of ingested (parts of) plant(s), self-harm	
+self_harm	T62.2X2A	Toxic effect of ingested (parts of) plant(s), slf-hrm, init	
+self_harm	T62.2X2D	Toxic effect of ingested (parts of) plant(s), slf-hrm, subs	
+self_harm	T62.2X2S	Toxic effect of ingest (parts of) plant(s), slf-hrm, sequela	
+self_harm	T62.8X2	Toxic effect of noxious substances eaten as food, self-harm	
+self_harm	T62.8X2A	Toxic effect of noxious substnc eaten as food, slf-hrm, init	
+self_harm	T62.8X2D	Toxic effect of noxious substnc eaten as food, slf-hrm, subs	
+self_harm	T62.8X2S	Toxic effect of noxious substnc eaten as food, slf-hrm, sqla	
+self_harm	T62.92XA	Toxic eff of unsp noxious sub eaten as food, slf-hrm, init	
+self_harm	T62.92XD	Toxic eff of unsp noxious sub eaten as food, slf-hrm, subs	
+self_harm	T62.92XS	Toxic eff of unsp noxious sub eaten as food, slf-hrm, sqla	
+self_harm	T63.002	Toxic effect of unsp snake venom, intentional self-harm	
+self_harm	T63.002A	Toxic effect of unsp snake venom, self-harm, init	
+self_harm	T63.002D	Toxic effect of unsp snake venom, self-harm, subs	
+self_harm	T63.002S	Toxic effect of unsp snake venom, self-harm, sequela	
+self_harm	T63.012	Toxic effect of rattlesnake venom, intentional self-harm	
+self_harm	T63.012A	Toxic effect of rattlesnake venom, self-harm, init	
+self_harm	T63.012D	Toxic effect of rattlesnake venom, self-harm, subs	
+self_harm	T63.012S	Toxic effect of rattlesnake venom, self-harm, sequela	
+self_harm	T63.022	Toxic effect of coral snake venom, intentional self-harm	
+self_harm	T63.022A	Toxic effect of coral snake venom, self-harm, init	
+self_harm	T63.022D	Toxic effect of coral snake venom, self-harm, subs	
+self_harm	T63.022S	Toxic effect of coral snake venom, self-harm, sequela	
+self_harm	T63.032	Toxic effect of taipan venom, intentional self-harm	
+self_harm	T63.032A	Toxic effect of taipan venom, intentional self-harm, init	
+self_harm	T63.032D	Toxic effect of taipan venom, intentional self-harm, subs	
+self_harm	T63.032S	Toxic effect of taipan venom, intentional self-harm, sequela	
+self_harm	T63.042	Toxic effect of cobra venom, intentional self-harm	
+self_harm	T63.042A	Toxic effect of cobra venom, intentional self-harm, init	
+self_harm	T63.042D	Toxic effect of cobra venom, intentional self-harm, subs	
+self_harm	T63.042S	Toxic effect of cobra venom, intentional self-harm, sequela	
+self_harm	T63.062	Toxic effect of venom of N & S American snake, self-harm	
+self_harm	T63.062A	Toxic effect of venom of N & S American snake, slf-hrm, init	
+self_harm	T63.062D	Toxic effect of venom of N & S American snake, slf-hrm, subs	
+self_harm	T63.062S	Toxic effect of venom of N & S American snake, slf-hrm, sqla	
+self_harm	T63.072	Toxic effect of venom of Australian snake, self-harm	
+self_harm	T63.072A	Toxic effect of venom of Australian snake, self-harm, init	
+self_harm	T63.072D	Toxic effect of venom of Australian snake, self-harm, subs	
+self_harm	T63.072S	Toxic effect of venom of Australian snake, slf-hrm, sequela	
+self_harm	T63.082	Toxic effect of venom of African and Asian snake, self-harm	
+self_harm	T63.082A	Toxic eff of venom of African and Asian snake, slf-hrm, init	
+self_harm	T63.082D	Toxic eff of venom of African and Asian snake, slf-hrm, subs	
+self_harm	T63.082S	Toxic eff of venom of African and Asian snake, slf-hrm, sqla	
+self_harm	T63.092	Toxic effect of venom of other snake, intentional self-harm	
+self_harm	T63.092A	Toxic effect of venom of snake, intentional self-harm, init	
+self_harm	T63.092D	Toxic effect of venom of snake, intentional self-harm, subs	
+self_harm	T63.092S	Toxic effect of venom of snake, self-harm, sequela	
+self_harm	T63.112	Toxic effect of venom of gila monster, intentional self-harm	
+self_harm	T63.112A	Toxic effect of venom of gila monster, self-harm, init	
+self_harm	T63.112D	Toxic effect of venom of gila monster, self-harm, subs	
+self_harm	T63.112S	Toxic effect of venom of gila monster, self-harm, sequela	
+self_harm	T63.122	Toxic effect of venom of venomous lizard, self-harm	
+self_harm	T63.122A	Toxic effect of venom of venomous lizard, self-harm, init	
+self_harm	T63.122D	Toxic effect of venom of venomous lizard, self-harm, subs	
+self_harm	T63.122S	Toxic effect of venom of venomous lizard, self-harm, sequela	
+self_harm	T63.192	Toxic effect of venom of oth reptiles, intentional self-harm	
+self_harm	T63.192A	Toxic effect of venom of reptiles, self-harm, init	
+self_harm	T63.192D	Toxic effect of venom of reptiles, self-harm, subs	
+self_harm	T63.192S	Toxic effect of venom of reptiles, self-harm, sequela	
+self_harm	T63.2X2	Toxic effect of venom of scorpion, intentional self-harm	
+self_harm	T63.2X2A	Toxic effect of venom of scorpion, self-harm, init	
+self_harm	T63.2X2D	Toxic effect of venom of scorpion, self-harm, subs	
+self_harm	T63.2X2S	Toxic effect of venom of scorpion, self-harm, sequela	
+self_harm	T63.302	Toxic effect of unsp spider venom, intentional self-harm	
+self_harm	T63.302A	Toxic effect of unsp spider venom, self-harm, init	
+self_harm	T63.302D	Toxic effect of unsp spider venom, self-harm, subs	
+self_harm	T63.302S	Toxic effect of unsp spider venom, self-harm, sequela	
+self_harm	T63.312	Toxic effect of venom of black widow spider, self-harm	
+self_harm	T63.312A	Toxic effect of venom of black widow spider, self-harm, init	
+self_harm	T63.312D	Toxic effect of venom of black widow spider, self-harm, subs	
+self_harm	T63.312S	Toxic effect of venom of black widow spider, slf-hrm, sqla	
+self_harm	T63.322	Toxic effect of venom of tarantula, intentional self-harm	
+self_harm	T63.322A	Toxic effect of venom of tarantula, self-harm, init	
+self_harm	T63.322D	Toxic effect of venom of tarantula, self-harm, subs	
+self_harm	T63.322S	Toxic effect of venom of tarantula, self-harm, sequela	
+self_harm	T63.332	Toxic effect of venom of brown recluse spider, self-harm	
+self_harm	T63.332A	Toxic effect of venom of brown recluse spider, slf-hrm, init	
+self_harm	T63.332D	Toxic effect of venom of brown recluse spider, slf-hrm, subs	
+self_harm	T63.332S	Toxic effect of venom of brown recluse spider, slf-hrm, sqla	
+self_harm	T63.392	Toxic effect of venom of other spider, intentional self-harm	
+self_harm	T63.392A	Toxic effect of venom of spider, intentional self-harm, init	
+self_harm	T63.392D	Toxic effect of venom of spider, intentional self-harm, subs	
+self_harm	T63.392S	Toxic effect of venom of spider, self-harm, sequela	
+self_harm	T63.412	Toxic effect of venom of centipede/millipede, self-harm	
+self_harm	T63.412A	Toxic effect of venom of centipede/millipede, slf-hrm, init	
+self_harm	T63.412D	Toxic effect of venom of centipede/millipede, slf-hrm, subs	
+self_harm	T63.412S	Toxic effect of venom of centipede/millipede, slf-hrm, sqla	
+self_harm	T63.422	Toxic effect of venom of ants, intentional self-harm	
+self_harm	T63.422A	Toxic effect of venom of ants, intentional self-harm, init	
+self_harm	T63.422D	Toxic effect of venom of ants, intentional self-harm, subs	
+self_harm	T63.422S	Toxic effect of venom of ants, self-harm, sequela	
+self_harm	T63.432	Toxic effect of venom of caterpillars, intentional self-harm	
+self_harm	T63.432A	Toxic effect of venom of caterpillars, self-harm, init	
+self_harm	T63.432D	Toxic effect of venom of caterpillars, self-harm, subs	
+self_harm	T63.432S	Toxic effect of venom of caterpillars, self-harm, sequela	
+self_harm	T63.442	Toxic effect of venom of bees, intentional self-harm	
+self_harm	T63.442A	Toxic effect of venom of bees, intentional self-harm, init	
+self_harm	T63.442D	Toxic effect of venom of bees, intentional self-harm, subs	
+self_harm	T63.442S	Toxic effect of venom of bees, self-harm, sequela	
+self_harm	T63.452	Toxic effect of venom of hornets, intentional self-harm	
+self_harm	T63.452A	Toxic effect of venom of hornets, self-harm, init	
+self_harm	T63.452D	Toxic effect of venom of hornets, self-harm, subs	
+self_harm	T63.452S	Toxic effect of venom of hornets, self-harm, sequela	
+self_harm	T63.462	Toxic effect of venom of wasps, intentional self-harm	
+self_harm	T63.462A	Toxic effect of venom of wasps, intentional self-harm, init	
+self_harm	T63.462D	Toxic effect of venom of wasps, intentional self-harm, subs	
+self_harm	T63.462S	Toxic effect of venom of wasps, self-harm, sequela	
+self_harm	T63.482	Toxic effect of venom of arthropod, intentional self-harm	
+self_harm	T63.482A	Toxic effect of venom of arthropod, self-harm, init	
+self_harm	T63.482D	Toxic effect of venom of arthropod, self-harm, subs	
+self_harm	T63.482S	Toxic effect of venom of arthropod, self-harm, sequela	
+self_harm	T63.512	Toxic effect of contact with stingray, intentional self-harm	
+self_harm	T63.512A	Toxic effect of contact w stingray, self-harm, init	
+self_harm	T63.512D	Toxic effect of contact w stingray, self-harm, subs	
+self_harm	T63.512S	Toxic effect of contact w stingray, self-harm, sequela	
+self_harm	T63.592	Toxic effect of contact w oth venomous fish, self-harm	
+self_harm	T63.592A	Toxic effect of contact w oth venomous fish, self-harm, init	
+self_harm	T63.592D	Toxic effect of contact w oth venomous fish, self-harm, subs	
+self_harm	T63.592S	Toxic effect of contact w oth venom fish, slf-hrm, sequela	
+self_harm	T63.612	Toxic effect of contact with Portuguese Man-o-war, self-harm	
+self_harm	T63.612A	Toxic eff of cntct with Portuguese Man-o-war, slf-hrm, init	
+self_harm	T63.612D	Toxic eff of cntct with Portuguese Man-o-war, slf-hrm, subs	
+self_harm	T63.612S	Toxic eff of cntct with Portuguese Man-o-war, slf-hrm, sqla	
+self_harm	T63.622	Toxic effect of contact w oth jellyfish, self-harm	
+self_harm	T63.622A	Toxic effect of contact w oth jellyfish, self-harm, init	
+self_harm	T63.622D	Toxic effect of contact w oth jellyfish, self-harm, subs	
+self_harm	T63.622S	Toxic effect of contact w oth jellyfish, self-harm, sequela	
+self_harm	T63.632	Toxic effect of contact w sea anemone, intentional self-harm	
+self_harm	T63.632A	Toxic effect of contact w sea anemone, self-harm, init	
+self_harm	T63.632D	Toxic effect of contact w sea anemone, self-harm, subs	
+self_harm	T63.632S	Toxic effect of contact w sea anemone, self-harm, sequela	
+self_harm	T63.692	Toxic effect of contact w oth venom marine animals, slf-hrm	
+self_harm	T63.692A	Toxic eff of cntct w oth venom marine animals, slf-hrm, init	
+self_harm	T63.692D	Toxic eff of cntct w oth venom marine animals, slf-hrm, subs	
+self_harm	T63.692S	Toxic eff of cntct w oth venom marine animals, slf-hrm, sqla	
+self_harm	T63.712	Toxic effect of contact w venomous marine plant, self-harm	
+self_harm	T63.712A	Toxic effect of contact w venom marine plant, slf-hrm, init	
+self_harm	T63.712D	Toxic effect of contact w venom marine plant, slf-hrm, subs	
+self_harm	T63.712S	Toxic effect of cntct w venom marine plant, slf-hrm, sequela	
+self_harm	T63.792	Toxic effect of contact w oth venomous plant, self-harm	
+self_harm	T63.792A	Toxic effect of contact w oth venomous plant, slf-hrm, init	
+self_harm	T63.792D	Toxic effect of contact w oth venomous plant, slf-hrm, subs	
+self_harm	T63.792S	Toxic effect of contact w oth venom plant, slf-hrm, sequela	
+self_harm	T63.812	Toxic effect of contact w venomous frog, self-harm	
+self_harm	T63.812A	Toxic effect of contact w venomous frog, self-harm, init	
+self_harm	T63.812D	Toxic effect of contact w venomous frog, self-harm, subs	
+self_harm	T63.812S	Toxic effect of contact w venomous frog, self-harm, sequela	
+self_harm	T63.822	Toxic effect of contact w venomous toad, self-harm	
+self_harm	T63.822A	Toxic effect of contact w venomous toad, self-harm, init	
+self_harm	T63.822D	Toxic effect of contact w venomous toad, self-harm, subs	
+self_harm	T63.822S	Toxic effect of contact w venomous toad, self-harm, sequela	
+self_harm	T63.832	Toxic effect of contact w oth venomous amphibian, self-harm	
+self_harm	T63.832A	Toxic effect of contact w oth venomous amphib, slf-hrm, init	
+self_harm	T63.832D	Toxic effect of contact w oth venomous amphib, slf-hrm, subs	
+self_harm	T63.832S	Toxic effect of contact w oth venom amphib, slf-hrm, sequela	
+self_harm	T63.892	Toxic effect of contact w oth venomous animals, self-harm	
+self_harm	T63.892A	Toxic effect of contact w oth venom animals, slf-hrm, init	
+self_harm	T63.892D	Toxic effect of contact w oth venom animals, slf-hrm, subs	
+self_harm	T63.892S	Toxic effect of cntct w oth venom animals, slf-hrm, sequela	
+self_harm	T63.92XA	Toxic effect of contact w unsp venom animal, slf-hrm, init	
+self_harm	T63.92XD	Toxic effect of contact w unsp venom animal, slf-hrm, subs	
+self_harm	T63.92XS	Toxic effect of cntct w unsp venom animal, slf-hrm, sequela	
+self_harm	T64.02XA	Toxic effect of aflatoxin, intentional self-harm, init	
+self_harm	T64.02XD	Toxic effect of aflatoxin, intentional self-harm, subs	
+self_harm	T64.02XS	Toxic effect of aflatoxin, intentional self-harm, sequela	
+self_harm	T64.82XA	Toxic effect of mycotoxin food contaminants, self-harm, init	
+self_harm	T64.82XD	Toxic effect of mycotoxin food contaminants, self-harm, subs	
+self_harm	T64.82XS	Toxic effect of mycotoxin food contamnt, self-harm, sequela	
+self_harm	T65.0X2	Toxic effect of cyanides, intentional self-harm	
+self_harm	T65.0X2A	Toxic effect of cyanides, intentional self-harm, init encntr	
+self_harm	T65.0X2D	Toxic effect of cyanides, intentional self-harm, subs encntr	
+self_harm	T65.0X2S	Toxic effect of cyanides, intentional self-harm, sequela	
+self_harm	T65.1X2	Toxic effect of strychnine and its salts, self-harm	
+self_harm	T65.1X2A	Toxic effect of strychnine and its salts, self-harm, init	
+self_harm	T65.1X2D	Toxic effect of strychnine and its salts, self-harm, subs	
+self_harm	T65.1X2S	Toxic effect of strychnine and its salts, self-harm, sequela	
+self_harm	T65.212	Toxic effect of chewing tobacco, intentional self-harm	
+self_harm	T65.212A	Toxic effect of chewing tobacco, intentional self-harm, init	
+self_harm	T65.212D	Toxic effect of chewing tobacco, intentional self-harm, subs	
+self_harm	T65.212S	Toxic effect of chewing tobacco, self-harm, sequela	
+self_harm	T65.222	Toxic effect of tobacco cigarettes, intentional self-harm	
+self_harm	T65.222A	Toxic effect of tobacco cigarettes, self-harm, init	
+self_harm	T65.222D	Toxic effect of tobacco cigarettes, self-harm, subs	
+self_harm	T65.222S	Toxic effect of tobacco cigarettes, self-harm, sequela	
+self_harm	T65.292	Toxic effect of tobacco and nicotine, intentional self-harm	
+self_harm	T65.292A	Toxic effect of tobacco and nicotine, self-harm, init	
+self_harm	T65.292D	Toxic effect of tobacco and nicotine, self-harm, subs	
+self_harm	T65.292S	Toxic effect of tobacco and nicotine, self-harm, sequela	
+self_harm	T65.3X2	Toxic effect of nitrodrv/aminodrv of benzn/homolog, slf-hrm	
+self_harm	T65.3X2A	Tox eff of nitrodrv/aminodrv of benzn/homolog, slf-hrm, init	
+self_harm	T65.3X2D	Tox eff of nitrodrv/aminodrv of benzn/homolog, slf-hrm, subs	
+self_harm	T65.3X2S	Tox eff of nitrodrv/aminodrv of benzn/homolog, slf-hrm, sqla	
+self_harm	T65.4X2	Toxic effect of carbon disulfide, intentional self-harm	
+self_harm	T65.4X2A	Toxic effect of carbon disulfide, self-harm, init	
+self_harm	T65.4X2D	Toxic effect of carbon disulfide, self-harm, subs	
+self_harm	T65.4X2S	Toxic effect of carbon disulfide, self-harm, sequela	
+self_harm	T65.5X2	Toxic eff of nitro and oth nitric acids and esters, slf-hrm	
+self_harm	T65.5X2A	Tox eff of nitro & oth nitric acids & esters, slf-hrm, init	
+self_harm	T65.5X2D	Tox eff of nitro & oth nitric acids & esters, slf-hrm, subs	
+self_harm	T65.5X2S	Tox eff of nitro & oth nitric acids & esters, slf-hrm, sqla	
+self_harm	T65.6X2	Toxic effect of paints and dyes, NEC, intentional self-harm	
+self_harm	T65.6X2A	Toxic effect of paints and dyes, NEC, self-harm, init	
+self_harm	T65.6X2D	Toxic effect of paints and dyes, NEC, self-harm, subs	
+self_harm	T65.6X2S	Toxic effect of paints and dyes, NEC, self-harm, sequela	
+self_harm	T65.812	Toxic effect of latex, intentional self-harm	
+self_harm	T65.812A	Toxic effect of latex, intentional self-harm, init encntr	
+self_harm	T65.812D	Toxic effect of latex, intentional self-harm, subs encntr	
+self_harm	T65.812S	Toxic effect of latex, intentional self-harm, sequela	
+self_harm	T65.822	Toxic effect of harmful algae and algae toxins, self-harm	
+self_harm	T65.822A	Toxic eff of harmful algae and algae toxins, slf-hrm, init	
+self_harm	T65.822D	Toxic eff of harmful algae and algae toxins, slf-hrm, subs	
+self_harm	T65.822S	Toxic eff of harmful algae and algae toxins, slf-hrm, sqla	
+self_harm	T65.832	Toxic effect of fiberglass, intentional self-harm	
+self_harm	T65.832A	Toxic effect of fiberglass, intentional self-harm, init	
+self_harm	T65.832D	Toxic effect of fiberglass, intentional self-harm, subs	
+self_harm	T65.832S	Toxic effect of fiberglass, intentional self-harm, sequela	
+self_harm	T65.892	Toxic effect of oth substances, intentional self-harm	
+self_harm	T65.892A	Toxic effect of oth substances, intentional self-harm, init	
+self_harm	T65.892D	Toxic effect of oth substances, intentional self-harm, subs	
+self_harm	T65.892S	Toxic effect of substances, intentional self-harm, sequela	
+self_harm	T65.92XA	Toxic effect of unsp substance, intentional self-harm, init	
+self_harm	T65.92XD	Toxic effect of unsp substance, intentional self-harm, subs	
+self_harm	T65.92XS	Toxic effect of unsp substance, self-harm, sequela	
+self_harm	T71.112	Asphyxiation due to smothering under pillow, self-harm	
+self_harm	T71.112A	Asphyxiation due to smothering under pillow, self-harm, init	
+self_harm	T71.112D	Asphyxiation due to smothering under pillow, self-harm, subs	
+self_harm	T71.112S	Asphyx due to smothering under pillow, self-harm, sequela	
+self_harm	T71.122	Asphyxiation due to plastic bag, intentional self-harm	
+self_harm	T71.122A	Asphyxiation due to plastic bag, intentional self-harm, init	
+self_harm	T71.122D	Asphyxiation due to plastic bag, intentional self-harm, subs	
+self_harm	T71.122S	Asphyxiation due to plastic bag, self-harm, sequela	
+self_harm	T71.132	Asphyxiation due to being trapped in bed linens, self-harm	
+self_harm	T71.132A	Asphyx due to being trapped in bed linens, self-harm, init	
+self_harm	T71.132D	Asphyx due to being trapped in bed linens, self-harm, subs	
+self_harm	T71.132S	Asphyx due to being trapped in bed linens, slf-hrm, sequela	
+self_harm	T71.152	Asphyxiation due to smothering in furniture, self-harm	
+self_harm	T71.152A	Asphyxiation due to smothering in furniture, self-harm, init	
+self_harm	T71.152D	Asphyxiation due to smothering in furniture, self-harm, subs	
+self_harm	T71.152S	Asphyx due to smothering in furniture, self-harm, sequela	
+self_harm	T71.162	Asphyxiation due to hanging, intentional self-harm	
+self_harm	T71.162A	Asphyxiation due to hanging, intentional self-harm, init	
+self_harm	T71.162D	Asphyxiation due to hanging, intentional self-harm, subs	
+self_harm	T71.162S	Asphyxiation due to hanging, intentional self-harm, sequela	
+self_harm	T71.192	Asphyx d/t mech threat to breathe due to oth cause, slf-hrm	
+self_harm	T71.192A	Asphyx d/t mech thrt to breathe d/t oth cause, slf-hrm, init	
+self_harm	T71.192D	Asphyx d/t mech thrt to breathe d/t oth cause, slf-hrm, subs	
+self_harm	T71.192S	Asphyx d/t mech thrt to breathe d/t oth cause, slf-hrm, sqla	
+self_harm	T71.222	Asphyxiation due to being trapped in a car trunk, self-harm	
+self_harm	T71.222A	Asphyx due to being trapped in a car trunk, self-harm, init	
+self_harm	T71.222D	Asphyx due to being trapped in a car trunk, self-harm, subs	
+self_harm	T71.222S	Asphyx due to being trapped in a car trunk, slf-hrm, sequela	
+self_harm	T71.232	Asphyx due to being trapped in a (discarded) refrig, slf-hrm	
+self_harm	T71.232A	Asphyx d/t being trap in a (discarded) refrig, slf-hrm, init	
+self_harm	T71.232D	Asphyx d/t being trap in a (discarded) refrig, slf-hrm, subs	
+self_harm	T71.232S	Asphyx d/t being trap in a (discarded) refrig, slf-hrm, sqla	
+self_harm	X71	Intentional self-harm by drowning and submersion	
+self_harm	X71-X83	Suicide (attempted)	
+self_harm	X71.0	Intentional self-harm by drown while in bathtub	
+self_harm	X71.0XXA	Intentional self-harm by drown while in bathtub, init	
+self_harm	X71.0XXD	Intentional self-harm by drown while in bathtub, subs	
+self_harm	X71.0XXS	Intentional self-harm by drown while in bathtub, sequela	
+self_harm	X71.1	Intentional self-harm by drown while in swimming pool	
+self_harm	X71.1XXA	Intentional self-harm by drown while in swimming pool, init	
+self_harm	X71.1XXD	Intentional self-harm by drown while in swimming pool, subs	
+self_harm	X71.1XXS	Self-harm by drown while in swimming pool, sequela	
+self_harm	X71.2	Intentional self-harm by drown after jump into swimming pool	
+self_harm	X71.2XXA	Self-harm by drown after jump into swimming pool, init	
+self_harm	X71.2XXD	Self-harm by drown after jump into swimming pool, subs	
+self_harm	X71.2XXS	Self-harm by drown after jump into swimming pool, sequela	
+self_harm	X71.3	Intentional self-harm by drown in natural water	
+self_harm	X71.3XXA	Intentional self-harm by drown in natural water, init	
+self_harm	X71.3XXD	Intentional self-harm by drown in natural water, subs	
+self_harm	X71.3XXS	Intentional self-harm by drown in natural water, sequela	
+self_harm	X71.8	Other intentional self-harm by drowning and submersion	
+self_harm	X71.8XXA	Oth intentional self-harm by drowning and submersion, init	
+self_harm	X71.8XXD	Oth intentional self-harm by drowning and submersion, subs	
+self_harm	X71.8XXS	Oth intentional self-harm by drown, sequela	
+self_harm	X71.9	Intentional self-harm by drowning and submersion, unsp	
+self_harm	X71.9XXA	Intentional self-harm by drowning and submersion, unsp, init	
+self_harm	X71.9XXD	Intentional self-harm by drowning and submersion, unsp, subs	
+self_harm	X71.9XXS	Intentional self-harm by drown, unsp, sequela	
+self_harm	X72	Intentional self-harm by pistol	
+self_harm	X72.XXXA	Intentional self-harm by handgun discharge, init encntr	
+self_harm	X72.XXXD	Intentional self-harm by handgun discharge, subs encntr	
+self_harm	X72.XXXS	Intentional self-harm by handgun discharge, sequela	
+self_harm	X73	Self-harm by rifle, shotgun and larger firearm discharge	
+self_harm	X73.0	Intentional self-harm by shotgun discharge	
+self_harm	X73.0XXA	Intentional self-harm by shotgun discharge, init encntr	
+self_harm	X73.0XXD	Intentional self-harm by shotgun discharge, subs encntr	
+self_harm	X73.0XXS	Intentional self-harm by shotgun discharge, sequela	
+self_harm	X73.1	Intentional self-harm by hunting rifle discharge	
+self_harm	X73.1XXA	Intentional self-harm by hunting rifle discharge, init	
+self_harm	X73.1XXD	Intentional self-harm by hunting rifle discharge, subs	
+self_harm	X73.1XXS	Intentional self-harm by hunting rifle discharge, sequela	
+self_harm	X73.2	Intentional self-harm by machine gun discharge	
+self_harm	X73.2XXA	Intentional self-harm by machine gun discharge, init encntr	
+self_harm	X73.2XXD	Intentional self-harm by machine gun discharge, subs encntr	
+self_harm	X73.2XXS	Intentional self-harm by machine gun discharge, sequela	
+self_harm	X73.8	Intentional self-harm by other larger firearm discharge	
+self_harm	X73.8XXA	Intentional self-harm by oth larger firearm discharge, init	
+self_harm	X73.8XXD	Intentional self-harm by oth larger firearm discharge, subs	
+self_harm	X73.8XXS	Self-harm by oth larger firearm discharge, sequela	
+self_harm	X73.9	Intentional self-harm by unsp larger firearm discharge	
+self_harm	X73.9XXA	Intentional self-harm by unsp larger firearm discharge, init	
+self_harm	X73.9XXD	Intentional self-harm by unsp larger firearm discharge, subs	
+self_harm	X73.9XXS	Self-harm by unsp larger firearm discharge, sequela	
+self_harm	X74	Self-harm by oth and unsp firearm and gun discharge	
+self_harm	X74.0	Intentional self-harm by gas, air or spring-operated guns	
+self_harm	X74.01	Intentional self-harm by airgun	
+self_harm	X74.01XA	Intentional self-harm by airgun, initial encounter	
+self_harm	X74.01XD	Intentional self-harm by airgun, subsequent encounter	
+self_harm	X74.01XS	Intentional self-harm by airgun, sequela	
+self_harm	X74.02	Intentional self-harm by paintball gun	
+self_harm	X74.02XA	Intentional self-harm by paintball gun, initial encounter	
+self_harm	X74.02XD	Intentional self-harm by paintball gun, subsequent encounter	
+self_harm	X74.02XS	Intentional self-harm by paintball gun, sequela	
+self_harm	X74.09	Intentional self-harm by oth gas, air or spring-operated gun	
+self_harm	X74.09XA	Self-harm by oth gas, air or spring-operated gun, init	
+self_harm	X74.09XD	Self-harm by oth gas, air or spring-operated gun, subs	
+self_harm	X74.09XS	Self-harm by oth gas, air or spring-operated gun, sequela	
+self_harm	X74.8	Intentional self-harm by other firearm discharge	
+self_harm	X74.8XXA	Intentional self-harm by oth firearm discharge, init encntr	
+self_harm	X74.8XXD	Intentional self-harm by oth firearm discharge, subs encntr	
+self_harm	X74.8XXS	Intentional self-harm by other firearm discharge, sequela	
+self_harm	X74.9	Intentional self-harm by unspecified firearm discharge	
+self_harm	X74.9XXA	Intentional self-harm by unsp firearm discharge, init encntr	
+self_harm	X74.9XXD	Intentional self-harm by unsp firearm discharge, subs encntr	
+self_harm	X74.9XXS	Intentional self-harm by unsp firearm discharge, sequela	
+self_harm	X75	Intentional self-harm by explosive material	
+self_harm	X75.XXXA	Intentional self-harm by explosive material, init encntr	
+self_harm	X75.XXXD	Intentional self-harm by explosive material, subs encntr	
+self_harm	X75.XXXS	Intentional self-harm by explosive material, sequela	
+self_harm	X76	Intentional self-harm by smoke, fire and flames	
+self_harm	X76.XXXA	Intentional self-harm by smoke, fire and flames, init encntr	
+self_harm	X76.XXXD	Intentional self-harm by smoke, fire and flames, subs encntr	
+self_harm	X76.XXXS	Intentional self-harm by smoke, fire and flames, sequela	
+self_harm	X77	Intentional self-harm by steam, hot vapors and hot objects	
+self_harm	X77.0	Intentional self-harm by steam or hot vapors	
+self_harm	X77.0XXA	Intentional self-harm by steam or hot vapors, init encntr	
+self_harm	X77.0XXD	Intentional self-harm by steam or hot vapors, subs encntr	
+self_harm	X77.0XXS	Intentional self-harm by steam or hot vapors, sequela	
+self_harm	X77.1	Intentional self-harm by hot tap water	
+self_harm	X77.1XXA	Intentional self-harm by hot tap water, initial encounter	
+self_harm	X77.1XXD	Intentional self-harm by hot tap water, subsequent encounter	
+self_harm	X77.1XXS	Intentional self-harm by hot tap water, sequela	
+self_harm	X77.2	Intentional self-harm by other hot fluids	
+self_harm	X77.2XXA	Intentional self-harm by other hot fluids, initial encounter	
+self_harm	X77.2XXD	Intentional self-harm by other hot fluids, subs encntr	
+self_harm	X77.2XXS	Intentional self-harm by other hot fluids, sequela	
+self_harm	X77.3	Intentional self-harm by hot household appliances	
+self_harm	X77.3XXA	Intentional self-harm by hot household appliances, init	
+self_harm	X77.3XXD	Intentional self-harm by hot household appliances, subs	
+self_harm	X77.3XXS	Intentional self-harm by hot household appliances, sequela	
+self_harm	X77.8	Intentional self-harm by other hot objects	
+self_harm	X77.8XXA	Intentional self-harm by other hot objects, init encntr	
+self_harm	X77.8XXD	Intentional self-harm by other hot objects, subs encntr	
+self_harm	X77.8XXS	Intentional self-harm by other hot objects, sequela	
+self_harm	X77.9	Intentional self-harm by unspecified hot objects	
+self_harm	X77.9XXA	Intentional self-harm by unsp hot objects, init encntr	
+self_harm	X77.9XXD	Intentional self-harm by unsp hot objects, subs encntr	
+self_harm	X77.9XXS	Intentional self-harm by unspecified hot objects, sequela	
+self_harm	X78	Intentional self-harm by sharp object	
+self_harm	X78.0	Intentional self-harm by sharp glass	
+self_harm	X78.0XXA	Intentional self-harm by sharp glass, initial encounter	
+self_harm	X78.0XXD	Intentional self-harm by sharp glass, subsequent encounter	
+self_harm	X78.0XXS	Intentional self-harm by sharp glass, sequela	
+self_harm	X78.1	Intentional self-harm by knife	
+self_harm	X78.1XXA	Intentional self-harm by knife, initial encounter	
+self_harm	X78.1XXD	Intentional self-harm by knife, subsequent encounter	
+self_harm	X78.1XXS	Intentional self-harm by knife, sequela	
+self_harm	X78.2	Intentional self-harm by sword or dagger	
+self_harm	X78.2XXA	Intentional self-harm by sword or dagger, initial encounter	
+self_harm	X78.2XXD	Intentional self-harm by sword or dagger, subs encntr	
+self_harm	X78.2XXS	Intentional self-harm by sword or dagger, sequela	
+self_harm	X78.8	Intentional self-harm by other sharp object	
+self_harm	X78.8XXA	Intentional self-harm by other sharp object, init encntr	
+self_harm	X78.8XXD	Intentional self-harm by other sharp object, subs encntr	
+self_harm	X78.8XXS	Intentional self-harm by other sharp object, sequela	
+self_harm	X78.9	Intentional self-harm by unspecified sharp object	
+self_harm	X78.9XXA	Intentional self-harm by unsp sharp object, init encntr	
+self_harm	X78.9XXD	Intentional self-harm by unsp sharp object, subs encntr	
+self_harm	X78.9XXS	Intentional self-harm by unspecified sharp object, sequela	
+self_harm	X79	Intentional self-harm by blunt object	
+self_harm	X79.XXXA	Intentional self-harm by blunt object, initial encounter	
+self_harm	X79.XXXD	Intentional self-harm by blunt object, subsequent encounter	
+self_harm	X79.XXXS	Intentional self-harm by blunt object, sequela	
+self_harm	X80	Intentional fall from one level to another	
+self_harm	X80.XXXA	Intentional self-harm by jumping from a high place, init	
+self_harm	X80.XXXD	Intentional self-harm by jumping from a high place, subs	
+self_harm	X80.XXXS	Intentional self-harm by jumping from a high place, sequela	
+self_harm	X81	Self-harm by jumping or lying in front of moving object	
+self_harm	X81.0	Self-harm by jumping or lying in front of motor vehicle	
+self_harm	X81.0XXA	Self-harm by jumping or lying in front of mtr veh, init	
+self_harm	X81.0XXD	Self-harm by jumping or lying in front of mtr veh, subs	
+self_harm	X81.0XXS	Self-harm by jumping or lying in front of mtr veh, sequela	
+self_harm	X81.1	Self-harm by jumping or lying in front of (subway) train	
+self_harm	X81.1XXA	Slf-hrm by jumping or lying in front of (subway) train, init	
+self_harm	X81.1XXD	Slf-hrm by jumping or lying in front of (subway) train, subs	
+self_harm	X81.1XXS	Slf-hrm by jumping or lying in front of train, sequela	
+self_harm	X81.8	Self-harm by jumping or lying in front of moving object	
+self_harm	X81.8XXA	Slf-hrm by jumping or lying in front of moving object, init	
+self_harm	X81.8XXD	Slf-hrm by jumping or lying in front of moving object, subs	
+self_harm	X81.8XXS	Slf-hrm by jump or lying in front of moving object, sequela	
+self_harm	X82	Intentional self-harm by crashing of motor vehicle	
+self_harm	X82.0	Intentional collision of motor vehicle w oth motor vehicle	
+self_harm	X82.0XXA	Intentional collision of motor vehicle w mtr veh, init	
+self_harm	X82.0XXD	Intentional collision of motor vehicle w mtr veh, subs	
+self_harm	X82.0XXS	Intentional collision of motor vehicle w mtr veh, sequela	
+self_harm	X82.1	Intentional collision of motor vehicle with train	
+self_harm	X82.1XXA	Intentional collision of motor vehicle w train, init encntr	
+self_harm	X82.1XXD	Intentional collision of motor vehicle w train, subs encntr	
+self_harm	X82.1XXS	Intentional collision of motor vehicle with train, sequela	
+self_harm	X82.2	Intentional collision of motor vehicle with tree	
+self_harm	X82.2XXA	Intentional collision of motor vehicle w tree, init encntr	
+self_harm	X82.2XXD	Intentional collision of motor vehicle w tree, subs encntr	
+self_harm	X82.2XXS	Intentional collision of motor vehicle with tree, sequela	
+self_harm	X82.8	Other intentional self-harm by crashing of motor vehicle	
+self_harm	X82.8XXA	Oth intentional self-harm by crashing of motor vehicle, init	
+self_harm	X82.8XXD	Oth intentional self-harm by crashing of motor vehicle, subs	
+self_harm	X82.8XXS	Oth self-harm by crashing of motor vehicle, sequela	
+self_harm	X83	Intentional self-harm by other specified means	
+self_harm	X83.0	Intentional self-harm by crashing of aircraft	
+self_harm	X83.0XXA	Intentional self-harm by crashing of aircraft, init encntr	
+self_harm	X83.0XXD	Intentional self-harm by crashing of aircraft, subs encntr	
+self_harm	X83.0XXS	Intentional self-harm by crashing of aircraft, sequela	
+self_harm	X83.1	Intentional self-harm by electrocution	
+self_harm	X83.1XXA	Intentional self-harm by electrocution, initial encounter	
+self_harm	X83.1XXD	Intentional self-harm by electrocution, subsequent encounter	
+self_harm	X83.1XXS	Intentional self-harm by electrocution, sequela	
+self_harm	X83.2	Intentional self-harm by exposure to extremes of cold	
+self_harm	X83.2XXA	Intentional self-harm by exposure to extremes of cold, init	
+self_harm	X83.2XXD	Intentional self-harm by exposure to extremes of cold, subs	
+self_harm	X83.2XXS	Self-harm by exposure to extremes of cold, sequela	
+self_harm	X83.8	Intentional self-harm by other specified means	
+self_harm	X83.8XXA	Intentional self-harm by other specified means, init encntr	
+self_harm	X83.8XXD	Intentional self-harm by other specified means, subs encntr	
+self_harm	X83.8XXS	Intentional self-harm by other specified means, sequela	

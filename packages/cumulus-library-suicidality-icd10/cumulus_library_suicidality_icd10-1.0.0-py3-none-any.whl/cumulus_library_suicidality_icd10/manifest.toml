@@ -1,0 +1,55 @@
+# 'study_prefix' should be a string at the start of each table. We'll use this
+# to clean up queries, so it should be unique. Name your tables in the following
+# format: [study_prefix]__[table_name]. It should probably, but not necessarily,
+# be the same name as the folder the study definition is in.
+study_prefix = "suicide_icd10"
+
+# The following section describes all tables that should be generated directly
+# from SQL files.
+[sql_config]
+# 'file_names' defines a list of sql files to execute, in order, in this folder.
+# Recommended order: Any ancillary config (like a list of condition codes),
+# tables/view selecting subsets of data from FHIR data, tables/views creating 
+# summary statistics.
+file_names = [
+    "define_age.sql",
+    "define_note.sql",
+    "define_dx_attempt.sql",
+    "define_dx_attempt_snomed.sql",
+    "define_dx_ideation.sql",
+    "define_dx_self_harm.sql",
+    "define_dx.sql",
+    "define_study_period.sql",
+    "table_study_period.sql",
+    "table_dx.sql",
+    "table_prevalence.sql",
+    "chartreview_case.sql",
+    "version.sql"
+]
+
+[counts_builder_config]
+file_names = [
+    "counts.py"
+]
+# The following section defines parameters related to exporting study data from
+# your athena database
+[export_config]
+# The following tables will be output to disk when an export is run. In most cases,
+# only count tables should be output in this way.
+export_list = [
+    "suicide_icd10__count_dx_month",
+    "suicide_icd10__count_study_period_month",
+    "suicide_icd10__meta_version",    
+]
+
+
+# For most use cases, this should not be required, but if you need to run code, you
+# can point to a python module. The vocab study provides an example of this. 
+# Python code will always be run before any SQL queries are executed.
+# [python_config]
+# file_names = [
+#     "my_script.py",
+# ]
+
+# If you'd like another language available, please reach out - we can likely 
+# accomadate, but we'd need to understand the use cases a little better.
