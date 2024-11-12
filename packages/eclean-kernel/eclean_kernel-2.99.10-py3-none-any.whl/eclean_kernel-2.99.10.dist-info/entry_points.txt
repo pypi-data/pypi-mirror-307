@@ -1,0 +1,3 @@
+[console_scripts]
+eclean-kernel=ecleankernel.__main__:setuptools_main
+
