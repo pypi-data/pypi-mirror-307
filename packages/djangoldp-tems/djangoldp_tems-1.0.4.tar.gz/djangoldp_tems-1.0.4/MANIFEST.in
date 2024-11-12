@@ -1,0 +1,4 @@
+graft djangoldp_tems
+graft djangoldp_tems_trial6
+graft djangoldp_tems_trial8
+global‐exclude *.py[cod] __pycache__ *.so

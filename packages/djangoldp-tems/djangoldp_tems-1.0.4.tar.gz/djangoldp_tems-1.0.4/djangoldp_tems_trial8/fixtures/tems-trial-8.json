@@ -1,0 +1,123 @@
+[
+  {
+    "model": "djangoldp_tems_trial8.trial8category",
+    "fields": {
+      "name": "Category"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "fields": {
+      "name": "3D Studio"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "fields": {
+      "name": "AutoCAD drawing 2013"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "fields": {
+      "name": "FBX"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8format",
+    "fields": {
+      "name": "Category"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8keyword",
+    "fields": {
+      "name": "Bob"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8keyword",
+    "fields": {
+      "name": "Castle"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8keyword",
+    "fields": {
+      "name": "Keyword"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8location",
+    "fields": {
+      "name": "Geonames location name",
+      "address": "Unknown",
+      "city": "Melbourne",
+      "state": "AU",
+      "country": "Australia",
+      "latitude": "0E-7",
+      "longitude": "0E-7",
+      "elevation": 0
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8object",
+    "fields": {
+      "title": "Test",
+      "description": "",
+      "copyright": null,
+      "website": null,
+      "identifier": null,
+      "historical_period": null,
+      "polygons": 0,
+      "summits": 0,
+      "geometry": "",
+      "uv_layers": false,
+      "vertex_colors": false,
+      "rigged_geometry": false,
+      "file_size": 0,
+      "vertives": 0,
+      "textures": 0,
+      "materials": 0,
+      "animations": 0,
+      "original_material": "",
+      "format": null,
+      "category": null,
+      "location": null,
+      "licences": [],
+      "images": [1],
+      "keywords": [1],
+      "compatibilities": []
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8object",
+    "fields": {
+      "title": "Title",
+      "description": "Lorem ipsum dolor sit amet consectetur. Et nulla lacus magna sagittis quam. Leo proin urna semper egestas. Nisl ut tincidunt massa nulla venenatis sem lacus quam duis. A etiam parturient nunc vel. Feugiat ultrices sed feugiat venenatis posuere. Enim eget nunc feugiat interdum. Justo scelerisque ornare ut egestas ullamcorper risus justo. Pellentesque facilisi aliquam tellus lacus non suspendisse.\r\n\r\nFacilisis nulla felis in est mauris magna dictum diam. Diam nulla eu duis arcu risus. Sed mi vulputate auctor vitae curabitur. Libero volutpat vestibulum consectetur rutrum tortor leo in ut. Id sem nam dignissim nec. Eu sollicitudin et sed sapien.",
+      "copyright": "https://startinblox.com",
+      "website": "https://startinblox.com",
+      "identifier": "XXX-000-XXX",
+      "historical_period": "XXX-000-XXX",
+      "polygons": 67342,
+      "summits": 34602,
+      "geometry": "Polygonal Géométrie",
+      "uv_layers": true,
+      "vertex_colors": true,
+      "rigged_geometry": false,
+      "file_size": 491700,
+      "vertives": 0,
+      "textures": 5,
+      "materials": 20,
+      "animations": 0,
+      "original_material": "HD Cam",
+      "format": 1,
+      "category": 1,
+      "location": 1,
+      "licences": [1],
+      "images": [1],
+      "keywords": [2, 3],
+      "compatibilities": [1, 2, 3]
+    }
+  }
+]

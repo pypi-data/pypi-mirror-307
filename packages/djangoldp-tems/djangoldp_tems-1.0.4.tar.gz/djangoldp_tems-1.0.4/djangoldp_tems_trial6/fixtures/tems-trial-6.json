@@ -1,0 +1,72 @@
+[
+  {
+    "model": "djangoldp_tems_trial6.trial6category",
+    "fields": {
+      "name": "VO-English"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6category",
+    "fields": {
+      "name": "German"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6format",
+    "fields": {
+      "name": "TXT"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6format",
+    "fields": {
+      "name": "MP3"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6object",
+    "fields": {
+      "title": "Standard Time podcast S1E24",
+      "description": "The #EU likes to promote its devotion to human rights, but you  won’t need a magnifying glass to see that this agenda falls short when  it comes to #border regimes, #migration and especially, non-European  #refugees.\r\nOur guests are Sedra Arab, Gustavo de la Orden Bosch, and Philipp  Ther #borders #migration #EU #EUSecurity #Security #ForeignPolicy  #refugees #history #EuropeanHistory #immigration #asylum #EPElections  #racism #anti-racism #humanrights #MigrationPact\r\nStandard Time, Eurozine’s weekly talk show is a Display Europe  production, offering thoughtful conversations on topics with a  cross-European interest. Make sure to subscribe to our channel to watch our latest episodes",
+      "copyright": null,
+      "website": "https://cba.media/?post_type=post&p=666825",
+      "subtitle": "Fortifying Europe",
+      "editor": "Eurozine - Salma Shaka",
+      "contributors": "uploader : Eurozine : office@eurozine.com : https:\\\\/\\\\/www.eurozine…thors\\\\/standard-time\\\\",
+      "author": "Author",
+      "platform": "Platform",
+      "licences": [2, 3],
+      "images": [2, 3, 4, 5, 6, 7, 8, 9]
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "fields": {
+      "name": "Subtitles_akajelakzeja.txt",
+      "size": 200000,
+      "format": 1,
+      "category": 1,
+      "object": 2
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "fields": {
+      "name": "Transcription_akajelakzeja.MP3",
+      "size": 200000,
+      "format": 2,
+      "category": 1,
+      "object": 2
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "fields": {
+      "name": "Transcription V2_akajelakzeja.OGG",
+      "size": 200000,
+      "format": 2,
+      "category": 2,
+      "object": 2
+    }
+  }
+]
