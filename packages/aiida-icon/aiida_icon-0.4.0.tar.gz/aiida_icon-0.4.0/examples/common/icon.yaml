@@ -1,0 +1,7 @@
+label: 'icon'
+description: "ICON weather and climate model"
+default_calc_job_plugin: 'aiida_icon.icon'
+filepath_executable: '/path/to/icon'
+computer: 'todi'
+prepend_text: ""
+append_text: ""
