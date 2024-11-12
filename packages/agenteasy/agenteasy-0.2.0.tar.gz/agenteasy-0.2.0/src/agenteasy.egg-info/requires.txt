@@ -1,0 +1,8 @@
+openai
+pydantic
+pydantic-settings
+Jinja2
+tiktoken
+
+[full]
+redis[hiredis]
