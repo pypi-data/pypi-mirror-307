@@ -1,0 +1,33 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+
+[project]
+name = "filterx"
+version = "0.2.6"
+description = "A simple command line tool to filter data by using python-like syntax"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/dwpeng/filterx"
+repository = "https://github.com/dwpeng/filterx"
+documentation = "https://filterx.dwpeng.com"
+
+[tool.maturin]
+bindings = "bin"
+manifest-path = "src/filterx/Cargo.toml"
+module-name = "filterx"
+strip = true
+exclude = [
+    "spec/",
+    "docs/",
+    "src/"
+]
+include = [
+    "pyproject.toml",
+    "README.md",
+    "LICENSE",
+]
