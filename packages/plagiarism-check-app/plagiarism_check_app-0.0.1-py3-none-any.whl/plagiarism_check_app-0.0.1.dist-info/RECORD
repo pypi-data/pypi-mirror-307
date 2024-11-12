@@ -1,0 +1,14 @@
+app/__init__.py,sha256=IW-3jSM38pf33LqLaO90PIRwJlEqnoPxt3R-4W5REQA,23
+app/app.py,sha256=yIuX9Y-gd4OUh4Pb3iJpSWu1aQ8e-UxdUiVtFu6G5nc,2161
+app/consts.py,sha256=fC1OZ1pi71lynNTZSCp_BozgcF0xC784D_sSBvsVUiM,62
+app/database_manager.py,sha256=O45M9ggVc33k4jXGxNXX05R6-McptJFrGCdEzkeaLgI,5112
+app/main.py,sha256=c_-VswUE1Ba83M27-3rl0ZigHTGSUvde4tWCseoibYk,2421
+app/utils.py,sha256=_ipd0CeOaQFluLD0o2VUXC3j-E--Wb-0plc-L1utVBs,1313
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_split_text.py,sha256=Ugon_TupyvgT04kYMfd9OBlpSvI3ltiJJCDO00KBKB0,1320
+plagiarism_check_app-0.0.1.dist-info/LICENSE,sha256=YAn0XFvjVNtbYMQre4ptGnDskZ4LRoGnU7h1tsL8WRA,1091
+plagiarism_check_app-0.0.1.dist-info/METADATA,sha256=oF-GCMw1sU-ioqU3TamMufnFKBO0hdcid8dzB-F8HRM,620
+plagiarism_check_app-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+plagiarism_check_app-0.0.1.dist-info/entry_points.txt,sha256=XF-jk-K-N1rXM9fsk5V9mAgpv6UDntKFgYXyECaYkrc,51
+plagiarism_check_app-0.0.1.dist-info/top_level.txt,sha256=MJXn5pCZl0XSEeWNKzshxzMMANr3AymeoMYBO1JNPyU,10
+plagiarism_check_app-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: plagiarism-check-app
+Version: 0.0.1
+Summary: A FastAPI app
+Home-page: https://github.com/viraboik/plagiarismcheck.git
+Author: Vira Boiko
+Author-email: vira.shendrykk@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: nltk
+Requires-Dist: pytest
+
+TODOs:
+[TODO - Sprint 1](docs/todos/todo_1.md)
+
+# Install dependency
+
+```commandline
+pip install -r requirements.txt
+```
+
+# Run tests (optional)
+
+```commandline
+pytest
+```
+
+# Run server
+
+```commandline
+uvicorn app:app --reload
+```
