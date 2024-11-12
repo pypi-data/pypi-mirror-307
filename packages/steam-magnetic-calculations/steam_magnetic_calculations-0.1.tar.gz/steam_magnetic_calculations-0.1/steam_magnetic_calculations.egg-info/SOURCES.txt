@@ -1,0 +1,12 @@
+README.md
+setup.py
+steam_magnetic_calculations/Magnetic_Coil.py
+steam_magnetic_calculations/__init__.py
+steam_magnetic_calculations/steam-magnetic-calculation.py
+steam_magnetic_calculations.egg-info/PKG-INFO
+steam_magnetic_calculations.egg-info/SOURCES.txt
+steam_magnetic_calculations.egg-info/dependency_links.txt
+steam_magnetic_calculations.egg-info/requires.txt
+steam_magnetic_calculations.egg-info/top_level.txt
+tests/test_MagneticCoil.py
+tests/test_Magnetic_Tim.py
