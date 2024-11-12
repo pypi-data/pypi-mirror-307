@@ -1,0 +1,61 @@
+[workspace]
+resolver = "2"
+members = ["src/filterx"]
+
+[workspace.package]
+authors = ["dwpeng"]
+version = "0.2.6"
+edition = "2021"
+description = "A simple command line tool to filter data by using python-like syntax"
+license = "MIT"
+repository = "https://github.com/dwpeng/filterx"
+homepage = "https://github.com/dwpeng/filterx"
+exclude = ["spec/", "docs/"]
+
+[workspace.dependencies]
+filterx = { path = "src/filterx" }
+filterx_core = { path = "src/filterx_core" }
+filterx_engine = { path = "src/filterx_engine" }
+filterx_source = { path = "src/filterx_source" }
+anyhow = "1.0.89"
+clap = { version = "4.5.17", features = ["derive"] }
+polars = { version = "0.44.2", default-features = false, features = [
+    "lazy",
+    "csv",
+    "strings",
+    "string_reverse",
+    "concat_str",
+    "regex",
+    "semi_anti_join",
+    "streaming",
+    "cum_agg",
+    "avx512",
+    "dtype-u8",
+    "dtype-u16",
+    "dtype-i16",
+    "dtype-i8",
+    "abs",
+    "decompress",
+    "describe",
+    "fmt",
+    "fmt_no_tty",
+] }
+polars-arrow = { version = "0.44.2" }
+rustpython-parser = "0.4.0"
+thiserror = "2.0.0"
+flate2 = { version = "1.0.34", features = ["zlib-rs"] }
+regex = "1.11.1"
+colored = "2.1.0"
+lazy_static = "1.5.0"
+
+
+[profile.dev]
+opt-level = 0
+
+
+[profile.release]
+opt-level = "z"
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
