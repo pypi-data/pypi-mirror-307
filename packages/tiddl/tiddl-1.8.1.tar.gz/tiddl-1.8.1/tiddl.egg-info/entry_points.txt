@@ -1,0 +1,3 @@
+[console_scripts]
+tiddl = tiddl:main
+tiddl-sync = scripts.sync:main
