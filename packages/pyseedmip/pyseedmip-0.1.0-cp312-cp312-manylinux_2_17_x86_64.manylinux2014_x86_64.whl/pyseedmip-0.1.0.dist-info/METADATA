@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyseedmip
+Version: 0.1.0
+Summary: SeedMIP for Python
+Author-email: SeedMath <account@seedmath.com>
+Project-URL: Bug Reports, https://github.com/yourusername/pyseedmip/issues
+Project-URL: Source, https://github.com/yourusername/pyseedmip/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pybind11>=2.5
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
