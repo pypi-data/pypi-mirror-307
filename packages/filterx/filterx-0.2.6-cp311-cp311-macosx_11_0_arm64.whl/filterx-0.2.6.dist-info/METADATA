@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: filterx
+Version: 0.2.6
+License-File: LICENSE
+Summary: A simple command line tool to filter data by using python-like syntax
+Home-Page: https://github.com/dwpeng/filterx
+Author: dwpeng
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/dwpeng/filterx
+Project-URL: repository, https://github.com/dwpeng/filterx
+Project-URL: documentation, https://filterx.dwpeng.com
+
+
+## filterx
+
+[![pypi](https://github.com/dwpeng/filterx/actions/workflows/release-pypi.yml/badge.svg)](https://github.com/dwpeng/filterx/actions/workflows/release-pypi.yml)[![Github Release](https://github.com/dwpeng/filterx/actions/workflows/release.yml/badge.svg)](https://github.com/dwpeng/filterx/actions/workflows/release.yml)
+
+A fast command-line tool to filter lines by column-based expression.
+
+## Features
+- 🚀 Filter lines by column-based expression
+- 🎨 Support multiple input formats e.g. vcf/sam/fasta/fastq/gff/bed/csv/tsv
+- 🎉 Cross-platform support
+- 📦 Easy to install
+- 📚 Rich documentations
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=dwpeng/filterx&type=Date)](https://star-history.com/#dwpeng/filterx&Date)
+
