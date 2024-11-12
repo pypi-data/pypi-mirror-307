@@ -1,0 +1,14 @@
+global-exclude *.py[cod]
+prune src/ah/local
+prune src/ah/data
+prune src/ah/personas
+prune src/ah/static
+prune src/ah/imgs
+prune src/ah/models
+
+include src/xingen/coreplugins/agent/*.j2
+include src/xingen/coreplugins/chat/templates
+include src/xingen/coreplugins/chat/static
+include src/xingen/coreplugins/admin/templates
+include src/xingen/coreplugins/admin/static
+include *templates*
