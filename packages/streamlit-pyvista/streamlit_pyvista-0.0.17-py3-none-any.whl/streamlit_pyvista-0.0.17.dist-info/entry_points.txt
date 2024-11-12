@@ -1,0 +1,3 @@
+[console_scripts]
+streamlit-pyvista=streamlit_pyvista.cli:main
+
