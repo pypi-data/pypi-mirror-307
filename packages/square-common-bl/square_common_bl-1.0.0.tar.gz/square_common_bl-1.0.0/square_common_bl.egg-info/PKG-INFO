@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: square-common-bl
+Version: 1.0.0
+Summary: common business layer for my personal server.
+Home-page: https://github.com/thepmsquare/square_common_bl
+Author: thePmSquare
+Author-email: thepmsquare@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# square_common_bl
+
+## about
+
+common business layer for my personal server.
+
+## Installation
+
+```shell
+pip install square_common_bl
+```
+
+## env
+
+- python>=3.12.0
+
+## changelog
+
+### v1.0.0
+
+- initial implementation.
+
+## Feedback is appreciated. Thank you!
+
