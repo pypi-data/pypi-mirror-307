@@ -1,0 +1,14 @@
+{%- import 'pdnsr/_macros.html' as macros_pdnsr with context -%}
+{%- if search_item %}
+    {%- if search_result %}
+                    <h3 class="mt-5">
+                        {{ macros_pdnsr.get_title() }}
+                    </h3>
+                    {{ macros_pdnsr.render_result_hostname(search_result) }}
+    {%- else %}
+
+                    {%- call macros_site.render_alert('info', False) %}
+                    {{ _('There are no records for <strong>%(item_id)s</strong> in <em>PassiveDNS</em> service.', item_id = search_item) | safe }}
+                    {%- endcall %}
+    {%- endif %}
+{%- endif %}
