@@ -1,0 +1,35 @@
+from jaxtyping import Bool, Float, Integer, Shaped
+from numpy.typing import NDArray
+
+from qtk.array_types.array import (
+    ArrayLike,
+    is_array_like,
+{%- for s in shapes %}
+    B{{ s.replace(" ", "") }}Like,
+{%- endfor %}
+{%- for s in shapes %}
+    F{{ s.replace(" ", "") }}Like,
+{%- endfor %}
+{%- for s in shapes %}
+    I{{ s.replace(" ", "") }}Like,
+{%- endfor %}
+)
+
+__all__ = [
+    "ArrayLike",
+    "Bool",
+    "Float",
+    "Integer",
+    "NDArray",
+    "Shaped",
+    "is_array_like",
+{%- for s in shapes %}
+    "B{{ s.replace(" ", "") }}Like",
+{%- endfor %}
+{%- for s in shapes %}
+    "F{{ s.replace(" ", "") }}Like",
+{%- endfor %}
+{%- for s in shapes %}
+    "I{{ s.replace(" ", "") }}Like",
+{%- endfor %}
+]

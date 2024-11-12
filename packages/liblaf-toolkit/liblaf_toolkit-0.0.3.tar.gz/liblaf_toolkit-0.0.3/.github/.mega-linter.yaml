@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json
+# ref: <https://megalinter.io/latest/config-file/>
+
+EXTENDS:
+  - https://github.com/liblaf/.github/raw/refs/heads/main/.mega-linter.yaml
+
+PYTHON_PYRIGHT_CONFIG_FILE: LINTER_DEFAULT
+PYTHON_PYRIGHT_PRE_COMMANDS:
+  - command: pip install uv # setup uv
+    venv: pyright
+  - command: uv sync --all-extras # install dependencies
+    venv: pyright
+PYTHON_RUFF_CONFIG_FILE: LINTER_DEFAULT
