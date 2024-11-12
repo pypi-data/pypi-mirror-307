@@ -1,0 +1,5 @@
+module CommonQml.SidebarApp
+SidebarApp 0.1 SidebarApp.qml
+SidebarAppView 0.1 SidebarAppView.qml
+NavigationSidebar 0.1 NavigationSidebar.qml
+NavigationSidebarButton 0.1 NavigationSidebarButton.qml
